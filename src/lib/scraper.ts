@@ -68,7 +68,9 @@ export async function scrapeWebsite(url: string): Promise<ScrapedContent> {
 
     const phones = bodyText.match(contactPatterns.phone) || [];
     const emails = bodyText.match(contactPatterns.email) || [];
-    const contactInfo = [...new Set([...phones, ...emails])].slice(0, 5).join(', ');
+    const allContacts = phones.concat(emails);
+    const uniqueContacts = allContacts.filter((v, i, a) => a.indexOf(v) === i);
+    const contactInfo = uniqueContacts.slice(0, 5).join(', ');
 
     // Get clean text content
     const rawText = $('body')

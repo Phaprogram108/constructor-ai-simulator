@@ -54,9 +54,9 @@ export async function POST(request: NextRequest) {
       { role: 'user', content: message },
     ];
 
-    // Call OpenAI - using gpt-4o for better quality responses
+    // Call OpenAI - using gpt-5.1 for best quality responses
     const completion = await openai.chat.completions.create({
-      model: 'gpt-4o',
+      model: 'gpt-5.1',
       messages: openaiMessages,
       max_tokens: 600,
       temperature: 0.7,

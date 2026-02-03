@@ -117,7 +117,10 @@ export default function ChatInterface({
       setMessages(prev => prev.filter(m => m.id !== tempUserMessage.id));
     } finally {
       setIsLoading(false);
-      textareaRef.current?.focus();
+      // Use setTimeout to ensure focus happens after React re-render
+      setTimeout(() => {
+        textareaRef.current?.focus();
+      }, 100);
     }
   };
 

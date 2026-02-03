@@ -47,7 +47,7 @@ ${rawText.slice(0, 4000)}
 `.trim();
 
   const pdfInfo = pdfContent
-    ? `\n\nCATALOGO/PDF:\n${pdfContent.slice(0, 3000)}`
+    ? `\n\nCATÁLOGO DE PRODUCTOS (INFORMACIÓN CLAVE - USAR SIEMPRE):\n${pdfContent.slice(0, 4000)}\n\nIMPORTANTE: Los modelos listados arriba son los productos reales de la empresa. Cuando pregunten por modelos, mencioná estos nombres específicos con sus características.`
     : '';
 
   const metaPrompt = `Sos un experto en crear prompts para agentes de IA conversacionales de ventas inmobiliarias en Argentina.
@@ -95,6 +95,12 @@ REQUISITOS DEL PROMPT QUE DEBES GENERAR:
    - Siempre en español argentino
 
 6. INCLUIR 2-3 EJEMPLOS de respuestas típicas adaptados a esta empresa específica.
+
+7. USO DEL CATÁLOGO/PDF (MUY IMPORTANTE):
+   - Si hay información de catálogo, MEMORIZÁ todos los nombres de modelos exactos
+   - Cuando pregunten por modelos, mencioná los nombres COMPLETOS (ej: "Modelo Aurora 85m²", no solo "modelo de hormigón")
+   - Incluí características específicas: metros cuadrados, cantidad de ambientes, materiales
+   - Si no tenés el catálogo, NO inventes nombres de modelos
 
 FORMATO DE RESPUESTA:
 Generá ÚNICAMENTE el system prompt, sin explicaciones ni comentarios adicionales. El prompt debe empezar directamente con la descripción del personaje.`;

@@ -126,15 +126,29 @@ function cleanCompanyName(title: string): string {
 
   // Remove common suffixes and clean up
   let cleaned = title
-    .replace(/\s*[-|–—]\s*.*$/, '') // Remove everything after dash/pipe
-    .replace(/\s*(inicio|home|principal|bienvenido|welcome).*$/i, '') // Remove common page names
-    .replace(/^\s*(inicio|home|principal|bienvenido|welcome)\s*[-|–—]?\s*/i, '') // Remove if at start
+    // Remove "Home | Company" or "Company | Home" patterns
+    .replace(/^(home|inicio|principal|bienvenido|welcome)\s*[|–—-]\s*/i, '')
+    .replace(/\s*[|–—-]\s*(home|inicio|principal|bienvenido|welcome)$/i, '')
+    // Remove everything after pipe/dash if it contains common words
+    .replace(/\s*[|–—-]\s*.*?(home|inicio|principal|bienvenido|welcome).*$/i, '')
+    // If still has pipe, take the more meaningful part (usually after Home |)
+    .replace(/^home\s*[|]\s*/i, '')
     .replace(/\s+/g, ' ') // Normalize whitespace
     .trim();
 
-  // If the result is too short, use original but cleaned
-  if (cleaned.length < 3) {
-    cleaned = title.replace(/\s+/g, ' ').trim();
+  // If the result is too short or still has issues, try alternative parsing
+  if (cleaned.length < 3 || cleaned.toLowerCase() === 'home') {
+    // Try to get the part after the pipe
+    const parts = title.split(/[|–—-]/);
+    if (parts.length > 1) {
+      // Find the part that's not "home", "inicio", etc.
+      const meaningfulPart = parts.find(p =>
+        !/(home|inicio|principal|bienvenido|welcome)/i.test(p.trim())
+      );
+      if (meaningfulPart && meaningfulPart.trim().length > 2) {
+        cleaned = meaningfulPart.trim();
+      }
+    }
   }
 
   // Final cleanup - remove weird characters

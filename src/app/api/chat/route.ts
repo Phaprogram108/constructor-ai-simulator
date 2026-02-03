@@ -54,11 +54,11 @@ export async function POST(request: NextRequest) {
       { role: 'user', content: message },
     ];
 
-    // Call OpenAI
+    // Call OpenAI - using gpt-4o for better quality responses
     const completion = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
+      model: 'gpt-4o',
       messages: openaiMessages,
-      max_tokens: 500,
+      max_tokens: 600,
       temperature: 0.7,
     });
 

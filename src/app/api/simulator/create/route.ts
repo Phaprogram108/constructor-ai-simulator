@@ -4,7 +4,7 @@ import { extractPdfFromUrl, formatPdfContent } from '@/lib/pdf-extractor';
 import { generateSystemPrompt, getWelcomeMessage } from '@/lib/prompt-generator';
 import { createSession, addMessage } from '@/lib/session-manager';
 import { checkRateLimit, getClientIdentifier } from '@/lib/rate-limiter';
-import { CreateSessionRequest, CreateSessionResponse } from '@/types';
+import { CreateSessionRequest } from '@/types';
 import { v4 as uuidv4 } from 'uuid';
 
 export async function POST(request: NextRequest) {
@@ -74,12 +74,13 @@ export async function POST(request: NextRequest) {
 
     console.log('Session created:', session.id, 'Company:', scrapedContent.title);
 
-    const response: CreateSessionResponse = {
+    return NextResponse.json({
       sessionId: session.id,
       companyName: scrapedContent.title,
-    };
-
-    return NextResponse.json(response);
+      welcomeMessage,
+      messagesRemaining: session.maxMessages,
+      systemPrompt, // Include for client-side chat
+    });
   } catch (error) {
     console.error('Create session error:', error);
     return NextResponse.json(

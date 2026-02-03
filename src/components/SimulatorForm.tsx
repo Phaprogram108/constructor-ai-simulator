@@ -105,6 +105,23 @@ export default function SimulatorForm() {
         throw new Error(data.error || 'Error al crear la sesión');
       }
 
+      // Store session data in localStorage for the demo page
+      localStorage.setItem(`session-${data.sessionId}`, JSON.stringify({
+        session: {
+          id: data.sessionId,
+          companyName: data.companyName,
+          messagesRemaining: data.messagesRemaining || 50,
+          expiresAt: new Date(Date.now() + 30 * 60 * 1000),
+        },
+        messages: data.welcomeMessage ? [{
+          id: 'welcome',
+          role: 'assistant',
+          content: data.welcomeMessage,
+          timestamp: new Date(),
+        }] : [],
+        systemPrompt: data.systemPrompt,
+      }));
+
       // Redirect to chat
       router.push(`/demo/${data.sessionId}`);
     } catch (err) {

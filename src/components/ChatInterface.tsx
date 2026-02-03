@@ -11,12 +11,14 @@ interface ChatInterfaceProps {
   sessionId: string;
   initialSession: SessionInfo;
   initialMessages: MessageType[];
+  systemPrompt: string;
 }
 
 export default function ChatInterface({
   sessionId,
   initialSession,
   initialMessages,
+  systemPrompt,
 }: ChatInterfaceProps) {
   const [messages, setMessages] = useState<MessageType[]>(initialMessages);
   const [input, setInput] = useState('');
@@ -61,6 +63,11 @@ export default function ChatInterface({
         body: JSON.stringify({
           sessionId,
           message: userMessage,
+          systemPrompt,
+          conversationHistory: messages.map(m => ({
+            role: m.role,
+            content: m.content,
+          })),
         }),
       });
 

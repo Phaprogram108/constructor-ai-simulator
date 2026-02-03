@@ -1,34 +1,38 @@
 import { NextRequest, NextResponse } from 'next/server';
 import OpenAI from 'openai';
-import { v4 as uuidv4 } from 'uuid';
-import { getSession, addMessage, getMessagesRemaining, getSessionMessages } from '@/lib/session-manager';
-import { checkRateLimit, getClientIdentifier } from '@/lib/rate-limiter';
-import { ChatRequest, ChatResponse, Message } from '@/types';
 
 const openai = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
 });
 
+interface ChatMessage {
+  role: 'user' | 'assistant';
+  content: string;
+}
+
+interface ChatRequestBody {
+  sessionId: string;
+  message: string;
+  systemPrompt: string;
+  conversationHistory: ChatMessage[];
+}
+
 export async function POST(request: NextRequest) {
   try {
-    // Rate limiting
-    const clientId = getClientIdentifier(request);
-    const rateLimitResult = checkRateLimit(clientId);
+    const body: ChatRequestBody = await request.json();
+    const { message, systemPrompt, conversationHistory } = body;
 
-    if (!rateLimitResult.allowed) {
+    // Validate request
+    if (!message) {
       return NextResponse.json(
-        { error: 'Demasiadas solicitudes. Esperá un momento.' },
-        { status: 429 }
+        { error: 'El mensaje es requerido' },
+        { status: 400 }
       );
     }
 
-    const body: ChatRequest = await request.json();
-    const { sessionId, message } = body;
-
-    // Validate request
-    if (!sessionId || !message) {
+    if (!systemPrompt) {
       return NextResponse.json(
-        { error: 'sessionId y message son requeridos' },
+        { error: 'Sesión inválida. Creá una nueva sesión.' },
         { status: 400 }
       );
     }
@@ -40,41 +44,14 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Get session
-    const session = getSession(sessionId);
-    if (!session) {
-      return NextResponse.json(
-        { error: 'Sesión no encontrada o expirada. Creá una nueva sesión.' },
-        { status: 404 }
-      );
-    }
-
-    // Check message limit
-    const remaining = getMessagesRemaining(sessionId);
-    if (remaining <= 0) {
-      return NextResponse.json(
-        { error: 'Has alcanzado el límite de mensajes para esta sesión.' },
-        { status: 403 }
-      );
-    }
-
-    // Add user message
-    const userMessage: Message = {
-      id: uuidv4(),
-      role: 'user',
-      content: message,
-      timestamp: new Date(),
-    };
-    addMessage(sessionId, userMessage);
-
     // Prepare messages for OpenAI
-    const sessionMessages = getSessionMessages(sessionId);
     const openaiMessages: OpenAI.ChatCompletionMessageParam[] = [
-      { role: 'system', content: session.systemPrompt },
-      ...sessionMessages.map(msg => ({
+      { role: 'system', content: systemPrompt },
+      ...(conversationHistory || []).map(msg => ({
         role: msg.role as 'user' | 'assistant',
         content: msg.content,
       })),
+      { role: 'user', content: message },
     ];
 
     // Call OpenAI
@@ -88,21 +65,9 @@ export async function POST(request: NextRequest) {
     const assistantContent = completion.choices[0]?.message?.content ||
       'Disculpá, hubo un problema. ¿Podés repetir tu consulta?';
 
-    // Add assistant message
-    const assistantMessage: Message = {
-      id: uuidv4(),
-      role: 'assistant',
-      content: assistantContent,
-      timestamp: new Date(),
-    };
-    addMessage(sessionId, assistantMessage);
-
-    const response: ChatResponse = {
+    return NextResponse.json({
       message: assistantContent,
-      messagesRemaining: getMessagesRemaining(sessionId),
-    };
-
-    return NextResponse.json(response);
+    });
   } catch (error) {
     console.error('Chat error:', error);
 

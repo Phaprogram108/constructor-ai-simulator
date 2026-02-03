@@ -1,4 +1,5 @@
-import pdf from 'pdf-parse';
+// eslint-disable-next-line @typescript-eslint/no-require-imports
+const pdfParse = require('pdf-parse');
 
 const MAX_PDF_TEXT_LENGTH = 5000;
 
@@ -34,7 +35,7 @@ export async function extractPdfFromBase64(base64Data: string): Promise<string> 
 
 async function extractTextFromBuffer(buffer: Buffer): Promise<string> {
   try {
-    const data = await pdf(buffer);
+    const data = await pdfParse(buffer);
 
     // Clean and truncate text
     const cleanText = data.text

@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { scrapeWebsite } from '@/lib/scraper';
-import { extractPdfFromUrl, formatPdfContent } from '@/lib/pdf-extractor';
-import { generateSystemPromptWithClaude, getWelcomeMessage } from '@/lib/prompt-generator';
+import { extractPdfFromUrl, analyzePdfWithAI, ExtractedCatalog } from '@/lib/pdf-extractor';
+import { generateSystemPromptWithCatalog, getWelcomeMessage } from '@/lib/prompt-generator';
 import { createSession, addMessage } from '@/lib/session-manager';
 import { checkRateLimit, getClientIdentifier } from '@/lib/rate-limiter';
 import { CreateSessionRequest } from '@/types';
@@ -41,32 +41,46 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Scrape website
+    // Scrape website with AI
     console.log('[Create] Scraping website:', websiteUrl);
     const scrapedContent = await scrapeWebsite(websiteUrl);
-    console.log('[Create] Scraped title:', scrapedContent.title);
-    console.log('[Create] Scraped description:', scrapedContent.description?.slice(0, 100));
+    console.log('[Create] Scraped:', {
+      title: scrapedContent.title,
+      modelsCount: scrapedContent.models.length,
+      servicesCount: scrapedContent.services.length,
+    });
 
-    // Extract PDF content if provided
-    let pdfContent = '';
+    // Extract and analyze PDF if provided
+    let catalog: ExtractedCatalog | undefined;
     if (pdfUrl) {
-      console.log('[Create] Extracting PDF from URL:', pdfUrl);
-      try {
-        pdfContent = await extractPdfFromUrl(pdfUrl);
-        console.log('[Create] PDF content length:', pdfContent.length);
-      } catch (pdfError) {
-        console.error('[Create] PDF extraction failed:', pdfError);
-        // Continue without PDF - don't fail the whole request
+      console.log('[Create] Processing PDF:', pdfUrl);
+
+      const pdfText = await extractPdfFromUrl(pdfUrl);
+      console.log('[Create] PDF text extracted, length:', pdfText.length);
+
+      if (pdfText && pdfText.length > 50) {
+        // Analyze PDF with AI to extract structured data
+        catalog = await analyzePdfWithAI(pdfText);
+        console.log('[Create] PDF analyzed:', {
+          modelsCount: catalog.models.length,
+          pricesCount: catalog.prices.length,
+          featuresCount: catalog.features.length,
+        });
+
+        // Log model names for debugging
+        if (catalog.models.length > 0) {
+          console.log('[Create] Models found:', catalog.models.map(m => m.name));
+        }
+      } else {
+        console.log('[Create] PDF text too short or empty');
       }
     }
 
-    const formattedPdfContent = formatPdfContent(pdfContent);
-
-    // Generate system prompt using Claude AI
-    console.log('[Create] Generating system prompt with Claude...');
-    const systemPrompt = await generateSystemPromptWithClaude({
+    // Generate system prompt with all information directly included
+    console.log('[Create] Generating system prompt...');
+    const systemPrompt = generateSystemPromptWithCatalog({
       scrapedContent,
-      pdfContent: formattedPdfContent,
+      catalog,
     });
     console.log('[Create] System prompt length:', systemPrompt.length);
 
@@ -85,8 +99,9 @@ export async function POST(request: NextRequest) {
     });
 
     console.log('[Create] Session created:', session.id);
-    console.log('[Create] Company name:', scrapedContent.title);
-    console.log('[Create] Max messages:', session.maxMessages);
+    console.log('[Create] Company:', scrapedContent.title);
+    console.log('[Create] Has catalog:', !!catalog);
+    console.log('[Create] Catalog models:', catalog?.models.length || 0);
 
     return NextResponse.json({
       sessionId: session.id,
@@ -96,7 +111,7 @@ export async function POST(request: NextRequest) {
       systemPrompt, // Include for client-side chat
     });
   } catch (error) {
-    console.error('Create session error:', error);
+    console.error('[Create] Error:', error);
     return NextResponse.json(
       { error: 'Error al crear la sesión. Intentá de nuevo.' },
       { status: 500 }

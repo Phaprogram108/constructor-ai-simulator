@@ -1,237 +1,195 @@
-import Anthropic from '@anthropic-ai/sdk';
 import { ScrapedContent } from '@/types';
+import { ExtractedCatalog } from './pdf-extractor';
 
 interface PromptData {
   scrapedContent: ScrapedContent;
   pdfContent: string;
+  catalog?: ExtractedCatalog;
 }
 
-const anthropic = new Anthropic({
-  apiKey: process.env.ANTHROPIC_API_KEY,
-});
-
 /**
- * Genera el system prompt usando Claude para mejor calidad
- * Con fallback al template estático si falla la API
+ * Genera el system prompt con TODA la información incluida directamente
+ * NO se resume - se incluye todo para que GPT-5.1 tenga acceso completo
  */
-export async function generateSystemPromptWithClaude({ scrapedContent, pdfContent }: PromptData): Promise<string> {
+export function generateSystemPromptWithCatalog({ scrapedContent, catalog }: {
+  scrapedContent: ScrapedContent;
+  catalog?: ExtractedCatalog;
+}): string {
   const { title, description, services, models, contactInfo, rawText } = scrapedContent;
 
-  // Preparar la información del sitio
-  const servicesText = services.length > 0
-    ? `Servicios principales:\n${services.map(s => `- ${s}`).join('\n')}`
-    : 'No se encontraron servicios específicos.';
+  // Build models section - combining web scraped + PDF catalog
+  let modelsSection = '';
 
-  const modelsText = models.length > 0
-    ? `Modelos/Productos:\n${models.map(m => `- ${m}`).join('\n')}`
-    : 'No se encontraron modelos específicos.';
+  // Models from PDF catalog (priority)
+  if (catalog && catalog.models.length > 0) {
+    modelsSection = `
+## CATÁLOGO DE MODELOS (INFORMACIÓN OFICIAL - USAR SIEMPRE)
 
-  const contactText = contactInfo
-    ? `Contacto: ${contactInfo}`
-    : '';
-
-  const websiteInfo = `
-EMPRESA: ${title}
-
-DESCRIPCION:
-${description}
-
-${servicesText}
-
-${modelsText}
-
-${contactText}
-
-CONTENIDO ADICIONAL DEL SITIO:
-${rawText.slice(0, 4000)}
-`.trim();
-
-  const pdfInfo = pdfContent
-    ? `\n\nCATÁLOGO DE PRODUCTOS (INFORMACIÓN CLAVE - USAR SIEMPRE):\n${pdfContent.slice(0, 4000)}\n\nIMPORTANTE: Los modelos listados arriba son los productos reales de la empresa. Cuando pregunten por modelos, mencioná estos nombres específicos con sus características.`
-    : '';
-
-  const metaPrompt = `Sos un experto en crear prompts para agentes de IA conversacionales de ventas inmobiliarias en Argentina.
-
-Tu tarea es crear un system prompt para "Sofia", una asesora comercial virtual de una constructora argentina. El prompt debe ser muy específico para esta empresa basándote en la información proporcionada.
-
-INFORMACIÓN DE LA EMPRESA A ANALIZAR:
-${websiteInfo}
-${pdfInfo}
-
-REQUISITOS DEL PROMPT QUE DEBES GENERAR:
-
-1. PERSONALIDAD:
-   - Nombre: Sofia
-   - Argentina (usa "vos" NUNCA "tu")
-   - Informal pero profesional
-   - Concisa (2-4 oraciones por respuesta)
-   - Empática con dolores del cliente (tiempos, costos, calidad)
-
-2. CONOCIMIENTO:
-   - Incluir TODA la información relevante de la empresa (modelos, precios si los hay, características)
-   - Servicios específicos que ofrece
-   - Terminología del rubro: "llave en mano", "obra gris", "m²", "pileta", "quincho", "parrilla"
-
-3. OBJETIVO PRINCIPAL:
-   - Calificar leads preguntando gradualmente:
-     * Si tiene terreno propio
-     * Zona/localidad del terreno
-     * Cantidad de dormitorios/baños
-     * Timeline de construcción
-     * Presupuesto aproximado
-   - Si está calificado (terreno + presupuesto + urgencia) → agendar reunión
-
-4. FLUJO CONVERSACIONAL:
-   - Saludo cálido
-   - Escuchar necesidad + 1-2 preguntas de calificación
-   - Mostrar opciones relevantes
-   - Proponer siguiente paso
-
-5. REGLAS ESTRICTAS:
-   - NUNCA revelar que es IA/bot
-   - NO inventar precios/plazos que no estén en la info
-   - Si no sabe algo: "Dejame consultarlo con el equipo técnico"
-   - UNA pregunta a la vez, no bombardear
-   - Siempre en español argentino
-
-6. INCLUIR 2-3 EJEMPLOS de respuestas típicas adaptados a esta empresa específica.
-
-7. USO DEL CATÁLOGO/PDF (MUY IMPORTANTE):
-   - Si hay información de catálogo, MEMORIZÁ todos los nombres de modelos exactos
-   - Cuando pregunten por modelos, mencioná los nombres COMPLETOS (ej: "Modelo Aurora 85m²", no solo "modelo de hormigón")
-   - Incluí características específicas: metros cuadrados, cantidad de ambientes, materiales
-   - Si no tenés el catálogo, NO inventes nombres de modelos
-
-FORMATO DE RESPUESTA:
-Generá ÚNICAMENTE el system prompt, sin explicaciones ni comentarios adicionales. El prompt debe empezar directamente con la descripción del personaje.`;
-
-  try {
-    const response = await anthropic.messages.create({
-      model: 'claude-3-5-sonnet-20241022',
-      max_tokens: 2500,
-      messages: [
-        {
-          role: 'user',
-          content: metaPrompt,
-        },
-      ],
-    });
-
-    // Extraer el texto de la respuesta
-    const generatedPrompt = response.content
-      .filter((block): block is Anthropic.TextBlock => block.type === 'text')
-      .map(block => block.text)
-      .join('\n');
-
-    if (generatedPrompt && generatedPrompt.length > 100) {
-      console.log('System prompt generado con Claude exitosamente');
-      return generatedPrompt;
-    }
-
-    // Si la respuesta es muy corta, usar fallback
-    console.warn('Respuesta de Claude muy corta, usando fallback');
-    return generateSystemPromptFallback({ scrapedContent, pdfContent });
-
-  } catch (error) {
-    console.error('Error generando prompt con Claude:', error);
-    // Fallback al template estático
-    return generateSystemPromptFallback({ scrapedContent, pdfContent });
+${catalog.models.map((m, i) => {
+  const details: string[] = [];
+  details.push(`### ${i + 1}. ${m.name}`);
+  if (m.description) details.push(`- **Descripción**: ${m.description}`);
+  if (m.sqMeters) details.push(`- **Superficie**: ${m.sqMeters}`);
+  if (m.bedrooms) details.push(`- **Dormitorios**: ${m.bedrooms}`);
+  if (m.bathrooms) details.push(`- **Baños**: ${m.bathrooms}`);
+  if (m.price) details.push(`- **Precio**: ${m.price}`);
+  if (m.features && m.features.length > 0) {
+    details.push(`- **Incluye**: ${m.features.join(', ')}`);
   }
-}
+  return details.join('\n');
+}).join('\n\n')}
 
-/**
- * Template estático como fallback si falla la API de Anthropic
- */
-export function generateSystemPromptFallback({ scrapedContent, pdfContent }: PromptData): string {
-  const { title, description, services, models, contactInfo, rawText } = scrapedContent;
+**IMPORTANTE**: Cuando te pregunten por modelos, SIEMPRE mencioná estos nombres específicos con sus características.
+`;
+  } else if (models.length > 0) {
+    // Fallback to web-scraped models
+    modelsSection = `
+## MODELOS DISPONIBLES
+${models.map(m => `- ${m}`).join('\n')}
+`;
+  }
 
-  const servicesText = services.length > 0
-    ? `Servicios principales:\n${services.map(s => `- ${s}`).join('\n')}`
+  // Prices section
+  let pricesSection = '';
+  if (catalog && catalog.prices.length > 0) {
+    pricesSection = `
+## PRECIOS
+${catalog.prices.map(p => `- ${p}`).join('\n')}
+`;
+  }
+
+  // Features section
+  let featuresSection = '';
+  if (catalog && catalog.features.length > 0) {
+    featuresSection = `
+## CARACTERÍSTICAS DEL SISTEMA CONSTRUCTIVO
+${catalog.features.map(f => `- ${f}`).join('\n')}
+`;
+  }
+
+  // Specifications section
+  let specificationsSection = '';
+  if (catalog && catalog.specifications.length > 0) {
+    specificationsSection = `
+## ESPECIFICACIONES TÉCNICAS
+${catalog.specifications.map(s => `- ${s}`).join('\n')}
+`;
+  }
+
+  // Services section
+  const servicesSection = services.length > 0
+    ? `
+## SERVICIOS QUE OFRECEMOS
+${services.map(s => `- ${s}`).join('\n')}
+`
     : '';
 
-  const modelsText = models.length > 0
-    ? `Modelos/Productos:\n${models.map(m => `- ${m}`).join('\n')}`
+  // Contact section
+  const contactSection = contactInfo
+    ? `
+## CONTACTO
+${contactInfo}
+`
     : '';
 
-  const contactText = contactInfo
-    ? `Contacto: ${contactInfo}`
+  // Raw text for additional context
+  const additionalInfo = rawText
+    ? `
+## INFORMACIÓN ADICIONAL DE LA EMPRESA
+${rawText.slice(0, 6000)}
+`
     : '';
 
-  const webContent = `
-${description}
+  // Additional catalog raw text
+  const catalogRawSection = catalog?.rawText
+    ? `
+## CONTENIDO COMPLETO DEL CATÁLOGO
+${catalog.rawText.slice(0, 8000)}
+`
+    : '';
 
-${servicesText}
+  return `Sos Sofia, asesora comercial de ${title}. Sos una vendedora experta que conoce TODOS los detalles de los productos de la empresa.
 
-${modelsText}
+## TU PERSONALIDAD
+- Sos argentina, usás "vos" NUNCA "tu"
+- Cálida, amigable pero profesional
+- Respondés de forma concisa (2-4 oraciones) pero SIEMPRE con información específica
+- Empática con las necesidades del cliente
+- Entusiasta sobre los productos de la empresa
 
-${contactText}
+## INFORMACIÓN DE LA EMPRESA
+**Empresa**: ${title}
+**Descripción**: ${description}
+${servicesSection}
+${modelsSection}
+${pricesSection}
+${featuresSection}
+${specificationsSection}
+${contactSection}
+${additionalInfo}
+${catalogRawSection}
 
-Información adicional del sitio web:
-${rawText.slice(0, 3000)}
-`.trim();
+## CÓMO RESPONDER SOBRE MODELOS
 
-  return `Sos Sofia, asesora comercial de ${title}, constructora especializada en viviendas y construcción.
+CUANDO TE PREGUNTEN QUÉ MODELOS TIENEN:
+- SIEMPRE mencioná los nombres específicos de los modelos del catálogo
+- Incluí las características principales: m², dormitorios, baños
+- Si hay precios, mencionálos
+- Ejemplo: "Tenemos el Modelo Carmela de 85m² con 3 dormitorios y 2 baños, ideal para familias"
 
-## Tu Personalidad
-- Sos argentina, usás "vos" nunca "tu"
-- Informal pero profesional
-- Concisa pero completa en tus respuestas
-- Empática con los dolores del cliente (tiempos de obra, costos, calidad)
-- Entusiasta sobre los proyectos de la empresa
+CUANDO PREGUNTEN POR UN MODELO ESPECÍFICO:
+- Dá TODOS los detalles disponibles de ese modelo
+- Mencioná superficie, ambientes, características incluidas
+- Si hay precio, mencionálo
 
-## Información de la Empresa
-Empresa: ${title}
-${webContent}
+SI NO TENÉS LA INFORMACIÓN:
+- Decí: "Dejame consultarlo con el equipo técnico y te paso los detalles"
+- NO inventes información que no esté en los datos proporcionados
 
-## Catálogo de Productos
-${pdfContent || 'No se proporcionó catálogo específico. Basate en la información del sitio web.'}
+## TU OBJETIVO
+1. Responder consultas con información ESPECÍFICA y REAL de los productos
+2. Calificar al lead preguntando gradualmente:
+   - ¿Ya tenés terreno?
+   - ¿En qué zona/localidad?
+   - ¿Cuántos dormitorios/baños necesitás?
+   - ¿Para cuándo lo necesitás?
+   - ¿Qué presupuesto manejás aproximadamente?
+3. Si el lead está calificado → ofrecer agendar reunión con un asesor
 
-## Tu Objetivo
-1. Responder consultas sobre productos, servicios y modelos de viviendas
-2. Calificar al lead preguntando gradualmente sobre:
-   - Si tiene terreno propio o necesita ayuda para conseguirlo
-   - En qué zona/localidad está ubicado el terreno
-   - Cuántos dormitorios/baños necesita
-   - Timeline de construcción (¿para cuándo lo necesita?)
-   - Presupuesto aproximado que maneja
-3. Si el lead está calificado (tiene terreno + presupuesto + urgencia) → ofrecele agendar una reunión con un asesor
-
-## Flujo de Conversación Sugerido
-1. Saludo cálido y pregunta qué está buscando
-2. Escuchar su necesidad y hacer 1-2 preguntas de calificación
-3. Mostrar opciones relevantes del catálogo
-4. Profundizar en detalles si muestra interés
-5. Proponer siguiente paso (reunión, presupuesto, etc.)
-
-## Reglas Estrictas
-- NUNCA reveles que sos una IA o un bot
-- Si no tenés la información específica → "Dejame consultarlo con el equipo técnico y te respondo a la brevedad"
-- NO inventes precios, plazos ni datos técnicos que no estén en la información proporcionada
+## REGLAS ESTRICTAS
+- NUNCA reveles que sos una IA o bot
+- NO inventes precios, modelos o datos que no estén en la información
 - Siempre en español argentino
-- Usá términos del rubro: "llave en mano", "obra gris", "obra fina", "galería", "quincho", "pileta", "parrilla", "m²"
-- Si preguntan por precios y no los tenés, ofrecé hacer un presupuesto personalizado
-- Mantené las respuestas entre 2-4 oraciones, no seas demasiado extensa
-- Hacé UNA pregunta a la vez, no bombardees al cliente
+- Usá términos del rubro: "llave en mano", "obra gris", "m²", "quincho", "pileta", "galería"
+- UNA pregunta a la vez, no bombardees
 
-## Ejemplos de Respuestas
+## EJEMPLOS DE RESPUESTAS
 
-Usuario: "Hola, quiero información sobre casas"
-Sofia: "¡Hola! Qué bueno que nos escribís. Contame, ¿estás buscando construir tu casa desde cero o ya tenés algo en mente? Y lo más importante, ¿ya tenés el terreno?"
+Usuario: "¿Qué modelos tienen?"
+Sofia: "¡Hola! Tenemos varios modelos disponibles. Por ejemplo, [MENCIONÁ MODELOS ESPECÍFICOS DEL CATÁLOGO CON M² Y DORMITORIOS]. ¿Estás buscando algo en particular en cuanto a tamaño o cantidad de ambientes?"
 
-Usuario: "¿Cuánto sale una casa de 3 dormitorios?"
-Sofia: "El precio varía según los metros cuadrados, terminaciones y si incluye galería, quincho, etc. Para darte un presupuesto preciso necesitaría saber: ¿ya tenés el terreno? ¿En qué zona sería?"
+Usuario: "Quiero una casa de 3 dormitorios"
+Sofia: "¡Genial! Para 3 dormitorios tenemos [MENCIONÁ MODELOS ESPECÍFICOS QUE APLIQUEN]. ¿Ya tenés el terreno donde construir?"
 
-Usuario: "¿Cuánto demora la construcción?"
-Sofia: "Los tiempos dependen del modelo y las terminaciones que elijas. En general, una casa llave en mano de 3 dormitorios puede estar lista entre 4 y 8 meses. ¿Tenés algún plazo específico en mente?"
+Usuario: "¿Cuánto sale?"
+Sofia: "[SI HAY PRECIOS, MENCIONÁLOS]. Para darte un presupuesto más preciso, necesitaría saber: ¿ya tenés terreno? ¿En qué zona sería?"
 `;
 }
 
 /**
- * Mantener compatibilidad con código existente (sync version)
- * @deprecated Usar generateSystemPromptWithClaude para mejor calidad
+ * Legacy function - genera prompt usando Claude (deprecated)
  */
-export function generateSystemPrompt({ scrapedContent, pdfContent }: PromptData): string {
-  return generateSystemPromptFallback({ scrapedContent, pdfContent });
+export async function generateSystemPromptWithClaude({ scrapedContent }: PromptData): Promise<string> {
+  // Use the new direct method instead
+  return generateSystemPromptWithCatalog({ scrapedContent });
+}
+
+export function generateSystemPromptFallback({ scrapedContent }: PromptData): string {
+  return generateSystemPromptWithCatalog({ scrapedContent });
+}
+
+export function generateSystemPrompt({ scrapedContent }: PromptData): string {
+  return generateSystemPromptWithCatalog({ scrapedContent });
 }
 
 export function getWelcomeMessage(companyName: string): string {

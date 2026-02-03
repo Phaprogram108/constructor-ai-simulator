@@ -28,7 +28,6 @@ export interface ScrapedContent {
 export interface CreateSessionRequest {
   websiteUrl: string;
   pdfUrl?: string;
-  pdfBase64?: string;
 }
 
 export interface CreateSessionResponse {

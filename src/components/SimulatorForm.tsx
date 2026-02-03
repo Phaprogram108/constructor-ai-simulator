@@ -17,6 +17,7 @@ export default function SimulatorForm() {
   const [pdfFile, setPdfFile] = useState<File | null>(null);
   const [pdfTab, setPdfTab] = useState('url');
   const [loading, setLoading] = useState(false);
+  const [loadingMessage, setLoadingMessage] = useState('');
   const [error, setError] = useState('');
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -26,8 +27,8 @@ export default function SimulatorForm() {
         setError('Solo se permiten archivos PDF');
         return;
       }
-      if (file.size > 4 * 1024 * 1024) {
-        setError('El archivo no puede superar 4MB. Usá "Link PDF" para archivos más grandes.');
+      if (file.size > 30 * 1024 * 1024) {
+        setError('El archivo no puede superar 30MB');
         return;
       }
       setPdfFile(file);
@@ -35,13 +36,22 @@ export default function SimulatorForm() {
     }
   };
 
-  const fileToBase64 = (file: File): Promise<string> => {
-    return new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.readAsDataURL(file);
-      reader.onload = () => resolve(reader.result as string);
-      reader.onerror = error => reject(error);
+  const uploadPdf = async (file: File): Promise<string> => {
+    const formData = new FormData();
+    formData.append('file', file);
+
+    const response = await fetch('/api/upload', {
+      method: 'POST',
+      body: formData,
     });
+
+    if (!response.ok) {
+      const data = await response.json();
+      throw new Error(data.error || 'Error al subir el PDF');
+    }
+
+    const data = await response.json();
+    return data.url;
   };
 
   const handleSubmit = async (e: React.FormEvent) => {
@@ -64,28 +74,28 @@ export default function SimulatorForm() {
       const body: {
         websiteUrl: string;
         pdfUrl?: string;
-        pdfBase64?: string;
       } = { websiteUrl: url };
 
+      // Handle PDF upload if file selected
       if (pdfTab === 'url' && pdfUrl) {
         body.pdfUrl = pdfUrl;
       } else if (pdfTab === 'upload' && pdfFile) {
-        body.pdfBase64 = await fileToBase64(pdfFile);
+        setLoadingMessage('Subiendo catálogo...');
+        const uploadedUrl = await uploadPdf(pdfFile);
+        body.pdfUrl = uploadedUrl;
       }
 
       // Create session
+      setLoadingMessage('Analizando sitio web...');
       const response = await fetch('/api/simulator/create', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body),
       });
 
-      // Handle non-JSON responses (e.g., Vercel body size limit)
+      // Handle non-JSON responses
       const contentType = response.headers.get('content-type');
       if (!contentType?.includes('application/json')) {
-        if (response.status === 413) {
-          throw new Error('El archivo es muy grande. Usá "Link PDF" o un archivo más pequeño.');
-        }
         throw new Error('Error del servidor. Intentá de nuevo.');
       }
 
@@ -101,6 +111,7 @@ export default function SimulatorForm() {
       setError(err instanceof Error ? err.message : 'Error inesperado');
     } finally {
       setLoading(false);
+      setLoadingMessage('');
     }
   };
 
@@ -172,7 +183,7 @@ export default function SimulatorForm() {
                   ) : (
                     <div className="text-sm text-muted-foreground">
                       <p>Hacé clic para subir un PDF</p>
-                      <p className="text-xs">Máximo 4MB</p>
+                      <p className="text-xs">Máximo 30MB</p>
                     </div>
                   )}
                 </div>
@@ -215,7 +226,7 @@ export default function SimulatorForm() {
                     d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
                   />
                 </svg>
-                Generando agente...
+                {loadingMessage || 'Generando agente...'}
               </span>
             ) : (
               'Generar Mi Agente IA'

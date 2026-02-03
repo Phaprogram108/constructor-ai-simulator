@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { scrapeWebsite } from '@/lib/scraper';
-import { extractPdfFromUrl, extractPdfFromBase64, formatPdfContent } from '@/lib/pdf-extractor';
+import { extractPdfFromUrl, formatPdfContent } from '@/lib/pdf-extractor';
 import { generateSystemPrompt, getWelcomeMessage } from '@/lib/prompt-generator';
 import { createSession, addMessage } from '@/lib/session-manager';
 import { checkRateLimit, getClientIdentifier } from '@/lib/rate-limiter';
@@ -21,7 +21,7 @@ export async function POST(request: NextRequest) {
     }
 
     const body: CreateSessionRequest = await request.json();
-    const { websiteUrl, pdfUrl, pdfBase64 } = body;
+    const { websiteUrl, pdfUrl } = body;
 
     // Validate URL
     if (!websiteUrl) {
@@ -50,9 +50,6 @@ export async function POST(request: NextRequest) {
     if (pdfUrl) {
       console.log('Extracting PDF from URL:', pdfUrl);
       pdfContent = await extractPdfFromUrl(pdfUrl);
-    } else if (pdfBase64) {
-      console.log('Extracting PDF from base64');
-      pdfContent = await extractPdfFromBase64(pdfBase64);
     }
 
     const formattedPdfContent = formatPdfContent(pdfContent);

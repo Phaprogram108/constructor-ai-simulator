@@ -66,8 +66,8 @@ export async function scrapeWebsite(url: string): Promise<ScrapedContent> {
       whatsapp: /(?:whatsapp|wa\.me)[:\s/]*(\+?\d[\d\s-]{8,})/gi,
     };
 
-    const phones = bodyText.match(contactPatterns.phone) || [];
-    const emails = bodyText.match(contactPatterns.email) || [];
+    const phones: string[] = bodyText.match(contactPatterns.phone) || [];
+    const emails: string[] = bodyText.match(contactPatterns.email) || [];
     const allContacts = phones.concat(emails);
     const uniqueContacts = allContacts.filter((v, i, a) => a.indexOf(v) === i);
     const contactInfo = uniqueContacts.slice(0, 5).join(', ');

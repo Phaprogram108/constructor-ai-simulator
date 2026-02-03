@@ -26,8 +26,8 @@ export default function SimulatorForm() {
         setError('Solo se permiten archivos PDF');
         return;
       }
-      if (file.size > 10 * 1024 * 1024) {
-        setError('El archivo no puede superar 10MB');
+      if (file.size > 4 * 1024 * 1024) {
+        setError('El archivo no puede superar 4MB. Usá "Link PDF" para archivos más grandes.');
         return;
       }
       setPdfFile(file);
@@ -79,6 +79,15 @@ export default function SimulatorForm() {
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body),
       });
+
+      // Handle non-JSON responses (e.g., Vercel body size limit)
+      const contentType = response.headers.get('content-type');
+      if (!contentType?.includes('application/json')) {
+        if (response.status === 413) {
+          throw new Error('El archivo es muy grande. Usá "Link PDF" o un archivo más pequeño.');
+        }
+        throw new Error('Error del servidor. Intentá de nuevo.');
+      }
 
       const data = await response.json();
 
@@ -163,7 +172,7 @@ export default function SimulatorForm() {
                   ) : (
                     <div className="text-sm text-muted-foreground">
                       <p>Hacé clic para subir un PDF</p>
-                      <p className="text-xs">Máximo 10MB</p>
+                      <p className="text-xs">Máximo 4MB</p>
                     </div>
                   )}
                 </div>

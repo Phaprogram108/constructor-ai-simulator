@@ -1,48 +1,36 @@
-import { put } from '@vercel/blob';
-import { NextRequest, NextResponse } from 'next/server';
+import { handleUpload, type HandleUploadBody } from '@vercel/blob/client';
+import { NextResponse } from 'next/server';
 
-export async function POST(request: NextRequest): Promise<NextResponse> {
+export async function POST(request: Request): Promise<NextResponse> {
+  const body = (await request.json()) as HandleUploadBody;
+
   try {
-    const formData = await request.formData();
-    const file = formData.get('file') as File | null;
+    const jsonResponse = await handleUpload({
+      body,
+      request,
+      onBeforeGenerateToken: async (pathname) => {
+        // Validate that it's a PDF upload in the catalogs folder
+        if (!pathname.startsWith('catalogs/')) {
+          throw new Error('Invalid upload path');
+        }
 
-    if (!file) {
-      return NextResponse.json(
-        { error: 'No se proporcionó archivo' },
-        { status: 400 }
-      );
-    }
-
-    // Validate file type
-    if (file.type !== 'application/pdf') {
-      return NextResponse.json(
-        { error: 'Solo se permiten archivos PDF' },
-        { status: 400 }
-      );
-    }
-
-    // Validate file size (30 MB max)
-    const maxSize = 30 * 1024 * 1024;
-    if (file.size > maxSize) {
-      return NextResponse.json(
-        { error: 'El archivo no puede superar 30MB' },
-        { status: 400 }
-      );
-    }
-
-    // Upload to Vercel Blob
-    const blob = await put(`catalogs/${Date.now()}-${file.name}`, file, {
-      access: 'public',
-      addRandomSuffix: true,
+        return {
+          allowedContentTypes: ['application/pdf'],
+          maximumSizeInBytes: 30 * 1024 * 1024, // 30MB
+          addRandomSuffix: true,
+        };
+      },
+      onUploadCompleted: async ({ blob }) => {
+        console.log('PDF upload completed:', blob.url);
+      },
     });
 
-    return NextResponse.json({ url: blob.url });
+    return NextResponse.json(jsonResponse);
   } catch (error) {
     console.error('Upload error:', error);
     return NextResponse.json(
-      { error: 'Error al subir el archivo' },
-      { status: 500 }
+      { error: (error as Error).message || 'Error al subir el archivo' },
+      { status: 400 }
     );
   }
 }
-

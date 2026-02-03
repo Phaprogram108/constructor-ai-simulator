@@ -1,7 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { scrapeWebsite } from '@/lib/scraper';
 import { extractPdfFromUrl, formatPdfContent } from '@/lib/pdf-extractor';
-import { generateSystemPrompt, getWelcomeMessage } from '@/lib/prompt-generator';
+import { generateSystemPromptWithClaude, getWelcomeMessage } from '@/lib/prompt-generator';
 import { createSession, addMessage } from '@/lib/session-manager';
 import { checkRateLimit, getClientIdentifier } from '@/lib/rate-limiter';
 import { CreateSessionRequest } from '@/types';
@@ -54,8 +54,8 @@ export async function POST(request: NextRequest) {
 
     const formattedPdfContent = formatPdfContent(pdfContent);
 
-    // Generate system prompt
-    const systemPrompt = generateSystemPrompt({
+    // Generate system prompt using Claude AI
+    const systemPrompt = await generateSystemPromptWithClaude({
       scrapedContent,
       pdfContent: formattedPdfContent,
     });

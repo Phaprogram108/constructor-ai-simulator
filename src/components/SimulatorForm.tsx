@@ -2,6 +2,7 @@
 
 import { useState, useRef } from 'react';
 import { useRouter } from 'next/navigation';
+import { upload } from '@vercel/blob/client';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
@@ -37,21 +38,13 @@ export default function SimulatorForm() {
   };
 
   const uploadPdf = async (file: File): Promise<string> => {
-    const formData = new FormData();
-    formData.append('file', file);
-
-    const response = await fetch('/api/upload', {
-      method: 'POST',
-      body: formData,
+    // Client-side upload directly to Vercel Blob
+    const blob = await upload(`catalogs/${Date.now()}-${file.name}`, file, {
+      access: 'public',
+      handleUploadUrl: '/api/upload',
     });
 
-    if (!response.ok) {
-      const data = await response.json();
-      throw new Error(data.error || 'Error al subir el PDF');
-    }
-
-    const data = await response.json();
-    return data.url;
+    return blob.url;
   };
 
   const handleSubmit = async (e: React.FormEvent) => {

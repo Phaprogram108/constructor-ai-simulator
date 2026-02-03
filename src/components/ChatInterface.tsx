@@ -85,7 +85,22 @@ export default function ChatInterface({
         timestamp: new Date(),
       };
       setMessages(prev => [...prev, assistantMessage]);
-      setMessagesRemaining(data.messagesRemaining);
+
+      // Decrement messages locally and persist to localStorage
+      const newMessagesRemaining = messagesRemaining - 1;
+      setMessagesRemaining(newMessagesRemaining);
+
+      // Update localStorage with new count
+      const storedSession = localStorage.getItem(`session-${sessionId}`);
+      if (storedSession) {
+        try {
+          const sessionData = JSON.parse(storedSession);
+          sessionData.session.messagesRemaining = newMessagesRemaining;
+          localStorage.setItem(`session-${sessionId}`, JSON.stringify(sessionData));
+        } catch {
+          // Ignore localStorage errors
+        }
+      }
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Error inesperado');
       // Remove optimistic message on error

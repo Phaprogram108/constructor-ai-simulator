@@ -26,6 +26,16 @@ export default function ChatInterface({
   const [messagesRemaining, setMessagesRemaining] = useState(initialSession.messagesRemaining);
   const [error, setError] = useState('');
 
+  // Debug logging
+  console.log('[ChatInterface] Initialized with:', {
+    sessionId,
+    companyName: initialSession.companyName,
+    messagesRemaining: initialSession.messagesRemaining,
+    messagesCount: initialMessages.length,
+    systemPromptLength: systemPrompt?.length,
+    firstMessage: initialMessages[0]?.content?.slice(0, 100),
+  });
+
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const textareaRef = useRef<HTMLTextAreaElement>(null);
 

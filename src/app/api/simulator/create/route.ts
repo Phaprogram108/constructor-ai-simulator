@@ -42,29 +42,41 @@ export async function POST(request: NextRequest) {
     }
 
     // Scrape website
-    console.log('Scraping website:', websiteUrl);
+    console.log('[Create] Scraping website:', websiteUrl);
     const scrapedContent = await scrapeWebsite(websiteUrl);
+    console.log('[Create] Scraped title:', scrapedContent.title);
+    console.log('[Create] Scraped description:', scrapedContent.description?.slice(0, 100));
 
     // Extract PDF content if provided
     let pdfContent = '';
     if (pdfUrl) {
-      console.log('Extracting PDF from URL:', pdfUrl);
-      pdfContent = await extractPdfFromUrl(pdfUrl);
+      console.log('[Create] Extracting PDF from URL:', pdfUrl);
+      try {
+        pdfContent = await extractPdfFromUrl(pdfUrl);
+        console.log('[Create] PDF content length:', pdfContent.length);
+      } catch (pdfError) {
+        console.error('[Create] PDF extraction failed:', pdfError);
+        // Continue without PDF - don't fail the whole request
+      }
     }
 
     const formattedPdfContent = formatPdfContent(pdfContent);
 
     // Generate system prompt using Claude AI
+    console.log('[Create] Generating system prompt with Claude...');
     const systemPrompt = await generateSystemPromptWithClaude({
       scrapedContent,
       pdfContent: formattedPdfContent,
     });
+    console.log('[Create] System prompt length:', systemPrompt.length);
 
     // Create session
     const session = createSession(scrapedContent.title, systemPrompt);
 
     // Add welcome message
     const welcomeMessage = getWelcomeMessage(scrapedContent.title);
+    console.log('[Create] Welcome message:', welcomeMessage);
+
     addMessage(session.id, {
       id: uuidv4(),
       role: 'assistant',
@@ -72,7 +84,9 @@ export async function POST(request: NextRequest) {
       timestamp: new Date(),
     });
 
-    console.log('Session created:', session.id, 'Company:', scrapedContent.title);
+    console.log('[Create] Session created:', session.id);
+    console.log('[Create] Company name:', scrapedContent.title);
+    console.log('[Create] Max messages:', session.maxMessages);
 
     return NextResponse.json({
       sessionId: session.id,

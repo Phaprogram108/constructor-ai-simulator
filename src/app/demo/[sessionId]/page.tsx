@@ -24,15 +24,25 @@ export default function DemoPage({
     if (storedSession) {
       try {
         const data = JSON.parse(storedSession);
+        console.log('[DemoPage] Loaded session from localStorage:', {
+          sessionId: data.session?.id,
+          companyName: data.session?.companyName,
+          messagesRemaining: data.session?.messagesRemaining,
+          messagesCount: data.messages?.length,
+          systemPromptLength: data.systemPrompt?.length,
+          firstMessage: data.messages?.[0]?.content?.slice(0, 100),
+        });
         setSession(data.session);
         setMessages(data.messages || []);
         setSystemPrompt(data.systemPrompt || '');
         setLoading(false);
-      } catch {
+      } catch (e) {
+        console.error('[DemoPage] Error parsing session:', e);
         setError('Error al cargar la sesión');
         setLoading(false);
       }
     } else {
+      console.log('[DemoPage] No session found in localStorage for:', params.sessionId);
       setError('Sesión no encontrada o expirada. Creá una nueva.');
       setLoading(false);
     }

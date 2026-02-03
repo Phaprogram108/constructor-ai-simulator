@@ -69,13 +69,21 @@ export default function SimulatorForm() {
         pdfUrl?: string;
       } = { websiteUrl: url };
 
-      // Handle PDF upload if file selected
+      // Handle PDF - URL only for now (upload has issues with large files)
       if (pdfTab === 'url' && pdfUrl) {
         body.pdfUrl = pdfUrl;
       } else if (pdfTab === 'upload' && pdfFile) {
         setLoadingMessage('Subiendo catálogo...');
-        const uploadedUrl = await uploadPdf(pdfFile);
-        body.pdfUrl = uploadedUrl;
+        try {
+          const uploadedUrl = await uploadPdf(pdfFile);
+          body.pdfUrl = uploadedUrl;
+        } catch (uploadError) {
+          console.error('PDF upload error:', uploadError);
+          // Continue without PDF - show warning but don't fail
+          setError('No se pudo subir el PDF. Continuando sin catálogo...');
+          await new Promise(resolve => setTimeout(resolve, 2000)); // Show warning briefly
+          setError('');
+        }
       }
 
       // Create session
@@ -99,10 +107,10 @@ export default function SimulatorForm() {
       }
 
       // Store session data in localStorage for the demo page
-      localStorage.setItem(`session-${data.sessionId}`, JSON.stringify({
+      const sessionData = {
         session: {
           id: data.sessionId,
-          companyName: data.companyName,
+          companyName: data.companyName || 'Constructora',
           messagesRemaining: data.messagesRemaining || 50,
           expiresAt: new Date(Date.now() + 30 * 60 * 1000),
         },
@@ -113,7 +121,17 @@ export default function SimulatorForm() {
           timestamp: new Date(),
         }] : [],
         systemPrompt: data.systemPrompt,
-      }));
+      };
+
+      console.log('[SimulatorForm] Saving session data:', {
+        sessionId: data.sessionId,
+        companyName: data.companyName,
+        messagesRemaining: data.messagesRemaining,
+        welcomeMessage: data.welcomeMessage?.slice(0, 100),
+        systemPromptLength: data.systemPrompt?.length,
+      });
+
+      localStorage.setItem(`session-${data.sessionId}`, JSON.stringify(sessionData));
 
       // Redirect to chat
       router.push(`/demo/${data.sessionId}`);

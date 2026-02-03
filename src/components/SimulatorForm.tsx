@@ -179,6 +179,19 @@ export default function SimulatorForm() {
                       <p className="text-muted-foreground">
                         {(pdfFile.size / 1024 / 1024).toFixed(2)} MB
                       </p>
+                      <button
+                        type="button"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          setPdfFile(null);
+                          if (fileInputRef.current) {
+                            fileInputRef.current.value = '';
+                          }
+                        }}
+                        className="mt-2 text-xs text-red-500 hover:text-red-700 underline"
+                      >
+                        Quitar archivo
+                      </button>
                     </div>
                   ) : (
                     <div className="text-sm text-muted-foreground">

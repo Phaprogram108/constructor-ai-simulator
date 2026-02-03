@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { scrapeWebsite } from '@/lib/scraper';
-import { extractPdfFromUrl, analyzePdfWithAI, ExtractedCatalog } from '@/lib/pdf-extractor';
+import { analyzePdfWithVision, ExtractedCatalog } from '@/lib/pdf-extractor';
 import { generateSystemPromptWithCatalog, getWelcomeMessage } from '@/lib/prompt-generator';
 import { createSession, addMessage } from '@/lib/session-manager';
 import { checkRateLimit, getClientIdentifier } from '@/lib/rate-limiter';
@@ -50,29 +50,27 @@ export async function POST(request: NextRequest) {
       servicesCount: scrapedContent.services.length,
     });
 
-    // Extract and analyze PDF if provided
+    // Extract and analyze PDF if provided - using Vision for image-based PDFs
     let catalog: ExtractedCatalog | undefined;
     if (pdfUrl) {
-      console.log('[Create] Processing PDF:', pdfUrl);
+      console.log('[Create] Processing PDF with Vision:', pdfUrl);
 
-      const pdfText = await extractPdfFromUrl(pdfUrl);
-      console.log('[Create] PDF text extracted, length:', pdfText.length);
+      // Use the new vision-based analysis that works with image PDFs
+      catalog = await analyzePdfWithVision(pdfUrl);
 
-      if (pdfText && pdfText.length > 50) {
-        // Analyze PDF with AI to extract structured data
-        catalog = await analyzePdfWithAI(pdfText);
-        console.log('[Create] PDF analyzed:', {
-          modelsCount: catalog.models.length,
-          pricesCount: catalog.prices.length,
-          featuresCount: catalog.features.length,
-        });
+      console.log('[Create] PDF Vision analysis complete:', {
+        modelsCount: catalog.models.length,
+        pricesCount: catalog.prices.length,
+        featuresCount: catalog.features.length,
+        hasRawText: !!catalog.rawText,
+      });
 
-        // Log model names for debugging
-        if (catalog.models.length > 0) {
-          console.log('[Create] Models found:', catalog.models.map(m => m.name));
-        }
+      // Log model names for debugging
+      if (catalog.models.length > 0) {
+        console.log('[Create] Models found:', catalog.models.map(m => m.name));
+        console.log('[Create] First model details:', JSON.stringify(catalog.models[0], null, 2));
       } else {
-        console.log('[Create] PDF text too short or empty');
+        console.log('[Create] WARNING: No models extracted from PDF!');
       }
     }
 

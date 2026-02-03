@@ -3,7 +3,6 @@
 import { useState, useRef, useEffect } from 'react';
 import { Button } from '@/components/ui/button';
 import { Textarea } from '@/components/ui/textarea';
-import { Badge } from '@/components/ui/badge';
 import Message, { TypingIndicator } from '@/components/Message';
 import { Message as MessageType, SessionInfo } from '@/types';
 
@@ -135,8 +134,6 @@ export default function ChatInterface({
     }
   };
 
-  const isLowMessages = messagesRemaining <= 10;
-
   return (
     <div className="flex flex-col h-screen max-h-screen bg-white">
       {/* Header */}
@@ -150,9 +147,15 @@ export default function ChatInterface({
             <p className="text-xs text-gray-500">{initialSession.companyName}</p>
           </div>
         </div>
-        <Badge variant={isLowMessages ? 'destructive' : 'secondary'}>
-          {messagesRemaining} mensajes
-        </Badge>
+        {/* CTA button instead of message counter */}
+        <a
+          href={WHATSAPP_URL}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-xs bg-green-500 hover:bg-green-600 text-white px-3 py-1.5 rounded-full transition-colors"
+        >
+          Implementar
+        </a>
       </header>
 
       {/* CTA Banner */}

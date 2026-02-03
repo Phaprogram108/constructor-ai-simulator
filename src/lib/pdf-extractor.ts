@@ -26,6 +26,9 @@ export interface CatalogModel {
   features?: string[];
 }
 
+/**
+ * Extrae texto de un PDF usando pdf-parse (solo funciona con PDFs basados en texto)
+ */
 export async function extractPdfFromUrl(pdfUrl: string): Promise<string> {
   try {
     console.log('[PDF] Fetching from URL:', pdfUrl);
@@ -41,6 +44,27 @@ export async function extractPdfFromUrl(pdfUrl: string): Promise<string> {
   } catch (error) {
     console.error('[PDF] URL extraction error:', error);
     return '';
+  }
+}
+
+/**
+ * Descarga el PDF y lo convierte a base64 para usar con Claude Vision
+ */
+export async function fetchPdfAsBase64(pdfUrl: string): Promise<string | null> {
+  try {
+    console.log('[PDF] Fetching PDF for vision analysis:', pdfUrl);
+    const response = await fetch(pdfUrl);
+    if (!response.ok) {
+      throw new Error(`Failed to fetch PDF: ${response.status}`);
+    }
+
+    const arrayBuffer = await response.arrayBuffer();
+    const base64 = Buffer.from(arrayBuffer).toString('base64');
+    console.log('[PDF] PDF converted to base64, length:', base64.length);
+    return base64;
+  } catch (error) {
+    console.error('[PDF] Error fetching PDF for vision:', error);
+    return null;
   }
 }
 
@@ -155,6 +179,152 @@ IMPORTANTE:
     console.error('[PDF] AI analysis error:', error);
     return {
       rawText: pdfText,
+      models: [],
+      prices: [],
+      features: [],
+      specifications: [],
+    };
+  }
+}
+
+/**
+ * NUEVO: Analiza el PDF directamente con Claude Vision (funciona con PDFs de imagen)
+ * Esta es la función principal que debe usarse para catálogos de constructoras
+ */
+export async function analyzePdfWithVision(pdfUrl: string): Promise<ExtractedCatalog> {
+  console.log('[PDF Vision] Starting analysis for:', pdfUrl);
+
+  try {
+    // Fetch the PDF as base64
+    const pdfBase64 = await fetchPdfAsBase64(pdfUrl);
+
+    if (!pdfBase64) {
+      console.error('[PDF Vision] Failed to fetch PDF');
+      return {
+        rawText: '',
+        models: [],
+        prices: [],
+        features: [],
+        specifications: [],
+      };
+    }
+
+    console.log('[PDF Vision] Sending to Claude for document analysis...');
+
+    // Use Claude's document understanding capability
+    const response = await anthropic.messages.create({
+      model: 'claude-sonnet-4-20250514',
+      max_tokens: 4000,
+      messages: [
+        {
+          role: 'user',
+          content: [
+            {
+              type: 'document',
+              source: {
+                type: 'base64',
+                media_type: 'application/pdf',
+                data: pdfBase64,
+              },
+            },
+            {
+              type: 'text',
+              text: `Sos un experto en análisis de catálogos de constructoras de viviendas.
+
+TAREA: Analiza este catálogo/brochure de una constructora y extrae ABSOLUTAMENTE TODA la información de modelos de viviendas que encuentres.
+
+BUSCA ESPECÍFICAMENTE:
+1. Nombres de modelos de casas (ej: "Modelo Aurora", "Casa Premium", "Vivienda Familiar")
+2. Superficies en metros cuadrados (m²)
+3. Cantidad de dormitorios y baños
+4. Precios (en pesos, dólares, o cualquier moneda)
+5. Características incluidas (pileta, quincho, galería, cochera, etc.)
+6. Materiales de construcción (steel frame, tradicional, etc.)
+7. Tiempos de entrega
+8. Cualquier especificación técnica
+
+RESPONDE ÚNICAMENTE con un JSON válido en este formato exacto:
+{
+  "models": [
+    {
+      "name": "nombre exacto del modelo",
+      "description": "descripción breve",
+      "sqMeters": "superficie en m²",
+      "bedrooms": "cantidad de dormitorios",
+      "bathrooms": "cantidad de baños",
+      "price": "precio completo como aparece",
+      "features": ["característica 1", "característica 2"]
+    }
+  ],
+  "prices": ["lista de todos los precios mencionados con contexto"],
+  "features": ["características generales del sistema constructivo"],
+  "specifications": ["especificaciones técnicas encontradas"],
+  "rawTextExtracted": "resumen del contenido principal del catálogo"
+}
+
+REGLAS CRÍTICAS:
+- Incluí TODOS los modelos que veas, aunque tengas que leer varias páginas
+- Los nombres deben ser EXACTAMENTE como aparecen en el catálogo
+- Si hay precios, incluí el valor completo (ej: "USD 45.000", "$8.500.000")
+- Si algo no está disponible, usá null o array vacío
+- NO inventes información que no esté en el documento`,
+            },
+          ],
+        },
+      ],
+    });
+
+    const responseText = response.content
+      .filter((block): block is Anthropic.TextBlock => block.type === 'text')
+      .map(block => block.text)
+      .join('');
+
+    console.log('[PDF Vision] Claude response length:', responseText.length);
+    console.log('[PDF Vision] Response preview:', responseText.slice(0, 500));
+
+    // Parse JSON response
+    const jsonMatch = responseText.match(/\{[\s\S]*\}/);
+    if (!jsonMatch) {
+      console.error('[PDF Vision] No JSON found in response');
+      throw new Error('No JSON found in Claude response');
+    }
+
+    const extracted = JSON.parse(jsonMatch[0]);
+
+    console.log('[PDF Vision] Successfully extracted:', {
+      modelsCount: extracted.models?.length || 0,
+      pricesCount: extracted.prices?.length || 0,
+      featuresCount: extracted.features?.length || 0,
+    });
+
+    // Log model names for verification
+    if (extracted.models?.length > 0) {
+      console.log('[PDF Vision] Models found:', extracted.models.map((m: CatalogModel) => m.name));
+    }
+
+    return {
+      rawText: extracted.rawTextExtracted || '',
+      models: Array.isArray(extracted.models) ? extracted.models : [],
+      prices: Array.isArray(extracted.prices) ? extracted.prices : [],
+      features: Array.isArray(extracted.features) ? extracted.features : [],
+      specifications: Array.isArray(extracted.specifications) ? extracted.specifications : [],
+    };
+  } catch (error) {
+    console.error('[PDF Vision] Analysis error:', error);
+
+    // Fallback: try text-based extraction
+    console.log('[PDF Vision] Falling back to text-based extraction...');
+    try {
+      const textContent = await extractPdfFromUrl(pdfUrl);
+      if (textContent && textContent.length > 100) {
+        return await analyzePdfWithAI(textContent);
+      }
+    } catch (fallbackError) {
+      console.error('[PDF Vision] Fallback also failed:', fallbackError);
+    }
+
+    return {
+      rawText: '',
       models: [],
       prices: [],
       features: [],

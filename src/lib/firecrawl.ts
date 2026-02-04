@@ -2,6 +2,100 @@ import Firecrawl from '@mendable/firecrawl-js';
 import { z } from 'zod';
 import { ScrapedContent } from '@/types';
 
+// Actions universales que funcionan en la mayoría de sitios web
+const UNIVERSAL_ACTIONS = [
+  // 1. Esperar carga inicial
+  { type: 'wait' as const, milliseconds: 2000 },
+
+  // 2. Scroll completo para cargar lazy content
+  { type: 'scroll' as const, direction: 'down' as const },
+  { type: 'wait' as const, milliseconds: 1000 },
+  { type: 'scroll' as const, direction: 'down' as const },
+  { type: 'wait' as const, milliseconds: 500 },
+
+  // 3. Expandir FAQs y Accordions (selectores genéricos)
+  { type: 'click' as const, selector: '[class*="faq"] [class*="question"]' },
+  { type: 'click' as const, selector: '[class*="faq"] [class*="title"]' },
+  { type: 'click' as const, selector: '[class*="accordion"] [class*="header"]' },
+  { type: 'click' as const, selector: '[class*="accordion"] [class*="title"]' },
+  { type: 'click' as const, selector: '[class*="accordion-item"]' },
+  { type: 'click' as const, selector: '[class*="collapsible"]' },
+  { type: 'click' as const, selector: '[class*="expandable"]' },
+  { type: 'click' as const, selector: '[class*="toggle"]' },
+  { type: 'click' as const, selector: 'details summary' },
+  { type: 'click' as const, selector: '[data-toggle="collapse"]' },
+  { type: 'click' as const, selector: '[aria-expanded="false"]' },
+  { type: 'wait' as const, milliseconds: 1000 },
+
+  // 4. Click en elementos de contacto/WhatsApp para revelar números
+  { type: 'click' as const, selector: '[href*="whatsapp"]' },
+  { type: 'click' as const, selector: '[href*="wa.me"]' },
+  { type: 'click' as const, selector: '[class*="whatsapp"]' },
+  { type: 'click' as const, selector: '[class*="contact"] button' },
+  { type: 'click' as const, selector: '[class*="phone"]' },
+  { type: 'click' as const, selector: '[class*="telefono"]' },
+  { type: 'wait' as const, milliseconds: 500 },
+
+  // 5. Expandir "Ver más" / "Load more" / "Mostrar más"
+  { type: 'click' as const, selector: '[class*="ver-mas"]' },
+  { type: 'click' as const, selector: '[class*="see-more"]' },
+  { type: 'click' as const, selector: '[class*="load-more"]' },
+  { type: 'click' as const, selector: '[class*="show-more"]' },
+  { type: 'click' as const, selector: '[class*="read-more"]' },
+  { type: 'click' as const, selector: '[class*="leer-mas"]' },
+  { type: 'wait' as const, milliseconds: 500 },
+
+  // 6. Click en tabs de especificaciones/detalles
+  { type: 'click' as const, selector: '[class*="tab"][class*="spec"]' },
+  { type: 'click' as const, selector: '[class*="tab"][class*="detail"]' },
+  { type: 'click' as const, selector: '[class*="tab"][class*="tecnic"]' },
+  { type: 'click' as const, selector: '[role="tab"]' },
+  { type: 'wait' as const, milliseconds: 500 },
+];
+
+// Prompt para el Agent de Firecrawl (usado como fallback)
+const AGENT_EXTRACTION_PROMPT = `Sos un experto extrayendo información de sitios web de empresas constructoras de casas prefabricadas/modulares.
+
+EXTRAE TODA la siguiente información del sitio web:
+
+1. MODELOS DE CASAS/VIVIENDAS:
+   - Nombre exacto de cada modelo (ej: "W26 Suite", "Fitz Roy", "Casa Sara")
+   - Metros cuadrados (m²) de cada modelo
+   - Cantidad de dormitorios
+   - Cantidad de baños
+   - Precio si está disponible (en USD o pesos)
+   - Características especiales
+
+2. INFORMACIÓN DE CONTACTO:
+   - Número de WhatsApp (IMPORTANTE: hace click en botones de WhatsApp para obtener el número real)
+   - Teléfono fijo
+   - Email de contacto
+   - Dirección física
+
+3. PREGUNTAS FRECUENTES (FAQ):
+   - EXPANDE todas las preguntas del FAQ
+   - Extrae cada pregunta con su respuesta completa
+   - Busca información sobre cobertura geográfica ("¿Llegan a todo el país?")
+   - Busca información sobre tiempos de entrega
+   - Busca información sobre formas de pago/financiación
+
+4. ESPECIFICACIONES TÉCNICAS:
+   - Método constructivo (steel frame, hormigón, etc.)
+   - Materiales (DVH, tipo de aislación, etc.)
+   - Dimensiones exactas si hay tablas de especificaciones
+   - Garantías
+
+5. COBERTURA GEOGRÁFICA:
+   - ¿A qué provincias/zonas llegan?
+   - ¿Hacen envíos a todo el país?
+   - Zonas de instalación
+
+IMPORTANTE:
+- Navega por todas las secciones del sitio
+- Expande todos los elementos colapsables (FAQs, accordions)
+- Hace click en botones de contacto para revelar números
+- No inventes información, solo extrae lo que está visible`;
+
 // Inicialización lazy para evitar errores durante el build
 let firecrawlInstance: Firecrawl | null = null;
 
@@ -229,6 +323,117 @@ function extractFAQContent(markdown: string): { question: string; answer: string
   return faqs;
 }
 
+/**
+ * Usa el Agent de Firecrawl para extracción autónoma
+ * Se usa como fallback cuando el scraping normal no extrae suficiente info
+ */
+async function scrapeWithAgent(url: string): Promise<{
+  models: ExtractedModel[];
+  contactInfo: ContactInfo;
+  faqs: { question: string; answer: string }[];
+  rawText: string;
+}> {
+  console.log('[Firecrawl Agent] Iniciando extracción autónoma para:', url);
+
+  try {
+    const firecrawl = getFirecrawl();
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    const result = await (firecrawl as any).agent({
+      prompt: AGENT_EXTRACTION_PROMPT,
+      urls: [url],
+    });
+
+    console.log('[Firecrawl Agent] Resultado:', JSON.stringify(result, null, 2));
+
+    // Parsear resultado del agent
+    // El agent retorna datos estructurados que necesitamos convertir
+    const agentData = result.data || result;
+
+    return {
+      models: parseAgentModels(agentData),
+      contactInfo: parseAgentContact(agentData),
+      faqs: parseAgentFAQs(agentData),
+      rawText: typeof agentData === 'string' ? agentData : JSON.stringify(agentData, null, 2)
+    };
+  } catch (error) {
+    console.error('[Firecrawl Agent] Error:', error);
+    return {
+      models: [],
+      contactInfo: {},
+      faqs: [],
+      rawText: ''
+    };
+  }
+}
+
+// Helpers para parsear respuesta del Agent
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function parseAgentModels(data: any): ExtractedModel[] {
+  if (!data) return [];
+
+  const models: ExtractedModel[] = [];
+
+  // Intentar extraer modelos de diferentes estructuras posibles
+  const modelSources = [
+    data.models,
+    data.modelos,
+    data.casas,
+    data.viviendas,
+    data.productos
+  ].filter(Boolean).flat();
+
+  for (const item of modelSources) {
+    if (typeof item === 'object' && (item.name || item.nombre)) {
+      models.push({
+        name: item.name || item.nombre,
+        squareMeters: item.squareMeters || item.metros || item.m2 || item.superficie,
+        bedrooms: item.bedrooms || item.dormitorios || item.habitaciones,
+        bathrooms: item.bathrooms || item.banos || item.baños,
+        price: item.price || item.precio,
+        features: item.features || item.caracteristicas,
+        category: 'casa'
+      });
+    }
+  }
+
+  return models;
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function parseAgentContact(data: any): ContactInfo {
+  if (!data) return {};
+
+  const contact: ContactInfo = {};
+
+  // Buscar en diferentes estructuras posibles
+  const contactData = data.contact || data.contacto || data.contactInfo || data;
+
+  contact.whatsapp = contactData.whatsapp || contactData.whatsApp || contactData.wsp;
+  contact.phone = contactData.phone || contactData.telefono || contactData.tel;
+  contact.email = contactData.email || contactData.correo || contactData.mail;
+  contact.address = contactData.address || contactData.direccion;
+
+  return contact;
+}
+
+// eslint-disable-next-line @typescript-eslint/no-explicit-any
+function parseAgentFAQs(data: any): { question: string; answer: string }[] {
+  if (!data) return [];
+
+  const faqSources = [
+    data.faqs,
+    data.faq,
+    data.preguntas,
+    data.preguntasFrecuentes
+  ].filter(Boolean).flat();
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  return faqSources.map((item: any) => ({
+    question: item.question || item.pregunta || item.q || '',
+    answer: item.answer || item.respuesta || item.a || ''
+  })).filter((f: { question: string; answer: string }) => f.question && f.answer);
+}
+
 export async function scrapeWithFirecrawl(
   url: string,
   options: ScrapeOptions = { exhaustive: true }
@@ -408,13 +613,15 @@ export async function scrapeWithFirecrawl(
       const batchStartTime = Date.now();
       console.log(`[Firecrawl] Processing batch ${batchIndex + 1}/${batches.length} (${batch.length} URLs)...`);
 
-      // Scrapear URLs del batch en paralelo - SOLO MARKDOWN (sin extract AI que inventa datos)
+      // Scrapear URLs del batch en paralelo - SOLO MARKDOWN con ACTIONS para expandir contenido
       const results = await Promise.all(
         batch.map(async (catalogUrl) => {
           try {
             console.log('[Firecrawl] Scraping catalog:', catalogUrl);
             const result = await getFirecrawl().scrapeUrl(catalogUrl, {
-              formats: ['markdown'] // Solo markdown, sin extract para evitar datos inventados
+              formats: ['markdown'], // Solo markdown, sin extract para evitar datos inventados
+              actions: UNIVERSAL_ACTIONS,
+              timeout: 60000 // Aumentar timeout por las actions
             });
             return { catalogUrl, result, error: null };
           } catch (error) {
@@ -660,9 +867,55 @@ export async function scrapeWithFirecrawl(
   console.log('[Firecrawl] Models:', allModels.map(m => m.name));
 
   // Extraer FAQs del markdown acumulado
-  const combinedMarkdown = allMarkdown.join('');
-  const faqs = extractFAQContent(combinedMarkdown);
+  let combinedMarkdown = allMarkdown.join('');
+  let faqs = extractFAQContent(combinedMarkdown);
   console.log('[Firecrawl] FAQs extracted:', faqs.length);
+
+  // FALLBACK: Si extrajimos muy poca información, usar Agent
+  const needsAgentFallback =
+    allModels.length < 2 ||
+    (!contactInfo.whatsapp && !contactInfo.phone) ||
+    faqs.length === 0;
+
+  if (needsAgentFallback) {
+    console.log('[Firecrawl] Información insuficiente, usando Agent como fallback...');
+    console.log(`[Firecrawl] Modelos: ${allModels.length}, WhatsApp: ${!!contactInfo.whatsapp}, Phone: ${!!contactInfo.phone}, FAQs: ${faqs.length}`);
+
+    try {
+      const agentResult = await scrapeWithAgent(url);
+
+      // Mergear modelos del agent si encontró más
+      if (agentResult.models.length > allModels.length) {
+        console.log(`[Firecrawl Agent] Encontró ${agentResult.models.length} modelos (vs ${allModels.length} del scraping)`);
+        allModels = mergeModels(allModels, agentResult.models);
+      }
+
+      // Completar contactInfo si falta
+      if (!contactInfo.whatsapp && agentResult.contactInfo.whatsapp) {
+        contactInfo.whatsapp = agentResult.contactInfo.whatsapp;
+        console.log('[Firecrawl Agent] Obtuvo WhatsApp:', contactInfo.whatsapp);
+      }
+      if (!contactInfo.phone && agentResult.contactInfo.phone) {
+        contactInfo.phone = agentResult.contactInfo.phone;
+      }
+      if (!contactInfo.email && agentResult.contactInfo.email) {
+        contactInfo.email = agentResult.contactInfo.email;
+      }
+
+      // Agregar FAQs del agent
+      if (agentResult.faqs.length > 0) {
+        faqs = [...faqs, ...agentResult.faqs];
+        console.log(`[Firecrawl Agent] Agregó ${agentResult.faqs.length} FAQs`);
+      }
+
+      // Agregar rawText del agent
+      if (agentResult.rawText) {
+        combinedMarkdown = combinedMarkdown + '\n\n--- INFORMACIÓN DEL AGENT ---\n' + agentResult.rawText;
+      }
+    } catch (agentError) {
+      console.error('[Firecrawl] Agent fallback falló:', agentError);
+    }
+  }
 
   // Convertir al formato ScrapedContent
   return {

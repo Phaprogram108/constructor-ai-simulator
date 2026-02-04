@@ -1,44 +1,132 @@
 {
   "companies": [
     {
-      "id": "vibert",
-      "name": "ViBert",
-      "websiteUrl": "https://vibert.com.ar",
+      "id": "ecomod",
+      "name": "Ecomod",
+      "websiteUrl": "https://ecomod.com.ar/",
       "pdfUrl": null,
-      "expectedBehavior": "Gold standard - VERIFICADO FUNCIONANDO",
-      "notes": "Extrae 10 casas + 4 quinchos. Modelos: Sara, Daniela, Justina, Dora, Micaela, Estefania, Carmela, Selene, Valeria, Maria"
+      "expectedBehavior": "Casas modulares eco-friendly",
+      "notes": "Verificar modelos Eco Studio, Turistico, Eco Mini"
     },
     {
-      "id": "steel-framing-argentina",
-      "name": "Steel Framing Argentina",
-      "websiteUrl": "https://steelframingargentina.com.ar",
+      "id": "lista",
+      "name": "Lista",
+      "websiteUrl": "https://lista.com.ar/",
       "pdfUrl": null,
-      "expectedBehavior": "Empresa grande con multiples modelos",
-      "notes": "Deberia tener informacion detallada de modelos"
+      "expectedBehavior": "Constructora con catalogo online",
+      "notes": "Empresa conocida, deberia tener buena info"
     },
     {
-      "id": "casas-premoldeadas",
-      "name": "Casas Premoldeadas SRL",
-      "websiteUrl": "https://casaspremoldeadas.com.ar",
+      "id": "movilhauss",
+      "name": "Movilhauss",
+      "websiteUrl": "https://movilhauss.com",
       "pdfUrl": null,
-      "expectedBehavior": "Constructora tradicional",
-      "notes": "Verificar extraccion de modelos y precios"
+      "expectedBehavior": "Casas moviles/modulares",
+      "notes": "Verificar modelos y precios"
     },
     {
-      "id": "construir-ba",
-      "name": "Construir BA",
-      "websiteUrl": "https://construirba.com.ar",
+      "id": "plugarq",
+      "name": "PlugArq",
+      "websiteUrl": "https://www.plugarq.com/",
       "pdfUrl": null,
-      "expectedBehavior": "Constructora zona Buenos Aires",
-      "notes": "Test de localizacion geografica"
+      "expectedBehavior": "Arquitectura modular",
+      "notes": "Estilo arquitectonico moderno"
     },
     {
-      "id": "casas-del-sur",
-      "name": "Casas del Sur",
-      "websiteUrl": "https://casasdelsur.com.ar",
+      "id": "habika",
+      "name": "Habika",
+      "websiteUrl": "https://habika.ar/",
       "pdfUrl": null,
-      "expectedBehavior": "Constructora zona sur",
-      "notes": "Verificar informacion de zonas de cobertura"
+      "expectedBehavior": "Viviendas modulares",
+      "notes": "Verificar catalogo de modelos"
+    },
+    {
+      "id": "arcohouse",
+      "name": "Arcohouse",
+      "websiteUrl": "https://arcohouse.com.ar/",
+      "pdfUrl": null,
+      "expectedBehavior": "Steel frame construction",
+      "notes": "Verificar metodo constructivo"
+    },
+    {
+      "id": "atlas-housing",
+      "name": "Atlas Housing",
+      "websiteUrl": "https://atlashousing.com.ar/",
+      "pdfUrl": null,
+      "expectedBehavior": "Viviendas industrializadas",
+      "notes": "Empresa grande, multiples modelos"
+    },
+    {
+      "id": "lucys-house",
+      "name": "Lucys House",
+      "websiteUrl": "https://www.lucyshousearg.com/",
+      "pdfUrl": null,
+      "expectedBehavior": "Tiny houses / casas pequenas",
+      "notes": "Nicho especifico de casas chicas"
+    },
+    {
+      "id": "sienna-modular",
+      "name": "Sienna Modular",
+      "websiteUrl": "https://www.siennamodular.com.ar/",
+      "pdfUrl": null,
+      "expectedBehavior": "Construccion modular",
+      "notes": "Verificar linea de productos"
+    },
+    {
+      "id": "offis",
+      "name": "Offis",
+      "websiteUrl": "https://www.offis.ar/",
+      "pdfUrl": null,
+      "expectedBehavior": "Oficinas y espacios modulares",
+      "notes": "Puede tener foco en oficinas"
+    },
+    {
+      "id": "efede",
+      "name": "Efede Casas Modulares",
+      "websiteUrl": "https://efede.com.ar/casas-modulares/",
+      "pdfUrl": null,
+      "expectedBehavior": "Casas modulares especializadas",
+      "notes": "URL especifica de modulo casas"
+    },
+    {
+      "id": "minicasas",
+      "name": "Mini Casas",
+      "websiteUrl": "https://www.minicasas.com.ar/",
+      "pdfUrl": null,
+      "expectedBehavior": "Tiny houses / mini casas",
+      "notes": "Foco en casas pequenas"
+    },
+    {
+      "id": "wellmod",
+      "name": "Wellmod",
+      "websiteUrl": "https://www.wellmod.com.ar/",
+      "pdfUrl": null,
+      "expectedBehavior": "Construccion modular wellness",
+      "notes": "Verificar linea de productos"
+    },
+    {
+      "id": "grupo-steimberg",
+      "name": "Grupo Steimberg",
+      "websiteUrl": "https://www.gruposteimberg.com/",
+      "pdfUrl": null,
+      "expectedBehavior": "Grupo constructor diversificado",
+      "notes": "Empresa grande, verificar alcance"
+    },
+    {
+      "id": "aftamantes",
+      "name": "Aftamantes Refugios",
+      "websiteUrl": "https://aftamantes.net/refugios/",
+      "pdfUrl": null,
+      "expectedBehavior": "Refugios y cabanas",
+      "notes": "Nicho especifico de refugios"
+    },
+    {
+      "id": "arqtainer",
+      "name": "Arqtainer",
+      "websiteUrl": "https://arqtainer.com.ar/",
+      "pdfUrl": null,
+      "expectedBehavior": "Casas container",
+      "notes": "Construccion con containers"
     }
   ]
 }

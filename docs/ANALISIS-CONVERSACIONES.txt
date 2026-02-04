@@ -1,0 +1,450 @@
+================================================================================
+ANALISIS DE CONVERSACIONES - 16 EMPRESAS CONSTRUCTORAS
+================================================================================
+Fecha de generacion: 2026-02-04T10:06:58.955Z
+Total archivos encontrados: 43
+================================================================================
+
+
+RESUMEN EJECUTIVO
+========================================
+- Empresas testeadas: 14/16
+- Empresas con modelos especificos: 8
+- Empresas con precios: 2
+- Tasa de exito (modelos): 57%
+
+TABLA DE RESULTADOS
+========================================
+[OK] Ecomod                    Buena
+[OK] Lista                     Mala
+[OK] Movilhauss                Buena
+[OK] PlugArq                   Mala
+[X] Habika                    No encontrada
+[OK] Arcohouse                 Excelente
+[OK] Atlas Housing             Buena
+[OK] Lucys House               Mala
+[OK] Sienna Modular            Mala
+[OK] Offis                     Buena
+[OK] Efede                     Buena
+[X] Mini Casas                No encontrada
+[OK] Wellmod                   Buena
+[OK] Grupo Steimberg           Mala
+[OK] Aftamantes                Excelente
+[OK] Arqtainer                 Mala
+
+--------------------------------------------------------------------------------
+EMPRESA: ECOMOD
+--------------------------------------------------------------------------------
+Archivo: 2026-02-04T00-37-34-143Z_Ecomod.txt
+Calidad: Buena
+Modelos detectados: SI
+Precios detectados: NO
+Mensajes: 1
+----------------------------------------
+CONVERSACION:
+----------------------------------------
+=== Conversacion: Ecomod ===
+Fecha: 2026-02-04T00:37:34.143Z
+Session ID: fdeb522c-4ef5-4f77-9b4a-239fe4a1d1c4
+==================================================
+
+[USUARIO]
+¿Qué modelos tienen?
+
+[SOFIA]
+¡Hola! Mirá, en Ecomod hoy tenemos estos modelos modulares:
+
+- **Eco Studio** – 11,5 m², con toilette y kitchenette integrada, ideal como estudio, oficina o monoambiente chico.  
+- **Turístico** – 25 m², baño completo y cocina integrada, pensado para cabañas o alquiler temporario.  
+- **Eco Mini** – 30 m², baño completo y cocina integrada, tipo monoambiente amplio.  
+- **Eco Mini +** – 40 m², ambiente flexible, cocina con barra integrada y baño completo.  
+- **Eco 1.1** – 45 m², 1 dormitorio, ambiente integrado y baño completo.  
+- **Eco 2.1 +** – 70 m², 2 dormitorios, amplio living-comedor-cocina y baño completo.  
+
+¿Estás buscando algo más tipo vivienda permanente o algo turístico/quincho?
+
+
+
+--------------------------------------------------------------------------------
+EMPRESA: LISTA
+--------------------------------------------------------------------------------
+Archivo: 2026-02-04T00-31-57-171Z_Lista.txt
+Calidad: Mala
+Modelos detectados: NO
+Precios detectados: NO
+Mensajes: 1
+----------------------------------------
+CONVERSACION:
+----------------------------------------
+=== Conversacion: Lista ===
+Fecha: 2026-02-04T00:31:57.171Z
+Session ID: 251c981d-7f01-47cb-bc5c-7db56ffba2d3
+==================================================
+
+[USUARIO]
+¿Qué modelos tienen?
+
+[SOFIA]
+Tenemos varios modelos personalizables en steel framing. Por ejemplo, dentro de la línea Macá tenés Macá S, S+, M, L, XL y XXL; en la línea Cóndor: Cóndor S, M, L, XL y XXL; también las familias Mirasol (S, M, L, XL y XXL), Peutrén (M y L), Hornero (M, L y XL), además de Biguá Home/Work, Lechuza, Albatros L y el combo Macá M + Hornero M. Cada uno varía en m² y cantidad de dormitorios/baños, y se puede adaptar según lo que necesites.
+
+Para orientarte mejor, decime: ¿estás buscando algo más tipo casa familiar permanente o algo más chico tipo quincho/casa de fin de semana?
+
+
+
+--------------------------------------------------------------------------------
+EMPRESA: MOVILHAUSS
+--------------------------------------------------------------------------------
+Archivo: 2026-02-04T00-33-03-736Z_Movilhauss.txt
+Calidad: Buena
+Modelos detectados: SI
+Precios detectados: NO
+Mensajes: 1
+----------------------------------------
+CONVERSACION:
+----------------------------------------
+=== Conversacion: Movilhauss ===
+Fecha: 2026-02-04T00:33:03.737Z
+Session ID: f170a84e-9228-4d47-a573-25b09a2b548a
+==================================================
+
+[USUARIO]
+¿Qué modelos tienen?
+
+[SOFIA]
+Tenemos varios modelos según el uso y el espacio que necesites:  
+- **Inquba Tiny**: 19,2 m², monoambiente de 3m x 5,8m, 1 baño y cocina integrada, con entrega inmediata.  
+- **Inquba Work**: 19,2 m², 1 ambiente, 1 baño, sin cocina, ideal uso profesional/oficina.  
+- **Inquba Suite**: 19,2 m², 1 ambiente, 1 baño, sin cocina, también con entrega inmediata.  
+- **Inquba Plus**: 32 m², 2 ambientes (living/comedor + dormitorio), 1 baño, cocina integrada y opción de deck/pérgola/jacuzzi exterior.  
+- **Inquba Duo**: 32 m² en 2 plantas, 2 ambientes, 1 baño, con escalera y balcón.  
+- **Freestyle**: módulos combinables (base 3,2m x 6m), ampliables y 100% personalizables.
+
+Para orientarte mejor, ¿lo estás pensando para vivienda permanente, turismo (cabañas/glamping) o uso profesional?
+
+
+
+--------------------------------------------------------------------------------
+EMPRESA: PLUGARQ
+--------------------------------------------------------------------------------
+Archivo: 2026-02-04T00-33-35-345Z_PLUG_Arquitectura.txt
+Calidad: Mala
+Modelos detectados: NO
+Precios detectados: NO
+Mensajes: 1
+----------------------------------------
+CONVERSACION:
+----------------------------------------
+=== Conversacion: PLUG Arquitectura ===
+Fecha: 2026-02-04T00:33:35.345Z
+Session ID: c3af8bd1-7134-41ad-ad2c-376dc44d4dd4
+==================================================
+
+[USUARIO]
+¿Qué modelos tienen?
+
+[SOFIA]
+¡Qué bueno que nos escribas! 😊  
+En PLUG trabajamos con casas industrializadas transportables y modulares, y vamos armando el modelo según los m², cantidad de dormitorios y uso (vivienda permanente, quincho, ampliación, etc.), siempre en formato llave en mano y con entrega en 90 días.  
+
+Para orientarte mejor con ejemplos y valores de m², ¿qué estarías buscando más o menos: 1, 2 o 3 dormitorios?
+
+
+
+--------------------------------------------------------------------------------
+EMPRESA: ARCOHOUSE
+--------------------------------------------------------------------------------
+Archivo: 2026-02-04T00-34-39-373Z_Arcohouse.txt
+Calidad: Excelente
+Modelos detectados: SI
+Precios detectados: SI
+Mensajes: 1
+----------------------------------------
+CONVERSACION:
+----------------------------------------
+=== Conversacion: Arcohouse ===
+Fecha: 2026-02-04T00:34:39.373Z
+Session ID: 89fb0672-ca66-4fef-b5f1-6c1287d19bc9
+==================================================
+
+[USUARIO]
+¿Qué modelos tienen?
+
+[SOFIA]
+Tenemos varios refugios modulares, todos llave en mano y listos para habitar:  
+
+- **Montañesito – 20 m²** – Monoambiente compacto para 2 personas, ideal para escapadas o alquiler turístico – **ARS $41.500.000 + IVA**.  
+- **Cobre – 30 m²** – Pensado para vivir o invertir, para 2/4 personas – **ARS $57.000.000 + IVA**.  
+- **El Montañés – 40 m²** – Nuestro modelo estrella, 2/4 personas cómodas – **ARS $71.000.000 + IVA**.  
+- **Correntoso – 60 m²** – Familiar, para 4/6 personas – **ARS $98.000.000 + IVA**.  
+- **Limay – 80 m²** – El más amplio, para 6/8 personas – **ARS $121.500.000 + IVA**.  
+
+Todos incluyen iluminación LED, aberturas DVH premium, aislación con paneles SIP y muebles de baño y cocina. ¿En qué tamaño o cantidad de personas estás pensando vos para tu proyecto?
+
+
+
+--------------------------------------------------------------------------------
+EMPRESA: ATLAS HOUSING
+--------------------------------------------------------------------------------
+Archivo: 2026-02-04T00-35-26-886Z_Atlas_Housing.txt
+Calidad: Buena
+Modelos detectados: SI
+Precios detectados: NO
+Mensajes: 1
+----------------------------------------
+CONVERSACION:
+----------------------------------------
+=== Conversacion: Atlas Housing ===
+Fecha: 2026-02-04T00:35:26.886Z
+Session ID: 6325b19a-bdf3-4d69-989d-75543642330f
+==================================================
+
+[USUARIO]
+¿Qué modelos tienen?
+
+[SOFIA]
+¡Hola! Tenemos varios modelos modulares, todos con 1 dormitorio y 1 baño, ideales como vivienda permanente, casa de fin de semana o proyecto turístico:  
+- **Katerra**: 60 m², dos módulos, diseño moderno, con excelente aislamiento Thermo Panels.  
+- **Upsala**: 41 m², 1 módulo de 12 x 3,40 m, cocina y baño completamente equipados.  
+- **Fitz Roy**: 41 m², 12 x 3,40 m, dos ambientes, cocina equipada, bow windows y opciones de techo a una o dos aguas.  
+- También tenemos **Blackberry (41 m²)**, **Hexa (60 m²)**, **Montana (18 m²)** y **Dora**, todos en sistema constructivo modular.
+
+Para orientarte mejor, ¿estás pensando en algo tipo vivienda principal o más bien una casa de descanso/uso turístico?
+
+
+
+--------------------------------------------------------------------------------
+EMPRESA: LUCYS HOUSE
+--------------------------------------------------------------------------------
+Archivo: 2026-02-04T00-36-05-902Z_Lucys_House.txt
+Calidad: Mala
+Modelos detectados: NO
+Precios detectados: NO
+Mensajes: 1
+----------------------------------------
+CONVERSACION:
+----------------------------------------
+=== Conversacion: Lucys House ===
+Fecha: 2026-02-04T00:36:05.902Z
+Session ID: 049b4c39-bf51-4be3-a1c8-176725a107cc
+==================================================
+
+[USUARIO]
+¿Qué modelos tienen?
+
+[SOFIA]
+¡Hola! En Lucys House trabajamos con viviendas modulares en Steel Frame totalmente personalizadas, así que no manejamos un catálogo fijo de modelos tipo “A, B, C”, sino que diseñamos según los m² y la cantidad de ambientes que vos necesitás.  
+
+Podemos armar desde módulos chicos tipo monoambiente/quincho hasta viviendas familiares completas con varios dormitorios y baños, siempre listas en unos 60 días y transportables a cualquier punto del país. Para orientarte mejor, ¿estás pensando en algo más tipo casa familiar (2/3 dormitorios) o algo más chico tipo estudio/quincho?
+
+
+
+--------------------------------------------------------------------------------
+EMPRESA: SIENNA MODULAR
+--------------------------------------------------------------------------------
+Archivo: 2026-02-04T01-49-04-526Z_SIENNA.txt
+Calidad: Mala
+Modelos detectados: NO
+Precios detectados: NO
+Mensajes: 1
+----------------------------------------
+CONVERSACION:
+----------------------------------------
+=== Conversacion: SIENNA ===
+Fecha: 2026-02-04T01:49:04.526Z
+Session ID: 150b257a-f925-41b6-a708-67ac5aaa1f20
+==================================================
+
+[USUARIO]
+Que modelos tienen?
+
+[SOFIA]
+¡Hola! En SIENNA hoy estamos trabajando con el modelo **Casa Dora**, desarrollado en arquitectura modular transportable, con excelente aislación térmica, opción de entrega completamente equipada y posibilidad de ampliación futura con nuevos módulos.  
+
+Para orientarte mejor, ¿qué estás buscando aproximadamente: una casa chica tipo monoambiente/1 dormitorio, algo familiar de 2-3 dormitorios, o un espacio tipo quincho / estudio?
+
+
+
+--------------------------------------------------------------------------------
+EMPRESA: OFFIS
+--------------------------------------------------------------------------------
+Archivo: 2026-02-04T01-59-35-467Z_Offis.txt
+Calidad: Buena
+Modelos detectados: SI
+Precios detectados: NO
+Mensajes: 1
+----------------------------------------
+CONVERSACION:
+----------------------------------------
+=== Conversacion: Offis ===
+Fecha: 2026-02-04T01:59:35.467Z
+Session ID: 968156fe-ac8a-4fd9-8b11-7694a6efd544
+==================================================
+
+[USUARIO]
+Que modelos tienen?
+
+[SOFIA]
+¡Hola! Tenemos varios modelos de espacios modulares, todos llave en mano y listos en 5 días:
+
+- Residenciales / home office:  
+  - **Offis STUDIO 12** – 12,25 m² (2,20 x 4,60 x h 2,30) – transportable, resistente al clima.  
+  - **Offis SLIM 15** – 15,25 m² (2,20 x 5,80 x h 2,30) – pensado para exterior.  
+  - **Offis FAMILY 18** – 18,13 m² (3,40 x 4,60 x h 2,30).  
+  - **Offis FLEX 22** – 22,50 m² (3,40 x 5,80 x h 2,30).  
+  - **Offis PLUS 27** – 27,01 m² (3,40 x 7,00 x h 2,30).  
+  - **Offis XL 36** – 35,89 m² (3,40 x 9,40 x h 2,30).
+
+- Para empresas y espacios comerciales:  
+  - **Offis SHOWROOM 12 / 15 / 22** – desde 12,25 a 22,57 m², ideales como showroom u oficina de ventas.  
+  - **Offis COWORK 18 / 22 / 27** – desde 18,13 a 27,01 m², para salas de reunión y coworking.  
+  - **Offis TICKET OFFICE 15** – 15,25 m², pensado para venta de tickets y atención al público.
+
+Para ayudarte mejor, ¿lo estás pensando para tu casa (home office / quincho / estudio) o para una empresa/comercio?
+
+
+
+--------------------------------------------------------------------------------
+EMPRESA: EFEDE
+--------------------------------------------------------------------------------
+Archivo: 2026-02-04T01-51-49-589Z_EFEDE_SRL.txt
+Calidad: Buena
+Modelos detectados: SI
+Precios detectados: NO
+Mensajes: 1
+----------------------------------------
+CONVERSACION:
+----------------------------------------
+=== Conversacion: EFEDE SRL ===
+Fecha: 2026-02-04T01:51:49.589Z
+Session ID: 34338555-17a4-4d61-af87-9149af67d09d
+==================================================
+
+[USUARIO]
+Que modelos tienen?
+
+[SOFIA]
+¡Hola! Tenemos varios modelos de casas y módulos, todos industrializados y transportables:
+
+- **MHZ** – 32 m² – Línea Premium  
+- **MC1** – 29 m² – Línea Premium  
+- **MZB2** – 54 m² – Línea Premium  
+- **MT1** – 15 m² – Línea Basic  
+- **MO1** – 15 m² – Línea Office  
+- **MO5** – 30 m² – Línea Office  
+
+Todos se pueden personalizar en distribución y terminaciones. Para ayudarte mejor, ¿más o menos de cuántos m² o cuántos ambientes estás buscando?
+
+
+
+--------------------------------------------------------------------------------
+EMPRESA: WELLMOD
+--------------------------------------------------------------------------------
+Archivo: 2026-02-04T01-53-09-358Z_WellMod.txt
+Calidad: Buena
+Modelos detectados: SI
+Precios detectados: NO
+Mensajes: 1
+----------------------------------------
+CONVERSACION:
+----------------------------------------
+=== Conversacion: WellMod ===
+Fecha: 2026-02-04T01:53:09.358Z
+Session ID: 6e2bc4af-b7c1-4fa3-aa05-94110a002c79
+==================================================
+
+[USUARIO]
+Que modelos tienen?
+
+[SOFIA]
+¡Hola! En WellMod trabajamos con módulos estándar de 20 m² (6,20 x 3,20 x 3 m de alto) que vamos combinando para armar distintos modelos, tanto residenciales como turísticos y de servicios.  
+
+En turismo, por ejemplo, tenemos el **Hotel Termal Dolores**, **Paso Calmo Los Reartes**, **Las Alpas Potrero de Garay**, el **W26 Black Edition Lodge**, **Granja Ecuestre Rafaela** y **La Ramadita Fiambalá**.  
+En fin de semana, los modelos más usados son **Casa VJ, Casa Potrerillo, Casa MY, Casa MF, Casa IM y Casa AS**, que se arman sumando módulos según la cantidad de m² y ambientes que necesites.  
+
+Para orientarte mejor: ¿estás buscando una casa de fin de semana, un proyecto turístico (cabañas/hotel) u oficinas modulares?
+
+
+
+--------------------------------------------------------------------------------
+EMPRESA: GRUPO STEIMBERG
+--------------------------------------------------------------------------------
+Archivo: 2026-02-04T01-53-52-484Z_Grupo_Steimberg.txt
+Calidad: Mala
+Modelos detectados: NO
+Precios detectados: NO
+Mensajes: 1
+----------------------------------------
+CONVERSACION:
+----------------------------------------
+=== Conversacion: Grupo Steimberg ===
+Fecha: 2026-02-04T01:53:52.484Z
+Session ID: cf6577cf-2200-4b0b-9e79-f73ea7232719
+==================================================
+
+[USUARIO]
+Que modelos tienen?
+
+[SOFIA]
+¡Hola! Te cuento los modelos que trabajamos en Grupo Steimberg dentro de nuestra arquitectura modular:
+
+- **Cabin 28**: ideal como estudio, tiny house o primer módulo turístico, compacta pero súper funcional.  
+- **Cabin 70**: pensada para vivienda familiar o cabaña turística amplia, con espacios sociales cómodos y dormitorios bien definidos.  
+- **Cabin Yakisugi**: misma lógica de CABIN pero con terminación exterior quemada al fuego (técnica japonesa), muy estética y de alta durabilidad.  
+- **Nordic House 180**: casa de mayor escala, estilo nórdico, para proyectos residenciales o turísticos premium.
+
+El retorno de inversión estimado en formato turístico va del **25% al 30% anual**. Para orientarte mejor, ¿la idea es uso residencial propio o proyecto de inversión turística (tipo cabañas/Airbnb)?
+
+
+
+--------------------------------------------------------------------------------
+EMPRESA: AFTAMANTES
+--------------------------------------------------------------------------------
+Archivo: 2026-02-04T01-54-10-328Z_AFT_Amantes.txt
+Calidad: Excelente
+Modelos detectados: SI
+Precios detectados: SI
+Mensajes: 1
+----------------------------------------
+CONVERSACION:
+----------------------------------------
+=== Conversacion: AFT Amantes ===
+Fecha: 2026-02-04T01:54:10.328Z
+Session ID: d8a19f05-168e-4cdf-8ff5-b2b1d4bd28f1
+==================================================
+
+[USUARIO]
+Que modelos tienen?
+
+[SOFIA]
+Tenemos varios modelos de refugios modulares según metros y uso. Por ejemplo, la **Casa Compacta de 70 m²** con **2 habitaciones, cocina y baño completos**, que hoy está en **U$S 91.000** y se entrega en **120 días**, y además módulos de **24, 45, 70 y 94 m²** que podés adaptar para vivienda, turismo, oficina o comercio.  
+
+Para orientarte mejor, ¿estás buscando algo más tipo vivienda permanente o más bien un refugio turístico/inversión?
+
+
+
+--------------------------------------------------------------------------------
+EMPRESA: ARQTAINER
+--------------------------------------------------------------------------------
+Archivo: 2026-02-04T02-00-12-102Z_Arqtainer.txt
+Calidad: Mala
+Modelos detectados: NO
+Precios detectados: NO
+Mensajes: 1
+----------------------------------------
+CONVERSACION:
+----------------------------------------
+=== Conversacion: Arqtainer ===
+Fecha: 2026-02-04T02:00:12.102Z
+Session ID: d6f618ed-1511-4ded-84c8-66186ba40014
+==================================================
+
+[USUARIO]
+Que modelos tienen?
+
+[SOFIA]
+¡Hola! Mirá, trabajamos con dos líneas principales: casas container y casas con sistema Panel SIP, todas en formato modular y llave en mano.  
+
+En este momento no tengo acá el listado completo de nombres y m² de cada modelo, así que dejame consultarlo con el equipo técnico y te paso el detalle exacto de cada uno (m², dormitorios y baños). Mientras tanto, así te asesoro mejor: ¿qué estás pensando más o menos, para cuántos dormitorios?
+
+
+

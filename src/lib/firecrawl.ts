@@ -103,6 +103,76 @@ interface ScrapeOptions {
   exhaustive?: boolean; // Si true, scrapea TODAS las URLs sin filtrar
 }
 
+// Función para parsear modelos del markdown SIN usar AI (evita invención de datos)
+function parseModelsFromMarkdown(markdown: string): ExtractedModel[] {
+  const models: ExtractedModel[] = [];
+
+  // Patrones para detectar modelos de casas/quinchos
+  // Formato: "Modelo de Casa X - Y personas - Z m2 - N dormitorios - M baños"
+  const modelPatterns = [
+    // Patrón ViBert: "Modelo de Casa Sara - 2 personas 65.55 m2 TOTALES"
+    /Modelo de (?:Casa|Quincho)\s+([A-Za-záéíóúñÁÉÍÓÚÑ\s\-]+?)\s*[-–]\s*(\d+)\s*personas?\s+(\d+[.,]?\d*)\s*m2/gi,
+    // Patrón genérico: "Casa/Modelo X - 100m² - 3 dormitorios"
+    /(?:Casa|Modelo|Vivienda)\s+([A-Za-záéíóúñÁÉÍÓÚÑ0-9\s\-]+?)\s*[-–|]\s*(\d+[.,]?\d*)\s*m[²2]/gi,
+    // Patrón con precio: "CM0 15m² USD 17.050"
+    /([A-Z]{1,3}\d+(?:\s*-\s*[A-Z])?)\s*(\d+[.,]?\d*)\s*m[²2].*?(?:U\$?D|USD|\$)\s*([\d.,]+)/gi,
+  ];
+
+  // Buscar con cada patrón
+  for (const pattern of modelPatterns) {
+    let match;
+    while ((match = pattern.exec(markdown)) !== null) {
+      const name = match[1]?.trim();
+      if (name && name.length > 1 && name.length < 50) {
+        // Evitar duplicados
+        const exists = models.some(m =>
+          m.name.toLowerCase().includes(name.toLowerCase()) ||
+          name.toLowerCase().includes(m.name.toLowerCase())
+        );
+        if (!exists) {
+          const model: ExtractedModel = { name, category: 'casa' };
+
+          // Extraer metros cuadrados
+          const sqmMatch = markdown.match(new RegExp(name + '[^]*?(\\d+[.,]?\\d*)\\s*m[²2]', 'i'));
+          if (sqmMatch) {
+            model.squareMeters = parseFloat(sqmMatch[1].replace(',', '.'));
+          } else if (match[2]) {
+            model.squareMeters = parseFloat(match[2].replace(',', '.'));
+          }
+
+          // Extraer dormitorios
+          const bedroomMatch = markdown.match(new RegExp(name + '[^]*?(\\d+)\\s*(?:dormitorio|dorm|habitacion)', 'i'));
+          if (bedroomMatch) {
+            model.bedrooms = parseInt(bedroomMatch[1]);
+          }
+
+          // Extraer baños
+          const bathMatch = markdown.match(new RegExp(name + '[^]*?(\\d+)\\s*(?:baño|bano|bath)', 'i'));
+          if (bathMatch) {
+            model.bathrooms = parseInt(bathMatch[1]);
+          }
+
+          // Extraer precio SOLO si aparece explícitamente cerca del nombre
+          const priceMatch = markdown.match(new RegExp(name + '[^]{0,100}(?:U\\$?D|USD|\\$)\\s*([\\d.,]+)', 'i'));
+          if (priceMatch) {
+            model.price = `USD ${priceMatch[1]}`;
+          }
+          // NO inventar precio si no existe
+
+          // Detectar si es quincho
+          if (name.toLowerCase().includes('quincho') || markdown.toLowerCase().includes(`quincho ${name.toLowerCase()}`)) {
+            model.category = 'quincho';
+          }
+
+          models.push(model);
+        }
+      }
+    }
+  }
+
+  return models;
+}
+
 export async function scrapeWithFirecrawl(
   url: string,
   options: ScrapeOptions = { exhaustive: true }
@@ -204,7 +274,7 @@ export async function scrapeWithFirecrawl(
   let companyName = '';
   let companyDescription = '';
   const contactInfo: ContactInfo = {};
-  let allMarkdown = '';
+  const allMarkdown: string[] = []; // Array para acumular markdown de todas las páginas
   const locations: string[] = [];
   let constructionMethod = '';
   let hasFinancing = false;
@@ -244,14 +314,13 @@ export async function scrapeWithFirecrawl(
       const batchStartTime = Date.now();
       console.log(`[Firecrawl] Processing batch ${batchIndex + 1}/${batches.length} (${batch.length} URLs)...`);
 
-      // Scrapear URLs del batch en paralelo
+      // Scrapear URLs del batch en paralelo - SOLO MARKDOWN (sin extract AI que inventa datos)
       const results = await Promise.all(
         batch.map(async (catalogUrl) => {
           try {
             console.log('[Firecrawl] Scraping catalog:', catalogUrl);
             const result = await getFirecrawl().scrapeUrl(catalogUrl, {
-              formats: ['markdown', 'extract'],
-              extract: { schema: catalogSchema }
+              formats: ['markdown'] // Solo markdown, sin extract para evitar datos inventados
             });
             return { catalogUrl, result, error: null };
           } catch (error) {
@@ -264,7 +333,7 @@ export async function scrapeWithFirecrawl(
       const batchDuration = Date.now() - batchStartTime;
       console.log(`[Firecrawl] Batch ${batchIndex + 1} completed in ${batchDuration}ms`);
 
-      // Procesar resultados del batch
+      // Procesar resultados del batch - PARSEAR MARKDOWN DIRECTAMENTE (sin AI que inventa)
       for (const { catalogUrl, result, error } of results) {
         if (error || !result?.success) {
           if (result && !result.success) {
@@ -273,73 +342,48 @@ export async function scrapeWithFirecrawl(
           continue;
         }
 
-        const extract = result.extract as z.infer<typeof catalogSchema> | undefined;
+        const markdown = result.markdown || '';
 
-        // Extraer modelos del schema
-        if (extract?.models && Array.isArray(extract.models)) {
-          console.log('[Firecrawl] Found models in catalog extract:', extract.models.length);
-          for (const model of extract.models) {
-            if (model.name) {
-              allModels.push({
-                name: model.name,
-                squareMeters: model.squareMeters,
-                coveredArea: model.coveredArea,
-                semicoveredArea: model.semicoveredArea,
-                bedrooms: model.bedrooms,
-                bathrooms: model.bathrooms,
-                price: model.price,
-                features: model.features,
-                category: model.category || 'casa'
-              });
-            }
-          }
+        // Acumular todo el markdown para análisis posterior
+        allMarkdown.push(`\n--- URL: ${catalogUrl} ---\n${markdown}`);
+
+        // Parsear modelos del markdown con regex (sin AI)
+        const parsedModels = parseModelsFromMarkdown(markdown);
+        if (parsedModels.length > 0) {
+          console.log(`[Firecrawl] Found ${parsedModels.length} models in ${catalogUrl} via regex`);
+          allModels.push(...parsedModels);
         }
 
-        // Extraer quinchos
-        if (extract?.quinchos && Array.isArray(extract.quinchos)) {
-          console.log('[Firecrawl] Found quinchos:', extract.quinchos.length);
-          for (const quincho of extract.quinchos) {
-            if (quincho.name) {
-              allModels.push({
-                name: `Quincho ${quincho.name}`,
-                squareMeters: quincho.squareMeters,
-                features: quincho.features,
-                category: 'quincho'
-              });
-            }
-          }
+        // Extraer info de contacto del markdown
+        const phoneMatch = markdown.match(/(?:tel|phone|whatsapp)[:\s]*(\+?[\d\s\-()]{8,20})/i);
+        if (phoneMatch && !contactInfo.phone) {
+          contactInfo.phone = phoneMatch[1].trim();
+        }
+        const whatsappMatch = markdown.match(/wa\.me\/(\d+)/i) || markdown.match(/whatsapp[:\s]*(\+?[\d\s\-]{10,20})/i);
+        if (whatsappMatch && !contactInfo.whatsapp) {
+          contactInfo.whatsapp = whatsappMatch[1].trim();
+        }
+        const emailMatch = markdown.match(/([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/);
+        if (emailMatch && !contactInfo.email) {
+          contactInfo.email = emailMatch[1];
         }
 
-        // Extraer info de empresa
-        if (extract?.companyName && !companyName) {
-          companyName = extract.companyName;
+        // Extraer método de construcción del markdown
+        if (markdown.toLowerCase().includes('steel frame')) {
+          constructionMethod = 'Steel frame';
+        } else if (markdown.toLowerCase().includes('hormigon') || markdown.toLowerCase().includes('hormigón')) {
+          constructionMethod = 'Hormigón premoldeado';
         }
-        if (extract?.companyDescription && !companyDescription) {
-          companyDescription = extract.companyDescription;
-        }
-        if (extract?.contactPhone && !contactInfo.phone) {
-          contactInfo.phone = extract.contactPhone;
-        }
-        if (extract?.contactWhatsapp && !contactInfo.whatsapp) {
-          contactInfo.whatsapp = extract.contactWhatsapp;
-        }
-        if (extract?.contactEmail && !contactInfo.email) {
-          contactInfo.email = extract.contactEmail;
-        }
-        if (extract?.locations) {
-          locations.push(...extract.locations);
-        }
-        if (extract?.constructionMethod) {
-          constructionMethod = extract.constructionMethod;
-        }
-        if (extract?.financing) {
+
+        // Extraer si hay financiación
+        if (markdown.toLowerCase().includes('financ')) {
           hasFinancing = true;
         }
 
-        // IMPORTANTE: Parsear el markdown para extraer datos que el schema no capturo
+        // Parsear markdown adicional
         if (result.markdown) {
           console.log('[Firecrawl] Parsing markdown from catalog, length:', result.markdown.length);
-          allMarkdown += `\n\n--- ${catalogUrl} ---\n${result.markdown}`;
+          allMarkdown.push(`\n\n--- ${catalogUrl} ---\n${result.markdown}`);
 
           const markdownModels = parseModelsFromMarkdown(result.markdown);
           console.log('[Firecrawl] Parsed models from markdown:', markdownModels.length);
@@ -439,7 +483,7 @@ export async function scrapeWithFirecrawl(
 
           // Parsear markdown para datos adicionales
           if (result.markdown) {
-            allMarkdown += `\n\n--- ${modelUrl} ---\n${result.markdown}`;
+            allMarkdown.push(`\n\n--- ${modelUrl} ---\n${result.markdown}`);
 
             // Intentar completar datos del modelo desde markdown
             const parsedFromMd = parseModelsFromMarkdown(result.markdown);
@@ -505,7 +549,7 @@ export async function scrapeWithFirecrawl(
 
     // Tambien parsear markdown del home
     if (homeResult.markdown) {
-      allMarkdown += `\n\n--- ${homeUrl} ---\n${homeResult.markdown}`;
+      allMarkdown.push(`\n\n--- ${homeUrl} ---\n${homeResult.markdown}`);
 
       // Extraer modelos del home si hay
       const homeModels = parseModelsFromMarkdown(homeResult.markdown);
@@ -528,39 +572,8 @@ export async function scrapeWithFirecrawl(
     services: buildServices(constructionMethod, hasFinancing, locations),
     models: allModels.map(formatModelString),
     contactInfo: formatContactInfo(contactInfo),
-    rawText: allMarkdown.slice(0, 20000)
+    rawText: allMarkdown.join('').slice(0, 20000)
   };
-}
-
-// Funcion para parsear modelos del markdown raw
-// IMPORTANTE: NO usar nombres hardcodeados - cada empresa tiene sus propios modelos
-function parseModelsFromMarkdown(markdown: string): ExtractedModel[] {
-  const models: ExtractedModel[] = [];
-
-  // Buscar patrones genericos de modelos con m2
-  const genericPattern = /(?:modelo|casa|vivienda)\s+["']?(\w+)["']?\s*[-–]?\s*(\d+(?:[.,]\d+)?)\s*m[²2]/gi;
-  let match;
-  while ((match = genericPattern.exec(markdown)) !== null) {
-    const name = match[1];
-    const sqm = parseFloat(match[2].replace(',', '.'));
-
-    // No agregar si es un numero o palabra muy corta
-    if (name.length < 3 || /^\d+$/.test(name)) continue;
-
-    const exists = models.some(m =>
-      m.name?.toLowerCase() === name.toLowerCase()
-    );
-
-    if (!exists) {
-      models.push({
-        name: name.charAt(0).toUpperCase() + name.slice(1).toLowerCase(),
-        squareMeters: sqm,
-        category: 'casa'
-      });
-    }
-  }
-
-  return models;
 }
 
 // Funcion para mergear modelos evitando duplicados y completando datos

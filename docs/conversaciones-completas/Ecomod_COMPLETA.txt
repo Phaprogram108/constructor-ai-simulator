@@ -1,0 +1,44 @@
+================================================================================
+EMPRESA: ECOMOD
+================================================================================
+URL: https://ecomod.com.ar/
+País: Argentina
+Fecha: Wed Feb  4 08:14:58 -03 2026
+SessionId: 47540fc0-df5d-4bc5-abfc-cdd3deecc6ef
+================================================================================
+
+[SOFÍA - Bienvenida]
+¡Hola! Soy Sofia, asesora de Ecomod. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto.
+
+[USUARIO]
+¿Qué modelos tienen?
+
+[SOFÍA]
+ERROR: No response
+
+[USUARIO]
+¿Cuánto cuesta el modelo más chico?
+
+[SOFÍA]
+ERROR: No response
+
+[USUARIO]
+¿Construyen en Buenos Aires?
+
+[SOFÍA]
+ERROR: No response
+
+[USUARIO]
+¿Qué incluye el precio?
+
+[SOFÍA]
+ERROR: No response
+
+[USUARIO]
+¿Tienen financiamiento?
+
+[SOFÍA]
+ERROR: No response
+
+================================================================================
+FIN

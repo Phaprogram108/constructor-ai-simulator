@@ -1,9 +1,19 @@
 import { NextRequest, NextResponse } from 'next/server';
 import OpenAI from 'openai';
+import { logConversation } from '@/lib/conversation-logger';
+import { Message } from '@/types';
 
-const openai = new OpenAI({
-  apiKey: process.env.OPENAI_API_KEY,
-});
+// Inicialización lazy para evitar errores durante el build
+let openaiInstance: OpenAI | null = null;
+
+function getOpenAI(): OpenAI {
+  if (!openaiInstance) {
+    openaiInstance = new OpenAI({
+      apiKey: process.env.OPENAI_API_KEY,
+    });
+  }
+  return openaiInstance;
+}
 
 interface ChatMessage {
   role: 'user' | 'assistant';
@@ -15,12 +25,13 @@ interface ChatRequestBody {
   message: string;
   systemPrompt: string;
   conversationHistory: ChatMessage[];
+  companyName?: string;
 }
 
 export async function POST(request: NextRequest) {
   try {
     const body: ChatRequestBody = await request.json();
-    const { message, systemPrompt, conversationHistory } = body;
+    const { sessionId, message, systemPrompt, conversationHistory, companyName } = body;
 
     // Validate request
     if (!message) {
@@ -55,7 +66,7 @@ export async function POST(request: NextRequest) {
     ];
 
     // Call OpenAI - using gpt-5.1 for best quality responses
-    const completion = await openai.chat.completions.create({
+    const completion = await getOpenAI().chat.completions.create({
       model: 'gpt-5.1',
       messages: openaiMessages,
       max_completion_tokens: 600,
@@ -64,6 +75,39 @@ export async function POST(request: NextRequest) {
 
     const assistantContent = completion.choices[0]?.message?.content ||
       'Disculpá, hubo un problema. ¿Podés repetir tu consulta?';
+
+    // Log conversation to file after each exchange
+    try {
+      const allMessages: Message[] = [
+        ...(conversationHistory || []).map((msg, idx) => ({
+          id: `hist-${idx}`,
+          role: msg.role,
+          content: msg.content,
+          timestamp: new Date(),
+        })),
+        {
+          id: `user-${Date.now()}`,
+          role: 'user' as const,
+          content: message,
+          timestamp: new Date(),
+        },
+        {
+          id: `assistant-${Date.now()}`,
+          role: 'assistant' as const,
+          content: assistantContent,
+          timestamp: new Date(),
+        },
+      ];
+
+      logConversation(
+        sessionId || 'unknown',
+        companyName || 'Constructora',
+        allMessages
+      );
+    } catch (logError) {
+      console.error('[Chat] Error logging conversation:', logError);
+      // Don't fail the request if logging fails
+    }
 
     return NextResponse.json({
       message: assistantContent,

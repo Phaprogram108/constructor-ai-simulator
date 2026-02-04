@@ -4,9 +4,17 @@ import { chromium, Browser, Page } from 'playwright';
 import { ScrapedContent } from '@/types';
 import { scrapeWithFirecrawl } from './firecrawl';
 
-const anthropic = new Anthropic({
-  apiKey: process.env.ANTHROPIC_API_KEY,
-});
+// Inicialización lazy para evitar errores durante el build
+let anthropicInstance: Anthropic | null = null;
+
+function getAnthropic(): Anthropic {
+  if (!anthropicInstance) {
+    anthropicInstance = new Anthropic({
+      apiKey: process.env.ANTHROPIC_API_KEY,
+    });
+  }
+  return anthropicInstance;
+}
 
 // Keywords que indican páginas con modelos/productos
 const MODEL_KEYWORDS = [
@@ -464,7 +472,7 @@ IMPORTANTE:
 - ES CRÍTICO que extraigas la lista completa de modelos con sus especificaciones`;
 
   try {
-    const response = await anthropic.messages.create({
+    const response = await getAnthropic().messages.create({
       model: 'claude-sonnet-4-20250514',
       max_tokens: 4000,
       messages: [

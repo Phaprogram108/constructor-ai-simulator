@@ -1,9 +1,17 @@
 import pdf from 'pdf-parse';
 import Anthropic from '@anthropic-ai/sdk';
 
-const anthropic = new Anthropic({
-  apiKey: process.env.ANTHROPIC_API_KEY,
-});
+// Inicialización lazy para evitar errores durante el build
+let anthropicInstance: Anthropic | null = null;
+
+function getAnthropic(): Anthropic {
+  if (!anthropicInstance) {
+    anthropicInstance = new Anthropic({
+      apiKey: process.env.ANTHROPIC_API_KEY,
+    });
+  }
+  return anthropicInstance;
+}
 
 // Increased limit for better extraction
 const MAX_PDF_TEXT_LENGTH = 25000;
@@ -117,7 +125,7 @@ export async function analyzePdfWithAI(pdfText: string): Promise<ExtractedCatalo
   console.log('[PDF] Analyzing with AI, text length:', pdfText.length);
 
   try {
-    const response = await anthropic.messages.create({
+    const response = await getAnthropic().messages.create({
       model: 'claude-3-5-sonnet-20241022',
       max_tokens: 3000,
       messages: [
@@ -212,7 +220,7 @@ export async function analyzePdfWithVision(pdfUrl: string): Promise<ExtractedCat
     console.log('[PDF Vision] Sending to Claude for document analysis...');
 
     // Use Claude's document understanding capability
-    const response = await anthropic.messages.create({
+    const response = await getAnthropic().messages.create({
       model: 'claude-sonnet-4-20250514',
       max_tokens: 4000,
       messages: [

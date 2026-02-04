@@ -2,9 +2,20 @@ import Firecrawl from '@mendable/firecrawl-js';
 import { z } from 'zod';
 import { ScrapedContent } from '@/types';
 
-const firecrawl = new Firecrawl({
-  apiKey: process.env.FIRECRAWL_API_KEY!
-});
+// Inicialización lazy para evitar errores durante el build
+let firecrawlInstance: Firecrawl | null = null;
+
+function getFirecrawl(): Firecrawl {
+  if (!firecrawlInstance) {
+    if (!process.env.FIRECRAWL_API_KEY) {
+      throw new Error('FIRECRAWL_API_KEY is not configured');
+    }
+    firecrawlInstance = new Firecrawl({
+      apiKey: process.env.FIRECRAWL_API_KEY
+    });
+  }
+  return firecrawlInstance;
+}
 
 // Constantes de configuracion
 const RATE_LIMIT_MS = 50; // Firecrawl maneja rate limit interno
@@ -103,7 +114,7 @@ export async function scrapeWithFirecrawl(
 
   // PASO 1: Mapear todas las URLs del sitio
   console.log('[Firecrawl] Step 1: Mapping URLs...');
-  const mapResult = await firecrawl.mapUrl(url, {
+  const mapResult = await getFirecrawl().mapUrl(url, {
     limit: 100 // Aumentado de 50 a 100 para capturar mas URLs
   });
 
@@ -201,7 +212,7 @@ export async function scrapeWithFirecrawl(
   // OPTIMIZACION: Lanzar homepage scrape en paralelo con los batches de catalogo
   console.log('[Firecrawl] Starting homepage scrape in parallel...');
   const homepageStartTime = Date.now();
-  const homepagePromise = firecrawl.scrapeUrl(homeUrl, {
+  const homepagePromise = getFirecrawl().scrapeUrl(homeUrl, {
     formats: ['markdown', 'extract'],
     extract: { schema: catalogSchema }
   }).then(result => {
@@ -238,7 +249,7 @@ export async function scrapeWithFirecrawl(
         batch.map(async (catalogUrl) => {
           try {
             console.log('[Firecrawl] Scraping catalog:', catalogUrl);
-            const result = await firecrawl.scrapeUrl(catalogUrl, {
+            const result = await getFirecrawl().scrapeUrl(catalogUrl, {
               formats: ['markdown', 'extract'],
               extract: { schema: catalogSchema }
             });
@@ -368,7 +379,7 @@ export async function scrapeWithFirecrawl(
         batch.map(async (modelUrl) => {
           try {
             console.log('[Firecrawl] Scraping model page:', modelUrl);
-            const result = await firecrawl.scrapeUrl(modelUrl, {
+            const result = await getFirecrawl().scrapeUrl(modelUrl, {
               formats: ['markdown', 'extract'],
               extract: { schema: singleModelSchema }
             });

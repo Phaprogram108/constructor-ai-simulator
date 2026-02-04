@@ -23,6 +23,7 @@ export interface ScrapedContent {
   models: string[];
   contactInfo: string;
   rawText: string;
+  faqs?: { question: string; answer: string }[];
 }
 
 export interface CreateSessionRequest {

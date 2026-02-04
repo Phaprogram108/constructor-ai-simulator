@@ -20,7 +20,7 @@ function getFirecrawl(): Firecrawl {
 // Constantes de configuracion
 const RATE_LIMIT_MS = 50; // Firecrawl maneja rate limit interno
 const FIRECRAWL_CREDIT_COST_USD = 0.001; // Aproximadamente $0.001 por credit
-const MAX_CATALOG_URLS = 10; // Maximo URLs de catalogo a scrapear
+const MAX_CATALOG_URLS = 15; // Maximo URLs de catalogo a scrapear
 const BATCH_SIZE = 10; // URLs a procesar en paralelo (aumentado para mejor performance)
 
 // Funcion para estimar costos antes de scrapear
@@ -118,6 +118,16 @@ function parseModelsFromMarkdown(markdown: string): ExtractedModel[] {
     /(?:Casa|Vivienda)\s+([A-Za-záéíóúñÁÉÍÓÚÑ0-9\s\-]+?)\s*[-–|]\s*(\d+[.,]?\d*)\s*m[²2]/gi,
     // Patrón con precio: "CM0 15m² USD 17.050"
     /([A-Z]{1,3}\d+(?:\s*-\s*[A-Z])?)\s*(\d+[.,]?\d*)\s*m[²2].*?(?:U\$?D|USD|\$)\s*([\d.,]+)/gi,
+    // Formato Wellmod: "W26 Suite | 26 m2 | Monoambiente"
+    /([A-Z]\d+\s*\w*)\s*[|\-–]\s*(\d+)\s*m[²2]/gi,
+    // Formato tabla con pipes: "Modelo | Superficie | Dormitorios"
+    /^([A-Za-z0-9\s]+)\s*\|\s*(\d+[.,]?\d*)\s*m[²2]/gm,
+    // Formato con "Ver más" o "VER MAS": extraer nombre antes de link
+    /([\w\s]+)\s+(?:VER MAS|Ver más|ver más)/gi,
+    // Formato simple: "Nombre Modelo 50m2" o "Nombre 50 m2"
+    /([A-Za-záéíóúñÁÉÍÓÚÑ\s]+)\s+(\d+)\s*m[²2]/gi,
+    // Formato con guión: "Modelo-A - 45m²"
+    /([A-Za-z0-9]+[-][A-Za-z0-9]*)\s*[-–]\s*(\d+[.,]?\d*)\s*m[²2]/gi,
   ];
 
   // Buscar con cada patrón
@@ -182,6 +192,43 @@ function parseModelsFromMarkdown(markdown: string): ExtractedModel[] {
   return models;
 }
 
+/**
+ * Extrae contenido de FAQ del markdown
+ */
+function extractFAQContent(markdown: string): { question: string; answer: string }[] {
+  const faqs: { question: string; answer: string }[] = [];
+
+  // Patrón 1: Markdown headers como preguntas
+  // ### ¿Pregunta?
+  // Respuesta aquí
+  const headerPattern = /###?\s*¿([^?]+)\?[\s\n]+([^\n#]+(?:\n(?!###?)[^\n#]+)*)/gi;
+
+  // Patrón 2: Bold como pregunta
+  // **¿Pregunta?**
+  // Respuesta
+  const boldPattern = /\*\*¿([^?]+)\?\*\*[\s\n]+([^\n*]+(?:\n(?!\*\*)[^\n*]+)*)/gi;
+
+  // Patrón 3: Lista con pregunta
+  // - ¿Pregunta? Respuesta
+  const listPattern = /[-•]\s*¿([^?]+)\?\s*([^\n-•]+)/gi;
+
+  let match;
+
+  while ((match = headerPattern.exec(markdown)) !== null) {
+    faqs.push({ question: match[1].trim(), answer: match[2].trim() });
+  }
+
+  while ((match = boldPattern.exec(markdown)) !== null) {
+    faqs.push({ question: match[1].trim(), answer: match[2].trim() });
+  }
+
+  while ((match = listPattern.exec(markdown)) !== null) {
+    faqs.push({ question: match[1].trim(), answer: match[2].trim() });
+  }
+
+  return faqs;
+}
+
 export async function scrapeWithFirecrawl(
   url: string,
   options: ScrapeOptions = { exhaustive: true }
@@ -210,7 +257,7 @@ export async function scrapeWithFirecrawl(
     'casa', 'casas', 'modelo', 'modelos', 'vivienda', 'viviendas',
     'proyecto', 'proyectos', 'catalogo', 'portfolio',
     // Tipologias y modulos
-    'tipologia', 'tipologias',
+    'tipologia', 'tipologias', 'suite', 'loft', 'studio', 'monoambiente',
     'modulo', 'modulos',
     'residencial', 'residenciales',
     'linea', 'lineas',
@@ -220,11 +267,13 @@ export async function scrapeWithFirecrawl(
     'obras', 'trabajos',
     // Tipos especificos
     'refugio', 'refugios',
-    'tiny', 'container', 'prefabricada', 'prefabricadas',
-    'steel-frame', 'steelframe',
+    'tiny', 'tiny-house', 'container', 'contenedor', 'prefabricada', 'prefabricadas',
+    'duplex', 'steel-frame', 'steelframe',
     'modulares', 'modular',
     // Quinchos
-    'quinchos', 'quincho'
+    'quinchos', 'quincho',
+    // Especificaciones y fichas
+    'detalle', 'ficha', 'especificacion', 'caracteristicas'
   ];
 
   const homeUrl = allUrls.find(u => new URL(u).pathname === '/') || url;
@@ -252,7 +301,18 @@ export async function scrapeWithFirecrawl(
     modelUrls = []; // No necesitamos separar en modo exhaustivo
 
     // PRIORIZAR URLs: páginas principales de catálogo primero
-    const HIGH_PRIORITY_PATHS = ['/casas', '/catalogo', '/modelos', '/viviendas', '/portfolio', '/proyectos', '/quinchos'];
+    const HIGH_PRIORITY_PATHS = [
+      // Existentes - Catálogo
+      '/casas', '/catalogo', '/modelos', '/viviendas', '/portfolio', '/proyectos', '/quinchos',
+      // FAQ y cobertura
+      '/faq', '/preguntas-frecuentes', '/preguntas', '/cobertura', '/envios', '/zonas', '/envio',
+      // Especificaciones y tipologías
+      '/tipologias', '/especificaciones', '/caracteristicas', '/detalles', '/ficha-tecnica', '/fichas',
+      // Proceso y precios
+      '/proceso', '/como-trabajamos', '/precios', '/cotizador', '/financiacion', '/financiamiento',
+      // Otros importantes
+      '/nosotros', '/about', '/empresa', '/servicios'
+    ];
     catalogUrls.sort((a, b) => {
       const pathA = new URL(a).pathname.toLowerCase();
       const pathB = new URL(b).pathname.toLowerCase();
@@ -599,6 +659,11 @@ export async function scrapeWithFirecrawl(
   console.log('[Firecrawl] FINAL: Total models extracted:', allModels.length);
   console.log('[Firecrawl] Models:', allModels.map(m => m.name));
 
+  // Extraer FAQs del markdown acumulado
+  const combinedMarkdown = allMarkdown.join('');
+  const faqs = extractFAQContent(combinedMarkdown);
+  console.log('[Firecrawl] FAQs extracted:', faqs.length);
+
   // Convertir al formato ScrapedContent
   return {
     title: companyName || 'Empresa Constructora',
@@ -606,7 +671,8 @@ export async function scrapeWithFirecrawl(
     services: buildServices(constructionMethod, hasFinancing, locations),
     models: allModels.map(formatModelString),
     contactInfo: formatContactInfo(contactInfo),
-    rawText: allMarkdown.join('').slice(0, 20000)
+    rawText: combinedMarkdown.slice(0, 20000),
+    faqs: faqs.length > 0 ? faqs : undefined
   };
 }
 

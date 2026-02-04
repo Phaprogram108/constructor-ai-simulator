@@ -3,6 +3,7 @@ import Anthropic from '@anthropic-ai/sdk';
 import { chromium, Browser, Page } from 'playwright';
 import { ScrapedContent } from '@/types';
 import { scrapeWithFirecrawl } from './firecrawl';
+import { scrapeWithVision, needsVisionScraping, VisionScrapedContent } from './vision-scraper';
 
 // Inicialización lazy para evitar errores durante el build
 let anthropicInstance: Anthropic | null = null;
@@ -54,30 +55,89 @@ async function scrollToLoadContent(page: Page): Promise<void> {
 export async function scrapeWebsite(url: string): Promise<ScrapedContent> {
   console.log('[Scraper] Starting scrape for:', url);
 
+  let result: ScrapedContent | null = null;
+
   // 1. Intentar con Firecrawl primero (mejor para SPAs)
   try {
     console.log('[Scraper] Trying Firecrawl...');
-    const result = await scrapeWithFirecrawl(url);
+    result = await scrapeWithFirecrawl(url);
     if (result.models && result.models.length > 0) {
       console.log('[Scraper] Firecrawl success! Models:', result.models.length);
-      return result;
+    } else {
+      console.log('[Scraper] Firecrawl returned 0 models, trying Playwright...');
+      result = null;
     }
-    console.log('[Scraper] Firecrawl returned 0 models, trying Playwright...');
   } catch (error) {
     console.error('[Scraper] Firecrawl failed:', error);
   }
 
   // 2. Fallback a Playwright
-  try {
-    console.log('[Scraper] Trying Playwright...');
-    return await deepScrapeWithPlaywright(url);
-  } catch (error) {
-    console.error('[Scraper] Playwright scraping failed:', error);
+  if (!result) {
+    try {
+      console.log('[Scraper] Trying Playwright...');
+      result = await deepScrapeWithPlaywright(url);
+    } catch (error) {
+      console.error('[Scraper] Playwright scraping failed:', error);
+    }
   }
 
-  // 3. Ultimo recurso: fetch basico
-  console.log('[Scraper] Falling back to basic fetch scraping');
-  return await basicFetchScrape(url);
+  // 3. Fallback a fetch basico
+  if (!result) {
+    console.log('[Scraper] Falling back to basic fetch scraping');
+    result = await basicFetchScrape(url);
+  }
+
+  // 4. Vision fallback: si hay pocos modelos, intentar con Claude Vision
+  if (needsVisionScraping(url, result.models.length)) {
+    console.log(`[Scraper] Pocos modelos extraídos (${result.models.length}), intentando con Vision...`);
+
+    try {
+      const visionResult = await scrapeWithVision(url);
+      result = mergeVisionResults(result, visionResult);
+    } catch (visionError) {
+      console.error('[Scraper] Vision fallback failed:', visionError);
+      // Continuar con el resultado original
+    }
+  }
+
+  return result;
+}
+
+/**
+ * Mergea resultados de Vision con los existentes
+ */
+function mergeVisionResults(
+  original: ScrapedContent,
+  vision: VisionScrapedContent
+): ScrapedContent {
+  const result = { ...original };
+
+  // Si Vision encontró más modelos, usar esos
+  if (vision.models.length > original.models.length) {
+    result.models = vision.models.map(m =>
+      `${m.name}${m.sqMeters ? ` - ${m.sqMeters}m²` : ''}${m.bedrooms ? ` - ${m.bedrooms} dorm` : ''}${m.bathrooms ? ` - ${m.bathrooms} baños` : ''}${m.price ? ` - ${m.price}` : ''}`
+    );
+    console.log(`[Scraper] Vision encontró más modelos: ${vision.models.length} vs ${original.models.length}`);
+  }
+
+  // Agregar rawText de Vision al existente
+  if (vision.rawExtractedText) {
+    result.rawText = result.rawText + '\n\n--- INFORMACIÓN EXTRAÍDA CON VISION ---\n' + vision.rawExtractedText;
+  }
+
+  // Agregar especificaciones al rawText
+  if (vision.specifications.length > 0) {
+    const specsText = vision.specifications.map(s => `${s.label}: ${s.value}`).join('\n');
+    result.rawText = result.rawText + '\n\n--- ESPECIFICACIONES TÉCNICAS ---\n' + specsText;
+  }
+
+  // Agregar FAQs al rawText
+  if (vision.faq.length > 0) {
+    const faqText = vision.faq.map(f => `P: ${f.question}\nR: ${f.answer}`).join('\n\n');
+    result.rawText = result.rawText + '\n\n--- FAQ EXTRAÍDO ---\n' + faqText;
+  }
+
+  return result;
 }
 
 async function deepScrapeWithPlaywright(url: string): Promise<ScrapedContent> {

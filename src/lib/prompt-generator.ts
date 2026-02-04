@@ -60,12 +60,15 @@ Cuando te pregunten por modelos, explicá que diseñamos a medida según las nec
 Preguntá qué m² necesitan y cuántos dormitorios/baños para poder orientarlos mejor.
 `;
   } else {
-    // Sin modelos y sin indicación de diseño personalizado
+    // Sin modelos estructurados - BUSCAR EN RAWTEXT PRIMERO
     modelsSection = `
-## NOTA SOBRE MODELOS
-No tenés información específica de modelos cargada para esta empresa.
-NO digas "dejame consultarlo con el equipo técnico" - sos un bot y no podés hacer eso.
-En su lugar, decí: "No tengo el catálogo completo cargado, pero podés contactarnos por WhatsApp para que te pasen toda la info de modelos y precios."
+## MODELOS DISPONIBLES
+No se encontraron modelos estructurados automáticamente.
+
+**IMPORTANTE**: La información de modelos PUEDE estar en las secciones de "INFORMACIÓN ADICIONAL DE LA EMPRESA" o "CONTENIDO COMPLETO DEL CATÁLOGO".
+ANTES de decir que no tenés información, BUSCÁ en esas secciones por nombres de modelos, superficies (m²), dormitorios, etc.
+
+SOLO si después de buscar en TODO el contenido no encontrás nada, decí: "No tengo el catálogo completo cargado, pero podés contactarnos por WhatsApp para que te pasen toda la info."
 `;
   }
 
@@ -80,9 +83,14 @@ ${catalog.prices.map(p => `- ${p}`).join('\n')}
   } else {
     pricesSection = `
 ## ADVERTENCIA SOBRE PRECIOS
-⚠️ NO HAY PRECIOS CARGADOS para esta empresa.
-Cuando te pregunten por precios, SIEMPRE decí: "No tengo los precios actualizados cargados. Te sugiero consultarlo por WhatsApp para que te pasen la info completa."
-NUNCA inventes un precio, valor por m², ni rango de costos.
+⚠️ No se encontraron precios en formato estructurado.
+
+**IMPORTANTE**: Los precios PUEDEN estar mencionados en "INFORMACIÓN ADICIONAL" o "CONTENIDO DEL CATÁLOGO".
+ANTES de decir que no tenés precios, BUSCÁ en esas secciones por valores como "$", "USD", "dólares", "pesos", "desde", "precio".
+
+Si encontrás precios en el contenido raw, podés mencionarlos.
+Si después de buscar NO encontrás nada, decí: "No tengo los precios actualizados cargados. Te sugiero consultarlo por WhatsApp."
+NUNCA inventes un precio que no esté en ninguna parte del contenido.
 `;
   }
 
@@ -120,19 +128,19 @@ ${contactInfo}
 `
     : '';
 
-  // Raw text for additional context
+  // Raw text for additional context - AUMENTADO para fallback inteligente
   const additionalInfo = rawText
     ? `
 ## INFORMACIÓN ADICIONAL DE LA EMPRESA
-${rawText.slice(0, 6000)}
+${rawText.slice(0, 12000)}
 `
     : '';
 
-  // Additional catalog raw text
+  // Additional catalog raw text - AUMENTADO para fallback inteligente
   const catalogRawSection = catalog?.rawText
     ? `
 ## CONTENIDO COMPLETO DEL CATÁLOGO
-${catalog.rawText.slice(0, 8000)}
+${catalog.rawText.slice(0, 15000)}
 `
     : '';
 
@@ -157,6 +165,30 @@ ${contactSection}
 ${additionalInfo}
 ${catalogRawSection}
 
+## CÓMO BUSCAR INFORMACIÓN CUANDO FALTA (MUY IMPORTANTE)
+
+1. PRIMERO buscá en las secciones estructuradas (MODELOS, PRECIOS, SERVICIOS, CARACTERÍSTICAS)
+2. SI NO ENCONTRÁS, buscá en "INFORMACIÓN ADICIONAL DE LA EMPRESA" y "CONTENIDO COMPLETO DEL CATÁLOGO"
+3. SOLO SI NO ENCONTRÁS EN NINGÚN LADO, decí "no tengo esa información específica cargada"
+
+**NUNCA digas que no tenés información sin antes buscar en TODO el contenido del prompt.**
+
+### Ejemplos de cómo buscar:
+- Usuario pregunta: "¿Llegan a todo el país?"
+  → Buscá keywords: "todo el país", "todo argentina", "cobertura nacional", "envíos", "llegamos", "zona"
+  → Si encontrás algo relevante, respondé con esa información
+
+- Usuario pregunta: "¿Cuántos metros tiene el modelo X?"
+  → Buscá el nombre del modelo en TODO el contenido (estructurado Y raw)
+  → Buscá patrones como "X m2", "X metros", "superficie", "m²"
+
+- Usuario pregunta: "¿Tienen DVH?"
+  → Buscá "DVH", "doble vidriado", "vidrio", "ventanas", "aberturas"
+
+- Usuario pregunta por un modelo específico:
+  → Buscá ese nombre en las secciones de INFORMACIÓN ADICIONAL y CATÁLOGO
+  → Si encontrás datos aunque no estén estructurados, mencionálos
+
 ## CÓMO RESPONDER SOBRE MODELOS
 
 CUANDO TE PREGUNTEN QUÉ MODELOS TIENEN:
@@ -171,9 +203,10 @@ CUANDO PREGUNTEN POR UN MODELO ESPECÍFICO:
 - Si hay precio, mencionálo
 
 SI NO TENÉS LA INFORMACIÓN:
+- PRIMERO: Buscá en las secciones de "INFORMACIÓN ADICIONAL" y "CONTENIDO DEL CATÁLOGO" - la info puede estar ahí aunque no esté estructurada
 - NUNCA digas "dejame consultarlo" porque sos un bot y no podés hacer eso
-- Decí: "No tengo esa información específica cargada, pero podés contactarnos por WhatsApp para que te pasen los detalles"
-- NO inventes información que no esté en los datos proporcionados
+- SOLO si buscaste en TODO el contenido y no encontrás nada, decí: "No tengo esa información específica cargada, pero podés contactarnos por WhatsApp para que te pasen los detalles"
+- NO inventes información que no esté en ninguna parte del prompt
 
 ## TU OBJETIVO
 1. Responder consultas con información ESPECÍFICA y REAL de los productos

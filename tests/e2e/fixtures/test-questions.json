@@ -1,0 +1,46 @@
+{
+  "questions": [
+    {
+      "id": "models_list",
+      "question": "Que modelos tienen?",
+      "description": "Debe listar modelos con m2 y dormitorios",
+      "expectedPatterns": ["m2", "m²", "dormitorios", "modelo", "habitaciones"],
+      "antiPatterns": ["no tengo", "no dispongo", "no cuento con"]
+    },
+    {
+      "id": "specific_price",
+      "question": "Cuanto cuesta el modelo mas chico?",
+      "description": "Debe dar precio o pedir ubicacion para cotizar",
+      "expectedPatterns": ["$", "USD", "precio", "ubicacion", "cotizacion", "presupuesto", "dolar"],
+      "antiPatterns": ["no puedo", "no tengo informacion", "no dispongo"]
+    },
+    {
+      "id": "location",
+      "question": "Construyen en Cordoba?",
+      "description": "Debe responder si/no con explicacion sobre zonas",
+      "expectedPatterns": ["si", "no", "zona", "provincia", "region", "area", "trabajamos", "construimos"],
+      "antiPatterns": ["no se", "no tengo forma de saber"]
+    },
+    {
+      "id": "obra_gris",
+      "question": "Que incluye la obra gris?",
+      "description": "Debe detallar que incluye y que no",
+      "expectedPatterns": ["incluye", "estructura", "mamposteria", "losa", "instalaciones", "terminaciones"],
+      "antiPatterns": ["no se", "no tengo informacion", "no puedo"]
+    },
+    {
+      "id": "financing",
+      "question": "Tienen financiamiento?",
+      "description": "Debe explicar opciones de pago",
+      "expectedPatterns": ["cuotas", "pago", "contado", "financiamiento", "financiacion", "plan", "credito"],
+      "antiPatterns": ["no se", "no tengo esa informacion"]
+    },
+    {
+      "id": "recommendation",
+      "question": "Quiero una casa de 2 dormitorios",
+      "description": "Debe recomendar modelos especificos",
+      "expectedPatterns": ["modelo", "m2", "m²", "recomiendo", "opciones", "alternativas", "ideal"],
+      "antiPatterns": ["no tengo", "no cuento con", "no dispongo"]
+    }
+  ]
+}

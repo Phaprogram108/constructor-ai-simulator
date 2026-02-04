@@ -6,7 +6,6 @@ import { upload } from '@vercel/blob/client';
 import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 export default function SimulatorForm() {
@@ -144,18 +143,18 @@ export default function SimulatorForm() {
   };
 
   return (
-    <Card className="w-full max-w-lg mx-auto">
-      <CardHeader>
-        <CardTitle>Configurar tu Agente IA</CardTitle>
-        <CardDescription>
-          Ingresá los datos de tu constructora para generar un agente personalizado
-        </CardDescription>
-      </CardHeader>
-      <CardContent>
+    <div className="w-full">
+      <div className="text-center mb-6">
+        <h2 className="text-2xl font-bold text-gray-900 mb-2">Configurar tu Agente IA</h2>
+        <p className="text-gray-600">
+          Ingresa los datos de tu constructora para generar un agente personalizado
+        </p>
+      </div>
+      <div>
         <form onSubmit={handleSubmit} className="space-y-6">
           {/* Website URL */}
           <div className="space-y-2">
-            <Label htmlFor="websiteUrl">URL de tu Sitio Web *</Label>
+            <Label htmlFor="websiteUrl" className="text-base font-medium">URL de tu Sitio Web *</Label>
             <Input
               id="websiteUrl"
               type="text"
@@ -163,34 +162,39 @@ export default function SimulatorForm() {
               value={websiteUrl}
               onChange={(e) => setWebsiteUrl(e.target.value)}
               disabled={loading}
+              className="h-12 text-base"
             />
-            <p className="text-xs text-muted-foreground">
-              Extraeremos información de tu empresa automáticamente
+            <p className="text-sm text-muted-foreground">
+              Extraeremos informacion de tu empresa automaticamente
             </p>
           </div>
 
           {/* PDF Input */}
-          <div className="space-y-2">
-            <Label>Catálogo de Productos (Opcional)</Label>
+          <div className="space-y-3">
+            <Label className="text-base font-medium">Link del Catalogo (Opcional)</Label>
             <Tabs value={pdfTab} onValueChange={setPdfTab}>
-              <TabsList className="grid w-full grid-cols-2">
-                <TabsTrigger value="url">Link PDF</TabsTrigger>
-                <TabsTrigger value="upload">Subir PDF</TabsTrigger>
+              <TabsList className="grid w-full grid-cols-2 h-11">
+                <TabsTrigger value="url" className="text-sm">Link del Catalogo</TabsTrigger>
+                <TabsTrigger value="upload" className="text-sm">Subir PDF</TabsTrigger>
               </TabsList>
 
-              <TabsContent value="url" className="mt-3">
+              <TabsContent value="url" className="mt-4">
                 <Input
                   type="url"
-                  placeholder="https://ejemplo.com/catalogo.pdf"
+                  placeholder="https://ejemplo.com/catalogo"
                   value={pdfUrl}
                   onChange={(e) => setPdfUrl(e.target.value)}
                   disabled={loading}
+                  className="h-12 text-base"
                 />
+                <p className="text-sm text-muted-foreground mt-2">
+                  URL de tu catalogo online o PDF
+                </p>
               </TabsContent>
 
-              <TabsContent value="upload" className="mt-3">
+              <TabsContent value="upload" className="mt-4">
                 <div
-                  className="border-2 border-dashed border-gray-200 rounded-lg p-6 text-center cursor-pointer hover:border-blue-400 transition-colors"
+                  className="border-2 border-dashed border-gray-200 rounded-lg p-8 text-center cursor-pointer hover:border-blue-400 transition-colors"
                   onClick={() => fileInputRef.current?.click()}
                 >
                   <input
@@ -223,16 +227,13 @@ export default function SimulatorForm() {
                     </div>
                   ) : (
                     <div className="text-sm text-muted-foreground">
-                      <p>Hacé clic para subir un PDF</p>
-                      <p className="text-xs">Máximo 30MB</p>
+                      <p>O subi tu catalogo en PDF</p>
+                      <p className="text-xs">Maximo 30MB</p>
                     </div>
                   )}
                 </div>
               </TabsContent>
             </Tabs>
-            <p className="text-xs text-muted-foreground">
-              El PDF ayuda al agente a conocer tus productos y precios
-            </p>
           </div>
 
           {/* Error Message */}
@@ -274,7 +275,7 @@ export default function SimulatorForm() {
             )}
           </Button>
         </form>
-      </CardContent>
-    </Card>
+      </div>
+    </div>
   );
 }

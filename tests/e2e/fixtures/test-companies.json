@@ -1,0 +1,44 @@
+{
+  "companies": [
+    {
+      "id": "vibert",
+      "name": "ViBert",
+      "websiteUrl": "https://vibert.com.ar",
+      "pdfUrl": null,
+      "expectedBehavior": "Gold standard - VERIFICADO FUNCIONANDO",
+      "notes": "Extrae 10 casas + 4 quinchos. Modelos: Sara, Daniela, Justina, Dora, Micaela, Estefania, Carmela, Selene, Valeria, Maria"
+    },
+    {
+      "id": "steel-framing-argentina",
+      "name": "Steel Framing Argentina",
+      "websiteUrl": "https://steelframingargentina.com.ar",
+      "pdfUrl": null,
+      "expectedBehavior": "Empresa grande con multiples modelos",
+      "notes": "Deberia tener informacion detallada de modelos"
+    },
+    {
+      "id": "casas-premoldeadas",
+      "name": "Casas Premoldeadas SRL",
+      "websiteUrl": "https://casaspremoldeadas.com.ar",
+      "pdfUrl": null,
+      "expectedBehavior": "Constructora tradicional",
+      "notes": "Verificar extraccion de modelos y precios"
+    },
+    {
+      "id": "construir-ba",
+      "name": "Construir BA",
+      "websiteUrl": "https://construirba.com.ar",
+      "pdfUrl": null,
+      "expectedBehavior": "Constructora zona Buenos Aires",
+      "notes": "Test de localizacion geografica"
+    },
+    {
+      "id": "casas-del-sur",
+      "name": "Casas del Sur",
+      "websiteUrl": "https://casasdelsur.com.ar",
+      "pdfUrl": null,
+      "expectedBehavior": "Constructora zona sur",
+      "notes": "Verificar informacion de zonas de cobertura"
+    }
+  ]
+}

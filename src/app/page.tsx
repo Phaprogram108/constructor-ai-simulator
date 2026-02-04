@@ -47,10 +47,11 @@ export default function Home() {
                 2
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">
-                Subi tu Catalogo
+                Agrega tu Catalogo
+                <span className="text-xs text-green-600 ml-1">(Recomendado)</span>
               </h3>
               <p className="text-gray-600 text-sm">
-                El PDF con tus modelos, precios y especificaciones
+                Link a tu catalogo online o subi un PDF con tus modelos
               </p>
             </div>
 
@@ -70,8 +71,10 @@ export default function Home() {
       </section>
 
       {/* Form Section */}
-      <section className="pb-6 px-4">
-        <SimulatorForm />
+      <section className="pb-8 px-4">
+        <div className="max-w-2xl mx-auto bg-white rounded-2xl shadow-xl p-8 border-2 border-blue-100">
+          <SimulatorForm />
+        </div>
       </section>
 
       {/* Features - BELOW the form */}

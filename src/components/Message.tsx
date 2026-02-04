@@ -3,6 +3,56 @@
 import { cn } from '@/lib/utils';
 import { Message as MessageType } from '@/types';
 
+// Función para renderizar Markdown básico (negritas, itálicas, listas)
+function renderMarkdown(text: string): React.ReactNode {
+  // Dividir por líneas para manejar listas
+  const lines = text.split('\n');
+
+  const processLine = (line: string, index: number): React.ReactNode => {
+    // Procesar negritas **texto** -> <strong>texto</strong>
+    const parts: React.ReactNode[] = [];
+    let lastIndex = 0;
+    const boldRegex = /\*\*([^*]+)\*\*/g;
+    let match;
+
+    while ((match = boldRegex.exec(line)) !== null) {
+      // Texto antes del match
+      if (match.index > lastIndex) {
+        parts.push(line.slice(lastIndex, match.index));
+      }
+      // Texto en negrita
+      parts.push(<strong key={`bold-${index}-${match.index}`}>{match[1]}</strong>);
+      lastIndex = match.index + match[0].length;
+    }
+
+    // Texto restante después del último match
+    if (lastIndex < line.length) {
+      parts.push(line.slice(lastIndex));
+    }
+
+    // Si no hubo matches, devolver la línea original
+    if (parts.length === 0) {
+      parts.push(line);
+    }
+
+    // Detectar si es un item de lista
+    const isListItem = /^[-•]\s/.test(line.trim());
+
+    if (isListItem) {
+      return (
+        <div key={index} className="flex gap-2 ml-2">
+          <span>•</span>
+          <span>{parts}</span>
+        </div>
+      );
+    }
+
+    return <span key={index}>{parts}{index < lines.length - 1 ? '\n' : ''}</span>;
+  };
+
+  return lines.map((line, index) => processLine(line, index));
+}
+
 interface MessageProps {
   message: MessageType;
 }
@@ -39,10 +89,10 @@ export default function Message({ message }: MessageProps) {
           </div>
         )}
 
-        {/* Message content */}
-        <p className="text-sm whitespace-pre-wrap break-words">
-          {message.content}
-        </p>
+        {/* Message content with Markdown support */}
+        <div className="text-sm whitespace-pre-wrap break-words">
+          {renderMarkdown(message.content)}
+        </div>
 
         {/* Timestamp */}
         <p

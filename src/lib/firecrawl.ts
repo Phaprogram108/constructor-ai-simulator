@@ -110,10 +110,12 @@ function parseModelsFromMarkdown(markdown: string): ExtractedModel[] {
   // Patrones para detectar modelos de casas/quinchos
   // Formato: "Modelo de Casa X - Y personas - Z m2 - N dormitorios - M baños"
   const modelPatterns = [
-    // Patrón ViBert: "Modelo de Casa Sara - 2 personas 65.55 m2 TOTALES"
-    /Modelo de (?:Casa|Quincho)\s+([A-Za-záéíóúñÁÉÍÓÚÑ\s\-]+?)\s*[-–]\s*(\d+)\s*personas?\s+(\d+[.,]?\d*)\s*m2/gi,
-    // Patrón genérico: "Casa/Modelo X - 100m² - 3 dormitorios"
-    /(?:Casa|Modelo|Vivienda)\s+([A-Za-záéíóúñÁÉÍÓÚÑ0-9\s\-]+?)\s*[-–|]\s*(\d+[.,]?\d*)\s*m[²2]/gi,
+    // Patrón ViBert Casas: "Modelo de Casa Sara - 2 personas 65.55 m2 TOTALES"
+    /Modelo de Casa\s+([A-Za-záéíóúñÁÉÍÓÚÑ]+)\s*[-–]\s*\d+\s*personas?\s+(\d+[.,]?\d*)\s*m2/gi,
+    // Patrón ViBert Quinchos: "Modelo de Quincho S - 27,50 m2 TOTALES" (sin personas)
+    /Modelo de (Quincho\s+[A-Za-záéíóúñÁÉÍÓÚÑ]+)\s*[-–]\s*(\d+[.,]?\d*)\s*m2/gi,
+    // Patrón genérico: "Casa/Modelo X - 100m² - 3 dormitorios" (excluir quinchos ya capturados)
+    /(?:Casa|Vivienda)\s+([A-Za-záéíóúñÁÉÍÓÚÑ0-9\s\-]+?)\s*[-–|]\s*(\d+[.,]?\d*)\s*m[²2]/gi,
     // Patrón con precio: "CM0 15m² USD 17.050"
     /([A-Z]{1,3}\d+(?:\s*-\s*[A-Z])?)\s*(\d+[.,]?\d*)\s*m[²2].*?(?:U\$?D|USD|\$)\s*([\d.,]+)/gi,
   ];
@@ -124,11 +126,18 @@ function parseModelsFromMarkdown(markdown: string): ExtractedModel[] {
     while ((match = pattern.exec(markdown)) !== null) {
       const name = match[1]?.trim();
       if (name && name.length > 1 && name.length < 50) {
-        // Evitar duplicados
-        const exists = models.some(m =>
-          m.name.toLowerCase().includes(name.toLowerCase()) ||
-          name.toLowerCase().includes(m.name.toLowerCase())
-        );
+        // Evitar duplicados - solo si el nombre es casi idéntico (no substring match)
+        const nameLower = name.toLowerCase();
+        const exists = models.some(m => {
+          const existingLower = m.name.toLowerCase();
+          // Considerar duplicado solo si:
+          // 1. Son exactamente iguales
+          // 2. Uno contiene al otro Y la diferencia de longitud es menor a 3 caracteres
+          if (existingLower === nameLower) return true;
+          if (existingLower.includes(nameLower) && Math.abs(existingLower.length - nameLower.length) < 3) return true;
+          if (nameLower.includes(existingLower) && Math.abs(nameLower.length - existingLower.length) < 3) return true;
+          return false;
+        });
         if (!exists) {
           const model: ExtractedModel = { name, category: 'casa' };
 

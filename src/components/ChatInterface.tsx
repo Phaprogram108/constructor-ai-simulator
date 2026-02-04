@@ -77,6 +77,7 @@ export default function ChatInterface({
           sessionId,
           message: userMessage,
           systemPrompt,
+          companyName: initialSession.companyName,
           conversationHistory: messages.map(m => ({
             role: m.role,
             content: m.content,
@@ -90,26 +91,37 @@ export default function ChatInterface({
         throw new Error(data.error || 'Error al enviar mensaje');
       }
 
-      // Add assistant message
+      // Add assistant message and persist full conversation
       const assistantMessage: MessageType = {
         id: `assistant-${Date.now()}`,
         role: 'assistant',
         content: data.message,
         timestamp: new Date(),
       };
+
+      // Update state and get the new messages array for persistence
+      const updatedMessages = [...messages, tempUserMessage, assistantMessage];
       setMessages(prev => [...prev, assistantMessage]);
 
       // Decrement messages locally and persist to localStorage
       const newMessagesRemaining = messagesRemaining - 1;
       setMessagesRemaining(newMessagesRemaining);
 
-      // Update localStorage with new count
+      // Update localStorage with new count AND full message history
       const storedSession = localStorage.getItem(`session-${sessionId}`);
       if (storedSession) {
         try {
           const sessionData = JSON.parse(storedSession);
           sessionData.session.messagesRemaining = newMessagesRemaining;
+          // Persist full conversation history
+          sessionData.messages = updatedMessages.map(m => ({
+            id: m.id,
+            role: m.role,
+            content: m.content,
+            timestamp: m.timestamp,
+          }));
           localStorage.setItem(`session-${sessionId}`, JSON.stringify(sessionData));
+          console.log('[ChatInterface] Persisted conversation:', updatedMessages.length, 'messages');
         } catch {
           // Ignore localStorage errors
         }

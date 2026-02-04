@@ -7,6 +7,18 @@ const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`
 export default function Home() {
   return (
     <main className="min-h-screen bg-gradient-to-b from-blue-50 to-white">
+      {/* Banner de Piloto */}
+      <div className="bg-amber-50 border-b border-amber-200">
+        <div className="max-w-4xl mx-auto px-4 py-2 text-center">
+          <p className="text-amber-800 text-sm">
+            <span className="font-semibold">🚀 Versión Piloto</span>
+            {' — '}
+            Este es un demo para mostrar el potencial de la tecnología.
+            Los resultados pueden variar según el sitio web analizado.
+          </p>
+        </div>
+      </div>
+
       {/* Hero Section */}
       <section className="pt-12 pb-4 px-4">
         <div className="max-w-4xl mx-auto text-center">

@@ -251,6 +251,31 @@ export async function scrapeWithFirecrawl(
     catalogUrls = allContentUrls.filter(u => u !== homeUrl);
     modelUrls = []; // No necesitamos separar en modo exhaustivo
 
+    // PRIORIZAR URLs: páginas principales de catálogo primero
+    const HIGH_PRIORITY_PATHS = ['/casas', '/catalogo', '/modelos', '/viviendas', '/portfolio', '/proyectos', '/quinchos'];
+    catalogUrls.sort((a, b) => {
+      const pathA = new URL(a).pathname.toLowerCase();
+      const pathB = new URL(b).pathname.toLowerCase();
+
+      // Alta prioridad: páginas de catálogo sin guión (ej: /casas vs /casa-sara)
+      const isHighPriorityA = HIGH_PRIORITY_PATHS.some(p => pathA === p || pathA === p + '/');
+      const isHighPriorityB = HIGH_PRIORITY_PATHS.some(p => pathB === p || pathB === p + '/');
+
+      if (isHighPriorityA && !isHighPriorityB) return -1;
+      if (!isHighPriorityA && isHighPriorityB) return 1;
+
+      // Media prioridad: páginas que contienen keywords pero tienen guión (individuales)
+      const hasCatalogKeywordA = MODEL_KEYWORDS.some(k => pathA.includes(k));
+      const hasCatalogKeywordB = MODEL_KEYWORDS.some(k => pathB.includes(k));
+
+      if (hasCatalogKeywordA && !hasCatalogKeywordB) return -1;
+      if (!hasCatalogKeywordA && hasCatalogKeywordB) return 1;
+
+      return 0;
+    });
+
+    console.log('[Firecrawl] URLs priorizadas (primeras 5):', catalogUrls.slice(0, 5));
+
     // Mostrar estimacion de costos
     const totalUrlsToScrape = catalogUrls.length + 1; // +1 por homepage
     const costEstimate = estimateCost(totalUrlsToScrape);

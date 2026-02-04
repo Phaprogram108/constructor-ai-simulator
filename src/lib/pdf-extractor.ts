@@ -132,7 +132,7 @@ Extrae y responde SOLO con un JSON válido:
 {
   "models": [
     {
-      "name": "nombre completo del modelo (ej: 'Modelo Carmela', 'Casa Aurora')",
+      "name": "nombre completo del modelo tal como aparece en el PDF",
       "description": "descripción del modelo",
       "sqMeters": "metros cuadrados si está disponible",
       "bedrooms": "cantidad de dormitorios",

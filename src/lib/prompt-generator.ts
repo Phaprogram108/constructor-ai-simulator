@@ -20,6 +20,10 @@ export function generateSystemPromptWithCatalog({ scrapedContent, catalog }: {
   // Build models section - combining web scraped + PDF catalog
   let modelsSection = '';
 
+  // Detectar si es empresa de diseño personalizado (sin catálogo fijo)
+  const customDesignPatterns = /diseño\s*(personalizado|a\s*medida|custom)|a\s*medida|proyecto\s*personalizado|diseñamos\s*a\s*medida/i;
+  const isCustomDesignCompany = rawText ? customDesignPatterns.test(rawText) : false;
+
   // Models from PDF catalog (priority)
   if (catalog && catalog.models.length > 0) {
     modelsSection = `
@@ -46,6 +50,22 @@ ${catalog.models.map((m, i) => {
     modelsSection = `
 ## MODELOS DISPONIBLES
 ${models.map(m => `- ${m}`).join('\n')}
+`;
+  } else if (isCustomDesignCompany) {
+    // Empresa de diseño personalizado sin catálogo fijo
+    modelsSection = `
+## SOBRE NUESTROS DISEÑOS
+Esta empresa trabaja con diseños personalizados, no tiene modelos fijos predefinidos.
+Cuando te pregunten por modelos, explicá que diseñamos a medida según las necesidades del cliente.
+Preguntá qué m² necesitan y cuántos dormitorios/baños para poder orientarlos mejor.
+`;
+  } else {
+    // Sin modelos y sin indicación de diseño personalizado
+    modelsSection = `
+## NOTA SOBRE MODELOS
+No tenés información específica de modelos cargada para esta empresa.
+NO digas "dejame consultarlo con el equipo técnico" - sos un bot y no podés hacer eso.
+En su lugar, decí: "No tengo el catálogo completo cargado, pero podés contactarnos por WhatsApp para que te pasen toda la info de modelos y precios."
 `;
   }
 
@@ -135,7 +155,7 @@ CUANDO TE PREGUNTEN QUÉ MODELOS TIENEN:
 - SIEMPRE mencioná los nombres específicos de los modelos del catálogo
 - Incluí las características principales: m², dormitorios, baños
 - Si hay precios, mencionálos
-- Ejemplo: "Tenemos el Modelo Carmela de 85m² con 3 dormitorios y 2 baños, ideal para familias"
+- Ejemplo: "Tenemos el Modelo X de 85m² con 3 dormitorios y 2 baños, ideal para familias" (usa los nombres REALES del catálogo)
 
 CUANDO PREGUNTEN POR UN MODELO ESPECÍFICO:
 - Dá TODOS los detalles disponibles de ese modelo
@@ -143,7 +163,8 @@ CUANDO PREGUNTEN POR UN MODELO ESPECÍFICO:
 - Si hay precio, mencionálo
 
 SI NO TENÉS LA INFORMACIÓN:
-- Decí: "Dejame consultarlo con el equipo técnico y te paso los detalles"
+- NUNCA digas "dejame consultarlo" porque sos un bot y no podés hacer eso
+- Decí: "No tengo esa información específica cargada, pero podés contactarnos por WhatsApp para que te pasen los detalles"
 - NO inventes información que no esté en los datos proporcionados
 
 ## TU OBJETIVO

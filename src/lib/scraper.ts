@@ -17,9 +17,31 @@ const MODEL_KEYWORDS = [
 ];
 
 // Timeout para navegación
-const NAV_TIMEOUT = 45000;
-const MAX_PAGES_TO_CRAWL = 10;
-const WAIT_AFTER_LOAD = 3000; // Esperar que JS renderice
+const NAV_TIMEOUT = 60000;  // 60 segundos para SPAs pesados
+const MAX_PAGES_TO_CRAWL = 8; // Reducido de 15 para mejor performance
+const WAIT_AFTER_LOAD = 2000; // Reducido de 5000ms
+
+// Scroll gradual para activar lazy loading en SPAs
+async function scrollToLoadContent(page: Page): Promise<void> {
+  await page.evaluate(async () => {
+    const delay = (ms: number) => new Promise(r => setTimeout(r, ms));
+    const scrollHeight = document.body.scrollHeight;
+    const viewportHeight = window.innerHeight;
+
+    // Scroll gradual hacia abajo
+    for (let y = 0; y < scrollHeight; y += viewportHeight) {
+      window.scrollTo(0, y);
+      await delay(300);
+    }
+
+    // Scroll al final para asegurar
+    window.scrollTo(0, document.body.scrollHeight);
+    await delay(500);
+
+    // Volver arriba
+    window.scrollTo(0, 0);
+  });
+}
 
 export async function scrapeWebsite(url: string): Promise<ScrapedContent> {
   console.log('[Scraper] Starting scrape for:', url);
@@ -67,15 +89,31 @@ async function deepScrapeWithPlaywright(url: string): Promise<ScrapedContent> {
 
     const page = await context.newPage();
 
-    // 1. Navegar a la homepage
+    // 1. Navegar a la homepage con networkidle para SPAs
     console.log('[Scraper] Navigating to homepage:', url);
-    await page.goto(url, {
-      waitUntil: 'domcontentloaded',
-      timeout: NAV_TIMEOUT
-    });
+    try {
+      await page.goto(url, {
+        waitUntil: 'networkidle',
+        timeout: NAV_TIMEOUT
+      });
+    } catch {
+      // Fallback si networkidle timeout (sitios con polling constante)
+      console.log('[Scraper] networkidle timeout, retrying with domcontentloaded');
+      await page.goto(url, {
+        waitUntil: 'domcontentloaded',
+        timeout: NAV_TIMEOUT
+      });
+    }
 
     // Esperar que JS renderice el contenido (importante para sitios Wix/React)
     console.log('[Scraper] Waiting for JS to render...');
+    await page.waitForTimeout(WAIT_AFTER_LOAD);
+
+    // Scroll para activar lazy loading
+    console.log('[Scraper] Scrolling to trigger lazy loading...');
+    await scrollToLoadContent(page);
+
+    // Esperar contenido adicional después del scroll
     await page.waitForTimeout(WAIT_AFTER_LOAD);
 
     // Intentar esperar a que haya contenido visible
@@ -86,8 +124,18 @@ async function deepScrapeWithPlaywright(url: string): Promise<ScrapedContent> {
     }
 
     // 2. Extraer contenido de la homepage
-    const homepageContent = await extractPageContent(page);
+    let homepageContent = await extractPageContent(page);
     console.log('[Scraper] Homepage content length:', homepageContent.text.length);
+
+    // Retry si homepage tiene muy poco contenido (SPA que no cargó bien)
+    if (homepageContent.text.length < 500) {
+      console.log('[Scraper] Low content detected, retrying with more wait time...');
+      await page.waitForTimeout(5000); // Esperar 5 segundos más
+      await scrollToLoadContent(page);
+      await page.waitForTimeout(3000);
+      homepageContent = await extractPageContent(page);
+      console.log('[Scraper] After retry, content length:', homepageContent.text.length);
+    }
 
     // 3. Extraer todos los links internos
     const baseUrl = new URL(url);
@@ -104,12 +152,22 @@ async function deepScrapeWithPlaywright(url: string): Promise<ScrapedContent> {
     for (const link of modelLinks.slice(0, MAX_PAGES_TO_CRAWL)) {
       try {
         console.log('[Scraper] Crawling:', link);
-        await page.goto(link, {
-          waitUntil: 'domcontentloaded',
-          timeout: NAV_TIMEOUT
-        });
+        try {
+          await page.goto(link, {
+            waitUntil: 'networkidle',
+            timeout: NAV_TIMEOUT
+          });
+        } catch {
+          // Fallback si networkidle falla
+          await page.goto(link, {
+            waitUntil: 'domcontentloaded',
+            timeout: NAV_TIMEOUT
+          });
+        }
         // Esperar para que JS renderice
         await page.waitForTimeout(WAIT_AFTER_LOAD);
+        // Scroll para lazy loading
+        await scrollToLoadContent(page);
 
         const pageContent = await extractPageContent(page);
         console.log(`[Scraper] Page ${link} content length:`, pageContent.text.length);
@@ -200,6 +258,10 @@ async function extractPageContent(page: Page): Promise<PageContent> {
 }
 
 async function extractInternalLinks(page: Page, baseUrl: URL): Promise<string[]> {
+  // Esperar que el DOM se estabilice para links dinámicos
+  await page.waitForTimeout(1000);
+
+  // Extraer links tradicionales de <a href>
   const links = await page.evaluate(() => {
     const anchors = Array.from(document.querySelectorAll('a[href]'));
     return anchors
@@ -207,10 +269,37 @@ async function extractInternalLinks(page: Page, baseUrl: URL): Promise<string[]>
       .filter((href): href is string => href !== null);
   });
 
+  // Extraer links dinámicos de elementos con data-link, data-href, data-url
+  const dynamicLinks = await page.evaluate(() => {
+    const selectors = [
+      '[data-link]',
+      '[data-href]',
+      '[data-url]',
+      '[data-page-url]',
+      '[onclick*="location"]',
+      '[onclick*="href"]',
+      'button[data-link]',
+      '[role="link"]'
+    ];
+    const elements = document.querySelectorAll(selectors.join(', '));
+    return Array.from(elements)
+      .map(el => {
+        return el.getAttribute('data-link') ||
+               el.getAttribute('data-href') ||
+               el.getAttribute('data-url') ||
+               el.getAttribute('data-page-url') ||
+               el.getAttribute('href');
+      })
+      .filter((href): href is string => href !== null && href.length > 0);
+  });
+
+  // Combinar todos los links
+  const allLinks = [...links, ...dynamicLinks];
+
   // Normalizar y filtrar links internos
   const normalizedLinks = new Set<string>();
 
-  for (const link of links) {
+  for (const link of allLinks) {
     try {
       let fullUrl: URL;
 
@@ -218,7 +307,7 @@ async function extractInternalLinks(page: Page, baseUrl: URL): Promise<string[]>
         fullUrl = new URL(link);
       } else if (link.startsWith('/')) {
         fullUrl = new URL(link, baseUrl.origin);
-      } else if (!link.startsWith('#') && !link.startsWith('mailto:') && !link.startsWith('tel:')) {
+      } else if (!link.startsWith('#') && !link.startsWith('mailto:') && !link.startsWith('tel:') && !link.startsWith('javascript:')) {
         fullUrl = new URL(link, baseUrl.origin);
       } else {
         continue;
@@ -367,7 +456,7 @@ Extrae y responde SOLO con un JSON válido (sin explicaciones ni markdown):
 }
 
 IMPORTANTE:
-- BUSCA EN TODO EL CONTENIDO nombres de modelos específicos (ej: "Aurora", "Carmela", "Duna", etc.)
+- BUSCA EN TODO EL CONTENIDO los nombres de modelos que aparezcan en el sitio web (NO inventes nombres)
 - Para cada modelo incluye TODOS los detalles: metros cuadrados, dormitorios, baños, características
 - Si hay precios, inclúyelos exactamente como aparecen junto al modelo
 - El nombre de la empresa debe ser SOLO el nombre comercial, sin "Home |" ni similares

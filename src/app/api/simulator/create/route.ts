@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { scrapeWebsite } from '@/lib/scraper';
-import { analyzePdfWithVision, ExtractedCatalog } from '@/lib/pdf-extractor';
+import { analyzePdfWithVision } from '@/lib/pdf-extractor';
 import { generateSystemPromptWithCatalog, getWelcomeMessage } from '@/lib/prompt-generator';
 import { createSession, addMessage } from '@/lib/session-manager';
 import { checkRateLimit, getClientIdentifier } from '@/lib/rate-limiter';
@@ -41,38 +41,43 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Scrape website with AI
-    console.log('[Create] Scraping website:', websiteUrl);
-    const scrapedContent = await scrapeWebsite(websiteUrl);
-    console.log('[Create] Scraped:', {
-      title: scrapedContent.title,
-      modelsCount: scrapedContent.models.length,
-      servicesCount: scrapedContent.services.length,
-    });
+    // Scrape website and analyze PDF in parallel
+    console.log('[Create] Starting parallel scraping...');
+    console.log('[Create] Website:', websiteUrl);
+    if (pdfUrl) console.log('[Create] PDF:', pdfUrl);
+    const startTime = Date.now();
 
-    // Extract and analyze PDF if provided - using Vision for image-based PDFs
-    let catalog: ExtractedCatalog | undefined;
-    if (pdfUrl) {
-      console.log('[Create] Processing PDF with Vision:', pdfUrl);
+    const [scrapedContent, catalog] = await Promise.all([
+      scrapeWebsite(websiteUrl).then(result => {
+        console.log('[Create] Web scrape completed in', Date.now() - startTime, 'ms');
+        console.log('[Create] Scraped:', {
+          title: result.title,
+          modelsCount: result.models.length,
+          servicesCount: result.services.length,
+        });
+        return result;
+      }),
+      pdfUrl
+        ? analyzePdfWithVision(pdfUrl).then(result => {
+            console.log('[Create] PDF analysis completed in', Date.now() - startTime, 'ms');
+            console.log('[Create] PDF Vision analysis:', {
+              modelsCount: result.models.length,
+              pricesCount: result.prices.length,
+              featuresCount: result.features.length,
+              hasRawText: !!result.rawText,
+            });
+            if (result.models.length > 0) {
+              console.log('[Create] Models found:', result.models.map(m => m.name));
+              console.log('[Create] First model details:', JSON.stringify(result.models[0], null, 2));
+            } else {
+              console.log('[Create] WARNING: No models extracted from PDF!');
+            }
+            return result;
+          })
+        : Promise.resolve(undefined)
+    ]);
 
-      // Use the new vision-based analysis that works with image PDFs
-      catalog = await analyzePdfWithVision(pdfUrl);
-
-      console.log('[Create] PDF Vision analysis complete:', {
-        modelsCount: catalog.models.length,
-        pricesCount: catalog.prices.length,
-        featuresCount: catalog.features.length,
-        hasRawText: !!catalog.rawText,
-      });
-
-      // Log model names for debugging
-      if (catalog.models.length > 0) {
-        console.log('[Create] Models found:', catalog.models.map(m => m.name));
-        console.log('[Create] First model details:', JSON.stringify(catalog.models[0], null, 2));
-      } else {
-        console.log('[Create] WARNING: No models extracted from PDF!');
-      }
-    }
+    console.log('[Create] Total parallel time:', Date.now() - startTime, 'ms');
 
     // Generate system prompt with all information directly included
     console.log('[Create] Generating system prompt...');

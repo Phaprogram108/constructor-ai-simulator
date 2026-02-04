@@ -6,12 +6,31 @@ const firecrawl = new Firecrawl({
   apiKey: process.env.FIRECRAWL_API_KEY!
 });
 
+// Constantes de configuracion
+const RATE_LIMIT_MS = 50; // Firecrawl maneja rate limit interno
+const FIRECRAWL_CREDIT_COST_USD = 0.001; // Aproximadamente $0.001 por credit
+const MAX_CATALOG_URLS = 10; // Maximo URLs de catalogo a scrapear
+const BATCH_SIZE = 10; // URLs a procesar en paralelo (aumentado para mejor performance)
+
+// Funcion para estimar costos antes de scrapear
+function estimateCost(urlCount: number): { credits: number; usdEstimate: number } {
+  // Firecrawl cobra ~1 credit por pagina scrapeada
+  const credits = urlCount;
+  const usdEstimate = credits * FIRECRAWL_CREDIT_COST_USD;
+  return { credits, usdEstimate };
+}
+
+// Helper para rate limiting
+async function rateLimitDelay(): Promise<void> {
+  await new Promise(resolve => setTimeout(resolve, RATE_LIMIT_MS));
+}
+
 // Schema mejorado para extraer MULTIPLES modelos de una pagina de catalogo
 const catalogSchema = z.object({
   companyName: z.string().optional().describe("Nombre de la empresa constructora"),
   companyDescription: z.string().optional().describe("Descripcion de la empresa"),
   models: z.array(z.object({
-    name: z.string().describe("Nombre del modelo (Sara, Daniela, Carmela, Justina, etc.)"),
+    name: z.string().describe("Nombre del modelo tal como aparece en el sitio web"),
     squareMeters: z.number().optional().describe("Metros cuadrados totales"),
     coveredArea: z.number().optional().describe("Superficie cubierta en m2"),
     semicoveredArea: z.number().optional().describe("Superficie semicubierta en m2"),
@@ -22,7 +41,7 @@ const catalogSchema = z.object({
     category: z.string().optional().describe("Categoria: casa, quincho, cabana, etc.")
   })).optional().describe("TODOS los modelos de casas/quinchos disponibles - extraer CADA UNO"),
   quinchos: z.array(z.object({
-    name: z.string().describe("Nombre o tamanio del quincho (S, M, L, A)"),
+    name: z.string().describe("Nombre o tamaño del quincho tal como aparece en el sitio"),
     squareMeters: z.number().optional(),
     features: z.array(z.string()).optional()
   })).optional().describe("Modelos de quinchos disponibles"),
@@ -69,13 +88,23 @@ interface ContactInfo {
   address?: string;
 }
 
-export async function scrapeWithFirecrawl(url: string): Promise<ScrapedContent> {
+interface ScrapeOptions {
+  exhaustive?: boolean; // Si true, scrapea TODAS las URLs sin filtrar
+}
+
+export async function scrapeWithFirecrawl(
+  url: string,
+  options: ScrapeOptions = { exhaustive: true }
+): Promise<ScrapedContent> {
+  const { exhaustive = true } = options;
+
   console.log('[Firecrawl] Starting improved multi-model extraction for:', url);
+  console.log('[Firecrawl] Modo exhaustivo:', exhaustive ? 'SI - scrapeando TODAS las URLs' : 'NO - solo URLs filtradas');
 
   // PASO 1: Mapear todas las URLs del sitio
   console.log('[Firecrawl] Step 1: Mapping URLs...');
   const mapResult = await firecrawl.mapUrl(url, {
-    limit: 50
+    limit: 100 // Aumentado de 50 a 100 para capturar mas URLs
   });
 
   if (!mapResult.success || !mapResult.links) {
@@ -86,22 +115,75 @@ export async function scrapeWithFirecrawl(url: string): Promise<ScrapedContent> 
   console.log('[Firecrawl] Found URLs:', allUrls.length, allUrls);
 
   // PASO 2: Identificar URLs por tipo
-  const catalogUrls = allUrls.filter(u => {
-    const path = new URL(u).pathname.toLowerCase();
-    return path.includes('/casas') ||
-           path.includes('/modelos') ||
-           path.includes('/catalogo') ||
-           path.includes('/productos') ||
-           path.includes('/quinchos');
-  });
-
-  const modelUrls = allUrls.filter(u => {
-    const path = new URL(u).pathname.toLowerCase();
-    return (path.includes('casa-') || path.includes('modelo-')) &&
-           !catalogUrls.includes(u);
-  });
+  const MODEL_KEYWORDS = [
+    // Palabras principales
+    'casa', 'casas', 'modelo', 'modelos', 'vivienda', 'viviendas',
+    'proyecto', 'proyectos', 'catalogo', 'portfolio',
+    // Tipologias y modulos
+    'tipologia', 'tipologias',
+    'modulo', 'modulos',
+    'residencial', 'residenciales',
+    'linea', 'lineas',
+    'productos', 'producto',
+    // Galeria y obras
+    'galeria', 'gallery',
+    'obras', 'trabajos',
+    // Tipos especificos
+    'refugio', 'refugios',
+    'tiny', 'container', 'prefabricada', 'prefabricadas',
+    'steel-frame', 'steelframe',
+    'modulares', 'modular',
+    // Quinchos
+    'quinchos', 'quincho'
+  ];
 
   const homeUrl = allUrls.find(u => new URL(u).pathname === '/') || url;
+
+  // En modo exhaustivo: scrapear TODAS las URLs excepto assets/imagenes
+  // En modo filtrado: solo URLs que matcheen keywords
+  let catalogUrls: string[];
+  let modelUrls: string[];
+
+  if (exhaustive) {
+    // Modo exhaustivo: todas las URLs excepto assets estaticos
+    const EXCLUDED_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.gif', '.svg', '.webp', '.ico', '.pdf', '.css', '.js', '.woff', '.woff2', '.ttf'];
+    const EXCLUDED_PATHS = ['wp-content/uploads', 'assets/images', '/cdn-cgi/', '/api/', '/wp-json/'];
+
+    const allContentUrls = allUrls.filter(u => {
+      const urlLower = u.toLowerCase();
+      // Excluir archivos estaticos
+      const hasExcludedExtension = EXCLUDED_EXTENSIONS.some(ext => urlLower.endsWith(ext));
+      const hasExcludedPath = EXCLUDED_PATHS.some(path => urlLower.includes(path));
+      return !hasExcludedExtension && !hasExcludedPath;
+    });
+
+    // En modo exhaustivo, catalogUrls son TODAS las URLs de contenido
+    catalogUrls = allContentUrls.filter(u => u !== homeUrl);
+    modelUrls = []; // No necesitamos separar en modo exhaustivo
+
+    // Mostrar estimacion de costos
+    const totalUrlsToScrape = catalogUrls.length + 1; // +1 por homepage
+    const costEstimate = estimateCost(totalUrlsToScrape);
+    console.log(`[Firecrawl] Modo EXHAUSTIVO: scrapeando ${totalUrlsToScrape} URLs`);
+    console.log(`[Firecrawl] Costo estimado: ${costEstimate.credits} credits (~$${costEstimate.usdEstimate.toFixed(3)} USD)`);
+  } else {
+    // Modo filtrado (comportamiento original)
+    catalogUrls = allUrls.filter(u => {
+      const path = new URL(u).pathname.toLowerCase();
+      return MODEL_KEYWORDS.some(keyword => path.includes(keyword));
+    });
+
+    modelUrls = allUrls.filter(u => {
+      const path = new URL(u).pathname.toLowerCase();
+      return (path.includes('casa-') || path.includes('modelo-')) &&
+             !catalogUrls.includes(u);
+    });
+
+    const totalUrlsToScrape = catalogUrls.length + modelUrls.length + 1;
+    const costEstimate = estimateCost(totalUrlsToScrape);
+    console.log(`[Firecrawl] Modo FILTRADO: scrapeando ${totalUrlsToScrape} URLs (${catalogUrls.length} catalogo + ${modelUrls.length} modelos + 1 home)`);
+    console.log(`[Firecrawl] Costo estimado: ${costEstimate.credits} credits (~$${costEstimate.usdEstimate.toFixed(3)} USD)`);
+  }
 
   console.log('[Firecrawl] Catalog URLs:', catalogUrls);
   console.log('[Firecrawl] Individual model URLs:', modelUrls);
@@ -116,20 +198,67 @@ export async function scrapeWithFirecrawl(url: string): Promise<ScrapedContent> 
   let constructionMethod = '';
   let hasFinancing = false;
 
+  // OPTIMIZACION: Lanzar homepage scrape en paralelo con los batches de catalogo
+  console.log('[Firecrawl] Starting homepage scrape in parallel...');
+  const homepageStartTime = Date.now();
+  const homepagePromise = firecrawl.scrapeUrl(homeUrl, {
+    formats: ['markdown', 'extract'],
+    extract: { schema: catalogSchema }
+  }).then(result => {
+    const duration = Date.now() - homepageStartTime;
+    console.log(`[Firecrawl] Homepage scrape completed in ${duration}ms`);
+    return result;
+  }).catch(err => {
+    const duration = Date.now() - homepageStartTime;
+    console.error(`[Firecrawl] Homepage scrape failed after ${duration}ms:`, err);
+    return null;
+  });
+
   // PASO 3: Scrapear paginas de CATALOGO primero (tienen todos los modelos)
   if (catalogUrls.length > 0) {
     console.log('[Firecrawl] Step 3: Scraping catalog pages...');
 
-    for (const catalogUrl of catalogUrls) {
-      try {
-        console.log('[Firecrawl] Scraping catalog:', catalogUrl);
-        const result = await firecrawl.scrapeUrl(catalogUrl, {
-          formats: ['markdown', 'extract'],
-          extract: { schema: catalogSchema }
-        });
+    // Limitar cantidad de URLs a scrapear
+    const urlsToScrape = catalogUrls.slice(0, MAX_CATALOG_URLS);
+    console.log(`[Firecrawl] Scraping ${urlsToScrape.length} of ${catalogUrls.length} catalog URLs`);
 
-        if (!result.success) {
-          console.error('[Firecrawl] Catalog scrape failed:', result.error);
+    // Crear batches para procesamiento paralelo
+    const batches: string[][] = [];
+    for (let i = 0; i < urlsToScrape.length; i += BATCH_SIZE) {
+      batches.push(urlsToScrape.slice(i, i + BATCH_SIZE));
+    }
+
+    for (let batchIndex = 0; batchIndex < batches.length; batchIndex++) {
+      const batch = batches[batchIndex];
+      const batchStartTime = Date.now();
+      console.log(`[Firecrawl] Processing batch ${batchIndex + 1}/${batches.length} (${batch.length} URLs)...`);
+
+      // Scrapear URLs del batch en paralelo
+      const results = await Promise.all(
+        batch.map(async (catalogUrl) => {
+          try {
+            console.log('[Firecrawl] Scraping catalog:', catalogUrl);
+            const result = await firecrawl.scrapeUrl(catalogUrl, {
+              formats: ['markdown', 'extract'],
+              extract: { schema: catalogSchema }
+            });
+            return { catalogUrl, result, error: null };
+          } catch (error) {
+            console.error('[Firecrawl] Error scraping catalog:', catalogUrl, error);
+            return { catalogUrl, result: null, error };
+          }
+        })
+      );
+
+      const batchDuration = Date.now() - batchStartTime;
+      console.log(`[Firecrawl] Batch ${batchIndex + 1} completed in ${batchDuration}ms`);
+
+      // Procesar resultados del batch
+      for (const { catalogUrl, result, error } of results) {
+        if (error || !result?.success) {
+          if (result && !result.success) {
+            console.error('[Firecrawl] Catalog scrape failed:', result.error);
+          }
           continue;
         }
 
@@ -205,28 +334,61 @@ export async function scrapeWithFirecrawl(url: string): Promise<ScrapedContent> 
           console.log('[Firecrawl] Parsed models from markdown:', markdownModels.length);
           allModels = mergeModels(allModels, markdownModels);
         }
-      } catch (error) {
-        console.error('[Firecrawl] Error scraping catalog:', catalogUrl, error);
+      }
+
+      // Delay solo entre batches, no entre cada URL
+      if (batchIndex < batches.length - 1) {
+        await rateLimitDelay();
       }
     }
   }
 
   // PASO 4: Si no tenemos suficientes modelos, scrapear paginas individuales
-  if (allModels.length < 3 && modelUrls.length > 0) {
+  // En modo exhaustivo ya scrapeamos todo en el paso anterior, asi que solo si NO es exhaustivo
+  if (!exhaustive && allModels.length < 3 && modelUrls.length > 0) {
     console.log('[Firecrawl] Step 4: Scraping individual model pages (found only', allModels.length, 'models)...');
 
-    const urlsToScrape = modelUrls.slice(0, 12);
+    // Sin limite: procesar TODAS las modelUrls
+    const modelUrlsToScrape = modelUrls;
+    console.log('[Firecrawl] Scrapeando', modelUrlsToScrape.length, 'paginas de modelos individuales...');
 
-    for (const modelUrl of urlsToScrape) {
-      try {
-        console.log('[Firecrawl] Scraping model page:', modelUrl);
-        const result = await firecrawl.scrapeUrl(modelUrl, {
-          formats: ['markdown', 'extract'],
-          extract: { schema: singleModelSchema }
-        });
+    // Crear batches para procesamiento paralelo
+    const modelBatches: string[][] = [];
+    for (let i = 0; i < modelUrlsToScrape.length; i += BATCH_SIZE) {
+      modelBatches.push(modelUrlsToScrape.slice(i, i + BATCH_SIZE));
+    }
 
-        if (!result.success) {
-          console.error('[Firecrawl] Model page scrape failed:', result.error);
+    for (let batchIndex = 0; batchIndex < modelBatches.length; batchIndex++) {
+      const batch = modelBatches[batchIndex];
+      const batchStartTime = Date.now();
+      console.log(`[Firecrawl] Processing model batch ${batchIndex + 1}/${modelBatches.length} (${batch.length} URLs)...`);
+
+      // Scrapear URLs del batch en paralelo
+      const results = await Promise.all(
+        batch.map(async (modelUrl) => {
+          try {
+            console.log('[Firecrawl] Scraping model page:', modelUrl);
+            const result = await firecrawl.scrapeUrl(modelUrl, {
+              formats: ['markdown', 'extract'],
+              extract: { schema: singleModelSchema }
+            });
+            return { modelUrl, result, error: null };
+          } catch (error) {
+            console.error('[Firecrawl] Error scraping model page:', modelUrl, error);
+            return { modelUrl, result: null, error };
+          }
+        })
+      );
+
+      const batchDuration = Date.now() - batchStartTime;
+      console.log(`[Firecrawl] Model batch ${batchIndex + 1} completed in ${batchDuration}ms`);
+
+      // Procesar resultados del batch
+      for (const { modelUrl, result, error } of results) {
+        if (error || !result?.success) {
+          if (result && !result.success) {
+            console.error('[Firecrawl] Model page scrape failed:', result.error);
+          }
           continue;
         }
 
@@ -289,60 +451,57 @@ export async function scrapeWithFirecrawl(url: string): Promise<ScrapedContent> 
         if (extract?.contactEmail && !contactInfo.email) {
           contactInfo.email = extract.contactEmail;
         }
-      } catch (error) {
-        console.error('[Firecrawl] Error scraping model page:', modelUrl, error);
+      }
+
+      // Delay solo entre batches, no entre cada URL
+      if (batchIndex < modelBatches.length - 1) {
+        await rateLimitDelay();
       }
     }
   }
 
-  // PASO 5: Scrapear homepage para info de empresa si falta
-  if (!companyName || !contactInfo.phone) {
-    console.log('[Firecrawl] Step 5: Scraping homepage for company info...');
-    try {
-      const homeResult = await firecrawl.scrapeUrl(homeUrl, {
-        formats: ['markdown', 'extract'],
-        extract: { schema: catalogSchema }
-      });
+  // PASO 5: Procesar resultado del homepage (ya fue scrapeado en paralelo)
+  console.log('[Firecrawl] Step 5: Processing homepage result (scraped in parallel)...');
+  const homeResult = await homepagePromise;
 
-      if (!homeResult.success) {
-        console.error('[Firecrawl] Homepage scrape failed:', homeResult.error);
-      } else {
-        const extract = homeResult.extract as z.infer<typeof catalogSchema> | undefined;
+  if (homeResult && homeResult.success) {
+    const extract = homeResult.extract as z.infer<typeof catalogSchema> | undefined;
 
-        if (extract?.companyName && !companyName) {
-          companyName = extract.companyName;
-        }
-        if (extract?.companyDescription && !companyDescription) {
-          companyDescription = extract.companyDescription;
-        }
-        if (extract?.contactPhone && !contactInfo.phone) {
-          contactInfo.phone = extract.contactPhone;
-        }
-        if (extract?.contactWhatsapp && !contactInfo.whatsapp) {
-          contactInfo.whatsapp = extract.contactWhatsapp;
-        }
-        if (extract?.contactEmail && !contactInfo.email) {
-          contactInfo.email = extract.contactEmail;
-        }
-        if (extract?.constructionMethod && !constructionMethod) {
-          constructionMethod = extract.constructionMethod;
-        }
-        if (extract?.financing) {
-          hasFinancing = true;
-        }
-
-        // Tambien parsear markdown del home
-        if (homeResult.markdown) {
-          allMarkdown += `\n\n--- ${homeUrl} ---\n${homeResult.markdown}`;
-
-          // Extraer modelos del home si hay
-          const homeModels = parseModelsFromMarkdown(homeResult.markdown);
-          allModels = mergeModels(allModels, homeModels);
-        }
-      }
-    } catch (error) {
-      console.error('[Firecrawl] Error scraping homepage:', error);
+    // Solo usar datos del homepage si faltan
+    if (extract?.companyName && !companyName) {
+      companyName = extract.companyName;
+      console.log('[Firecrawl] Got companyName from homepage:', companyName);
     }
+    if (extract?.companyDescription && !companyDescription) {
+      companyDescription = extract.companyDescription;
+    }
+    if (extract?.contactPhone && !contactInfo.phone) {
+      contactInfo.phone = extract.contactPhone;
+      console.log('[Firecrawl] Got phone from homepage:', contactInfo.phone);
+    }
+    if (extract?.contactWhatsapp && !contactInfo.whatsapp) {
+      contactInfo.whatsapp = extract.contactWhatsapp;
+    }
+    if (extract?.contactEmail && !contactInfo.email) {
+      contactInfo.email = extract.contactEmail;
+    }
+    if (extract?.constructionMethod && !constructionMethod) {
+      constructionMethod = extract.constructionMethod;
+    }
+    if (extract?.financing) {
+      hasFinancing = true;
+    }
+
+    // Tambien parsear markdown del home
+    if (homeResult.markdown) {
+      allMarkdown += `\n\n--- ${homeUrl} ---\n${homeResult.markdown}`;
+
+      // Extraer modelos del home si hay
+      const homeModels = parseModelsFromMarkdown(homeResult.markdown);
+      allModels = mergeModels(allModels, homeModels);
+    }
+  } else {
+    console.log('[Firecrawl] Homepage scrape did not return usable data');
   }
 
   // Eliminar duplicados finales y ordenar
@@ -363,89 +522,9 @@ export async function scrapeWithFirecrawl(url: string): Promise<ScrapedContent> 
 }
 
 // Funcion para parsear modelos del markdown raw
+// IMPORTANTE: NO usar nombres hardcodeados - cada empresa tiene sus propios modelos
 function parseModelsFromMarkdown(markdown: string): ExtractedModel[] {
   const models: ExtractedModel[] = [];
-
-  // Nombres conocidos de modelos de casas
-  const knownModelNames = [
-    'Sara', 'Daniela', 'Justina', 'Dora', 'Micaela', 'Estefania', 'Estefanía',
-    'Carmela', 'Selene', 'Valeria', 'Maria', 'María', 'Aurora', 'Duna', 'Elena',
-    'Sofia', 'Sofía', 'Victoria', 'Lucia', 'Lucía', 'Andrea', 'Paula', 'Laura'
-  ];
-
-  // Buscar cada nombre conocido en el markdown
-  for (const name of knownModelNames) {
-    // Buscar patrones como "Casa Sara" o "SARA" o "Sara - 65m2"
-    const patterns = [
-      new RegExp(`(?:Casa\\s+)?${name}[^\\n]*?(\\d+(?:[.,]\\d+)?)\\s*m[²2]`, 'gi'),
-      new RegExp(`${name}[^\\n]*?(\\d+)\\s*(?:dorm|dormitorio|habitacion)`, 'gi'),
-      new RegExp(`(?:Casa\\s+)?${name}`, 'gi')
-    ];
-
-    for (const pattern of patterns) {
-      const match = markdown.match(pattern);
-      if (match) {
-        // Verificar si ya existe
-        const exists = models.some(m =>
-          m.name?.toLowerCase() === name.toLowerCase() ||
-          m.name?.toLowerCase() === `casa ${name.toLowerCase()}`
-        );
-
-        if (!exists) {
-          // Buscar mas datos cerca del nombre
-          const contextMatch = markdown.match(new RegExp(
-            `${name}[^\\n]{0,200}`, 'i'
-          ));
-          const context = contextMatch ? contextMatch[0] : '';
-
-          // Extraer metros cuadrados
-          const sqmMatch = context.match(/(\d+(?:[.,]\d+)?)\s*m[²2]/i);
-          const sqm = sqmMatch ? parseFloat(sqmMatch[1].replace(',', '.')) : undefined;
-
-          // Extraer dormitorios
-          const bedroomMatch = context.match(/(\d+)\s*(?:dorm|dormitorio|habitacion)/i);
-          const bedrooms = bedroomMatch ? parseInt(bedroomMatch[1]) : undefined;
-
-          // Extraer banos
-          const bathroomMatch = context.match(/(\d+)\s*(?:baño|bano|bath)/i);
-          const bathrooms = bathroomMatch ? parseInt(bathroomMatch[1]) : undefined;
-
-          models.push({
-            name: name,
-            squareMeters: sqm,
-            bedrooms: bedrooms,
-            bathrooms: bathrooms,
-            category: 'casa'
-          });
-
-          break; // Solo agregar una vez por nombre
-        }
-      }
-    }
-  }
-
-  // Buscar quinchos (S, M, L, A)
-  const quinchoPatterns = [
-    /quincho\s*(?:tama[ñn]o\s*)?(S|M|L|A|XL|XXL)/gi,
-    /quincho\s+(S|M|L|A|XL|XXL)/gi,
-    /(S|M|L|A)\s*-?\s*quincho/gi
-  ];
-
-  for (const pattern of quinchoPatterns) {
-    let match;
-    while ((match = pattern.exec(markdown)) !== null) {
-      const size = match[1].toUpperCase();
-      const quinchoName = `Quincho ${size}`;
-
-      const exists = models.some(m => m.name === quinchoName);
-      if (!exists) {
-        models.push({
-          name: quinchoName,
-          category: 'quincho'
-        });
-      }
-    }
-  }
 
   // Buscar patrones genericos de modelos con m2
   const genericPattern = /(?:modelo|casa|vivienda)\s+["']?(\w+)["']?\s*[-–]?\s*(\d+(?:[.,]\d+)?)\s*m[²2]/gi;

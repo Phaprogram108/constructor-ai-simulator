@@ -53,6 +53,20 @@ const UNIVERSAL_ACTIONS = [
   { type: 'click' as const, selector: '[class*="tab"][class*="tecnic"]' },
   { type: 'click' as const, selector: '[role="tab"]' },
   { type: 'wait' as const, milliseconds: 500 },
+
+  // 7. Expandir cards de modelos (común en sitios de constructoras)
+  { type: 'click' as const, selector: '[class*="model"] [class*="expand"]' },
+  { type: 'click' as const, selector: '[class*="model"] [class*="more"]' },
+  { type: 'click' as const, selector: '[class*="modelo"] [class*="expand"]' },
+  { type: 'click' as const, selector: '[class*="casa"] [class*="detail"]' },
+  { type: 'click' as const, selector: '[class*="card"] [class*="plus"]' },
+  { type: 'click' as const, selector: '[class*="card"] .fa-plus' },
+  { type: 'click' as const, selector: '[class*="card"] .fa-chevron-down' },
+  { type: 'click' as const, selector: '[class*="producto"] [class*="info"]' },
+  { type: 'click' as const, selector: 'button[class*="info"]' },
+  { type: 'click' as const, selector: 'button[class*="detail"]' },
+  { type: 'click' as const, selector: '.swiper-slide [class*="btn"]' },
+  { type: 'wait' as const, milliseconds: 1000 },
 ];
 
 // Prompt para el Agent de Firecrawl (usado como fallback)
@@ -941,13 +955,14 @@ export async function scrapeWithFirecrawl(
       const batchStartTime = Date.now();
       console.log(`[Firecrawl] Processing batch ${batchIndex + 1}/${batches.length} (${batch.length} URLs)...`);
 
-      // Scrapear URLs del batch en paralelo - SOLO MARKDOWN con ACTIONS para expandir contenido
+      // Scrapear URLs del batch en paralelo - CON EXTRACT para obtener modelos estructurados
       const results = await Promise.all(
         batch.map(async (catalogUrl) => {
           try {
             console.log('[Firecrawl] Scraping catalog:', catalogUrl);
             const result = await getFirecrawl().scrapeUrl(catalogUrl, {
-              formats: ['markdown'], // Solo markdown, sin extract para evitar datos inventados
+              formats: ['markdown', 'extract'],
+              extract: { schema: catalogSchema },
               actions: UNIVERSAL_ACTIONS,
               timeout: 60000 // Aumentar timeout por las actions
             });
@@ -962,7 +977,7 @@ export async function scrapeWithFirecrawl(
       const batchDuration = Date.now() - batchStartTime;
       console.log(`[Firecrawl] Batch ${batchIndex + 1} completed in ${batchDuration}ms`);
 
-      // Procesar resultados del batch - PARSEAR MARKDOWN DIRECTAMENTE (sin AI que inventa)
+      // Procesar resultados del batch - USAR EXTRACT + REGEX como fallback
       for (const { catalogUrl, result, error } of results) {
         if (error || !result?.success) {
           if (result && !result.success) {
@@ -972,15 +987,39 @@ export async function scrapeWithFirecrawl(
         }
 
         const markdown = result.markdown || '';
+        const extract = result.extract as z.infer<typeof catalogSchema> | undefined;
 
         // Acumular todo el markdown para análisis posterior
         allMarkdown.push(`\n--- URL: ${catalogUrl} ---\n${markdown}`);
 
-        // Parsear modelos del markdown con regex (sin AI)
+        // PRIMERO: Usar modelos del extract (AI de Firecrawl)
+        if (extract?.models && extract.models.length > 0) {
+          console.log(`[Firecrawl] Found ${extract.models.length} models in ${catalogUrl} via EXTRACT`);
+          for (const model of extract.models) {
+            const exists = allModels.some(m =>
+              m.name?.toLowerCase() === model.name?.toLowerCase()
+            );
+            if (!exists && model.name) {
+              allModels.push({
+                name: model.name,
+                squareMeters: model.squareMeters,
+                coveredArea: model.coveredArea,
+                semicoveredArea: model.semicoveredArea,
+                bedrooms: model.bedrooms,
+                bathrooms: model.bathrooms,
+                price: model.price,
+                features: model.features,
+                category: model.category || 'casa'
+              });
+            }
+          }
+        }
+
+        // SEGUNDO: Parsear modelos del markdown con regex como fallback
         const parsedModels = parseModelsFromMarkdown(markdown);
         if (parsedModels.length > 0) {
-          console.log(`[Firecrawl] Found ${parsedModels.length} models in ${catalogUrl} via regex`);
-          allModels.push(...parsedModels);
+          console.log(`[Firecrawl] Found ${parsedModels.length} additional models in ${catalogUrl} via regex`);
+          allModels = mergeModels(allModels, parsedModels);
         }
 
         // Extraer info de contacto del markdown

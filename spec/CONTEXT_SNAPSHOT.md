@@ -13,7 +13,7 @@ Constructor AI Simulator es una app Next.js que genera agentes de ventas IA para
 - **Tests completados:** 5 empresas testeadas
 - **5 PASS:** Atlas Housing, ViBert, Ecomod, Movilhauss, MakenHaus
 - **Fixes aplicados:** Clasificación inmobiliarias + Soporte Wix
-- **Commit actual:** 325ea7d
+- **Commit actual:** ac938c0
 
 ## Resultados de Tests
 

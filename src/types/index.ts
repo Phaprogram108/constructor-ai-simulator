@@ -3,6 +3,12 @@ export interface Message {
   role: 'user' | 'assistant';
   content: string;
   timestamp: Date;
+  // Flags para analisis de calidad de respuestas
+  flags?: {
+    saidNoInfo?: boolean;           // Dijo "no tengo esa informacion"
+    possibleHallucination?: boolean; // Validador detecto posible alucinacion
+    validationConfidence?: number;   // Confianza del validador (0-1)
+  };
 }
 
 export interface Session {
@@ -16,6 +22,14 @@ export interface Session {
   expiresAt: Date;
 }
 
+export interface SocialLinks {
+  instagram?: string;
+  facebook?: string;
+  linktree?: string;
+  tiktok?: string;
+  youtube?: string;
+}
+
 export interface ScrapedContent {
   title: string;
   description: string;
@@ -24,6 +38,8 @@ export interface ScrapedContent {
   contactInfo: string;
   rawText: string;
   faqs?: { question: string; answer: string }[];
+  socialLinks?: SocialLinks;
+  constructoraType?: 'modular' | 'tradicional' | 'mixta';
 }
 
 export interface CreateSessionRequest {

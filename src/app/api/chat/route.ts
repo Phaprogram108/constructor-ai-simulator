@@ -1,7 +1,9 @@
 import { NextRequest, NextResponse } from 'next/server';
 import OpenAI from 'openai';
-import { logConversation } from '@/lib/conversation-logger';
-import { Message } from '@/types';
+import { appendEnhancedMessage } from '@/lib/conversation-logger';
+import { Message, ScrapedContent } from '@/types';
+import { validateResponse, ValidationResult } from '@/lib/response-validator';
+import { ExtractedCatalog } from '@/lib/pdf-extractor';
 
 // Inicialización lazy para evitar errores durante el build
 let openaiInstance: OpenAI | null = null;
@@ -26,12 +28,15 @@ interface ChatRequestBody {
   systemPrompt: string;
   conversationHistory: ChatMessage[];
   companyName?: string;
+  // Campos opcionales para validacion de respuestas (backwards compatible)
+  scrapedContent?: ScrapedContent;
+  catalog?: ExtractedCatalog;
 }
 
 export async function POST(request: NextRequest) {
   try {
     const body: ChatRequestBody = await request.json();
-    const { sessionId, message, systemPrompt, conversationHistory, companyName } = body;
+    const { sessionId, message, systemPrompt, conversationHistory, scrapedContent, catalog } = body;
 
     // Validate request
     if (!message) {
@@ -76,34 +81,42 @@ export async function POST(request: NextRequest) {
     const assistantContent = completion.choices[0]?.message?.content ||
       'Disculpá, hubo un problema. ¿Podés repetir tu consulta?';
 
-    // Log conversation to file after each exchange
-    try {
-      const allMessages: Message[] = [
-        ...(conversationHistory || []).map((msg, idx) => ({
-          id: `hist-${idx}`,
-          role: msg.role,
-          content: msg.content,
-          timestamp: new Date(),
-        })),
-        {
-          id: `user-${Date.now()}`,
-          role: 'user' as const,
-          content: message,
-          timestamp: new Date(),
-        },
-        {
-          id: `assistant-${Date.now()}`,
-          role: 'assistant' as const,
-          content: assistantContent,
-          timestamp: new Date(),
-        },
-      ];
+    // Validar respuesta si tenemos el contenido scrapeado
+    let validationResult: ValidationResult | null = null;
 
-      logConversation(
-        sessionId || 'unknown',
-        companyName || 'Constructora',
-        allMessages
-      );
+    if (scrapedContent) {
+      validationResult = validateResponse(assistantContent, scrapedContent, catalog);
+
+      if (!validationResult.isValid) {
+        console.warn('[Chat] Respuesta con posibles alucinaciones:', {
+          sessionId,
+          issues: validationResult.issues,
+          confidence: validationResult.confidence,
+        });
+      }
+    }
+
+    // Log messages to enhanced logger
+    try {
+      // Crear mensaje del usuario
+      const userMessage: Message = {
+        id: `user-${Date.now()}`,
+        role: 'user',
+        content: message,
+        timestamp: new Date(),
+      };
+
+      // Crear mensaje del asistente
+      const assistantMessage: Message = {
+        id: `assistant-${Date.now()}`,
+        role: 'assistant',
+        content: assistantContent,
+        timestamp: new Date(),
+      };
+
+      // Agregar ambos mensajes al enhanced log
+      appendEnhancedMessage(sessionId || 'unknown', userMessage);
+      appendEnhancedMessage(sessionId || 'unknown', assistantMessage, validationResult || undefined);
     } catch (logError) {
       console.error('[Chat] Error logging conversation:', logError);
       // Don't fail the request if logging fails

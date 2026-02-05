@@ -4,6 +4,7 @@ import { analyzePdfWithVision } from '@/lib/pdf-extractor';
 import { generateSystemPromptWithCatalog, getWelcomeMessage } from '@/lib/prompt-generator';
 import { createSession, addMessage } from '@/lib/session-manager';
 import { checkRateLimit, getClientIdentifier } from '@/lib/rate-limiter';
+import { createEnhancedLog, appendEnhancedMessage, ScrapingMetadata } from '@/lib/conversation-logger';
 import { CreateSessionRequest } from '@/types';
 import { v4 as uuidv4 } from 'uuid';
 
@@ -77,7 +78,8 @@ export async function POST(request: NextRequest) {
         : Promise.resolve(undefined)
     ]);
 
-    console.log('[Create] Total parallel time:', Date.now() - startTime, 'ms');
+    const scrapingDuration = Date.now() - startTime;
+    console.log('[Create] Total parallel time:', scrapingDuration, 'ms');
 
     // Check if scraping failed to extract company name
     if (scrapedContent.title === SCRAPING_FAILED_MARKER) {
@@ -106,17 +108,43 @@ export async function POST(request: NextRequest) {
     const welcomeMessage = getWelcomeMessage(scrapedContent.title);
     console.log('[Create] Welcome message:', welcomeMessage);
 
-    addMessage(session.id, {
+    const welcomeMessageObj = {
       id: uuidv4(),
-      role: 'assistant',
+      role: 'assistant' as const,
       content: welcomeMessage,
       timestamp: new Date(),
-    });
+    };
+
+    addMessage(session.id, welcomeMessageObj);
 
     console.log('[Create] Session created:', session.id);
     console.log('[Create] Company:', scrapedContent.title);
     console.log('[Create] Has catalog:', !!catalog);
     console.log('[Create] Catalog models:', catalog?.models.length || 0);
+
+    // Crear enhanced log con metadata de scraping
+    const scrapingMetadata: Partial<ScrapingMetadata> = {
+      method: 'firecrawl', // Default, el scraper usa firecrawl principalmente
+      duration: scrapingDuration,
+      modelsFound: (scrapedContent.models?.length || 0) + (catalog?.models?.length || 0),
+      whatsappFound: scrapedContent.contactInfo?.toLowerCase().includes('whatsapp') ||
+                     scrapedContent.rawText?.toLowerCase().includes('whatsapp') ||
+                     false,
+      instagramFound: !!scrapedContent.socialLinks?.instagram,
+      linktreeExplored: !!scrapedContent.socialLinks?.linktree,
+      pdfAnalyzed: !!catalog,
+    };
+
+    createEnhancedLog({
+      sessionId: session.id,
+      companyName: scrapedContent.title,
+      companyUrl: websiteUrl,
+      constructoraType: scrapedContent.constructoraType,
+      scrapingMetadata,
+    });
+
+    // Agregar el mensaje de bienvenida al enhanced log
+    appendEnhancedMessage(session.id, welcomeMessageObj);
 
     return NextResponse.json({
       sessionId: session.id,

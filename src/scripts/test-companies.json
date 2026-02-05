@@ -1,0 +1,121 @@
+{
+  "version": "1.0",
+  "createdAt": "2026-02-04",
+  "description": "Lista de empresas para QA baseline - FASE 1",
+  "companies": {
+    "problematicas": [
+      {
+        "name": "Atlas Housing",
+        "url": "https://atlashousing.com.ar",
+        "knownIssue": "Info falsa sobre modelos - inventa datos",
+        "expectedModels": ["Casa 1", "Casa 2"]
+      },
+      {
+        "name": "Habitatio",
+        "url": "https://habitatio.com.ar",
+        "knownIssue": "Info parcial del modelo Flex - scraping incompleto",
+        "expectedModels": ["Flex"]
+      },
+      {
+        "name": "ViBert",
+        "url": "https://vibert.com.ar",
+        "knownIssue": "Modelos en linktree - no extrae de links externos",
+        "expectedModels": ["Casa Sara", "Casa Maria", "Casa Elena"]
+      },
+      {
+        "name": "Ecomod",
+        "url": "https://ecomod.com.ar/",
+        "knownIssue": "Sin WhatsApp extraido aunque lo tiene",
+        "expectedModels": []
+      },
+      {
+        "name": "Movilhauss",
+        "url": "https://movilhauss.com",
+        "knownIssue": "Respuestas genericas - no tengo esa info",
+        "expectedModels": []
+      },
+      {
+        "name": "PlugArq",
+        "url": "https://www.plugarq.com/",
+        "knownIssue": "SPA pesada - timeout frecuente",
+        "expectedModels": []
+      },
+      {
+        "name": "Lucys House",
+        "url": "https://www.lucyshousearg.com/",
+        "knownIssue": "Precios inventados",
+        "expectedModels": []
+      },
+      {
+        "name": "Sienna Modular",
+        "url": "https://www.siennamodular.com.ar/",
+        "knownIssue": "Modelos con nombres genericos",
+        "expectedModels": []
+      },
+      {
+        "name": "Grupo Steimberg",
+        "url": "https://www.gruposteimberg.com/",
+        "knownIssue": "Es tradicional, no modular - clasificacion incorrecta",
+        "expectedModels": []
+      },
+      {
+        "name": "T1 Modular",
+        "url": "https://www.t1modular.com.ar/",
+        "knownIssue": "FAQ no expandido - info oculta",
+        "expectedModels": []
+      }
+    ],
+    "aleatorias": [
+      {
+        "name": "Habika",
+        "url": "https://habika.ar/",
+        "notes": "Del master phascraper"
+      },
+      {
+        "name": "Arcohouse",
+        "url": "https://arcohouse.com.ar/",
+        "notes": "Del master phascraper"
+      },
+      {
+        "name": "Wellmod",
+        "url": "https://www.wellmod.com.ar/",
+        "notes": "Del master phascraper"
+      },
+      {
+        "name": "Mini Casas",
+        "url": "https://www.minicasas.com.ar/",
+        "notes": "Del master phascraper"
+      },
+      {
+        "name": "Offis",
+        "url": "https://www.offis.ar/",
+        "notes": "Del master phascraper"
+      },
+      {
+        "name": "Efede",
+        "url": "https://efede.com.ar/casas-modulares/",
+        "notes": "Del master phascraper"
+      },
+      {
+        "name": "GoHome",
+        "url": "https://gohomeconstrucciones.com.ar/",
+        "notes": "Del master phascraper"
+      },
+      {
+        "name": "Aftamantes",
+        "url": "https://aftamantes.net/refugios/",
+        "notes": "Del master phascraper"
+      },
+      {
+        "name": "Arqtainer",
+        "url": "https://arqtainer.com.ar/",
+        "notes": "Del master phascraper"
+      },
+      {
+        "name": "Lista",
+        "url": "https://lista.com.ar/",
+        "notes": "Del master phascraper"
+      }
+    ]
+  }
+}

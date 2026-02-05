@@ -1,7 +1,8 @@
 import Firecrawl from '@mendable/firecrawl-js';
 import { z } from 'zod';
-import { ScrapedContent } from '@/types';
+import { ScrapedContent, SocialLinks } from '@/types';
 import { SCRAPING_FAILED_MARKER } from './scraper';
+import { extractFromWaUrl, extractPhoneFromText } from './whatsapp-validator';
 
 // Actions universales que funcionan en la mayoría de sitios web
 const UNIVERSAL_ACTIONS = [
@@ -117,6 +118,118 @@ const RATE_LIMIT_MS = 50; // Firecrawl maneja rate limit interno
 const FIRECRAWL_CREDIT_COST_USD = 0.001; // Aproximadamente $0.001 por credit
 const MAX_CATALOG_URLS = 15; // Maximo URLs de catalogo a scrapear
 const BATCH_SIZE = 10; // URLs a procesar en paralelo (aumentado para mejor performance)
+
+// Patrones para extraer redes sociales del contenido
+const SOCIAL_PATTERNS = {
+  instagram: [
+    /(?:instagram\.com|instagr\.am)\/([a-zA-Z0-9._]{1,30})/gi,
+    /(?:@)([a-zA-Z0-9._]{1,30})(?:\s|$|,)/g, // @usuario en texto
+  ],
+  facebook: [
+    /facebook\.com\/([a-zA-Z0-9.]{1,50})/gi,
+    /fb\.com\/([a-zA-Z0-9.]{1,50})/gi,
+  ],
+  linktree: [
+    /linktr\.ee\/([a-zA-Z0-9._]{1,30})/gi,
+    /bio\.link\/([a-zA-Z0-9._]{1,30})/gi,
+    /beacons\.ai\/([a-zA-Z0-9._]{1,30})/gi,
+    /linkr\.bio\/([a-zA-Z0-9._]{1,30})/gi,
+  ],
+  tiktok: [
+    /tiktok\.com\/@([a-zA-Z0-9._]{1,30})/gi,
+  ],
+  youtube: [
+    /youtube\.com\/(?:c\/|channel\/|@)?([a-zA-Z0-9._-]{1,50})/gi,
+  ],
+};
+
+/**
+ * Extrae links de redes sociales del markdown
+ */
+function extractSocialLinks(markdown: string): SocialLinks {
+  const socialLinks: SocialLinks = {};
+
+  for (const [platform, patterns] of Object.entries(SOCIAL_PATTERNS)) {
+    for (const pattern of patterns) {
+      // Reset regex lastIndex para evitar problemas con global flag
+      pattern.lastIndex = 0;
+      const matches = markdown.matchAll(pattern);
+      for (const match of matches) {
+        const username = match[1];
+        if (username && username.length > 1 && !username.includes('.com')) {
+          // Construir URL completa
+          let fullUrl: string;
+          switch (platform) {
+            case 'instagram':
+              fullUrl = `https://instagram.com/${username}`;
+              break;
+            case 'facebook':
+              fullUrl = `https://facebook.com/${username}`;
+              break;
+            case 'linktree':
+              fullUrl = match[0].includes('bio.link')
+                ? `https://bio.link/${username}`
+                : match[0].includes('beacons.ai')
+                ? `https://beacons.ai/${username}`
+                : `https://linktr.ee/${username}`;
+              break;
+            case 'tiktok':
+              fullUrl = `https://tiktok.com/@${username}`;
+              break;
+            case 'youtube':
+              fullUrl = `https://youtube.com/@${username}`;
+              break;
+            default:
+              fullUrl = match[0];
+          }
+
+          // Solo guardar si no tenemos ya uno para esta plataforma
+          if (!socialLinks[platform as keyof SocialLinks]) {
+            socialLinks[platform as keyof SocialLinks] = fullUrl;
+          }
+        }
+      }
+    }
+  }
+
+  return socialLinks;
+}
+
+/**
+ * Extrae WhatsApp mejorado con validaciones robustas
+ */
+function extractWhatsAppImproved(markdown: string): string | undefined {
+  // Buscar links wa.me directos
+  const waLinkMatches = markdown.matchAll(/(?:wa\.me\/\d+|whatsapp\.com\/send\?phone=\d+|api\.whatsapp\.com[^"'\s]*phone=\d+)/gi);
+  for (const match of waLinkMatches) {
+    const extracted = extractFromWaUrl(match[0]);
+    if (extracted && extracted.isValid) {
+      console.log(`[Firecrawl] WhatsApp validado: ${extracted.cleanNumber} (${extracted.country})`);
+      return extracted.cleanNumber;
+    }
+  }
+
+  // Si no encontramos en links, buscar en texto cerca de keywords
+  const waTextPatterns = [
+    /whatsapp[:\s]*(\+?[\d\s\-()]{10,20})/gi,
+    /wsp[:\s]*(\+?[\d\s\-()]{10,20})/gi,
+    /wa[:\s]*(\+?[\d\s\-()]{10,20})/gi,
+  ];
+
+  for (const pattern of waTextPatterns) {
+    pattern.lastIndex = 0;
+    const match = markdown.match(pattern);
+    if (match && match[1]) {
+      const extracted = extractPhoneFromText(match[1]);
+      if (extracted && extracted.isValid) {
+        console.log(`[Firecrawl] WhatsApp de texto: ${extracted.cleanNumber} (${extracted.country})`);
+        return extracted.cleanNumber;
+      }
+    }
+  }
+
+  return undefined;
+}
 
 // Funcion para estimar costos antes de scrapear
 function estimateCost(urlCount: number): { credits: number; usdEstimate: number } {
@@ -455,6 +568,200 @@ function parseAgentFAQs(data: any): { question: string; answer: string }[] {
   })).filter((f: { question: string; answer: string }) => f.question && f.answer);
 }
 
+// ===========================================================
+// CLASIFICACION DE TIPO DE CONSTRUCTORA
+// ===========================================================
+
+interface ConstructoraClassification {
+  type: 'modular' | 'tradicional' | 'mixta';
+  confidence: number;  // 0.0 - 1.0
+  signals: string[];   // Razones de la clasificacion
+  debug: {
+    modularScore: number;
+    tradicionalScore: number;
+    modelsCount: number;
+  };
+}
+
+/**
+ * Clasifica el tipo de constructora basado en el contenido scrapeado
+ *
+ * MODULAR: Empresas con catalogo fijo (3+ modelos, keywords "catalogo", "modular", etc.)
+ * TRADICIONAL: Empresas de proyectos a medida (0 modelos, keywords "a medida", "personalizado")
+ * MIXTA: Empresas que ofrecen ambas modalidades
+ */
+function classifyConstructora(
+  markdown: string,
+  modelsCount: number,
+  models: string[]
+): ConstructoraClassification {
+  const signals: string[] = [];
+  let modularScore = 0;
+  let tradicionalScore = 0;
+
+  const textLower = markdown.toLowerCase();
+
+  // ===================
+  // SENALES DE MODULAR
+  // ===================
+
+  // 1. Cantidad de modelos (senal mas fuerte)
+  if (modelsCount >= 5) {
+    modularScore += 4;
+    signals.push(`${modelsCount} modelos detectados (muy probable modular)`);
+  } else if (modelsCount >= 3) {
+    modularScore += 3;
+    signals.push(`${modelsCount} modelos detectados (probable modular)`);
+  } else if (modelsCount >= 1) {
+    modularScore += 1;
+    signals.push(`${modelsCount} modelo(s) detectado(s)`);
+  }
+
+  // 2. Keywords de catalogo/modular
+  const modularKeywords = [
+    { pattern: /cat[aá]logo/gi, weight: 2, name: 'catalogo' },
+    { pattern: /modular(es)?/gi, weight: 2, name: 'modular' },
+    { pattern: /prefabricad[oa]s?/gi, weight: 2, name: 'prefabricado' },
+    { pattern: /steel\s*frame/gi, weight: 2, name: 'steel frame' },
+    { pattern: /industrializad[oa]s?/gi, weight: 1, name: 'industrializado' },
+    { pattern: /linea\s+de\s+(casas|productos|modelos)/gi, weight: 2, name: 'linea de modelos' },
+    { pattern: /nuestros\s+modelos/gi, weight: 2, name: 'nuestros modelos' },
+    { pattern: /modelos\s+disponibles/gi, weight: 2, name: 'modelos disponibles' },
+    { pattern: /ver\s+(todos\s+los\s+)?modelos/gi, weight: 1, name: 'ver modelos' },
+  ];
+
+  for (const kw of modularKeywords) {
+    const matches = textLower.match(kw.pattern);
+    if (matches && matches.length > 0) {
+      modularScore += kw.weight;
+      signals.push(`Keyword modular: "${kw.name}" (${matches.length}x)`);
+    }
+  }
+
+  // 3. Nombres de modelos con patrones tipicos de catalogo
+  const catalogModelPatterns = /modelo\s+[A-Z]?\d+|casa\s+(sara|flex|pro|plus|eco|mini|max)/gi;
+  const catalogModelMatches = models.join(' ').match(catalogModelPatterns);
+  if (catalogModelMatches && catalogModelMatches.length > 0) {
+    modularScore += 2;
+    signals.push(`Nombres de modelos tipo catalogo: ${catalogModelMatches.slice(0, 3).join(', ')}`);
+  }
+
+  // 4. Precios listados para multiples modelos
+  const pricePatterns = /(?:USD|U\$D|\$)\s*[\d.,]+\s*(?:\.?\d{3})*(?:\s*(?:desde|llave\s*en\s*mano))?/gi;
+  const priceMatches = textLower.match(pricePatterns);
+  if (priceMatches && priceMatches.length >= 3) {
+    modularScore += 2;
+    signals.push(`${priceMatches.length} precios listados (tipico de catalogo)`);
+  }
+
+  // ======================
+  // SENALES DE TRADICIONAL
+  // ======================
+
+  // 1. Keywords de diseno a medida
+  const tradicionalKeywords = [
+    { pattern: /a\s*medida/gi, weight: 3, name: 'a medida' },
+    { pattern: /dise[ñn]o\s*personalizado/gi, weight: 3, name: 'diseno personalizado' },
+    { pattern: /proyecto\s*personalizado/gi, weight: 3, name: 'proyecto personalizado' },
+    { pattern: /custom/gi, weight: 2, name: 'custom' },
+    { pattern: /dise[ñn]amos\s*(tu|su)\s*(casa|proyecto)/gi, weight: 3, name: 'disenamos tu casa' },
+    { pattern: /seg[uú]n\s*(tus|sus)\s*necesidades/gi, weight: 2, name: 'segun tus necesidades' },
+    { pattern: /proyectos?\s*(a\s*medida|personalizado)/gi, weight: 3, name: 'proyectos a medida' },
+    { pattern: /construimos\s*(lo\s*que\s*(so[ñn][aá]s|quer[eé]s)|tu\s*proyecto)/gi, weight: 2, name: 'construimos tu proyecto' },
+    { pattern: /arquitectura\s*a\s*medida/gi, weight: 3, name: 'arquitectura a medida' },
+    { pattern: /sin\s*modelos?\s*fijos?/gi, weight: 3, name: 'sin modelos fijos' },
+  ];
+
+  for (const kw of tradicionalKeywords) {
+    const matches = textLower.match(kw.pattern);
+    if (matches && matches.length > 0) {
+      tradicionalScore += kw.weight;
+      signals.push(`Keyword tradicional: "${kw.name}" (${matches.length}x)`);
+    }
+  }
+
+  // 2. Ausencia de modelos es senal fuerte de tradicional
+  if (modelsCount === 0) {
+    tradicionalScore += 3;
+    signals.push('Sin modelos detectados (probable tradicional)');
+  }
+
+  // 3. Mencion de arquitectos o estudios de arquitectura
+  const architectPatterns = /(?:estudio\s*de\s*)?arquitect[oa]s?|dise[ñn]ador(?:es)?/gi;
+  const architectMatches = textLower.match(architectPatterns);
+  if (architectMatches && architectMatches.length >= 2) {
+    tradicionalScore += 1;
+    signals.push(`Mencion de arquitectos/disenadores (${architectMatches.length}x)`);
+  }
+
+  // 4. Proceso de diseno personalizado
+  const designProcessPatterns = /(?:primera\s*)?reuni[oó]n.*dise[ñn]o|anteproyecto|boceto|planos?\s*personalizados?/gi;
+  if (designProcessPatterns.test(textLower)) {
+    tradicionalScore += 2;
+    signals.push('Mencion de proceso de diseno personalizado');
+  }
+
+  // ==================
+  // SENALES MIXTAS
+  // ==================
+
+  // Detectar si ofrecen ambas modalidades
+  const mixedSignals = /(?:modelos?\s*(?:y|o)\s*(?:a\s*medida|personalizado))|(?:(?:a\s*medida|personalizado)\s*(?:y|o)\s*modelos?)|(?:adaptamos?\s*(?:nuestros\s*)?modelos?)/gi;
+  if (mixedSignals.test(textLower)) {
+    signals.push('Detectada oferta mixta (modelos + personalizados)');
+    // No sumamos puntaje, pero lo consideramos en la decision final
+  }
+
+  // ====================
+  // CALCULAR RESULTADO
+  // ====================
+
+  let type: 'modular' | 'tradicional' | 'mixta';
+  let confidence: number;
+
+  const totalScore = modularScore + tradicionalScore;
+
+  if (totalScore === 0) {
+    // Sin senales claras - usar heuristica basada en modelos
+    if (modelsCount >= 2) {
+      type = 'modular';
+      confidence = 0.4;
+      signals.push('Clasificado por defecto como modular (tiene modelos)');
+    } else {
+      type = 'tradicional';
+      confidence = 0.3;
+      signals.push('Clasificado por defecto como tradicional (sin info clara)');
+    }
+  } else {
+    const modularRatio = modularScore / totalScore;
+    const tradicionalRatio = tradicionalScore / totalScore;
+
+    if (modularRatio > 0.65) {
+      type = 'modular';
+      confidence = Math.min(0.95, 0.5 + (modularScore / 20));
+    } else if (tradicionalRatio > 0.65) {
+      type = 'tradicional';
+      confidence = Math.min(0.95, 0.5 + (tradicionalScore / 20));
+    } else {
+      // Puntajes similares = probablemente mixta
+      type = 'mixta';
+      confidence = Math.min(0.8, 0.4 + (totalScore / 30));
+      signals.push('Senales equilibradas: modular vs tradicional');
+    }
+  }
+
+  return {
+    type,
+    confidence,
+    signals,
+    debug: {
+      modularScore,
+      tradicionalScore,
+      modelsCount
+    }
+  };
+}
+
 export async function scrapeWithFirecrawl(
   url: string,
   options: ScrapeOptions = { exhaustive: true }
@@ -677,13 +984,16 @@ export async function scrapeWithFirecrawl(
         }
 
         // Extraer info de contacto del markdown
-        const phoneMatch = markdown.match(/(?:tel|phone|whatsapp)[:\s]*(\+?[\d\s\-()]{8,20})/i);
+        const phoneMatch = markdown.match(/(?:tel|phone)[:\s]*(\+?[\d\s\-()]{8,20})/i);
         if (phoneMatch && !contactInfo.phone) {
           contactInfo.phone = phoneMatch[1].trim();
         }
-        const whatsappMatch = markdown.match(/wa\.me\/(\d+)/i) || markdown.match(/whatsapp[:\s]*(\+?[\d\s\-]{10,20})/i);
-        if (whatsappMatch && !contactInfo.whatsapp) {
-          contactInfo.whatsapp = whatsappMatch[1].trim();
+        // Usar validador mejorado de WhatsApp
+        if (!contactInfo.whatsapp) {
+          const extractedWa = extractWhatsAppImproved(markdown);
+          if (extractedWa) {
+            contactInfo.whatsapp = extractedWa;
+          }
         }
         const emailMatch = markdown.match(/([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/);
         if (emailMatch && !contactInfo.email) {
@@ -938,6 +1248,24 @@ export async function scrapeWithFirecrawl(
     }
   }
 
+  // Extraer redes sociales del markdown combinado
+  const socialLinks = extractSocialLinks(combinedMarkdown);
+  console.log('[Firecrawl] Social links found:', socialLinks);
+
+  // ===========================================================
+  // Clasificar tipo de constructora
+  // ===========================================================
+  const classification = classifyConstructora(
+    combinedMarkdown,
+    allModels.length,
+    allModels.map(m => m.name)
+  );
+  console.log('[Firecrawl] Constructora classification:', {
+    type: classification.type,
+    confidence: classification.confidence.toFixed(2),
+    signals: classification.signals.slice(0, 5)  // Solo primeras 5 senales para el log
+  });
+
   // Convertir al formato ScrapedContent
   return {
     title: companyName || SCRAPING_FAILED_MARKER,
@@ -946,7 +1274,9 @@ export async function scrapeWithFirecrawl(
     models: allModels.map(formatModelString),
     contactInfo: formatContactInfo(contactInfo),
     rawText: combinedMarkdown.slice(0, 20000),
-    faqs: faqs.length > 0 ? faqs : undefined
+    faqs: faqs.length > 0 ? faqs : undefined,
+    socialLinks: Object.keys(socialLinks).length > 0 ? socialLinks : undefined,
+    constructoraType: classification.type,
   };
 }
 

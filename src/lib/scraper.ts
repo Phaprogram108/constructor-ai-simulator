@@ -4,6 +4,7 @@ import { chromium, Browser, Page } from 'playwright';
 import { ScrapedContent } from '@/types';
 import { scrapeWithFirecrawl } from './firecrawl';
 import { scrapeWithVision, needsVisionScraping, VisionScrapedContent } from './vision-scraper';
+import { exploreLinktree } from './linktree-explorer';
 
 // Inicialización lazy para evitar errores durante el build
 let anthropicInstance: Anthropic | null = null;
@@ -100,6 +101,33 @@ export async function scrapeWebsite(url: string): Promise<ScrapedContent> {
     } catch (visionError) {
       console.error('[Scraper] Vision fallback failed:', visionError);
       // Continuar con el resultado original
+    }
+  }
+
+  // 5. Linktree exploration: si encontramos linktree, explorarlo
+  if (result.socialLinks?.linktree) {
+    console.log(`[Scraper] Encontrado Linktree: ${result.socialLinks.linktree}, explorando...`);
+
+    try {
+      const linktreeResult = await exploreLinktree(result.socialLinks.linktree);
+
+      // Actualizar WhatsApp si encontramos uno valido
+      if (linktreeResult.whatsapp && !result.contactInfo.includes('WhatsApp')) {
+        const currentContact = result.contactInfo;
+        result.contactInfo = currentContact
+          ? `${currentContact} | WhatsApp: ${linktreeResult.whatsapp}`
+          : `WhatsApp: ${linktreeResult.whatsapp}`;
+        console.log(`[Scraper] WhatsApp de Linktree: ${linktreeResult.whatsapp} (${linktreeResult.whatsappCountry})`);
+      }
+
+      // Agregar URLs de catalogos al rawText
+      if (linktreeResult.catalogs.length > 0) {
+        result.rawText += '\n\n--- CATALOGOS ENCONTRADOS EN LINKTREE ---\n';
+        result.rawText += linktreeResult.catalogs.join('\n');
+      }
+
+    } catch (linktreeError) {
+      console.error('[Scraper] Error explorando Linktree:', linktreeError);
     }
   }
 

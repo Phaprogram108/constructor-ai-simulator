@@ -181,11 +181,29 @@ Responde en formato JSON con esta estructura:
 }
 
 /**
+ * Detecta si un sitio es Wix basado en la URL o contenido
+ */
+function isLikelyWixSite(url: string): boolean {
+  const urlLower = url.toLowerCase();
+  // Dominios conocidos de Wix o indicadores en URL
+  const wixUrlIndicators = [
+    'wixsite.com',
+    'wix.com',
+    'editor.wix',
+    // Dominios argentinos conocidos que usan Wix
+    'vibert.com.ar', // El sitio específico mencionado
+  ];
+
+  return wixUrlIndicators.some(indicator => urlLower.includes(indicator));
+}
+
+/**
  * Determina si una página necesita Vision para extraer datos
  */
 export function needsVisionScraping(
   url: string,
-  extractedModelsCount: number
+  extractedModelsCount: number,
+  rawMarkdown?: string
 ): boolean {
   const visionTriggerPaths = [
     '/modelo/', '/modelos/', '/ficha/', '/detalle/', '/detalles/',
@@ -200,6 +218,19 @@ export function needsVisionScraping(
 
   // Trigger 2: Scraping normal extrajo muy pocos modelos
   const fewModelsExtracted = extractedModelsCount < 3;
+
+  // Trigger 3: Sitio Wix - ser más agresivo con Vision
+  const isWix = isLikelyWixSite(url) || (rawMarkdown && (
+    rawMarkdown.toLowerCase().includes('wixstatic.com') ||
+    rawMarkdown.toLowerCase().includes('wix.com') ||
+    rawMarkdown.toLowerCase().includes('data-hook="')
+  ));
+
+  // Para sitios Wix, usar Vision si extrajo menos de 5 modelos (umbral más alto)
+  if (isWix) {
+    console.log('[Vision Scraper] Sitio Wix detectado, umbral de modelos aumentado a 5');
+    return extractedModelsCount < 5 || hasVisionPath;
+  }
 
   return hasVisionPath || fewModelsExtracted;
 }

@@ -1363,6 +1363,16 @@ export async function scrapeWithFirecrawl(
   // ===========================================================
   // Clasificar tipo de constructora
   // ===========================================================
+  // DEBUG: Log de keywords inmobiliarias en el markdown
+  const inmobiliariaTestKeywords = ['inmobiliaria', 'lotes en ejecuci', 'unidades en ejecuci', 'proyectos inmobiliarios'];
+  for (const kw of inmobiliariaTestKeywords) {
+    if (combinedMarkdown.toLowerCase().includes(kw)) {
+      console.log('[Firecrawl] DEBUG - Keyword inmobiliaria encontrada:', kw);
+    }
+  }
+  console.log('[Firecrawl] DEBUG - combinedMarkdown length:', combinedMarkdown.length);
+  console.log('[Firecrawl] DEBUG - combinedMarkdown snippet:', combinedMarkdown.slice(0, 500));
+
   const classification = classifyConstructora(
     combinedMarkdown,
     allModels.length,

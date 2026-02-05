@@ -72,11 +72,20 @@ export async function scrapeWebsite(url: string): Promise<ScrapedContent> {
   console.log('[Scraper] Starting scrape for:', url);
 
   let result: ScrapedContent | null = null;
+  let firecrawlClassification: ScrapedContent['constructoraType'] = undefined;
 
   // 1. Intentar con Firecrawl primero (mejor para SPAs)
   try {
     console.log('[Scraper] Trying Firecrawl...');
     result = await scrapeWithFirecrawl(url);
+
+    // IMPORTANTE: Guardar la clasificación de Firecrawl ANTES de posiblemente descartar el resultado
+    // Firecrawl tiene la mejor lógica de clasificación, la preservamos aunque fallemos
+    if (result.constructoraType) {
+      firecrawlClassification = result.constructoraType;
+      console.log('[Scraper] Firecrawl classification preserved:', firecrawlClassification);
+    }
+
     if (result.models && result.models.length > 0) {
       console.log('[Scraper] Firecrawl success! Models:', result.models.length);
     } else {
@@ -101,6 +110,12 @@ export async function scrapeWebsite(url: string): Promise<ScrapedContent> {
   if (!result) {
     console.log('[Scraper] Falling back to basic fetch scraping');
     result = await basicFetchScrape(url);
+  }
+
+  // IMPORTANTE: Restaurar la clasificación de Firecrawl si el resultado actual no tiene una
+  if (firecrawlClassification && !result.constructoraType) {
+    result.constructoraType = firecrawlClassification;
+    console.log('[Scraper] Restored Firecrawl classification to result:', firecrawlClassification);
   }
 
   // 4. Vision fallback: si hay pocos modelos, intentar con Claude Vision

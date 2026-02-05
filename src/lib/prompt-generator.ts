@@ -26,6 +26,7 @@ export function generateSystemPromptWithCatalog({ scrapedContent, catalog }: {
 
   // Obtener tipo de constructora del ScrapedContent (ya clasificado por firecrawl.ts)
   const constructoraType = scrapedContent.constructoraType || 'modular';  // Default modular para backwards compatibility
+  console.log('[PromptGenerator] Received constructoraType:', scrapedContent.constructoraType, '-> Using:', constructoraType);
 
   // Models from PDF catalog (priority) - SIEMPRE tiene prioridad si existe
   if (catalog && catalog.models.length > 0) {

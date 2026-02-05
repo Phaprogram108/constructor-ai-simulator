@@ -1,36 +1,123 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Constructor AI Simulator
 
-## Getting Started
+Sistema que scrapea sitios web de empresas constructoras y crea un chatbot personalizado que responde preguntas como si fuera un agente de ventas.
 
-First, run the development server:
+**URL Produccion**: https://agenteiagratis.com
+
+## Como Funciona
+
+1. El usuario ingresa la URL de una empresa constructora
+2. El sistema scrapea el sitio web usando Firecrawl + Claude
+3. Se genera un chatbot personalizado con la info de la empresa
+4. El usuario puede hacer preguntas sobre modelos, precios, contacto, etc.
+
+## Stack Tecnologico
+
+- **Frontend**: Next.js 14, React, TailwindCSS, shadcn/ui
+- **Backend**: Next.js API Routes
+- **Scraping**: Firecrawl (con actions), Playwright, Claude Vision
+- **AI**: Claude 3.5 Sonnet (Anthropic)
+- **Deploy**: Vercel
+
+## Quick Start
 
 ```bash
+# Instalar dependencias
+npm install
+
+# Configurar variables de entorno
+cp .env.example .env.local
+# Editar .env.local con tus API keys
+
+# Iniciar servidor de desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Variables de Entorno
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```env
+ANTHROPIC_API_KEY=sk-ant-...
+FIRECRAWL_API_KEY=fc-...
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Estructura del Proyecto
 
-## Learn More
+```
+src/
+├── app/
+│   ├── api/
+│   │   ├── chat/route.ts          # Endpoint de chat
+│   │   └── simulator/create/route.ts  # Crear sesion
+│   ├── demo/[sessionId]/page.tsx  # Pagina de chat
+│   └── page.tsx                   # Home
+├── components/
+│   ├── ChatInterface.tsx          # UI del chat
+│   └── SimulatorForm.tsx          # Formulario inicial
+└── lib/
+    ├── scraper.ts                 # Orquestador de scraping
+    ├── firecrawl.ts               # Integracion Firecrawl
+    ├── vision-scraper.ts          # Claude Vision para tablas
+    └── prompt-generator.ts        # Genera systemPrompt
+```
 
-To learn more about Next.js, take a look at the following resources:
+## API Endpoints
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### POST /api/simulator/create
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Crea una nueva sesion de chat para una empresa.
 
-## Deploy on Vercel
+```bash
+curl -X POST http://localhost:3000/api/simulator/create \
+  -H "Content-Type: application/json" \
+  -d '{"websiteUrl":"https://www.wellmod.com.ar/"}'
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Respuesta:
+```json
+{
+  "sessionId": "abc123",
+  "companyName": "WELLMOD",
+  "welcomeMessage": "Hola! Soy Sofia...",
+  "systemPrompt": "..."
+}
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+### POST /api/chat
+
+Envia un mensaje al chatbot.
+
+```bash
+curl -X POST http://localhost:3000/api/chat \
+  -H "Content-Type: application/json" \
+  -d '{
+    "sessionId": "abc123",
+    "message": "Que modelos tienen?",
+    "systemPrompt": "...",
+    "conversationHistory": []
+  }'
+```
+
+## Testing
+
+```bash
+# Test QA de 20 empresas
+npx tsx scripts/test-20-empresas-qa.ts
+
+# Test empresa especifica
+node test-ecomod.mjs
+```
+
+## Documentacion
+
+Ver carpeta `docs/` para documentacion detallada:
+- `ESTADO-SESION-2026-02-04-V4.md` - Estado actual del proyecto
+- `PLAN-SCRAPING-MEJORADO.md` - Arquitectura de scraping
+- `ANALISIS-QA-10-EMPRESAS.md` - Resultados de QA
+
+## Deploy
+
+El proyecto se despliega automaticamente en Vercel cuando se hace push a `main`.
+
+## Licencia
+
+Privado - Todos los derechos reservados

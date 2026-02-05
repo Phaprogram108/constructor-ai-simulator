@@ -578,7 +578,10 @@ async function scrapeWithAgent(url: string): Promise<{
 
 /**
  * Scraping especializado para sitios Wix usando Agent con prompt específico
- * y actions optimizadas para la estructura de Wix
+ * y actions optimizadas para la estructura de Wix.
+ *
+ * IMPORTANTE: Wix no expone los links del menú en el HTML inicial,
+ * así que intentamos URLs comunes directamente.
  */
 async function scrapeWixSite(url: string): Promise<{
   models: ExtractedModel[];
@@ -594,10 +597,23 @@ async function scrapeWixSite(url: string): Promise<{
     return { models: [], contactInfo: {}, faqs: [], rawText: '' };
   }
 
+  // URLs comunes en sitios de constructoras que Wix suele usar
+  const baseUrl = new URL(url).origin;
+  const CATALOG_PATHS = [
+    '/casas',
+    '/modelos',
+    '/catalogo',
+    '/productos',
+    '/viviendas',
+    '/proyectos',
+    '/nuestras-casas',
+    '/casas-vibert',  // Específico para ViBert
+  ];
+
   // Actions específicas para sitios Wix
   const WIX_ACTIONS = [
     // 1. Esperar carga inicial más tiempo (Wix es lento)
-    { type: 'wait' as const, milliseconds: 3000 },
+    { type: 'wait' as const, milliseconds: 4000 },
 
     // 2. Scroll completo para cargar lazy content
     { type: 'scroll' as const, direction: 'down' as const },
@@ -607,130 +623,175 @@ async function scrapeWixSite(url: string): Promise<{
     { type: 'scroll' as const, direction: 'down' as const },
     { type: 'wait' as const, milliseconds: 1000 },
 
-    // 3. Click en menú de navegación Wix
-    { type: 'click' as const, selector: '[data-hook="dropdown-menu"]' },
-    { type: 'click' as const, selector: '[data-testid="linkElement"]' },
-    { type: 'wait' as const, milliseconds: 500 },
-
-    // 4. Click en links de catálogo/modelos
-    { type: 'click' as const, selector: 'a[href*="catalogo"]' },
-    { type: 'click' as const, selector: 'a[href*="modelos"]' },
-    { type: 'click' as const, selector: 'a[href*="casas"]' },
-    { type: 'click' as const, selector: 'a[href*="productos"]' },
-    { type: 'wait' as const, milliseconds: 2000 },
-
-    // 5. Expandir galleries de Wix
+    // 3. Expandir galleries de Wix
     { type: 'click' as const, selector: '[data-hook="gallery-item"]' },
     { type: 'click' as const, selector: '[data-hook="item-container"]' },
     { type: 'wait' as const, milliseconds: 1000 },
 
-    // 6. Click en elementos de contacto Wix
+    // 4. Click en elementos de contacto Wix
     { type: 'click' as const, selector: '[data-hook="whatsapp-button"]' },
     { type: 'click' as const, selector: '[href*="whatsapp"]' },
     { type: 'click' as const, selector: '[href*="wa.me"]' },
     { type: 'wait' as const, milliseconds: 500 },
 
-    // 7. Expandir accordions de Wix
+    // 5. Expandir accordions de Wix
     { type: 'click' as const, selector: '[data-hook="faq-item"]' },
     { type: 'click' as const, selector: '[data-testid="faqQuestion"]' },
     { type: 'click' as const, selector: '.accordion__item' },
     { type: 'wait' as const, milliseconds: 500 },
   ];
 
+  let allModels: ExtractedModel[] = [];
+  let contactInfo: ContactInfo = {};
+  let allFaqs: { question: string; answer: string }[] = [];
+  let allRawText = '';
+
   try {
-    // Primero intentar con Agent usando prompt específico para Wix
-    console.log('[Firecrawl Wix] Intentando con Agent y prompt Wix...');
+    // PASO 1: Intentar scrapear URLs de catálogo directamente
+    console.log('[Firecrawl Wix] Paso 1: Probando URLs de catálogo conocidas...');
 
-    const agentResponse = await fetch('https://api.firecrawl.dev/v1/agent', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Authorization': `Bearer ${apiKey}`,
-      },
-      body: JSON.stringify({
-        prompt: WIX_AGENT_PROMPT,
-        urls: [url],
-      }),
-    });
+    for (const path of CATALOG_PATHS) {
+      const catalogUrl = `${baseUrl}${path}`;
+      console.log(`[Firecrawl Wix] Probando: ${catalogUrl}`);
 
-    if (agentResponse.ok) {
-      const agentResult = await agentResponse.json();
-      console.log('[Firecrawl Wix] Agent resultado:', JSON.stringify(agentResult, null, 2).slice(0, 500));
+      try {
+        const result = await getFirecrawl().scrapeUrl(catalogUrl, {
+          formats: ['markdown', 'extract'],
+          extract: { schema: catalogSchema },
+          actions: WIX_ACTIONS,
+          timeout: 90000
+        });
 
-      const agentData = agentResult.data || agentResult;
-      const agentModels = parseAgentModels(agentData);
+        if (result.success && result.markdown) {
+          console.log(`[Firecrawl Wix] ✓ URL válida: ${catalogUrl}`);
 
-      if (agentModels.length > 0) {
-        console.log(`[Firecrawl Wix] Agent extrajo ${agentModels.length} modelos`);
-        return {
-          models: agentModels,
-          contactInfo: parseAgentContact(agentData),
-          faqs: parseAgentFAQs(agentData),
-          rawText: typeof agentData === 'string' ? agentData : JSON.stringify(agentData, null, 2)
-        };
+          const markdown = result.markdown;
+          const extract = result.extract as z.infer<typeof catalogSchema> | undefined;
+
+          // Acumular raw text
+          allRawText += `\n--- ${catalogUrl} ---\n${markdown.slice(0, 5000)}`;
+
+          // Extraer modelos del extract
+          if (extract?.models && extract.models.length > 0) {
+            console.log(`[Firecrawl Wix] Extract encontró ${extract.models.length} modelos en ${path}`);
+            const extractedModels = extract.models.map(m => ({
+              name: m.name,
+              squareMeters: m.squareMeters,
+              coveredArea: m.coveredArea,
+              semicoveredArea: m.semicoveredArea,
+              bedrooms: m.bedrooms,
+              bathrooms: m.bathrooms,
+              price: m.price,
+              features: m.features,
+              category: m.category || 'casa'
+            }));
+            allModels = mergeModels(allModels, extractedModels);
+          }
+
+          // También parsear del markdown
+          const parsedModels = parseModelsFromMarkdown(markdown);
+          if (parsedModels.length > 0) {
+            console.log(`[Firecrawl Wix] Markdown parsing encontró ${parsedModels.length} modelos en ${path}`);
+            allModels = mergeModels(allModels, parsedModels);
+          }
+
+          // Extraer contacto
+          const extractedWa = extractWhatsAppImproved(markdown);
+          if (extractedWa && !contactInfo.whatsapp) {
+            contactInfo.whatsapp = extractedWa;
+          }
+
+          // Extraer FAQs
+          const pageFaqs = extractFAQContent(markdown);
+          allFaqs = [...allFaqs, ...pageFaqs];
+
+          // Si encontramos modelos, seguimos pero no paramos (puede haber más)
+          if (allModels.length >= 3) {
+            console.log(`[Firecrawl Wix] Ya tenemos ${allModels.length} modelos, continuando...`);
+          }
+        }
+      } catch {
+        // URL no existe o error - continuar con la siguiente
+        console.log(`[Firecrawl Wix] URL no disponible: ${catalogUrl}`);
       }
     }
 
-    // Si Agent no funcionó, usar scrape con actions específicas
-    console.log('[Firecrawl Wix] Fallback: usando scrape con actions específicas...');
+    // PASO 2: Si no encontramos modelos, intentar con Agent
+    if (allModels.length === 0) {
+      console.log('[Firecrawl Wix] Paso 2: No se encontraron modelos, intentando con Agent...');
 
-    const result = await getFirecrawl().scrapeUrl(url, {
-      formats: ['markdown', 'extract'],
-      extract: { schema: catalogSchema },
-      actions: WIX_ACTIONS,
-      timeout: 90000 // Timeout más largo para Wix
-    });
+      const agentResponse = await fetch('https://api.firecrawl.dev/v1/agent', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Authorization': `Bearer ${apiKey}`,
+        },
+        body: JSON.stringify({
+          prompt: WIX_AGENT_PROMPT,
+          urls: [url],
+        }),
+      });
 
-    if (!result.success) {
-      console.log('[Firecrawl Wix] Scrape con actions falló:', result.error);
-      return { models: [], contactInfo: {}, faqs: [], rawText: '' };
+      if (agentResponse.ok) {
+        const agentResult = await agentResponse.json();
+        console.log('[Firecrawl Wix] Agent resultado:', JSON.stringify(agentResult, null, 2).slice(0, 500));
+
+        const agentData = agentResult.data || agentResult;
+        const agentModels = parseAgentModels(agentData);
+
+        if (agentModels.length > 0) {
+          console.log(`[Firecrawl Wix] Agent extrajo ${agentModels.length} modelos`);
+          allModels = agentModels;
+          contactInfo = parseAgentContact(agentData);
+          allFaqs = parseAgentFAQs(agentData);
+          allRawText = typeof agentData === 'string' ? agentData : JSON.stringify(agentData, null, 2);
+        }
+      }
     }
 
-    const markdown = result.markdown || '';
-    const extract = result.extract as z.infer<typeof catalogSchema> | undefined;
+    // PASO 3: Scrapear homepage para completar info de contacto
+    if (!contactInfo.whatsapp || !contactInfo.email) {
+      console.log('[Firecrawl Wix] Paso 3: Completando info de contacto desde homepage...');
 
-    // Parsear modelos del extract y markdown
-    let models: ExtractedModel[] = [];
+      try {
+        const homeResult = await getFirecrawl().scrapeUrl(url, {
+          formats: ['markdown'],
+          actions: WIX_ACTIONS,
+          timeout: 60000
+        });
 
-    if (extract?.models && extract.models.length > 0) {
-      models = extract.models.map(m => ({
-        name: m.name,
-        squareMeters: m.squareMeters,
-        coveredArea: m.coveredArea,
-        semicoveredArea: m.semicoveredArea,
-        bedrooms: m.bedrooms,
-        bathrooms: m.bathrooms,
-        price: m.price,
-        features: m.features,
-        category: m.category || 'casa'
-      }));
+        if (homeResult.success && homeResult.markdown) {
+          const homeMarkdown = homeResult.markdown;
+
+          if (!contactInfo.whatsapp) {
+            const extractedWa = extractWhatsAppImproved(homeMarkdown);
+            if (extractedWa) contactInfo.whatsapp = extractedWa;
+          }
+
+          if (!contactInfo.phone) {
+            const phoneMatch = homeMarkdown.match(/(?:tel|phone|teléfono)[:\s]*(\+?[\d\s\-()]{8,20})/i);
+            if (phoneMatch) contactInfo.phone = phoneMatch[1].trim();
+          }
+
+          if (!contactInfo.email) {
+            const emailMatch = homeMarkdown.match(/([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/);
+            if (emailMatch) contactInfo.email = emailMatch[1];
+          }
+
+          allRawText += `\n--- Homepage ---\n${homeMarkdown.slice(0, 3000)}`;
+        }
+      } catch (homeError) {
+        console.log('[Firecrawl Wix] Error scrapeando homepage:', homeError);
+      }
     }
 
-    // Complementar con parsing de markdown
-    const parsedModels = parseModelsFromMarkdown(markdown);
-    models = mergeModels(models, parsedModels);
-
-    // Extraer contacto
-    const contactInfo: ContactInfo = {};
-    const extractedWa = extractWhatsAppImproved(markdown);
-    if (extractedWa) contactInfo.whatsapp = extractedWa;
-
-    const phoneMatch = markdown.match(/(?:tel|phone)[:\s]*(\+?[\d\s\-()]{8,20})/i);
-    if (phoneMatch) contactInfo.phone = phoneMatch[1].trim();
-
-    const emailMatch = markdown.match(/([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/);
-    if (emailMatch) contactInfo.email = emailMatch[1];
-
-    // Extraer FAQs
-    const faqs = extractFAQContent(markdown);
-
-    console.log(`[Firecrawl Wix] Extraídos: ${models.length} modelos, WA: ${!!contactInfo.whatsapp}, FAQs: ${faqs.length}`);
+    console.log(`[Firecrawl Wix] RESULTADO FINAL: ${allModels.length} modelos, WA: ${!!contactInfo.whatsapp}, FAQs: ${allFaqs.length}`);
 
     return {
-      models,
+      models: allModels,
       contactInfo,
-      faqs,
-      rawText: markdown.slice(0, 10000)
+      faqs: allFaqs,
+      rawText: allRawText.slice(0, 15000)
     };
   } catch (error) {
     console.error('[Firecrawl Wix] Error:', error);

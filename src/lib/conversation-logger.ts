@@ -50,7 +50,7 @@ export interface EnhancedConversationLog {
   sessionId: string;
   companyName: string;
   companyUrl: string;
-  constructoraType: 'modular' | 'tradicional' | 'mixta' | 'unknown';
+  constructoraType: 'modular' | 'tradicional' | 'mixta' | 'inmobiliaria' | 'unknown';
   scraping: ScrapingMetadata;
   messages: EnhancedMessage[];
   analysis: ConversationAnalysis;
@@ -100,7 +100,7 @@ export function createEnhancedLog(params: {
   sessionId: string;
   companyName: string;
   companyUrl: string;
-  constructoraType?: 'modular' | 'tradicional' | 'mixta';
+  constructoraType?: 'modular' | 'tradicional' | 'mixta' | 'inmobiliaria';
   scrapingMetadata: Partial<ScrapingMetadata>;
 }): EnhancedConversationLog {
   const now = new Date().toISOString();

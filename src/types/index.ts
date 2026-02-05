@@ -39,7 +39,7 @@ export interface ScrapedContent {
   rawText: string;
   faqs?: { question: string; answer: string }[];
   socialLinks?: SocialLinks;
-  constructoraType?: 'modular' | 'tradicional' | 'mixta';
+  constructoraType?: 'modular' | 'tradicional' | 'mixta' | 'inmobiliaria';
 }
 
 export interface CreateSessionRequest {

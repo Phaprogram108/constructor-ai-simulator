@@ -587,12 +587,13 @@ function parseAgentFAQs(data: any): { question: string; answer: string }[] {
 // ===========================================================
 
 interface ConstructoraClassification {
-  type: 'modular' | 'tradicional' | 'mixta';
+  type: 'modular' | 'tradicional' | 'mixta' | 'inmobiliaria';
   confidence: number;  // 0.0 - 1.0
   signals: string[];   // Razones de la clasificacion
   debug: {
     modularScore: number;
     tradicionalScore: number;
+    inmobiliariaScore: number;
     modelsCount: number;
   };
 }
@@ -612,8 +613,55 @@ function classifyConstructora(
   const signals: string[] = [];
   let modularScore = 0;
   let tradicionalScore = 0;
+  let inmobiliariaScore = 0;
 
   const textLower = markdown.toLowerCase();
+
+  // ========================
+  // SENALES DE INMOBILIARIA (PRIORIDAD ALTA - detectar primero)
+  // ========================
+
+  const inmobiliariaKeywords = [
+    { pattern: /desarrollos?\s*inmobiliarios?/gi, weight: 5, name: 'desarrollos inmobiliarios' },
+    { pattern: /proyectos?\s*inmobiliarios?\s*residenciales?/gi, weight: 5, name: 'proyectos inmobiliarios residenciales' },
+    { pattern: /inmobiliaria/gi, weight: 4, name: 'inmobiliaria' },
+    { pattern: /lotes?\s*en\s*(ejecuci[oó]n|venta)/gi, weight: 4, name: 'lotes en ejecucion/venta' },
+    { pattern: /unidades?\s*en\s*(ejecuci[oó]n|venta)/gi, weight: 4, name: 'unidades en ejecucion/venta' },
+    { pattern: /emprendimientos?\s*(inmobiliarios?)?/gi, weight: 3, name: 'emprendimientos' },
+    { pattern: /barrios?\s*(cerrados?|privados?)/gi, weight: 4, name: 'barrios cerrados/privados' },
+    { pattern: /departamentos?\s*(en\s*(pozo|venta))?/gi, weight: 3, name: 'departamentos' },
+    { pattern: /condominios?/gi, weight: 3, name: 'condominios' },
+    { pattern: /edificios?\s*(en\s*construcci[oó]n)?/gi, weight: 2, name: 'edificios' },
+    { pattern: /desarrolladora/gi, weight: 4, name: 'desarrolladora' },
+    { pattern: /torres?\s*(residenciales?)?/gi, weight: 3, name: 'torres' },
+    { pattern: /invertir?\s*en\s*(ladrillos?|real\s*estate)/gi, weight: 3, name: 'inversion en ladrillos' },
+    { pattern: /fideicomiso/gi, weight: 4, name: 'fideicomiso' },
+    { pattern: /preventa/gi, weight: 3, name: 'preventa' },
+    { pattern: /metros?\s*cuadrados?\s*(?:propios|en\s*venta)/gi, weight: 2, name: 'm2 propios/venta' },
+  ];
+
+  for (const kw of inmobiliariaKeywords) {
+    const matches = textLower.match(kw.pattern);
+    if (matches && matches.length > 0) {
+      inmobiliariaScore += kw.weight * matches.length;
+      signals.push(`Keyword inmobiliaria: "${kw.name}" (${matches.length}x)`);
+    }
+  }
+
+  // Si hay senales fuertes de inmobiliaria, retornar inmediatamente
+  if (inmobiliariaScore >= 8) {
+    return {
+      type: 'inmobiliaria',
+      confidence: Math.min(0.95, 0.6 + (inmobiliariaScore / 30)),
+      signals,
+      debug: {
+        modularScore: 0,
+        tradicionalScore: 0,
+        inmobiliariaScore,
+        modelsCount
+      }
+    };
+  }
 
   // ===================
   // SENALES DE MODULAR
@@ -642,6 +690,8 @@ function classifyConstructora(
     { pattern: /nuestros\s+modelos/gi, weight: 2, name: 'nuestros modelos' },
     { pattern: /modelos\s+disponibles/gi, weight: 2, name: 'modelos disponibles' },
     { pattern: /ver\s+(todos\s+los\s+)?modelos/gi, weight: 1, name: 'ver modelos' },
+    { pattern: /casas?\s*(modulares?|prefabricadas?|transportables?)/gi, weight: 3, name: 'casas modulares/prefabricadas' },
+    { pattern: /construcci[oó]n\s*(en\s*seco|modular|industrializada)/gi, weight: 3, name: 'construccion en seco/modular' },
   ];
 
   for (const kw of modularKeywords) {
@@ -694,8 +744,8 @@ function classifyConstructora(
     }
   }
 
-  // 2. Ausencia de modelos es senal fuerte de tradicional
-  if (modelsCount === 0) {
+  // 2. Ausencia de modelos es senal fuerte de tradicional (pero NO si hay senales de inmobiliaria)
+  if (modelsCount === 0 && inmobiliariaScore < 4) {
     tradicionalScore += 3;
     signals.push('Sin modelos detectados (probable tradicional)');
   }
@@ -730,37 +780,44 @@ function classifyConstructora(
   // CALCULAR RESULTADO
   // ====================
 
-  let type: 'modular' | 'tradicional' | 'mixta';
+  let type: 'modular' | 'tradicional' | 'mixta' | 'inmobiliaria';
   let confidence: number;
 
-  const totalScore = modularScore + tradicionalScore;
-
-  if (totalScore === 0) {
-    // Sin senales claras - usar heuristica basada en modelos
-    if (modelsCount >= 2) {
-      type = 'modular';
-      confidence = 0.4;
-      signals.push('Clasificado por defecto como modular (tiene modelos)');
-    } else {
-      type = 'tradicional';
-      confidence = 0.3;
-      signals.push('Clasificado por defecto como tradicional (sin info clara)');
-    }
+  // Si hay senales moderadas de inmobiliaria, considerar
+  if (inmobiliariaScore >= 4 && inmobiliariaScore > modularScore && inmobiliariaScore > tradicionalScore) {
+    type = 'inmobiliaria';
+    confidence = Math.min(0.85, 0.5 + (inmobiliariaScore / 25));
+    signals.push('Clasificado como inmobiliaria por senales detectadas');
   } else {
-    const modularRatio = modularScore / totalScore;
-    const tradicionalRatio = tradicionalScore / totalScore;
+    const totalScore = modularScore + tradicionalScore;
 
-    if (modularRatio > 0.65) {
-      type = 'modular';
-      confidence = Math.min(0.95, 0.5 + (modularScore / 20));
-    } else if (tradicionalRatio > 0.65) {
-      type = 'tradicional';
-      confidence = Math.min(0.95, 0.5 + (tradicionalScore / 20));
+    if (totalScore === 0) {
+      // Sin senales claras - usar heuristica basada en modelos
+      if (modelsCount >= 2) {
+        type = 'modular';
+        confidence = 0.4;
+        signals.push('Clasificado por defecto como modular (tiene modelos)');
+      } else {
+        type = 'tradicional';
+        confidence = 0.3;
+        signals.push('Clasificado por defecto como tradicional (sin info clara)');
+      }
     } else {
-      // Puntajes similares = probablemente mixta
-      type = 'mixta';
-      confidence = Math.min(0.8, 0.4 + (totalScore / 30));
-      signals.push('Senales equilibradas: modular vs tradicional');
+      const modularRatio = modularScore / totalScore;
+      const tradicionalRatio = tradicionalScore / totalScore;
+
+      if (modularRatio > 0.65) {
+        type = 'modular';
+        confidence = Math.min(0.95, 0.5 + (modularScore / 20));
+      } else if (tradicionalRatio > 0.65) {
+        type = 'tradicional';
+        confidence = Math.min(0.95, 0.5 + (tradicionalScore / 20));
+      } else {
+        // Puntajes similares = probablemente mixta
+        type = 'mixta';
+        confidence = Math.min(0.8, 0.4 + (totalScore / 30));
+        signals.push('Senales equilibradas: modular vs tradicional');
+      }
     }
   }
 
@@ -771,6 +828,7 @@ function classifyConstructora(
     debug: {
       modularScore,
       tradicionalScore,
+      inmobiliariaScore,
       modelsCount
     }
   };

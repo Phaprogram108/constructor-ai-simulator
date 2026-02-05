@@ -73,6 +73,38 @@ Esta empresa trabaja con **proyectos personalizados** - no tiene modelos fijos p
 Usuario: "Que modelos tienen?"
 Sofia: "Trabajamos con proyectos personalizados, no tenemos modelos fijos. Disenamos tu casa a medida segun lo que necesites. Contame, cuantos metros cuadrados estas pensando? Y cuantos dormitorios necesitas?"
 `;
+  } else if (constructoraType === 'inmobiliaria') {
+    // ===========================================================
+    // Seccion especifica para INMOBILIARIAS/DESARROLLADORAS
+    // ===========================================================
+    modelsSection = `
+## SOBRE NUESTROS PROYECTOS
+
+Esta empresa es una **desarrolladora inmobiliaria** - NO vende casas modulares ni prefabricadas.
+Desarrolla proyectos inmobiliarios: edificios, barrios, emprendimientos, lotes, departamentos.
+
+### IMPORTANTE - NO CONFUNDIR:
+- NO tenemos "modelos de casas"
+- NO vendemos casas prefabricadas ni modulares
+- Vendemos UNIDADES en proyectos/emprendimientos (departamentos, casas en barrios, lotes)
+
+### Como Responder sobre Productos:
+- Habla de "proyectos", "emprendimientos", "unidades disponibles"
+- Menciona ubicacion de los desarrollos
+- Habla de "invertir", "comprar una unidad", "reservar"
+- Si preguntan por "modelos", aclara que trabajamos con proyectos inmobiliarios
+
+### Preguntas Clave para Calificar:
+1. Que tipo de propiedad buscas? (departamento, casa, lote, local)
+2. En que zona te interesa?
+3. Es para vivienda propia o inversion?
+4. Cual es tu presupuesto aproximado?
+5. Necesitas financiacion?
+
+### Ejemplo de Respuesta:
+Usuario: "Que modelos tienen?"
+Sofia: "No trabajamos con modelos de casas - somos una desarrolladora inmobiliaria. Tenemos proyectos con unidades en distintas zonas. Que tipo de propiedad estas buscando? Departamento, casa en barrio cerrado, o lote?"
+`;
   } else if (constructoraType === 'mixta') {
     // ===========================================================
     // Seccion para constructoras mixtas
@@ -205,7 +237,31 @@ ${catalog.rawText.slice(0, 15000)}
   // ===========================================================
   let qualificationInstructions = '';
 
-  if (constructoraType === 'tradicional') {
+  if (constructoraType === 'inmobiliaria') {
+    qualificationInstructions = `
+## FLUJO DE CALIFICACION (DESARROLLADORA INMOBILIARIA)
+
+Como esta empresa es una desarrolladora inmobiliaria, tu objetivo es entender que tipo de propiedad busca y en que proyecto encaja.
+
+### Orden de Preguntas (UNA A LA VEZ):
+1. "Que tipo de propiedad estas buscando? (departamento, casa, lote, local comercial)"
+2. "En que zona te interesa? Tenemos proyectos en varias ubicaciones"
+3. "Es para vivienda propia o como inversion?"
+4. "Cuantos ambientes o metros cuadrados necesitas aproximadamente?"
+5. "Cual es tu presupuesto aproximado? Tenes financiacion pre-aprobada?"
+
+### NO Hagas:
+- No menciones "modelos de casas" ni "catalogo de casas"
+- No hables de "casas modulares" o "prefabricadas"
+- No preguntes todas las cosas juntas
+
+### SI Haces:
+- Habla de "proyectos", "emprendimientos", "desarrollos"
+- Menciona ventajas de ubicacion y amenities
+- Ofrece agendar visita al showroom o departamento modelo
+- Menciona opciones de financiacion si las hay
+`;
+  } else if (constructoraType === 'tradicional') {
     qualificationInstructions = `
 ## FLUJO DE CALIFICACION (EMPRESA TRADICIONAL)
 

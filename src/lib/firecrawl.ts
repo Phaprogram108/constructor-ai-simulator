@@ -1,6 +1,7 @@
 import Firecrawl from '@mendable/firecrawl-js';
 import { z } from 'zod';
 import { ScrapedContent } from '@/types';
+import { SCRAPING_FAILED_MARKER } from './scraper';
 
 // Actions universales que funcionan en la mayoría de sitios web
 const UNIVERSAL_ACTIONS = [
@@ -939,7 +940,7 @@ export async function scrapeWithFirecrawl(
 
   // Convertir al formato ScrapedContent
   return {
-    title: companyName || 'Empresa Constructora',
+    title: companyName || SCRAPING_FAILED_MARKER,
     description: buildDescription(companyDescription, constructionMethod, hasFinancing),
     services: buildServices(constructionMethod, hasFinancing, locations),
     models: allModels.map(formatModelString),

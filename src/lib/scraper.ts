@@ -17,6 +17,9 @@ function getAnthropic(): Anthropic {
   return anthropicInstance;
 }
 
+// Marcador especial cuando el scraping falla - NO usar como nombre real
+export const SCRAPING_FAILED_MARKER = '__SCRAPING_FAILED__';
+
 // Keywords que indican páginas con modelos/productos
 const MODEL_KEYWORDS = [
   'modelo', 'modelos', 'casa', 'casas', 'vivienda', 'viviendas',
@@ -560,7 +563,7 @@ IMPORTANTE:
     const comprehensiveText = buildComprehensiveText(extracted, content.rawText);
 
     return {
-      title: extracted.companyName || cleanCompanyName(content.metaTitle) || 'Empresa Constructora',
+      title: extracted.companyName || cleanCompanyName(content.metaTitle) || SCRAPING_FAILED_MARKER,
       description: extracted.description || content.metaDescription,
       services: Array.isArray(extracted.services) ? extracted.services : [],
       models: Array.isArray(extracted.models) ? extracted.models : [],
@@ -571,7 +574,7 @@ IMPORTANTE:
     console.error('[Scraper] AI extraction error:', error);
     // Return basic extraction if AI fails
     return {
-      title: cleanCompanyName(content.metaTitle) || 'Empresa Constructora',
+      title: cleanCompanyName(content.metaTitle) || SCRAPING_FAILED_MARKER,
       description: content.metaDescription,
       services: [],
       models: [],
@@ -718,7 +721,7 @@ async function fallbackScrape(url: string): Promise<ScrapedContent> {
     const rawText = $('body').text().replace(/\s+/g, ' ').trim().slice(0, 8000);
 
     return {
-      title: cleanCompanyName(rawTitle) || 'Empresa Constructora',
+      title: cleanCompanyName(rawTitle) || SCRAPING_FAILED_MARKER,
       description,
       services: [],
       models: [],
@@ -727,7 +730,7 @@ async function fallbackScrape(url: string): Promise<ScrapedContent> {
     };
   } catch {
     return {
-      title: 'Empresa Constructora',
+      title: SCRAPING_FAILED_MARKER,
       description: '',
       services: [],
       models: [],

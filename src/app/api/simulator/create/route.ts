@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { scrapeWebsite } from '@/lib/scraper';
+import { scrapeWebsite, SCRAPING_FAILED_MARKER } from '@/lib/scraper';
 import { analyzePdfWithVision } from '@/lib/pdf-extractor';
 import { generateSystemPromptWithCatalog, getWelcomeMessage } from '@/lib/prompt-generator';
 import { createSession, addMessage } from '@/lib/session-manager';
@@ -78,6 +78,18 @@ export async function POST(request: NextRequest) {
     ]);
 
     console.log('[Create] Total parallel time:', Date.now() - startTime, 'ms');
+
+    // Check if scraping failed to extract company name
+    if (scrapedContent.title === SCRAPING_FAILED_MARKER) {
+      console.error('[Create] Scraping failed - could not extract company information');
+      return NextResponse.json(
+        {
+          error: 'No pudimos procesar este sitio web. El sistema no logró extraer la información de la empresa. Por favor verificá que la URL sea correcta y que el sitio esté funcionando.',
+          code: 'SCRAPING_FAILED'
+        },
+        { status: 422 }
+      );
+    }
 
     // Generate system prompt with all information directly included
     console.log('[Create] Generating system prompt...');

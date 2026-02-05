@@ -324,8 +324,9 @@ function extractFAQContent(markdown: string): { question: string; answer: string
 }
 
 /**
- * Usa el Agent de Firecrawl para extracción autónoma
+ * Usa el Agent de Firecrawl para extracción autónoma (via API REST)
  * Se usa como fallback cuando el scraping normal no extrae suficiente info
+ * NOTA: El SDK JS no tiene método agent(), usamos fetch directo
  */
 async function scrapeWithAgent(url: string): Promise<{
   models: ExtractedModel[];
@@ -335,18 +336,36 @@ async function scrapeWithAgent(url: string): Promise<{
 }> {
   console.log('[Firecrawl Agent] Iniciando extracción autónoma para:', url);
 
+  const apiKey = process.env.FIRECRAWL_API_KEY;
+  if (!apiKey) {
+    console.log('[Firecrawl Agent] No hay API key, saltando Agent');
+    return { models: [], contactInfo: {}, faqs: [], rawText: '' };
+  }
+
   try {
-    const firecrawl = getFirecrawl();
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    const result = await (firecrawl as any).agent({
-      prompt: AGENT_EXTRACTION_PROMPT,
-      urls: [url],
+    const response = await fetch('https://api.firecrawl.dev/v1/agent', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+        'Authorization': `Bearer ${apiKey}`,
+      },
+      body: JSON.stringify({
+        prompt: AGENT_EXTRACTION_PROMPT,
+        urls: [url],
+      }),
     });
 
-    console.log('[Firecrawl Agent] Resultado:', JSON.stringify(result, null, 2));
+    if (!response.ok) {
+      const errorText = await response.text();
+      console.log(`[Firecrawl Agent] API error ${response.status}: ${errorText}`);
+      // Si el endpoint no existe o hay error, retornar vacío sin romper
+      return { models: [], contactInfo: {}, faqs: [], rawText: '' };
+    }
+
+    const result = await response.json();
+    console.log('[Firecrawl Agent] Resultado:', JSON.stringify(result, null, 2).slice(0, 500));
 
     // Parsear resultado del agent
-    // El agent retorna datos estructurados que necesitamos convertir
     const agentData = result.data || result;
 
     return {
@@ -357,6 +376,7 @@ async function scrapeWithAgent(url: string): Promise<{
     };
   } catch (error) {
     console.error('[Firecrawl Agent] Error:', error);
+    // Retornar vacío sin romper el flujo
     return {
       models: [],
       contactInfo: {},

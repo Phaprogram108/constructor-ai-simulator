@@ -1,7 +1,7 @@
 import Firecrawl from '@mendable/firecrawl-js';
 import { z } from 'zod';
 import { ScrapedContent, SocialLinks } from '@/types';
-import { SCRAPING_FAILED_MARKER } from './scraper';
+// SCRAPING_FAILED_MARKER ya no se usa - ahora usamos fallback de URL
 import { extractFromWaUrl, extractPhoneFromText } from './whatsapp-validator';
 
 // Actions universales que funcionan en la mayoría de sitios web
@@ -1277,9 +1277,23 @@ export async function scrapeWithFirecrawl(
     signals: classification.signals.slice(0, 5)  // Solo primeras 5 senales para el log
   });
 
+  // Fallback final: si aún no hay nombre, extraer del dominio de la URL
+  if (!companyName) {
+    try {
+      const urlObj = new URL(url);
+      const domain = urlObj.hostname.replace('www.', '');
+      // Convertir dominio a nombre legible: "makenhaus.com.ar" -> "Makenhaus"
+      const namePart = domain.split('.')[0];
+      companyName = namePart.charAt(0).toUpperCase() + namePart.slice(1);
+      console.log('[Firecrawl] Company name extracted from URL fallback:', companyName);
+    } catch {
+      companyName = 'Empresa';
+    }
+  }
+
   // Convertir al formato ScrapedContent
   return {
-    title: companyName || SCRAPING_FAILED_MARKER,
+    title: companyName,
     description: buildDescription(companyDescription, constructionMethod, hasFinancing),
     services: buildServices(constructionMethod, hasFinancing, locations),
     models: allModels.map(formatModelString),

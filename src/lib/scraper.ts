@@ -21,6 +21,18 @@ function getAnthropic(): Anthropic {
 // Marcador especial cuando el scraping falla - NO usar como nombre real
 export const SCRAPING_FAILED_MARKER = '__SCRAPING_FAILED__';
 
+// Helper: extraer nombre de empresa de la URL como último fallback
+function extractNameFromUrl(url: string): string {
+  try {
+    const urlObj = new URL(url);
+    const domain = urlObj.hostname.replace('www.', '');
+    const namePart = domain.split('.')[0];
+    return namePart.charAt(0).toUpperCase() + namePart.slice(1);
+  } catch {
+    return 'Empresa';
+  }
+}
+
 // Keywords que indican páginas con modelos/productos
 const MODEL_KEYWORDS = [
   'modelo', 'modelos', 'casa', 'casas', 'vivienda', 'viviendas',
@@ -591,7 +603,7 @@ IMPORTANTE:
     const comprehensiveText = buildComprehensiveText(extracted, content.rawText);
 
     return {
-      title: extracted.companyName || cleanCompanyName(content.metaTitle) || SCRAPING_FAILED_MARKER,
+      title: extracted.companyName || cleanCompanyName(content.metaTitle) || extractNameFromUrl(content.url),
       description: extracted.description || content.metaDescription,
       services: Array.isArray(extracted.services) ? extracted.services : [],
       models: Array.isArray(extracted.models) ? extracted.models : [],
@@ -602,7 +614,7 @@ IMPORTANTE:
     console.error('[Scraper] AI extraction error:', error);
     // Return basic extraction if AI fails
     return {
-      title: cleanCompanyName(content.metaTitle) || SCRAPING_FAILED_MARKER,
+      title: cleanCompanyName(content.metaTitle) || extractNameFromUrl(content.url),
       description: content.metaDescription,
       services: [],
       models: [],
@@ -749,7 +761,7 @@ async function fallbackScrape(url: string): Promise<ScrapedContent> {
     const rawText = $('body').text().replace(/\s+/g, ' ').trim().slice(0, 8000);
 
     return {
-      title: cleanCompanyName(rawTitle) || SCRAPING_FAILED_MARKER,
+      title: cleanCompanyName(rawTitle) || extractNameFromUrl(url),
       description,
       services: [],
       models: [],
@@ -758,7 +770,7 @@ async function fallbackScrape(url: string): Promise<ScrapedContent> {
     };
   } catch {
     return {
-      title: SCRAPING_FAILED_MARKER,
+      title: extractNameFromUrl(url),
       description: '',
       services: [],
       models: [],

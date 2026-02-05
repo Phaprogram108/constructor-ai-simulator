@@ -840,8 +840,8 @@ export async function scrapeWithFirecrawl(
 ): Promise<ScrapedContent> {
   const { exhaustive = true } = options;
 
-  console.log('[Firecrawl] Starting improved multi-model extraction for:', url);
-  console.log('[Firecrawl] Modo exhaustivo:', exhaustive ? 'SI - scrapeando TODAS las URLs' : 'NO - solo URLs filtradas');
+  console.log('[Firecrawl] v2 - Starting improved multi-model extraction for:', url);
+  console.log('[Firecrawl] v2 - Modo exhaustivo:', exhaustive ? 'SI - scrapeando TODAS las URLs' : 'NO - solo URLs filtradas');
 
   // PASO 1: Mapear todas las URLs del sitio
   console.log('[Firecrawl] Step 1: Mapping URLs...');
@@ -1368,10 +1368,11 @@ export async function scrapeWithFirecrawl(
     allModels.length,
     allModels.map(m => m.name)
   );
-  console.log('[Firecrawl] Constructora classification:', {
+  console.log('[Firecrawl] v2 - Constructora classification:', {
     type: classification.type,
     confidence: classification.confidence.toFixed(2),
-    signals: classification.signals.slice(0, 5)  // Solo primeras 5 senales para el log
+    signals: classification.signals.slice(0, 5),  // Solo primeras 5 senales para el log
+    scores: classification.debug  // Scores detallados
   });
 
   // Fallback final: si aún no hay nombre, extraer del dominio de la URL

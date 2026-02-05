@@ -1,6 +1,6 @@
 # Análisis de Tests - 5 Empresas
 
-## Resumen de Resultados
+## Resumen de Resultados (v1 - commit dc07d96)
 
 | Empresa | Tipo Esperado | Tipo Obtenido | Modelos Extraídos | PASS/FAIL |
 |---------|---------------|---------------|-------------------|-----------|
@@ -9,6 +9,20 @@
 | Ecomod | Modular | MODULAR | "No se encontraron modelos estructurados" | **FAIL** |
 | Movilhauss | Modular | MODULAR | inquba, inquba +, inquba duo, freestyle, inquba/work (5) | **PASS** |
 | MakenHaus | Inmobiliaria/Tradicional | MODULAR | "No se encontraron modelos estructurados" | **FAIL** |
+
+## Fix Aplicado (commit 410833e)
+
+Se agregó clasificación `inmobiliaria` con keywords:
+- desarrollos inmobiliarios
+- proyectos inmobiliarios residenciales
+- lotes/unidades en ejecución
+- emprendimientos
+- barrios cerrados/privados
+- departamentos
+- fideicomiso, preventa, etc.
+
+**PROBLEMA**: MakenHaus sigue fallando porque Firecrawl no extrae contenido de la página.
+Sin contenido, no hay keywords para clasificar.
 
 ## Detalle por Empresa
 

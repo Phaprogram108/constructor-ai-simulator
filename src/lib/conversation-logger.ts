@@ -73,8 +73,15 @@ const activeLogs: Map<string, EnhancedConversationLog> = new Map();
 // ============================================================================
 
 function ensureLogsDirectory(dir: string = LOGS_DIR): void {
-  if (!fs.existsSync(dir)) {
-    fs.mkdirSync(dir, { recursive: true });
+  // Skip en Vercel serverless (filesystem read-only)
+  if (process.env.VERCEL) return;
+
+  try {
+    if (!fs.existsSync(dir)) {
+      fs.mkdirSync(dir, { recursive: true });
+    }
+  } catch (error) {
+    console.warn('[Logger] Filesystem not available:', error);
   }
 }
 
@@ -267,33 +274,48 @@ function generateIssuesList(log: EnhancedConversationLog): string[] {
  * Guardar log a disco
  */
 export function saveEnhancedLog(log: EnhancedConversationLog): string {
-  ensureLogsDirectory(ENHANCED_LOGS_DIR);
+  // Skip en Vercel serverless (filesystem read-only)
+  if (process.env.VERCEL) {
+    return '';
+  }
 
-  const filename = `${log.sessionId}.json`;
-  const filepath = path.join(ENHANCED_LOGS_DIR, filename);
+  try {
+    ensureLogsDirectory(ENHANCED_LOGS_DIR);
 
-  fs.writeFileSync(filepath, JSON.stringify(log, null, 2), 'utf-8');
+    const filename = `${log.sessionId}.json`;
+    const filepath = path.join(ENHANCED_LOGS_DIR, filename);
 
-  return filepath;
+    fs.writeFileSync(filepath, JSON.stringify(log, null, 2), 'utf-8');
+
+    return filepath;
+  } catch (error) {
+    console.warn('[Logger] Cannot save log to filesystem:', error);
+    return '';
+  }
 }
 
 /**
  * Cargar log por sessionId
  */
 export function loadEnhancedLog(sessionId: string): EnhancedConversationLog | null {
-  ensureLogsDirectory(ENHANCED_LOGS_DIR);
-
-  const filepath = path.join(ENHANCED_LOGS_DIR, `${sessionId}.json`);
-
-  if (!fs.existsSync(filepath)) {
+  // Skip en Vercel serverless (filesystem read-only)
+  if (process.env.VERCEL) {
     return null;
   }
 
   try {
+    ensureLogsDirectory(ENHANCED_LOGS_DIR);
+
+    const filepath = path.join(ENHANCED_LOGS_DIR, `${sessionId}.json`);
+
+    if (!fs.existsSync(filepath)) {
+      return null;
+    }
+
     const content = fs.readFileSync(filepath, 'utf-8');
     return JSON.parse(content) as EnhancedConversationLog;
   } catch (error) {
-    console.error(`[EnhancedLogger] Error loading log: ${sessionId}`, error);
+    console.warn(`[EnhancedLogger] Cannot load log: ${sessionId}`, error);
     return null;
   }
 }
@@ -341,24 +363,34 @@ export function finalizeLog(sessionId: string): EnhancedConversationLog | null {
  * Listar todos los logs enhanced
  */
 export function listEnhancedLogs(): EnhancedConversationLog[] {
-  ensureLogsDirectory(ENHANCED_LOGS_DIR);
-
-  const files = fs.readdirSync(ENHANCED_LOGS_DIR).filter(f => f.endsWith('.json'));
-  const logs: EnhancedConversationLog[] = [];
-
-  for (const file of files) {
-    try {
-      const content = fs.readFileSync(path.join(ENHANCED_LOGS_DIR, file), 'utf-8');
-      logs.push(JSON.parse(content) as EnhancedConversationLog);
-    } catch {
-      // Skip invalid files
-    }
+  // Skip en Vercel serverless (filesystem read-only)
+  if (process.env.VERCEL) {
+    return [];
   }
 
-  // Ordenar por fecha de creacion (mas reciente primero)
-  logs.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
+  try {
+    ensureLogsDirectory(ENHANCED_LOGS_DIR);
 
-  return logs;
+    const files = fs.readdirSync(ENHANCED_LOGS_DIR).filter(f => f.endsWith('.json'));
+    const logs: EnhancedConversationLog[] = [];
+
+    for (const file of files) {
+      try {
+        const content = fs.readFileSync(path.join(ENHANCED_LOGS_DIR, file), 'utf-8');
+        logs.push(JSON.parse(content) as EnhancedConversationLog);
+      } catch {
+        // Skip invalid files
+      }
+    }
+
+    // Ordenar por fecha de creacion (mas reciente primero)
+    logs.sort((a, b) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime());
+
+    return logs;
+  } catch (error) {
+    console.warn('[Logger] Cannot list logs from filesystem:', error);
+    return [];
+  }
 }
 
 // ============================================================================
@@ -373,26 +405,36 @@ export function logConversation(
   companyName: string,
   messages: Message[]
 ): string {
-  ensureLogsDirectory();
-
-  const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
-  const sanitizedCompanyName = sanitizeFilename(companyName);
-  const filename = `${timestamp}_${sanitizedCompanyName}.txt`;
-  const filepath = path.join(LOGS_DIR, filename);
-
-  let content = `=== Conversacion: ${companyName} ===\n`;
-  content += `Fecha: ${new Date().toISOString()}\n`;
-  content += `Session ID: ${sessionId}\n`;
-  content += `${'='.repeat(50)}\n\n`;
-
-  for (const msg of messages) {
-    const role = msg.role === 'user' ? 'USUARIO' : 'SOFIA';
-    content += `[${role}]\n${msg.content}\n\n`;
+  // Skip en Vercel serverless (filesystem read-only)
+  if (process.env.VERCEL) {
+    return '';
   }
 
-  fs.writeFileSync(filepath, content, 'utf-8');
-  console.log(`[Logger] Conversation saved to: ${filepath}`);
-  return filepath;
+  try {
+    ensureLogsDirectory();
+
+    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+    const sanitizedCompanyName = sanitizeFilename(companyName);
+    const filename = `${timestamp}_${sanitizedCompanyName}.txt`;
+    const filepath = path.join(LOGS_DIR, filename);
+
+    let content = `=== Conversacion: ${companyName} ===\n`;
+    content += `Fecha: ${new Date().toISOString()}\n`;
+    content += `Session ID: ${sessionId}\n`;
+    content += `${'='.repeat(50)}\n\n`;
+
+    for (const msg of messages) {
+      const role = msg.role === 'user' ? 'USUARIO' : 'SOFIA';
+      content += `[${role}]\n${msg.content}\n\n`;
+    }
+
+    fs.writeFileSync(filepath, content, 'utf-8');
+    console.log(`[Logger] Conversation saved to: ${filepath}`);
+    return filepath;
+  } catch (error) {
+    console.warn('[Logger] Cannot save conversation to filesystem:', error);
+    return '';
+  }
 }
 
 /**
@@ -403,17 +445,26 @@ export function appendMessageToLog(
   companyName: string,
   message: Message
 ): void {
-  ensureLogsDirectory();
+  // Skip en Vercel serverless (filesystem read-only)
+  if (process.env.VERCEL) {
+    return;
+  }
 
-  const files = fs.existsSync(LOGS_DIR) ? fs.readdirSync(LOGS_DIR) : [];
-  const existingFile = files.find(f => f.includes(sessionId));
+  try {
+    ensureLogsDirectory();
 
-  if (existingFile) {
-    const filepath = path.join(LOGS_DIR, existingFile);
-    const role = message.role === 'user' ? 'USUARIO' : 'SOFIA';
-    const content = `[${role}]\n${message.content}\n\n`;
-    fs.appendFileSync(filepath, content, 'utf-8');
-  } else {
-    logConversation(sessionId, companyName, [message]);
+    const files = fs.existsSync(LOGS_DIR) ? fs.readdirSync(LOGS_DIR) : [];
+    const existingFile = files.find(f => f.includes(sessionId));
+
+    if (existingFile) {
+      const filepath = path.join(LOGS_DIR, existingFile);
+      const role = message.role === 'user' ? 'USUARIO' : 'SOFIA';
+      const content = `[${role}]\n${message.content}\n\n`;
+      fs.appendFileSync(filepath, content, 'utf-8');
+    } else {
+      logConversation(sessionId, companyName, [message]);
+    }
+  } catch (error) {
+    console.warn('[Logger] Cannot append message to filesystem:', error);
   }
 }

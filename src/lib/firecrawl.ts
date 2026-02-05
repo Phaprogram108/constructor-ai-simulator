@@ -1253,6 +1253,17 @@ export async function scrapeWithFirecrawl(
   console.log('[Firecrawl] Social links found:', socialLinks);
 
   // ===========================================================
+  // Fallback: extraer nombre de empresa del markdown si no se encontro
+  // ===========================================================
+  if (!companyName && combinedMarkdown) {
+    // Intentar extraer del titulo o headers
+    const h1Match = combinedMarkdown.match(/^#\s+([^\n]+)/m);
+    const titleMatch = combinedMarkdown.match(/title[:\s]+["']?([^"'\n]+)/i);
+    companyName = h1Match?.[1]?.trim() || titleMatch?.[1]?.trim() || 'Empresa';
+    console.log('[Firecrawl] Company name extracted from markdown fallback:', companyName);
+  }
+
+  // ===========================================================
   // Clasificar tipo de constructora
   // ===========================================================
   const classification = classifyConstructora(

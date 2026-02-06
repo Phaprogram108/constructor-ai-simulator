@@ -53,7 +53,7 @@ export async function POST(request: NextRequest) {
         console.log('[Create] Web scrape completed in', Date.now() - startTime, 'ms');
         console.log('[Create] Scraped:', {
           title: result.title,
-          modelsCount: result.models.length,
+          productsCount: result.products.length,
           servicesCount: result.services.length,
         });
         return result;
@@ -126,7 +126,7 @@ export async function POST(request: NextRequest) {
     const scrapingMetadata: Partial<ScrapingMetadata> = {
       method: 'firecrawl', // Default, el scraper usa firecrawl principalmente
       duration: scrapingDuration,
-      modelsFound: (scrapedContent.models?.length || 0) + (catalog?.models?.length || 0),
+      modelsFound: scrapedContent.products.length + (catalog?.models?.length || 0),
       whatsappFound: scrapedContent.contactInfo?.toLowerCase().includes('whatsapp') ||
                      scrapedContent.rawText?.toLowerCase().includes('whatsapp') ||
                      false,
@@ -139,7 +139,6 @@ export async function POST(request: NextRequest) {
       sessionId: session.id,
       companyName: scrapedContent.title,
       companyUrl: websiteUrl,
-      constructoraType: scrapedContent.constructoraType,
       scrapingMetadata,
     });
 

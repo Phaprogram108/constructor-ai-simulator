@@ -175,7 +175,7 @@ export class ResponseValidator {
 
       if (results.length === 0 || results[0].relevance < 0.4) {
         // Verificar si es un nombre conocido en los modelos
-        const knownModels = this.scrapedContent.models.join(' ').toLowerCase();
+        const knownModels = (this.scrapedContent.models || []).join(' ').toLowerCase();
         const catalogModels = this.catalog?.models.map(m => m.name).join(' ').toLowerCase() || '';
         const allModels = `${knownModels} ${catalogModels}`;
 

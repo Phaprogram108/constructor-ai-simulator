@@ -72,24 +72,16 @@ export async function scrapeWebsite(url: string): Promise<ScrapedContent> {
   console.log('[Scraper] Starting scrape for:', url);
 
   let result: ScrapedContent | null = null;
-  let firecrawlClassification: ScrapedContent['constructoraType'] = undefined;
 
   // 1. Intentar con Firecrawl primero (mejor para SPAs)
   try {
     console.log('[Scraper] Trying Firecrawl...');
     result = await scrapeWithFirecrawl(url);
 
-    // IMPORTANTE: Guardar la clasificación de Firecrawl ANTES de posiblemente descartar el resultado
-    // Firecrawl tiene la mejor lógica de clasificación, la preservamos aunque fallemos
-    if (result.constructoraType) {
-      firecrawlClassification = result.constructoraType;
-      console.log('[Scraper] Firecrawl classification preserved:', firecrawlClassification);
-    }
-
-    if (result.models && result.models.length > 0) {
-      console.log('[Scraper] Firecrawl success! Models:', result.models.length);
+    if (result.products.length > 0) {
+      console.log('[Scraper] Firecrawl success! Products:', result.products.length);
     } else {
-      console.log('[Scraper] Firecrawl returned 0 models, trying Playwright...');
+      console.log('[Scraper] Firecrawl returned 0 products, trying Playwright...');
       result = null;
     }
   } catch (error) {
@@ -112,15 +104,10 @@ export async function scrapeWebsite(url: string): Promise<ScrapedContent> {
     result = await basicFetchScrape(url);
   }
 
-  // IMPORTANTE: Restaurar la clasificación de Firecrawl si el resultado actual no tiene una
-  if (firecrawlClassification && !result.constructoraType) {
-    result.constructoraType = firecrawlClassification;
-    console.log('[Scraper] Restored Firecrawl classification to result:', firecrawlClassification);
-  }
-
-  // 4. Vision fallback: si hay pocos modelos, intentar con Claude Vision
-  if (needsVisionScraping(url, result.models.length)) {
-    console.log(`[Scraper] Pocos modelos extraídos (${result.models.length}), intentando con Vision...`);
+  // 4. Vision fallback: si hay pocos productos, intentar con Claude Vision
+  const productsCount = result.products.length;
+  if (needsVisionScraping(url, productsCount)) {
+    console.log(`[Scraper] Pocos productos extraídos (${productsCount}), intentando con Vision...`);
 
     try {
       const visionResult = await scrapeWithVision(url);
@@ -170,12 +157,24 @@ function mergeVisionResults(
 ): ScrapedContent {
   const result = { ...original };
 
-  // Si Vision encontró más modelos, usar esos
-  if (vision.models.length > original.models.length) {
+  // Si Vision encontró más modelos, usar esos (backwards compat: also populate models)
+  const originalModelsCount = (original.models || []).length;
+  if (vision.models.length > originalModelsCount) {
     result.models = vision.models.map(m =>
       `${m.name}${m.sqMeters ? ` - ${m.sqMeters}m²` : ''}${m.bedrooms ? ` - ${m.bedrooms} dorm` : ''}${m.bathrooms ? ` - ${m.bathrooms} baños` : ''}${m.price ? ` - ${m.price}` : ''}`
     );
-    console.log(`[Scraper] Vision encontró más modelos: ${vision.models.length} vs ${original.models.length}`);
+    // Also update products array from vision results
+    result.products = vision.models.map(m => ({
+      name: m.name,
+      specs: {
+        ...(m.sqMeters ? { superficie: m.sqMeters } : {}),
+        ...(m.bedrooms ? { dormitorios: m.bedrooms } : {}),
+        ...(m.bathrooms ? { baños: m.bathrooms } : {}),
+        ...(m.price ? { precio: m.price } : {}),
+      },
+      features: m.features || [],
+    }));
+    console.log(`[Scraper] Vision encontró más modelos: ${vision.models.length} vs ${originalModelsCount}`);
   }
 
   // Agregar rawText de Vision al existente
@@ -342,7 +341,7 @@ async function deepScrapeWithPlaywright(url: string): Promise<ScrapedContent> {
     console.log('[Scraper] AI extracted:', {
       title: extractedInfo.title,
       servicesCount: extractedInfo.services.length,
-      modelsCount: extractedInfo.models.length,
+      productsCount: extractedInfo.products.length,
     });
 
     return extractedInfo;
@@ -617,13 +616,24 @@ IMPORTANTE:
     // Build comprehensive rawText with all extracted info
     const comprehensiveText = buildComprehensiveText(extracted, content.rawText);
 
+    const modelsArray: string[] = Array.isArray(extracted.models) ? extracted.models : [];
     return {
       title: extracted.companyName || cleanCompanyName(content.metaTitle) || extractNameFromUrl(content.url),
       description: extracted.description || content.metaDescription,
       services: Array.isArray(extracted.services) ? extracted.services : [],
-      models: Array.isArray(extracted.models) ? extracted.models : [],
+      models: modelsArray,
       contactInfo: extracted.contactInfo || '',
       rawText: comprehensiveText,
+      profile: {
+        identity: extracted.description || content.metaDescription || '',
+        offering: Array.isArray(extracted.services) ? extracted.services.join(', ') : '',
+        differentiators: Array.isArray(extracted.keyFeatures) ? extracted.keyFeatures.join(', ') : '',
+        terminology: { productsLabel: 'productos', processLabel: 'construcción' },
+      },
+      products: modelsArray.map(m => ({
+        name: typeof m === 'string' ? m.split(' - ')[0] : String(m),
+        specs: {} as Record<string, string | number>,
+      })),
     };
   } catch (error) {
     console.error('[Scraper] AI extraction error:', error);
@@ -635,6 +645,13 @@ IMPORTANTE:
       models: [],
       contactInfo: '',
       rawText: content.rawText,
+      profile: {
+        identity: content.metaDescription || '',
+        offering: '',
+        differentiators: '',
+        terminology: { productsLabel: 'productos', processLabel: 'construcción' },
+      },
+      products: [],
     };
   }
 }
@@ -739,7 +756,7 @@ async function basicFetchScrape(url: string): Promise<ScrapedContent> {
     console.log('[Scraper] AI extracted (basic):', {
       title: extractedInfo.title,
       servicesCount: extractedInfo.services.length,
-      modelsCount: extractedInfo.models.length,
+      productsCount: extractedInfo.products.length,
     });
 
     return extractedInfo;
@@ -782,6 +799,13 @@ async function fallbackScrape(url: string): Promise<ScrapedContent> {
       models: [],
       contactInfo: '',
       rawText,
+      profile: {
+        identity: description || '',
+        offering: '',
+        differentiators: '',
+        terminology: { productsLabel: 'productos', processLabel: 'construcción' },
+      },
+      products: [],
     };
   } catch {
     return {
@@ -791,6 +815,13 @@ async function fallbackScrape(url: string): Promise<ScrapedContent> {
       models: [],
       contactInfo: '',
       rawText: '',
+      profile: {
+        identity: '',
+        offering: '',
+        differentiators: '',
+        terminology: { productsLabel: 'productos', processLabel: 'construcción' },
+      },
+      products: [],
     };
   }
 }

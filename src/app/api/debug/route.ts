@@ -19,7 +19,7 @@ export async function POST(request: NextRequest) {
       title: scrapedContent.title,
       description: scrapedContent.description?.slice(0, 100),
       servicesCount: scrapedContent.services.length,
-      modelsCount: scrapedContent.models.length,
+      productsCount: scrapedContent.products.length,
       rawTextLength: scrapedContent.rawText.length,
     });
 
@@ -29,7 +29,8 @@ export async function POST(request: NextRequest) {
         title: scrapedContent.title,
         description: scrapedContent.description,
         services: scrapedContent.services,
-        models: scrapedContent.models,
+        products: scrapedContent.products,
+        models: scrapedContent.models || [],
         contactInfo: scrapedContent.contactInfo,
         rawTextPreview: scrapedContent.rawText.slice(0, 500),
       },

@@ -1,6 +1,6 @@
 import Firecrawl from '@mendable/firecrawl-js';
 import { z } from 'zod';
-import { ScrapedContent, SocialLinks } from '@/types';
+import { ScrapedContent, SocialLinks, ProductOrService, CompanyProfile } from '@/types';
 // SCRAPING_FAILED_MARKER ya no se usa - ahora usamos fallback de URL
 import { extractFromWaUrl, extractPhoneFromText } from './whatsapp-validator';
 
@@ -69,75 +69,26 @@ const UNIVERSAL_ACTIONS = [
   { type: 'wait' as const, milliseconds: 1000 },
 ];
 
-// Prompt para el Agent de Firecrawl (usado como fallback)
-const AGENT_EXTRACTION_PROMPT = `Sos un experto extrayendo información de sitios web de empresas constructoras de casas prefabricadas/modulares.
+// Prompt exploratorio para el Agent de Firecrawl (usado como fallback)
+const EXPLORATORY_EXTRACTION_PROMPT = `Sos un experto extrayendo informacion de sitios web de empresas de construccion/inmobiliarias.
 
-EXTRAE TODA la siguiente información del sitio web:
+NO asumas que tipo de empresa es. Explora y descubri:
 
-1. MODELOS DE CASAS/VIVIENDAS:
-   - Nombre exacto de cada modelo (ej: "W26 Suite", "Fitz Roy", "Casa Sara")
-   - Metros cuadrados (m²) de cada modelo
-   - Cantidad de dormitorios
-   - Cantidad de baños
-   - Precio si está disponible (en USD o pesos)
-   - Características especiales
-
-2. INFORMACIÓN DE CONTACTO:
-   - Número de WhatsApp (IMPORTANTE: hace click en botones de WhatsApp para obtener el número real)
-   - Teléfono fijo
-   - Email de contacto
-   - Dirección física
-
-3. PREGUNTAS FRECUENTES (FAQ):
-   - EXPANDE todas las preguntas del FAQ
-   - Extrae cada pregunta con su respuesta completa
-   - Busca información sobre cobertura geográfica ("¿Llegan a todo el país?")
-   - Busca información sobre tiempos de entrega
-   - Busca información sobre formas de pago/financiación
-
-4. ESPECIFICACIONES TÉCNICAS:
-   - Método constructivo (steel frame, hormigón, etc.)
-   - Materiales (DVH, tipo de aislación, etc.)
-   - Dimensiones exactas si hay tablas de especificaciones
-   - Garantías
-
-5. COBERTURA GEOGRÁFICA:
-   - ¿A qué provincias/zonas llegan?
-   - ¿Hacen envíos a todo el país?
-   - Zonas de instalación
+1. QUE ES la empresa y a que se dedica
+2. QUE OFRECE: productos, servicios, proyectos - lo que sea que venda
+3. Para cada producto/servicio: nombre, descripcion, especificaciones (las que haya)
+4. COMO llama la empresa a sus productos (modelos? tipologias? proyectos? servicios?)
+5. Informacion de contacto: WhatsApp, telefono, email
+6. Diferenciadores: que la hace unica
 
 IMPORTANTE:
+- NO asumas que hay "modelos de casas" - puede vender servicios, lotes, departamentos, o lo que sea
+- Usa la TERMINOLOGIA que usa el sitio, no la tuya
+- Extrae TODOS los productos/servicios, no solo los primeros
+- Extrae SOLO lo que existe, no inventes
 - Navega por todas las secciones del sitio
 - Expande todos los elementos colapsables (FAQs, accordions)
-- Hace click en botones de contacto para revelar números
-- No inventes información, solo extrae lo que está visible`;
-
-// Prompt específico para sitios Wix (navegación diferente)
-const WIX_AGENT_PROMPT = `Sos un experto extrayendo información de sitios web hechos con Wix de empresas constructoras.
-
-NAVEGACIÓN ESPECÍFICA PARA WIX:
-1. Los menús están en elementos con data-hook o data-testid
-2. Busca links a "Catálogo", "Modelos", "Casas", "Productos" en el menú
-3. Los cards de modelos suelen estar en data-hook="gallery-item"
-4. Haz click en cada modelo para ver detalles
-5. Wix usa JavaScript pesado, espera a que cargue el contenido
-
-EXTRAE de cada modelo:
-- Nombre exacto (ej: "Casa Sara 45m2")
-- Metros cuadrados
-- Dormitorios y banos
-- Precio si está visible
-- Características
-
-TAMBIÉN EXTRAE:
-- WhatsApp (busca botón de contacto, suele estar en header o footer)
-- Especificaciones técnicas
-- FAQ si hay
-
-IMPORTANTE:
-- Navega a la sección de modelos/catálogo antes de extraer
-- Scrollea para cargar contenido lazy-loaded
-- Espera 2-3 segundos después de cada navegación para que cargue el JS`;
+- Hace click en botones de contacto para revelar numeros`;
 
 // Inicialización lazy para evitar errores durante el build
 let firecrawlInstance: Firecrawl | null = null;
@@ -320,61 +271,29 @@ async function rateLimitDelay(): Promise<void> {
   await new Promise(resolve => setTimeout(resolve, RATE_LIMIT_MS));
 }
 
-// Schema mejorado para extraer MULTIPLES modelos de una pagina de catalogo
-const catalogSchema = z.object({
-  companyName: z.string().optional().describe("Nombre de la empresa constructora"),
+// Schema exploratorio - NO asume tipo de empresa ni estructura de productos
+const exploratorySchema = z.object({
+  companyName: z.string().optional().describe("Nombre comercial de la empresa"),
   companyDescription: z.string().optional().describe("Descripcion de la empresa"),
-  models: z.array(z.object({
-    name: z.string().describe("Nombre del modelo tal como aparece en el sitio web"),
-    squareMeters: z.number().optional().describe("Metros cuadrados totales"),
-    coveredArea: z.number().optional().describe("Superficie cubierta en m2"),
-    semicoveredArea: z.number().optional().describe("Superficie semicubierta en m2"),
-    bedrooms: z.number().optional().describe("Cantidad de dormitorios"),
-    bathrooms: z.number().optional().describe("Cantidad de banos"),
-    price: z.string().optional().describe("Precio en USD o pesos"),
-    features: z.array(z.string()).optional().describe("Caracteristicas del modelo"),
-    category: z.string().optional().describe("Categoria: casa, quincho, cabana, etc.")
-  })).optional().describe("TODOS los modelos de casas/quinchos disponibles - extraer CADA UNO"),
-  quinchos: z.array(z.object({
-    name: z.string().describe("Nombre o tamaño del quincho tal como aparece en el sitio"),
-    squareMeters: z.number().optional(),
-    features: z.array(z.string()).optional()
-  })).optional().describe("Modelos de quinchos disponibles"),
+  identity: z.string().optional().describe("Que es la empresa y a que se dedica, en 1-2 oraciones"),
+  offering: z.string().optional().describe("Que productos o servicios ofrece la empresa"),
+  differentiators: z.string().optional().describe("Que la diferencia de la competencia"),
+  productsTerminology: z.string().optional().describe("Como llama la empresa a sus productos: modelos, tipologias, proyectos, unidades, servicios, etc"),
+  products: z.array(z.object({
+    name: z.string().describe("Nombre tal como aparece en el sitio"),
+    description: z.string().optional().describe("Descripcion del producto/servicio"),
+    specs: z.record(z.union([z.string(), z.number()])).optional()
+      .describe("Especificaciones tecnicas: m2, dormitorios, banos, precio, ambientes, etc - las keys son las que use el sitio"),
+    features: z.array(z.string()).optional().describe("Caracteristicas incluidas"),
+    category: z.string().optional().describe("Categoria segun el sitio: casa, quincho, loft, departamento, lote, etc"),
+  })).optional().describe("TODOS los productos/servicios que ofrece la empresa - extraer CADA UNO"),
   contactPhone: z.string().optional(),
   contactWhatsapp: z.string().optional(),
   contactEmail: z.string().optional(),
   locations: z.array(z.string()).optional(),
-  constructionMethod: z.string().optional().describe("Steel frame, tradicional, etc."),
-  financing: z.boolean().optional()
+  constructionMethod: z.string().optional(),
+  financing: z.string().optional().describe("Info de financiacion si existe"),
 });
-
-// Schema para paginas individuales de modelos
-const singleModelSchema = z.object({
-  modelName: z.string().optional().describe("Nombre del modelo de casa"),
-  squareMeters: z.number().optional().describe("Metros cuadrados totales"),
-  coveredArea: z.number().optional().describe("Superficie cubierta"),
-  semicoveredArea: z.number().optional().describe("Superficie semicubierta"),
-  bedrooms: z.number().optional().describe("Cantidad de dormitorios"),
-  bathrooms: z.number().optional().describe("Cantidad de banos"),
-  price: z.string().optional().describe("Precio"),
-  features: z.array(z.string()).optional().describe("Caracteristicas incluidas"),
-  companyName: z.string().optional(),
-  contactPhone: z.string().optional(),
-  contactWhatsapp: z.string().optional(),
-  contactEmail: z.string().optional()
-});
-
-interface ExtractedModel {
-  name: string;
-  squareMeters?: number;
-  coveredArea?: number;
-  semicoveredArea?: number;
-  bedrooms?: number;
-  bathrooms?: number;
-  price?: string;
-  features?: string[];
-  category?: string;
-}
 
 interface ContactInfo {
   phone?: string;
@@ -387,94 +306,6 @@ interface ScrapeOptions {
   exhaustive?: boolean; // Si true, scrapea TODAS las URLs sin filtrar
 }
 
-// Función para parsear modelos del markdown SIN usar AI (evita invención de datos)
-function parseModelsFromMarkdown(markdown: string): ExtractedModel[] {
-  const models: ExtractedModel[] = [];
-
-  // Patrones para detectar modelos de casas/quinchos
-  // Formato: "Modelo de Casa X - Y personas - Z m2 - N dormitorios - M baños"
-  const modelPatterns = [
-    // Patrón ViBert Casas: "Modelo de Casa Sara - 2 personas 65.55 m2 TOTALES"
-    /Modelo de Casa\s+([A-Za-záéíóúñÁÉÍÓÚÑ]+)\s*[-–]\s*\d+\s*personas?\s+(\d+[.,]?\d*)\s*m2/gi,
-    // Patrón ViBert Quinchos: "Modelo de Quincho S - 27,50 m2 TOTALES" (sin personas)
-    /Modelo de (Quincho\s+[A-Za-záéíóúñÁÉÍÓÚÑ]+)\s*[-–]\s*(\d+[.,]?\d*)\s*m2/gi,
-    // Patrón genérico: "Casa/Modelo X - 100m² - 3 dormitorios" (excluir quinchos ya capturados)
-    /(?:Casa|Vivienda)\s+([A-Za-záéíóúñÁÉÍÓÚÑ0-9\s\-]+?)\s*[-–|]\s*(\d+[.,]?\d*)\s*m[²2]/gi,
-    // Patrón con precio: "CM0 15m² USD 17.050"
-    /([A-Z]{1,3}\d+(?:\s*-\s*[A-Z])?)\s*(\d+[.,]?\d*)\s*m[²2].*?(?:U\$?D|USD|\$)\s*([\d.,]+)/gi,
-    // Formato Wellmod: "W26 Suite | 26 m2 | Monoambiente"
-    /([A-Z]\d+\s*\w*)\s*[|\-–]\s*(\d+)\s*m[²2]/gi,
-    // Formato tabla con pipes: "Modelo | Superficie | Dormitorios"
-    /^([A-Za-z0-9\s]+)\s*\|\s*(\d+[.,]?\d*)\s*m[²2]/gm,
-    // Formato con "Ver más" o "VER MAS": extraer nombre antes de link
-    /([\w\s]+)\s+(?:VER MAS|Ver más|ver más)/gi,
-    // Formato simple: "Nombre Modelo 50m2" o "Nombre 50 m2"
-    /([A-Za-záéíóúñÁÉÍÓÚÑ\s]+)\s+(\d+)\s*m[²2]/gi,
-    // Formato con guión: "Modelo-A - 45m²"
-    /([A-Za-z0-9]+[-][A-Za-z0-9]*)\s*[-–]\s*(\d+[.,]?\d*)\s*m[²2]/gi,
-  ];
-
-  // Buscar con cada patrón
-  for (const pattern of modelPatterns) {
-    let match;
-    while ((match = pattern.exec(markdown)) !== null) {
-      const name = match[1]?.trim();
-      if (name && name.length > 1 && name.length < 50) {
-        // Evitar duplicados - solo si el nombre es casi idéntico (no substring match)
-        const nameLower = name.toLowerCase();
-        const exists = models.some(m => {
-          const existingLower = m.name.toLowerCase();
-          // Considerar duplicado solo si:
-          // 1. Son exactamente iguales
-          // 2. Uno contiene al otro Y la diferencia de longitud es menor a 3 caracteres
-          if (existingLower === nameLower) return true;
-          if (existingLower.includes(nameLower) && Math.abs(existingLower.length - nameLower.length) < 3) return true;
-          if (nameLower.includes(existingLower) && Math.abs(nameLower.length - existingLower.length) < 3) return true;
-          return false;
-        });
-        if (!exists) {
-          const model: ExtractedModel = { name, category: 'casa' };
-
-          // Extraer metros cuadrados
-          const sqmMatch = markdown.match(new RegExp(name + '[^]*?(\\d+[.,]?\\d*)\\s*m[²2]', 'i'));
-          if (sqmMatch) {
-            model.squareMeters = parseFloat(sqmMatch[1].replace(',', '.'));
-          } else if (match[2]) {
-            model.squareMeters = parseFloat(match[2].replace(',', '.'));
-          }
-
-          // Extraer dormitorios
-          const bedroomMatch = markdown.match(new RegExp(name + '[^]*?(\\d+)\\s*(?:dormitorio|dorm|habitacion)', 'i'));
-          if (bedroomMatch) {
-            model.bedrooms = parseInt(bedroomMatch[1]);
-          }
-
-          // Extraer baños
-          const bathMatch = markdown.match(new RegExp(name + '[^]*?(\\d+)\\s*(?:baño|bano|bath)', 'i'));
-          if (bathMatch) {
-            model.bathrooms = parseInt(bathMatch[1]);
-          }
-
-          // Extraer precio SOLO si aparece explícitamente cerca del nombre
-          const priceMatch = markdown.match(new RegExp(name + '[^]{0,100}(?:U\\$?D|USD|\\$)\\s*([\\d.,]+)', 'i'));
-          if (priceMatch) {
-            model.price = `USD ${priceMatch[1]}`;
-          }
-          // NO inventar precio si no existe
-
-          // Detectar si es quincho
-          if (name.toLowerCase().includes('quincho') || markdown.toLowerCase().includes(`quincho ${name.toLowerCase()}`)) {
-            model.category = 'quincho';
-          }
-
-          models.push(model);
-        }
-      }
-    }
-  }
-
-  return models;
-}
 
 /**
  * Extrae contenido de FAQ del markdown
@@ -514,22 +345,22 @@ function extractFAQContent(markdown: string): { question: string; answer: string
 }
 
 /**
- * Usa el Agent de Firecrawl para extracción autónoma (via API REST)
+ * Usa el Agent de Firecrawl para extraccion autonoma (via API REST)
  * Se usa como fallback cuando el scraping normal no extrae suficiente info
- * NOTA: El SDK JS no tiene método agent(), usamos fetch directo
+ * NOTA: El SDK JS no tiene metodo agent(), usamos fetch directo
  */
 async function scrapeWithAgent(url: string): Promise<{
-  models: ExtractedModel[];
+  products: ProductOrService[];
   contactInfo: ContactInfo;
   faqs: { question: string; answer: string }[];
   rawText: string;
 }> {
-  console.log('[Firecrawl Agent] Iniciando extracción autónoma para:', url);
+  console.log('[Firecrawl Agent] Iniciando extraccion autonoma para:', url);
 
   const apiKey = process.env.FIRECRAWL_API_KEY;
   if (!apiKey) {
     console.log('[Firecrawl Agent] No hay API key, saltando Agent');
-    return { models: [], contactInfo: {}, faqs: [], rawText: '' };
+    return { products: [], contactInfo: {}, faqs: [], rawText: '' };
   }
 
   try {
@@ -540,7 +371,7 @@ async function scrapeWithAgent(url: string): Promise<{
         'Authorization': `Bearer ${apiKey}`,
       },
       body: JSON.stringify({
-        prompt: AGENT_EXTRACTION_PROMPT,
+        prompt: EXPLORATORY_EXTRACTION_PROMPT,
         urls: [url],
       }),
     });
@@ -548,27 +379,24 @@ async function scrapeWithAgent(url: string): Promise<{
     if (!response.ok) {
       const errorText = await response.text();
       console.log(`[Firecrawl Agent] API error ${response.status}: ${errorText}`);
-      // Si el endpoint no existe o hay error, retornar vacío sin romper
-      return { models: [], contactInfo: {}, faqs: [], rawText: '' };
+      return { products: [], contactInfo: {}, faqs: [], rawText: '' };
     }
 
     const result = await response.json();
     console.log('[Firecrawl Agent] Resultado:', JSON.stringify(result, null, 2).slice(0, 500));
 
-    // Parsear resultado del agent
     const agentData = result.data || result;
 
     return {
-      models: parseAgentModels(agentData),
+      products: parseAgentProducts(agentData),
       contactInfo: parseAgentContact(agentData),
       faqs: parseAgentFAQs(agentData),
       rawText: typeof agentData === 'string' ? agentData : JSON.stringify(agentData, null, 2)
     };
   } catch (error) {
     console.error('[Firecrawl Agent] Error:', error);
-    // Retornar vacío sin romper el flujo
     return {
-      models: [],
+      products: [],
       contactInfo: {},
       faqs: [],
       rawText: ''
@@ -577,14 +405,14 @@ async function scrapeWithAgent(url: string): Promise<{
 }
 
 /**
- * Scraping especializado para sitios Wix usando Agent con prompt específico
+ * Scraping especializado para sitios Wix usando Agent con prompt exploratorio
  * y actions optimizadas para la estructura de Wix.
  *
- * IMPORTANTE: Wix no expone los links del menú en el HTML inicial,
- * así que intentamos URLs comunes directamente.
+ * IMPORTANTE: Wix no expone los links del menu en el HTML inicial,
+ * asi que intentamos URLs comunes directamente.
  */
 async function scrapeWixSite(url: string): Promise<{
-  models: ExtractedModel[];
+  products: ProductOrService[];
   contactInfo: ContactInfo;
   faqs: { question: string; answer: string }[];
   rawText: string;
@@ -594,50 +422,50 @@ async function scrapeWixSite(url: string): Promise<{
   const apiKey = process.env.FIRECRAWL_API_KEY;
   if (!apiKey) {
     console.log('[Firecrawl Wix] No hay API key, saltando');
-    return { models: [], contactInfo: {}, faqs: [], rawText: '' };
+    return { products: [], contactInfo: {}, faqs: [], rawText: '' };
   }
 
-  // URLs comunes en sitios de constructoras - solo las más probables
+  // URLs comunes en sitios de empresas - expandido mas alla de solo "modelos"
   const baseUrl = new URL(url).origin;
   const CATALOG_PATHS = [
     '/casas',
     '/modelos',
     '/catalogo',
+    '/productos',
+    '/proyectos',
+    '/servicios',
   ];
 
   // Actions simplificadas para Wix - reducir tiempo
   const WIX_ACTIONS = [
-    // 1. Esperar carga inicial
     { type: 'wait' as const, milliseconds: 3000 },
-
-    // 2. Scroll para cargar lazy content
     { type: 'scroll' as const, direction: 'down' as const },
     { type: 'wait' as const, milliseconds: 1000 },
     { type: 'scroll' as const, direction: 'down' as const },
     { type: 'wait' as const, milliseconds: 500 },
   ];
 
-  let allModels: ExtractedModel[] = [];
+  let allProducts: ProductOrService[] = [];
   let contactInfo: ContactInfo = {};
   let allFaqs: { question: string; answer: string }[] = [];
   let allRawText = '';
 
   try {
-    // PASO 1: Scrapear URLs de catálogo EN PARALELO para mayor velocidad
-    console.log('[Firecrawl Wix] Paso 1: Probando URLs de catálogo en paralelo...');
+    // PASO 1: Scrapear URLs de catalogo EN PARALELO
+    console.log('[Firecrawl Wix] Paso 1: Probando URLs de catalogo en paralelo...');
 
     const catalogUrls = CATALOG_PATHS.map(path => `${baseUrl}${path}`);
     console.log('[Firecrawl Wix] URLs a probar:', catalogUrls);
 
-    // Hacer todas las peticiones en paralelo con timeout corto
     const results = await Promise.all(
       catalogUrls.map(async (catalogUrl) => {
         try {
           const result = await getFirecrawl().scrapeUrl(catalogUrl, {
             formats: ['markdown', 'extract'],
-            extract: { schema: catalogSchema },
+            extract: { schema: exploratorySchema },
             actions: WIX_ACTIONS,
-            timeout: 45000 // Timeout más corto
+            timeout: 45000,
+            onlyMainContent: true
           });
           return { catalogUrl, result, error: null };
         } catch (error) {
@@ -646,39 +474,26 @@ async function scrapeWixSite(url: string): Promise<{
       })
     );
 
-    // Procesar resultados
     for (const { catalogUrl, result } of results) {
       if (result?.success && result.markdown) {
-        console.log(`[Firecrawl Wix] ✓ URL válida: ${catalogUrl}`);
+        console.log(`[Firecrawl Wix] URL valida: ${catalogUrl}`);
 
         const markdown = result.markdown;
-        const extract = result.extract as z.infer<typeof catalogSchema> | undefined;
+        const extract = result.extract as z.infer<typeof exploratorySchema> | undefined;
 
-        // Acumular raw text
         allRawText += `\n--- ${catalogUrl} ---\n${markdown.slice(0, 5000)}`;
 
-        // Extraer modelos del extract
-        if (extract?.models && extract.models.length > 0) {
-          console.log(`[Firecrawl Wix] Extract encontró ${extract.models.length} modelos`);
-          const extractedModels = extract.models.map(m => ({
-            name: m.name,
-            squareMeters: m.squareMeters,
-            coveredArea: m.coveredArea,
-            semicoveredArea: m.semicoveredArea,
-            bedrooms: m.bedrooms,
-            bathrooms: m.bathrooms,
-            price: m.price,
-            features: m.features,
-            category: m.category || 'casa'
+        // Extraer productos del extract
+        if (extract?.products && extract.products.length > 0) {
+          console.log(`[Firecrawl Wix] Extract encontro ${extract.products.length} productos`);
+          const extractedProducts: ProductOrService[] = extract.products.map(p => ({
+            name: p.name,
+            description: p.description,
+            specs: p.specs || {},
+            features: p.features,
+            category: p.category,
           }));
-          allModels = mergeModels(allModels, extractedModels);
-        }
-
-        // También parsear del markdown
-        const parsedModels = parseModelsFromMarkdown(markdown);
-        if (parsedModels.length > 0) {
-          console.log(`[Firecrawl Wix] Markdown parsing encontró ${parsedModels.length} modelos`);
-          allModels = mergeModels(allModels, parsedModels);
+          allProducts = mergeProducts(allProducts, extractedProducts);
         }
 
         // Extraer contacto
@@ -695,9 +510,9 @@ async function scrapeWixSite(url: string): Promise<{
       }
     }
 
-    // PASO 2: Si no encontramos modelos, intentar con Agent
-    if (allModels.length === 0) {
-      console.log('[Firecrawl Wix] Paso 2: No se encontraron modelos, intentando con Agent...');
+    // PASO 2: Si no encontramos productos, intentar con Agent
+    if (allProducts.length === 0) {
+      console.log('[Firecrawl Wix] Paso 2: No se encontraron productos, intentando con Agent...');
 
       const agentResponse = await fetch('https://api.firecrawl.dev/v1/agent', {
         method: 'POST',
@@ -706,7 +521,7 @@ async function scrapeWixSite(url: string): Promise<{
           'Authorization': `Bearer ${apiKey}`,
         },
         body: JSON.stringify({
-          prompt: WIX_AGENT_PROMPT,
+          prompt: EXPLORATORY_EXTRACTION_PROMPT,
           urls: [url],
         }),
       });
@@ -716,11 +531,11 @@ async function scrapeWixSite(url: string): Promise<{
         console.log('[Firecrawl Wix] Agent resultado:', JSON.stringify(agentResult, null, 2).slice(0, 500));
 
         const agentData = agentResult.data || agentResult;
-        const agentModels = parseAgentModels(agentData);
+        const agentProducts = parseAgentProducts(agentData);
 
-        if (agentModels.length > 0) {
-          console.log(`[Firecrawl Wix] Agent extrajo ${agentModels.length} modelos`);
-          allModels = agentModels;
+        if (agentProducts.length > 0) {
+          console.log(`[Firecrawl Wix] Agent extrajo ${agentProducts.length} productos`);
+          allProducts = agentProducts;
           contactInfo = parseAgentContact(agentData);
           allFaqs = parseAgentFAQs(agentData);
           allRawText = typeof agentData === 'string' ? agentData : JSON.stringify(agentData, null, 2);
@@ -736,7 +551,8 @@ async function scrapeWixSite(url: string): Promise<{
         const homeResult = await getFirecrawl().scrapeUrl(url, {
           formats: ['markdown'],
           actions: WIX_ACTIONS,
-          timeout: 30000 // Timeout corto
+          timeout: 30000,
+          onlyMainContent: true
         });
 
         if (homeResult.success && homeResult.markdown) {
@@ -764,51 +580,71 @@ async function scrapeWixSite(url: string): Promise<{
       }
     }
 
-    console.log(`[Firecrawl Wix] RESULTADO FINAL: ${allModels.length} modelos, WA: ${!!contactInfo.whatsapp}, FAQs: ${allFaqs.length}`);
+    console.log(`[Firecrawl Wix] RESULTADO FINAL: ${allProducts.length} productos, WA: ${!!contactInfo.whatsapp}, FAQs: ${allFaqs.length}`);
 
     return {
-      models: allModels,
+      products: allProducts,
       contactInfo,
       faqs: allFaqs,
       rawText: allRawText.slice(0, 15000)
     };
   } catch (error) {
     console.error('[Firecrawl Wix] Error:', error);
-    return { models: [], contactInfo: {}, faqs: [], rawText: '' };
+    return { products: [], contactInfo: {}, faqs: [], rawText: '' };
   }
 }
 
-// Helpers para parsear respuesta del Agent
+// Helpers para parsear respuesta del Agent en formato ProductOrService
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
-function parseAgentModels(data: any): ExtractedModel[] {
+function parseAgentProducts(data: any): ProductOrService[] {
   if (!data) return [];
 
-  const models: ExtractedModel[] = [];
+  const products: ProductOrService[] = [];
 
-  // Intentar extraer modelos de diferentes estructuras posibles
-  const modelSources = [
+  // Intentar extraer productos de diferentes estructuras posibles
+  const sources = [
+    data.products,
     data.models,
     data.modelos,
     data.casas,
     data.viviendas,
-    data.productos
+    data.productos,
+    data.proyectos,
+    data.servicios,
   ].filter(Boolean).flat();
 
-  for (const item of modelSources) {
+  for (const item of sources) {
     if (typeof item === 'object' && (item.name || item.nombre)) {
-      models.push({
+      const specs: Record<string, string | number> = {};
+      // Mapear specs conocidas al formato Record
+      if (item.squareMeters || item.metros || item.m2 || item.superficie) {
+        specs['m2'] = item.squareMeters || item.metros || item.m2 || item.superficie;
+      }
+      if (item.bedrooms || item.dormitorios || item.habitaciones) {
+        specs['dormitorios'] = item.bedrooms || item.dormitorios || item.habitaciones;
+      }
+      if (item.bathrooms || item.banos || item.baños) {
+        specs['banos'] = item.bathrooms || item.banos || item.baños;
+      }
+      if (item.price || item.precio) {
+        specs['precio'] = item.price || item.precio;
+      }
+      // Copiar specs si ya vienen como Record
+      if (item.specs && typeof item.specs === 'object') {
+        Object.assign(specs, item.specs);
+      }
+
+      products.push({
         name: item.name || item.nombre,
-        squareMeters: item.squareMeters || item.metros || item.m2 || item.superficie,
-        bedrooms: item.bedrooms || item.dormitorios || item.habitaciones,
-        bathrooms: item.bathrooms || item.banos || item.baños,
-        price: item.price || item.precio,
+        description: item.description || item.descripcion,
+        specs,
         features: item.features || item.caracteristicas,
-        category: 'casa'
+        category: item.category || item.categoria,
       });
     }
   }
 
-  return models;
+  return products;
 }
 
 // eslint-disable-next-line @typescript-eslint/no-explicit-any
@@ -846,757 +682,330 @@ function parseAgentFAQs(data: any): { question: string; answer: string }[] {
   })).filter((f: { question: string; answer: string }) => f.question && f.answer);
 }
 
-// ===========================================================
-// CLASIFICACION DE TIPO DE CONSTRUCTORA
-// ===========================================================
 
-interface ConstructoraClassification {
-  type: 'modular' | 'tradicional' | 'mixta' | 'inmobiliaria';
-  confidence: number;  // 0.0 - 1.0
-  signals: string[];   // Razones de la clasificacion
-  debug: {
-    modularScore: number;
-    tradicionalScore: number;
-    inmobiliariaScore: number;
-    modelsCount: number;
-  };
-}
-
-/**
- * Clasifica el tipo de constructora basado en el contenido scrapeado
- *
- * MODULAR: Empresas con catalogo fijo (3+ modelos, keywords "catalogo", "modular", etc.)
- * TRADICIONAL: Empresas de proyectos a medida (0 modelos, keywords "a medida", "personalizado")
- * MIXTA: Empresas que ofrecen ambas modalidades
- */
-function classifyConstructora(
-  markdown: string,
-  modelsCount: number,
-  models: string[]
-): ConstructoraClassification {
-  const signals: string[] = [];
-  let modularScore = 0;
-  let tradicionalScore = 0;
-  let inmobiliariaScore = 0;
-
-  const textLower = markdown.toLowerCase();
-
-  // ========================
-  // SENALES DE INMOBILIARIA (PRIORIDAD ALTA - detectar primero)
-  // ========================
-
-  const inmobiliariaKeywords = [
-    { pattern: /desarrollos?\s*inmobiliarios?/gi, weight: 5, name: 'desarrollos inmobiliarios' },
-    { pattern: /proyectos?\s*inmobiliarios?\s*residenciales?/gi, weight: 5, name: 'proyectos inmobiliarios residenciales' },
-    { pattern: /inmobiliaria/gi, weight: 4, name: 'inmobiliaria' },
-    { pattern: /lotes?\s*en\s*(ejecuci[oó]n|venta)/gi, weight: 4, name: 'lotes en ejecucion/venta' },
-    { pattern: /unidades?\s*en\s*(ejecuci[oó]n|venta)/gi, weight: 4, name: 'unidades en ejecucion/venta' },
-    { pattern: /emprendimientos?\s*(inmobiliarios?)?/gi, weight: 3, name: 'emprendimientos' },
-    { pattern: /barrios?\s*(cerrados?|privados?)/gi, weight: 4, name: 'barrios cerrados/privados' },
-    { pattern: /departamentos?\s*(en\s*(pozo|venta))?/gi, weight: 3, name: 'departamentos' },
-    { pattern: /condominios?/gi, weight: 3, name: 'condominios' },
-    { pattern: /edificios?\s*(en\s*construcci[oó]n)?/gi, weight: 2, name: 'edificios' },
-    { pattern: /desarrolladora/gi, weight: 4, name: 'desarrolladora' },
-    { pattern: /torres?\s*(residenciales?)?/gi, weight: 3, name: 'torres' },
-    { pattern: /invertir?\s*en\s*(ladrillos?|real\s*estate)/gi, weight: 3, name: 'inversion en ladrillos' },
-    { pattern: /fideicomiso/gi, weight: 4, name: 'fideicomiso' },
-    { pattern: /preventa/gi, weight: 3, name: 'preventa' },
-    { pattern: /metros?\s*cuadrados?\s*(?:propios|en\s*venta)/gi, weight: 2, name: 'm2 propios/venta' },
-  ];
-
-  for (const kw of inmobiliariaKeywords) {
-    const matches = textLower.match(kw.pattern);
-    if (matches && matches.length > 0) {
-      inmobiliariaScore += kw.weight * matches.length;
-      signals.push(`Keyword inmobiliaria: "${kw.name}" (${matches.length}x)`);
-    }
-  }
-
-  // Si hay senales fuertes de inmobiliaria, retornar inmediatamente
-  if (inmobiliariaScore >= 8) {
-    return {
-      type: 'inmobiliaria',
-      confidence: Math.min(0.95, 0.6 + (inmobiliariaScore / 30)),
-      signals,
-      debug: {
-        modularScore: 0,
-        tradicionalScore: 0,
-        inmobiliariaScore,
-        modelsCount
-      }
-    };
-  }
-
-  // ===================
-  // SENALES DE MODULAR
-  // ===================
-
-  // 1. Cantidad de modelos (senal mas fuerte)
-  if (modelsCount >= 5) {
-    modularScore += 4;
-    signals.push(`${modelsCount} modelos detectados (muy probable modular)`);
-  } else if (modelsCount >= 3) {
-    modularScore += 3;
-    signals.push(`${modelsCount} modelos detectados (probable modular)`);
-  } else if (modelsCount >= 1) {
-    modularScore += 1;
-    signals.push(`${modelsCount} modelo(s) detectado(s)`);
-  }
-
-  // 2. Keywords de catalogo/modular
-  const modularKeywords = [
-    { pattern: /cat[aá]logo/gi, weight: 2, name: 'catalogo' },
-    { pattern: /modular(es)?/gi, weight: 2, name: 'modular' },
-    { pattern: /prefabricad[oa]s?/gi, weight: 2, name: 'prefabricado' },
-    { pattern: /steel\s*frame/gi, weight: 2, name: 'steel frame' },
-    { pattern: /industrializad[oa]s?/gi, weight: 1, name: 'industrializado' },
-    { pattern: /linea\s+de\s+(casas|productos|modelos)/gi, weight: 2, name: 'linea de modelos' },
-    { pattern: /nuestros\s+modelos/gi, weight: 2, name: 'nuestros modelos' },
-    { pattern: /modelos\s+disponibles/gi, weight: 2, name: 'modelos disponibles' },
-    { pattern: /ver\s+(todos\s+los\s+)?modelos/gi, weight: 1, name: 'ver modelos' },
-    { pattern: /casas?\s*(modulares?|prefabricadas?|transportables?)/gi, weight: 3, name: 'casas modulares/prefabricadas' },
-    { pattern: /construcci[oó]n\s*(en\s*seco|modular|industrializada)/gi, weight: 3, name: 'construccion en seco/modular' },
-  ];
-
-  for (const kw of modularKeywords) {
-    const matches = textLower.match(kw.pattern);
-    if (matches && matches.length > 0) {
-      modularScore += kw.weight;
-      signals.push(`Keyword modular: "${kw.name}" (${matches.length}x)`);
-    }
-  }
-
-  // 3. Nombres de modelos con patrones tipicos de catalogo
-  const catalogModelPatterns = /modelo\s+[A-Z]?\d+|casa\s+(sara|flex|pro|plus|eco|mini|max)/gi;
-  const catalogModelMatches = models.join(' ').match(catalogModelPatterns);
-  if (catalogModelMatches && catalogModelMatches.length > 0) {
-    modularScore += 2;
-    signals.push(`Nombres de modelos tipo catalogo: ${catalogModelMatches.slice(0, 3).join(', ')}`);
-  }
-
-  // 4. Precios listados para multiples modelos
-  const pricePatterns = /(?:USD|U\$D|\$)\s*[\d.,]+\s*(?:\.?\d{3})*(?:\s*(?:desde|llave\s*en\s*mano))?/gi;
-  const priceMatches = textLower.match(pricePatterns);
-  if (priceMatches && priceMatches.length >= 3) {
-    modularScore += 2;
-    signals.push(`${priceMatches.length} precios listados (tipico de catalogo)`);
-  }
-
-  // ======================
-  // SENALES DE TRADICIONAL
-  // ======================
-
-  // 1. Keywords de diseno a medida
-  const tradicionalKeywords = [
-    { pattern: /a\s*medida/gi, weight: 3, name: 'a medida' },
-    { pattern: /dise[ñn]o\s*personalizado/gi, weight: 3, name: 'diseno personalizado' },
-    { pattern: /proyecto\s*personalizado/gi, weight: 3, name: 'proyecto personalizado' },
-    { pattern: /custom/gi, weight: 2, name: 'custom' },
-    { pattern: /dise[ñn]amos\s*(tu|su)\s*(casa|proyecto)/gi, weight: 3, name: 'disenamos tu casa' },
-    { pattern: /seg[uú]n\s*(tus|sus)\s*necesidades/gi, weight: 2, name: 'segun tus necesidades' },
-    { pattern: /proyectos?\s*(a\s*medida|personalizado)/gi, weight: 3, name: 'proyectos a medida' },
-    { pattern: /construimos\s*(lo\s*que\s*(so[ñn][aá]s|quer[eé]s)|tu\s*proyecto)/gi, weight: 2, name: 'construimos tu proyecto' },
-    { pattern: /arquitectura\s*a\s*medida/gi, weight: 3, name: 'arquitectura a medida' },
-    { pattern: /sin\s*modelos?\s*fijos?/gi, weight: 3, name: 'sin modelos fijos' },
-  ];
-
-  for (const kw of tradicionalKeywords) {
-    const matches = textLower.match(kw.pattern);
-    if (matches && matches.length > 0) {
-      tradicionalScore += kw.weight;
-      signals.push(`Keyword tradicional: "${kw.name}" (${matches.length}x)`);
-    }
-  }
-
-  // 2. Ausencia de modelos es senal fuerte de tradicional (pero NO si hay senales de inmobiliaria)
-  if (modelsCount === 0 && inmobiliariaScore < 4) {
-    tradicionalScore += 3;
-    signals.push('Sin modelos detectados (probable tradicional)');
-  }
-
-  // 3. Mencion de arquitectos o estudios de arquitectura
-  const architectPatterns = /(?:estudio\s*de\s*)?arquitect[oa]s?|dise[ñn]ador(?:es)?/gi;
-  const architectMatches = textLower.match(architectPatterns);
-  if (architectMatches && architectMatches.length >= 2) {
-    tradicionalScore += 1;
-    signals.push(`Mencion de arquitectos/disenadores (${architectMatches.length}x)`);
-  }
-
-  // 4. Proceso de diseno personalizado
-  const designProcessPatterns = /(?:primera\s*)?reuni[oó]n.*dise[ñn]o|anteproyecto|boceto|planos?\s*personalizados?/gi;
-  if (designProcessPatterns.test(textLower)) {
-    tradicionalScore += 2;
-    signals.push('Mencion de proceso de diseno personalizado');
-  }
-
-  // ==================
-  // SENALES MIXTAS
-  // ==================
-
-  // Detectar si ofrecen ambas modalidades
-  const mixedSignals = /(?:modelos?\s*(?:y|o)\s*(?:a\s*medida|personalizado))|(?:(?:a\s*medida|personalizado)\s*(?:y|o)\s*modelos?)|(?:adaptamos?\s*(?:nuestros\s*)?modelos?)/gi;
-  if (mixedSignals.test(textLower)) {
-    signals.push('Detectada oferta mixta (modelos + personalizados)');
-    // No sumamos puntaje, pero lo consideramos en la decision final
-  }
-
-  // ====================
-  // CALCULAR RESULTADO
-  // ====================
-
-  let type: 'modular' | 'tradicional' | 'mixta' | 'inmobiliaria';
-  let confidence: number;
-
-  // Si hay senales moderadas de inmobiliaria, considerar
-  if (inmobiliariaScore >= 4 && inmobiliariaScore > modularScore && inmobiliariaScore > tradicionalScore) {
-    type = 'inmobiliaria';
-    confidence = Math.min(0.85, 0.5 + (inmobiliariaScore / 25));
-    signals.push('Clasificado como inmobiliaria por senales detectadas');
-  } else {
-    const totalScore = modularScore + tradicionalScore;
-
-    if (totalScore === 0) {
-      // Sin senales claras - usar heuristica basada en modelos
-      if (modelsCount >= 2) {
-        type = 'modular';
-        confidence = 0.4;
-        signals.push('Clasificado por defecto como modular (tiene modelos)');
-      } else {
-        type = 'tradicional';
-        confidence = 0.3;
-        signals.push('Clasificado por defecto como tradicional (sin info clara)');
-      }
-    } else {
-      const modularRatio = modularScore / totalScore;
-      const tradicionalRatio = tradicionalScore / totalScore;
-
-      if (modularRatio > 0.65) {
-        type = 'modular';
-        confidence = Math.min(0.95, 0.5 + (modularScore / 20));
-      } else if (tradicionalRatio > 0.65) {
-        type = 'tradicional';
-        confidence = Math.min(0.95, 0.5 + (tradicionalScore / 20));
-      } else {
-        // Puntajes similares = probablemente mixta
-        type = 'mixta';
-        confidence = Math.min(0.8, 0.4 + (totalScore / 30));
-        signals.push('Senales equilibradas: modular vs tradicional');
-      }
-    }
-  }
-
-  return {
-    type,
-    confidence,
-    signals,
-    debug: {
-      modularScore,
-      tradicionalScore,
-      inmobiliariaScore,
-      modelsCount
-    }
-  };
-}
+// Keywords expandidos para filtrar URLs de productos/servicios (reemplaza MODEL_KEYWORDS)
+const PRODUCT_KEYWORDS = [
+  'casa', 'casas', 'modelo', 'modelos', 'vivienda', 'viviendas',
+  'catalogo', 'portfolio', 'proyectos', 'proyecto',
+  'tipologia', 'tipologias', 'suite', 'loft', 'modulo', 'modulos',
+  'productos', 'producto', 'galeria', 'gallery',
+  'refugio', 'refugios', 'quincho', 'quinchos',
+  'tiny', 'container', 'contenedor', 'prefabricada',
+  'duplex', 'steel-frame', 'modulares', 'modular',
+  'obras', 'trabajos',
+  // Nuevos para approach exploratorio
+  'servicio', 'servicios', 'obra', 'emprendimiento', 'emprendimientos',
+  'desarrollo', 'desarrollos', 'lote', 'lotes',
+  'departamento', 'departamentos', 'unidad', 'unidades',
+  'torre', 'torres', 'barrio', 'barrios',
+];
 
 export async function scrapeWithFirecrawl(
   url: string,
   options: ScrapeOptions = { exhaustive: true }
 ): Promise<ScrapedContent> {
-  const { exhaustive = true } = options;
+  console.log('[Firecrawl] v4 - Starting exploratory crawl-based extraction for:', url);
 
-  console.log('[Firecrawl] v2 - Starting improved multi-model extraction for:', url);
-  console.log('[Firecrawl] v2 - Modo exhaustivo:', exhaustive ? 'SI - scrapeando TODAS las URLs' : 'NO - solo URLs filtradas');
-
-  // PASO 1: Mapear todas las URLs del sitio
-  console.log('[Firecrawl] Step 1: Mapping URLs...');
-  const mapResult = await getFirecrawl().mapUrl(url, {
-    limit: 100 // Aumentado de 50 a 100 para capturar mas URLs
-  });
-
-  if (!mapResult.success || !mapResult.links) {
-    throw new Error(`Firecrawl map failed: ${mapResult.error || 'No links found'}`);
-  }
-
-  const allUrls = mapResult.links;
-  console.log('[Firecrawl] Found URLs:', allUrls.length, allUrls);
-
-  // PASO 2: Identificar URLs por tipo
-  const MODEL_KEYWORDS = [
-    // Palabras principales
-    'casa', 'casas', 'modelo', 'modelos', 'vivienda', 'viviendas',
-    'proyecto', 'proyectos', 'catalogo', 'portfolio',
-    // Tipologias y modulos
-    'tipologia', 'tipologias', 'suite', 'loft', 'studio', 'monoambiente',
-    'modulo', 'modulos',
-    'residencial', 'residenciales',
-    'linea', 'lineas',
-    'productos', 'producto',
-    // Galeria y obras
-    'galeria', 'gallery',
-    'obras', 'trabajos',
-    // Tipos especificos
-    'refugio', 'refugios',
-    'tiny', 'tiny-house', 'container', 'contenedor', 'prefabricada', 'prefabricadas',
-    'duplex', 'steel-frame', 'steelframe',
-    'modulares', 'modular',
-    // Quinchos
-    'quinchos', 'quincho',
-    // Especificaciones y fichas
-    'detalle', 'ficha', 'especificacion', 'caracteristicas'
-  ];
-
-  const homeUrl = allUrls.find(u => new URL(u).pathname === '/') || url;
-
-  // En modo exhaustivo: scrapear TODAS las URLs excepto assets/imagenes
-  // En modo filtrado: solo URLs que matcheen keywords
-  let catalogUrls: string[];
-  let modelUrls: string[];
-
-  if (exhaustive) {
-    // Modo exhaustivo: todas las URLs excepto assets estaticos
-    const EXCLUDED_EXTENSIONS = ['.jpg', '.jpeg', '.png', '.gif', '.svg', '.webp', '.ico', '.pdf', '.css', '.js', '.woff', '.woff2', '.ttf'];
-    const EXCLUDED_PATHS = ['wp-content/uploads', 'assets/images', '/cdn-cgi/', '/api/', '/wp-json/'];
-
-    const allContentUrls = allUrls.filter(u => {
-      const urlLower = u.toLowerCase();
-      // Excluir archivos estaticos
-      const hasExcludedExtension = EXCLUDED_EXTENSIONS.some(ext => urlLower.endsWith(ext));
-      const hasExcludedPath = EXCLUDED_PATHS.some(path => urlLower.includes(path));
-      return !hasExcludedExtension && !hasExcludedPath;
-    });
-
-    // En modo exhaustivo, catalogUrls son TODAS las URLs de contenido
-    catalogUrls = allContentUrls.filter(u => u !== homeUrl);
-    modelUrls = []; // No necesitamos separar en modo exhaustivo
-
-    // PRIORIZAR URLs: páginas principales de catálogo primero
-    const HIGH_PRIORITY_PATHS = [
-      // Existentes - Catálogo
-      '/casas', '/catalogo', '/modelos', '/viviendas', '/portfolio', '/proyectos', '/quinchos',
-      // FAQ y cobertura
-      '/faq', '/preguntas-frecuentes', '/preguntas', '/cobertura', '/envios', '/zonas', '/envio',
-      // Especificaciones y tipologías
-      '/tipologias', '/especificaciones', '/caracteristicas', '/detalles', '/ficha-tecnica', '/fichas',
-      // Proceso y precios
-      '/proceso', '/como-trabajamos', '/precios', '/cotizador', '/financiacion', '/financiamiento',
-      // Otros importantes
-      '/nosotros', '/about', '/empresa', '/servicios'
-    ];
-    catalogUrls.sort((a, b) => {
-      const pathA = new URL(a).pathname.toLowerCase();
-      const pathB = new URL(b).pathname.toLowerCase();
-
-      // Alta prioridad: páginas de catálogo sin guión (ej: /casas vs /casa-sara)
-      const isHighPriorityA = HIGH_PRIORITY_PATHS.some(p => pathA === p || pathA === p + '/');
-      const isHighPriorityB = HIGH_PRIORITY_PATHS.some(p => pathB === p || pathB === p + '/');
-
-      if (isHighPriorityA && !isHighPriorityB) return -1;
-      if (!isHighPriorityA && isHighPriorityB) return 1;
-
-      // Media prioridad: páginas que contienen keywords pero tienen guión (individuales)
-      const hasCatalogKeywordA = MODEL_KEYWORDS.some(k => pathA.includes(k));
-      const hasCatalogKeywordB = MODEL_KEYWORDS.some(k => pathB.includes(k));
-
-      if (hasCatalogKeywordA && !hasCatalogKeywordB) return -1;
-      if (!hasCatalogKeywordA && hasCatalogKeywordB) return 1;
-
-      return 0;
-    });
-
-    console.log('[Firecrawl] URLs priorizadas (primeras 5):', catalogUrls.slice(0, 5));
-
-    // Mostrar estimacion de costos
-    const totalUrlsToScrape = catalogUrls.length + 1; // +1 por homepage
-    const costEstimate = estimateCost(totalUrlsToScrape);
-    console.log(`[Firecrawl] Modo EXHAUSTIVO: scrapeando ${totalUrlsToScrape} URLs`);
-    console.log(`[Firecrawl] Costo estimado: ${costEstimate.credits} credits (~$${costEstimate.usdEstimate.toFixed(3)} USD)`);
-  } else {
-    // Modo filtrado (comportamiento original)
-    catalogUrls = allUrls.filter(u => {
-      const path = new URL(u).pathname.toLowerCase();
-      return MODEL_KEYWORDS.some(keyword => path.includes(keyword));
-    });
-
-    modelUrls = allUrls.filter(u => {
-      const path = new URL(u).pathname.toLowerCase();
-      return (path.includes('casa-') || path.includes('modelo-')) &&
-             !catalogUrls.includes(u);
-    });
-
-    const totalUrlsToScrape = catalogUrls.length + modelUrls.length + 1;
-    const costEstimate = estimateCost(totalUrlsToScrape);
-    console.log(`[Firecrawl] Modo FILTRADO: scrapeando ${totalUrlsToScrape} URLs (${catalogUrls.length} catalogo + ${modelUrls.length} modelos + 1 home)`);
-    console.log(`[Firecrawl] Costo estimado: ${costEstimate.credits} credits (~$${costEstimate.usdEstimate.toFixed(3)} USD)`);
-  }
-
-  console.log('[Firecrawl] Catalog URLs:', catalogUrls);
-  console.log('[Firecrawl] Individual model URLs:', modelUrls);
-
-  // Variables para acumular datos
-  let allModels: ExtractedModel[] = [];
+  // Variables to accumulate data
+  let allProducts: ProductOrService[] = [];
   let companyName = '';
   let companyDescription = '';
+  let extractedIdentity = '';
+  let extractedOffering = '';
+  let extractedDifferentiators = '';
+  let extractedTerminology = '';
   const contactInfo: ContactInfo = {};
-  const allMarkdown: string[] = []; // Array para acumular markdown de todas las páginas
+  const allMarkdown: string[] = [];
   const locations: string[] = [];
   let constructionMethod = '';
   let hasFinancing = false;
 
-  // OPTIMIZACION: Lanzar homepage scrape en paralelo con los batches de catalogo
-  console.log('[Firecrawl] Starting homepage scrape in parallel...');
-  const homepageStartTime = Date.now();
-  const homepagePromise = getFirecrawl().scrapeUrl(homeUrl, {
-    formats: ['markdown', 'extract'],
-    extract: { schema: catalogSchema }
-  }).then(result => {
-    const duration = Date.now() - homepageStartTime;
-    console.log(`[Firecrawl] Homepage scrape completed in ${duration}ms`);
-    return result;
-  }).catch(err => {
-    const duration = Date.now() - homepageStartTime;
-    console.error(`[Firecrawl] Homepage scrape failed after ${duration}ms:`, err);
-    return null;
-  });
+  // ====== STEP 1: Crawl the site ======
+  console.log('[Firecrawl] v4 Step 1: Crawling site (open discovery, excludePaths only)...');
 
-  // PASO 3: Scrapear paginas de CATALOGO primero (tienen todos los modelos)
-  if (catalogUrls.length > 0) {
-    console.log('[Firecrawl] Step 3: Scraping catalog pages...');
-
-    // Limitar cantidad de URLs a scrapear
-    const urlsToScrape = catalogUrls.slice(0, MAX_CATALOG_URLS);
-    console.log(`[Firecrawl] Scraping ${urlsToScrape.length} of ${catalogUrls.length} catalog URLs`);
-
-    // Crear batches para procesamiento paralelo
-    const batches: string[][] = [];
-    for (let i = 0; i < urlsToScrape.length; i += BATCH_SIZE) {
-      batches.push(urlsToScrape.slice(i, i + BATCH_SIZE));
-    }
-
-    for (let batchIndex = 0; batchIndex < batches.length; batchIndex++) {
-      const batch = batches[batchIndex];
-      const batchStartTime = Date.now();
-      console.log(`[Firecrawl] Processing batch ${batchIndex + 1}/${batches.length} (${batch.length} URLs)...`);
-
-      // Scrapear URLs del batch en paralelo - CON EXTRACT para obtener modelos estructurados
-      const results = await Promise.all(
-        batch.map(async (catalogUrl) => {
-          try {
-            console.log('[Firecrawl] Scraping catalog:', catalogUrl);
-            const result = await getFirecrawl().scrapeUrl(catalogUrl, {
-              formats: ['markdown', 'extract'],
-              extract: { schema: catalogSchema },
-              actions: UNIVERSAL_ACTIONS,
-              timeout: 60000 // Aumentar timeout por las actions
-            });
-            return { catalogUrl, result, error: null };
-          } catch (error) {
-            console.error('[Firecrawl] Error scraping catalog:', catalogUrl, error);
-            return { catalogUrl, result: null, error };
-          }
-        })
-      );
-
-      const batchDuration = Date.now() - batchStartTime;
-      console.log(`[Firecrawl] Batch ${batchIndex + 1} completed in ${batchDuration}ms`);
-
-      // Procesar resultados del batch - USAR EXTRACT + REGEX como fallback
-      for (const { catalogUrl, result, error } of results) {
-        if (error || !result?.success) {
-          if (result && !result.success) {
-            console.error('[Firecrawl] Catalog scrape failed:', result.error);
-          }
-          continue;
-        }
-
-        const markdown = result.markdown || '';
-        const extract = result.extract as z.infer<typeof catalogSchema> | undefined;
-
-        // Acumular todo el markdown para análisis posterior
-        allMarkdown.push(`\n--- URL: ${catalogUrl} ---\n${markdown}`);
-
-        // PRIMERO: Usar modelos del extract (AI de Firecrawl)
-        if (extract?.models && extract.models.length > 0) {
-          console.log(`[Firecrawl] Found ${extract.models.length} models in ${catalogUrl} via EXTRACT`);
-          for (const model of extract.models) {
-            const exists = allModels.some(m =>
-              m.name?.toLowerCase() === model.name?.toLowerCase()
-            );
-            if (!exists && model.name) {
-              allModels.push({
-                name: model.name,
-                squareMeters: model.squareMeters,
-                coveredArea: model.coveredArea,
-                semicoveredArea: model.semicoveredArea,
-                bedrooms: model.bedrooms,
-                bathrooms: model.bathrooms,
-                price: model.price,
-                features: model.features,
-                category: model.category || 'casa'
-              });
-            }
-          }
-        }
-
-        // SEGUNDO: Parsear modelos del markdown con regex como fallback
-        const parsedModels = parseModelsFromMarkdown(markdown);
-        if (parsedModels.length > 0) {
-          console.log(`[Firecrawl] Found ${parsedModels.length} additional models in ${catalogUrl} via regex`);
-          allModels = mergeModels(allModels, parsedModels);
-        }
-
-        // Extraer info de contacto del markdown
-        const phoneMatch = markdown.match(/(?:tel|phone)[:\s]*(\+?[\d\s\-()]{8,20})/i);
-        if (phoneMatch && !contactInfo.phone) {
-          contactInfo.phone = phoneMatch[1].trim();
-        }
-        // Usar validador mejorado de WhatsApp
-        if (!contactInfo.whatsapp) {
-          const extractedWa = extractWhatsAppImproved(markdown);
-          if (extractedWa) {
-            contactInfo.whatsapp = extractedWa;
-          }
-        }
-        const emailMatch = markdown.match(/([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/);
-        if (emailMatch && !contactInfo.email) {
-          contactInfo.email = emailMatch[1];
-        }
-
-        // Extraer método de construcción del markdown
-        if (markdown.toLowerCase().includes('steel frame')) {
-          constructionMethod = 'Steel frame';
-        } else if (markdown.toLowerCase().includes('hormigon') || markdown.toLowerCase().includes('hormigón')) {
-          constructionMethod = 'Hormigón premoldeado';
-        }
-
-        // Extraer si hay financiación
-        if (markdown.toLowerCase().includes('financ')) {
-          hasFinancing = true;
-        }
-
-        // Parsear markdown adicional
-        if (result.markdown) {
-          console.log('[Firecrawl] Parsing markdown from catalog, length:', result.markdown.length);
-          allMarkdown.push(`\n\n--- ${catalogUrl} ---\n${result.markdown}`);
-
-          const markdownModels = parseModelsFromMarkdown(result.markdown);
-          console.log('[Firecrawl] Parsed models from markdown:', markdownModels.length);
-          allModels = mergeModels(allModels, markdownModels);
-        }
+  const crawlStartTime = Date.now();
+  let crawlResult;
+  try {
+    crawlResult = await getFirecrawl().crawlUrl(url, {
+      excludePaths: [
+        '/wp-json*', '/cdn-cgi*', '/api/*',
+        '/wp-content/uploads*', '/assets/images*',
+        '/admin*', '/login*', '/cart*', '/checkout*',
+        '/blog/*', '/noticias/*', '/prensa/*',
+        '/tag/*', '/category/*',
+      ],
+      limit: 30,
+      maxDepth: 3,
+      scrapeOptions: {
+        formats: ['markdown'],
+        onlyMainContent: true,
+        waitFor: 2000,
       }
-
-      // Delay solo entre batches, no entre cada URL
-      if (batchIndex < batches.length - 1) {
-        await rateLimitDelay();
-      }
-    }
+    }, 2);
+  } catch (crawlError) {
+    console.error('[Firecrawl] v4 Crawl failed:', crawlError);
+    crawlResult = null;
   }
 
-  // PASO 4: Si no tenemos suficientes modelos, scrapear paginas individuales
-  // En modo exhaustivo ya scrapeamos todo en el paso anterior, asi que solo si NO es exhaustivo
-  if (!exhaustive && allModels.length < 3 && modelUrls.length > 0) {
-    console.log('[Firecrawl] Step 4: Scraping individual model pages (found only', allModels.length, 'models)...');
+  const crawlDuration = Date.now() - crawlStartTime;
 
-    // Sin limite: procesar TODAS las modelUrls
-    const modelUrlsToScrape = modelUrls;
-    console.log('[Firecrawl] Scrapeando', modelUrlsToScrape.length, 'paginas de modelos individuales...');
+  let crawledPages = 0;
+  let isSPA = false;
 
-    // Crear batches para procesamiento paralelo
-    const modelBatches: string[][] = [];
-    for (let i = 0; i < modelUrlsToScrape.length; i += BATCH_SIZE) {
-      modelBatches.push(modelUrlsToScrape.slice(i, i + BATCH_SIZE));
-    }
+  if (crawlResult && crawlResult.success && crawlResult.data) {
+    crawledPages = crawlResult.data.length;
+    console.log(`[Firecrawl] v4 Crawl completed in ${crawlDuration}ms: ${crawledPages} pages, ${(crawlResult as any).creditsUsed || '?'} credits`);
 
-    for (let batchIndex = 0; batchIndex < modelBatches.length; batchIndex++) {
-      const batch = modelBatches[batchIndex];
-      const batchStartTime = Date.now();
-      console.log(`[Firecrawl] Processing model batch ${batchIndex + 1}/${modelBatches.length} (${batch.length} URLs)...`);
+    // Process each crawled page - collect markdown and contact info only
+    // (product extraction is done via schema, not regex)
+    for (const doc of crawlResult.data) {
+      const markdown = doc.markdown || '';
+      if (!markdown || markdown.length < 50) continue;
 
-      // Scrapear URLs del batch en paralelo
-      const results = await Promise.all(
-        batch.map(async (modelUrl) => {
-          try {
-            console.log('[Firecrawl] Scraping model page:', modelUrl);
-            const result = await getFirecrawl().scrapeUrl(modelUrl, {
-              formats: ['markdown', 'extract'],
-              extract: { schema: singleModelSchema }
-            });
-            return { modelUrl, result, error: null };
-          } catch (error) {
-            console.error('[Firecrawl] Error scraping model page:', modelUrl, error);
-            return { modelUrl, result: null, error };
-          }
-        })
-      );
+      const pageUrl = (doc as any).url || '';
+      allMarkdown.push(`\n--- URL: ${pageUrl} ---\n${markdown}`);
 
-      const batchDuration = Date.now() - batchStartTime;
-      console.log(`[Firecrawl] Model batch ${batchIndex + 1} completed in ${batchDuration}ms`);
-
-      // Procesar resultados del batch
-      for (const { modelUrl, result, error } of results) {
-        if (error || !result?.success) {
-          if (result && !result.success) {
-            console.error('[Firecrawl] Model page scrape failed:', result.error);
-          }
-          continue;
-        }
-
-        const extract = result.extract as z.infer<typeof singleModelSchema> | undefined;
-
-        if (extract?.modelName || result.markdown) {
-          // Nombre del modelo del path si no lo extrajo
-          const urlPath = new URL(modelUrl).pathname;
-          const modelNameFromUrl = urlPath.split('/').pop()
-            ?.replace(/casa-/i, '')
-            .replace(/-/g, ' ')
-            .split(' ')
-            .map(w => w.charAt(0).toUpperCase() + w.slice(1))
-            .join(' ');
-
-          const modelName = extract?.modelName || modelNameFromUrl || 'Modelo';
-
-          // Verificar si ya existe
-          const exists = allModels.some(m =>
-            m.name?.toLowerCase() === modelName.toLowerCase()
-          );
-
-          if (!exists) {
-            allModels.push({
-              name: modelName,
-              squareMeters: extract?.squareMeters,
-              coveredArea: extract?.coveredArea,
-              semicoveredArea: extract?.semicoveredArea,
-              bedrooms: extract?.bedrooms,
-              bathrooms: extract?.bathrooms,
-              price: extract?.price,
-              features: extract?.features,
-              category: 'casa'
-            });
-            console.log('[Firecrawl] Added model from individual page:', modelName);
-          }
-
-          // Parsear markdown para datos adicionales
-          if (result.markdown) {
-            allMarkdown.push(`\n\n--- ${modelUrl} ---\n${result.markdown}`);
-
-            // Intentar completar datos del modelo desde markdown
-            const parsedFromMd = parseModelsFromMarkdown(result.markdown);
-            if (parsedFromMd.length > 0) {
-              allModels = mergeModels(allModels, parsedFromMd);
-            }
-          }
-        }
-
-        // Actualizar info de contacto si falta
-        if (extract?.companyName && !companyName) {
-          companyName = extract.companyName;
-        }
-        if (extract?.contactPhone && !contactInfo.phone) {
-          contactInfo.phone = extract.contactPhone;
-        }
-        if (extract?.contactWhatsapp && !contactInfo.whatsapp) {
-          contactInfo.whatsapp = extract.contactWhatsapp;
-        }
-        if (extract?.contactEmail && !contactInfo.email) {
-          contactInfo.email = extract.contactEmail;
-        }
+      // Extract contact info
+      if (!contactInfo.whatsapp) {
+        const wa = extractWhatsAppImproved(markdown);
+        if (wa) contactInfo.whatsapp = wa;
+      }
+      const phoneMatch = markdown.match(/(?:tel|phone|teléfono|telefono)[:\s]*(\+?[\d\s\-()]{8,20})/i);
+      if (phoneMatch && !contactInfo.phone) {
+        contactInfo.phone = phoneMatch[1].trim();
+      }
+      const emailMatch = markdown.match(/([a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,})/);
+      if (emailMatch && !contactInfo.email) {
+        contactInfo.email = emailMatch[1];
       }
 
-      // Delay solo entre batches, no entre cada URL
-      if (batchIndex < modelBatches.length - 1) {
-        await rateLimitDelay();
+      // Construction method
+      if (markdown.toLowerCase().includes('steel frame')) {
+        constructionMethod = 'Steel frame';
+      } else if (markdown.toLowerCase().includes('hormigon') || markdown.toLowerCase().includes('hormigón')) {
+        constructionMethod = 'Hormigon premoldeado';
+      }
+
+      // Financing
+      if (markdown.toLowerCase().includes('financ')) {
+        hasFinancing = true;
       }
     }
-  }
 
-  // PASO 5: Procesar resultado del homepage (ya fue scrapeado en paralelo)
-  console.log('[Firecrawl] Step 5: Processing homepage result (scraped in parallel)...');
-  const homeResult = await homepagePromise;
-
-  if (homeResult && homeResult.success) {
-    const extract = homeResult.extract as z.infer<typeof catalogSchema> | undefined;
-
-    // Solo usar datos del homepage si faltan
-    if (extract?.companyName && !companyName) {
-      companyName = extract.companyName;
-      console.log('[Firecrawl] Got companyName from homepage:', companyName);
-    }
-    if (extract?.companyDescription && !companyDescription) {
-      companyDescription = extract.companyDescription;
-    }
-    if (extract?.contactPhone && !contactInfo.phone) {
-      contactInfo.phone = extract.contactPhone;
-      console.log('[Firecrawl] Got phone from homepage:', contactInfo.phone);
-    }
-    if (extract?.contactWhatsapp && !contactInfo.whatsapp) {
-      contactInfo.whatsapp = extract.contactWhatsapp;
-    }
-    if (extract?.contactEmail && !contactInfo.email) {
-      contactInfo.email = extract.contactEmail;
-    }
-    if (extract?.constructionMethod && !constructionMethod) {
-      constructionMethod = extract.constructionMethod;
-    }
-    if (extract?.financing) {
-      hasFinancing = true;
-    }
-
-    // Tambien parsear markdown del home
-    if (homeResult.markdown) {
-      allMarkdown.push(`\n\n--- ${homeUrl} ---\n${homeResult.markdown}`);
-
-      // Extraer modelos del home si hay
-      const homeModels = parseModelsFromMarkdown(homeResult.markdown);
-      allModels = mergeModels(allModels, homeModels);
+    // Detect SPA: very few pages or very little content
+    const totalMarkdownLength = allMarkdown.join('').length;
+    if (crawledPages <= 2 && totalMarkdownLength < 5000) {
+      isSPA = true;
+      console.log(`[Firecrawl] v4 SPA detected: ${crawledPages} pages, ${totalMarkdownLength} chars`);
     }
   } else {
-    console.log('[Firecrawl] Homepage scrape did not return usable data');
+    console.log(`[Firecrawl] v4 Crawl returned no usable data after ${crawlDuration}ms`);
+    isSPA = true;
   }
 
-  // Eliminar duplicados finales y ordenar
-  allModels = deduplicateModels(allModels);
+  // ====== STEP 2: Scrape homepage with exploratory extract schema ======
+  console.log('[Firecrawl] v4 Step 2: Scraping homepage with exploratory schema...');
+  const homeUrl = url.endsWith('/') ? url : url + '/';
 
-  console.log('[Firecrawl] FINAL: Total models extracted:', allModels.length);
-  console.log('[Firecrawl] Models:', allModels.map(m => m.name));
+  try {
+    const homeResult = await getFirecrawl().scrapeUrl(homeUrl, {
+      formats: ['markdown', 'extract'],
+      extract: { schema: exploratorySchema },
+      onlyMainContent: true
+    });
 
-  // Extraer FAQs del markdown acumulado
-  let combinedMarkdown = allMarkdown.join('');
-  let faqs = extractFAQContent(combinedMarkdown);
-  console.log('[Firecrawl] FAQs extracted:', faqs.length);
+    if (homeResult && homeResult.success) {
+      const extract = homeResult.extract as z.infer<typeof exploratorySchema> | undefined;
 
-  // Detectar si es sitio Wix
-  const isWix = isWixSite(combinedMarkdown);
-  console.log('[Firecrawl] Is Wix site:', isWix);
+      if (extract?.companyName && !companyName) companyName = extract.companyName;
+      if (extract?.companyDescription && !companyDescription) companyDescription = extract.companyDescription;
+      if (extract?.identity) extractedIdentity = extract.identity;
+      if (extract?.offering) extractedOffering = extract.offering;
+      if (extract?.differentiators) extractedDifferentiators = extract.differentiators;
+      if (extract?.productsTerminology) extractedTerminology = extract.productsTerminology;
+      if (extract?.contactPhone && !contactInfo.phone) contactInfo.phone = extract.contactPhone;
+      if (extract?.contactWhatsapp && !contactInfo.whatsapp) contactInfo.whatsapp = extract.contactWhatsapp;
+      if (extract?.contactEmail && !contactInfo.email) contactInfo.email = extract.contactEmail;
+      if (extract?.constructionMethod && !constructionMethod) constructionMethod = extract.constructionMethod;
+      if (extract?.financing) hasFinancing = true;
+      if (extract?.locations) locations.push(...extract.locations);
 
-  // FALLBACK: Si extrajimos muy poca información, usar Agent (o Wix Agent si es Wix)
-  const needsAgentFallback =
-    allModels.length < 2 ||
-    (!contactInfo.whatsapp && !contactInfo.phone) ||
-    faqs.length === 0;
+      // Products from extract
+      if (extract?.products && extract.products.length > 0) {
+        console.log(`[Firecrawl] v4 Found ${extract.products.length} products from homepage extract`);
+        const extractedProducts: ProductOrService[] = extract.products.map(p => ({
+          name: p.name,
+          description: p.description,
+          specs: p.specs || {},
+          features: p.features,
+          category: p.category,
+        }));
+        allProducts = mergeProducts(allProducts, extractedProducts);
+      }
 
-  if (needsAgentFallback) {
-    console.log('[Firecrawl] Información insuficiente, usando Agent como fallback...');
-    console.log(`[Firecrawl] Modelos: ${allModels.length}, WhatsApp: ${!!contactInfo.whatsapp}, Phone: ${!!contactInfo.phone}, FAQs: ${faqs.length}`);
+      // Also collect homepage markdown
+      if (homeResult.markdown) {
+        allMarkdown.push(`\n--- URL: ${homeUrl} (homepage) ---\n${homeResult.markdown}`);
+      }
+
+      console.log(`[Firecrawl] v4 After homepage: ${allProducts.length} total products`);
+    }
+  } catch (homeError) {
+    console.error('[Firecrawl] v4 Homepage scrape failed:', homeError);
+  }
+
+  // ====== STEP 2.5: mapUrl fallback for missed pages ======
+  if (allProducts.length < 5) {
+    console.log(`[Firecrawl] v4 Step 2.5: Only ${allProducts.length} products after crawl+homepage. Running mapUrl fallback...`);
 
     try {
-      // Si es Wix, usar scraping especializado para Wix
+      const mapResult = await getFirecrawl().mapUrl(url, { limit: 100 });
+
+      if (mapResult.success && mapResult.links) {
+        // Find URLs that the crawl didn't already cover
+        const crawledUrls = new Set(allMarkdown.map(m => {
+          const match = m.match(/--- URL: ([^\s]+)/);
+          return match ? match[1] : '';
+        }).filter(Boolean));
+
+        const newUrls = mapResult.links.filter(u => {
+          if (crawledUrls.has(u)) return false;
+          const path = new URL(u).pathname.toLowerCase();
+          if (['.jpg', '.jpeg', '.png', '.gif', '.svg', '.webp', '.pdf', '.css', '.js'].some(ext => path.endsWith(ext))) return false;
+          if (['/wp-json', '/cdn-cgi', '/api/', '/admin', '/blog/'].some(p => path.includes(p))) return false;
+          return PRODUCT_KEYWORDS.some(k => path.includes(k));
+        });
+
+        if (newUrls.length > 0) {
+          console.log(`[Firecrawl] v4 mapUrl found ${newUrls.length} new product URLs not in crawl: ${newUrls.slice(0, 5).join(', ')}`);
+
+          const urlsToScrape = newUrls.slice(0, MAX_CATALOG_URLS);
+          const results = await Promise.all(
+            urlsToScrape.map(async (pageUrl) => {
+              try {
+                const result = await getFirecrawl().scrapeUrl(pageUrl, {
+                  formats: ['markdown', 'extract'],
+                  extract: { schema: exploratorySchema },
+                  onlyMainContent: true,
+                  timeout: 30000,
+                });
+                return { pageUrl, result, error: null };
+              } catch (error) {
+                return { pageUrl, result: null, error };
+              }
+            })
+          );
+
+          for (const { pageUrl, result } of results) {
+            if (!result?.success) continue;
+
+            const markdown = result.markdown || '';
+            if (markdown.length > 50) {
+              allMarkdown.push(`\n--- URL: ${pageUrl} (mapUrl fallback) ---\n${markdown}`);
+
+              // Extract products from schema
+              const extract = result.extract as z.infer<typeof exploratorySchema> | undefined;
+              if (extract?.products && extract.products.length > 0) {
+                console.log(`[Firecrawl] v4 mapUrl fallback: ${extract.products.length} products from ${pageUrl}`);
+                const extractedProducts: ProductOrService[] = extract.products.map(p => ({
+                  name: p.name,
+                  description: p.description,
+                  specs: p.specs || {},
+                  features: p.features,
+                  category: p.category,
+                }));
+                allProducts = mergeProducts(allProducts, extractedProducts);
+              }
+
+              // Collect profile info if missing
+              if (extract?.identity && !extractedIdentity) extractedIdentity = extract.identity;
+              if (extract?.offering && !extractedOffering) extractedOffering = extract.offering;
+              if (extract?.differentiators && !extractedDifferentiators) extractedDifferentiators = extract.differentiators;
+              if (extract?.productsTerminology && !extractedTerminology) extractedTerminology = extract.productsTerminology;
+
+              // Contact info
+              if (!contactInfo.whatsapp) {
+                const wa = extractWhatsAppImproved(markdown);
+                if (wa) contactInfo.whatsapp = wa;
+              }
+            }
+          }
+          console.log(`[Firecrawl] v4 After mapUrl fallback: ${allProducts.length} total products`);
+        } else {
+          console.log('[Firecrawl] v4 mapUrl found no new product URLs beyond crawl');
+        }
+      }
+    } catch (mapError) {
+      console.error('[Firecrawl] v4 mapUrl fallback failed:', mapError);
+    }
+  }
+
+  // ====== STEP 3: If few products, try extract() API ======
+  if (allProducts.length < 3) {
+    console.log(`[Firecrawl] v4 Only ${allProducts.length} products found. Trying extract() API...`);
+
+    try {
+      const extractResult = await getFirecrawl().extract(
+        [url + '/*'],
+        {
+          prompt: EXPLORATORY_EXTRACTION_PROMPT,
+          schema: exploratorySchema,
+        }
+      );
+
+      if (extractResult && extractResult.success && extractResult.data) {
+        const extractData = extractResult.data as z.infer<typeof exploratorySchema>;
+        if (extractData?.products && extractData.products.length > 0) {
+          console.log(`[Firecrawl] v4 extract() found ${extractData.products.length} products`);
+          const extractedProducts: ProductOrService[] = extractData.products.map(p => ({
+            name: p.name,
+            description: p.description,
+            specs: p.specs || {},
+            features: p.features,
+            category: p.category,
+          }));
+          allProducts = mergeProducts(allProducts, extractedProducts);
+        }
+        // Collect profile info
+        if (extractData?.identity && !extractedIdentity) extractedIdentity = extractData.identity;
+        if (extractData?.offering && !extractedOffering) extractedOffering = extractData.offering;
+        if (extractData?.differentiators && !extractedDifferentiators) extractedDifferentiators = extractData.differentiators;
+        if (extractData?.productsTerminology && !extractedTerminology) extractedTerminology = extractData.productsTerminology;
+        // Contact info
+        if (extractData?.contactWhatsapp && !contactInfo.whatsapp) contactInfo.whatsapp = extractData.contactWhatsapp;
+        if (extractData?.contactPhone && !contactInfo.phone) contactInfo.phone = extractData.contactPhone;
+        if (extractData?.contactEmail && !contactInfo.email) contactInfo.email = extractData.contactEmail;
+      }
+    } catch (extractError) {
+      console.error('[Firecrawl] v4 extract() failed:', extractError);
+    }
+  }
+
+  // ====== STEP 4: SPA or still few products -> Agent ======
+  let combinedMarkdown = allMarkdown.join('');
+  const isWix = isWixSite(combinedMarkdown);
+
+  const needsAgent = isSPA || allProducts.length < 2 || (!contactInfo.whatsapp && !contactInfo.phone);
+
+  if (needsAgent) {
+    console.log(`[Firecrawl] v4 Using agent: isSPA=${isSPA}, products=${allProducts.length}, hasContact=${!!contactInfo.whatsapp || !!contactInfo.phone}`);
+
+    try {
       let agentResult;
       if (isWix) {
-        console.log('[Firecrawl] Sitio Wix detectado, usando scrapeWixSite...');
+        console.log('[Firecrawl] v4 Wix detected, using scrapeWixSite...');
         agentResult = await scrapeWixSite(url);
       } else {
         agentResult = await scrapeWithAgent(url);
       }
 
-      // Mergear modelos del agent si encontró más
-      if (agentResult.models.length > allModels.length) {
-        console.log(`[Firecrawl Agent] Encontró ${agentResult.models.length} modelos (vs ${allModels.length} del scraping)`);
-        allModels = mergeModels(allModels, agentResult.models);
+      if (agentResult.products.length > allProducts.length) {
+        console.log(`[Firecrawl] v4 Agent found ${agentResult.products.length} products (vs ${allProducts.length})`);
+        allProducts = mergeProducts(allProducts, agentResult.products);
       }
 
-      // Completar contactInfo si falta
       if (!contactInfo.whatsapp && agentResult.contactInfo.whatsapp) {
         contactInfo.whatsapp = agentResult.contactInfo.whatsapp;
-        console.log('[Firecrawl Agent] Obtuvo WhatsApp:', contactInfo.whatsapp);
       }
       if (!contactInfo.phone && agentResult.contactInfo.phone) {
         contactInfo.phone = agentResult.contactInfo.phone;
@@ -1605,148 +1014,118 @@ export async function scrapeWithFirecrawl(
         contactInfo.email = agentResult.contactInfo.email;
       }
 
-      // Agregar FAQs del agent
-      if (agentResult.faqs.length > 0) {
-        faqs = [...faqs, ...agentResult.faqs];
-        console.log(`[Firecrawl Agent] Agregó ${agentResult.faqs.length} FAQs`);
-      }
-
-      // Agregar rawText del agent
       if (agentResult.rawText) {
-        combinedMarkdown = combinedMarkdown + '\n\n--- INFORMACIÓN DEL AGENT ---\n' + agentResult.rawText;
+        combinedMarkdown += '\n\n--- AGENT ---\n' + agentResult.rawText;
       }
     } catch (agentError) {
-      console.error('[Firecrawl] Agent fallback falló:', agentError);
+      console.error('[Firecrawl] v4 Agent failed:', agentError);
     }
   }
 
-  // FALLBACK ADICIONAL PARA WIX: Si sigue sin modelos y es Wix, intentar una vez más
-  if (isWix && allModels.length === 0) {
-    console.log('[Firecrawl] Wix sin modelos después de fallback, intentando scrapeWixSite directamente...');
-    try {
-      const wixResult = await scrapeWixSite(url);
-      if (wixResult.models.length > 0) {
-        console.log(`[Firecrawl Wix] Segundo intento exitoso: ${wixResult.models.length} modelos`);
-        allModels = wixResult.models;
-      }
-      if (!contactInfo.whatsapp && wixResult.contactInfo.whatsapp) {
-        contactInfo.whatsapp = wixResult.contactInfo.whatsapp;
-      }
-      if (wixResult.faqs.length > faqs.length) {
-        faqs = wixResult.faqs;
-      }
-      if (wixResult.rawText) {
-        combinedMarkdown = combinedMarkdown + '\n\n--- WIX FALLBACK ---\n' + wixResult.rawText;
-      }
-    } catch (wixError) {
-      console.error('[Firecrawl] Wix fallback adicional falló:', wixError);
-    }
-  }
+  // ====== STEP 5: Finalize ======
+  allProducts = deduplicateProducts(allProducts);
+  console.log('[Firecrawl] v4 FINAL: Total products:', allProducts.length, allProducts.map(p => p.name));
 
-  // Extraer redes sociales del markdown combinado
+  // Extract FAQs
+  const faqs = extractFAQContent(combinedMarkdown);
+
+  // Extract social links
   const socialLinks = extractSocialLinks(combinedMarkdown);
-  console.log('[Firecrawl] Social links found:', socialLinks);
 
-  // ===========================================================
-  // Fallback: extraer nombre de empresa del markdown si no se encontro
-  // ===========================================================
+  // Company name fallback from markdown
   if (!companyName && combinedMarkdown) {
-    // Intentar extraer del titulo o headers
     const h1Match = combinedMarkdown.match(/^#\s+([^\n]+)/m);
     const titleMatch = combinedMarkdown.match(/title[:\s]+["']?([^"'\n]+)/i);
     companyName = h1Match?.[1]?.trim() || titleMatch?.[1]?.trim() || 'Empresa';
-    console.log('[Firecrawl] Company name extracted from markdown fallback:', companyName);
   }
-
-  // ===========================================================
-  // Clasificar tipo de constructora
-  // ===========================================================
-  // DEBUG: Log de keywords inmobiliarias en el markdown
-  const inmobiliariaTestKeywords = ['inmobiliaria', 'lotes en ejecuci', 'unidades en ejecuci', 'proyectos inmobiliarios'];
-  for (const kw of inmobiliariaTestKeywords) {
-    if (combinedMarkdown.toLowerCase().includes(kw)) {
-      console.log('[Firecrawl] DEBUG - Keyword inmobiliaria encontrada:', kw);
-    }
-  }
-  console.log('[Firecrawl] DEBUG - combinedMarkdown length:', combinedMarkdown.length);
-  console.log('[Firecrawl] DEBUG - combinedMarkdown snippet:', combinedMarkdown.slice(0, 500));
-
-  const classification = classifyConstructora(
-    combinedMarkdown,
-    allModels.length,
-    allModels.map(m => m.name)
-  );
-  console.log('[Firecrawl] v2 - Constructora classification:', {
-    type: classification.type,
-    confidence: classification.confidence.toFixed(2),
-    signals: classification.signals.slice(0, 5),  // Solo primeras 5 senales para el log
-    scores: classification.debug  // Scores detallados
-  });
-
-  // Fallback final: si aún no hay nombre, extraer del dominio de la URL
+  // Company name fallback from URL domain
   if (!companyName) {
     try {
       const urlObj = new URL(url);
       const domain = urlObj.hostname.replace('www.', '');
-      // Convertir dominio a nombre legible: "makenhaus.com.ar" -> "Makenhaus"
       const namePart = domain.split('.')[0];
       companyName = namePart.charAt(0).toUpperCase() + namePart.slice(1);
-      console.log('[Firecrawl] Company name extracted from URL fallback:', companyName);
     } catch {
       companyName = 'Empresa';
     }
   }
 
-  // Convertir al formato ScrapedContent
+  // Build profile
+  const profile: CompanyProfile = {
+    identity: extractedIdentity || companyDescription || '',
+    offering: extractedOffering || '',
+    differentiators: extractedDifferentiators || '',
+    terminology: {
+      productsLabel: extractedTerminology || inferTerminology(allProducts),
+      processLabel: constructionMethod || 'construccion',
+    },
+  };
+
+  console.log('[Firecrawl] v4 Profile:', { identity: profile.identity.slice(0, 80), terminology: profile.terminology });
+
   return {
     title: companyName,
     description: buildDescription(companyDescription, constructionMethod, hasFinancing),
+    profile,
+    products: allProducts,
     services: buildServices(constructionMethod, hasFinancing, locations),
-    models: allModels.map(formatModelString),
     contactInfo: formatContactInfo(contactInfo),
     rawText: combinedMarkdown.slice(0, 20000),
     faqs: faqs.length > 0 ? faqs : undefined,
     socialLinks: Object.keys(socialLinks).length > 0 ? socialLinks : undefined,
-    constructoraType: classification.type,
+    // BACKWARDS COMPAT (deprecated):
+    models: allProducts.map(p => {
+      const specsStr = Object.entries(p.specs || {}).map(([, v]) => `${v}`).join(' - ');
+      return `${p.name}${specsStr ? ' - ' + specsStr : ''}`;
+    }),
   };
 }
 
-// Funcion para mergear modelos evitando duplicados y completando datos
-function mergeModels(existing: ExtractedModel[], newModels: ExtractedModel[]): ExtractedModel[] {
+// Infer terminology from product categories
+function inferTerminology(products: ProductOrService[]): string {
+  if (products.length === 0) return 'productos';
+  const categories = products.map(p => p.category?.toLowerCase()).filter(Boolean);
+  if (categories.some(c => c?.includes('modelo') || c?.includes('casa'))) return 'modelos';
+  if (categories.some(c => c?.includes('proyecto'))) return 'proyectos';
+  if (categories.some(c => c?.includes('departamento') || c?.includes('unidad'))) return 'unidades';
+  if (categories.some(c => c?.includes('servicio'))) return 'servicios';
+  if (categories.some(c => c?.includes('lote'))) return 'lotes';
+  if (categories.some(c => c?.includes('tipologia'))) return 'tipologias';
+  return 'productos';
+}
+
+// Merge products avoiding duplicates and completing data
+function mergeProducts(existing: ProductOrService[], newProducts: ProductOrService[]): ProductOrService[] {
   const merged = [...existing];
 
-  for (const model of newModels) {
-    if (!model.name) continue;
+  for (const product of newProducts) {
+    if (!product.name) continue;
 
-    const existingIndex = merged.findIndex(m =>
-      m.name?.toLowerCase() === model.name?.toLowerCase() ||
-      m.name?.toLowerCase() === `casa ${model.name?.toLowerCase()}` ||
-      `casa ${m.name?.toLowerCase()}` === model.name?.toLowerCase()
+    const existingIndex = merged.findIndex(p =>
+      p.name?.toLowerCase() === product.name?.toLowerCase()
     );
 
     if (existingIndex === -1) {
-      // Agregar nuevo modelo
-      merged.push(model);
+      merged.push(product);
     } else {
-      // Completar datos faltantes del modelo existente
-      const existing = merged[existingIndex];
-      if (!existing.squareMeters && model.squareMeters) {
-        existing.squareMeters = model.squareMeters;
+      // Complete missing data on the existing product
+      const existingProduct = merged[existingIndex];
+      if (!existingProduct.description && product.description) {
+        existingProduct.description = product.description;
       }
-      if (!existing.coveredArea && model.coveredArea) {
-        existing.coveredArea = model.coveredArea;
+      if (!existingProduct.category && product.category) {
+        existingProduct.category = product.category;
       }
-      if (!existing.bedrooms && model.bedrooms) {
-        existing.bedrooms = model.bedrooms;
+      if (!existingProduct.features && product.features) {
+        existingProduct.features = product.features;
       }
-      if (!existing.bathrooms && model.bathrooms) {
-        existing.bathrooms = model.bathrooms;
-      }
-      if (!existing.price && model.price) {
-        existing.price = model.price;
-      }
-      if (!existing.features && model.features) {
-        existing.features = model.features;
+      // Merge specs: fill in missing keys
+      if (product.specs) {
+        for (const [key, value] of Object.entries(product.specs)) {
+          if (!(key in existingProduct.specs)) {
+            existingProduct.specs[key] = value;
+          }
+        }
       }
     }
   }
@@ -1754,73 +1133,37 @@ function mergeModels(existing: ExtractedModel[], newModels: ExtractedModel[]): E
   return merged;
 }
 
-// Eliminar duplicados finales
-function deduplicateModels(models: ExtractedModel[]): ExtractedModel[] {
-  const seen = new Map<string, ExtractedModel>();
+// Deduplicate products by normalized name
+function deduplicateProducts(products: ProductOrService[]): ProductOrService[] {
+  const seen = new Map<string, ProductOrService>();
 
-  for (const model of models) {
-    if (!model.name) continue;
+  for (const product of products) {
+    if (!product.name) continue;
 
-    // Normalizar nombre
-    const normalizedName = model.name.toLowerCase()
-      .replace(/^casa\s+/i, '')
-      .trim();
+    const normalizedName = product.name.toLowerCase().trim();
 
     if (!seen.has(normalizedName)) {
-      seen.set(normalizedName, model);
+      seen.set(normalizedName, product);
     } else {
-      // Mergear con el existente
+      // Merge specs into existing
       const existing = seen.get(normalizedName)!;
-      if (!existing.squareMeters && model.squareMeters) {
-        existing.squareMeters = model.squareMeters;
+      if (product.specs) {
+        for (const [key, value] of Object.entries(product.specs)) {
+          if (!(key in existing.specs)) {
+            existing.specs[key] = value;
+          }
+        }
       }
-      if (!existing.bedrooms && model.bedrooms) {
-        existing.bedrooms = model.bedrooms;
+      if (!existing.description && product.description) {
+        existing.description = product.description;
       }
-      if (!existing.bathrooms && model.bathrooms) {
-        existing.bathrooms = model.bathrooms;
-      }
-      if (!existing.price && model.price) {
-        existing.price = model.price;
+      if (!existing.features && product.features) {
+        existing.features = product.features;
       }
     }
   }
 
   return Array.from(seen.values());
-}
-
-function formatModelString(model: ExtractedModel): string {
-  const parts: string[] = [];
-
-  // Nombre del modelo
-  const displayName = model.category === 'quincho'
-    ? model.name
-    : (model.name.toLowerCase().startsWith('casa ') ? model.name : `Casa ${model.name}`);
-  parts.push(displayName);
-
-  // Metros cuadrados
-  if (model.squareMeters) {
-    parts.push(`${model.squareMeters}m2`);
-  } else if (model.coveredArea) {
-    parts.push(`${model.coveredArea}m2 cubiertos`);
-  }
-
-  // Dormitorios
-  if (model.bedrooms) {
-    parts.push(`${model.bedrooms} dorm`);
-  }
-
-  // Banos
-  if (model.bathrooms) {
-    parts.push(`${model.bathrooms} bano${model.bathrooms > 1 ? 's' : ''}`);
-  }
-
-  // Precio
-  if (model.price) {
-    parts.push(model.price);
-  }
-
-  return parts.join(' - ');
 }
 
 function buildDescription(desc: string, method: string, financing: boolean): string {

@@ -3,7 +3,7 @@ import PresentationSlides from '@/components/PresentationSlides';
 
 const WHATSAPP_NUMBER = '5492235238176';
 const WHATSAPP_MESSAGE = encodeURIComponent('Hola! Me interesa implementar el agente IA en mi empresa. ¿Podemos agendar una llamada?');
-const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}?text=${WHATSAPP_MESSAGE}`;
+const WHATSAPP_URL = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${WHATSAPP_MESSAGE}`;
 
 export default function Home() {
   return (
@@ -142,7 +142,7 @@ export default function Home() {
       </section>
 
       {/* Loom Video Section */}
-      <section className="py-12 px-4">
+      <section id="caso-exito-video" className="py-12 px-4">
         <div className="max-w-5xl mx-auto">
           <div className="text-center mb-6">
             <div className="flex items-center justify-center gap-2 mb-2">

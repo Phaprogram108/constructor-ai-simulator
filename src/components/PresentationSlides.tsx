@@ -9,16 +9,11 @@ import {
   Bot,
   LayoutDashboard,
   ArrowRight,
-  ExternalLink,
+  ArrowDown,
 } from "lucide-react";
 
-const TOTAL_SLIDES = 8;
-const SWIPE_THRESHOLD = 50;
-
-const LOOM_URL =
-  "https://www.loom.com/share/0b288021895f49338328c6258299068f";
 const WHATSAPP_URL =
-  "https://wa.me/5492235238176?text=Hola!%20Me%20interesa%20implementar%20el%20agente%20IA%20en%20mi%20empresa.%20%C2%BFPodemos%20agendar%20una%20llamada%3F";
+  "https://api.whatsapp.com/send?phone=5492235238176&text=Hola!%20Me%20interesa%20implementar%20el%20agente%20IA%20en%20mi%20empresa.%20%C2%BFPodemos%20agendar%20una%20llamada%3F";
 
 // ── Slide Components ──────────────────────────────────────────────
 
@@ -50,7 +45,7 @@ function Slide1() {
   );
 }
 
-function Slide2() {
+function Slide2({ onScrollToVideo }: { onScrollToVideo: () => void }) {
   return (
     <div className="bg-white text-blue-900 px-6 py-10 md:px-12 md:py-14 min-h-[400px] md:min-h-[500px] flex flex-col items-center justify-center text-center">
       <h2 className="text-2xl md:text-3xl font-bold mb-4">
@@ -60,15 +55,13 @@ function Slide2() {
         Publicidad + IA + CRM integrados para que vos cierres ventas, no
         respondas mensajes.
       </p>
-      <a
-        href={LOOM_URL}
-        target="_blank"
-        rel="noopener noreferrer"
+      <button
+        onClick={onScrollToVideo}
         className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition-colors"
       >
-        <ExternalLink className="w-4 h-4" />
+        <ArrowDown className="w-4 h-4" />
         VIDEO DE 5 MIN DONDE EXPLICO TODO
-      </a>
+      </button>
     </div>
   );
 }
@@ -168,29 +161,6 @@ function Slide4() {
 }
 
 function Slide5() {
-  return (
-    <div className="bg-white text-gray-900 px-6 py-10 md:px-12 md:py-14 min-h-[400px] md:min-h-[500px] flex flex-col items-center justify-center text-center">
-      <h2 className="text-2xl md:text-3xl font-bold mb-4 text-blue-900">
-        Caso Real
-      </h2>
-      <p className="text-base md:text-lg text-gray-600 mb-8 max-w-lg">
-        Tomate 5 minutos para ver este video donde te explico todo aplicado a
-        un caso real.
-      </p>
-      <a
-        href={LOOM_URL}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="inline-flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition-colors"
-      >
-        <ExternalLink className="w-4 h-4" />
-        HACÉ CLICK ACÁ
-      </a>
-    </div>
-  );
-}
-
-function Slide6() {
   const bullets = [
     "+9 años en publicidad digital, +$10M USD en ventas generadas",
     "+$50K USD invertidos en educación (tendencias USA/Europa)",
@@ -216,7 +186,7 @@ function Slide6() {
   );
 }
 
-function Slide7() {
+function Slide6() {
   const team = [
     {
       name: "Joaquin",
@@ -272,7 +242,7 @@ function Slide7() {
   );
 }
 
-function Slide8() {
+function Slide7() {
   const hoy = [
     "Respuesta: 2-6 horas (horario laboral)",
     "100 consultas → 3-4 reuniones (3-4%)",
@@ -350,8 +320,10 @@ function Slide8() {
 }
 
 // ── Slides array ──────────────────────────────────────────────────
-
-const SLIDES = [Slide1, Slide2, Slide3, Slide4, Slide5, Slide6, Slide7, Slide8];
+// Slide2 is special (needs onScrollToVideo prop), handled separately
+const REGULAR_SLIDES = [Slide1, null, Slide3, Slide4, Slide5, Slide6, Slide7];
+const TOTAL_SLIDES = 7;
+const SWIPE_THRESHOLD = 50;
 
 // ── Main Component ────────────────────────────────────────────────
 
@@ -376,6 +348,13 @@ export default function PresentationSlides() {
   const prev = useCallback(() => goTo(current - 1), [current, goTo]);
   const next = useCallback(() => goTo(current + 1), [current, goTo]);
 
+  const scrollToVideo = useCallback(() => {
+    const videoSection = document.getElementById("caso-exito-video");
+    if (videoSection) {
+      videoSection.scrollIntoView({ behavior: "smooth" });
+    }
+  }, []);
+
   // Keyboard navigation
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
@@ -399,7 +378,15 @@ export default function PresentationSlides() {
     }
   };
 
-  const SlideComponent = SLIDES[current];
+  // Render current slide
+  const renderSlide = () => {
+    if (current === 1) {
+      return <Slide2 onScrollToVideo={scrollToVideo} />;
+    }
+    const SlideComponent = REGULAR_SLIDES[current];
+    if (!SlideComponent) return null;
+    return <SlideComponent />;
+  };
 
   return (
     <div
@@ -413,32 +400,32 @@ export default function PresentationSlides() {
         className="transition-opacity duration-300 ease-in-out"
         style={{ opacity: isTransitioning ? 0 : 1 }}
       >
-        <SlideComponent />
+        {renderSlide()}
       </div>
 
-      {/* Desktop arrows */}
+      {/* Navigation arrows - visible on both mobile and desktop */}
       {current > 0 && (
         <button
           onClick={prev}
-          className="hidden md:flex absolute left-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/30 hover:bg-black/50 text-white rounded-full items-center justify-center transition-colors z-10"
+          className="absolute left-2 md:left-3 top-1/2 -translate-y-1/2 w-9 h-9 md:w-10 md:h-10 bg-black/40 hover:bg-black/60 text-white rounded-full flex items-center justify-center transition-colors z-10"
           aria-label="Slide anterior"
         >
-          <ChevronLeft className="w-6 h-6" />
+          <ChevronLeft className="w-5 h-5 md:w-6 md:h-6" />
         </button>
       )}
       {current < TOTAL_SLIDES - 1 && (
         <button
           onClick={next}
-          className="hidden md:flex absolute right-3 top-1/2 -translate-y-1/2 w-10 h-10 bg-black/30 hover:bg-black/50 text-white rounded-full items-center justify-center transition-colors z-10"
+          className="absolute right-2 md:right-3 top-1/2 -translate-y-1/2 w-9 h-9 md:w-10 md:h-10 bg-black/40 hover:bg-black/60 text-white rounded-full flex items-center justify-center transition-colors z-10"
           aria-label="Siguiente slide"
         >
-          <ChevronRight className="w-6 h-6" />
+          <ChevronRight className="w-5 h-5 md:w-6 md:h-6" />
         </button>
       )}
 
       {/* Dot indicators */}
       <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-10">
-        {SLIDES.map((_, i) => (
+        {Array.from({ length: TOTAL_SLIDES }).map((_, i) => (
           <button
             key={i}
             onClick={() => goTo(i)}

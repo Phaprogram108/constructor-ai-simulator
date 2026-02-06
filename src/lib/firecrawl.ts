@@ -5,7 +5,8 @@ import { ScrapedContent, SocialLinks, ProductOrService, CompanyProfile } from '@
 import { extractFromWaUrl, extractPhoneFromText } from './whatsapp-validator';
 
 // Actions universales que funcionan en la mayoría de sitios web
-const UNIVERSAL_ACTIONS = [
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const _UNIVERSAL_ACTIONS = [
   // 1. Esperar carga inicial
   { type: 'wait' as const, milliseconds: 2000 },
 
@@ -109,7 +110,8 @@ function getFirecrawl(): Firecrawl {
 const RATE_LIMIT_MS = 50; // Firecrawl maneja rate limit interno
 const FIRECRAWL_CREDIT_COST_USD = 0.001; // Aproximadamente $0.001 por credit
 const MAX_CATALOG_URLS = 15; // Maximo URLs de catalogo a scrapear
-const BATCH_SIZE = 10; // URLs a procesar en paralelo (aumentado para mejor performance)
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+const _BATCH_SIZE = 10; // URLs a procesar en paralelo (aumentado para mejor performance)
 
 // Patrones para extraer redes sociales del contenido
 const SOCIAL_PATTERNS = {
@@ -259,15 +261,16 @@ function isWixSite(markdown: string): boolean {
 }
 
 // Funcion para estimar costos antes de scrapear
-function estimateCost(urlCount: number): { credits: number; usdEstimate: number } {
-  // Firecrawl cobra ~1 credit por pagina scrapeada
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+function _estimateCost(urlCount: number): { credits: number; usdEstimate: number } {
   const credits = urlCount;
   const usdEstimate = credits * FIRECRAWL_CREDIT_COST_USD;
   return { credits, usdEstimate };
 }
 
 // Helper para rate limiting
-async function rateLimitDelay(): Promise<void> {
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
+async function _rateLimitDelay(): Promise<void> {
   await new Promise(resolve => setTimeout(resolve, RATE_LIMIT_MS));
 }
 
@@ -1116,7 +1119,8 @@ function parseProductsFromMarkdown(markdown: string): ProductOrService[] {
 
 export async function scrapeWithFirecrawl(
   url: string,
-  options: ScrapeOptions = { exhaustive: true }
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
+  _options: ScrapeOptions = { exhaustive: true }
 ): Promise<ScrapedContent> {
   console.log('[Firecrawl] v4 - Starting exploratory crawl-based extraction for:', url);
 
@@ -1168,6 +1172,7 @@ export async function scrapeWithFirecrawl(
 
   if (crawlResult && crawlResult.success && crawlResult.data) {
     crawledPages = crawlResult.data.length;
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     console.log(`[Firecrawl] v4 Crawl completed in ${crawlDuration}ms: ${crawledPages} pages, ${(crawlResult as any).creditsUsed || '?'} credits`);
 
     // Process each crawled page - collect markdown and contact info only
@@ -1176,6 +1181,7 @@ export async function scrapeWithFirecrawl(
       const markdown = doc.markdown || '';
       if (!markdown || markdown.length < 50) continue;
 
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       const pageUrl = (doc as any).url || '';
       allMarkdown.push(`\n--- URL: ${pageUrl} ---\n${markdown}`);
 

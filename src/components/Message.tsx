@@ -3,37 +3,73 @@
 import { cn } from '@/lib/utils';
 import { Message as MessageType } from '@/types';
 
-// Función para renderizar Markdown básico (negritas, itálicas, listas)
-function renderMarkdown(text: string): React.ReactNode {
-  // Dividir por líneas para manejar listas
+// Función para renderizar Markdown básico (negritas, itálicas, listas, links)
+function renderMarkdown(text: string, isUserMessage = false): React.ReactNode {
   const lines = text.split('\n');
+  const linkClass = isUserMessage
+    ? 'text-white underline hover:text-blue-100 break-all'
+    : 'text-blue-600 underline hover:text-blue-800 break-all';
 
-  const processLine = (line: string, index: number): React.ReactNode => {
-    // Procesar negritas **texto** -> <strong>texto</strong>
+  // Procesar inline: negritas y URLs
+  const processInline = (str: string, lineIndex: number): React.ReactNode[] => {
     const parts: React.ReactNode[] = [];
+    // Regex que matchea **bold**, [text](url), o URLs sueltas
+    const inlineRegex = /(\*\*([^*]+)\*\*)|(\[([^\]]+)\]\(([^)]+)\))|(https?:\/\/[^\s,;)]+)/g;
     let lastIndex = 0;
-    const boldRegex = /\*\*([^*]+)\*\*/g;
     let match;
 
-    while ((match = boldRegex.exec(line)) !== null) {
-      // Texto antes del match
+    while ((match = inlineRegex.exec(str)) !== null) {
       if (match.index > lastIndex) {
-        parts.push(line.slice(lastIndex, match.index));
+        parts.push(str.slice(lastIndex, match.index));
       }
-      // Texto en negrita
-      parts.push(<strong key={`bold-${index}-${match.index}`}>{match[1]}</strong>);
+
+      if (match[1]) {
+        parts.push(<strong key={`b-${lineIndex}-${match.index}`}>{match[2]}</strong>);
+      } else if (match[3]) {
+        parts.push(
+          <a
+            key={`l-${lineIndex}-${match.index}`}
+            href={match[5]}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={linkClass}
+          >
+            {match[4]}
+          </a>
+        );
+      } else if (match[6]) {
+        const url = match[6].replace(/[.,;:!?]+$/, '');
+        const trailing = match[6].slice(url.length);
+        parts.push(
+          <a
+            key={`u-${lineIndex}-${match.index}`}
+            href={url}
+            target="_blank"
+            rel="noopener noreferrer"
+            className={linkClass}
+          >
+            {url}
+          </a>
+        );
+        if (trailing) parts.push(trailing);
+      }
+
       lastIndex = match.index + match[0].length;
     }
 
-    // Texto restante después del último match
-    if (lastIndex < line.length) {
-      parts.push(line.slice(lastIndex));
+    if (lastIndex < str.length) {
+      parts.push(str.slice(lastIndex));
     }
 
-    // Si no hubo matches, devolver la línea original
     if (parts.length === 0) {
-      parts.push(line);
+      parts.push(str);
     }
+
+    return parts;
+  };
+
+  const processLine = (line: string, index: number): React.ReactNode => {
+    const inlineParts = processInline(line, index);
 
     // Detectar si es un item de lista
     const isListItem = /^[-•]\s/.test(line.trim());
@@ -42,12 +78,12 @@ function renderMarkdown(text: string): React.ReactNode {
       return (
         <div key={index} className="flex gap-2 ml-2">
           <span>•</span>
-          <span>{parts}</span>
+          <span>{inlineParts}</span>
         </div>
       );
     }
 
-    return <span key={index}>{parts}{index < lines.length - 1 ? '\n' : ''}</span>;
+    return <span key={index}>{inlineParts}{index < lines.length - 1 ? '\n' : ''}</span>;
   };
 
   return lines.map((line, index) => processLine(line, index));
@@ -90,8 +126,8 @@ export default function Message({ message }: MessageProps) {
         )}
 
         {/* Message content with Markdown support */}
-        <div className="text-sm whitespace-pre-wrap break-words">
-          {renderMarkdown(message.content)}
+        <div className="text-[15px] md:text-sm whitespace-pre-wrap break-words leading-relaxed">
+          {renderMarkdown(message.content, isUser)}
         </div>
 
         {/* Timestamp */}

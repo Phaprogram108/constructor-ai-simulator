@@ -454,7 +454,7 @@ export default function SimulatorForm() {
                 );
               })}
               <p className="text-xs text-gray-500 mt-3 pt-2 border-t border-gray-200">
-                Esto puede tomar entre 10 segundos y 2 minutos segun el tamano del sitio...
+                Esto puede tomar entre 10 segundos y 2 minutos según el tamaño del sitio...
               </p>
             </div>
           )}

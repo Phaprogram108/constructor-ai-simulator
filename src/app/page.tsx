@@ -132,39 +132,54 @@ export default function Home() {
 
       {/* Canva Slideshow Section */}
       <section className="py-12 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
+        <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl font-bold text-center text-gray-900 mb-6">
             Conoce mas sobre nuestra solucion
           </h2>
-          <div className="relative w-full rounded-xl overflow-hidden shadow-lg" style={{ paddingBottom: '56.25%' }}>
+          <div className="relative w-full rounded-xl overflow-hidden shadow-lg group" style={{ paddingBottom: '56.25%' }}>
             <iframe
               src="https://www.canva.com/design/DAG_55ZBoGI/PtU8msivOYa6LaDyrLZjrQ/view?embed"
               className="absolute top-0 left-0 w-full h-full border-0"
               allowFullScreen
               allow="fullscreen"
             />
+            {/* Fullscreen button overlay */}
+            <a
+              href="https://www.canva.com/design/DAG_55ZBoGI/PtU8msivOYa6LaDyrLZjrQ/view"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="absolute top-3 right-3 bg-black/60 hover:bg-black/80 text-white p-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity z-10 flex items-center gap-2 text-sm"
+            >
+              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+              </svg>
+              Ver en pantalla completa
+            </a>
           </div>
         </div>
       </section>
 
       {/* Loom Video Section */}
       <section className="py-12 px-4">
-        <div className="max-w-4xl mx-auto">
-          <div className="bg-green-100 border border-green-200 rounded-2xl p-6 md:p-8">
-            <div className="flex items-center gap-2 mb-4">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-6">
+            <div className="flex items-center justify-center gap-2 mb-2">
               <span className="text-2xl">🎯</span>
               <h2 className="text-xl md:text-2xl font-bold text-gray-900">
-                Mira el caso de exito de esta constructora en Argentina que consigue llamadas calificadas a $20 USD c/u:
+                Caso de exito real
               </h2>
             </div>
-            <div className="relative w-full rounded-xl overflow-hidden shadow-lg" style={{ paddingBottom: '56.25%' }}>
-              <iframe
-                src="https://www.loom.com/embed/0b288021895f49338328c6258299068f"
-                className="absolute top-0 left-0 w-full h-full border-0"
-                allowFullScreen
-                allow="fullscreen"
-              />
-            </div>
+            <p className="text-gray-600">
+              Constructora en Argentina que consigue llamadas calificadas a $20 USD c/u
+            </p>
+          </div>
+          <div className="relative w-full rounded-xl overflow-hidden shadow-lg" style={{ paddingBottom: '56.25%' }}>
+            <iframe
+              src="https://www.loom.com/embed/0b288021895f49338328c6258299068f"
+              className="absolute top-0 left-0 w-full h-full border-0"
+              allowFullScreen
+              allow="fullscreen"
+            />
           </div>
         </div>
       </section>

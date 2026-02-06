@@ -700,6 +700,263 @@ const PRODUCT_KEYWORDS = [
   'torre', 'torres', 'barrio', 'barrios',
 ];
 
+// Garbage filter: words/phrases that are NOT product names
+const GARBAGE_NAMES = new Set([
+  'tiene', 'superficie', 'cubierta', 'ofrece', 'cuenta', 'incluye',
+  'total', 'totales', 'metros', 'construccion', 'construida',
+  'planta', 'plantas', 'nivel', 'niveles', 'piso', 'pisos',
+  'ver', 'mas', 'ver mas', 'ver más', 'conoce', 'contacto',
+  'inicio', 'home', 'nosotros', 'about', 'empresa',
+  'galeria', 'gallery', 'blog', 'noticias', 'prensa',
+  'precio', 'precios', 'cotizar', 'consultar',
+  'disponible', 'disponibles', 'entrega', 'inmediata',
+  'nuevo', 'nueva', 'nuevos', 'nuevas',
+  'pagina', 'page', 'menu', 'footer', 'header',
+  'siguiente', 'anterior', 'next', 'prev',
+  'todos', 'todas', 'all', 'todo',
+  'nuestros', 'nuestras', 'nuestra', 'nuestro',
+  'sistema', 'constructivo', 'metodo',
+  'financiacion', 'financiamiento', 'cuotas',
+  'whatsapp', 'email', 'telefono', 'instagram',
+  'descripcion', 'detalle', 'detalles', 'caracteristicas',
+  'dormitorio', 'dormitorios', 'habitacion', 'habitaciones',
+  'baño', 'bano', 'baños', 'banos', 'cocina', 'living',
+  'comedor', 'garage', 'jardin', 'patio', 'terraza', 'balcon',
+]);
+
+/**
+ * Validates a candidate product name against garbage filter rules.
+ * Returns the cleaned name or null if invalid.
+ */
+function validateProductName(raw: string): string | null {
+  const name = raw.trim().replace(/\s+/g, ' ');
+
+  // Length checks
+  if (name.length < 2 || name.length > 50) return null;
+
+  // Max 6 words
+  const words = name.split(/\s+/);
+  if (words.length > 6) return null;
+
+  // Must start with uppercase letter or number
+  if (!/^[A-ZÁÉÍÓÚÑ0-9]/.test(name)) return null;
+
+  // Check garbage list (each word individually and full name)
+  const nameLower = name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+  if (GARBAGE_NAMES.has(nameLower)) return null;
+  if (words.length === 1 && GARBAGE_NAMES.has(nameLower)) return null;
+
+  // Skip if it's just a generic description phrase
+  if (/^(la|el|las|los|una|un|con|para|por|del|de)\s/i.test(name)) return null;
+
+  // Skip names that are just numbers
+  if (/^\d+$/.test(name)) return null;
+
+  return name;
+}
+
+/**
+ * Extracts specs (m2, dormitorios, banos, precio) from a text line.
+ */
+function extractSpecsFromText(text: string): Record<string, string | number> {
+  const specs: Record<string, string | number> = {};
+
+  // m2 / superficie
+  const m2Match = text.match(/(\d+[.,]?\d*)\s*m[²2]/i)
+    || text.match(/superficie[:\s]*(\d+[.,]?\d*)/i)
+    || text.match(/(\d+[.,]?\d*)\s*(?:metros?\s*cuadrados?|mts?\s*cuadrados?)/i);
+  if (m2Match) {
+    specs['m2'] = parseFloat(m2Match[1].replace(',', '.'));
+  }
+
+  // Dormitorios
+  const dormMatch = text.match(/(\d+)\s*(?:dormitorios?|dorm\.?|habitacion(?:es)?)/i);
+  if (dormMatch) {
+    specs['dormitorios'] = parseInt(dormMatch[1]);
+  }
+
+  // Banos
+  const banoMatch = text.match(/(\d+)\s*(?:baños?|banos?)/i);
+  if (banoMatch) {
+    specs['banos'] = parseInt(banoMatch[1]);
+  }
+
+  // Precio
+  const precioMatch = text.match(/(?:U\$?D|USD|\$)\s*([\d.,]+)/i)
+    || text.match(/precio[:\s]*(?:U\$?D|USD|\$)?\s*([\d.,]+)/i);
+  if (precioMatch) {
+    const rawPrice = precioMatch[0].trim();
+    specs['precio'] = rawPrice;
+  }
+
+  // Ambientes
+  const ambMatch = text.match(/(\d+)\s*ambientes?/i);
+  if (ambMatch) {
+    specs['ambientes'] = parseInt(ambMatch[1]);
+  }
+
+  // Personas
+  const persMatch = text.match(/(\d+)\s*personas?/i);
+  if (persMatch) {
+    specs['personas'] = parseInt(persMatch[1]);
+  }
+
+  return specs;
+}
+
+/**
+ * Detects product category from a name string.
+ */
+function detectCategory(name: string): string {
+  const lower = name.toLowerCase();
+  if (/quincho/i.test(lower)) return 'quincho';
+  if (/cabin|cabaña|cabana/i.test(lower)) return 'cabana';
+  if (/loft/i.test(lower)) return 'loft';
+  if (/duplex|dúplex/i.test(lower)) return 'duplex';
+  if (/depto|departamento/i.test(lower)) return 'departamento';
+  if (/modulo|módulo/i.test(lower)) return 'modulo';
+  if (/refugio/i.test(lower)) return 'refugio';
+  if (/tiny/i.test(lower)) return 'tiny house';
+  if (/container|contenedor/i.test(lower)) return 'container';
+  if (/suite/i.test(lower)) return 'suite';
+  if (/oficina/i.test(lower)) return 'oficina';
+  if (/local/i.test(lower)) return 'local';
+  if (/lote/i.test(lower)) return 'lote';
+  return 'casa';
+}
+
+/**
+ * Parses products/models from crawled markdown using regex patterns.
+ * This is COMPLEMENTARY to Firecrawl extract - catches products that
+ * the extract schema misses (which is the majority of sites).
+ */
+function parseProductsFromMarkdown(markdown: string): ProductOrService[] {
+  const found = new Map<string, ProductOrService>();
+
+  // Helper to add a product if valid
+  const addProduct = (rawName: string, context: string, extraSpecs?: Record<string, string | number>) => {
+    const name = validateProductName(rawName);
+    if (!name) return;
+
+    const normalizedKey = name.toLowerCase().trim();
+    if (found.has(normalizedKey)) {
+      // Merge specs into existing
+      const existing = found.get(normalizedKey)!;
+      const newSpecs = { ...extractSpecsFromText(context), ...extraSpecs };
+      for (const [k, v] of Object.entries(newSpecs)) {
+        if (!(k in existing.specs)) {
+          existing.specs[k] = v;
+        }
+      }
+      return;
+    }
+
+    const specs = { ...extractSpecsFromText(context), ...extraSpecs };
+    found.set(normalizedKey, {
+      name,
+      specs,
+      category: detectCategory(name),
+    });
+  };
+
+  // ===== PATTERN GROUP 1: Known patterns from V3 that worked =====
+
+  // ViBert: "Modelo de Casa Sara - 2 personas 65.55 m2 TOTALES"
+  const vibertCasa = /Modelo de Casa\s+([A-Za-záéíóúñÁÉÍÓÚÑ]+)\s*[-–]\s*\d+\s*personas?\s+(\d+[.,]?\d*)\s*m[²2]/gi;
+  let match;
+  while ((match = vibertCasa.exec(markdown)) !== null) {
+    addProduct(`Casa ${match[1]}`, match[0], { m2: parseFloat(match[2].replace(',', '.')) });
+  }
+
+  // ViBert Quinchos: "Modelo de Quincho S - 27,50 m2 TOTALES"
+  const vibertQuincho = /Modelo de (Quincho\s+[A-Za-záéíóúñÁÉÍÓÚÑ]+)\s*[-–]\s*(\d+[.,]?\d*)\s*m[²2]/gi;
+  while ((match = vibertQuincho.exec(markdown)) !== null) {
+    addProduct(match[1], match[0], { m2: parseFloat(match[2].replace(',', '.')) });
+  }
+
+  // Generic: "Casa X - 100m² - 3 dormitorios"
+  const genericCasa = /(?:Casa|Vivienda|Modelo)\s+([A-Za-z0-9áéíóúñÁÉÍÓÚÑ\s\-]+?)\s*[-–|]\s*(\d+[.,]?\d*)\s*m[²2]/gi;
+  while ((match = genericCasa.exec(markdown)) !== null) {
+    addProduct(match[1].trim(), match[0], { m2: parseFloat(match[2].replace(',', '.')) });
+  }
+
+  // Price pattern: "CM0 15m² USD 17.050"
+  const pricePattern = /([A-Z]{1,4}\d+(?:\s*[-–]\s*[A-Z])?)\s*(\d+[.,]?\d*)\s*m[²2].*?(?:U\$?D|USD|\$)\s*([\d.,]+)/gi;
+  while ((match = pricePattern.exec(markdown)) !== null) {
+    addProduct(match[1], match[0], {
+      m2: parseFloat(match[2].replace(',', '.')),
+      precio: `USD ${match[3]}`,
+    });
+  }
+
+  // Wellmod: "W26 Suite | 26 m2 | Monoambiente"
+  const wellmod = /([A-Z]\d+\s*\w*)\s*[|]\s*(\d+)\s*m[²2]/gi;
+  while ((match = wellmod.exec(markdown)) !== null) {
+    addProduct(match[1], match[0], { m2: parseInt(match[2]) });
+  }
+
+  // Table rows: "Modelo | Superficie | Dormitorios"
+  const tableRow = /^([A-Za-z0-9áéíóúñÁÉÍÓÚÑ][A-Za-z0-9áéíóúñÁÉÍÓÚÑ\s]*?)\s*\|\s*(\d+[.,]?\d*)\s*m[²2]/gm;
+  while ((match = tableRow.exec(markdown)) !== null) {
+    addProduct(match[1].trim(), match[0], { m2: parseFloat(match[2].replace(',', '.')) });
+  }
+
+  // ===== PATTERN GROUP 2: New patterns for markdown structure =====
+
+  // Markdown headings: "### Casa Sara" or "## Modelo Eco Studio" or "### 1. Eco Studio"
+  const headingPattern = /^#{2,4}\s*(?:\d+\.\s*)?(?:(?:Modelo|Casa|Vivienda|Proyecto|Tipolog[ií]a)\s+)?([A-ZÁÉÍÓÚÑ][A-Za-z0-9áéíóúñÁÉÍÓÚÑ\s\-]+?)$/gm;
+  while ((match = headingPattern.exec(markdown)) !== null) {
+    const headingName = match[1].trim();
+    // Get the next ~300 chars after the heading for context (specs)
+    const contextAfter = markdown.slice(match.index, match.index + 300);
+    addProduct(headingName, contextAfter);
+  }
+
+  // Product headings with m2 on same line: "### Casa Sara - 65m2"
+  const headingWithM2 = /^#{2,4}\s*(?:\d+\.\s*)?([A-Za-záéíóúñÁÉÍÓÚÑ][A-Za-z0-9áéíóúñÁÉÍÓÚÑ\s\-]*?)\s*[-–|]\s*(\d+[.,]?\d*)\s*m[²2]/gm;
+  while ((match = headingWithM2.exec(markdown)) !== null) {
+    addProduct(match[1].trim(), match[0], { m2: parseFloat(match[2].replace(',', '.')) });
+  }
+
+  // Bold list items: "- **Macá L** - 30m2 - 2 dormitorios"
+  const boldList = /[-•*]\s*\*\*([A-Za-z0-9áéíóúñÁÉÍÓÚÑ][A-Za-z0-9áéíóúñÁÉÍÓÚÑ\s\-]*?)\*\*\s*[-–|]?\s*(.*)/gm;
+  while ((match = boldList.exec(markdown)) !== null) {
+    addProduct(match[1].trim(), match[0] + ' ' + (match[2] || ''));
+  }
+
+  // "Ver más" links: "Casa Sara VER MAS" or "[Casa Sara](link) Ver más"
+  const verMas = /([\w\sáéíóúñÁÉÍÓÚÑ]+?)\s+(?:VER MAS|Ver más|ver más|VER MÁS|ver mas)/gi;
+  while ((match = verMas.exec(markdown)) !== null) {
+    addProduct(match[1].trim(), match[0]);
+  }
+
+  // Markdown links with product names: "[Casa Sara](/modelos/casa-sara)"
+  const linkPattern = /\[([A-ZÁÉÍÓÚÑ][A-Za-z0-9áéíóúñÁÉÍÓÚÑ\s\-]+?)\]\([^)]*(?:modelo|casa|vivienda|producto|proyecto|tipologi)[^)]*\)/gi;
+  while ((match = linkPattern.exec(markdown)) !== null) {
+    addProduct(match[1].trim(), match[0]);
+  }
+
+  // Simple: "Nombre 50m2" (more restrictive - name must be capitalized word(s) then m2)
+  const simpleM2 = /([A-ZÁÉÍÓÚÑ][a-záéíóúñ]+(?:\s+[A-ZÁÉÍÓÚÑ][a-záéíóúñ]*)*)\s+(\d+)\s*m[²2]/gi;
+  while ((match = simpleM2.exec(markdown)) !== null) {
+    // Only if name is short (1-3 words) to avoid matching sentences
+    const words = match[1].trim().split(/\s+/);
+    if (words.length <= 3) {
+      addProduct(match[1].trim(), match[0], { m2: parseInt(match[2]) });
+    }
+  }
+
+  // Alphanumeric codes near m2: "A100 - 85m2" or "T2B 120 m2"
+  const codePattern = /\b([A-Z]{1,3}\d{1,4}(?:\s*[A-Z])?)\b\s*[-–|]?\s*(\d+[.,]?\d*)\s*m[²2]/gi;
+  while ((match = codePattern.exec(markdown)) !== null) {
+    addProduct(match[1], match[0], { m2: parseFloat(match[2].replace(',', '.')) });
+  }
+
+  const results = Array.from(found.values());
+  console.log(`[Firecrawl] parseProductsFromMarkdown: found ${results.length} products from ${(markdown.length / 1024).toFixed(0)}KB markdown`);
+  return results;
+}
+
 export async function scrapeWithFirecrawl(
   url: string,
   options: ScrapeOptions = { exhaustive: true }
@@ -801,6 +1058,16 @@ export async function scrapeWithFirecrawl(
   } else {
     console.log(`[Firecrawl] v4 Crawl returned no usable data after ${crawlDuration}ms`);
     isSPA = true;
+  }
+
+  // ====== STEP 1.5: Parse products from crawled markdown ======
+  if (allMarkdown.length > 0) {
+    console.log('[Firecrawl] v4 Step 1.5: Parsing products from crawled markdown...');
+    const markdownProducts = parseProductsFromMarkdown(allMarkdown.join(''));
+    if (markdownProducts.length > 0) {
+      console.log(`[Firecrawl] v4 Found ${markdownProducts.length} products from markdown parsing`);
+      allProducts = mergeProducts(allProducts, markdownProducts);
+    }
   }
 
   // ====== STEP 2: Scrape homepage with exploratory extract schema ======

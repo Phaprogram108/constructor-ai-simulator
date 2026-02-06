@@ -1,62 +1,185 @@
 {
   "company": "Grupo Steimberg",
   "url": "https://www.gruposteimberg.com/",
-  "testedAt": "2026-02-06T15:22:43.473Z",
-  "sessionId": "02c86934-0807-464e-9c48-c6137aef2e2d",
-  "systemPromptLength": 21375,
+  "testedAt": "2026-02-06T15:48:00.867Z",
+  "sessionId": "8c805249-6a0a-4fe2-9c0e-2ab59fc35ed4",
+  "systemPromptLength": 21744,
   "systemPromptModelsFound": [
     "Cabin 28",
     "Cabin 70",
     "Cabin Yakisugi",
     "Proyectos de Inversión",
-    "Finca Guadalupe",
-    "Hotel Propuesta de Diseño A",
-    "Hotel Propuesta de Diseño B",
-    "CABIN"
+    "Cabañas Finca Guadalupe",
+    "Hotel Propuesta de Diseño",
+    "CABIN Estilo Nórdico",
+    "Gestión Integral de Proyectos"
   ],
-  "systemPromptType": "de Modelos CABIN estas buscando?\"",
+  "systemPromptType": "de Modelos, Proyectos estas buscando?\"",
   "conversations": [
     {
       "question": "¿Qué es tu empresa y qué hacen?",
       "questionType": "identity",
-      "response": "Grupo Steimberg es un estudio que diseña y construye arquitectura modular en hormigón premoldeado, con foco en vivienda, turismo e inversiones. Desarrollamos Modelos CABIN (como Cabin 28, Cabin 70, Cabin Yakisugi y Cabin 40), complejos turísticos como Finca Guadalupe y proyectos más grandes como Nordic House 180 y hoteles.  \n\nTrabajamos con diseños modernos, muy luminosos, eficientes energéticamente y pensados para integrarse con la naturaleza, y además ofrecemos financiación.  \nPara orientarte mejor, ¿qué tipo de Modelos CABIN estás buscando: algo residencial, turístico o más bien de inversión?",
-      "mentionedModels": [
-        "Cabin 28",
-        "Cabin 70",
-        "Cabin Yakisugi",
-        "Finca Guadalupe",
-        "CABIN"
-      ],
-      "saidNoInfo": false,
-      "hasSpecificData": false,
-      "responseTimeMs": 2642
-    },
-    {
-      "question": "¿Qué productos o servicios ofrecen?",
-      "questionType": "offering",
-      "response": "Ofrecemos proyectos de arquitectura modular en hormigón premoldeado para uso residencial, turístico, comercial y de inversión.  \nDentro de los Modelos CABIN tenemos: Cabin 28 (compacta, estilo escandinavo), Cabin 40 (intermedia), Cabin 70 (vivienda amplia y minimalista) y Cabin Yakisugi (con técnica japonesa de madera quemada), además de CABIN como concepto general de unidades habitacionales personalizables.  \n\nTambién desarrollamos proyectos como Finca Guadalupe (complejo de cabañas y áreas comunes), Proyectos de Inversión con retornos del 25–30% anual, Nordic House 180 y propuestas de diseño de hotel.  \nPara acompañarte en todo el proceso, brindamos diseño, construcción modular en hormigón premoldeado y opciones de financiación. ¿En qué uso estás pensando vos: vivienda propia, alquiler turístico o un desarrollo más grande?",
+      "response": "Grupo Steimberg es un estudio especializado en arquitectura modular en hormigón premoldeado, enfocado en proyectos residenciales, comerciales y turísticos. Diseñamos y construimos viviendas modulares sostenibles, con diseño escandinavo minimalista y uso inteligente del espacio, y también desarrollos para inversión (complejos turísticos, cabañas, hoteles boutique). \n\nContamos con Modelos CABIN (Cabin 28, Cabin 70, Cabin Yakisugi, CABIN 40, CABIN Estilo Nórdico), proyectos como Cabañas Finca Guadalupe, Hotel Propuesta de Diseño, Nordic House 180 y Proyectos de Inversión con retornos estimados del 25–30% anual, además de gestión integral (permisos, interiorismo, publicación en Airbnb/Booking y comercialización). También ofrecemos financiación.  \n\nPara orientarte mejor, ¿qué tipo de Modelos, Proyectos estás buscando: vivienda propia, turismo o inversión?",
       "mentionedModels": [
         "Cabin 28",
         "Cabin 70",
         "Cabin Yakisugi",
         "Proyectos de Inversión",
-        "Finca Guadalupe",
-        "CABIN"
+        "Cabañas Finca Guadalupe",
+        "Hotel Propuesta de Diseño",
+        "CABIN Estilo Nórdico"
       ],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 5126
+      "responseTimeMs": 6919
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos diseño y construcción de viviendas modulares en hormigón premoldeado, con enfoque en sostenibilidad y diseño escandinavo minimalista. Nuestros Modelos, Proyectos principales son:  \n- **Modelos CABIN**: Cabin 28 (24 m², súper funcional con cocina moderna y grandes ventanales), Cabin 70 (70 m² ideal vivienda/turismo), Cabin Yakisugi (acabado japonés en madera, muy distintivo), CABIN 40, CABIN Doble y CABIN Estilo Nórdico (unidades rápidas, personalizables).  \n- **Proyectos especiales**: **Nordic House 180** (vivienda amplia estilo nórdico), **Cabañas Finca Guadalupe**, **Hotel Propuesta de Diseño** y otros desarrollos turísticos/comerciales.  \n- **Servicios**: Proyectos de Inversión (con retornos estimados del 25–30% anual), gestión integral del proyecto (permisos, interiorismo, publicación en Airbnb/Booking, comercialización de unidades) y financiación.  \n\nPara ayudarte mejor, ¿qué tipo de Modelos, Proyectos estás buscando? ¿Vivienda propia, complejo turístico o inversión inmobiliaria?",
+      "mentionedModels": [
+        "Cabin 28",
+        "Cabin 70",
+        "Cabin Yakisugi",
+        "Proyectos de Inversión",
+        "Cabañas Finca Guadalupe",
+        "Hotel Propuesta de Diseño",
+        "CABIN Estilo Nórdico"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3850
     },
     {
       "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
       "questionType": "contact",
-      "response": "Por acá tengo solo el mail directo: gruposteimberg@gmail.com.  \nNo tengo el WhatsApp o teléfono cargados en esta info, pero si querés te puedo orientar ahora mismo sobre modelos, tiempos y financiación y después te paso cómo llegar al formulario de contacto de la web.",
+      "response": "Por ahora tengo solo el mail directo de contacto: **gruposteimberg@gmail.com**.  \n\nSi querés, contame qué tipo de Modelos, Proyectos estás buscando y en qué zona, así te orientó un poco y después te derivo al canal de contacto que te quede más cómodo.",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 1760
+      "responseTimeMs": 1916
+    },
+    {
+      "question": "¿Cuántos cabañas ofrecen?",
+      "questionType": "product_count",
+      "response": "Trabajamos con varias líneas de cabañas/modulares, todas basadas en nuestro sistema de hormigón premoldeado y diseño nórdico.  \nHoy tenemos estos Modelos, Proyectos principales: **Cabin 28**, **Cabin 70**, **Cabin Yakisugi**, **CABIN 40**, **CABIN Doble**, **CABIN Estilo Nórdico** y desarrollos como **Cabañas Finca Guadalupe** (complejo turístico).  \n\nAdemás, podemos armar conjuntos de múltiples unidades (por ejemplo, 4, 8, 10+ CABIN) para emprendimientos turísticos o de inversión. Para afinar mejor, ¿buscás una sola cabaña para vos o un complejo con varias unidades?",
+      "mentionedModels": [
+        "Cabin 28",
+        "Cabin 70",
+        "Cabin Yakisugi",
+        "Cabañas Finca Guadalupe",
+        "CABIN Estilo Nórdico"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2769
+    },
+    {
+      "question": "Contame sobre Cabin 28",
+      "questionType": "product_specific",
+      "response": "Cabin 28 es una de nuestras CABIN compactas, pensada para aprovechar al máximo cada m² con un diseño escandinavo minimalista. Tiene unos 24 m², con **amplios ventanales** que integran el interior con la naturaleza y una **cocina moderna** muy funcional, ideal como tiny house, cabaña turística o anexo en un terreno.  \n\nSe construye en sistema **modular en hormigón premoldeado**, lo que le da mucha durabilidad y muy buenos aislamientos, y se puede complementar con otras CABIN si más adelante querés crecer en etapas. No tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp o por mail a **gruposteimberg@gmail.com**.  \n\nPara ver si Cabin 28 encaja con vos: ¿ya tenés terreno? ¿En qué zona sería?",
+      "mentionedModels": [
+        "Cabin 28"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 8316
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Cabin 28? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "Cabin 28 es una CABIN compacta de **24 m²** de superficie cubierta, pensada como monoambiente/tiny house súper funcional. El layout típico integra estar + cama en un mismo ambiente, con **cocina moderna**, baño completo y **amplios ventanales** que dan mucha luz natural y conexión con el exterior.  \n\nSe construye con nuestro sistema de **arquitectura modular en hormigón premoldeado**, con interior en madera y diseño escandinavo minimalista, priorizando aislamiento térmico, bajo mantenimiento y sostenibilidad. No tengo los planos detallados (medidas de cada ambiente o cantidad exacta de camas) cargados acá, pero puedo pasarte esa info por mail si querés; ¿para uso turístico o vivienda propia la estás pensando?",
+      "mentionedModels": [
+        "Cabin 28"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3635
+    },
+    {
+      "question": "Contame sobre Cabin 70",
+      "questionType": "product_specific",
+      "response": "Cabin 70 es una vivienda modular de **70 m²**, ideal como casa permanente o cabaña turística de categoría. Se destaca por sus **espacios amplios y acogedores**, con diseño escandinavo minimalista, grandes ventanales e integración con el entorno natural, manteniendo muy buena eficiencia térmica gracias al sistema en **hormigón premoldeado**.  \n\nEs una excelente opción para proyectos de inversión (complejos de cabañas) o para quien busca una casa compacta pero cómoda, con buena distribución de ambientes. No tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp o por mail a **gruposteimberg@gmail.com**. ¿La estás pensando para vivienda propia o para un emprendimiento turístico?",
+      "mentionedModels": [
+        "Cabin 70",
+        "Proyectos de Inversión"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 3266
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Cabin 70? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "Cabin 70 es una vivienda modular de **70 m²** de superficie, pensada como casa completa o cabaña turística amplia. Está diseñada con **espacios acogedores**, grandes ventanales e integración con el entorno natural, bajo un estilo escandinavo minimalista y sistema constructivo en **hormigón premoldeado** (alta durabilidad y buen aislamiento).  \n\nEn esta tipología se suele resolver **área social amplia con cocina integrada**, baño completo y uno o más dormitorios, pero en la web no figuran los planos con cantidad exacta de cuartos ni medidas de cada ambiente. No tengo esos detalles finos cargados acá; si querés, puedo ayudarte a definir cuántos dormitorios necesitás y te orientamos al modelo/ajuste ideal. Para eso, ¿para cuántas personas la pensás y en qué zona tenés o tendrías el terreno?",
+      "mentionedModels": [
+        "Cabin 70"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3734
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con un sistema de **arquitectura modular en hormigón premoldeado**, lo que significa que gran parte de la CABIN se fabrica de manera estandarizada y el montaje en el terreno es mucho más rápido y ordenado que una obra tradicional. Diseñamos el proyecto, gestionamos permisos si hace falta, producimos los módulos, los montamos en obra y hacemos terminaciones + interiorismo, entregando la unidad lista para usar o alquilar.\n\nLas CABIN están pensadas para estar **construidas en cuestión de meses** (no años), ideal si querés acelerar una inversión turística o mudarte rápido. El plazo concreto depende del modelo (no es lo mismo una Cabin 28 que una Nordic House 180) y de la ubicación de la obra. Para poder estimar mejor en tu caso: ¿ya tenés terreno? ¿En qué zona y para cuándo la necesitás aproximadamente?",
+      "mentionedModels": [
+        "Cabin 28"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3499
+    },
+    {
+      "question": "¿Se pueden personalizar los cabañas?",
+      "questionType": "customization",
+      "response": "Sí, se pueden personalizar las cabañas. Nuestras **CABIN Estilo Nórdico** y el resto de los Modelos CABIN (Cabin 28, Cabin 70, Cabin Yakisugi, CABIN 40, CABIN Doble) admiten personalización en distribución interior, terminaciones, equipamiento e interiorismo, siempre respetando el sistema modular en hormigón premoldeado.  \n\nLa idea es adaptar diseño y cantidad de unidades a tu proyecto: vivienda, complejo turístico o inversión, manteniendo tiempos de obra cortos y buena eficiencia energética. Para orientarte mejor, ¿qué te gustaría personalizar más: la cantidad de dormitorios, el estilo interior o el tamaño total?",
+      "mentionedModels": [
+        "Cabin 28",
+        "Cabin 70",
+        "Cabin Yakisugi",
+        "CABIN Estilo Nórdico"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3020
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, ofrecemos **financiación** para nuestros Modelos, Proyectos de viviendas modulares y desarrollos de inversión. Los planes se adaptan según el tipo de CABIN o proyecto (por ejemplo, una Cabin 28 para uso personal no es lo mismo que un complejo turístico con varias unidades).  \n\nNo tengo las condiciones específicas de cada plan cargadas acá (porcentajes, cuotas, etc.), pero se manejan esquemas mixtos de anticipo + pagos durante el proceso de obra. Para que te asesoren con un plan acorde, contame: ¿qué modelo tenés en mente y qué presupuesto aproximado manejás?",
+      "mentionedModels": [
+        "Cabin 28"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4086
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Nos diferenciamos por combinar **arquitectura modular en hormigón premoldeado** (muy sólido y durable) con un **diseño escandinavo minimalista**, algo poco común en el mercado local. Todas nuestras CABIN (Cabin 28, Cabin 70, Cabin Yakisugi, CABIN 40, CABIN Doble, CABIN Estilo Nórdico) están pensadas para ser **sostenibles, eficientes y muy luminosas**, maximizando el uso del espacio con grandes ventanales e interiores cálidos en madera.  \n\nAdemás, ofrecemos **Proyectos de Inversión** con gestión integral: desde permisos, diseño e interiorismo, hasta publicación en **Airbnb/Booking** y comercialización de unidades, con retornos estimados del **25–30% anual**. Y algo clave: trabajamos en **construcción rápida en meses** y con **financiación**, lo que te permite planificar mejor tu inversión o vivienda. ¿Estás comparando para una casa propia o para un emprendimiento turístico?",
+      "mentionedModels": [
+        "Cabin 28",
+        "Cabin 70",
+        "Cabin Yakisugi",
+        "Proyectos de Inversión",
+        "CABIN Estilo Nórdico"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 6563
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "En la info que tengo no figura un listado específico de zonas o provincias, ni una aclaración explícita de “cobertura en todo el país”. Podría ser posible avanzar en distintas regiones, pero la viabilidad depende mucho de la ubicación puntual (logística, montaje, costos).  \n\nNo tengo ese detalle operativo cargado acá, así que para confirmarte bien alcances y costos por zona te sugiero escribir a **gruposteimberg@gmail.com**. Mientras tanto, contame: ¿en qué localidad o provincia estás pensando instalar las cabañas o la vivienda?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2723
     }
   ],
-  "sessionCreationTimeMs": 17443,
+  "sessionCreationTimeMs": 27704,
   "errors": []
 }

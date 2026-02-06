@@ -369,7 +369,9 @@ type QuestionType =
   | 'product_specs'     // Specs de un producto
   | 'financing'         // Financiación
   | 'coverage'          // Cobertura geográfica
-  | 'differentiator';   // Qué los diferencia
+  | 'differentiator'    // Qué los diferencia
+  | 'process'           // Proceso de construcción
+  | 'customization';    // Personalización
 
 interface Question {
   text: string;
@@ -377,35 +379,20 @@ interface Question {
 }
 
 /**
- * Infer product terminology from ground truth data
+ * Infer product terminology from prompt models list
  */
-function inferProductLabel(groundTruth: GroundTruth): string {
-  // Check if there's terminology metadata
-  const gt = groundTruth as any;
-  if (gt.companyProfile?.terminology) {
-    return gt.companyProfile.terminology;
-  }
+function inferProductLabel(promptModels: string[]): string {
+  const joined = promptModels.join(' ').toLowerCase();
 
-  // Fallback: infer from context
-  const rawStr = JSON.stringify(groundTruth).toLowerCase();
+  if (/cabin/i.test(joined)) return 'cabañas';
+  if (/m[oó]dulo/i.test(joined)) return 'módulos';
+  if (/proyecto/i.test(joined)) return 'proyectos';
+  if (/unidad|departamento|depto/i.test(joined)) return 'unidades';
+  if (/lote|terreno/i.test(joined)) return 'lotes';
+  if (/tipolog[ií]a/i.test(joined)) return 'tipologías';
+  if (/servicio/i.test(joined)) return 'servicios';
+  if (/casa|vivienda/i.test(joined)) return 'modelos de casas';
 
-  if (rawStr.includes('proyecto') || rawStr.includes('emprendimiento')) {
-    return 'proyectos';
-  }
-  if (rawStr.includes('unidad') || rawStr.includes('departamento')) {
-    return 'unidades';
-  }
-  if (rawStr.includes('lote') || rawStr.includes('terreno')) {
-    return 'lotes';
-  }
-  if (rawStr.includes('tipologia')) {
-    return 'tipologías';
-  }
-  if (rawStr.includes('servicio')) {
-    return 'servicios';
-  }
-
-  // Default to "modelos" if nothing specific found
   return 'modelos';
 }
 
@@ -418,9 +405,34 @@ function hasFinancingMention(groundTruth: GroundTruth): boolean {
 }
 
 /**
- * Generate dynamic questions based on ground truth data
+ * Pick up to 2 models with descriptive names (not codes like "CM0" or single letters).
+ * Prefers models with spaces or longer names. Deterministic: takes first 2 valid ones.
  */
-function generateQuestions(groundTruth: GroundTruth | null): Question[] {
+function pickBestModels(models: string[], count: number): string[] {
+  // Separate descriptive names from code-like names
+  const descriptive = models.filter(m =>
+    m.length > 3 && /[a-záéíóúñ\s]/i.test(m) && !/^\w{1,3}\d*$/.test(m)
+  );
+  const rest = models.filter(m => !descriptive.includes(m));
+
+  const picked: string[] = [];
+  for (const m of [...descriptive, ...rest]) {
+    if (picked.length >= count) break;
+    picked.push(m);
+  }
+  return picked;
+}
+
+/**
+ * Generate dynamic questions based on prompt models and ground truth context.
+ * Uses prompt models (what the scraper found) for product-specific questions,
+ * NOT ground truth models (which may differ from what the agent knows).
+ */
+function generateQuestions(
+  groundTruth: GroundTruth | null,
+  promptModels: string[],
+  promptHasFinancing: boolean
+): Question[] {
   const questions: Question[] = [];
 
   // 1. Universal questions (ALWAYS ask these)
@@ -430,54 +442,57 @@ function generateQuestions(groundTruth: GroundTruth | null): Question[] {
     { text: '¿Cuál es su WhatsApp o teléfono de contacto?', type: 'contact' },
   );
 
-  if (!groundTruth) return questions;
-
-  // 2. Questions based on what was found in ground truth
-  if (groundTruth.models && groundTruth.models.length > 0) {
-    // Infer how to call the products
-    const label = inferProductLabel(groundTruth);
+  // 2. Product questions based on what the PROMPT actually has
+  if (promptModels.length > 0) {
+    const label = inferProductLabel(promptModels);
 
     questions.push({
       text: `¿Cuántos ${label} ofrecen?`,
       type: 'product_count',
     });
 
-    // Ask about up to 3 specific products
-    const productsToAsk = groundTruth.models.slice(0, 3);
-    for (const model of productsToAsk) {
+    // Pick up to 2 descriptive models
+    const modelsToAsk = pickBestModels(promptModels, 2);
+    for (const modelName of modelsToAsk) {
       questions.push({
-        text: `Contame sobre ${model.name}`,
+        text: `Contame sobre ${modelName}`,
         type: 'product_specific',
       });
-
-      // If it has specs, ask for them
-      const hasSpecs = (model as any).sqMeters || (model as any).price ||
-                       (model as any).bedrooms || (model as any).bathrooms;
-      if (hasSpecs) {
-        questions.push({
-          text: `¿Cuáles son las especificaciones de ${model.name}?`,
-          type: 'product_specs',
-        });
-      }
+      questions.push({
+        text: `¿Cuáles son los detalles técnicos de ${modelName}? Superficie, dormitorios, características.`,
+        type: 'product_specs',
+      });
     }
+
+    // Process and customization questions
+    questions.push({
+      text: '¿Cuál es el proceso de construcción y cuánto demoran?',
+      type: 'process',
+    });
+    questions.push({
+      text: `¿Se pueden personalizar los ${label}?`,
+      type: 'customization',
+    });
   }
 
-  // 3. If mentions financing
-  if (groundTruth.financing || hasFinancingMention(groundTruth)) {
+  // 3. Financing: check prompt OR ground truth
+  const gtHasFinancing = groundTruth ? hasFinancingMention(groundTruth) : false;
+  if (promptHasFinancing || gtHasFinancing || groundTruth?.financing) {
     questions.push({
       text: '¿Tienen financiamiento o planes de pago?',
       type: 'financing',
     });
   }
 
-  // 4. If has coverage/locations
-  const gt = groundTruth as any;
-  if (gt.coverage || gt.locations) {
-    questions.push({
-      text: '¿A qué zonas llegan o dónde operan?',
-      type: 'coverage',
-    });
-  }
+  // 4. General quality questions (ALWAYS ask)
+  questions.push({
+    text: '¿Qué los diferencia de otras empresas similares?',
+    type: 'differentiator',
+  });
+  questions.push({
+    text: '¿A qué zonas o regiones llegan?',
+    type: 'coverage',
+  });
 
   return questions;
 }
@@ -594,8 +609,9 @@ async function testCompany(
   ];
   const uniqueModels = Array.from(new Set(knownModels));
 
-  // Generate questions
-  const questions = generateQuestions(groundTruth);
+  // Generate questions from prompt models (not ground truth models)
+  const promptHasFinancing = /financi|cuota|plan de pago/i.test(systemPrompt!);
+  const questions = generateQuestions(groundTruth, promptModels, promptHasFinancing);
   console.log(`  Will ask ${questions.length} questions`);
 
   // Ask questions

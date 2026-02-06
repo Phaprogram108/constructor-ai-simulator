@@ -1,9 +1,9 @@
 {
   "company": "ViBert",
   "url": "https://vibert.com.ar",
-  "testedAt": "2026-02-06T15:23:14.691Z",
-  "sessionId": "9f50ac46-9bb5-49c1-9cc4-fce01f82122e",
-  "systemPromptLength": 21542,
+  "testedAt": "2026-02-06T15:47:40.977Z",
+  "sessionId": "f02241a5-7f94-4911-8789-c76a987ead2e",
+  "systemPromptLength": 21043,
   "systemPromptModelsFound": [
     "Casa Sara",
     "Casa Daniela",
@@ -19,143 +19,148 @@
     "Quincho M",
     "Quincho L",
     "Quincho A",
-    "Casa Modulada Base",
-    "Casa Modulada Avanzada"
+    "Casas Modulares"
   ],
   "systemPromptWhatsApp": "+5493425081468",
-  "systemPromptType": "de Modelos de casas modulares estas buscando?\"",
+  "systemPromptType": "de modelos estas buscando?\"",
   "conversations": [
     {
       "question": "¿Qué es tu empresa y qué hacen?",
       "questionType": "identity",
-      "response": "ViBert es una empresa constructora especializada en casas modulares de hormigón con paneles premoldeados, con más de 70 años de experiencia industrial detrás. Construimos viviendas, quinchos y desarrollos en hormigón premoldeado, con un sistema muy rápido, sólido y eficiente energéticamente, trabajando desde nuestra planta en San Agustín (Ruta Nacional 19, km 4, Santa Fe).  \n\nAdemás de los modelos estándar (como Casa Sara, Daniela, Justina, Micaela, Estefanía, Carmela, Selene, Valeria, María y distintos tamaños de quinchos), también hacemos proyectos a medida y ofrecemos financiación. ¿Qué tipo de casa modular estás buscando?",
+      "response": "ViBert es una empresa de Santa Fe referente en la fabricación e industrialización de casas modulares con paneles premoldeados de hormigón. Construimos viviendas y quinchos con un sistema de hormigón armado que es muy sólido, eficiente y sostenible, pensado para durar y cumplir con altos estándares de seguridad, confort y eficiencia energética.  \n\nTrabajamos con modelos predefinidos (como Casa Sara, Daniela, Justina, Dora, Micaela, Estefanía, Carmela, Selene, Valeria, María y quinchos S, M, L y A) y también proyectos a medida, con posibilidad de financiación. ¿Qué tipo de modelos estás buscando?",
+      "mentionedModels": [
+        "Casa Sara",
+        "Casas Modulares"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 6127
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos principalmente la construcción de casas modulares en paneles premoldeados de hormigón y quinchos también en hormigón, con un sistema industrializado muy rápido y duradero.  \n\nTenemos modelos de casas como Sara, Daniela, Justina, Dora, Micaela, Estefanía, Carmela, Selene, Valeria y María, además de quinchos S, M, L y A, y también desarrollamos casas a medida y grandes desarrollos. Trabajamos en la zona de Ruta Nacional 19, km 4, San Agustín (Santa Fe) y contamos con opciones de financiación. ¿Qué tipo de modelos estás buscando?",
+      "mentionedModels": [
+        "Casas Modulares"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4561
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Podés contactarnos por WhatsApp o teléfono al +54 9 342 508 1468.  \nTambién, si preferís por mail, es ventas@vibert.com.ar. ¿Querés que te ayude antes a definir qué modelo te conviene así ya escribís con una idea más clara?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2083
+    },
+    {
+      "question": "¿Cuántos modelos de casas ofrecen?",
+      "questionType": "product_count",
+      "response": "En casas ofrecemos 10 modelos estándar: Sara, Daniela, Justina, Dora, Micaela, Estefanía, Carmela, Selene, Valeria y María, todos en paneles premoldeados de hormigón.  \nAdemás, tenemos 4 modelos de quinchos (S, M, L y A) y la opción de casas modulares a medida si necesitás algo distinto.  \n\nPara orientarte mejor, ¿para cuántas personas sería la casa que estás buscando?",
+      "mentionedModels": [
+        "Casas Modulares"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2169
+    },
+    {
+      "question": "Contame sobre Casa Sara",
+      "questionType": "product_specific",
+      "response": "La Casa Sara es uno de nuestros modelos más compactos y funcionales: tiene 65,55 m² totales y está pensada para 2 personas. Incluye estar-comedor integrado, 1 dormitorio, cocina y 1 baño, todo resuelto con paneles premoldeados de hormigón armado, lo que te garantiza una estructura muy sólida, térmicamente eficiente y rápida de construir (nuestro sistema permite tener la casa terminada en unos 120 días aprox.).  \n\nSuele ser ideal como primera vivienda, casa de fin de semana o para parejas sin hijos. ¿Ya tenés terreno? ¿En qué zona sería la construcción?",
+      "mentionedModels": [
+        "Casa Sara"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2725
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Casa Sara? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "La Casa Sara tiene 65,55 m² totales y está diseñada para 2 personas. La distribución incluye: estar-comedor, 1 dormitorio, cocina y 1 baño, todo construido con paneles premoldeados de hormigón armado, lo que le da muy buena solidez estructural, durabilidad y eficiencia térmica.  \n\nEs un modelo compacto pero cómodo, ideal como vivienda principal pequeña o casa de fin de semana. ¿La estás pensando para vivir de forma permanente o como casa de descanso?",
+      "mentionedModels": [
+        "Casa Sara"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 5719
+    },
+    {
+      "question": "Contame sobre Casa Daniela",
+      "questionType": "product_specific",
+      "response": "La Casa Daniela es un modelo pensado para familias de hasta 5 personas, con 79,45 m² totales. La distribución incluye estar-comedor, 2 dormitorios, cocina y 1 baño, todo en paneles premoldeados de hormigón armado, lo que asegura una estructura muy sólida, durable y con buena eficiencia térmica y acústica.  \n\nEs una excelente opción si buscás algo funcional, familiar y con tiempos de obra rápidos (nuestro sistema permite tener la casa en aprox. 120 días). ¿Para cuántas personas estás pensando la vivienda y si ya tenés terreno en alguna zona?",
+      "mentionedModels": [
+        "Casa Daniela"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3431
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Casa Daniela? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "La Casa Daniela tiene 79,45 m² totales y está pensada para hasta 5 personas. La distribución es: estar-comedor, 2 dormitorios, cocina y 1 baño, resuelta con paneles premoldeados de hormigón armado, lo que le da mucha solidez estructural, durabilidad y buena aislación térmica.  \n\nEs un modelo familiar, funcional y de construcción rápida dentro de nuestro sistema modular. ¿La estás pensando como vivienda principal o como ampliación/segunda casa?",
+      "mentionedModels": [
+        "Casa Daniela"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2047
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con un sistema industrializado: primero hacemos el anteproyecto y el modelo 3D BIM, luego fabricamos en planta los paneles premoldeados de hormigón armado con sus armaduras de acero, los transportamos a obra y allí se montan y ensamblan para formar la estructura completa de la casa. Este proceso reduce mucho los tiempos y errores típicos de la obra húmeda tradicional.  \n\nEl plazo estimado para tener la casa terminada es de aproximadamente 120 días, dependiendo del modelo y condiciones del proyecto. ¿Para cuándo necesitarías tener la vivienda lista?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3633
+    },
+    {
+      "question": "¿Se pueden personalizar los modelos de casas?",
+      "questionType": "customization",
+      "response": "Sí, los modelos se pueden personalizar hasta cierto punto, y además en ViBert hacemos también casas a medida desde cero. Podés partir de una Casa Sara, Daniela, Justina, etc. y adaptar cosas como distribución, ampliaciones o algunos detalles, siempre respetando el sistema de paneles premoldeados de hormigón.  \n\nSi lo que necesitás es algo muy específico, lo trabajamos como “Casas a medida” con anteproyecto y modelado 3D BIM. ¿Qué cambios te gustaría hacer o qué idea tenés en mente para tu casa?",
       "mentionedModels": [
         "Casa Sara"
       ],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 2894
+      "responseTimeMs": 2599
     },
     {
-      "question": "¿Qué productos o servicios ofrecen?",
-      "questionType": "offering",
-      "response": "Ofrecemos principalmente casas modulares de hormigón premoldeado y quinchos, todos construidos con paneles premoldeados de alta resistencia y muy buena eficiencia energética.  \n\nEn modelos de casas tenés, por ejemplo: Casa Sara (65,55 m², ideal 2 personas), Daniela (79,45 m², hasta 5 personas), Justina (87,94 m², 4 personas), Dora (55,82 m², 2 personas), Micaela (76,5 m², 4 personas), Estefanía (96,2 m², 4 personas), Carmela (67,78 m², 4 personas), Selene (82,4 m², 4 personas), Valeria (97,65 m², 6 personas) y María (110,98 m², 6 personas), además de la Casa Modulada Base y la Casa Modulada Avanzada. También tenemos Quincho S (27,5 m²), Quincho M (47,48 m²), Quincho L (58 m²) y Quincho A (68 m²), más servicios de diseño, fabricación, montaje en obra y financiación. ¿Te interesa más una casa para vivienda permanente o algo tipo quincho / casa de fin de semana?",
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, contamos con financiación disponible para la construcción de las casas modulares en hormigón premoldeado. Los planes pueden variar según el proyecto y el momento, por eso los detalles finos (cuotas, anticipo, plazos) te los confirman directo por el canal comercial.  \n\nNo tengo los precios actualizados cargados. Te sugiero consultarlo por WhatsApp al +54 9 342 508 1468 así te pasan opciones de financiación concretas para el modelo que te interese. Mientras tanto, ¿qué presupuesto manejás aproximadamente para ir orientándote en qué modelo puede encajar mejor?",
       "mentionedModels": [
-        "Casa Sara",
-        "Quincho S",
-        "Quincho M",
-        "Quincho L",
-        "Quincho A",
-        "Casa Modulada Base",
-        "Casa Modulada Avanzada"
+        "Casas Modulares"
       ],
-      "saidNoInfo": false,
-      "hasSpecificData": true,
-      "responseTimeMs": 5180
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 4563
     },
     {
-      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
-      "questionType": "contact",
-      "response": "Te podés contactar directo con nosotros por estos medios:  \n- Teléfono / WhatsApp: +54 9 342 5081468 (link directo: https://api.whatsapp.com/send/?phone=5493425081468)  \n- Email: ventas@vibert.com.ar  \n\nSi querés, contame qué estás buscando y te ayudo a definir el modelo antes de que hables con un asesor.",
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Nos diferencia sobre todo el sistema constructivo: usamos paneles premoldeados de hormigón armado industrializados, con más de 70 años de experiencia del grupo (Premoldeados Bertone) detrás, lo que se traduce en estructuras muy sólidas, duraderas y con muy buenos tiempos de obra (tu casa en aprox. 120 días). Además, trabajamos con modelado 3D BIM desde el anteproyecto, lo que reduce errores, optimiza materiales y te permite “ver” tu casa antes de construirla.  \n\nSumale a eso que somos fabricantes directos, con enfoque en eficiencia energética, confort y soluciones modulares escalables (modelos estándar, casas a medida y grandes desarrollos) y que ofrecemos financiación. ¿Estás comparando contra alguna otra propuesta en particular o recién empezás a ver opciones?",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 1611
+      "responseTimeMs": 3464
     },
     {
-      "question": "¿Cuántos proyectos ofrecen?",
-      "questionType": "product_count",
-      "response": "En catálogo tenemos varios Modelos de casas modulares y quinchos estándar:  \n- **Casas**: Sara, Daniela, Justina, Dora, Micaela, Estefanía, Carmela, Selene, Valeria, María, más **Casa Modulada Base** y **Casa Modulada Avanzada** (12 modelos de vivienda).  \n- **Quinchos**: Quincho S, M, L y A (4 modelos).  \n\nEn total son **16 modelos estandarizados**, y además hacemos **casas a medida y grandes desarrollos**. Para orientarte mejor, ¿qué tipo de Modelo de casa modular estás buscando (cantidad de personas / m² aproximados)?",
-      "mentionedModels": [
-        "Quincho S",
-        "Casa Modulada Base",
-        "Casa Modulada Avanzada"
-      ],
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "Construimos y operamos principalmente desde nuestra planta en Ruta Nacional 19, km 4, San Agustín, Santa Fe. En el sitio no figura un listado detallado de todas las provincias o localidades a las que llegamos, así que si es para otra zona específica podría ser posible, pero hay que verlo caso por caso.  \n\nNo tengo esa información más detallada cargada, pero podés consultarlo por WhatsApp al +54 9 342 508 1468 y te confirman si llegamos a tu localidad. ¿En qué zona estás pensando construir así te orientó mejor?",
+      "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 1946
-    },
-    {
-      "question": "Contame sobre Casa Aura",
-      "questionType": "product_specific",
-      "response": "No tengo registrado ningún modelo llamado **Casa Aura** dentro de nuestro catálogo actual. Los modelos de casas modulares que manejamos hoy son: **Sara, Daniela, Justina, Dora, Micaela, Estefanía, Carmela, Selene, Valeria, María**, además de **Casa Modulada Base** y **Casa Modulada Avanzada**.  \n\nPodemos, eso sí, trabajar un proyecto **a medida** inspirado en lo que estés buscando para “Aura” (m², cantidad de dormitorios, estilo, etc.). ¿Qué idea tenés en mente y para cuántas personas sería?",
-      "mentionedModels": [
-        "Casa Modulada Base",
-        "Casa Modulada Avanzada",
-        "Casa Aura"
-      ],
-      "saidNoInfo": false,
-      "hasSpecificData": false,
-      "responseTimeMs": 2811
-    },
-    {
-      "question": "¿Cuáles son las especificaciones de Casa Aura?",
-      "questionType": "product_specs",
-      "response": "No tengo ninguna ficha ni especificaciones cargadas para un modelo llamado **Casa Aura** dentro de ViBert. Los únicos Modelos de casas modulares vigentes son: **Sara, Daniela, Justina, Dora, Micaela, Estefanía, Carmela, Selene, Valeria, María, Casa Modulada Base y Casa Modulada Avanzada**.  \n\nNo tengo esa información específica cargada, pero si querés algo con ese nombre o estilo podemos verlo como **casa a medida**; te sugiero escribirnos por WhatsApp al **+54 9 342 5081468** y mientras tanto contame: ¿qué m² y cuántos dormitorios estás imaginando para “Aura”?",
-      "mentionedModels": [
-        "Casa Modulada Base",
-        "Casa Modulada Avanzada",
-        "Casa Aura"
-      ],
-      "saidNoInfo": false,
-      "hasSpecificData": false,
-      "responseTimeMs": 4975
-    },
-    {
-      "question": "Contame sobre Casa Rosa",
-      "questionType": "product_specific",
-      "response": "No tenemos un modelo llamado **Casa Rosa** en el catálogo oficial de ViBert.  \nLos Modelos de casas modulares disponibles hoy son: **Casa Sara, Daniela, Justina, Dora, Micaela, Estefanía, Carmela, Selene, Valeria, María**, más **Casa Modulada Base** y **Casa Modulada Avanzada**, además de nuestros **quinchos**.  \n\nSi “Casa Rosa” es una idea que vos tenés, podemos encararla como **casa a medida** en hormigón premoldeado. ¿Para cuántas personas y cuántos m² aproximadamente la estás pensando?",
-      "mentionedModels": [
-        "Casa Sara",
-        "Casa Modulada Base",
-        "Casa Modulada Avanzada",
-        "Casa Rosa"
-      ],
-      "saidNoInfo": false,
-      "hasSpecificData": false,
-      "responseTimeMs": 3340
-    },
-    {
-      "question": "¿Cuáles son las especificaciones de Casa Rosa?",
-      "questionType": "product_specs",
-      "response": "No tengo ninguna ficha técnica ni especificaciones cargadas para un modelo llamado **Casa Rosa** dentro del catálogo de ViBert.  \nLos modelos oficiales son: **Sara, Daniela, Justina, Dora, Micaela, Estefanía, Carmela, Selene, Valeria, María, Casa Modulada Base y Casa Modulada Avanzada**, más los quinchos estándar.  \n\nNo tengo esa información específica cargada, pero podemos diseñar algo similar como **casa a medida** en hormigón premoldeado. Para orientarte bien, ¿para cuántas personas y qué superficie aproximada estás buscando?",
-      "mentionedModels": [
-        "Casa Modulada Base",
-        "Casa Modulada Avanzada",
-        "Casa Rosa"
-      ],
-      "saidNoInfo": false,
-      "hasSpecificData": false,
-      "responseTimeMs": 2150
-    },
-    {
-      "question": "Contame sobre Casa Savona",
-      "questionType": "product_specific",
-      "response": "No tengo registrado ningún modelo llamado **Casa Savona** en el catálogo actual de ViBert.  \nLos Modelos de casas modulares que sí ofrecemos son: **Casa Sara, Daniela, Justina, Dora, Micaela, Estefanía, Carmela, Selene, Valeria, María**, además de **Casa Modulada Base** y **Casa Modulada Avanzada**, más los **quinchos** en tamaños S, M, L y A.  \n\nSi “Savona” es una idea o referencia que vos tenés, podemos encararla como **casa a medida** en hormigón premoldeado. Para ayudarte bien, ¿para cuántas personas y qué cantidad de m² estás imaginando?",
-      "mentionedModels": [
-        "Casa Sara",
-        "Casa Modulada Base",
-        "Casa Modulada Avanzada",
-        "Casa Savona"
-      ],
-      "saidNoInfo": false,
-      "hasSpecificData": false,
-      "responseTimeMs": 2342
-    },
-    {
-      "question": "¿Cuáles son las especificaciones de Casa Savona?",
-      "questionType": "product_specs",
-      "response": "No tengo ninguna ficha técnica ni especificaciones cargadas para un modelo llamado **Casa Savona** dentro del catálogo oficial de ViBert.  \nLos modelos de casas que sí están definidos son: **Sara, Daniela, Justina, Dora, Micaela, Estefanía, Carmela, Selene, Valeria, María, Casa Modulada Base y Casa Modulada Avanzada**, además de los **quinchos S, M, L y A**.  \n\nNo tengo esa información específica cargada, pero podemos tomar “Savona” como un proyecto **a medida** y adaptarlo en hormigón premoldeado a lo que necesitás. ¿Para cuántas personas y qué superficie aproximada estás buscando, así te sugiero el modelo más cercano o una propuesta personalizada?",
-      "mentionedModels": [
-        "Casa Modulada Base",
-        "Casa Modulada Avanzada",
-        "Casa Savona"
-      ],
-      "saidNoInfo": false,
-      "hasSpecificData": false,
-      "responseTimeMs": 2387
+      "responseTimeMs": 2463
     }
   ],
-  "sessionCreationTimeMs": 16082,
+  "sessionCreationTimeMs": 18138,
   "errors": []
 }

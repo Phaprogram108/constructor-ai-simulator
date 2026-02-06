@@ -1,146 +1,200 @@
 {
   "company": "Lista",
   "url": "https://lista.com.ar/",
-  "testedAt": "2026-02-06T15:23:00.025Z",
-  "sessionId": "06c13f5a-d468-469c-b794-2317b9e817c2",
-  "systemPromptLength": 21170,
+  "testedAt": "2026-02-06T15:47:40.417Z",
+  "sessionId": "2bbc3546-6f38-4969-9c77-81a817220740",
+  "systemPromptLength": 21227,
   "systemPromptModelsFound": [
     "Casa Aguaribay",
     "Casa Ginko",
     "Casa Acer",
-    "Macá",
-    "Hornero",
-    "Albatros",
-    "Cóndor",
-    "Biguá",
-    "Mirasol",
-    "Peutrén"
+    "MACÁ",
+    "HORNERO",
+    "ALBATROS",
+    "CÓNDOR",
+    "BIGUÁ",
+    "MIRASOL",
+    "PEUTRÉN"
   ],
   "systemPromptWhatsApp": "5493417504540",
-  "systemPromptType": "de modelos modulares estas buscando?\"",
+  "systemPromptType": "de Modelos modulares personalizables estas buscando?\"",
   "conversations": [
     {
       "question": "¿Qué es tu empresa y qué hacen?",
       "questionType": "identity",
-      "response": "lista es una empresa de construcción modular volumétrica en hormigón premoldeado: hacemos casas modulares sustentables, eficientes, personalizables y móviles. Diseñamos y fabricamos modelos como Macá, Hornero, Albatros, Cóndor, Biguá, Mirasol y Peutrén, además de proyectos a medida como Casa Aguaribay, Ginko y Acer.  \n\nPodés elegir el modelo, personalizarlo y nosotros lo fabricamos en taller y lo instalamos en tu terreno en tiempos mucho más rápidos que una obra tradicional, con opción de financiación (incluso con convenio con Banco Hipotecario). Para orientarte mejor, ¿qué tipo de modelos modulares estás buscando: vivienda permanente, casa de fin de semana, inversión o espacio de trabajo?",
+      "response": "Lista es una empresa de construcción modular volumétrica en hormigón premoldeado: hacemos casas, quinchos y proyectos a medida, listos para usar en mucho menos tiempo que una obra tradicional. Diseñamos y fabricamos modelos modulares personalizables como Macá, Hornero, Albatros, Cóndor, Biguá, Mirasol, Peutrén y también casas especiales como Aguaribay, Ginko y Acer.  \n\nTrabajamos con enfoque sustentable y alta eficiencia energética, y además podés financiar hasta el 100% de tu vivienda con crédito personal del Banco Hipotecario en hasta 6 años. ¿Qué tipo de Modelos modulares personalizables estás buscando?",
       "mentionedModels": [
-        "Casa Aguaribay",
-        "Macá",
-        "Hornero",
-        "Albatros",
-        "Cóndor",
-        "Biguá",
-        "Mirasol",
-        "Peutrén",
-        "MIRASOL",
+        "MACÁ",
         "HORNERO",
-        "ALBATROS"
+        "ALBATROS",
+        "CÓNDOR",
+        "BIGUÁ",
+        "MIRASOL",
+        "PEUTRÉN"
       ],
       "saidNoInfo": false,
-      "hasSpecificData": false,
-      "responseTimeMs": 3385
+      "hasSpecificData": true,
+      "responseTimeMs": 3556
     },
     {
       "question": "¿Qué productos o servicios ofrecen?",
       "questionType": "offering",
-      "response": "Ofrecemos principalmente **casas modulares en hormigón premoldeado**, sustentables y personalizables, listas para instalar en tu terreno. Tenemos familias de modelos modulares como **Macá, Hornero, Albatros, Cóndor, Biguá, Mirasol y Peutrén**, además de proyectos a medida como **Casa Aguaribay, Ginko y Acer**.  \n\nTambién brindamos **proyectos de vivienda a medida** y **financiación**, incluso con convenio con **Banco Hipotecario** para créditos personales de hasta el 100% de la vivienda a pagar en 6 años. Para ayudarte mejor, ¿lo pensás para vivir, para fin de semana, para alquilar o como espacio de trabajo?",
+      "response": "Ofrecemos casas modulares en hormigón premoldeado, quinchos y proyectos personalizados, todos bajo sistema de construcción modular volumétrica, rápida y sustentable. Dentro de nuestros Modelos modulares personalizables tenés Macá, Hornero (quincho), Albatros, Cóndor, Biguá, Mirasol y Peutrén, además de casas a medida como Aguaribay, Ginko y Acer.  \n\nTambién brindamos asesoría integral de diseño, fabricación en taller, transporte e instalación, y financiación con Banco Hipotecario para que puedas pagar tu casa en cuotas. ¿En qué tipo de solución estás pensando: vivienda permanente, casa de fin de semana, quincho o algo para trabajar?",
       "mentionedModels": [
-        "Casa Aguaribay",
-        "Macá",
-        "Hornero",
-        "Albatros",
-        "Cóndor",
-        "Biguá",
-        "Mirasol",
-        "Peutrén",
-        "MIRASOL",
+        "MACÁ",
         "HORNERO",
-        "ALBATROS"
+        "ALBATROS",
+        "CÓNDOR",
+        "BIGUÁ",
+        "MIRASOL",
+        "PEUTRÉN"
       ],
       "saidNoInfo": false,
-      "hasSpecificData": true,
-      "responseTimeMs": 2681
+      "hasSpecificData": false,
+      "responseTimeMs": 3765
     },
     {
       "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
       "questionType": "contact",
-      "response": "Te dejo los datos de contacto directo:  \n- Teléfono / WhatsApp: **+54 9 341 750 4540**  \n- Email: **hola@lista.com.ar**  \n\nSi querés, también puedo ayudarte a definir primero el modelo modular que mejor te encaja y después coordinás por WhatsApp con esa info más clara.",
+      "response": "Te dejo los datos así los tenés a mano:  \n📞 Teléfono / WhatsApp: **+54 9 341 750 4540**  \n📧 Email: **hola@lista.com.ar**  \n\nSi querés, también puedo ayudarte acá a elegir el modelo que mejor se adapte a lo que necesitás antes de que escribas.",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 4443
+      "responseTimeMs": 2268
     },
     {
-      "question": "¿Cuántos proyectos ofrecen?",
+      "question": "¿Cuántos modelos de casas ofrecen?",
       "questionType": "product_count",
-      "response": "En proyectos de vivienda a medida tenemos **tres modelos principales**: **Casa Aguaribay, Casa Ginko y Casa Acer**, todos en construcción modular/offsite en hormigón premoldeado.  \n\nAdemás de esos proyectos, en modelos modulares personalizables para vivienda, trabajo o inversión contamos con varias familias: **Macá, Hornero, Albatros, Cóndor, Biguá, Mirasol y Peutrén** (cada una con sus variantes de tamaño). Para orientarte mejor, ¿qué tipo de modelos modulares estás buscando?",
+      "response": "En modelos modulares personalizables hoy tenés **7 familias principales**: **Macá, Hornero, Albatros, Cóndor, Biguá, Mirasol y Peutrén**, cada una con varias versiones (S, M, L, XL, etc.).  \n\nAdemás, en proyectos a medida contamos con **3 casas diseñadas especialmente**: **Casa Aguaribay, Casa Ginko y Casa Acer**. En total, son muchas combinaciones posibles, según cantidad de módulos, dormitorios y uso. ¿Buscás algo compacto, familiar o tipo cabaña de vacaciones?",
       "mentionedModels": [
         "Casa Aguaribay",
         "Casa Ginko",
         "Casa Acer",
-        "Macá",
-        "Hornero",
-        "Albatros",
-        "Cóndor",
-        "Biguá",
-        "Mirasol",
-        "Peutrén",
-        "MIRASOL",
+        "MACÁ",
         "HORNERO",
         "ALBATROS",
-        "CASA GINKO",
-        "CASA ACER"
+        "CÓNDOR",
+        "BIGUÁ",
+        "MIRASOL",
+        "PEUTRÉN"
       ],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 2107
+      "responseTimeMs": 2404
     },
     {
-      "question": "Contame sobre MACÁ A",
+      "question": "Contame sobre Casa Aguaribay",
       "questionType": "product_specific",
-      "response": "Buenísimo que te interese Macá 😊. Dentro de la familia Macá, los modelos que tenemos cargados son: **Macá S, Macá S+, Macá M, Macá L, Macá XL y Macá XXL** (no aparece un “Macá A” específicamente en el catálogo).  \n\nMacá es nuestro modelo con **cubierta plana**, súper versátil, pensado para armar desde **unidades mínimas hasta viviendas completas**, en módulos de hormigón premoldeado, eficientes y personalizables. No tengo acá el detalle exacto de superficies y distribución de cada submodelo, pero sí puedo ayudarte a elegir el tamaño según cuántos ambientes necesites. ¿La idea es usarlo como vivienda permanente, casa de finde o algo más tipo oficina/estudio?",
+      "response": "Casa Aguaribay es un proyecto a medida pensado como refugio para desconectar en la naturaleza, con arquitectura offsite: se fabrica en taller en módulos de hormigón premoldeado y luego se monta en el terreno en muy poco tiempo. Está diseñada con grandes visuales hacia el entorno, alta eficiencia energética y terminaciones de calidad, ideal como casa de descanso o vivienda en un entorno natural.  \n\nNo tengo los metros exactos ni el precio actualizados por acá, pero se puede adaptar a tu terreno y necesidades. ¿Ya tenés terreno? ¿En qué zona sería así te orientó si Aguaribay es la mejor opción para vos o conviene otro modelo como Cóndor o Albatros?",
       "mentionedModels": [
-        "Macá",
-        "MACÁ A",
-        "MACÁ L",
-        "MACÁ XL",
-        "MACÁ XXL"
+        "Casa Aguaribay",
+        "ALBATROS",
+        "CÓNDOR"
       ],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 3583
+      "responseTimeMs": 3335
     },
     {
-      "question": "Contame sobre MACÁ B",
-      "questionType": "product_specific",
-      "response": "En el catálogo de lista no figura un modelo llamado “Macá B”, sino la familia **Macá** con estas variantes: **Macá S, Macá S+, Macá M, Macá L, Macá XL y Macá XXL**. Todos comparten el mismo concepto: módulos de **hormigón premoldeado**, con **cubierta plana**, configurables desde unidades chicas hasta viviendas completas, con muy buena aislación y posibilidad de personalizar aberturas, distribución y terminaciones.  \n\nPara acercarte al “tamaño B” que tenés en mente, contame: ¿para cuántas personas sería y cuántos dormitorios estás pensando? Así te indico cuál Macá (S, M, L, XL…) se ajusta mejor.",
+      "question": "¿Cuáles son los detalles técnicos de Casa Aguaribay? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "Casa Aguaribay es un proyecto a medida y en la info que tengo sólo figura como **“arquitectura offsite para desconectar en la naturaleza”**, pero no aparecen cargados datos concretos de **superficie, cantidad de dormitorios ni plano detallado**. Está resuelta en **módulos de hormigón premoldeado**, con enfoque en **buenas visuales al paisaje y alta eficiencia energética**, similar al resto de nuestras casas modulares.  \n\nNo tengo esa información técnica específica (m² y distribución) cargada acá, pero te la pueden pasar con planos e imágenes por WhatsApp. Te sugiero escribir al **+54 9 341 750 4540** y, si querés, decime antes: ¿para cuántas personas estás pensando la casa y si sería uso permanente o de fin de semana?",
       "mentionedModels": [
-        "Macá",
-        "MACÁ B",
-        "MACÁ L",
-        "MACÁ XL",
-        "MACÁ XXL"
+        "Casa Aguaribay"
       ],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 2862
+      "responseTimeMs": 3466
     },
     {
-      "question": "Contame sobre MACÁ 2A",
+      "question": "Contame sobre Casa Ginko",
       "questionType": "product_specific",
-      "response": "En la familia Macá no tenemos un modelo listado como “Macá 2A”; los modelos oficiales que figuran en el catálogo son: **Macá S, Macá S+, Macá M, Macá L, Macá XL y Macá XXL**. Toda la línea Macá se caracteriza por ser modular en **hormigón premoldeado**, con **cubierta plana**, pensada para armar desde unidades compactas hasta viviendas completas, con buena eficiencia energética y posibilidad de personalizar distribución y terminaciones.  \n\nEs posible que “2A” haga referencia interna a una configuración de 2 ambientes o 2 módulos, pero no la tengo identificada así en el sistema. Para guiarte bien dentro de la familia Macá, ¿para cuántas personas sería y cuántos dormitorios necesitás?",
+      "response": "Casa Ginko es una casa a medida diseñada para **disfrutar de la tranquilidad del paisaje**, con arquitectura offsite en módulos de hormigón premoldeado, pensada para integrarse muy bien con el entorno. Sigue la lógica de nuestras casas modulares: fabricación en taller, montaje rápido en el terreno, alta eficiencia energética y muy buenas visuales al exterior.  \n\nNo tengo cargados acá los m² exactos ni la cantidad de dormitorios, pero se adapta al uso que necesites (descanso o vivienda permanente). Para ver planos y detalles te pueden enviar todo por WhatsApp al **+54 9 341 750 4540**. Y así te oriento mejor: ¿ya tenés terreno? ¿En qué zona sería?",
       "mentionedModels": [
-        "Macá",
-        "MACÁ 2A",
-        "MACÁ L",
-        "MACÁ XL",
-        "MACÁ XXL"
+        "Casa Ginko"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 5627
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Casa Ginko? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "De Casa Ginko tengo cargado que es una **casa a medida** pensada para **disfrutar de la tranquilidad del paisaje**, resuelta con **arquitectura offsite en módulos de hormigón premoldeado**, con muy buenas visuales y enfoque en confort y eficiencia energética. Pero en la info disponible no figuran datos técnicos concretos como **superficie (m²), cantidad de dormitorios ni plano detallado**.  \n\nNo tengo esa información técnica específica cargada acá; para planos, m² y tipologías te los pueden enviar por WhatsApp al **+54 9 341 750 4540**. Para orientarte mejor mientras tanto: ¿para cuántas personas pensás la casa y si sería uso permanente o de fin de semana?",
+      "mentionedModels": [
+        "Casa Ginko"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3584
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con **construcción modular volumétrica en hormigón premoldeado**: fabricamos los módulos en taller (con todos los controles de calidad, instalaciones y terminaciones), los trasladamos al terreno y hacemos el montaje final y las conexiones en muy poco tiempo, sin el estrés de una obra tradicional. Esto permite que puedas mudarte **hasta 3 veces más rápido que con obra húmeda** y aproximadamente **a la mitad del tiempo de un steel framing in-situ**; el plazo exacto depende del modelo y de la situación del terreno.  \n\nNo tengo acá el cronograma por modelo (Macá, Biguá, Mirasol, etc.), pero en general el proceso se divide en: diseño/definición, fabricación en planta y luego montaje e instalación en sitio. Para afinar tiempos, contame: ¿qué modelo te interesa y para cuándo te gustaría tener la casa lista?",
+      "mentionedModels": [
+        "MACÁ",
+        "BIGUÁ",
+        "MIRASOL"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4244
+    },
+    {
+      "question": "¿Se pueden personalizar los modelos de casas?",
+      "questionType": "customization",
+      "response": "Sí, todos nuestros Modelos modulares personalizables se pueden adaptar: podés elegir **tamaño (S, M, L, XL, etc.)**, cantidad de módulos, distribución y uso (vivir, trabajar, fin de semana, quincho). Modelos como **Macá, Biguá, Mirasol, Peutrén, Cóndor, Hornero y Albatros** permiten jugar con superficies, cantidad de dormitorios, galerías y configuraciones según tu terreno y estilo de vida.  \n\nIncluso, si necesitás algo muy particular, también trabajamos **proyectos a medida** como Casa Aguaribay, Ginko y Acer. Para ayudarte mejor, ¿qué tipo de Modelos modulares personalizables estás buscando: vivienda permanente, casa de descanso, quincho o espacio de trabajo?",
+      "mentionedModels": [
+        "Casa Aguaribay",
+        "MACÁ",
+        "HORNERO",
+        "ALBATROS",
+        "CÓNDOR",
+        "BIGUÁ",
+        "MIRASOL",
+        "PEUTRÉN"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3142
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, contamos con financiamiento gracias a un convenio con el **Banco Hipotecario**. Podés acceder a un **crédito personal** para comprar tu vivienda modular Lista, financiando **hasta el 100% de la casa** y pagándolo en **hasta 6 años** en cuotas.  \n\nAdemás podés combinar esto con pagos propios (ahorros, venta de otra propiedad, etc.). Para ver si calificás, ¿querés que te expliquen por WhatsApp o preferís que te pase el link de precalificación del Banco Hipotecario?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2586
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Nos diferencia sobre todo el **sistema constructivo**: hacemos construcción modular volumétrica en **hormigón premoldeado**, con fabricación en taller (sin paradas por lluvia), lo que te permite tener la casa **hasta 3 veces más rápido que una obra húmeda** y con controles de calidad muy estrictos.  \n\nAdemás, nuestras casas son **sustentables y de alta eficiencia energética** (ahorro de hasta un 70% en energía), tenés **modelos modulares personalizables** (Macá, Biguá, Mirasol, Peutrén, Cóndor, Hornero, Albatros, más Aguaribay, Ginko y Acer a medida) y contamos con **financiación con Banco Hipotecario** para pagar tu vivienda en cuotas. ¿Qué es lo que más te importa a vos: rapidez, financiación, diseño o eficiencia energética?",
+      "mentionedModels": [
+        "MACÁ",
+        "HORNERO",
+        "ALBATROS",
+        "CÓNDOR",
+        "BIGUÁ",
+        "MIRASOL",
+        "PEUTRÉN"
       ],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 2891
+      "responseTimeMs": 2949
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "En la info que tengo no figura detallado un listado de zonas o provincias específicas donde trabajamos.  \n\nPodría ser posible en varias regiones, pero para confirmarte alcance exacto de instalación y costos según tu ubicación, lo mejor es consultarlo por WhatsApp al **+54 9 341 750 4540**. ¿De qué localidad o provincia sos así te digo qué modelo podría adaptarse mejor a tu caso?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4675
     }
   ],
-  "sessionCreationTimeMs": 14596,
+  "sessionCreationTimeMs": 17036,
   "errors": []
 }

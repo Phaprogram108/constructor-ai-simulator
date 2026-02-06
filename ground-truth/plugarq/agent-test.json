@@ -1,12 +1,12 @@
 {
   "company": "PlugArq",
   "url": "https://www.plugarq.com/",
-  "testedAt": "2026-02-06T15:23:08.542Z",
-  "sessionId": "d07dcc11-bf69-438d-a1ac-60f36dd9be25",
-  "systemPromptLength": 24370,
+  "testedAt": "2026-02-06T15:48:15.042Z",
+  "sessionId": "ac61e0d0-00ab-40f2-9e9a-4b263fc92b90",
+  "systemPromptLength": 24390,
   "systemPromptModelsFound": [
-    "Construcción con tecnología STEEL FRAME",
-    "Metodología OFFSITE",
+    "Construcción con Steel Frame",
+    "Metodología Offsite",
     "Proyecto Maru y Bruno",
     "Proyecto Ale y Sil",
     "Proyecto Gabi y Angel",
@@ -17,7 +17,9 @@
     "Proyecto Vero y Manu",
     "Proyecto Nati y Dani",
     "Proyecto Tomi",
-    "Casas Industrializadas Transportables"
+    "Construcción Modular",
+    "Proyectos Entregados",
+    "Proyectos en Proceso"
   ],
   "systemPromptWhatsApp": "+5491170627642",
   "systemPromptType": "de Proyectos estas buscando?\"",
@@ -25,36 +27,131 @@
     {
       "question": "¿Qué es tu empresa y qué hacen?",
       "questionType": "identity",
-      "response": "Plug Arquitectura es una empresa de construcción modular que se encarga de todo el proceso: desde el diseño inicial hasta la entrega final llave en mano. Construimos con sistema steel frame y metodología offsite, es decir, armamos los módulos en nuestra planta industrial en el Parque Industrial Junín (Bs.As.) y luego los transportamos e instalamos en tu terreno en pocos días.  \n\nTrabajamos proyectos a medida y también con modelos de referencia como Maru y Bruno (40 m²), Ale y Sil (68 m²), Gabi y Ángel (78 m²), hasta casas grandes como Tomi (267 m²), siempre con alta aislación térmica, terminaciones a elección y control estricto de plazos y costos. Para orientarte mejor, ¿qué tipo de proyecto estás buscando?",
+      "response": "Somos Plug Arquitectura, una empresa de construcción modular que te acompaña desde la idea inicial hasta la entrega llave en mano. Construimos principalmente con tecnología Steel Frame y metodología Offsite en nuestra planta de Junín (Bautista Císaro 1920, Parque Industrial), lo que nos permite entregarte tu casa o proyecto en unos 90 días, con menos estrés, plazos claros y excelente aislación térmica.  \n\nPara orientarte mejor, ¿qué tipo de Proyectos estás buscando: vivienda familiar, ampliación, algo más chico tipo módulo/estudio?",
       "mentionedModels": [
-        "Metodología OFFSITE"
+        "Metodología Offsite",
+        "Construcción Modular"
       ],
       "saidNoInfo": false,
-      "hasSpecificData": true,
-      "responseTimeMs": 2974
+      "hasSpecificData": false,
+      "responseTimeMs": 3621
     },
     {
       "question": "¿Qué productos o servicios ofrecen?",
       "questionType": "offering",
-      "response": "Ofrecemos construcción modular en steel frame con metodología offsite y servicio llave en mano: diseño arquitectónico, fabricación en planta, transporte, montaje en tu terreno e instalaciones completas (eléctrica, sanitaria, artefactos, muebles de cocina y baño, etc.).  \n\nTrabajamos tanto casas industrializadas transportables como proyectos a medida basados en modelos de referencia: desde Maru y Bruno (40 m²) y Ale y Sil (68 m²), hasta proyectos más grandes como Mori y Flia (120 m²), Nati y Dani (178 m²) o Tomi (267 m²), todos con alta aislación térmica, DVH, terminaciones y equipamiento de calidad.  \nPara guiarte mejor: ¿qué tipo de proyectos estás buscando? ¿vivienda chica, familiar grande, algo tipo cabaña, estudio, etc.?",
+      "response": "Ofrecemos construcción modular llave en mano, desde el diseño hasta la entrega final, trabajando con Steel Frame y metodología Offsite en nuestra planta de Junín (Bautista Císaro 1920, Parque Industrial). Desarrollamos viviendas y otros espacios modulares con alta aislación térmica, terminaciones a elección y módulos transportables que se instalan en pocos días en el terreno.  \n\nEn cuanto a Proyectos de referencia, tenemos opciones como Maru y Bruno (40 m²), Ale y Sil (68 m²), Gabi y Angel (78 m²), Ana y Susan (102 m²), Mori y Flia (120 m²), Agus (126 m²), Romi y Agus (136 m²), Vero y Manu (136 m²), Nati y Dani (178 m²) y Tomi (267 m²).  \nPara ayudarte mejor, ¿qué tipo de Proyectos estás buscando: algo chico tipo 40–70 m², o algo más grande arriba de 100 m²?",
       "mentionedModels": [
-        "Metodología OFFSITE",
-        "Casas Industrializadas Transportables"
+        "Metodología Offsite",
+        "Construcción Modular"
       ],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 3974
+      "responseTimeMs": 3807
     },
     {
       "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
       "questionType": "contact",
-      "response": "Te dejo los datos de contacto directo:  \n- Teléfono / WhatsApp: +54 9 11 7062-7642 (o 5491170627642)  \n- Email: info@plugarq.com  \n\nSi querés, contame qué tipo de proyecto tenés en mente y te orientó un poco antes de que escribas al WhatsApp.",
+      "response": "Te podés contactar directo por WhatsApp al +54 9 11 7062-7642 (también figura como 5491170627642).  \nTambién tenemos este teléfono y mail de contacto: Tel: +54 9 11 7062-7642 | Email: info@plugarq.com.",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 1893
+      "responseTimeMs": 2679
+    },
+    {
+      "question": "¿Cuántos proyectos ofrecen?",
+      "questionType": "product_count",
+      "response": "Tenemos 10 Proyectos de referencia bien definidos: Maru y Bruno, Ale y Sil, Gabi y Angel, Ana y Susan, Mori y Flia, Agus, Romi y Agus, Vero y Manu, Nati y Dani y Tomi, que van desde 40 m² hasta 267 m².  \nAdemás, trabajamos Proyectos a medida, así que podemos adaptar o diseñar uno nuevo según tus necesidades. ¿Qué tipo de Proyectos estás buscando?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2414
+    },
+    {
+      "question": "Contame sobre Construcción con Steel Frame",
+      "questionType": "product_specific",
+      "response": "La construcción con Steel Frame es nuestro sistema principal: usamos una estructura de tubos de acero de secciones variables, calculada para soportar la vivienda instalada y también el izado con grúa y transporte en camión sin deformaciones, lo que la hace más resistente que la obra tradicional. Para la aislación térmica combinamos lana de vidrio o celulosa en muros, paneles sándwich con poliuretano en cubierta y aberturas de PVC o aluminio con vidrios DVH, logrando un confort térmico muy superior.  \n\nTrabajamos con metodología Offsite: construimos los módulos en planta industrial y luego los llevamos terminados al terreno, lo que te da velocidad de ejecución, plazos y costos precisos, menos desperdicio y un proceso mucho más ordenado. ¿Estás pensando en usar Steel Frame para una vivienda nueva, una ampliación o un espacio específico (estudio, quincho, etc.)?",
+      "mentionedModels": [
+        "Construcción con Steel Frame",
+        "Metodología Offsite"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3768
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Construcción con Steel Frame? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "En Steel Frame trabajamos por Proyectos, no con una sola tipología fija, así que los detalles técnicos (superficie, cantidad de dormitorios y distribución) dependen del modelo o diseño a medida. Por ejemplo:  \n- Maru y Bruno: 40 m², 1 dormitorio, estar-comedor, cocina y baño.  \n- Ale y Sil: 68 m², 1 dormitorio + estudio/dormitorio 2, baño con doble bacha.  \n- Gabi y Angel: 78 m², 2 dormitorios, baño, estar-comedor-cocina y galería con parrilla.  \n- Ana y Susan: 102 m², 2 dormitorios (uno puede ser estudio), baño compartimentado, lavadero y galería.  \n- Mori y Flia: 120 m², 3 dormitorios (uno en suite), estar-comedor-cocina y galería con parrilla.  \n- Agus: 126 m², 3 dormitorios (uno en suite), 2 baños, lavadero y galería.  \n- Romi y Agus: 136 m², 3 dormitorios (suite + 2), 2 baños, lavadero/despensa.  \n- Vero y Manu: 136 m², 2 dormitorios (suite + 1), 2 baños, lavadero y galería con parrilla.  \n- Nati y Dani: 178 m², 3 dormitorios, baño compartimentado, lavadero y galería con parrilla.  \n- Tomi: 267 m², 3 dormitorios (master suite + 2), escritorio, hall doble altura y garage cubierto.  \n\nTécnicamente, todos comparten: estructura de tubos de acero galvanizado, muros con celulosa o lana de vidrio, cubierta con panel sándwich de poliuretano, aberturas de aluminio Aluar con DVH, piso steel deck con hormigón armado, instalaciones completas (electricidad, plomería, preinstalación de aire, calefacción, WiFi) y terminaciones de primera (fachada Cementia o similar, porcelanatos en zonas húmedas, hormigón pulido interior).  \nPara afinarte mejor, ¿en qué rango de superficie estás pensando y cuántos dormitorios necesitás?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 6112
+    },
+    {
+      "question": "Contame sobre Metodología Offsite",
+      "questionType": "product_specific",
+      "response": "La Metodología Offsite es la forma en que construimos: hacemos los módulos completos dentro de nuestra planta industrial en Junín y recién después los llevamos terminados al terreno para montarlos. Esto nos permite que, por ejemplo, una vivienda de 200 m² se construya en unos 3 meses en planta y se instale en aproximadamente una semana en el lote, con muy poca intervención en el lugar.  \n\nLas ventajas clave son: plazos y costos súper precisos (sin sorpresas en obra), mucha menos generación de desperdicio y menor huella de carbono, y un control de calidad muy alto porque todo se arma en un entorno industrial controlado. ¿Ya tenés terreno definido? Así veo cómo se adaptaría la metodología Offsite a tu caso puntual.",
+      "mentionedModels": [
+        "Metodología Offsite"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3919
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Metodología Offsite? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "La Metodología Offsite no define la superficie ni los dormitorios en sí, sino **cómo** construimos cualquiera de nuestros Proyectos (Maru y Bruno, Ale y Sil, Gabi y Angel, Ana y Susan, Mori y Flia, Agus, Romi y Agus, Vero y Manu, Nati y Dani y Tomi, o uno 100% a medida). Podés ir desde algo chico tipo 40 m² con 1 dormitorio (Maru y Bruno) hasta casas grandes como Tomi de 267 m² con master suite, 2 dormitorios más, escritorio y garage, siempre construidos en planta y luego trasladados e instalados en tu terreno.  \n\nTécnicamente, Offsite implica: módulos estructurados en Steel Frame/estructura de acero, armados completos en fábrica (cerramientos, instalaciones, artefactos y terminaciones), tiempos de obra en planta de aprox. 3 meses y una semana de instalación en el terreno, con mínima intervención en el lote, menos desperdicio y mejor control de calidad. Para orientarte con un ejemplo concreto, ¿en qué superficie y cuántos dormitorios estás pensando?",
+      "mentionedModels": [
+        "Metodología Offsite"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 6407
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos en tres etapas claras: 1) Reunión inicial, donde nos contás tu idea y vemos posibilidades; 2) Desarrollo de Proyecto, donde ajustamos diseño, distribución y presupuesto hasta llegar a tu versión ideal; 3) Construcción en planta, con metodología Offsite.  \n\nEl proceso de obra se hace casi todo en nuestra planta de Junín: en unos 3 meses construimos los módulos (por ejemplo, una vivienda de 200 m²) y luego los instalamos en el terreno en aproximadamente una semana, por lo que podés tener tu casa lista en alrededor de 90 días.  \nPara ver si encajamos bien con tus tiempos, ¿para cuándo te gustaría tener listo el Proyecto?",
+      "mentionedModels": [
+        "Metodología Offsite"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4796
+    },
+    {
+      "question": "¿Se pueden personalizar los proyectos?",
+      "questionType": "customization",
+      "response": "Sí, totalmente, todos los Proyectos se pueden personalizar. Partimos de referencias como Maru y Bruno, Ale y Sil, Gabi y Angel, Ana y Susan, Mori y Flia, Agus, Romi y Agus, Vero y Manu, Nati y Dani y Tomi, pero adaptamos distribución, superficies, cantidad de dormitorios y terminaciones según tus gustos y presupuesto.  \n\nDesarrollamos cada proyecto a medida en la etapa de diseño antes de pasar a fábrica, así llegamos a “tu” versión ideal manteniendo los tiempos rápidos de la metodología Offsite. ¿Qué ideas tenés en mente (m² aproximados y cuántos dormitorios te gustaría)?",
+      "mentionedModels": [
+        "Metodología Offsite"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2740
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Nos diferencia principalmente la combinación de metodología Offsite + Steel Frame: construimos los módulos completos en planta industrial en Junín y los llevamos ya terminados al terreno, lo que nos permite darte plazos muy claros (tu casa en aprox. 90 días) y un proceso mucho menos estresante que la obra tradicional.  \n\nAdemás, la estructura de acero está diseñada para soportar transporte e izaje sin deformarse (es más robusta que muchos sistemas tradicionales), usamos aislación de alta performance (celulosa o lana de vidrio + panel sándwich + DVH) y trabajamos cada Proyecto a medida, no como “modelo rígido”, manteniendo siempre control de calidad y reducción de desperdicios.",
+      "mentionedModels": [
+        "Metodología Offsite"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2700
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "Construimos en nuestra planta de Junín, en el Parque Industrial (Bautista Císaro 1920) y desde ahí trasladamos los módulos ya terminados al terreno con camiones y grúa.  \n\nNo tengo cargado un listado exacto de zonas de cobertura, así que si es una localidad específica podría ser posible, pero te sugiero confirmarlo por WhatsApp al +54 9 11 7062-7642.  \n¿En qué zona tenés o pensás tener el terreno?",
+      "mentionedModels": [],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 3901
     }
   ],
-  "sessionCreationTimeMs": 40960,
+  "sessionCreationTimeMs": 49358,
   "errors": []
 }

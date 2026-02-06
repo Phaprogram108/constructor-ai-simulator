@@ -1,77 +1,159 @@
 # Estado del Proyecto - Constructor AI Simulator
 
-**Última actualización:** 2026-02-05 11:30 ART
-**Commit actual:** ac938c0
+**Ultima actualizacion:** 2026-02-06 12:30 ART
 
 ## Progreso de Fases
 
 | Fase | Estado | Notas |
 |------|--------|-------|
-| FASE 1: QA Baseline | ✅ Completada | Scripts creados, baseline ejecutado |
-| FASE 2: Mejoras Scraping | ✅ Completada | WhatsApp validator, linktree explorer |
-| FASE 3: Anti-Alucinación | ✅ Completada | Content search, response validator |
-| FASE 4: Tipo Constructora | ✅ Completada | classifyConstructora() mejorado |
-| FASE 5: Logging Mejorado | ✅ Completada | conversation-logger reescrito |
-| FASE 6: QA Final | ✅ Completada | compare-results.ts creado |
-| **Hotfix: Inmobiliarias** | ✅ Completada | Clasificación inmobiliaria + fix fallback |
-| **Hotfix: Wix Support** | ✅ Completada | scrapeWixSite() con URLs directas |
+| FASE 1: QA Baseline | Completada | Scripts creados, baseline ejecutado |
+| FASE 2: Mejoras Scraping | Completada | WhatsApp validator, linktree explorer |
+| FASE 3: Anti-Alucinacion | Completada | Content search, response validator |
+| FASE 4: Tipo Constructora | Completada | classifyConstructora() mejorado |
+| FASE 5: Logging Mejorado | Completada | conversation-logger reescrito |
+| FASE 6: QA Final | Completada | compare-results.ts creado |
+| Hotfix: Inmobiliarias | Completada | Clasificacion inmobiliaria + fix fallback |
+| Hotfix: Wix Support | Completada | scrapeWixSite() con URLs directas |
+| Pipeline Diagnostico | **EJECUTADO x3** | Run 1: 61%, Run 2: 26%, Run 3: 46% |
+| **Firecrawl v3** | **EN PROGRESO** | crawlUrl + extract() + mapUrl fallback. Parcial: 46% en run 3, falta run completo con fixes finales |
+| **V4: Fase 5** | **COMPLETADA** | Agent test dinamico con preguntas adaptativas basadas en ground truth |
 
-## Estado Actual de Tests (5 Empresas)
+## Resultados del Pipeline Diagnostico
 
-| Empresa | Tipo | Modelos | Estado |
-|---------|------|---------|--------|
-| Atlas Housing | MODULAR | 6 | **PASS** |
-| ViBert | MODULAR | 14 (con m²) | **PASS** ✅ ARREGLADO |
-| Ecomod | MIXTA | 3 | **PASS** ✅ MEJORADO |
-| Movilhauss | MODULAR | 6 | **PASS** |
-| MakenHaus | **INMOBILIARIA** | N/A | **PASS** |
+### Run 3 - Firecrawl v3 (parcial, sin ultimos fixes)
 
-## Fixes Implementados Esta Sesión
+| Metrica | Run 2 (v2) | Run 3 (v3) | Cambio |
+|---------|------------|------------|--------|
+| Companies analizadas | 15 | 18 | +3 nuevas |
+| Score promedio | 26% | 46% | **+77% relativo** |
+| SCRAPING_MISS | 100 | 106 | +6 (pero 3 empresas mas) |
+| PROMPT_MISS | 0 | 3 | +3 nuevos |
+| HALLUCINATION | 16 | 2 | **-87.5%** |
 
-### Fix 1: Clasificación Inmobiliaria (commit 410833e)
-- Nuevo tipo `inmobiliaria` en types/index.ts
-- 16 keywords en firecrawl.ts: desarrollos inmobiliarios, lotes en ejecución, unidades, emprendimientos, etc.
-- Secciones específicas en prompt-generator.ts para inmobiliarias
-- Flujo de calificación diferenciado
+### Tabla por Empresa (Run 3)
 
-### Fix 2: Preservar Clasificación en Fallback (commit d2e04b5)
-- **Bug**: Cuando Firecrawl extraía 0 modelos, `result = null` descartaba el `constructoraType`
-- **Fix**: En scraper.ts, guardar `constructoraType` ANTES de descartar resultado y restaurarlo después
+| Company | v2 Score | v3 Score | v2 Prompt | v3 Prompt | Cambio |
+|---------|----------|----------|-----------|-----------|--------|
+| GoHome | 0% | **100%** | 0 | 16 | FIXED - crawlUrl navega subpaginas |
+| Offis | N/A | **100%** | N/A | 30 | NUEVO - 12 GT models matched |
+| Efede | 100% | **100%** | 1 | 6 | +5 modelos |
+| Grupo Steimberg | 60% | **100%** | 7 | 3 | Mejor matching |
+| Habika | N/A | **100%** | N/A | 0 | NUEVO |
+| PlugArq | 100% | **100%** | 0 | 10* | +10 modelos (proyectos) |
+| Aftamantes | 33% | **67%** | 4 | 5 | +34pp |
+| Atlas Housing | 0% | **50%** | 6 | 5 | +50pp |
+| T1 Modular | 30% | 30% | 7 | 7 | = |
+| Lucys House | 0% | 25% | 0 | 13 | +25pp SPA mejor |
+| Lista | N/A | 18% | N/A | 14 | NUEVO |
+| Mini Casas | 0% | 17% | 7 | 8 | +17pp |
+| Movilhauss | 13% | 13% | 6 | 4 | = naming issue |
+| Ecomod | 60% | 10% | 9 | 7 | REGRESION por regex parsing |
+| ViBert | 0% | 0% | 14 | 0 | REGRESION - clasificado como INMOBILIARIA |
+| Sienna Modular | 0% | 0% | 0 | 0 | SPA - no extractable |
+| Arcohouse | 0% | 0% | 4 | 13 | naming mismatch |
+| Wellmod | 0% | 0% | 1 | 8 | GT tiene 38 modelos imposibles de capturar |
 
-### Fix 3: Soporte Wix (commits 44f6945, 1e02a32, 325ea7d)
-- **Problema**: Sitios Wix (como ViBert) cargan menú con JavaScript, mapUrl no encuentra URLs
-- **Solución**: Nueva función `scrapeWixSite()` que:
-  - Detecta sitios Wix con `isWixSite()`
-  - Prueba URLs de catálogo directamente: `/casas`, `/modelos`, `/catalogo`
-  - Hace peticiones en paralelo con Promise.all
-  - Usa actions específicas para Wix
-- **Resultado**: ViBert ahora extrae 14 modelos con m², dormitorios, baños
+*PlugArq: Run 3 parcial no incluyo el dato actualizado, run posterior confirmo 10 modelos
 
-## Próximas Tareas (Opcionales)
+### Fixes aplicados en Run 3 (POSTERIORES al score de 46%)
 
-1. **Precios** - Extraer precios cuando están disponibles
-2. **Metros cuadrados individuales** - Algunos modelos no tienen m² (páginas individuales)
-3. **Performance** - Optimizar tiempos de scraping
+Estos fixes se aplicaron DESPUES del run que dio 46%, por lo que el score real deberia ser mayor:
 
-## Archivos Modificados en Esta Sesión
+1. **Garbage model name filter** - `parseModelsFromMarkdown()` ya no extrae frases como "tiene una superficie cubierta de" como nombres de modelos
+2. **Removed includePaths** - crawlUrl ahora descubre TODAS las paginas (no solo las que matchean patterns)
+3. **mapUrl fallback** - Si crawl encuentra <5 modelos, tambien corre mapUrl para descubrir URLs que el crawl perdio
 
-| Archivo | Cambio |
-|---------|--------|
-| `src/types/index.ts` | Agregado tipo `inmobiliaria` |
-| `src/lib/firecrawl.ts` | Clasificación inmobiliaria con keywords, logs debug |
-| `src/lib/prompt-generator.ts` | Secciones específicas para inmobiliarias |
-| `src/lib/scraper.ts` | Fix para preservar clasificación en fallback |
-| `src/lib/conversation-logger.ts` | Tipo inmobiliaria |
-| `spec/test-results/ANALISIS.md` | Documentación de tests |
+### Ecomod ANTES/DESPUES del garbage filter
+- ANTES: Models = "Casa tiene una superficie cubierta de - 45m2" (basura)
+- DESPUES: Models = "Casa Eco Studio - 11.5m2 - 1 bano", "Casa Turístico - 25m2", etc. (correctos)
 
-## Notas Técnicas Importantes
+## V4: Exploratory System
 
-- Firecrawl tiene problemas con webs Elementor (errores 500 en actions)
-- Webs Wix (ViBert) requieren Agent con screenshots
-- La clasificación inmobiliaria se detecta con score >= 8
-- El bug del fallback estaba en scraper.ts líneas 80-85
+### Fase 5 - Agent Test Dinamico (COMPLETADA)
 
-## Bloqueadores Resueltos
+**Commit:** `324a814` - [fase5] implementar agent test dinamico con preguntas adaptativas
 
-- ~~MakenHaus clasificado como modular~~ → Ahora es INMOBILIARIA
-- ~~Clasificación se perdía en fallback~~ → Ahora se preserva
+**Cambios implementados:**
+1. Expandido `QuestionType` con 9 tipos: identity, offering, contact, product_count, product_specific, product_specs, financing, coverage, differentiator
+2. Reescrita `generateQuestions()` para generar preguntas dinamicas basadas en ground truth
+3. Agregada `inferProductLabel()` para detectar terminologia (modelos/proyectos/unidades/servicios/lotes)
+4. Agregada `hasFinancingMention()` para detectar info de financiacion en GT
+5. Actualizada `extractModelsFromPrompt()` para detectar formato numerado (`### 1. Producto`) y patterns expandidos
+6. Fixed TypeScript compatibility issue con `Array.from(new Set())` en lugar de spread operator
+
+**Preguntas universales (siempre se hacen):**
+- Que es tu empresa y que hacen?
+- Que productos o servicios ofrecen?
+- Cual es su WhatsApp o telefono de contacto?
+
+**Preguntas condicionales (basadas en GT):**
+- Si hay productos/modelos: Cuantos [label] ofrecen? + preguntas sobre 3 productos especificos + specs
+- Si hay financiacion: Tienen financiamiento o planes de pago?
+- Si hay cobertura: A que zonas llegan o donde operan?
+
+**Impacto:**
+- El agent test ya NO asume que todas las empresas tienen "modelos"
+- Las preguntas se adaptan a lo que el ground truth encontro
+- Mejor alineacion con V4 exploratory approach
+
+### Proximas Fases Pendientes
+
+**Fase 6 - Diagnosis Exploratorio**
+- Cambiar score de basado-en-modelos a score compuesto
+- Agregar `IDENTITY_MISS` y `TERMINOLOGY_MISS` gap types
+- Implementar `checkIdentityMatch()` para detectar confusion de tipo de empresa
+
+**Fase 1-4 - Core System (bloqueantes para testing E2E)**
+- Fase 1: Nuevos tipos TypeScript (ProductOrService, CompanyProfile)
+- Fase 2: Scraper exploratorio (reescribir firecrawl.ts)
+- Fase 3: Prompt generator adaptativo (template unico)
+- Fase 4: Actualizar wrappers (scraper.ts, create route)
+
+## Proximos Pasos
+
+### PENDIENTE: Re-correr pipeline completo con fixes finales
+El pipeline debe re-correrse para medir el impacto real de los 3 fixes post-run:
+```
+npm run dev  # En una terminal
+npx tsx scripts/run-full-pipeline.ts --skip-ground-truth  # En otra
+```
+
+### Empresas que necesitan atencion especial
+1. **ViBert** (0%): Clasificado como INMOBILIARIA → no extrae modelos. Necesita fix en classifier o en como se manejan inmobiliarias
+2. **Sienna Modular** (0%): SPA React pura, ni crawl ni agent extraen modelos
+3. **Arcohouse** (0%): Naming mismatch - "MONTAÑESITO 20M2" en GT vs "Cobre" en prompt
+4. **Wellmod** (0%): GT tiene 38 modelos (incluye proyectos, productos industriales) - irrealista esperar que el scraper capture todo
+5. **Ecomod**: Testear si el garbage filter mejoro el score (estaba en 10%, deberia subir)
+
+### Meta: Score >70%
+Con los fixes aplicados post-run, el score esperado deberia estar entre 50-55%. Para llegar a 70%:
+- Fix ViBert (inmobiliaria) → +5pp
+- Mejorar fuzzy matching en diagnosis (Arcohouse, Mini Casas) → +5pp
+- Considerar que Wellmod con 38 GT models es un outlier → sin Wellmod el score sube ~5pp
+
+## Archivos Modificados en Esta Sesion
+
+### Firecrawl v3
+- `src/lib/firecrawl.ts` - **REESCRITO** `scrapeWithFirecrawl()`:
+  - Usa `crawlUrl()` con open discovery (sin includePaths) + excludePaths
+  - `scrapeUrl()` homepage con extract schema para datos estructurados
+  - `mapUrl()` fallback si <5 modelos despues del crawl
+  - `extract()` API si <3 modelos (extraccion AI estructurada)
+  - Agent/Wix para SPAs o si sigue con pocos datos
+  - Garbage filter en `parseModelsFromMarkdown()`
+  - Reducido de 615 lineas a ~420 lineas
+
+### Spec
+- `spec/FIRECRAWL_V3_SPEC.md` - Plan de implementacion
+
+## Notas Tecnicas
+
+- Chat usa GPT-5.1 (NO 4o)
+- Firecrawl v1.21.1 + $100/mes
+- dotenv requerido para scripts standalone
+- Screenshots JPEG quality 80, max 6000px height
+- Fresh browser por empresa en ground truth capture
+- 20 empresas test en src/scripts/test-companies.json
+- crawlUrl poll interval: 2 seconds
+- crawlUrl limit: 30, maxDepth: 3
+- mapUrl fallback limit: 100 URLs, scrape top 15

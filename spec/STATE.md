@@ -96,18 +96,46 @@ Estos fixes se aplicaron DESPUES del run que dio 46%, por lo que el score real d
 - Las preguntas se adaptan a lo que el ground truth encontro
 - Mejor alineacion con V4 exploratory approach
 
+### Progreso V4 Fases
+
+| Fase | Estado | Commit |
+|------|--------|--------|
+| Fase 1: Nuevos tipos TypeScript | COMPLETADA | (previo) - ProductOrService, CompanyProfile en types/index.ts |
+| Fase 2: Scraper exploratorio | **COMPLETADA** | `043346d` - exploratorySchema, EXPLORATORY_EXTRACTION_PROMPT, PRODUCT_KEYWORDS |
+| Fase 3: Prompt generator adaptativo | **COMPLETADA** | Template unico adaptativo con helpers: buildProductsSection, buildCatalogSection, buildNoProductsSection, buildQualificationInstructions |
+| Fase 4: Actualizar wrappers | PENDIENTE | scraper.ts, create route - limpiar constructoraType |
+| Fase 5: Agent test dinamico | COMPLETADA | `324a814` - preguntas adaptativas basadas en GT |
+| Fase 6: Diagnosis exploratorio | PENDIENTE | Score compuesto, IDENTITY_MISS, TERMINOLOGY_MISS |
+| Fase 7: Ground truth ajustes | PENDIENTE | Agregar companyProfile al GT |
+| Fase 8: Verificacion E2E | PENDIENTE | Requiere fases 1-7 completadas |
+
+### Fase 3 - Prompt Generator Adaptativo (COMPLETADA)
+
+**Cambios implementados:**
+1. Eliminada toda logica condicional basada en `constructoraType` (switch/if con 4 branches)
+2. Eliminados 4 templates diferentes (MODULAR, TRADICIONAL, INMOBILIARIA, MIXTA)
+3. Eliminadas 4 secciones de calificacion por tipo
+4. Eliminada referencia a `**Tipo de Constructora**: ${constructoraType.toUpperCase()}`
+5. Creado template unico adaptativo que usa `profile.identity`, `profile.offering`, `profile.differentiators`, `profile.terminology`
+6. Creados 5 helpers: `buildCatalogSection()`, `buildProductsSection()`, `buildNoProductsSection()`, `buildDeprecatedModelsSection()`, `buildQualificationInstructions()`
+7. Fallback a deprecated `models[]` cuando `products[]` esta vacio (backwards compat)
+8. Prompt usa `profile.terminology.productsLabel` en todas las secciones dinamicas (anti-hallucination rules, ejemplos, calificacion)
+
+**Lineas eliminadas:** ~290 lineas de logica condicional por tipo
+**Lineas agregadas:** ~375 lineas de template unico + helpers
+**Resultado neto:** Archivo paso de 506 a 376 lineas (mas limpio, sin codigo duplicado)
+
 ### Proximas Fases Pendientes
+
+**Fase 4 - Actualizar Wrappers** (siguiente)
+- Limpiar scraper.ts de constructoraType
+- Adaptar mergeVisionResults() para ProductOrService[]
+- Limpiar create/route.ts
 
 **Fase 6 - Diagnosis Exploratorio**
 - Cambiar score de basado-en-modelos a score compuesto
 - Agregar `IDENTITY_MISS` y `TERMINOLOGY_MISS` gap types
 - Implementar `checkIdentityMatch()` para detectar confusion de tipo de empresa
-
-**Fase 1-4 - Core System (bloqueantes para testing E2E)**
-- Fase 1: Nuevos tipos TypeScript (ProductOrService, CompanyProfile)
-- Fase 2: Scraper exploratorio (reescribir firecrawl.ts)
-- Fase 3: Prompt generator adaptativo (template unico)
-- Fase 4: Actualizar wrappers (scraper.ts, create route)
 
 ## Proximos Pasos
 

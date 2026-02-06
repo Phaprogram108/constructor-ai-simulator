@@ -116,6 +116,108 @@
         "url": "https://lista.com.ar/",
         "notes": "Del master phascraper"
       }
+    ],
+    "fase2": [
+      {
+        "name": "Modular Homes",
+        "url": "https://modularhomes.com.ar/",
+        "notes": "40+ años, modulos industriales para mineria y energia"
+      },
+      {
+        "name": "Casa Real Viviendas",
+        "url": "https://casarealviviendas.com.ar/",
+        "notes": "Casas americanas en madera, entrega 45 dias"
+      },
+      {
+        "name": "Viviendas Rolon",
+        "url": "https://www.viviendasrolon.com.ar/",
+        "notes": "50+ años, amplio catalogo prefabricadas"
+      },
+      {
+        "name": "Gauros Viviendas",
+        "url": "https://gaurosviviendas.com.ar/",
+        "notes": "Lider en casas americanas, 3000+ entregadas, Wood Frame"
+      },
+      {
+        "name": "Viviendas Apolo",
+        "url": "https://viviendasapolo.com.ar/",
+        "notes": "Cordoba, casas prefabricadas y cabañas turisticas"
+      },
+      {
+        "name": "La Casa Mia",
+        "url": "https://lacasamia.com.ar/",
+        "notes": "12+ años, wood frame y steel frame, entrega 30 dias"
+      },
+      {
+        "name": "Viviendas Tecnohouse",
+        "url": "https://www.viviendastecnohouse.com.ar/",
+        "notes": "30+ años viviendas industrializadas"
+      },
+      {
+        "name": "FullHouse Vivienda",
+        "url": "https://fullhousevivienda.com.ar/",
+        "notes": "Cordoba, casas premium steel frame y wood frame"
+      },
+      {
+        "name": "Viviendas El Fuerte",
+        "url": "https://elfuerte.com.ar/",
+        "notes": "Desde 1969, estilo serrano, cabañas y casas"
+      },
+      {
+        "name": "Viviendas El Calafate",
+        "url": "https://www.viviendaselcalafate.com.ar/",
+        "notes": "Prefabricadas e industrializadas, estilo americano"
+      },
+      {
+        "name": "Dice Containers",
+        "url": "https://dicecontainers.com.ar/",
+        "notes": "Casas container con habilitacion municipal"
+      },
+      {
+        "name": "Importainer",
+        "url": "https://www.importainer.com.ar/",
+        "notes": "Nro 1 casas container Argentina, 10+ años"
+      },
+      {
+        "name": "Contenedores Argentina",
+        "url": "https://contenedoresargentina.com/",
+        "notes": "Modulos habitacionales en contenedores maritimos"
+      },
+      {
+        "name": "Buro Steel Framing",
+        "url": "https://burosteelframing.com/",
+        "notes": "Steel frame para countries y barrios cerrados"
+      },
+      {
+        "name": "Steel Framing America",
+        "url": "https://steelframingamerica.net/",
+        "notes": "Steel framing llave en mano, 30% ahorro"
+      },
+      {
+        "name": "MasHouse",
+        "url": "https://mashouse.com.ar/",
+        "notes": "Casas steel frame desde 120m2, diseño personalizado"
+      },
+      {
+        "name": "Steel Tres Arroyos",
+        "url": "https://steeltresarroyos.com.ar/",
+        "notes": "Steel framing, 60% mas rapido, 100+ proyectos"
+      },
+      {
+        "name": "Elemental Constructora",
+        "url": "https://elementalconstructora.com.ar/",
+        "notes": "La Plata, linea modular entrega 60 dias"
+      },
+      {
+        "name": "Steel Frame Constructora",
+        "url": "https://steelframeconstructora.com.ar/",
+        "notes": "Construccion en seco, steel frame y wood frame"
+      },
+      {
+        "name": "Nova Viviendas",
+        "url": "https://www.novaviviendas.com.ar/",
+        "notes": "Portal prefabricadas, varios materiales y estilos"
+      }
     ]
   }
 }

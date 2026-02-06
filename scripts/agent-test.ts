@@ -43,6 +43,7 @@ interface CompaniesFile {
   companies: {
     problematicas: CompanyEntry[];
     aleatorias: CompanyEntry[];
+    fase2?: CompanyEntry[];
   };
 }
 
@@ -371,7 +372,14 @@ type QuestionType =
   | 'coverage'          // Cobertura geográfica
   | 'differentiator'    // Qué los diferencia
   | 'process'           // Proceso de construcción
-  | 'customization';    // Personalización
+  | 'customization'     // Personalización
+  | 'images_catalog'    // Imágenes, renders, catálogo
+  | 'pricing'           // Precios aproximados
+  | 'warranty'          // Garantía
+  | 'installation'      // Instalación completa o parcial
+  | 'model_comparison'  // Comparar dos modelos
+  | 'recommendation'    // Recomendación según necesidad
+  | 'includes';         // Qué incluye el precio
 
 interface Question {
   text: string;
@@ -451,7 +459,7 @@ function generateQuestions(
       type: 'product_count',
     });
 
-    // Pick up to 2 descriptive models
+    // Pick up to 2 descriptive models for specific questions
     const modelsToAsk = pickBestModels(promptModels, 2);
     for (const modelName of modelsToAsk) {
       questions.push({
@@ -464,7 +472,21 @@ function generateQuestions(
       });
     }
 
-    // Process and customization questions
+    // Model comparison (if at least 2 models)
+    if (modelsToAsk.length >= 2) {
+      questions.push({
+        text: `¿Cuál es la diferencia entre ${modelsToAsk[0]} y ${modelsToAsk[1]}?`,
+        type: 'model_comparison',
+      });
+    }
+
+    // Recommendation based on family need
+    questions.push({
+      text: '¿Qué modelo me recomendás para una familia de 4 personas?',
+      type: 'recommendation',
+    });
+
+    // Process and customization
     questions.push({
       text: '¿Cuál es el proceso de construcción y cuánto demoran?',
       type: 'process',
@@ -475,7 +497,29 @@ function generateQuestions(
     });
   }
 
-  // 3. Financing: check prompt OR ground truth
+  // 3. Customer journey questions (ALWAYS ask - test real buyer scenarios)
+  questions.push({
+    text: '¿Tenés imágenes, planos o algún catálogo que pueda ver?',
+    type: 'images_catalog',
+  });
+  questions.push({
+    text: '¿Cuánto sale aproximadamente una casa de 2 dormitorios?',
+    type: 'pricing',
+  });
+  questions.push({
+    text: '¿Qué incluye el precio? ¿Terminaciones, instalación, todo?',
+    type: 'includes',
+  });
+  questions.push({
+    text: '¿Ustedes se encargan de toda la instalación o solo entregan los materiales?',
+    type: 'installation',
+  });
+  questions.push({
+    text: '¿Qué garantía ofrecen sobre la construcción?',
+    type: 'warranty',
+  });
+
+  // 4. Financing: check prompt OR ground truth
   const gtHasFinancing = groundTruth ? hasFinancingMention(groundTruth) : false;
   if (promptHasFinancing || gtHasFinancing || groundTruth?.financing) {
     questions.push({
@@ -484,7 +528,7 @@ function generateQuestions(
     });
   }
 
-  // 4. General quality questions (ALWAYS ask)
+  // 5. General quality questions (ALWAYS ask)
   questions.push({
     text: '¿Qué los diferencia de otras empresas similares?',
     type: 'differentiator',
@@ -709,10 +753,11 @@ async function testCompany(
 // CLI
 // ---------------------------------------------------------------------------
 
-function parseArgs(): { companyFilter?: string; skipSession: boolean } {
+function parseArgs(): { companyFilter?: string; skipSession: boolean; fase2: boolean } {
   const args = process.argv.slice(2);
   let companyFilter: string | undefined;
   let skipSession = false;
+  let fase2 = false;
 
   for (let i = 0; i < args.length; i++) {
     if (args[i] === '--company' && args[i + 1]) {
@@ -720,25 +765,31 @@ function parseArgs(): { companyFilter?: string; skipSession: boolean } {
       i++;
     } else if (args[i] === '--skip-session') {
       skipSession = true;
+    } else if (args[i] === '--fase2') {
+      fase2 = true;
     }
   }
 
-  return { companyFilter, skipSession };
+  return { companyFilter, skipSession, fase2 };
 }
 
-function loadCompanies(): CompanyEntry[] {
+function loadCompanies(fase2Only = false): CompanyEntry[] {
   const raw: CompaniesFile = JSON.parse(
     fs.readFileSync(COMPANIES_FILE, 'utf-8')
   );
+  if (fase2Only) {
+    return raw.companies.fase2 || [];
+  }
   return [
     ...raw.companies.problematicas,
     ...raw.companies.aleatorias,
+    ...(raw.companies.fase2 || []),
   ];
 }
 
 async function main(): Promise<void> {
-  const { companyFilter, skipSession } = parseArgs();
-  const allCompanies = loadCompanies();
+  const { companyFilter, skipSession, fase2 } = parseArgs();
+  const allCompanies = loadCompanies(fase2);
 
   let companies = allCompanies;
   if (companyFilter) {

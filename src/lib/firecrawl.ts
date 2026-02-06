@@ -738,6 +738,49 @@ const GARBAGE_NAMES = new Set([
   'suscribite', 'suscribirse', 'newsletter',
   'terminos', 'términos', 'condiciones', 'privacidad', 'politica', 'política',
   'copyright', 'derechos', 'reservados',
+  // CTA y botones
+  'ver todos los modelos', 'ver ficha', 'ver mas', 'ver más', 'ver todo', 'ver detalle',
+  'pedi tu presupuesto', 'pedí tu presupuesto', 'solicitar presupuesto', 'pedir presupuesto',
+  'more videos', 'up', 'arriba', 'subir',
+  // Secciones de sitio comunes en constructoras
+  'casas de hormigon', 'casas de hormigón', 'casas modulares de hormigon', 'casas modulares de hormigón',
+  'experiencia y compromiso', 'nuestros proyectos', 'nuestros representantes', 'nuestros modelos',
+  'nuestros desarrollos', 'nuestras casas', 'nuestros servicios',
+  'tu casa en 120 dias', 'tu casa en 120 días', 'tu casa en 90 dias', 'tu casa en 90 días',
+  'modalidad de construccion y terminacion', 'modalidad de construcción y terminación',
+  'valor patrimonial', 'valorpatrimonial',
+  'obra gris', 'llave en mano',
+  'construccion en hormigon premoldeado', 'construcción en hormigón premoldeado',
+  'financiacion disponible', 'financiación disponible',
+  // Timeline entries
+  'dia 0', 'dia 30', 'dia 60', 'dia 90', 'dia 120',
+  'día 0', 'día 30', 'día 60', 'día 90', 'día 120',
+  // ESEN y nombres genéricos que no son productos
+  'esen',
+  // Amenidades y features que no son nombres de producto
+  'kitchenette', 'toilette', 'jacuzzi', 'pileta',
+  'cama dos plazas', 'sofa cama', 'sofá cama',
+  'bano completo', 'baño completo', 'bano ducha', 'baño ducha',
+  'cocina completa', 'cocina con barra',
+  'espacio tecnico', 'espacio técnico', 'linea base', 'línea base',
+  'monoambiente', 'dos dormitorios', 'tres dormitorios',
+  // Website sections
+  'chat', 'info negocios', 'franquicias',
+  'estudio de mercado', 'armado de proyecto', 'plan financiero',
+  'marketing integral', 'equipo comercial', 'coordinacion con profesionales',
+  'escalabilidad real', 'diseño profesional', 'diseño personalizado',
+  'confort', 'instalacion rapida', 'instalación rápida',
+  'minima logistica', 'mínima logística',
+  'alquiler rapido', 'alquiler rápido', 'ubicacion libre', 'ubicación libre',
+  'producto turistico', 'producto turístico',
+  'local comercial', 'oficina completa',
+  'residencial', 'turisticos', 'turísticos', 'corporativo', 'dormis',
+  'listas en 90 dias', 'listas en 90 días', 'financiacion accesible', 'financiación accesible',
+  'entregas', 'entregas en todo el pais', 'entregas en todo el país',
+  'entregas en 90 dias', 'entregas en 90 días',
+  'construccion modular', 'construcción modular', 'costruccion modular', 'costrucción modular',
+  'contenedores maritimos', 'contenedores marítimos',
+  'inversion', 'inversión',
 ]);
 
 // Single-word headings that are generic and should be excluded
@@ -746,6 +789,11 @@ const GENERIC_SINGLE_WORDS = new Set([
   'blog', 'equipo', 'nosotros', 'historia', 'testimonios', 'clientes', 'fotos',
   'videos', 'imagenes', 'imágenes', 'información', 'informacion', 'especificaciones',
   'financiamiento', 'financiacion', 'descargar', 'descarga', 'download',
+  'quinchos', 'casas', 'cabañas', 'cabanas', 'modelos', 'tipologias', 'tipologías',
+  'modulos', 'módulos', 'departamentos', 'lotes', 'terrenos',
+  'residencial', 'turistico', 'turístico', 'corporativo', 'comercial',
+  'chat', 'entregas', 'desarrollistas', 'franquicias', 'dormis',
+  'cabin', 'seguinos', 'confort',
 ]);
 
 /**
@@ -780,6 +828,69 @@ function validateProductName(raw: string): string | null {
 
   // Skip names that are just numbers
   if (/^\d+$/.test(name)) return null;
+
+  // ALL CAPS multi-word filter: "CASAS DE HORMIGÓN" is a heading, not a product.
+  // Exception: short codes like "CM0", "TM1", "QM1" (1-2 words, alphanumeric codes)
+  if (words.length >= 2 && name === name.toUpperCase()) {
+    return null;
+  }
+
+  // CTA/action phrases: starts with verb or "Mirá", "Algunos", "Tu casa", etc.
+  if (/^(mir[aá]|ver|ped[ií]|solicita|conoce|descubr[ií]|algunos|algunas|tu casa|nuestros?|nuestras?)\s/i.test(name)) return null;
+
+  // Construction terms that are NOT product names when in a phrase
+  if (/llave en mano|obra gris|hormig[oó]n premoldeado/i.test(name)) return null;
+
+  // Website UI/navigation elements
+  if (/s[ií]guenos|seguinos|suscrib|newsletter|lightbox|cancelar|saltar al|ir al contenido/i.test(name)) return null;
+
+  // Legal/policy pages
+  if (/pol[ií]tica|privacidad|t[eé]rminos|condiciones|copyright|derechos reservados/i.test(name)) return null;
+
+  // Marketing/benefit descriptions (multi-word phrases that describe benefits, not products)
+  if (words.length >= 3 && /^(impulsamos|acompañamiento|experiencia|beneficios|ahorro|entregas|aislaci[oó]n|construcci[oó]n|fabricaci[oó]n|arquitectura|soluciones|oportunidades|aspectos|visite|ellos ya)\s/i.test(name)) return null;
+
+  // Room/amenity descriptions that aren't product names
+  if (/^(dormitorio|ba[ñn]o|cocina|sala de|recepci[oó]n|toilette|antebaño|anteba[ñn]o|escritorio|baulera|lavadero|kitchenette)\b/i.test(name)) return null;
+
+  // Location references: "Córdoba - CM2", "Buenos Aires - CM4"
+  if (/^[A-ZÁÉÍÓÚÑ][a-záéíóúñ]+\s*[-–]\s*[A-Z]{1,3}\d/i.test(name)) return null;
+
+  // People names (common pattern: FirstName LastName with "del" or multiple words)
+  // Skip names that look like testimonial attributions
+  if (/^(Jos[eé]|Santiago|Silvia|Guillermo|Mart[ií]n|Juan|Carlos|Pablo|Fernando|Diego|Marcelo)\s/i.test(name)) return null;
+
+  // Generic action/category words at start
+  if (/^(agendar|contactar|descargar|modelos personalizables?|práctico|pr[aá]ctico)\b/i.test(name)) return null;
+
+  // Category labels: "Módulos residenciales", "Módulos turísticos", etc.
+  if (/^m[oó]dulos?\s/i.test(name)) return null;
+
+  // Benefit/feature multi-word phrases (not product names)
+  if (words.length >= 2 && /^(f[aá]brica|ahorro|apt[ao]|trasladable|ventajas|adaptados?|espacios|fabricaci[oó]n|instalaci[oó]n|coordinaci[oó]n|dise[ñn]os?\s+(para|profesional|personalizado)|galer[ií]a|inversi[oó]n|empresa)\b/i.test(name)) return null;
+
+  // Phrases ending in common benefit suffixes
+  if (/\b(personalizado|industrial|profesional|accesible|modular|r[aá]pido|simple)\s*$/i.test(name) && words.length >= 2 && !/^(casa|cabin|modelo|quincho|loft|duplex|suite|refugio)/i.test(name)) return null;
+
+  // Location-dash patterns: "Buenos Aires - CM4", "Villa la Angostura - Neuquén"
+  if (/\s[-–]\s/.test(name) && !/^(casa|cabin|modelo|quincho)/i.test(name)) return null;
+
+  // Brand name alone (just the company name)
+  if (/^h[aá]bika$/i.test(name) || /^vibert$/i.test(name) || /^plug$/i.test(name) || /^lista$/i.test(name)) return null;
+
+  // Multi-word marketing/benefit phrases (4+ words that don't start with product prefixes)
+  if (words.length >= 4 && !/^(casa|cabin|modelo|quincho|loft|duplex|suite|refugio|tiny|container|modulo|módulo)\b/i.test(name)) return null;
+
+  // "Construcciones/Proyectos + brand" pattern
+  if (/^(construcciones|proyectos)\s+(modular|de)\b/i.test(name)) return null;
+
+  // Timeline/day patterns: "Día 30", "Day 1"
+  if (/^d[ií]a\s+\d+/i.test(name)) return null;
+
+  // Navigation text: single ALL CAPS word that's not a product code
+  if (words.length === 1 && name === name.toUpperCase() && name.length > 4 && !/^\d/.test(name) && !/^[A-Z]{1,3}\d/.test(name)) {
+    return null;
+  }
 
   return name;
 }
@@ -932,13 +1043,30 @@ function parseProductsFromMarkdown(markdown: string): ProductOrService[] {
 
   // ===== PATTERN GROUP 2: New patterns for markdown structure =====
 
-  // Markdown headings: "### Casa Sara" or "## Modelo Eco Studio" or "### 1. Eco Studio"
-  const headingPattern = /^#{2,4}\s*(?:\d+\.\s*)?(?:(?:Modelo|Casa|Vivienda|Proyecto|Tipolog[ií]a)\s+)?([A-ZÁÉÍÓÚÑ][A-Za-z0-9áéíóúñÁÉÍÓÚÑ\s\-]+?)$/gm;
-  while ((match = headingPattern.exec(markdown)) !== null) {
-    const headingName = match[1].trim();
-    // Get the next ~300 chars after the heading for context (specs)
+  // Markdown headings WITH a product prefix: "### Casa Sara", "## Modelo Eco Studio", "### Cabin 28"
+  // IMPORTANT: prefix is REQUIRED to avoid capturing random section headings
+  const prefixedHeadingPattern = /^#{2,4}\s*(?:\d+\.\s*)?(?:Modelo|Casa|Vivienda|Cabin|Cabaña|Cabana|Quincho|Duplex|Dúplex|Loft|Módulo|Modulo|Suite|Refugio|Tiny|Container|Contenedor)\s+([A-Za-z0-9áéíóúñÁÉÍÓÚÑ\s\-]+?)$/gm;
+  while ((match = prefixedHeadingPattern.exec(markdown)) !== null) {
+    const headingName = match[0].replace(/^#{2,4}\s*(?:\d+\.\s*)?/, '').trim();
     const contextAfter = markdown.slice(match.index, match.index + 300);
     addProduct(headingName, contextAfter);
+  }
+
+  // Alphanumeric code headings: "### CM0", "### TM1", "### COR1" (1-4 letters + digits)
+  const codeHeadingPattern = /^#{2,4}\s*(?:\d+\.\s*)?([A-Z]{1,4}\d+(?:\s*[-–]\s*[A-Z])?)$/gm;
+  while ((match = codeHeadingPattern.exec(markdown)) !== null) {
+    const contextAfter = markdown.slice(match.index, match.index + 300);
+    addProduct(match[1].trim(), contextAfter);
+  }
+
+  // Generic headings ONLY if followed by specs (m2, dormitorios, precio) within 200 chars
+  const genericHeadingPattern = /^#{2,4}\s*(?:\d+\.\s*)?([A-ZÁÉÍÓÚÑ][A-Za-z0-9áéíóúñÁÉÍÓÚÑ\s\-]+?)$/gm;
+  while ((match = genericHeadingPattern.exec(markdown)) !== null) {
+    const contextAfter = markdown.slice(match.index, match.index + 200);
+    // Only capture if context contains specs
+    if (/\d+[.,]?\d*\s*m[²2]|\d+\s*(?:dormitorios?|dorm\.?|ambientes?|personas?)|(?:U\$?D|USD|\$)\s*[\d.,]+/i.test(contextAfter)) {
+      addProduct(match[1].trim(), contextAfter);
+    }
   }
 
   // Product headings with m2 on same line: "### Casa Sara - 65m2"

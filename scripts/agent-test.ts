@@ -101,8 +101,11 @@ function slugify(name: string): string {
 
 function extractModelsFromPrompt(prompt: string): string[] {
   // Try to find product/model section - expand patterns to match new format
+  // Match any section ending in "DISPONIBLES" (may have commas, mixed words)
   const productSection = prompt.match(
-    /## (?:MODELOS|PRODUCTOS|TIPOLOGIAS|PROYECTOS|UNIDADES|SERVICIOS|CATALOGO)(?: DISPONIBLES)?[\s\S]*?(?=\n##[^#]|$)/i
+    /## [A-ZÁÉÍÓÚÑ,\s]+ DISPONIBLES[\s\S]*?(?=\n##[^#]|$)/i
+  ) || prompt.match(
+    /## (?:MODELOS|PRODUCTOS|TIPOLOGIAS|PROYECTOS|UNIDADES|SERVICIOS|CATALOGO)[^\n]*[\s\S]*?(?=\n##[^#]|$)/i
   );
   if (!productSection) return [];
 

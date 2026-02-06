@@ -1,7 +1,7 @@
 {
   "company": "Grupo Steimberg",
   "url": "https://www.gruposteimberg.com/",
-  "capturedAt": "2026-02-05T20:26:49.375Z",
+  "capturedAt": "2026-02-06T15:28:01.116Z",
   "type": "modular",
   "navigation": {
     "menuItems": [
@@ -23,5 +23,10 @@
   },
   "totalModelsFound": 0,
   "pagesExplored": 3,
-  "errors": []
+  "errors": [],
+  "companyProfile": {
+    "identity": "Grupo Steimberg es una empresa argentina dedicada a la arquitectura modular. Se especializa en crear proyectos con propósito para diversos usos.",
+    "offering": "Proyectos de arquitectura modular diseñados para uso residencial, comercial, turístico y otros propósitos específicos",
+    "terminology": "proyectos"
+  }
 }

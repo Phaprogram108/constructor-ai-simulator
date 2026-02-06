@@ -1,7 +1,7 @@
 {
   "company": "Grupo Steimberg",
   "url": "https://www.gruposteimberg.com/",
-  "diagnosedAt": "2026-02-06T14:56:47.388Z",
+  "diagnosedAt": "2026-02-06T15:05:59.012Z",
   "overallScore": 85,
   "scoreBreakdown": {
     "productCoverage": 100,
@@ -11,7 +11,7 @@
     "identityMatch": 100
   },
   "groundTruthModels": 0,
-  "systemPromptModels": 2,
+  "systemPromptModels": 3,
   "agentResponseModels": 0,
   "gaps": [],
   "gapSummary": {

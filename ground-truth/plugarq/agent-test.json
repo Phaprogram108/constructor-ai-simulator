@@ -1,12 +1,23 @@
 {
   "company": "PlugArq",
   "url": "https://www.plugarq.com/",
-  "testedAt": "2026-02-06T14:56:25.000Z",
-  "sessionId": "245a91df-1419-4272-83d2-1f46d91f0523",
-  "systemPromptLength": 24497,
+  "testedAt": "2026-02-06T15:23:08.542Z",
+  "sessionId": "d07dcc11-bf69-438d-a1ac-60f36dd9be25",
+  "systemPromptLength": 24370,
   "systemPromptModelsFound": [
-    "Construccion en Hormigon premoldeado",
-    "Construccion en"
+    "Construcción con tecnología STEEL FRAME",
+    "Metodología OFFSITE",
+    "Proyecto Maru y Bruno",
+    "Proyecto Ale y Sil",
+    "Proyecto Gabi y Angel",
+    "Proyecto Ana y Susan",
+    "Proyecto Mori y Flia",
+    "Proyecto Agus",
+    "Proyecto Romi y Agus",
+    "Proyecto Vero y Manu",
+    "Proyecto Nati y Dani",
+    "Proyecto Tomi",
+    "Casas Industrializadas Transportables"
   ],
   "systemPromptWhatsApp": "+5491170627642",
   "systemPromptType": "de Proyectos estas buscando?\"",
@@ -14,31 +25,36 @@
     {
       "question": "¿Qué es tu empresa y qué hacen?",
       "questionType": "identity",
-      "response": "Plug Arquitectura es un estudio de construcción modular que se encarga de todo: desde el diseño hasta entregarte la casa llave en mano. Construimos principalmente con tecnología Steel Frame y metodología Offsite, es decir, fabricamos los módulos en nuestra planta en el Parque Industrial de Junín (Bautista Císaro 1920) y después los llevamos e instalamos en tu terreno casi sin obra húmeda.  \n\nNuestro foco es que tengas tu casa (o proyecto) en plazos muy cortos, con costos claros y sin sorpresas, usando sistemas de alta aislación térmica y terminaciones a elección. Para orientarte mejor, ¿qué tipo de proyecto estás buscando: casa familiar, ampliación, algo tipo cabaña, local, oficina?",
-      "mentionedModels": [],
+      "response": "Plug Arquitectura es una empresa de construcción modular que se encarga de todo el proceso: desde el diseño inicial hasta la entrega final llave en mano. Construimos con sistema steel frame y metodología offsite, es decir, armamos los módulos en nuestra planta industrial en el Parque Industrial Junín (Bs.As.) y luego los transportamos e instalamos en tu terreno en pocos días.  \n\nTrabajamos proyectos a medida y también con modelos de referencia como Maru y Bruno (40 m²), Ale y Sil (68 m²), Gabi y Ángel (78 m²), hasta casas grandes como Tomi (267 m²), siempre con alta aislación térmica, terminaciones a elección y control estricto de plazos y costos. Para orientarte mejor, ¿qué tipo de proyecto estás buscando?",
+      "mentionedModels": [
+        "Metodología OFFSITE"
+      ],
       "saidNoInfo": false,
-      "hasSpecificData": false,
-      "responseTimeMs": 6298
+      "hasSpecificData": true,
+      "responseTimeMs": 2974
     },
     {
       "question": "¿Qué productos o servicios ofrecen?",
       "questionType": "offering",
-      "response": "Ofrecemos construcción modular llave en mano, principalmente viviendas diseñadas a medida usando Steel Frame y metodología Offsite, con estructura de acero, alta aislación térmica (celulosa/lana de vidrio, panel sándwich, DVH) y terminaciones a elección. Fabricamos los módulos en nuestra planta del Parque Industrial Junín y los instalamos en tu terreno en muy poco tiempo, reduciendo al mínimo la obra tradicional, los desperdicios y las desviaciones de costo y plazo.  \n\nDentro de eso trabajamos con casas modulares, proyectos residenciales completos (como Maru y Bruno 40 m², Ale y Sil 68 m², Gabi y Ángel 78 m², hasta Tomi 267 m²), y también otros usos como oficinas o espacios especiales. ¿Qué tipo de proyecto estás buscando vos?",
-      "mentionedModels": [],
+      "response": "Ofrecemos construcción modular en steel frame con metodología offsite y servicio llave en mano: diseño arquitectónico, fabricación en planta, transporte, montaje en tu terreno e instalaciones completas (eléctrica, sanitaria, artefactos, muebles de cocina y baño, etc.).  \n\nTrabajamos tanto casas industrializadas transportables como proyectos a medida basados en modelos de referencia: desde Maru y Bruno (40 m²) y Ale y Sil (68 m²), hasta proyectos más grandes como Mori y Flia (120 m²), Nati y Dani (178 m²) o Tomi (267 m²), todos con alta aislación térmica, DVH, terminaciones y equipamiento de calidad.  \nPara guiarte mejor: ¿qué tipo de proyectos estás buscando? ¿vivienda chica, familiar grande, algo tipo cabaña, estudio, etc.?",
+      "mentionedModels": [
+        "Metodología OFFSITE",
+        "Casas Industrializadas Transportables"
+      ],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 3001
+      "responseTimeMs": 3974
     },
     {
       "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
       "questionType": "contact",
-      "response": "Te podés contactar directo por WhatsApp al +54 9 11 7062-7642 (link: https://api.whatsapp.com/send?phone=5491170627642&text=Hola%2C%20me%20interesan%20las%20casas%20modulares).  \n\nTambién tenemos línea telefónica al mismo número y mail a info@plugarq.com. Si querés, contame qué estás buscando así ya le adelantamos la info al asesor que te contacte.",
+      "response": "Te dejo los datos de contacto directo:  \n- Teléfono / WhatsApp: +54 9 11 7062-7642 (o 5491170627642)  \n- Email: info@plugarq.com  \n\nSi querés, contame qué tipo de proyecto tenés en mente y te orientó un poco antes de que escribas al WhatsApp.",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 3990
+      "responseTimeMs": 1893
     }
   ],
-  "sessionCreationTimeMs": 76236,
+  "sessionCreationTimeMs": 40960,
   "errors": []
 }

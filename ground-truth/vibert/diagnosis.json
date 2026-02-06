@@ -1,18 +1,18 @@
 {
   "company": "ViBert",
   "url": "https://vibert.com.ar",
-  "diagnosedAt": "2026-02-06T14:56:47.383Z",
+  "diagnosedAt": "2026-02-06T15:05:59.008Z",
   "overallScore": 15,
   "scoreBreakdown": {
     "productCoverage": 0,
     "specAccuracy": 0,
     "contactAccuracy": 100,
-    "hallucinationPenalty": 30,
+    "hallucinationPenalty": 20,
     "identityMatch": 100
   },
   "groundTruthModels": 14,
   "systemPromptModels": 3,
-  "agentResponseModels": 6,
+  "agentResponseModels": 5,
   "gaps": [
     {
       "type": "SCRAPING_MISS",
@@ -114,13 +114,6 @@
     },
     {
       "type": "HALLUCINATION",
-      "entity": "ViBert que mejor se parezca a lo que",
-      "detail": "Agent mentioned model \"ViBert que mejor se parezca a lo que\" which does not exist in ground truth or systemPrompt",
-      "severity": "HIGH",
-      "agentResponseValue": "ViBert que mejor se parezca a lo que"
-    },
-    {
-      "type": "HALLUCINATION",
       "entity": "Casa Sara",
       "detail": "Agent mentioned model \"Casa Sara\" which does not exist in ground truth or systemPrompt",
       "severity": "HIGH",
@@ -128,19 +121,19 @@
     },
     {
       "type": "HALLUCINATION",
-      "entity": "ViBert",
-      "detail": "Agent mentioned model \"ViBert\" which does not exist in ground truth or systemPrompt",
+      "entity": "ViBert que mejor encaje",
+      "detail": "Agent mentioned model \"ViBert que mejor encaje\" which does not exist in ground truth or systemPrompt",
       "severity": "HIGH",
-      "agentResponseValue": "ViBert"
+      "agentResponseValue": "ViBert que mejor encaje"
     }
   ],
   "gapSummary": {
     "scrapingMiss": 14,
     "promptMiss": 0,
-    "hallucination": 3
+    "hallucination": 2
   },
   "recommendations": [
     "Scraping no encontro 14 modelo(s): Casa Aura, Casa Rosa, Casa Savona, Casa Capri, Casa Viena, Casa Menfis, Casa Serena, Casa Marsala, Casa Atenas, Casa Veneto, Quincho R, Quincho M, Quincho L, Quincho XL. Revisar firecrawl.ts URL patterns.",
-    "3 dato(s) inventados por el agente. Reforzar anti-hallucination en prompt-generator.ts."
+    "2 dato(s) inventados por el agente. Reforzar anti-hallucination en prompt-generator.ts."
   ]
 }

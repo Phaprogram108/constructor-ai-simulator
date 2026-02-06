@@ -1,7 +1,7 @@
 {
   "company": "ViBert",
   "url": "https://vibert.com.ar",
-  "capturedAt": "2026-02-05T20:21:52.349Z",
+  "capturedAt": "2026-02-06T15:26:11.611Z",
   "type": "modular",
   "navigation": {
     "menuItems": [
@@ -32,142 +32,113 @@
   },
   "models": [
     {
-      "name": "Casa Aura",
+      "name": "Casa Aire",
       "sqMeters": 65.55,
       "features": [
+        "superficie total: 65,55m²",
+        "superficie cubierta: 47,50m²",
+        "superficie semicubierta: 36,10m²",
+        "retro-iluminador",
         "1 dormitorio",
-        "retiro sanitario",
-        "living/comedor",
-        "cocina",
-        "baño",
-        "espacios amplios",
-        "galería multifuncional",
-        "superficie cubierta 47.50m²",
-        "superficie semicubierta 36.10m²"
+        "cochera",
+        "1 baño",
+        "espacio amplio",
+        "galería multifuncional"
       ],
       "source": "detail_page",
-      "screenshot": "screenshots/03-detail-1-casa-aura.jpeg",
+      "screenshot": "screenshots/03-detail-1-casa-aire.jpeg",
       "detailUrl": "https://www.vibert.com.ar/casa-sara",
       "bedrooms": 2,
       "bathrooms": 1
     },
     {
-      "name": "Casa Rosa",
+      "name": "Casa Roca",
       "sqMeters": 79.45,
       "features": [
         "líneas de diseño",
         "amplia con confort",
         "pensada para la familia tipo",
         "ambientes espaciosos",
-        "amplia galería en contacto con la naturaleza",
+        "amplia galería",
+        "contacto con la naturaleza",
         "semi-comedor",
-        "2 dormitorios",
         "cocina",
         "baño"
       ],
       "source": "detail_page",
-      "screenshot": "screenshots/03-detail-2-casa-rosa.jpeg",
+      "screenshot": "screenshots/03-detail-2-casa-roca.jpeg",
       "detailUrl": "https://www.vibert.com.ar/casa-daniela",
       "bedrooms": 2,
       "bathrooms": 1
     },
     {
-      "name": "Casa Savona",
+      "name": "Casa Gamma",
       "sqMeters": 59.87,
       "features": [
         "living comedor",
         "cocina",
         "baño",
         "2 dormitorios",
-        "galería",
-        "superficie cubierta 59.87m²",
-        "superficie semicubierta 56.13m²",
-        "superficie total 87.94m²"
+        "galería cubierta",
+        "superficie cubierta"
       ],
       "source": "detail_page",
-      "screenshot": "screenshots/03-detail-3-casa-savona.jpeg",
+      "screenshot": "screenshots/03-detail-3-casa-gamma.jpeg",
       "detailUrl": "https://www.vibert.com.ar/casa-justina",
       "bedrooms": 2,
       "bathrooms": 1
     },
     {
-      "name": "Casa Capri",
+      "name": "Casa Acqua",
       "sqMeters": 55.58,
       "features": [
         "1 dormitorio",
         "estar comedor",
         "cocina integrada al comedor",
+        "baño",
         "sala de estar",
         "amplio galería"
       ],
       "source": "detail_page",
-      "screenshot": "screenshots/03-detail-4-casa-capri.jpeg",
+      "screenshot": "screenshots/03-detail-4-casa-acqua.jpeg",
       "detailUrl": "https://www.vibert.com.ar/casa-dora",
       "bedrooms": 2,
       "bathrooms": 1
     },
     {
-      "name": "Casa Viena",
-      "sqMeters": 76.6,
+      "name": "Casa Malbec",
+      "sqMeters": 60.25,
       "features": [
-        "Superficie cubierta: 60,25m²",
-        "Superficie semicubierta: 32,50m²",
-        "Superficie total: 76,60m²",
-        "Entre-comedor",
-        "Cocina",
-        "Baño",
-        "2 dormitorios"
+        "LIVING-COMEDOR",
+        "2 DORMITORIOS",
+        "COCINA",
+        "BAÑO"
       ],
       "source": "detail_page",
-      "screenshot": "screenshots/03-detail-5-casa-viena.jpeg",
+      "screenshot": "screenshots/03-detail-5-casa-malbec.jpeg",
       "detailUrl": "https://www.vibert.com.ar/casa-micaela",
       "bedrooms": 2,
       "bathrooms": 1
     },
     {
-      "name": "Casa Menfis",
+      "name": "Casa Rivera",
+      "sqMeters": 103,
       "features": [],
       "source": "catalog_page",
       "screenshot": "screenshots/02-catalog-3.jpeg",
       "detailUrl": "https://www.vibert.com.ar/casa-estafania"
     },
     {
-      "name": "Casa Serena",
+      "name": "Quincho R",
+      "sqMeters": 30,
       "features": [],
       "source": "catalog_page",
       "screenshot": "screenshots/02-catalog-3.jpeg",
       "detailUrl": "https://www.vibert.com.ar/casa-carmela"
     },
     {
-      "name": "Casa Marsala",
-      "features": [],
-      "source": "catalog_page",
-      "screenshot": "screenshots/02-catalog-3.jpeg",
-      "detailUrl": "https://www.vibert.com.ar/casa-selene"
-    },
-    {
-      "name": "Casa Atenas",
-      "features": [],
-      "source": "catalog_page",
-      "screenshot": "screenshots/02-catalog-3.jpeg",
-      "detailUrl": "https://www.vibert.com.ar/copia-de-ficha-casa-estefan%C3%ADa"
-    },
-    {
-      "name": "Casa Veneto",
-      "features": [],
-      "source": "catalog_page",
-      "screenshot": "screenshots/02-catalog-3.jpeg",
-      "detailUrl": "https://www.vibert.com.ar/casa-maria"
-    },
-    {
-      "name": "Quincho R",
-      "features": [],
-      "source": "catalog_page",
-      "screenshot": "screenshots/02-catalog-3.jpeg",
-      "detailUrl": "https://www.vibert.com.ar/quincho-s"
-    },
-    {
       "name": "Quincho M",
+      "sqMeters": 30,
       "features": [],
       "source": "catalog_page",
       "screenshot": "screenshots/02-catalog-3.jpeg",
@@ -175,24 +146,23 @@
     },
     {
       "name": "Quincho L",
+      "sqMeters": 30,
       "features": [],
       "source": "catalog_page",
       "screenshot": "screenshots/02-catalog-3.jpeg",
       "detailUrl": "https://www.vibert.com.ar/quincho-l"
-    },
-    {
-      "name": "Quincho XL",
-      "features": [],
-      "source": "catalog_page",
-      "screenshot": "screenshots/02-catalog-3.jpeg",
-      "detailUrl": "https://www.vibert.com.ar/quincho-m"
     }
   ],
   "contactInfo": {
     "email": "ventas@vibert.com.ar",
     "instagram": "@vibert.ok"
   },
-  "totalModelsFound": 14,
+  "totalModelsFound": 9,
   "pagesExplored": 9,
-  "errors": []
+  "errors": [],
+  "companyProfile": {
+    "identity": "ViBert es una empresa referente en la fabricación e industrialización de casas modulares con tecnología de hormigón prefabricado.",
+    "offering": "Casas de hormigón premoldeadas y proyectos de construcción modular industrializada",
+    "terminology": "proyectos"
+  }
 }

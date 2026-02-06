@@ -1,7 +1,7 @@
 {
   "company": "Habika",
   "url": "https://habika.ar/",
-  "capturedAt": "2026-02-05T20:28:22.277Z",
+  "capturedAt": "2026-02-06T15:28:02.077Z",
   "type": "modular",
   "navigation": {
     "menuItems": [
@@ -19,5 +19,10 @@
   },
   "totalModelsFound": 0,
   "pagesExplored": 1,
-  "errors": []
+  "errors": [],
+  "companyProfile": {
+    "identity": "Hábika es una empresa argentina de Córdoba especializada en construcción modular, que diseña y fabrica hábitats modulares prefabricados con llegada a todo el país. Se enfoca en la innovación arquitectónica modular con alto nivel de confort y habitabilidad inmediata.",
+    "offering": "Hábitats modulares funcionales, atractivos y versátiles para múltiples usos (turísticos, comerciales, residenciales), con entregas en todo el país en 90 días. Ofrecen soluciones de construcción sustentable, eficiente y personalizada con diseño e innovación.",
+    "terminology": "tipologías"
+  }
 }

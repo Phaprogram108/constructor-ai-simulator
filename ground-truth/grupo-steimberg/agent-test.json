@@ -1,43 +1,62 @@
 {
   "company": "Grupo Steimberg",
   "url": "https://www.gruposteimberg.com/",
-  "testedAt": "2026-02-06T14:54:25.021Z",
-  "sessionId": "982193bd-a3cd-4c1e-96bd-2660f82f096a",
-  "systemPromptLength": 20759,
+  "testedAt": "2026-02-06T15:22:43.473Z",
+  "sessionId": "02c86934-0807-464e-9c48-c6137aef2e2d",
+  "systemPromptLength": 21375,
   "systemPromptModelsFound": [
-    "Construccion en Hormigon premoldeado",
-    "Financiacion disponible"
+    "Cabin 28",
+    "Cabin 70",
+    "Cabin Yakisugi",
+    "Proyectos de Inversión",
+    "Finca Guadalupe",
+    "Hotel Propuesta de Diseño A",
+    "Hotel Propuesta de Diseño B",
+    "CABIN"
   ],
-  "systemPromptType": "de CABIN estas buscando?\"",
+  "systemPromptType": "de Modelos CABIN estas buscando?\"",
   "conversations": [
     {
       "question": "¿Qué es tu empresa y qué hacen?",
       "questionType": "identity",
-      "response": "Grupo Steimberg diseña y construye arquitectura modular en hormigón premoldeado, con un enfoque fuerte en diseño escandinavo minimalista y uso eficiente del espacio. Hacemos CABIN residenciales, turísticos y comerciales (como Cabin 28, Cabin 70, Cabin Yakisugi, Cabin Doble, Nordic House 180) y también proyectos de inversión completos, desde el diseño hasta la puesta en marcha.  \n\nTrabajamos con materiales sostenibles, soluciones rápidas de construcción y ofrecemos financiación para facilitar el acceso al sistema modular. ¿Estás pensando en algo residencial, turístico o más bien comercial?",
-      "mentionedModels": [],
+      "response": "Grupo Steimberg es un estudio que diseña y construye arquitectura modular en hormigón premoldeado, con foco en vivienda, turismo e inversiones. Desarrollamos Modelos CABIN (como Cabin 28, Cabin 70, Cabin Yakisugi y Cabin 40), complejos turísticos como Finca Guadalupe y proyectos más grandes como Nordic House 180 y hoteles.  \n\nTrabajamos con diseños modernos, muy luminosos, eficientes energéticamente y pensados para integrarse con la naturaleza, y además ofrecemos financiación.  \nPara orientarte mejor, ¿qué tipo de Modelos CABIN estás buscando: algo residencial, turístico o más bien de inversión?",
+      "mentionedModels": [
+        "Cabin 28",
+        "Cabin 70",
+        "Cabin Yakisugi",
+        "Finca Guadalupe",
+        "CABIN"
+      ],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 3215
+      "responseTimeMs": 2642
     },
     {
       "question": "¿Qué productos o servicios ofrecen?",
       "questionType": "offering",
-      "response": "Ofrecemos diseño y construcción de arquitectura modular en hormigón premoldeado, con servicio integral: proyecto, obra y terminaciones. Trabajamos tanto viviendas como proyectos turísticos y comerciales, y también desarrollos de inversión llave en mano.\n\nEn CABIN concretos tenemos: Cabin 28 (24 m², ideal renta turística), Cabin 70 (70 m², casa completa), Cabin Yakisugi (con revestimiento en madera quemada japonesa), Cabin Doble (40 m² en doble altura tipo loft) y Nordic House 180 (casas estilo nórdico de 100, 150 y 180 m²). Además, acompañamos proyectos de inversión (por ejemplo para AIRBNB/Booking), interiorismo y crecimiento en etapas, con financiación disponible.  \nPara orientarte mejor, ¿qué tipo de CABIN estás buscando?",
-      "mentionedModels": [],
+      "response": "Ofrecemos proyectos de arquitectura modular en hormigón premoldeado para uso residencial, turístico, comercial y de inversión.  \nDentro de los Modelos CABIN tenemos: Cabin 28 (compacta, estilo escandinavo), Cabin 40 (intermedia), Cabin 70 (vivienda amplia y minimalista) y Cabin Yakisugi (con técnica japonesa de madera quemada), además de CABIN como concepto general de unidades habitacionales personalizables.  \n\nTambién desarrollamos proyectos como Finca Guadalupe (complejo de cabañas y áreas comunes), Proyectos de Inversión con retornos del 25–30% anual, Nordic House 180 y propuestas de diseño de hotel.  \nPara acompañarte en todo el proceso, brindamos diseño, construcción modular en hormigón premoldeado y opciones de financiación. ¿En qué uso estás pensando vos: vivienda propia, alquiler turístico o un desarrollo más grande?",
+      "mentionedModels": [
+        "Cabin 28",
+        "Cabin 70",
+        "Cabin Yakisugi",
+        "Proyectos de Inversión",
+        "Finca Guadalupe",
+        "CABIN"
+      ],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 3041
+      "responseTimeMs": 5126
     },
     {
       "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
       "questionType": "contact",
-      "response": "Por acá tengo cargado solo el mail directo: gruposteimberg@gmail.com.  \n\nNo tengo el WhatsApp o teléfono actualizados en este catálogo; te sugiero escribirnos al mail así te pasan el número directo y, si querés, coordinamos una llamada con un asesor.",
+      "response": "Por acá tengo solo el mail directo: gruposteimberg@gmail.com.  \nNo tengo el WhatsApp o teléfono cargados en esta info, pero si querés te puedo orientar ahora mismo sobre modelos, tiempos y financiación y después te paso cómo llegar al formulario de contacto de la web.",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 3517
+      "responseTimeMs": 1760
     }
   ],
-  "sessionCreationTimeMs": 16648,
+  "sessionCreationTimeMs": 17443,
   "errors": []
 }

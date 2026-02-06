@@ -1,4 +1,5 @@
 import SimulatorForm from '@/components/SimulatorForm';
+import PresentationSlides from '@/components/PresentationSlides';
 
 const WHATSAPP_NUMBER = '5492235238176';
 const WHATSAPP_MESSAGE = encodeURIComponent('Hola! Me interesa implementar el agente IA en mi empresa. ¿Podemos agendar una llamada?');
@@ -130,32 +131,13 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Canva Slideshow Section */}
+      {/* Presentation Slides Section */}
       <section className="py-12 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-2xl font-bold text-center text-gray-900 mb-6">
-            Conoce mas sobre nuestra solucion
+            Conocé más sobre nuestra solución
           </h2>
-          <div className="relative w-full rounded-xl overflow-hidden shadow-lg group" style={{ paddingBottom: '56.25%' }}>
-            <iframe
-              src="https://www.canva.com/design/DAG_55ZBoGI/PtU8msivOYa6LaDyrLZjrQ/view?embed"
-              className="absolute top-0 left-0 w-full h-full border-0"
-              allowFullScreen
-              allow="fullscreen"
-            />
-            {/* Fullscreen button overlay */}
-            <a
-              href="https://www.canva.com/design/DAG_55ZBoGI/PtU8msivOYa6LaDyrLZjrQ/view"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="absolute top-3 right-3 bg-black/60 hover:bg-black/80 text-white p-2 rounded-lg opacity-0 group-hover:opacity-100 transition-opacity z-10 flex items-center gap-2 text-sm"
-            >
-              <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
-              </svg>
-              Ver en pantalla completa
-            </a>
-          </div>
+          <PresentationSlides />
         </div>
       </section>
 

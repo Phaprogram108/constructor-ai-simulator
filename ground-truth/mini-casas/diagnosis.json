@@ -1,0 +1,68 @@
+{
+  "company": "Mini Casas",
+  "url": "https://www.minicasas.com.ar/",
+  "diagnosedAt": "2026-02-06T14:56:47.393Z",
+  "overallScore": 50,
+  "scoreBreakdown": {
+    "productCoverage": 0,
+    "specAccuracy": 100,
+    "contactAccuracy": 100,
+    "hallucinationPenalty": 0,
+    "identityMatch": 100
+  },
+  "groundTruthModels": 6,
+  "systemPromptModels": 7,
+  "agentResponseModels": 2,
+  "gaps": [
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "MODELO ESTÁNDAR",
+      "detail": "Model \"MODELO ESTÁNDAR\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "MODELO ESTÁNDAR"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "MODELO ESTANDAR",
+      "detail": "Model \"MODELO ESTANDAR\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "MODELO ESTANDAR"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Modelo Estándar 1",
+      "detail": "Model \"Modelo Estándar 1\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Modelo Estándar 1"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Modelo Estándar 2",
+      "detail": "Model \"Modelo Estándar 2\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Modelo Estándar 2"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Modelo Estándar 3",
+      "detail": "Model \"Modelo Estándar 3\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Modelo Estándar 3"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Modelo Estándar 4",
+      "detail": "Model \"Modelo Estándar 4\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Modelo Estándar 4"
+    }
+  ],
+  "gapSummary": {
+    "scrapingMiss": 6,
+    "promptMiss": 0,
+    "hallucination": 0
+  },
+  "recommendations": [
+    "Scraping no encontro 6 modelo(s): MODELO ESTÁNDAR, MODELO ESTANDAR, Modelo Estándar 1, Modelo Estándar 2, Modelo Estándar 3, Modelo Estándar 4. Revisar firecrawl.ts URL patterns."
+  ]
+}

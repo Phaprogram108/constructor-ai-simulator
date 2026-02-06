@@ -1,0 +1,41 @@
+{
+  "company": "Sienna Modular",
+  "url": "https://www.siennamodular.com.ar/",
+  "diagnosedAt": "2026-02-06T14:56:47.388Z",
+  "overallScore": 35,
+  "scoreBreakdown": {
+    "productCoverage": 0,
+    "specAccuracy": 100,
+    "contactAccuracy": 0,
+    "hallucinationPenalty": 0,
+    "identityMatch": 100
+  },
+  "groundTruthModels": 1,
+  "systemPromptModels": 0,
+  "agentResponseModels": 1,
+  "gaps": [
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Arquitectura modular",
+      "detail": "Model \"Arquitectura modular\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Arquitectura modular"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "whatsapp",
+      "detail": "WhatsApp \"5491161182622\" exists in ground truth but not in systemPrompt",
+      "severity": "MEDIUM",
+      "groundTruthValue": "5491161182622"
+    }
+  ],
+  "gapSummary": {
+    "scrapingMiss": 2,
+    "promptMiss": 0,
+    "hallucination": 0
+  },
+  "recommendations": [
+    "Scraping no encontro 1 modelo(s): Arquitectura modular. Revisar firecrawl.ts URL patterns.",
+    "WhatsApp no fue extraido por el scraper. Revisar extraccion de contacto."
+  ]
+}

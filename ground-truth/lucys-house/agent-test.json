@@ -1,0 +1,137 @@
+{
+  "company": "Lucys House",
+  "url": "https://www.lucyshousearg.com/",
+  "testedAt": "2026-02-06T10:46:46.026Z",
+  "sessionId": "85a470cf-7211-4059-925c-d9d2f74ff3c3",
+  "systemPromptLength": 21964,
+  "systemPromptModelsFound": [
+    "Casa ENTREGA INMEDIATA - 30m2",
+    "Casa Seguinos para",
+    "Casa Módulo CONFORT - 32m2 - 1 dorm - 1 bano - USD",
+    "Casa Módulo DELUXE PLUS - 28.56m2 - 1 bano - U$D 4",
+    "Casa Módulo COMFORT - 30m2 - 1 dorm - 1 bano - USD",
+    "Casa Módulo 28,56 M2 - 28.56m2",
+    "Casa Módulo 19,20 M2 - 19.2m2",
+    "Casa Módulo 37,50 M2 - 37.5m2",
+    "Casa Módulo 35,70 M2 - 35.7m2",
+    "Casa Módulo 28,30 M2 - 28.3m2",
+    "Casa Módulo 32,00 M2 - 32m2",
+    "Casa Módulo 30,00 M2 - 30m2",
+    "Casa 30,6 M2 - 30.6m2 - Desde U$D 1290/m²",
+    "Casa 38 M2 - 38m2",
+    "Casa 150 M2 - 150m2",
+    "Casa 25,5 M2 - 25.5m2",
+    "Casa 37,50 M2 - 37.5m2",
+    "Casa 40,8 M2 - 40.8m2",
+    "Casa Módulo 19,20 M² - 19.2m2 - 1 dorm - 1 bano -"
+  ],
+  "systemPromptWhatsApp": "03515551234",
+  "systemPromptType": "de Constructora**: MODULAR",
+  "conversations": [
+    {
+      "question": "?Que modelos tienen disponibles?",
+      "questionType": "base",
+      "response": "Tenemos varios modelos modulares en steel frame, todos personalizables y listos en aprox. 60 días. Algunos destacados:  \n- **Módulo 19,20 m²** – 1 dorm, 1 baño – **USD 22.080 + IVA**  \n- **Módulo COMFORT 30 m²** – 1 dorm, 1 baño – **USD 38.700 + IVA**  \n- **Módulo CONFORT 32 m²** – 1 dorm, 1 baño – **USD 41.280 + IVA**  \n- **Módulo DELUXE PLUS 28,56 m²** – 1 baño – **USD 42.600 + IVA**  \n- **Módulo 35,70 m² ENTREGA INMEDIATA (Premium)** – full equipado – **USD 55.335 + IVA**  \nAdemás tenemos tipologías de **25,5 m², 28,3 m², 30 m², 30,6 m² (desde USD 1290/m²), 32 m², 37,5 m², 38 m², 40,8 m² y hasta 150 m²**.  \n\nPara orientarte mejor, ¿qué tamaño de casa estás buscando (cantidad de dormitorios o m²)?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4787
+    },
+    {
+      "question": "?Cuantos modelos/proyectos ofrecen?",
+      "questionType": "base",
+      "response": "Manejamos **más de 15 modelos/tipologías de vivienda** en steel frame, desde **19,20 m² hasta 150 m²**, más las opciones de módulos a medida.  \nDentro de esos tenés líneas como **Comfort, Deluxe Plus, Full Premium**, modelos **de entrega inmediata** (como el módulo Premium de 35,7 m²) y viviendas estándar de **25,5 / 28,3 / 30 / 30,6 / 32 / 37,5 / 38 / 40,8 y 150 m²**, además de los módulos **Handy Home** de guardado.  \n\nPara ayudarte a elegir entre tantas opciones, ¿qué tamaño o cantidad de dormitorios estás buscando?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4728
+    },
+    {
+      "question": "?Cuanto cuesta el modelo mas economico?",
+      "questionType": "base",
+      "response": "El modelo de vivienda más económico que tengo con precio cargado es el **Módulo 19,20 m²**, con 1 dormitorio y 1 baño, en **USD 22.080 + IVA**.  \nEn módulos de guardado (Handy Home), el más chico es el **HANDY 1 de 4 m²**, a **USD 1.800**.  \n\nPara ver si ese 19,20 m² te sirve: ¿lo pensás como vivienda permanente, tipo cabaña/quincho o algo más turístico?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2574
+    },
+    {
+      "question": "?Tienen financiamiento o planes de pago?",
+      "questionType": "base",
+      "response": "Sí, ofrecemos **financiación** para nuestras viviendas modulares en steel frame; los planes se adaptan según el modelo y el monto (parte en dólares y parte en cuotas en pesos normalmente).  \nNo tengo el detalle fino de cada plan por acá, pero te lo pueden pasar actualizado por WhatsApp al **+54 9 351 212 8965**.  \n\nAsí te asesoro mejor: ¿estás pensando en financiar el 100% o ya tenés una parte para entregar como anticipo?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2912
+    },
+    {
+      "question": "?Cual es su WhatsApp o telefono de contacto?",
+      "questionType": "base",
+      "response": "Te podés contactar directo con nosotros por:  \n- **WhatsApp:** +54 9 351 212 8965  \n- **Teléfono fijo:** (0351) 555-1234  \n\nSi querés, contame qué modelo te interesa y te digo exactamente qué info pedir cuando escribas.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2503
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo Módulo 28,56 M2?",
+      "questionType": "model_specific",
+      "response": "Del **Módulo 28,56 m²** tengo cargado solo el tamaño, pero no los detalles finos de equipamiento (distribución exacta, terminaciones, etc.).  \nSí te puedo decir que trabajamos siempre en **steel frame**, con terminaciones de calidad similar a las líneas Comfort/Deluxe (porcelanato, buenas aberturas, baño completo y cocina equipada según la configuración que elijas).  \n\nPara pasarte ficha técnica exacta y plano, te sugiero escribirnos por WhatsApp al **+54 9 351 212 8965** preguntando puntualmente por el **“Módulo 28,56 m²”**. Mientras tanto, ¿lo estás pensando con 1 dormitorio o tipo monoambiente amplio?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3465
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el Módulo 28,56 M2?",
+      "questionType": "model_specific",
+      "response": "El **Módulo 28,56 M2** tiene exactamente **28,56 m²** de superficie cubierta.  \nEs un tamaño ideal para un monoambiente amplio o 1 dormitorio compacto con baño y cocina integrados.  \n\n¿Te gustaría algo en ese metraje o preferís que te muestre opciones un poquito más grandes (30–32 m²)?",
+      "mentionedModels": [
+        "Módulo 28,56 M2"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2254
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo Módulo 19,20 M2?",
+      "questionType": "model_specific",
+      "response": "El **Módulo 19,20 m²** es una vivienda compacta en steel frame, con **1 dormitorio y 1 baño**, ideal como primera vivienda, cabañita o anexo.  \nEstá pensado como espacio funcional: ambiente principal con cocina integrada, baño completo y dormitorio, con la misma lógica de calidad que el resto de nuestras casas modulares.  \n\nEl precio que tengo cargado es **USD 22.080 + IVA**. Para afinar si te sirve este tamaño: ¿lo querés para uso permanente o más tipo cabaña/fin de semana?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 5208
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el Módulo 19,20 M2?",
+      "questionType": "model_specific",
+      "response": "El **Módulo 19,20 M²** tiene exactamente **19,20 m²** de superficie cubierta.  \nEs nuestro modelo de vivienda más compacto, con 1 dormitorio y 1 baño, ideal cuando querés algo funcional en poco espacio.  \n\n¿Querés que lo comparemos con el de **25,5 m²** o el de **28,3 m²** para que veas cuánto ganás en espacio?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3088
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo Módulo 28.56 M2?",
+      "questionType": "model_specific",
+      "response": "Del **Módulo 28,56 m²** tengo cargado solamente la **superficie (28,56 m²)**, pero no la ficha técnica completa (distribución, terminaciones puntuales, etc.).  \nIgual, como todos nuestros módulos habitacionales, es en **steel frame**, con baño completo y área de cocina, y se puede configurar tipo monoambiente amplio o 1 dormitorio compacto, según lo que necesites.\n\nPara ver plano, lista de materiales y equipamiento exacto, te recomiendo escribir por WhatsApp al **+54 9 351 212 8965** pidiendo la ficha del **“Módulo 28,56 m²”**. ¿Lo estás pensando más tipo cabaña de alquiler, vivienda propia o anexo/quincho?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3627
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el Módulo 28.56 M2?",
+      "questionType": "model_specific",
+      "response": "El **Módulo 28,56 M2** tiene exactamente **28,56 m²** de superficie cubierta.  \nCon ese metraje estás en un tamaño muy cómodo para un monoambiente grande o un 1 dormitorio compacto con baño y cocina.",
+      "mentionedModels": [
+        "Módulo 28,56 M2"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 1513
+    }
+  ],
+  "sessionCreationTimeMs": 27821,
+  "errors": []
+}

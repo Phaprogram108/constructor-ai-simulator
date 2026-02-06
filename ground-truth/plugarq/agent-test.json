@@ -1,0 +1,44 @@
+{
+  "company": "PlugArq",
+  "url": "https://www.plugarq.com/",
+  "testedAt": "2026-02-06T14:56:25.000Z",
+  "sessionId": "245a91df-1419-4272-83d2-1f46d91f0523",
+  "systemPromptLength": 24497,
+  "systemPromptModelsFound": [
+    "Construccion en Hormigon premoldeado",
+    "Construccion en"
+  ],
+  "systemPromptWhatsApp": "+5491170627642",
+  "systemPromptType": "de Proyectos estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Plug Arquitectura es un estudio de construcción modular que se encarga de todo: desde el diseño hasta entregarte la casa llave en mano. Construimos principalmente con tecnología Steel Frame y metodología Offsite, es decir, fabricamos los módulos en nuestra planta en el Parque Industrial de Junín (Bautista Císaro 1920) y después los llevamos e instalamos en tu terreno casi sin obra húmeda.  \n\nNuestro foco es que tengas tu casa (o proyecto) en plazos muy cortos, con costos claros y sin sorpresas, usando sistemas de alta aislación térmica y terminaciones a elección. Para orientarte mejor, ¿qué tipo de proyecto estás buscando: casa familiar, ampliación, algo tipo cabaña, local, oficina?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 6298
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos construcción modular llave en mano, principalmente viviendas diseñadas a medida usando Steel Frame y metodología Offsite, con estructura de acero, alta aislación térmica (celulosa/lana de vidrio, panel sándwich, DVH) y terminaciones a elección. Fabricamos los módulos en nuestra planta del Parque Industrial Junín y los instalamos en tu terreno en muy poco tiempo, reduciendo al mínimo la obra tradicional, los desperdicios y las desviaciones de costo y plazo.  \n\nDentro de eso trabajamos con casas modulares, proyectos residenciales completos (como Maru y Bruno 40 m², Ale y Sil 68 m², Gabi y Ángel 78 m², hasta Tomi 267 m²), y también otros usos como oficinas o espacios especiales. ¿Qué tipo de proyecto estás buscando vos?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3001
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Te podés contactar directo por WhatsApp al +54 9 11 7062-7642 (link: https://api.whatsapp.com/send?phone=5491170627642&text=Hola%2C%20me%20interesan%20las%20casas%20modulares).  \n\nTambién tenemos línea telefónica al mismo número y mail a info@plugarq.com. Si querés, contame qué estás buscando así ya le adelantamos la info al asesor que te contacte.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3990
+    }
+  ],
+  "sessionCreationTimeMs": 76236,
+  "errors": []
+}

@@ -1,0 +1,171 @@
+{
+  "company": "Aftamantes",
+  "url": "https://aftamantes.net/refugios/",
+  "capturedAt": "2026-02-05T20:35:40.181Z",
+  "type": "modular",
+  "navigation": {
+    "menuItems": [
+      "TURISMO",
+      "ARQUITECTURA MODULAR",
+      "OTROS"
+    ],
+    "modelSections": [
+      {
+        "label": "Skip to content",
+        "url": "https://aftamantes.net/refugios/#main"
+      },
+      {
+        "label": "TURISMO",
+        "url": "https://aftamantes.net/refugios/#"
+      },
+      {
+        "label": "Arquitectura Modular",
+        "url": "https://aftamantes.net/refugios/"
+      },
+      {
+        "label": "Cotizá tu refugio",
+        "url": "https://9t95847lqys.typeform.com/to/WZ9vB25D"
+      },
+      {
+        "label": "Preguntas Frecuentes",
+        "url": "https://aftamantes.net/refugios/#preguntas"
+      },
+      {
+        "label": "Estructura",
+        "url": "https://aftamantes.net/refugios/#accordion-item-estructura"
+      },
+      {
+        "label": "Terminación Exterior",
+        "url": "https://aftamantes.net/refugios/#accordion-item-terminaci%C3%B3n_exterior"
+      },
+      {
+        "label": "Terminación Interior",
+        "url": "https://aftamantes.net/refugios/#accordion-item-terminaci%C3%B3n_interior"
+      },
+      {
+        "label": "Aislación Termoacústica",
+        "url": "https://aftamantes.net/refugios/#accordion-item-aislaci%C3%B3n_termoac%C3%BAstica"
+      },
+      {
+        "label": "Instalación Sanitaria",
+        "url": "https://aftamantes.net/refugios/#accordion-item-instalaci%C3%B3n_sanitaria"
+      },
+      {
+        "label": "Instalación Eléctrica",
+        "url": "https://aftamantes.net/refugios/#accordion-item-instalaci%C3%B3n_el%C3%A9ctrica"
+      },
+      {
+        "label": "Carpintería Aluminio",
+        "url": "https://aftamantes.net/refugios/#accordion-item-carpinter%C3%ADa_aluminio"
+      },
+      {
+        "label": "Equipamiento Sanitario",
+        "url": "https://aftamantes.net/refugios/#accordion-item-equipamiento_sanitario"
+      },
+      {
+        "label": "Equipamiento Fijo",
+        "url": "https://aftamantes.net/refugios/#accordion-item-equipamiento_fijo"
+      },
+      {
+        "label": "¿Cuál es el precio de un refugio?",
+        "url": "https://aftamantes.net/refugios/#accordion-item-%C2%BFcu%C3%A1l_es_el_precio_de_un_refugio?"
+      },
+      {
+        "label": "¿Qué incluye mi refugio?",
+        "url": "https://aftamantes.net/refugios/#accordion-item-%C2%BFqu%C3%A9_incluye_mi_refugio?"
+      },
+      {
+        "label": "¿Qué no incluye el precio de mi refugio?",
+        "url": "https://aftamantes.net/refugios/#accordion-item-%C2%BFqu%C3%A9_no_incluye_el_precio_de_mi_refugio?"
+      },
+      {
+        "label": "¿Cómo se paga?",
+        "url": "https://aftamantes.net/refugios/#accordion-item-%C2%BFc%C3%B3mo_se_paga?"
+      },
+      {
+        "label": "¿Dónde se construyen los modulos?",
+        "url": "https://aftamantes.net/refugios/#accordion-item-%C2%BFd%C3%B3nde_se_construyen_los_modulos?"
+      },
+      {
+        "label": "¿Una vez colocados, se pueden volver a trasladar?",
+        "url": "https://aftamantes.net/refugios/#accordion-item-%C2%BFuna_vez_colocados,_se_pueden_volver_a_trasladar?"
+      },
+      {
+        "label": "¿Cuánto demora en estar listo?",
+        "url": "https://aftamantes.net/refugios/#accordion-item-%C2%BFcu%C3%A1nto_demora_en_estar_listo?"
+      },
+      {
+        "label": "¿Puedo personalizar mi modulo?",
+        "url": "https://aftamantes.net/refugios/#accordion-item-%C2%BFpuedo_personalizar_mi_modulo?"
+      },
+      {
+        "label": "¿Está permitido colocar mi refugio en cualquier lugar?",
+        "url": "https://aftamantes.net/refugios/#accordion-item-%C2%BFest%C3%A1_permitido_colocar_mi_refugio_en_cualquier_lugar?"
+      },
+      {
+        "label": "¿Resiste cualquier condición climática?",
+        "url": "https://aftamantes.net/refugios/#accordion-item-%C2%BFresiste_cualquier_condici%C3%B3n_clim%C3%A1tica?"
+      },
+      {
+        "label": "¿Pueden llegar a cualquier lugar?",
+        "url": "https://aftamantes.net/refugios/#accordion-item-%C2%BFpueden_llegar_a_cualquier_lugar?"
+      },
+      {
+        "label": "¿Que tengo que hacer antes que llegue mi refugio?",
+        "url": "https://aftamantes.net/refugios/#accordion-item-%C2%BFque_tengo_que_hacer_antes_que_llegue_mi_refugio?"
+      },
+      {
+        "label": "¿Puedo ubicarlo en un terreno con pendiente?",
+        "url": "https://aftamantes.net/refugios/#accordion-item-%C2%BFpuedo_ubicarlo_en_un_terreno_con_pendiente?"
+      },
+      {
+        "label": "¿Cómo llega mi refugio?",
+        "url": "https://aftamantes.net/refugios/#accordion-item-%C2%BFc%C3%B3mo_llega_mi_refugio?"
+      },
+      {
+        "label": "¿Qué tan seguros son los modulos?",
+        "url": "https://aftamantes.net/refugios/#accordion-item-%C2%BFqu%C3%A9_tan_seguros_son_los_modulos?"
+      },
+      {
+        "label": "refugio",
+        "url": "https://aftamantes.net/refugios/#top"
+      }
+    ]
+  },
+  "models": [
+    {
+      "name": "REFUGIOS",
+      "sqMeters": 70,
+      "features": [
+        "ULTIMAS UNIDADES EN STOCK",
+        "RECUPERO INFERIOR A 6 AÑOS",
+        "ENTREGA INMEDIATA",
+        "UN ACTIVO DE ALTO RENDIMIENTO ORIENTADO AL TURISMO"
+      ],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-1-refugios.jpeg",
+      "detailUrl": "https://aftamantes.net/refugios/#main",
+      "bedrooms": 2
+    },
+    {
+      "name": "ARMÁ TU ALDEA",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "CASA COMPACTA",
+      "price": "U$ 91.000",
+      "sqMeters": 70,
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg"
+    }
+  ],
+  "contactInfo": {
+    "instagram": "@aft_amantes"
+  },
+  "totalModelsFound": 3,
+  "pagesExplored": 5,
+  "errors": []
+}

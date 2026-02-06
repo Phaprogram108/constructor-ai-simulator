@@ -1,0 +1,135 @@
+{
+  "company": "Offis",
+  "url": "https://www.offis.ar/",
+  "diagnosedAt": "2026-02-06T14:56:47.394Z",
+  "overallScore": 15,
+  "scoreBreakdown": {
+    "productCoverage": 0,
+    "specAccuracy": 0,
+    "contactAccuracy": 100,
+    "hallucinationPenalty": 30,
+    "identityMatch": 100
+  },
+  "groundTruthModels": 12,
+  "systemPromptModels": 11,
+  "agentResponseModels": 6,
+  "gaps": [
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Offis STUDIO 12",
+      "detail": "Model \"Offis STUDIO 12\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Offis STUDIO 12"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Offis SLIM 15",
+      "detail": "Model \"Offis SLIM 15\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Offis SLIM 15"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Offis FAMILY 18",
+      "detail": "Model \"Offis FAMILY 18\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Offis FAMILY 18"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Offis FLEX 22",
+      "detail": "Model \"Offis FLEX 22\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Offis FLEX 22"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Offis PLUS 27",
+      "detail": "Model \"Offis PLUS 27\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Offis PLUS 27"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Offis XL 36",
+      "detail": "Model \"Offis XL 36\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Offis XL 36"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Offis SHOWROOM 12",
+      "detail": "Model \"Offis SHOWROOM 12\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Offis SHOWROOM 12"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Offis SHOWROOM 15",
+      "detail": "Model \"Offis SHOWROOM 15\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Offis SHOWROOM 15"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Offis SHOWROOM 22",
+      "detail": "Model \"Offis SHOWROOM 22\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Offis SHOWROOM 22"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Offis COWORK 18",
+      "detail": "Model \"Offis COWORK 18\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Offis COWORK 18"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Offis COWORK 22",
+      "detail": "Model \"Offis COWORK 22\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Offis COWORK 22"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Offis COWORK 27",
+      "detail": "Model \"Offis COWORK 27\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Offis COWORK 27"
+    },
+    {
+      "type": "HALLUCINATION",
+      "entity": "Casa Offis x Jeep",
+      "detail": "Agent mentioned model \"Casa Offis x Jeep\" (from prompt: \"Casa Offis x Jeep\") which does not exist in ground truth",
+      "severity": "HIGH",
+      "systemPromptValue": "Casa Offis x Jeep",
+      "agentResponseValue": "Casa Offis x Jeep"
+    },
+    {
+      "type": "HALLUCINATION",
+      "entity": "Casa Offis Max UCES",
+      "detail": "Agent mentioned model \"Casa Offis Max UCES\" (from prompt: \"Casa Offis x Jeep\") which does not exist in ground truth",
+      "severity": "HIGH",
+      "systemPromptValue": "Casa Offis x Jeep",
+      "agentResponseValue": "Casa Offis Max UCES"
+    },
+    {
+      "type": "HALLUCINATION",
+      "entity": "Casa Offis Arch en Nordelta",
+      "detail": "Agent mentioned model \"Casa Offis Arch en Nordelta\" (from prompt: \"Casa Offis Arch en Nordelta\") which does not exist in ground truth",
+      "severity": "HIGH",
+      "systemPromptValue": "Casa Offis Arch en Nordelta",
+      "agentResponseValue": "Casa Offis Arch en Nordelta"
+    }
+  ],
+  "gapSummary": {
+    "scrapingMiss": 12,
+    "promptMiss": 0,
+    "hallucination": 3
+  },
+  "recommendations": [
+    "Scraping no encontro 12 modelo(s): Offis STUDIO 12, Offis SLIM 15, Offis FAMILY 18, Offis FLEX 22, Offis PLUS 27, Offis XL 36, Offis SHOWROOM 12, Offis SHOWROOM 15, Offis SHOWROOM 22, Offis COWORK 18, Offis COWORK 22, Offis COWORK 27. Revisar firecrawl.ts URL patterns.",
+    "3 dato(s) inventados por el agente. Reforzar anti-hallucination en prompt-generator.ts."
+  ]
+}

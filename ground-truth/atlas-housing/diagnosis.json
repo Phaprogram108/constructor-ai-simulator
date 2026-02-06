@@ -1,0 +1,33 @@
+{
+  "company": "Atlas Housing",
+  "url": "https://atlashousing.com.ar",
+  "diagnosedAt": "2026-02-06T14:56:47.381Z",
+  "overallScore": 68,
+  "scoreBreakdown": {
+    "productCoverage": 50,
+    "specAccuracy": 100,
+    "contactAccuracy": 100,
+    "hallucinationPenalty": 0,
+    "identityMatch": 100
+  },
+  "groundTruthModels": 2,
+  "systemPromptModels": 6,
+  "agentResponseModels": 2,
+  "gaps": [
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Lago Meliquina",
+      "detail": "Model \"Lago Meliquina\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Lago Meliquina"
+    }
+  ],
+  "gapSummary": {
+    "scrapingMiss": 1,
+    "promptMiss": 0,
+    "hallucination": 0
+  },
+  "recommendations": [
+    "Scraping no encontro 1 modelo(s): Lago Meliquina. Revisar firecrawl.ts URL patterns."
+  ]
+}

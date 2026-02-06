@@ -1,0 +1,141 @@
+{
+  "company": "Aftamantes",
+  "url": "https://aftamantes.net/refugios/",
+  "testedAt": "2026-02-05T22:16:54.780Z",
+  "sessionId": "3d39ade6-dd97-421a-b793-ab6c57f5af55",
+  "systemPromptLength": 21194,
+  "systemPromptModelsFound": [
+    "Casa Refugios de - 24m2 - USD ,",
+    "Casa Los refugios de - 24m2 - USD ,",
+    "Casa los de - 24m2 - USD .",
+    "Casa tu refugio de - 45m2",
+    "Casa Compacta - 70m2 - 2 dorm - 1 bano - U$ 91.000"
+  ],
+  "systemPromptType": "de Constructora**: MODULAR",
+  "conversations": [
+    {
+      "question": "?Que modelos tienen disponibles?",
+      "questionType": "base",
+      "response": "Tenemos una colección de refugios modulares en distintos tamaños:  \n- Refugios de 24 m² (monoambiente amplio, ideal turismo / estudio / anexo).  \n- Refugios de 45 m² (ya con distribución tipo vivienda compacta).  \n- Refugios de 70 m² y la **Casa Compacta 70 m²** con 2 habitaciones, cocina y baño completos, desde **U$ 91.000**, lista en 120 días.  \n- Refugios de 94 m² (para proyectos más grandes o familiares).\n\nPara ir afinando, ¿qué tamaño de casa estás buscando (cantidad de dormitorios o m²)?",
+      "mentionedModels": [
+        "REFUGIOS",
+        "CASA COMPACTA"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3135
+    },
+    {
+      "question": "?Cuantos modelos/proyectos ofrecen?",
+      "questionType": "base",
+      "response": "Manejamos 4 tamaños base de refugios modulares: **24 m², 45 m², 70 m² y 94 m²**, todos personalizables en terminaciones y equipamiento.  \nDentro de los 70 m² además tenés la **Casa Compacta de 70 m²**, que es un modelo bien definido con 2 habitaciones, cocina y baño completos por **U$ 91.000**, lista en 120 días.  \n\nPara orientarte mejor, ¿ya viste algún tamaño o modelo que te haya gustado?",
+      "mentionedModels": [
+        "REFUGIOS",
+        "CASA COMPACTA"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2859
+    },
+    {
+      "question": "?Cuanto cuesta el modelo mas economico?",
+      "questionType": "base",
+      "response": "El modelo más económico es el **Refugio de 24 m²**, que arranca en **26.400 USD** según nuestra tabla de precios vigente.  \nDespués le siguen los de 45 m² desde 56.250 USD, 70 m² desde 87.500 USD y 94 m² desde 117.500 USD, siempre dependiendo de la personalización y el costo de traslado.\n\nPara ver si encaja con lo que necesitás: ¿ya tenés terreno? ¿En qué zona sería?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2115
+    },
+    {
+      "question": "?Tienen financiamiento o planes de pago?",
+      "questionType": "base",
+      "response": "Sí, ofrecemos financiación, incluso tenemos la opción de **100% financiado y 100% online** a través de Banco Hipotecario para nuestros refugios.  \nAdemás, si pagás de forma tradicional, el esquema estándar es: **60% para iniciar y congelar precio, 20% a los 45 días y 20% antes del traslado**.\n\nPara ver qué plan te puede encajar mejor, ¿qué presupuesto aproximado estás manejando y en qué tamaño de módulo estás pensando?",
+      "mentionedModels": [
+        "REFUGIOS"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2286
+    },
+    {
+      "question": "?Cual es su WhatsApp o telefono de contacto?",
+      "questionType": "base",
+      "response": "No tengo el número de WhatsApp cargado acá, pero lo encontrás directo entrando a nuestra web y tocando en **“Cotizá tu refugio”**, que te deriva al canal de contacto oficial.  \nSi querés, decime en qué tamaño y uso estás pensando (vivienda, turismo, oficina) y te dejo bien claro qué info pedir cuando les escribas así te asesoran más rápido.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2599
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo REFUGIOS?",
+      "questionType": "model_specific",
+      "response": "Los **Refugios AFT Amantes** son módulos prefabricados en **steel frame**, trasladables, con construcción en fábrica (obra seca) y listos para usar en plazos rápidos (desde 90 a 120 días según tamaño).  \nSe ofrecen en **24, 45, 70 y 94 m²**, con: estructura en steel + OSB, exterior en chapa sinusoidal C25 prepintada negra, interior en machimbre de pino, **aislación termoacústica completa**, instalación sanitaria (tanque 500 lts, termotanque eléctrico, bomba), instalación eléctrica con iluminación LED, carpinterías de aluminio Aluar Módena con vidrio laminado, baño completo (Ferrum + Peirano) y cocina equipada con bacha, anafe y muebles fijos.  \n\nAdemás son **personalizables** en terminaciones (pisos, maderas, etc.), se pueden equipar con opcionales (electrodomésticos, salamandra, paneles solares) y sirven tanto para **vivienda, turismo, oficina o comercio**.  \nPara afinar mejor, ¿en qué tamaño de refugio estás pensando: 24, 45, 70 o 94 m²?",
+      "mentionedModels": [
+        "REFUGIOS"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 5579
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el REFUGIOS?",
+      "questionType": "model_specific",
+      "response": "Nuestros **Refugios** no son un solo modelo, sino una línea con **4 tamaños disponibles**:  \n- Refugios de **24 m²**  \n- Refugios de **45 m²**  \n- Refugios de **70 m²** (incluye la Casa Compacta de 70 m²)  \n- Refugios de **94 m²**\n\nAsí que depende cuál te interese. ¿En qué tamaño estás pensando o cuántos dormitorios necesitás?",
+      "mentionedModels": [
+        "REFUGIOS",
+        "CASA COMPACTA"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2499
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo ARMÁ TU ALDEA?",
+      "questionType": "model_specific",
+      "response": "“Armá tu aldea” no es un modelo único, sino un **concepto de desarrollo turístico** donde combinás varios Refugios (24, 45, 70 y 94 m²) para armar un complejo: cabañas, recepción, SUM, etc.  \nEstá pensado como **activo de alto rendimiento orientado al turismo**, con módulos trasladables, construcción en seco, tiempos rápidos (entrega incluso inmediata en algunas unidades) y posibilidad de personalizar terminaciones y equipamiento según el tipo de hospedaje que quieras ofrecer.\n\nSi querés, contame: ¿cuántas unidades pensás poner en la aldea y en qué zona, así veo qué combinación de tamaños te conviene?",
+      "mentionedModels": [
+        "REFUGIOS",
+        "ARMÁ TU ALDEA"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3170
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el ARMÁ TU ALDEA?",
+      "questionType": "model_specific",
+      "response": "“Armá tu aldea” no es una sola unidad con m² fijos, sino un **conjunto de refugios** que vos armás a medida combinando nuestros módulos de **24, 45, 70 y 94 m²**.  \nLa superficie total de la aldea va a depender de cuántos refugios elijas de cada tamaño (por ejemplo, 4 de 24 m² + 2 de 45 m², etc.).\n\nPara ayudarte a dimensionarlo, ¿cuántas unidades pensás poner y para cuántas personas en total?",
+      "mentionedModels": [
+        "REFUGIOS",
+        "ARMÁ TU ALDEA"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2348
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo CASA COMPACTA?",
+      "questionType": "model_specific",
+      "response": "La **Casa Compacta** es una vivienda modular de **70 m²**, en steel frame, con **2 habitaciones**, cocina completa y baño completo, pensada como casa fija o de turismo pero con toda la comodidad de una vivienda tradicional.  \nSe entrega **lista para vivir en 120 días**, incluye toda la aislación termoacústica, instalaciones sanitarias y eléctricas completas, carpinterías de aluminio de calidad, muebles fijos de cocina y placard, y arranca en **U$ 91.000** (sin traslado ni obra de bases).\n\nPara ver si te encaja, ¿ya tenés terreno? ¿En qué zona sería?",
+      "mentionedModels": [
+        "CASA COMPACTA"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3428
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el CASA COMPACTA?",
+      "questionType": "model_specific",
+      "response": "La **Casa Compacta** tiene **70 m² cubiertos**.  \nDentro de esos 70 m² se distribuyen las **2 habitaciones**, la cocina completa y el baño completo.",
+      "mentionedModels": [
+        "CASA COMPACTA"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 1889
+    }
+  ],
+  "sessionCreationTimeMs": 18040,
+  "errors": []
+}

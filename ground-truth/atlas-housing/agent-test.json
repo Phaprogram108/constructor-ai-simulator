@@ -1,0 +1,115 @@
+{
+  "company": "Atlas Housing",
+  "url": "https://atlashousing.com.ar",
+  "testedAt": "2026-02-06T10:37:15.739Z",
+  "sessionId": "5569e35a-1c9b-4f4c-be5b-95bb7cf814b8",
+  "systemPromptLength": 21538,
+  "systemPromptModelsFound": [
+    "Casa Katerra - 100m2 - 2 dorm - 1 bano - USD 50,00",
+    "Casa Upsala - 70m2 - 2 dorm - 1 bano - USD 45,000",
+    "Casa Fitz Roy - 120m2 - 3 dorm - 2 banos - USD 70,",
+    "Casa Blackberry - 90m2 - 2 dorm - 1 bano - USD 55,",
+    "Casa Hexa - 110m2 - 3 dorm - 2 banos - USD 65,000",
+    "Casa Montana - 105m2 - 2 dorm - 1 bano - USD 60,00"
+  ],
+  "systemPromptWhatsApp": "+541112345678",
+  "systemPromptType": "de Constructora**: MODULAR",
+  "conversations": [
+    {
+      "question": "?Que modelos tienen disponibles?",
+      "questionType": "base",
+      "response": "Tenemos varios modelos de vivienda en hormigón premoldeado, todos modulares y con financiación disponible.  \nHoy contamos con:\n\n- **Casa Upsala** – 70 m² – 2 dormitorios – 1 baño – **USD 45.000**  \n- **Casa Blackberry** – 90 m² – 2 dormitorios – 1 baño – **USD 55.000**  \n- **Casa Montana** – 105 m² – 2 dormitorios – 1 baño – **USD 60.000**  \n- **Casa Katerra** – 100 m² – 2 dormitorios – 1 baño – **USD 50.000**  \n- **Casa Hexa** – 110 m² – 3 dormitorios – 2 baños – **USD 65.000**  \n- **Casa Fitz Roy** – 120 m² – 3 dormitorios – 2 baños – **USD 70.000**\n\nPara orientarte mejor, ¿qué tamaño de casa estás buscando, en m² o en cantidad de dormitorios?",
+      "mentionedModels": [
+        "Katerra"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4435
+    },
+    {
+      "question": "?Cuantos modelos/proyectos ofrecen?",
+      "questionType": "base",
+      "response": "Ofrecemos actualmente **6 modelos de vivienda** en hormigón premoldeado, todos modulares y financiables: Upsala, Blackberry, Montana, Katerra, Hexa y Fitz Roy, con superficies desde **70 m² hasta 120 m²** y opciones de **2 y 3 dormitorios**.  \n\nAsí puedo orientarte mejor: ¿qué tamaño de casa estás buscando, en m² o en cantidad de dormitorios?",
+      "mentionedModels": [
+        "Katerra"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2980
+    },
+    {
+      "question": "?Cuanto cuesta el modelo mas economico?",
+      "questionType": "base",
+      "response": "El modelo más económico que tenemos hoy es la **Casa Upsala**, de **70 m²**, con **2 dormitorios y 1 baño**, y está en **USD 45.000**.  \nPara ver si se ajusta a lo que necesitás, ¿ya tenés el terreno? ¿En qué zona sería la obra?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2389
+    },
+    {
+      "question": "?Tienen financiamiento o planes de pago?",
+      "questionType": "base",
+      "response": "Sí, ofrecemos **financiación** para nuestras viviendas modulares en hormigón premoldeado, con planes de pago que se adaptan bastante al perfil de cada cliente. Los montos, plazos y porcentaje de anticipo se arman caso por caso, según modelo y situación particular.  \n\nPara orientarte mejor con opciones concretas: ¿qué presupuesto aproximado manejás y qué modelo o tamaño de casa tenés en mente?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 5163
+    },
+    {
+      "question": "?Cual es su WhatsApp o telefono de contacto?",
+      "questionType": "base",
+      "response": "Te podés comunicar directo por WhatsApp o teléfono al **+54 11 1234 5678**.  \nSi preferís por mail, el contacto es: **Portada-videos@72x.png**.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3173
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo Lago Meliquina?",
+      "questionType": "model_specific",
+      "response": "El modelo **Lago Meliquina** aparece en nuestros trabajos realizados, pero no lo tenemos cargado como modelo estándar con ficha técnica (m², cantidad de dormitorios, etc.) como sí pasa con Upsala, Katerra, Fitz Roy, Hexa, Blackberry y Montana. Probablemente se trate de un proyecto personalizado hecho para ese lugar puntual.  \n\nNo tengo la información específica de m² y ambientes de Lago Meliquina cargada acá, pero podés pedir el detalle y fotos por WhatsApp al **+54 11 1234 5678** y te pasan toda la data del proyecto. Mientras tanto, si me contás qué tamaño y cuántos dormitorios buscás, puedo sugerirte el modelo de catálogo más parecido.",
+      "mentionedModels": [
+        "Lago Meliquina",
+        "Katerra"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4326
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el Lago Meliquina?",
+      "questionType": "model_specific",
+      "response": "Del proyecto **Lago Meliquina** no tengo cargado el dato exacto de metros cuadrados ni la ficha técnica completa, porque fue un trabajo puntual y no un modelo estándar de catálogo.  \n\nNo tengo esa información específica cargada; te sugiero consultarlo por WhatsApp al **+54 11 1234 5678** así te pasan los m² y detalles de ese proyecto. Si querés, contame cuántos m² estás buscando y te recomiendo el modelo de línea más parecido.",
+      "mentionedModels": [
+        "Lago Meliquina"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 6059
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo Katerra?",
+      "questionType": "model_specific",
+      "response": "La **Casa Katerra** es un modelo de **100 m²**, en hormigón premoldeado, con **2 dormitorios y 1 baño**, pensada como vivienda familiar cómoda pero todavía accesible en tamaño y costo. Trabajamos con construcción modular industrializada, lo que te permite ahorrar hasta un 40% en costos versus obra tradicional y reducir los tiempos de entrega a la mitad, con calidad controlada en fábrica.  \n\nPara ayudarte mejor con este modelo: ¿ya tenés el terreno? ¿En qué zona sería?",
+      "mentionedModels": [
+        "Katerra"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3457
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el Katerra?",
+      "questionType": "model_specific",
+      "response": "La **Casa Katerra** tiene **100 m²** totales.  \nSi querés, te la comparo con otros modelos similares en tamaño, como Blackberry (90 m²) o Montana (105 m²), así ves cuál se adapta mejor a lo que necesitás.",
+      "mentionedModels": [
+        "Katerra"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 1879
+    }
+  ],
+  "sessionCreationTimeMs": 39879,
+  "errors": []
+}

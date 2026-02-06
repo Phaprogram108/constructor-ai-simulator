@@ -1,0 +1,66 @@
+{
+  "company": "Habitatio",
+  "url": "https://habitatio.com.ar",
+  "testedAt": "2026-02-06T10:38:49.890Z",
+  "sessionId": "c47ab647-d509-4d5d-b31e-51ebf6695e4f",
+  "systemPromptLength": 21552,
+  "systemPromptModelsFound": [
+    "Casa Flat Pack - N/A",
+    "Casa Folding - N/A",
+    "Casa Flat Pack Loft - 1 dorm - 1 bano",
+    "Casa Cabaña Flat Pack Individual",
+    "Primero muestra los modelos disponibles",
+    "Si ninguno encaja, ofrece la opcion de diseno pers",
+    "Pregunta que prefiere el cliente"
+  ],
+  "systemPromptType": "de Constructora**: MIXTA",
+  "conversations": [
+    {
+      "question": "?Que modelos tienen disponibles?",
+      "questionType": "base",
+      "response": "Tenemos estas opciones de catálogo habitacional:\n\n- **Casa Flat Pack** (módulo Flat Pack estándar, diseño innovador con DVH para máximo confort térmico y acústico).  \n- **Casa Folding** (módulo Folding, simple, rápido y funcional).  \n- **Casa Flat Pack Loft**: 1 dormitorio en planta alta + 1 baño completo en planta baja, con cocina-comedor-living integrados y grandes ventanales.  \n- **Cabaña Flat Pack Individual**: un solo módulo, súper compacto y funcional, ideal como monoambiente, estudio o cabañita chica.\n\nSi ninguno se ajusta a lo que necesitás, también hacemos **proyectos a medida**. Para orientarte mejor, ¿qué tamaño de casa estás buscando aproximadamente (m² o cantidad de ambientes)?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3072
+    },
+    {
+      "question": "?Cuantos modelos/proyectos ofrecen?",
+      "questionType": "base",
+      "response": "Te cuento cómo trabajamos en Habitatio:\n\n1) **Modelos de catálogo (4 opciones habitacionales principales):**  \n- Casa Flat Pack  \n- Casa Folding  \n- Casa Flat Pack Loft (1 dorm + 1 baño)  \n- Cabaña Flat Pack Individual (módulo único, tipo monoambiente)\n\n2) **Proyectos personalizados:** además del catálogo, hacemos **diseños a medida** según tus necesidades (más dormitorios, ampliaciones, uso comercial, etc.).\n\nEn resumen: hoy tenés **4 modelos estándar** + la opción de **proyecto personalizado**. Para ayudarte a elegir, ¿preferís partir de un modelo existente o pensar algo totalmente a medida?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3546
+    },
+    {
+      "question": "?Cuanto cuesta el modelo mas economico?",
+      "questionType": "base",
+      "response": "El modelo más económico suele ser la **Cabaña Flat Pack Individual**, que es el módulo más chico y compacto (ideal monoambiente / estudio).  \nNo tengo los precios actualizados cargados, así que no puedo pasarte un valor concreto por acá; te sugiero consultarlo por WhatsApp o mail para que te pasen la lista vigente: +54 9 11 3059-2028 · info@habitatio.com.ar.  \n\nMientras tanto, para orientarte mejor: ¿ya tenés terreno? ¿En qué zona sería la instalación?",
+      "mentionedModels": [],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 3508
+    },
+    {
+      "question": "?Tienen financiamiento o planes de pago?",
+      "questionType": "base",
+      "response": "No tengo info específica de financiamiento o planes de pago cargada en el sistema.  \nLo que sí puedo decirte es que suelen manejarse distintas formas de pago según el proyecto, así que lo mejor es verlo directo con el equipo comercial por WhatsApp al +54 9 11 3059-2028 o por mail a info@habitatio.com.ar.  \n\nPara ir avanzando y ver qué opción podría adaptarse mejor a vos: ¿qué presupuesto aproximado estás manejando?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3015
+    },
+    {
+      "question": "?Cual es su WhatsApp o telefono de contacto?",
+      "questionType": "base",
+      "response": "Te paso los datos completos de contacto de Habitatio:\n\n- 📞 **WhatsApp / Teléfono:** +54 9 11 3059-2028  \n- 📧 **Email:** info@habitatio.com.ar  \n\nSi querés, también podemos avanzar por acá: ¿qué tamaño de casa estás buscando?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 1846
+    }
+  ],
+  "sessionCreationTimeMs": 66150,
+  "errors": []
+}

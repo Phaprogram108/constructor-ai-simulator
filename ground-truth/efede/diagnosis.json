@@ -1,0 +1,23 @@
+{
+  "company": "Efede",
+  "url": "https://efede.com.ar/casas-modulares/",
+  "diagnosedAt": "2026-02-06T14:56:47.394Z",
+  "overallScore": 85,
+  "scoreBreakdown": {
+    "productCoverage": 100,
+    "specAccuracy": 100,
+    "contactAccuracy": 100,
+    "hallucinationPenalty": 0,
+    "identityMatch": 100
+  },
+  "groundTruthModels": 0,
+  "systemPromptModels": 6,
+  "agentResponseModels": 0,
+  "gaps": [],
+  "gapSummary": {
+    "scrapingMiss": 0,
+    "promptMiss": 0,
+    "hallucination": 0
+  },
+  "recommendations": []
+}

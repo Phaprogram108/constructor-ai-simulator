@@ -1,0 +1,43 @@
+{
+  "company": "Grupo Steimberg",
+  "url": "https://www.gruposteimberg.com/",
+  "testedAt": "2026-02-06T14:54:25.021Z",
+  "sessionId": "982193bd-a3cd-4c1e-96bd-2660f82f096a",
+  "systemPromptLength": 20759,
+  "systemPromptModelsFound": [
+    "Construccion en Hormigon premoldeado",
+    "Financiacion disponible"
+  ],
+  "systemPromptType": "de CABIN estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Grupo Steimberg diseña y construye arquitectura modular en hormigón premoldeado, con un enfoque fuerte en diseño escandinavo minimalista y uso eficiente del espacio. Hacemos CABIN residenciales, turísticos y comerciales (como Cabin 28, Cabin 70, Cabin Yakisugi, Cabin Doble, Nordic House 180) y también proyectos de inversión completos, desde el diseño hasta la puesta en marcha.  \n\nTrabajamos con materiales sostenibles, soluciones rápidas de construcción y ofrecemos financiación para facilitar el acceso al sistema modular. ¿Estás pensando en algo residencial, turístico o más bien comercial?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3215
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos diseño y construcción de arquitectura modular en hormigón premoldeado, con servicio integral: proyecto, obra y terminaciones. Trabajamos tanto viviendas como proyectos turísticos y comerciales, y también desarrollos de inversión llave en mano.\n\nEn CABIN concretos tenemos: Cabin 28 (24 m², ideal renta turística), Cabin 70 (70 m², casa completa), Cabin Yakisugi (con revestimiento en madera quemada japonesa), Cabin Doble (40 m² en doble altura tipo loft) y Nordic House 180 (casas estilo nórdico de 100, 150 y 180 m²). Además, acompañamos proyectos de inversión (por ejemplo para AIRBNB/Booking), interiorismo y crecimiento en etapas, con financiación disponible.  \nPara orientarte mejor, ¿qué tipo de CABIN estás buscando?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3041
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Por acá tengo cargado solo el mail directo: gruposteimberg@gmail.com.  \n\nNo tengo el WhatsApp o teléfono actualizados en este catálogo; te sugiero escribirnos al mail así te pasan el número directo y, si querés, coordinamos una llamada con un asesor.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3517
+    }
+  ],
+  "sessionCreationTimeMs": 16648,
+  "errors": []
+}

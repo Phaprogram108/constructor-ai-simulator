@@ -1,0 +1,151 @@
+{
+  "company": "Ecomod",
+  "url": "https://ecomod.com.ar/",
+  "testedAt": "2026-02-06T10:41:24.661Z",
+  "sessionId": "fc7533c1-684a-4eb8-877f-5f9df85f9fc9",
+  "systemPromptLength": 21788,
+  "systemPromptModelsFound": [
+    "Casa Eco Mini - 28m2 - 1 dorm - 1 bano - Consultar",
+    "Casa Proyecto Chascomús - 120m2 - 3 dorm - 2 banos",
+    "Casa Modelo ABC - 100m2 - 3 dorm - 2 banos - USD 1",
+    "Casa Modelo Eco 2.1 + - 70m2 - 2 dorm - 1 bano - C",
+    "Casa Eco Mini + - 40m2 - 1 bano - Consulta mediant",
+    "Casa Eco Studio - 11.5m2 - 1 bano - Consultar",
+    "Casa Turístico - 25m2 - 1 bano - Consultar",
+    "Casa Eco 1.1 - 45m2 - 1 dorm - 1 bano - Consultar",
+    "Casa Eco 2.1 + - 70m2 - 2 dorm - 1 bano - Consulta",
+    "Casa Modelo Eco 1.1 - 45m2 - 1 dorm - 1 bano - Con",
+    "Primero muestra los modelos disponibles",
+    "Si ninguno encaja, ofrece la opcion de diseno pers",
+    "Pregunta que prefiere el cliente"
+  ],
+  "systemPromptWhatsApp": "5491167666654",
+  "systemPromptType": "de Constructora**: MIXTA",
+  "conversations": [
+    {
+      "question": "?Que modelos tienen disponibles?",
+      "questionType": "base",
+      "response": "Tenemos varios modelos de catálogo, todos en construcción modular de hormigón premoldeado:  \n- **Eco Studio** – 11,5 m² – 1 baño.  \n- **Turístico** – 25 m² – 1 baño.  \n- **Eco Mini** – 28 m² – 1 dorm – 1 baño.  \n- **Eco Mini +** – 40 m² – 1 baño.  \n- **Eco 1.1 / Modelo Eco 1.1** – 45 m² – 1 dorm – 1 baño.  \n- **Eco 2.1 +** – 70 m² – 2 dorm – 1 baño.  \n- **Modelo ABC** – 100 m² – 3 dorm – 2 baños.  \n- **Proyecto Chascomús** – 120 m² – 3 dorm – 2 baños.  \n\nSi ninguno se ajusta a lo que buscás, también hacemos proyectos 100% a medida. Para orientarte mejor, ¿qué tamaño de casa estás buscando aproximadamente (en m² o cantidad de ambientes)?",
+      "mentionedModels": [
+        "Eco Studio",
+        "Turístico",
+        "Eco Mini",
+        "Eco Mini +",
+        "Eco 1.1",
+        "Eco 2.1 +"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3724
+    },
+    {
+      "question": "?Cuantos modelos/proyectos ofrecen?",
+      "questionType": "base",
+      "response": "Te cuento: hoy en catálogo tenemos **9 modelos estándar** (desde el Eco Studio de 11,5 m² hasta el Proyecto Chascomús de 120 m²) y además trabajamos **proyectos personalizados** a medida, sin límite fijo de diseños.  \n\nPara ayudarte a elegir lo ideal para vos, ¿qué tamaño de casa estás buscando?",
+      "mentionedModels": [
+        "Eco Studio"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2089
+    },
+    {
+      "question": "?Cuanto cuesta el modelo mas economico?",
+      "questionType": "base",
+      "response": "El modelo más económico por tamaño es el **Eco Studio de 11,5 m² con 1 baño** y luego el **Turístico de 25 m²**, ambos en sistema modular de hormigón premoldeado.  \nNo tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp al **+54 9 11 6766-6654**, donde te pasan el valor al día y qué incluye.  \n\nPara orientarte mejor mientras tanto, ¿ya tenés terreno? ¿En qué zona sería?",
+      "mentionedModels": [
+        "Eco Studio",
+        "Turístico"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 2483
+    },
+    {
+      "question": "?Tienen financiamiento o planes de pago?",
+      "questionType": "base",
+      "response": "No tengo cargada info específica sobre planes de financiación o cuotas, y como los montos se actualizan seguido es algo que se ve caso por caso.  \nLo mejor es que lo consultes directo por WhatsApp al **+54 9 11 6766-6654**, así te dicen opciones de pago según el modelo y la etapa de obra.  \n\nPara ir viendo qué podría encajar con vos: ¿para cuándo necesitás tener la casa lista aproximadamente?",
+      "mentionedModels": [],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 2607
+    },
+    {
+      "question": "?Cual es su WhatsApp o telefono de contacto?",
+      "questionType": "base",
+      "response": "Te dejo los datos bien claros:  \n📱 **WhatsApp:** +54 9 11 6766-6654  \n📧 **Email:** info@ecomod.com.ar  \n\nSi querés, me contás qué tamaño de casa estás buscando y te voy orientando antes de que escribas.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 1602
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo Eco Studio?",
+      "questionType": "model_specific",
+      "response": "El **Eco Studio** es nuestro modelo más compacto, ideal como estudio, oficina, consultorio o monoambiente: tiene **11,5 m²** y **1 baño completo**, en sistema modular de **hormigón premoldeado**, 100% transportable y ampliable con futuros módulos.  \nMantiene la misma calidad de materiales que el resto de la línea ECOMOD y se puede adaptar en terminaciones y ubicación de aberturas según el uso que le quieras dar.  \n\nPara ver si te queda cómodo: ¿lo pensás usar como vivienda temporaria, oficina, o tipo cabañita/estudio?",
+      "mentionedModels": [
+        "Eco Studio"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4225
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el Eco Studio?",
+      "questionType": "model_specific",
+      "response": "El **Eco Studio** tiene **11,5 m² cubiertos** y cuenta con **1 baño**.  \nEs nuestro módulo más chico, pensado como estudio, oficina o monoambiente compacto.",
+      "mentionedModels": [
+        "Eco Studio"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 1448
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo Turístico?",
+      "questionType": "model_specific",
+      "response": "El modelo **Turístico** tiene **25 m² cubiertos** y **1 baño**, en construcción modular de **hormigón premoldeado**, ideal como cabañita, unidad de alquiler temporal o anexo tipo quincho/habitación de huéspedes.  \nAl igual que el resto de los ECOMOD es **100% transportable y ampliable** con más módulos a futuro, manteniendo buena aislación y terminaciones de calidad para uso turístico o recreativo.  \n\n¿Lo estás pensando para alquiler tipo cabañas, para un lote propio o como anexo en el fondo de casa?",
+      "mentionedModels": [
+        "Turístico"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3121
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el Turístico?",
+      "questionType": "model_specific",
+      "response": "El modelo **Turístico** tiene **25 m² cubiertos** y cuenta con **1 baño**.  \nEs un módulo compacto, ideal para cabaña turística o habitación extra en el terreno.",
+      "mentionedModels": [
+        "Turístico"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 1604
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo Eco Mini?",
+      "questionType": "model_specific",
+      "response": "El modelo **Eco Mini** tiene **28 m²**, con **1 dormitorio y 1 baño**, en sistema modular de **hormigón premoldeado**, 100% transportable y ampliable con más módulos a futuro.  \nEs ideal como primera vivienda, casa de fin de semana o cabaña, con buen nivel de terminaciones y pensado para optimizar al máximo el espacio en pocos metros.  \n\nPara saber si te encaja: ¿la idea es usarla como vivienda permanente o más bien como casa de descanso/cabaña?",
+      "mentionedModels": [
+        "Eco Mini"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2538
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el Eco Mini?",
+      "questionType": "model_specific",
+      "response": "El **Eco Mini** tiene **28 m²**.  \nIncluye **1 dormitorio y 1 baño**, en construcción modular de hormigón premoldeado.",
+      "mentionedModels": [
+        "Eco Mini"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 1249
+    }
+  ],
+  "sessionCreationTimeMs": 26112,
+  "errors": []
+}

@@ -1,0 +1,80 @@
+{
+  "company": "Sienna Modular",
+  "url": "https://www.siennamodular.com.ar/",
+  "testedAt": "2026-02-05T21:00:09.373Z",
+  "sessionId": "4b7487b6-92d8-4f6c-b46f-f7be126b8def",
+  "systemPromptLength": 13812,
+  "systemPromptModelsFound": [],
+  "systemPromptType": "de Constructora**: TRADICIONAL",
+  "conversations": [
+    {
+      "question": "?Que modelos tienen disponibles?",
+      "questionType": "base",
+      "response": "Trabajamos con proyectos 100% personalizados, no manejamos modelos fijos prearmados. Diseñamos y fabricamos el módulo a medida según cómo lo quieras usar (vivienda, quincho, oficina, ampliación, etc.), siempre con precio cerrado y listo para habitar.  \n\nPara orientarte mejor, ¿cuántos metros cuadrados estás pensando aproximadamente para tu proyecto?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3095
+    },
+    {
+      "question": "?Cuantos modelos/proyectos ofrecen?",
+      "questionType": "base",
+      "response": "En SIENNA no trabajamos con una cantidad fija de modelos, sino con proyectos totalmente a medida según lo que necesites. Podés hacer desde un solo módulo chico (por ejemplo tipo monoambiente, oficina o quincho) hasta una vivienda completa de varios dormitorios, y siempre se puede ampliar más adelante sumando nuevos módulos.  \n\nPara ver qué tipo de proyecto encaja mejor con vos, ¿cuántos metros cuadrados estás imaginando para tu espacio?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3407
+    },
+    {
+      "question": "?Cuanto cuesta el modelo mas economico?",
+      "questionType": "base",
+      "response": "No tengo los precios actualizados cargados. Te sugiero consultarlo por WhatsApp así te pasan valores al día según el tamaño y equipamiento que necesites.  \n\nPara poder orientarte hacia una opción más económica, ¿cuántos metros cuadrados estás pensando para tu módulo o vivienda?",
+      "mentionedModels": [],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 2272
+    },
+    {
+      "question": "?Tienen financiamiento o planes de pago?",
+      "questionType": "base",
+      "response": "No tengo información específica cargada sobre financiamiento o planes de pago, así que eso te lo van a poder confirmar mejor por WhatsApp según el tipo de proyecto que necesites.  \n\nPara ir avanzando y que te asesoren bien con eso también, ¿ya tenés el terreno? ¿En qué zona sería el proyecto?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 1589
+    },
+    {
+      "question": "?Cual es su WhatsApp o telefono de contacto?",
+      "questionType": "base",
+      "response": "No tengo el número de WhatsApp o teléfono cargado acá.  \n\nTe recomiendo ingresar a la web de SIENNA y desde ahí hacer clic en el botón de WhatsApp o “Agendar reunión”, donde te va a aparecer directamente el contacto oficial del equipo comercial.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2193
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo Arquitectura modular?",
+      "questionType": "model_specific",
+      "response": "En SIENNA “arquitectura modular” no es un modelo puntual, sino la forma en la que diseñamos y construimos todos nuestros proyectos: módulos transportables, con excelente aislación térmica, listos para habitar y siempre personalizables. Se fabrican en 30 a 60 días, se montan sobre pilotes (son transportables y ampliables sumando más módulos), y podés elegir el equipamiento integral trabajando con proveedores de primera línea, siempre con precio cerrado desde el inicio.  \n\nPara poder contarte cómo serían esas características aplicadas a *tu* caso, ¿para qué lo querés usar: vivienda, quincho, oficina, ampliación, alojamiento turístico u otro uso?",
+      "mentionedModels": [
+        "Arquitectura modular"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 5729
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el Arquitectura modular?",
+      "questionType": "model_specific",
+      "response": "La “arquitectura modular” en SIENNA no tiene una cantidad fija de metros, porque no es un modelo único sino un sistema que adaptamos a cada proyecto. Podemos trabajar desde módulos chicos (por ejemplo tipo monoambiente/oficina) hasta viviendas amplias de varios dormitorios, y siempre es posible ampliar después sumando más módulos.  \n\nPara poder orientarte con una superficie concreta, ¿cuántos metros cuadrados estás pensando vos para tu proyecto?",
+      "mentionedModels": [
+        "Arquitectura modular"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3710
+    }
+  ],
+  "sessionCreationTimeMs": 112516,
+  "errors": []
+}

@@ -1,0 +1,161 @@
+{
+  "company": "Lucys House",
+  "url": "https://www.lucyshousearg.com/",
+  "capturedAt": "2026-02-05T20:25:14.693Z",
+  "type": "modular",
+  "navigation": {
+    "menuItems": [
+      "Inicio",
+      "Tipologías",
+      "Proyectos",
+      "Contacto"
+    ],
+    "modelSections": [
+      {
+        "label": "Ver todos los modelos",
+        "url": "https://www.lucyshousearg.com/tipologias"
+      },
+      {
+        "label": "Entregas Inmediatas",
+        "url": "https://www.lucyshousearg.com/tipologias#entregas"
+      },
+      {
+        "label": "Módulos a medida",
+        "url": "https://www.lucyshousearg.com/tipologias#modelos"
+      },
+      {
+        "label": "Equipamientos",
+        "url": "https://www.lucyshousearg.com/tipologias#tipologias"
+      },
+      {
+        "label": "Proyectos",
+        "url": "https://www.lucyshousearg.com/proyectos"
+      }
+    ]
+  },
+  "models": [
+    {
+      "name": "Módulo 28,56 M2",
+      "sqMeters": 28.56,
+      "features": [],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-1-mdulo-2856-m2.jpeg",
+      "detailUrl": "https://www.lucyshousearg.com/tipologias"
+    },
+    {
+      "name": "Módulo 19,20 M2",
+      "price": "USD 42.600 + IVA",
+      "sqMeters": 28.56,
+      "features": [
+        "Entrega inmediata",
+        "Techo chapa negra a una agua",
+        "Piso porcelanato 60x60cm + zócalo PVC blanco",
+        "Cielorraso y molduras PVC y EPS blancos",
+        "Interior muros en Durlock con empapelado Muresco",
+        "Baño revestimiento cerámico 33x45cm",
+        "Exterior fibrocemento símil madera (ista horizontal)",
+        "Mesada granito negro + sabicadera",
+        "Muebles bajo/sobre mesada y pasaplatos melamina FAPLAC",
+        "Grifería monocomando (cocina y baño)",
+        "Cajoneras cierre suave con guías telescópicas",
+        "Vanitory melamina FAPLAC",
+        "Sanitarios lavamanos, inodoro y bidet de 1ra calidad",
+        "Mampara vidrio laminado",
+        "Espejo retroiluminado",
+        "Anafe eléctrico + purificador",
+        "Termotanque alta recuperación",
+        "Cortinas tipo roller",
+        "Ventanas aluminio negro con DVH",
+        "Puertas interiores madera lacada blanca",
+        "Iluminación LED interior y exterior bidireccional"
+      ],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-2-mdulo-1920-m2.jpeg",
+      "detailUrl": "https://www.lucyshousearg.com/entregas/modulo-28-56",
+      "bathrooms": 1
+    },
+    {
+      "name": "Módulo 28.56 M2",
+      "sqMeters": 28.56,
+      "features": [
+        "Entrega inmediata"
+      ],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-3-mdulo-2856-m2.jpeg",
+      "detailUrl": "https://www.lucyshousearg.com/tipologias"
+    },
+    {
+      "name": "Módulo 19.20 M2",
+      "price": "USD 42.600 + IVA",
+      "sqMeters": 28.56,
+      "features": [
+        "Entrega inmediata",
+        "Chapa negra a una agua",
+        "Porcelanato 60x60cm + zócalo PVC blanco",
+        "Cielorrasos y molduras PVC y EPS blancos",
+        "Muros en Durlock con empapelado Muresco",
+        "Revestimiento cerámico 33x45cm",
+        "Fibrocemento símil madera (imitación horizontal)",
+        "Mesada granito negro + bajadera",
+        "Muebles bajo/sobre mesada y pasaplatos melamina FAPLAC",
+        "Grifería monocomando (cocina y baño)",
+        "Cajoneras cierre suave con guías telescópicas",
+        "Vanitory melamina FAPLAC",
+        "Sanitarios lavamanos, inodoro y bidet de 1ra calidad",
+        "Mampara vidrio laminado",
+        "Espejo retroiluminado",
+        "Anafe eléctrico + purificador",
+        "Termotanque alta recuperación",
+        "Cortinas tipo roller",
+        "Ventanas aluminio negro con DVH",
+        "Puertas interiores madera lacada blanca",
+        "Iluminación LED interior y exterior bidireccional"
+      ],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-4-mdulo-1920-m2.jpeg",
+      "detailUrl": "https://www.lucyshousearg.com/entregas/modulo-28-56",
+      "bathrooms": 1
+    },
+    {
+      "name": "30,6 M2",
+      "price": "USD 1290/m²",
+      "sqMeters": 28.56,
+      "features": [],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-5-306-m2.jpeg",
+      "detailUrl": "https://www.lucyshousearg.com/tipologias"
+    },
+    {
+      "name": "38 M2",
+      "price": "USD 1290/m²",
+      "sqMeters": 38,
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg",
+      "detailUrl": "https://www.lucyshousearg.com/entregas/modulo-28-56"
+    },
+    {
+      "name": "Modelo 3",
+      "price": "USD 1290/m²",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg",
+      "detailUrl": "https://www.lucyshousearg.com/entregas/modulo-19-20"
+    },
+    {
+      "name": "Modelo 4",
+      "price": "USD 1290/m²",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg",
+      "detailUrl": "https://www.lucyshousearg.com/entregas/modulo-37-40"
+    }
+  ],
+  "contactInfo": {
+    "whatsapp": "5493512077113",
+    "instagram": "@lucyshouse.arg"
+  },
+  "totalModelsFound": 8,
+  "pagesExplored": 9,
+  "errors": []
+}

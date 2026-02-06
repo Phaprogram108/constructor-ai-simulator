@@ -722,6 +722,30 @@ const GARBAGE_NAMES = new Set([
   'dormitorio', 'dormitorios', 'habitacion', 'habitaciones',
   'baño', 'bano', 'baños', 'banos', 'cocina', 'living',
   'comedor', 'garage', 'jardin', 'patio', 'terraza', 'balcon',
+  // Nuevos - secciones y headings genericos
+  'especificaciones', 'especificacion', 'informacion', 'informacion general', 'información', 'información general',
+  'financiamiento', 'financiacion', 'imagenes', 'imágenes', 'imagen', 'videos', 'video',
+  'nuevos modelos', 'nuevos', 'avance', 'avance de obra', 'mencion', 'mención',
+  'esencial', 'premium', 'deluxe', 'basico', 'básico', 'estándar', 'estandar',
+  'proyecto', 'proyectos', 'servicios', 'servicio', 'contacto', 'contactanos', 'contacto directo',
+  'precios', 'precio', 'descargar', 'descarga', 'download', 'ver', 'more', 'mas', 'más',
+  'nosotros', 'sobre nosotros', 'quienes somos', 'historia', 'equipo',
+  'blog', 'noticias', 'prensa', 'testimonios', 'clientes',
+  'galeria', 'galería', 'gallery', 'fotos', 'photos',
+  'inicio', 'home', 'header', 'footer', 'menu', 'navegacion',
+  'siguiente', 'anterior', 'next', 'previous', 'volver', 'back',
+  'compartir', 'share', 'enviar', 'send',
+  'suscribite', 'suscribirse', 'newsletter',
+  'terminos', 'términos', 'condiciones', 'privacidad', 'politica', 'política',
+  'copyright', 'derechos', 'reservados',
+]);
+
+// Single-word headings that are generic and should be excluded
+const GENERIC_SINGLE_WORDS = new Set([
+  'proyecto', 'proyectos', 'servicios', 'contacto', 'precios', 'galería', 'galeria',
+  'blog', 'equipo', 'nosotros', 'historia', 'testimonios', 'clientes', 'fotos',
+  'videos', 'imagenes', 'imágenes', 'información', 'informacion', 'especificaciones',
+  'financiamiento', 'financiacion', 'descargar', 'descarga', 'download',
 ]);
 
 /**
@@ -745,6 +769,11 @@ function validateProductName(raw: string): string | null {
   const nameLower = name.toLowerCase().normalize('NFD').replace(/[\u0300-\u036f]/g, '');
   if (GARBAGE_NAMES.has(nameLower)) return null;
   if (words.length === 1 && GARBAGE_NAMES.has(nameLower)) return null;
+
+  // Single-word generic heading filter
+  if (words.length === 1 && GENERIC_SINGLE_WORDS.has(nameLower)) {
+    return null;
+  }
 
   // Skip if it's just a generic description phrase
   if (/^(la|el|las|los|una|un|con|para|por|del|de)\s/i.test(name)) return null;

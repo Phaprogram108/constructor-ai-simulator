@@ -1,0 +1,102 @@
+{
+  "company": "Movilhauss",
+  "url": "https://movilhauss.com",
+  "capturedAt": "2026-02-05T20:24:20.517Z",
+  "type": "modular",
+  "navigation": {
+    "menuItems": [
+      "Inicio",
+      "Casas modulares",
+      "Movilcaf",
+      "Quienes somos",
+      "Preguntas frecuentes",
+      "Contacto"
+    ],
+    "modelSections": [
+      {
+        "label": "Casas modulares",
+        "url": "https://movilhauss.com/#"
+      },
+      {
+        "label": "Casas modulares",
+        "url": "https://movilhauss.com/index.php#modelos"
+      }
+    ]
+  },
+  "models": [
+    {
+      "name": "Inauba (work)",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-1.jpeg"
+    },
+    {
+      "name": "Inauba +",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-1.jpeg"
+    },
+    {
+      "name": "Inauba duo",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-1.jpeg"
+    },
+    {
+      "name": "freestyle (contemplación)",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-1.jpeg"
+    },
+    {
+      "name": "iñauba lwork",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "iñauba +",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "iñauba duo",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "freestyle",
+      "sqMeters": 6,
+      "features": [
+        "Terminación acústica de 3 hendiduras",
+        "Grifería",
+        "Mueble bajo mesada",
+        "Alacena/cocina",
+        "Conexión eléctrica",
+        "Bañadera",
+        "Grifería",
+        "Termotanque eléctrico",
+        "Instalación eléctrica",
+        "Instalación sanitaria",
+        "Aislación térmica",
+        "Estructura de acero galvanizado",
+        "Revestimiento interior",
+        "Aberturas de aluminio con DVH"
+      ],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-1-freestyle.jpeg",
+      "detailUrl": "https://movilhauss.com/freestyle.php",
+      "bedrooms": 3,
+      "bathrooms": 2
+    }
+  ],
+  "contactInfo": {
+    "email": "movilhauss@gmail.com",
+    "instagram": "@movilhauss"
+  },
+  "totalModelsFound": 8,
+  "pagesExplored": 4,
+  "errors": []
+}

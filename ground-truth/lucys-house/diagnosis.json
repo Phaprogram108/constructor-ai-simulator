@@ -1,0 +1,152 @@
+{
+  "company": "Lucys House",
+  "url": "https://www.lucyshousearg.com/",
+  "diagnosedAt": "2026-02-06T14:56:47.387Z",
+  "overallScore": 23,
+  "scoreBreakdown": {
+    "productCoverage": 13,
+    "specAccuracy": 57,
+    "contactAccuracy": 50,
+    "hallucinationPenalty": 80,
+    "identityMatch": 100
+  },
+  "groundTruthModels": 8,
+  "systemPromptModels": 19,
+  "agentResponseModels": 1,
+  "gaps": [
+    {
+      "type": "PROMPT_MISS",
+      "entity": "Módulo 19,20 M2",
+      "detail": "Model \"Módulo 19,20 M2\" is in systemPrompt (\"Casa Módulo 19,20 M2 - 19.2m2\") but agent never mentioned it in responses",
+      "severity": "MEDIUM",
+      "groundTruthValue": "Módulo 19,20 M2",
+      "systemPromptValue": "Casa Módulo 19,20 M2 - 19.2m2"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Módulo 28.56 M2",
+      "detail": "Model \"Módulo 28.56 M2\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Módulo 28.56 M2"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Módulo 19.20 M2",
+      "detail": "Model \"Módulo 19.20 M2\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Módulo 19.20 M2"
+    },
+    {
+      "type": "PROMPT_MISS",
+      "entity": "30,6 M2",
+      "detail": "Model \"30,6 M2\" is in systemPrompt (\"Casa 30,6 M2 - 30.6m2 - Desde U$D 1290/m²\") but agent never mentioned it in responses",
+      "severity": "MEDIUM",
+      "groundTruthValue": "30,6 M2",
+      "systemPromptValue": "Casa 30,6 M2 - 30.6m2 - Desde U$D 1290/m²"
+    },
+    {
+      "type": "PROMPT_MISS",
+      "entity": "38 M2",
+      "detail": "Model \"38 M2\" is in systemPrompt (\"Casa 38 M2 - 38m2\") but agent never mentioned it in responses",
+      "severity": "MEDIUM",
+      "groundTruthValue": "38 M2",
+      "systemPromptValue": "Casa 38 M2 - 38m2"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Modelo 3",
+      "detail": "Model \"Modelo 3\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Modelo 3"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Modelo 4",
+      "detail": "Model \"Modelo 4\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Modelo 4"
+    },
+    {
+      "type": "HALLUCINATION",
+      "entity": "price",
+      "detail": "Agent mentioned price \"USD 22.080\" which does not match any ground truth price",
+      "severity": "HIGH",
+      "agentResponseValue": "USD 22.080",
+      "groundTruthValue": "USD 42.600 + IVA, USD 42.600 + IVA, USD 1290/m², USD 1290/m², USD 1290/m², USD 1290/m²"
+    },
+    {
+      "type": "HALLUCINATION",
+      "entity": "price",
+      "detail": "Agent mentioned price \"USD 38.700\" which does not match any ground truth price",
+      "severity": "HIGH",
+      "agentResponseValue": "USD 38.700",
+      "groundTruthValue": "USD 42.600 + IVA, USD 42.600 + IVA, USD 1290/m², USD 1290/m², USD 1290/m², USD 1290/m²"
+    },
+    {
+      "type": "HALLUCINATION",
+      "entity": "price",
+      "detail": "Agent mentioned price \"USD 41.280\" which does not match any ground truth price",
+      "severity": "HIGH",
+      "agentResponseValue": "USD 41.280",
+      "groundTruthValue": "USD 42.600 + IVA, USD 42.600 + IVA, USD 1290/m², USD 1290/m², USD 1290/m², USD 1290/m²"
+    },
+    {
+      "type": "HALLUCINATION",
+      "entity": "price",
+      "detail": "Agent mentioned price \"US 28,56\" which does not match any ground truth price",
+      "severity": "HIGH",
+      "agentResponseValue": "US 28,56",
+      "groundTruthValue": "USD 42.600 + IVA, USD 42.600 + IVA, USD 1290/m², USD 1290/m², USD 1290/m², USD 1290/m²"
+    },
+    {
+      "type": "HALLUCINATION",
+      "entity": "price",
+      "detail": "Agent mentioned price \"USD 55.335\" which does not match any ground truth price",
+      "severity": "HIGH",
+      "agentResponseValue": "USD 55.335",
+      "groundTruthValue": "USD 42.600 + IVA, USD 42.600 + IVA, USD 1290/m², USD 1290/m², USD 1290/m², USD 1290/m²"
+    },
+    {
+      "type": "HALLUCINATION",
+      "entity": "price",
+      "detail": "Agent mentioned price \"USD 22.080\" which does not match any ground truth price",
+      "severity": "HIGH",
+      "agentResponseValue": "USD 22.080",
+      "groundTruthValue": "USD 42.600 + IVA, USD 42.600 + IVA, USD 1290/m², USD 1290/m², USD 1290/m², USD 1290/m²"
+    },
+    {
+      "type": "HALLUCINATION",
+      "entity": "price",
+      "detail": "Agent mentioned price \"USD 1.800\" which does not match any ground truth price",
+      "severity": "HIGH",
+      "agentResponseValue": "USD 1.800",
+      "groundTruthValue": "USD 42.600 + IVA, USD 42.600 + IVA, USD 1290/m², USD 1290/m², USD 1290/m², USD 1290/m²"
+    },
+    {
+      "type": "HALLUCINATION",
+      "entity": "price",
+      "detail": "Agent mentioned price \"USD 22.080\" which does not match any ground truth price",
+      "severity": "HIGH",
+      "agentResponseValue": "USD 22.080",
+      "groundTruthValue": "USD 42.600 + IVA, USD 42.600 + IVA, USD 1290/m², USD 1290/m², USD 1290/m², USD 1290/m²"
+    },
+    {
+      "type": "PROMPT_MISS",
+      "entity": "whatsapp",
+      "detail": "WhatsApp is in systemPrompt (\"03515551234\") but agent didn't share it in responses",
+      "severity": "LOW",
+      "groundTruthValue": "5493512077113",
+      "systemPromptValue": "03515551234"
+    }
+  ],
+  "gapSummary": {
+    "scrapingMiss": 4,
+    "promptMiss": 4,
+    "hallucination": 8
+  },
+  "recommendations": [
+    "Scraping no encontro 4 modelo(s): Módulo 28.56 M2, Módulo 19.20 M2, Modelo 3, Modelo 4. Revisar firecrawl.ts URL patterns.",
+    "4 dato(s) presentes en prompt pero no compartidos por el agente. Revisar prompt-generator.ts.",
+    "8 dato(s) inventados por el agente. Reforzar anti-hallucination en prompt-generator.ts."
+  ]
+}

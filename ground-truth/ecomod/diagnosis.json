@@ -1,0 +1,54 @@
+{
+  "company": "Ecomod",
+  "url": "https://ecomod.com.ar/",
+  "diagnosedAt": "2026-02-06T14:56:47.385Z",
+  "overallScore": 64,
+  "scoreBreakdown": {
+    "productCoverage": 60,
+    "specAccuracy": 67,
+    "contactAccuracy": 100,
+    "hallucinationPenalty": 0,
+    "identityMatch": 100
+  },
+  "groundTruthModels": 10,
+  "systemPromptModels": 13,
+  "agentResponseModels": 6,
+  "gaps": [
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "ECOMOD 50",
+      "detail": "Model \"ECOMOD 50\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "ECOMOD 50"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "ECOMOD 75",
+      "detail": "Model \"ECOMOD 75\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "ECOMOD 75"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "ECOMOD 100",
+      "detail": "Model \"ECOMOD 100\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "ECOMOD 100"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Bariloche",
+      "detail": "Model \"Bariloche\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Bariloche"
+    }
+  ],
+  "gapSummary": {
+    "scrapingMiss": 4,
+    "promptMiss": 0,
+    "hallucination": 0
+  },
+  "recommendations": [
+    "Scraping no encontro 4 modelo(s): ECOMOD 50, ECOMOD 75, ECOMOD 100, Bariloche. Revisar firecrawl.ts URL patterns."
+  ]
+}

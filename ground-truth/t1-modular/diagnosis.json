@@ -1,0 +1,75 @@
+{
+  "company": "T1 Modular",
+  "url": "https://www.t1modular.com.ar/",
+  "diagnosedAt": "2026-02-06T14:56:47.389Z",
+  "overallScore": 61,
+  "scoreBreakdown": {
+    "productCoverage": 30,
+    "specAccuracy": 100,
+    "contactAccuracy": 100,
+    "hallucinationPenalty": 0,
+    "identityMatch": 100
+  },
+  "groundTruthModels": 10,
+  "systemPromptModels": 8,
+  "agentResponseModels": 3,
+  "gaps": [
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "DISEÑO A MEDIDA Y ASESORAMIENTO",
+      "detail": "Model \"DISEÑO A MEDIDA Y ASESORAMIENTO\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "DISEÑO A MEDIDA Y ASESORAMIENTO"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "INGENIERÍA Y GESTIÓN INTEGRAL",
+      "detail": "Model \"INGENIERÍA Y GESTIÓN INTEGRAL\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "INGENIERÍA Y GESTIÓN INTEGRAL"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "CALIDAD SUPERIOR Y EQUIPAMIENTO COMPLETO",
+      "detail": "Model \"CALIDAD SUPERIOR Y EQUIPAMIENTO COMPLETO\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "CALIDAD SUPERIOR Y EQUIPAMIENTO COMPLETO"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Proyecto Destacado 1",
+      "detail": "Model \"Proyecto Destacado 1\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Proyecto Destacado 1"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Proyecto Destacado 2",
+      "detail": "Model \"Proyecto Destacado 2\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Proyecto Destacado 2"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "MARKETS INTELIGENTES",
+      "detail": "Model \"MARKETS INTELIGENTES\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "MARKETS INTELIGENTES"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "EMPRENDIMIENTOS TURISTICOS - T1 SUITES",
+      "detail": "Model \"EMPRENDIMIENTOS TURISTICOS - T1 SUITES\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "EMPRENDIMIENTOS TURISTICOS - T1 SUITES"
+    }
+  ],
+  "gapSummary": {
+    "scrapingMiss": 7,
+    "promptMiss": 0,
+    "hallucination": 0
+  },
+  "recommendations": [
+    "Scraping no encontro 7 modelo(s): DISEÑO A MEDIDA Y ASESORAMIENTO, INGENIERÍA Y GESTIÓN INTEGRAL, CALIDAD SUPERIOR Y EQUIPAMIENTO COMPLETO, Proyecto Destacado 1, Proyecto Destacado 2, MARKETS INTELIGENTES, EMPRENDIMIENTOS TURISTICOS - T1 SUITES. Revisar firecrawl.ts URL patterns."
+  ]
+}

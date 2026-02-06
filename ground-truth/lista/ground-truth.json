@@ -1,0 +1,256 @@
+{
+  "company": "Lista",
+  "url": "https://lista.com.ar/",
+  "capturedAt": "2026-02-05T20:37:34.841Z",
+  "type": "modular",
+  "navigation": {
+    "menuItems": [
+      "INICIO",
+      "MODELOS PERSONALIZABLES",
+      "PROYECTOS",
+      "SOBRE NOSOTROS",
+      "PREGUNTAS FRECUENTES",
+      "TRABAJA CON NOSOTROS",
+      "CONTACTO"
+    ],
+    "modelSections": [
+      {
+        "label": "Modelos Personalizables",
+        "url": "https://lista.com.ar/modelos/"
+      },
+      {
+        "label": "Otros modelos",
+        "url": "https://lista.com.ar/otros/"
+      },
+      {
+        "label": "Proyectos",
+        "url": "https://lista.com.ar/proyectos-a-medida/"
+      },
+      {
+        "label": "Casa Aguaribay",
+        "url": "https://lista.com.ar/featured_item/casa-aguaribay/"
+      },
+      {
+        "label": "Casa Ginko",
+        "url": "https://lista.com.ar/featured_item/casa-ginko/"
+      },
+      {
+        "label": "Casa Acer",
+        "url": "https://lista.com.ar/featured_item/casa-acer/"
+      },
+      {
+        "label": "casa",
+        "url": "https://www.instagram.com/listacasasinteligentes/"
+      },
+      {
+        "label": "VER MÁS",
+        "url": "https://lista.com.ar/proyectos/albatros/albatros/"
+      },
+      {
+        "label": "Agendar reunión",
+        "url": "https://meet.brevo.com/lista-casas-inteligentes"
+      },
+      {
+        "label": "VER MÁS",
+        "url": "http://lista.com.ar/proyectos/modelo/casa-ribera/"
+      },
+      {
+        "label": "VER MÁS",
+        "url": "http://lista.com.ar/proyectos/modelo/casa-cuatro-aguas/"
+      },
+      {
+        "label": "VER MÁS",
+        "url": "http://lista.com.ar/proyectos/obras/casa-acer/"
+      },
+      {
+        "label": "casa",
+        "url": "https://www.linkedin.com/company/lista-casas-inteligentes/"
+      }
+    ]
+  },
+  "models": [
+    {
+      "name": "MACÁ A",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-1.jpeg"
+    },
+    {
+      "name": "MACÁ B",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-1.jpeg"
+    },
+    {
+      "name": "MACÁ 2A",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-1.jpeg"
+    },
+    {
+      "name": "MACÁ L",
+      "price": "Desde $2.364.000",
+      "sqMeters": 7,
+      "features": [
+        "Modelo aislado para uso de modulo, salón de reuniones, taller, consultorio, estudio, local comercial, etc",
+        "Dos módulos que se le sumarán dos baños más en total 3 x 12",
+        "Baño y toilette",
+        "Kitchenette con muebles para frezadera bajo mesada, anafe y campana en acero inoxidable",
+        "Mesada",
+        "Ruedas o baldosas",
+        "Paredes galvanix frontal con doble vidrio hermético laminado (opcional)"
+      ],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-1-mac-l.jpeg",
+      "detailUrl": "https://lista.com.ar/featured_item/maca-l/",
+      "bedrooms": 1,
+      "bathrooms": 1
+    },
+    {
+      "name": "MACÁ XL",
+      "price": "desde 49.549 USD",
+      "sqMeters": 41,
+      "features": [
+        "Dos módulos de 3,2 metros de largo por 6,4 de ancho",
+        "Dos dormitorios",
+        "Estar, comedor",
+        "Baño completo con ducha y bidet",
+        "Kitchenette con espacio para heladera bajo mesada, anafe 2 hornallas y microondas",
+        "Deck para TV y biblioteca"
+      ],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-2-mac-xl.jpeg",
+      "detailUrl": "https://lista.com.ar/featured_item/maca-xl/",
+      "bedrooms": 2,
+      "bathrooms": 1
+    },
+    {
+      "name": "MACÁ XXL",
+      "price": "desde 63.612 USD",
+      "sqMeters": 51,
+      "features": [
+        "Tres módulos: Dos de 3,2 metros de largo por 6,4 de ancho y uno de 3,2 metros de largo por 3,2 de ancho",
+        "Dos dormitorios con placard",
+        "Estar, comedor, cocina incorporada",
+        "Baño completo con ducha y bidet",
+        "Lavadero (opcional)",
+        "Cocina completa con bajomesada, isla y alacena",
+        "Añafe 4 hornallas, horno embutido (incluidos)",
+        "Espacio para heladera y microondas (no incluidos)",
+        "Deck para TV y biblioteca"
+      ],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-3-mac-xxl.jpeg",
+      "detailUrl": "https://lista.com.ar/featured_item/maca-xl-2/",
+      "bedrooms": 2,
+      "bathrooms": 1
+    },
+    {
+      "name": "CONDOR",
+      "features": [
+        "viviendas móviles premium",
+        "instalación en entornos naturales",
+        "amplia gama de usos",
+        "habitación estudio hasta vivienda completa",
+        "todas las casas Lista están construidas con tecnología steel framing",
+        "máxima durabilidad",
+        "mejor eficiencia energética",
+        "cubierta con 3 aguas con canaleta oculta",
+        "revestida en chapas pintadas mutualthermW en el exterior",
+        "sistema de fachada ventilada que expulsa el aire caliente antes de que ingrese al muro"
+      ],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-4-condor.jpeg",
+      "detailUrl": "https://lista.com.ar/flia-condor/",
+      "bedrooms": 3
+    },
+    {
+      "name": "MIRASOL",
+      "features": [
+        "living/cocina/comedor",
+        "baño completo",
+        "galería de 12m de ancho por 6,4m de largo",
+        "garaje de forma lateral",
+        "galería amplia",
+        "dormitorios son amplios",
+        "posibilidad de incluir un vestidor",
+        "baño en suite",
+        "galería frontal",
+        "espacios interiores óptimos"
+      ],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-5-mirasol.jpeg",
+      "detailUrl": "https://lista.com.ar/familia-mirasol/",
+      "bedrooms": 2,
+      "bathrooms": 1
+    },
+    {
+      "name": "PELITRÉN",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-1.jpeg"
+    },
+    {
+      "name": "BRUJA",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-1.jpeg"
+    },
+    {
+      "name": "HORNERO",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-1.jpeg",
+      "detailUrl": "https://lista.com.ar/familia-hornero/"
+    },
+    {
+      "name": "ALBATROS",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-1.jpeg",
+      "detailUrl": "https://lista.com.ar/featured_item/albatros/"
+    },
+    {
+      "name": "LECHUZA",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg",
+      "detailUrl": "https://lista.com.ar/featured_item/lechuza/"
+    },
+    {
+      "name": "ALBATROS L",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg",
+      "detailUrl": "https://lista.com.ar/featured_item/albatros/"
+    },
+    {
+      "name": "CASA AQUAHBAY",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg"
+    },
+    {
+      "name": "CASA GINKO",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg",
+      "detailUrl": "https://lista.com.ar/featured_item/casa-ginko/"
+    },
+    {
+      "name": "CASA ACER",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg",
+      "detailUrl": "https://lista.com.ar/featured_item/casa-acer/"
+    }
+  ],
+  "contactInfo": {
+    "email": "hola@lista.com.ar",
+    "phone": "5493417504540",
+    "instagram": "@listacasasinteligentes"
+  },
+  "totalModelsFound": 17,
+  "pagesExplored": 9,
+  "errors": []
+}

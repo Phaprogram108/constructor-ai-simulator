@@ -1,0 +1,110 @@
+{
+  "company": "Lista",
+  "url": "https://lista.com.ar/",
+  "testedAt": "2026-02-06T14:53:36.944Z",
+  "sessionId": "94514e90-e0b0-4d5e-b324-b3a03d4b90df",
+  "systemPromptLength": 22271,
+  "systemPromptModelsFound": [
+    "Construccion en Hormigon premoldeado",
+    "Financiacion disponible"
+  ],
+  "systemPromptWhatsApp": "5493417504540",
+  "systemPromptType": "de Modelos modulares, casas, quinchos estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Somos ¡lista!, una empresa de construcción de casas modulares en hormigón premoldeado, con foco en diseño, eficiencia y rapidez de obra. Hacemos Modelos modulares, casas y quinchos como Macá, Cóndor, Biguá, Mirasol, Peutrén, Hornero y Albatros, todos personalizables según cómo quieras vivir o trabajar.  \n\nTrabajamos con sistemas sustentables y eficientes energéticamente, fabricamos en taller y luego montamos en tu terreno, y además ofrecemos financiación (convenios con Banco Hipotecario y Banco Santander).  \nPara orientarte mejor, ¿qué tipo de Modelos modulares, casas, quinchos estás buscando?",
+      "mentionedModels": [
+        "MIRASOL",
+        "HORNERO",
+        "ALBATROS"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 6153
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos principalmente casas modulares, quinchos y proyectos a medida, todos construidos en sistema industrializado con hormigón premoldeado y estructura de acero. Dentro de los Modelos modulares, casas, quinchos tenemos líneas como Macá, Cóndor, Biguá (Work y Home), Mirasol, Peutrén, Hornero, Albatros L, además de casas especiales como Aguaribay, Ginko y Acer.  \n\nSumamos servicios de diseño personalizado, fabricación completa en taller, transporte y montaje en tu terreno, más financiación con Banco Hipotecario y Banco Santander.  \nPara ayudarte bien: ¿buscás algo tipo casa para vivir, casa de vacaciones, oficina o quincho?",
+      "mentionedModels": [
+        "MIRASOL",
+        "HORNERO",
+        "ALBATROS",
+        "ALBATROS L"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2952
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Nuestro WhatsApp y teléfono es **+54 9 341 750 4540**.  \nTambién podés escribirnos a **hola@lista.com.ar** si preferís por mail.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 1383
+    },
+    {
+      "question": "¿Cuántos proyectos ofrecen?",
+      "questionType": "product_count",
+      "response": "Tenemos dos grandes tipos de propuestas:  \n1) **Modelos modulares, casas, quinchos** predefinidos y costumizables (familias Macá, Cóndor, Biguá, Mirasol, Peutrén, Hornero, Albatros L, Lechuza, etc.).  \n2) **Proyectos a medida**, donde ya desarrollamos casas como **Aguaribay, Ginko y Acer** y seguimos sumando nuevos modelos 2023 en adelante.\n\nPara entender qué te puede servir mejor, ¿qué tipo de Modelos modulares, casas, quinchos estás buscando?",
+      "mentionedModels": [
+        "MIRASOL",
+        "HORNERO",
+        "ALBATROS",
+        "LECHUZA",
+        "ALBATROS L"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4473
+    },
+    {
+      "question": "Contame sobre MACÁ A",
+      "questionType": "product_specific",
+      "response": "Mirá, dentro de la familia **Macá** tenemos cargados los modelos **Macá S, Macá S+, Macá M, Macá L, Macá XL y Macá XXL**, pero no figura un modelo llamado **“Macá A”** en el catálogo oficial. Puede que te estés refiriendo a alguno de esos tamaños o a un proyecto puntual que no tengo detallado acá.  \n\nNo tengo la información específica de un Macá A cargada, pero si querés te ayudo a elegir el Macá que mejor se parezca a lo que buscás. Para eso, contame: ¿qué tipo de Modelos modulares, casas, quinchos estás buscando (vivienda, oficina, cabaña, etc.) y para cuántas personas?",
+      "mentionedModels": [
+        "MACÁ A",
+        "MACÁ L",
+        "MACÁ XL",
+        "MACÁ XXL"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3812
+    },
+    {
+      "question": "Contame sobre MACÁ B",
+      "questionType": "product_specific",
+      "response": "Dentro de la familia **Macá** trabajamos con los modelos **Macá S, Macá S+, Macá M, Macá L, Macá XL y Macá XXL**, y no aparece un modelo llamado **“Macá B”** en el catálogo oficial. Seguramente lo que viste es alguna referencia interna o una confusión con alguno de estos tamaños que sí están disponibles.  \n\nNo tengo info específica de un Macá B cargada, pero sí puedo orientarte con el Macá que mejor encaje con vos. Para eso, contame: ¿lo querés como vivienda, casa de fin de semana, oficina o algo tipo cabaña turística?",
+      "mentionedModels": [
+        "MACÁ B",
+        "MACÁ L",
+        "MACÁ XL",
+        "MACÁ XXL"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4227
+    },
+    {
+      "question": "Contame sobre MACÁ 2A",
+      "questionType": "product_specific",
+      "response": "En el catálogo oficial de la familia **Macá** tenemos estos modelos: **Macá S, Macá S+, Macá M, Macá L, Macá XL y Macá XXL**; no figura un modelo llamado **“Macá 2A”**. Es probable que sea una referencia interna, un plano particular o una combinación de módulos Macá que no está nombrada así en la web.  \n\nNo tengo la ficha específica de Macá 2A cargada, pero sí podemos llegar al equivalente: ¿lo estás pensando como vivienda permanente, casa de finde o algo tipo oficina/consultorio? Así te sugiero el Macá (S, M, L, etc.) o la combinación de módulos más parecida a ese “2A”.",
+      "mentionedModels": [
+        "MACÁ 2A",
+        "MACÁ L",
+        "MACÁ XL",
+        "MACÁ XXL"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 5422
+    }
+  ],
+  "sessionCreationTimeMs": 22247,
+  "errors": []
+}

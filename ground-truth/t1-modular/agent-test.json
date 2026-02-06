@@ -1,0 +1,144 @@
+{
+  "company": "T1 Modular",
+  "url": "https://www.t1modular.com.ar/",
+  "testedAt": "2026-02-06T10:51:07.834Z",
+  "sessionId": "f8605d1b-5ded-4cea-bf9f-f68b8f01e131",
+  "systemPromptLength": 21458,
+  "systemPromptModelsFound": [
+    "Casa La Eficiencia de - 25m2",
+    "Casa Máxima flexibilidad en - 36m2",
+    "Casa T1 25 - 25.6m2 - 1 dorm - 1 bano - Consultar",
+    "Casa T1 36 - 36.5m2 - 2 dorm - 1 bano - Consultar",
+    "Casa T1 47 - 47m2 - 3 dorm - 1 bano - Consultar",
+    "Primero muestra los modelos disponibles",
+    "Si ninguno encaja, ofrece la opcion de diseno pers",
+    "Pregunta que prefiere el cliente"
+  ],
+  "systemPromptWhatsApp": "5491176371656",
+  "systemPromptType": "de Constructora**: MIXTA",
+  "conversations": [
+    {
+      "question": "?Que modelos tienen disponibles?",
+      "questionType": "base",
+      "response": "Tenemos dos líneas para ofrecerte: modelos de catálogo y proyectos a medida.  \nEn catálogo hoy contamos con:  \n- **Casa La Eficiencia – 25 m²**  \n- **Casa Máxima flexibilidad – 36 m²**  \n- **Casa T1 25 – 25,6 m² – 1 dorm – 1 baño**  \n- **Casa T1 36 – 36,5 m² – 2 dorm – 1 baño**  \n- **Casa T1 47 – 47 m² – 3 dorm – 1 baño**\n\nSi ninguno se ajusta a lo que necesitás, también diseñamos **100% a medida** según tu idea.  \nPara orientarte mejor, ¿qué tamaño de casa estás buscando aproximadamente?",
+      "mentionedModels": [
+        "T1 25",
+        "T1 36",
+        "T1 47"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3746
+    },
+    {
+      "question": "?Cuantos modelos/proyectos ofrecen?",
+      "questionType": "base",
+      "response": "Te cuento: hoy tenés **5 modelos de catálogo** (La Eficiencia 25 m², Máxima flexibilidad 36 m², T1 25, T1 36 y T1 47) y además la opción de **proyecto personalizado**, donde diseñamos a medida lo que necesitás.  \n\nAsí que podés elegir entre esos **5 modelos estándar** o ir por un **diseño a medida**.  \n¿Preferís que veamos primero un modelo de catálogo o te interesa más algo diseñado específicamente para vos?",
+      "mentionedModels": [
+        "T1 25",
+        "T1 36",
+        "T1 47"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2654
+    },
+    {
+      "question": "?Cuanto cuesta el modelo mas economico?",
+      "questionType": "base",
+      "response": "El modelo más económico es el de **menor superficie**, es decir nuestras opciones de **25 m²**:  \n- **Casa La Eficiencia – 25 m²**  \n- **Casa T1 25 – 25,6 m² – 1 dorm – 1 baño**\n\nNo tengo los precios actualizados cargados. Te sugiero consultarlo por WhatsApp al **+54 9 11 7637 1656**, así te pasan el valor al día y opciones de financiación. Mientras tanto, ¿ya tenés terreno? ¿En qué zona sería?",
+      "mentionedModels": [
+        "T1 25"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 2257
+    },
+    {
+      "question": "?Tienen financiamiento o planes de pago?",
+      "questionType": "base",
+      "response": "Sí, ofrecemos **financiación** para nuestros modelos en Steel Frame y también para proyectos a medida, con planes que se adaptan según el monto y el avance de obra. Los detalles (plazos, anticipo, cuotas) los ajustamos caso por caso en la cotización.  \n\nPara ver qué plan podría aplicarte mejor, ¿ya tenés terreno? ¿En qué zona?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3235
+    },
+    {
+      "question": "?Cual es su WhatsApp o telefono de contacto?",
+      "questionType": "base",
+      "response": "Te podés contactar directo por WhatsApp al **+54 9 11 7637 1656**.  \nSi preferís por mail, el correo es **consultastiny@gmail.com**.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2242
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo T1 25?",
+      "questionType": "model_specific",
+      "response": "El **T1 25** es un módulo de **25,6 m²**, pensado como **monoambiente o dos ambientes**, ideal para turismo o una primera vivienda compacta. Está construido en **Steel Frame**, listo para entregar **llave en mano**, con baño completo y cocina integrada, optimizando cada metro para que tengas un espacio funcional y fácil de mantener.  \n\nSi querés, en el próximo paso te puedo ayudar a ver si este tamaño te alcanza. Primero contame: ¿qué tamaño de casa estás buscando?",
+      "mentionedModels": [
+        "T1 25"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4815
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el T1 25?",
+      "questionType": "model_specific",
+      "response": "El modelo **T1 25** tiene **25,6 m² cubiertos**.  \nEs un módulo compacto pensado como monoambiente o dos ambientes, ideal si buscás algo funcional en pocos metros.",
+      "mentionedModels": [
+        "T1 25"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 1310
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo T1 36?",
+      "questionType": "model_specific",
+      "response": "El **T1 36** es un módulo de **36,5 m²**, de **dos ambientes** (1 dormitorio + estar/comedor con cocina integrada) e incluye **1 baño completo**, ideal como casa de fin de semana o vivienda compacta. Está construido en **Steel Frame**, se entrega **llave en mano** y está pensado para aprovechar muy bien el espacio, con distribución funcional y rápida ejecución de obra.  \n\nPara ver si se ajusta a lo que necesitás, ¿qué tamaño de casa estás buscando aproximadamente?",
+      "mentionedModels": [
+        "T1 36"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2331
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el T1 36?",
+      "questionType": "model_specific",
+      "response": "El modelo **T1 36** tiene **36,5 m² cubiertos**.  \nEstá resuelto como dos ambientes: 1 dormitorio + área social con cocina integrada y 1 baño.",
+      "mentionedModels": [
+        "T1 36"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 1696
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo T1 47?",
+      "questionType": "model_specific",
+      "response": "El **T1 47** es un módulo de **47 m²**, de **tres ambientes** (pensado para 2 dormitorios + estar/comedor con cocina integrada) y **1 baño**, ideal para familias. Se puede resolver **en línea o en L**, siempre en **Steel Frame**, con construcción rápida y entrega **llave en mano**, optimizando muy bien el espacio para vivienda permanente o de fin de semana.  \n\nPara ayudarte mejor con este modelo, ¿qué tamaño de casa estás buscando?",
+      "mentionedModels": [
+        "T1 47"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2809
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el T1 47?",
+      "questionType": "model_specific",
+      "response": "El modelo **T1 47** tiene **47 m² cubiertos**.  \nEstá pensado como tres ambientes, ideal para resolver 2 dormitorios + estar/comedor con cocina integrada y 1 baño.",
+      "mentionedModels": [
+        "T1 47"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 1614
+    }
+  ],
+  "sessionCreationTimeMs": 25613,
+  "errors": []
+}

@@ -1,0 +1,163 @@
+{
+  "company": "GoHome",
+  "url": "https://gohomeconstrucciones.com.ar/",
+  "testedAt": "2026-02-06T11:02:38.841Z",
+  "sessionId": "9447f1ca-18d2-49fc-b065-ea193a84edcc",
+  "systemPromptLength": 21711,
+  "systemPromptModelsFound": [
+    "Casa FERRARO MIRIAM CARINA",
+    "Casa LIBERTY",
+    "Casa ALMA I - 1 dorm - 1 bano",
+    "Casa ALMA II",
+    "Casa GRETA I",
+    "Casa GRETA II",
+    "Casa AMORINA",
+    "Casa TREVI",
+    "Casa TOKIO",
+    "Casa JANA",
+    "Casa VICTORIA",
+    "Casa ETIQUETA NEGRA - 150m2 - 2 dorm",
+    "Casa BREAK III",
+    "Casa COLEGIO",
+    "Primero muestra los modelos disponibles",
+    "Si ninguno encaja, ofrece la opcion de diseno pers",
+    "Pregunta que prefiere el cliente"
+  ],
+  "systemPromptWhatsApp": "+5491168702913",
+  "systemPromptType": "de Constructora**: MIXTA",
+  "conversations": [
+    {
+      "question": "?Que modelos tienen disponibles?",
+      "questionType": "base",
+      "response": "Tenemos dos modalidades: modelos de catálogo y proyectos a medida.  \nEn catálogo hoy contamos con: Casa FERRARO MIRIAM CARINA, LIBERTY (1 container de 20 pies), ALMA I (1 dorm, 1 baño, 1 container de 40 pies), ALMA II (2 containers), GRETA I (1 container de 40 pies), GRETA II (2 containers), AMORINA (3 containers), TREVI, TOKIO, JANA, VICTORIA, ETIQUETA NEGRA 150 m² (2 dorm), BREAK III y COLEGIO.  \nSi ninguno se ajusta a lo que buscás, también diseñamos a medida según tus necesidades.  \nPara ayudarte mejor, ¿qué tamaño de casa estás buscando aproximadamente (m² o cantidad de ambientes)?",
+      "mentionedModels": [
+        "Casa FERRARO MIRIAM CARINA",
+        "LIBERTY",
+        "ALMA I",
+        "ALMA II",
+        "GRETA I",
+        "GRETA II",
+        "AMORINA"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2976
+    },
+    {
+      "question": "?Cuantos modelos/proyectos ofrecen?",
+      "questionType": "base",
+      "response": "Mirá, en catálogo tenés 14 modelos de vivienda/espacios:  \n1) FERRARO MIRIAM CARINA, 2) LIBERTY, 3) ALMA I, 4) ALMA II, 5) GRETA I, 6) GRETA II, 7) AMORINA, 8) TREVI, 9) TOKIO, 10) JANA, 11) VICTORIA, 12) ETIQUETA NEGRA 150 m², 13) BREAK III y 14) COLEGIO.  \nAdemás de esos 14 modelos estándar, trabajamos con proyectos 100% personalizados, así que en la práctica el “catálogo” es abierto.  \n\nPara orientarte mejor, ¿qué tamaño de casa estás buscando?",
+      "mentionedModels": [
+        "LIBERTY",
+        "ALMA I",
+        "ALMA II",
+        "GRETA I",
+        "GRETA II",
+        "AMORINA"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2584
+    },
+    {
+      "question": "?Cuanto cuesta el modelo mas economico?",
+      "questionType": "base",
+      "response": "El modelo más económico es el LIBERTY, que es una vivienda de 1 container de 20 pies, compacta pero súper funcional.  \nNo tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp al +54 9 11 6870-2913, donde te pasan el valor al día y opciones con Banco Hipotecario.  \n\nMientras tanto, así te voy guiando: ¿ya tenés terreno? ¿En qué zona sería?",
+      "mentionedModels": [
+        "LIBERTY"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 1811
+    },
+    {
+      "question": "?Tienen financiamiento o planes de pago?",
+      "questionType": "base",
+      "response": "Sí, tenemos financiación.  \nPor un lado, trabajamos con Banco Hipotecario que puede financiar el 100% de la casa container, con entrega garantizada en 90 días; y por otro, en forma directa con nosotros se abona el total dentro del plazo de entrega (30 a 45 días según el proyecto).  \n\nPara ver qué opción encaja mejor con vos, ¿ya tenés terreno? ¿En qué zona?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 1725
+    },
+    {
+      "question": "?Cual es su WhatsApp o telefono de contacto?",
+      "questionType": "base",
+      "response": "Te dejo los datos completos así los tenés a mano:  \nWhatsApp / Celular: +54 9 11 6870-2913 y +54 9 11 5750-4201  \nEmail: gohomeconstrucciones@gmail.com  \n\nSi querés, mientras tanto seguimos por acá y te voy ayudando a definir el modelo: ¿ya tenés terreno? ¿En qué zona?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3288
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo LIBERTY?",
+      "questionType": "model_specific",
+      "response": "El modelo LIBERTY es una vivienda hecha con **1 container de 20 pies**, pensada como casa compacta y funcional.  \nTiene **aberturas amplias** para que entre mucha luz natural, **cocina cómoda con barra** tipo desayunador/bar para reuniones y un **baño completo** con diseño retro y moderno.  \n\nEs ideal como primer casa, monoambiente amplio, casa de fin de semana o anexo en el fondo de un lote.  \nPara ver si te encaja, ¿qué tamaño de casa estás buscando?",
+      "mentionedModels": [
+        "LIBERTY"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2191
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el LIBERTY?",
+      "questionType": "model_specific",
+      "response": "El LIBERTY está armado sobre un contenedor estándar de 20 pies, que ronda los **14 a 15 m² cubiertos** aproximadamente.  \nEs un monoambiente compacto tipo estudio, con cocina integrada, barra y baño completo, ideal como módulo inicial o casa de fin de semana.  \n\nPara saber si te queda cómodo: ¿lo pensás para vivir fijo o más como casa de descanso/anexo?",
+      "mentionedModels": [
+        "LIBERTY"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2094
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo ALMA I?",
+      "questionType": "model_specific",
+      "response": "El modelo ALMA I es una vivienda hecha con **1 contenedor High Cube de 40 pies**, en **2 ambientes**: un estar con cocina integrada y un dormitorio independiente.  \nIncluye **cocina completamente equipada**, con barra central y ventilación al exterior, y un **dormitorio con placard**, todo aprovechando muy bien la luz natural y la altura extra del High Cube, lo que la hace más cómoda que un container estándar.  \n\nEs ideal como primera vivienda para 1 o 2 personas o casa de fin de semana con más comodidad que el LIBERTY.  \nPara afinar si es el modelo indicado para vos: ¿ya tenés terreno? ¿En qué zona?",
+      "mentionedModels": [
+        "LIBERTY",
+        "ALMA I"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4038
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el ALMA I?",
+      "questionType": "model_specific",
+      "response": "El ALMA I está desarrollado sobre un contenedor High Cube de 40 pies, que equivale a unos **28–30 m² cubiertos** aproximadamente.  \nSe distribuye en 2 ambientes: estar con cocina integrada y barra + 1 dormitorio con placard, todo en un solo nivel.\n\nPara ver si el tamaño te alcanza: ¿qué superficie o cantidad de ambientes estás buscando?",
+      "mentionedModels": [
+        "ALMA I"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 1998
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo ALMA II?",
+      "questionType": "model_specific",
+      "response": "El modelo ALMA II está compuesto por **2 contenedores High Cube de 40 pies**, logrando una vivienda más amplia que el ALMA I.  \nEn uno de los contenedores se genera un **gran living-comedor con cocina integrada**, optimizando el espacio social; el segundo se destina a la parte privada (dormitorios/baños), armando una casa cómoda para vivir todo el año.\n\nEs una muy buena opción cuando buscás algo más grande que un 2 ambientes pero sin irte a 3 containers.  \nPara orientarte mejor con los modelos: ¿qué tamaño o cantidad de dormitorios estás buscando?",
+      "mentionedModels": [
+        "ALMA I",
+        "ALMA II"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2662
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el ALMA II?",
+      "questionType": "model_specific",
+      "response": "El ALMA II usa **2 contenedores High Cube de 40 pies**, así que estás en el orden de **56–60 m² cubiertos** aproximadamente.  \nCon esa superficie ya tenés una casa cómoda para vivir fijo, con buen espacio social y sector privado bien separado.\n\nPara saber si te alcanza: ¿cuántos dormitorios estás pensando?",
+      "mentionedModels": [
+        "ALMA I",
+        "ALMA II"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 1864
+    }
+  ],
+  "sessionCreationTimeMs": 48353,
+  "errors": []
+}

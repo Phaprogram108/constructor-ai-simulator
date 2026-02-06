@@ -30,16 +30,38 @@ export interface SocialLinks {
   youtube?: string;
 }
 
+export interface ProductOrService {
+  name: string;
+  description?: string;
+  specs: Record<string, string | number>;
+  features?: string[];
+  category?: string;
+}
+
+export interface CompanyProfile {
+  identity: string;
+  offering: string;
+  differentiators: string;
+  terminology: {
+    productsLabel: string;
+    processLabel: string;
+  };
+}
+
 export interface ScrapedContent {
   title: string;
   description: string;
   services: string[];
-  models: string[];
+  /** @deprecated Use `products` array instead - kept for backwards compatibility */
+  models?: string[];
   contactInfo: string;
   rawText: string;
   faqs?: { question: string; answer: string }[];
   socialLinks?: SocialLinks;
+  /** @deprecated Use `profile` instead - kept for backwards compatibility */
   constructoraType?: 'modular' | 'tradicional' | 'mixta' | 'inmobiliaria';
+  profile: CompanyProfile;
+  products: ProductOrService[];
 }
 
 export interface CreateSessionRequest {

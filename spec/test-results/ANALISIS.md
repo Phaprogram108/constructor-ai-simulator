@@ -10,7 +10,7 @@
 | Movilhauss | Modular | MODULAR | inquba, inquba +, inquba duo, freestyle, inquba/work (5) | **PASS** |
 | MakenHaus | Inmobiliaria/Tradicional | MODULAR | "No se encontraron modelos estructurados" | **FAIL** |
 
-## Fix Aplicado (commit 410833e)
+## Fix #1 (commit 410833e) - Clasificación Inmobiliaria
 
 Se agregó clasificación `inmobiliaria` con keywords:
 - desarrollos inmobiliarios
@@ -21,84 +21,52 @@ Se agregó clasificación `inmobiliaria` con keywords:
 - departamentos
 - fideicomiso, preventa, etc.
 
-**PROBLEMA**: MakenHaus sigue fallando porque Firecrawl no extrae contenido de la página.
-Sin contenido, no hay keywords para clasificar.
+**Problema encontrado**: La clasificación funcionaba pero se perdía al hacer fallback.
 
-## Detalle por Empresa
+## Fix #2 (commit d2e04b5) - Preservar Clasificación en Fallback
 
-### Atlas Housing - PASS
-- **Tipo**: Correcto (MODULAR)
-- **Modelos**: 6 modelos extraídos correctamente
-- **Faltan m²**: Los modelos no tienen metros cuadrados asociados
-- **Acción necesaria**: Mejorar extracción de m² (están en expandibles "+")
+**Bug**: Cuando Firecrawl extraía 0 modelos, se hacía `result = null` y se perdía el `constructoraType`.
 
-### ViBert - FAIL
-- **Tipo**: Correcto (MODULAR)
-- **Problema**: No extrajo modelos - ViBert tiene Casa Sara, Casa Julia, etc.
-- **Causa probable**: La web usa un menú con "Casas ViBert" que necesita navegación
-- **Contenido raw**: Solo muestra página principal, no llegó al catálogo
+**Fix**: Guardar `constructoraType` de Firecrawl ANTES de descartar el resultado, y restaurarlo al resultado final.
 
-### Ecomod - FAIL
-- **Tipo**: Correcto (MODULAR)
-- **Problema**: No extrajo modelos del catálogo
-- **Contenido raw**: Tiene "VER MODELOS" pero no navegó a esa página
-- **Causa probable**: Firecrawl no siguió el link a /modelos
+## Resultados Actualizados (v3 - commit d2e04b5)
 
-### Movilhauss - PASS
-- **Tipo**: Correcto (MODULAR)
-- **Modelos**: 5 modelos correctamente extraídos
-- **Nota**: Los modelos son nombres (inquba, freestyle) pero no tienen m²
-- **Mejora pendiente**: Extraer especificaciones técnicas (DVH, steel frame)
+| Empresa | Tipo Esperado | Tipo Obtenido | Modelos Extraídos | PASS/FAIL |
+|---------|---------------|---------------|-------------------|-----------|
+| Atlas Housing | Modular | MODULAR | 6 modelos | **PASS** |
+| ViBert | Modular | MODULAR | Sin modelos (web Wix) | **FAIL** |
+| Ecomod | Modular | MODULAR | Sin modelos | **FAIL** |
+| Movilhauss | Modular | MODULAR | 5 modelos | **PASS** |
+| MakenHaus | Inmobiliaria | **INMOBILIARIA** | N/A (es inmobiliaria) | **PASS** |
 
-### MakenHaus - FAIL (CRÍTICO)
-- **Tipo**: INCORRECTO - Dice MODULAR cuando es inmobiliaria/tradicional
-- **Problema**: MakenHaus vende proyectos/emprendimientos, NO casas modulares
-- **Descripción vacía**: No extrajo descripción de la empresa
-- **INFORMACIÓN ADICIONAL**: Vacía - el scraper falló completamente
-- **Causa probable**: Web con Cloudflare o protección que bloqueó el scrape
+## Problemas Pendientes
 
-## Problemas Identificados
+### ViBert - Web Wix
+- La web está construida con Wix que usa JavaScript pesado
+- Firecrawl no logra extraer modelos del catálogo
+- **Solución propuesta**: Usar Firecrawl Agent con screenshots para webs Wix
 
-### 1. ViBert y Ecomod - No navega a páginas de catálogo
-El scraper no sigue los links internos para llegar a las páginas de modelos.
-- ViBert: tiene /proyectos/casas-vibert con el catálogo
-- Ecomod: tiene /modelos con el catálogo
+### Ecomod - Navegación a catálogo
+- El contenido de modelos está en /modelos pero Firecrawl no navega ahí
+- La web muestra "VER MODELOS" como link
+- **Solución propuesta**: Mejorar detección de URLs de catálogo
 
-### 2. MakenHaus - Clasificación incorrecta + scrape fallido
-- El scraper no pudo obtener contenido de la web
-- Clasificó como MODULAR por defecto (sin datos para decidir)
-- Debería haber detectado keywords como "emprendimiento", "lotes", "unidades"
+### Metros cuadrados faltantes
+- Atlas Housing y Movilhauss extraen nombres pero no m²
+- La info está en páginas individuales de cada modelo
+- **Solución propuesta**: Scrapear páginas individuales de modelos
 
-### 3. Metros cuadrados no extraídos
-Atlas Housing y Movilhauss extrajeron nombres de modelos pero sin m².
-La información de m² suele estar en páginas individuales de cada modelo.
+## Commits del Fix
 
-## Próximos Pasos
+1. `410833e` - feat: agregar clasificación inmobiliaria para desarrolladoras
+2. `74812e0` - chore: agregar logs v2 para debug clasificación
+3. `d2e04b5` - fix: preservar clasificación Firecrawl al hacer fallback a Playwright
 
-### Fase 2: Diagnóstico
+## Test Commands
 
-1. **Verificar URLs encontradas por mapUrl**
-   - Agregar logs en firecrawl.ts para ver qué URLs encuentra
-
-2. **Probar MakenHaus manualmente**
-   ```bash
-   curl -I https://makenhaus.com.ar
-   ```
-   Ver si hay redirección o bloqueo
-
-3. **Verificar ViBert/Ecomod**
-   - Ver si mapUrl encuentra /modelos, /catalogo
-   - Ver si extract falla en esas URLs
-
-### Fase 3: Fixes Necesarios
-
-1. **Clasificación**: Agregar keywords negativas para detectar inmobiliarias
-   - "emprendimiento", "lotes", "unidades", "departamentos", "barrio cerrado"
-
-2. **Navegación a catálogo**:
-   - Mejorar identificación de URLs de catálogo
-   - Forzar crawl de /modelos, /catalogo, /casas
-
-3. **Extracción de m²**:
-   - Usar regex más agresivos en el contenido raw
-   - Considerar crawl de páginas individuales de modelos
+```bash
+# Test individual
+curl -s -X POST "https://constructor-ai-simulator.vercel.app/api/simulator/create" \
+  -H "Content-Type: application/json" \
+  -d '{"websiteUrl":"https://[EMPRESA]"}' | jq '.'
+```

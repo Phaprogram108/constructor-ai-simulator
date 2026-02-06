@@ -1,0 +1,327 @@
+{
+  "company": "Arqtainer",
+  "url": "https://arqtainer.com.ar/",
+  "capturedAt": "2026-02-05T20:36:23.376Z",
+  "type": "modular",
+  "navigation": {
+    "menuItems": [
+      "INFO",
+      "NOSOTROS",
+      "MODELOS",
+      "COMUNIDAD",
+      "CONTACTO"
+    ],
+    "modelSections": [
+      {
+        "label": "Modelos",
+        "url": "https://arqtainer.com.ar/#modelos"
+      },
+      {
+        "label": "Comunidad",
+        "url": "https://arqtainer.com.ar/#comunidad"
+      },
+      {
+        "label": "ver modelos",
+        "url": "https://arqtainer.com.ar/wp-content/uploads/2026/02/catalogo-arqtainer-30.01-COMPRIMIDO-comprimido.pdf"
+      },
+      {
+        "label": "ver modelos",
+        "url": "https://arqtainer.com.ar/wp-content/uploads/2026/02/catalogo-arqhaus-30.01-COMPRIMIDO-comprimido.pdf"
+      }
+    ]
+  },
+  "models": [
+    {
+      "name": "ARQHAUS",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-1.jpeg",
+      "detailUrl": "https://arqtainer.com.ar/wp-content/uploads/2026/02/catalogo-arqhaus-30.01-COMPRIMIDO-comprimido.pdf"
+    },
+    {
+      "name": "Exaltación de la Cruz",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg",
+      "detailUrl": "https://arqtainer.com.ar/wp-content/uploads/2026/02/catalogo-arqtainer-30.01-COMPRIMIDO-comprimido.pdf"
+    },
+    {
+      "name": "General Pinto",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg",
+      "detailUrl": "https://arqtainer.com.ar/wp-content/uploads/2026/02/catalogo-arqhaus-30.01-COMPRIMIDO-comprimido.pdf"
+    },
+    {
+      "name": "Hudson",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Junín",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Laguna de Lobos",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "La Limpia",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "La Plata",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Las Flores",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Las Heras",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Lezama",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Lincoln",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Lobos",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Luján",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Mar Azul",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Mar de Ajó",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Mercedes",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Mosconi",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Munro",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Norberto de la Riestra",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Pehuajó",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Pergamino",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Pilar",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Poblet",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Rincón de Cobo",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Salvador María",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "San Eduardo del Mar",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "San Isidro",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "San Miguel del Monte",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "San Vicente",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Santa Clara del Mar",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Santa Teresita",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Sierra de la Ventana",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Solís",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Tandil",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Tres Lomas",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Villa Elisa (La Plata)",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Villa Ventana",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Villa Serrana (zona Villa Ventana)",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Montebuey",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Bell Ville",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Los reartes",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Gualeguay",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Gualeguaychú",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Villa Elisa (Termas)",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Concordia",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    }
+  ],
+  "contactInfo": {
+    "whatsapp": "542345447556",
+    "email": "hola@arqtainer.com.ar",
+    "instagram": "@arqtainer"
+  },
+  "totalModelsFound": 46,
+  "pagesExplored": 3,
+  "errors": [
+    "Catalog section https://arqtainer.com.ar/wp-content/uploads/2026/02/catalogo-arqtainer-30.01-COMPRIMIDO-comprimido.pdf: page.goto: Download is starting\nCall log:\n\u001b[2m  - navigating to \"https://arqtainer.com.ar/wp-content/uploads/2026/02/catalogo-arqtainer-30.01-COMPRIMIDO-comprimido.pdf\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "Detail page ARQHAUS: page.goto: Download is starting\nCall log:\n\u001b[2m  - navigating to \"https://arqtainer.com.ar/wp-content/uploads/2026/02/catalogo-arqhaus-30.01-COMPRIMIDO-comprimido.pdf\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "Detail page Exaltación de la Cruz: page.goto: Download is starting\nCall log:\n\u001b[2m  - navigating to \"https://arqtainer.com.ar/wp-content/uploads/2026/02/catalogo-arqtainer-30.01-COMPRIMIDO-comprimido.pdf\", waiting until \"domcontentloaded\"\u001b[22m\n",
+    "Detail page General Pinto: page.goto: Download is starting\nCall log:\n\u001b[2m  - navigating to \"https://arqtainer.com.ar/wp-content/uploads/2026/02/catalogo-arqhaus-30.01-COMPRIMIDO-comprimido.pdf\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  ]
+}

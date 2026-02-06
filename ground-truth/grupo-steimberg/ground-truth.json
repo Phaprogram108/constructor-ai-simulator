@@ -1,0 +1,27 @@
+{
+  "company": "Grupo Steimberg",
+  "url": "https://www.gruposteimberg.com/",
+  "capturedAt": "2026-02-05T20:26:49.375Z",
+  "type": "modular",
+  "navigation": {
+    "menuItems": [
+      "HOME",
+      "CABIN",
+      "CONTACTO"
+    ],
+    "modelSections": [
+      {
+        "label": "PROYECTOS DE INVERSIÓN",
+        "url": "https://www.gruposteimberg.com/proyectos-de-inversion/"
+      }
+    ]
+  },
+  "models": [],
+  "contactInfo": {
+    "email": "gruposteimberg@gmail.com",
+    "instagram": "@grupo_steimberg"
+  },
+  "totalModelsFound": 0,
+  "pagesExplored": 3,
+  "errors": []
+}

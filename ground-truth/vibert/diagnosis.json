@@ -1,0 +1,146 @@
+{
+  "company": "ViBert",
+  "url": "https://vibert.com.ar",
+  "diagnosedAt": "2026-02-06T14:56:47.383Z",
+  "overallScore": 15,
+  "scoreBreakdown": {
+    "productCoverage": 0,
+    "specAccuracy": 0,
+    "contactAccuracy": 100,
+    "hallucinationPenalty": 30,
+    "identityMatch": 100
+  },
+  "groundTruthModels": 14,
+  "systemPromptModels": 3,
+  "agentResponseModels": 6,
+  "gaps": [
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Casa Aura",
+      "detail": "Model \"Casa Aura\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Casa Aura"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Casa Rosa",
+      "detail": "Model \"Casa Rosa\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Casa Rosa"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Casa Savona",
+      "detail": "Model \"Casa Savona\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Casa Savona"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Casa Capri",
+      "detail": "Model \"Casa Capri\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Casa Capri"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Casa Viena",
+      "detail": "Model \"Casa Viena\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Casa Viena"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Casa Menfis",
+      "detail": "Model \"Casa Menfis\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Casa Menfis"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Casa Serena",
+      "detail": "Model \"Casa Serena\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Casa Serena"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Casa Marsala",
+      "detail": "Model \"Casa Marsala\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Casa Marsala"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Casa Atenas",
+      "detail": "Model \"Casa Atenas\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Casa Atenas"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Casa Veneto",
+      "detail": "Model \"Casa Veneto\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Casa Veneto"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Quincho R",
+      "detail": "Model \"Quincho R\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Quincho R"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Quincho M",
+      "detail": "Model \"Quincho M\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Quincho M"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Quincho L",
+      "detail": "Model \"Quincho L\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Quincho L"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Quincho XL",
+      "detail": "Model \"Quincho XL\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Quincho XL"
+    },
+    {
+      "type": "HALLUCINATION",
+      "entity": "ViBert que mejor se parezca a lo que",
+      "detail": "Agent mentioned model \"ViBert que mejor se parezca a lo que\" which does not exist in ground truth or systemPrompt",
+      "severity": "HIGH",
+      "agentResponseValue": "ViBert que mejor se parezca a lo que"
+    },
+    {
+      "type": "HALLUCINATION",
+      "entity": "Casa Sara",
+      "detail": "Agent mentioned model \"Casa Sara\" which does not exist in ground truth or systemPrompt",
+      "severity": "HIGH",
+      "agentResponseValue": "Casa Sara"
+    },
+    {
+      "type": "HALLUCINATION",
+      "entity": "ViBert",
+      "detail": "Agent mentioned model \"ViBert\" which does not exist in ground truth or systemPrompt",
+      "severity": "HIGH",
+      "agentResponseValue": "ViBert"
+    }
+  ],
+  "gapSummary": {
+    "scrapingMiss": 14,
+    "promptMiss": 0,
+    "hallucination": 3
+  },
+  "recommendations": [
+    "Scraping no encontro 14 modelo(s): Casa Aura, Casa Rosa, Casa Savona, Casa Capri, Casa Viena, Casa Menfis, Casa Serena, Casa Marsala, Casa Atenas, Casa Veneto, Quincho R, Quincho M, Quincho L, Quincho XL. Revisar firecrawl.ts URL patterns.",
+    "3 dato(s) inventados por el agente. Reforzar anti-hallucination en prompt-generator.ts."
+  ]
+}

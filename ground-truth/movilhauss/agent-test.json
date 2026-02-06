@@ -1,0 +1,113 @@
+{
+  "company": "Movilhauss",
+  "url": "https://movilhauss.com",
+  "testedAt": "2026-02-06T10:43:11.522Z",
+  "sessionId": "bc300570-a448-4c3d-8eb5-d758253c4d3c",
+  "systemPromptLength": 22619,
+  "systemPromptModelsFound": [],
+  "systemPromptWhatsApp": "+5492236216699",
+  "systemPromptType": "de Constructora**: INMOBILIARIA",
+  "conversations": [
+    {
+      "question": "?Que modelos tienen disponibles?",
+      "questionType": "base",
+      "response": "Te cuento: no trabajamos con modelos de casas sueltas, somos una desarrolladora inmobiliaria y vendemos unidades dentro de proyectos/emprendimientos (departamentos, casas en barrios, lotes). Las opciones disponibles dependen de cada desarrollo y la zona.  \n\nPara ayudarte bien, decime primero: ¿qué tipo de propiedad estás buscando? ¿Departamento, casa, lote o local comercial?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2984
+    },
+    {
+      "question": "?Cuantos modelos/proyectos ofrecen?",
+      "questionType": "base",
+      "response": "Mirá, actualmente trabajamos con varios emprendimientos activos, pero la disponibilidad va cambiando según la etapa de cada proyecto (lanzamiento, obra, entrega). Por eso no tengo un número fijo de proyectos para pasarte por acá.  \n\nPara orientarte bien y ver en cuál encajás mejor, contame: ¿en qué zona te interesaría comprar, y buscás departamento, casa o lote?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2348
+    },
+    {
+      "question": "?Cuanto cuesta el modelo mas economico?",
+      "questionType": "base",
+      "response": "No tengo los precios actualizados cargados por acá, y además el valor más económico cambia según el proyecto, la zona y si es departamento, casa o lote. Para el número exacto te recomiendo escribirnos por WhatsApp así te pasan las opciones vigentes.  \n\nMientras tanto, así te guío mejor: ¿qué tipo de propiedad estás buscando (departamento, casa o lote) y en qué zona te interesaría?",
+      "mentionedModels": [],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 2541
+    },
+    {
+      "question": "?Tienen financiamiento o planes de pago?",
+      "questionType": "base",
+      "response": "Sí, ofrecemos financiación para la compra de unidades en nuestros proyectos, con planes de pago que se adaptan según el emprendimiento y la etapa de obra. Podés combinar anticipo y cuotas, y en algunos casos hay ajustes según índice o hitos de construcción.  \n\nPara decirte qué opción te podría encajar mejor, contame: ¿buscás algo para vivienda propia o como inversión?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2416
+    },
+    {
+      "question": "?Cual es su WhatsApp o telefono de contacto?",
+      "questionType": "base",
+      "response": "Te dejo los datos de contacto así podés hablar directo con un asesor:  \nWhatsApp/Teléfono: **+54 9 223 621 6699**  \nEmail: **movilhauss@gmail.com**  \n\nSi querés, también podés contarme por acá qué estás buscando y te voy orientando antes de que escribas.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3005
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo Inauba (work)?",
+      "questionType": "model_specific",
+      "response": "Perfecto, el modelo **Inquba Work** es un módulo pensado como espacio de trabajo o monoambiente compacto.  \nLas características principales son:  \n- **Superficie cubierta:** 16 m²  \n- **Ambientes:** 1 (living/comedor o espacio de trabajo)  \n- **Baño:** 1  \n- **Cocina:** integrada  \n- Medidas aproximadas del ambiente principal: **3 m x 4,8 m**  \n\nViene con: anafe eléctrico de 2 hornallas, bajo mesada y alacena, griferías, termotanque eléctrico, instalación eléctrica y sanitaria completa, aberturas de aluminio con DVH, aislación térmica y preinstalación para aire acondicionado.  \nSi querés, te cuento la diferencia con el Tiny y el Suite para que veas cuál se adapta mejor a lo que necesitás.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3234
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el Inauba (work)?",
+      "questionType": "model_specific",
+      "response": "El modelo **Inquba Work** tiene una **superficie cubierta de 16 m²**.  \nEl ambiente principal mide aproximadamente **3 m x 4,8 m**, más el baño integrado al módulo.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 1773
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo Inauba +?",
+      "questionType": "model_specific",
+      "response": "Buenísima pregunta, la **Inquba+** es la versión ampliada del módulo base, ideal cuando buscás más metros que el Work o el Tiny. Está armada combinando módulos de 16 m², llegando por ejemplo a configuraciones tipo 32 m² (monoambiente grande o 1 dormitorio), siempre con estructura metálica, aislación térmica, aberturas de aluminio con DVH y todas las instalaciones completas (eléctrica y sanitaria).  \n\nIncluye cocina equipada (anafe eléctrico de 2 hornallas, bajo mesada, alacena, grifería), baño completo con termotanque eléctrico, revestimientos interiores y preinstalación para aire acondicionado; además podés sumar deck o pérgola como extra.  \nPara afinar mejor: ¿la estás pensando como vivienda permanente, turismo (cabaña) u oficina?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3439
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el Inauba +?",
+      "questionType": "model_specific",
+      "response": "La **Inquba+** se arma combinando módulos base de **16 m²** cada uno.  \nUn ejemplo muy común es la configuración de **32 m²** (dos módulos unidos), pero al ser modular se puede ajustar sumando más unidades según el proyecto.  \n\nSi me contás cuántos ambientes necesitás, te orientó qué combinación de metros te conviene.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3526
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo Inauba duo?",
+      "questionType": "model_specific",
+      "response": "Te cuento: el **Inquba Duo** es una configuración de dos módulos pensada para ganar más superficie y separar mejor los espacios (por ejemplo, área social y área privada). Mantiene el mismo sistema constructivo que el resto de la línea: estructura metálica, construcción en seco reforzada, aislación térmica, aberturas de aluminio con DVH e instalaciones completas (eléctrica y sanitaria).  \n\nIncluye cocina equipada (anafe eléctrico de 2 hornallas, bajo mesada, alacena, grifería), baño completo con termotanque eléctrico, revestimientos interiores y preinstalación para aire acondicionado; y también podés sumar deck o pérgola como opcional.  \nNo tengo cargado el plano detallado por acá, pero suele rondar los **32 m²** (dos módulos de 16 m²). ¿La idea es usarlo como vivienda, cabaña turística o algo más tipo oficina?",
+      "mentionedModels": [],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 3154
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el Inauba duo?",
+      "questionType": "model_specific",
+      "response": "El **Inquba Duo** se arma con **dos módulos base de 16 m²**, por lo que en total ronda los **32 m² de superficie cubierta**.  \nEs una muy buena medida para lograr un espacio tipo 1 dormitorio o monoambiente amplio con mejor separación de áreas.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2431
+    }
+  ],
+  "sessionCreationTimeMs": 50989,
+  "errors": []
+}

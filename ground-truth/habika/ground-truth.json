@@ -1,0 +1,23 @@
+{
+  "company": "Habika",
+  "url": "https://habika.ar/",
+  "capturedAt": "2026-02-05T20:28:22.277Z",
+  "type": "modular",
+  "navigation": {
+    "menuItems": [
+      "Nosotros",
+      "Entregas",
+      "Tipologías y precios",
+      "Desarrollistas",
+      "Blog"
+    ],
+    "modelSections": []
+  },
+  "models": [],
+  "contactInfo": {
+    "instagram": "@habika.ar"
+  },
+  "totalModelsFound": 0,
+  "pagesExplored": 1,
+  "errors": []
+}

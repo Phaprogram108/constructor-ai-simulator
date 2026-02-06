@@ -1,0 +1,33 @@
+{
+  "company": "Aftamantes",
+  "url": "https://aftamantes.net/refugios/",
+  "diagnosedAt": "2026-02-06T14:56:47.396Z",
+  "overallScore": 73,
+  "scoreBreakdown": {
+    "productCoverage": 67,
+    "specAccuracy": 100,
+    "contactAccuracy": 100,
+    "hallucinationPenalty": 0,
+    "identityMatch": 100
+  },
+  "groundTruthModels": 3,
+  "systemPromptModels": 5,
+  "agentResponseModels": 3,
+  "gaps": [
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "ARMÁ TU ALDEA",
+      "detail": "Model \"ARMÁ TU ALDEA\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "ARMÁ TU ALDEA"
+    }
+  ],
+  "gapSummary": {
+    "scrapingMiss": 1,
+    "promptMiss": 0,
+    "hallucination": 0
+  },
+  "recommendations": [
+    "Scraping no encontro 1 modelo(s): ARMÁ TU ALDEA. Revisar firecrawl.ts URL patterns."
+  ]
+}

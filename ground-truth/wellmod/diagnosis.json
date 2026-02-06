@@ -1,0 +1,213 @@
+{
+  "company": "Wellmod",
+  "url": "https://www.wellmod.com.ar/",
+  "diagnosedAt": "2026-02-06T14:56:47.392Z",
+  "overallScore": 46,
+  "scoreBreakdown": {
+    "productCoverage": 34,
+    "specAccuracy": 59,
+    "contactAccuracy": 50,
+    "hallucinationPenalty": 0,
+    "identityMatch": 100
+  },
+  "groundTruthModels": 38,
+  "systemPromptModels": 19,
+  "agentResponseModels": 19,
+  "gaps": [
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Hotel Termal",
+      "detail": "Model \"Hotel Termal\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Hotel Termal"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Paso Calmo",
+      "detail": "Model \"Paso Calmo\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Paso Calmo"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Las Algas",
+      "detail": "Model \"Las Algas\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Las Algas"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "W26 Black Edition Lodge",
+      "detail": "Model \"W26 Black Edition Lodge\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "W26 Black Edition Lodge"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Granja Ecuestre",
+      "detail": "Model \"Granja Ecuestre\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Granja Ecuestre"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "La Ramadita",
+      "detail": "Model \"La Ramadita\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "La Ramadita"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Casa Polvorillo",
+      "detail": "Model \"Casa Polvorillo\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Casa Polvorillo"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "AA2000",
+      "detail": "Model \"AA2000\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "AA2000"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Club Atlético Talleres",
+      "detail": "Model \"Club Atlético Talleres\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Club Atlético Talleres"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Fertimaq",
+      "detail": "Model \"Fertimaq\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Fertimaq"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Grido",
+      "detail": "Model \"Grido\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Grido"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "TN Pilates",
+      "detail": "Model \"TN Pilates\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "TN Pilates"
+    },
+    {
+      "type": "PROMPT_MISS",
+      "entity": "W40 B",
+      "detail": "Model \"W40 B\" is in systemPrompt (\"Casa W40 B - 40m2 - 1 dorm - 1 bano\") but agent never mentioned it in responses",
+      "severity": "MEDIUM",
+      "groundTruthValue": "W40 B",
+      "systemPromptValue": "Casa W40 B - 40m2 - 1 dorm - 1 bano"
+    },
+    {
+      "type": "PROMPT_MISS",
+      "entity": "W40 C",
+      "detail": "Model \"W40 C\" is in systemPrompt (\"Casa W40 C - 40m2 - 1 dorm - 1 bano\") but agent never mentioned it in responses",
+      "severity": "MEDIUM",
+      "groundTruthValue": "W40 C",
+      "systemPromptValue": "Casa W40 C - 40m2 - 1 dorm - 1 bano"
+    },
+    {
+      "type": "PROMPT_MISS",
+      "entity": "W80 C",
+      "detail": "Model \"W80 C\" is in systemPrompt (\"Casa W80 C - 80m2 - 3 dorm - 1 bano\") but agent never mentioned it in responses",
+      "severity": "MEDIUM",
+      "groundTruthValue": "W80 C",
+      "systemPromptValue": "Casa W80 C - 80m2 - 3 dorm - 1 bano"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "NUEVA PLANTA DE PRODUCCIÓN",
+      "detail": "Model \"NUEVA PLANTA DE PRODUCCIÓN\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "NUEVA PLANTA DE PRODUCCIÓN"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "CAMILLAS",
+      "detail": "Model \"CAMILLAS\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "CAMILLAS"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "ROLL OFF",
+      "detail": "Model \"ROLL OFF\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "ROLL OFF"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "COLOCACIÓN DE EJES BAJO NORMA 25/2009 S.S.T.A.",
+      "detail": "Model \"COLOCACIÓN DE EJES BAJO NORMA 25/2009 S.S.T.A.\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "COLOCACIÓN DE EJES BAJO NORMA 25/2009 S.S.T.A."
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "PORTA CONTENEDOR",
+      "detail": "Model \"PORTA CONTENEDOR\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "PORTA CONTENEDOR"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "ACCESORIOS",
+      "detail": "Model \"ACCESORIOS\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "ACCESORIOS"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "WELLMOD",
+      "detail": "Model \"WELLMOD\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "WELLMOD"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "GRÚA PERCHA",
+      "detail": "Model \"GRÚA PERCHA\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "GRÚA PERCHA"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "GRÚAS VEHICULARES",
+      "detail": "Model \"GRÚAS VEHICULARES\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "GRÚAS VEHICULARES"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "CAJA VOLCADORA",
+      "detail": "Model \"CAJA VOLCADORA\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "CAJA VOLCADORA"
+    },
+    {
+      "type": "PROMPT_MISS",
+      "entity": "whatsapp",
+      "detail": "WhatsApp is in systemPrompt (\"+5493518668299\") but agent didn't share it in responses",
+      "severity": "LOW",
+      "groundTruthValue": "543518160094",
+      "systemPromptValue": "+5493518668299"
+    }
+  ],
+  "gapSummary": {
+    "scrapingMiss": 22,
+    "promptMiss": 4,
+    "hallucination": 0
+  },
+  "recommendations": [
+    "Scraping no encontro 22 modelo(s): Hotel Termal, Paso Calmo, Las Algas, W26 Black Edition Lodge, Granja Ecuestre, La Ramadita, Casa Polvorillo, AA2000, Club Atlético Talleres, Fertimaq, Grido, TN Pilates, NUEVA PLANTA DE PRODUCCIÓN, CAMILLAS, ROLL OFF, COLOCACIÓN DE EJES BAJO NORMA 25/2009 S.S.T.A., PORTA CONTENEDOR, ACCESORIOS, WELLMOD, GRÚA PERCHA, GRÚAS VEHICULARES, CAJA VOLCADORA. Revisar firecrawl.ts URL patterns.",
+    "4 dato(s) presentes en prompt pero no compartidos por el agente. Revisar prompt-generator.ts."
+  ]
+}

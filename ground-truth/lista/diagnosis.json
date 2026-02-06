@@ -1,0 +1,145 @@
+{
+  "company": "Lista",
+  "url": "https://lista.com.ar/",
+  "diagnosedAt": "2026-02-06T14:56:47.396Z",
+  "overallScore": 30,
+  "scoreBreakdown": {
+    "productCoverage": 0,
+    "specAccuracy": 0,
+    "contactAccuracy": 100,
+    "hallucinationPenalty": 0,
+    "identityMatch": 100
+  },
+  "groundTruthModels": 17,
+  "systemPromptModels": 2,
+  "agentResponseModels": 11,
+  "gaps": [
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "MACÁ A",
+      "detail": "Model \"MACÁ A\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "MACÁ A"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "MACÁ B",
+      "detail": "Model \"MACÁ B\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "MACÁ B"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "MACÁ 2A",
+      "detail": "Model \"MACÁ 2A\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "MACÁ 2A"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "MACÁ L",
+      "detail": "Model \"MACÁ L\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "MACÁ L"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "MACÁ XL",
+      "detail": "Model \"MACÁ XL\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "MACÁ XL"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "MACÁ XXL",
+      "detail": "Model \"MACÁ XXL\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "MACÁ XXL"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "CONDOR",
+      "detail": "Model \"CONDOR\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "CONDOR"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "MIRASOL",
+      "detail": "Model \"MIRASOL\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "MIRASOL"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "PELITRÉN",
+      "detail": "Model \"PELITRÉN\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "PELITRÉN"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "BRUJA",
+      "detail": "Model \"BRUJA\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "BRUJA"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "HORNERO",
+      "detail": "Model \"HORNERO\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "HORNERO"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "ALBATROS",
+      "detail": "Model \"ALBATROS\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "ALBATROS"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "LECHUZA",
+      "detail": "Model \"LECHUZA\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "LECHUZA"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "ALBATROS L",
+      "detail": "Model \"ALBATROS L\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "ALBATROS L"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "CASA AQUAHBAY",
+      "detail": "Model \"CASA AQUAHBAY\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "CASA AQUAHBAY"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "CASA GINKO",
+      "detail": "Model \"CASA GINKO\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "CASA GINKO"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "CASA ACER",
+      "detail": "Model \"CASA ACER\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "CASA ACER"
+    }
+  ],
+  "gapSummary": {
+    "scrapingMiss": 17,
+    "promptMiss": 0,
+    "hallucination": 0
+  },
+  "recommendations": [
+    "Scraping no encontro 17 modelo(s): MACÁ A, MACÁ B, MACÁ 2A, MACÁ L, MACÁ XL, MACÁ XXL, CONDOR, MIRASOL, PELITRÉN, BRUJA, HORNERO, ALBATROS, LECHUZA, ALBATROS L, CASA AQUAHBAY, CASA GINKO, CASA ACER. Revisar firecrawl.ts URL patterns."
+  ]
+}

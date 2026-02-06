@@ -1,0 +1,123 @@
+{
+  "company": "ViBert",
+  "url": "https://vibert.com.ar",
+  "testedAt": "2026-02-06T14:52:33.718Z",
+  "sessionId": "0bc535d0-d238-49ee-97d0-aa729080c9a0",
+  "systemPromptLength": 22176,
+  "systemPromptModelsFound": [
+    "Construccion en Hormigon premoldeado",
+    "Financiacion disponible",
+    "Construccion en"
+  ],
+  "systemPromptWhatsApp": "+5493425081468",
+  "systemPromptType": "de Casas modulares estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "ViBert es una empresa de Santa Fe con más de 70 años de experiencia en premoldeados, especializada en la construcción de casas modulares de hormigón. Fabricamos paneles premoldeados e industrializamos casas completas, logrando estructuras muy sólidas, eficientes y sostenibles, que podés tener listas en plazos cortos. También ofrecemos quinchos modulares y distintas modalidades de obra (obra gris y llave en mano), con opciones de financiación.  \n\nPara orientarte mejor, ¿estás buscando una casa modular de vivienda permanente o algo tipo quincho/complemento?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 5804
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos principalmente casas modulares de hormigón premoldeado y quinchos modulares, todos industrializados con nuestro sistema ViBert.  \nEn casas, tenés modelos como Sara, Daniela, Justina, Dora, Micaela, Estefanía, Carmela, Selene, Valeria, María y también opciones como Casa Modular Básica (50 m²) y Casa Modular Avanzada (75 m²).  \nEn quinchos, contamos con modelos S, M, L y A, de 27,5 m² a 68 m².  \nAdemás brindamos construcción en hormigón premoldeado, modalidades de obra gris o llave en mano y financiación, trabajando desde nuestra planta en Ruta Nacional 19 km 4 y San Agustín, Santa Fe.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4275
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Te podés contactar directo por WhatsApp o teléfono al +54 9 342 508 1468 (wa.me/5493425081468).  \nTambién podés escribirnos a ventas@vibert.com.ar.  \n\nAprovecho y te pregunto: ¿qué tipo de casa modular estás buscando, vivienda principal o algo más chico tipo quincho?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4354
+    },
+    {
+      "question": "¿Cuántos proyectos ofrecen?",
+      "questionType": "product_count",
+      "response": "En casas modulares de hormigón tenemos 10 modelos principales: Sara, Daniela, Justina, Dora, Micaela, Estefanía, Carmela, Selene, Valeria y María, más opciones genéricas como Casa Modular Básica y Casa Modular Avanzada.  \nEn quinchos contamos con al menos 4 modelos: Quincho S, M, L y A.  \n\nAdemás, en la web vas a ver la sección “Nuestros proyectos” y “Algunos de nuestros desarrollos”, donde mostramos muchas obras ya realizadas. Para ayudarte mejor, ¿qué tipo de casas modulares estás buscando?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3654
+    },
+    {
+      "question": "Contame sobre Casa Aura",
+      "questionType": "product_specific",
+      "response": "No tengo registrado ningún modelo llamado Casa Aura dentro de nuestro catálogo actual.  \nLos modelos de casas modulares que sí trabajamos son: Sara, Daniela, Justina, Dora, Micaela, Estefanía, Carmela, Selene, Valeria, María, además de la Casa Modular Básica (50 m²) y la Casa Modular Avanzada (75 m²).  \n\nPuede que te hayan mencionado un modelo a medida o con otro nombre comercial; para no marearte: ¿qué superficie o para cuántas personas la estás pensando así te recomiendo el modelo ViBert que mejor se parezca a lo que buscás?",
+      "mentionedModels": [
+        "Casa Aura",
+        "ViBert que mejor se parezca a lo que"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2567
+    },
+    {
+      "question": "¿Cuáles son las especificaciones de Casa Aura?",
+      "questionType": "product_specs",
+      "response": "No tengo ninguna información cargada sobre un modelo llamado Casa Aura dentro de los productos ViBert, así que no puedo darte especificaciones técnicas de ese nombre en particular.  \n\nSí te puedo ofrecer modelos concretos con datos claros, por ejemplo:\n- Casa Sara: 65,55 m², ideal para 2 personas.  \n- Casa Daniela: 79,45 m², para 5 personas.  \n- Casa María: 110,98 m², para 6 personas.  \n\nPara acercarme a lo que sería “Aura”, contame: ¿para cuántas personas y cuántos m² aproximadamente estás buscando? Así te sugiero el modelo más parecido.",
+      "mentionedModels": [
+        "Casa Aura",
+        "Casa Sara"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3810
+    },
+    {
+      "question": "Contame sobre Casa Rosa",
+      "questionType": "product_specific",
+      "response": "No tengo ningún modelo llamado Casa Rosa en el catálogo de ViBert.  \nLos modelos de casas modulares de hormigón que sí tenemos son: Sara, Daniela, Justina, Dora, Micaela, Estefanía, Carmela, Selene, Valeria y María, además de la Casa Modular Básica (50 m²) y la Casa Modular Avanzada (75 m²).  \n\nPuede que lo que te mencionaron sea un nombre interno o un proyecto a medida; para orientarte bien, ¿para cuántas personas necesitás la casa o qué tamaño aproximado estás buscando?",
+      "mentionedModels": [
+        "Casa Rosa"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3788
+    },
+    {
+      "question": "¿Cuáles son las especificaciones de Casa Rosa?",
+      "questionType": "product_specs",
+      "response": "No tengo ninguna casa llamada Casa Rosa en el catálogo oficial de ViBert, así que no cuento con especificaciones técnicas de ese modelo en particular.  \nLos modelos que sí están definidos con datos concretos son, por ejemplo, Sara (65,55 m² para 2 personas), Daniela (79,45 m² para 5), Justina (87,94 m² para 4), María (110,98 m² para 6), entre otros.  \n\nPara poder recomendarte algo equivalente, contame: ¿para cuántas personas y cuántos m² aproximadamente estás pensando la casa?",
+      "mentionedModels": [
+        "Casa Rosa"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 2348
+    },
+    {
+      "question": "Contame sobre Casa Savona",
+      "questionType": "product_specific",
+      "response": "No tengo registrada una Casa Savona dentro del catálogo oficial de ViBert.  \nLas casas modulares de hormigón que sí trabajamos con nombre y ficha son: Sara, Daniela, Justina, Dora, Micaela, Estefanía, Carmela, Selene, Valeria y María, además de la Casa Modular Básica (50 m²) y la Casa Modular Avanzada (75 m²).  \n\nPara acercarme a lo que buscás con “Savona”, contame: ¿para cuántas personas o qué cantidad de m² estás pensando, así te sugiero el modelo que mejor encaje?",
+      "mentionedModels": [
+        "Casa Savona"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3023
+    },
+    {
+      "question": "¿Cuáles son las especificaciones de Casa Savona?",
+      "questionType": "product_specs",
+      "response": "No tengo ninguna casa llamada Casa Savona en el catálogo oficial de ViBert, así que no cuento con especificaciones técnicas de ese modelo (m², cantidad de dormitorios, distribución, etc.).  \nSí tengo datos concretos de nuestros modelos reales, por ejemplo: María (110,98 m² para 6 personas), Valeria (97,65 m² para 6), Estefanía (96,2 m² para 4), Justina (87,94 m² para 4), entre otros.  \n\nSi me contás cuántas personas la usarían y qué tamaño aproximado buscás, te recomiendo el modelo ViBert más parecido en base a datos reales.",
+      "mentionedModels": [
+        "Casa Savona",
+        "ViBert"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 3236
+    }
+  ],
+  "sessionCreationTimeMs": 26674,
+  "errors": []
+}

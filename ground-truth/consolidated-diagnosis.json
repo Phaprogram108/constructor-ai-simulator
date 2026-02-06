@@ -1,0 +1,1398 @@
+{
+  "generatedAt": "2026-02-06T14:56:47.397Z",
+  "companiesAnalyzed": 19,
+  "companiesSkipped": {
+    "noGroundTruth": 0,
+    "noAgentTest": 1
+  },
+  "averageScore": 54,
+  "totalGaps": 125,
+  "gapBreakdown": {
+    "scrapingMiss": 101,
+    "promptMiss": 8,
+    "hallucination": 16
+  },
+  "diagnoses": [
+    {
+      "company": "Atlas Housing",
+      "url": "https://atlashousing.com.ar",
+      "diagnosedAt": "2026-02-06T14:56:47.381Z",
+      "overallScore": 68,
+      "scoreBreakdown": {
+        "productCoverage": 50,
+        "specAccuracy": 100,
+        "contactAccuracy": 100,
+        "hallucinationPenalty": 0,
+        "identityMatch": 100
+      },
+      "groundTruthModels": 2,
+      "systemPromptModels": 6,
+      "agentResponseModels": 2,
+      "gaps": [
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Lago Meliquina",
+          "detail": "Model \"Lago Meliquina\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Lago Meliquina"
+        }
+      ],
+      "gapSummary": {
+        "scrapingMiss": 1,
+        "promptMiss": 0,
+        "hallucination": 0
+      },
+      "recommendations": [
+        "Scraping no encontro 1 modelo(s): Lago Meliquina. Revisar firecrawl.ts URL patterns."
+      ]
+    },
+    {
+      "company": "Habitatio",
+      "url": "https://habitatio.com.ar",
+      "diagnosedAt": "2026-02-06T14:56:47.382Z",
+      "overallScore": 85,
+      "scoreBreakdown": {
+        "productCoverage": 100,
+        "specAccuracy": 100,
+        "contactAccuracy": 100,
+        "hallucinationPenalty": 0,
+        "identityMatch": 100
+      },
+      "groundTruthModels": 0,
+      "systemPromptModels": 7,
+      "agentResponseModels": 0,
+      "gaps": [],
+      "gapSummary": {
+        "scrapingMiss": 0,
+        "promptMiss": 0,
+        "hallucination": 0
+      },
+      "recommendations": []
+    },
+    {
+      "company": "ViBert",
+      "url": "https://vibert.com.ar",
+      "diagnosedAt": "2026-02-06T14:56:47.383Z",
+      "overallScore": 15,
+      "scoreBreakdown": {
+        "productCoverage": 0,
+        "specAccuracy": 0,
+        "contactAccuracy": 100,
+        "hallucinationPenalty": 30,
+        "identityMatch": 100
+      },
+      "groundTruthModels": 14,
+      "systemPromptModels": 3,
+      "agentResponseModels": 6,
+      "gaps": [
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Casa Aura",
+          "detail": "Model \"Casa Aura\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Casa Aura"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Casa Rosa",
+          "detail": "Model \"Casa Rosa\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Casa Rosa"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Casa Savona",
+          "detail": "Model \"Casa Savona\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Casa Savona"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Casa Capri",
+          "detail": "Model \"Casa Capri\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Casa Capri"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Casa Viena",
+          "detail": "Model \"Casa Viena\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Casa Viena"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Casa Menfis",
+          "detail": "Model \"Casa Menfis\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Casa Menfis"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Casa Serena",
+          "detail": "Model \"Casa Serena\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Casa Serena"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Casa Marsala",
+          "detail": "Model \"Casa Marsala\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Casa Marsala"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Casa Atenas",
+          "detail": "Model \"Casa Atenas\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Casa Atenas"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Casa Veneto",
+          "detail": "Model \"Casa Veneto\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Casa Veneto"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Quincho R",
+          "detail": "Model \"Quincho R\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Quincho R"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Quincho M",
+          "detail": "Model \"Quincho M\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Quincho M"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Quincho L",
+          "detail": "Model \"Quincho L\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Quincho L"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Quincho XL",
+          "detail": "Model \"Quincho XL\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Quincho XL"
+        },
+        {
+          "type": "HALLUCINATION",
+          "entity": "ViBert que mejor se parezca a lo que",
+          "detail": "Agent mentioned model \"ViBert que mejor se parezca a lo que\" which does not exist in ground truth or systemPrompt",
+          "severity": "HIGH",
+          "agentResponseValue": "ViBert que mejor se parezca a lo que"
+        },
+        {
+          "type": "HALLUCINATION",
+          "entity": "Casa Sara",
+          "detail": "Agent mentioned model \"Casa Sara\" which does not exist in ground truth or systemPrompt",
+          "severity": "HIGH",
+          "agentResponseValue": "Casa Sara"
+        },
+        {
+          "type": "HALLUCINATION",
+          "entity": "ViBert",
+          "detail": "Agent mentioned model \"ViBert\" which does not exist in ground truth or systemPrompt",
+          "severity": "HIGH",
+          "agentResponseValue": "ViBert"
+        }
+      ],
+      "gapSummary": {
+        "scrapingMiss": 14,
+        "promptMiss": 0,
+        "hallucination": 3
+      },
+      "recommendations": [
+        "Scraping no encontro 14 modelo(s): Casa Aura, Casa Rosa, Casa Savona, Casa Capri, Casa Viena, Casa Menfis, Casa Serena, Casa Marsala, Casa Atenas, Casa Veneto, Quincho R, Quincho M, Quincho L, Quincho XL. Revisar firecrawl.ts URL patterns.",
+        "3 dato(s) inventados por el agente. Reforzar anti-hallucination en prompt-generator.ts."
+      ]
+    },
+    {
+      "company": "Ecomod",
+      "url": "https://ecomod.com.ar/",
+      "diagnosedAt": "2026-02-06T14:56:47.385Z",
+      "overallScore": 64,
+      "scoreBreakdown": {
+        "productCoverage": 60,
+        "specAccuracy": 67,
+        "contactAccuracy": 100,
+        "hallucinationPenalty": 0,
+        "identityMatch": 100
+      },
+      "groundTruthModels": 10,
+      "systemPromptModels": 13,
+      "agentResponseModels": 6,
+      "gaps": [
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "ECOMOD 50",
+          "detail": "Model \"ECOMOD 50\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "ECOMOD 50"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "ECOMOD 75",
+          "detail": "Model \"ECOMOD 75\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "ECOMOD 75"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "ECOMOD 100",
+          "detail": "Model \"ECOMOD 100\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "ECOMOD 100"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Bariloche",
+          "detail": "Model \"Bariloche\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Bariloche"
+        }
+      ],
+      "gapSummary": {
+        "scrapingMiss": 4,
+        "promptMiss": 0,
+        "hallucination": 0
+      },
+      "recommendations": [
+        "Scraping no encontro 4 modelo(s): ECOMOD 50, ECOMOD 75, ECOMOD 100, Bariloche. Revisar firecrawl.ts URL patterns."
+      ]
+    },
+    {
+      "company": "Movilhauss",
+      "url": "https://movilhauss.com",
+      "diagnosedAt": "2026-02-06T14:56:47.385Z",
+      "overallScore": 30,
+      "scoreBreakdown": {
+        "productCoverage": 0,
+        "specAccuracy": 0,
+        "contactAccuracy": 100,
+        "hallucinationPenalty": 0,
+        "identityMatch": 100
+      },
+      "groundTruthModels": 8,
+      "systemPromptModels": 0,
+      "agentResponseModels": 0,
+      "gaps": [
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Inauba (work)",
+          "detail": "Model \"Inauba (work)\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Inauba (work)"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Inauba +",
+          "detail": "Model \"Inauba +\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Inauba +"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Inauba duo",
+          "detail": "Model \"Inauba duo\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Inauba duo"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "freestyle (contemplación)",
+          "detail": "Model \"freestyle (contemplación)\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "freestyle (contemplación)"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "iñauba lwork",
+          "detail": "Model \"iñauba lwork\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "iñauba lwork"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "iñauba +",
+          "detail": "Model \"iñauba +\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "iñauba +"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "iñauba duo",
+          "detail": "Model \"iñauba duo\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "iñauba duo"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "freestyle",
+          "detail": "Model \"freestyle\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "freestyle"
+        }
+      ],
+      "gapSummary": {
+        "scrapingMiss": 8,
+        "promptMiss": 0,
+        "hallucination": 0
+      },
+      "recommendations": [
+        "Scraping no encontro 8 modelo(s): Inauba (work), Inauba +, Inauba duo, freestyle (contemplación), iñauba lwork, iñauba +, iñauba duo, freestyle. Revisar firecrawl.ts URL patterns."
+      ]
+    },
+    {
+      "company": "PlugArq",
+      "url": "https://www.plugarq.com/",
+      "diagnosedAt": "2026-02-06T14:56:47.386Z",
+      "overallScore": 85,
+      "scoreBreakdown": {
+        "productCoverage": 100,
+        "specAccuracy": 100,
+        "contactAccuracy": 100,
+        "hallucinationPenalty": 0,
+        "identityMatch": 100
+      },
+      "groundTruthModels": 0,
+      "systemPromptModels": 2,
+      "agentResponseModels": 0,
+      "gaps": [],
+      "gapSummary": {
+        "scrapingMiss": 0,
+        "promptMiss": 0,
+        "hallucination": 0
+      },
+      "recommendations": []
+    },
+    {
+      "company": "Lucys House",
+      "url": "https://www.lucyshousearg.com/",
+      "diagnosedAt": "2026-02-06T14:56:47.387Z",
+      "overallScore": 23,
+      "scoreBreakdown": {
+        "productCoverage": 13,
+        "specAccuracy": 57,
+        "contactAccuracy": 50,
+        "hallucinationPenalty": 80,
+        "identityMatch": 100
+      },
+      "groundTruthModels": 8,
+      "systemPromptModels": 19,
+      "agentResponseModels": 1,
+      "gaps": [
+        {
+          "type": "PROMPT_MISS",
+          "entity": "Módulo 19,20 M2",
+          "detail": "Model \"Módulo 19,20 M2\" is in systemPrompt (\"Casa Módulo 19,20 M2 - 19.2m2\") but agent never mentioned it in responses",
+          "severity": "MEDIUM",
+          "groundTruthValue": "Módulo 19,20 M2",
+          "systemPromptValue": "Casa Módulo 19,20 M2 - 19.2m2"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Módulo 28.56 M2",
+          "detail": "Model \"Módulo 28.56 M2\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Módulo 28.56 M2"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Módulo 19.20 M2",
+          "detail": "Model \"Módulo 19.20 M2\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Módulo 19.20 M2"
+        },
+        {
+          "type": "PROMPT_MISS",
+          "entity": "30,6 M2",
+          "detail": "Model \"30,6 M2\" is in systemPrompt (\"Casa 30,6 M2 - 30.6m2 - Desde U$D 1290/m²\") but agent never mentioned it in responses",
+          "severity": "MEDIUM",
+          "groundTruthValue": "30,6 M2",
+          "systemPromptValue": "Casa 30,6 M2 - 30.6m2 - Desde U$D 1290/m²"
+        },
+        {
+          "type": "PROMPT_MISS",
+          "entity": "38 M2",
+          "detail": "Model \"38 M2\" is in systemPrompt (\"Casa 38 M2 - 38m2\") but agent never mentioned it in responses",
+          "severity": "MEDIUM",
+          "groundTruthValue": "38 M2",
+          "systemPromptValue": "Casa 38 M2 - 38m2"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Modelo 3",
+          "detail": "Model \"Modelo 3\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Modelo 3"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Modelo 4",
+          "detail": "Model \"Modelo 4\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Modelo 4"
+        },
+        {
+          "type": "HALLUCINATION",
+          "entity": "price",
+          "detail": "Agent mentioned price \"USD 22.080\" which does not match any ground truth price",
+          "severity": "HIGH",
+          "agentResponseValue": "USD 22.080",
+          "groundTruthValue": "USD 42.600 + IVA, USD 42.600 + IVA, USD 1290/m², USD 1290/m², USD 1290/m², USD 1290/m²"
+        },
+        {
+          "type": "HALLUCINATION",
+          "entity": "price",
+          "detail": "Agent mentioned price \"USD 38.700\" which does not match any ground truth price",
+          "severity": "HIGH",
+          "agentResponseValue": "USD 38.700",
+          "groundTruthValue": "USD 42.600 + IVA, USD 42.600 + IVA, USD 1290/m², USD 1290/m², USD 1290/m², USD 1290/m²"
+        },
+        {
+          "type": "HALLUCINATION",
+          "entity": "price",
+          "detail": "Agent mentioned price \"USD 41.280\" which does not match any ground truth price",
+          "severity": "HIGH",
+          "agentResponseValue": "USD 41.280",
+          "groundTruthValue": "USD 42.600 + IVA, USD 42.600 + IVA, USD 1290/m², USD 1290/m², USD 1290/m², USD 1290/m²"
+        },
+        {
+          "type": "HALLUCINATION",
+          "entity": "price",
+          "detail": "Agent mentioned price \"US 28,56\" which does not match any ground truth price",
+          "severity": "HIGH",
+          "agentResponseValue": "US 28,56",
+          "groundTruthValue": "USD 42.600 + IVA, USD 42.600 + IVA, USD 1290/m², USD 1290/m², USD 1290/m², USD 1290/m²"
+        },
+        {
+          "type": "HALLUCINATION",
+          "entity": "price",
+          "detail": "Agent mentioned price \"USD 55.335\" which does not match any ground truth price",
+          "severity": "HIGH",
+          "agentResponseValue": "USD 55.335",
+          "groundTruthValue": "USD 42.600 + IVA, USD 42.600 + IVA, USD 1290/m², USD 1290/m², USD 1290/m², USD 1290/m²"
+        },
+        {
+          "type": "HALLUCINATION",
+          "entity": "price",
+          "detail": "Agent mentioned price \"USD 22.080\" which does not match any ground truth price",
+          "severity": "HIGH",
+          "agentResponseValue": "USD 22.080",
+          "groundTruthValue": "USD 42.600 + IVA, USD 42.600 + IVA, USD 1290/m², USD 1290/m², USD 1290/m², USD 1290/m²"
+        },
+        {
+          "type": "HALLUCINATION",
+          "entity": "price",
+          "detail": "Agent mentioned price \"USD 1.800\" which does not match any ground truth price",
+          "severity": "HIGH",
+          "agentResponseValue": "USD 1.800",
+          "groundTruthValue": "USD 42.600 + IVA, USD 42.600 + IVA, USD 1290/m², USD 1290/m², USD 1290/m², USD 1290/m²"
+        },
+        {
+          "type": "HALLUCINATION",
+          "entity": "price",
+          "detail": "Agent mentioned price \"USD 22.080\" which does not match any ground truth price",
+          "severity": "HIGH",
+          "agentResponseValue": "USD 22.080",
+          "groundTruthValue": "USD 42.600 + IVA, USD 42.600 + IVA, USD 1290/m², USD 1290/m², USD 1290/m², USD 1290/m²"
+        },
+        {
+          "type": "PROMPT_MISS",
+          "entity": "whatsapp",
+          "detail": "WhatsApp is in systemPrompt (\"03515551234\") but agent didn't share it in responses",
+          "severity": "LOW",
+          "groundTruthValue": "5493512077113",
+          "systemPromptValue": "03515551234"
+        }
+      ],
+      "gapSummary": {
+        "scrapingMiss": 4,
+        "promptMiss": 4,
+        "hallucination": 8
+      },
+      "recommendations": [
+        "Scraping no encontro 4 modelo(s): Módulo 28.56 M2, Módulo 19.20 M2, Modelo 3, Modelo 4. Revisar firecrawl.ts URL patterns.",
+        "4 dato(s) presentes en prompt pero no compartidos por el agente. Revisar prompt-generator.ts.",
+        "8 dato(s) inventados por el agente. Reforzar anti-hallucination en prompt-generator.ts."
+      ]
+    },
+    {
+      "company": "Sienna Modular",
+      "url": "https://www.siennamodular.com.ar/",
+      "diagnosedAt": "2026-02-06T14:56:47.388Z",
+      "overallScore": 35,
+      "scoreBreakdown": {
+        "productCoverage": 0,
+        "specAccuracy": 100,
+        "contactAccuracy": 0,
+        "hallucinationPenalty": 0,
+        "identityMatch": 100
+      },
+      "groundTruthModels": 1,
+      "systemPromptModels": 0,
+      "agentResponseModels": 1,
+      "gaps": [
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Arquitectura modular",
+          "detail": "Model \"Arquitectura modular\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Arquitectura modular"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "whatsapp",
+          "detail": "WhatsApp \"5491161182622\" exists in ground truth but not in systemPrompt",
+          "severity": "MEDIUM",
+          "groundTruthValue": "5491161182622"
+        }
+      ],
+      "gapSummary": {
+        "scrapingMiss": 2,
+        "promptMiss": 0,
+        "hallucination": 0
+      },
+      "recommendations": [
+        "Scraping no encontro 1 modelo(s): Arquitectura modular. Revisar firecrawl.ts URL patterns.",
+        "WhatsApp no fue extraido por el scraper. Revisar extraccion de contacto."
+      ]
+    },
+    {
+      "company": "Grupo Steimberg",
+      "url": "https://www.gruposteimberg.com/",
+      "diagnosedAt": "2026-02-06T14:56:47.388Z",
+      "overallScore": 85,
+      "scoreBreakdown": {
+        "productCoverage": 100,
+        "specAccuracy": 100,
+        "contactAccuracy": 100,
+        "hallucinationPenalty": 0,
+        "identityMatch": 100
+      },
+      "groundTruthModels": 0,
+      "systemPromptModels": 2,
+      "agentResponseModels": 0,
+      "gaps": [],
+      "gapSummary": {
+        "scrapingMiss": 0,
+        "promptMiss": 0,
+        "hallucination": 0
+      },
+      "recommendations": []
+    },
+    {
+      "company": "T1 Modular",
+      "url": "https://www.t1modular.com.ar/",
+      "diagnosedAt": "2026-02-06T14:56:47.389Z",
+      "overallScore": 61,
+      "scoreBreakdown": {
+        "productCoverage": 30,
+        "specAccuracy": 100,
+        "contactAccuracy": 100,
+        "hallucinationPenalty": 0,
+        "identityMatch": 100
+      },
+      "groundTruthModels": 10,
+      "systemPromptModels": 8,
+      "agentResponseModels": 3,
+      "gaps": [
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "DISEÑO A MEDIDA Y ASESORAMIENTO",
+          "detail": "Model \"DISEÑO A MEDIDA Y ASESORAMIENTO\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "DISEÑO A MEDIDA Y ASESORAMIENTO"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "INGENIERÍA Y GESTIÓN INTEGRAL",
+          "detail": "Model \"INGENIERÍA Y GESTIÓN INTEGRAL\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "INGENIERÍA Y GESTIÓN INTEGRAL"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "CALIDAD SUPERIOR Y EQUIPAMIENTO COMPLETO",
+          "detail": "Model \"CALIDAD SUPERIOR Y EQUIPAMIENTO COMPLETO\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "CALIDAD SUPERIOR Y EQUIPAMIENTO COMPLETO"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Proyecto Destacado 1",
+          "detail": "Model \"Proyecto Destacado 1\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Proyecto Destacado 1"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Proyecto Destacado 2",
+          "detail": "Model \"Proyecto Destacado 2\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Proyecto Destacado 2"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "MARKETS INTELIGENTES",
+          "detail": "Model \"MARKETS INTELIGENTES\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "MARKETS INTELIGENTES"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "EMPRENDIMIENTOS TURISTICOS - T1 SUITES",
+          "detail": "Model \"EMPRENDIMIENTOS TURISTICOS - T1 SUITES\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "EMPRENDIMIENTOS TURISTICOS - T1 SUITES"
+        }
+      ],
+      "gapSummary": {
+        "scrapingMiss": 7,
+        "promptMiss": 0,
+        "hallucination": 0
+      },
+      "recommendations": [
+        "Scraping no encontro 7 modelo(s): DISEÑO A MEDIDA Y ASESORAMIENTO, INGENIERÍA Y GESTIÓN INTEGRAL, CALIDAD SUPERIOR Y EQUIPAMIENTO COMPLETO, Proyecto Destacado 1, Proyecto Destacado 2, MARKETS INTELIGENTES, EMPRENDIMIENTOS TURISTICOS - T1 SUITES. Revisar firecrawl.ts URL patterns."
+      ]
+    },
+    {
+      "company": "Habika",
+      "url": "https://habika.ar/",
+      "diagnosedAt": "2026-02-06T14:56:47.390Z",
+      "overallScore": 85,
+      "scoreBreakdown": {
+        "productCoverage": 100,
+        "specAccuracy": 100,
+        "contactAccuracy": 100,
+        "hallucinationPenalty": 0,
+        "identityMatch": 100
+      },
+      "groundTruthModels": 0,
+      "systemPromptModels": 3,
+      "agentResponseModels": 0,
+      "gaps": [],
+      "gapSummary": {
+        "scrapingMiss": 0,
+        "promptMiss": 0,
+        "hallucination": 0
+      },
+      "recommendations": []
+    },
+    {
+      "company": "Arcohouse",
+      "url": "https://arcohouse.com.ar/",
+      "diagnosedAt": "2026-02-06T14:56:47.390Z",
+      "overallScore": 20,
+      "scoreBreakdown": {
+        "productCoverage": 0,
+        "specAccuracy": 0,
+        "contactAccuracy": 100,
+        "hallucinationPenalty": 10,
+        "identityMatch": 100
+      },
+      "groundTruthModels": 3,
+      "systemPromptModels": 22,
+      "agentResponseModels": 2,
+      "gaps": [
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "MONTAÑESITO 20M2",
+          "detail": "Model \"MONTAÑESITO 20M2\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "MONTAÑESITO 20M2"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "COBRE 30M2",
+          "detail": "Model \"COBRE 30M2\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "COBRE 30M2"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "REFUGIO MONTAÑESITO 20 M²",
+          "detail": "Model \"REFUGIO MONTAÑESITO 20 M²\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "REFUGIO MONTAÑESITO 20 M²"
+        },
+        {
+          "type": "HALLUCINATION",
+          "entity": "Cobre tiene",
+          "detail": "Agent mentioned model \"Cobre tiene\" which does not exist in ground truth or systemPrompt",
+          "severity": "HIGH",
+          "agentResponseValue": "Cobre tiene"
+        }
+      ],
+      "gapSummary": {
+        "scrapingMiss": 3,
+        "promptMiss": 0,
+        "hallucination": 1
+      },
+      "recommendations": [
+        "Scraping no encontro 3 modelo(s): MONTAÑESITO 20M2, COBRE 30M2, REFUGIO MONTAÑESITO 20 M². Revisar firecrawl.ts URL patterns.",
+        "1 dato(s) inventados por el agente. Reforzar anti-hallucination en prompt-generator.ts."
+      ]
+    },
+    {
+      "company": "Wellmod",
+      "url": "https://www.wellmod.com.ar/",
+      "diagnosedAt": "2026-02-06T14:56:47.392Z",
+      "overallScore": 46,
+      "scoreBreakdown": {
+        "productCoverage": 34,
+        "specAccuracy": 59,
+        "contactAccuracy": 50,
+        "hallucinationPenalty": 0,
+        "identityMatch": 100
+      },
+      "groundTruthModels": 38,
+      "systemPromptModels": 19,
+      "agentResponseModels": 19,
+      "gaps": [
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Hotel Termal",
+          "detail": "Model \"Hotel Termal\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Hotel Termal"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Paso Calmo",
+          "detail": "Model \"Paso Calmo\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Paso Calmo"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Las Algas",
+          "detail": "Model \"Las Algas\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Las Algas"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "W26 Black Edition Lodge",
+          "detail": "Model \"W26 Black Edition Lodge\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "W26 Black Edition Lodge"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Granja Ecuestre",
+          "detail": "Model \"Granja Ecuestre\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Granja Ecuestre"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "La Ramadita",
+          "detail": "Model \"La Ramadita\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "La Ramadita"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Casa Polvorillo",
+          "detail": "Model \"Casa Polvorillo\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Casa Polvorillo"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "AA2000",
+          "detail": "Model \"AA2000\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "AA2000"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Club Atlético Talleres",
+          "detail": "Model \"Club Atlético Talleres\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Club Atlético Talleres"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Fertimaq",
+          "detail": "Model \"Fertimaq\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Fertimaq"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Grido",
+          "detail": "Model \"Grido\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Grido"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "TN Pilates",
+          "detail": "Model \"TN Pilates\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "TN Pilates"
+        },
+        {
+          "type": "PROMPT_MISS",
+          "entity": "W40 B",
+          "detail": "Model \"W40 B\" is in systemPrompt (\"Casa W40 B - 40m2 - 1 dorm - 1 bano\") but agent never mentioned it in responses",
+          "severity": "MEDIUM",
+          "groundTruthValue": "W40 B",
+          "systemPromptValue": "Casa W40 B - 40m2 - 1 dorm - 1 bano"
+        },
+        {
+          "type": "PROMPT_MISS",
+          "entity": "W40 C",
+          "detail": "Model \"W40 C\" is in systemPrompt (\"Casa W40 C - 40m2 - 1 dorm - 1 bano\") but agent never mentioned it in responses",
+          "severity": "MEDIUM",
+          "groundTruthValue": "W40 C",
+          "systemPromptValue": "Casa W40 C - 40m2 - 1 dorm - 1 bano"
+        },
+        {
+          "type": "PROMPT_MISS",
+          "entity": "W80 C",
+          "detail": "Model \"W80 C\" is in systemPrompt (\"Casa W80 C - 80m2 - 3 dorm - 1 bano\") but agent never mentioned it in responses",
+          "severity": "MEDIUM",
+          "groundTruthValue": "W80 C",
+          "systemPromptValue": "Casa W80 C - 80m2 - 3 dorm - 1 bano"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "NUEVA PLANTA DE PRODUCCIÓN",
+          "detail": "Model \"NUEVA PLANTA DE PRODUCCIÓN\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "NUEVA PLANTA DE PRODUCCIÓN"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "CAMILLAS",
+          "detail": "Model \"CAMILLAS\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "CAMILLAS"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "ROLL OFF",
+          "detail": "Model \"ROLL OFF\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "ROLL OFF"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "COLOCACIÓN DE EJES BAJO NORMA 25/2009 S.S.T.A.",
+          "detail": "Model \"COLOCACIÓN DE EJES BAJO NORMA 25/2009 S.S.T.A.\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "COLOCACIÓN DE EJES BAJO NORMA 25/2009 S.S.T.A."
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "PORTA CONTENEDOR",
+          "detail": "Model \"PORTA CONTENEDOR\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "PORTA CONTENEDOR"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "ACCESORIOS",
+          "detail": "Model \"ACCESORIOS\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "ACCESORIOS"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "WELLMOD",
+          "detail": "Model \"WELLMOD\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "WELLMOD"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "GRÚA PERCHA",
+          "detail": "Model \"GRÚA PERCHA\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "GRÚA PERCHA"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "GRÚAS VEHICULARES",
+          "detail": "Model \"GRÚAS VEHICULARES\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "GRÚAS VEHICULARES"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "CAJA VOLCADORA",
+          "detail": "Model \"CAJA VOLCADORA\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "CAJA VOLCADORA"
+        },
+        {
+          "type": "PROMPT_MISS",
+          "entity": "whatsapp",
+          "detail": "WhatsApp is in systemPrompt (\"+5493518668299\") but agent didn't share it in responses",
+          "severity": "LOW",
+          "groundTruthValue": "543518160094",
+          "systemPromptValue": "+5493518668299"
+        }
+      ],
+      "gapSummary": {
+        "scrapingMiss": 22,
+        "promptMiss": 4,
+        "hallucination": 0
+      },
+      "recommendations": [
+        "Scraping no encontro 22 modelo(s): Hotel Termal, Paso Calmo, Las Algas, W26 Black Edition Lodge, Granja Ecuestre, La Ramadita, Casa Polvorillo, AA2000, Club Atlético Talleres, Fertimaq, Grido, TN Pilates, NUEVA PLANTA DE PRODUCCIÓN, CAMILLAS, ROLL OFF, COLOCACIÓN DE EJES BAJO NORMA 25/2009 S.S.T.A., PORTA CONTENEDOR, ACCESORIOS, WELLMOD, GRÚA PERCHA, GRÚAS VEHICULARES, CAJA VOLCADORA. Revisar firecrawl.ts URL patterns.",
+        "4 dato(s) presentes en prompt pero no compartidos por el agente. Revisar prompt-generator.ts."
+      ]
+    },
+    {
+      "company": "Mini Casas",
+      "url": "https://www.minicasas.com.ar/",
+      "diagnosedAt": "2026-02-06T14:56:47.393Z",
+      "overallScore": 50,
+      "scoreBreakdown": {
+        "productCoverage": 0,
+        "specAccuracy": 100,
+        "contactAccuracy": 100,
+        "hallucinationPenalty": 0,
+        "identityMatch": 100
+      },
+      "groundTruthModels": 6,
+      "systemPromptModels": 7,
+      "agentResponseModels": 2,
+      "gaps": [
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "MODELO ESTÁNDAR",
+          "detail": "Model \"MODELO ESTÁNDAR\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "MODELO ESTÁNDAR"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "MODELO ESTANDAR",
+          "detail": "Model \"MODELO ESTANDAR\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "MODELO ESTANDAR"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Modelo Estándar 1",
+          "detail": "Model \"Modelo Estándar 1\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Modelo Estándar 1"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Modelo Estándar 2",
+          "detail": "Model \"Modelo Estándar 2\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Modelo Estándar 2"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Modelo Estándar 3",
+          "detail": "Model \"Modelo Estándar 3\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Modelo Estándar 3"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Modelo Estándar 4",
+          "detail": "Model \"Modelo Estándar 4\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Modelo Estándar 4"
+        }
+      ],
+      "gapSummary": {
+        "scrapingMiss": 6,
+        "promptMiss": 0,
+        "hallucination": 0
+      },
+      "recommendations": [
+        "Scraping no encontro 6 modelo(s): MODELO ESTÁNDAR, MODELO ESTANDAR, Modelo Estándar 1, Modelo Estándar 2, Modelo Estándar 3, Modelo Estándar 4. Revisar firecrawl.ts URL patterns."
+      ]
+    },
+    {
+      "company": "Offis",
+      "url": "https://www.offis.ar/",
+      "diagnosedAt": "2026-02-06T14:56:47.394Z",
+      "overallScore": 15,
+      "scoreBreakdown": {
+        "productCoverage": 0,
+        "specAccuracy": 0,
+        "contactAccuracy": 100,
+        "hallucinationPenalty": 30,
+        "identityMatch": 100
+      },
+      "groundTruthModels": 12,
+      "systemPromptModels": 11,
+      "agentResponseModels": 6,
+      "gaps": [
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Offis STUDIO 12",
+          "detail": "Model \"Offis STUDIO 12\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Offis STUDIO 12"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Offis SLIM 15",
+          "detail": "Model \"Offis SLIM 15\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Offis SLIM 15"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Offis FAMILY 18",
+          "detail": "Model \"Offis FAMILY 18\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Offis FAMILY 18"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Offis FLEX 22",
+          "detail": "Model \"Offis FLEX 22\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Offis FLEX 22"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Offis PLUS 27",
+          "detail": "Model \"Offis PLUS 27\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Offis PLUS 27"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Offis XL 36",
+          "detail": "Model \"Offis XL 36\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Offis XL 36"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Offis SHOWROOM 12",
+          "detail": "Model \"Offis SHOWROOM 12\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Offis SHOWROOM 12"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Offis SHOWROOM 15",
+          "detail": "Model \"Offis SHOWROOM 15\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Offis SHOWROOM 15"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Offis SHOWROOM 22",
+          "detail": "Model \"Offis SHOWROOM 22\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Offis SHOWROOM 22"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Offis COWORK 18",
+          "detail": "Model \"Offis COWORK 18\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Offis COWORK 18"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Offis COWORK 22",
+          "detail": "Model \"Offis COWORK 22\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Offis COWORK 22"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "Offis COWORK 27",
+          "detail": "Model \"Offis COWORK 27\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "Offis COWORK 27"
+        },
+        {
+          "type": "HALLUCINATION",
+          "entity": "Casa Offis x Jeep",
+          "detail": "Agent mentioned model \"Casa Offis x Jeep\" (from prompt: \"Casa Offis x Jeep\") which does not exist in ground truth",
+          "severity": "HIGH",
+          "systemPromptValue": "Casa Offis x Jeep",
+          "agentResponseValue": "Casa Offis x Jeep"
+        },
+        {
+          "type": "HALLUCINATION",
+          "entity": "Casa Offis Max UCES",
+          "detail": "Agent mentioned model \"Casa Offis Max UCES\" (from prompt: \"Casa Offis x Jeep\") which does not exist in ground truth",
+          "severity": "HIGH",
+          "systemPromptValue": "Casa Offis x Jeep",
+          "agentResponseValue": "Casa Offis Max UCES"
+        },
+        {
+          "type": "HALLUCINATION",
+          "entity": "Casa Offis Arch en Nordelta",
+          "detail": "Agent mentioned model \"Casa Offis Arch en Nordelta\" (from prompt: \"Casa Offis Arch en Nordelta\") which does not exist in ground truth",
+          "severity": "HIGH",
+          "systemPromptValue": "Casa Offis Arch en Nordelta",
+          "agentResponseValue": "Casa Offis Arch en Nordelta"
+        }
+      ],
+      "gapSummary": {
+        "scrapingMiss": 12,
+        "promptMiss": 0,
+        "hallucination": 3
+      },
+      "recommendations": [
+        "Scraping no encontro 12 modelo(s): Offis STUDIO 12, Offis SLIM 15, Offis FAMILY 18, Offis FLEX 22, Offis PLUS 27, Offis XL 36, Offis SHOWROOM 12, Offis SHOWROOM 15, Offis SHOWROOM 22, Offis COWORK 18, Offis COWORK 22, Offis COWORK 27. Revisar firecrawl.ts URL patterns.",
+        "3 dato(s) inventados por el agente. Reforzar anti-hallucination en prompt-generator.ts."
+      ]
+    },
+    {
+      "company": "Efede",
+      "url": "https://efede.com.ar/casas-modulares/",
+      "diagnosedAt": "2026-02-06T14:56:47.394Z",
+      "overallScore": 85,
+      "scoreBreakdown": {
+        "productCoverage": 100,
+        "specAccuracy": 100,
+        "contactAccuracy": 100,
+        "hallucinationPenalty": 0,
+        "identityMatch": 100
+      },
+      "groundTruthModels": 0,
+      "systemPromptModels": 6,
+      "agentResponseModels": 0,
+      "gaps": [],
+      "gapSummary": {
+        "scrapingMiss": 0,
+        "promptMiss": 0,
+        "hallucination": 0
+      },
+      "recommendations": []
+    },
+    {
+      "company": "GoHome",
+      "url": "https://gohomeconstrucciones.com.ar/",
+      "diagnosedAt": "2026-02-06T14:56:47.395Z",
+      "overallScore": 75,
+      "scoreBreakdown": {
+        "productCoverage": 100,
+        "specAccuracy": 100,
+        "contactAccuracy": 100,
+        "hallucinationPenalty": 10,
+        "identityMatch": 100
+      },
+      "groundTruthModels": 6,
+      "systemPromptModels": 17,
+      "agentResponseModels": 7,
+      "gaps": [
+        {
+          "type": "HALLUCINATION",
+          "entity": "Casa FERRARO MIRIAM CARINA",
+          "detail": "Agent mentioned model \"Casa FERRARO MIRIAM CARINA\" (from prompt: \"Casa FERRARO MIRIAM CARINA\") which does not exist in ground truth",
+          "severity": "HIGH",
+          "systemPromptValue": "Casa FERRARO MIRIAM CARINA",
+          "agentResponseValue": "Casa FERRARO MIRIAM CARINA"
+        }
+      ],
+      "gapSummary": {
+        "scrapingMiss": 0,
+        "promptMiss": 0,
+        "hallucination": 1
+      },
+      "recommendations": [
+        "1 dato(s) inventados por el agente. Reforzar anti-hallucination en prompt-generator.ts."
+      ]
+    },
+    {
+      "company": "Aftamantes",
+      "url": "https://aftamantes.net/refugios/",
+      "diagnosedAt": "2026-02-06T14:56:47.396Z",
+      "overallScore": 73,
+      "scoreBreakdown": {
+        "productCoverage": 67,
+        "specAccuracy": 100,
+        "contactAccuracy": 100,
+        "hallucinationPenalty": 0,
+        "identityMatch": 100
+      },
+      "groundTruthModels": 3,
+      "systemPromptModels": 5,
+      "agentResponseModels": 3,
+      "gaps": [
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "ARMÁ TU ALDEA",
+          "detail": "Model \"ARMÁ TU ALDEA\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "ARMÁ TU ALDEA"
+        }
+      ],
+      "gapSummary": {
+        "scrapingMiss": 1,
+        "promptMiss": 0,
+        "hallucination": 0
+      },
+      "recommendations": [
+        "Scraping no encontro 1 modelo(s): ARMÁ TU ALDEA. Revisar firecrawl.ts URL patterns."
+      ]
+    },
+    {
+      "company": "Lista",
+      "url": "https://lista.com.ar/",
+      "diagnosedAt": "2026-02-06T14:56:47.396Z",
+      "overallScore": 30,
+      "scoreBreakdown": {
+        "productCoverage": 0,
+        "specAccuracy": 0,
+        "contactAccuracy": 100,
+        "hallucinationPenalty": 0,
+        "identityMatch": 100
+      },
+      "groundTruthModels": 17,
+      "systemPromptModels": 2,
+      "agentResponseModels": 11,
+      "gaps": [
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "MACÁ A",
+          "detail": "Model \"MACÁ A\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "MACÁ A"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "MACÁ B",
+          "detail": "Model \"MACÁ B\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "MACÁ B"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "MACÁ 2A",
+          "detail": "Model \"MACÁ 2A\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "MACÁ 2A"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "MACÁ L",
+          "detail": "Model \"MACÁ L\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "MACÁ L"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "MACÁ XL",
+          "detail": "Model \"MACÁ XL\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "MACÁ XL"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "MACÁ XXL",
+          "detail": "Model \"MACÁ XXL\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "MACÁ XXL"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "CONDOR",
+          "detail": "Model \"CONDOR\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "CONDOR"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "MIRASOL",
+          "detail": "Model \"MIRASOL\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "MIRASOL"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "PELITRÉN",
+          "detail": "Model \"PELITRÉN\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "PELITRÉN"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "BRUJA",
+          "detail": "Model \"BRUJA\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "BRUJA"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "HORNERO",
+          "detail": "Model \"HORNERO\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "HORNERO"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "ALBATROS",
+          "detail": "Model \"ALBATROS\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "ALBATROS"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "LECHUZA",
+          "detail": "Model \"LECHUZA\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "LECHUZA"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "ALBATROS L",
+          "detail": "Model \"ALBATROS L\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "ALBATROS L"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "CASA AQUAHBAY",
+          "detail": "Model \"CASA AQUAHBAY\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "CASA AQUAHBAY"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "CASA GINKO",
+          "detail": "Model \"CASA GINKO\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "CASA GINKO"
+        },
+        {
+          "type": "SCRAPING_MISS",
+          "entity": "CASA ACER",
+          "detail": "Model \"CASA ACER\" exists in ground truth but was not found in systemPrompt",
+          "severity": "HIGH",
+          "groundTruthValue": "CASA ACER"
+        }
+      ],
+      "gapSummary": {
+        "scrapingMiss": 17,
+        "promptMiss": 0,
+        "hallucination": 0
+      },
+      "recommendations": [
+        "Scraping no encontro 17 modelo(s): MACÁ A, MACÁ B, MACÁ 2A, MACÁ L, MACÁ XL, MACÁ XXL, CONDOR, MIRASOL, PELITRÉN, BRUJA, HORNERO, ALBATROS, LECHUZA, ALBATROS L, CASA AQUAHBAY, CASA GINKO, CASA ACER. Revisar firecrawl.ts URL patterns."
+      ]
+    }
+  ]
+}

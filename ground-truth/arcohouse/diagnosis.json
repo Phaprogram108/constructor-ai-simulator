@@ -1,0 +1,55 @@
+{
+  "company": "Arcohouse",
+  "url": "https://arcohouse.com.ar/",
+  "diagnosedAt": "2026-02-06T14:56:47.390Z",
+  "overallScore": 20,
+  "scoreBreakdown": {
+    "productCoverage": 0,
+    "specAccuracy": 0,
+    "contactAccuracy": 100,
+    "hallucinationPenalty": 10,
+    "identityMatch": 100
+  },
+  "groundTruthModels": 3,
+  "systemPromptModels": 22,
+  "agentResponseModels": 2,
+  "gaps": [
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "MONTAÑESITO 20M2",
+      "detail": "Model \"MONTAÑESITO 20M2\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "MONTAÑESITO 20M2"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "COBRE 30M2",
+      "detail": "Model \"COBRE 30M2\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "COBRE 30M2"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "REFUGIO MONTAÑESITO 20 M²",
+      "detail": "Model \"REFUGIO MONTAÑESITO 20 M²\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "REFUGIO MONTAÑESITO 20 M²"
+    },
+    {
+      "type": "HALLUCINATION",
+      "entity": "Cobre tiene",
+      "detail": "Agent mentioned model \"Cobre tiene\" which does not exist in ground truth or systemPrompt",
+      "severity": "HIGH",
+      "agentResponseValue": "Cobre tiene"
+    }
+  ],
+  "gapSummary": {
+    "scrapingMiss": 3,
+    "promptMiss": 0,
+    "hallucination": 1
+  },
+  "recommendations": [
+    "Scraping no encontro 3 modelo(s): MONTAÑESITO 20M2, COBRE 30M2, REFUGIO MONTAÑESITO 20 M². Revisar firecrawl.ts URL patterns.",
+    "1 dato(s) inventados por el agente. Reforzar anti-hallucination en prompt-generator.ts."
+  ]
+}

@@ -1,0 +1,140 @@
+{
+  "company": "Arcohouse",
+  "url": "https://arcohouse.com.ar/",
+  "testedAt": "2026-02-06T10:54:16.601Z",
+  "sessionId": "5105d249-8e41-4754-a263-8ad92e8a1464",
+  "systemPromptLength": 22252,
+  "systemPromptModelsFound": [
+    "Casa Refugio Cobre - 30m2 - USD 9.500.000",
+    "Casa Refugio Limay - 80m2 - USD 20.250.000",
+    "Casa Montañes - 40m2 - USD 41.500.000",
+    "Casa Refugio Montañesito - 20m2 - USD 6.916.666",
+    "Casa Refugio Correntoso - 60m2 - USD 16.333.333",
+    "Casa Refugio Montañés - 40m2 - USD 11.833.333",
+    "Casa KIT el montañés - 47m2 - USD 15.500.000",
+    "Casa Kit Cobre - 37m2 - USD 13.000.000",
+    "Casa Kit Limay - 92m2 - USD 30.500.000",
+    "Casa Kit Montañesito - 23m2 - USD 9.800.000",
+    "Casa Kit Montañés - 47m2 - USD 15.500.000",
+    "Casa Kit Correntoso - 75m2 - USD 26.000.000",
+    "Casa Rollos de - 30m2",
+    "Casa Precio por rollo de - 30m2",
+    "Casa Montañesito - 20m2 - 1 dorm - 1 bano - ARS $4",
+    "Casa Cobre - 30m2 - 2 dorm - 1 bano - ARS $57.000.",
+    "Casa El Montañes - 40m2 - 2 dorm - 1 bano - ARS $7",
+    "Casa Correntoso - 60m2 - 3 dorm - 2 banos - ARS $9",
+    "Casa Limay - 80m2 - 4 dorm - 2 banos - ARS $121.50",
+    "Primero muestra los modelos disponibles",
+    "Si ninguno encaja, ofrece la opcion de diseno pers",
+    "Pregunta que prefiere el cliente"
+  ],
+  "systemPromptWhatsApp": "+5492604033077",
+  "systemPromptType": "de Constructora**: MIXTA",
+  "conversations": [
+    {
+      "question": "?Que modelos tienen disponibles?",
+      "questionType": "base",
+      "response": "Tenemos dos modalidades: modelos de catálogo y proyectos a medida en hormigón premoldeado.  \nEn catálogo, hoy tenés:\n\n- Refugio Montañesito – 20 m² – 1 dorm – 1 baño – ARS $41.500.000 (+IVA)  \n- Refugio Cobre – 30 m² – 2 dorm – 1 baño – ARS $57.000.000 (+IVA) – incluye instalaciones y mobiliario, se puede financiar en 6 cuotas sin interés de $9.500.000  \n- Refugio El Montañés – 40 m² – 2 dorm – 1 baño – ARS $71.000.000 (+IVA)  \n- Refugio Correntoso – 60 m² – 3 dorm – 2 baños – ARS $98.000.000 (+IVA)  \n- Refugio Limay – 80 m² – 4 dorm – 2 baños – ARS $121.500.000 (+IVA) – también con financiación en 6 cuotas sin interés de $20.250.000  \n\nAdemás están las versiones KIT (Cobre, Limay, Montañés, Montañesito, Correntoso) en distintas superficies si preferís algo más flexible.  \nPara orientarte mejor: ¿qué tamaño de casa estás buscando aproximadamente?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4452
+    },
+    {
+      "question": "?Cuantos modelos/proyectos ofrecen?",
+      "questionType": "base",
+      "response": "Trabajamos con dos tipos de propuestas:  \n1) **Modelos de catálogo** (prefabricados/modulares) y **versiones KIT** de esos mismos modelos.  \n2) **Proyectos personalizados**, donde diseñamos a medida según tus necesidades.\n\nEn catálogo hoy tenés, como refugios llave en mano:  \n- **Montañesito 20 m²** – 1 dorm – 1 baño – ARS $41.500.000 (+IVA)  \n- **Cobre 30 m²** – 2 dorm – 1 baño – ARS $57.000.000 (+IVA) – incluye instalaciones y mobiliario, con financiación en 6 cuotas sin interés  \n- **El Montañés 40 m²** – 2 dorm – 1 baño – ARS $71.000.000 (+IVA)  \n- **Correntoso 60 m²** – 3 dorm – 2 baños – ARS $98.000.000 (+IVA)  \n- **Limay 80 m²** – 4 dorm – 2 baños – ARS $121.500.000 (+IVA) – también en 6 cuotas sin interés  \n\nY versiones **KIT** de: Cobre (37 m²), Limay (92 m²), Montañés (47 m²), Montañesito (23 m²), Correntoso (75 m²), además de opciones tipo refugio/rollos de 30 m².  \nSi ninguno encaja perfecto, podemos ir a un **proyecto 100% a medida**. Para ayudarte a elegir, ¿preferís partir de un modelo existente o pensar algo diseñado a medida?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 6693
+    },
+    {
+      "question": "?Cuanto cuesta el modelo mas economico?",
+      "questionType": "base",
+      "response": "El modelo más económico del catálogo es el **Refugio Montañesito de 20 m²**, con **1 dormitorio y 1 baño**, en **ARS $41.500.000 (+IVA)**.  \nEl siguiente es el **Refugio Cobre de 30 m²**, en **ARS $57.000.000 (+IVA)**, que ya incluye instalaciones completas y mobiliario de cocina y baño, y se puede financiar en **6 cuotas sin interés de $9.500.000**.  \n\nPara ver si te encaja: ¿ya tenés terreno? ¿En qué zona sería el proyecto?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2632
+    },
+    {
+      "question": "?Tienen financiamiento o planes de pago?",
+      "questionType": "base",
+      "response": "Sí, ofrecemos financiación.  \nPor ejemplo, el **Refugio Cobre 30 m²** se puede pagar en **6 cuotas sin interés de $9.500.000** y el **Refugio Limay 80 m²** en **6 cuotas sin interés de $20.250.000**, congelando el precio desde la primera cuota.  \n\nPodemos ver también otros planes según el modelo y el monto final.  \nPara orientarte mejor con las cuotas: ¿qué tamaño de casa estás buscando?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2226
+    },
+    {
+      "question": "?Cual es su WhatsApp o telefono de contacto?",
+      "questionType": "base",
+      "response": "Te podés contactar directo con nosotros por:  \n📞 Tel / WhatsApp: **+54 9 260 403 3077**  \n📧 Email: **emailjohnsmith@example.com**\n\nSi querés, contame antes qué tamaño de casa estás buscando y te dejo ya una sugerencia de modelo para que lo charles con el asesor.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3112
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo MONTAÑESITO 20M2?",
+      "questionType": "model_specific",
+      "response": "El Refugio **Montañesito 20 m²** es nuestro modelo más compacto de catálogo: viene con **1 dormitorio y 1 baño**, ideal como tiny house, estudio o primer refugio en el terreno.  \nEstá construido con nuestro sistema mixto pensado para naturaleza, con **hormigón premoldeado y muy buena aislación**, y se entrega como vivienda modular lista para habitar (tipo llave en mano, con instalaciones completas).  \n\nEn la línea de refugios, todos incluyen **instalaciones eléctricas y sanitarias completas** y mobiliario básico de cocina/baño, manteniendo la misma calidad de aberturas y terminaciones que los modelos más grandes.  \nSi querés, te comparo Montañesito con el **Cobre 30 m²** para que veas si te conviene sumar un poco más de metros.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4270
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el MONTAÑESITO 20M2?",
+      "questionType": "model_specific",
+      "response": "El modelo Montañesito tiene **20 m² cubiertos**.  \nCon esos 20 m² se resuelve 1 dormitorio + 1 baño, pensado como refugio compacto o tiny house.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 1317
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo COBRE 30M2?",
+      "questionType": "model_specific",
+      "response": "El **Refugio Cobre 30 m²** es un módulo compacto con **2 dormitorios y 1 baño**, ideal como primera vivienda o casa de fin de semana. Cuesta **ARS $57.000.000 (+IVA)** o **6 cuotas sin interés de $9.500.000**, e **incluye instalaciones completas y mobiliario de cocina y baño**.\n\nEn cuanto a construcción, lleva **chasis de acero protegido**, piso fenólico doble con aislante EPS, **muros SIP (OSB/EPS)** y techo de madera maciza con aislación EPS.  \nTerminaciones: revestimiento exterior con **chapa trapezoidal negra**, interiores en fenólico clear, pisos **PVC SPC símil madera con manta acústica**, aberturas de **aluminio Aluar Módena negro con DVH** y puertas Oblak.\n\nEn cocina trae bajo mesada y alacena en melamina negra, **mesada de granito negro boreal**, grifería monocomando Piazza Gourmet y pileta Johnson.  \nEn baño: inodoro Piazza Amalfi, griferías Piazza negras, mampara fija, vanitory de laurel laqueado con bacha de piedra y accesorios Piazza negro mate.\n\nNo están incluidos como opcionales: bases pretensadas, transporte, estufa a leña, calefacción por radiadores/losa, electrodomésticos, deck/pérgola y amoblamiento de diseño.  \n¿Querés que te pase una comparación rápida entre Cobre 30 m² y Limay 80 m² para ver cuál se adapta mejor a lo que necesitás?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4342
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el COBRE 30M2?",
+      "questionType": "model_specific",
+      "response": "El modelo Cobre tiene **30 m² cubiertos**.  \nEn esos 30 m² se distribuyen **2 dormitorios y 1 baño**, más el espacio de cocina/estar integrado.",
+      "mentionedModels": [
+        "Cobre tiene"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 1459
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo REFUGIO MONTAÑESITO 20 M²?",
+      "questionType": "model_specific",
+      "response": "El **Refugio Montañesito 20 m²** es el modelo más chico de la línea, con **20 m² cubiertos**, **1 dormitorio y 1 baño**, pensado como tiny house o refugio compacto en la naturaleza. Mantiene el mismo concepto que el Cobre y el Limay: vivienda modular, con muy buena aislación y terminaciones de calidad, lista para habitar.\n\nEn catálogo figura en **ARS $41.500.000 (+IVA)**.  \nPara afinar si te conviene este o subir a un Cobre 30 m² (2 dormitorios), contame: ¿sería para uso personal, alquiler turístico o mixto?",
+      "mentionedModels": [
+        "REFUGIO MONTAÑESITO 20 M²"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2821
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el REFUGIO MONTAÑESITO 20 M²?",
+      "questionType": "model_specific",
+      "response": "El Refugio Montañesito tiene **20 m² cubiertos reales**.  \nEn esos 20 m² se resuelven **1 dormitorio + 1 baño** y el espacio de estar, pensado como refugio compacto o tiny house.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 1422
+    }
+  ],
+  "sessionCreationTimeMs": 53210,
+  "errors": []
+}

@@ -1,109 +1,123 @@
 # Snapshot de Contexto
 
-**Fecha:** 2026-02-05 11:30 ART
+**Fecha:** 2026-02-05 23:00 ART
 **Proyecto:** /Users/joaquingonzalez/Documents/dev/constructor-ai-simulator
-**Razón del snapshot:** Context refresh después de implementar soporte Wix
+**Razon del snapshot:** Context saturado. Firecrawl v3 implementado, score subio de 26% a 46%. Fixes adicionales aplicados pero no medidos aun.
 
 ## Resumen del Proyecto
 
-Constructor AI Simulator es una app Next.js que genera agentes de ventas IA para constructoras de casas. El usuario ingresa una URL de constructora, el sistema scrapea la web con Firecrawl, clasifica el tipo de empresa, y genera un chatbot personalizado.
+Constructor AI Simulator es una app Next.js 14 que genera agentes de ventas IA para constructoras argentinas. El usuario ingresa una URL, el sistema scrapea con Firecrawl/Playwright, clasifica el tipo de empresa (modular/tradicional/mixta/inmobiliaria), genera un system prompt, y crea un chatbot con GPT-5.1.
 
 ## Estado Actual
 
-- **Tests completados:** 5 empresas testeadas
-- **5 PASS:** Atlas Housing, ViBert, Ecomod, Movilhauss, MakenHaus
-- **Fixes aplicados:** Clasificación inmobiliarias + Soporte Wix
-- **Commit actual:** ac938c0
+- **Firecrawl v3 implementado** en `src/lib/firecrawl.ts`
+- Score subio de 26% (v2) a 46% (v3 primer run)
+- Hallucinations bajaron de 16 a 2 (-87.5%)
+- 3 fixes adicionales aplicados DESPUES del run de 46% (aun no medidos)
+- **Proximo paso: Re-correr pipeline para medir impacto de fixes finales**
 
-## Resultados de Tests
+## Lo Que Se Hizo en Esta Sesion
 
-| Empresa | Tipo Obtenido | Modelos | Estado |
-|---------|---------------|---------|--------|
-| Atlas Housing | MODULAR | 6 | **PASS** |
-| ViBert | MODULAR | 14 (con m²) | **PASS** ✅ |
-| Ecomod | MIXTA | 3 | **PASS** ✅ |
-| Movilhauss | MODULAR | 6 | **PASS** |
-| MakenHaus | **INMOBILIARIA** | N/A | **PASS** |
+### 1. Reescritura de scrapeWithFirecrawl() - Firecrawl v3
+La funcion principal fue reescrita (615 → ~420 lineas):
 
-## Lo Que Se Arregló Esta Sesión
+**Flujo viejo (v2):**
+mapUrl → filtrar URLs por keywords → scrapeUrl cada una → Agent fallback
 
-### 1. Clasificación Inmobiliaria
-- Nuevo tipo `inmobiliaria` en el sistema
-- 16 keywords: "desarrollos inmobiliarios", "lotes en ejecución", "unidades", "emprendimientos", etc.
-- MakenHaus ahora se detecta correctamente como inmobiliaria
+**Flujo nuevo (v3):**
+1. `crawlUrl()` sin includePaths (open discovery, limit 30, maxDepth 3)
+2. `scrapeUrl()` homepage con extract schema
+3. `mapUrl()` fallback si <5 modelos (descubre URLs que crawl perdio)
+4. `extract()` API si <3 modelos (extraccion AI)
+5. Agent/Wix para SPAs o pocos datos
 
-### 2. Bug del Fallback
-- **Problema:** Cuando Firecrawl extraía 0 modelos, se hacía `result = null` y se perdía el `constructoraType`
-- **Solución:** Guardar `constructoraType` ANTES de descartar resultado y restaurarlo después
+### 2. Garbage model name filter
+`parseModelsFromMarkdown()` ahora filtra nombres basura:
+- Excluye frases comunes ("tiene", "superficie", "muestra", etc.)
+- Max 6 palabras, min 2 chars
+- Debe empezar con mayuscula o numero
 
-### 3. Soporte para Sitios Wix (ViBert)
-- **Problema:** Sitios Wix cargan menú con JavaScript, `mapUrl` no encuentra URLs
-- **Solución:** Nueva función `scrapeWixSite()`:
-  - Detecta Wix con `isWixSite()` (15 indicadores)
-  - Prueba URLs directamente: `/casas`, `/modelos`, `/catalogo`
-  - Peticiones en paralelo con `Promise.all`
-  - Actions específicas para Wix
-- **Resultado:** ViBert extrae 14 modelos con m², dormitorios, baños
+### 3. Primer run del pipeline v3
+Score: 46% (vs 26% baseline). Grandes mejoras:
+- GoHome: 0% → 100% (crawlUrl navega subpaginas)
+- Offis: no testeado → 100% (30 prompt models)
+- PlugArq: 0 models → 10 models (proyectos encontrados)
+- Aftamantes: 33% → 67%
+- Atlas Housing: 0% → 50%
+- Hallucinations: 16 → 2
+
+### 4. Fixes post-run (NO medidos aun)
+- Removed `includePaths` del crawlUrl (open discovery)
+- Garbage filter en parseModelsFromMarkdown
+- mapUrl fallback si <5 modelos
 
 ## Decisiones Ya Tomadas (NO re-discutir)
 
-1. **Usar Firecrawl** - Ya pagado, tiene AI extraction
-2. **Tipo inmobiliaria** - Separado de tradicional (distintos keywords y flujo)
-3. **Preservar clasificación** - Firecrawl tiene la mejor lógica de clasificación
+1-13. (igual que antes - ver listado completo en sesion anterior)
+14. crawlUrl reemplaza mapUrl+scrapeUrl como metodo principal
+15. Open discovery (sin includePaths) - excludePaths basta para filtrar basura
+16. mapUrl como fallback, no como paso principal
+17. extract() API para <3 modelos (extraccion AI estructurada)
+18. Garbage filter: max 6 words, must start uppercase/number, exclude common phrases
+19. ViBert clasificado como INMOBILIARIA es correcto - los "modelos" son proyectos inmobiliarios
 
-## Contexto Técnico Importante
+## Archivos Clave Modificados en Esta Sesion
 
-### Flujo de Clasificación
+- `src/lib/firecrawl.ts` - REESCRITO: scrapeWithFirecrawl() con crawlUrl + extract() + mapUrl fallback + garbage filter
+- `spec/FIRECRAWL_V3_SPEC.md` - NUEVO: plan de implementacion
+- `spec/STATE.md` - Actualizado con resultados v3
+
+## Contexto Tecnico Importante
+
+### Flujo del Sistema
 ```
-firecrawl.ts:classifyConstructora() → genera constructoraType
-    ↓
-scraper.ts → si 0 modelos, va a Playwright pero PRESERVA constructoraType
-    ↓
-prompt-generator.ts → usa constructoraType para generar secciones específicas
-```
-
-### Keywords de Inmobiliaria (score >= 8 para clasificar)
-- desarrollos inmobiliarios (5 pts)
-- proyectos inmobiliarios residenciales (5 pts)
-- lotes/unidades en ejecución (4 pts c/u)
-- emprendimientos, barrios cerrados (3-4 pts)
-
-### El Bug que se Arregló
-En `scraper.ts` líneas 80-85:
-```javascript
-// ANTES (bug)
-if (result.models.length === 0) {
-  result = null;  // ← PERDÍA constructoraType
-}
-
-// AHORA (fix)
-firecrawlClassification = result.constructoraType;  // ← GUARDA
-if (result.models.length === 0) {
-  result = null;
-}
-// ... luego restaura firecrawlClassification al resultado final
+URL -> firecrawl.ts (crawlUrl + extract + mapUrl fallback + Agent) -> prompt-generator.ts -> session
+     -> chat con GPT-5.1 + response-validator.ts
 ```
 
-## Archivos Clave Modificados
+### Firecrawl v3 - Endpoints Usados
+| Endpoint | Paso | Para Que |
+|----------|------|----------|
+| /crawl | Step 1 | Descubrir Y scrapear paginas (limit 30, maxDepth 3) |
+| /scrape | Step 2 | Homepage con extract schema (datos estructurados) |
+| /map | Step 2.5 | Fallback: descubrir URLs que crawl perdio (si <5 modelos) |
+| /extract | Step 3 | Extraccion AI estructurada (si <3 modelos) |
+| /agent | Step 4 | SPAs y sitios complejos (Wix, etc.) |
 
-| Archivo | Qué cambió |
-|---------|-----------|
-| `src/types/index.ts:42` | Agregado `inmobiliaria` al union type |
-| `src/lib/firecrawl.ts:624-665` | Keywords y lógica de inmobiliaria |
-| `src/lib/prompt-generator.ts:77-110` | Sección para inmobiliarias |
-| `src/lib/scraper.ts:71-115` | Preservar clasificación en fallback |
+### Resultados del Diagnostico (Run 3 - v3)
+| Metrica | v2 | v3 | Cambio |
+|---------|-----|-----|--------|
+| Score Promedio | 26% | 46% | +77% |
+| Companies | 15 | 18 | +3 |
+| SCRAPING_MISS | 100 | 106 | = (3 mas empresas) |
+| HALLUCINATION | 16 | 2 | -87.5% |
 
-## Próximas Tareas (Opcionales)
-
-1. **Precios** - Extraer precios cuando están disponibles en las páginas
-2. **Más empresas** - Testear con más constructoras para validar robustez
-3. **Performance** - Optimizar tiempos de scraping
+### Empresas Problematicas (para atencion futura)
+| Empresa | Score | Problema |
+|---------|-------|----------|
+| ViBert | 0% | Clasificada INMOBILIARIA - modelos son proyectos |
+| Sienna Modular | 0% | SPA React pura |
+| Arcohouse | 0% | Naming mismatch GT vs prompt |
+| Wellmod | 0% | GT tiene 38 modelos (industrial + residencial) |
+| Ecomod | 10%→? | Garbage filter aplicado post-run, deberia mejorar |
 
 ## Para Continuar
 
 Leer en este orden:
-1. `/spec/STATE.md` - Estado actual detallado
-2. `/spec/test-results/ANALISIS.md` - Análisis completo de tests
-3. Este archivo
+1. Este archivo
+2. `spec/STATE.md`
+3. `ground-truth/REPORT.md` - diagnostico actual (del run sin fixes finales)
 
-**Estado:** Todos los tests pasan (5/5). El sistema está funcionando correctamente.
+**Continuar desde:** Re-correr pipeline completo para medir impacto de fixes finales:
+```bash
+npm run dev  # Terminal 1
+npx tsx scripts/run-full-pipeline.ts --skip-ground-truth  # Terminal 2
+```
+
+Despues del run:
+1. Comparar scores con run anterior (esperado ~50-55%)
+2. Si <70%, investigar empresas problematicas individualmente
+3. Considerar mejorar fuzzy matching en `scripts/diagnosis.ts` (Arcohouse, Mini Casas tienen naming mismatch)
+4. Considerar si Wellmod (38 GT models) es un outlier que deberia excluirse del promedio
+
+**Meta:** Score promedio >70%

@@ -1,0 +1,44 @@
+{
+  "company": "Habika",
+  "url": "https://habika.ar/",
+  "testedAt": "2026-02-06T14:54:51.084Z",
+  "sessionId": "585f9156-c3d7-4de1-bffd-5e7ab94cd142",
+  "systemPromptLength": 25192,
+  "systemPromptModelsFound": [
+    "Construccion en Hormigon premoldeado",
+    "Financiacion disponible",
+    "Construccion en"
+  ],
+  "systemPromptType": "de Módulos estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Somos Hábika, una empresa de Córdoba especializada en construcción modular en hormigón premoldeado, con entregas en todo el país. Diseñamos y fabricamos en nuestra propia fábrica módulos turísticos (como los QM1, TM1, TM2, TM3), dormis para trabajadores y módulos residenciales y corporativos (CM0, CM3-A/B, CM4, CM5, CM6, COR1, COR2, COR3, COR4, etc.), listos para usar en 90 días.  \n\nTrabajamos con enfoque en sostenibilidad, aislación térmica y acústica, mínima intervención en el terreno y financiación disponible. ¿Qué tipo de módulos estás buscando?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2723
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos construcción modular en hormigón premoldeado, fabricada en nuestra propia planta y entregada lista para usar en 90 días en cualquier punto del país. Trabajamos tres grandes líneas de módulos:  \n- **Turísticos**: QM1, TM1, TM2, TM3, pensados para alquiler turístico, desde 19,5 a 30,6 m², con baño completo y opciones como galería con jacuzzi.  \n- **Dormis para trabajadores**: como el **Dormis 15 m²** y módulos tipo **DM3 115,3 m²**, diseñados para alojar personal en obras o zonas rurales, con sanitarios y buena aislación.  \n- **Residenciales y corporativos**: CM0, CM3-A/B, CM4-A/B, CM5, CM6, COR1, COR2, COR3, COR4, entre otros, que cubren desde monoambientes de 15 m² hasta espacios corporativos de más de 170 m² con oficinas, salas de reunión y locales comerciales.  \n\nAdemás brindamos servicios para desarrollistas (estudio de mercado, armado de proyecto, plan financiero, marketing y equipo comercial) y financiación accesible. ¿Sobre qué tipo de módulo querés que te cuente más: turístico, residencial, dormis para trabajadores o corporativo?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4220
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Por acá tengo solo el mail directo: **info@habika.ar**.  \n\nNo tengo el número de WhatsApp o teléfono cargado en este catálogo; te sugiero entrar a **habika.ar** donde vas a ver el botón de WhatsApp en la esquina y ahí chateás directo con un asesor.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3203
+    }
+  ],
+  "sessionCreationTimeMs": 11430,
+  "errors": []
+}

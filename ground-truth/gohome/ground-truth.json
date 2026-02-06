@@ -1,0 +1,200 @@
+{
+  "company": "GoHome",
+  "url": "https://gohomeconstrucciones.com.ar/",
+  "capturedAt": "2026-02-05T20:34:27.609Z",
+  "type": "modular",
+  "navigation": {
+    "menuItems": [
+      "Home",
+      "Unidades",
+      "Empresa",
+      "Preguntas frecuentes",
+      "Clientes",
+      "Contacto"
+    ],
+    "modelSections": [
+      {
+        "label": "Unidades",
+        "url": "https://gohomeconstrucciones.com.ar/viviendas/index.html"
+      },
+      {
+        "label": "casa",
+        "url": "https://www.facebook.com/gohome.casacontainer"
+      },
+      {
+        "label": "VER UNIDAD",
+        "url": "https://gohomeconstrucciones.com.ar/unidades/liberty/index.html"
+      },
+      {
+        "label": "VER UNIDAD",
+        "url": "https://gohomeconstrucciones.com.ar/unidades/alma-uno/index.html"
+      },
+      {
+        "label": "VER UNIDAD",
+        "url": "https://gohomeconstrucciones.com.ar/unidades/alma-dos/index.html"
+      },
+      {
+        "label": "VER UNIDAD",
+        "url": "https://gohomeconstrucciones.com.ar/unidades/greta-uno/index.html"
+      },
+      {
+        "label": "VER UNIDAD",
+        "url": "https://gohomeconstrucciones.com.ar/unidades/greta-dos/index.html"
+      },
+      {
+        "label": "VER UNIDAD",
+        "url": "https://gohomeconstrucciones.com.ar/unidades/amorina/index.html"
+      },
+      {
+        "label": "VER UNIDAD",
+        "url": "https://gohomeconstrucciones.com.ar/unidades/trevi/index.html"
+      },
+      {
+        "label": "VER UNIDAD",
+        "url": "https://gohomeconstrucciones.com.ar/unidades/tokio/index.html"
+      },
+      {
+        "label": "VER UNIDAD",
+        "url": "https://gohomeconstrucciones.com.ar/unidades/jana/index.html"
+      },
+      {
+        "label": "VER UNIDAD",
+        "url": "https://gohomeconstrucciones.com.ar/unidades/victoria/index.html"
+      },
+      {
+        "label": "VER UNIDAD",
+        "url": "https://gohomeconstrucciones.com.ar/unidades/etiqueta-negra/index.html"
+      },
+      {
+        "label": "VER UNIDAD",
+        "url": "https://gohomeconstrucciones.com.ar/unidades/break-tres/index.html"
+      },
+      {
+        "label": "VER UNIDAD",
+        "url": "https://gohomeconstrucciones.com.ar/unidades/colegio/index.html"
+      },
+      {
+        "label": "Ver menos ▲",
+        "url": "https://gohomeconstrucciones.com.ar/#unidades"
+      },
+      {
+        "label": "VER MÁS",
+        "url": "https://gohomeconstrucciones.com.ar/unidades/oficinas/index.html"
+      }
+    ]
+  },
+  "models": [
+    {
+      "name": "LIBERTY",
+      "sqMeters": 20,
+      "features": [
+        "contenedor de 20 pies",
+        "aberturas amplias",
+        "capaces de iluminar cada rincón",
+        "cocina cómoda con barra para esos ricos cocktails con amigos",
+        "baño completo con diseño retro y muy moderno",
+        "completamente iluminado",
+        "gran diseño juvenil",
+        "toque de frescura"
+      ],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-1-liberty.jpeg",
+      "detailUrl": "https://gohomeconstrucciones.com.ar/unidades/liberty/index.html",
+      "bedrooms": 1,
+      "bathrooms": 1
+    },
+    {
+      "name": "ALMA I",
+      "sqMeters": 20,
+      "features": [
+        "contenedor de 20 pies",
+        "aberturas amplias",
+        "capacidad de iluminar cada rincón",
+        "cocina cómoda con barra para esos cocktails con amigos",
+        "baño completo con diseño retro y muy moderno",
+        "completamente iluminado",
+        "gran diseño juvenil",
+        "toque de frescura"
+      ],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-2-alma-i.jpeg",
+      "detailUrl": "https://gohomeconstrucciones.com.ar/unidades/liberty/index.html",
+      "bedrooms": 1,
+      "bathrooms": 1
+    },
+    {
+      "name": "ALMA II",
+      "sqMeters": 40,
+      "features": [
+        "estar con vista panorámica",
+        "cocina completamente equipada con vista y ventilación al exterior",
+        "barra central",
+        "dormitorio con placard",
+        "baño completo con detalles de diseño",
+        "ambientes amplios y confortables",
+        "productos de calidad con armonía y eficacia",
+        "diseño ecológico",
+        "contenedor HIGH CUBE de 40 pies"
+      ],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-3-alma-ii.jpeg",
+      "detailUrl": "https://gohomeconstrucciones.com.ar/unidades/alma-uno/index.html",
+      "bedrooms": 2,
+      "bathrooms": 1
+    },
+    {
+      "name": "GRETA I",
+      "sqMeters": 40,
+      "features": [
+        "living comedor",
+        "cocina integrada",
+        "cocina minimalista",
+        "ventanales de piso a techo",
+        "ventanales diseñados a medida",
+        "baño principal",
+        "iluminación natural",
+        "cómodo vestidor",
+        "amplias aberturas a medida"
+      ],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-4-greta-i.jpeg",
+      "detailUrl": "https://gohomeconstrucciones.com.ar/unidades/alma-dos/index.html",
+      "bedrooms": 2
+    },
+    {
+      "name": "GRETA II",
+      "sqMeters": 40,
+      "features": [
+        "vivienda trasladable",
+        "construcción sólida y gran estructura",
+        "sin vicios constructivos",
+        "anti-sísmica y ecológica",
+        "contenedor High Cube de 40 pies",
+        "luz natural",
+        "cocina con vista panorámica",
+        "living comedor diseñado con vista 360",
+        "hermoso baño completo con diseño y estilo",
+        "dormitorio principal con placard tipo vestidor"
+      ],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-5-greta-ii.jpeg",
+      "detailUrl": "https://gohomeconstrucciones.com.ar/unidades/greta-uno/index.html",
+      "bathrooms": 1
+    },
+    {
+      "name": "AMORINA",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-1.jpeg",
+      "detailUrl": "https://gohomeconstrucciones.com.ar/unidades/amorina/index.html"
+    }
+  ],
+  "contactInfo": {
+    "email": "gohomeconstrucciones@gmail.com",
+    "phone": "+5491157504201",
+    "instagram": "@gohomeconstrucciones"
+  },
+  "totalModelsFound": 6,
+  "pagesExplored": 9,
+  "errors": []
+}

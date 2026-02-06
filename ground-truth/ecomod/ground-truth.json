@@ -1,0 +1,142 @@
+{
+  "company": "Ecomod",
+  "url": "https://ecomod.com.ar/",
+  "capturedAt": "2026-02-05T20:23:09.368Z",
+  "type": "modular",
+  "navigation": {
+    "menuItems": [
+      "INICIO",
+      "NOSOTROS",
+      "CÓMO CONSTRUIMOS",
+      "MODELOS",
+      "PROYECTOS",
+      "CONTACTO",
+      "INVERTÍ EN ANELO"
+    ],
+    "modelSections": [
+      {
+        "label": "Modelos",
+        "url": "https://ecomod.com.ar/modelos/"
+      },
+      {
+        "label": "Proyectos",
+        "url": "https://ecomod.com.ar/proyectos-entregados/"
+      },
+      {
+        "label": "BARILOCHE →",
+        "url": "https://ecomod.com.ar/proyecto-bariloche/"
+      },
+      {
+        "label": "ISLA SANTIAGO →",
+        "url": "https://ecomod.com.ar/proyecto-isla-santiago/"
+      },
+      {
+        "label": "General Madariaga →",
+        "url": "https://ecomod.com.ar/proyecto-general-madariaga/"
+      },
+      {
+        "label": "Modelos",
+        "url": "https://ecomod.com.ar/modelos"
+      },
+      {
+        "label": "Instagram",
+        "url": "https://www.instagram.com/ecomod.casasmodulares/"
+      },
+      {
+        "label": "Facebook",
+        "url": "https://www.facebook.com/EcomodCasas/"
+      }
+    ]
+  },
+  "models": [
+    {
+      "name": "Eco Studio",
+      "sqMeters": 11.5,
+      "features": [],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-1-eco-studio.jpeg",
+      "detailUrl": "https://ecomod.com.ar/modelo-eco-studio/"
+    },
+    {
+      "name": "Turístico",
+      "sqMeters": 25,
+      "features": [],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-2-turstico.jpeg",
+      "detailUrl": "https://ecomod.com.ar/anelo"
+    },
+    {
+      "name": "Eco Mini",
+      "sqMeters": 30,
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/03-detail-3-eco-mini.jpeg",
+      "detailUrl": "https://ecomod.com.ar/modelo-eco-mini"
+    },
+    {
+      "name": "Eco Mini +",
+      "sqMeters": 40,
+      "features": [],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-4-eco-mini-.jpeg",
+      "detailUrl": "https://ecomod.com.ar/modelo-eco-studio/"
+    },
+    {
+      "name": "Eco 1.1",
+      "sqMeters": 45,
+      "features": [],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-5-eco-11.jpeg",
+      "detailUrl": "https://ecomod.com.ar/modelo-turistico/"
+    },
+    {
+      "name": "Eco 2.1 +",
+      "sqMeters": 70,
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-1.jpeg",
+      "detailUrl": "https://ecomod.com.ar/modelo-eco-mini"
+    },
+    {
+      "name": "ECOMOD 50",
+      "sqMeters": 50,
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg",
+      "detailUrl": "https://ecomod.com.ar/anelo"
+    },
+    {
+      "name": "ECOMOD 75",
+      "sqMeters": 75,
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg",
+      "detailUrl": "https://ecomod.com.ar/anelo"
+    },
+    {
+      "name": "ECOMOD 100",
+      "sqMeters": 100,
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg",
+      "detailUrl": "https://ecomod.com.ar/proyectos-entregados/"
+    },
+    {
+      "name": "Bariloche",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg",
+      "detailUrl": "https://ecomod.com.ar/proyecto-bariloche/#content"
+    }
+  ],
+  "contactInfo": {
+    "whatsapp": "5491167666654",
+    "email": "info@ecomod.com.ar",
+    "instagram": "@ecomod.casasmodulares"
+  },
+  "totalModelsFound": 10,
+  "pagesExplored": 9,
+  "errors": [
+    "Detail page Eco Mini: Cannot read properties of null (reading 'length')"
+  ]
+}

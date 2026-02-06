@@ -1,0 +1,34 @@
+{
+  "company": "GoHome",
+  "url": "https://gohomeconstrucciones.com.ar/",
+  "diagnosedAt": "2026-02-06T14:56:47.395Z",
+  "overallScore": 75,
+  "scoreBreakdown": {
+    "productCoverage": 100,
+    "specAccuracy": 100,
+    "contactAccuracy": 100,
+    "hallucinationPenalty": 10,
+    "identityMatch": 100
+  },
+  "groundTruthModels": 6,
+  "systemPromptModels": 17,
+  "agentResponseModels": 7,
+  "gaps": [
+    {
+      "type": "HALLUCINATION",
+      "entity": "Casa FERRARO MIRIAM CARINA",
+      "detail": "Agent mentioned model \"Casa FERRARO MIRIAM CARINA\" (from prompt: \"Casa FERRARO MIRIAM CARINA\") which does not exist in ground truth",
+      "severity": "HIGH",
+      "systemPromptValue": "Casa FERRARO MIRIAM CARINA",
+      "agentResponseValue": "Casa FERRARO MIRIAM CARINA"
+    }
+  ],
+  "gapSummary": {
+    "scrapingMiss": 0,
+    "promptMiss": 0,
+    "hallucination": 1
+  },
+  "recommendations": [
+    "1 dato(s) inventados por el agente. Reforzar anti-hallucination en prompt-generator.ts."
+  ]
+}

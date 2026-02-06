@@ -1,0 +1,175 @@
+{
+  "company": "Wellmod",
+  "url": "https://www.wellmod.com.ar/",
+  "testedAt": "2026-02-06T10:56:06.976Z",
+  "sessionId": "7c9b0f0b-7b4a-427d-b217-d82c6a731d40",
+  "systemPromptLength": 21753,
+  "systemPromptModelsFound": [
+    "Casa Suite - 26m2 - 1 dorm - 1 bano",
+    "Casa Oficina - 20m2 - 1 bano",
+    "Casa AS - 200m2",
+    "Casa IM - 175m2",
+    "Casa VJ - 40m2",
+    "Casa Potrerillo - 80m2",
+    "Casa MF - 80m2",
+    "Casa MY - 80m2 - 2 dorm - 1 bano - Consulta",
+    "Casa W26 Suite - 26m2 - 1 bano",
+    "Casa W40 A - 40m2 - 1 dorm - 1 bano",
+    "Casa W20 Suite - 20m2 - 1 bano",
+    "Casa W40 B - 40m2 - 1 dorm - 1 bano",
+    "Casa W40 C - 40m2 - 1 dorm - 1 bano",
+    "Casa W60 A - 60m2 - 2 dorm - 2 banos",
+    "Casa W60 B - 60m2 - 3 dorm - 1 bano",
+    "Casa W80 A - 80m2 - 2 dorm - 2 banos",
+    "Casa W80 B - 80m2 - 3 dorm - 1 bano",
+    "Casa W80 C - 80m2 - 3 dorm - 1 bano",
+    "Casa W20 Oficina - 20m2 - 1 bano"
+  ],
+  "systemPromptWhatsApp": "+5493518668299",
+  "systemPromptType": "de Constructora**: MODULAR",
+  "conversations": [
+    {
+      "question": "?Que modelos tienen disponibles?",
+      "questionType": "base",
+      "response": "Tenemos varios modelos modulares ya diseñados, todos en steel frame y transportables. Algunos ejemplos:\n\n- Casas chicas: Casa Suite 26m² (1 dorm, 1 baño), Casa Oficina 20m² (1 baño), Casa W20 Suite 20m² y Casa VJ 40m² (ideal finde).  \n- Línea W: W26 Suite 26m², W40 A/B/C 40m² (1 dorm, 1 baño), W60 A 60m² (2 dorm, 2 baños), W60 B 60m² (3 dorm, 1 baño), W80 A 80m² (2 dorm, 2 baños), W80 B/C 80m² (3 dorm, 1 baño), W20 Oficina 20m² (1 baño).  \n- Superficies grandes: Casa Potrerillo 80m², Casa MF 80m², Casa MY 80m² (2 dorm, 1 baño – a medida), Casa IM 175m² y Casa AS 200m².  \n\nPara orientarte mejor, ¿qué tamaño de casa estás buscando (cantidad de dormitorios o m²)?",
+      "mentionedModels": [
+        "Casa VJ",
+        "Casa MY",
+        "Casa MF",
+        "Casa IM",
+        "Casa AS",
+        "W26 Suite",
+        "W40 A",
+        "W20 Suite",
+        "W60 A",
+        "W60 B",
+        "W80 A",
+        "W80 B",
+        "W20 Oficina"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3149
+    },
+    {
+      "question": "?Cuantos modelos/proyectos ofrecen?",
+      "questionType": "base",
+      "response": "Te cuento: hoy tenemos 20 modelos/proyectos listados en catálogo.  \n\nIncluye viviendas chicas, medianas y grandes (desde 20m² hasta 200m²), más opciones de oficina y turismo como Fertimaq 20m², Paso Calmo en Los Reartes, Casa VJ 40m², Casa AS 200m², Potrerillo 80m² y el módulo de oficinas de Club Atlético Talleres 200m².  \nPara ayudarte mejor, ¿estás buscando algo residencial, de fin de semana o más bien oficina/comercial?",
+      "mentionedModels": [
+        "Paso Calmo",
+        "Casa VJ",
+        "Casa AS",
+        "Club Atlético Talleres",
+        "Fertimaq"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3212
+    },
+    {
+      "question": "?Cuanto cuesta el modelo mas economico?",
+      "questionType": "base",
+      "response": "El modelo más económico que manejamos hoy es el de 20 m²: puede ser la Casa Oficina 20m² o la W20 Suite (ambas con 1 baño, ideales como oficina, monoambiente o primer módulo de vivienda).  \n\nNo tengo los precios actualizados cargados. Te sugiero consultarlo por WhatsApp al +54 9 351 866 8299, así te pasan el valor al día y opciones de financiación. Mientras tanto, ¿la idea es usarlo como vivienda chica, oficina o algo turístico?",
+      "mentionedModels": [
+        "W20 Suite"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 2903
+    },
+    {
+      "question": "?Tienen financiamiento o planes de pago?",
+      "questionType": "base",
+      "response": "Sí, ofrecemos financiación para nuestros módulos en steel frame.  \n\nPodemos armar planes de pago según el modelo y el momento de entrega que necesites.  \nPara que te orientemos mejor con opciones concretas, ¿qué tamaño de casa/oficina estás pensando (m² o cantidad de dormitorios)?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 1546
+    },
+    {
+      "question": "?Cual es su WhatsApp o telefono de contacto?",
+      "questionType": "base",
+      "response": "Te paso los datos de contacto directo:  \n\n- WhatsApp / Teléfono: +54 9 351 866 8299  \n- Email: hola@wellmod.com.ar  \n\nPor WhatsApp te pueden pasar precios actualizados, planes de financiación y coordinar una reunión si querés.",
+      "mentionedModels": [
+        "WELLMOD"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 1606
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo Hotel Termal?",
+      "questionType": "model_specific",
+      "response": "Del modelo “Hotel Termal” no tengo información cargada en el catálogo que manejo (solo veo modelos como Suite, línea W, VJ, Potrerillo, Paso Calmo, etc.).  \n\nPuede ser un proyecto especial o un desarrollo turístico puntual, así que para ese caso específico te conviene escribir por WhatsApp al +54 9 351 866 8299 y pedir la ficha técnica del Hotel Termal.  \nSi querés, contame cuántas habitaciones o m² estás pensando y te recomiendo alguno de los modelos turísticos/residenciales que sí tengo detallados.",
+      "mentionedModels": [
+        "Hotel Termal",
+        "Paso Calmo"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2611
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el Hotel Termal?",
+      "questionType": "model_specific",
+      "response": "Sobre el “Hotel Termal” no tengo cargada la superficie en m² en la info que manejo, así que no puedo decirte un número exacto.  \n\nPuede ser un desarrollo a medida o un proyecto turístico puntual. Para ese dato específico te sugiero escribir por WhatsApp al +54 9 351 866 8299 y pedir la ficha del Hotel Termal.  \nSi me contás cuántas habitaciones querés, puedo sugerirte combinaciones de módulos (por ejemplo varios W26 Suite o W20 Suite) para algo similar.",
+      "mentionedModels": [
+        "Hotel Termal",
+        "W26 Suite",
+        "W20 Suite"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 2695
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo Paso Calmo?",
+      "questionType": "model_specific",
+      "response": "Paso Calmo es un desarrollo turístico en Los Reartes, Córdoba, resuelto con nuestros módulos en steel frame, pensado como cabañas compactas, muy vidriadas y con fuerte integración al entorno natural. Trabajamos con unidades tipo suite (similar a nuestras W26/W20 Suite) con baño completo, espacio de descanso y grandes aventanamientos hacia la galería/terraza.  \n\nEn las fotos se ve claramente el enfoque: diseño moderno, líneas simples, buena aislación y terminaciones listas para uso turístico (ideal complejo de cabañas). No tengo cargada la ficha con m² exactos de cada unidad, pero sí podemos replicar ese concepto adaptado a la cantidad de plazas que necesites. ¿Cuántas unidades y para cuántas personas por cabaña estás pensando?",
+      "mentionedModels": [
+        "Paso Calmo",
+        "W20 Suite"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 2980
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el Paso Calmo?",
+      "questionType": "model_specific",
+      "response": "En el material que tengo cargado sobre Paso Calmo (Los Reartes, Córdoba) no figura la superficie exacta en m² de cada unidad, solo las fotos y la tipología turística.  \n\nNo quiero inventarte un número, así que para saber los m² precisos te sugiero pedir la ficha técnica por WhatsApp al +54 9 351 866 8299.  \nSi me contás para cuántas personas querés cada cabaña, puedo orientarte con modelos similares en m² (por ejemplo W26 Suite o módulos de 20/40 m²).",
+      "mentionedModels": [
+        "Paso Calmo",
+        "W26 Suite"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3976
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo Las Algas?",
+      "questionType": "model_specific",
+      "response": "Del modelo “Las Algas” no tengo información cargada en el catálogo que manejo (sí veo Paso Calmo, VJ, Potrerillo, AS, oficinas, línea W, etc., pero no aparece “Las Algas”).  \n\nSeguramente sea un proyecto turístico o residencial específico que no está en esta versión del catálogo. Para ver plano, m² y detalles de ese modelo en particular, te recomiendo escribir por WhatsApp al +54 9 351 866 8299 y pedir la ficha de “Las Algas”.  \nSi me contás qué uso le querés dar (turismo, vivienda, fin de semana) y cuántos m²/dormitorios buscás, te sugiero alternativas similares dentro de los modelos que sí tengo detallados.",
+      "mentionedModels": [
+        "Paso Calmo",
+        "Las Algas"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2907
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el Las Algas?",
+      "questionType": "model_specific",
+      "response": "Sobre el proyecto “Las Algas” no tengo cargada la superficie en m² en la info que manejo, así que no puedo decirte un número exacto sin inventar.  \n\nPara ese dato puntual te sugiero escribir por WhatsApp al +54 9 351 866 8299 y pedir la ficha técnica de “Las Algas”.  \nSi me contás para qué uso lo estás mirando (turístico, vivienda, fin de semana) y cuántas personas querés alojar, te puedo orientar con modelos similares que sí tengo con m² definidos.",
+      "mentionedModels": [
+        "Las Algas"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 3263
+    }
+  ],
+  "sessionCreationTimeMs": 54505,
+  "errors": []
+}

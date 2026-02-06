@@ -1,0 +1,29 @@
+{
+  "company": "PlugArq",
+  "url": "https://www.plugarq.com/",
+  "capturedAt": "2026-02-05T20:24:59.186Z",
+  "type": "modular",
+  "navigation": {
+    "menuItems": [
+      "POR QUÉ PLUG?",
+      "CENTRAL",
+      "TESTIMONIOS",
+      "PRENSA",
+      "CONTACTO"
+    ],
+    "modelSections": [
+      {
+        "label": "Chat",
+        "url": "https://api.whatsapp.com/send?phone=5491170627642&text=Hola%2C%20me%20interesan%20las%20casas%20modulares"
+      }
+    ]
+  },
+  "models": [],
+  "contactInfo": {
+    "whatsapp": "5491170627642",
+    "instagram": "@whatsapp"
+  },
+  "totalModelsFound": 0,
+  "pagesExplored": 2,
+  "errors": []
+}

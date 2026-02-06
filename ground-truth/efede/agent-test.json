@@ -1,0 +1,65 @@
+{
+  "company": "Efede",
+  "url": "https://efede.com.ar/casas-modulares/",
+  "testedAt": "2026-02-06T11:00:58.240Z",
+  "sessionId": "e6626f4f-89b1-4985-934e-43d40ea7ebb4",
+  "systemPromptLength": 21402,
+  "systemPromptModelsFound": [
+    "casa modular MHZ - 32m2 - 1 dorm - 1 bano - Consul",
+    "casa modular MC1 - 29m2 - 1 dorm - 1 bano - Consul",
+    "casa modular MZB2 - 54m2 - 2 dorm - 2 banos - Cons",
+    "casa modular MT1 - 15m2 - 1 dorm - 1 bano - Consul",
+    "Casa MO1 - 15m2 - 1 bano - Consultar",
+    "Casa MO5 - 30m2 - 1 bano - Consultar"
+  ],
+  "systemPromptType": "independiente, fabricada con perfiles y tubos de acero",
+  "conversations": [
+    {
+      "question": "?Que modelos tienen disponibles?",
+      "questionType": "base",
+      "response": "Tenemos varias opciones según el uso que le quieras dar.  \nEn viviendas, contamos con:  \n- **MHZ**: 32 m², 1 dormitorio, 1 baño, living/comedor y cocina.  \n- **MC1**: 29 m², 1 dormitorio, 1 baño, comedor y cocina.  \n- **MZB2**: 54 m², 2 dormitorios y 2 baños, con living y cocina comedor.\n\nEn modelos más compactos y de oficina:  \n- **MT1**: 15 m², 1 dormitorio + baño con antebaño (ideal monoambiente/estudio).  \n- **MO1**: 15 m², oficina privada, kitchenette y baño.  \n- **MO5**: 30 m², oficina privada, sala de reuniones, kitchenette y baño.\n\nPara ayudarte mejor, ¿qué tamaño de casa estás buscando (cantidad de dormitorios o m²)?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 5388
+    },
+    {
+      "question": "?Cuantos modelos/proyectos ofrecen?",
+      "questionType": "base",
+      "response": "Ofrecemos **6 modelos** en total.  \nTres de **vivienda** (MHZ 32 m², MC1 29 m², MZB2 54 m²), uno **compacto tipo vivienda básica** (MT1 15 m²) y dos de **línea office** (MO1 15 m² y MO5 30 m²).  \n\nPara orientarte mejor entre estos seis, ¿ya viste algún modelo que te haya gustado o alguna medida que tengas en mente?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2716
+    },
+    {
+      "question": "?Cuanto cuesta el modelo mas economico?",
+      "questionType": "base",
+      "response": "El modelo más económico que tenemos es el **MT1**, de **15 m²**, con 1 dormitorio y baño con antebaño.  \nNo tengo los precios actualizados cargados. Te sugiero consultarlo por WhatsApp, así te pasan el valor al día y las formas de pago.  \n\nMientras tanto, ¿sería para vivienda permanente, tipo cabaña de fin de semana o algo más estilo estudio/quincho?",
+      "mentionedModels": [],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 2092
+    },
+    {
+      "question": "?Tienen financiamiento o planes de pago?",
+      "questionType": "base",
+      "response": "No tengo cargada la info específica de financiamiento o planes de pago.  \nLo que sí te recomiendo es consultarlo por WhatsApp, donde te pueden detallar si trabajan con financiación propia, anticipos y cuotas, o convenios bancarios.  \n\nPara ir avanzando y ver qué modelo podría encajar mejor con vos: ¿ya tenés el terreno? ¿En qué zona sería?",
+      "mentionedModels": [],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 2945
+    },
+    {
+      "question": "?Cual es su WhatsApp o telefono de contacto?",
+      "questionType": "base",
+      "response": "Podés contactarnos directamente desde la web oficial de EFEDÉ:  \n👉 https://efede.com.ar/ (ahí vas a ver el ícono de WhatsApp abajo a la derecha para escribirnos directo).  \n\nNo tengo el número puntual cargado acá, pero por la web accedés al WhatsApp y a todos los teléfonos actualizados.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 1851
+    }
+  ],
+  "sessionCreationTimeMs": 37726,
+  "errors": []
+}

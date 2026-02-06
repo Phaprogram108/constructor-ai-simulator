@@ -1,0 +1,82 @@
+{
+  "company": "Movilhauss",
+  "url": "https://movilhauss.com",
+  "diagnosedAt": "2026-02-06T14:56:47.385Z",
+  "overallScore": 30,
+  "scoreBreakdown": {
+    "productCoverage": 0,
+    "specAccuracy": 0,
+    "contactAccuracy": 100,
+    "hallucinationPenalty": 0,
+    "identityMatch": 100
+  },
+  "groundTruthModels": 8,
+  "systemPromptModels": 0,
+  "agentResponseModels": 0,
+  "gaps": [
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Inauba (work)",
+      "detail": "Model \"Inauba (work)\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Inauba (work)"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Inauba +",
+      "detail": "Model \"Inauba +\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Inauba +"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "Inauba duo",
+      "detail": "Model \"Inauba duo\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "Inauba duo"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "freestyle (contemplación)",
+      "detail": "Model \"freestyle (contemplación)\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "freestyle (contemplación)"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "iñauba lwork",
+      "detail": "Model \"iñauba lwork\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "iñauba lwork"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "iñauba +",
+      "detail": "Model \"iñauba +\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "iñauba +"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "iñauba duo",
+      "detail": "Model \"iñauba duo\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "iñauba duo"
+    },
+    {
+      "type": "SCRAPING_MISS",
+      "entity": "freestyle",
+      "detail": "Model \"freestyle\" exists in ground truth but was not found in systemPrompt",
+      "severity": "HIGH",
+      "groundTruthValue": "freestyle"
+    }
+  ],
+  "gapSummary": {
+    "scrapingMiss": 8,
+    "promptMiss": 0,
+    "hallucination": 0
+  },
+  "recommendations": [
+    "Scraping no encontro 8 modelo(s): Inauba (work), Inauba +, Inauba duo, freestyle (contemplación), iñauba lwork, iñauba +, iñauba duo, freestyle. Revisar firecrawl.ts URL patterns."
+  ]
+}

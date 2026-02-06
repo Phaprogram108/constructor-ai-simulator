@@ -109,18 +109,28 @@ function extractModelsFromPrompt(prompt: string): string[] {
   const section = productSection[0];
   const models: string[] = [];
 
-  // Pattern 1: Numbered headings "### 1. ProductName" or "### 2. ProductName"
-  const numberedMatches = section.match(/### \d+\.\s+(.+)/gi) || [];
+  // Pattern 1: Numbered headings "### 1. ProductName" or "### 2. ProductName" (FORMATO V4)
+  const numberedMatches = section.matchAll(/###\s+\d+\.\s+(.+?)(?:\n|$)/gi);
   for (const m of numberedMatches) {
-    const name = m.replace(/^###\s*\d+\.\s*/, '').trim();
-    // Remove trailing markdown or description (take only first line)
-    const cleanName = name.split('\n')[0].trim();
-    if (cleanName && cleanName.length > 0 && cleanName.length < 80) {
-      models.push(cleanName);
+    const name = m[1].trim();
+    if (name && name.length > 0 && name.length < 80) {
+      models.push(name);
     }
   }
 
-  // Pattern 2: Traditional "### Modelo: XXX" or "### Casa XXX" headings
+  // Pattern 2: Unnumbered headings "### ProductName" (FORMATO V4 sin numero)
+  if (models.length === 0) {
+    const unnumberedMatches = section.matchAll(/###\s+([A-ZÁÉÍÓÚÑ][^\n]{1,79})(?:\n|$)/gi);
+    for (const m of unnumberedMatches) {
+      const name = m[1].trim();
+      // Skip if it starts with a number (already captured)
+      if (name && !name.match(/^\d+\./) && name.length < 80) {
+        models.push(name);
+      }
+    }
+  }
+
+  // Pattern 3: Traditional "### Modelo: XXX" or "### Casa XXX" headings
   if (models.length === 0) {
     const headingMatches = section.match(
       /### (?:Modelo|Casa|Vivienda|Proyecto|Producto|Unidad|Servicio)[:\s]+(.+)/gi
@@ -131,7 +141,7 @@ function extractModelsFromPrompt(prompt: string): string[] {
     }
   }
 
-  // Pattern 3: Bold list items "- **ProductName**:" or "- **ProductName** -"
+  // Pattern 4: Bold list items "- **ProductName**:" or "- **ProductName** -"
   if (models.length === 0) {
     const boldListMatches = section.match(/^- \*\*(.+?)\*\*[:\-]?/gm) || [];
     for (const m of boldListMatches) {
@@ -145,7 +155,7 @@ function extractModelsFromPrompt(prompt: string): string[] {
     }
   }
 
-  // Pattern 4: List items "- ModelName: details" or "- ModelName (details)"
+  // Pattern 5: List items "- ModelName: details" or "- ModelName (details)"
   if (models.length === 0) {
     const listMatches = section.match(/^- .+/gm) || [];
     for (const line of listMatches) {

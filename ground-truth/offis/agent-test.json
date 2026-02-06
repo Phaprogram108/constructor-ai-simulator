@@ -1,0 +1,141 @@
+{
+  "company": "Offis",
+  "url": "https://www.offis.ar/",
+  "testedAt": "2026-02-06T10:59:52.512Z",
+  "sessionId": "587a19e9-b3b8-4c35-9693-7eca9b1dc0f6",
+  "systemPromptLength": 21465,
+  "systemPromptModelsFound": [
+    "Casa Complejo Oficinas en Pilar - 18m2",
+    "Casa Offis x Jeep",
+    "Casa Offis Flex White en Tortugas - 22m2",
+    "Casa Cowork en terraza en CABA - 12m2",
+    "Casa Palenques Polo - 24m2",
+    "Casa Módulo de baños en Nordelta - 27m2",
+    "Casa Offis Max UCES",
+    "Casa Offis para Parque industrial - 22m2",
+    "Casa Offis Arch en Nordelta",
+    "Casa Offis Family - 18m2",
+    "Casa Hasta - 20m2"
+  ],
+  "systemPromptWhatsApp": "5491126521040",
+  "systemPromptType": "de Constructora**: MODULAR",
+  "conversations": [
+    {
+      "question": "?Que modelos tienen disponibles?",
+      "questionType": "base",
+      "response": "Tenemos varios modelos estándar en hormigón premoldeado, todos modulares y con opción de financiación con Banco Hipotecario. Por ejemplo:  \n- Casa Cowork en terraza CABA – 12 m²  \n- Casa Offis Max UCES – Offis de 9 m²  \n- Casa Offis Arch en Nordelta – Offis de 15 m²  \n- Casa Offis Family – 18 m²  \n- Casa Complejo Oficinas en Pilar – 18 m²  \n- Casa Offis para Parque Industrial – 22 m²  \n- Casa Offis Flex White en Tortugas – 22 m²  \n- Casa Palenques Polo – 24 m²  \n- Casa Módulo de baños en Nordelta – 27 m²  \n- Casa Offis x Jeep / Casa Hasta – alrededor de 20 m²  \n\nPara ayudarte mejor a elegir, ¿qué tamaño de espacio estás buscando (en m² o qué uso le querés dar: oficina, quincho, estudio, etc.)?",
+      "mentionedModels": [
+        "Casa Offis x Jeep",
+        "Casa Offis Max UCES",
+        "Casa Offis Arch en Nordelta"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3654
+    },
+    {
+      "question": "?Cuantos modelos/proyectos ofrecen?",
+      "questionType": "base",
+      "response": "Hoy tenemos cargados 11 modelos/proyectos concretos en hormigón premoldeado dentro de la línea Offis y obras especiales.  \nIncluye oficinas chicas tipo estudio (desde 9 m²), módulos de cowork, baños, y espacios más grandes como Offis Family, Parque Industrial o Palenques Polo (hasta 27 m²).  \n\nPara orientarte mejor entre esos 11, ¿qué tamaño de espacio estás buscando aproximadamente (m² o cantidad de puestos/dormitorios)?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2346
+    },
+    {
+      "question": "?Cuanto cuesta el modelo mas economico?",
+      "questionType": "base",
+      "response": "El modelo más económico que tenemos es el Offis de 9 m² (Offis Max UCES), que es el más chico de la línea.  \nNo tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp así te pasan el valor al día y opciones de financiación con Banco Hipotecario: +54 9 11 2652-1040.  \n\nMientras tanto, ¿ese tamaño de 9 m² te sirve o estabas pensando en algo un poco más grande, tipo 12–15 m²?",
+      "mentionedModels": [],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 1934
+    },
+    {
+      "question": "?Tienen financiamiento o planes de pago?",
+      "questionType": "base",
+      "response": "Sí, tenemos financiación disponible con el respaldo del Banco Hipotecario y podemos armar planes de pago según el modelo que elijas y tu perfil.  \nNo tengo por acá el detalle fino de cuotas y requisitos, así que para los números concretos te conviene escribir directo a WhatsApp: +54 9 11 2652-1040.  \n\nPara ir guiándote: ¿ya tenés el terreno? ¿En qué zona sería la instalación?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 1857
+    },
+    {
+      "question": "?Cual es su WhatsApp o telefono de contacto?",
+      "questionType": "base",
+      "response": "Te podés contactar directo por WhatsApp al +54 9 11 2652 1040.  \nSi preferís por mail, el correo comercial es: comercial@offis.ar.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 1314
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo Offis STUDIO 12?",
+      "questionType": "model_specific",
+      "response": "El Offis STUDIO 12 es un módulo residencial de 12,25 m², ideal como oficina en casa, estudio o espacio extra.  \nLas medidas interiores son 2,20 x 4,60 x 2,30 m de alto, y las exteriores 2,50 x 4,90 x 2,80 m de alto, construido en hormigón premoldeado, listo para instalar en pocos días.  \n\nPara afinar si es el indicado para vos: ¿lo querés usar como oficina, dormitorio extra, estudio creativo u otra cosa?",
+      "mentionedModels": [
+        "Offis STUDIO 12"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2464
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el Offis STUDIO 12?",
+      "questionType": "model_specific",
+      "response": "El Offis STUDIO 12 tiene 12,25 m² de superficie cubierta.",
+      "mentionedModels": [
+        "Offis STUDIO 12"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 1670
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo Offis SLIM 15?",
+      "questionType": "model_specific",
+      "response": "El Offis SLIM 15 es un módulo residencial compacto de aproximadamente 15 m², pensado como espacio extra tipo oficina, estudio o monoambiente chico, dentro de nuestra línea en hormigón premoldeado.  \nEn este momento no tengo cargadas las medidas exactas ni el plano detallado de SLIM 15; para que te pasen ficha técnica completa (medidas, terminaciones, equipamiento y precio), te recomiendo escribir por WhatsApp al +54 9 11 2652 1040.",
+      "mentionedModels": [
+        "Offis SLIM 15"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 2367
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el Offis SLIM 15?",
+      "questionType": "model_specific",
+      "response": "El Offis SLIM 15 tiene aproximadamente 15 m² de superficie.",
+      "mentionedModels": [
+        "Offis SLIM 15"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 973
+    },
+    {
+      "question": "?Cuales son las caracteristicas del modelo Offis FAMILY 18?",
+      "questionType": "model_specific",
+      "response": "El Offis FAMILY 18 es un módulo de 18 m² en hormigón premoldeado, pensado como espacio extra familiar: puede funcionar como playroom, oficina grande, dormitorio extra o mini monoambiente.  \nDentro de los modelos que tenemos listados, es de los intermedios: más grande que un Studio 12 o Slim 15, pero todavía compacto y rápido de montar, con toda la estructura modular lista para instalar en pocos días.  \n\nNo tengo acá el plano ni el detalle fino de terminaciones de FAMILY 18; para la ficha técnica completa y precio te sugiero escribir al WhatsApp +54 9 11 2652 1040. ¿Lo pensás usar más como dormitorio extra, oficina o quincho cerrado?",
+      "mentionedModels": [
+        "Offis FAMILY 18"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2721
+    },
+    {
+      "question": "?Cuantos metros cuadrados tiene el Offis FAMILY 18?",
+      "questionType": "model_specific",
+      "response": "El Offis FAMILY 18 tiene 18 m² de superficie cubierta.",
+      "mentionedModels": [
+        "Offis FAMILY 18"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 1264
+    }
+  ],
+  "sessionCreationTimeMs": 81662,
+  "errors": []
+}

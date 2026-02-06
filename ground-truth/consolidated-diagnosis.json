@@ -1,22 +1,22 @@
 {
-  "generatedAt": "2026-02-06T14:56:47.397Z",
+  "generatedAt": "2026-02-06T15:05:59.020Z",
   "companiesAnalyzed": 19,
   "companiesSkipped": {
     "noGroundTruth": 0,
     "noAgentTest": 1
   },
   "averageScore": 54,
-  "totalGaps": 125,
+  "totalGaps": 124,
   "gapBreakdown": {
     "scrapingMiss": 101,
     "promptMiss": 8,
-    "hallucination": 16
+    "hallucination": 15
   },
   "diagnoses": [
     {
       "company": "Atlas Housing",
       "url": "https://atlashousing.com.ar",
-      "diagnosedAt": "2026-02-06T14:56:47.381Z",
+      "diagnosedAt": "2026-02-06T15:05:59.006Z",
       "overallScore": 68,
       "scoreBreakdown": {
         "productCoverage": 50,
@@ -49,7 +49,7 @@
     {
       "company": "Habitatio",
       "url": "https://habitatio.com.ar",
-      "diagnosedAt": "2026-02-06T14:56:47.382Z",
+      "diagnosedAt": "2026-02-06T15:05:59.007Z",
       "overallScore": 85,
       "scoreBreakdown": {
         "productCoverage": 100,
@@ -72,18 +72,18 @@
     {
       "company": "ViBert",
       "url": "https://vibert.com.ar",
-      "diagnosedAt": "2026-02-06T14:56:47.383Z",
+      "diagnosedAt": "2026-02-06T15:05:59.008Z",
       "overallScore": 15,
       "scoreBreakdown": {
         "productCoverage": 0,
         "specAccuracy": 0,
         "contactAccuracy": 100,
-        "hallucinationPenalty": 30,
+        "hallucinationPenalty": 20,
         "identityMatch": 100
       },
       "groundTruthModels": 14,
       "systemPromptModels": 3,
-      "agentResponseModels": 6,
+      "agentResponseModels": 5,
       "gaps": [
         {
           "type": "SCRAPING_MISS",
@@ -185,13 +185,6 @@
         },
         {
           "type": "HALLUCINATION",
-          "entity": "ViBert que mejor se parezca a lo que",
-          "detail": "Agent mentioned model \"ViBert que mejor se parezca a lo que\" which does not exist in ground truth or systemPrompt",
-          "severity": "HIGH",
-          "agentResponseValue": "ViBert que mejor se parezca a lo que"
-        },
-        {
-          "type": "HALLUCINATION",
           "entity": "Casa Sara",
           "detail": "Agent mentioned model \"Casa Sara\" which does not exist in ground truth or systemPrompt",
           "severity": "HIGH",
@@ -199,26 +192,26 @@
         },
         {
           "type": "HALLUCINATION",
-          "entity": "ViBert",
-          "detail": "Agent mentioned model \"ViBert\" which does not exist in ground truth or systemPrompt",
+          "entity": "ViBert que mejor encaje",
+          "detail": "Agent mentioned model \"ViBert que mejor encaje\" which does not exist in ground truth or systemPrompt",
           "severity": "HIGH",
-          "agentResponseValue": "ViBert"
+          "agentResponseValue": "ViBert que mejor encaje"
         }
       ],
       "gapSummary": {
         "scrapingMiss": 14,
         "promptMiss": 0,
-        "hallucination": 3
+        "hallucination": 2
       },
       "recommendations": [
         "Scraping no encontro 14 modelo(s): Casa Aura, Casa Rosa, Casa Savona, Casa Capri, Casa Viena, Casa Menfis, Casa Serena, Casa Marsala, Casa Atenas, Casa Veneto, Quincho R, Quincho M, Quincho L, Quincho XL. Revisar firecrawl.ts URL patterns.",
-        "3 dato(s) inventados por el agente. Reforzar anti-hallucination en prompt-generator.ts."
+        "2 dato(s) inventados por el agente. Reforzar anti-hallucination en prompt-generator.ts."
       ]
     },
     {
       "company": "Ecomod",
       "url": "https://ecomod.com.ar/",
-      "diagnosedAt": "2026-02-06T14:56:47.385Z",
+      "diagnosedAt": "2026-02-06T15:05:59.009Z",
       "overallScore": 64,
       "scoreBreakdown": {
         "productCoverage": 60,
@@ -272,7 +265,7 @@
     {
       "company": "Movilhauss",
       "url": "https://movilhauss.com",
-      "diagnosedAt": "2026-02-06T14:56:47.385Z",
+      "diagnosedAt": "2026-02-06T15:05:59.009Z",
       "overallScore": 30,
       "scoreBreakdown": {
         "productCoverage": 0,
@@ -354,7 +347,7 @@
     {
       "company": "PlugArq",
       "url": "https://www.plugarq.com/",
-      "diagnosedAt": "2026-02-06T14:56:47.386Z",
+      "diagnosedAt": "2026-02-06T15:05:59.010Z",
       "overallScore": 85,
       "scoreBreakdown": {
         "productCoverage": 100,
@@ -377,7 +370,7 @@
     {
       "company": "Lucys House",
       "url": "https://www.lucyshousearg.com/",
-      "diagnosedAt": "2026-02-06T14:56:47.387Z",
+      "diagnosedAt": "2026-02-06T15:05:59.011Z",
       "overallScore": 23,
       "scoreBreakdown": {
         "productCoverage": 13,
@@ -529,7 +522,7 @@
     {
       "company": "Sienna Modular",
       "url": "https://www.siennamodular.com.ar/",
-      "diagnosedAt": "2026-02-06T14:56:47.388Z",
+      "diagnosedAt": "2026-02-06T15:05:59.012Z",
       "overallScore": 35,
       "scoreBreakdown": {
         "productCoverage": 0,
@@ -570,7 +563,7 @@
     {
       "company": "Grupo Steimberg",
       "url": "https://www.gruposteimberg.com/",
-      "diagnosedAt": "2026-02-06T14:56:47.388Z",
+      "diagnosedAt": "2026-02-06T15:05:59.012Z",
       "overallScore": 85,
       "scoreBreakdown": {
         "productCoverage": 100,
@@ -580,7 +573,7 @@
         "identityMatch": 100
       },
       "groundTruthModels": 0,
-      "systemPromptModels": 2,
+      "systemPromptModels": 3,
       "agentResponseModels": 0,
       "gaps": [],
       "gapSummary": {
@@ -593,7 +586,7 @@
     {
       "company": "T1 Modular",
       "url": "https://www.t1modular.com.ar/",
-      "diagnosedAt": "2026-02-06T14:56:47.389Z",
+      "diagnosedAt": "2026-02-06T15:05:59.013Z",
       "overallScore": 61,
       "scoreBreakdown": {
         "productCoverage": 30,
@@ -668,7 +661,7 @@
     {
       "company": "Habika",
       "url": "https://habika.ar/",
-      "diagnosedAt": "2026-02-06T14:56:47.390Z",
+      "diagnosedAt": "2026-02-06T15:05:59.013Z",
       "overallScore": 85,
       "scoreBreakdown": {
         "productCoverage": 100,
@@ -691,7 +684,7 @@
     {
       "company": "Arcohouse",
       "url": "https://arcohouse.com.ar/",
-      "diagnosedAt": "2026-02-06T14:56:47.390Z",
+      "diagnosedAt": "2026-02-06T15:05:59.014Z",
       "overallScore": 20,
       "scoreBreakdown": {
         "productCoverage": 0,
@@ -746,7 +739,7 @@
     {
       "company": "Wellmod",
       "url": "https://www.wellmod.com.ar/",
-      "diagnosedAt": "2026-02-06T14:56:47.392Z",
+      "diagnosedAt": "2026-02-06T15:05:59.016Z",
       "overallScore": 46,
       "scoreBreakdown": {
         "productCoverage": 34,
@@ -959,7 +952,7 @@
     {
       "company": "Mini Casas",
       "url": "https://www.minicasas.com.ar/",
-      "diagnosedAt": "2026-02-06T14:56:47.393Z",
+      "diagnosedAt": "2026-02-06T15:05:59.017Z",
       "overallScore": 50,
       "scoreBreakdown": {
         "productCoverage": 0,
@@ -1027,7 +1020,7 @@
     {
       "company": "Offis",
       "url": "https://www.offis.ar/",
-      "diagnosedAt": "2026-02-06T14:56:47.394Z",
+      "diagnosedAt": "2026-02-06T15:05:59.017Z",
       "overallScore": 15,
       "scoreBreakdown": {
         "productCoverage": 0,
@@ -1162,7 +1155,7 @@
     {
       "company": "Efede",
       "url": "https://efede.com.ar/casas-modulares/",
-      "diagnosedAt": "2026-02-06T14:56:47.394Z",
+      "diagnosedAt": "2026-02-06T15:05:59.018Z",
       "overallScore": 85,
       "scoreBreakdown": {
         "productCoverage": 100,
@@ -1185,7 +1178,7 @@
     {
       "company": "GoHome",
       "url": "https://gohomeconstrucciones.com.ar/",
-      "diagnosedAt": "2026-02-06T14:56:47.395Z",
+      "diagnosedAt": "2026-02-06T15:05:59.018Z",
       "overallScore": 75,
       "scoreBreakdown": {
         "productCoverage": 100,
@@ -1219,7 +1212,7 @@
     {
       "company": "Aftamantes",
       "url": "https://aftamantes.net/refugios/",
-      "diagnosedAt": "2026-02-06T14:56:47.396Z",
+      "diagnosedAt": "2026-02-06T15:05:59.019Z",
       "overallScore": 73,
       "scoreBreakdown": {
         "productCoverage": 67,
@@ -1252,7 +1245,7 @@
     {
       "company": "Lista",
       "url": "https://lista.com.ar/",
-      "diagnosedAt": "2026-02-06T14:56:47.396Z",
+      "diagnosedAt": "2026-02-06T15:05:59.020Z",
       "overallScore": 30,
       "scoreBreakdown": {
         "productCoverage": 0,

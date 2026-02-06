@@ -1,66 +1,182 @@
 {
   "company": "Habitatio",
   "url": "https://habitatio.com.ar",
-  "testedAt": "2026-02-06T10:38:49.890Z",
-  "sessionId": "c47ab647-d509-4d5d-b31e-51ebf6695e4f",
-  "systemPromptLength": 21552,
+  "testedAt": "2026-02-06T15:50:57.586Z",
+  "sessionId": "ec1f394b-15b9-43d3-a1de-d0aaa0c32ece",
+  "systemPromptLength": 20853,
   "systemPromptModelsFound": [
-    "Casa Flat Pack - N/A",
-    "Casa Folding - N/A",
-    "Casa Flat Pack Loft - 1 dorm - 1 bano",
-    "Casa Cabaña Flat Pack Individual",
-    "Primero muestra los modelos disponibles",
-    "Si ninguno encaja, ofrece la opcion de diseno pers",
-    "Pregunta que prefiere el cliente"
+    "Módulo Habitacional",
+    "Módulo Comercial",
+    "Modulos Habitacionales",
+    "Flat Pack",
+    "Folding"
   ],
-  "systemPromptType": "de Constructora**: MIXTA",
+  "systemPromptType": "de Módulos estas buscando?\"",
   "conversations": [
     {
-      "question": "?Que modelos tienen disponibles?",
-      "questionType": "base",
-      "response": "Tenemos estas opciones de catálogo habitacional:\n\n- **Casa Flat Pack** (módulo Flat Pack estándar, diseño innovador con DVH para máximo confort térmico y acústico).  \n- **Casa Folding** (módulo Folding, simple, rápido y funcional).  \n- **Casa Flat Pack Loft**: 1 dormitorio en planta alta + 1 baño completo en planta baja, con cocina-comedor-living integrados y grandes ventanales.  \n- **Cabaña Flat Pack Individual**: un solo módulo, súper compacto y funcional, ideal como monoambiente, estudio o cabañita chica.\n\nSi ninguno se ajusta a lo que necesitás, también hacemos **proyectos a medida**. Para orientarte mejor, ¿qué tamaño de casa estás buscando aproximadamente (m² o cantidad de ambientes)?",
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Habitatio es una empresa de soluciones modulares para vivienda y trabajo: hacemos espacios listos para usar, construidos en fábrica y transportados a donde vos los necesites. Trabajamos con Módulo Habitacional, Módulo Comercial, Modulos Habitacionales (para vivienda, oficinas, obradores, dormitorios), y sistemas Flat Pack y Folding.  \n\nNos ocupamos de todo el proceso: diseño, construcción, transporte e instalación, con respaldo de nuestra constructora Bewerk Proyectos SRL y la logística de IT Transport. Además, ofrecemos financiación para que puedas acceder a tu módulo sin tanta inversión inicial.  \n\nPara orientarte mejor, ¿qué tipo de Módulos estás buscando: vivienda, oficina, turístico, obrador u otro uso?",
+      "mentionedModels": [
+        "Módulo Habitacional",
+        "Módulo Comercial",
+        "Modulos Habitacionales",
+        "Flat Pack",
+        "Folding"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3062
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos espacios modulares y un servicio integral “llave en mano” desde la fabricación hasta la instalación en tu terreno. Nuestros principales productos son:\n\n- **Módulo Habitacional**: viviendas modulares listas para habitar, con confort, diseño y rapidez de instalación.  \n- **Módulo Comercial**: oficinas, vestuarios, comedores y espacios de trabajo adaptados a la operación de tu empresa.  \n- **Modulos Habitacionales**: gama amplia para vivienda, oficinas, obradores y dormitorios, con diseño personalizado, adaptabilidad, transporte e instalación incluidos.  \n- **Flat Pack** (incluye opciones como Flat Pack Loft y cabaña Flat Pack individual): sistema innovador con DVH, alta aislación térmica/acústica, transporte compacto y montaje rápido.  \n- **Folding**: módulos plegables, simples, rápidos y funcionales para usos temporales o donde se necesita mucha velocidad de instalación.  \n\nAdemás, brindamos **asesoramiento, producción a medida, transporte a cualquier punto del país, instalación profesional y financiación**.  \nPara ayudarte mejor, ¿en qué uso estás pensando: vivienda permanente, cabaña turística, oficina, obrador u otro?",
+      "mentionedModels": [
+        "Módulo Habitacional",
+        "Módulo Comercial",
+        "Modulos Habitacionales",
+        "Flat Pack",
+        "Folding"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 6282
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Por ahora tengo cargado solo el mail de contacto directo: **info@habitatio.com.ar**.  \n\nNo tengo el número de WhatsApp/telefono actualizado acá, pero en la web de Habitatio tenés el botón de **“Start Chat”** y el acceso al **WhatsApp comercial**, desde donde te atiende el equipo y te pasan toda la info de módulos y precios.",
       "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4832
+    },
+    {
+      "question": "¿Cuántos módulos ofrecen?",
+      "questionType": "product_count",
+      "response": "En Habitatio trabajamos con **5 líneas principales de Módulos**:  \n1. **Módulo Habitacional**  \n2. **Módulo Comercial**  \n3. **Modulos Habitacionales** (vivienda, oficinas, obradores, dormitorios)  \n4. **Flat Pack** (incluye variantes como Flat Pack Loft y cabaña Flat Pack individual)  \n5. **Folding**  \n\nCada línea se puede configurar y personalizar según el uso y los m² que necesites. Para afinar opciones, ¿qué tipo de Módulos estás buscando?",
+      "mentionedModels": [
+        "Módulo Habitacional",
+        "Módulo Comercial",
+        "Modulos Habitacionales",
+        "Flat Pack",
+        "Folding"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2102
+    },
+    {
+      "question": "Contame sobre Módulo Habitacional",
+      "questionType": "product_specific",
+      "response": "El **Módulo Habitacional** es nuestra solución de vivienda modular lista para habitar, pensada para que tengas una casa rápida, cómoda y bien diseñada sin obra tradicional. Se fabrica en planta, se transporta a tu terreno y se instala en muy poco tiempo, con foco en **confort, diseño y rapidez**.  \n\nLo usamos tanto para vivienda permanente como para cabañas de alquiler, ampliaciones de casa o segundas viviendas, y se puede combinar con otros módulos para crecer en el tiempo.  \nPara orientarte mejor, ¿ya tenés terreno y en qué zona sería la instalación?",
+      "mentionedModels": [
+        "Módulo Habitacional"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2886
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Módulo Habitacional? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "En Módulo Habitacional trabajamos de forma **modular y a medida**, por eso no hay un único tamaño fijo: podés armar desde unidades tipo monoambiente hasta configuraciones con varios dormitorios combinando módulos. Los mismos principios constructivos que ves en nuestros **Flat Pack** aplican a los demás módulos: paneles aislantes con **alto confort térmico y acústico**, aberturas con **DVH (doble vidriado hermético)** en la línea Flat Pack, diseño compacto y eficiente, y montaje rápido en tu terreno.\n\nLa superficie y cantidad de dormitorios se definen según el proyecto (por ejemplo: módulo tipo cabaña, ampliación, vivienda principal, etc.), y se pueden sumar o apilar módulos para crecer en m². No tengo acá un cuadro técnico específico de Módulo Habitacional con m² y tipologías cerradas; se resuelve por diseño según cada caso.  \n\nPara poder decirte qué superficie y distribución te conviene, ¿para cuántas personas sería y qué idea tenés: monoambiente, 1 dormitorio, 2 dormitorios o más?",
+      "mentionedModels": [
+        "Módulo Habitacional",
+        "Flat Pack"
+      ],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 3072
+      "responseTimeMs": 4375
     },
     {
-      "question": "?Cuantos modelos/proyectos ofrecen?",
-      "questionType": "base",
-      "response": "Te cuento cómo trabajamos en Habitatio:\n\n1) **Modelos de catálogo (4 opciones habitacionales principales):**  \n- Casa Flat Pack  \n- Casa Folding  \n- Casa Flat Pack Loft (1 dorm + 1 baño)  \n- Cabaña Flat Pack Individual (módulo único, tipo monoambiente)\n\n2) **Proyectos personalizados:** además del catálogo, hacemos **diseños a medida** según tus necesidades (más dormitorios, ampliaciones, uso comercial, etc.).\n\nEn resumen: hoy tenés **4 modelos estándar** + la opción de **proyecto personalizado**. Para ayudarte a elegir, ¿preferís partir de un modelo existente o pensar algo totalmente a medida?",
+      "question": "Contame sobre Módulo Comercial",
+      "questionType": "product_specific",
+      "response": "El **Módulo Comercial** está pensado para empresas y emprendimientos que necesitan **oficinas, vestuarios, comedores u otros espacios de trabajo** listos para usar, sin obra húmeda ni demoras. Se diseña de forma funcional según tu operación: circulación del personal, puestos de trabajo, lockers, sanitarios, comedor, etc.\n\nAl igual que el resto de nuestros módulos, se fabrica en planta, se transporta a tu predio y se instala rápido, con **diseño adaptable** y posibilidad de sumar más módulos a futuro.  \nPara ajustarlo a lo que necesitás, ¿en qué tipo de uso comercial/industrial estás pensando (oficina de obra, vestuarios, comedor, local, otro)?",
+      "mentionedModels": [
+        "Módulo Comercial"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3755
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Módulo Comercial? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "En **Módulo Comercial** no manejamos una sola medida estándar, sino superficies configurables según el uso: podés ir desde un módulo chico tipo oficina de obra hasta conjuntos más grandes para **oficinas, vestuarios y comedores** combinando varios módulos. La distribución se arma según tu operación: puestos de trabajo, salas de reunión, sectores de lockers, duchas y sanitarios, área de comedor, etc.\n\nEn características generales, siguen la lógica de nuestros sistemas modulares: estructura industrializada, paneles con buena aislación, diseño funcional, instalación rápida en tu predio y posibilidad de ampliación futura sumando más módulos.  \nPara poder orientarte con una superficie aproximada, ¿para cuántas personas necesitás el espacio y qué uso principal tendría (oficinas, vestuarios, comedor, mixto)?",
+      "mentionedModels": [
+        "Módulo Comercial"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3284
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Nosotros fabricamos el módulo en planta y vos lo recibís casi listo para usar: primero hacemos el **asesoramiento y diseño**, después la **producción a medida** con nuestra constructora Bewerk Proyectos SRL, luego **IT Transport** lo lleva a tu terreno y nuestro equipo hace la **instalación profesional**. Todo el proceso está centralizado en un solo equipo, sin que tengas que coordinar terceros.  \n\nEl tiempo exacto depende del tipo de módulo (Módulo Habitacional, Módulo Comercial, Flat Pack, etc.) y del tamaño del proyecto, pero la instalación en sitio es muy rápida comparada con la obra tradicional.  \nPara estimar mejor los plazos en tu caso, ¿qué tipo de Módulos estás buscando y para cuándo lo necesitarías?",
+      "mentionedModels": [
+        "Módulo Habitacional",
+        "Módulo Comercial",
+        "Flat Pack"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3730
+    },
+    {
+      "question": "¿Se pueden personalizar los módulos?",
+      "questionType": "customization",
+      "response": "Sí, los módulos se pueden personalizar bastante. En **Modulos Habitacionales, Módulo Habitacional y Módulo Comercial** adaptamos distribución interna, usos (vivienda, oficina, obrador, dormitorios, vestuarios, comedor), y configuraciones combinando más de un módulo.  \n\nEn **Flat Pack** también podés jugar con el diseño: por ejemplo, Flat Pack Loft (dos módulos, planta baja + habitación arriba) o cabaña Flat Pack individual (un solo módulo, súper funcional).  \nPara ayudarte mejor, ¿qué te gustaría personalizar: cantidad de ambientes/dormitorios, tipo de terminaciones, uso (turístico, vivienda, oficina), o todo un proyecto a medida?",
+      "mentionedModels": [
+        "Módulo Habitacional",
+        "Módulo Comercial",
+        "Modulos Habitacionales",
+        "Flat Pack"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2949
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, ofrecemos **financiación** para que puedas acceder a los módulos sin pagar todo de una vez. Los planes se adaptan según el tipo de módulo (Módulo Habitacional, Módulo Comercial, Modulos Habitacionales, Flat Pack o Folding) y el monto del proyecto.  \n\nNo tengo por acá el detalle fino de cuotas y requisitos, así que para ver opciones concretas te sugiero escribirnos a **info@habitatio.com.ar** o vía WhatsApp desde la web.  \nAprovecho para preguntarte: ¿qué presupuesto manejás aproximadamente y qué tipo de Módulos estás buscando?",
+      "mentionedModels": [
+        "Módulo Habitacional",
+        "Módulo Comercial",
+        "Modulos Habitacionales",
+        "Flat Pack",
+        "Folding"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2615
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Nos diferencia que ofrecemos un **servicio 100% integral**: diseño, fabricación, transporte e instalación final, todo con el mismo equipo, sin que tengas que coordinar contratistas por separado. Además, contamos con el respaldo constructivo de **Bewerk Proyectos SRL** y la logística especializada de **IT Transport**, lo que asegura calidad y entregas seguras en todo el país.  \n\nNuestros sistemas como **Flat Pack** se destacan por el **DVH, alta aislación térmica y acústica, transporte compacto e instalación muy rápida**, y todos los Módulos (Habitacional, Comercial, Modulos Habitacionales y Folding) son configurables y escalables según cómo quieras crecer.  \nPara ver qué diferencial te suma más, ¿estás pensando en vivienda, cabañas turísticas, oficinas o espacios para obra?",
+      "mentionedModels": [
+        "Modulos Habitacionales",
+        "Flat Pack",
+        "Folding"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3280
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "Llegamos a **cualquier punto del país**: trabajamos con la logística especializada de **IT Transport**, que se encarga de trasladar los módulos hasta tu terreno y coordinar la descarga.  \n\nLa instalación final la hace nuestro equipo técnico, dejándote el espacio listo para usar.  \nPodría haber particularidades según accesos o caminos rurales; ¿en qué localidad o provincia tenés el terreno así te orientó mejor?",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 3546
-    },
-    {
-      "question": "?Cuanto cuesta el modelo mas economico?",
-      "questionType": "base",
-      "response": "El modelo más económico suele ser la **Cabaña Flat Pack Individual**, que es el módulo más chico y compacto (ideal monoambiente / estudio).  \nNo tengo los precios actualizados cargados, así que no puedo pasarte un valor concreto por acá; te sugiero consultarlo por WhatsApp o mail para que te pasen la lista vigente: +54 9 11 3059-2028 · info@habitatio.com.ar.  \n\nMientras tanto, para orientarte mejor: ¿ya tenés terreno? ¿En qué zona sería la instalación?",
-      "mentionedModels": [],
-      "saidNoInfo": true,
-      "hasSpecificData": false,
-      "responseTimeMs": 3508
-    },
-    {
-      "question": "?Tienen financiamiento o planes de pago?",
-      "questionType": "base",
-      "response": "No tengo info específica de financiamiento o planes de pago cargada en el sistema.  \nLo que sí puedo decirte es que suelen manejarse distintas formas de pago según el proyecto, así que lo mejor es verlo directo con el equipo comercial por WhatsApp al +54 9 11 3059-2028 o por mail a info@habitatio.com.ar.  \n\nPara ir avanzando y ver qué opción podría adaptarse mejor a vos: ¿qué presupuesto aproximado estás manejando?",
-      "mentionedModels": [],
-      "saidNoInfo": false,
-      "hasSpecificData": false,
-      "responseTimeMs": 3015
-    },
-    {
-      "question": "?Cual es su WhatsApp o telefono de contacto?",
-      "questionType": "base",
-      "response": "Te paso los datos completos de contacto de Habitatio:\n\n- 📞 **WhatsApp / Teléfono:** +54 9 11 3059-2028  \n- 📧 **Email:** info@habitatio.com.ar  \n\nSi querés, también podemos avanzar por acá: ¿qué tamaño de casa estás buscando?",
-      "mentionedModels": [],
-      "saidNoInfo": false,
-      "hasSpecificData": false,
-      "responseTimeMs": 1846
+      "responseTimeMs": 3765
     }
   ],
-  "sessionCreationTimeMs": 66150,
+  "sessionCreationTimeMs": 45281,
   "errors": []
 }

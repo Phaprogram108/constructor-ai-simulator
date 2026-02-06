@@ -1,65 +1,181 @@
 {
   "company": "Efede",
   "url": "https://efede.com.ar/casas-modulares/",
-  "testedAt": "2026-02-06T11:00:58.240Z",
-  "sessionId": "e6626f4f-89b1-4985-934e-43d40ea7ebb4",
-  "systemPromptLength": 21402,
+  "testedAt": "2026-02-06T15:55:51.942Z",
+  "sessionId": "91e932ac-0305-4114-9c2b-ce1cfcd88751",
+  "systemPromptLength": 21795,
   "systemPromptModelsFound": [
-    "casa modular MHZ - 32m2 - 1 dorm - 1 bano - Consul",
-    "casa modular MC1 - 29m2 - 1 dorm - 1 bano - Consul",
-    "casa modular MZB2 - 54m2 - 2 dorm - 2 banos - Cons",
-    "casa modular MT1 - 15m2 - 1 dorm - 1 bano - Consul",
-    "Casa MO1 - 15m2 - 1 bano - Consultar",
-    "Casa MO5 - 30m2 - 1 bano - Consultar"
+    "MO1",
+    "MO5",
+    "MC1",
+    "MZB2",
+    "MT1",
+    "casa modular MHZ",
+    "casa modular MC1",
+    "casa modular MZB2",
+    "casa modular MT1"
   ],
-  "systemPromptType": "independiente, fabricada con perfiles y tubos de acero",
+  "systemPromptType": "independiente con perfiles y tubos de acero, pintura de alta resistencia a la corrosión.",
   "conversations": [
     {
-      "question": "?Que modelos tienen disponibles?",
-      "questionType": "base",
-      "response": "Tenemos varias opciones según el uso que le quieras dar.  \nEn viviendas, contamos con:  \n- **MHZ**: 32 m², 1 dormitorio, 1 baño, living/comedor y cocina.  \n- **MC1**: 29 m², 1 dormitorio, 1 baño, comedor y cocina.  \n- **MZB2**: 54 m², 2 dormitorios y 2 baños, con living y cocina comedor.\n\nEn modelos más compactos y de oficina:  \n- **MT1**: 15 m², 1 dormitorio + baño con antebaño (ideal monoambiente/estudio).  \n- **MO1**: 15 m², oficina privada, kitchenette y baño.  \n- **MO5**: 30 m², oficina privada, sala de reuniones, kitchenette y baño.\n\nPara ayudarte mejor, ¿qué tamaño de casa estás buscando (cantidad de dormitorios o m²)?",
-      "mentionedModels": [],
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Somos EFede, una empresa argentina que fabrica casas modulares transportables con estructura de acero y pintura de alta resistencia a la corrosión. Diseñamos y construimos módulos habitacionales y oficinas que se producen en unos 60 días y se instalan en pocos días en tu terreno, con confort similar a una vivienda tradicional.  \n\nTrabajamos con distintas tipologías: línea Premium (MHZ, MC1, MZB2), línea Basic (MT1) y línea Office (MO1 y MO5), que podés usar como casa, estudio, oficina o ampliación. ¿Qué tipo de tipologías, modelos estás buscando: vivienda, oficina o algo mixto?",
+      "mentionedModels": [
+        "MO1",
+        "MO5",
+        "MC1",
+        "MZB2",
+        "MT1"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3382
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos casas modulares transportables fabricadas en sistema industrializado, con estructura independiente de perfiles y tubos de acero, base tipo cajón y cubierta metálica con doble aislamiento para alto confort térmico y acústico.  \n\nEn productos, tenemos:\n- **Línea Premium vivienda**:  \n  - **MHZ (32 m²)**: living/comedor, cocina, 1 dormitorio y baño.  \n  - **MC1 (29 m²)**: comedor, cocina, 1 dormitorio y baño.  \n  - **MZB2 (54 m²)**: living, cocina comedor, 2 dormitorios y 2 baños.  \n- **Línea Basic**:  \n  - **MT1 (15 m²)**: 1 dormitorio, baño y antebaño.  \n- **Línea Office**:  \n  - **MO1 (15 m²)**: oficina privada, kitchenette y baño.  \n  - **MO5 (30 m²)**: oficina privada, sala de reuniones, kitchenette y baño.  \n\nComo servicio, nos encargamos del diseño modular, fabricación en planta (en aprox. 60 días) y posterior instalación en tu terreno. ¿Estás pensando más en una vivienda (MHZ, MC1, MZB2, MT1) o en un módulo tipo oficina (MO1, MO5)?",
+      "mentionedModels": [
+        "MO1",
+        "MO5",
+        "MC1",
+        "MZB2",
+        "MT1"
+      ],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 5388
+      "responseTimeMs": 3056
     },
     {
-      "question": "?Cuantos modelos/proyectos ofrecen?",
-      "questionType": "base",
-      "response": "Ofrecemos **6 modelos** en total.  \nTres de **vivienda** (MHZ 32 m², MC1 29 m², MZB2 54 m²), uno **compacto tipo vivienda básica** (MT1 15 m²) y dos de **línea office** (MO1 15 m² y MO5 30 m²).  \n\nPara orientarte mejor entre estos seis, ¿ya viste algún modelo que te haya gustado o alguna medida que tengas en mente?",
-      "mentionedModels": [],
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "No tengo el número de WhatsApp o teléfono cargado acá, pero lo encontrás directo en la web oficial: **https://efede.com.ar/** (botón de WhatsApp abajo a la derecha).  \n\nSi querés, contame en qué zona estás y qué tipología te interesa (MHZ, MC1, MZB2, MT1, MO1 o MO5) así te digo exactamente qué preguntarle al asesor cuando los contactes.",
+      "mentionedModels": [
+        "MO1",
+        "MO5",
+        "MC1",
+        "MZB2",
+        "MT1"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3716
+    },
+    {
+      "question": "¿Cuántos modelos de casas ofrecen?",
+      "questionType": "product_count",
+      "response": "En casas ofrecemos **4 tipologías habitacionales** y, además, **2 modelos de oficina**.  \n\nCasas:\n- **MHZ (32 m²)**: living/comedor, cocina, 1 dormitorio y baño.  \n- **MC1 (29 m²)**: comedor, cocina, 1 dormitorio y baño.  \n- **MZB2 (54 m²)**: living, cocina comedor, 2 dormitorios y 2 baños.  \n- **MT1 (15 m²)**: 1 dormitorio, baño y antebaño.  \n\nOficinas:\n- **MO1 (15 m²)**: oficina privada, kitchenette y baño.  \n- **MO5 (30 m²)**: oficina privada, sala de reuniones, kitchenette y baño.  \n\nPara orientarte mejor: ¿buscás algo para vivienda permanente, casa de fin de semana o más bien un módulo tipo oficina?",
+      "mentionedModels": [
+        "MO1",
+        "MO5",
+        "MC1",
+        "MZB2",
+        "MT1"
+      ],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 2716
+      "responseTimeMs": 3098
     },
     {
-      "question": "?Cuanto cuesta el modelo mas economico?",
-      "questionType": "base",
-      "response": "El modelo más económico que tenemos es el **MT1**, de **15 m²**, con 1 dormitorio y baño con antebaño.  \nNo tengo los precios actualizados cargados. Te sugiero consultarlo por WhatsApp, así te pasan el valor al día y las formas de pago.  \n\nMientras tanto, ¿sería para vivienda permanente, tipo cabaña de fin de semana o algo más estilo estudio/quincho?",
-      "mentionedModels": [],
-      "saidNoInfo": true,
+      "question": "Contame sobre casa modular MHZ",
+      "questionType": "product_specific",
+      "response": "La **casa modular MHZ** es de la **Línea Premium**, tiene **32 m²** y está pensada para una persona o pareja que quiera algo cómodo pero compacto. Incluye **living/comedor integrado, cocina, 1 dormitorio y 1 baño**, con el mismo sistema constructivo de estructura de acero y cubierta metálica con doble aislamiento, lo que da muy buen confort térmico y acústico.  \n\nSe fabrica en un proceso industrializado en unos **60 días** y luego se instala en pocos días en tu terreno, con la ventaja de que es **transportable y ampliable** a futuro. ¿La pensás como vivienda principal, casa de fin de semana o tipo cabaña para alquiler?",
+      "mentionedModels": [
+        "casa modular MHZ"
+      ],
+      "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 2092
+      "responseTimeMs": 2672
     },
     {
-      "question": "?Tienen financiamiento o planes de pago?",
-      "questionType": "base",
-      "response": "No tengo cargada la info específica de financiamiento o planes de pago.  \nLo que sí te recomiendo es consultarlo por WhatsApp, donde te pueden detallar si trabajan con financiación propia, anticipos y cuotas, o convenios bancarios.  \n\nPara ir avanzando y ver qué modelo podría encajar mejor con vos: ¿ya tenés el terreno? ¿En qué zona sería?",
+      "question": "¿Cuáles son los detalles técnicos de casa modular MHZ? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "La **casa modular MHZ** es una tipología **Premium** de **32 m²** de superficie cubierta. La distribución incluye **living/comedor**, **cocina**, **1 dormitorio** y **1 baño**, ideal para una persona o pareja.  \n\nEn cuanto a características técnicas, se construye con **estructura independiente de perfiles y tubos de acero** con **pintura de alta resistencia a la corrosión**, base tipo cajón, y **cubierta metálica con chapa prepintada y doble aislamiento de poliuretano + doble cera de aluminio**, lo que mejora el **aislamiento térmico y acústico** y la durabilidad. Además, es un módulo **transportable, ampliable** y se fabrica en unos **60 días** en planta para luego instalarse en tu terreno en pocos días.  \n\nPara ayudarte mejor con la MHZ: ¿ya tenés terreno? ¿En qué zona sería?",
+      "mentionedModels": [
+        "casa modular MHZ"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4047
+    },
+    {
+      "question": "Contame sobre casa modular MC1",
+      "questionType": "product_specific",
+      "response": "La **casa modular MC1** es una tipología **Premium** de **29 m²**, muy similar a la MHZ pero un poco más compacta, ideal para una persona o pareja que quiere algo funcional y bien resuelto. Incluye **comedor**, **cocina**, **1 dormitorio** y **1 baño**, con el mismo sistema constructivo de EFede: **estructura independiente de acero** con pintura anticorrosiva y **cubierta metálica con doble aislamiento**, lo que asegura buen confort térmico y acústico.  \n\nSe fabrica en un proceso industrializado en aprox. **60 días** y luego se instala en tu terreno en pocos días, siendo un módulo **transportable y ampliable** a futuro. ¿La estás pensando como vivienda principal, casa de fin de semana o para alquiler tipo cabaña?",
+      "mentionedModels": [
+        "MC1",
+        "casa modular MC1"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2932
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de casa modular MC1? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "La **casa modular MC1** es una tipología **Premium** de **29 m²** de superficie cubierta. La distribución incluye **comedor**, **cocina**, **1 dormitorio** y **1 baño**, pensada para una persona o pareja que busca algo compacto pero completo.  \n\nEn lo técnico, usa **estructura independiente de perfiles y tubos de acero** con **pintura de alta resistencia a la corrosión**, base inferior tipo cajón, y **cubierta metálica de chapa prepintada con doble aislamiento de poliuretano y doble cera de aluminio**, lo que le da **muy buen aislamiento térmico y acústico** y alta durabilidad. Es un módulo **transportable, ampliable** y se fabrica en aprox. **60 días** en planta, para luego instalarse en tu terreno en pocos días.  \n\nPara afinar si la MC1 te encaja: ¿ya tenés terreno? ¿En qué zona estás?",
+      "mentionedModels": [
+        "MC1",
+        "casa modular MC1"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3520
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con un **proceso constructivo industrializado**: fabricamos la casa modular completa en planta, en un ambiente controlado, ensamblando la **estructura de acero**, la base tipo cajón, la cubierta metálica con doble aislamiento y todos los componentes interiores (instalaciones, terminaciones, etc.). Una vez listo el módulo, se **transporta al terreno y se instala en pocos días**, dejando la unidad lista para habitar.  \n\nEl plazo estándar de fabricación es de alrededor de **60 días** (puede variar según los m² y la tipología: MHZ, MC1, MZB2, MT1, MO1, MO5). ¿Para cuándo la necesitarías aproximadamente y en qué zona tenés pensado instalarla?",
+      "mentionedModels": [
+        "MO1",
+        "MO5",
+        "MC1",
+        "MZB2",
+        "MT1"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2825
+    },
+    {
+      "question": "¿Se pueden personalizar los modelos de casas?",
+      "questionType": "customization",
+      "response": "Sí, las casas modulares se pueden **personalizar** dentro de cada tipología (MHZ, MC1, MZB2, MT1), por ejemplo en **terminaciones, equipamiento, algunas distribuciones internas y detalles estéticos**, manteniendo siempre el sistema estructural de acero y el formato modular. Además, al ser módulos transportables y ampliables, podés **arrancar con un modelo y luego sumarle otro** para crecer en m² o agregar ambientes.  \n\nPara orientarte mejor, contame: ¿qué tipología te interesa (MHZ, MC1, MZB2 o MT1) y qué cambios te gustaría hacer: distribución interna, materiales, más aberturas, etc.?",
+      "mentionedModels": [
+        "MC1",
+        "MZB2",
+        "MT1"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3152
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Nos diferencia, primero, el **sistema constructivo**: usamos **estructura independiente de perfiles y tubos de acero** con pintura de alta resistencia a la corrosión y **cubierta metálica con doble aislamiento de poliuretano y doble cera de aluminio**, lo que da un **confort térmico y acústico muy superior** y alta durabilidad.  \n\nSegundo, el **proceso industrializado en planta**: fabricamos la casa en unos **60 días** en ambiente controlado y la instalamos en tu terreno en pocos días, con mínimo impacto en el entorno. Además, nuestras tipologías (MHZ, MC1, MZB2, MT1, MO1, MO5) son **transportables, ampliables y pensadas para bajo impacto ambiental y eficiencia energética**.  \n\nPara saber si somos buena opción para vos: ¿estás buscando más rapidez de entrega, mejor calidad constructiva o flexibilidad para ampliar a futuro?",
+      "mentionedModels": [
+        "MO1",
+        "MO5",
+        "MC1",
+        "MZB2",
+        "MT1"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4232
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "No tengo cargada la info exacta de cobertura geográfica o provincias a las que llegamos. Podría ser posible en muchas zonas, pero para confirmarte flete, instalación y alcance preciso, lo mejor es que lo consultes directo por WhatsApp desde la web: **https://efede.com.ar/**.  \n\nMientras tanto, contame: ¿ya tenés terreno? ¿En qué zona estás así te ayudo a plantear bien la consulta al asesor?",
       "mentionedModels": [],
       "saidNoInfo": true,
       "hasSpecificData": false,
-      "responseTimeMs": 2945
-    },
-    {
-      "question": "?Cual es su WhatsApp o telefono de contacto?",
-      "questionType": "base",
-      "response": "Podés contactarnos directamente desde la web oficial de EFEDÉ:  \n👉 https://efede.com.ar/ (ahí vas a ver el ícono de WhatsApp abajo a la derecha para escribirnos directo).  \n\nNo tengo el número puntual cargado acá, pero por la web accedés al WhatsApp y a todos los teléfonos actualizados.",
-      "mentionedModels": [],
-      "saidNoInfo": false,
-      "hasSpecificData": false,
-      "responseTimeMs": 1851
+      "responseTimeMs": 1913
     }
   ],
-  "sessionCreationTimeMs": 37726,
+  "sessionCreationTimeMs": 18808,
   "errors": []
 }

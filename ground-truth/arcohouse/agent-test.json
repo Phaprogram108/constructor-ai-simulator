@@ -1,140 +1,199 @@
 {
   "company": "Arcohouse",
   "url": "https://arcohouse.com.ar/",
-  "testedAt": "2026-02-06T10:54:16.601Z",
-  "sessionId": "5105d249-8e41-4754-a263-8ad92e8a1464",
-  "systemPromptLength": 22252,
+  "testedAt": "2026-02-06T15:53:59.483Z",
+  "sessionId": "cb826b5b-ad9b-4f19-bcbb-61a68ca0d40b",
+  "systemPromptLength": 22690,
   "systemPromptModelsFound": [
-    "Casa Refugio Cobre - 30m2 - USD 9.500.000",
-    "Casa Refugio Limay - 80m2 - USD 20.250.000",
-    "Casa Montañes - 40m2 - USD 41.500.000",
-    "Casa Refugio Montañesito - 20m2 - USD 6.916.666",
-    "Casa Refugio Correntoso - 60m2 - USD 16.333.333",
-    "Casa Refugio Montañés - 40m2 - USD 11.833.333",
-    "Casa KIT el montañés - 47m2 - USD 15.500.000",
-    "Casa Kit Cobre - 37m2 - USD 13.000.000",
-    "Casa Kit Limay - 92m2 - USD 30.500.000",
-    "Casa Kit Montañesito - 23m2 - USD 9.800.000",
-    "Casa Kit Montañés - 47m2 - USD 15.500.000",
-    "Casa Kit Correntoso - 75m2 - USD 26.000.000",
-    "Casa Rollos de - 30m2",
-    "Casa Precio por rollo de - 30m2",
-    "Casa Montañesito - 20m2 - 1 dorm - 1 bano - ARS $4",
-    "Casa Cobre - 30m2 - 2 dorm - 1 bano - ARS $57.000.",
-    "Casa El Montañes - 40m2 - 2 dorm - 1 bano - ARS $7",
-    "Casa Correntoso - 60m2 - 3 dorm - 2 banos - ARS $9",
-    "Casa Limay - 80m2 - 4 dorm - 2 banos - ARS $121.50",
-    "Primero muestra los modelos disponibles",
-    "Si ninguno encaja, ofrece la opcion de diseno pers",
-    "Pregunta que prefiere el cliente"
+    "Productos relacionados",
+    "Kit Montañesito 23m2",
+    "Kit Cobre 37m2",
+    "Kit Limay 92m2",
+    "Kit Correntoso 75m2",
+    "Kit Montañés 47m2",
+    "Sustentabilidad",
+    "Cerrar",
+    "Montañes",
+    "Kit Montañesito",
+    "Kit Correntoso",
+    "Kit Cobre",
+    "Kit Limay",
+    "Kit Montañés",
+    "Refugio Limay",
+    "Refugio Correntoso",
+    "Rollos de",
+    "KIT el montañés",
+    "Montañesito 20m2",
+    "Cobre 30m2",
+    "El Montañes 40m2",
+    "Correntoso 60m2",
+    "Limay 80m2"
   ],
-  "systemPromptWhatsApp": "+5492604033077",
-  "systemPromptType": "de Constructora**: MIXTA",
+  "systemPromptWhatsApp": "5492604033077",
+  "systemPromptType": "de Modelos de refugios estas buscando?\"",
   "conversations": [
     {
-      "question": "?Que modelos tienen disponibles?",
-      "questionType": "base",
-      "response": "Tenemos dos modalidades: modelos de catálogo y proyectos a medida en hormigón premoldeado.  \nEn catálogo, hoy tenés:\n\n- Refugio Montañesito – 20 m² – 1 dorm – 1 baño – ARS $41.500.000 (+IVA)  \n- Refugio Cobre – 30 m² – 2 dorm – 1 baño – ARS $57.000.000 (+IVA) – incluye instalaciones y mobiliario, se puede financiar en 6 cuotas sin interés de $9.500.000  \n- Refugio El Montañés – 40 m² – 2 dorm – 1 baño – ARS $71.000.000 (+IVA)  \n- Refugio Correntoso – 60 m² – 3 dorm – 2 baños – ARS $98.000.000 (+IVA)  \n- Refugio Limay – 80 m² – 4 dorm – 2 baños – ARS $121.500.000 (+IVA) – también con financiación en 6 cuotas sin interés de $20.250.000  \n\nAdemás están las versiones KIT (Cobre, Limay, Montañés, Montañesito, Correntoso) en distintas superficies si preferís algo más flexible.  \nPara orientarte mejor: ¿qué tamaño de casa estás buscando aproximadamente?",
-      "mentionedModels": [],
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Arcohouse es una empresa que diseña y construye refugios y viviendas modulares pensadas para vivir en la naturaleza con diseño, calidez y alta eficiencia energética. Trabajamos con hormigón premoldeado y paneles SIP, ofrecemos modelos de refugios como Montañesito, Cobre, El Montañés, Correntoso y Limay, y también personalizamos espacios y muebles a medida. Además, construimos en San Rafael, Mendoza y contamos con opciones de financiación. ¿Estás pensando en un refugio para uso personal, alquiler turístico o inversión?",
+      "mentionedModels": [
+        "Montañes"
+      ],
       "saidNoInfo": false,
-      "hasSpecificData": true,
-      "responseTimeMs": 4452
+      "hasSpecificData": false,
+      "responseTimeMs": 2731
     },
     {
-      "question": "?Cuantos modelos/proyectos ofrecen?",
-      "questionType": "base",
-      "response": "Trabajamos con dos tipos de propuestas:  \n1) **Modelos de catálogo** (prefabricados/modulares) y **versiones KIT** de esos mismos modelos.  \n2) **Proyectos personalizados**, donde diseñamos a medida según tus necesidades.\n\nEn catálogo hoy tenés, como refugios llave en mano:  \n- **Montañesito 20 m²** – 1 dorm – 1 baño – ARS $41.500.000 (+IVA)  \n- **Cobre 30 m²** – 2 dorm – 1 baño – ARS $57.000.000 (+IVA) – incluye instalaciones y mobiliario, con financiación en 6 cuotas sin interés  \n- **El Montañés 40 m²** – 2 dorm – 1 baño – ARS $71.000.000 (+IVA)  \n- **Correntoso 60 m²** – 3 dorm – 2 baños – ARS $98.000.000 (+IVA)  \n- **Limay 80 m²** – 4 dorm – 2 baños – ARS $121.500.000 (+IVA) – también en 6 cuotas sin interés  \n\nY versiones **KIT** de: Cobre (37 m²), Limay (92 m²), Montañés (47 m²), Montañesito (23 m²), Correntoso (75 m²), además de opciones tipo refugio/rollos de 30 m².  \nSi ninguno encaja perfecto, podemos ir a un **proyecto 100% a medida**. Para ayudarte a elegir, ¿preferís partir de un modelo existente o pensar algo diseñado a medida?",
-      "mentionedModels": [],
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos refugios y viviendas modulares en distintos tamaños:  \n- Montañesito 20m2 (compacto, ideal escapadas o alquiler), Cobre 30m2 (para habitar e invertir), El Montañes 40m2 (nuestro modelo estrella), Correntoso 60m2 (pensado para familias e inversores) y Limay 80m2 (para vivir e invertir a la vez).  \nAdemás brindamos: construcción en hormigón premoldeado, diseño y personalización de espacios, fabricación de muebles a medida, equipamiento llave en mano y financiación, trabajando principalmente en San Rafael, Mendoza.  \nPara orientarte mejor, ¿qué tipo de Modelos de refugios estás buscando: algo chico tipo tiny house o algo más familiar?",
+      "mentionedModels": [
+        "Montañes",
+        "Montañesito 20m2",
+        "Cobre 30m2",
+        "El Montañes 40m2",
+        "Correntoso 60m2",
+        "Limay 80m2",
+        "MONTAÑESITO 20M2",
+        "COBRE 30M2"
+      ],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 6693
+      "responseTimeMs": 2691
     },
     {
-      "question": "?Cuanto cuesta el modelo mas economico?",
-      "questionType": "base",
-      "response": "El modelo más económico del catálogo es el **Refugio Montañesito de 20 m²**, con **1 dormitorio y 1 baño**, en **ARS $41.500.000 (+IVA)**.  \nEl siguiente es el **Refugio Cobre de 30 m²**, en **ARS $57.000.000 (+IVA)**, que ya incluye instalaciones completas y mobiliario de cocina y baño, y se puede financiar en **6 cuotas sin interés de $9.500.000**.  \n\nPara ver si te encaja: ¿ya tenés terreno? ¿En qué zona sería el proyecto?",
-      "mentionedModels": [],
-      "saidNoInfo": false,
-      "hasSpecificData": true,
-      "responseTimeMs": 2632
-    },
-    {
-      "question": "?Tienen financiamiento o planes de pago?",
-      "questionType": "base",
-      "response": "Sí, ofrecemos financiación.  \nPor ejemplo, el **Refugio Cobre 30 m²** se puede pagar en **6 cuotas sin interés de $9.500.000** y el **Refugio Limay 80 m²** en **6 cuotas sin interés de $20.250.000**, congelando el precio desde la primera cuota.  \n\nPodemos ver también otros planes según el modelo y el monto final.  \nPara orientarte mejor con las cuotas: ¿qué tamaño de casa estás buscando?",
-      "mentionedModels": [],
-      "saidNoInfo": false,
-      "hasSpecificData": true,
-      "responseTimeMs": 2226
-    },
-    {
-      "question": "?Cual es su WhatsApp o telefono de contacto?",
-      "questionType": "base",
-      "response": "Te podés contactar directo con nosotros por:  \n📞 Tel / WhatsApp: **+54 9 260 403 3077**  \n📧 Email: **emailjohnsmith@example.com**\n\nSi querés, contame antes qué tamaño de casa estás buscando y te dejo ya una sugerencia de modelo para que lo charles con el asesor.",
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Te dejo los datos de contacto directo:  \n- Teléfono / WhatsApp: +54 9 260 403 3077  \n- Email: emailjohnsmith@example.com  \n\nSi querés, contame qué modelo te interesa y te ayudo a armar un primer panorama antes de que te contacte un asesor.",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 3112
+      "responseTimeMs": 1751
     },
     {
-      "question": "?Cuales son las caracteristicas del modelo MONTAÑESITO 20M2?",
-      "questionType": "model_specific",
-      "response": "El Refugio **Montañesito 20 m²** es nuestro modelo más compacto de catálogo: viene con **1 dormitorio y 1 baño**, ideal como tiny house, estudio o primer refugio en el terreno.  \nEstá construido con nuestro sistema mixto pensado para naturaleza, con **hormigón premoldeado y muy buena aislación**, y se entrega como vivienda modular lista para habitar (tipo llave en mano, con instalaciones completas).  \n\nEn la línea de refugios, todos incluyen **instalaciones eléctricas y sanitarias completas** y mobiliario básico de cocina/baño, manteniendo la misma calidad de aberturas y terminaciones que los modelos más grandes.  \nSi querés, te comparo Montañesito con el **Cobre 30 m²** para que veas si te conviene sumar un poco más de metros.",
-      "mentionedModels": [],
-      "saidNoInfo": false,
-      "hasSpecificData": true,
-      "responseTimeMs": 4270
-    },
-    {
-      "question": "?Cuantos metros cuadrados tiene el MONTAÑESITO 20M2?",
-      "questionType": "model_specific",
-      "response": "El modelo Montañesito tiene **20 m² cubiertos**.  \nCon esos 20 m² se resuelve 1 dormitorio + 1 baño, pensado como refugio compacto o tiny house.",
-      "mentionedModels": [],
-      "saidNoInfo": false,
-      "hasSpecificData": true,
-      "responseTimeMs": 1317
-    },
-    {
-      "question": "?Cuales son las caracteristicas del modelo COBRE 30M2?",
-      "questionType": "model_specific",
-      "response": "El **Refugio Cobre 30 m²** es un módulo compacto con **2 dormitorios y 1 baño**, ideal como primera vivienda o casa de fin de semana. Cuesta **ARS $57.000.000 (+IVA)** o **6 cuotas sin interés de $9.500.000**, e **incluye instalaciones completas y mobiliario de cocina y baño**.\n\nEn cuanto a construcción, lleva **chasis de acero protegido**, piso fenólico doble con aislante EPS, **muros SIP (OSB/EPS)** y techo de madera maciza con aislación EPS.  \nTerminaciones: revestimiento exterior con **chapa trapezoidal negra**, interiores en fenólico clear, pisos **PVC SPC símil madera con manta acústica**, aberturas de **aluminio Aluar Módena negro con DVH** y puertas Oblak.\n\nEn cocina trae bajo mesada y alacena en melamina negra, **mesada de granito negro boreal**, grifería monocomando Piazza Gourmet y pileta Johnson.  \nEn baño: inodoro Piazza Amalfi, griferías Piazza negras, mampara fija, vanitory de laurel laqueado con bacha de piedra y accesorios Piazza negro mate.\n\nNo están incluidos como opcionales: bases pretensadas, transporte, estufa a leña, calefacción por radiadores/losa, electrodomésticos, deck/pérgola y amoblamiento de diseño.  \n¿Querés que te pase una comparación rápida entre Cobre 30 m² y Limay 80 m² para ver cuál se adapta mejor a lo que necesitás?",
-      "mentionedModels": [],
-      "saidNoInfo": false,
-      "hasSpecificData": true,
-      "responseTimeMs": 4342
-    },
-    {
-      "question": "?Cuantos metros cuadrados tiene el COBRE 30M2?",
-      "questionType": "model_specific",
-      "response": "El modelo Cobre tiene **30 m² cubiertos**.  \nEn esos 30 m² se distribuyen **2 dormitorios y 1 baño**, más el espacio de cocina/estar integrado.",
+      "question": "¿Cuántos modelos ofrecen?",
+      "questionType": "product_count",
+      "response": "Tenemos cinco Modelos de refugios principales:  \n- Montañesito 20m2  \n- Cobre 30m2  \n- El Montañes 40m2  \n- Correntoso 60m2  \n- Limay 80m2  \n\nCada uno está pensado para distintas necesidades (escapadas, alquiler turístico, vivienda familiar o inversión). ¿Qué tamaño tenés en mente más o menos?",
       "mentionedModels": [
-        "Cobre tiene"
+        "Montañes",
+        "Montañesito 20m2",
+        "Cobre 30m2",
+        "El Montañes 40m2",
+        "Correntoso 60m2",
+        "Limay 80m2",
+        "MONTAÑESITO 20M2",
+        "COBRE 30M2"
       ],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 1459
+      "responseTimeMs": 1990
     },
     {
-      "question": "?Cuales son las caracteristicas del modelo REFUGIO MONTAÑESITO 20 M²?",
-      "questionType": "model_specific",
-      "response": "El **Refugio Montañesito 20 m²** es el modelo más chico de la línea, con **20 m² cubiertos**, **1 dormitorio y 1 baño**, pensado como tiny house o refugio compacto en la naturaleza. Mantiene el mismo concepto que el Cobre y el Limay: vivienda modular, con muy buena aislación y terminaciones de calidad, lista para habitar.\n\nEn catálogo figura en **ARS $41.500.000 (+IVA)**.  \nPara afinar si te conviene este o subir a un Cobre 30 m² (2 dormitorios), contame: ¿sería para uso personal, alquiler turístico o mixto?",
+      "question": "Contame sobre Productos relacionados",
+      "questionType": "product_specific",
+      "response": "Mirá, en el listado aparece “Productos relacionados” con un valor de **$84.700**, pero no tengo más detalle cargado sobre qué incluye exactamente ese ítem. Puede tratarse de complementos o accesorios para los refugios (por ejemplo, algún extra de equipamiento o deco), pero acá no figura la descripción puntual.  \n\nNo tengo esa información específica cargada; si querés el detalle exacto de qué es y qué incluye, te sugiero consultarlo por WhatsApp al **+54 9 260 403 3077**. Mientras tanto, ¿estás mirando algún Modelo de refugio en particular (Montañesito, Cobre, El Montañes, Correntoso o Limay) para ver qué extras se le pueden sumar?",
       "mentionedModels": [
-        "REFUGIO MONTAÑESITO 20 M²"
+        "Productos relacionados",
+        "Montañes"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3300
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Productos relacionados? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "Por ahora no tengo detalles técnicos específicos de **“Productos relacionados”**: no figura superficie, cantidad de dormitorios ni características constructivas asociadas a ese ítem, solo el valor de **$84.700**. Es muy probable que sea un complemento/accesorio y no un Modelo de refugio en sí (por eso no tiene m2 ni distribución como Montañesito, Cobre, El Montañes, Correntoso o Limay).  \n\nNo tengo esa información más fina cargada; para saber exactamente qué es y qué incluye, lo mejor es que lo consultes por WhatsApp al **+54 9 260 403 3077**. Si querés, contame qué modelo estás evaluando y te detallo sus m2, capacidad y equipamiento, que eso sí lo tengo completo.",
+      "mentionedModels": [
+        "Productos relacionados",
+        "Montañes"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3090
+    },
+    {
+      "question": "Contame sobre Kit Montañesito 23m2",
+      "questionType": "product_specific",
+      "response": "El **Kit Montañesito 23m2** es un refugio compacto pensado para escapadas o alquiler turístico, similar conceptualmente a nuestro **Montañesito 20m2** pero con un poco más de superficie útil. En el listado figura con un precio de **$9.800.000**, aunque en la info más actualizada de Montañesito trabajamos con valores en ARS más altos, así que tomalo solo como referencia histórica.  \n\nPor equipamiento, podés esperar algo en línea con Montañesito 20m2: iluminación LED interior y exterior, aberturas de aluminio DVH, muy buena aislación térmica y acústica con paneles SIP, y muebles de baño y cocina incluidos. No tengo la distribución interna exacta del Kit 23m2, pero suele estar pensado para **2 personas**, optimizando al máximo el espacio. ¿Lo pensás para uso propio o como cabaña para alquilar?",
+      "mentionedModels": [
+        "Kit Montañesito 23m2",
+        "Montañes",
+        "Kit Montañesito",
+        "Montañesito 20m2",
+        "MONTAÑESITO 20M2"
       ],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 2821
+      "responseTimeMs": 3971
     },
     {
-      "question": "?Cuantos metros cuadrados tiene el REFUGIO MONTAÑESITO 20 M²?",
-      "questionType": "model_specific",
-      "response": "El Refugio Montañesito tiene **20 m² cubiertos reales**.  \nEn esos 20 m² se resuelven **1 dormitorio + 1 baño** y el espacio de estar, pensado como refugio compacto o tiny house.",
-      "mentionedModels": [],
+      "question": "¿Cuáles son los detalles técnicos de Kit Montañesito 23m2? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "Del **Kit Montañesito 23m2** tengo cargado solo lo básico:  \n- **Superficie:** 23 m².  \n- **Uso típico:** pensado para **2 personas**, formato refugio compacto tipo tiny house.  \n\nNo tengo el plano ni la cantidad de dormitorios especificada para el kit 23 m², pero por concepto es muy similar al **Montañesito 20m2** (baño completo, área de cocina equipada y espacio de descanso integrado, con iluminación LED, DVH y buena aislación). Para que te oriente mejor, ¿lo querés para escapadas personales o para alquiler turístico?",
+      "mentionedModels": [
+        "Kit Montañesito 23m2",
+        "Montañes",
+        "Kit Montañesito",
+        "Montañesito 20m2",
+        "MONTAÑESITO 20M2"
+      ],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 1422
+      "responseTimeMs": 2998
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con un sistema modular en **hormigón premoldeado** y paneles SIP: fabricamos el refugio en taller (con aberturas, aislación, instalación eléctrica y muebles listos) y luego lo trasladamos y montamos en tu terreno, evitando una obra húmeda tradicional. Esto hace que el proceso sea mucho más rápido, prolijo y “libre de obra”, entregándote un espacio **equipado y llave en mano**.  \n\nEl tiempo exacto depende del modelo (no tengo por acá los plazos en semanas/meses detallados), pero siempre trabajamos con tiempos acotados y de entrega pactada. ¿Ya tenés terreno y en qué zona? Así te ayudo a ver qué Modelo de refugio encaja mejor y te orientamos con plazos más precisos.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4812
+    },
+    {
+      "question": "¿Se pueden personalizar los modelos?",
+      "questionType": "customization",
+      "response": "Sí, se pueden personalizar, es uno de nuestros fuertes. Partimos de los modelos base (Montañesito, Cobre, El Montañes, Correntoso y Limay) y adaptamos distribución, terminaciones, elección de materiales, equipamiento y muebles a medida para que el refugio tenga tu impronta.  \n\nTrabajamos el diseño en conjunto con vos, buscando un equilibrio entre lo estándar (para que sea eficiente en costo y tiempos) y lo personalizado. Para ayudarte mejor, ¿ya tenés visto algún modelo o metraje que te guste?",
+      "mentionedModels": [
+        "Montañes"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3459
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, ofrecemos **financiación** para los Modelos de refugios, así que no hace falta que pagues todo de una sola vez. Los esquemas concretos de cuotas y anticipos los arma un asesor según el modelo (Montañesito, Cobre, El Montañes, Correntoso o Limay) y tu situación.  \n\nNo tengo por acá el detalle fino de planes y tasas, así que para ver opciones exactas te sugiero escribirnos por WhatsApp al **+54 9 260 403 3077**. Mientras tanto, ¿qué presupuesto manejás aproximadamente para ver qué modelo podría encajar mejor?",
+      "mentionedModels": [
+        "Montañes"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3152
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Nos diferencia, primero, el **diseño personalizado y de alta eficiencia energética**: cada Arcohouse se trabaja en detalle con vos, no es un “módulo estándar” más. Usamos **materiales de alta calidad** (hormigón premoldeado, paneles SIP, aberturas DVH, maderas macizas y acabados cuidados) y entregamos los refugios **equipados y llave en mano**, listos para habitar.  \n\nAdemás, somos muy fuertes en la **calidez y conexión con la naturaleza**: todos los modelos (Montañesito, Cobre, El Montañes, Correntoso y Limay) están pensados para vivir o invertir en entornos naturales, con confort real y buena aislación, y con la ventaja de un sistema modular rápido y “libre de obra”. ¿Qué te interesa más a vos: diseño, rapidez de entrega, inversión para alquiler, o confort para vivir?",
+      "mentionedModels": [
+        "Montañes"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4487
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "Por ahora tenemos especificado que construimos en **San Rafael, Mendoza**, donde desarrollamos y montamos nuestros refugios modulares. Es posible evaluar otros destinos, pero no lo tengo detallado acá por escrito.  \n\nEn casos fuera de esa zona solemos ver logística y viabilidad caso por caso, así que lo ideal es que lo consultes por WhatsApp al **+54 9 260 403 3077**. ¿En qué provincia o localidad tenés pensado instalar el refugio?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2399
     }
   ],
-  "sessionCreationTimeMs": 53210,
+  "sessionCreationTimeMs": 65227,
   "errors": []
 }

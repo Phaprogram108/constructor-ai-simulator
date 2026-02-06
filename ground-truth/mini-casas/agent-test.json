@@ -1,132 +1,172 @@
 {
   "company": "Mini Casas",
   "url": "https://www.minicasas.com.ar/",
-  "testedAt": "2026-02-06T10:57:43.270Z",
-  "sessionId": "d3f22b95-81e6-4269-904b-37db7d1e3dd1",
-  "systemPromptLength": 21329,
+  "testedAt": "2026-02-06T15:53:03.808Z",
+  "sessionId": "a7acedac-7a23-46ee-b4ed-fe567253950c",
+  "systemPromptLength": 20176,
   "systemPromptModelsFound": [
-    "Casa Modelo AZ I - 18m2 - Consulta para precio",
-    "Casa MODELO AZ I XL - 18m2 - Consulta para precio",
-    "Casa Modelo AZ II - 36m2 - Consulta para precio",
-    "Casa Modelo AZ III - 54m2 - Consulta para precio",
-    "Primero muestra los modelos disponibles",
-    "Si ninguno encaja, ofrece la opcion de diseno pers",
-    "Pregunta que prefiere el cliente"
+    "Modelo Estándar",
+    "Watch on",
+    "Modelo AZ I",
+    "Modelo AZ II",
+    "Modelo AZ III",
+    "Modelo AZ-I"
   ],
-  "systemPromptType": "de Constructora**: MIXTA",
+  "systemPromptType": "de Modelos estas buscando?\"",
   "conversations": [
     {
-      "question": "?Que modelos tienen disponibles?",
-      "questionType": "base",
-      "response": "Tenemos 4 modelos estándar de catálogo:  \n- **Modelo AZ I** – 18 m² (3x6 m), minicasa compacta y 100% transportable.  \n- **Modelo AZ I XL** – 18 m² (3x6 m) + **entrepiso de 5,8 m²**, ideal para sumar dormitorio en altura.  \n- **Modelo AZ II** – 36 m² (6x6 m), transportable en 2 módulos, ya tipo vivienda chica cómoda.  \n- **Modelo AZ III** – 54 m² (9x6 m), transportable en 3 módulos, pensado como casa familiar.\n\nSi ninguno se ajusta a lo que buscás, también hacemos **proyectos personalizados a medida** usando el mismo sistema constructivo.  \nPara orientarte mejor, ¿qué tamaño de casa estás buscando aproximadamente?",
-      "mentionedModels": [],
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "CASAS ARENZON es una empresa dedicada a la construcción de casas y minicasas modulares, rápidas y transportables. Diseñamos y fabricamos viviendas como los Modelos AZ I, MODELO AZ I XL, Modelo AZ II y Modelo AZ III, que se pueden trasladar en módulos y adaptar a distintas necesidades (vivienda permanente, cabañas, ampliaciones, etc.).  \n\nPara orientarte mejor, ¿qué tipo de Modelos estás buscando: algo más chico tipo minicasa o una vivienda más amplia?",
+      "mentionedModels": [
+        "Modelo AZ I",
+        "Modelo AZ II",
+        "Modelo AZ III"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2367
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos principalmente casas y minicasas modulares y transportables, listas para usar como vivienda, cabaña, oficina o ampliación. Dentro de los modelos estándar tenemos:  \n- **Modelo AZ I**: 3x6 m (18 m²), transportable.  \n- **MODELO AZ I XL**: 3x6 m (18 m²) + entrepiso de 5,8 m², transportable.  \n- **Modelo AZ II**: 6x6 m (36 m²), transportable en 2 módulos.  \n- **Modelo AZ III**: 9x6 m (54 m²), transportable en 3 módulos.  \n\nAdemás hacemos **viviendas personalizadas a medida**, usando el mismo sistema constructivo modular. Para saber qué encaja mejor con vos, ¿qué tipo de Modelo estás buscando: algo compacto tipo minicasa o algo más grande como el AZ II o AZ III?",
+      "mentionedModels": [
+        "Modelo AZ I",
+        "Modelo AZ II",
+        "Modelo AZ III"
+      ],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 3112
+      "responseTimeMs": 2582
     },
     {
-      "question": "?Cuantos modelos/proyectos ofrecen?",
-      "questionType": "base",
-      "response": "Te cuento:  \nEn **catálogo** tenemos hoy **4 modelos estándar**: AZ I (18 m²), AZ I XL (18 m² + entrepiso), AZ II (36 m²) y AZ III (54 m²), todos modulares y transportables.  \n\nAdemás de esos 4, ofrecemos **proyectos 100% personalizados**, donde diseñamos la casa a medida según tus ambientes, estética y uso (vivienda, cabaña turística, quincho, etc.).  \nPara ayudarte a elegir, ¿ya tenés en mente más o menos qué superficie o cantidad de ambientes necesitás?",
-      "mentionedModels": [],
-      "saidNoInfo": false,
-      "hasSpecificData": true,
-      "responseTimeMs": 2451
-    },
-    {
-      "question": "?Cuanto cuesta el modelo mas economico?",
-      "questionType": "base",
-      "response": "El modelo más económico es el **Modelo AZ I**, de **18 m² (3x6 m) transportable**.  \nNo tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp así te pasan el valor al día y opciones de pago: **+54 294 456 8357**.  \n\nMientras tanto, así te asesoro mejor: ¿ya tenés terreno? ¿En qué zona sería?",
-      "mentionedModels": [],
-      "saidNoInfo": true,
-      "hasSpecificData": true,
-      "responseTimeMs": 2849
-    },
-    {
-      "question": "?Tienen financiamiento o planes de pago?",
-      "questionType": "base",
-      "response": "Sí, manejamos varias formas de pago bastante flexibles. Recibimos **pesos, dólares, euros, USDT**, se puede abonar en **efectivo, transferencia, tarjeta de crédito, cuentas en el exterior** e incluso, según el caso, **tomar vehículos como parte de pago** o ir pagando a medida que vas juntando presupuesto.  \n\nNo tengo por acá un plan de “financiación bancaria” estándar cargado, pero sí armamos esquemas de pago por etapas de obra.  \nPara orientarte mejor, ¿ya tenés terreno? ¿En qué zona sería?",
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Nos podés contactar por WhatsApp al **+54 294 456 8357**.  \n\nSi querés, también podés escribirnos al mail **info@minicasas.com.ar**.  \nAprovecho para preguntarte: ¿ya tenés terreno? ¿En qué zona sería la instalación de la minicasa o casa?",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 2208
+      "responseTimeMs": 2196
     },
     {
-      "question": "?Cual es su WhatsApp o telefono de contacto?",
-      "questionType": "base",
-      "response": "Te dejo los datos directos de contacto:  \n\n- **WhatsApp / Teléfono:** +54 294 456 8357  \n- **Email:** info@minicasas.com.ar  \n\nSi querés, me contás por acá qué estás buscando y te ayudo a llegar ya con una idea más definida cuando les escribas.",
+      "question": "¿Cuántos modelos ofrecen?",
+      "questionType": "product_count",
+      "response": "Hoy tenemos **4 Modelos estándar principales** de minicasas:  \n- **Modelo AZ I** – 3x6 m (18 m²), transportable.  \n- **MODELO AZ I XL** – 3x6 m (18 m²) + entrepiso de 5,8 m², transportable.  \n- **Modelo AZ II** – 6x6 m (36 m²), transportable en 2 módulos.  \n- **Modelo AZ III** – 9x6 m (54 m²), transportable en 3 módulos.  \n\nAdemás, podemos hacer **viviendas personalizadas a medida** usando el mismo sistema modular. ¿Qué superficie te interesaría más, algo chico tipo 18 m² o algo más grande como 36 o 54 m²?",
+      "mentionedModels": [
+        "Modelo AZ I",
+        "Modelo AZ II",
+        "Modelo AZ III"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2662
+    },
+    {
+      "question": "Contame sobre Modelo Estándar",
+      "questionType": "product_specific",
+      "response": "Claro, te cuento. Dentro de la línea **Modelo Estándar** tenemos minicasas modulares y transportables con distintas superficies, todas pensadas para una solución rápida y eficiente:  \n\n- **Modelo AZ I**: 3x6 m (**18 m²**), transportable en un solo módulo.  \n- **MODELO AZ I XL**: 3x6 m (**18 m²**) + **entrepiso de 5,8 m²**, ideal para sumar un espacio tipo dormitorio en planta alta.  \n- **Modelo AZ II**: 6x6 m (**36 m²**), transportable en **2 módulos**, más cómoda para uso como vivienda.  \n- **Modelo AZ III**: 9x6 m (**54 m²**), transportable en **3 módulos**, ya con formato de casa más amplia.  \n\nTodas comparten el mismo concepto: construcción modular, buena aislación térmica y posibilidad de transportar y ampliar. Para afinar mejor, ¿para qué la querés usar: vivienda permanente, cabaña turística, oficina, ampliación, etc.?",
+      "mentionedModels": [
+        "Modelo Estándar",
+        "Modelo AZ I",
+        "Modelo AZ II",
+        "Modelo AZ III",
+        "MODELO ESTÁNDAR"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3197
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Modelo Estándar? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "Te detallo lo que tenemos cargado de la línea **Modelo Estándar** (minicasas modulares y transportables):\n\n- **Modelo AZ I**  \n  - **Superficie:** 3x6 m = **18 m²**.  \n  - **Configuración típica:** ambiente tipo monoambiente con baño y sector cocina/comedor.  \n  - **Características:** se transporta en **1 módulo** de 3x6 m.\n\n- **MODELO AZ I XL**  \n  - **Superficie:** 3x6 m (**18 m²**) + **entrepiso de 5,8 m²**.  \n  - **Configuración típica:** planta baja tipo estar/cocina + baño, y **entrepiso ideal para dormitorio**.  \n  - **Características:** minicasa **transportable**, pensada para aprovechar al máximo la altura.\n\n- **Modelo AZ II**  \n  - **Superficie:** 6x6 m = **36 m²**.  \n  - **Configuración típica:** se adapta muy bien a **1 dormitorio separado**, estar-cocina y baño.  \n  - **Características:** **transportable en 2 módulos**, se arma en destino.\n\n- **Modelo AZ III**  \n  - **Superficie:** 9x6 m = **54 m²**.  \n  - **Configuración típica:** formato de casa más amplia, permite **2 dormitorios**, estar/comedor, cocina y baño (según distribución elegida).  \n  - **Características:** **transportable en 3 módulos**, ampliable y modular.\n\nLa cantidad exacta de dormitorios y el layout interno se puede adaptar según lo que necesites dentro de esos metrajes. Para ayudarte mejor, ¿cuántos dormitorios estás buscando y qué uso principal le querés dar (vivienda permanente, cabaña, etc.)?",
+      "mentionedModels": [
+        "Modelo Estándar",
+        "Modelo AZ I",
+        "Modelo AZ II",
+        "Modelo AZ III",
+        "MODELO ESTÁNDAR"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 5125
+    },
+    {
+      "question": "Contame sobre Watch on",
+      "questionType": "product_specific",
+      "response": "“Watch on” no es un Modelo de casa, sino el acceso al video de CASAS ARENZON en YouTube donde mostramos entregas de viviendas y ejemplos reales de nuestras construcciones. Ahí podés ver cómo son las minicasas montadas, detalles de terminaciones y el sistema modular y transportable en acción.  \n\nSi querés Modelos específicos, trabajamos con **Modelo AZ I, MODELO AZ I XL, Modelo AZ II y Modelo AZ III**, además de proyectos personalizados. ¿Te gustaría que te recomiende un Modelo según cuántas personas la van a usar y para qué la necesitás?",
+      "mentionedModels": [
+        "Watch on",
+        "Modelo AZ I",
+        "Modelo AZ II",
+        "Modelo AZ III"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2229
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Watch on? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "En este caso **“Watch on” no es un Modelo de minicasa**, sino el botón/enlace para ver nuestros videos en YouTube (por ejemplo, “CASAS ARENZON | ENTREGA DE VIVIENDAS”). Por eso, no tiene superficie, cantidad de dormitorios ni ficha técnica propia.  \n\nLos Modelos que sí tienen detalles técnicos son: **Modelo AZ I (18 m²)**, **MODELO AZ I XL (18 m² + entrepiso 5,8 m²)**, **Modelo AZ II (36 m²)** y **Modelo AZ III (54 m²)**, todos transportables y modulares. Si me contás cuántos m² o dormitorios necesitás, te digo cuál de estos Modelos estándar te encaja mejor.",
+      "mentionedModels": [
+        "Watch on",
+        "Modelo AZ I",
+        "Modelo AZ II",
+        "Modelo AZ III"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2923
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con un **sistema modular y transportable**: fabricamos la vivienda en taller (por módulos), la terminamos casi completa y luego la **transportamos y montamos** en tu terreno, lo que reduce mucho tiempos de obra y complicaciones en el lugar. Usamos materiales con **muy buena aislación térmica**, pensados para consumir hasta un 70% menos en calefacción/refrigeración frente a una construcción tradicional.  \n\nNo tengo los plazos exactos por Modelo cargados acá, pero al ser industrializado los tiempos de entrega suelen ser **mucho más rápidos que una obra húmeda tradicional**. Para que un asesor te diga tiempos estimados según el Modelo y tu zona, te sugiero escribirnos por WhatsApp al **+54 294 456 8357**. Mientras tanto, ¿para cuándo la necesitarías aproximadamente?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3185
+    },
+    {
+      "question": "¿Se pueden personalizar los modelos?",
+      "questionType": "customization",
+      "response": "Sí, se pueden personalizar. Además de los modelos estándar (Modelo AZ I, MODELO AZ I XL, Modelo AZ II y Modelo AZ III), también construimos **viviendas personalizadas**, adaptando nuestro sistema modular a tu diseño a medida: distribución interna, aberturas, ampliaciones por módulos, etc.  \n\nPodemos partir de un Modelo estándar y ajustarlo, o trabajar sobre un proyecto propio. Para orientarte mejor, ¿qué te gustaría personalizar: tamaño, cantidad de dormitorios, estilo, algún uso específico (turismo, vivienda, oficina)?",
+      "mentionedModels": [
+        "Modelo Estándar",
+        "Modelo AZ I",
+        "Modelo AZ II",
+        "Modelo AZ III",
+        "MODELO ESTÁNDAR"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4973
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Nos diferencia sobre todo el **sistema modular transportable**: fabricamos en taller y llevamos la vivienda casi terminada a tu terreno, con tiempos de entrega mucho más rápidos que la construcción tradicional. Usamos materiales con **alta aislación térmica**, lo que reduce hasta un 70% el consumo de calefacción/refrigeración, haciendo la inversión más sustentable y conveniente en el tiempo.  \n\nAdemás, nuestras casas son **ampliables y combinables por módulos** (Modelos AZ I, MODELO AZ I XL, Modelo AZ II, Modelo AZ III) y también hacemos **proyectos personalizados** según tu diseño. ¿Estás pensando en algo estándar o ya tenés una idea de diseño propio que te gustaría desarrollar?",
+      "mentionedModels": [
+        "Modelo AZ I",
+        "Modelo AZ II",
+        "Modelo AZ III"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4261
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "No tengo detallada en el sistema la cobertura por provincias o regiones específicas. Al ser viviendas **modulares y transportables**, en muchos casos podemos llevar los módulos a distintas zonas, pero la viabilidad depende de la logística y accesos de cada lugar.  \n\nLo mejor es que lo veamos puntual por tu caso: podría ser posible, pero te sugiero consultarlo por WhatsApp al **+54 294 456 8357**. ¿En qué localidad o provincia estás pensando instalar la casa o minicasa?",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 1468
-    },
-    {
-      "question": "?Cuales son las caracteristicas del modelo MODELO ESTÁNDAR?",
-      "questionType": "model_specific",
-      "response": "En CASAS ARENZON llamamos **“Modelos Estándar”** a los modelos de catálogo prefabricados, modulares y transportables, con medidas y distribución ya definidas. Dentro de esta línea estándar están:  \n\n- **Modelo AZ I:** 3x6 m (18 m²), minicasa compacta, 100% transportable.  \n- **Modelo AZ I XL:** 3x6 m (18 m²) + entrepiso de 5,8 m², ideal para sumar dormitorio en altura.  \n- **Modelo AZ II:** 6x6 m (36 m²), transportable en 2 módulos.  \n- **Modelo AZ III:** 9x6 m (54 m²), transportable en 3 módulos, pensado como vivienda familiar.  \n\nTodas comparten el mismo **sistema constructivo mixto, modular, con muy buena aislación térmica** y posibilidad de ampliación futura.  \nPara afinar el asesoramiento, ¿qué tamaño de casa estás buscando?",
-      "mentionedModels": [],
-      "saidNoInfo": false,
-      "hasSpecificData": true,
-      "responseTimeMs": 3115
-    },
-    {
-      "question": "?Cuantos metros cuadrados tiene el MODELO ESTÁNDAR?",
-      "questionType": "model_specific",
-      "response": "En realidad **“Estándar”** es la categoría, y dentro de esa línea hay **varios modelos**, cada uno con sus m²:  \n\n- **Modelo AZ I:** 18 m² (3x6 m)  \n- **Modelo AZ I XL:** 18 m² (3x6 m) + entrepiso de 5,8 m²  \n- **Modelo AZ II:** 36 m² (6x6 m)  \n- **Modelo AZ III:** 54 m² (9x6 m)  \n\nAsí que no hay un único “MODELO ESTÁNDAR” con una sola medida, sino estos 4 tamaños.  \nPara saber cuál te conviene, ¿qué superficie o cantidad de ambientes estás buscando?",
-      "mentionedModels": [
-        "MODELO ESTÁNDAR"
-      ],
-      "saidNoInfo": false,
-      "hasSpecificData": true,
-      "responseTimeMs": 2999
-    },
-    {
-      "question": "?Cuales son las caracteristicas del modelo MODELO ESTANDAR?",
-      "questionType": "model_specific",
-      "response": "Buenísimo, te explico bien cómo es la línea **Modelo Estándar** en general.  \n\nEn CASAS ARENZON “Modelo Estándar” significa que son **minicasas de catálogo, modulares y transportables**, con medidas y distribución ya definidas:  \n- Se construyen con **sistema mixto** (rápido, seco y muy buena aislación térmica, pensado para climas fríos y calurosos).  \n- Son **transportables y ampliables**: se pueden mover, unir módulos y crecer después.  \n- Vienen en 4 versiones: **AZ I (18 m²), AZ I XL (18 m² + entrepiso), AZ II (36 m²) y AZ III (54 m²)**.  \n\nSi querés, en el próximo mensaje te detallo las características de uno por uno, o del que más te interese.  \nPara eso, ¿qué tamaño de casa estás buscando aproximadamente?",
-      "mentionedModels": [
-        "MODELO ESTÁNDAR"
-      ],
-      "saidNoInfo": false,
-      "hasSpecificData": true,
-      "responseTimeMs": 3439
-    },
-    {
-      "question": "?Cuantos metros cuadrados tiene el MODELO ESTANDAR?",
-      "questionType": "model_specific",
-      "response": "Dentro de la línea **Modelo Estándar** no hay un solo tamaño, sino **4 opciones** distintas, cada una con sus m²:  \n\n- **Modelo AZ I:** 18 m² (3x6 m)  \n- **Modelo AZ I XL:** 18 m² (3x6 m) + entrepiso de 5,8 m²  \n- **Modelo AZ II:** 36 m² (6x6 m)  \n- **Modelo AZ III:** 54 m² (9x6 m)  \n\nAsí que el “Modelo Estándar” como categoría va **de 18 m² a 54 m²** según el modelo que elijas.  \nPara saber cuál te encaja mejor: ¿qué tamaño de casa estás buscando vos?",
-      "mentionedModels": [
-        "MODELO ESTÁNDAR"
-      ],
-      "saidNoInfo": false,
-      "hasSpecificData": true,
-      "responseTimeMs": 2939
-    },
-    {
-      "question": "?Cuales son las caracteristicas del modelo Modelo Estándar 1?",
-      "questionType": "model_specific",
-      "response": "En la web de CASAS ARENZON no figura un modelo llamado exactamente **“Modelo Estándar 1”**, así que lo más probable es que se estén refiriendo al **primer modelo estándar del catálogo: el Modelo AZ I**.  \n\nEl **Modelo AZ I** tiene estas características principales:  \n- Superficie: **18 m²**, medida **3 x 6 m**.  \n- Es una **minicasa compacta, 100% transportable**, dentro de la línea estándar.  \n- Forma parte de nuestro sistema **modular**, pensado para poder ampliarse luego con otros módulos.  \n\nSi este es el que te interesa, contame: ¿lo pensás usar como vivienda permanente, cabaña turística, oficina, quincho, otro uso?",
-      "mentionedModels": [
-        "MODELO ESTÁNDAR",
-        "Modelo Estándar 1"
-      ],
-      "saidNoInfo": false,
-      "hasSpecificData": true,
-      "responseTimeMs": 2701
-    },
-    {
-      "question": "?Cuantos metros cuadrados tiene el Modelo Estándar 1?",
-      "questionType": "model_specific",
-      "response": "Por cómo está organizado nuestro catálogo, lo que llamás **“Modelo Estándar 1”** corresponde al **primer modelo estándar: el Modelo AZ I**.  \nEse modelo tiene **18 m² de superficie**, con una medida de **3 x 6 metros**.  \n\nPara ayudarte a ver si te alcanza ese tamaño: ¿para cuántas personas sería la casa?",
-      "mentionedModels": [
-        "MODELO ESTÁNDAR",
-        "Modelo Estándar 1"
-      ],
-      "saidNoInfo": false,
-      "hasSpecificData": true,
-      "responseTimeMs": 3745
+      "responseTimeMs": 2475
     }
   ],
-  "sessionCreationTimeMs": 40251,
+  "sessionCreationTimeMs": 13156,
   "errors": []
 }

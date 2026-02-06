@@ -1,6 +1,6 @@
 # Diagnostic Report - Constructor AI Pipeline
 
-**Generated:** 2026-02-06T14:56:47.397Z
+**Generated:** 2026-02-06T15:05:59.020Z
 **Companies analyzed:** 19
 
 ## Summary
@@ -8,10 +8,10 @@
 | Metric | Value |
 |--------|-------|
 | Average Score | 54% |
-| Total Gaps | 125 |
+| Total Gaps | 124 |
 | SCRAPING_MISS | 101 (81%) |
 | PROMPT_MISS | 8 (6%) |
-| HALLUCINATION | 16 (13%) |
+| HALLUCINATION | 15 (12%) |
 | IDENTITY_MISS | 0 |
 | TERMINOLOGY_MISS | 0 |
 
@@ -19,7 +19,7 @@
 
 | Company | GT Models | Prompt Models | Agent Models | Score | SCRAPING | PROMPT | HALLUC |
 |---------|-----------|---------------|--------------|-------|----------|--------|--------|
-| ViBert | 14 | 3 | 6 | 15% | 14 | 0 | 3 |
+| ViBert | 14 | 3 | 5 | 15% | 14 | 0 | 2 |
 | Offis | 12 | 11 | 6 | 15% | 12 | 0 | 3 |
 | Arcohouse | 3 | 22 | 2 | 20% | 3 | 0 | 1 |
 | Lucys House | 8 | 19 | 1 | 23% | 4 | 4 | 8 |
@@ -35,7 +35,7 @@
 | GoHome | 6 | 17 | 7 | 75% | 0 | 0 | 1 |
 | Habitatio | 0 | 7 | 0 | 85% | 0 | 0 | 0 |
 | PlugArq | 0 | 2 | 0 | 85% | 0 | 0 | 0 |
-| Grupo Steimberg | 0 | 2 | 0 | 85% | 0 | 0 | 0 |
+| Grupo Steimberg | 0 | 3 | 0 | 85% | 0 | 0 | 0 |
 | Habika | 0 | 3 | 0 | 85% | 0 | 0 | 0 |
 | Efede | 0 | 6 | 0 | 85% | 0 | 0 | 0 |
 
@@ -43,7 +43,7 @@
 
 | Company | Overall | Product Coverage | Spec Accuracy | Contact | Identity | Hallucination Penalty |
 |---------|---------|------------------|---------------|---------|----------|----------------------|
-| ViBert | 15% | 0% | 0% | 100% | 100% | -30 |
+| ViBert | 15% | 0% | 0% | 100% | 100% | -20 |
 | Offis | 15% | 0% | 0% | 100% | 100% | -30 |
 | Arcohouse | 20% | 0% | 0% | 100% | 100% | -10 |
 | Lucys House | 23% | 13% | 57% | 50% | 100% | -80 |
@@ -86,12 +86,11 @@
 - **Lucys House:** Módulo 19,20 M2, 30,6 M2, 38 M2, whatsapp
 - **Wellmod:** W40 B, W40 C, W80 C, whatsapp
 
-### HALLUCINATION (16 gaps)
+### HALLUCINATION (15 gaps)
 
 - **ViBert:**
-  - ViBert que mejor se parezca a lo que - Agent mentioned model "ViBert que mejor se parezca a lo que" which does not exist in ground truth or systemPrompt
   - Casa Sara - Agent mentioned model "Casa Sara" which does not exist in ground truth or systemPrompt
-  - ViBert - Agent mentioned model "ViBert" which does not exist in ground truth or systemPrompt
+  - ViBert que mejor encaje - Agent mentioned model "ViBert que mejor encaje" which does not exist in ground truth or systemPrompt
 - **Lucys House:**
   - price - Agent mentioned price "USD 22.080" which does not match any ground truth price
   - price - Agent mentioned price "USD 38.700" which does not match any ground truth price
@@ -120,7 +119,7 @@ No terminology mismatches detected.
 
 ## Recommendations
 
-1. **HIGH PRIORITY:** Mejorar scraping pipeline (firecrawl.ts): agregar mas URL patterns, mejorar UNIVERSAL_ACTIONS. 101/125 gaps (81%) son por datos no scrapeados.
-2. **HIGH PRIORITY:** Reforzar anti-hallucination en prompt-generator.ts y response-validator.ts. 16 hallucination(s) detectadas.
+1. **HIGH PRIORITY:** Mejorar scraping pipeline (firecrawl.ts): agregar mas URL patterns, mejorar UNIVERSAL_ACTIONS. 101/124 gaps (81%) son por datos no scrapeados.
+2. **HIGH PRIORITY:** Reforzar anti-hallucination en prompt-generator.ts y response-validator.ts. 15 hallucination(s) detectadas.
 3. **HIGH PRIORITY:** 8 precio(s) inventados detectados. Agregar validacion de precios contra datos scrapeados antes de responder.
 

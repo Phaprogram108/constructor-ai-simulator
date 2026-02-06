@@ -1,115 +1,215 @@
 {
   "company": "Atlas Housing",
   "url": "https://atlashousing.com.ar",
-  "testedAt": "2026-02-06T10:37:15.739Z",
-  "sessionId": "5569e35a-1c9b-4f4c-be5b-95bb7cf814b8",
-  "systemPromptLength": 21538,
+  "testedAt": "2026-02-06T15:50:33.430Z",
+  "sessionId": "4294fc23-df11-4de3-bffb-78f3a65ab1ba",
+  "systemPromptLength": 20741,
   "systemPromptModelsFound": [
-    "Casa Katerra - 100m2 - 2 dorm - 1 bano - USD 50,00",
-    "Casa Upsala - 70m2 - 2 dorm - 1 bano - USD 45,000",
-    "Casa Fitz Roy - 120m2 - 3 dorm - 2 banos - USD 70,",
-    "Casa Blackberry - 90m2 - 2 dorm - 1 bano - USD 55,",
-    "Casa Hexa - 110m2 - 3 dorm - 2 banos - USD 65,000",
-    "Casa Montana - 105m2 - 2 dorm - 1 bano - USD 60,00"
+    "Estamos listos",
+    "Skip to content",
+    "Katerra",
+    "Upsala",
+    "Fitz Roy",
+    "Blackberry",
+    "Hexa",
+    "Montana"
   ],
-  "systemPromptWhatsApp": "+541112345678",
-  "systemPromptType": "de Constructora**: MODULAR",
+  "systemPromptType": "de modelos estas buscando?\"",
   "conversations": [
     {
-      "question": "?Que modelos tienen disponibles?",
-      "questionType": "base",
-      "response": "Tenemos varios modelos de vivienda en hormigón premoldeado, todos modulares y con financiación disponible.  \nHoy contamos con:\n\n- **Casa Upsala** – 70 m² – 2 dormitorios – 1 baño – **USD 45.000**  \n- **Casa Blackberry** – 90 m² – 2 dormitorios – 1 baño – **USD 55.000**  \n- **Casa Montana** – 105 m² – 2 dormitorios – 1 baño – **USD 60.000**  \n- **Casa Katerra** – 100 m² – 2 dormitorios – 1 baño – **USD 50.000**  \n- **Casa Hexa** – 110 m² – 3 dormitorios – 2 baños – **USD 65.000**  \n- **Casa Fitz Roy** – 120 m² – 3 dormitorios – 2 baños – **USD 70.000**\n\nPara orientarte mejor, ¿qué tamaño de casa estás buscando, en m² o en cantidad de dormitorios?",
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Atlas Housing es una empresa que diseña y construye viviendas modulares y prefabricadas en hormigón premoldeado, con un sistema que se fabrica 100% en planta en el Parque Industrial de San Vicente. Nos enfocamos en darte una casa lista en tiempos muy cortos, ahorrando hasta un 40% en costos frente a la obra tradicional y con excelente aislación térmica y acústica. \n\nTrabajamos con modelos como Katerra, Upsala, Fitz Roy, Blackberry, Hexa y Montana, y también podemos adaptar diseños personalizados, con opciones de financiación y envíos a todo el país. Para orientarte mejor, ¿qué tipo de modelo o proyecto estás imaginando?",
       "mentionedModels": [
-        "Katerra"
+        "Katerra",
+        "Upsala",
+        "Fitz Roy",
+        "Blackberry",
+        "Hexa",
+        "Montana"
       ],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 4435
+      "responseTimeMs": 7870
     },
     {
-      "question": "?Cuantos modelos/proyectos ofrecen?",
-      "questionType": "base",
-      "response": "Ofrecemos actualmente **6 modelos de vivienda** en hormigón premoldeado, todos modulares y financiables: Upsala, Blackberry, Montana, Katerra, Hexa y Fitz Roy, con superficies desde **70 m² hasta 120 m²** y opciones de **2 y 3 dormitorios**.  \n\nAsí puedo orientarte mejor: ¿qué tamaño de casa estás buscando, en m² o en cantidad de dormitorios?",
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos principalmente la construcción de casas modulares y prefabricadas en hormigón premoldeado, fabricadas 100% en nuestra planta del Parque Industrial de San Vicente. Trabajamos con modelos específicos como Katerra, Upsala, Fitz Roy, Blackberry, Hexa y Montana, en versiones estándar y premium, y también desarrollos totalmente personalizados.  \n\nAdemás brindamos: diseño y asesoramiento integral del proyecto, fabricación en fábrica, instalación en destino en pocos días, logística a todo el país (a coordinar) y opciones de financiación. Para guiarte mejor, ¿qué tipo de modelos estás buscando?",
       "mentionedModels": [
-        "Katerra"
+        "Katerra",
+        "Upsala",
+        "Fitz Roy",
+        "Blackberry",
+        "Hexa",
+        "Montana"
       ],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 2980
+      "responseTimeMs": 2235
     },
     {
-      "question": "?Cuanto cuesta el modelo mas economico?",
-      "questionType": "base",
-      "response": "El modelo más económico que tenemos hoy es la **Casa Upsala**, de **70 m²**, con **2 dormitorios y 1 baño**, y está en **USD 45.000**.  \nPara ver si se ajusta a lo que necesitás, ¿ya tenés el terreno? ¿En qué zona sería la obra?",
-      "mentionedModels": [],
-      "saidNoInfo": false,
-      "hasSpecificData": true,
-      "responseTimeMs": 2389
-    },
-    {
-      "question": "?Tienen financiamiento o planes de pago?",
-      "questionType": "base",
-      "response": "Sí, ofrecemos **financiación** para nuestras viviendas modulares en hormigón premoldeado, con planes de pago que se adaptan bastante al perfil de cada cliente. Los montos, plazos y porcentaje de anticipo se arman caso por caso, según modelo y situación particular.  \n\nPara orientarte mejor con opciones concretas: ¿qué presupuesto aproximado manejás y qué modelo o tamaño de casa tenés en mente?",
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Te dejo los datos de contacto directo de Atlas Housing:  \n📞 Teléfono / WhatsApp: (+54) 11 7150-0443  \n📧 Email: info@atlashousing.com  \n\nAsí pueden pasarte precios actualizados, planes de financiación y coordinar una reunión si querés. Mientras tanto, ¿ya tenés terreno? ¿En qué zona sería el proyecto?",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 5163
+      "responseTimeMs": 3099
     },
     {
-      "question": "?Cual es su WhatsApp o telefono de contacto?",
-      "questionType": "base",
-      "response": "Te podés comunicar directo por WhatsApp o teléfono al **+54 11 1234 5678**.  \nSi preferís por mail, el contacto es: **Portada-videos@72x.png**.",
-      "mentionedModels": [],
-      "saidNoInfo": false,
-      "hasSpecificData": false,
-      "responseTimeMs": 3173
-    },
-    {
-      "question": "?Cuales son las caracteristicas del modelo Lago Meliquina?",
-      "questionType": "model_specific",
-      "response": "El modelo **Lago Meliquina** aparece en nuestros trabajos realizados, pero no lo tenemos cargado como modelo estándar con ficha técnica (m², cantidad de dormitorios, etc.) como sí pasa con Upsala, Katerra, Fitz Roy, Hexa, Blackberry y Montana. Probablemente se trate de un proyecto personalizado hecho para ese lugar puntual.  \n\nNo tengo la información específica de m² y ambientes de Lago Meliquina cargada acá, pero podés pedir el detalle y fotos por WhatsApp al **+54 11 1234 5678** y te pasan toda la data del proyecto. Mientras tanto, si me contás qué tamaño y cuántos dormitorios buscás, puedo sugerirte el modelo de catálogo más parecido.",
+      "question": "¿Cuántos modelos ofrecen?",
+      "questionType": "product_count",
+      "response": "Hoy contamos con 7 modelos principales: Katerra, Upsala, Fitz Roy, Blackberry, Hexa, Montana y el modelo corporativo/institucional “Estamos listos / Skip to content” que usamos para desarrollos especiales. Todos tienen 2 versiones (estándar y premium) y, si ninguno se ajusta a lo que buscás, también podemos trabajar un diseño totalmente personalizado.  \n\nPara ayudarte a elegir, ¿qué tipo de modelos estás buscando? ¿Algo más moderno, tipo Katerra/Hexa, o algo más clásico como Blackberry o Montana?",
       "mentionedModels": [
-        "Lago Meliquina",
-        "Katerra"
+        "Estamos listos",
+        "Skip to content",
+        "Katerra",
+        "Upsala",
+        "Fitz Roy",
+        "Blackberry",
+        "Hexa",
+        "Montana"
       ],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 4326
+      "responseTimeMs": 3290
     },
     {
-      "question": "?Cuantos metros cuadrados tiene el Lago Meliquina?",
-      "questionType": "model_specific",
-      "response": "Del proyecto **Lago Meliquina** no tengo cargado el dato exacto de metros cuadrados ni la ficha técnica completa, porque fue un trabajo puntual y no un modelo estándar de catálogo.  \n\nNo tengo esa información específica cargada; te sugiero consultarlo por WhatsApp al **+54 11 1234 5678** así te pasan los m² y detalles de ese proyecto. Si querés, contame cuántos m² estás buscando y te recomiendo el modelo de línea más parecido.",
+      "question": "Contame sobre Estamos listos",
+      "questionType": "product_specific",
+      "response": "“Estamos listos” es más una línea de servicio que un modelo de casa puntual: es el canal donde centralizamos consultas, proyectos especiales y oportunidades inmobiliarias (corporativas, desarrollos, etc.). Desde ahí coordinamos contacto con un asesor, visitas a fábrica en el Parque Industrial de San Vicente y armado de propuestas a medida usando nuestros modelos Katerra, Upsala, Fitz Roy, Blackberry, Hexa y Montana, o diseños personalizados.  \n\nSi querés, te puedo orientar con un modelo concreto según lo que necesites. Para eso, contame: ¿ya tenés terreno? ¿En qué zona?",
       "mentionedModels": [
-        "Lago Meliquina"
+        "Estamos listos",
+        "Katerra",
+        "Upsala",
+        "Fitz Roy",
+        "Blackberry",
+        "Hexa",
+        "Montana"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 7154
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Estamos listos? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "En “Estamos listos” no hay un modelo de casa con ficha técnica propia (m2, cantidad de dormitorios, etc.), sino un formulario/canal de contacto para que podamos asesorarte y conectar tu necesidad con alguno de nuestros modelos (Katerra, Upsala, Fitz Roy, Blackberry, Hexa o Montana) o un diseño personalizado. No tengo cargada una superficie ni distribución específica para “Estamos listos” porque no es una tipología de vivienda en sí.  \n\nSi me contás qué superficie buscás y cuántos dormitorios necesitás, te digo qué modelo de los nuestros se ajusta mejor y qué opciones de configuración podrías tener.",
+      "mentionedModels": [
+        "Estamos listos",
+        "Katerra",
+        "Upsala",
+        "Fitz Roy",
+        "Blackberry",
+        "Hexa",
+        "Montana"
       ],
       "saidNoInfo": true,
       "hasSpecificData": false,
-      "responseTimeMs": 6059
+      "responseTimeMs": 4098
     },
     {
-      "question": "?Cuales son las caracteristicas del modelo Katerra?",
-      "questionType": "model_specific",
-      "response": "La **Casa Katerra** es un modelo de **100 m²**, en hormigón premoldeado, con **2 dormitorios y 1 baño**, pensada como vivienda familiar cómoda pero todavía accesible en tamaño y costo. Trabajamos con construcción modular industrializada, lo que te permite ahorrar hasta un 40% en costos versus obra tradicional y reducir los tiempos de entrega a la mitad, con calidad controlada en fábrica.  \n\nPara ayudarte mejor con este modelo: ¿ya tenés el terreno? ¿En qué zona sería?",
+      "question": "Contame sobre Skip to content",
+      "questionType": "product_specific",
+      "response": "“Skip to content” no es un modelo de casa, sino un texto técnico de la web (un botón de accesibilidad) que aparece en el sitio, pero no corresponde a una vivienda ni a una línea de producto. Los modelos que sí tenemos disponibles son: Katerra, Upsala, Fitz Roy, Blackberry, Hexa y Montana, todos en versiones estándar y premium, y también hacemos diseños personalizados.  \n\nPara ayudarte bien con algo concreto, ¿qué tipo de modelo estás buscando? ¿Cuántos dormitorios o qué superficie tenés en mente?",
       "mentionedModels": [
-        "Katerra"
+        "Skip to content",
+        "Katerra",
+        "Upsala",
+        "Fitz Roy",
+        "Blackberry",
+        "Hexa",
+        "Montana"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3215
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Skip to content? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "Skip to content no es un modelo de vivienda, sino solo un elemento técnico de la página web (un botón para saltar al contenido), por eso no tiene superficie, dormitorios ni características constructivas asociadas.  \n\nLos modelos que sí tienen ficha técnica y que podemos adaptar a tus necesidades son: Katerra, Upsala, Fitz Roy, Blackberry, Hexa y Montana. Para orientarte con uno de esos, ¿cuántos dormitorios y aproximadamente qué metros cuadrados estás buscando?",
+      "mentionedModels": [
+        "Skip to content",
+        "Katerra",
+        "Upsala",
+        "Fitz Roy",
+        "Blackberry",
+        "Hexa",
+        "Montana"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2599
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con un sistema industrializado: construimos el 100% de la vivienda en nuestra fábrica del Parque Industrial de San Vicente (estructura metálica + thermopanels / hormigón premoldeado según el caso) y luego la llevamos al terreno para instalarla en pocos días. Esto elimina imprevistos de obra húmeda y reduce hasta un 50% los tiempos frente a la construcción tradicional.  \n\nSegún el modelo y el proyecto, nuestros clientes suelen tener la casa lista en aproximadamente 90 días desde la firma, entre fabricación en planta y montaje en sitio. Para darte un estimado más preciso, ¿para cuándo la necesitarías y en qué zona tenés pensado instalarla?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3054
+    },
+    {
+      "question": "¿Se pueden personalizar los modelos?",
+      "questionType": "customization",
+      "response": "Sí, se pueden personalizar. Todos los modelos (Katerra, Upsala, Fitz Roy, Blackberry, Hexa y Montana) tienen 2 versiones base, estándar y premium, y además podemos adaptar distribución, terminaciones y trabajar un diseño totalmente personalizado si ninguno se ajusta a lo que necesitás.  \n\nPodemos ajustar el proyecto a cantidad de dormitorios, uso (vivienda permanente, fin de semana, rental, etc.) y estilo. Para afinar opciones, ¿ya tenés terreno? ¿En qué zona?",
+      "mentionedModels": [
+        "Katerra",
+        "Upsala",
+        "Fitz Roy",
+        "Blackberry",
+        "Hexa",
+        "Montana"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2494
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, contamos con financiación disponible y planes de pago que se adaptan bastante al proyecto y al perfil de cada cliente. No tengo los detalles finos de cuotas y condiciones por acá, así que para números concretos te sugiero escribir por WhatsApp al (+54) 11 7150-0443 o al mail info@atlashousing.com.  \n\nAsí te pasan simulaciones según el modelo (Katerra, Upsala, Fitz Roy, Blackberry, Hexa o Montana) y el monto que quieras financiar. Mientras tanto, ¿qué presupuesto aproximado estás manejando para la obra?",
+      "mentionedModels": [
+        "Katerra",
+        "Upsala",
+        "Fitz Roy",
+        "Blackberry",
+        "Hexa",
+        "Montana"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3596
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Nos diferencia, primero, el sistema constructivo: fabricamos el 100% de la vivienda en planta (Parque Industrial de San Vicente) con estructura de hierro soldada y thermopanels/hormigón premoldeado, no usamos contenedores ni woodframe/steelframe, lo que da mucha más solidez y mejor aislación térmica y acústica. Eso nos permite ahorrarte hasta un 40% en costos frente a la obra tradicional y reducir los tiempos de entrega hasta un 50%, con instalación en pocos días y sin sorpresas de obra.  \n\nAdemás, tenemos modelos definidos (Katerra, Upsala, Fitz Roy, Blackberry, Hexa y Montana) en versión estándar y premium, pero también hacemos diseños personalizados y llegamos a todo el país. Para ver qué ventaja te puede servir más en tu caso, ¿ya tenés terreno? ¿En qué zona estás pensando construir?",
+      "mentionedModels": [
+        "Katerra",
+        "Upsala",
+        "Fitz Roy",
+        "Blackberry",
+        "Hexa",
+        "Montana"
       ],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 3457
+      "responseTimeMs": 4704
     },
     {
-      "question": "?Cuantos metros cuadrados tiene el Katerra?",
-      "questionType": "model_specific",
-      "response": "La **Casa Katerra** tiene **100 m²** totales.  \nSi querés, te la comparo con otros modelos similares en tamaño, como Blackberry (90 m²) o Montana (105 m²), así ves cuál se adapta mejor a lo que necesitás.",
-      "mentionedModels": [
-        "Katerra"
-      ],
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "Llegamos a todo el país: fabricamos en nuestra planta del Parque Industrial de San Vicente y luego coordinamos el envío y la descarga hasta la localidad donde tengas el terreno. La logística y el flete se cotizan aparte de los modelos, y se organizan específicamente según provincia y accesos.  \n\nPuede ser tanto para zonas urbanas como rurales, costa o sierras. ¿En qué localidad o provincia tenés el terreno así te orientamos mejor con la parte logística?",
+      "mentionedModels": [],
       "saidNoInfo": false,
-      "hasSpecificData": true,
-      "responseTimeMs": 1879
+      "hasSpecificData": false,
+      "responseTimeMs": 2695
     }
   ],
-  "sessionCreationTimeMs": 39879,
+  "sessionCreationTimeMs": 18696,
   "errors": []
 }

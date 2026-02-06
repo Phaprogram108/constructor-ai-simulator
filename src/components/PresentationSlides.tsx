@@ -76,7 +76,7 @@ function Slide3() {
     {
       icon: <Bot className="w-6 h-6" />,
       title: "Un agente IA que responde por vos (24/7)",
-      desc: "Sabe todo de tu constructora, cotiza, califica y agenda llamadas",
+      desc: "Sabe todo de tu constructora, cotiza, califica y agenda llamadas/visitas al showroom o unidad",
     },
     {
       icon: <LayoutDashboard className="w-6 h-6" />,
@@ -189,28 +189,28 @@ function Slide5() {
 function Slide6() {
   const team = [
     {
-      name: "Joaquin",
+      name: "Joaquín",
       role: "Account Manager",
       desc: "Especialista en automatización de ventas con IA. Partner Oficial de Meta.",
-      color: "bg-blue-600",
+      photo: "/team/joaquin.png",
     },
     {
       name: "Brenda",
       role: "AI Agent Manager",
       desc: "Diseña sistemas escalables que integran agentes, CRM y operaciones.",
-      color: "bg-purple-600",
+      photo: "/team/brenda.png",
     },
     {
       name: "Diego",
       role: "Media Buyer",
       desc: "Lidera la gestión publicitaria en Meta Ads con estrategia y ejecución.",
-      color: "bg-teal-600",
+      photo: "/team/diego.png",
     },
     {
       name: "Antonela",
       role: "Designer",
       desc: "Creativa data-driven especializada en Meta Ads.",
-      color: "bg-rose-500",
+      photo: "/team/antonela.png",
     },
   ];
 
@@ -225,11 +225,11 @@ function Slide6() {
             key={i}
             className="flex items-start gap-4 bg-gray-50 rounded-xl p-4"
           >
-            <div
-              className={`w-12 h-12 ${t.color} text-white rounded-full flex items-center justify-center font-bold text-lg flex-shrink-0`}
-            >
-              {t.name[0]}
-            </div>
+            <img
+              src={t.photo}
+              alt={t.name}
+              className="w-14 h-14 rounded-full object-cover flex-shrink-0"
+            />
             <div>
               <p className="font-bold">{t.name}</p>
               <p className="text-blue-600 text-sm font-medium">{t.role}</p>

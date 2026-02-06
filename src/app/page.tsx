@@ -61,10 +61,10 @@ export default function Home() {
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">
                 Agrega tu Catalogo
-                <span className="text-xs text-green-600 ml-1">(Recomendado)</span>
+                <span className="text-xs text-green-600 ml-1">(Opcional)</span>
               </h3>
               <p className="text-gray-600 text-sm">
-                Link a tu catalogo online o subi un PDF con tus modelos
+                Opcional pero recomendado: link a tu catalogo online o PDF con tus modelos
               </p>
             </div>
 

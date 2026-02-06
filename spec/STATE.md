@@ -105,7 +105,7 @@ Estos fixes se aplicaron DESPUES del run que dio 46%, por lo que el score real d
 | Fase 3: Prompt generator adaptativo | **COMPLETADA** | Template unico adaptativo con helpers: buildProductsSection, buildCatalogSection, buildNoProductsSection, buildQualificationInstructions |
 | Fase 4: Actualizar wrappers | PENDIENTE | scraper.ts, create route - limpiar constructoraType |
 | Fase 5: Agent test dinamico | COMPLETADA | `324a814` - preguntas adaptativas basadas en GT |
-| Fase 6: Diagnosis exploratorio | PENDIENTE | Score compuesto, IDENTITY_MISS, TERMINOLOGY_MISS |
+| Fase 6: Diagnosis exploratorio | **COMPLETADA** | `d0a1e6a` - Score compuesto con 5 dimensiones |
 | Fase 7: Ground truth ajustes | PENDIENTE | Agregar companyProfile al GT |
 | Fase 8: Verificacion E2E | PENDIENTE | Requiere fases 1-7 completadas |
 
@@ -125,17 +125,47 @@ Estos fixes se aplicaron DESPUES del run que dio 46%, por lo que el score real d
 **Lineas agregadas:** ~375 lineas de template unico + helpers
 **Resultado neto:** Archivo paso de 506 a 376 lineas (mas limpio, sin codigo duplicado)
 
+### Fase 6 - Diagnosis Exploratorio (COMPLETADA)
+
+**Commit:** `d0a1e6a` - [fase6] Implementar score compuesto en diagnosis
+
+**Cambios implementados:**
+1. Agregado `ScoreBreakdown` interface con 5 dimensiones:
+   - `productCoverage` (35% peso) - % de productos del GT mencionados por el agente
+   - `specAccuracy` (20% peso) - % de specs correctas
+   - `contactAccuracy` (15% peso) - Contacto correcto? (0 o 100)
+   - `identityMatch` (15% peso) - El agente entiende que es la empresa?
+   - `hallucinationPenalty` - Resta hasta 15 puntos (-10 por hallucination)
+2. Expandido `GapType` con: `IDENTITY_MISS`, `TERMINOLOGY_MISS`
+3. Nueva funcion `calculateScore()` que aplica pesos y penalty
+4. Nueva funcion `checkIdentityMatch()` que verifica:
+   - Si hay `companyProfile` en GT, compara key concepts del identity con respuestas del agente
+   - Fallback a type-based checks si no hay companyProfile
+   - Detecta confusion de tipo (inmobiliaria vs modular, tradicional vs catalogo)
+5. REPORT.md actualizado:
+   - Tabla de Score Breakdown por empresa
+   - Secciones para IDENTITY_MISS y TERMINOLOGY_MISS en Top Issues
+   - Summary incluye conteo de identity/terminology misses
+   - Recomendaciones para identity/terminology issues
+6. `GroundTruthData` interface actualizada con `companyProfile` opcional
+7. `QuestionType` expandido (migrado de agent-test.ts)
+
+**Test cases verificados:**
+- Perfect score: 85% (max sin penalty)
+- Con 2 hallucinations: 70% (penalty cap de 15 puntos)
+- Mixed performance: 38%
+- Edge case (no products): 85%
+
+**Backwards compatible:**
+- Si `companyProfile` no existe en GT, usa type-based checks
+- Score antiguo (solo modelos) reemplazado por score compuesto
+
 ### Proximas Fases Pendientes
 
-**Fase 4 - Actualizar Wrappers** (siguiente)
+**Fase 4 - Actualizar Wrappers**
 - Limpiar scraper.ts de constructoraType
 - Adaptar mergeVisionResults() para ProductOrService[]
 - Limpiar create/route.ts
-
-**Fase 6 - Diagnosis Exploratorio**
-- Cambiar score de basado-en-modelos a score compuesto
-- Agregar `IDENTITY_MISS` y `TERMINOLOGY_MISS` gap types
-- Implementar `checkIdentityMatch()` para detectar confusion de tipo de empresa
 
 ## Proximos Pasos
 

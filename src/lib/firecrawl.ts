@@ -437,6 +437,11 @@ async function scrapeWixSite(url: string): Promise<{
     '/productos',
     '/proyectos',
     '/servicios',
+    '/entregas',
+    '/equipamientos',
+    '/tipologias',
+    '/nuestras-casas',
+    '/nuestros-modelos',
   ];
 
   // Actions simplificadas para Wix - reducir tiempo
@@ -701,6 +706,11 @@ const PRODUCT_KEYWORDS = [
   'desarrollo', 'desarrollos', 'lote', 'lotes',
   'departamento', 'departamentos', 'unidad', 'unidades',
   'torre', 'torres', 'barrio', 'barrios',
+  'entrega', 'entregas',
+  'equipamiento', 'equipamientos',
+  'plano', 'planos',
+  'detalle', 'detalles',
+  'ficha', 'fichas',
 ];
 
 // Garbage filter: words/phrases that are NOT product names

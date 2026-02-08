@@ -231,6 +231,7 @@ export default function SimulatorForm() {
         session: {
           id: data.sessionId,
           companyName: data.companyName || 'Constructora',
+          websiteUrl: data.websiteUrl || url,
           messagesRemaining: data.messagesRemaining || 50,
           expiresAt: new Date(Date.now() + 30 * 60 * 1000),
         },

@@ -1,217 +1,100 @@
 # Estado del Proyecto - Constructor AI Simulator
 
-**Ultima actualizacion:** 2026-02-06 12:30 ART
+**Ultima actualizacion:** 2026-02-08 (sesion 3)
 
-## Progreso de Fases
+## App en Produccion
+- **URL**: https://agenteiagratis.com (Vercel)
+- **Repo**: https://github.com/Phaprogram108/constructor-ai-simulator
+- **Branch**: main
+- **Ultimo commit**: `76fb72d` - Add team photos, clarify catalog step, update slide descriptions
 
-| Fase | Estado | Notas |
-|------|--------|-------|
-| FASE 1: QA Baseline | Completada | Scripts creados, baseline ejecutado |
-| FASE 2: Mejoras Scraping | Completada | WhatsApp validator, linktree explorer |
-| FASE 3: Anti-Alucinacion | Completada | Content search, response validator |
-| FASE 4: Tipo Constructora | Completada | classifyConstructora() mejorado |
-| FASE 5: Logging Mejorado | Completada | conversation-logger reescrito |
-| FASE 6: QA Final | Completada | compare-results.ts creado |
-| Hotfix: Inmobiliarias | Completada | Clasificacion inmobiliaria + fix fallback |
-| Hotfix: Wix Support | Completada | scrapeWixSite() con URLs directas |
-| Pipeline Diagnostico | **EJECUTADO x3** | Run 1: 61%, Run 2: 26%, Run 3: 46% |
-| **Firecrawl v3** | **EN PROGRESO** | crawlUrl + extract() + mapUrl fallback. Parcial: 46% en run 3, falta run completo con fixes finales |
-| **V4: Fase 5** | **COMPLETADA** | Agent test dinamico con preguntas adaptativas basadas en ground truth |
+## Resumen de Sesiones
 
-## Resultados del Pipeline Diagnostico
+### Sesion 1 (Feb 6 temprano)
+- UX/UI fixes: links clickeables, fullscreen slides, Loom mas grande, typo, mobile text
+- Lint fixes para Vercel build
+- Testing Fase 2: 20 nuevas empresas, 7 nuevos tipos de preguntas
+- Analisis de 408 conversaciones PHA para messaging
 
-### Run 3 - Firecrawl v3 (parcial, sin ultimos fixes)
+### Sesion 2 (Feb 6 tarde) - ESTA SESION ANTERIOR
+- Reemplazado iframe de Canva por slides nativas React (8 slides → 7 slides)
+- Fotos del equipo extraidas del PDF e integradas
+- Flechas visibles en mobile
+- Video CTA scrollea a seccion Loom en vez de link externo
+- WhatsApp links cambiados a api.whatsapp.com (Business)
+- Paso 2 "Agrega tu Catalogo" ahora dice "(Opcional)"
+- Slide 3 punto 2: agregado "llamadas/visitas al showroom o unidad"
 
-| Metrica | Run 2 (v2) | Run 3 (v3) | Cambio |
-|---------|------------|------------|--------|
-| Companies analizadas | 15 | 18 | +3 nuevas |
-| Score promedio | 26% | 46% | **+77% relativo** |
-| SCRAPING_MISS | 100 | 106 | +6 (pero 3 empresas mas) |
-| PROMPT_MISS | 0 | 3 | +3 nuevos |
-| HALLUCINATION | 16 | 2 | **-87.5%** |
+### Sesion 3 (Feb 8) - SESION ACTUAL
+- /fresh para handoff
+- Fase 3 implementada: Re-busqueda on-demand en chat
+  - Nuevo endpoint `/api/chat/research` (Firecrawl mapUrl + scrapeUrl)
+  - Deteccion automatica de "no tengo info" en respuestas GPT
+  - Segundo call a GPT con contexto adicional del sitio web
+  - UI: indicador "Buscando informacion adicional..." despues de 6s
+  - websiteUrl propagado: create -> localStorage -> chat request -> research
 
-### Tabla por Empresa (Run 3)
-
-| Company | v2 Score | v3 Score | v2 Prompt | v3 Prompt | Cambio |
-|---------|----------|----------|-----------|-----------|--------|
-| GoHome | 0% | **100%** | 0 | 16 | FIXED - crawlUrl navega subpaginas |
-| Offis | N/A | **100%** | N/A | 30 | NUEVO - 12 GT models matched |
-| Efede | 100% | **100%** | 1 | 6 | +5 modelos |
-| Grupo Steimberg | 60% | **100%** | 7 | 3 | Mejor matching |
-| Habika | N/A | **100%** | N/A | 0 | NUEVO |
-| PlugArq | 100% | **100%** | 0 | 10* | +10 modelos (proyectos) |
-| Aftamantes | 33% | **67%** | 4 | 5 | +34pp |
-| Atlas Housing | 0% | **50%** | 6 | 5 | +50pp |
-| T1 Modular | 30% | 30% | 7 | 7 | = |
-| Lucys House | 0% | 25% | 0 | 13 | +25pp SPA mejor |
-| Lista | N/A | 18% | N/A | 14 | NUEVO |
-| Mini Casas | 0% | 17% | 7 | 8 | +17pp |
-| Movilhauss | 13% | 13% | 6 | 4 | = naming issue |
-| Ecomod | 60% | 10% | 9 | 7 | REGRESION por regex parsing |
-| ViBert | 0% | 0% | 14 | 0 | REGRESION - clasificado como INMOBILIARIA |
-| Sienna Modular | 0% | 0% | 0 | 0 | SPA - no extractable |
-| Arcohouse | 0% | 0% | 4 | 13 | naming mismatch |
-| Wellmod | 0% | 0% | 1 | 8 | GT tiene 38 modelos imposibles de capturar |
-
-*PlugArq: Run 3 parcial no incluyo el dato actualizado, run posterior confirmo 10 modelos
-
-### Fixes aplicados en Run 3 (POSTERIORES al score de 46%)
-
-Estos fixes se aplicaron DESPUES del run que dio 46%, por lo que el score real deberia ser mayor:
-
-1. **Garbage model name filter** - `parseModelsFromMarkdown()` ya no extrae frases como "tiene una superficie cubierta de" como nombres de modelos
-2. **Removed includePaths** - crawlUrl ahora descubre TODAS las paginas (no solo las que matchean patterns)
-3. **mapUrl fallback** - Si crawl encuentra <5 modelos, tambien corre mapUrl para descubrir URLs que el crawl perdio
-
-### Ecomod ANTES/DESPUES del garbage filter
-- ANTES: Models = "Casa tiene una superficie cubierta de - 45m2" (basura)
-- DESPUES: Models = "Casa Eco Studio - 11.5m2 - 1 bano", "Casa Turístico - 25m2", etc. (correctos)
-
-## V4: Exploratory System
-
-### Fase 5 - Agent Test Dinamico (COMPLETADA)
-
-**Commit:** `324a814` - [fase5] implementar agent test dinamico con preguntas adaptativas
-
-**Cambios implementados:**
-1. Expandido `QuestionType` con 9 tipos: identity, offering, contact, product_count, product_specific, product_specs, financing, coverage, differentiator
-2. Reescrita `generateQuestions()` para generar preguntas dinamicas basadas en ground truth
-3. Agregada `inferProductLabel()` para detectar terminologia (modelos/proyectos/unidades/servicios/lotes)
-4. Agregada `hasFinancingMention()` para detectar info de financiacion en GT
-5. Actualizada `extractModelsFromPrompt()` para detectar formato numerado (`### 1. Producto`) y patterns expandidos
-6. Fixed TypeScript compatibility issue con `Array.from(new Set())` en lugar de spread operator
-
-**Preguntas universales (siempre se hacen):**
-- Que es tu empresa y que hacen?
-- Que productos o servicios ofrecen?
-- Cual es su WhatsApp o telefono de contacto?
-
-**Preguntas condicionales (basadas en GT):**
-- Si hay productos/modelos: Cuantos [label] ofrecen? + preguntas sobre 3 productos especificos + specs
-- Si hay financiacion: Tienen financiamiento o planes de pago?
-- Si hay cobertura: A que zonas llegan o donde operan?
-
-**Impacto:**
-- El agent test ya NO asume que todas las empresas tienen "modelos"
-- Las preguntas se adaptan a lo que el ground truth encontro
-- Mejor alineacion con V4 exploratory approach
-
-### Progreso V4 Fases
-
-| Fase | Estado | Commit |
-|------|--------|--------|
-| Fase 1: Nuevos tipos TypeScript | COMPLETADA | (previo) - ProductOrService, CompanyProfile en types/index.ts |
-| Fase 2: Scraper exploratorio | **COMPLETADA** | `043346d` - exploratorySchema, EXPLORATORY_EXTRACTION_PROMPT, PRODUCT_KEYWORDS |
-| Fase 3: Prompt generator adaptativo | **COMPLETADA** | Template unico adaptativo con helpers: buildProductsSection, buildCatalogSection, buildNoProductsSection, buildQualificationInstructions |
-| Fase 4: Actualizar wrappers | PENDIENTE | scraper.ts, create route - limpiar constructoraType |
-| Fase 5: Agent test dinamico | COMPLETADA | `324a814` - preguntas adaptativas basadas en GT |
-| Fase 6: Diagnosis exploratorio | **COMPLETADA** | `d0a1e6a` - Score compuesto con 5 dimensiones |
-| Fase 7: Ground truth ajustes | PENDIENTE | Agregar companyProfile al GT |
-| Fase 8: Verificacion E2E | PENDIENTE | Requiere fases 1-7 completadas |
-
-### Fase 3 - Prompt Generator Adaptativo (COMPLETADA)
-
-**Cambios implementados:**
-1. Eliminada toda logica condicional basada en `constructoraType` (switch/if con 4 branches)
-2. Eliminados 4 templates diferentes (MODULAR, TRADICIONAL, INMOBILIARIA, MIXTA)
-3. Eliminadas 4 secciones de calificacion por tipo
-4. Eliminada referencia a `**Tipo de Constructora**: ${constructoraType.toUpperCase()}`
-5. Creado template unico adaptativo que usa `profile.identity`, `profile.offering`, `profile.differentiators`, `profile.terminology`
-6. Creados 5 helpers: `buildCatalogSection()`, `buildProductsSection()`, `buildNoProductsSection()`, `buildDeprecatedModelsSection()`, `buildQualificationInstructions()`
-7. Fallback a deprecated `models[]` cuando `products[]` esta vacio (backwards compat)
-8. Prompt usa `profile.terminology.productsLabel` en todas las secciones dinamicas (anti-hallucination rules, ejemplos, calificacion)
-
-**Lineas eliminadas:** ~290 lineas de logica condicional por tipo
-**Lineas agregadas:** ~375 lineas de template unico + helpers
-**Resultado neto:** Archivo paso de 506 a 376 lineas (mas limpio, sin codigo duplicado)
-
-### Fase 6 - Diagnosis Exploratorio (COMPLETADA)
-
-**Commit:** `d0a1e6a` - [fase6] Implementar score compuesto en diagnosis
-
-**Cambios implementados:**
-1. Agregado `ScoreBreakdown` interface con 5 dimensiones:
-   - `productCoverage` (35% peso) - % de productos del GT mencionados por el agente
-   - `specAccuracy` (20% peso) - % de specs correctas
-   - `contactAccuracy` (15% peso) - Contacto correcto? (0 o 100)
-   - `identityMatch` (15% peso) - El agente entiende que es la empresa?
-   - `hallucinationPenalty` - Resta hasta 15 puntos (-10 por hallucination)
-2. Expandido `GapType` con: `IDENTITY_MISS`, `TERMINOLOGY_MISS`
-3. Nueva funcion `calculateScore()` que aplica pesos y penalty
-4. Nueva funcion `checkIdentityMatch()` que verifica:
-   - Si hay `companyProfile` en GT, compara key concepts del identity con respuestas del agente
-   - Fallback a type-based checks si no hay companyProfile
-   - Detecta confusion de tipo (inmobiliaria vs modular, tradicional vs catalogo)
-5. REPORT.md actualizado:
-   - Tabla de Score Breakdown por empresa
-   - Secciones para IDENTITY_MISS y TERMINOLOGY_MISS en Top Issues
-   - Summary incluye conteo de identity/terminology misses
-   - Recomendaciones para identity/terminology issues
-6. `GroundTruthData` interface actualizada con `companyProfile` opcional
-7. `QuestionType` expandido (migrado de agent-test.ts)
-
-**Test cases verificados:**
-- Perfect score: 85% (max sin penalty)
-- Con 2 hallucinations: 70% (penalty cap de 15 puntos)
-- Mixed performance: 38%
-- Edge case (no products): 85%
-
-**Backwards compatible:**
-- Si `companyProfile` no existe en GT, usa type-based checks
-- Score antiguo (solo modelos) reemplazado por score compuesto
-
-### Proximas Fases Pendientes
-
-**Fase 4 - Actualizar Wrappers**
-- Limpiar scraper.ts de constructoraType
-- Adaptar mergeVisionResults() para ProductOrService[]
-- Limpiar create/route.ts
-
-## Proximos Pasos
-
-### PENDIENTE: Re-correr pipeline completo con fixes finales
-El pipeline debe re-correrse para medir el impacto real de los 3 fixes post-run:
+## Commits Recientes
 ```
-npm run dev  # En una terminal
-npx tsx scripts/run-full-pipeline.ts --skip-ground-truth  # En otra
+76fb72d - Add team photos, clarify catalog step, update slide descriptions
+313f314 - Improve slides UX: mobile arrows, scroll-to-video, remove redundant slide, WA Business
+907f27d - Replace Canva iframe with native responsive slides
+2bb7ba1 - Add 20 new companies (fase2) and 7 new question types
 ```
 
-### Empresas que necesitan atencion especial
-1. **ViBert** (0%): Clasificado como INMOBILIARIA → no extrae modelos. Necesita fix en classifier o en como se manejan inmobiliarias
-2. **Sienna Modular** (0%): SPA React pura, ni crawl ni agent extraen modelos
-3. **Arcohouse** (0%): Naming mismatch - "MONTAÑESITO 20M2" en GT vs "Cobre" en prompt
-4. **Wellmod** (0%): GT tiene 38 modelos (incluye proyectos, productos industriales) - irrealista esperar que el scraper capture todo
-5. **Ecomod**: Testear si el garbage filter mejoro el score (estaba en 10%, deberia subir)
+## Testing Completado
+- **Fase 1**: 19/20 empresas (Arqtainer timeout) - 228 preguntas, 11% no-info
+- **Fase 2**: 19/20 empresas (FullHouse timeout) - 380 preguntas, 24.7% no-info
+- **Total**: 38/40 empresas, 608 preguntas testeadas
 
-### Meta: Score >70%
-Con los fixes aplicados post-run, el score esperado deberia estar entre 50-55%. Para llegar a 70%:
-- Fix ViBert (inmobiliaria) → +5pp
-- Mejorar fuzzy matching en diagnosis (Arcohouse, Mini Casas) → +5pp
-- Considerar que Wellmod con 38 GT models es un outlier → sin Wellmod el score sube ~5pp
+## TAREAS PENDIENTES
 
-## Archivos Modificados en Esta Sesion
+### PRIORIDAD ALTA
 
-### Firecrawl v3
-- `src/lib/firecrawl.ts` - **REESCRITO** `scrapeWithFirecrawl()`:
-  - Usa `crawlUrl()` con open discovery (sin includePaths) + excludePaths
-  - `scrapeUrl()` homepage con extract schema para datos estructurados
-  - `mapUrl()` fallback si <5 modelos despues del crawl
-  - `extract()` API si <3 modelos (extraccion AI estructurada)
-  - Agent/Wix para SPAs o si sigue con pocos datos
-  - Garbage filter en `parseModelsFromMarkdown()`
-  - Reducido de 615 lineas a ~420 lineas
+#### 1. Cold Outreach Message
+- **Objetivo**: Mensaje profesional para constructoras invitandolas a probar agenteiagratis.com
+- **Drafts**: Ver HANDOFF.md para 2 versiones (profesional y agresiva con social proof)
+- **Basado en**: Analisis de 408 conversaciones PHA
+- **Estado**: Drafts listos, pendiente refinamiento con usuario
 
-### Spec
-- `spec/FIRECRAWL_V3_SPEC.md` - Plan de implementacion
+#### 2. Analisis profundo de Sales Transcripts
+- 9 llamadas .docx en `/Users/joaquingonzalez/Documents/PHA Notes/sales-transcripts/`
+- 8 notas Notion en `/Users/joaquingonzalez/Documents/PHA Notes/notion-exports/`
+- No leidos aun - pueden informar mejor el messaging y la presentacion
 
-## Notas Tecnicas
+### PRIORIDAD MEDIA
 
-- Chat usa GPT-5.1 (NO 4o)
-- Firecrawl v1.21.1 + $100/mes
-- dotenv requerido para scripts standalone
-- Screenshots JPEG quality 80, max 6000px height
-- Fresh browser por empresa en ground truth capture
-- 20 empresas test en src/scripts/test-companies.json
-- crawlUrl poll interval: 2 seconds
-- crawlUrl limit: 30, maxDepth: 3
-- mapUrl fallback limit: 100 URLs, scrape top 15
+#### 3. Garbage Filter v2
+Empresas con falsos positivos en modelos detectados:
+- Casa Real Viviendas, Gauros Viviendas, La Casa Mia, Viviendas Tecnohouse, Nova Viviendas, Contenedores Argentina
+- Filtros a agregar en `firecrawl.ts validateProductName()`: Sucursales, CTAs, ciudades, navigation UI
+
+### PRIORIDAD BAJA
+
+#### 4. Mejoras Producto
+- Compartir links de catalogos (ej: PlugArq)
+- WhatsApp no detectado en ~40% de empresas
+- Pricing/warranty generan ~40% no-info
+- Session creation timeout en 2/40 empresas
+
+## Archivos Clave
+
+```
+src/components/PresentationSlides.tsx - 7 slides nativas responsive (NUEVO)
+src/components/Message.tsx            - Chat rendering (links, markdown, mobile)
+src/components/ChatInterface.tsx      - Chat UI completa + searching indicator
+src/components/SimulatorForm.tsx      - Form de generacion
+src/app/page.tsx                      - Landing page (slides, video, form)
+src/app/api/chat/research/route.ts   - Re-busqueda on-demand (Firecrawl) (NUEVO)
+src/lib/firecrawl.ts                  - Scraper con garbage filter (~1200 lineas)
+scripts/agent-test.ts                 - Test con 18+ tipos de preguntas
+src/scripts/test-companies.json       - 40 empresas (fase1 + fase2)
+public/team/                          - 4 fotos del equipo (joaquin, brenda, diego, antonela)
+HANDOFF.md                            - Cold outreach drafts + archivos referencia messaging
+```
+
+## Firecrawl
+- Plan Standard ($99/mes), 100K credits, 50 concurrent requests
+- 4,477 pages scrapeadas en ultimos 7 dias (testing)
+- Concurrency warning: no es problema en produccion, solo testing paralelo
+- mapUrl fallback lanza hasta 15 scrapes en paralelo (Promise.all)

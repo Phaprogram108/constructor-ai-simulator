@@ -87,6 +87,7 @@ export interface ChatResponse {
 export interface SessionInfo {
   id: string;
   companyName: string;
+  websiteUrl?: string;
   messagesRemaining: number;
   expiresAt: Date;
 }

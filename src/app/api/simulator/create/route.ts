@@ -8,6 +8,48 @@ import { createEnhancedLog, appendEnhancedMessage, ScrapingMetadata } from '@/li
 import { CreateSessionRequest } from '@/types';
 import { v4 as uuidv4 } from 'uuid';
 
+async function validateUrlReachable(url: string): Promise<{ ok: boolean; error?: string }> {
+  try {
+    const controller = new AbortController();
+    const timeoutId = setTimeout(() => controller.abort(), 10000);
+
+    let response: Response;
+    try {
+      response = await fetch(url, {
+        method: 'HEAD',
+        signal: controller.signal,
+        redirect: 'follow',
+        headers: { 'User-Agent': 'Mozilla/5.0 (compatible; AgentIABot/1.0)' },
+      });
+    } catch {
+      response = await fetch(url, {
+        method: 'GET',
+        signal: controller.signal,
+        redirect: 'follow',
+        headers: { 'User-Agent': 'Mozilla/5.0 (compatible; AgentIABot/1.0)' },
+      });
+    }
+
+    clearTimeout(timeoutId);
+
+    if (response.status >= 400) {
+      return { ok: false, error: `El sitio web devolvió un error (${response.status}). Verificá que la URL sea correcta.` };
+    }
+
+    return { ok: true };
+  } catch (err: unknown) {
+    if (err instanceof Error) {
+      if (err.name === 'AbortError') {
+        return { ok: false, error: 'El sitio web no responde. Verificá que esté funcionando.' };
+      }
+      if (err.message.includes('ENOTFOUND') || err.message.includes('getaddrinfo')) {
+        return { ok: false, error: 'No pudimos encontrar el sitio web. Verificá que la URL sea correcta.' };
+      }
+    }
+    return { ok: false, error: 'No pudimos acceder al sitio web. Verificá la URL e intentá de nuevo.' };
+  }
+}
+
 export async function POST(request: NextRequest) {
   try {
     // Rate limiting
@@ -41,6 +83,18 @@ export async function POST(request: NextRequest) {
         { status: 400 }
       );
     }
+
+    // Validate URL is reachable before scraping
+    console.log('[Create] Validating URL reachability:', websiteUrl);
+    const urlCheck = await validateUrlReachable(websiteUrl);
+    if (!urlCheck.ok) {
+      console.warn('[Create] URL validation failed:', urlCheck.error);
+      return NextResponse.json(
+        { error: urlCheck.error, code: 'URL_UNREACHABLE' },
+        { status: 422 }
+      );
+    }
+    console.log('[Create] URL validation passed');
 
     // Scrape website and analyze PDF in parallel
     console.log('[Create] Starting parallel scraping...');
@@ -148,6 +202,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({
       sessionId: session.id,
       companyName: scrapedContent.title,
+      websiteUrl,
       welcomeMessage,
       messagesRemaining: session.maxMessages,
       systemPrompt, // Include for client-side chat

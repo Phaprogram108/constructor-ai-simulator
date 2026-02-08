@@ -26,6 +26,7 @@ export default function ChatInterface({
   const [messages, setMessages] = useState<MessageType[]>(initialMessages);
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
+  const [isSearching, setIsSearching] = useState(false);
   const [messagesRemaining, setMessagesRemaining] = useState(initialSession.messagesRemaining);
   const [error, setError] = useState('');
 
@@ -69,6 +70,8 @@ export default function ChatInterface({
     };
     setMessages(prev => [...prev, tempUserMessage]);
 
+    const searchingTimer = setTimeout(() => setIsSearching(true), 6000);
+
     try {
       const response = await fetch('/api/chat', {
         method: 'POST',
@@ -77,6 +80,7 @@ export default function ChatInterface({
           sessionId,
           message: userMessage,
           systemPrompt,
+          websiteUrl: initialSession.websiteUrl,
           companyName: initialSession.companyName,
           conversationHistory: messages.map(m => ({
             role: m.role,
@@ -131,6 +135,8 @@ export default function ChatInterface({
       // Remove optimistic message on error
       setMessages(prev => prev.filter(m => m.id !== tempUserMessage.id));
     } finally {
+      clearTimeout(searchingTimer);
+      setIsSearching(false);
       setIsLoading(false);
       // Use setTimeout to ensure focus happens after React re-render
       setTimeout(() => {
@@ -198,7 +204,29 @@ export default function ChatInterface({
         {messages.map((message) => (
           <Message key={message.id} message={message} />
         ))}
-        {isLoading && <TypingIndicator />}
+        {isLoading && (
+          isSearching ? (
+            <div className="flex justify-start mb-4">
+              <div className="bg-gray-100 rounded-2xl rounded-bl-md px-4 py-3">
+                <div className="flex items-center gap-2 mb-1">
+                  <div className="w-6 h-6 rounded-full bg-blue-600 flex items-center justify-center">
+                    <span className="text-white text-xs font-semibold">S</span>
+                  </div>
+                  <span className="text-xs font-medium text-blue-600">Sofia</span>
+                </div>
+                <div className="flex items-center gap-2 text-sm text-blue-600">
+                  <svg className="animate-spin h-4 w-4" viewBox="0 0 24 24">
+                    <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                    <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                  </svg>
+                  Buscando informacion adicional en el sitio web...
+                </div>
+              </div>
+            </div>
+          ) : (
+            <TypingIndicator />
+          )
+        )}
         <div ref={messagesEndRef} />
       </div>
 

@@ -28,15 +28,28 @@ interface ChatRequestBody {
   systemPrompt: string;
   conversationHistory: ChatMessage[];
   companyName?: string;
+  websiteUrl?: string;
   // Campos opcionales para validacion de respuestas (backwards compatible)
   scrapedContent?: ScrapedContent;
   catalog?: ExtractedCatalog;
 }
 
+// Patterns that indicate the AI doesn't have enough info to answer
+const NO_INFO_PATTERNS = [
+  /no tengo (?:esa )?informaci[oó]n/i,
+  /no (?:tengo|cuento con).*(?:cargad|disponible|espec[ií]fic)/i,
+  /contact[aá](?:nos|me) por whatsapp.*(?:detalle|info)/i,
+  /no puedo (?:acceder|verificar)/i,
+];
+
+function responseNeedsResearch(response: string): boolean {
+  return NO_INFO_PATTERNS.some(p => p.test(response));
+}
+
 export async function POST(request: NextRequest) {
   try {
     const body: ChatRequestBody = await request.json();
-    const { sessionId, message, systemPrompt, conversationHistory, scrapedContent, catalog } = body;
+    const { sessionId, message, systemPrompt, conversationHistory, scrapedContent, catalog, websiteUrl } = body;
 
     // Validate request
     if (!message) {
@@ -81,11 +94,63 @@ export async function POST(request: NextRequest) {
     const assistantContent = completion.choices[0]?.message?.content ||
       'Disculpá, hubo un problema. ¿Podés repetir tu consulta?';
 
+    // On-demand re-search: detect "no info" and try to find content on the website
+    let finalContent = assistantContent;
+    let researched = false;
+
+    if (responseNeedsResearch(assistantContent) && websiteUrl) {
+      console.log('[Chat] Response needs research, triggering on-demand search...');
+      try {
+        const researchResponse = await fetch(
+          `${request.nextUrl.origin}/api/chat/research`,
+          {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ websiteUrl, query: message }),
+          }
+        );
+        const research = await researchResponse.json();
+
+        if (research.found && research.content) {
+          const researchMessages: OpenAI.ChatCompletionMessageParam[] = [
+            { role: 'system', content: systemPrompt },
+            ...(conversationHistory || []).map(msg => ({
+              role: msg.role as 'user' | 'assistant',
+              content: msg.content,
+            })),
+            { role: 'user', content: message },
+            { role: 'assistant', content: assistantContent },
+            {
+              role: 'user',
+              content: `INFORMACION ADICIONAL ENCONTRADA EN EL SITIO WEB:\n\n${research.content}\n\nCon esta nueva informacion, responde la pregunta original del cliente de forma completa. Si la informacion responde a lo que pregunto, dala. Si no es relevante, mantene tu respuesta anterior.`,
+            },
+          ];
+
+          const researchCompletion = await getOpenAI().chat.completions.create({
+            model: 'gpt-5.1',
+            messages: researchMessages,
+            max_completion_tokens: 600,
+            temperature: 0.7,
+          });
+
+          const researchContent = researchCompletion.choices[0]?.message?.content;
+          if (researchContent) {
+            finalContent = researchContent;
+            researched = true;
+            console.log('[Chat] Research improved response');
+          }
+        }
+      } catch (researchError) {
+        console.error('[Chat] Research failed:', researchError);
+        // Continue with original response - graceful degradation
+      }
+    }
+
     // Validar respuesta si tenemos el contenido scrapeado
     let validationResult: ValidationResult | null = null;
 
     if (scrapedContent) {
-      validationResult = validateResponse(assistantContent, scrapedContent, catalog);
+      validationResult = validateResponse(finalContent, scrapedContent, catalog);
 
       if (!validationResult.isValid) {
         console.warn('[Chat] Respuesta con posibles alucinaciones:', {
@@ -110,7 +175,7 @@ export async function POST(request: NextRequest) {
       const assistantMessage: Message = {
         id: `assistant-${Date.now()}`,
         role: 'assistant',
-        content: assistantContent,
+        content: finalContent,
         timestamp: new Date(),
       };
 
@@ -123,7 +188,8 @@ export async function POST(request: NextRequest) {
     }
 
     return NextResponse.json({
-      message: assistantContent,
+      message: finalContent,
+      researched,
     });
   } catch (error) {
     console.error('Chat error:', error);

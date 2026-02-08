@@ -41,7 +41,32 @@ function loadCompanies(): Company[] {
     { name: "Steelplex", url: "https://steelplex.com.ar/" },
     { name: "Sipanel", url: "https://sipanel.com.ar/" },
     { name: "Wood Frames", url: "https://woodframes.com.ar/" },
-    { name: "Bauhaus Modular", url: "https://bauhausmodular.com.ar/" }
+    { name: "Bauhaus Modular", url: "https://bauhausmodular.com.ar/" },
+    { name: "Ecosan", url: "https://www.ecosan.com.ar/" },
+    { name: "Ruca Panel", url: "https://www.rucapanel.com.ar/" },
+    { name: "Viviendas Roca", url: "https://www.viviendasroca.com.ar/" },
+    { name: "Idero", url: "https://viviendas-modulares.com/" },
+    { name: "CasaViva", url: "https://somoscasaviva.com/" },
+    { name: "Estilo Modular", url: "https://estilomodular.com/" },
+    { name: "Casarella", url: "https://www.casarella.com.ar/" },
+    { name: "TDS Group", url: "https://www.tds-group.com.ar/" },
+    { name: "Acedur", url: "https://acedur.com/" },
+    { name: "SIA Construcciones", url: "https://siaconstrucciones.com.ar/" },
+    { name: "IMESCO", url: "https://www.imesco.com.ar/" },
+    { name: "Neucon", url: "https://neucon.com.ar/" },
+    { name: "Obra Seca", url: "https://obraseca.com.ar/" },
+    { name: "Contenedores Box Life", url: "https://www.contenedoresboxlife.com.ar/" },
+    { name: "Mi Casa Containers", url: "https://micasacontainers.com.ar/" },
+    { name: "Urbano Modular", url: "https://www.urbanomodular.com.ar/" },
+    { name: "Ecolodge", url: "https://en.ecolodge.com.ar/" },
+    { name: "ReDes Constructora", url: "https://redesconstructora.com/" },
+    { name: "Woodhouse Argentina", url: "https://www.woodhouseargentina.com/" },
+    { name: "Viviendas Monteverde", url: "https://www.viviendasmonteverde.com.ar/" },
+    { name: "NeoBox", url: "https://neobox.ar/" },
+    { name: "Husly", url: "https://husly.com.ar/" },
+    { name: "Haus Argentina", url: "https://www.hausargentina.com.ar/" },
+    { name: "Punto House Steel", url: "https://puntohousesteel.com/" },
+    { name: "Viviendas Argentinas", url: "https://viviendasargentinas.com/" }
   ];
 
   return companies;
@@ -212,7 +237,9 @@ async function testCompany(company: Company, force: boolean): Promise<TestResult
 async function main() {
   const args = process.argv.slice(2);
   const force = args.includes('--force');
-  const singleCompany = args.find(a => a.startsWith('--company'))?.split('=')[1]?.replace(/"/g, '');
+  const singleCompany = args.find(a => a.startsWith('--company='))?.split('=')[1]?.replace(/"/g, '');
+  const onlyCompanies = args.find(a => a.startsWith('--only='))?.split('=')[1]?.replace(/"/g, '').split(',');
+  const firstN = parseInt(args.find(a => a.startsWith('--first'))?.split('=')[1] || '0');
 
   let companies = loadCompanies();
   if (singleCompany) {
@@ -221,6 +248,16 @@ async function main() {
       console.error(`❌ Company "${singleCompany}" not found`);
       process.exit(1);
     }
+  }
+  if (onlyCompanies) {
+    companies = companies.filter(c => onlyCompanies.some(name => c.name.toLowerCase().includes(name.toLowerCase())));
+    if (companies.length === 0) {
+      console.error(`❌ No companies matched: ${onlyCompanies.join(', ')}`);
+      process.exit(1);
+    }
+  }
+  if (firstN > 0) {
+    companies = companies.slice(0, firstN);
   }
 
   console.log(`🚀 Testing ${companies.length} companies\n`);

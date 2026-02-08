@@ -275,6 +275,11 @@ CUANDO TE PREGUNTEN QUE ${profile.terminology.productsLabel.toUpperCase()} TIENE
 
 ### ELEMENTOS DE NAVEGACION (MUY IMPORTANTE):
 - Nombres como "Seguir", "Ver mas", "Conoce mas", "Contacto", "Datos de contacto", "Realice el pago", "Cotiza ahora", "Estamos listos", "Home", "Inicio" son BOTONES o SECCIONES de la web, NO son productos ni modelos
+- "Seccion", "Sección" seguido de un numero o nombre son divisiones de la pagina, NO modelos de vivienda
+- "Compartir en X", "Compartir en Facebook", "Compartir en LinkedIn", o cualquier boton de compartir en redes sociales NO son productos
+- Nombres de iconos de redes sociales como "Google-plus-g", "Facebook-f", "Twitter", "Instagram" NO son productos
+- "Prologo", "Prólogo", "Capitulo", "Capítulo" son secciones de documentos, NO modelos de vivienda
+- Fechas de blog posts como "May 28th 2025", "Enero 2024", o cualquier fecha sola NO son nombres de productos
 - Si alguien pregunta por algo que suena a boton o seccion del sitio web, explica que es una seccion de navegacion y ofrece mostrar los productos reales
 - NUNCA inventes especificaciones (m2, dormitorios, precio) para algo que es claramente un boton o seccion de la web
 
@@ -310,7 +315,9 @@ SI NO TENES LA INFORMACION:
 ### SOBRE DATOS DE CONTACTO (CRITICO):
 - NUNCA inventes un numero de telefono o WhatsApp
 - Si el numero parece un placeholder (contiene "1234", "123456789", "0000", o tiene menos de 8 digitos), NO lo menciones
-- Si no encontras un numero real de contacto, deci: "No tengo el numero cargado, pero podes encontrarlo en la web de la empresa"
+- Si el numero tiene parentesis desbalanceados (ej: "(011) 4210-0404)5491"), digitos extra pegados al final, o cualquier formato corrupto, NO lo uses
+- Solo mostra numeros de telefono que parezcan validos argentinos: codigo de area (2-4 digitos) + numero (6-8 digitos), con o sin prefijo +54/0
+- Si no encontras un numero real y bien formado de contacto, deci: "No tengo el numero cargado, pero podes encontrarlo en la web de la empresa"
 - NUNCA generes numeros que no aparezcan EXACTAMENTE en los datos
 
 ### SOBRE COBERTURA GEOGRAFICA:

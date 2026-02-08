@@ -2,7 +2,7 @@ import Firecrawl from '@mendable/firecrawl-js';
 import { z } from 'zod';
 import { ScrapedContent, SocialLinks, ProductOrService, CompanyProfile } from '@/types';
 // SCRAPING_FAILED_MARKER ya no se usa - ahora usamos fallback de URL
-import { extractFromWaUrl, extractPhoneFromText } from './whatsapp-validator';
+import { extractFromWaUrl, extractPhoneFromText, validateWhatsAppNumber } from './whatsapp-validator';
 
 // Actions universales que funcionan en la mayoría de sitios web
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
@@ -223,6 +223,31 @@ function extractWhatsAppImproved(markdown: string): string | undefined {
   }
 
   return undefined;
+}
+
+/**
+ * Extracts a WhatsApp phone number from wa.me or api.whatsapp.com links
+ * found anywhere in the markdown text. Uses the existing validator to
+ * ensure the number is real (not a placeholder or suspicious sequence).
+ */
+function extractWhatsAppFromMarkdown(markdown: string): string | null {
+  const patterns = [
+    /wa\.me\/(\d{10,15})/gi,
+    /api\.whatsapp\.com\/send\?phone=(\d{10,15})/gi,
+    /whatsapp\.com\/send\?phone=(\d{10,15})/gi,
+  ];
+
+  for (const pattern of patterns) {
+    pattern.lastIndex = 0;
+    const matches = markdown.matchAll(pattern);
+    for (const match of matches) {
+      const validation = validateWhatsAppNumber(match[1]);
+      if (validation.isValid) {
+        return validation.cleanNumber;
+      }
+    }
+  }
+  return null;
 }
 
 /**
@@ -1459,6 +1484,19 @@ export async function scrapeWithFirecrawl(
       }
     } catch (agentError) {
       console.error('[Firecrawl] v4 Agent failed:', agentError);
+    }
+  }
+
+  // ====== STEP 4.5: Final WhatsApp sweep on combinedMarkdown ======
+  // Many construction sites have WhatsApp links (wa.me/NNNN) as floating buttons
+  // that may only appear in some pages' markdown. Do a final sweep on all collected
+  // markdown to catch any we missed during per-page extraction.
+  if (!contactInfo.whatsapp && combinedMarkdown) {
+    console.log('[Firecrawl] v4 Step 4.5: Final WhatsApp sweep on combinedMarkdown...');
+    const finalWa = extractWhatsAppFromMarkdown(combinedMarkdown);
+    if (finalWa) {
+      contactInfo.whatsapp = finalWa;
+      console.log(`[Firecrawl] v4 Final sweep found WhatsApp: ${finalWa}`);
     }
   }
 

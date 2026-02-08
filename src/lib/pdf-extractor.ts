@@ -14,7 +14,7 @@ function getAnthropic(): Anthropic {
 }
 
 // Increased limit for better extraction
-const MAX_PDF_TEXT_LENGTH = 25000;
+const MAX_PDF_TEXT_LENGTH = 80000;
 
 export interface ExtractedCatalog {
   rawText: string;
@@ -134,7 +134,7 @@ export async function analyzePdfWithAI(pdfText: string): Promise<ExtractedCatalo
           content: `Analiza este catálogo/brochure de una constructora y extrae TODA la información de modelos de viviendas.
 
 CONTENIDO DEL CATÁLOGO:
-${pdfText.slice(0, 20000)}
+${pdfText.slice(0, 60000)}
 
 Extrae y responde SOLO con un JSON válido:
 {
@@ -385,7 +385,7 @@ export function formatCatalogForPrompt(catalog: ExtractedCatalog): string {
   // Also include raw text for additional context
   if (catalog.rawText) {
     parts.push('\n=== INFORMACIÓN ADICIONAL DEL CATÁLOGO ===');
-    parts.push(catalog.rawText.slice(0, 8000));
+    parts.push(catalog.rawText.slice(0, 30000));
   }
 
   return parts.join('\n');

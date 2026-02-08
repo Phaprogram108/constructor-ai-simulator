@@ -489,7 +489,7 @@ async function scrapeWixSite(url: string): Promise<{
         const markdown = result.markdown;
         const extract = result.extract as z.infer<typeof exploratorySchema> | undefined;
 
-        allRawText += `\n--- ${catalogUrl} ---\n${markdown.slice(0, 5000)}`;
+        allRawText += `\n--- ${catalogUrl} ---\n${markdown.slice(0, 15000)}`;
 
         // Extraer productos del extract
         if (extract?.products && extract.products.length > 0) {
@@ -581,7 +581,7 @@ async function scrapeWixSite(url: string): Promise<{
             if (emailMatch) contactInfo.email = emailMatch[1];
           }
 
-          allRawText += `\n--- Homepage ---\n${homeMarkdown.slice(0, 3000)}`;
+          allRawText += `\n--- Homepage ---\n${homeMarkdown.slice(0, 10000)}`;
         }
       } catch (homeError) {
         console.log('[Firecrawl Wix] Error scrapeando homepage:', homeError);
@@ -594,7 +594,7 @@ async function scrapeWixSite(url: string): Promise<{
       products: allProducts,
       contactInfo,
       faqs: allFaqs,
-      rawText: allRawText.slice(0, 15000)
+      rawText: allRawText.slice(0, 200000)
     };
   } catch (error) {
     console.error('[Firecrawl Wix] Error:', error);
@@ -1510,7 +1510,7 @@ export async function scrapeWithFirecrawl(
     products: allProducts,
     services: buildServices(constructionMethod, hasFinancing, locations),
     contactInfo: formatContactInfo(contactInfo),
-    rawText: combinedMarkdown.slice(0, 50000),
+    rawText: combinedMarkdown.slice(0, 200000),
     faqs: faqs.length > 0 ? faqs : undefined,
     socialLinks: Object.keys(socialLinks).length > 0 ? socialLinks : undefined,
     // BACKWARDS COMPAT (deprecated):

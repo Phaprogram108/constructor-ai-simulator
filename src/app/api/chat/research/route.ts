@@ -15,8 +15,8 @@ const STOPWORDS = new Set([
   'son', 'del', 'las', 'los', 'una', 'con', 'por', 'para',
 ]);
 
-const MAX_CONTENT_TOTAL = 12000;
-const MAX_CONTENT_PER_PAGE = 5000;
+const MAX_CONTENT_TOTAL = 30000;
+const MAX_CONTENT_PER_PAGE = 10000;
 const MAX_URLS_TO_SCRAPE = 3;
 
 interface ResearchResult {

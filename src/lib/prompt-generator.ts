@@ -193,7 +193,7 @@ ${contactInfo}
   const additionalInfo = rawText
     ? `
 ## INFORMACION ADICIONAL DE LA EMPRESA
-${rawText.slice(0, 12000)}
+${rawText.slice(0, 40000)}
 `
     : '';
 
@@ -201,7 +201,7 @@ ${rawText.slice(0, 12000)}
   const catalogRawSection = catalog?.rawText
     ? `
 ## CONTENIDO COMPLETO DEL CATALOGO
-${catalog.rawText.slice(0, 15000)}
+${catalog.rawText.slice(0, 30000)}
 `
     : '';
 

@@ -1510,7 +1510,7 @@ export async function scrapeWithFirecrawl(
     products: allProducts,
     services: buildServices(constructionMethod, hasFinancing, locations),
     contactInfo: formatContactInfo(contactInfo),
-    rawText: combinedMarkdown.slice(0, 20000),
+    rawText: combinedMarkdown.slice(0, 50000),
     faqs: faqs.length > 0 ? faqs : undefined,
     socialLinks: Object.keys(socialLinks).length > 0 ? socialLinks : undefined,
     // BACKWARDS COMPAT (deprecated):

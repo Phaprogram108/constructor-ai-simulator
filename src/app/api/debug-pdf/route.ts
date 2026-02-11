@@ -3,6 +3,10 @@ import { extractPdfFromUrl, analyzePdfWithAI, analyzePdfWithVision } from '@/lib
 
 // Debug endpoint to test PDF extraction - compares text vs vision methods
 export async function POST(request: NextRequest) {
+  if (process.env.NODE_ENV === 'production' && request.headers.get('x-debug-secret') !== process.env.DEBUG_SECRET) {
+    return NextResponse.json({ error: 'Not found' }, { status: 404 });
+  }
+
   try {
     const body = await request.json();
     const { pdfUrl } = body;

@@ -3,6 +3,10 @@ import { scrapeWebsite } from '@/lib/scraper';
 
 // Debug endpoint to test scraping without full session creation
 export async function POST(request: NextRequest) {
+  if (process.env.NODE_ENV === 'production' && request.headers.get('x-debug-secret') !== process.env.DEBUG_SECRET) {
+    return NextResponse.json({ error: 'Not found' }, { status: 404 });
+  }
+
   try {
     const body = await request.json();
     const { websiteUrl } = body;

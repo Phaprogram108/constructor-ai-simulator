@@ -1,4 +1,4 @@
-import { NextResponse } from 'next/server';
+import { NextRequest, NextResponse } from 'next/server';
 import { listEnhancedLogs, EnhancedConversationLog } from '@/lib/conversation-logger';
 
 interface AggregatedMetrics {
@@ -63,7 +63,13 @@ function calculateMetrics(logs: EnhancedConversationLog[]): AggregatedMetrics {
   };
 }
 
-export async function GET() {
+export async function GET(request: NextRequest) {
+  const secret = request.headers.get('x-analytics-secret') ||
+                 new URL(request.url).searchParams.get('secret');
+  if (process.env.NODE_ENV === 'production' && secret !== process.env.ANALYTICS_SECRET) {
+    return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+  }
+
   try {
     const logs = listEnhancedLogs();
     const metrics = calculateMetrics(logs);

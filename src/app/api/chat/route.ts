@@ -4,6 +4,7 @@ import { appendEnhancedMessage } from '@/lib/conversation-logger';
 import { Message, ScrapedContent } from '@/types';
 import { validateResponse, ValidationResult } from '@/lib/response-validator';
 import { ExtractedCatalog } from '@/lib/pdf-extractor';
+import { rateLimit } from '@/lib/rate-limiter';
 
 // Inicialización lazy para evitar errores durante el build
 let openaiInstance: OpenAI | null = null;
@@ -48,6 +49,9 @@ function responseNeedsResearch(response: string): boolean {
 
 export async function POST(request: NextRequest) {
   try {
+    const rateLimitResponse = rateLimit(request, 'chat');
+    if (rateLimitResponse) return rateLimitResponse;
+
     const body: ChatRequestBody = await request.json();
     const { sessionId, message, systemPrompt, conversationHistory, scrapedContent, catalog, websiteUrl } = body;
 
@@ -69,6 +73,14 @@ export async function POST(request: NextRequest) {
     if (message.length > 1000) {
       return NextResponse.json(
         { error: 'El mensaje es demasiado largo (máx 1000 caracteres)' },
+        { status: 400 }
+      );
+    }
+
+    // Limit conversation history to prevent payload abuse
+    if (conversationHistory && conversationHistory.length > 50) {
+      return NextResponse.json(
+        { error: 'Historial de conversación demasiado largo.' },
         { status: 400 }
       );
     }

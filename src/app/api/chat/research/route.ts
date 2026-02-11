@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import Firecrawl from '@mendable/firecrawl-js';
+import { rateLimit } from '@/lib/rate-limiter';
 
 let firecrawlInstance: Firecrawl | null = null;
 
@@ -27,6 +28,9 @@ interface ResearchResult {
 
 export async function POST(request: NextRequest): Promise<NextResponse<ResearchResult>> {
   try {
+    const rateLimitResponse = rateLimit(request, 'research');
+    if (rateLimitResponse) return rateLimitResponse as NextResponse<ResearchResult>;
+
     const { websiteUrl, query } = await request.json();
 
     if (!websiteUrl || !query) {

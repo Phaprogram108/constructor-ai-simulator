@@ -169,6 +169,8 @@ async function alertSlack(ip: string, reason: string, duration: string, bucket: 
 }
 
 export function rateLimit(request: Request, bucket: Bucket): NextResponse | null {
+  if (process.env.NODE_ENV === 'development') return null;
+
   const clientId = getClientIdentifier(request);
   const result = checkRateLimit(clientId, bucket);
 

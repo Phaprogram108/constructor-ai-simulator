@@ -667,8 +667,12 @@ function parseAgentProducts(data: any): ProductOrService[] {
         Object.assign(specs, item.specs);
       }
 
+      const rawName = item.name || item.nombre;
+      const validatedName = validateProductName(rawName);
+      if (!validatedName) continue;
+
       products.push({
-        name: item.name || item.nombre,
+        name: validatedName,
         description: item.description || item.descripcion,
         specs,
         features: item.features || item.caracteristicas,
@@ -819,6 +823,20 @@ const GARBAGE_NAMES = new Set([
   'construccion modular', 'construcción modular', 'costruccion modular', 'costrucción modular',
   'contenedores maritimos', 'contenedores marítimos',
   'inversion', 'inversión',
+  // CTAs y UI faltantes
+  'consultanos', 'consultános', 'consultar ahora',
+  'read more', 'leer mas', 'leer más',
+  'back to top', 'volver arriba',
+  'como llegar', 'cómo llegar',
+  'whatsapp chat', 'chat whatsapp',
+  'quiero saber mas', 'quiero saber más',
+  'muchas mas soluciones', 'muchas más soluciones',
+  'productos relacionados',
+  'showroom virtual', 'virtual showroom',
+  'close menu', 'cerrar menu', 'cerrar menú',
+  'left menu', 'menu button',
+  'ultimas entregas', 'últimas entregas',
+  'saber mas', 'saber más',
 ]);
 
 // Single-word headings that are generic and should be excluded
@@ -866,6 +884,15 @@ function validateProductName(raw: string): string | null {
 
   // Skip names that are just numbers
   if (/^\d+$/.test(name)) return null;
+
+  // Wix alt-text patterns: "Proyecto 1", "Detalle 3", etc.
+  if (/^(proyecto|detalle)\s+\d+$/i.test(name)) return null;
+
+  // Branch/office names: "Sucursal Cañuelas", "Sucursal CABA"
+  if (/^sucursal\s/i.test(name)) return null;
+
+  // Stand-alone Argentine city/province names (not product names)
+  if (words.length <= 2 && /^(buenos aires|córdoba|cordoba|rosario|mendoza|salta|tucumán|tucuman|neuquén|neuquen|caba|capital federal|mar del plata|la plata|santa fe|corrientes|resistencia|posadas|san juan|san luis|rio negro|río negro|bariloche|ushuaia)$/i.test(name)) return null;
 
   // ALL CAPS multi-word filter: "CASAS DE HORMIGÓN" is a heading, not a product.
   // Exception: short codes like "CM0", "TM1", "QM1" (1-2 words, alphanumeric codes)

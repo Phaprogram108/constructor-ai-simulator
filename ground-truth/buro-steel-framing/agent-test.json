@@ -1,0 +1,264 @@
+{
+  "company": "Buro Steel Framing",
+  "url": "https://burosteelframing.com/",
+  "testedAt": "2026-02-06T16:55:23.352Z",
+  "sessionId": "b58b388f-2fc0-468a-84f8-6b2b54df2238",
+  "systemPromptLength": 21365,
+  "systemPromptModelsFound": [
+    "Modelo Gala",
+    "Modelo Elba",
+    "Modelo Nilba",
+    "Casa moderna de",
+    "Con",
+    "Innova House",
+    "Modelo Lena"
+  ],
+  "systemPromptWhatsApp": "1153234885",
+  "systemPromptType": "de Modelos de casas, diseños de obra, proyectos estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Somos Buro Steel Framing, una constructora en Argentina especializada en sistemas de construcción en seco (Steel Frame) y construcción tradicional húmeda. Diseñamos y construimos casas llave en mano, obras nuevas, ampliaciones y proyectos a medida, acompañándote desde el diseño del proyecto hasta la entrega final. Trabajamos en zonas como Pilar, Escobar, Tigre, CABA, San Isidro, Luján, entre otras, con fuerte foco en calidad y personalización.  \n\nPara orientarte mejor, ¿qué tipo de modelos de casas, diseños de obra, proyectos estás buscando?",
+      "mentionedModels": [
+        "Con"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 7856
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos diseño y construcción de viviendas y obras comerciales tanto en Steel Frame (construcción en seco) como en sistema tradicional húmedo. Trabajamos con servicio llave en mano, obras nuevas, ampliaciones y diseño de proyecto (planos y anteproyecto) con nuestro equipo de arquitectos.  \n\nEn modelos de casas, diseños de obra, proyectos contamos con opciones como los modelos Gala, Elba, Nilba, Lena, la casa moderna de 148 m², otra de 133 m² y la línea Innova House que es totalmente personalizable.  \nPara ayudarte mejor, ¿ya tenés en mente una casa particular o una ampliación/local, por ejemplo?",
+      "mentionedModels": [
+        "Casa moderna de",
+        "Con",
+        "Innova House"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2714
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Te dejo los datos de contacto directo:  \n- Teléfono: 11 5323 4885  \n- WhatsApp: +54 11 5323 4885  \n- Email: info@burosteelframing.com  \n\nSi querés, me contás brevemente qué querés construir y te digo qué modelos o servicios de Buro Steel Framing te pueden encajar mejor antes de que hables con un asesor.",
+      "mentionedModels": [
+        "Con"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4100
+    },
+    {
+      "question": "¿Cuántos modelos de casas ofrecen?",
+      "questionType": "product_count",
+      "response": "Hoy tenemos 7 modelos de casas, diseños de obra, proyectos destacados cargados: Gala, Elba, Nilba, Lena, la casa moderna de 148 m², otra de 133 m² y la línea Innova House (personalizable). Todos se pueden adaptar en distribución, terminaciones y sistema constructivo (Steel Frame o tradicional), según tus necesidades.  \n\nPara afinar, ¿estás buscando algo de cuántos m² o con cuántos dormitorios aproximadamente?",
+      "mentionedModels": [
+        "Casa moderna de",
+        "Con",
+        "Innova House"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2096
+    },
+    {
+      "question": "Contame sobre Modelo Gala",
+      "questionType": "product_specific",
+      "response": "El Modelo Gala es un modelo de vivienda moderna y funcional, pensado para aprovechar bien los espacios y ofrecer una distribución cómoda para la vida diaria. Es ideal si buscás líneas contemporáneas, buena iluminación y un diseño adaptable tanto para Steel Frame como para construcción tradicional.  \n\nNo tengo los m² exactos ni el plano cargado por acá, pero se puede ajustar en tamaño, cantidad de dormitorios y terminaciones. ¿Qué superficie y cuántos ambientes te interesaría para ver si el Gala se adapta a lo que necesitás?",
+      "mentionedModels": [
+        "Modelo Gala",
+        "Con"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2822
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Modelo Gala? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "El Modelo Gala está descripto como una vivienda moderna y funcional, pero no tengo cargados los datos técnicos finos (m² exactos, cantidad de dormitorios ni plano detallado) en este canal. Sí se diseña y construye tanto en Steel Frame como en sistema tradicional, y se puede adaptar en superficie, cantidad de ambientes, terminaciones y tipo de obra (obra nueva o ampliación).  \n\nNo tengo esa información específica cargada (como plano y ficha técnica completa), pero podés pedir el detalle por WhatsApp al +54 11 5323 4885 y te envían m², distribución y opciones de terminaciones. Mientras tanto, contame: ¿qué superficie y cuántos dormitorios estás buscando así veo si otro modelo como Elba, Nilba, Lena o Innova House también puede encajarte?",
+      "mentionedModels": [
+        "Modelo Gala",
+        "Con",
+        "Innova House"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 2719
+    },
+    {
+      "question": "Contame sobre Modelo Elba",
+      "questionType": "product_specific",
+      "response": "El Modelo Elba es un modelo de casa con diseño contemporáneo, con líneas modernas y una estética muy actual, ideal si buscás una vivienda con buena presencia y funcionalidad. Al igual que el resto de nuestros modelos, se puede ejecutar tanto en Steel Frame como en construcción tradicional y se adapta en distribución interna, cantidad de ambientes y terminaciones.  \n\nNo tengo cargados por acá los m² exactos ni el plano técnico del Elba, pero sí se personaliza según tu terreno y necesidades. Para ver si te encaja, ¿ya tenés terreno? ¿En qué zona sería?",
+      "mentionedModels": [
+        "Modelo Elba",
+        "Con"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 2911
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Modelo Elba? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "El Modelo Elba está definido como una casa de diseño contemporáneo, con líneas modernas y pensada para ser funcional, pero en la info que tengo acá no figuran los datos técnicos finos: superficie exacta en m², cantidad de dormitorios ni el plano detallado. Se puede construir tanto en Steel Frame como en sistema tradicional, y se adapta en distribución, cantidad de ambientes y terminaciones según tu proyecto.  \n\nNo tengo esa ficha técnica específica cargada, pero podés pedirla por WhatsApp al +54 11 5323 4885 y te envían m², planos e imágenes. Para orientarte mejor mientras tanto, ¿qué superficie y cuántos dormitorios estás buscando aproximadamente?",
+      "mentionedModels": [
+        "Modelo Elba",
+        "Con"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2515
+    },
+    {
+      "question": "¿Cuál es la diferencia entre Modelo Gala y Modelo Elba?",
+      "questionType": "model_comparison",
+      "response": "Entre el Modelo Gala y el Modelo Elba la principal diferencia está en el enfoque de diseño: Gala se presenta como una vivienda moderna y muy funcional (prioriza practicidad y aprovechamiento de espacios), mientras que Elba se destaca más por su diseño contemporáneo y la estética, con una impronta arquitectónica más marcada. Ambos se pueden hacer en Steel Frame o tradicional y son personalizables en superficie, cantidad de dormitorios y terminaciones, por lo que solemos elegir uno u otro según si priorizás más funcionalidad compacta (Gala) o presencia y diseño contemporáneo (Elba).  \n\nPara ayudarte a elegir mejor, ¿qué te importa más: que sea más compacta y funcional, o que tenga un diseño más protagonista y moderno hacia el frente?",
+      "mentionedModels": [
+        "Modelo Gala",
+        "Modelo Elba",
+        "Con"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 5338
+    },
+    {
+      "question": "¿Qué modelo me recomendás para una familia de 4 personas?",
+      "questionType": "recommendation",
+      "response": "Para una familia de 4 personas, en general te recomiendo pensar en mínimo 3 dormitorios y buenos espacios sociales (living-comedor amplio y cocina cómoda). Dentro de nuestros modelos, suelen encajar muy bien el Modelo Gala y el Modelo Elba (ambos modernos y funcionales) y también la casa moderna de 148 m² o la de 133 m², que por superficie son ideales para 4 integrantes; si querés algo totalmente a medida, la línea Innova House te permite armar el proyecto desde cero según su forma de vida.  \n\nPara afinar la recomendación, te pregunto: ¿ya tenés terreno y en qué zona sería?",
+      "mentionedModels": [
+        "Modelo Gala",
+        "Modelo Elba",
+        "Casa moderna de",
+        "Innova House"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2718
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con un proceso bien ordenado: primero análisis de necesidad, después confección de presupuesto, anteproyecto (planos y propuesta), aprobación y ajustes, y recién ahí planificación y ejecución de la obra, ya sea en Steel Frame o tradicional, con modalidad llave en mano si lo deseas. Te acompañamos en todo: diseño, gestión y construcción hasta la entrega final.\n\nLos plazos dependen mucho de los m², el sistema (Steel Frame suele ser más rápido que el tradicional) y la complejidad del proyecto. No tengo los tiempos exactos por tipo de casa cargados acá, pero una vivienda en Steel Frame suele ser sensiblemente más rápida que la obra húmeda clásica; para un estimado concreto de tu caso, lo ideal es que un asesor te lo calcule.  \n\nPara eso, ¿para cuándo necesitarías tener la casa terminada aproximadamente?",
+      "mentionedModels": [
+        "Con"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4167
+    },
+    {
+      "question": "¿Se pueden personalizar los modelos de casas?",
+      "questionType": "customization",
+      "response": "Sí, todos nuestros modelos de casas se pueden personalizar: podés ajustar superficie, distribución interna, cantidad de dormitorios, terminaciones y elegir entre Steel Frame o construcción tradicional. Incluso la línea Innova House está pensada justamente para hacer proyectos totalmente a medida según tu terreno, tu presupuesto y cómo vive tu familia.  \n\nPara orientarte mejor con las opciones, ¿ya tenés terreno? ¿En qué zona sería?",
+      "mentionedModels": [
+        "Con",
+        "Innova House"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 1808
+    },
+    {
+      "question": "¿Tenés imágenes, planos o algún catálogo que pueda ver?",
+      "questionType": "images_catalog",
+      "response": "Sí, tenemos catálogo, imágenes y planos de nuestros modelos de casas, diseños de obra, proyectos (Gala, Elba, Nilba, Lena, Innova House, casa moderna 148 m² y 133 m²). Lo podés ver en nuestra web y redes, y si escribís por WhatsApp te pueden enviar PDFs, renders y planos según el modelo que te interese.  \n\nTe recomiendo escribir al WhatsApp +54 11 5323 4885 y pedir, por ejemplo: “catálogo y planos del Modelo Gala y Elba”.  \nAntes de eso, ¿qué tipo de casa estás buscando (m² aproximados o cantidad de dormitorios) así te sugiero qué pedir puntualmente?",
+      "mentionedModels": [
+        "Modelo Gala",
+        "Innova House"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2547
+    },
+    {
+      "question": "¿Cuánto sale aproximadamente una casa de 2 dormitorios?",
+      "questionType": "pricing",
+      "response": "No tengo los precios actualizados cargados por acá, así que no puedo decirte un valor aproximado ni por m² ni por modelo sin inventar. Los costos dependen mucho del sistema (Steel Frame o tradicional), terminaciones, metros cuadrados, zona de obra y si es llave en mano completa.  \n\nTe sugiero consultarlo por WhatsApp al +54 11 5323 4885, donde te pasan valores actualizados para casas de 2 dormitorios según el modelo que elijas (por ejemplo Gala, Elba, Nilba, Lena o Innova House). Para que vayas con una idea más clara, ¿en qué zona tenés o pensás tener el terreno?",
+      "mentionedModels": [
+        "Con",
+        "Innova House"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 3643
+    },
+    {
+      "question": "¿Qué incluye el precio? ¿Terminaciones, instalación, todo?",
+      "questionType": "includes",
+      "response": "En Buro solemos trabajar con modalidad llave en mano, donde el precio incluye la construcción completa de la vivienda: estructura (Steel Frame o tradicional), muros, techos, instalaciones eléctricas y sanitarias, revestimientos, pisos y terminaciones estándar definidas en el presupuesto. Los alcances exactos (por ejemplo tipo de aberturas, muebles de cocina, artefactos, etc.) se detallan siempre en la memoria descriptiva de cada propuesta para que sepas bien qué está incluido y qué no.\n\nNo tengo el detalle fino de cada paquete de terminaciones cargado acá, por eso para saber exactamente “qué entra” en el valor de la casa que te coticen, te sugiero pedir la memoria descriptiva por WhatsApp al +54 11 5323 4885. ¿Ya estás pensando en un modelo (Gala, Elba, Nilba, Lena o Innova House) y en cuántos m² aproximadamente?",
+      "mentionedModels": [
+        "Con",
+        "Innova House"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3269
+    },
+    {
+      "question": "¿Ustedes se encargan de toda la instalación o solo entregan los materiales?",
+      "questionType": "installation",
+      "response": "Nosotros somos constructora: nos encargamos de la obra completa, no solo de vender materiales. Hacemos la construcción integral de la vivienda u obra (estructura, muros, techos, instalaciones eléctricas y sanitarias, terminaciones, etc.), ya sea en Steel Frame o en sistema tradicional, con modalidad llave en mano si lo deseas.  \n\nEn tu caso puntual, ¿estás buscando que hagamos la obra completa en tu terreno o estabas pensando solo en provisión de materiales?",
+      "mentionedModels": [
+        "Con"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 1967
+    },
+    {
+      "question": "¿Qué garantía ofrecen sobre la construcción?",
+      "questionType": "warranty",
+      "response": "Ofrecemos garantía sobre la construcción porque trabajamos como empresa constructora formal, con sistema Steel Frame y tradicional, siguiendo normas y buenas prácticas constructivas, pero en la info que tengo acá no figura el detalle exacto de años o condiciones de garantía. Lo que sí está claro es que cuidamos todo el proceso (proyecto, planificación y ejecución) para entregar obras de calidad y durables, y la garantía se detalla siempre en el contrato y la documentación de obra.  \n\nNo tengo esa información específica de plazos de garantía cargada, pero podés pedir el detalle puntual por WhatsApp al +54 11 5323 4885. ¿La idea es hacer una casa familiar (por ejemplo Modelo Gala, Elba, Nilba, Lena o Innova House) o un proyecto comercial?",
+      "mentionedModels": [
+        "Modelo Gala",
+        "Con",
+        "Innova House"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 6531
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, ofrecemos financiación y planes de pago para la construcción de viviendas y obras, tanto en Steel Frame como en sistema tradicional. Las condiciones (anticipos, cuotas, plazos) se adaptan al tipo de proyecto y se definen en la etapa de presupuesto.  \n\nNo tengo los planes específicos cargados por acá, así que para ver opciones concretas te sugiero escribir al WhatsApp +54 11 5323 4885. Para que te orienten mejor, ¿qué presupuesto aproximado manejás y en qué zona tenés pensado construir?",
+      "mentionedModels": [
+        "Con"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2192
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Lo que más nos diferencia es que trabajamos muy personalizado: analizamos tu necesidad puntual, armamos el proyecto a medida (no solo “metraje”) y te acompañamos en todas las etapas, desde el anteproyecto hasta la entrega. Somos especialistas tanto en Steel Frame como en construcción tradicional, con foco fuerte en calidad constructiva, planificación de obra y seguimiento cercano al cliente.  \n\nAdemás de casas llave en mano, hacemos obras nuevas, ampliaciones y proyectos comerciales, con modelos de casas, diseños de obra, proyectos propios como Gala, Elba, Nilba, Lena, la casa moderna de 148 m², la de 133 m² y la línea Innova House totalmente personalizable.  \nPara entender mejor cómo ayudarte, ¿qué tipo de proyecto tenés en mente ahora mismo?",
+      "mentionedModels": [
+        "Casa moderna de",
+        "Con",
+        "Innova House"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 5876
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "Trabajamos en varias zonas de Buenos Aires y alrededores. Llegamos a: Pilar, Escobar, Campana, San Miguel, Cañuelas, Zárate, Capital Federal, Tigre, Esteban Echeverría, Olivos, Exaltación de la Cruz, Luján y San Isidro.  \n\nSi tu zona no está en esa lista, podría ser posible igual, pero te sugiero consultarlo por WhatsApp al +54 11 5323 4885. ¿En qué localidad tenés o pensás tener el terreno?",
+      "mentionedModels": [
+        "Con"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3237
+    }
+  ],
+  "sessionCreationTimeMs": 74330,
+  "errors": []
+}

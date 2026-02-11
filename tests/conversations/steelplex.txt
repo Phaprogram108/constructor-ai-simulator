@@ -1,0 +1,53 @@
+=== STEELPLEX ===
+URL: https://steelplex.com.ar/
+Session: eb417880-e379-4a5e-9c70-2bcc28b5d72b
+Date: 2026-02-08 16:54:31
+Session creation: 26.9s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (6.0s): Somos Steelplex, una fábrica en Córdoba especializada en estructuras de steel framing para todo tipo de proyectos: viviendas, galpones, colegios, hoteles, ampliaciones, etc. Diseñamos y fabricamos en planta toda la estructura y la panelería (Steel Frame Estructuras y Panelería Steel Frame), listas para montar en obra, con proceso automatizado, control de calidad y diseño a medida.
+
+Además damos servicios integrales: adaptación de tu proyecto al sistema steel frame, ingeniería y planos de montaje, provisión de materiales en seco, auditorías en obra y opciones de financiación. ¿Qué tipo de estructuras estás buscando: vivienda, ampliación, galpón, proyecto comercial?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (3.7s): Ofrecemos principalmente tres líneas de productos:  
+- **Estructuras a medida** en steel framing (Steel Frame Estructuras): se diseñan y conforman en fábrica según tu proyecto, listas para montar.  
+- **Estructuras estandarizadas** (viviendas, galpones como PGO20, PGO40, etc.) para construir rápido y con menos complejidad.  
+- **Panelería Steel Frame** y **materiales en seco**: paneles y perfilería con control de calidad, más un corralón específico del sistema.
+
+En servicios, brindamos: presupuestos sin cargo, adaptación de planos al steel frame, diseño estructural e ingeniería de detalles, legajo completo de montaje, asesoramiento en estructuras mixtas, auditorías en obra y financiación. ¿En qué estás pensando vos: una vivienda, un local/galpón o una ampliación?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (4.6s): Tenemos varios tipos de estructuras y modelos, más que “modelos cerrados” tipo catálogo fijo. Hoy trabajamos así:  
+- **Viviendas a medida** (por ejemplo obras reales de 170 m² en Villa Carlos Paz y 290 m² en Córdoba, Vivienda Unifamiliar en Rosario, casas en Salta y Manantiales II).  
+- **Estructuras estandarizadas** como galpones tipo **PGO20, PGO40** y soluciones para **complejos hoteleros, colegios, palcos de estadio**, etc., además de **Steel Frame Estructuras** y **Panelería Steel Frame** como productos específicos.
+
+En la práctica, adaptamos el diseño a lo que necesitás más que venderte sólo 2 o 3 tipologías fijas. ¿Ya tenés una idea de metros cuadrados o cantidad de dormitorios para la casa que querés?
+
+USUARIO: Contame sobre 1. Casa en Blanco
+AGENTE (3.7s): Buenísimo que preguntes por Casa en Blanco. Es uno de nuestros puntos de atención/comercialización (Edificor) sobre la colectora de Circunvalación, altura Monseñor P. Cabrera 5500, donde podés ver de cerca cómo trabajamos en steel frame y recibir asesoramiento personalizado sobre viviendas y estructuras Steelplex.
+
+Ahí te mostramos ejemplos de casas en steel framing, opciones de financiación y cómo sería tu obra usando nuestras **Steel Frame Estructuras** y **Panelería Steel Frame**. ¿Te gustaría usar Casa en Blanco como referencia para una vivienda similar? Si querés, coordinamos que te contacte un asesor para avanzar.
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (6.0s): No tengo los precios actualizados cargados como para darte un valor serio por acá, porque dependen mucho de m², diseño, terminaciones y zona de obra. Te sugiero consultarlo por WhatsApp así te pasan un presupuesto orientativo para una casa de 2 dormitorios en steel frame y, si querés, opciones de financiación: https://wa.link/ydige3.
+
+Para ir afinando, ¿de cuántos metros cuadrados estás pensando más o menos y en qué zona tenés o tendrías el terreno?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (3.7s): En Steelplex trabajamos bajo un Sistema de Gestión de la Calidad basado en **ISO 9001** y con certificaciones **IRAM / IRAM–INTI**, lo que respalda la calidad de nuestras estructuras de steel framing y procesos industriales. Las **Steel Frame Estructuras** y la **Panelería Steel Frame** se fabrican con acero galvanizado certificado y pasan por controles estrictos en planta, lo que reduce errores en obra y asegura durabilidad y buen comportamiento estructural, térmico y acústico.
+
+Los plazos y alcances específicos de garantía (años, qué cubre cada etapa: estructura, montaje, etc.) se detallan en cada contrato de obra/presupuesto. Si querés, te ayudo a que un asesor te envíe por mail o WhatsApp las condiciones de garantía para una vivienda o estructura como la que estás evaluando.
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (4.1s): Te podés comunicar directo con nosotros acá:  
+- **WhatsApp / Teléfono fábrica:** +54 9 351 208 4451 → https://wa.link/ydige3  
+- **Mail:** info@steelplex.com.ar  
+
+Si querés, me contás para qué tipo de estructura (vivienda, galpón, ampliación) y así cuando te contacten ya van con una propuesta más enfocada.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 1
+Tiempo promedio: 4.5s

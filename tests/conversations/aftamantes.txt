@@ -1,0 +1,55 @@
+=== AFTAMANTES ===
+URL: https://aftamantes.net/refugios/
+Session: 24312ecd-fbde-4271-b84b-c7cc04276892
+Date: 2026-02-08 16:29:48
+Session creation: 12.5s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (3.5s): AFT Amantes es un estudio de arquitectura modular argentino especializado en refugios modulares, casas compactas y módulos personalizados para vivienda y turismo. Construimos en steel frame, en fábrica, con sistema en seco, alta aislación y terminaciones de calidad, y luego trasladamos el módulo listo para usar a tu terreno.  
+
+Podés elegir entre Refugios de 24m², 45m², 70m², 94m² y la Casa Compacta de 70 m² (2 habitaciones, cocina y baño completos), con opciones de energía renovable y personalización de materiales y equipamiento. Además, ofrecemos financiación 100% online a través de Banco Hipotecario. ¿En qué tipo de Refugios modulares, casas compactas, módulos. estás pensando vos?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (3.4s): Ofrecemos principalmente Refugios modulares, casas compactas, módulos. para vivienda y turismo, en tamaños estándar de 24m², 45m², 70m² y 94m², todos construidos en steel frame, con alta aislación termoacústica, cocina y baño equipados, carpinterías de aluminio y terminaciones personalizables.  
+
+También tenemos la Casa Compacta: 70 m², 2 habitaciones, cocina y baño completos, con un valor de U$ 91.000, lista en 120 días. Sumamos servicios de proyectos a medida en arquitectura modular, opciones de energía renovable (paneles y termotanques solares) y financiación 100% online con Banco Hipotecario. ¿Ya tenés pensado si lo usarías como vivienda permanente o más orientado al turismo/alquiler?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (2.8s): Tenemos 5 líneas principales de Refugios modulares, casas compactas, módulos.:  
+
+1) Refugios de 24m²  
+2) Refugios de 45m²  
+3) Refugios de 70m²  
+4) Refugios de 94m²  
+5) Casa Compacta de 70 m² con 2 habitaciones, cocina y baño completos (U$ 91.000, lista en 120 días).  
+
+Todos se pueden personalizar en terminaciones, equipamiento y uso (vivienda, turismo, oficina, comercio). ¿Qué tamaño te cierra más para lo que estás buscando hoy?
+
+USUARIO: Contame sobre 1. Energía renovable
+AGENTE (2.6s): En AFT Amantes podés hacer que tus refugios modulares, casas compactas, módulos. sean autosuficientes incorporando energía renovable. Trabajamos con paneles solares y termotanques solares para generar electricidad y agua caliente, reduciendo mucho el consumo de la red y el impacto ambiental.  
+
+La aislación termoacústica de alta performance (lana de vidrio en paredes, techo y piso) hace que necesites menos energía para climatizar, así que el sistema solar rinde mucho mejor. ¿Lo pensás para un lugar con acceso limitado a la red eléctrica o más como complemento para bajar costos de consumo?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (2.7s): Para una casa de 2 dormitorios tenés dos referencias claras en nuestro catálogo:  
+
+- Casa Compacta de 70 m², con 2 habitaciones, cocina y baño completos: está en U$ 91.000.  
+- También podés tomar como referencia el Refugio de 70m² (apto vivienda), cuyos refugios arrancan en 87.500 USD según la configuración base y se ajusta según personalización y traslado.  
+
+Los valores finales dependen de terminaciones, opcionales y ubicación del terreno. ¿En qué zona tenés pensado instalarla y para cuándo la necesitarías?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (4.6s): Trabajamos con estructura en steel frame, aislaciones y terminaciones pensadas para larga vida útil, y todos los refugios llegan listos desde fábrica con instalaciones sanitarias y eléctricas nuevas y probadas, lo que reduce muchísimo problemas posteriores.  
+
+No tengo cargado el detalle exacto de años de garantía por escrito en el sistema, pero sí que la calidad y durabilidad son parte central de nuestra propuesta (“construídos para durar”) y acompañamos ante cualquier inconveniente de fabricación o montaje. ¿Estás evaluando usarlo como vivienda permanente o más bien como proyecto de turismo?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.8s): No tengo el número de WhatsApp o teléfono cargado acá, pero lo encontrás directo en la web oficial de AFT Amantes: aftamantes.net.  
+
+Ahí mismo también tenés el botón “Cotizá tu refugio” donde podés dejar tus datos y te contacta un asesor por WhatsApp para seguir tu caso puntual.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 2
+Tiempo promedio: 3.2s

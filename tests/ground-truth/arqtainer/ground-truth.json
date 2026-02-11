@@ -1,0 +1,19 @@
+{
+  "scannedAt": "2026-02-08T13:52:26.306Z",
+  "companyName": "Arqtainer",
+  "baseUrl": "https://arqtainer.com.ar/",
+  "homepage": {
+    "title": "",
+    "metaDescription": "",
+    "fullText": "",
+    "screenshotFile": ""
+  },
+  "navigation": [],
+  "sections": [],
+  "models": [],
+  "pdfLinks": [],
+  "allLinks": [],
+  "errors": [
+    "Fatal: page.goto: Timeout 30000ms exceeded.\nCall log:\n\u001b[2m  - navigating to \"https://arqtainer.com.ar/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  ]
+}

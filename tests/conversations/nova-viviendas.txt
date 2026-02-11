@@ -1,0 +1,87 @@
+=== NOVA VIVIENDAS ===
+URL: https://www.novaviviendas.com.ar/
+Session: d634e1bb-1f1d-4334-8aaa-0f37640cb011
+Date: 2026-02-08 16:51:21
+Session creation: 28.1s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (7.5s): Nova Viviendas es una empresa especializada en casas prefabricadas, sobre todo en construcción en hormigón premoldeado, con presencia en Argentina y España. Hoy nuestra web funciona como una guía súper completa: explicamos tipos de modelos (Casa prefabricada de 1, 2, 3 y 4 dormitorios, Casa prefabricada Alpina, Container, Cabaña prefabricada, Casa modular, Minimalista, Dúplex, Casa prefabricada de dos pisos, casas de madera, de hormigón, etc.), materiales, tiempos, ventajas y desventajas.
+
+Además, brindamos info sobre precios de referencia, financiación y cómo analizar propuestas, elegir terreno, corralón de materiales y sistemas constructivos (hormigón, madera, steel framing, fibrocemento, PVC, chapa, construcción en seco). Nuestro objetivo es ayudarte a tomar decisiones inteligentes antes de encarar la compra o construcción de tu casa prefabricada, aunque hoy ya no construimos directamente.  
+
+Para orientarte mejor: ¿qué tipo de Modelos de casas prefabricadas estás buscando (alpina, container, cabaña, modular, 1-2-3 dormitorios, etc.)?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (5.4s): En Nova Viviendas hoy ofrecemos principalmente **información y asesoría** sobre casas prefabricadas, no la construcción directa. En la web vas a encontrar guías completas sobre:
+
+- **Modelos de casas prefabricadas**:  
+  - Casa prefabricada de 1, 2, 3 y 4 dormitorios  
+  - Casa prefabricada Alpina  
+  - Casa prefabricada Container  
+  - Cabaña prefabricada  
+  - Casa modular  
+  - Casa minimalista  
+  - Dúplex prefabricado  
+  - Casa prefabricada de dos pisos  
+  - Casas de madera, de hormigón, de ladrillo, fibrocemento, PVC, chapa y construcción en seco.  
+
+- **Servicios de contenido**: info sobre **precios de referencia**, financiación, materiales, durabilidad, mantenimiento, cómo analizar presupuestos, elegir terreno y corralón, y comparar sistemas constructivos (hormigón premoldeado, steel framing, etc.).
+
+Así que, más que venderte la casa, te damos todas las herramientas para que elijas bien a quién comprarle y qué sistema te conviene. ¿Para cuándo estás pensando usar esta info, a corto plazo o todavía lo estás viendo a futuro?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (5.6s): Tenemos muchos tipos de Modelos de casas prefabricadas explicados en detalle, más que un catálogo cerrado de “X modelos a la venta”. A nivel tipología, vas a encontrar:
+
+- **Por cantidad de dormitorios**:  
+  - Casa prefabricada de 1 dormitorio (36 m² y 48 m²)  
+  - Casa prefabricada de 2 dormitorios (68 m² y 82 m²)  
+  - Casa prefabricada de 3 dormitorios (120 m² aprox.)  
+  - Casa prefabricada de 4 dormitorios (modelos grandes y de lujo)
+
+- **Por estilo / sistema**:  
+  - Casa prefabricada Alpina  
+  - Casa prefabricada Container  
+  - Cabaña prefabricada  
+  - Casa modular (incluye modernas, transportables, cabañas modulares, etc.)  
+  - Casa minimalista  
+  - Dúplex prefabricado  
+  - Casa prefabricada de dos pisos  
+  - Casas de madera, de hormigón, de ladrillo, fibrocemento, PVC, chapa y construcción en seco.  
+
+En resumen, tenés más de una docena de familias de modelos distintas, cada una con ejemplos concretos de metros, distribución y usos. Para afinar mejor: ¿te interesa más algo chico (1 dormitorio), intermedio (2–3 dormitorios) o grande (4 dormitorios / dos pisos)?
+
+USUARIO: Contame sobre 1. Casa de hormigón armado
+AGENTE (5.1s): La **Casa de hormigón armado** en Nova Viviendas se basa en paneles de hormigón premoldeado (hormigón + acero), que forman la estructura principal de la vivienda. Es el mismo sistema que ves en nuestras **casas prefabricadas de hormigón**, donde los paneles se fabrican en planta (con armadura de acero, instalaciones embutidas, etc.) y luego se ensamblan en el terreno, logrando una casa muy sólida, con excelente aislación térmica y acústica y tiempos de obra mucho más cortos que la construcción tradicional.
+
+Este sistema permite hacer desde casas chicas hasta modelos grandes de varios dormitorios o incluso dos plantas, y se puede combinar con otros materiales (revestimientos, madera, ladrillo visto, etc.) para mejorar la estética sin perder la estructura de hormigón armado. Además, al ser prefabricado, el presupuesto suele ser más previsible y con menos desvíos que una obra “húmeda” hecha toda en sitio.  
+
+Para ayudarte mejor con ideas concretas: ¿pensás una casa de hormigón armado de 1, 2 o 3 dormitorios aproximadamente?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (20.8s): Buenísima la info extra que me pasaste, porque justo ahí hay datos concretos de precios que te sirven como referencia.  
+
+- Para **casas modulares**, el artículo indica que *“un módulo habitacional simple, de unos 8x8 metros cuadrados aproximadamente, puede costar alrededor de 6.000 USD. Esto nos da un precio por metro cuadrado, redondeando hacia arriba, de unos 100 USD aproximadamente”*.  
+- Para **casas de fibrocemento**, se menciona que es un sistema **económico**, pensado para viviendas de baja inversión y uso utilitario, pero no da un valor por m² tan claro como en el caso modular.  
+- En otras notas de la web (por ejemplo madera, dos pisos, etc.) aparecen rangos generales por m², pero varían mucho según materiales, diseño y terminaciones.  
+
+Si pensás una **casa de 2 dormitorios tipo 68–82 m²**, usando como referencia esos **≈100 USD/m² de una modular básica**, estarías hablando de un orden de magnitud de **6.800 a 8.200 USD solo en módulos simples**, sin contar platea, traslados, armado, instalaciones completas ni mejores terminaciones. Ojo: son números orientativos del contenido, no una lista de precios actual.  
+
+Para afinar mejor lo que podrías pedir a una empresa constructora: ¿ya tenés terreno y en qué zona sería?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (3.9s): En Nova Viviendas hoy no estamos construyendo, así que no ofrecemos una garantía propia de obra o estructura como constructora. Lo que sí hacemos es explicarte qué deberías exigirle a la empresa que elijas: garantía estructural (años de estructura en hormigón, steel framing, madera, etc.), garantía sobre filtraciones/terminaciones y sobre instalaciones (eléctrica, gas, agua).
+
+En nuestras guías también te mostramos cómo analizar propuestas y contratos para que esas garantías queden bien claras por escrito y no solo “de palabra”.  
+
+Para orientarte mejor con eso: ¿para cuándo estás pensando encarar la compra o construcción de la casa?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (10.7s): No tengo cargado ningún número de WhatsApp o teléfono en la información interna que manejo.  
+
+Te recomiendo entrar directamente a la web oficial de Nova Viviendas (novaviviendas.com.ar) y buscar la sección **Contacto**, donde suelen publicar el medio de comunicación vigente (formulario, mail o datos actualizados).
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 1
+Tiempo promedio: 8.5s

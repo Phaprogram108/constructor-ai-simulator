@@ -1,0 +1,56 @@
+=== ECOLODGE ===
+URL: https://en.ecolodge.com.ar/
+Session: a107fa92-d51b-4251-b00d-78bc8f883650
+Date: 2026-02-08 17:38:47
+Session creation: 17.6s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (7.2s): Ecolodge es una empresa líder en Sudamérica en arquitectura modular, con base en Mendoza, enfocada 100% en construcción sustentable. Diseñamos y fabricamos módulos a medida en nuestra indoor factory (en Solari 9027, Rodeo de la Cruz) y luego los transportamos e instalamos en tu terreno, ya sea para vivienda particular u hotel.
+
+Trabajamos con materiales naturales y reciclados, paneles con excelente aislación térmica/acústica y posibilidad de integrar energías renovables, para reducir el impacto ambiental. Ofrecemos módulos personalizados como la Ecolodge Modular Home y proyectos especiales (por ejemplo May 28th, Wild Spirit, Landscape Magazine Photoshoot, Summer Secrets, Under the Sun, Espinas Mezcal Ad), siempre adaptados a tus gustos y necesidades.  
+
+Para orientarte mejor, ¿qué tipo de modules estás buscando: vivienda, cabañas turísticas u otro uso?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (3.6s): Ofrecemos principalmente construcción modular premium y sustentable, 100% personalizada: viviendas particulares y hoteles hechos con modules diseñados a medida (por ejemplo nuestra Ecolodge Modular Home y proyectos como May 28th, Wild Spirit, Landscape Magazine Photoshoot, Summer Secrets, Under the Sun y Espinas Mezcal Ad).  
+
+Nuestros servicios incluyen: diseño arquitectónico a medida, fabricación en indoor factory en Mendoza, logística y transporte de los módulos a tu terreno, instalación y terminaciones finales, integración de soluciones sustentables (aislación térmica/acústica eficiente, posibilidad de paneles solares) y opciones de financiación.  
+
+Además trabajamos ampliaciones modulares, proyectos en zonas remotas y construcciones de una o dos plantas, siempre con materiales de bajo impacto ambiental. ¿Lo estás pensando para vivienda propia, alquiler turístico u otro uso?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (3.3s): Trabajamos con arquitectura modular 100% a medida, así que no tenemos un catálogo fijo de “modelos estándar” como tal, sino una base de diseño que adaptamos según metros, distribución y uso.  
+
+A nivel portfolio, hoy contamos con la Ecolodge Modular Home y una serie de proyectos de referencia que usamos como punto de partida de diseño: May 28th, May 28th, 2025 Project, Landscape Magazine Photoshoot y Landscape Magazine Photoshoot, 2025, Wild Spirit y Wild Spirit, Espinas Mezcal Ad y Espinas Mezcal Ad, Under the Sun y Under the Sun, Summer Secrets y Summer Secrets.  
+
+Con eso armamos desde viviendas compactas hasta casas grandes u hoteles modulares de una o dos plantas. ¿Te gustaría una casa de cuántos ambientes aproximadamente?
+
+USUARIO: Contame sobre 1. Ecolodge Modular Home
+AGENTE (5.4s): La Ecolodge Modular Home es nuestra vivienda modular base: una casa diseñada 100% a medida, construida en nuestra fábrica indoor en Mendoza y luego transportada e instalada en tu terreno en pocos meses (aprox. 5, según complejidad). Está pensada para ser confortable y eficiente: estructura metálica resistente, paneles con poliuretano inyectado de alta densidad (equivalente térmica a una pared de 1 m de hormigón), muy buena aislación acústica y posibilidad de sumar energía solar.
+
+Usamos maderas certificadas y materiales de bajo impacto ambiental, diseño bioclimático (orientación, ventilación y luz natural) y terminaciones interiores y exteriores totalmente personalizables (colores, revestimientos, texturas). Podés configurarla en uno o dos pisos y dejar prevista la ampliación futura con nuevos modules.  
+
+Para ajustar la propuesta a vos: ¿ya tenés terreno? ¿En qué zona sería la Ecolodge Modular Home?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (8.0s): No tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp así te pasan valores concretos según metros, terminaciones y ubicación.  
+
+Para que te armen una cotización rápida de una Ecolodge Modular Home de 2 dormitorios, lo ideal es definir superficie aproximada (por ejemplo 60, 80 o 100 m²) y nivel de terminaciones. ¿Qué presupuesto manejás aproximadamente para la casa, así te oriento mejor qué configuración de modules podría encajar?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (4.7s): En Ecolodge trabajamos con una vida útil equiparable a la construcción tradicional (se estima entre 80 y 100 años), gracias a la estructura de hierro calculada para soportar fuertes vientos y cargas de nieve, y a los paneles autoportantes con poliuretano inyectado de alta densidad.  
+
+Los plazos y alcances de garantía específicos (estructura, aislación, terminaciones, etc.) se detallan en el contrato de cada obra, según el proyecto y la normativa local. No tengo esos años exactos cargados acá, así que para el detalle fino te conviene escribirnos al WhatsApp o mail y te mandan el documento de garantía. ¿Estás evaluando una Ecolodge Modular Home para vivienda permanente o de fin de semana?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.2s): Te dejo los datos directos de contacto de Ecolodge:  
+Teléfono / WhatsApp: **+54 261 621 9669**  
+Mail: **info@ecolodge.com.ar**
+
+Si querés, contame y le paso a un asesor tu nombre, zona y qué tipo de casa modular estás buscando así ya te escriben con info y números.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 2
+Tiempo promedio: 4.9s

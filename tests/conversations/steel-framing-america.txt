@@ -1,0 +1,54 @@
+=== STEEL FRAMING AMERICA ===
+URL: https://steelframingamerica.net/
+Session: b7b8c2bd-6077-4488-833e-43f008c191e8
+Date: 2026-02-08 16:45:00
+Session creation: 18.3s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (4.8s): Somos Steel Framing América, una empresa de construcción en seco que trabaja principalmente con steel framing y hormigón premoldeado en Argentina. Nos especializamos en viviendas unifamiliares con servicio **llave en mano**: diseño arquitectónico y estructural, gestión municipal, provisión de materiales y ejecución completa de la obra, con foco en sustentabilidad y eficiencia energética.  
+
+Podemos desarrollar **Proyectos personalizados**, **Construcción llave en mano** y soluciones de **Sustentabilidad en construcción**, siempre buscando reducir tiempos y costos frente a la construcción tradicional. ¿Qué tipo de Proyectos, viviendas, diseños. estás buscando para vos?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (3.7s): Ofrecemos principalmente **construcción de viviendas unifamiliares** en Argentina con modalidad **llave en mano**, donde nos ocupamos de todo: diseño, cálculo estructural, gestión municipal y obra completa, incluyendo materiales. Trabajamos con **steel framing** y también con **hormigón premoldeado**, siempre con énfasis en eficiencia energética y materiales sostenibles.  
+
+Dentro de nuestros servicios destacamos:
+- **Construcción llave en mano**  
+- **Proyectos personalizados** (diseño 100% adaptado a tu estilo)  
+- **Sustentabilidad en construcción** (envolventes termoacústicas, menor consumo energético)  
+- **Financiación disponible** a través de una financiera asociada, según precalificación.  
+
+Para orientarte mejor, ¿ya tenés terreno? ¿En qué zona pensás construir?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (3.6s): Hoy en la web no tenemos publicado un catálogo cerrado de modelos con nombre y m² como “Casa X, Casa Y”, porque trabajamos sobre todo con **Proyectos personalizados** y **Construcción llave en mano** adaptados a cada cliente. Sí contamos con una línea de **casas modulares prediseñadas** (por ejemplo, unidades desde 36 m² hasta alrededor de 78 m² con tres dormitorios), pero la selección completa y planos se comparten de forma directa por asesor comercial.  
+
+Además, solemos partir de modelos base y ajustarlos (distribución, terminaciones, ampliaciones) según tus necesidades. Para ver qué opciones encajan mejor con vos, ¿qué tipo de Proyectos, viviendas, diseños. estás buscando: algo compacto tipo 1–2 dormitorios o una casa familiar más grande?
+
+USUARIO: Contame sobre 1. PVC
+AGENTE (8.6s): Perfecto, te explico. Dentro de nuestros Proyectos, viviendas, diseños. figura **1. PVC**, que hace referencia a las **aberturas en PVC** como una de las opciones que usamos en las obras (puertas y ventanas). El PVC es un material con **excelente aislación térmica y acústica**, bajo mantenimiento y muy buena durabilidad, ideal para acompañar el nivel de eficiencia energética que buscamos en nuestras viviendas.  
+
+Suele competir con el aluminio Modena y líneas DVH A30/A40, y lo elegimos cuando el cliente prioriza confort y ahorro energético a largo plazo. Para ayudarte mejor, ¿estás pensando en usar PVC para una vivienda nueva o para refacción/cambio de aberturas en una casa existente?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (4.1s): Para darte una referencia real, en uno de nuestros presupuestos detallados una vivienda de **175 m² cubiertos + 48 m² semicubiertos** tuvo un costo estimado de **USD 240.322,35** (con steel framing, terminaciones completas, DVH, porcelanatos, instalaciones, etc.). Eso incluye costos directos, indirectos, margen y un rubro de riesgos/imprevistos, todo calculado con índices del sector (CAC/CAPBA).  
+
+El valor de una casa de 2 dormitorios va a depender mucho de los m², el nivel de terminación y si sumás galerías, parrilla, etc., por eso lo ideal es armarte un presupuesto a medida. ¿Qué superficie aproximada tenés en mente y en qué zona de Argentina sería la obra? Así te orientamos mejor y, si querés algo preciso, te conecto con un asesor para que te pase números actualizados por WhatsApp.
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (6.5s): Trabajamos con estándares similares a la construcción tradicional: estructura en steel framing calculada por ingeniero, materiales de primera línea (acero galvanizado, DVH, aislaciones, hormigón H21, etc.) y contratos ajustados por índice CAC, lo que respalda la calidad y trazabilidad de la obra. Si bien en la web no figura un cuadro formal de “X años de garantía por rubro”, nuestras obras se documentan y gestionan integralmente (proyecto, planos, memoria, avances y recepción), lo que te da respaldo técnico y contractual ante cualquier reclamo.  
+
+No tengo el detalle exacto de plazos de garantía cargado acá, pero podés pedirlo por escrito y por rubro (estructura, instalaciones, terminaciones) a un asesor comercial. ¿Querés que te ayude a dejar tus datos para que te envíen condiciones de garantía junto con un presupuesto orientativo?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.1s): Te dejo los datos directos de contacto:  
+- **Tel / WhatsApp:** +54 9 11 6115 6110 (podés escribir o llamar ahí)  
+- **Email:** proyectos@steelframingamerica.net  
+
+Si querés, contame para qué zona y tipo de Proyectos, viviendas, diseños. así te digo qué info pedirles puntualmente cuando les escribas.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 1
+Tiempo promedio: 4.8s

@@ -1,0 +1,46 @@
+=== ACEDUR ===
+URL: https://acedur.com/
+Session: c82c0792-62a5-4664-8809-ad3f142a3621
+Date: 2026-02-08 17:13:54
+Session creation: 33.6s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (6.3s): Somos Acedur, un estudio de arquitectura y constructora de Córdoba especializado 100% en Steel Frame, con más de 12 años de experiencia y más de 30.000 m² construidos. Diseñamos y construimos casas a medida, desde el anteproyecto y la aprobación de planos hasta la obra completa, con opción de Obra Gris o con terminaciones, siempre con Steel Frame Inteligente, precio cerrado por contrato y atención directa de los fundadores.  
+
+Trabajamos principalmente en Córdoba y hasta 150 km a la redonda, y si buscás algo más económico o con financiación, también tenemos la opción de prediseños a través de nuestra empresa hermana Burguesa. ¿Qué tipo de Proyectos estás buscando: una casa 100% a medida o te interesaría también ver opciones prediseñadas?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (3.3s): En Acedur ofrecemos principalmente el servicio integral de diseño y construcción de casas en Steel Frame, 100% a medida: proyecto de arquitectura, ingeniería de detalle, platea de hormigón, estructura de acero panelizada en fábrica, muros, techos, instalaciones y, si querés, también todas las terminaciones. Podés contratar en modalidad Obra Gris (estructura + fundación + muros + techo + instalaciones) o Con Terminaciones (llave en mano), siempre con Steel Frame Inteligente, precio cerrado y atención personalizada.  
+
+Además, damos asesoría para créditos (como Procrear), cursos de Steel Frame y zinguería, y tenemos empresas hermanas para prediseños con financiación (Burguesa) y casas modulares (Moduli). ¿Ya tenés terreno? ¿En qué zona te gustaría construir para ver qué servicio encaja mejor con vos?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (3.9s): En Acedur no trabajamos con modelos cerrados, sino con diseño 100% a medida: cada casa se proyecta desde cero según tu terreno, necesidades y presupuesto. Como referencia, tenemos muchas obras reales construidas (desde 120 m² hasta más de 300 m²) y, si buscás algo más estandarizado y económico, nuestra empresa hermana Burguesa ofrece más de 30 prediseños con financiación en 12, 24 y 36 cuotas.  
+
+Si te sirve como punto de partida, solemos trabajar mucho en el rango de 150 m² (nuestros precios de referencia están calculados para ese metraje). ¿Para cuántos m2 estás pensando tu casa aproximadamente?
+
+USUARIO: Contame sobre 1. Prólogo
+AGENTE (3.9s): Buenísimo que preguntes por **1. Prólogo**. Es la primera etapa de nuestro material técnico, donde introducimos todo el contexto de la construcción en Steel Frame y la experiencia previa que nos llevó a desarrollar nuestra forma de trabajar, especialmente en temas críticos como techos y detalles constructivos.  
+
+Ahí vas a encontrar el enfoque con el que enseñamos y construimos: errores típicos que vimos en obra, cómo los resolvimos, y por qué ponemos tanto énfasis en precisión, estanqueidad y calidad de ejecución. ¿Te interesa más el lado “explicativo” (tipo guía/libro) o querés ver cómo eso se traduce en una casa concreta para vos?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (4.5s): Para darte una idea concreta: nuestros precios de referencia para una casa de 150 m² son desde **USD 590/m² en Obra Gris** y desde **USD 890/m² con terminaciones**, valores en dólares billete, materiales + mano de obra, actualizados a **diciembre 2025**. Una casa de 2 dormitorios suele estar en el rango de 70 a 120 m², así que el costo total va a depender mucho de los metros finales, calidad de aberturas, pisos, etc.  
+
+Si querés, en base a una superficie aproximada (por ejemplo 80, 100 o 120 m²) te calculo un rango estimado rápido con esos valores de referencia. Para afinar mejor: ¿de cuántos m² te imaginás la casa de 2 dormitorios y en qué zona tenés el terreno?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (3.7s): Ofrecemos **garantía por defectos constructivos** y, algo clave, acompañamiento real post-obra: seguimos respondiendo llamados y reclamos aunque haya pasado tiempo desde la entrega. Trabajamos con **precio cerrado por contrato**, cálculo estructural según norma y materiales normalizados, lo que reduce muchísimo patologías futuras y nos permite respaldar la obra con tranquilidad.  
+
+Además, nuestra mejor “garantía” son las más de **100 reseñas positivas** (Google 4,8 y Facebook 5,0) de clientes que validan que cumplimos plazos, calidad y respuesta ante cualquier problema. ¿Para cuándo estás pensando construir, así vemos cómo encaja nuestro esquema de obra y garantía con tus tiempos?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.2s): Te podés comunicar directo por teléfono al **3512919034** y por mail a **hola@acedur.com**.  
+
+Si querés, contame antes para cuándo pensás construir y de cuántos m², así cuando te contacten ya van con una propuesta más enfocada a lo que necesitás.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 0
+Tiempo promedio: 4.0s

@@ -1,0 +1,52 @@
+=== MINI CASAS ===
+URL: https://www.minicasas.com.ar/
+Session: 6a4833ae-e292-4bd3-a450-a0dd6fac163d
+Date: 2026-02-08 15:37:25
+Session creation: 54.9s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (2.9s): Casas Arenzon es una empresa que se dedica a construir casas y minicasas con un sistema modular y transportable. Hacemos Modelos estándar como el Modelo AZ I (18 m²), MODELO AZ I XL (18 m² + entrepiso), Modelo AZ II (36 m²) y Modelo AZ III (54 m²), y también proyectos totalmente personalizados según lo que necesites. Trabajamos con soluciones rápidas, con muy buena aislación térmica y posibilidad de ampliar en el tiempo.  
+
+Para orientarte mejor, ¿qué tipo de Modelos estás buscando: algo chico tipo minicasa o una vivienda más grande?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (3.9s): Ofrecemos la construcción de casas y minicasas con Modelos estándar y también viviendas totalmente personalizadas. Nuestros principales Modelos son: Modelo AZ I (3x6m, 18 m²), MODELO AZ I XL (3x6m + entrepiso de 5,8 m²), Modelo AZ II (6x6m, 36 m², en 2 módulos) y Modelo AZ III (9x6m, 54 m², en 3 módulos), todos transportables y ampliables.  
+Además brindamos el servicio de transporte y montaje de la vivienda en tu terreno, y asesoramiento en diseño y formas de pago.  
+
+Para ayudarte mejor, ¿estás pensando en una minicasa para fines de semana, vivienda permanente o algún uso comercial (oficina, cabaña, etc.)?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (6.1s): Tenemos varios Modelos estándar de minicasas y casas:  
+- Modelo AZ I – 3x6 m (18 m²), transportable.  
+- MODELO AZ I XL – 3x6 m (18 m²) + entrepiso de 5,8 m², transportable.  
+- Modelo AZ II – 6x6 m (36 m²), transportable en 2 módulos.  
+- Modelo AZ III – 9x6 m (54 m²), transportable en 3 módulos.  
+
+Además hacemos viviendas personalizadas a medida. Para saber cuál te puede encajar mejor, ¿para cuántas personas la estás pensando?
+
+USUARIO: Contame sobre 1. Modelo Estándar
+AGENTE (3.6s): Buenísimo, te cuento del Modelo Estándar que tenemos bien definido: el **Modelo AZ II**.  
+
+El **Modelo AZ II** es una minicasa de **6x6 m (36 m²)**, **transportable en 2 módulos**, ideal como vivienda compacta pero cómoda. Mantiene todas las ventajas del sistema Arenzon: muy buena aislación térmica (ahorro de hasta 70% en calefacción/refrigeración), construcción rápida y posibilidad de ampliarla o combinarla con otros módulos a futuro.  
+
+Para ver si se ajusta a vos: ¿la estarías usando como vivienda permanente o más tipo cabaña de fin de semana?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (7.0s): Hoy no tengo los precios actualizados cargados para casas de 2 dormitorios ni para los Modelos estándar. Te sugiero consultarlo por WhatsApp al **+54 294 456 8357**, donde te pasan una cotización según el Modelo (por ejemplo, un **Modelo AZ II o AZ III**) y el nivel de terminación que elijas.  
+
+Para orientarte mejor cuando te coticen, ¿ya tenés terreno y en qué zona sería la casa?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (4.5s): En la web no figura el detalle exacto de años de garantía por escrito, pero todas nuestras viviendas se entregan con respaldo formal de la empresa sobre estructura, materiales y terminaciones, y ya llevamos más de **350 casas entregadas**, lo que habla mucho de la durabilidad del sistema.  
+
+No tengo la información específica de plazos de garantía cargada acá, pero podés pedir el detalle exacto por WhatsApp al **+54 294 456 8357** o por mail a **info@minicasas.com.ar**, donde te pasan condiciones por escrito según el Modelo que elijas. ¿Ya estás mirando algún Modelo en particular (AZ I, AZ II, AZ III, etc.) así te orientamos mejor?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (1.5s): Nuestro WhatsApp/telefono de contacto es **+54 294 456 8357**.  
+Ahí podés pedir presupuestos, tiempos de entrega y más info de los Modelos AZ I, MODELO AZ I XL, Modelo AZ II y Modelo AZ III.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 2
+Tiempo promedio: 4.2s

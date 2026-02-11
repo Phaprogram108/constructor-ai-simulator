@@ -1,0 +1,35 @@
+=== HUSLY ===
+URL: https://husly.com.ar/
+Session: 9e326b64-04f9-4c3a-a349-0a9ed79af923
+Date: 2026-02-08 17:29:11
+Session creation: 37.1s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (2.3s): Husly es una empresa argentina que se dedica a construir casas modulares a medida con sistema steel frame, en formato llave en mano. Diseñamos y fabricamos viviendas, quinchós, oficinas, cabañas y dormis, siempre con construcción en seco, alta eficiencia y posibilidad de ampliar por módulos. Trabajamos en todo el país, construimos en unos 60 días y en 24 hs instalamos la casa en tu lote, dejando todo preparado incluso para sistemas solares. ¿Qué tipo de Proyectos y modelos estás buscando: vivienda principal, cabaña turística, quincho u oficina?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (2.8s): Ofrecemos principalmente construcción de casas modulares en steel frame, llave en mano y a medida, en todo Argentina. Dentro de nuestros Proyectos y modelos tenés: el Modelo Husly 21 (22 m² con cocina y baño completo), la Casa Modular 2 Ambientes, opciones de monoambiente/loft, 2 y 3 ambientes, módulos quincho, oficinas, cabañas y dormis. Además brindamos servicios de Diseño a medida, Diseñá tu cocina, Diseño de interiores y soluciones para turismo e infraestructura (vestuarios, sanitarios, dormis en suite, salas de reunión). ¿Para qué uso estás pensando tu proyecto: vivienda, turismo, quincho u oficina?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (2.7s): Tenemos varias líneas y tipos de Proyectos y modelos, que se combinan según metros y cantidad de ambientes. A nivel catálogo general, trabajamos con monoambientes/lofts de 22 y 39 m², casas de 2 ambientes (39 m²), 3 ambientes (60 m²), Módulo Quincho (simple o con toilette), además del Modelo Husly 21, Cabañas y Dormis, y toda la línea de Diseño a medida. También hay variantes de diseño exterior (Delta, Delta II, Grove, Nordic, etc.) que permiten elegir estética y terminaciones manteniendo las mismas tipologías (loft, 2 y 3 ambientes). ¿Te interesa más saber cuántos ambientes querés o qué estilo de fachada te gusta para acotar las opciones?
+
+USUARIO: Contame sobre 1. Modelo Husly 21
+AGENTE (8.6s): Perfecto, te amplío sobre el Modelo Husly 21 con lo que tenemos en catálogo.  
+Es una vivienda modular tipo loft de 22 m², con área integrada (dormir/estar/living) más kitchen y baño completo, construida en steel frame y en sistema en seco, lista para instalar en tu lote y usarla como mini casa, estudio o cabaña. Por estilo y prestaciones es muy similar a nuestra línea compacta Nordic 21 (estética nórdica, combinación de revestimiento metálico y madera, techo a dos aguas), y como todos nuestros módulos, podés después ampliarla sumando más ambientes. No tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp así te pasan valores y financiación. ¿Para cuándo la estarías necesitando aproximadamente?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (6.0s): No tengo los precios actualizados cargados por acá, así que no puedo darte un valor aproximado confiable para una casa de 2 dormitorios; te sugiero consultarlo por WhatsApp donde te pasan precio vigente y opciones de financiación. Lo que sí te confirmo es que trabajamos casas de 3 ambientes (2 dormitorios) alrededor de 60 m², en distintas líneas de diseño (38.s, 38delta, 38delta II, 38grove, Nordic 38 II), todas en steel frame y llave en mano.  
+¿Ya tenés terreno? ¿En qué zona sería, así el asesor puede cotizarte mejor cuando te contacten?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (2.5s): En la info que tengo cargada no figura el detalle exacto de años de garantía por escrito, pero sí que trabajamos con sistema steel frame, terminaciones de primera línea (DVH/PVC en versiones premium, porcelanatos, griferías cierre cerámico, etc.) y entregamos todo llave en mano desde fábrica, lo que va respaldado con garantía formal de la empresa. Para que te pasen por escrito los plazos de garantía estructural, de instalaciones y terminaciones, te sugiero consultarlo por WhatsApp o con un asesor comercial. ¿Para qué tipo de proyecto estás evaluando la garantía: vivienda permanente, cabaña turística u otro uso?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.9s): No tengo el número de WhatsApp o teléfono cargado acá, y no puedo inventarlo.  
+Te recomiendo entrar a la web oficial de Husly (husly.com.ar) donde vas a ver el botón de contacto/WhatsApp con el número actualizado y los canales directos con el equipo comercial.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 3
+Tiempo promedio: 4.0s

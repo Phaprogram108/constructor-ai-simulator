@@ -1,0 +1,48 @@
+=== VIVIENDAS ARGENTINAS ===
+URL: https://viviendasargentinas.com/
+Session: 7b49309e-64f5-4553-ac85-50b128b3e1af
+Date: 2026-02-08 17:31:14
+Session creation: 22.3s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (4.1s): Somos Viviendas Argentinas, una constructora de Córdoba especializada en Viviendas llave en mano y Quinchos en sistema Steel Framing y construcción en seco. Trabajamos solo en la Provincia de Córdoba, con proyectos propios de Viviendas de 1, 2 y 3 dormitorios y Quinchos, con planos aptos para créditos hipotecarios y opciones de financiación.  
+
+Para orientarte mejor, ¿qué tipo de Viviendas y Quinchos estás buscando: vivienda familiar (1, 2 o 3 dormitorios) o un quincho/gallería para ampliar lo que ya tenés?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (5.0s): Ofrecemos construcción de Viviendas llave en mano y Quinchos en sistema Steel Framing, solo en la Provincia de Córdoba, con financiación y planos aptos para créditos hipotecarios. En Viviendas tenés proyectos de 1 dormitorio, 2 dormitorios (Modelos 1, 2, 3, 6, 8 y Modelo Almafuerte) y 3 dormitorios (Modelos 4, 5, 6, 7, 8, 10, Ballesteros, Carrilobo y Etruria). También hacemos Quinchos y Galerías personalizados en construcción en seco.  
+
+Para saber qué mostrarte más en detalle, ¿ya tenés decidido si necesitás Viviendas de 1, 2 o 3 dormitorios, o estás apuntando a un Quincho?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (2.9s): Tenemos un catálogo bastante completo de Viviendas y Quinchos.  
+En Viviendas de 2 dormitorios contamos con 6 modelos (Modelos 1, 2, 3, 6, 8 y Modelo Almafuerte) y en Viviendas de 3 dormitorios con 9 modelos (Modelos 4, 5, 6, 7, 8, 10, Ballesteros, Carrilobo y Etruria); además tenemos proyectos de Viviendas de 1 dormitorio y Quinchos y Galerías personalizados.  
+
+Para afinar, ¿estás pensando más en Viviendas 2 dormitorios, 3 dormitorios o en un Quincho?
+
+USUARIO: Contame sobre 1. Modelo 1
+AGENTE (3.5s): Perfecto, te cuento del Modelo 1 dentro de nuestras Viviendas de 2 dormitorios. Es una vivienda compacta en Steel Framing (tipo casa chica funcional), incluida dentro de la línea “Viviendas 2 dormitorios”, con estar–comedor, cocina y baño, pensada para aprovechar bien los m2 y poder ampliarla a futuro.  
+
+La podés contratar en modalidad Llave en Mano (incluye platea, tabiques exteriores e interiores completos, techo, pisos cerámicos, cocina con mesada de granito, aberturas de aluminio, instalaciones de gas, electricidad, agua, baño completo y pintura interior/exterior) o en Obra Gris (misma estructura pero sin aberturas, pisos, pintura ni artefactos).  
+Para ver si el Modelo 1 te encaja, ¿en qué zona de Córdoba tenés o pensás tener el terreno?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (3.1s): Para una Vivienda de 2 dormitorios trabajamos con precio por metro cuadrado: la modalidad Llave en Mano arranca desde u$s 1.000 el m² y la modalidad Obra Gris desde u$s 650 el m² (lista vigente al 30/12/2025). Por ejemplo, si elegís una Vivienda 2 dormitorios de unos 60 m², tendrías una referencia aproximada de u$s 60.000 Llave en Mano o u$s 39.000 en Obra Gris, siempre a ajustar según modelo y detalles.  
+
+Además contamos con financiación propia y proyectos aptos para créditos hipotecarios. ¿Qué presupuesto manejás aproximadamente así te digo qué Modelo de Viviendas 2 dormitorios (1, 2, 3, 6, 8 o Almafuerte) te conviene mirar?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (3.1s): Trabajamos con sistema Steel Framing declarado “constructivo tradicional” en Argentina, con materiales normalizados (perfiles de acero galvanizado IRAM, placas Durlock, OSB, cementicias, aislaciones Isover, etc.), lo que asegura durabilidad, estabilidad estructural y muy buen aislamiento térmico y acústico. La garantía concreta por años y alcances (estructura, filtraciones, instalaciones, etc.) no la tengo detallada en este canal, pero sí se entrega con planos aprobados y todo bajo normativa vigente (gas, electricidad, agua, cloacas).  
+
+Si querés te pueden detallar por WhatsApp la garantía específica según contrates Llave en Mano u Obra Gris. Mientras tanto, ¿para cuándo estás pensando construir la Vivienda o Quincho?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (3.7s): Nos podés contactar directamente al teléfono 3513599083.  
+
+Si querés, contame antes si estás buscando Viviendas 1, 2, 3 dormitorios o Quinchos así ya le paso a un asesor una idea de lo que necesitás cuando te llamen.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 0
+Tiempo promedio: 3.6s

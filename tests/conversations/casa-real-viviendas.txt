@@ -1,0 +1,63 @@
+=== CASA REAL VIVIENDAS ===
+URL: https://casarealviviendas.com.ar/
+Session: f24a6bca-5159-48bd-ade6-0c0915399f6d
+Date: 2026-02-08 15:46:28
+Session creation: 26.1s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (7.1s): Casa Real Viviendas es una fábrica de viviendas prefabricadas con sede en Córdoba que diseña, construye e instala casas en todo el país. Trabajamos con sistema prefabricado industrializado tipo woodframe (madera maciza, techos de machimbre de primera, muy buena aislación térmica) y contamos con varias líneas: Americana, Confort, Innova y Luxury, de 1 a 4 dormitorios (de 34 m² a 90 m² estándar, más modelos personalizados).  
+
+Además ofrecemos financiación propia en cuotas fijas en pesos (por ejemplo, Línea Americana 1 dormitorio desde $120.000 por mes, Innova 1 dormitorio desde $131.900, Confort 1 dormitorio desde $152.400 y Luxury 1 dormitorio desde $163.600) y nos encargamos de la fabricación y el montaje de la vivienda en tu terreno. Para orientarte mejor, ¿qué tipo de modelos, tipos, unidades, servicios estás buscando?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (4.0s): Ofrecemos viviendas prefabricadas industrializadas completas, listas para habitar, en cuatro líneas principales:  
+- **Línea Americana** (34, 46, 60 y 90 m² – de 1 a 4 dormitorios).  
+- **Línea Innova** (34, 46, 60 y 90 m² – diseño moderno).  
+- **Línea Confort** (35, 53, 65 y 88 m² – foco en comodidad y buena distribución).  
+- **Línea Luxury** (34, 46, 60 y 90 m² – terminaciones de alta gama).  
+
+Como servicios, hacemos **fabricación e instalación en todo el país**, construcción en sistema **prefabricado industrializado tipo woodframe**, y **financiación propia en cuotas fijas en pesos** (por ejemplo, Americana 1 dormitorio desde $120.000 por mes, Innova desde $131.900, Confort desde $152.400 y Luxury desde $163.600). Para ayudarte mejor, ¿ya tenés en mente cuántos dormitorios necesitás?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (6.3s): Tenemos 16 modelos estándar principales, más opciones personalizadas según proyecto.  
+Por línea son:  
+- **Línea Americana**: 1, 2, 3 y 4 dormitorios (34, 46, 60 y 90 m²).  
+- **Línea Innova**: 1, 2, 3 y 4 dormitorios (34, 46, 60 y 90 m²).  
+- **Línea Confort**: 1, 2, 3 y 4 dormitorios (35, 53, 65 y 88 m²).  
+- **Línea Luxury**: 1, 2, 3 y 4 dormitorios (34, 46, 60 y 90 m²).  
+
+Además solemos hacer casas **personalizadas**, como las de **Manzanares Pilar (132 m², Americana personalizada)** o **Salta Cerillo (63 m², Americana personalizada)**. Para afinar qué modelo va mejor con vos, ¿ya tenés terreno? ¿En qué zona?
+
+USUARIO: Contame sobre 1. Casa Real Viviendas
+AGENTE (6.1s): Claro, te cuento de **1. Casa Real Viviendas** 😊  
+
+Casa Real Viviendas es la **fábrica de viviendas prefabricadas** que diseña, fabrica e instala casas en todo el país, con base en Córdoba (Av. Rafael Núñez 3521). Trabajamos con sistema **prefabricado industrializado tipo woodframe**, con madera maciza, techos de machimbre de primera, muy buena aislación térmica y tiempos de construcción de unos **45 días** una vez adjudicada la vivienda.  
+
+Ofrecemos las líneas **Americana, Innova, Confort y Luxury** (de 1 a 4 dormitorios, entre 34 m² y 90 m² estándar, más modelos personalizados), y **financiación propia en cuotas fijas en pesos**; por ejemplo, podés empezar una Americana 1 dormitorio desde **$120.000 por mes**, Innova desde **$131.900**, Confort desde **$152.400** y Luxury desde **$163.600**.  
+
+Para orientarte mejor dentro de Casa Real Viviendas, ¿te interesa más una casa chica (34–35 m²), intermedia (46–60 m²) o algo grande tipo 4 dormitorios (90 m² o más)?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (4.2s): Para 2 dormitorios tenés varias opciones según la línea, y cada una tiene un aporte mensual “desde” ya publicado:  
+- **Línea Americana - 2 Dormitorios (46 m²)**: comenzás a pagar **desde $164.600 por mes**.  
+- **Línea Innova - 2 Dormitorios (46 m²)**: desde **$178.400 por mes**.  
+- **Línea Confort - 2 Dormitorios (53 m²)**: desde **$230.000 por mes**.  
+- **Línea Luxury - 2 Dormitorios (46 m²)**: desde **$215.200 por mes**.  
+
+Los valores son aportes mensuales de referencia y pueden ajustarse según promoción y zona, por eso lo ideal es verlo bien con un asesor. Para afinarte números reales: ¿en qué provincia/ciudad tenés el terreno y qué presupuesto mensual te gustaría no pasar?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (8.4s): Trabajamos con materiales de primera (woodframe, madera maciza, techos de machimbre y alta aislación), cumpliendo normas constructivas y priorizando durabilidad y bajo mantenimiento, pero en la web no figura el detalle exacto de años de garantía por escrito.  
+
+No tengo esa información específica de plazos de garantía cargada acá; lo habitual es que se garantice estructura y vicios de construcción, pero los términos formales te los pasan por contrato. Te sugiero que lo veamos con un asesor por WhatsApp al **3513601314**, así te envían las condiciones de garantía según la línea (Americana, Innova, Confort o Luxury).
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.8s): Te podés comunicar directo por teléfono o WhatsApp al **3513601314**.  
+
+Así un asesor de Casa Real Viviendas te pasa valores actualizados, planes de financiación y modelos (Americana, Innova, Confort o Luxury) según lo que estés buscando.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 1
+Tiempo promedio: 5.6s

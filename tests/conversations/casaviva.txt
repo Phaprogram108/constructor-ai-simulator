@@ -1,0 +1,80 @@
+=== CASAVIVA ===
+URL: https://somoscasaviva.com/
+Session: 3cb931fa-a6bb-407f-8bbe-f4242f41c761
+Date: 2026-02-08 17:08:31
+Session creation: 38.6s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (6.0s): CASAVIVA® es una constructora de casas industrializadas en steel frame, con fábrica propia en Los Cardales (Ruta 6, Prov. de Buenos Aires). Diseñamos y fabricamos casas modulares de diseño, que se construyen en planta y se llevan casi listas a tu terreno, 70% más rápido y hasta 30% más económico que la obra tradicional.
+
+Trabajamos con modelos como HOGAR320 y HOGAR520 (desde 25 m² hasta 130 m²), todos ampliables y transportables, y ofrecemos financiación a través de Banco Hipotecario y Banco Ciudad. Además, te entregamos la casa terminada en 90 días, con plano y documentación para aprobación municipal.
+
+Para orientarte mejor, ¿qué tipo de modelo estás buscando: algo chico tipo estudio o una casa familiar definitiva?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (9.3s): Ofrecemos casas modulares industrializadas en steel frame, fabricadas en planta y montadas en tu terreno, listas para habitar. Nuestros modelos principales son:
+
+- **LÍNEA ESTUDIO320**  
+  - **ESTUDIO320 - CV®1M (25 m²)**: monoambiente, “Tu refugio turístico”, ideal Airbnb o estudio, desde 22.000 USD, financia BHIP hasta 100%.
+
+- **LÍNEA HOGAR320**  
+  - **HOGAR320 - CV®1M (35 m²)**: monoambiente “Tu refugio inteligente”, 35 m² (30 cubiertos + 5 semicubiertos), desde 37.000 USD, BHIP hasta 100%.  
+  - **HOGAR320 - CV®2M (50 m²)**: 2 ambientes, 1 dormitorio, 1 baño, 50 m² totales, desde 44.000 USD, BHIP hasta 100%.  
+  - **HOGAR320 - CV®3M (80 m²)**: 3 módulos, 2 suites con baño + área social con fireplace, 60 m² cubiertos + 20 semicubiertos, desde 70.000 USD, BHIP hasta 80%.  
+  - **HOGAR320 - CV®4M (110 m²)**: “Optimización y espacios”, 3 ambientes, 2 dormitorios, 2 baños, 80 m² cubiertos + 30 semicubiertos, desde 88.000 USD, BHIP hasta 60%.  
+  - **HOGAR320 - CV®5M (130 m²)**: casa para 6 personas, 100 m² cubiertos + 30 semicubiertos, 3 baños, desde 110.000 USD, BHIP financia hasta 50%.
+
+- **LÍNEA HOGAR520**  
+  - **HOGAR520 - CV®4M (75 m² \| ECO)**: “Compacta y completa”, 3 ambientes, 2 dormitorios, 1 baño, 65 m² cubiertos + 10 semicubiertos, desde 63.000 USD, financiación Banco Hipotecario o Banco Ciudad.
+
+Además de las casas, ofrecemos: diseño y documentación técnica, fabricación en planta, transporte y montaje, asesoramiento en financiación (Banco Hipotecario/Banco Ciudad) y soluciones B2B (CASAVIVA PRO para campamentos, oficinas, proyectos de escala).  
+Para saber qué encaja mejor con vos: ¿ya tenés terreno y sería para vivienda propia o para inversión turística (Airbnb/booking)?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (4.4s): Tenemos **6 modelos base** en nuestro sistema modular, todos ampliables y combinables entre sí:
+
+- **ESTUDIO320 - CV®1M (25 m²)** – monoambiente turístico.  
+- **HOGAR320 - CV®1M (35 m²)** – monoambiente “refugio inteligente”.  
+- **HOGAR320 - CV®2M (50 m²)** – 2 ambientes, 1 dormitorio.  
+- **HOGAR320 - CV®3M (80 m²)** – 3 módulos, 2 suites + área social.  
+- **HOGAR320 - CV®4M (110 m²)** – “Optimización y espacios”, 2 dormitorios, 2 baños.  
+- **HOGAR320 - CV®5M (130 m²)** – casa amplia para familias, 3 baños.
+
+Además, dentro de la **Línea HOGAR520** tenés el modelo **75 m² | CV®4M | ECO**, una opción “Compacta y completa” de 3 ambientes. ¿En qué rango de metros te gustaría moverte más o menos?
+
+USUARIO: Contame sobre 1. Turefugioturístico
+AGENTE (3.9s): Perfecto, “**Turefugioturístico**” corresponde al modelo **ESTUDIO320 - CV®1M (25 m²)**. Es un monoambiente pensado específicamente para uso turístico: **25 m² totales (20 m² cubiertos + 5 m² semicubiertos)**, con **dormitorio integrado y 1 baño completo**, y opción de **kitchenette** para hacerlo más autónomo, ideal para complejos tipo Airbnb o cabañas.
+
+Está diseñado para ser **compacto, eficiente y minimalista**, priorizando confort en estadías cortas, con una pequeña galería semicubierta que suma valor en destinos naturales. El valor publicado es **desde 22.000 USD** y **Banco Hipotecario puede financiar hasta el 100%** del modelo. ¿Lo estarías pensando para un solo módulo o como parte de un complejo con varias unidades?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (3.8s): Para 2 dormitorios tenés dos opciones principales dentro de nuestros modelos estándar:
+
+- **HOGAR520 - CV®4M (75 m² | ECO – “Compacta y completa”)**  
+  3 ambientes, 2 dormitorios, 1 baño, 65 m² cubiertos + 10 m² semicubiertos.  
+  **Precio publicado: desde 63.000 USD**. Financiable con Banco Hipotecario o Banco Ciudad.
+
+- **HOGAR320 - CV®4M (110 m² – “Optimización y espacios”)**  
+  3 ambientes, 2 dormitorios, 2 baños completos, 80 m² cubiertos + 30 m² semicubiertos.  
+  **Precio publicado: desde 88.000 USD**, con financiación BHIP hasta el 60%.
+
+Ambas son casas definitivas en steel frame, fabricadas en planta y entregadas en 90–120 días según el modelo. Para afinar mejor la estimación, ¿en qué zona tenés pensado instalarla?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (3.2s): Ofrecemos garantía respaldada con **contrato y documentación técnica completa**: al entregar la casa te damos **planos arquitectónicos, fichas técnicas de materiales, certificaciones de fabricación y condiciones de garantía por escrito**.  
+
+Son viviendas definitivas, aptas para escriturar y con estructura en steel frame y materiales homologados, pensadas para uso permanente y bajo mantenimiento. ¿Estás evaluando la compra a corto plazo o todavía estás en etapa de averiguar opciones?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.9s): Te dejo los datos directos de contacto de CASAVIVA®:
+
+- **WhatsApp / Teléfono:** +54 9 11 3579-7323  
+- **Email:** casaviva.ar@gmail.com  
+
+Si querés, puedo ayudarte a definir primero el modelo y el rango de inversión, así ya escribís con una idea más concreta.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 0
+Tiempo promedio: 4.8s

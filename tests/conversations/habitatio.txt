@@ -1,0 +1,65 @@
+=== HABITATIO ===
+URL: https://habitatio.com.ar
+Session: 931cb031-1aef-48f7-ad4d-958f3b04c996
+Date: 2026-02-08 15:23:54
+Session creation: 34.3s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (5.5s): Somos Habitatio, una marca de Bewerk Proyectos SRL, y nos dedicamos a crear soluciones modulares habitacionales y comerciales listas para habitar. Diseñamos y fabricamos Módulos Habitacionales, Viviendas modulares y espacios Comerciales (oficinas, vestuarios, comedores), además de nuestros modelos específicos Flat Pack y Folding.  
+
+Nos ocupamos de todo el proceso: diseño personalizado, construcción modular, transporte con logística propia (IT Transport), montaje en el terreno e incluso diseño interior. Así tenés tu espacio listo en muy poco tiempo, con confort, buen diseño y sin complicarte con obras tradicionales.
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (3.9s): Ofrecemos soluciones modulares listas para usar, tanto habitacionales como comerciales. Nuestros principales productos son:
+
+- **Oficinas y espacios comerciales**: oficinas, vestuarios, comedores y módulos para obra o empresas.  
+- **Viviendas modulares**: casas y cabañas listas para habitar, con confort y diseño.  
+- **Módulos Habitacionales**: para vivienda, oficinas, obradores y dormitorios, con diseño personalizado.  
+- **Módulo Flat Pack**: diseño innovador con DVH, alta aislación térmica/acústica y transporte compacto.  
+- **Módulo Folding**: plegable, se arma en minutos, súper práctico para obras, emergencias y usos temporales.
+
+Y como servicios, damos **asesoramiento, diseño, fabricación, transporte, instalación y diseño interior**, más opciones de **financiación**.  
+Para orientarte mejor, ¿qué tipo de Módulos estás buscando: comercial, vivienda o turismo/emprendimiento?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (3.9s): Tenemos varias líneas de Módulos, y dentro de cada una podemos personalizar según tu proyecto. Hoy contamos con:
+
+- **Módulo Flat Pack**: base del sistema, del que derivan modelos como la **Cabaña Flat Pack Individual** y el **Flat Pack Loft** (dos Flat Pack integrados en dúplex).  
+- **Módulo Folding**: módulo plegable estándar, adaptable a oficina, dormitorio, comedor, etc.  
+- **Módulo Fisherman**: pensado para turismo/glamping, con dormitorio, baño completo y kitchenette.  
+- Además, desarrollamos **Módulos Habitacionales a medida** (vivienda, oficinas, obradores, dormitorios) según diseño personalizado.
+
+Como casi todo es modular y combinable, el “catálogo” es flexible. Para ayudarte bien, ¿qué tipo de Módulos estás buscando?
+
+USUARIO: Contame sobre 1. Oficinas y espacios comerciales
+AGENTE (4.4s): Las **oficinas y espacios comerciales** de Habitatio son Módulos pensados para empresas que necesitan resolver rápido oficinas, vestuarios, comedores o espacios de apoyo en obra, campo o planta. Son modulares, apilables y expandibles, con muy buena aislación, lo que te permite armar desde una pequeña oficina individual hasta un conjunto de módulos tipo base operativa.
+
+Podemos usar tanto **Módulo Folding** (ideal si priorizás rapidez extrema y movilidad, se arma en minutos y podés reubicarlo muchas veces) como **Módulo Flat Pack** (si buscás más confort, DVH y mejor performance térmica/acústica). Incluimos todo el servicio: diseño según tu operación, fabricación, transporte con IT Transport e instalación lista para usar.  
+Para afinar mejor la propuesta, ¿qué tipo de espacio comercial u oficina estás necesitando (oficina de obra, vestuarios, comedor, sala de reuniones, etc.)?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (3.2s): Hoy no tengo los precios actualizados cargados para una vivienda modular de 2 dormitorios. Te sugiero consultarlo por WhatsApp al +54 9 11 3059-2028, donde te pasan valores según el tipo de Módulo (Flat Pack, Folding u otro diseño habitacional), equipamiento y zona de instalación.  
+
+Mientras tanto, para orientarte mejor: ¿ya tenés terreno y en qué zona sería la casa?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (3.6s): En Habitatio trabajamos con **módulos producidos bajo estándares de calidad certificados**, respaldados por Bewerk Proyectos SRL (constructora) y la logística especializada de IT Transport, lo que asegura estructura, materiales y montaje profesional.  
+
+La garantía cubre el **proceso completo**: fabricación del módulo, calidad de materiales, estructura, aislación y la correcta instalación en obra.  
+No tengo por acá el detalle en años de garantía, pero te lo pueden precisar por WhatsApp o en una reunión online.  
+
+Para entender mejor tu caso, ¿estás pensando en un Módulo Habitacional para vivienda o en un espacio Comercial para tu empresa?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (4.1s): Te dejo los datos completos de contacto:  
+
+- **WhatsApp / Teléfono:** +54 9 11 3059-2028  
+- **Email:** info@habitatio.com.ar  
+
+Si querés, después de que me cuentes un poco más de tu proyecto, te sugiero qué pedir exactamente cuando escribas así te pasan la info justa (modelo, estimado de costos y financiación).
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 2
+Tiempo promedio: 4.1s

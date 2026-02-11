@@ -1,0 +1,289 @@
+{
+  "company": "Elemental Constructora",
+  "url": "https://elementalconstructora.com.ar/",
+  "testedAt": "2026-02-06T16:55:24.727Z",
+  "sessionId": "ed8c7194-4ee5-41bb-81fe-7948b7a27264",
+  "systemPromptLength": 21339,
+  "systemPromptModelsFound": [
+    "Más información",
+    "Neocolonial",
+    "Racionalista",
+    "Neoclásica",
+    "Contemporánea",
+    "Línea Design"
+  ],
+  "systemPromptWhatsApp": "+5492212235821",
+  "systemPromptType": "de Viviendas estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Elemental Constructora es una empresa que se dedica a construir viviendas llave en mano, es decir, nos ocupamos de todo: proyecto, dirección de obra y entrega final lista para habitar. Trabajamos con distintos estilos arquitectónicos como Neocolonial, Racionalista, Neoclásica, Contemporánea y la Línea Design, que se adapta a lo que vos quieras.  \n\nAdemás, ofrecemos financiación y plazos de obra comprometidos, priorizando calidad, durabilidad y confort.  \nPara acompañarte mejor, ¿qué tipo de Viviendas estás buscando?",
+      "mentionedModels": [
+        "Neocolonial",
+        "Racionalista",
+        "Neoclásica",
+        "Contemporánea",
+        "Línea Design"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3204
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos principalmente construcción de viviendas llave en mano, ocupándonos de todo el proceso: diseño, permisos, construcción en húmedo y entrega final.  \n\nEn cuanto a Viviendas, trabajamos con modelos Neocolonial, Racionalista, Neoclásica, Contemporánea y la Línea Design (totalmente personalizada a tus gustos y presupuesto). También te damos opciones de financiación para que puedas invertir en metros cuadrados de forma accesible.  \nPara orientarte mejor, ¿ya tenés en mente algún estilo de Vivienda de estos?",
+      "mentionedModels": [
+        "Neocolonial",
+        "Racionalista",
+        "Neoclásica",
+        "Contemporánea",
+        "Línea Design"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2749
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Te podés contactar directo por WhatsApp o teléfono al **+54 9 221 223 5821**.  \nSi querés, acá tenés el acceso directo: https://api.whatsapp.com/send?phone=+5492212235821&text=Hola!%20Me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre  \n\nAprovecho y te pregunto: ¿qué tipo de Viviendas estás buscando? Así ya le adelantamos info al asesor.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2941
+    },
+    {
+      "question": "¿Cuántos modelos ofrecen?",
+      "questionType": "product_count",
+      "response": "Tenemos **5 líneas principales de Viviendas**:  \n- **Neocolonial**  \n- **Racionalista**  \n- **Neoclásica**  \n- **Contemporánea**  \n- **Línea Design** (donde personalizamos el diseño a tu gusto)\n\nDentro de cada estilo hay modelos y configuraciones distintas (metros, cantidad de habitaciones, etc.). ¿Te interesa más algo de una planta tipo Neocolonial o de dos plantas como la Racionalista o Neoclásica?",
+      "mentionedModels": [
+        "Neocolonial",
+        "Racionalista",
+        "Neoclásica",
+        "Contemporánea",
+        "Línea Design"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 5367
+    },
+    {
+      "question": "Contame sobre Más información",
+      "questionType": "product_specific",
+      "response": "Buenísimo, te cuento: la opción **“Más información”** en nuestra web funciona como acceso general para que conozcas en detalle las Viviendas y modelos que tenemos (Neocolonial, Racionalista, Neoclásica, Contemporánea y Línea Design), con fotos, planos, metros cuadrados, cantidad de habitaciones y baños. También suele derivarte a info sobre nuestro sistema **llave en mano**, construcción en húmedo y las posibilidades de **financiación** para cada proyecto.  \n\nSi querés, decime qué te interesa más: ¿ver modelos concretos (por ejemplo Neocolonial o Racionalista) o que te asesore sobre una Vivienda a medida con Línea Design?",
+      "mentionedModels": [
+        "Más información",
+        "Neocolonial",
+        "Racionalista",
+        "Neoclásica",
+        "Contemporánea",
+        "Línea Design"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3926
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Más información? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "Mirá, el ítem **“Más información”** en sí no es un modelo de Vivienda, sino un botón/enlace que te lleva al detalle de cada estilo (Neocolonial, Racionalista, Neoclásica, Contemporánea y Línea Design). Por eso no tiene superficie ni cantidad de dormitorios propios.  \n\nSí te puedo adelantar, por ejemplo:  \n- **Neocolonial**: 185 m² cubiertos, 70 m² semicubiertos, planta baja, 2 habitaciones, 2 baños privados y 1 toilette.  \n- **Racionalista**: 204,45 m² cubiertos, 103,79 m² semicubiertos, planta baja y primer piso, 3 habitaciones, 2 baños completos y 1 toilette.  \n- **Neoclásica**: 212,5 m² cubiertos, 112,1 m² semicubiertos, planta baja y primer piso, 3 habitaciones, 2 baños completos y 1 toilette.  \n\nCada modelo además se construye en **sistema húmedo, llave en mano**, priorizando funcionalidad, confort y excelente terminación. Para afinar mejor, ¿sobre qué estilo de Vivienda querés que te pase todos los detalles técnicos?",
+      "mentionedModels": [
+        "Más información",
+        "Neocolonial",
+        "Racionalista",
+        "Neoclásica",
+        "Contemporánea",
+        "Línea Design"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3787
+    },
+    {
+      "question": "Contame sobre Neocolonial",
+      "questionType": "product_specific",
+      "response": "La Vivienda **Neocolonial** es un challet campestre-moderno, pensada como un oasis de tranquilidad donde se fusionan naturaleza y materiales modernos, con espacios amplios para disfrutar momentos compartidos.  \n\nEn números concretos: tiene **185 m² cubiertos** y **70 m² semicubiertos**, en **planta baja**, con **2 habitaciones**, **2 baños privados** y **1 toilette**. Se construye en sistema **llave en mano, en húmedo**, con foco en confort, diseño cálido y una galería ideal para vida social y contacto con el exterior.  \n\nPara ver si se adapta a vos, ¿ya tenés terreno? ¿En qué zona sería?",
+      "mentionedModels": [
+        "Neocolonial"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2518
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Neocolonial? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "La Vivienda **Neocolonial** tiene: **185 m² cubiertos** y **70 m² semicubiertos**, toda en **planta baja**. Cuenta con **2 habitaciones**, **2 baños privados** y **1 toilette**.  \n\nEn cuanto a características, es un challet de estilo **campestre-moderno**, con diseño pensado para momentos compartidos, fuerte integración con la naturaleza, espacios amplios sociales y construcción **en húmedo, llave en mano**, priorizando confort, durabilidad y excelente terminación.  \nPara saber si se ajusta a vos, ¿para cuántas personas estás pensando la casa?",
+      "mentionedModels": [
+        "Neocolonial"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3419
+    },
+    {
+      "question": "¿Cuál es la diferencia entre Más información y Neocolonial?",
+      "questionType": "model_comparison",
+      "response": "“**Más información**” no es una Vivienda, sino un botón/sección general de la web que te lleva al detalle de todos los modelos (Neocolonial, Racionalista, Neoclásica, Contemporánea y Línea Design), con fotos, planos, superficies y contacto.  \n\n**Neocolonial**, en cambio, sí es un modelo específico de Vivienda: challet campestre-moderno de **185 m² cubiertos + 70 m² semicubiertos**, en **planta baja**, con **2 habitaciones**, **2 baños privados y 1 toilette**, pensado para integrar naturaleza, confort y espacios sociales.  \nSi querés, después te puedo comparar Neocolonial con Racionalista o Neoclásica para que veas cuál se adapta mejor a vos.",
+      "mentionedModels": [
+        "Más información",
+        "Neocolonial",
+        "Racionalista",
+        "Neoclásica",
+        "Contemporánea",
+        "Línea Design"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3122
+    },
+    {
+      "question": "¿Qué modelo me recomendás para una familia de 4 personas?",
+      "questionType": "recommendation",
+      "response": "Para una familia de 4, los que mejor se adaptan por espacio y distribución son:  \n- **Racionalista**: 204,45 m² cubiertos + 103,79 m² semicubiertos, **2 plantas**, **3 habitaciones**, 2 baños completos y 1 toilette. Ideal si buscás algo moderno, con buena separación entre área social y privada.  \n- **Neoclásica**: 212,5 m² cubiertos + 112,1 m² semicubiertos, **2 plantas**, **3 habitaciones**, 2 baños completos y 1 toilette, con un estilo francés contemporáneo, más elegante y clásico.  \n\nLa **Neocolonial** (185 m² cubiertos, 2 habitaciones) puede quedar un poco justa para 4 si querés que cada chico tenga su cuarto. Para afinar la recomendación, ¿prefieren algo más moderno (Racionalista/Contemporánea) o con aire más clásico/elegante (Neoclásica/Neocolonial)?",
+      "mentionedModels": [
+        "Neocolonial",
+        "Racionalista",
+        "Neoclásica",
+        "Contemporánea"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2839
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con sistema **llave en mano y construcción en húmedo**: hacemos proyecto, planos, permisos, dirección de obra, construcción completa (estructura, instalaciones, terminaciones) y te entregamos la Vivienda lista para mudarte. Siempre partimos de un modelo (Neocolonial, Racionalista, Neoclásica, Contemporánea o Línea Design) y lo adaptamos a tu terreno y necesidades.  \n\nSobre los **plazos**, en la web no figuran tiempos exactos por modelo, y dependen mucho de metros cuadrados, estilo y zona de obra; no tengo los tiempos detallados cargados acá, pero podemos estimarlos por WhatsApp según tu caso. ¿Ya tenés terreno y en qué zona sería? Así te digo qué modelo y plazo suelen aplicar para algo similar.",
+      "mentionedModels": [
+        "Neocolonial",
+        "Racionalista",
+        "Neoclásica",
+        "Contemporánea",
+        "Línea Design"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4623
+    },
+    {
+      "question": "¿Se pueden personalizar los modelos?",
+      "questionType": "customization",
+      "response": "Sí, los modelos se pueden personalizar. Partimos de las bases Neocolonial, Racionalista, Neoclásica o Contemporánea y ajustamos distribución, terminaciones y algunos detalles según tu terreno y necesidades.  \n\nY si querés algo 100% a medida, ahí entra la **Línea Design**, donde el diseño se arma directamente en función de tus preferencias y presupuesto. ¿Qué cambios te gustaría hacer o qué idea tenés en mente para tu Vivienda?",
+      "mentionedModels": [
+        "Neocolonial",
+        "Racionalista",
+        "Neoclásica",
+        "Contemporánea",
+        "Línea Design"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2189
+    },
+    {
+      "question": "¿Tenés imágenes, planos o algún catálogo que pueda ver?",
+      "questionType": "images_catalog",
+      "response": "Sí, claro, tenemos todo eso. En nuestra web podés ver **imágenes, renders y fichas técnicas** de las Viviendas **Neocolonial, Racionalista, Neoclásica, Contemporánea y Línea Design**, con metros, fotos y distribución general:  \n👉 https://elementalconstructora.com.ar/viviendas  \n\nSi querés algo más personalizado, también te puedo pasar el WhatsApp para que te envíen **planos y catálogo completo en PDF**: https://api.whatsapp.com/send?phone=+5492212235821&text=Hola!%20Me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre  \n¿Hay algún estilo en particular que te gustaría ver primero?",
+      "mentionedModels": [
+        "Neocolonial",
+        "Racionalista",
+        "Neoclásica",
+        "Contemporánea",
+        "Línea Design"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3439
+    },
+    {
+      "question": "¿Cuánto sale aproximadamente una casa de 2 dormitorios?",
+      "questionType": "pricing",
+      "response": "No tengo los precios actualizados cargados acá, y en el catálogo no aparecen valores ni rangos por metro cuadrado, así que no quiero inventarte un número.  \n\nLo mejor es que lo veamos según modelo (por ejemplo **Neocolonial**, que ya viene con **2 dormitorios, 185 m² cubiertos y 70 m² semicubiertos**) y zona de obra. Te sugiero escribirnos por WhatsApp para que te pasen valores actualizados y opciones de financiación:  \n👉 https://api.whatsapp.com/send?phone=+5492212235821&text=Hola!%20Quisiera%20saber%20el%20precio%20aproximado%20de%20una%20casa%20de%202%20dormitorios  \n\nMientras tanto, ¿qué presupuesto aproximado manejás y en qué zona tenés el terreno?",
+      "mentionedModels": [
+        "Neocolonial"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 3481
+    },
+    {
+      "question": "¿Qué incluye el precio? ¿Terminaciones, instalación, todo?",
+      "questionType": "includes",
+      "response": "En Elemental trabajamos en modalidad **llave en mano**, así que el precio incluye el proceso completo de construcción en húmedo: estructura, mampostería, revoques, cubiertas, instalaciones eléctricas y sanitarias, y terminaciones generales para que la Vivienda quede lista para habitar.  \n\nLos detalles finos de qué marcas y niveles de terminación (pisos, griferías, aberturas, etc.) pueden variar según el modelo y el acuerdo de obra, y no están desglosados uno por uno en el catálogo. No tengo el listado técnico completo cargado acá, pero por WhatsApp te pueden enviar la **memoria descriptiva detallada** de cada Vivienda.  \n¿Sobre qué modelo (Neocolonial, Racionalista, Neoclásica, Contemporánea o Línea Design) querés que pidamos el detalle?",
+      "mentionedModels": [
+        "Neocolonial",
+        "Racionalista",
+        "Neoclásica",
+        "Contemporánea",
+        "Línea Design"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3310
+    },
+    {
+      "question": "¿Ustedes se encargan de toda la instalación o solo entregan los materiales?",
+      "questionType": "installation",
+      "response": "Nos encargamos de **toda la instalación y la obra completa**, no solo de entregar materiales. El servicio es **llave en mano en construcción húmeda**: proyecto, dirección de obra, mano de obra, instalaciones eléctricas y sanitarias, y terminaciones, hasta dejar la Vivienda lista para habitar.  \n\nSi lo que buscás es solo materiales, eso se maneja aparte a través de **Elementos** (nuestro acceso a materiales de construcción), pero la propuesta principal de Elemental Constructora es construirte la casa completa.  \nPara ayudarte mejor, ¿ya tenés terreno? ¿En qué zona sería la obra?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4386
+    },
+    {
+      "question": "¿Qué garantía ofrecen sobre la construcción?",
+      "questionType": "warranty",
+      "response": "Ofrecemos un servicio con **compromiso de calidad, durabilidad y confort**, y asumimos la responsabilidad integral de la obra porque trabajamos en modalidad **llave en mano** y construcción en húmedo.  \n\nEn el material que tengo no figura desglosado el plazo exacto de garantía (años por estructura, instalaciones, etc.), así que no te quiero inventar nada. Te sugiero pedir por WhatsApp la **memoria descriptiva y condiciones de garantía** específicas de la Vivienda que te interese:  \n👉 https://api.whatsapp.com/send?phone=+5492212235821&text=Hola!%20Quisiera%20saber%20la%20garant%C3%ADa%20de%20las%20viviendas  \n\nAsí y todo, contame: ¿qué modelo estás mirando (Neocolonial, Racionalista, Neoclásica, Contemporánea o Línea Design)?",
+      "mentionedModels": [
+        "Neocolonial",
+        "Racionalista",
+        "Neoclásica",
+        "Contemporánea",
+        "Línea Design"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4909
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, ofrecemos **financiación** para la construcción de las Viviendas, con planes de pago que se adaptan al proyecto y al momento de la obra. En la info que tengo no figuran las condiciones exactas (cantidad de cuotas, anticipo, etc.), así que no te quiero inventar números.  \n\nTe recomiendo verlo directo por WhatsApp, así te pasan opciones concretas según metros, modelo y zona:  \n👉 https://api.whatsapp.com/send?phone=+5492212235821&text=Hola!%20Quisiera%20informaci%C3%B3n%20sobre%20planes%20de%20financiaci%C3%B3n%20para%20una%20vivienda  \nPara ayudarte mejor, ¿ya tenés terreno? ¿En qué zona sería la obra?",
+      "mentionedModels": [
+        "Para ayudarte mejor"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 7246
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Nos diferencia sobre todo el servicio **llave en mano real**, donde nos ocupamos de todo el proceso y te entregamos la Vivienda terminada, sin que vos tengas que coordinar gremios ni proveedores. Trabajamos con **construcción en húmedo**, priorizando **durabilidad, confort y excelente terminación**, y asumimos un **compromiso fuerte con los plazos de entrega**.  \n\nAdemás, tenés un catálogo claro de estilos (**Neocolonial, Racionalista, Neoclásica, Contemporánea y Línea Design personalizada**) y la posibilidad de **financiación** para hacer más accesible la obra.  \nPara ver cómo encajamos con lo que necesitás, ¿ya definiste qué tipo de Viviendas estás buscando?",
+      "mentionedModels": [
+        "Neocolonial",
+        "Racionalista",
+        "Neoclásica",
+        "Contemporánea",
+        "Línea Design"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4292
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "En la información que tengo no figura un listado específico de zonas o provincias, ni si la cobertura es nacional, así que no quiero inventarte alcance geográfico. Podría ser posible en muchas regiones, pero depende de la ubicación puntual y la logística de obra.  \n\nTe sugiero consultarlo directo por WhatsApp para que te confirmen según tu localidad:  \n👉 https://api.whatsapp.com/send?phone=+5492212235821&text=Hola!%20Quisiera%20saber%20si%20construyen%20en%20mi%20zona  \n¿En qué ciudad o zona estás pensando construir así también lo mencionás cuando escribas?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3241
+    }
+  ],
+  "sessionCreationTimeMs": 59850,
+  "errors": []
+}

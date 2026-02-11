@@ -1,0 +1,55 @@
+=== FULLHOUSE VIVIENDA ===
+URL: https://fullhousevivienda.com.ar/
+Session: 4ba1e739-4438-4967-b44a-24d799e77d00
+Date: 2026-02-08 16:32:04
+Session creation: 21.6s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (7.6s): Full House Vivienda es una empresa de Córdoba dedicada a construir casas prefabricadas modernas con sistema en seco Wood Frame y hormigón premoldeado. Hacemos viviendas, cabañas, quinchos y dúplex, en estilos minimalista y americano, listas en 20 a 30 días y hasta un 30% más económicas que la obra tradicional.  
+
+Trabajamos con modelos estándar (como Americana Línea Eco 30m2, Casa Minimalista 83.2m2, Cabaña Techo en Estrella 41m2, Duplex Minimalista 64.8m2, etc.) y también diseños personalizados, con opción de obra en gris o llave en mano y financiación propia fija en pesos. ¿Qué tipo de modelos estás buscando para tu proyecto?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (7.5s): Ofrecemos principalmente casas prefabricadas en sistema Wood Frame y hormigón premoldeado: Línea Minimalista, Línea Americana, Línea Cabañas (incluye Cabaña Techo en Estrella), Línea Duplex y modelos especiales como Americana Línea Eco 2 Dormitorios 30m2, Casa Minimalista 2 Dormitorios 83.2m2, Cabaña Clásica Americana 54m2, Monoambientes Espejados 56m2, Diseño Personalizado 62m2, Casa Minimalista 68.5m2, Casa Minimalista 3 Dormitorios 78m2, Casa Minimalista 3 Dormitorios 107m2 y Casa Doble Altura 90m2, entre otros.  
+
+Como servicios adicionales hacemos plateas de hormigón, movimientos de suelo, logística/envío, obra en gris o llave en mano y financiación propia fija en pesos, construyendo principalmente en Córdoba y otras provincias. ¿Ya tenés terreno? Así te oriento en qué modelo te puede encajar mejor.
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (4.5s): Tenemos un catálogo muy amplio: más de 30 modelos entre líneas Minimalista, Americana, Cabañas, Dúplex y diseños personalizados.  
+Por ejemplo: Americana Línea Eco 2 Dormitorios 30m2, Quincho Minimalista 40m2, Casa Minimalista 2 Dormitorios 83.2m2, Cabaña Techo en Estrella 41m2, Casa Minimalista 47.6m2, Clásica Americana 33m2, Cabaña Clásica Americana 54m2, Monoambientes Espejados 56m2, Diseño Personalizado 62m2, varias Minimalistas de 51m2, 68.5m2, 78m2, 107m2, 110m2, Duplex Minimalista 64.8m2 y Casa Doble Altura 90m2, entre otros.  
+Para no marearte, ¿para cuántos dormitorios estás buscando (1, 2 o 3) así te nombro solo los que te sirven?
+
+USUARIO: Contame sobre 1. Casas Prefabricadas
+AGENTE (4.3s): Dentro de “1. Casas Prefabricadas” tenés todos nuestros modelos de vivienda estándar en sistema Wood Frame/hormigón premoldeado: monoambientes, casas de 1, 2 y 3 dormitorios, quinchos y cabañas, con superficies que van desde 28m2 hasta más de 110m2. Están pensadas para ser rápidas de montar (20–30 días), con muy buena aislación térmica (sistema EFIS en línea premium) y hasta un 30% más económicas que la construcción tradicional.  
+
+Algunos ejemplos que entran en esta categoría son: Americana Línea Eco 2 Dormitorios 30m2, Clásica Americana 2 Dormitorios 33m2, Casa Minimalista 2 Dormitorios 47.6m2, Cabaña Clásica Americana 54m2, Casa Minimalista 2 Dormitorios 68.5m2, Casa Minimalista 3 Dormitorios 78m2, Casa Minimalista 3 Dormitorios 107m2, Casa Minimalista 110m2 y la Casa Doble Altura 90m2. ¿Para cuántos dormitorios te gustaría que te detalle opciones concretas dentro de esta línea?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (4.3s): Para 2 dormitorios tenés varias opciones y precios publicados, según el diseño y los m2:  
+- Americana Línea Eco 2 Dormitorios 30m2 (Obra en gris, sin platea ni flete) – Desde **$6.248.467** de contado.  
+- Clásica Americana 2 Dormitorios 33m2 c/Platea de Hormigón – Desde **$8.305.782** (financiado $5.814.047, entregando 70% y saldo hasta en 30 cuotas fijas en pesos).  
+- Casa Minimalista 2 Dormitorios 47.6m2 c/Platea – Desde **$11.446.523** (financiado $8.012.566).  
+- Casa Minimalista 2 Dormitorios 51m2 c/Platea – Desde **$12.654.500** (financiado $8.858.150).  
+- Casa Minimalista 2 Dormitorios 68.5m2 c/Platea – Desde **$14.991.224** (financiado $10.493.857).  
+
+Todos los valores son en pesos, no incluyen IVA 10,5% ni flete y están sujetos a modificación. ¿Qué presupuesto manejás aproximadamente así te digo cuál de estos modelos encaja mejor y si conviene contado o financiación?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (3.8s): Trabajamos con sistema Wood Frame y EFIS Premium, con materiales de primera línea, aislaciones térmicas e hidrófugas completas y anclajes mecánicos a la platea, lo que nos permite ofrecer garantía estructural y de instalación sobre la vivienda. Además, acompañamos con posventa: podés contactarnos ante cualquier inconveniente constructivo y el equipo técnico responde y corrige en obra, como mencionan varios clientes en sus reseñas.  
+
+La garantía exacta (años y alcance) se detalla en el contrato según modelo y modalidad (obra en gris o llave en mano). ¿Te interesa más una casa llave en mano o arrancar con obra en gris para que te cuente cómo aplica la garantía en cada caso?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (3.8s): Te dejo los datos directos de contacto de Full House Vivienda:  
+
+- Teléfono fijo: **0351 7600068**  
+- WhatsApp: **351 7600068**  
+- Email: **info@fullhousevivienda.com.ar**  
+
+Si querés, me contás para cuándo pensás construir y así cuando escribas por WhatsApp ya vas con una idea de modelo y presupuesto.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 0
+Tiempo promedio: 5.1s

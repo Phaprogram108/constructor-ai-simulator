@@ -1,0 +1,69 @@
+=== GRUPO STEIMBERG ===
+URL: https://www.gruposteimberg.com/
+Session: 80b6b7e5-8378-446c-beec-acad37e04cb1
+Date: 2026-02-08 16:28:08
+Session creation: 13.5s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (5.1s): Somos Grupo Steimberg, un estudio especializado en arquitectura modular con diseño escandinavo, funcional y sostenible. Diseñamos y construimos CABIN y casas modulares en hormigón premoldeado para uso residencial, turístico, comercial y proyectos de inversión (como complejos de cabañas o desarrollos tipo hotel boutique).  
+
+Además de las CABIN (Cabin 28, Cabin 40, Cabin 70, Cabin Doble y Cabin Yakisugi) y la Nordic House 180, ofrecemos servicios de diseño arquitectónico, interiorismo, desarrollo turístico, masterplanning y gestión integral del proyecto (incluyendo puesta en plataformas como Airbnb/Booking). ¿Qué tipo de Modelos, CABIN, Proyectos estás buscando: algo para vivienda propia o más bien para inversión turística?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (5.2s): Ofrecemos principalmente arquitectura modular en hormigón premoldeado, con foco en casas y cabañas estilo nórdico. Nuestros Modelos, CABIN, Proyectos son:  
+- **Cabin 28** (24 m²): monoambiente con cocina integrada, baño, súper luminosa y transportable.  
+- **Cabin 40** y **Cabin Doble (40 m²)**: opciones más amplias; la Doble tiene doble altura tipo loft con entrepiso para 2 habitaciones.  
+- **Cabin 70** (70 m²): ideal vivienda o turismo, con cocina moderna y gran conexión al exterior.  
+- **Cabin Yakisugi**: misma lógica CABIN pero revestida en madera Yakisugi, muy durable y con estética japonesa única.  
+- **Nordic House 180** (versiones 100 / 150 / 180 m²): casa nórdica de mayor escala, revestida en Yakisugi.  
+- **Proyectos de Inversión y Desarrollos**: masterplan de complejos turísticos, rentas 25–30% anual estimado, gestión integral (diseño, permisos, interiorismo y comercialización).  
+
+En servicios, además de la construcción en hormigón premoldeado, hacemos diseño arquitectónico, interiorismo, desarrollo turístico, masterplanning, estrategia de negocios y gestión integral del proyecto. ¿Para qué la estás pensando vos: vivienda propia, cabañas para alquiler turístico o un desarrollo más grande?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (11.0s): Tenemos varias líneas de Modelos, CABIN, Proyectos bien definidos:  
+
+- **CABIN**:  
+  - **Cabin 28** (24 m², 1 módulo, monoambiente con cocina y baño, transportable).  
+  - **Cabin 40**.  
+  - **Cabin Doble (40 m²)**: PB tipo loft doble altura + entrepiso con 2 habitaciones o hab + baño.  
+  - **Cabin 70** (70 m²).  
+  - **Cabin Yakisugi** (variante con revestimiento en madera Yakisugi).  
+
+- **Casas**:  
+  - **Nordic House 180** en 3 tamaños: **100 m², 150 m² y 180 m²**, estilo nórdico revestido en Yakisugi.  
+
+- **Líneas de proyecto**:  
+  - **Proyectos de Inversión** (complejos turísticos, hotel boutique, loteos, etc.).  
+  - **Desarrollos** a medida (como Finca Guadalupe, hoteles modulares, etc.).  
+
+Si me contás cuántos m² estás buscando y para qué uso (vivienda fija, fin de semana, turismo), te ayudo a elegir el modelo que más te convenga.
+
+USUARIO: Contame sobre 1. Cabin 28
+AGENTE (3.8s): Cabin 28 es nuestra CABIN compacta de **24 m²**, pensada como monoambiente funcional: tiene **cocina integrada**, **baño completo** y un espacio único que podés armar como dormitorio + estar, con grandes ventanales que la llenan de luz natural. Está diseñada con estética **escandinava minimalista**, interiores cálidos en madera y es un **modelo transportable**, ideal como tiny house, anexo en un lote, primera vivienda o cabaña turística.  
+
+Se construye con sistema **modular en hormigón premoldeado**, lo que le da mucha durabilidad y muy buen comportamiento térmico, y se puede integrar a futuros crecimientos en etapas si más adelante querés sumar módulos. ¿La estás pensando para vivienda propia o para alquilarla como cabaña turística?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (3.8s): No tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp o por mail a gruposteimberg@gmail.com así te pasan valores al día según modelo y zona.  
+
+Para orientarte: una casa de 2 dormitorios podría resolverse, por ejemplo, con una **Cabin 70** (70 m²) o combinando módulos tipo **Cabin 28 + Cabin 40** o una **Nordic House 100 m²**, según el nivel de terminaciones y si es para uso residencial o turístico. ¿Qué presupuesto manejás aproximadamente para que te indique qué línea (CABIN o Nordic House 180) te puede encajar mejor?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (5.3s): Trabajamos con sistema constructivo en **hormigón premoldeado**, carpinterías de aluminio con **DVH**, instalaciones de primera calidad y terminaciones pensadas para alta durabilidad (en algunos modelos, revestimientos Yakisugi que son antihumedad, repelentes de insectos y retardantes de llama).  
+
+En la web no figura detallado el plazo exacto de garantía por escrito (años, alcance, etc.), así que en ese punto específico no tengo la info cargada; pero sí que son viviendas pensadas para larga vida útil y uso intensivo (incluso turístico). Te sugiero que por WhatsApp o al mail gruposteimberg@gmail.com pidas el **documento de garantía** para que te pasen por modelo qué cubre y por cuánto tiempo.
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.6s): Te dejo los teléfonos que figuran en la web:  
+
+- **Argentina (Parque Empresarial Austral, Pilar):** (+54) 11 4440 8021  
+- **Uruguay (Tecnisteel UY):** (+598) 93-425-279 / (+598) 91-767-867  
+
+Si querés, también podés escribir al mail **gruposteimberg@gmail.com**. ¿Preferís que te orientemos primero por mensaje sobre qué Modelo, CABIN, Proyectos te conviene antes de hablar por teléfono?
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 2
+Tiempo promedio: 5.3s

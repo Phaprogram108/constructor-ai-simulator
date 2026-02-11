@@ -1,0 +1,56 @@
+=== STEEL TRES ARROYOS ===
+URL: https://steeltresarroyos.com.ar/
+Session: 2ed9c8c6-0e60-4e29-ac2b-60aef4add1ed
+Date: 2026-02-08 16:47:20
+Session creation: 18.0s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (3.1s): Somos Steel Tres Arroyos, una empresa de construcción en seco especializada en Steel Frame, con más de 5 años de experiencia en Tres Arroyos y la zona. Construimos viviendas unifamiliares, dúplex, locales comerciales, oficinas, ampliaciones y obras llave en mano, desde el diseño hasta la entrega final.  
+
+Trabajamos principalmente en Tres Arroyos, Claromecó y Reta (y localidades vecinas), con dirección técnica de un Maestro Mayor de Obras y foco en cumplir plazos y presupuesto. ¿Qué tipo de obra estás pensando hacer vos?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (3.1s): Ofrecemos servicios integrales de construcción en Steel Frame: viviendas unifamiliares, dúplex, locales comerciales, oficinas y obras llave en mano (proyecto completo, de planos a entrega). También hacemos ampliaciones y reformas en seco, más dirección de obra y asesoramiento técnico específico en steel framing.  
+
+Trabajamos en Tres Arroyos, Claromecó, Reta y la región, adaptándonos a planos propios o desarrollando el proyecto desde cero. ¿Qué tipo de obra estás buscando vos: casa, dúplex, local o una ampliación?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (3.9s): Mirá, trabajamos más por proyectos a medida que por “modelos cerrados”, pero en nuestro portfolio tenés varias obras de referencia. Por ejemplo:  
+
+- **Dúplex Moderno - Tres Arroyos** (200 m², 3 dorm, 3 baños, cochera semicubierta)  
+- **Vivienda unifamiliar 95 m² - Claromecó** (2 baños, habitación en suite, amplio comedor)  
+- **Vivienda Unifamiliar - Claromecó** (75 m², 2 dormitorios, cocina y baño)  
+- **Vivienda Unifamiliar - Reta** y **Vivienda unifamiliar - Baños** (renovación de baño 2,65 x 1,60 m), más **Oficinas - Tres Arroyos** (200 m²).  
+
+A partir de estas tipologías adaptamos metros, distribución y terminaciones según tu necesidad. ¿Ya tenés terreno? ¿En qué zona sería la obra?
+
+USUARIO: Contame sobre 1. Tres Arroyos
+AGENTE (3.4s): Perfecto, te cuento sobre la obra en **Tres Arroyos** que tenemos como referencia.  
+
+En la ciudad tenemos, por ejemplo, el **Dúplex Moderno - Tres Arroyos**, un proyecto de **200 m²**, con **3 dormitorios, 3 baños y cochera semicubierta**, construido en steel frame, pensado como vivienda moderna y funcional. También están las **Oficinas - Tres Arroyos**, unas oficinas de **200 m²** con **revestimiento plástico y chapa negra**, ideales como modelo para espacios de trabajo amplios y actuales.  
+
+¿Te interesa más algo tipo dúplex para vivienda o algo similar a las oficinas para uso comercial?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (5.5s): Hoy no tengo los precios actualizados cargados, y menos en formato “aproximado” por m², porque depende mucho de metros, terminaciones y si es llave en mano o solo estructura. Te sugiero consultarlo por WhatsApp así te pasan un valor concreto según tu caso y forma de pago: https://walink.co/57e000 o al +54 9 2983-580569.  
+
+Para orientarte, una casa tipo **Vivienda Unifamiliar - Claromecó** (75 m², 2 dormitorios, cocina y baño) es una muy buena base de referencia para 2 dormitorios en steel frame. ¿En qué zona tenés pensado construir y cuántos m² te imaginás aproximadamente?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (4.1s): En la web no figura desglosado por años de estructura, humedad, etc., pero todas nuestras obras en steel frame se ejecutan con dirección técnica de Maestro Mayor de Obras, materiales certificados y bajo normas del sistema, lo que asegura una estructura durable, sin humedad ni grietas y con excelente aislación.  
+
+No tengo el detalle exacto de años de garantía cargado acá; para que te pasen por escrito qué se cubre y por cuánto tiempo en cada rubro (estructura, instalaciones, terminaciones), te sugiero consultarlo por WhatsApp: https://walink.co/57e000. ¿La idea es una vivienda propia o un proyecto para inversión?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.7s): Te paso los datos directos de contacto:  
+
+- **WhatsApp / Teléfono:** +54 9 2983-580569  
+- También podés escribirnos desde este enlace: https://walink.co/57e000  
+
+Si querés, contame brevemente qué tipo de obra tenés en mente así cuando te contacten ya van con una idea más clara de lo que necesitás.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 2
+Tiempo promedio: 3.7s

@@ -1,0 +1,52 @@
+=== ATLAS HOUSING ===
+URL: https://atlashousing.com.ar
+Session: ce025790-6a96-4c99-8e86-28eb385975ea
+Date: 2026-02-08 15:22:38
+Session creation: 15.4s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (4.3s): Somos Atlas Housing, una empresa argentina especializada en viviendas modulares industrializadas. Construimos casas en fábrica con estructura de hierro soldada y paneles térmicos (thermopanels), logrando hasta un 40% de ahorro en costos y un 50% menos de tiempo que la obra tradicional.
+
+Ofrecemos modelos de vivienda como Katerra, Upsala, Fitz Roy, Blackberry, Hexa y Montana, además de diseños personalizados, todos con excelente aislación térmica y acústica. Fabricamos en nuestra planta del Parque Industrial de San Vicente y enviamos e instalamos en todo el país.  
+
+Para ayudarte mejor, ¿qué tipo de modelos estás buscando?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (11.6s): Ofrecemos principalmente **viviendas modulares llave en mano**, construidas 100% en fábrica con estructura de hierro y thermopanels, listas para instalar en tu terreno en pocos días. Tenemos modelos definidos: **Katerra, Upsala, Fitz Roy, Blackberry, Hexa y Montana**, cada uno con distintas superficies (desde 18 m² a 60 m²), distribuciones y opciones estándar/premium, más la posibilidad de **diseño personalizado**.
+
+También brindamos soluciones modulares para **empresas y desarrolladores** a través de Hexa Group: viviendas, oficinas, unidades sobre tráiler y estructuras metálicas a medida, con producción industrializada. Hacemos **envíos a todo el país** y trabajamos desde nuestra fábrica en el Parque Industrial de San Vicente.  
+Para orientarte mejor, ¿buscás algo chico tipo cabaña/turístico o una vivienda principal más grande?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (3.1s): Tenemos **seis modelos de viviendas modulares**: **Katerra, Upsala, Fitz Roy, Blackberry, Hexa y Montana**.  
+Van desde los **18 m² (Montana)** hasta los **60 m² (Katerra y Hexa)**, con distintas distribuciones y versiones estándar/premium, y además podemos adaptar o hacer un diseño personalizado si lo necesitás.
+
+Para afinar bien qué ofrecerte: ¿qué tipo de modelos estás buscando (superficie aproximada o cantidad de ambientes)?
+
+USUARIO: Contame sobre 1. Estamos listos
+AGENTE (4.4s): Buenísimo que preguntes por “Estamos listos”, te explico: no es un modelo de casa, sino el lema/sección de contacto donde mostramos que el equipo está disponible para asesorarte y avanzar con tu proyecto. Ahí es donde podés dejarnos tus datos, elegir si te interesa Blackberry, Fitz Roy, Hexa, Katerra, Montana o Upsala, y hacer tu consulta para que un asesor te acompañe en todo el proceso.
+
+En cuanto a modelos de vivienda, los que sí tenemos definidos son: **Katerra, Upsala, Fitz Roy, Blackberry, Hexa y Montana**, todos en sistema modular con estructura de hierro y thermopanels.  
+Para ayudarte mejor, ¿ya tenés en mente alguno de esos modelos o preferís que te recomiende uno según metros y cantidad de ambientes que necesites?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (5.0s): Para una casa de 2 dormitorios lo que mejor encaja suelen ser nuestros modelos **Katerra**, **Hexa**, **Fitz Roy** o **Blackberry** (todos rondan entre 41 y 60 m², según configuración). En nuestra línea industrial Hexa Group manejamos valores de referencia entre **USD 1.000 y 1.400 por m²**, pero esos precios son para proyectos modulares en general, no el listado final de viviendas estándar Atlas.
+
+Para las casas residenciales específicas (Katerra, Hexa, etc.) **no tengo los precios actualizados cargados acá** y pueden variar según versión estándar/premium, zona y logística, así que te sugiero consultarlo por WhatsApp para que te pasen número cerrado.  
+Mientras tanto, para afinar mejor: ¿ya tenés terreno? ¿en qué zona sería y qué superficie aproximada estás pensando para esos 2 dormitorios?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (4.8s): En Atlas Housing trabajamos con estándar de construcción industrial, así que cada vivienda sale de fábrica con garantía estructural y de fabricación, además del respaldo directo nuestro (no de terceros ni contenedores reciclados). Usamos estructura de hierro soldada con tratamiento anticorrosivo y paneles térmicos de alta prestación, pensados para durabilidad a largo plazo y buen comportamiento térmico/acústico.
+
+En la parte de instalaciones y terminaciones (electricidad, agua, baño, cocina, etc.) también tenés garantía según cada componente y proveedor.  
+No tengo acá el detalle exacto en años por escrito, así que para los plazos específicos de garantía te sugiero consultarlo por WhatsApp. Y para seguir ayudándote, ¿ya estás evaluando algún modelo en particular (Katerra, Hexa, Fitz Roy, etc.)?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.2s): Te podés comunicar al **(+54) 11 7150-0443**, que es nuestra línea de contacto publicada.  
+Si preferís, también podés escribirnos por mail a **info@atlashousing.com.ar** y te deriva un asesor.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 2
+Tiempo promedio: 5.1s

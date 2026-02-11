@@ -1,0 +1,52 @@
+=== GAUROS VIVIENDAS ===
+URL: https://gaurosviviendas.com.ar/
+Session: da32e869-390f-49a3-be55-23f8db3e550f
+Date: 2026-02-08 15:49:06
+Session creation: 35.1s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (6.5s): Somos Gauros Viviendas, la empresa Nº1 del país en ventas y entregas de casas industrializadas construidas con el Sistema Constructivo Americano. Diseñamos, fabricamos e instalamos viviendas en hormigón premoldeado y wood frame en todo Argentina, con tipologías tipo loft, 1, 2 y 3 dormitorios (líneas Clásica, Contemporánea, Minimalista, Style, Vanguard, Sense, Cabañas y Quinchos).  
+
+Trabajamos con construcción rápida (podés tener tu casa en días), alta calidad controlada en planta y financiación 100% en pesos, sin bancos ni intermediarios. ¿Te cuento qué tipologías se adaptarían mejor a lo que estás buscando?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (4.5s): Ofrecemos casas industrializadas completas listas para habitar, construidas con sistema americano en hormigón premoldeado y wood frame, en tipologías loft, 1, 2 y 3 dormitorios. Tenés líneas específicas como Línea Clásica, Línea Minimalista (Design: Inizia, Integra, Altus, Altus Suite), Línea Sense (Access, Familiar, Premium), Línea Vanguard (Loft, Duo, Tri), Línea Style (Loft, One, Duo, Tri) y Cabaña Americana (California, Oregón, Dakota, Colorado), además de Línea Quincho y modelos especiales como Casa PROCREAR.  
+
+Como servicios, brindamos: diseño y fabricación en nuestras plantas industriales, instalación de la vivienda en tu terreno (Córdoba y resto del país según zona), asesoramiento técnico/comercial y planes de financiación 100% en pesos, con cuotas desde $80.000 por mes y sin entrega inicial. Para orientarte mejor, ¿qué tipo de tipologías de casas estás buscando: algo chico tipo loft/1 dormitorio o ya pensás en 2 o 3 dormitorios?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (5.7s): Tenemos muchas opciones, organizadas en líneas y tipologías. Solo dentro del listado detallado aparecen más de 40 modelos específicos, entre ellos:  
+
+- Línea Style: Style Loft, Style One, Style Duo, Style Tri.  
+- Línea Vanguard: Vanguard Loft, Vanguard Duo, Vanguard Tri.  
+- Línea Sense: Sense Access, Sense Familiar, Sense Premium.  
+- Línea Design/Minimalista: Minimalista Inizia, Design Integra, Casa ALTUS DESIGN, Casa DESIGN ALTUS SUITE, Minimalista, Minimalista Premium.  
+- Línea Clásica/Contemporánea y especiales: múltiples “Casa CLÁSICA” (1, 2 y 3 dormitorios, Joven, Familiar, con/sin galería, Dúo, Premium), CONTEMPORÁNEA (1 y 2 dormitorios, Familiar, Premium), Casa PROCREAR, Casa ESPECIAL, Tipología ESPECIAL, Cabañas (Oregon, Spirit, California, Dakota, Cabaña Especial) y Quincho de 62 m².  
+
+Para afinar y no marearte: ¿qué tipo de tipologías de casas estás buscando (loft, 1, 2 o 3 dormitorios) y para vivienda permanente o de fin de semana?
+
+USUARIO: Contame sobre 1. Cabaña Oregon
+AGENTE (6.2s): La Cabaña Oregon es una de nuestras tipologías de la Cabaña Americana, pensada como cabaña amplia y confortable para vivienda permanente o de descanso. Dentro de la línea Cabañas, la Oregon se destaca por su estilo americano en wood frame, muy cálido, con buena aislación térmica y posibilidad de usar como casa de campo o turística.  
+
+En la línea Cabaña Americana, las tipologías van desde la California (1 dormitorio, 55 m²) hasta modelos grandes como Colorado (3 dormitorios, 142 m²), y la Oregon se ubica como modelo de 2 dormitorios, ideal para familia chica o pareja que quiere un cuarto extra. Para pasarte planos, medidas exactas y financiación, lo mejor es que lo veamos con un asesor: ¿ya tenés terreno? ¿En qué zona sería?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (3.9s): En Gauros las casas de 2 dormitorios se ofrecen en varias líneas (por ejemplo: Style Duo 52 m², Vanguard Duo 49 m², Sense Familiar 70 m², Design Integra 84 m², Clásica de 2 Dormitorios, Contemporánea de 2 Dormitorios, etc.), y cada una tiene un valor distinto según metros, terminaciones y zona de instalación.  
+
+Lo que sí tengo cargado es la referencia de financiación: trabajamos con cuotas fijas en pesos desde alrededor de $80.000 por mes para las tipologías más accesibles y podés financiar hasta el 100% sin entrega inicial, construyendo cuando completás el 70% del valor y el resto en hasta 24 cuotas. Para decirte un número más realista para “una de 2 dormitorios”, necesito saber: ¿la idea es algo más económico tipo Style/Vanguard o algo más grande/premium como Sense Familiar o Design Integra?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (3.8s): En Gauros trabajamos con un sistema constructivo industrializado con Certificado de Aptitud Técnica (CAT) y control de calidad en nuestras propias plantas, lo que respalda la garantía estructural de la vivienda. Además, al usar sistema americano (wood frame y hormigón premoldeado) con materiales normalizados, tenés garantía sobre estructura, instalación y terminaciones según contrato, más la ventaja de un mantenimiento sencillo y repuestos estandarizados.  
+
+No tengo en el sistema el detalle exacto de años por cada componente, pero sí que la garantía es contractual y respaldada por la empresa Nº1 del país en ventas y entregas de casas industrializadas. ¿Te interesa para vivienda permanente o una casa de fin de semana? Así te oriento qué línea suele elegir la gente en tu caso.
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.4s): Te podés comunicar directo por WhatsApp o llamada al: **+54 9 351 360 0347**.  
+
+Ahí un asesor de Gauros Viviendas te pasa precios actualizados, planes de financiación y modelos según tu necesidad.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 1
+Tiempo promedio: 4.7s

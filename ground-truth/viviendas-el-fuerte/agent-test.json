@@ -1,0 +1,310 @@
+{
+  "company": "Viviendas El Fuerte",
+  "url": "https://elfuerte.com.ar/",
+  "testedAt": "2026-02-06T16:55:39.731Z",
+  "sessionId": "c92ec4a7-180c-46c6-88bc-012b7d1c58d3",
+  "systemPromptLength": 22636,
+  "systemPromptModelsFound": [
+    "QB",
+    "Modelo QB 36m²",
+    "Casa Prefabricada Modelo Inicial",
+    "Casa Prefabricada Modelo Avanzado",
+    "Casa Modular",
+    "Casa Prefabricada",
+    "Casa Prefabricada Estándar",
+    "Casa Modelo 1",
+    "Casa Modelo 2",
+    "Premium 1",
+    "Premium 2",
+    "Premium 3",
+    "Premium 4",
+    "Premium 5",
+    "Minicabaña 1",
+    "Minicabaña 2",
+    "Minicabaña 3",
+    "Minicabaña 4",
+    "Minicabaña 5",
+    "Quincho 1",
+    "Quincho 2",
+    "Quincho 3",
+    "Quincho 4",
+    "Casa Serrana"
+  ],
+  "systemPromptWhatsApp": "3515122946",
+  "systemPromptType": "de modelos estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Viviendas El Fuerte es una empresa argentina líder en casas prefabricadas, construyendo hogares desde 1969, con fábrica y atención en Av. Colón 4435, Córdoba. Nos dedicamos a diseñar y construir casas industrializadas de alta calidad, con modelos estándar y también opciones personalizadas. Trabajamos con sistema de prefabricación, lo que permite construcción rápida, buena eficiencia energética y costos más bajos que la obra tradicional, y además ofrecemos financiación.  \n\nPara orientarte mejor, ¿qué tipo de modelos estás buscando: algo chico tipo Minicabaña, una casa familiar como Casa Modelo 1 / Casa Modelo 2, o algo más Premium?",
+      "mentionedModels": [
+        "Casa Modelo 1",
+        "Casa Modelo 2"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2893
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos principalmente casas prefabricadas y modulares, con distintos modelos según el uso y el tamaño que necesites. Por ejemplo: modelos familiares como Casa Modelo 1 (60 m², 2 dormitorios, 1 baño) y Casa Modelo 2 (80 m², 3 dormitorios, 2 baños), el modelo QB 36 m² con 2 habitaciones y entrega inmediata, la Casa Prefabricada Estándar, la Casa Prefabricada Modelo Inicial y Modelo Avanzado, la Casa Modular y la Casa Serrana.  \nTambién tenemos líneas especiales: Minicabaña 1 a 5 (ideales para descanso o turismo), Quincho 1 a 4 (espacios para reuniones) y la línea Premium 1 a 5. Además del producto en sí, brindamos construcción en sistema de prefabricación en Córdoba y opciones de financiación.  \n\nPara ayudarte mejor, ¿lo que buscás es vivienda permanente, casa de fin de semana o algo tipo quincho/minicabaña?",
+      "mentionedModels": [
+        "QB",
+        "Casa Prefabricada Modelo Inicial",
+        "Casa Modular",
+        "Casa Prefabricada",
+        "Casa Prefabricada Estándar",
+        "Casa Modelo 1",
+        "Casa Modelo 2",
+        "Premium 1",
+        "Minicabaña 1",
+        "Quincho 1",
+        "Casa Serrana",
+        "QB 36"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4204
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Te dejo todos los datos de contacto:  \n- Teléfono: 3515122946  \n- WhatsApp: +54 9 351 512 2946  \n- Mail: ventas@elfuerte.com.ar  \n\nSi querés, decime en qué modelo estás interesado y te digo qué le podés pedir puntualmente al asesor cuando le escribas.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2018
+    },
+    {
+      "question": "¿Cuántos modelos de casas ofrecen?",
+      "questionType": "product_count",
+      "response": "Tenemos más de 20 modelos entre casas, minicabañas y quinchos, todos en sistema de prefabricación.  \nEn casas propiamente dichas contamos con: QB / Modelo QB 36 m², Casa Prefabricada Modelo Inicial, Casa Prefabricada Modelo Avanzado, Casa Modular, Casa Prefabricada, Casa Prefabricada Estándar, Casa Modelo 1, Casa Modelo 2, la línea Premium 1 a 5 y la Casa Serrana.  \n\nPara afinar bien, ¿qué tipo de modelo estás buscando: algo chico tipo Minicabaña, una casa familiar (2 o 3 dormitorios) o algo más Premium?",
+      "mentionedModels": [
+        "QB",
+        "Casa Prefabricada Modelo Inicial",
+        "Casa Prefabricada Modelo Avanzado",
+        "Casa Modular",
+        "Casa Prefabricada",
+        "Casa Prefabricada Estándar",
+        "Casa Modelo 1",
+        "Casa Modelo 2",
+        "Premium 1",
+        "Casa Serrana"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2173
+    },
+    {
+      "question": "Contame sobre Modelo QB 36m²",
+      "questionType": "product_specific",
+      "response": "El Modelo QB 36 m² es una casa prefabricada compacta con 2 habitaciones, ideal como primera vivienda, casa de fin de semana o para ampliar una propiedad. Está pensada para optimizar al máximo los 36 m², con distribución funcional y construcción rápida en sistema de prefabricación.  \n\nUna ventaja clave es que tiene **entrega inmediata**, así que es de los modelos más ágiles para tenerla lista. ¿La estarías pensando como vivienda permanente o más bien como casa de descanso?",
+      "mentionedModels": [
+        "QB",
+        "Casa Prefabricada"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2383
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Modelo QB 36m²? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "Del Modelo QB 36 m² tengo cargado lo siguiente:  \n- **Superficie:** 36 m² cubiertos.  \n- **Dormitorios:** 2 habitaciones.  \n- **Características generales:** casa prefabricada en sistema industrializado, pensada para uso funcional en poco metraje y con **entrega inmediata**.\n\nNo tengo más detalles técnicos finos (medidas de ambientes, materiales específicos, etc.) cargados por acá, pero te los pueden pasar completos por WhatsApp al 5493515122946. ¿Ya tenés terreno? ¿En qué zona sería la instalación así te asesoro mejor con este modelo?",
+      "mentionedModels": [
+        "QB",
+        "Casa Prefabricada"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4204
+    },
+    {
+      "question": "Contame sobre Casa Prefabricada Modelo Inicial",
+      "questionType": "product_specific",
+      "response": "La **Casa Prefabricada Modelo Inicial** es nuestra opción más básica y económica, pensada para quien quiere arrancar con una vivienda funcional sin irse de presupuesto. Se destaca por ser **económica** y con buena **eficiencia energética**, aprovechando el sistema de prefabricación para bajar tiempos y costos frente a la obra tradicional.  \n\nEs ideal como primera casa, ampliación en un terreno o proyecto de inversión (alquiler, turismo, etc.). Para orientarte mejor con este modelo, ¿ya tenés terreno? ¿En qué zona sería?",
+      "mentionedModels": [
+        "Casa Prefabricada Modelo Inicial",
+        "Casa Prefabricada"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2508
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Casa Prefabricada Modelo Inicial? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "Del **Casa Prefabricada Modelo Inicial** tengo cargado que es una vivienda **económica** y con **eficiencia energética**, ideal como casa básica y funcional para arrancar con lo justo pero bien resuelto.  \nNo figuran en el sistema los datos finos de **m²** ni la cantidad exacta de **dormitorios**, así que esos detalles específicos (planos, medidas y distribución) te los pueden pasar completos por WhatsApp.\n\nNo tengo esa información técnica más detallada cargada, pero podés pedir planos y ficha completa escribiendo al WhatsApp 5493515122946.  \nPara ayudarte a elegir, ¿qué superficie y cuántos dormitorios estás buscando aproximadamente?",
+      "mentionedModels": [
+        "Casa Prefabricada Modelo Inicial",
+        "Casa Prefabricada"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2660
+    },
+    {
+      "question": "¿Cuál es la diferencia entre Modelo QB 36m² y Casa Prefabricada Modelo Inicial?",
+      "questionType": "model_comparison",
+      "response": "Te resumo las diferencias principales entre **Modelo QB 36 m²** y **Casa Prefabricada Modelo Inicial**:\n\n- **Superficie y definición:** el **Modelo QB 36 m²** tiene superficie definida: **36 m²** y **2 habitaciones** con **entrega inmediata**. El **Modelo Inicial** está pensado como casa **básica y económica**, pero acá no tengo cargados sus m² ni cantidad de dormitorios.  \n- **Enfoque:** el **QB 36 m²** es un modelo compacto, muy claro en tamaño y distribución (ideal si ya sabés que 36 m² te alcanza). El **Modelo Inicial** apunta a ser la opción **más económica**, priorizando **bajo costo + eficiencia energética**, más orientado a “arrancar la casa” al menor valor posible.\n\nSi me contás cuántos m² te gustaría y cuántos dormitorios necesitás, te digo cuál de los dos te conviene más y qué le podrías pedir puntualmente al asesor cuando le escribas por WhatsApp.",
+      "mentionedModels": [
+        "QB",
+        "Casa Prefabricada Modelo Inicial",
+        "Casa Prefabricada"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 3930
+    },
+    {
+      "question": "¿Qué modelo me recomendás para una familia de 4 personas?",
+      "questionType": "recommendation",
+      "response": "Para una familia de 4 lo ideal es ir a algo de 2 o 3 dormitorios, con un poco más de superficie que el QB 36 m².  \nDe los modelos que tenemos, los que mejor encajan son:  \n- **Casa Modelo 1**: 60 m², **2 dormitorios y 1 baño**, eficiente energéticamente y con opción de personalización.  \n- **Casa Modelo 2**: 80 m², **3 dormitorios y 2 baños**, diseño contemporáneo y muy cómoda para familia tipo.  \n\nPara afinar la recomendación: ¿ya tenés terreno y en qué zona sería? Así te digo si con Casa Modelo 1 estarían bien o si te conviene directamente ir a Casa Modelo 2.",
+      "mentionedModels": [
+        "QB",
+        "Casa Modelo 1",
+        "Casa Modelo 2"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2910
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con **sistema de prefabricación**: la casa se fabrica en planta y luego se **ensambla en el terreno**, lo que acorta muchísimo los tiempos frente a la obra húmeda tradicional. Esto permite una **construcción rápida**, control de calidad en fábrica y mejor eficiencia energética, sobre todo en modelos como Casa Prefabricada Estándar, Casa Modelo 1 / 2, Casa Modular y la línea Premium.\n\nNo tengo acá el plazo exacto de obra por modelo (porque depende de tamaño y financiación), pero los tiempos son sensiblemente menores a una casa tradicional; en modelos como el **QB 36 m²**, por ejemplo, se destaca la **entrega inmediata**.  \nPara que te orienten con tiempos concretos según el modelo que elijas, te sugiero escribir al WhatsApp 5493515122946. Mientras tanto, ¿qué modelo o metraje estás pensando aproximadamente?",
+      "mentionedModels": [
+        "QB",
+        "Casa Modular",
+        "Casa Prefabricada",
+        "Casa Prefabricada Estándar",
+        "Casa Modelo 1"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4984
+    },
+    {
+      "question": "¿Se pueden personalizar los modelos de casas?",
+      "questionType": "customization",
+      "response": "Sí, varios modelos se pueden personalizar, sobre todo en distribución y terminaciones. Por ejemplo, la **Casa Prefabricada Estándar** y la **Casa Modelo 1 (60 m²)** tienen **opciones de personalización**, y la **Casa Modular** es ideal si querés algo muy flexible porque se arma por módulos según tus necesidades.\n\nOtros modelos vienen más definidos (como el **Modelo QB 36 m²** con 2 habitaciones y entrega inmediata), pero igual se pueden ajustar algunas cosas según el caso.  \nPara ayudarte mejor, ¿qué te gustaría personalizar: cantidad de dormitorios, ampliaciones futuras, estilo (más moderno, más serrano), o terminaciones?",
+      "mentionedModels": [
+        "QB",
+        "Casa Modular",
+        "Casa Prefabricada",
+        "Casa Prefabricada Estándar",
+        "Casa Modelo 1"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4861
+    },
+    {
+      "question": "¿Tenés imágenes, planos o algún catálogo que pueda ver?",
+      "questionType": "images_catalog",
+      "response": "Sí, tenemos un catálogo visual con muchas fotos de obras reales: modelos **Premium 1 a 5**, **Minicabañas 1 a 5**, línea **QB**, **Casa Serrana**, quinchos, etc., donde podés ver terminaciones y estilos. Desde acá no te puedo enviar el PDF o link directo, pero la empresa los comparte por WhatsApp y mail.\n\nTe sugiero escribir al **WhatsApp 5493515122946** o al mail **ventas@elfuerte.com.ar** pidiendo “catálogo de modelos y planos”.  \n¿Sobre qué tipo de modelo querés ver imágenes: casa familiar (Casa Modelo 1/2, Estándar), algo Premium, Minicabañas o Casa Serrana?",
+      "mentionedModels": [
+        "QB",
+        "Casa Modelo 1",
+        "Premium 1",
+        "Casa Serrana"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3720
+    },
+    {
+      "question": "¿Cuánto sale aproximadamente una casa de 2 dormitorios?",
+      "questionType": "pricing",
+      "response": "No tengo los precios actualizados cargados por acá, así que no puedo decirte un valor aproximado sin inventar. Te sugiero consultarlo por WhatsApp, donde te pasan listas vigentes, formas de pago y financiación.\n\nPara una casa de **2 dormitorios** podés mirar, por ejemplo, **Casa Modelo 1 (60 m², 2 dormitorios, 1 baño)** o el **Modelo QB 36 m² (36 m², 2 habitaciones, entrega inmediata)**.  \nSi querés, decime qué superficie te gustaría y te digo qué modelo pedir puntualmente cuando escribas al WhatsApp 5493515122946.",
+      "mentionedModels": [
+        "QB",
+        "Casa Modelo 1"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 2352
+    },
+    {
+      "question": "¿Qué incluye el precio? ¿Terminaciones, instalación, todo?",
+      "questionType": "includes",
+      "response": "No tengo desglosado en el sistema qué incluye exactamente el precio (terminaciones, instalación, etc.) para cada modelo, así que por acá no te puedo asegurar el alcance sin riesgo de inventar algo.  \n\nLo más recomendable es que por WhatsApp al **5493515122946** pidas específicamente: “detalle de qué incluye el precio del modelo ___ (por ejemplo, Casa Modelo 1 o QB 36 m²): tipo de terminaciones, instalación, traslado y qué ítems quedan a mi cargo”.  \n¿Ya tenés definido algún modelo en particular así te digo exactamente qué nombre mencionar cuando les escribas?",
+      "mentionedModels": [
+        "QB",
+        "Casa Modelo 1"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4817
+    },
+    {
+      "question": "¿Ustedes se encargan de toda la instalación o solo entregan los materiales?",
+      "questionType": "installation",
+      "response": "Trabajamos con **sistema de prefabricación y construcción**, no somos solo venta de materiales sueltos. Las casas (como Casa Prefabricada Estándar, Casa Modelo 1 / 2, Casa Serrana, QB, etc.) se **fabrican y se montan en el lugar**, es decir, nos encargamos del ensamblado en obra.\n\nLo que puede variar según el modelo y la forma de contratación es el alcance exacto (fundaciones, conexiones, etc.), y ese detalle fino no lo tengo cargado acá.  \nPara que te pasen el alcance completo de instalación según el modelo que te interese, te sugiero escribir al WhatsApp 5493515122946. ¿Ya tenés terreno? ¿En qué zona sería la obra?",
+      "mentionedModels": [
+        "QB",
+        "Casa Prefabricada",
+        "Casa Prefabricada Estándar",
+        "Casa Modelo 1",
+        "Casa Serrana"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3315
+    },
+    {
+      "question": "¿Qué garantía ofrecen sobre la construcción?",
+      "questionType": "warranty",
+      "response": "Sobre garantía específica (años de cobertura, qué ítems incluye, etc.) no tengo los datos detallados cargados en el sistema como para darte un número sin inventar. Lo que sí te puedo asegurar es que somos una empresa que construye desde 1969, con sistema de prefabricación y materiales de alta calidad, y todas las viviendas se entregan con su respaldo formal.\n\nPara conocer bien la **garantía por escrito** (estructura, filtraciones, instalaciones, etc.) te recomiendo pedir “detalle de garantía por modelo” por WhatsApp al **5493515122946**.  \n¿Estás evaluando alguna casa puntual (por ejemplo, Casa Modelo 1, Casa Modelo 2 o algún Premium) así les consultás directo por ese modelo?",
+      "mentionedModels": [
+        "Casa Modelo 1",
+        "Casa Modelo 2"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 5977
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, ofrecemos **financiación** para nuestras casas prefabricadas, con planes que se adaptan según el modelo y el monto total. Al ser una empresa con muchos años en el rubro, solemos trabajar con distintas formas de pago combinando entrega inicial y cuotas.\n\nNo tengo por acá el detalle de planes (cantidades de cuotas, requisitos, etc.), eso te lo pasan actualizado por WhatsApp.  \n¿Sobre qué tipo de modelo estás pensando (por ejemplo, Casa Modelo 1, Casa Modelo 2, QB 36 m², algún Premium) y con qué presupuesto aproximado contás?",
+      "mentionedModels": [
+        "QB",
+        "Casa Modelo 1",
+        "Casa Modelo 2"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2719
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Nos diferencia, primero, la **trayectoria**: estamos en el mercado de casas prefabricadas desde **1969**, con miles de obras hechas y un sistema súper probado.  \nSegundo, la **variedad y personalización**: tenemos desde modelos económicos como **Casa Prefabricada Modelo Inicial** y **QB 36 m²**, hasta líneas **Premium 1 a 5**, **Casa Modelo 1 y 2**, **Casa Serrana**, **Minicabañas** y **Casa Modular** con flexibilidad de diseño.\n\nAdemás, trabajamos con **prefabricación de calidad**, enfoque en **eficiencia energética** y ofrecemos **financiación**, algo clave hoy para poder acceder a una vivienda propia.  \nPara orientarte mejor, ¿qué tipo de casa estás buscando: económica para empezar, familiar cómoda o algo más Premium?",
+      "mentionedModels": [
+        "QB",
+        "Casa Prefabricada Modelo Inicial",
+        "Casa Modular",
+        "Casa Prefabricada",
+        "Casa Modelo 1",
+        "Premium 1",
+        "Casa Serrana"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3765
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "Acá tengo cargado solo el dato concreto de nuestra base y sala de ventas en **Av. Colón 4435, Córdoba Capital**; no figura un listado detallado de provincias o cobertura nacional como para asegurarte zonas específicas sin inventar.  \n\nEs muy probable que podamos llegar a varias regiones, pero para confirmar **si llegamos exactamente a tu localidad** y en qué condiciones, te sugiero consultarlo directo por WhatsApp al **+54 9 351 512 2946**.  \n¿De qué ciudad o zona sos así te digo exactamente qué preguntarles cuando les escribas?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3377
+    }
+  ],
+  "sessionCreationTimeMs": 105857,
+  "errors": []
+}

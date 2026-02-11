@@ -1,0 +1,48 @@
+=== MASHOUSE ===
+URL: https://mashouse.com.ar/
+Session: 7c2b8a42-4c4a-41f0-8a04-98cc16d0f0f0
+Date: 2026-02-08 16:46:23
+Session creation: 37.5s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (6.8s): Somos +House, una constructora de casas exclusivas de diseño que trabaja con sistema Steel Frame y modalidad llave en mano. Diseñamos y construimos casas premium, 100% personalizadas, ocupándonos de todo: proyecto, cálculo estructural, dirección de obra, terminaciones y también opciones de energía sustentable.  
+
+Además de Modelos de casas como Beauty, Royal, C1, C3, 58 e Imperial, hacemos proyectos personalizados y obras en barrios y zonas como Chacras de San Andrés, El Marquesado, Lobos, Marcos Paz, Tandil y Mar Azul. ¿Qué tipo de Modelos de casas, proyectos personalizados, obras. estás buscando para vos?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (6.0s): Ofrecemos diseño y construcción de casas premium en Steel Frame bajo sistema llave en mano, incluyendo proyecto arquitectónico, cálculo estructural, dirección técnica y terminaciones de alta calidad. Trabajamos con Modelos de casas como Beauty (por ejemplo Beauty 1010, 1011, 1012), Royal (2010, 2011, 2012, 2013, 2014, 2015, 2016), Imperial (3010, 3011, 3012, 3014), además de modelos C1, C3, 58, San Lucas, Mar de las Pampas y Chacras de San Andrés.  
+
+También desarrollamos proyectos personalizados a medida y ejecutamos obras en barrios y zonas como Mar Azul, Chacras de San Andrés, El Marquesado, Lobos, Marcos Paz y Tandil, con posibilidad de financiación. ¿Ya tenés terreno? ¿En qué zona te gustaría construir?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (4.2s): Tenemos dos grandes líneas de servicio: modelos pre-diseñados y proyectos 100% personalizados.  
+Dentro de los modelos, trabajamos con familias como Beauty (1010, 1011, 1012), Royal (2010, 2011, 2012, 2013, 2014, 2015, 2016), Imperial (3010, 3011, 3012, 3014), más los modelos 58, C1, C3, San Lucas, Mar de las Pampas y Chacras de San Andrés, además de casas ya realizadas como Marcos Paz – Modelo Beauty, Obra El Marquesado – Modelo Royal, Lobos, Tandil, San Eliseo, San Sebastián, Santa Clara al Sur y Parque La Verdad.  
+
+En total, son más de una docena de Modelos de casas claros en catálogo, pero todos se pueden adaptar y también podemos arrancar un proyecto desde cero. ¿Qué cantidad de ambientes o m2 tenés en mente así te oriento al modelo que mejor encaje?
+
+USUARIO: Contame sobre 1. Descubrir más
+AGENTE (4.0s): “Descubrir más” no es un modelo de casa, sino una sección de la web donde podés ver en detalle nuestros Modelos de casas (como 58, C1, C3, Beauty, Royal, Imperial, San Lucas, Mar de las Pampas, Chacras de San Andrés) y ejemplos de obras reales en lugares como Mar Azul, Lobos, Marcos Paz y Tandil. Es básicamente la puerta de entrada al catálogo: desde ahí accedés a planos, fotos, superficies y distribución de cada modelo para elegir o inspirar tu proyecto personalizado.  
+
+Si querés, te puedo resumir 2 o 3 modelos concretos (por ejemplo Beauty, Royal o Imperial) según lo que estés buscando. ¿Qué tipo de Modelos de casas, proyectos personalizados, obras. te interesan más: algo compacto, familiar o de mayor categoría y metros?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (5.7s): Trabajamos con valores por m² que van variando, pero en la web sólo tengo dos referencias generales:  
+- En la home actual figura: “Ahora podemos hacer realidad tu CASA PREMIUM desde u$d 1100* en proyectos desde 120 m² cubiertos”.  
+- En otra landing vieja figura: “Ahora podemos diseñar tu CASA PREMIUM desde u$d 670”, pero es un valor anterior y no actualizado.  
+
+No tengo los precios actualizados cargados modelo por modelo (por ejemplo para una Beauty 1010/1011 de 2 dormitorios). Te sugiero consultarlo por WhatsApp al +54 9 11 5955 0736 así un asesor te arma el número real según m², terminaciones y zona de obra. ¿Para cuándo necesitarías tener la casa terminada aproximadamente?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (3.4s): Trabajamos con sistema Steel Frame calculado por nuestro propio equipo de ingeniería, con “cálculo estructural garantizado”, pensado para que la vivienda sea para toda la vida y generaciones venideras. Además, todo se ejecuta con proyecto ejecutivo, dirección técnica profesional y memoria técnica estándar, lo que asegura calidad en estructura, aislaciones, instalaciones y terminaciones.  
+
+No tengo por acá el detalle de años de garantía por rubro (estructura, instalaciones, etc.), pero eso te lo aclaran por escrito en la propuesta y contrato. ¿Querés que te contacten por WhatsApp para pasarte la info completa de garantías junto con una propuesta para tu casa?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.3s): Te podés comunicar directo por WhatsApp o teléfono al +54 9 11 5955 0736.  
+Atendemos consultas sobre modelos, proyectos personalizados, financiación y coordinación de reuniones en nuestra oficina de Av. Gral. Mosconi 2870, CABA.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 2
+Tiempo promedio: 4.6s

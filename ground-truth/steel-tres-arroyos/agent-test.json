@@ -1,0 +1,262 @@
+{
+  "company": "Steel Tres Arroyos",
+  "url": "https://steeltresarroyos.com.ar/",
+  "testedAt": "2026-02-06T16:55:04.880Z",
+  "sessionId": "c8bea449-3be4-479c-9a62-b6d2f41723ac",
+  "systemPromptLength": 21628,
+  "systemPromptModelsFound": [
+    "Tres Arroyos",
+    "Vivienda unifamiliar",
+    "Claromecó Casa de",
+    "Viviendas unifamiliares y dúplex",
+    "Obras en llave en mano",
+    "Locales comerciales y oficinas",
+    "Ampliaciones y reformas en seco",
+    "Dirección de obra y asesoramiento técnico"
+  ],
+  "systemPromptWhatsApp": "+5492983580569",
+  "systemPromptType": "de Proyectos, Obras, Servicios estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Somos Steel Tres Arroyos, una empresa de construcción que trabaja con sistema Steel Frame en Tres Arroyos y toda la región. Nos especializamos en construcción en seco para viviendas unifamiliares y dúplex, locales comerciales y oficinas, Obras en llave en mano, y también hacemos ampliaciones y reformas en seco, más dirección de obra y asesoramiento técnico. Construimos hasta un 60% más rápido que la obra húmeda tradicional, con excelente aislamiento térmico y acústico, ideal también para zonas costeras como Claromecó y Reta.  \n\nPara orientarte mejor, ¿qué tipo de Proyectos, Obras, Servicios estás buscando?",
+      "mentionedModels": [
+        "Tres Arroyos",
+        "Viviendas unifamiliares y dúplex",
+        "Obras en llave en mano",
+        "Locales comerciales y oficinas",
+        "Ampliaciones y reformas en seco",
+        "Dirección de obra y asesoramiento técnico"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2466
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Te cuento bien concreto qué ofrecemos en Steel Tres Arroyos:\n\n- **Viviendas unifamiliares y dúplex**: casas modernas en Steel Frame, con muy buen aislamiento térmico y acústico y construcción rápida.  \n- **Obras en llave en mano**: nos ocupamos de todo, desde el diseño hasta entregarte la casa o local terminado, sin sorpresas.  \n- **Locales comerciales y oficinas**: espacios funcionales y atractivos para negocios.  \n- **Ampliaciones y reformas en seco**: agrandar o renovar sin obra invasiva y en menos tiempo.  \n- **Dirección de obra y asesoramiento técnico**: acompañamiento profesional especializado en Steel Framing.\n\nPara ayudarte mejor, ¿qué tipo de Proyectos, Obras, Servicios estás buscando?",
+      "mentionedModels": [
+        "Tres Arroyos",
+        "Viviendas unifamiliares y dúplex",
+        "Obras en llave en mano",
+        "Locales comerciales y oficinas",
+        "Ampliaciones y reformas en seco",
+        "Dirección de obra y asesoramiento técnico"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3125
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Te dejo los datos de contacto directo:  \n- **Tel / WhatsApp**: +54 9 2983-580569  \n- Link directo a WhatsApp: https://walink.co/57e000  \n\nSi querés, contame brevemente qué proyecto tenés en mente así ya le pasamos a un asesor con una idea más clara.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 1883
+    },
+    {
+      "question": "¿Cuántos modelos de casas ofrecen?",
+      "questionType": "product_count",
+      "response": "Trabajamos más que nada **proyectos a medida**, pero tenemos varias referencias de obras ya realizadas.  \nPor ejemplo: una vivienda unifamiliar de **95 m²**, una casa en Claromecó de **75 m²** y un proyecto en Tres Arroyos de **200 m²**, además de otras Viviendas unifamiliares y dúplex que adaptamos según necesidad.  \n\nPara darte opciones concretas, ¿ya tenés terreno? ¿En qué zona sería?",
+      "mentionedModels": [
+        "Tres Arroyos",
+        "Vivienda unifamiliar",
+        "Viviendas unifamiliares y dúplex"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4256
+    },
+    {
+      "question": "Contame sobre Tres Arroyos",
+      "questionType": "product_specific",
+      "response": "Buenísimo, te cuento del proyecto de **Tres Arroyos** que tenemos como referencia.  \nEs una obra de **200 m²** construida en **Steel Frame**, pensada como vivienda amplia (ideal familia grande o con espacios sociales generosos), con todas las ventajas del sistema: obra hasta un 60% más rápida, muy buen aislamiento térmico/acústico y alta precisión en terminaciones.  \n\nLa adaptamos según tus necesidades (cantidad de dormitorios, cochera, galería, etc.).  \nPara ver si algo así te puede servir: ¿ya tenés terreno en Tres Arroyos o en otra localidad cercana?",
+      "mentionedModels": [
+        "Tres Arroyos"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3500
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Tres Arroyos? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "De la obra **Tres Arroyos** tengo cargado solo el dato de superficie total: son **200 m²** construidos en sistema **Steel Frame**.  \nNo tengo especificado en ficha oficial la cantidad exacta de dormitorios ni el layout interno, pero sí se trabaja con las características típicas del sistema: excelente aislamiento térmico y acústico, estructura liviana y precisa, obra hasta un 60% más rápida y sin problemas de humedad ni grietas.  \n\nEse modelo se adapta (3 o 4 dormitorios, escritorio, cochera, etc.) según el proyecto.  \nNo tengo los planos ni detalles completos cargados por acá; si querés ver distribución y memoria técnica, te sugiero consultarlo por WhatsApp así te mandan planos y especificaciones: +54 9 2983-580569.",
+      "mentionedModels": [
+        "Tres Arroyos"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3499
+    },
+    {
+      "question": "Contame sobre Vivienda unifamiliar",
+      "questionType": "product_specific",
+      "response": "La **Vivienda unifamiliar** que usamos como referencia tiene **95 m²** construidos en **Steel Frame**, pensada como casa cómoda y eficiente para familia tipo.  \nAprovecha todas las ventajas del sistema: obra hasta un 60% más rápida que la tradicional, muy buen aislamiento térmico y acústico, estructura precisa y limpia, ideal para quienes buscan una casa moderna y con buen confort energético.  \n\nSe puede adaptar en distribución (dormitorios, galería, cochera, etc.) según tu terreno y necesidades.  \nPara afinar mejor, ¿ya tenés terreno? ¿En qué zona sería?",
+      "mentionedModels": [
+        "Vivienda unifamiliar"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3722
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Vivienda unifamiliar? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "La **Vivienda unifamiliar** que tenemos como referencia está planteada en **95 m²** en sistema **Steel Frame**; es una casa tipo, pensada para familia, pero la cantidad de dormitorios y la distribución interna se adaptan según el proyecto (por lo general 2 o 3 dormitorios + estar-comedor + cocina + baño).  \nEn cuanto a características, sigue el estándar de Steel Tres Arroyos: estructura en Steel Frame, excelente aislamiento térmico y acústico, obra hasta un 60% más rápida que la tradicional, construcción limpia y precisa, sin problemas típicos de humedad y grietas, con muy buen desempeño energético.  \n\nNo tengo cargado el detalle fino de planos ni memoria técnica de ese modelo puntual; si querés ver distribución concreta, materiales y terminaciones, te sugiero pedirlos por WhatsApp así te envían la info completa y actualizada: **+54 9 2983-580569**.  \n¿En cuántos dormitorios estás pensando vos y en qué localidad tenés el terreno?",
+      "mentionedModels": [
+        "Tres Arroyos",
+        "Vivienda unifamiliar"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 4616
+    },
+    {
+      "question": "¿Cuál es la diferencia entre Tres Arroyos y Vivienda unifamiliar?",
+      "questionType": "model_comparison",
+      "response": "La diferencia principal está en **escala y uso de referencia**:  \n- **Tres Arroyos**: obra de **200 m²**, pensada como vivienda amplia (más metros cubiertos, ideal familia grande, más ambientes, posibles espacios sociales grandes, cochera doble, etc.).  \n- **Vivienda unifamiliar**: modelo tipo de **95 m²**, una casa más compacta y eficiente, pensada para familia tipo, con distribución adaptable (2/3 dormitorios, estar-comedor, cocina, baño).\n\nEn ambos casos el sistema es **Steel Frame**, con las mismas ventajas técnicas (rapidez, aislamiento, precisión).  \nPara orientarte mejor, ¿qué superficie estás imaginando más o menos para tu casa: algo cerca de 95 m² o más parecido a los 200 m²?",
+      "mentionedModels": [
+        "Tres Arroyos",
+        "Vivienda unifamiliar"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2895
+    },
+    {
+      "question": "¿Qué modelo me recomendás para una familia de 4 personas?",
+      "questionType": "recommendation",
+      "response": "Para una familia de 4, lo más equilibrado suele ser algo intermedio entre los **95 m² de la Vivienda unifamiliar** y los **200 m² de Tres Arroyos**.  \nComo referencia, la **Vivienda unifamiliar de 95 m²** funciona muy bien si buscás algo compacto (2–3 dormitorios y espacios bien optimizados); si querés más confort, guardado y ambientes amplios, tomamos el esquema de **Tres Arroyos (200 m²)** y lo ajustamos a un tamaño intermedio (por ejemplo 120–150 m²) en Steel Frame.  \n\nPara recomendarte mejor, ¿ya tenés terreno? ¿En qué zona sería?",
+      "mentionedModels": [
+        "Tres Arroyos",
+        "Vivienda unifamiliar"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3828
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con sistema **Steel Frame**, en un proceso bien ordenado: primero diseño y definición del proyecto (planos y memoria), luego cálculo y fabricación de la estructura, montaje en obra (perfiles, paneles, cubiertas), instalación de servicios (electricidad, agua, gas), cerramientos, aislaciones y finalmente terminaciones interiores y exteriores.  \nEn tiempos, las obras en Steel Frame son **hasta un 60% más rápidas** que la construcción tradicional; el plazo exacto depende de los m² y el nivel de terminación (por ejemplo, una Vivienda unifamiliar tipo se resuelve en bastante menos tiempo que una obra de 200 m²).  \n\nNo tengo los plazos exactos por modelo cargados; si querés una estimación para tu caso, te sugiero escribirnos por WhatsApp así te calculan tiempos según m² y zona: **+54 9 2983-580569**.  \n¿Para cuándo estás pensando tener la casa o local terminado aproximadamente?",
+      "mentionedModels": [
+        "Vivienda unifamiliar"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3807
+    },
+    {
+      "question": "¿Se pueden personalizar los modelos de casas?",
+      "questionType": "customization",
+      "response": "Sí, se pueden personalizar totalmente, de hecho trabajamos así casi siempre.  \nPodemos adaptar **superficie, cantidad de dormitorios, distribución interna, galerías, cocheras, terminaciones** y nivel de equipamiento, partiendo de referencias como la **Vivienda unifamiliar (95 m²)** o el modelo **Tres Arroyos (200 m²)**, o bien desde cero según tus planos o idea.  \n\nAsí lo dejamos ajustado a tu terreno, presupuesto y forma de vivir.  \nPara avanzar un poco más, ¿ya tenés terreno? ¿En qué zona?",
+      "mentionedModels": [
+        "Tres Arroyos",
+        "Vivienda unifamiliar"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3268
+    },
+    {
+      "question": "¿Tenés imágenes, planos o algún catálogo que pueda ver?",
+      "questionType": "images_catalog",
+      "response": "Sí, tenemos un catálogo online donde podés ver **fotos de obras, referencias de Viviendas unifamiliares y dúplex, locales y proyectos en Steel Frame**.  \nPodés entrar a la web: **https://steeltresarroyos.com.ar** y en “Ver obras” vas a encontrar imágenes de proyectos como **Tres Arroyos (200 m²)**, **Vivienda unifamiliar (95 m²)** y la casa de **Claromecó (75 m²)**.  \n\nSi querés que te manden planos de ejemplo o un dossier en PDF, lo mejor es pedirlo directo por WhatsApp: **+54 9 2983-580569**.  \n¿Te interesa más ver casas de vivienda permanente o de tipo casa de playa/fin de semana?",
+      "mentionedModels": [
+        "Tres Arroyos",
+        "Vivienda unifamiliar",
+        "Viviendas unifamiliares y dúplex"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3113
+    },
+    {
+      "question": "¿Cuánto sale aproximadamente una casa de 2 dormitorios?",
+      "questionType": "pricing",
+      "response": "No tengo los precios actualizados cargados, así que no puedo darte un valor aproximado sin inventar números.  \nTe sugiero consultarlo por WhatsApp, donde te pasan **costo estimado según m², tipo de terminación y zona**: **+54 9 2983-580569**.  \n\nPara que te orienten mejor cuando escribas: ¿la casa de 2 dormitorios la pensás para vivienda permanente o tipo casa de descanso (playa/campo)?",
+      "mentionedModels": [],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 2337
+    },
+    {
+      "question": "¿Qué incluye el precio? ¿Terminaciones, instalación, todo?",
+      "questionType": "includes",
+      "response": "En Steel Tres Arroyos trabajamos principalmente con esquema de **Obras en llave en mano**, donde el precio suele incluir: proyecto, estructura en Steel Frame, montaje, cerramientos, aislaciones, instalaciones (eléctrica, agua, desagües y, según el caso, gas) y terminaciones interiores y exteriores según el nivel que elijas.  \nLos alcances exactos (por ejemplo tipo de pisos, aberturas, artefactos, calefacción, etc.) se definen en una **memoria de trabajo** para que no haya sorpresas y sepas exactamente qué está incluido.\n\nNo tengo el detalle fino de cada paquete de terminaciones cargado acá; para que te pasen una lista clara de “qué incluye / qué no incluye” según tu caso, te sugiero escribir por WhatsApp: **+54 9 2983-580569**.  \n¿La idea es hacer una Obra en llave en mano completa o pensás encarar algunas partes por tu cuenta (ej: cocina, placares, parquización)?",
+      "mentionedModels": [
+        "Tres Arroyos",
+        "Obras en llave en mano"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4157
+    },
+    {
+      "question": "¿Ustedes se encargan de toda la instalación o solo entregan los materiales?",
+      "questionType": "installation",
+      "response": "Nos encargamos de **todo**, no solo de entregar materiales.  \nPodemos hacer la **Obra en llave en mano**, que incluye construcción completa en Steel Frame, montaje, instalaciones (eléctrica, agua, desagües y, según el caso, gas) y terminaciones, o bien brindar **Dirección de obra y asesoramiento técnico** si querés intervenir con tu propia mano de obra en alguna etapa.  \n\nAsí evitás coordinar mil proveedores y tenés un solo responsable técnico.  \nPara afinar qué esquema te conviene, ¿en qué localidad sería la obra?",
+      "mentionedModels": [
+        "Dirección de obra y asesoramiento técnico"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2564
+    },
+    {
+      "question": "¿Qué garantía ofrecen sobre la construcción?",
+      "questionType": "warranty",
+      "response": "Trabajamos con el sistema **Steel Frame**, que de por sí ofrece una estructura muy durable, sin humedad ni grietas y con excelente comportamiento en el tiempo, y todas las obras están dirigidas por **Maestro Mayor de Obras** matriculado.  \nNo tengo cargado el plazo exacto de garantía (años, alcance por rubro, etc.), pero sí se maneja garantía sobre la **estructura y la calidad constructiva**, detallada en la documentación de obra.  \n\nPara que te pasen las condiciones de garantía específicas según el tipo de proyecto, te sugiero consultarlo por WhatsApp: **+54 9 2983-580569**.  \n¿La construcción que estás pensando sería vivienda permanente o una casa de fin de semana (playa/campo)?",
+      "mentionedModels": [],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 3289
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, ofrecemos **financiación** para las obras en Steel Frame.  \nLos planes de pago se adaptan según el tipo de proyecto (por ejemplo Viviendas unifamiliares y dúplex u Obras en llave en mano) y el monto total de la obra.\n\nNo tengo por acá el detalle de cuotas, anticipos y plazos exactos.  \nTe conviene consultarlo por WhatsApp así te arman una propuesta según tu caso: **+54 9 2983-580569**. Mientras tanto, ¿qué presupuesto manejás aproximadamente?",
+      "mentionedModels": [
+        "Viviendas unifamiliares y dúplex",
+        "Obras en llave en mano"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4385
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Nos diferencia, primero, el **sistema Steel Frame bien ejecutado**: obras hasta **un 60% más rápidas**, con **excelente aislamiento térmico y acústico**, alta precisión estructural y sin problemas típicos de humedad y grietas, ideal también para zonas costeras como **Claromecó, Reta u Orense**.  \nSegundo, somos una empresa **local**, con más de **5 años de experiencia** y más de **100 obras realizadas**, liderada por un **Maestro Mayor de Obras**, lo que asegura dirección técnica cercana y responsable.  \n\nAdemás, ofrecemos soluciones integrales: **Viviendas unifamiliares y dúplex, Obras en llave en mano, Locales comerciales y oficinas, Ampliaciones y reformas en seco y Dirección de obra y asesoramiento técnico**, más **financiación** y trabajo en toda la región (Tres Arroyos, Claromecó, Reta, San Cayetano, Copetonas y alrededores).  \nPara entender mejor qué te puede aportar todo esto, ¿qué tipo de Proyectos, Obras, Servicios estás buscando vos?",
+      "mentionedModels": [
+        "Tres Arroyos",
+        "Viviendas unifamiliares y dúplex",
+        "Obras en llave en mano",
+        "Locales comerciales y oficinas",
+        "Ampliaciones y reformas en seco",
+        "Dirección de obra y asesoramiento técnico"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3641
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "Construimos en **Tres Arroyos y toda la región**.  \nZonas específicas donde trabajamos: **Claromecó, Reta, Orense, San Cayetano, Copetonas y localidades vecinas**, idealmente para viviendas permanentes, casas de playa y locales comerciales en estas áreas.  \n\nSi estás en otra localidad cercana, probablemente también podamos llegar.  \n¿En qué zona tenés pensado hacer la obra?",
+      "mentionedModels": [
+        "Tres Arroyos"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3253
+    }
+  ],
+  "sessionCreationTimeMs": 49103,
+  "errors": []
+}

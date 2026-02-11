@@ -1,0 +1,52 @@
+=== CONTENEDORES ARGENTINA ===
+URL: https://contenedoresargentina.com/
+Session: ba326adc-9962-43d0-923a-896659b07b12
+Date: 2026-02-08 16:42:41
+Session creation: 36.7s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (3.9s): Somos Contenedores Argentina, una empresa especializada en venta y alquiler de contenedores marítimos y construcciones modulares en acero Corten. Transformamos containers en casas modulares, oficinas, depósitos, baños y vestuarios, con aislación, revestimientos interiores y terminaciones listas para usar en pocas semanas. También alquilamos contenedores de 15 m² y 30 m² para obras, eventos o depósitos, y ofrecemos financiación. ¿Qué tipo de módulos estás buscando: casa, oficina, depósito o algo más específico?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (5.7s): Ofrecemos venta y alquiler de contenedores marítimos y módulos terminados en distintas configuraciones. Trabajamos con:  
+- **Contenedores marítimos** (20’, 40’ y 40’ HC) como depósito o base para proyectos.  
+- **Casas modulares** (Casa 15 m², Casa 30 m², línea **Premium 30m²** y **Premium 45m²**).  
+- **Oficinas modulares** (Oficina 30 m², Oficina 60 m², Oficina recibidor 15 m²).  
+- **Depósitos**, **Baños y vestuarios** (Vestuario 15 m², Vestuario 30 m²) y soluciones especiales como **Módulos Gemelos 20’** y containers 15 m² / 30 m².  
+
+Además sumamos **personalización interior**, aislación, revestimientos, y contamos con **financiación**. ¿Qué tipo de módulos estás buscando?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (3.6s): Tenemos varias opciones de casas modulares hechas con contenedores, todas en acero Corten y listas para habitar:  
+- **Casa 15 m²**: monoambiente compacto con kitchenette, ideal como primer hogar, estudio o casa de campo.  
+- **Casa 30 m²**: vivienda más amplia, con mejor distribución para uso permanente o de fin de semana.  
+- **Línea Premium**: **Premium 30m²** (dos módulos de 20 pies combinados, 2 dormitorios, cocina, baño y patio interno) y **Premium 45m²** (versión ampliada, también modular y ampliable).  
+
+Además, cualquier módulo se puede combinar para lograr más metros y ambientes. ¿Ya tenés terreno? ¿En qué zona sería la casa?
+
+USUARIO: Contame sobre 1. Muchas más soluciones
+AGENTE (4.1s): Claro, “Muchas más soluciones” es la sección donde mostramos otros módulos además de las casas estándar, todos construidos en acero Corten y listos para usar. Ahí entran, por ejemplo: **Container 40’/30 m² HC**, **Módulos Gemelos 20′**, **Oficina 60 m²**, **Casa 30 m²**, **Vestuario 15 m²**, **Container 15 m²** y **Container 30 m²**, entre otros, que podés usar como oficina, depósito, vestuario, vivienda o combinarlos. Son módulos de 15 m² y 30 m² que se pueden apilar, unir y personalizar con distintos pisos, revestimientos, aislación y aberturas según el uso.  
+
+Para orientarte mejor, ¿qué tipo de módulo estás necesitando: casa, oficina, depósito, vestuario o algo mixto?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (18.5s): Buenísimo, con esta info extra te puedo detallar mejor.  
+
+Para una **casa de 2 dormitorios**, el modelo que más se ajusta hoy es la **línea Premium 30m²** (dos módulos de 20 pies combinados), pero también podés partir de la **Casa 30 m²** estándar y adaptarla a 2 cuartos según distribución. Todas nuestras casas se hacen con **contenedor marítimo de acero Corten**, con **aislación térmica y acústica** (poliuretano o lana de vidrio), **revestimientos interiores** en PVC o melamina, pisos flotantes o goma, aberturas de aluminio Módena, instalación eléctrica completa y terminaciones listas para habitar.  
+
+Igual, en cuanto al valor puntual: **no tengo los precios actualizados cargados**, así que no puedo darte un aproximado sin inventar; te sugiero consultarlo por WhatsApp al **+54 9 11 3675 6227**, donde además te pueden armar una cotización con financiación según materiales y terminación que elijas. ¿En qué zona tenés pensado instalar la casa?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (4.7s): Trabajamos con contenedores marítimos de acero Corten y materiales pensados para uso intensivo, así que la “garantía real” está en la durabilidad estructural y en que todo se entrega probado: estructura tratada, instalación eléctrica con disyuntor/térmica, aislación y terminaciones listas para usar. En la documentación de cada proyecto se detalla la garantía formal según tipo de módulo (casa, oficina, depósito, etc.) y los plazos para estructura y terminaciones.  
+
+No tengo en el sistema los años exactos de garantía por escrito, así que para el detalle fino te sugiero verlo por WhatsApp al 11 3675 6227, donde te pasan el alcance según el módulo que elijas. ¿Para qué tipo de módulo estás evaluando la garantía: casa, oficina o depósito?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.4s): Podés escribirnos o llamarnos directamente a nuestro WhatsApp/Cel al **+54 9 11 3675 6227**.  
+También tenés el mail **mpalacios@contenedoresargentina.com** por si preferís enviar detalles de tu proyecto por escrito.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 2
+Tiempo promedio: 6.1s

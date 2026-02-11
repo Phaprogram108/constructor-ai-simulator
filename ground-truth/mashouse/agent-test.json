@@ -1,0 +1,274 @@
+{
+  "company": "MasHouse",
+  "url": "https://mashouse.com.ar/",
+  "testedAt": "2026-02-06T16:55:54.276Z",
+  "sessionId": "716ea0ed-1235-486b-a494-02aea0077d1a",
+  "systemPromptLength": 21005,
+  "systemPromptModelsFound": [
+    "Descubrir más",
+    "En proyectos desde",
+    "Casa Premium",
+    "Steel Frame",
+    "Instalaciones Sanitarias",
+    "Aberturas de 3 metros"
+  ],
+  "systemPromptWhatsApp": "+5491159550736",
+  "systemPromptType": "de Proyectos estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "+House es una constructora de casas premium y de diseño, con sistema Steel Frame y filosofía **All in One**, donde nos ocupamos de todo el proceso llave en mano. Diseñamos y construimos viviendas personalizadas, desde proyectos mínimos de 120 m², con enfoque en calidad, eficiencia energética e instalaciones sanitarias, eléctricas y técnicas pensadas desde el inicio.  \n\nTrabajamos con **casas premium**, **Steel Frame**, **instalaciones sanitarias de alta calidad** y detalles como **aberturas de 3 metros** para maximizar luz y diseño. ¿Qué tipo de Proyectos estás buscando?",
+      "mentionedModels": [
+        "Steel Frame",
+        "Instalaciones Sanitarias",
+        "Aberturas de 3 metros"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2669
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "En +House ofrecemos la construcción **llave en mano** de casas premium y personalizadas, con sistema **Steel Frame** y diseño exclusivo, desde 120 m² cubiertos.  \n\nDentro de nuestros Proyectos trabajamos con:\n- **Casa Premium**: diseño arquitectónico exclusivo y personalizable, con enfoque sostenible.  \n- **Steel Frame**: estructura en acero, obra rápida, eficiente y con menor impacto ambiental.  \n- **Instalaciones Sanitarias**: sanitaria, eléctrica y técnica pensadas desde el proyecto para máxima calidad y eficiencia.  \n- **Aberturas de 3 metros**: ventanales XL que dan más luz natural y conexión con el exterior.  \n\nAdemás, contamos con **financiación** y acompañamiento en todas las etapas. ¿Qué tipo de Proyectos estás buscando?",
+      "mentionedModels": [
+        "Casa Premium",
+        "Steel Frame",
+        "Instalaciones Sanitarias",
+        "Aberturas de 3 metros"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4645
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Te dejo los datos de contacto directo de +House:  \n\n- Teléfono / WhatsApp: **+54 9 11 5955 0736**  \n- Email: **info@mashouse.com.ar**  \n\nSi querés, contame brevemente qué Proyectos estás buscando y te ayudo a prepararte para hablar con un asesor.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 1464
+    },
+    {
+      "question": "¿Cuántos proyectos ofrecen?",
+      "questionType": "product_count",
+      "response": "Mirá, en +House trabajamos con una línea de Proyectos bien definida más que con modelos en serie.  \nHoy tenemos estos Proyectos y servicios principales: **Descubrir más**, **En proyectos desde 120 m²**, **Casa Premium**, **Steel Frame**, **Instalaciones Sanitarias** y **Aberturas de 3 metros**.  \n\nLa idea es partir de esta base y personalizar el diseño según tus necesidades. ¿Qué tipo de Proyectos estás buscando: una casa familiar, de fin de semana, algo más grande y premium?",
+      "mentionedModels": [
+        "Descubrir más",
+        "En proyectos desde",
+        "Casa Premium",
+        "Steel Frame",
+        "Instalaciones Sanitarias",
+        "Aberturas de 3 metros"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3259
+    },
+    {
+      "question": "Contame sobre Descubrir más",
+      "questionType": "product_specific",
+      "response": "“**Descubrir más**” es la puerta de entrada a nuestra filosofía **All in One**: ahí te mostramos cómo trabajamos la casa premium llave en mano, el sistema Steel Frame y el diseño exclusivo que caracteriza a +House. Desde ese Proyecto te explicamos el proceso completo: desde la idea inicial y el diseño personalizado, hasta la obra terminada con instalaciones, terminaciones y detalles como aberturas de gran formato.  \n\nEs ideal si recién estás empezando a averiguar y querés entender cómo sería construir tu casa con nosotros. Para orientarte mejor, ¿ya tenés terreno? ¿En qué zona sería?",
+      "mentionedModels": [
+        "Descubrir más",
+        "Casa Premium",
+        "Steel Frame"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4073
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Descubrir más? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "En “**Descubrir más**” no trabajamos con un modelo fijo de superficie o cantidad de dormitorios, sino como un Proyecto de introducción a la filosofía **All in One** y a cómo diseñamos casas premium a medida. Lo que sí está definido es que trabajamos **en proyectos desde 120 m² cubiertos**, con sistema **Steel Frame**, diseño exclusivo, instalaciones sanitarias/elétricas/técnicas planificadas desde el inicio y posibilidad de sumar detalles como **aberturas de 3 metros** y estrategias de construcción sostenible.  \n\nSi te sirve, puedo ayudarte a pensar un esquema base (por ejemplo, 120 m² con 2 o 3 dormitorios) según cómo la quieras usar. Para avanzar mejor, ¿para cuántas personas sería la casa y en qué zona está el terreno?",
+      "mentionedModels": [
+        "Descubrir más",
+        "En proyectos desde",
+        "Steel Frame",
+        "Instalaciones Sanitarias",
+        "Aberturas de 3 metros"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3389
+    },
+    {
+      "question": "Contame sobre En proyectos desde",
+      "questionType": "product_specific",
+      "response": "Buenísimo, te cuento.  \n**“En proyectos desde”** marca la base con la que trabajamos: **mínimo 120 m² cubiertos**, y desde ahí diseñamos tu **Casa Premium** a medida, con sistema **Steel Frame**, instalaciones sanitarias/eléctricas/técnicas de alta calidad y posibilidad de sumar detalles como **aberturas de 3 metros** y estrategias sostenibles.  \n\nAdemás, nuestra filosofía **All in One** implica obra **llave en mano**, con diseño exclusivo y acompañamiento en todo el proceso. Para orientarte mejor, ¿qué superficie tenés en mente y cuántos dormitorios te gustaría?",
+      "mentionedModels": [
+        "En proyectos desde",
+        "Casa Premium",
+        "Steel Frame",
+        "Instalaciones Sanitarias",
+        "Aberturas de 3 metros"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3138
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de En proyectos desde? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "En **“En proyectos desde”** lo único técnico que está definido como base es la **superficie mínima: 120 m² cubiertos**; a partir de ahí el diseño (cantidad de dormitorios, distribución, etc.) se personaliza según lo que necesites.  \n\nTodos los Proyectos se desarrollan en **Steel Frame**, con **casa premium llave en mano**, **instalaciones sanitarias, eléctricas y técnicas** pensadas desde el proyecto, y posibilidad de sumar **aberturas de 3 metros** y criterios de **construcción sostenible**.  \nPara afinarte una propuesta tipo (por ejemplo, 120 m² con 2 o 3 dormitorios), ¿para cuántas personas estás pensando la casa?",
+      "mentionedModels": [
+        "En proyectos desde",
+        "Casa Premium",
+        "Steel Frame",
+        "Instalaciones Sanitarias",
+        "Aberturas de 3 metros"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3008
+    },
+    {
+      "question": "¿Cuál es la diferencia entre Descubrir más y En proyectos desde?",
+      "questionType": "model_comparison",
+      "response": "La diferencia principal es el enfoque:  \n- **Descubrir más** es más conceptual: es la puerta de entrada a nuestra filosofía **All in One**, donde te mostramos cómo trabajamos, el sistema Steel Frame, el llave en mano y el nivel de calidad/diseño que ofrecemos.  \n- **En proyectos desde** es un marco técnico/comercial: indica que trabajamos **en proyectos desde 120 m² cubiertos**, y a partir de esa superficie diseñamos tu **Casa Premium** a medida, con todas las características de +House.  \n\nAmbos se complementan: uno te explica el “cómo” y el otro te marca el punto de partida en m². ¿En qué rango de metros estás pensando vos para tu casa?",
+      "mentionedModels": [
+        "Descubrir más",
+        "En proyectos desde",
+        "Casa Premium",
+        "Steel Frame"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3766
+    },
+    {
+      "question": "¿Qué modelo me recomendás para una familia de 4 personas?",
+      "questionType": "recommendation",
+      "response": "Para una familia de 4, lo ideal con +House es pensar un Proyecto a medida partiendo de **“En proyectos desde 120 m²”** y encuadrarlo dentro de **Casa Premium**. Con esa superficie mínima solemos llegar bien a **3 dormitorios**, 2 baños, área social amplia integrada (cocina-comedor-estar) y, si el lote lo permite, grandes **aberturas de 3 metros** hacia el jardín para ganar luz y conexión exterior.  \n\nTodo se resuelve en **Steel Frame**, con instalaciones sanitarias, eléctricas y técnicas de alta calidad ya pensadas desde el proyecto. Para afinarte mejor la recomendación: ¿la imaginás en una planta o en dos, y en qué zona tenés o pensás comprar el terreno?",
+      "mentionedModels": [
+        "En proyectos desde",
+        "Casa Premium",
+        "Steel Frame",
+        "Instalaciones Sanitarias",
+        "Aberturas de 3 metros"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2813
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con filosofía **All in One**, es decir, obra **llave en mano**: empezamos con el relevamiento y anteproyecto, seguimos con proyecto ejecutivo y documentación, luego platea, estructura en **Steel Frame**, instalaciones sanitarias/eléctricas/técnicas, cerramientos, terminaciones y entrega final lista para habitar. Todo el proceso está supervisado por nuestro equipo y pensado para que no tengas que ocuparte de coordinar gremios ni etapas.  \n\nEn cuanto a tiempos, dependen de la superficie y complejidad del Proyecto, pero el Steel Frame permite plazos mucho más rápidos que la obra húmeda tradicional. No tengo los tiempos exactos por m² cargados, pero para tu caso concreto te los pueden detallar por WhatsApp. Mientras tanto, ¿para cuándo te gustaría tener la casa terminada aproximadamente?",
+      "mentionedModels": [
+        "Steel Frame",
+        "Instalaciones Sanitarias"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4222
+    },
+    {
+      "question": "¿Se pueden personalizar los proyectos?",
+      "questionType": "customization",
+      "response": "Sí, los Proyectos se personalizan completamente, esa es justamente la esencia de nuestra **Casa Premium**. Partimos de la base **“En proyectos desde 120 m²”** y, desde ahí, adaptamos distribución, cantidad de dormitorios, estilo, aberturas (por ejemplo de 3 metros), nivel de terminaciones e incluso criterios de construcción sostenible según cómo vivan ustedes.  \n\nTrabajamos cada caso como un Proyecto exclusivo, no como modelo estándar repetido. Para ayudarte mejor, ¿qué cosas sí o sí te gustaría que tenga la casa (dormitorios, home office, galería, etc.)?",
+      "mentionedModels": [
+        "En proyectos desde",
+        "Casa Premium"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3062
+    },
+    {
+      "question": "¿Tenés imágenes, planos o algún catálogo que pueda ver?",
+      "questionType": "images_catalog",
+      "response": "Sí, tenemos material para que veas mejor cómo trabajamos. Podés mirar nuestros Proyectos y avances de obra en Instagram (**@mashousesteelframe**) y tenemos un **catálogo** y contenido de la filosofía **All in One** en la web de +House.  \n\nSi querés algo más específico (por ejemplo, ideas para una casa de 120 m² para 4 personas), puedo orientarte y después te sugiero que pidas el catálogo completo y planos de referencia por WhatsApp al **+54 9 11 5955 0736**. ¿Te interesan más imágenes de exteriores, interiores o distribución de planos?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 7777
+    },
+    {
+      "question": "¿Cuánto sale aproximadamente una casa de 2 dormitorios?",
+      "questionType": "pricing",
+      "response": "En +House trabajamos con un valor de referencia desde **u$d 1100 por m²** en nuestra **Casa Premium**, para **proyectos desde 120 m² cubiertos**. Con eso, una casa de 2 dormitorios suele entrar bien dentro de ese metraje, pero el valor final depende del diseño, terminaciones, aberturas (por ejemplo de 3 metros), etc.  \n\nNo tengo un precio cerrado por modelo de “2 dormitorios” porque todo es personalizado, pero ese valor por m² te da una buena base para estimar. Si querés un número más afinado para tu caso puntual, te sugiero escribir por WhatsApp al **+54 9 11 5955 0736**. ¿Ya tenés definido en cuántos m² te gustaría esa casa de 2 dormitorios?",
+      "mentionedModels": [
+        "Casa Premium"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4175
+    },
+    {
+      "question": "¿Qué incluye el precio? ¿Terminaciones, instalación, todo?",
+      "questionType": "includes",
+      "response": "En +House trabajamos con modalidad **llave en mano**, así que el valor por m² apunta a una **Casa Premium completa**, no solo la estructura. Esto incluye: sistema **Steel Frame**, platea, cerramientos, **instalaciones sanitarias, eléctricas y técnicas** pensadas desde el proyecto, más terminaciones de calidad y detalles de diseño (como posibilidad de **aberturas de 3 metros** y criterios sostenibles).  \n\nDe todos modos, el alcance exacto puede ajustarse según el nivel de terminaciones que elijas, por eso para un detalle bien fino de “qué incluye / qué opcionales hay” te sugiero escribir al WhatsApp **+54 9 11 5955 0736**. Para entender mejor tu caso, ¿estás buscando algo lo más completo posible para entrar a vivir sin hacer nada extra, o pensás resolver alguna parte por tu cuenta?",
+      "mentionedModels": [
+        "Casa Premium",
+        "Steel Frame",
+        "Instalaciones Sanitarias",
+        "Aberturas de 3 metros"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4006
+    },
+    {
+      "question": "¿Ustedes se encargan de toda la instalación o solo entregan los materiales?",
+      "questionType": "installation",
+      "response": "Nos encargamos de **todo**, no solo de los materiales. +House construye en modalidad **llave en mano**, con sistema **Steel Frame** e incluye la ejecución completa de las **instalaciones sanitarias, eléctricas y técnicas**, platea, estructura, cerramientos y terminaciones, hasta entregarte la casa lista para habitar.  \n\nVos no tenés que coordinar gremios ni buscar instaladores por separado, todo lo gestiona nuestro equipo. Para ubicar mejor tu caso: ¿ya tenés terreno? ¿En qué zona sería la obra?",
+      "mentionedModels": [
+        "Steel Frame",
+        "Instalaciones Sanitarias"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3154
+    },
+    {
+      "question": "¿Qué garantía ofrecen sobre la construcción?",
+      "questionType": "warranty",
+      "response": "Trabajamos con estándares altos de calidad en Steel Frame, plateas, instalaciones sanitarias, eléctricas y técnicas, y terminaciones premium pensadas para durar, pero acá no tengo cargado el detalle formal de años o tipo de garantía por escrito.  \n\nNo tengo esa información específica de plazos y cobertura de garantía, así que para que te pasen las condiciones completas te sugiero consultarlo por WhatsApp al **+54 9 11 5955 0736**. ¿La idea es construir para vivienda permanente o casa de fin de semana? Así también te orientamos sobre qué puntos de calidad mirar.",
+      "mentionedModels": [
+        "Steel Frame",
+        "Instalaciones Sanitarias"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 3536
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, ofrecemos **financiación** para la construcción de las casas +House, con planes que se adaptan según el Proyecto y el perfil del cliente.  \n\nNo tengo por acá el detalle fino de cuotas, anticipos o plazos, pero todo eso te lo pueden pasar actualizado por WhatsApp al **+54 9 11 5955 0736**. Para orientarte un poco más: ¿estás pensando en pagar una parte al contado y el resto financiado, o necesitás financiar la mayor parte de la obra?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2599
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Nos diferencia sobre todo la combinación de **Casa Premium + Steel Frame + filosofía All in One (llave en mano)**: diseñamos y ejecutamos obras personalizadas desde 120 m², ocupándonos de todo el proceso para que no tengas que coordinar nada. Trabajamos con **diseño exclusivo**, residencias seleccionadas (Devoto, Thays Leloir, Caseros, barrios como La Magdalena, etc.), **instalaciones sanitarias, eléctricas y técnicas** muy cuidadas y detalles de alto nivel como **aberturas de 3 metros**, plateas ejecutadas con precisión y terminaciones premium.  \n\nEs un servicio muy personal y profesional, con foco en calidad constructiva, eficiencia energética y en que la obra avance en tiempo y forma. Para ver si encajamos con lo que buscás: ¿ya tenés terreno? ¿En qué zona?",
+      "mentionedModels": [
+        "Casa Premium",
+        "Steel Frame",
+        "Instalaciones Sanitarias",
+        "Aberturas de 3 metros"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 6230
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "Trabajamos con **Proyectos seleccionados** y obras de casas premium en distintas zonas, principalmente en **Ciudad Autónoma de Buenos Aires y alrededores**, con presencia en lugares como **Devoto, Thays Leloir, Caseros, barrios como La Magdalena y General La Madrid**, entre otros.  \n\nFuera de esas áreas también podría ser posible, pero eso se evalúa caso por caso. No tengo por acá un listado cerrado de cobertura nacional, así que para una confirmación exacta de tu zona te sugiero escribir al WhatsApp **+54 9 11 5955 0736**. ¿En qué localidad o barrio estás pensando construir?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4759
+    }
+  ],
+  "sessionCreationTimeMs": 93422,
+  "errors": []
+}

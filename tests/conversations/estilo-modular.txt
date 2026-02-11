@@ -1,0 +1,45 @@
+=== ESTILO MODULAR ===
+URL: https://estilomodular.com/
+Session: 64dace66-cfc1-4f67-a157-445ec9d98ce2
+Date: 2026-02-08 17:37:42
+Session creation: 18.7s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (5.3s): Somos Estilo Modular, una empresa especializada en casas modulares y espacios complementarios como quinchos, garajes, oficinas y baños modulares, todos construidos en hormigón premoldeado. Diseñamos y fabricamos viviendas como la Casa Modular Puma, Surí, Tatú, Austral, Ñandú, Yacaré, Yaguareté, Condor, Hornero, complejos como Huemul y Cisne, y quinchos como el Quincho Delfín, siempre con foco en diseño moderno, sustentabilidad y personalización. También ofrecemos opciones de financiación para que puedas avanzar con tu proyecto de manera más cómoda.  
+
+Para orientarte mejor, ¿qué tipo de modelos, cotización, casas, quinchos estás buscando: vivienda principal, casa de fin de semana, quincho o algo más corporativo como oficinas?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (3.3s): Ofrecemos casas modulares en hormigón premoldeado (como las Casas Modulares Puma, Surí, Tatú, Austral, Ñandú, Yacaré, Yaguareté, Condor, Hornero), además de complejos residenciales como Huemul y Cisne. También tenemos quinchos modulares (Quincho Delfín), garajes modulares (Aitor, Homero y la Casa con Garaje Modular Michael), oficinas modulares (Hipocampo y Coatí) y baños modulares (Baño Modular Zorro).  
+Como servicio, nos encargamos del diseño, fabricación e instalación de los módulos, con foco en sustentabilidad y diseño personalizado, y contamos con financiación disponible. ¿Para cuándo estarías pensando en concretar tu proyecto aproximadamente?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (3.3s): Tenemos un catálogo bastante amplio de modelos de casas y espacios modulares. En viviendas, hoy contamos con: Casa Modular Puma, Casa Modular Surí, Casa Modular Tatú, Casa Modular Austral, Casa Modular Yacaré, Casa Modular Ñandú, Casa Modular Yaguareté, Casa Modular Condor, Casa Modular Hornero, además de complejos residenciales como Complejo Modular Huemul y Complejo Modular Cisne, y la Casa con Garaje Modular Michael.  
+
+Además se suman los garajes Aitor y Homero, el Quincho Delfín, las oficinas Hipocampo y Coatí y el Baño Modular Zorro, todos modulares en hormigón premoldeado. ¿Estás buscando algo de 40m², 60m² o todavía no definiste la superficie que necesitás?
+
+USUARIO: Contame sobre 1. Sección
+AGENTE (3.6s): Buenísimo, te cuento: el modelo **1. Sección** es una casa modular de **60 m²** construida en **hormigón premoldeado**, pensada como vivienda compacta pero cómoda. En la información que tengo solo figura la superficie (60 m²) y que pertenece a la categoría de casas, sin más detalle de distribución interna ni precio.  
+
+No tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp o por el formulario de la web para que te pasen plano, ambientes y valor al día. ¿Ya tenés definido si la querés como vivienda permanente o más tipo casa de fin de semana?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (7.5s): Me encantaría pasarte un número, pero en toda la info que tengo (incluyendo los modelos como Casa Modular Tatú, Complejo Modular Cisne, Complejo Modular Tucán, etc.) no aparecen valores en pesos, dólares ni “desde X $/m²”. No tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp o mediante el formulario de “Pedí Cotización” indicando que querés una casa de 2 dormitorios, así te cotizan modelos como Ñandú, Yaguareté, Surí o Tatú según zona.  
+
+Para que el asesor te pase algo bien ajustado, ¿qué presupuesto aproximado manejás para la vivienda?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (4.4s): Trabajamos con estructura de **hormigón premoldeado** y materiales de primera calidad, pensados para larga durabilidad, buen aislamiento y bajo mantenimiento, por lo que cada proyecto se entrega con garantía sobre la estructura y la instalación. En la info que tengo no figura el detalle exacto (años, alcances puntuales), así que no tengo esa información específica cargada; te conviene pedirla en la cotización así te pasan por escrito la garantía según modelo (por ejemplo Casa Modular Ñandú, Yaguareté o Puma).  
+
+¿Querés que te sugiera algunos modelos concretos de 2 dormitorios (como Ñandú, Yaguareté o Surí) para que ya pidas la info de garantía y cotización sobre algo específico?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (3.4s): En la información que tengo solo aparece un teléfono genérico tipo ejemplo y no un número real de contacto, así que no tengo el WhatsApp o teléfono cargado para pasártelo con seguridad.  
+
+Te recomiendo entrar a la web de Estilo Modular y tomar desde ahí el número oficial de contacto, o escribir por mail a **inndess@support.com** para que te compartan directamente el WhatsApp comercial.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 4
+Tiempo promedio: 4.4s

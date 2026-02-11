@@ -1,0 +1,53 @@
+=== VIVIENDAS EL FUERTE ===
+URL: https://elfuerte.com.ar/
+Session: 4f8830e1-e456-4bf6-81f3-12a2771ef0cb
+Date: 2026-02-08 15:57:32
+Session creation: 18.7s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (6.7s): Somos Viviendas El Fuerte, una empresa argentina líder en casas prefabricadas desde 1969, con más de 50 años construyendo hogares. Nos dedicamos a diseñar, fabricar y montar viviendas prefabricadas personalizadas, con modelos como QB 36m², Casa Premium Modelo 1, Mini Casa Modelo 1, Casa Serrana Modelo 1, Casa Tradicional Modelo 1 y Casa Económica Modelo 1.  
+
+Trabajamos con sistema constructivo prefabricado, enfocándonos en calidad, diseño y sostenibilidad, y ofrecemos financiación para que puedas acceder a tu casa propia. Atendemos desde nuestra sede en Av. Colón 4435, Córdoba, y coordinamos todo el proceso desde el proyecto hasta la entrega.  
+
+Para ayudarte mejor, ¿qué tipo de Modelos estás buscando: algo económico, una mini casa, algo serrano o más bien un modelo premium/tradicional?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (9.9s): Ofrecemos principalmente casas prefabricadas listas para habitar, con distintos Modelos: QB 36m² (minimalista, moderna, con 2 habitaciones y entrega inmediata), Casa Premium Modelo 1, Mini Casa Modelo 1, Casa Serrana Modelo 1, Casa Tradicional Modelo 1 y Casa Económica Modelo 1.  
+
+Trabajamos con sistema constructivo prefabricado, diseño personalizado a medida y un fuerte foco en sostenibilidad. Además, brindamos financiación para facilitar el acceso a la vivienda y construimos desde nuestra base en Av. Colón 4435, Córdoba.  
+
+Para orientarte mejor, ¿qué tipo de Modelos estás buscando: algo económico, una mini casa, un diseño serrano o un modelo más premium/tradicional?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (5.7s): Tenemos al menos 7 Modelos bien definidos en nuestro catálogo actual:  
+- QB (Minimalista) y QB 36m² (36 m², 2 habitaciones, diseño moderno, entrega inmediata).  
+- Casa Premium Modelo 1, Mini Casa Modelo 1, Casa Serrana Modelo 1, Casa Tradicional Modelo 1 y Casa Económica Modelo 1.  
+
+Además, todos se pueden personalizar a medida según tu terreno y necesidades. Para saber cuál te puede encajar mejor, ¿ya tenés terreno? ¿En qué zona?
+
+USUARIO: Contame sobre 1. QB
+AGENTE (3.6s): El Modelo QB es nuestra vivienda minimalista, pensada para quienes buscan una casa moderna, simple y funcional, con líneas rectas y techo con caídas “escondidas” y cabreadas revestidas en fibrocemento. Es una casa prefabricada que se adapta muy bien a diseños contemporáneos, ideal como primera vivienda, casa de fin de semana o ampliación en un terreno existente.  
+
+Todos los diseños QB son personalizados: podés ajustar distribución, aberturas y terminaciones según tu terreno y cómo la quieras usar. Para afinar mejor, ¿la estás pensando como vivienda permanente o más como casa de descanso?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (12.5s): Perfecto, con la info de la web te lo confirmo mejor: si ya tenés terreno, una casa prefabricada con nosotros arranca **desde USD 5.000 en adelante**. Ese es el piso aproximado; el valor sube según el Modelo (por ejemplo un QB 36 m² de 2 dormitorios), la superficie total y el nivel de equipamiento/terminaciones que elijas.  
+
+Para acercarte un número más real a tu caso, ¿en qué zona tenés el terreno y qué presupuesto manejás aproximadamente? Así también vemos si te conviene un Modelo QB 36m², una Casa Económica Modelo 1 u otra alternativa.
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (4.1s): En la info que tengo cargada no figura el detalle exacto de años o condiciones de la garantía por escrito. Lo que sí te puedo asegurar es que trabajamos hace más de 50 años en el rubro, con sistema prefabricado, materiales de alta resistencia (como fibrocemento en varios modelos) y enfoque en durabilidad y bajo mantenimiento.  
+
+Para que te pasen las condiciones de garantía específicas (estructura, humedad, instalaciones, etc.), te sugiero escribirnos por WhatsApp al +54 9 351 512 2946 y te lo envían por modelo. Mientras tanto, ¿qué tipo de casa estás mirando: QB 36m², Casa Económica Modelo 1, o alguna otra?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (3.0s): Nuestro WhatsApp y teléfono es **+54 9 351 512 2946**.  
+También podés escribirnos por mail a **ventas@elfuerte.com.ar**.  
+
+Ya que estás en contacto, ¿querés que veamos un Modelo específico (por ejemplo QB 36m² o Casa Económica Modelo 1) para que te asesore mejor?
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 0
+Tiempo promedio: 6.5s

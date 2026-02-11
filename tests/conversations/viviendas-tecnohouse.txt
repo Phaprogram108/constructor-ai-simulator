@@ -1,0 +1,61 @@
+=== VIVIENDAS TECNOHOUSE ===
+URL: https://www.viviendastecnohouse.com.ar/
+Session: f7267edd-59ec-4b06-bfda-f7f374c671a8
+Date: 2026-02-08 15:53:18
+Session creation: 23.2s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (9.5s): Viviendas Tecnohouse es una empresa argentina con más de 40 años dedicada a construir casas industrializadas en hormigón premoldeado, de alta calidad y diseño moderno. Fabricamos viviendas, quinchos (como el Quincho Olivia), complejos turísticos y también modelos personalizados, siempre con foco en la funcionalidad y la estética.
+
+Trabajamos con un sistema constructivo industrializado: producimos los paneles en fábrica y luego los montamos en obra, lo que da más precisión, rapidez (plazos de hasta 90 días) y menos desperdicio. Además, ofrecemos financiación en cuotas fijas en pesos y una gran variedad de modelos como Isabella, 1060 Fernis, Maradona, 51 Ander, Minimalista, Quincho, Bastian, Dylan y Sara, entre otros.  
+
+Para orientarte mejor, ¿qué tipo de Modelos estás buscando: algo chico tipo 30–40 m², una casa familiar más grande o un quincho?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (4.4s): Ofrecemos principalmente construcción de viviendas industrializadas en hormigón premoldeado, totalmente terminadas y listas para habitar. Trabajamos tanto con Modelos de catálogo (por ejemplo: Isabella – 40 m², Dylan – 27 m², Bastian – 32 m², Sara – 39 m², Ander – 53 m², Maradona – 55 m², Beltran – 58 m², Emilia – 64 m², Bautista – 79 m², Catalina – 81 m², Fernis 1060 – 64 m², Lucca – 47 m², Trapani – 100 m², Minimalista, Quincho Olivia, etc.) como con Modelos personalizados.
+
+Además de casas, hacemos quinchos, complejos turísticos, ampliaciones sobre terraza y proyectos especiales. Sumamos servicios de diseño y asesoramiento, fabricación industrializada, montaje en obra en todo el país a través de nuestras sucursales y planes de financiación en cuotas fijas en pesos.  
+
+Para afinar lo que te propongo: ¿qué tipo de Modelos estás buscando?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (4.5s): Tenemos una variedad amplia de Modelos propios y además la opción de modelos personalizados.  
+Dentro de los modelos destacados están: Isabella, 1060 Fernis, Maradona, 51 Ander, Minimalista, Quincho Olivia, Bastian, Dylan, Sara, Beltran, Emilia, Bautista, Catalina, Lucca, Trapani, el modelo 42 Mercedes, el modelo 36 Sara y también desarrollos especiales como complejos turísticos y construcciones sobre terraza.
+
+Más allá del catálogo, muchos clientes combinan o adaptan planos, así que en la práctica trabajamos con decenas de variantes. Para ayudarte bien, ¿qué tipo de Modelos estás buscando: algo compacto, una casa familiar grande o un quincho/espacio social?
+
+USUARIO: Contame sobre 1. Realice el pago
+AGENTE (3.7s): Buenísimo que preguntes por eso, porque es clave para avanzar con la vivienda. “Realice el pago” es la sección de nuestra web donde podés hacer la seña inicial de la casa o pagar tus cuotas de forma online.
+
+Ahí el paso a paso es así:
+1) Ingresás el monto que querés pagar y tocás el botón “Pagar”.  
+2) Elegís el medio de pago: Rapipago, Pago Fácil o Bapro Pago.  
+3) Hacés el pago.  
+4) Luego te contactás con nuestros vendedores para confirmar la seña o la cuota abonada de tu Vivienda Tecnohouse.
+
+Si querés, te ayudo con lo previo: ¿ya definiste qué Modelo te interesa o todavía estás viendo opciones?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (16.1s): Mirá, con esta info adicional se confirma algo importante: podés acercarte a cualquiera de nuestras sucursales (por ejemplo Casa Central CABA en Av. Belgrano 406, o Santa Rosa en Av. España 47) para ver todos los modelos y recibir asesoramiento presencial sobre precios y financiación.  
+
+Igual, en la web no aparecen valores concretos, así que mantengo lo que te dije antes: no tengo los precios actualizados cargados por acá y te conviene consultarlos por WhatsApp (2954 500132) o con la sucursal que te quede más cómoda.  
+Para ayudarte a elegir el modelo de 2 dormitorios, ¿en qué provincia o ciudad estás así te indico la sucursal más cercana?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (4.4s): Trabajamos con un sistema industrializado en hormigón premoldeado, con materiales de primera (ladrillo, techos Cincalum, aberturas de aluminio, cielorrasos con membrana, instalaciones certificadas), pensado para que la vivienda tenga larga vida útil y bajo mantenimiento, y eso se respalda contractualmente. En los contratos (contado y financiado) se detallan las garantías técnicas sobre estructura, terminaciones e instalaciones, junto con normas de platea y características técnicas.
+
+No tengo en pantalla el plazo exacto de cada garantía porque está en esos anexos legales, pero sí está todo por escrito y firmado al momento de contratar. Si querés, te paso el dato de contacto para que te envíen el modelo de contrato por mail o WhatsApp. Y para entender mejor tu caso: ¿ya tenés terreno? ¿En qué zona sería la obra?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (3.5s): Te podés contactar directo por estos medios:
+
+- Teléfono 0800 general: **0800-555-8558**  
+- WhatsApp central (Santa Rosa, pero atiende consultas generales): **2954 500132**  
+
+Si me decís en qué ciudad estás, te paso también el WhatsApp específico de la sucursal más cercana.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 2
+Tiempo promedio: 6.6s

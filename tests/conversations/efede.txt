@@ -1,0 +1,58 @@
+=== EFEDE ===
+URL: https://efede.com.ar/casas-modulares/
+Session: a8b3564c-c572-4f18-a5c6-48c0a2c65416
+Date: 2026-02-08 16:28:59
+Session creation: 15.3s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (3.0s): Somos EFEDÉ, una empresa que fabrica y vende casas modulares transportables, construidas con un sistema industrializado de módulos portables. Armamos tu casa en fábrica en unos 60 días y luego la trasladamos e instalamos en tu terreno, con excelente confort térmico y acústico, y alta eficiencia energética.  
+
+Para orientarte mejor, ¿qué tipo de casas modulares estás buscando: vivienda (como las MHZ, MC1, MZB2, MT1) u oficina (MO1, MO5)?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (3.5s): Ofrecemos casas modulares y soluciones habitacionales transportables, fabricadas con construcción industrializada en módulos que se ensamblan en unos 60 días.  
+
+En viviendas tenemos:  
+- Línea Premium: casa modular MHZ (32 m², living/comedor, cocina, 1 dormitorio y baño), casa modular MC1 (29 m², comedor, cocina, 1 dormitorio y baño), casa modular MZB2 (54 m², living, cocina comedor, 2 dormitorios y 2 baños).  
+- Línea Basic: casa modular MT1 (15 m², 1 dormitorio, baño y antebaño).  
+En espacios de trabajo:  
+- Línea Office: MO1 (15 m², oficina privada, kitchenette y baño) y MO5 (30 m², oficina, sala de reuniones, kitchenette y baño).  
+También brindamos servicio de financiación y todo el acompañamiento en el proceso de diseño, fabricación y montaje.  
+
+Para saber qué mostrarte con más detalle: ¿ya tenés terreno? ¿En qué zona sería el proyecto?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (2.2s): Tenemos 6 modelos principales de casas/modulos:  
+
+- Vivienda Línea Premium: casa modular MHZ (32 m²), casa modular MC1 (29 m²), casa modular MZB2 (54 m²).  
+- Vivienda Línea Basic: casa modular MT1 (15 m²).  
+- Línea Office: MO1 (15 m²) y MO5 (30 m²).  
+
+¿Para cuándo estarías pensando en instalar la casa modular? Así veo qué modelo se adapta mejor a tus tiempos y necesidad.
+
+USUARIO: Contame sobre 1. MO1
+AGENTE (3.4s): El MO1 es un módulo de la Línea Office de 15 m², ideal si necesitás un espacio de trabajo independiente o una pequeña oficina en tu terreno. Viene completo: oficina privada, kitchenette y baño, todo con el mismo sistema constructivo industrializado que usamos en las casas modulares (excelente aislamiento térmico y acústico, estructura de acero y rápida instalación).  
+
+No tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp desde la web de EFEDÉ para que te pasen valor y opciones de financiación. ¿Para qué tipo de actividad querés usar el MO1 (oficina profesional, consultorio, estudio, etc.)?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (3.1s): Para una casa modular de 2 dormitorios, el modelo que se ajusta a lo que buscás es la casa modular MZB2, de 54 m², con living, cocina comedor, 2 dormitorios y 2 baños.  
+
+No tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp desde la web de EFEDÉ, donde te pasan valor exacto y alternativas de financiación según la zona y la forma de pago. ¿En qué zona tenés pensado instalar la casa modular?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (3.8s): Todas nuestras casas modulares se fabrican con estructura de acero, cubierta metálica con doble aislamiento y materiales pensados para ser durables y de bajo mantenimiento, lo que se traduce en una garantía sólida sobre la calidad constructiva.  
+
+No tengo cargado el detalle fino (cantidad de años por cada componente), por lo que para condiciones exactas de garantía te recomiendo consultarnos por WhatsApp desde la web de EFEDÉ. ¿La garantía te interesa más por la estructura, por las instalaciones (eléctrica/agua) o por los materiales en general?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (3.9s): El contacto directo es por WhatsApp desde la web de EFEDÉ, a través de este botón/enlace oficial:  
+https://efede.com.ar/wp-content/plugins/click-to-chat-for-whatsapp/new/inc/assets/img/whatsapp-logo.svg  
+
+No tengo el número escrito de forma visible en el material que manejo, pero entrando a la web de EFEDÉ vas a ver el ícono de WhatsApp y desde ahí chateás directo con un asesor.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 4
+Tiempo promedio: 3.3s

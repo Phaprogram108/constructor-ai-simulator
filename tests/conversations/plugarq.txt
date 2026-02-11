@@ -1,0 +1,54 @@
+=== PLUGARQ ===
+URL: https://www.plugarq.com/
+Session: bdfdff8c-a858-49a9-a163-8b7630716acd
+Date: 2026-02-08 15:27:51
+Session creation: 10.2s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (4.5s): Somos Plug Arquitectura, una empresa de construcción modular con sistema steel frame, ubicada en el Parque Industrial de Junín, Buenos Aires. Diseñamos y construimos tu proyecto completo: desde la primera idea hasta la entrega llave en mano en el terreno, en unos 90 días y sin los típicos imprevistos de la obra húmeda.  
+
+Trabajamos con metodología offsite (fabricamos los módulos en planta y luego los instalamos en el lote) y ofrecemos financiación. Para viviendas tenemos dos líneas principales de diseño: la Casa Moderna (más contemporánea y minimalista) y la Casa Clásica (más tradicional y cálida).  
+
+Para orientarte mejor, ¿qué tipo de modelos o proyectos estás buscando?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (6.8s): Ofrecemos construcción modular en steel frame, llave en mano, para viviendas y otros proyectos de edificación. Dentro de casas tenemos dos líneas principales: Casa Moderna (diseño contemporáneo, eficiente energéticamente, espacios amplios) y Casa Clásica (estilo tradicional, materiales de calidad, posibilidad de integrar jardines amplios).  
+
+Trabajamos con metodología offsite: fabricamos los módulos en nuestra planta de Junín y luego los instalamos en tu terreno, con plazos de obra muy cortos (aprox. 90 días) y sin desvíos de costos. También brindamos financiación y acompañamos todo el proceso: diseño a medida, proyecto, construcción, instalaciones completas y terminaciones.  
+
+Para ayudarte mejor, ¿ya tenés terreno? ¿En qué zona sería el proyecto?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (3.2s): Tenemos dos líneas principales de viviendas: la Casa Moderna y la Casa Clásica, y a partir de esas bases desarrollamos cada proyecto de forma personalizada.  
+
+Además, contamos con muchos proyectos de referencia ya construidos (por ejemplo Maru y Bruno 40 m², Ale y Sil 68 m², Gabi y Ángel 78 m², Mori y Flia 120 m², etc.) que usamos como punto de partida para adaptar distribución, metros y terminaciones a lo que vos necesitás.  
+
+Para afinar cuál encaja mejor con vos, ¿qué superficie y cantidad de dormitorios estás buscando aproximadamente?
+
+USUARIO: Contame sobre 1. Casa Moderna
+AGENTE (4.6s): La Casa Moderna es nuestra línea de diseño contemporáneo: volúmenes simples, grandes ventanales de aluminio con DVH (doble vidrio), espacios integrados tipo estar–comedor–cocina y foco en eficiencia energética. La construimos en steel frame con metodología offsite: muros con celulosa proyectada o lana de vidrio, cubierta con panel sándwich aislado, piso de steel deck con hormigón, y terminaciones modernas (hormigón pulido, porcelanatos en zonas húmedas, muebles de cocina en melamina y mesadas de granito).  
+
+Incluye instalaciones completas (electricidad, plomería, iluminación LED, preinstalación de aire/calefacción, WiFi), artefactos de calidad (Ferrum, Peirano, Longvie, Samsung/Ormay, Johnson) y se entrega llave en mano en tu terreno en aprox. 90 días. Trabajamos a medida, tomando como referencia proyectos ya hechos (por ejemplo desde 40 m² hasta más de 150 m²) y adaptando metros, cantidad de dormitorios y galerías según tu lote y presupuesto.  
+
+Para orientarte con un ejemplo concreto de Casa Moderna, ¿cuántos m² o cuántos dormitorios tenés en mente?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (3.6s): Trabajamos con proyectos a medida y los valores se actualizan seguido, así que no tengo los precios vigentes cargados acá.  
+
+Te sugiero escribirnos por WhatsApp al +54 9 11 7062-7642 y ahí te pasan el valor aproximado para una casa de 2 dormitorios según metros, terminaciones y zona de obra. Mientras tanto, para que te pueda orientar mejor en el diseño: ¿cuántos m² te imaginás para esos 2 dormitorios (por ejemplo 60, 70, 80 m²)?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (4.1s): En Plug trabajamos con estándares de construcción similares a la obra tradicional, usando steel frame, paneles sándwich, DVH y marcas reconocidas (Ferrum, Peirano, Longvie, etc.), y eso nos permite ofrecer garantía formal sobre la vivienda y las instalaciones. Los plazos específicos de garantía (estructura, filtraciones, instalaciones eléctricas y sanitarias, artefactos) se detallan en el contrato de obra y en la documentación que te entregamos con el proyecto.  
+
+No tengo acá el detalle por año de cada ítem, así que para la letra chica exacta te recomiendo escribirnos por WhatsApp al +54 9 11 7062-7642. Aprovechando: ¿ya tenés terreno y estás viendo avanzar con una Casa Moderna o una Casa Clásica?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (3.6s): Te podés contactar directo por WhatsApp al +54 9 11 7062-7642 (link: https://api.whatsapp.com/send?phone=5491170627642).  
+
+También por teléfono al mismo número o por mail a info@plugarq.com. Si querés, contame y te ayudo a definir qué modelo/proyecto consultarles (Casa Moderna o Casa Clásica, y metros aproximados).
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 2
+Tiempo promedio: 4.3s

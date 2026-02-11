@@ -1,0 +1,63 @@
+=== REDES CONSTRUCTORA ===
+URL: https://redesconstructora.com/
+Session: 6fa4c54d-20e7-4430-9e9f-808dcf4faab8
+Date: 2026-02-08 17:25:40
+Session creation: 38.5s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (6.2s): Somos ReDes, una constructora de casas y cabañas de madera con más de 10 años de experiencia, con base en Concepción del Uruguay, Entre Ríos, y obras en todo el país. Diseñamos, fabricamos y montamos cabañas en sistema en seco, con estructura de eucalipto saligna, aberturas de aluminio y aislación térmica extra.
+
+Trabajamos en tres modalidades: construcción **llave en mano** (lista para habitar en 7–15 días de obra), **kits de autoconstrucción** y **desarrollos integrales** para proyectos turísticos o de inversión. Además ofrecemos una colección de modelos como Concepción, Ibiza, Alpina, Ameno, Vistas, Pradera, Campo, Clásica, Dormis, Soleil, Delta, Atardecer, Vistas Premium, San Francisco y versiones con quincho, todos personalizables.  
+
+Para ayudarte mejor, ¿qué tipo de modelo estás buscando: algo chico tipo Dormis/Concepción o algo más grande como Campo, Delta o Ibiza?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (3.8s): Ofrecemos principalmente **casas y cabañas de madera** en sistema constructivo en seco, en dos formatos:  
+- **Llave en mano**: te entregamos la cabaña lista para habitar en 7–15 días de obra (bases, estructura, baño, cocina, aislación, aberturas, terminaciones).  
+- **Kits para autoconstrucción**: todo el material cortado y listo + planos para que la montes con tu propio equipo.
+
+Dentro de eso, trabajamos con una **línea de modelos de cabañas**: Concepción, Ibiza, Alpina, Ameno, Vistas, Pradera, Vistas Premium, San Francisco, Dormis, Clásica, Campo, Soleil, Delta, Atardecer y versiones con quincho, todos personalizables según metros, distribución y uso (vivienda o turismo). También hacemos **desarrollos integrales** para complejos turísticos y contamos con showroom y experiencia ReDescubre para que puedas alojarte en una cabaña antes de decidir.  
+
+Para orientarte mejor: ¿ya tenés terreno? ¿En qué zona sería tu proyecto?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (4.0s): Tenemos una colección de **14 modelos de cabañas/casas**, todos adaptables y personalizables. Los principales son: **Concepción, Ibiza, Alpina, Ameno, Vistas, Pradera, Vistas Premium, San Francisco, Dormis, Clásica, Campo, Soleil, Delta, Atardecer**, más variantes como **Vistas c/Quincho** e **Ibiza c/Quincho** para proyectos turísticos.
+
+Cada modelo se ofrece en distintas superficies (por ejemplo: Dormis 21 m², Clásica 35 m², Ibiza 38 y 48 m², Ameno 43 y 58 m², Alpina 45 y 69 m², Delta 65 y 84 m², Campo 84 y 96 m², Atardecer 137 m², Soleil 119 m², etc.), y podés sumar galería, quincho o ampliar metros. ¿Te interesa más algo compacto (20–40 m²) o una cabaña grande tipo Campo/Atardecer para vivienda o turismo?
+
+USUARIO: Contame sobre 1. Detalles del proyecto
+AGENTE (3.4s): Claro, “Detalles del proyecto” corresponde a una obra real del **Modelo Delta 84 m²** que hicimos en **San Miguel del Monte (Buenos Aires)** para un **emprendimiento turístico familiar**. Es una cabaña de **84 m²**, con **2 habitaciones, baño completo y estar-comedor integrados**, montada con sistema en seco y entregada en **7 días de obra**.
+
+Está construida con **estructura de Eucalipto Saligna**, aislación térmica en muros y techo, y **aberturas de aluminio**, con todas las terminaciones listas (baño, cocina con bajo mesada, pintura e impregnante exterior). Es un ejemplo ideal de cómo trabajamos para turismo: obra rápida, calidad pareja y lista para empezar a alquilar.  
+
+¿Estás pensando algo parecido para turismo o más como vivienda propia?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (7.1s): Para 2 dormitorios, en nuestro catálogo hoy tenés varias opciones llave en mano con precios publicados en dólares (no incluyen IVA). Algunos ejemplos:
+
+- **Clásica 35 m² (2 hab.)**: **USD 21.423** contado.  
+- **Ibiza 48 m² (2 hab.)**: **USD 24.579** contado.  
+- **Campo 84 m² (2 hab.)**: **USD 30.798** contado.  
+- **Campo 96 m² (2 hab.)**: **USD 32.567** contado.  
+- **Vistas 75 m² (2 hab.)**: **USD 25.655** contado.  
+- **Pradera 74 m² (2 hab.)**: **USD 25.601** contado.  
+- **Soleil 119 m² (2 hab.)**: **USD 33.278** contado.  
+- **Atardecer 137 m² (2 hab.)**: **USD 43.980** contado.  
+
+Todos estos modelos también se pueden pagar con esquema **70/30** y, si abonás en pesos, se toma el valor intermedio del blue del día. ¿Qué presupuesto manejás aproximadamente así te digo cuál modelo de 2 dormitorios encaja mejor para vos?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (3.6s): En ReDes te damos **garantía de entrega en tiempo pactado**, con contratos firmados y sellados ante escribano, y plazos de obra muy claros (entre **5 y 15 días** de montaje según modelo). Además, todas las cabañas tienen **servicio post venta y seguimiento permanente**, sin cargo, para acompañarte después de la entrega.
+
+Trabajamos con materiales de primera (eucalipto saligna, quebracho, aislación térmica extra, aberturas de aluminio) y somos **constructora reconocida a nivel nacional**, lo que también te permite acceder a seguro de hogar con **25% OFF** junto a Río Uruguay Seguros. ¿Para cuándo estás pensando construir, así te cuento cómo se ajustan los tiempos y garantías a tu caso puntual?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.5s): Podés escribirnos o llamarnos al **+54 9 3442 539999** (es el mismo número para WhatsApp y teléfono).  
+
+Si querés ir directo al chat, este es el enlace: **https://wa.link/98z8q1**.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 0
+Tiempo promedio: 4.4s

@@ -1,0 +1,53 @@
+=== NEUCON ===
+URL: https://neucon.com.ar/
+Session: 243da41b-632c-4dfd-a82c-222eb5cb261d
+Date: 2026-02-08 17:18:01
+Session creation: 32.4s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (4.6s): Neucon es una empresa constructora que se especializa en viviendas en sistema Steel Framing y hormigón premoldeado, con bases en Neuquén y Mar del Plata. Diseñamos y construimos casas completas: tenemos modelos estándar (por ejemplo Proyecto 62 m2, 80 m2, 100 m2, 120 m2) y también obras a medida como las Viviendas VA, RM, BA, GP, CL, OV, LE, GS, PC, CD, SZ, IV, AD y la Casa Campo.  
+
+Trabajamos todo el proyecto: diseño arquitectónico, planos, gestión municipal y la ejecución de la obra con construcción en seco, que es más rápida, con menores costos y mejor desempeño térmico. ¿Qué tipo de proyecto estás pensando vos: una casa permanente, de fin de semana o algo más tipo inversión?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (3.9s): Ofrecemos principalmente construcción de viviendas en sistema Steel Framing y hormigón premoldeado, con servicio integral de arquitectura (diseño, planos, presentación en municipio y dirección de obra).  
+
+En productos concretos tenés:
+- Proyectos tipo: Proyecto 62 m2, 76 m2, 80 m2, 86 m2, 90 m2, 100 m2 y 120 m2.  
+- Obras/modelos construidos: Vivienda VA (360 m2), RM (189 m2), BA (131 m2), GP (202 m2, 3 dorm), CL (186 m2, 2 dorm), OV (280 m2), LE (180 m2), GS (138 m2), PC (249 m2), CD (117 m2), SZ (132 m2), IV (178 m2), AD (228 m2) y Casa Campo (135 m2), además de Proyectos Personalizados.  
+
+Trabajamos en Neuquén y Mar del Plata (y alrededores). ¿Qué superficie aproximada o cantidad de dormitorios estás buscando para orientarte mejor entre estos modelos?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (3.4s): Tenemos, por un lado, 7 Proyectos tipo: 62 m2, 76 m2, 80 m2, 86 m2, 90 m2, 100 m2 y 120 m2.  
+
+Y además más de 10 obras/modelos ya desarrollados que usamos como referencia: Vivienda VA, RM, BA, GP, CL, OV, LE, GS, PC, CD, SZ, IV, AD, Casa Campo y Casa Campo – Ayacucho, más la opción de Proyectos Personalizados. En total, entre modelos tipo y obras de referencia, tenés más de 20 opciones distintas para tomar como base. ¿Qué tipo de Proyectos, Obras estás buscando: algo compacto (60–90 m2) o una casa más grande arriba de 120 m2?
+
+USUARIO: Contame sobre 1. Vivienda VA
+AGENTE (3.4s): La Vivienda VA está en el barrio privado Los Canales de Plottier (Neuquén) y tiene 360 m² totales aproximadamente, en dos plantas, pensada para aprovechar al máximo la vista al lago y la orientación del lote. El programa incluye unos 300 m² cubiertos: sala de música, estar, comedor, cocina, lavadero, depósito y 2 baños en planta baja; y en planta alta dos dormitorios (uno en suite), playroom y dos baños, más casi 100 m² de galerías y semicubiertos (galería/parrilla abajo y gran terraza/mirador arriba).  
+
+Se construyó en Steel Framing, con un fuerte foco en confort térmico y reducción de tiempos de obra, y grandes aventanamientos hacia las mejores visuales. ¿Para cuándo necesitarías vos una casa y en qué zona tenés pensado construir?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (8.1s): Con la info que tenemos de Casa Campo no aparecen valores de $ ni precios por m², solo detalles técnicos del sistema (perfilería de 100 mm, chapa sinusoidal, lana de vidrio, etc.), así que sigo sin poder darte un número aproximado serio.  
+
+Mantengo entonces: no tengo los precios actualizados cargados; lo mejor es que lo veas por WhatsApp al +54 9 299 469 1294 o +54 9 223 680 9012, donde te pueden cotizar una casa de 2 dormitorios según superficie, terminaciones y si estás en zona Neuquén o Mar del Plata. ¿Ya tenés terreno? ¿En qué zona sería la obra?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (4.6s): Trabajamos con materiales y sistemas certificados por IRAM e INTI dentro del sistema Steel Framing, lo que garantiza durabilidad, estabilidad estructural y muy buen comportamiento térmico y acústico. Además, al ser construcción en seco industrializada, los componentes (perfiles, placas, aislaciones) tienen estándares de calidad controlados y se montan con métodos aprobados para zonas sísmicas.  
+
+No tengo cargado el detalle fino de años de garantía por escrito (estructura, filtraciones, instalaciones, etc.), eso te lo pasan formalmente por WhatsApp según el tipo de obra y contrato. Te sugiero escribirnos así te envían las condiciones exactas: Neuquén/alto valle +54 9 299 469 1294 o Mar del Plata y costa +54 9 223 680 9012.
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (3.7s): Te dejo los contactos directos:  
+
+- Neuquén / Alto Valle: Tel y WhatsApp +54 9 299 469 1294 y teléfono fijo +54 9 299 555 5671.  
+- Mar del Plata y zona: WhatsApp +54 9 223 680 9012.  
+
+Si querés, me contás qué presupuesto manejás aproximadamente y te digo qué Proyectos u Obras (por ejemplo Proyecto 80 m2 o Vivienda CD de 117 m2) se ajustan mejor antes de que escribas.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 2
+Tiempo promedio: 4.5s

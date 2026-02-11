@@ -1,0 +1,46 @@
+=== SIENNA MODULAR ===
+URL: https://www.siennamodular.com.ar/
+Session: 2b33e248-0ef9-4f8f-bbb8-b143ad1ce8f4
+Date: 2026-02-08 16:27:04
+Session creation: 7.5s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (3.3s): Somos SIENNA, una empresa argentina dedicada a la arquitectura modular transportable, con foco en diseño de alta calidad y confort. Desarrollamos módulos SIENNA listos para habitar: se fabrican en 30 a 60 días, tienen excelente aislación térmica, se apoyan sobre pilotes, se pueden transportar e instalar fácilmente y siempre podés ampliarlos sumando nuevos módulos.  
+
+También ofrecemos equipamiento personalizado (cocina, interiores, terminaciones premium) con proveedores de primera línea y un precio y plazo cerrados para que sepas desde el inicio cuánto vas a invertir. ¿Qué tipo de Módulos estás buscando: vivienda, turístico, comercial u otro uso?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (2.5s): Ofrecemos principalmente Módulos SIENNA de arquitectura modular transportable: unidades terminadas y listas para habitar, con excelente calidad de materiales, muy buena aislación térmica, apoyadas sobre pilotes, transportables y ampliables con nuevos módulos.  
+
+Además, brindamos diseño personalizado de tu proyecto, equipamiento integral a elección (muebles, cocina, superficies como Silestone/Dekton, etc.), y un precio y plazo de entrega cerrados (fabricación en 30 a 60 días). También contamos con financiación para facilitar la compra. ¿Ya tenés pensado si los querés para vivienda, uso comercial o proyecto turístico?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (2.7s): En SIENNA trabajamos con Módulos SIENNA totalmente personalizables más que con un catálogo fijo de “modelos estándar”. Adaptamos tamaño, distribución y equipamiento según si lo querés para vivienda, local comercial, oficina o turismo, siempre manteniendo el mismo sistema modular transportable y la posibilidad de ampliar con nuevos módulos.  
+
+No tengo un listado cerrado de modelos/casas cargado por acá, porque solemos diseñar cada proyecto a medida dentro de la misma línea de módulos. ¿Para qué uso específico estás pensando el módulo, así te orientó mejor en las configuraciones posibles?
+
+USUARIO: Contame sobre 1. Módulos SIENNA
+AGENTE (3.6s): Los Módulos SIENNA son unidades de arquitectura modular transportable, diseñadas con altos estándares de calidad, confort y muy buena aislación térmica, ideales para vivienda, uso comercial o proyectos turísticos. Se fabrican en un plazo estimado de 30 a 60 días, se apoyan sobre pilotes (no requieren obra húmeda pesada), son movibles, fáciles de instalar y siempre se pueden ampliar sumando nuevos módulos.  
+
+Podés recibirlos completamente equipados y listos para habitar, con terminaciones y equipamiento a elección gracias a nuestras alianzas con marcas reconocidas (mesadas, revestimientos, mobiliario, etc.), y siempre con precio y plazo cerrados para evitar sorpresas. ¿Ya tenés terreno? ¿En qué zona sería el proyecto para ver qué configuración de Módulos SIENNA te conviene?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (2.8s): Los valores dependen mucho de la superficie final, el nivel de equipamiento (estándar vs. premium) y si incluimos todo listo para habitar, pero por acá no tengo los precios actualizados cargados. Te sugiero consultarlo por WhatsApp o agendar una reunión para que te pasen una cotización exacta según metros cuadrados y terminaciones.  
+
+Lo que sí te puedo asegurar es que trabajamos con precio cerrado y plazo de fabricación entre 30 y 60 días, así sabés desde el inicio cuánto vas a invertir. Para orientarte mejor, ¿para cuándo necesitarías tener lista esa casa de 2 dormitorios?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (3.0s): En la info que tengo acá no figura el detalle específico de años o condiciones puntuales de garantía de los Módulos SIENNA. Sí sabemos que toda la producción es interna y controlamos cada fase del proceso, con materiales y terminaciones de alta calidad, lo que reduce mucho riesgos y problemas posteriores.  
+
+No tengo esa información exacta de garantía cargada, pero podés pedir el detalle completo (estructura, instalaciones, equipamiento, etc.) por WhatsApp o en una reunión con el equipo técnico. ¿Querés que te pase el link para agendar una reunión y verlo bien según el tipo de módulo que estás pensando?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.4s): No tengo el número de WhatsApp o teléfono cargado acá.  
+
+Te recomiendo entrar a la web oficial de SIENNA (siennamodular.com.ar), donde vas a encontrar el botón de contacto con el WhatsApp directo y demás datos. Si querés también podés agendar una reunión online con el equipo desde este link: https://calendly.com/siennamodular.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 4
+Tiempo promedio: 2.9s

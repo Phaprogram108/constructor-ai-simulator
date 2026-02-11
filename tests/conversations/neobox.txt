@@ -1,0 +1,53 @@
+=== NEOBOX ===
+URL: https://neobox.ar/
+Session: 5797d973-47b2-438a-a44a-d28a03f258a4
+Date: 2026-02-08 17:27:53
+Session creation: 28.1s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (3.0s): Neobox es una empresa de construcción industrializada que diseña, fabrica e instala espacios modulares en acero y Steel framing desde Salta. Hacemos casas (como nuestros modelos MAGNA, DÚO, PROVIDENCIA, NATIVA y NATIVA +), oficinas móviles, locales comerciales, módulos industriales y proyectos 100% a medida, siempre con aislación térmica/acústica y montaje rápido en obra.  
+
+Para orientarte mejor, ¿qué tipo de modelos estás buscando: vivienda, comercial o industrial?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (4.8s): Ofrecemos soluciones modulares en tres grandes líneas:  
+- **Residencial:** casas industrializadas MAGNA (90 m², 3 dorm), DÚO (60 m², 2 dorm), PROVIDENCIA (40 m², 1 dorm), NATIVA + (30 m², 1 dorm) y NATIVA (22 m², monoambiente), además de proyectos a medida.  
+- **Comercial:** oficinas móviles, locales comerciales/gastronómicos y espacios pop-up modulares, listos para operar y trasladables.  
+- **Industrial:** campamentos mineros, casillas agrarias, shelters, módulos sanitarios y de apoyo para operaciones en entornos exigentes.
+
+Para acompañarte bien: ¿ya tenés terreno o ubicación definida? ¿En qué zona sería el proyecto?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (3.4s): Tenemos **5 modelos residenciales estandarizados**:  
+1. **MAGNA** – 90 m², 3 dormitorios, 2 baños completos, cocina/comedor.  
+2. **DÚO** – 60 m², 2 dormitorios, 1 baño + toilette, cocina/comedor.  
+3. **PROVIDENCIA** – 40 m², 1 dormitorio, 1 baño completo, cochera/comedor.  
+4. **NATIVA +** – 30 m², 1 dormitorio, 1 baño completo, kitchenette/comedor.  
+5. **NATIVA** – 22 m², monoambiente, 1 baño completo, kitchenette.  
+
+Además de estos, también hacemos **proyectos 100% a medida**. ¿Para cuántas personas pensás la casa así te digo qué modelo se ajusta mejor?
+
+USUARIO: Contame sobre 1. CARACTERÍSTICAS Superficie
+AGENTE (3.2s): Buenísimo, te cuento: en la parte de **CARACTERÍSTICAS – Superficie** figura un modelo tipo de **40 m²**, pero en realidad nuestros modelos residenciales estandarizados son: MAGNA (90 m²), DÚO (60 m²), PROVIDENCIA (40 m²), NATIVA + (30 m²) y NATIVA (22 m²). Todos se construyen con estructura metálica y revestimientos en Steel framing, con aislación térmica y acústica y terminaciones interiores completas.  
+
+Para ayudarte mejor a elegir superficie: ¿para cuántas personas o qué uso le querés dar al espacio (vivienda permanente, cabaña, anexo, etc.)?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (2.9s): Para 2 dormitorios, el modelo que se ajusta perfecto es la **DÚO**, de **60 m²**, con 2 dormitorios, 1 baño + toilette y cocina/comedor integrada.  
+El precio publicado de la **DÚO** es **USD 63.000 + IVA** (opcional: Galería Dúo 15 m² por USD 5.250 + IVA o Galería Magna 24 m² por USD 8.500 + IVA).  
+
+Así, a grandes rasgos, tenés una referencia real. ¿Para cuándo estarías pensando construir o instalar la casa?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (3.4s): Trabajamos con un sistema constructivo industrializado en **estructura metálica y Steel framing**, con aislaciones térmicas y acústicas y terminaciones de alta calidad, pensado para ser **durable y de bajo mantenimiento**; pero en la info que tengo cargada no figura el plazo exacto de garantía (años, coberturas, etc.).  
+Para esos detalles específicos de garantía te sugiero escribirnos a **WhatsApp +54 9 387 4066397** o al mail **ventas@neoboxar.ar**, así un asesor te pasa las condiciones formales según el tipo de proyecto (residencial, comercial o industrial).
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.0s): Nuestro teléfono y WhatsApp es **+54 9 387 4066397**.  
+Si querés, podés escribirnos ahí y te ponemos en contacto directo con un asesor para avanzar con tu proyecto.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 0
+Tiempo promedio: 3.3s

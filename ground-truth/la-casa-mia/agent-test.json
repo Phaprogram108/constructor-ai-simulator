@@ -1,0 +1,369 @@
+{
+  "company": "La Casa Mia",
+  "url": "https://lacasamia.com.ar/",
+  "testedAt": "2026-02-06T16:55:35.734Z",
+  "sessionId": "2cc16e62-3e98-4066-89bf-e2b74b356520",
+  "systemPromptLength": 23774,
+  "systemPromptModelsFound": [
+    "Prefabricada Modelo Minimalista",
+    "Últimas Entregas",
+    "Productos Relacionados",
+    "Reels Entregas",
+    "Youtube",
+    "Cómo llegar",
+    "Seguir buscando",
+    "Comenzar de nuevo",
+    "Casa Premium Base De 107m2",
+    "Casa Premium Base De 92m2",
+    "Casa Premium Base de 93m2",
+    "Casa Premium Classic de 122m2",
+    "Casa Premium Classic De 146m2",
+    "Casa Premium de 160m2",
+    "Americana",
+    "Casa Americana De 84M2",
+    "Duplex- Testimonios- La Casa Mia",
+    "Cabaña De 45M2",
+    "Cabaña de 60m2",
+    "Casa Americana de 54m2",
+    "Casa Americana De 60M2",
+    "Casa Americana De 73M2",
+    "Casa Americana de 78m2",
+    "Casa Americana DE 98M2",
+    "Casa Minimalista de 60m2",
+    "Casa Minimalista de 72m2",
+    "Casa Minimalista de 73m2",
+    "Casa Minimalista de 78m2",
+    "Casa Minimalista de 98m2",
+    "Casa Americana Rosa 136M2",
+    "Saber más",
+    "Deposito",
+    "Baños Casa de",
+    "Estudio Casa de",
+    "Casa Premium de",
+    "Dúplex Premium de",
+    "Wood Frame",
+    "Steel Frame",
+    "Sistema EIFS",
+    "Casa Americana De",
+    "Total metros cubiertos",
+    "Minimalista",
+    "Cabaña De",
+    "Cochera de",
+    "Casa Minimalista de",
+    "Casa Americana Rosa",
+    "Cabaña",
+    "Americana Prefabricada de",
+    "Minimalista Prefabricada de",
+    "Cabaña Prefabricada de",
+    "Vivienda Americana de",
+    "Minimalistas de",
+    "Vivienda Minimalista de",
+    "Viviendas Cabañas de",
+    "Vivienda Cabaña de",
+    "Viviendas Americanas de",
+    "MdA6",
+    "MdA5",
+    "MdA4",
+    "MdA3",
+    "MdA2",
+    "MdA1",
+    "MdM4",
+    "MdM3",
+    "MdM2",
+    "MdM1",
+    "MdP5",
+    "MdP4",
+    "MdP3",
+    "MdP2",
+    "MdP1"
+  ],
+  "systemPromptWhatsApp": "+54912345678",
+  "systemPromptType": "de Modelos, Tipologías, Proyectos estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Constructora La Casa Mía es una empresa de Córdoba con más de 15 años de experiencia, especializada en viviendas prefabricadas y construcción en seco con sistema steel frame. Diseñamos y construimos casas a medida (Modelos, Tipologías, Proyectos) como Americanas, Minimalistas, Cabañas y líneas Premium, usando componentes nacionales de alta calidad. También ofrecemos financiación y acompañamiento técnico completo durante todo el proceso.  \nPara orientarte mejor, ¿qué tipo de Modelos, Tipologías, Proyectos estás buscando: algo tipo casa familiar, cabaña, dúplex, estilo americano o minimalista?",
+      "mentionedModels": [
+        "Americana",
+        "Steel Frame",
+        "Minimalista",
+        "Cabaña"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2781
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos construcción de viviendas prefabricadas en sistema steel frame en Córdoba (capital y alrededores), con Modelos, Tipologías, Proyectos Americanos, Minimalistas, Cabañas y línea Premium. Tenemos casas desde formatos compactos (como Cabaña de 45m2, Casa Americana de 54m2, Casa Minimalista de 60m2) hasta opciones grandes (Casa Premium Classic de 122m2, Casa Premium de 160m2, Dúplex Premium de 242m2). Además brindamos asesoría técnica, diseño personalizado y financiación para que puedas avanzar aunque no tengas todo el efectivo.  \nPara saber qué ofrecerte mejor: ¿ya tenés una idea de metros cuadrados o cantidad de dormitorios que necesitarías?",
+      "mentionedModels": [
+        "Casa Premium Classic de 122m2",
+        "Casa Premium de 160m2",
+        "Americana",
+        "Cabaña De 45M2",
+        "Casa Americana de 54m2",
+        "Casa Minimalista de 60m2",
+        "Casa Premium de",
+        "Dúplex Premium de",
+        "Steel Frame",
+        "Casa Americana De",
+        "Minimalista",
+        "Cabaña De",
+        "Casa Minimalista de",
+        "Cabaña"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3756
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Nos podés contactar por WhatsApp o teléfono a estos números de asesores comerciales en Córdoba:  \n- 351 815-6645  \n- 351 232-0240  \n- 351 814-6178  \n\nFijo: 351 727-1822 (lun a vie 9:00 a 18:30, sáb 9:00 a 13:30).  \nSi querés, contame en qué zona tenés el terreno y le pido a un asesor que te escriba al WhatsApp que me indiques.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2334
+    },
+    {
+      "question": "¿Cuántos modelos de casas ofrecen?",
+      "questionType": "product_count",
+      "response": "Trabajamos con muchas opciones de Modelos, Tipologías, Proyectos, tanto estándar como personalizados.  \nDentro del catálogo tenés, por ejemplo: Casa Premium Base de 92m2, Casa Premium Base de 93m2, Casa Premium Base de 107m2, Casa Premium Classic de 122m2, Casa Premium Classic de 146m2, Casa Premium de 160m2, varias Casas Americanas (54m2, 60m2, 73m2, 78m2, 84m2, 98m2, 116m2, Americana Rosa 136m2), varias Minimalistas (50m2, 60m2, 65m2, 67m2, 72m2, 73m2, 75m2, 76m2, 78m2, 98m2, 100m2), Cabañas (42m2, 45m2, 56m2, 60m2, 70m2, 110m2) y Dúplex Premium de 242m2, entre otros.  \nAdemás de estos modelos base, adaptamos distribución y terminaciones según tus necesidades. ¿Qué superficie aproximada o cuántos dormitorios estás buscando así te filtro las opciones que mejor encajan?",
+      "mentionedModels": [
+        "Casa Premium Base De 107m2",
+        "Casa Premium Base De 92m2",
+        "Casa Premium Base de 93m2",
+        "Casa Premium Classic de 122m2",
+        "Casa Premium Classic De 146m2",
+        "Casa Premium de 160m2",
+        "Americana",
+        "Casa Premium de",
+        "Dúplex Premium de",
+        "Minimalista",
+        "Cabaña"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4769
+    },
+    {
+      "question": "Contame sobre Prefabricada Modelo Minimalista",
+      "questionType": "product_specific",
+      "response": "La **Prefabricada Modelo Minimalista** es uno de nuestros Modelos, Tipologías, Proyectos compactos, de **42 m²**, ideal como primera vivienda, estudio o casa de fin de semana. Al ser minimalista, prioriza ambientes funcionales, buena iluminación y una distribución muy eficiente, construida en sistema **steel frame** con materiales nacionales de alta calidad.  \n\nPara afinar mejor: ¿la estás pensando como vivienda permanente o más bien como cabaña/fin de semana, y para cuántas personas sería?",
+      "mentionedModels": [
+        "Prefabricada Modelo Minimalista",
+        "Steel Frame",
+        "Minimalista",
+        "Cabaña"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3751
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Prefabricada Modelo Minimalista? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "La **Prefabricada Modelo Minimalista** tiene una superficie de **42 m²** y está construida en **steel frame**, es decir, sistema en seco con estructura de acero galvanizado y componentes nacionales de alta calidad.  \nEn el catálogo sólo tengo cargado el dato de los **m²**, no figuran especificados la cantidad exacta de dormitorios ni el detalle fino de ambientes y terminaciones para este modelo puntual.  \n\nNo tengo esa información específica cargada (dormitorios, memoria técnica completa), pero podés pedir el plano y ficha técnica actualizada por WhatsApp a nuestros asesores al **351 815-6645 / 351 232-0240 / 351 814-6178**.  \nMientras tanto, ¿la idea es usarla como monoambiente amplio o sí o sí necesitas 1 dormitorio independiente?",
+      "mentionedModels": [
+        "Prefabricada Modelo Minimalista",
+        "Steel Frame",
+        "Minimalista"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3353
+    },
+    {
+      "question": "Contame sobre Últimas Entregas",
+      "questionType": "product_specific",
+      "response": "El Modelo, Tipología, Proyecto **“Últimas Entregas”** corresponde a una vivienda de **84 m²**, construida en sistema **steel frame**, que usamos como ejemplo real de obras recientemente terminadas. Es una casa de tamaño medio, ideal para familia tipo, con distribución cómoda y terminaciones de nuestra línea estándar de alta calidad.  \n\nPara ayudarte mejor, ¿te interesa algo alrededor de **84 m²** o preferís que te muestre también opciones Premium (por ejemplo **MdP3 84 m²** o **Casa Americana de 84 m²**) para comparar estilos?",
+      "mentionedModels": [
+        "Últimas Entregas",
+        "Americana",
+        "Steel Frame",
+        "Casa Americana De",
+        "MdP3"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4008
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Últimas Entregas? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "El Modelo, Tipología, Proyecto **“Últimas Entregas”** tiene una superficie de **84 m²** y está construido en **steel frame** (construcción en seco con estructura de acero galvanizado y materiales nacionales).  \nEn el catálogo sólo tengo cargados los **m²**, no figuran de forma detallada la cantidad de dormitorios ni la memoria técnica completa (revestimientos, aberturas, etc.) para este modelo puntual.\n\nNo tengo esa información específica cargada, pero podés pedir planos, distribución y ficha técnica actualizada por WhatsApp a nuestros asesores al **351 815-6645 / 351 232-0240 / 351 814-6178**.  \nAsí te oriento mejor: ¿buscás 84 m² con 2 o 3 dormitorios, y la idea es algo más estilo **Americana**, **Minimalista** o **Premium**?",
+      "mentionedModels": [
+        "Últimas Entregas",
+        "Americana",
+        "Steel Frame",
+        "Minimalista"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3162
+    },
+    {
+      "question": "¿Cuál es la diferencia entre Prefabricada Modelo Minimalista y Últimas Entregas?",
+      "questionType": "model_comparison",
+      "response": "Buenísima pregunta para comparar.  \nLa **Prefabricada Modelo Minimalista** es un Modelo, Tipología, Proyecto de **42 m²**, compacto, ideal como primera vivienda chica, estudio o cabaña, con diseño minimalista y muy eficiente en metros. En cambio, **Últimas Entregas** es un Modelo, Tipología, Proyecto de **84 m²**, es decir, el doble de superficie, pensado más como casa familiar de tamaño medio, también en **steel frame**, que usamos como ejemplo de obras reales recientemente terminadas.\n\nAmbas comparten el sistema constructivo en seco y calidad de materiales; la gran diferencia está en los **m²** y el tipo de uso: uno más compacto vs. otro más familiar.  \nPara saber cuál te conviene, ¿para cuántas personas sería la casa y si pensás usarla como vivienda permanente o de fin de semana?",
+      "mentionedModels": [
+        "Prefabricada Modelo Minimalista",
+        "Últimas Entregas",
+        "Steel Frame",
+        "Minimalista",
+        "Cabaña"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3412
+    },
+    {
+      "question": "¿Qué modelo me recomendás para una familia de 4 personas?",
+      "questionType": "recommendation",
+      "response": "Para una familia de 4 personas te conviene pensar en algo desde **70/80 m² para arriba**, con al menos **2 dormitorios bien definidos**.  \nDentro de nuestros Modelos, Tipologías, Proyectos, las opciones que mejor encajan son, por ejemplo:  \n- **Casa Premium Base de 92m²** – 2 dormitorios, 1 baño, distribución eficiente, ideal familia tipo.  \n- **Casa Premium Base de 93m²** – 2 dormitorios, 2 baños, muy cómoda si querés dos baños.  \n- **Casa Premium Classic de 122m²** – 3 dormitorios, 2 baños, más amplia si buscás comodidad extra.  \n- También podés ver **Casa Americana de 84m²** o **MdP3 84m²** como alternativas intermedias.\n\nPara ajustarlo bien a vos: ¿ya tenés terreno (en qué zona) y qué cantidad de dormitorios preferís, 2 o 3?",
+      "mentionedModels": [
+        "Americana",
+        "Casa Americana De",
+        "MdP3"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3270
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con **construcción en seco en steel frame**: primero diseño y ajustes del Modelo, Tipología, Proyecto; luego ingeniería y planos, fabricación de paneles, montaje en obra, instalaciones (agua, luz, gas), cerramientos, revestimientos y terminaciones finales. Es una obra limpia, rápida y muy controlada en tiempos y calidad.\n\nLos plazos exactos dependen de los **m²** y el modelo, pero una vivienda tipo familiar (por ejemplo una Casa Americana o Minimalista de 60–90 m²) suele resolverse en un plazo sensiblemente menor al de la obra húmeda tradicional.  \nNo tengo los tiempos detallados por modelo cargados, así que para darte una demora concreta te sugiero escribirnos al WhatsApp de asesores (**351 815-6645 / 351 232-0240 / 351 814-6178**).  \n¿Ya tenés una idea de cuántos m² querés así te puedo orientar mejor sobre el rango de tiempos?",
+      "mentionedModels": [
+        "Americana",
+        "Steel Frame",
+        "Minimalista"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4987
+    },
+    {
+      "question": "¿Se pueden personalizar los modelos de casas?",
+      "questionType": "customization",
+      "response": "Sí, los Modelos, Tipologías, Proyectos se pueden **personalizar**. Trabajamos con bases como **Casa Americana**, **Minimalista**, **Cabañas** y **línea Premium** (Casa Premium Base de 92m², 93m², 107m², Premium Classic 122m², etc.) y sobre esos modelos ajustamos distribución, aberturas, ampliaciones y terminaciones según lo que necesites.  \n\nLa idea es usar el modelo base como guía para optimizar tiempos y costos, pero adaptarlo a vos y a tu terreno.  \nPara ayudarte mejor, ¿qué modelo o superficie tenés en mente y qué cosas sí o sí te gustaría personalizar (dormitorios, cocina, galería, etc.)?",
+      "mentionedModels": [
+        "Americana",
+        "Minimalista",
+        "Cabaña"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2899
+    },
+    {
+      "question": "¿Tenés imágenes, planos o algún catálogo que pueda ver?",
+      "questionType": "images_catalog",
+      "response": "Sí, tenemos catálogo con imágenes, planos y ejemplos de obras reales (por ejemplo **Últimas Entregas 84m²**, **Casa Americana de 84m²**, **Cabaña de 45m²**, **Casa Minimalista de 60m²**, línea **Premium** de 92, 93, 107, 122, 146 y 160m², etc.). También contamos con material en video tipo **“Reels Entregas 70m²”** y **YouTube 70m²** donde se ven las casas terminadas y el sistema steel frame.  \n\nPara enviarte el catálogo completo y los planos, lo mejor es que nos escribas por WhatsApp a cualquiera de estos números: **351 815-6645 / 351 232-0240 / 351 814-6178**.  \nAsí te mando algo bien puntual: ¿te interesan más modelos **Americanos**, **Minimalistas**, **Cabañas** o la línea **Premium**?",
+      "mentionedModels": [
+        "Últimas Entregas",
+        "Reels Entregas",
+        "Youtube",
+        "Americana",
+        "Steel Frame",
+        "Casa Americana De",
+        "Minimalista",
+        "Cabaña De",
+        "Casa Minimalista de",
+        "Cabaña"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3104
+    },
+    {
+      "question": "¿Cuánto sale aproximadamente una casa de 2 dormitorios?",
+      "questionType": "pricing",
+      "response": "No tengo los precios actualizados cargados, así que por acá no puedo darte un valor aproximado sin inventar. Te sugiero consultarlo por WhatsApp, donde te pasan lista vigente, formas de pago y financiación según el Modelo, Tipología, Proyecto que elijas.\n\nPara que sepas qué pedir, para **2 dormitorios** suelen encajar muy bien la **Casa Premium Base de 92m² (2 dorm, 1 baño)**, la **Casa Premium Base de 93m² (2 dorm, 2 baños)** o modelos Americanos/Minimalistas de entre **60 y 90m²**.  \n¿Te gustaría que te orientemos por WhatsApp si me decís cuántos m² pensás y si ya tenés terreno en Córdoba o alrededores?",
+      "mentionedModels": [
+        "Minimalista",
+        "Minimalistas de"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 3520
+    },
+    {
+      "question": "¿Qué incluye el precio? ¿Terminaciones, instalación, todo?",
+      "questionType": "includes",
+      "response": "En el material que tengo cargado no figura el detalle exacto de qué incluye cada precio (grado de terminación, instalaciones, etc.) por Modelo, Tipología, Proyecto. Como trabajamos en **steel frame llave en mano** suele incluir estructura, cerramientos, instalaciones y terminaciones, pero para no inventar nada necesito que lo veas en la lista vigente.\n\nNo tengo esa información específica cargada modelo por modelo, así que te sugiero escribir al WhatsApp de asesores (**351 815-6645 / 351 232-0240 / 351 814-6178**), donde te pasan: qué incluye el precio, qué opciones de terminación hay y cómo es la financiación.  \nSi querés, decime qué modelo te interesa (por ejemplo **Casa Americana de 84m²**, **Casa Minimalista de 60m²** o **Casa Premium Base de 92m²**) así les pedís puntualmente la ficha de ese proyecto.",
+      "mentionedModels": [
+        "Americana",
+        "Steel Frame",
+        "Casa Americana De",
+        "Minimalista",
+        "Casa Minimalista de"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3430
+    },
+    {
+      "question": "¿Ustedes se encargan de toda la instalación o solo entregan los materiales?",
+      "questionType": "installation",
+      "response": "Nosotros **construimos la vivienda**, no solo vendemos materiales: trabajamos en sistema **steel frame** y nos encargamos de estructura, montaje en obra y la casa completa según el Modelo, Tipología, Proyecto que elijas.  \nEn la info que tengo no figura desglosado cada ítem (instalación eléctrica, sanitaria, gas, etc.), así que para ver exactamente qué incluye cada propuesta te recomiendo escribir al WhatsApp de asesores **351 815-6645 / 351 232-0240 / 351 814-6178**.  \n\nPara orientarte mejor, ¿la idea es que hagamos la obra completa “llave en mano” o pensás resolver alguna parte por tu cuenta (por ejemplo, fundaciones o interiores)?",
+      "mentionedModels": [
+        "Steel Frame"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3766
+    },
+    {
+      "question": "¿Qué garantía ofrecen sobre la construcción?",
+      "questionType": "warranty",
+      "response": "Trabajamos con sistema **steel frame** y materiales nacionales de alta calidad, lo que permite ofrecer garantía sobre la estructura y la construcción, pero en la info que tengo cargada no figura el plazo exacto ni el detalle por rubro (estructura, filtraciones, instalaciones, etc.).  \nNo tengo esa información específica de garantías modelo por modelo, así que para que te pasen los años de garantía y condiciones formales te sugiero escribir al WhatsApp de asesores **351 815-6645 / 351 232-0240 / 351 814-6178**.  \n\nAsí los orientamos mejor, ¿estás pensando en una casa para vivienda permanente (familia de 4) o algo tipo cabaña de fin de semana?",
+      "mentionedModels": [
+        "Steel Frame",
+        "Cabaña De",
+        "Cabaña"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 11746
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, ofrecemos **financiación** para nuestras viviendas prefabricadas en steel frame, adaptando el plan según el Modelo, Tipología, Proyecto y los m² que elijas. Se arman planes de pago para facilitar el acceso, combinando entrega inicial y cuotas, pero no tengo por acá el detalle exacto de montos y plazos.  \n\nPara que te pasen las opciones concretas de financiación, te sugiero escribir al WhatsApp de asesores **351 815-6645 / 351 232-0240 / 351 814-6178**.  \n¿De cuánto presupuesto mensual aproximado dispondrías así te orientamos hacia un modelo que entre cómodo en esa cuota?",
+      "mentionedModels": [
+        "Steel Frame"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3833
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Lo que nos diferencia es que estamos especializados en **construcción en seco con steel frame** y usamos **componentes nacionales de alta calidad**, con más de **15 años de experiencia** y muchas obras reales entregadas en Córdoba.  \nTrabajamos con un catálogo muy amplio de Modelos, Tipologías, Proyectos (Americanas, Minimalistas, Cabañas, Premium, Dúplex, desde 36m² hasta 242m²) y a la vez los **personalizamos** según tu terreno y necesidades, ofreciendo además **financiación** y acompañamiento técnico durante todo el proceso.  \n\nPara enfocarnos en lo que más te importa, ¿qué valorás más: rapidez de obra, calidad constructiva, diseño o financiación?",
+      "mentionedModels": [
+        "Americana",
+        "Steel Frame",
+        "Minimalista",
+        "Cabaña"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2918
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "Construimos en **Córdoba, Argentina**, con base en nuestra sede de Pje. Usandivaras 259, Córdoba capital.  \nEn la info que tengo no figura detallado si llegamos a todas las localidades/provincias, así que si estás fuera de Córdoba podría ser posible, pero te recomiendo confirmarlo por WhatsApp con un asesor al **351 815-6645 / 351 232-0240 / 351 814-6178**.  \n\n¿En qué localidad tenés o pensás comprar el terreno así te digo mejor cómo avanzar?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 9482
+    }
+  ],
+  "sessionCreationTimeMs": 92970,
+  "errors": []
+}

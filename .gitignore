@@ -13,6 +13,12 @@
 /playwright-report/
 /playwright/.cache/
 
+# ground-truth screenshots (large binary files)
+tests/ground-truth/**/screenshots/
+
+# QA screenshots
+/qa-screenshots/
+
 # next.js
 /.next/
 /out/

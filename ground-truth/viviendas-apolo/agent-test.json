@@ -1,0 +1,314 @@
+{
+  "company": "Viviendas Apolo",
+  "url": "https://viviendasapolo.com.ar/",
+  "testedAt": "2026-02-06T16:55:20.553Z",
+  "sessionId": "dfecc4c4-b01c-4914-be28-890d620b3534",
+  "systemPromptLength": 21452,
+  "systemPromptModelsFound": [
+    "Vivienda Industrializada",
+    "Vivienda Minimalista",
+    "Casas Prefabricadas",
+    "Obradores",
+    "Logo Viviendas Apolo",
+    "Ir al Formulario",
+    "Viviendas Industrializadas",
+    "Planos",
+    "Especificaciones Técnicas",
+    "Ofertas del Mes",
+    "Viviendas Apolo",
+    "Industrializada",
+    "Vivienda Industrializada Minimalista",
+    "Vivienda Industrializada 25m²",
+    "Vivienda Industrializada 40m²",
+    "Vivienda Industrializada 48m²",
+    "Vivienda Minimalista 23m²",
+    "Vivienda Minimalista 34m²",
+    "Vivienda Minimalista 68m²"
+  ],
+  "systemPromptWhatsApp": "03514239263",
+  "systemPromptType": "de Modelos estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Viviendas Apolo es una empresa de Córdoba dedicada a la construcción y venta de casas prefabricadas en hormigón premoldeado en toda Argentina. Hacemos **viviendas industrializadas**, **modelos minimalistas**, **cabañas y complejos turísticos** y **obradores, depósitos y oficinas**, con opciones estándar y también construcción a medida.  \n\nTrabajamos con entrega rápida, sistema constructivo sólido y ofrecemos **financiación** y planes especiales (incluso Plan 100% financiado). Para que te pueda orientar mejor, ¿qué tipo de modelos estás buscando: vivienda familiar, cabaña turística u obrador?",
+      "mentionedModels": [
+        "Casas Prefabricadas",
+        "Obradores",
+        "Viviendas Industrializadas",
+        "Viviendas Apolo",
+        "Industrializada"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4128
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos principalmente **casas prefabricadas en hormigón premoldeado**, en distintos modelos:  \n- **Vivienda Industrializada 25m², 40m² y 48m²** (1 o 2 dormitorios, algunas con galería, varias incluyen base de hormigón y accesorios).  \n- **Vivienda Minimalista 23m², 34m² y 68m²** (de 1 a 3 dormitorios, también con opciones con galería y base de hormigón).  \nAdemás construimos **cabañas y complejos turísticos**, y **obradores, depósitos, pañoles y oficinas** a medida, con entrega rápida y **planes de financiación**.  \n\nPara orientarte mejor, ¿qué tipo de modelos estás buscando?",
+      "mentionedModels": [
+        "Vivienda Industrializada",
+        "Vivienda Minimalista",
+        "Casas Prefabricadas",
+        "Obradores",
+        "Industrializada",
+        "Vivienda Industrializada 25m²",
+        "Vivienda Minimalista 23m²"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2876
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Te paso todos los datos de contacto 😊  \n\n- Teléfonos fijos: **(0351) 423-9263** y **(0351) 899-2503**  \n- Celulares / WhatsApp: **351-6858968** y **351-2016317**  \n- Email: **info@viviendasapolo.com.ar**  \n- Dirección: **Av. Colón 1695, Córdoba Capital**  \n\nSi querés, contame qué modelo te interesa y te digo qué pedir puntualmente cuando escribas por WhatsApp.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3628
+    },
+    {
+      "question": "¿Cuántos modelos de casas ofrecen?",
+      "questionType": "product_count",
+      "response": "Trabajamos con varios modelos estándar y también hacemos construcción a medida.  \nEn el catálogo tenés, con nombre específico:  \n\n- **Vivienda Industrializada 25m², 40m² y 48m²**  \n- **Vivienda Minimalista 23m², 34m² y 68m²**  \n\nAdemás de estos 6 modelos principales de vivienda, también ofrecemos **cabañas, complejos turísticos y obradores** diseñados según necesidad. ¿Estás buscando algo chico tipo 23–25 m² o algo más familiar como 40–68 m²?",
+      "mentionedModels": [
+        "Vivienda Industrializada",
+        "Vivienda Minimalista",
+        "Obradores",
+        "Industrializada",
+        "Vivienda Industrializada 25m²",
+        "Vivienda Minimalista 23m²"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2142
+    },
+    {
+      "question": "Contame sobre Vivienda Industrializada",
+      "questionType": "product_specific",
+      "response": "Las **Viviendas Industrializadas** son casas prefabricadas en **hormigón premoldeado**, de construcción rápida y sólida, ideales como vivienda permanente o de fin de semana. Dentro de esta línea tenemos:  \n\n- **Vivienda Industrializada 25m²**: 1 dormitorio, incluye **Base/Platea de Hormigón**.  \n- **Vivienda Industrializada 40m²**: 2 dormitorios, **incluye accesorios** (modelo muy elegido como casa familiar compacta).  \n- **Vivienda Industrializada 48m²**: 2 dormitorios con **galería**, también **incluye accesorios**, pensada para tener más espacio social.  \n\nTodas se pueden adaptar y contamos con **planes de financiación y ofertas del mes**. ¿Para cuántas personas estás pensando la vivienda, así te digo cuál modelo industrializado te conviene más?",
+      "mentionedModels": [
+        "Vivienda Industrializada",
+        "Casas Prefabricadas",
+        "Viviendas Industrializadas",
+        "Ofertas del Mes",
+        "Industrializada",
+        "Vivienda Industrializada 25m²",
+        "Vivienda Industrializada 40m²",
+        "Vivienda Industrializada 48m²"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3764
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Vivienda Industrializada? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "Te cuento los datos que tengo cargados de la línea **Vivienda Industrializada**:  \n\n- **Vivienda Industrializada 25m²**  \n  - Superficie: **25 m²**  \n  - Dormitorios: **1 dormitorio**  \n  - Características: incluye **Base/Platea de Hormigón**.  \n\n- **Vivienda Industrializada 40m²**  \n  - Superficie: **40 m²**  \n  - Dormitorios: **2 dormitorios**  \n  - Características: **incluye accesorios** (equipamiento básico del modelo).  \n\n- **Vivienda Industrializada 48m²**  \n  - Superficie: **48 m²**  \n  - Dormitorios: **2 dormitorios**  \n  - Características: con **galería** e **incluye accesorios**.  \n\nTodas son en **hormigón premoldeado**, sistema industrializado de montaje rápido y estructura sólida. Para afinar mejor, ¿ya tenés terreno y en qué zona sería?",
+      "mentionedModels": [
+        "Vivienda Industrializada",
+        "Industrializada",
+        "Vivienda Industrializada 25m²",
+        "Vivienda Industrializada 40m²",
+        "Vivienda Industrializada 48m²"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4634
+    },
+    {
+      "question": "Contame sobre Vivienda Minimalista",
+      "questionType": "product_specific",
+      "response": "La **Vivienda Minimalista** es una línea de casas compactas y funcionales, también en sistema industrializado, pensadas para aprovechar al máximo los metros y bajar costos sin perder diseño. Tenemos estos modelos:  \n\n- **Vivienda Minimalista 23m²**  \n  - Superficie: **23 m²**  \n  - Dormitorios: **1 dormitorio**  \n  - Características: incluye **Base/Platea de Hormigón**.  \n\n- **Vivienda Minimalista 34m²**  \n  - Superficie: **34 m²**  \n  - Dormitorios: **2 dormitorios**  \n  - Características: **incluye accesorios**.  \n\n- **Vivienda Minimalista 68m²**  \n  - Superficie: **68 m²**  \n  - Dormitorios: **3 dormitorios**  \n  - Características: con **galería** e **incluye accesorios**.  \n\nSon ideales como primera vivienda, ampliación en terraza o proyecto turístico. ¿Para cuántas personas la estás pensando y si sería vivienda permanente o de fin de semana?",
+      "mentionedModels": [
+        "Vivienda Minimalista",
+        "Vivienda Minimalista 23m²",
+        "Vivienda Minimalista 34m²",
+        "Vivienda Minimalista 68m²"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4140
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Vivienda Minimalista? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "De la línea **Vivienda Minimalista** tengo estos datos cargados:\n\n- **Vivienda Minimalista 23m²**  \n  - Superficie: **23 m²**  \n  - Dormitorios: **1 dormitorio**  \n  - Características: incluye **Base/Platea de Hormigón**.\n\n- **Vivienda Minimalista 34m²**  \n  - Superficie: **34 m²**  \n  - Dormitorios: **2 dormitorios**  \n  - Características: **incluye accesorios**.\n\n- **Vivienda Minimalista 68m²**  \n  - Superficie: **68 m²**  \n  - Dormitorios: **3 dormitorios**  \n  - Características: con **galería** e **incluye accesorios**.\n\nTodas se construyen con sistema industrializado en hormigón premoldeado. ¿Ya tenés terreno y en qué zona, así vemos qué modelo minimalista se adapta mejor?",
+      "mentionedModels": [
+        "Vivienda Minimalista",
+        "Vivienda Minimalista 23m²",
+        "Vivienda Minimalista 34m²",
+        "Vivienda Minimalista 68m²"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3889
+    },
+    {
+      "question": "¿Cuál es la diferencia entre Vivienda Industrializada y Vivienda Minimalista?",
+      "questionType": "model_comparison",
+      "response": "Las dos líneas se construyen con el mismo sistema de **hormigón premoldeado**, pero apuntan a usos y estilos un poco distintos.  \n\n- **Vivienda Industrializada**: modelos de **25m², 40m² y 48m²**, de 1 y 2 dormitorios, algunos con galería; pensados como vivienda familiar compacta, muy funcional y estándar, con opciones que incluyen **base de hormigón** y **accesorios**.  \n- **Vivienda Minimalista**: modelos de **23m², 34m² y 68m²**, de 1 a 3 dormitorios, con versión grande de **68m² con galería**; tienen un diseño más moderno y optimizado en metros, ideales para primera vivienda, terraza o proyectos turísticos.  \n\nSi me contás cuántas personas la van a usar y si es vivienda permanente o de fin de semana, te digo cuál línea y qué modelo te conviene más.",
+      "mentionedModels": [
+        "Vivienda Industrializada",
+        "Vivienda Minimalista",
+        "Industrializada"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4601
+    },
+    {
+      "question": "¿Qué modelo me recomendás para una familia de 4 personas?",
+      "questionType": "recommendation",
+      "response": "Para una familia de 4, lo ideal es ir a algo de **2 o 3 dormitorios** para estar cómodos. Con lo que tenemos en catálogo, te recomiendo principalmente:\n\n- **Vivienda Industrializada 40m²**: 2 dormitorios, incluye accesorios, es una muy buena opción como **casa familiar compacta**.  \n- **Vivienda Minimalista 68m²**: 3 dormitorios con galería, incluye accesorios, es la opción más cómoda para 4, con más espacio y área social.\n\nPara afinar mejor la recomendación: ¿ya tenés terreno y en qué zona sería?",
+      "mentionedModels": [
+        "Vivienda Industrializada",
+        "Vivienda Minimalista",
+        "Industrializada",
+        "Vivienda Industrializada 40m²",
+        "Vivienda Minimalista 68m²"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2285
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con un **sistema industrializado en hormigón premoldeado**: se fabrica todo en planta y luego se monta en el terreno, lo que hace la obra mucho más rápida y prolija que la construcción tradicional. El proceso típico es: definición de modelo y forma de pago → firma de contrato → fabricación de paneles y base/platea de hormigón (si está incluida) → montaje en el lugar → terminaciones y entrega.  \n\nNo tengo cargado el plazo exacto en días para cada modelo, pero son **entregas rápidas** comparado con la obra húmeda tradicional; el armado en sitio suele ser muy ágil. Para poder orientarte mejor con tiempos reales, ¿qué modelo estás mirando y para cuándo la necesitarías?",
+      "mentionedModels": [],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 3129
+    },
+    {
+      "question": "¿Se pueden personalizar los modelos de casas?",
+      "questionType": "customization",
+      "response": "Sí, se pueden personalizar 😊. Además de los modelos estándar (Vivienda Industrializada 25, 40 y 48m² y Vivienda Minimalista 23, 34 y 68m²), en Viviendas Apolo **también construimos a medida**, adaptando diseño, distribución y usos (vivienda, cabaña, obrador, etc.).  \n\nPodemos tomar un modelo base y ajustarlo o bien trabajar un proyecto especial. Para entender qué tipo de personalización necesitas, ¿ya tenés en mente aproximadamente cuántos m² y cuántos dormitorios?",
+      "mentionedModels": [
+        "Vivienda Industrializada",
+        "Vivienda Minimalista",
+        "Viviendas Apolo",
+        "Industrializada"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3395
+    },
+    {
+      "question": "¿Tenés imágenes, planos o algún catálogo que pueda ver?",
+      "questionType": "images_catalog",
+      "response": "Sí, claro, tenemos todo eso 😊. En la web podés ver:\n\n- **Fotos e ideas de modelos**:  \n  - Casas prefabricadas / Viviendas Industrializadas: https://viviendasapolo.com.ar/casas-prefabricadas  \n  - Cabañas y complejos: https://viviendasapolo.com.ar/cabanias-complejos  \n  - Obradores: https://viviendasapolo.com.ar/obradores  \n\n- **Planos y especificaciones técnicas**:  \n  - Planos de modelos: https://viviendasapolo.com.ar/modelos  \n  - Especificaciones técnicas: https://viviendasapolo.com.ar/especificaciones-tecnicas  \n\nSi querés, decime qué modelo te interesa (por ejemplo, Vivienda Industrializada 40m² o Vivienda Minimalista 68m²) y te indico exactamente qué plano y fotos mirar.",
+      "mentionedModels": [
+        "Vivienda Industrializada",
+        "Vivienda Minimalista",
+        "Casas Prefabricadas",
+        "Obradores",
+        "Viviendas Industrializadas",
+        "Planos",
+        "Especificaciones Técnicas",
+        "Industrializada",
+        "Vivienda Industrializada 40m²",
+        "Vivienda Minimalista 68m²"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3103
+    },
+    {
+      "question": "¿Cuánto sale aproximadamente una casa de 2 dormitorios?",
+      "questionType": "pricing",
+      "response": "No tengo los precios actualizados cargados por acá, y como las **ofertas del mes** y la **financiación** se mueven bastante, prefiero no inventarte un valor.  \n\nTe sugiero consultarlo directo por WhatsApp o teléfono así te pasan el precio exacto de los modelos de 2 dormitorios (por ejemplo, **Vivienda Industrializada 40m²** o **Vivienda Minimalista 34m²/68m²**) según tu forma de pago:  \n- Tel/WhatsApp: **351-6858968** / **351-2016317**  \n\nMientras tanto, para ayudarte a elegir modelo: ¿pensás en algo más compacto tipo 40m² o algo más amplio como 60–70m²?",
+      "mentionedModels": [
+        "Vivienda Industrializada",
+        "Vivienda Minimalista",
+        "Ofertas del Mes",
+        "Industrializada",
+        "Vivienda Industrializada 40m²",
+        "Vivienda Minimalista 34m²"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 4196
+    },
+    {
+      "question": "¿Qué incluye el precio? ¿Terminaciones, instalación, todo?",
+      "questionType": "includes",
+      "response": "Lo que sí tengo bien claro es qué incluye cada modelo dentro de lo que está publicado, pero no el detalle fino de “llave en mano” para todos. Por ejemplo:  \n- **Vivienda Industrializada 25m²** y **Vivienda Minimalista 23m²**: incluyen **Base/Platea de Hormigón**.  \n- **Vivienda Industrializada 40m² y 48m²** y **Minimalista 34m² y 68m²**: **incluyen accesorios** (equipamiento básico del modelo, como parte de las terminaciones).  \n\nNo tengo cargado si el precio publicado incluye siempre traslado, montaje e instalación completa para todos los casos, eso depende mucho de la zona y la forma de pago. Para que te detallen exactamente qué incluye el precio del modelo que te interese, te sugiero escribir por WhatsApp al **351-6858968** o **351-2016317** y pedir: “detalle de qué incluye el precio del modelo ___”. ¿Qué modelo tenías en mente así te digo cómo conviene consultarlo?",
+      "mentionedModels": [
+        "Vivienda Industrializada",
+        "Vivienda Minimalista",
+        "Industrializada",
+        "Vivienda Industrializada 25m²",
+        "Vivienda Industrializada 40m²",
+        "Vivienda Minimalista 23m²"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 4159
+    },
+    {
+      "question": "¿Ustedes se encargan de toda la instalación o solo entregan los materiales?",
+      "questionType": "installation",
+      "response": "Nosotros no solo entregamos materiales, hacemos **viviendas completas con sistema industrializado en hormigón premoldeado**, incluyendo fabricación en planta y **montaje/instalación en el lugar**. En varios modelos incluso va incluida la **Base/Platea de Hormigón** o los **accesorios**, según el caso.  \n\nLo que puede variar según zona y modelo es qué ítems exactos entran en el precio (traslado, ciertos detalles de terminación, etc.). ¿En qué localidad tenés el terreno así te orientó mejor y te digo qué conviene preguntar puntualmente al asesor?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2352
+    },
+    {
+      "question": "¿Qué garantía ofrecen sobre la construcción?",
+      "questionType": "warranty",
+      "response": "Trabajamos con un **sistema constructivo en hormigón premoldeado**, pensado justamente para ser durable y de bajo mantenimiento, pero en la info que tengo cargada no figura el detalle exacto de **años de garantía** o qué cubre cada una.  \n\nNo quiero inventarte un plazo, así que para que te den el detalle formal de garantía por escrito (estructura, filtraciones, etc.) te sugiero escribir por WhatsApp al **351-6858968** o **351-2016317**. Mientras tanto, contame: ¿estás evaluando una Vivienda Industrializada 40m² o una Minimalista 68m², por ejemplo? Así te ayudo con el resto de las dudas técnicas.",
+      "mentionedModels": [
+        "Vivienda Industrializada",
+        "Industrializada",
+        "Vivienda Industrializada 40m²"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2571
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, contamos con **financiación y planes de pago**, incluso un **Plan 100% financiado** que se puede consultar desde la web o por WhatsApp. También hay **Ofertas del Mes** para modelos específicos (por ejemplo, Vivienda Industrializada 25m², 40m², 48m² y Vivienda Minimalista 23m², 34m², 68m²) con condiciones especiales para pago contado y opciones financiadas.  \n\nNo tengo por acá el detalle de cuotas y requisitos, eso te lo arman según ingreso, anticipo y modelo elegido. ¿Qué presupuesto manejás aproximadamente y qué modelo de cuántos m² te interesa, así te orientó cuál es más accesible para vos?",
+      "mentionedModels": [
+        "Vivienda Industrializada",
+        "Vivienda Minimalista",
+        "Ofertas del Mes",
+        "Industrializada",
+        "Vivienda Industrializada 25m²",
+        "Vivienda Minimalista 23m²"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3068
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Nos diferenciamos sobre todo por el **sistema en hormigón premoldeado**, que te da una vivienda sólida, rápida de montar y muy durable, y por el foco fuerte en **financiación y accesibilidad** (incluyendo Plan 100% financiado y Ofertas del Mes).  \n\nAdemás:  \n- Hacemos **construcción a medida**, no solo modelos estándar (viviendas, cabañas, obradores, depósitos, oficinas).  \n- Tenemos **entrega rápida** y experiencia comprobada, con muchos clientes en todo el país y testimonios publicados.  \n\nPara saber si lo que ofrecemos encaja con vos: ¿ya tenés terreno? ¿En qué zona sería la construcción?",
+      "mentionedModels": [
+        "Obradores",
+        "Ofertas del Mes"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2680
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "En la info que tengo cargada solo figura que somos una empresa de **Córdoba Capital (Av. Colón 1695)** y que hacemos **entregas a todo el país**, sin detallar provincia por provincia.  \n\nSi es una localidad muy específica, podría depender de logística y costos de traslado, así que lo ideal es que lo consultes por WhatsApp al **351-6858968** o **351-2016317** indicando localidad y provincia. ¿De qué ciudad o zona sos así te digo puntualmente qué conviene preguntar al asesor?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2548
+    }
+  ],
+  "sessionCreationTimeMs": 102472,
+  "errors": []
+}

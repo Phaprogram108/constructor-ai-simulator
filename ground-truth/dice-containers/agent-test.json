@@ -1,0 +1,275 @@
+{
+  "company": "Dice Containers",
+  "url": "https://dicecontainers.com.ar/",
+  "testedAt": "2026-02-06T16:55:18.256Z",
+  "sessionId": "019b90ba-b7ab-46f5-bd8b-e7b3b0264b87",
+  "systemPromptLength": 20713,
+  "systemPromptModelsFound": [
+    "Casa Container 90m2",
+    "Proyectos Destacados",
+    "Propiedades Dice",
+    "Casa Container",
+    "Casa Container 90m²",
+    "Casa Container 60m²",
+    "Casa Container 30m²",
+    "Casa Container 15m²"
+  ],
+  "systemPromptType": "de Casa Container estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Somos Dice Containers, una empresa argentina que diseña y fabrica casas y locales comerciales modulares a partir de contenedores marítimos. Nos encargamos de todo: ingeniería, arquitectura, planos, habilitaciones municipales, fabricación en planta e instalación en todo el país.  \n\nTrabajamos con modelos estándar como la Casa Container 90m², 60m², 30m² y 15m², y también adaptamos proyectos especiales (viviendas, quinchos, talleres, locales). ¿Qué tipo de Casa Container estás buscando?",
+      "mentionedModels": [
+        "Casa Container",
+        "Casa Container 90m²"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2794
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos principalmente casas y locales comerciales modulares construidos a partir de contenedores marítimos, 100% habilitables según normativas municipales argentinas.  \n\nEn cuanto a productos, tenemos:  \n- **Casa Container 90m²** – 5 ambientes, 2 baños.  \n- **Casa Container 60m²** – 4 ambientes, 1 baño.  \n- **Casa Container 30m²** – 2 ambientes, 1 baño.  \n- **Casa Container 15m²** – 1 ambiente, 1 baño.  \n\nY como servicio integral, incluimos ingeniería, arquitectura, planos, habilitaciones, fabricación en planta, entrega e instalación en todo el país. ¿Qué tipo de Casa Container estás buscando?",
+      "mentionedModels": [
+        "Casa Container",
+        "Casa Container 90m²",
+        "Casa Container 60m²",
+        "Casa Container 30m²",
+        "Casa Container 15m²"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3786
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "No tengo el WhatsApp o teléfono de contacto cargado acá, pero lo encontrás fácilmente en la web oficial de Dice Containers: **dicecontainers.com.ar** (generalmente en el encabezado o al pie de página).  \n\nSi querés, contame qué tipo de Casa Container estás buscando y te ayudo a definir el modelo y las opciones antes de que hables con un asesor.",
+      "mentionedModels": [
+        "Casa Container"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2328
+    },
+    {
+      "question": "¿Cuántos proyectos ofrecen?",
+      "questionType": "product_count",
+      "response": "Tenemos varios modelos estándar y algunos Proyectos Destacados armados.  \nEn catálogo hoy contamos con: **Casa Container 90m²**, **Casa Container 60m²**, **Casa Container 30m²** y **Casa Container 15m²**, más Proyectos Destacados como casa en isla 90 m² con galería en deck, casa en La Toscana 30 m² con galería y casa de 60 m².  \n\nAdemás, hacemos desarrollos especiales a medida (viviendas, locales, talleres, quinchos) según necesidad. ¿Qué tipo de proyecto tenés en mente, vivienda permanente, fin de semana o local comercial?",
+      "mentionedModels": [
+        "Proyectos Destacados",
+        "Casa Container",
+        "Casa Container 90m²",
+        "Casa Container 60m²",
+        "Casa Container 30m²",
+        "Casa Container 15m²"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2375
+    },
+    {
+      "question": "Contame sobre Casa Container 90m2",
+      "questionType": "product_specific",
+      "response": "La **Casa Container 90m²** es una vivienda modular amplia, pensada como casa permanente, con **5 ambientes y 2 baños**, armada a partir de contenedores marítimos y terminaciones de nivel tradicional. Al igual que todos nuestros modelos, es **100% habilitable**, incluye proyecto de **ingeniero y arquitecto, planos, fabricación en planta e instalación en el país**, cumpliendo normativas municipales.  \n\nEs ideal para familias que necesitan varios dormitorios, dos baños y buena área social (living-comedor + cocina definida), con excelente aislamiento térmico y estructura súper resistente. ¿La estás pensando para vivienda familiar? ¿Ya tenés terreno y en qué zona sería?",
+      "mentionedModels": [
+        "Casa Container",
+        "Casa Container 90m²"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2904
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Casa Container 90m2? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "La **Casa Container 90m²** es una vivienda modular de **90 m² cubiertos**, pensada como casa familiar, con **5 ambientes y 2 baños** (más amplia que la de 60 m² y 30 m²). Está construida a partir de contenedores marítimos, con estructura reforzada, aislamiento térmico (similar al de la Casa Container 60m² que lleva lana de vidrio + revestimiento interior) y terminaciones de nivel tradicional.  \n\nComo todas nuestras unidades, es **100% habilitable**, incluye **ingeniero, arquitecto, planos, habilitaciones, fabricación en planta e instalación en todo el país**. No tengo el detalle fino de distribución (medidas de cada ambiente) cargado acá, pero se configura con varios dormitorios, área social amplia y dos baños completos. ¿La idea es usarla como vivienda permanente? ¿Ya tenés terreno y en qué zona?",
+      "mentionedModels": [
+        "Casa Container",
+        "Casa Container 90m²",
+        "Casa Container 60m²"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3359
+    },
+    {
+      "question": "Contame sobre Proyectos Destacados",
+      "questionType": "product_specific",
+      "response": "En **Proyectos Destacados** mostramos casas container ya realizadas, donde se ve cómo adaptamos los módulos estándar a distintos terrenos y usos. Algunos ejemplos concretos:  \n- **Casa en la isla – 90 m²** con **galería y deck en altura**, ideal para zonas ribereñas o de difícil acceso.  \n- **Casa en La Toscana – 30 m² con galería**, basada en la **Casa Container 30m²** pero ampliando el espacio exterior cubierto.  \n- **Casa de 60 m²**, derivada de la **Casa Container 60m²**, ajustada al entorno y necesidades del cliente.  \n\nSon buenos modelos para inspirarse si querés algo similar pero con algunas adaptaciones. ¿Qué tipo de Casa Container estás buscando vos, algo chico tipo 30 m² o algo más grande como 60–90 m²?",
+      "mentionedModels": [
+        "Proyectos Destacados",
+        "Casa Container",
+        "Casa Container 60m²",
+        "Casa Container 30m²"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4698
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Proyectos Destacados? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "En **Proyectos Destacados** mostramos ejemplos reales basados en nuestros modelos estándar, por eso la info técnica detallada se toma de las Casas Container base:  \n\n- **Casa en la isla – 90 m² con galería y deck en altura**  \n  - Superficie: **90 m²** + galería/deck.  \n  - Base: similar a **Casa Container 90m² (5 amb, 2 baños)**.  \n  - Características: estructura elevada, ideal zonas inundables o ribereñas, con galería y deck perimetral para ampliar el uso exterior.  \n\n- **Casa en La Toscana – 30 m² con galería**  \n  - Superficie: **30 m²** + galería.  \n  - Base: **Casa Container 30m² – 2 ambientes, 1 baño**.  \n  - Características: módulo compacto tipo mono/2 amb con galería adelante para generar estar semicubierto.  \n\n- **Casa de 60 m²**  \n  - Superficie: **60 m²**.  \n  - Base: **Casa Container 60m² – 4 ambientes, 1 baño, 2 dormitorios**.  \n  - Características técnicas (del modelo 60 m²):  \n    - Medidas: **12 m de largo x 4,86 m de ancho x 2,89 m de alto** (80 pies).  \n    - Distribución: 2 dormitorios con placard, 1 baño completo + antebaño, cocina con bajo mesada y alacena, living-comedor amplio con varias aberturas.  \n    - Terminaciones: pintura exterior poliuretánica color a elección, **aislación térmica con lana de vidrio** y revestimiento interior en MDF.  \n    - Ventanas con persianas metálicas corredizas y cierre interno.  \n\nTodos estos proyectos son **100% habilitables**, incluyen **ingeniero, arquitecto, planos, fabricación en planta e instalación en todo el país**.  \n¿Te interesa replicar alguno de estos (isla 90 m², Toscana 30 m² o 60 m²) o querés que adaptemos uno a tu terreno?",
+      "mentionedModels": [
+        "Proyectos Destacados",
+        "Casa Container",
+        "Casa Container 90m²",
+        "Casa Container 60m²",
+        "Casa Container 30m²"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 6057
+    },
+    {
+      "question": "¿Cuál es la diferencia entre Casa Container 90m2 y Proyectos Destacados?",
+      "questionType": "model_comparison",
+      "response": "La **Casa Container 90m²** es un **modelo estándar**: ya viene definido como vivienda de **90 m², 5 ambientes y 2 baños**, con una distribución base pensada como casa familiar y lista para cotizar y producir tal cual está.  \n\nLos **Proyectos Destacados** son **obras reales** donde adaptamos esos modelos estándar (90, 60, 30 m²) al terreno y al uso: por ejemplo, la *casa en la isla 90 m² con galería y deck en altura* parte de la lógica de la Casa Container 90m², pero se personaliza (elevación, galerías, decks, entorno específico).  \nDicho simple: la Casa Container 90m² es el “modelo catálogo”, los Proyectos Destacados son ejemplos de cómo lo personalizamos en casos reales.  \n\n¿Estás buscando algo más estándar tipo 90 m² catálogo o ya tenés un terreno particular donde habría que adaptar (como la casa en la isla)?",
+      "mentionedModels": [
+        "Proyectos Destacados",
+        "Casa Container",
+        "Casa Container 90m²"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 5278
+    },
+    {
+      "question": "¿Qué modelo me recomendás para una familia de 4 personas?",
+      "questionType": "recommendation",
+      "response": "Para una familia de 4 personas, el modelo que mejor se adapta suele ser la **Casa Container 60m²** o la **Casa Container 90m²**, según el nivel de confort y presupuesto que manejen.  \n- **Casa Container 60m²**: 4 ambientes, 1 baño, 2 dormitorios; funcional y compacto, ideal como primera vivienda o casa de fin de semana.  \n- **Casa Container 90m²**: 5 ambientes, 2 baños; más cómoda para uso permanente, con más dormitorios/espacio social y dos baños que se notan mucho en el día a día.  \n\nPara afinar la recomendación, ¿la pensás como vivienda permanente o casa de descanso? ¿Ya tenés terreno y en qué zona?",
+      "mentionedModels": [
+        "Casa Container",
+        "Casa Container 90m²",
+        "Casa Container 60m²"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3440
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con **modulación en planta**: fabricamos la Casa Container completa en nuestra fábrica (estructura, aislación, instalaciones eléctricas y sanitarias, terminaciones interiores y exteriores) y luego la llevamos al terreno para su **colocación e instalación final**. Esto simplifica habilitaciones, controla calidad y reduce al mínimo la obra “húmeda” en el lugar.  \n\nLos plazos dependen del modelo (15, 30, 60 o 90 m²) y de la demanda del momento, pero al ser construcción industrializada los tiempos son **mucho menores que una obra tradicional**. No tengo el cronograma exacto de semanas cargado acá, pero como referencia se maneja en el orden de pocos meses desde la firma hasta la instalación; para un plazo preciso te sugiero consultarlo por WhatsApp.  \n¿Para cuándo necesitarías tener instalada la casa?",
+      "mentionedModels": [
+        "Casa Container"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 5009
+    },
+    {
+      "question": "¿Se pueden personalizar los proyectos?",
+      "questionType": "customization",
+      "response": "Sí, se pueden personalizar. Partimos de modelos estándar (Casa Container 15m², 30m², 60m² y 90m²) y los adaptamos en distribución, aberturas, galerías, decks, altura respecto al terreno y uso (vivienda, quincho, local, taller), como ves en nuestros **Proyectos Destacados**.  \n\nObviamente hay ciertos límites estructurales del contenedor, pero en diseño y terminaciones hay bastante juego. ¿Qué idea tenés en mente y sobre qué modelo (30, 60 o 90 m²) te gustaría trabajar?",
+      "mentionedModels": [
+        "Proyectos Destacados",
+        "Casa Container",
+        "Casa Container 15m²"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2525
+    },
+    {
+      "question": "¿Tenés imágenes, planos o algún catálogo que pueda ver?",
+      "questionType": "images_catalog",
+      "response": "Sí, tenemos catálogo con fotos exteriores, interiores y fichas técnicas de cada modelo.  \nPodés ver todo en la web oficial:\n\n- **Casa Container 90m²**: https://dicecontainers.com.ar/propiedades-dice/casa-container-90m2/  \n- **Casa Container 60m²**: https://dicecontainers.com.ar/propiedades-dice/casa-container-60m%c2%b2/  \n- **Casa Container 30m²**: https://dicecontainers.com.ar/propiedades-dice/casa-container-30m%c2%b2/  \n- **Casa Container 15m²**: https://dicecontainers.com.ar/propiedades-dice/casa-container-15m%c2%b2/  \n\nAhí vas a encontrar imágenes, distribución y detalles técnicos. ¿Sobre cuál de estos modelos te gustaría que te explique el plano y la distribución ambiente por ambiente?",
+      "mentionedModels": [
+        "Casa Container",
+        "Casa Container 90m²",
+        "Casa Container 60m²",
+        "Casa Container 30m²",
+        "Casa Container 15m²"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2717
+    },
+    {
+      "question": "¿Cuánto sale aproximadamente una casa de 2 dormitorios?",
+      "questionType": "pricing",
+      "response": "Para una casa de 2 dormitorios, el modelo que encaja perfecto es la **Casa Container 60m² (4 ambientes, 1 baño)**.  \n\nEn este caso sí tengo precio actualizado:  \n- **Contado:** **USD 44.463 + IVA 10,5%**  \n- **O adelanto de:** **USD 22.232 + IVA 10,5%** + **72 cuotas de USD 596 + IVA 10,5%**  \n- **O 72 cuotas de:** **USD 1.196 + IVA 10,5%**  \n\nIncluye fabricación en planta, ingeniero, arquitecto, planos y **entrega e instalación en todo el país**.  \nPara ayudarte mejor: ¿la estás pensando como vivienda permanente o de fin de semana y en qué zona tenés el terreno?",
+      "mentionedModels": [
+        "Casa Container",
+        "Casa Container 60m²"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2909
+    },
+    {
+      "question": "¿Qué incluye el precio? ¿Terminaciones, instalación, todo?",
+      "questionType": "includes",
+      "response": "En el caso de la **Casa Container 60m²** (2 dormitorios), el precio incluye la **unidad completamente terminada en planta**, con: estructura del contenedor, aislación térmica con lana de vidrio, revestimiento interior en MDF, instalaciones eléctricas y sanitarias, baño completo (inodoro, bidet, ducha con receptáculo y media mampara, calefón eléctrico), cocina con bajo mesada y alacena, aberturas con persianas metálicas y pintura exterior poliuretánica color a elección.  \n\nTambién está incluido el **ingeniero, arquitecto, planos, fabricación en planta especializada Dice, y la entrega e instalación en todo el país**. Lo que puede variar según el caso es la preparación del terreno (bases, platea, etc.), que se ve puntualmente según tu lote. ¿En qué zona tenés el terreno así vemos si este modelo te encaja bien?",
+      "mentionedModels": [
+        "Casa Container",
+        "Casa Container 60m²"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3396
+    },
+    {
+      "question": "¿Ustedes se encargan de toda la instalación o solo entregan los materiales?",
+      "questionType": "installation",
+      "response": "Nosotros nos encargamos de **todo**, no solo de entregar materiales. Fabricamos la Casa Container completa en nuestra planta y luego hacemos la **entrega e instalación en el terreno en cualquier punto del país**, con nuestro equipo técnico.  \n\nIncluimos **ingeniero, arquitecto, planos, habilitaciones, mano de obra, materiales, instalaciones eléctricas y sanitarias**, todo bajo una única contratación. ¿Ya tenés terreno? ¿En qué zona sería la instalación?",
+      "mentionedModels": [
+        "Casa Container"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2558
+    },
+    {
+      "question": "¿Qué garantía ofrecen sobre la construcción?",
+      "questionType": "warranty",
+      "response": "Nuestras Casas Container se fabrican con estándares de ingeniería y arquitectura pensados para cumplir **todas las normativas municipales argentinas**, lo que asegura calidad estructural y habilitación formal como vivienda.  \n\nEn el contenido que tengo acá no figura el detalle exacto de años o condiciones de garantía, pero al ser una construcción industrializada con estructura de contenedor marítimo, aislación térmica y terminaciones completas, se maneja garantía sobre la unidad y sus instalaciones.  \nNo tengo esa información específica de plazos cargada; para conocer **años y alcance exactos de la garantía**, te sugiero consultarlo por WhatsApp desde la web de Dice Containers. ¿La idea es avanzar pronto con una Casa Container 60m² o 90m²?",
+      "mentionedModels": [
+        "Casa Container",
+        "Casa Container 60m²"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3239
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, contamos con opciones de financiamiento. En la **Casa Container 60m² (2 dormitorios)**, por ejemplo, tenés:  \n\n- **Contado:** USD 44.463 + IVA 10,5%  \n- **O adelanto de:** USD 22.232 + IVA 10,5% **+ 72 cuotas de USD 596 + IVA 10,5%**  \n- **O 72 cuotas de:** USD 1.196 + IVA 10,5%  \n\nLos planes exactos pueden variar según el modelo y el momento, pero ves que hay opciones fuertes de financiación en dólares y en cuotas largas.  \nPara orientarte mejor, ¿qué superficie estás pensando (30, 60 o 90 m²) y qué presupuesto mensual podrías destinar aproximadamente?",
+      "mentionedModels": [
+        "Casa Container",
+        "Casa Container 60m²"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 5868
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Lo que más nos diferencia es que somos la **única empresa en Argentina** de casas container que **cumple con todas las normativas municipales**, por lo que nuestras unidades son **100% habilitables como vivienda o local**.  \n\nAdemás, trabajamos con **contrato único**: ingeniero, arquitecto, planos, habilitaciones, mano de obra, materiales, seguros, fabricación en planta e instalación en todo el país, todo bajo nuestra responsabilidad.  \nY algo clave: tenemos **modelos estándar claros (Casa Container 15m², 30m², 60m² y 90m²)** y experiencia en adaptarlos a proyectos reales (islas, campos, talleres, locales).  \n\nPara saber si te encajamos bien, ¿qué tipo de Casa Container estás buscando?",
+      "mentionedModels": [
+        "Casa Container",
+        "Casa Container 15m²"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3047
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "Llegamos a **todo el país**, hacemos **entrega e instalación en cualquier punto de Argentina** con nuestro propio equipo.  \n\nSolo puede variar la logística y preparación de bases según el tipo de terreno (isla, campo, ciudad, etc.). ¿En qué provincia o localidad tenés el terreno así te orientó mejor con el modelo y la instalación?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2539
+    }
+  ],
+  "sessionCreationTimeMs": 74471,
+  "errors": []
+}

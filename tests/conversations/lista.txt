@@ -1,0 +1,49 @@
+=== LISTA ===
+URL: https://lista.com.ar/
+Session: f3926620-7f38-4f5d-b2d3-ba6bfb5a96cb
+Date: 2026-02-08 15:45:04
+Session creation: 103.6s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (6.9s): Lista es una empresa de construcción modular volumétrica: hacemos casas y espacios en módulos, sustentables, eficientes y 100% personalizables. Fabricamos en planta (en Rosario) con sistema en seco/steel framing y hormigón premoldeado, y después llevamos la casa terminada al terreno para instalarla en 1 día, con plazos totales de obra de 90 a 180 días.  
+
+Tenemos Modelos modulares como Macá, Cóndor, Biguá, Mirasol, Peutrén, Hornero y Albatros, y también proyectos a medida como Casa Aguaribay, Casa Ginko y Casa Acer. Además, ofrecemos financiación (por ejemplo con Banco Hipotecario, hasta el 100% del valor de la vivienda).  
+
+Para orientarte mejor, ¿qué tipo de Modelos modulares estás buscando: vivienda permanente, casa de fin de semana, quincho, oficina, cabañas, algo mixto?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (5.2s): Ofrecemos principalmente **casas modulares y espacios modulares** llave en mano, construidos en fábrica y luego instalados en tu terreno: viviendas permanentes, casas de fin de semana, quinchos, oficinas y cabañas. Trabajamos con Modelos modulares personalizables como **Macá, Cóndor, Biguá, Mirasol, Peutrén, Hornero, Albatros y Lechuza**, además de **proyectos a medida** como Casa Aguaribay, Casa Ginko y Casa Acer.  
+
+También brindamos **asesoría integral de diseño**, ejecución de bases y conexiones, instalación en el lugar y **financiación**, incluyendo convenio con **Banco Hipotecario** para financiar hasta el 100% de la vivienda. Para afinar lo que más te conviene, ¿ya tenés pensado si sería para vivir, para fines de semana o para un uso más comercial (cabañas, oficina, etc.)?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (4.0s): Tenemos una familia bastante amplia de Modelos modulares, todos personalizables. A nivel líneas principales trabajamos con: **Macá, Cóndor, Biguá, Mirasol, Peutrén, Hornero, Albatros y Lechuza**, y en proyectos a medida con **Casa Aguaribay, Casa Ginko y Casa Acer**.  
+
+Dentro de cada línea hay varias versiones por tamaño (S, M, L, XL, XXL) y gama (Esencial, Premium, Deluxe), por ejemplo Macá S, M, L, XL, XXL; Cóndor S a XXL; Mirasol S a XXL; Peutrén M y L; Hornero M, L y XL; Biguá Home y Work; Albatros L. Para poder sugerirte los modelos justos, ¿para cuántas personas y qué uso principal estarías buscando la casa?
+
+USUARIO: Contame sobre 1. Casa Aguaribay
+AGENTE (5.4s): Casa Aguaribay es un proyecto a medida de arquitectura offsite, pensado para desconectarse en la naturaleza: se fabrica en planta y luego se monta en el terreno, aprovechando al máximo las visuales del entorno. Está diseñada con criterios bioclimáticos, alta eficiencia energética (aislaciones calculadas para su zona) y terminaciones de nivel arquitectónico, tanto en interior como en exterior.  
+
+Es ideal si buscás una casa de diseño único, no un modelo estándar, pero con todas las ventajas del sistema modular industrializado de Lista (menos tiempos de obra, mejor control de calidad). Para saber si te conviene más una Casa Aguaribay o un modelo modular como Macá o Mirasol, ¿ya tenés terreno y en qué zona sería?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (22.5s): Buenísimo, con esto te puedo orientar un poco mejor.  
+
+Para una casa de 2 dormitorios, en nuestro rango de viviendas a medida tenés como referencia la **Casa Ginko**, que es una vivienda unifamiliar grande de **136 m² cubiertos + 66 m² semicubiertos** (total 202 m² de proyecto), pensada para barrio cerrado, y la **Casa Acer**, también vivienda completa en steel framing con envolvente en chapa y sistema de fachada ventilada, muy eficiente térmicamente.  
+
+En cuanto a valores, más allá del ejemplo puntual del **Macá L Esencial (USD 32.801 + IVA)**, los precios de proyectos como Casa Ginko o Casa Acer dependen mucho de superficie final, gama (Esencial / Premium / Deluxe) y ubicación, y no están publicados con un monto único. Para un número actualizado de una casa de 2 dormitorios ajustada a tu caso, lo mejor es que nos escribas por WhatsApp al **+54 9 341 750 4540** o a **hola@lista.com.ar**, y mientras tanto contame: ¿la pensás más tipo Casa Ginko (con mucha galería y semicubiertos) o algo más compacto tipo Macá / Mirasol?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (3.1s): Ofrecemos **garantía limitada escrita de 1 año** sobre estructura, aislaciones e instalaciones de la vivienda modular. Los **artefactos** (termotanques, anafes, hornos, aires, etc.) se cubren además con la **garantía propia de cada fabricante**.  
+
+Durante ese período tenés **servicio postventa**: nuestro equipo técnico atiende reclamos, puede hacer inspecciones y también ofrecemos mantenimiento y ampliaciones a futuro. Para ayudarte mejor, ¿ya estás mirando algún modelo en particular (Macá, Cóndor, Mirasol, etc.)?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.2s): Te podés comunicar directo por WhatsApp o teléfono al **+54 9 341 750 4540**.  
+Y si preferís por mail, es **hola@lista.com.ar**.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 0
+Tiempo promedio: 7.0s

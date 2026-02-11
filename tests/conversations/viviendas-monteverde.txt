@@ -1,0 +1,58 @@
+=== VIVIENDAS MONTEVERDE ===
+URL: https://www.viviendasmonteverde.com.ar/
+Session: 82f8f738-17fb-43da-8506-cfa427a465eb
+Date: 2026-02-08 17:26:48
+Session creation: 28.1s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (4.0s): Viviendas Monteverde es una empresa dedicada a la construcción de viviendas y soluciones habitacionales en todo el país, usando un sistema de construcción en seco de última tecnología. Hacemos casas familiares y complejos turísticos con Modelos definidos como 36.00 Eco Cube, 46.80 CUBE, 80.64 premium, 69.12 Premium (con cochera), 106.56 CUBE, 116.64 CUBE (con cochera) y 120.96 Premium (con cochera).  
+Trabajamos con materiales de alta calidad, adaptables a cualquier clima, y ofrecemos financiación con entregas y hasta 60 cuotas. ¿Qué tipo de Modelos estás buscando, algo compacto o una vivienda más grande con cochera?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (3.5s): Ofrecemos construcción de viviendas en sistema de construcción en seco y soluciones habitacionales como casas familiares, viviendas rurales, obradores y complejos turísticos/hoteles. Tenemos Modelos específicos: 36.00 Eco Cube, 46.80 CUBE, 80.64 premium, 69.12 Premium (con cochera), 106.56 CUBE, 116.64 CUBE (con cochera) y 120.96 Premium (con cochera), todos con opción de financiación (entrega + hasta 60 cuotas).  
+También contamos con atención en nuestras sucursales de Comodoro Rivadavia, Mar del Plata, Neuquén, Rosario y Call Center Monteverde para acompañarte en todo el proceso. ¿Ya tenés terreno? ¿En qué zona sería la vivienda?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (2.2s): Tenemos 7 Modelos de viviendas actualmente en catálogo. Son estos:
+
+- 36.00 Eco Cube  
+- 46.80 CUBE  
+- 80.64 premium  
+- 69.12 Premium (con cochera)  
+- 106.56 CUBE  
+- 116.64 CUBE (con cochera)  
+- 120.96 Premium (con cochera)  
+
+¿Para cuántas personas o cuántos dormitorios estás pensando, así te orienta cuál de estos te puede encajar mejor?
+
+USUARIO: Contame sobre 1. Planos
+AGENTE (2.9s): Buenísimo, te cuento: en “Planos” vas a encontrar los planos arquitectónicos de cada Modelo, por ejemplo del 36.00 Eco Cube, 46.80 CUBE, 80.64 premium, 69.12 Premium (con cochera), 106.56 CUBE, 116.64 CUBE (con cochera) y 120.96 Premium (con cochera). Son los documentos donde ves distribución de ambientes, medidas y organización de la vivienda, y sirven tanto para que evalúes el diseño como para trámites municipales si hiciera falta.  
+
+Si querés, decime qué Modelo te interesa (por ejemplo 36.00 Eco Cube o 80.64 premium) y te detallo cómo es su plano y distribución.
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (3.8s): Para 2 dormitorios, lo más habitual en nuestro catálogo son Modelos como el 36.00 Eco Cube o el 46.80 CUBE (compactos) y el 69.12 Premium (con cochera), según el metraje y el nivel de prestaciones que busques. Para que tengas una referencia concreta, por ejemplo:  
+- 36.00 Eco Cube: $13.882.003 contado – Entrega $7.615.202 – 60 cuotas de $393.453  
+- 46.80 CUBE: $21.664.198 contado – Entrega $12.921.110 – 60 cuotas de $667.591  
+- 69.12 Premium (con cochera): $42.844.984 contado – Entrega $24.263.526 – 60 cuotas de $1.253.616  
+
+Estos valores no aplican a Patagonia y pueden ajustarse según zona y condiciones, pero te sirven como aproximado real. ¿Para cuándo necesitarías tener la casa terminada?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (4.8s): Trabajamos con sistema de construcción en seco y materiales de primera línea, seleccionados para garantizar durabilidad, buen comportamiento térmico y mínimo mantenimiento, pero en la info que tengo no figura el detalle exacto de años de garantía por escrito.  
+Lo que sí está claro es que las viviendas están pensadas para adaptarse a cualquier clima y suelo del país, con estándares constructivos muy altos.  
+
+No tengo esa información específica de plazos de garantía cargada; para que te pasen las condiciones formales (por escrito y actualizadas), te sugiero consultarlo por WhatsApp al +54 9 11 4477 7577.
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.3s): Te dejo los datos de contacto directos de la empresa:  
+- WhatsApp general: +54 9 11 4477 7577  
+- Teléfono sucursal Comodoro Rivadavia: 2974460283  
+
+Si querés, decime de qué ciudad sos así te indico la sucursal que te queda más cómoda para avanzar.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 1
+Tiempo promedio: 3.4s

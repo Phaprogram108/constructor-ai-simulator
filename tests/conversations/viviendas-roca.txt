@@ -1,0 +1,51 @@
+=== VIVIENDAS ROCA ===
+URL: https://www.viviendasroca.com.ar/
+Session: 200e683f-5644-4860-8adf-01b6b5e2a690
+Date: 2026-02-08 17:36:39
+Session creation: 20.7s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (7.1s): Viviendas Roca es una empresa argentina con más de 50 años dedicada a la construcción de viviendas industrializadas en sistema woodframe. Diseñamos, fabricamos en planta e instalamos casas completas (Línea Americana, Línea Cube, Línea Premium y Eco Cube) en distintos puntos del país, con modelos desde 2 hasta 6 ambientes y de 1 a 4 dormitorios.  
+
+Trabajamos llave en mano sobre platea, con tiempos de obra muy cortos (una casa de 60 m² se monta en unos 3 días) y ofrecemos financiación en pesos, hasta en 60 cuotas en modelos como los Cube 39.60, 46.80, 50.40, 55.44 y 116.64. ¿Para qué tipo de vivienda estás pensando, hogar familiar, fin de semana o inversión?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (7.1s): Ofrecemos principalmente construcción y venta de viviendas industrializadas en sistema woodframe, en distintas líneas: Línea Americana, Línea Cube, Línea Premium y Eco Cube. Dentro de la Línea Cube, por ejemplo, tenés modelos como Cube 39.60, CUBE 46.80, Cube 55.44, CUBE 50.40, CUBE 80.64 y CUBE 116.64 (con opciones de 2, 3 y 4 dormitorios, algunos con cochera), todos con financiación hasta en 60 cuotas.  
+
+Además desarrollamos soluciones especiales como obradores, unidades sanitarias, escuelas, comercios y complejos habitacionales, e instalamos en prácticamente todo el país desde nuestras plantas industriales. ¿Qué tipo de modelo o línea te interesa más, algo compacto tipo Cube o una casa más grande y familiar?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (4.3s): Tenemos muchas opciones, porque trabajamos varias líneas completas de viviendas (Línea Americana, Línea Cube, Línea Premium y Eco Cube) y además desarrollos especiales.  
+De los modelos que tengo detallados acá, en Línea Cube son 10 modelos estándar: Cube 39.60 2 Dormitorios, CUBE 46.80 2 Dormitorios, Cube 55.44 2 Dormitorios, CUBE 80.64 3 Dormitorios, CUBE 116.64 3 Dormitorios, CUBE 116.64 3 Dormitorios + Cochera, CUBE 116.64 4 Dormitorios, CUBE 116.64 4 Dormitorios + Cochera, CUBE 50.40 2 Dormitorios y CUBE 50.40 3 Dormitorios.  
+
+Para orientarte bien: ¿qué tipo de Modelos, tipos, líneas estás buscando (cantidad de dormitorios o metros aproximados)?
+
+USUARIO: Contame sobre 1. Viviendas Roca
+AGENTE (3.6s): Viviendas Roca es la empresa en sí: una desarrolladora de soluciones habitacionales con más de 50 años de experiencia en viviendas industrializadas en woodframe. Fabricamos en planta e instalamos casas en todo el país (hogares, obradores, escuelas, comercios, complejos habitacionales), con varias líneas como Línea Americana, Línea Cube, Línea Premium y Eco Cube, todas pensadas para ser rápidas de construir, bien aisladas y financiables en pesos.  
+
+Dentro de “Viviendas Roca” entran todos los modelos que viste (por ejemplo los Cube 39.60, 46.80, 50.40, 55.44, 80.64 y 116.64, con hasta 4 dormitorios y opción cochera). ¿Te gustaría que te recomiende algún modelo puntual según cuántos dormitorios necesitás?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (3.8s): Para orientarte con números concretos, en Línea Cube tengo estos precios de referencia para 2 dormitorios:  
+- Cube 39.60 2 Dormitorios (39,60 m²): $20.598.021  
+- CUBE 46.80 2 DORMITORIOS (46,80 m²): $24.031.025  
+- CUBE 50.40 2 DORMITORIOS (50,40 m²): $25.971.418  
+- Cube 55.44 2 Dormitorios (55,44 m²): $28.479.004  
+
+Todos se pueden financiar hasta en 60 cuotas. ¿Qué presupuesto manejás aproximadamente así te digo cuál de estos modelos se ajusta mejor y cómo quedaría en cuotas?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (3.3s): Nuestras viviendas están respaldadas por más de 50 años de trayectoria, fabricación industrializada y materiales de primera línea, pensados para durar y responder bien al uso y al clima (aislamiento térmico, estructura woodframe, etc.).  
+
+Los detalles finos de plazos de garantía (estructura, instalaciones, terminaciones) no los tengo cargados acá modelo por modelo, pero sí se manejan garantías formales de fábrica y servicio postventa en todas las sucursales. ¿Querés que te contacten por WhatsApp para pasarte las condiciones exactas de garantía según el modelo que te interese?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (4.8s): Podés comunicarte al teléfono fijo de la empresa: (011) 4210-0404.  
+
+Si querés, decime de qué zona sos y qué modelo te interesa (por ejemplo CUBE 50.40 2 Dormitorios) así te indico la sucursal más cercana para que sigas por WhatsApp con un asesor.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 0
+Tiempo promedio: 4.9s

@@ -1,0 +1,283 @@
+{
+  "company": "Casa Real Viviendas",
+  "url": "https://casarealviviendas.com.ar/",
+  "testedAt": "2026-02-06T16:54:55.923Z",
+  "sessionId": "0544afaa-13f6-48c5-8056-26ed6b564a80",
+  "systemPromptLength": 23164,
+  "systemPromptModelsFound": [
+    "Casa Real Viviendas",
+    "Consultanos",
+    "Cómo llegar",
+    "TOP",
+    "Buenos Aires",
+    "CasaReal",
+    "Read more",
+    "No Comments",
+    "Concepcion del Uruguay",
+    "Tres Lomas",
+    "Trenque Lauquen",
+    "Salliquelo",
+    "Manzanares Pilar",
+    "Francisco Madero",
+    "Salta Cerillo",
+    "Buenos Aires Brandsen",
+    "Córdoba",
+    "América",
+    "Plottier",
+    "America",
+    "Pellegrini",
+    "Andacollo",
+    "Bovril",
+    "General Villegas",
+    "Campo Quijano",
+    "Roque Saenz Peña",
+    "Línea Americana 1 Dormitorio",
+    "Línea Americana 2 Dormitorios",
+    "Línea Americana 3 Dormitorios",
+    "Línea Americana 4 Dormitorios",
+    "Línea Innova 1 Dormitorio",
+    "Línea Innova 2 Dormitorios",
+    "Línea Innova 3 Dormitorios",
+    "Línea Innova 4 Dormitorios",
+    "Línea Confort 1 Dormitorio",
+    "Línea Confort 2 Dormitorios",
+    "Línea Confort 3 Dormitorios",
+    "Línea Confort 4 Dormitorios",
+    "Línea Luxury 1 Dormitorio",
+    "Línea Luxury 2 Dormitorios",
+    "Línea Luxury 3 Dormitorios",
+    "Línea Luxury 4 Dormitorios"
+  ],
+  "systemPromptWhatsApp": "3513601314",
+  "systemPromptType": "de Líneas de viviendas estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Casa Real Viviendas es una fábrica de viviendas prefabricadas que diseña, construye e instala casas en todo el país, con base en Córdoba. Trabajamos con sistema de prefabricación industrial tipo woodframe, con materiales de primera calidad y entrega en aproximadamente 45 días.  \n\nOfrecemos distintas Líneas de viviendas: **Línea Americana, Línea Innova, Línea Confort y Línea Luxury**, todas con opciones de 1 a 4 dormitorios y financiación propia en cuotas fijas en pesos. ¿Estás buscando una casa para vivienda permanente, de fin de semana o inversión?",
+      "mentionedModels": [
+        "Casa Real Viviendas",
+        "Córdoba",
+        "America"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4363
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos principalmente **viviendas prefabricadas** industrializadas (tipo woodframe) listas para instalar en tu terreno, con construcción y montaje en unos **45 días** y entrega en todo el país.  \n\nTrabajamos 4 Líneas de viviendas:  \n- **Línea Americana** (34 a 90 m² – 1 a 4 dormitorios)  \n- **Línea Innova** (34 a 90 m² – 1 a 4 dormitorios)  \n- **Línea Confort** (35 a 88 m² – 1 a 4 dormitorios)  \n- **Línea Luxury** (34 a 90 m² – 1 a 4 dormitorios, con terminaciones premium)  \n\nAdemás brindamos **financiación propia en pesos, con aportes mensuales fijos**, asesoramiento comercial y técnico, y la **instalación completa** de la vivienda en tu lote.  \nPara orientarte mejor, ¿qué tipo de Líneas de viviendas estás buscando: algo económico como Americana/Confort o algo más premium como Innova/Luxury?",
+      "mentionedModels": [
+        "America"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3944
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Te podés comunicar directo por WhatsApp o llamada al **351 360 1314**.  \nSi querés, decime en qué zona estás y qué tipo de casa buscás, así te adelanto opciones y después te contacto un asesor por ese número.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2184
+    },
+    {
+      "question": "¿Cuántos modelos de casas ofrecen?",
+      "questionType": "product_count",
+      "response": "Trabajamos **4 Líneas de viviendas** y dentro de cada una tenés **4 modelos según cantidad de dormitorios**, o sea **16 modelos base** en total.  \n\nLas opciones son:  \n- **Línea Americana**: 1, 2, 3 y 4 dormitorios (34, 46, 60 y 90 m²).  \n- **Línea Innova**: 1, 2, 3 y 4 dormitorios (34, 46, 60 y 90 m²).  \n- **Línea Confort**: 1, 2, 3 y 4 dormitorios (35, 53, 65 y 88 m²).  \n- **Línea Luxury**: 1, 2, 3 y 4 dormitorios (34, 46, 60 y 90 m²).  \n\nPara ayudarte a elegir, ¿ya tenés idea si necesitás 1, 2, 3 o 4 dormitorios?",
+      "mentionedModels": [
+        "America"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4802
+    },
+    {
+      "question": "Contame sobre Casa Real Viviendas",
+      "questionType": "product_specific",
+      "response": "Casa Real Viviendas es una **fábrica de viviendas prefabricadas** que diseña, fabrica e instala casas en todo el país, con base en Córdoba. Construimos con **sistema woodframe**, madera maciza, techos de machimbre de primera calidad y estructura cabreada doble, lo que da **alta durabilidad y muy buena eficiencia térmica**.  \n\nNuestra gran ventaja es que **fabricamos en 45 días** y entregamos en todo el país, con **financiación propia en pesos y cuotas fijas**. Tenemos 4 Líneas de viviendas: **Línea Americana, Línea Innova, Línea Confort y Línea Luxury**, cada una con modelos de 1 a 4 dormitorios. ¿Te cuento un poco más de alguna línea en particular o de cómo funciona la financiación?",
+      "mentionedModels": [
+        "Casa Real Viviendas",
+        "Córdoba",
+        "America"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3499
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Casa Real Viviendas? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "En Casa Real Viviendas trabajamos con viviendas prefabricadas industrializadas, sistema **woodframe** con madera maciza, techos de machimbre de primera calidad y cabreada doble, lo que mejora la rigidez del techo y la **eficiencia térmica**. Todas nuestras líneas cumplen normas constructivas, están pensadas para bajo mantenimiento y larga durabilidad.  \n\nEn cuanto a **superficies y dormitorios**, tenés:  \n- **Línea Americana**: 34 m² (1 dorm), 46 m² (2 dorm), 60 m² (3 dorm), 90 m² (4 dorm, 2 baños).  \n- **Línea Innova**: 34 m² (1 dorm), 46 m² (2 dorm), 60 m² (3 dorm), 90 m² (4 dorm, 2 baños).  \n- **Línea Confort**: 35 m² (1 dorm), 53 m² (2 dorm), 65 m² (3 dorm, 2 baños), 88 m² (4 dorm, 2 baños).  \n- **Línea Luxury**: 34 m² (1 dorm), 46 m² (2 dorm), 60 m² (3 dorm), 90 m² (4 dorm, 2 baños, con terminaciones premium).  \n\nPara afinar mejor los detalles (distribución interna, terminaciones, etc.), ¿qué tipo de Líneas de viviendas estás buscando: Americana, Innova, Confort o Luxury, y cuántos dormitorios necesitarías?",
+      "mentionedModels": [
+        "Casa Real Viviendas",
+        "America"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4819
+    },
+    {
+      "question": "Contame sobre Consultanos",
+      "questionType": "product_specific",
+      "response": "Buenísimo que preguntes por **“Consultanos”** 😊. Dentro de Casa Real Viviendas, *Consultanos* es la sección/botón que usamos para que puedas pedir **asesoramiento personalizado** sobre cualquier modelo de nuestras Líneas de viviendas (Americana, Innova, Confort o Luxury), financiación y tiempos de entrega.  \n\nDesde ahí un asesor te ayuda a elegir superficie (de 34 a 90 m²), cantidad de dormitorios (1 a 4), y el plan de **aportes mensuales en pesos** que mejor se adapte a vos. Para darte una mano desde acá, contame: ¿ya tenés terreno? ¿En qué zona?",
+      "mentionedModels": [
+        "Casa Real Viviendas",
+        "Consultanos",
+        "America"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2886
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Consultanos? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "Mirá, **“Consultanos”** en nuestro catálogo no es un modelo de casa específico, sino la opción para que un asesor te arme la propuesta justa para vos dentro de nuestras Líneas de viviendas. Por eso, en sí **no tiene superficie ni cantidad de dormitorios propios**, sino que se usa para consultar por cualquier modelo de:  \n\n- **Línea Americana**: 34, 46, 60 y 90 m² (1 a 4 dormitorios).  \n- **Línea Innova**: 34, 46, 60 y 90 m² (1 a 4 dormitorios).  \n- **Línea Confort**: 35, 53, 65 y 88 m² (1 a 4 dormitorios).  \n- **Línea Luxury**: 34, 46, 60 y 90 m² (1 a 4 dormitorios, con terminaciones premium).  \n\nAsí que con “Consultanos” lo que hacés es elegir línea, metros y dormitorios, y ver financiación y tiempos de entrega. Para orientarte bien: ¿cuántos dormitorios estás buscando y ya tenés terreno en alguna zona?",
+      "mentionedModels": [
+        "Consultanos",
+        "America"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 7142
+    },
+    {
+      "question": "¿Cuál es la diferencia entre Casa Real Viviendas y Consultanos?",
+      "questionType": "model_comparison",
+      "response": "Te lo separo clarito:  \n- **Casa Real Viviendas** es la **empresa/fábrica**: diseñamos, fabricamos e instalamos viviendas prefabricadas en todo el país, con nuestras Líneas de viviendas **Americana, Innova, Confort y Luxury**, de 34 a 90 m² y 1 a 4 dormitorios, con financiación propia.  \n- **Consultanos** es solo la **sección o botón de contacto** para que hables con un asesor y te arme una propuesta a medida (elegir línea, metros, dormitorios y plan de aportes mensuales).  \n\nAsí que “Casa Real Viviendas” es quien hace las casas, y “Consultanos” es el canal para que te ayudemos a elegir la tuya. ¿Querés que veamos juntos qué línea y cuántos dormitorios te convendrían?",
+      "mentionedModels": [
+        "Casa Real Viviendas",
+        "Consultanos",
+        "America"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 11490
+    },
+    {
+      "question": "¿Qué modelo me recomendás para una familia de 4 personas?",
+      "questionType": "recommendation",
+      "response": "Para una familia de 4, lo ideal es ir a **3 dormitorios** (cómodo) o **2 dormitorios amplios** si querés algo más económico.  \nOpciones muy elegidas:  \n- **Línea Confort 3 Dormitorios – 65 m², 2 baños**: súper funcional para familia, buena relación precio/espacio.  \n- **Línea Americana 3 Dormitorios – 60 m², 1 baño**: práctica y económica, estilo canadiense.  \n- Si buscás algo más moderno y de mejor terminación: **Innova 3 Dormitorios (60 m²)** o **Luxury 3 Dormitorios (60 m²)**.  \n\nPara afinar la recomendación, ¿ya tenés terreno? ¿En qué zona y con qué presupuesto aproximado contás?",
+      "mentionedModels": [
+        "America",
+        "Línea Americana 3 Dormitorios",
+        "Línea Confort 3 Dormitorios"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3815
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con **prefabricación industrial tipo woodframe**: primero fabricamos todos los paneles y componentes en nuestra planta, con madera maciza y techos de machimbre con cabreada doble, y luego vamos a tu terreno a hacer el **montaje e instalación completa** de la vivienda. Este sistema reduce tiempos de obra, mejora la calidad y la eficiencia térmica, y deja muy poco trabajo “húmedo” en el lugar.  \n\nEn cuanto a plazos, una vez que estás adjudicado/a, **fabricamos y entregamos tu casa en aproximadamente 45 días**. Podés optar por planes con financiación (aportes mensuales) o contraentrega. Para saber bien qué tiempos aplicarían en tu caso, ¿ya tenés terreno? ¿En qué zona sería la obra?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3105
+    },
+    {
+      "question": "¿Se pueden personalizar los modelos de casas?",
+      "questionType": "customization",
+      "response": "Se pueden hacer algunas **personalizaciones dentro de cada modelo**, por ejemplo elegir la **Línea de viviendas** (Americana, Innova, Confort o Luxury), la cantidad de dormitorios (1 a 4) y la superficie (aprox. 34 a 90 m²), y en muchos casos adaptar detalles de distribución y terminaciones según la línea.  \nIgual, la base es siempre un **modelo estándar prefabricado**, lo que permite mantener tiempos rápidos de entrega (45 días) y buen precio.  \n\nPara decirte hasta dónde podrías personalizar, contame: ¿qué línea te interesa y cuántos dormitorios estás pensando?",
+      "mentionedModels": [
+        "America"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2346
+    },
+    {
+      "question": "¿Tenés imágenes, planos o algún catálogo que pueda ver?",
+      "questionType": "images_catalog",
+      "response": "Sí, tenemos catálogo con imágenes y planos de todas las Líneas de viviendas. En la web podés ver cada modelo con fotos y medidas, por ejemplo: Línea Americana, Línea Innova, Línea Confort y Línea Luxury (de 1 a 4 dormitorios).  \n\nLo más práctico es que te lo enviemos directo por WhatsApp junto con los planos del tamaño que te interese. ¿Te dejo el contacto (**351 360 1314**) o me contás cuántos dormitorios buscás así te digo exactamente qué modelos mirar?",
+      "mentionedModels": [
+        "America"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2359
+    },
+    {
+      "question": "¿Cuánto sale aproximadamente una casa de 2 dormitorios?",
+      "questionType": "pricing",
+      "response": "Para 2 dormitorios tenés varias opciones según la Línea de viviendas, y todas se pueden pagar en **aportes mensuales en pesos**. Los aportes “desde” que tengo cargados son:  \n\n- **Línea Americana 2 Dormitorios (46 m²)**: desde **$164.600 por mes**.  \n- **Línea Innova 2 Dormitorios (46 m²)**: desde **$178.400 por mes**.  \n- **Línea Confort 2 Dormitorios (53 m²)**: desde **$230.000 por mes**.  \n- **Línea Luxury 2 Dormitorios (46 m²)**: desde **$215.200 por mes**.  \n\nEsos valores son de referencia y pueden haberse actualizado, pero te sirven para comparar entre líneas. Para afinar bien el número, ¿en qué provincia tenés el terreno y qué monto podrías pagar por mes aproximadamente?",
+      "mentionedModels": [
+        "America",
+        "Línea Americana 2 Dormitorios",
+        "Línea Innova 2 Dormitorios",
+        "Línea Confort 2 Dormitorios",
+        "Línea Luxury 2 Dormitorios"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2911
+    },
+    {
+      "question": "¿Qué incluye el precio? ¿Terminaciones, instalación, todo?",
+      "questionType": "includes",
+      "response": "Trabajamos con un sistema bien completo: fabricamos la vivienda en planta y luego hacemos la **instalación y montaje en tu terreno**, con estructura woodframe, paredes, techos de machimbre de primera, aberturas y la distribución interna según el modelo (dormitorios, baño/s, estar-comedor, etc.). Las terminaciones varían según la **Línea de viviendas**: Americana y Confort son más económicas, Innova y sobre todo Luxury tienen **mejores acabados y detalles más premium**.  \n\nLos aportes mensuales que te pasé corresponden al **módulo de vivienda prefabricada**, pero algunos extras (preparación del terreno, bases especiales, traslados según zona, instalaciones particulares, etc.) pueden presupuestarse aparte. No tengo el desglose fino de cada línea cargado acá, así que para saber exactamente “qué incluye y qué no” en el modelo que te interese, lo mejor es que lo veas con un asesor por WhatsApp al **351 360 1314**. ¿Qué línea y cuántos dormitorios estás mirando así te digo si suele venir más “llave en mano” o más básico?",
+      "mentionedModels": [
+        "America"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4223
+    },
+    {
+      "question": "¿Ustedes se encargan de toda la instalación o solo entregan los materiales?",
+      "questionType": "installation",
+      "response": "Nos encargamos de **fabricar la vivienda y de la instalación/montaje completo en tu terreno**, no es solo venta de materiales sueltos. Al trabajar con prefabricación industrial, llevamos los paneles y componentes desde la fábrica y armamos la casa en el lugar, dejando la estructura, techos y ambientes terminados según el modelo.  \n\nAlgunos trabajos extra (como movimiento de suelo, bases especiales o instalaciones particulares) se ven caso por caso. Para orientarte mejor, ¿en qué zona tenés el terreno?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2882
+    },
+    {
+      "question": "¿Qué garantía ofrecen sobre la construcción?",
+      "questionType": "warranty",
+      "response": "Nuestras viviendas se construyen bajo **normas constructivas certificadas**, con sistema woodframe, madera maciza y techos de machimbre de primera con cabreada doble, pensados para **mayor durabilidad, menor mantenimiento y buena eficiencia térmica**.  \n\nEn el catálogo no tengo detallado el plazo exacto de garantía (años, alcances, etc.), así que eso te lo confirman puntual según la Línea de viviendas y el modelo. Para que te den las condiciones por escrito, podés escribir al **351 360 1314**.  \nMientras tanto, contame: ¿qué línea y cuántos dormitorios estás evaluando? Así te digo qué tan conveniente es cada opción para uso permanente.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2718
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, tenemos **financiación propia en pesos y en cuotas fijas**, con planes de **aportes mensuales** para todas las Líneas de viviendas.  \nAlgunos ejemplos de aportes “desde” que tengo cargados:  \n\n- **Línea Americana**: desde **$120.000 por mes** (1 dorm – 34 m²).  \n- **Línea Innova**: desde **$131.900 por mes** (1 dorm – 34 m²).  \n- **Línea Confort**: desde **$152.400 por mes** (1 dorm – 35 m²).  \n- **Línea Luxury**: desde **$163.600 por mes** (1 dorm – 34 m²).  \n\nTambién podés acceder por **adjudicación** (al superar aprox. el 60% del valor) o **contraentrega** coordinando con el área de adjudicaciones.  \nPara ver qué plan se adapta mejor a vos, ¿qué presupuesto mensual manejás aproximadamente y en qué provincia tenés el terreno?",
+      "mentionedModels": [
+        "America"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3435
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Nos diferencia, primero, que **somos fábrica propia**, con sistema de **prefabricación industrial woodframe**, lo que nos permite controlar la calidad (madera maciza, techos de machimbre de primera, cabreada doble) y ofrecer viviendas **muy durables y eficientes térmicamente**.  \n\nSegundo, los **tiempos y el alcance**: fabricamos e instalamos la casa en aprox. **45 días** y **entregamos en todo el país**.  \nTercero, la **financiación**: planes en **pesos, cuotas fijas y aportes mensuales**, con opciones de adjudicación (desde el 60% pagado) y hasta **contraentrega**.  \n\nAdemás tenés un catálogo amplio: **Línea Americana, Línea Innova, Línea Confort y Línea Luxury**, de 1 a 4 dormitorios (34 a 90 m²), para ajustarse a distintos presupuestos y niveles de terminación.  \nPara orientarte mejor con lo que más te convendría, ¿ya tenés terreno? ¿En qué zona?",
+      "mentionedModels": [
+        "America"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4132
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "Llegamos **a todo el país**, fabricamos en planta y luego llevamos e instalamos la vivienda en tu terreno, estés donde estés dentro de Argentina.  \n\nAlgunos costos y logística (traslado, bases, etc.) pueden variar según la provincia. ¿En qué localidad o provincia tenés el terreno así te digo mejor cómo trabajamos ahí y qué modelos suelen elegir en esa zona?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2187
+    }
+  ],
+  "sessionCreationTimeMs": 71627,
+  "errors": []
+}

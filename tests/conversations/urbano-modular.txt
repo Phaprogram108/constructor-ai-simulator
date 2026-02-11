@@ -1,0 +1,48 @@
+=== URBANO MODULAR ===
+URL: https://www.urbanomodular.com.ar/
+Session: 3be4551a-d6da-449b-85a6-bff46fed8342
+Date: 2026-02-08 17:22:59
+Session creation: 23.9s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (3.5s): Somos Urbano Modular, una desarrollista de Córdoba especializada en viviendas prefabricadas modernas y sustentables, construidas principalmente con contenedores marítimos y sistemas en seco. Diseñamos y fabricamos casas a medida, con modelos estándar como EcoUrban, Residencial, Urban y Personalizado, que podés adaptar en distribución, terminaciones y cantidad de módulos.  
+
+Además te acompañamos en todo el proceso: diseño arquitectónico, estudio del terreno, fabricación en planta, montaje en obra y opciones de financiación, con plazos de entrega que suelen ser menores a tres meses. ¿Qué tipo de vivienda estás imaginando para vos?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (3.9s): Ofrecemos principalmente viviendas prefabricadas y espacios construidos con contenedores y sistemas en seco, diseñados a medida y con enfoque en eficiencia energética y sustentabilidad. Dentro de las casas, tenemos Modelos estándar: **EcoUrban**, **Residencial**, **Urban** y **Personalizado**, y también sus versiones en contenedores: **Eco Urban**, **Urban**, **Residencial** y **Personalizado**, además de obras especiales como complejos de departamentos, casas de campo, baños públicos y locales/comedores.  
+
+Como servicios, brindamos: diseño arquitectónico personalizado, fabricación y montaje de la vivienda, asesoría técnica sobre el terreno, gestión de opciones de **financiación**, y construcción en Córdoba (con base en Av. Los Lirios esq. Monte Olivia, Villa Nueva). ¿Qué tipo de Modelo estás buscando: algo compacto, familiar o totalmente personalizado?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (2.8s): Tenemos 8 Modelos principales en catálogo.  
+
+En viviendas prefabricadas: **Modelo EcoUrban** (2 módulos, optimizada y ampliable), **Modelo Residencial** (4 módulos, cochera doble y terraza), **Modelo Urban** (2 módulos, 90 m² de lujo ampliable) y **Modelo Personalizado** (todos los módulos que necesites, diseño a medida).  
+En contenedores reciclados: **Eco Urban** (1 contenedor), **Urban** (1 contenedor), **Residencial** (2 contenedores) y **Personalizado** (cantidad de contenedores a medida del proyecto).  
+
+Para orientarte mejor, ¿para cuándo la necesitarías aproximadamente?
+
+USUARIO: Contame sobre 1. Modelo EcoUrban
+AGENTE (2.6s): El **Modelo EcoUrban** es una vivienda prefabricada de **2 módulos**, pensada para lograr la mejor relación **calidad–precio**, con un diseño moderno y muy funcional. Está optimizada para el confort y el aprovechamiento de cada espacio, y se puede **ampliar en el futuro** si necesitás más metros o ambientes, igual que el resto de nuestros Modelos.  
+
+Es ideal si buscás una casa práctica, accesible y con buen diseño, para primera vivienda o casa de fin de semana. ¿Ya tenés terreno? ¿En qué zona sería la construcción?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (3.6s): No tengo los precios actualizados cargados, y como cada casa se cotiza a medida (según metros, terminaciones y zona), te sugiero consultarlo por WhatsApp al **+54 9 353 4174788** así te pasan números concretos.  
+
+Para darte una idea orientativa de Modelo, una casa de 2 dormitorios suele resolverse muy bien con un **Modelo EcoUrban** (2 módulos, ampliable) o un **Modelo Personalizado** compacto. Para afinar mejor, ¿qué presupuesto aproximado manejás así te digo qué opción de Modelo te conviene mirar?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (3.3s): Trabajamos con sistemas constructivos durables (estructura de contenedores de acero corten y construcción en seco) diseñados para ser **“para toda la vida”**, con foco en durabilidad, eficiencia energética y bajo mantenimiento.  
+
+No tengo el detalle exacto de años de garantía cargado acá, pero las viviendas se pueden **escriturar como cualquier propiedad** y están pensadas como construcción permanente, no tipo “casa rodante” o provisoria. Para que te confirmen plazos y alcances de garantía (estructura, instalaciones, etc.), lo ideal es que lo veas directo con un asesor por WhatsApp al **+54 9 353 4174788**.
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.5s): Te podés contactar directo por WhatsApp o llamada al **+54 9 353 4174788**.  
+También, si preferís por mail, es **info@urbanomodular.com.ar**.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 2
+Tiempo promedio: 3.2s

@@ -1,0 +1,282 @@
+{
+  "company": "Steel Frame Constructora",
+  "url": "https://steelframeconstructora.com.ar/",
+  "testedAt": "2026-02-06T16:55:22.829Z",
+  "sessionId": "9e63bb11-be57-45e1-b341-3e7fef608c2d",
+  "systemPromptLength": 21264,
+  "systemPromptModelsFound": [
+    "Modelo 1 Dormitorio",
+    "Modelo 2 Dormitorios",
+    "Modelo 3 Dormitorios",
+    "MODELO Quincho",
+    "Modelo 2 Pisos",
+    "Casas Modulares",
+    "Módulos Transportables"
+  ],
+  "systemPromptWhatsApp": "3462415650",
+  "systemPromptType": "de modelos, módulos estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Somos Steel Frame Constructora, una empresa que se dedica a construir casas modulares y viviendas en sistema Steel Frame y Wood Frame, con fábrica propia en Venado Tuerto y oficina también en Puerto Norte, Rosario. Nos encargamos de todo el proceso: planos, ingeniería, diseño e interiorismo, logística, mano de obra y construcción completa de la vivienda o quincho, con más de 100 obras entregadas.  \n\nAdemás ofrecemos distintos modelos listos (Modelo 1 Dormitorio, Modelo 2 Dormitorios, Modelo 3 Dormitorios, Modelo Quincho, Modelo 2 Pisos, Casas Modulares y Módulos Transportables 100% movibles) y contamos con financiación. Para orientarte mejor, ¿qué tipo de modelos, módulos estás buscando?",
+      "mentionedModels": [
+        "Modelo 1 Dormitorio",
+        "Modelo 2 Dormitorios",
+        "Modelo 3 Dormitorios",
+        "MODELO Quincho",
+        "Modelo 2 Pisos",
+        "Casas Modulares",
+        "Módulos Transportables"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2829
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos construcción de viviendas en Steel Frame, Wood Frame y Casas Modulares, más Módulos Transportables 100% movibles, siempre con servicio integral: planos, ingeniería, diseño interior, logística, mano de obra y montaje.  \n\nEn cuanto a productos concretos, tenemos: **Modelo 1 Dormitorio (30 m²)**, **Modelo 2 Dormitorios (50 m²)**, **Modelo 3 Dormitorios (65 m²)**, **Modelo Quincho (70 m²)**, **Modelo 2 Pisos (82 m²)**, además de **Casas Modulares** y **Módulos Transportables**. También contamos con financiación y atención personalizada desde nuestras sedes en Venado Tuerto y Rosario. ¿Qué tipo de modelos, módulos estás buscando vos?",
+      "mentionedModels": [
+        "Modelo 1 Dormitorio",
+        "Modelo 2 Dormitorios",
+        "Modelo 3 Dormitorios",
+        "MODELO Quincho",
+        "Modelo 2 Pisos",
+        "Casas Modulares",
+        "Módulos Transportables"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4268
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Te dejo todos los contactos así elegís el que te quede más cómodo:  \n\n- Teléfono Venado Tuerto: **3462 41-5650**  \n- Fábrica Venado Tuerto: **3462 56-8653**  \n- Rosario (Puerto Norte): **341 377-8262**  \n- WhatsApp Ventas Uruguay: **+598 93 668 399**  \n\nSi querés, decime de qué zona sos y le pido a un asesor que te contacte al número que prefieras.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2021
+    },
+    {
+      "question": "¿Cuántos módulos ofrecen?",
+      "questionType": "product_count",
+      "response": "Manejamos varios modelos, módulos estándar y además trabajamos proyectos a medida.  \nEn catálogo tenés: **Modelo 1 Dormitorio (30 m²)**, **Modelo 2 Dormitorios (50 m²)**, **Modelo 3 Dormitorios (65 m²)**, **Modelo Quincho (70 m²)**, **Modelo 2 Pisos (82 m²)**, **Casas Modulares** y **Módulos Transportables 100% transportables**.  \n\nPara ayudarte mejor, ¿para qué uso estás pensando el módulo (vivienda permanente, quincho, cabaña, oficina, etc.)?",
+      "mentionedModels": [
+        "Modelo 1 Dormitorio",
+        "Modelo 2 Dormitorios",
+        "Modelo 3 Dormitorios",
+        "MODELO Quincho",
+        "Modelo 2 Pisos",
+        "Casas Modulares",
+        "Módulos Transportables"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 1972
+    },
+    {
+      "question": "Contame sobre Modelo 1 Dormitorio",
+      "questionType": "product_specific",
+      "response": "El **Modelo 1 Dormitorio** es una vivienda compacta de **30 m²**, ideal como primera casa, cabaña, anexo en un terreno o para alquiler temporario. Está pensada para ser eficiente y cómoda: un dormitorio, área social integrada y todo el confort del sistema en seco (Steel Frame o Wood Frame, según el proyecto).  \n\nNosotros nos encargamos de planos, construcción completa, logística y montaje, y también podés verlo en detalle en la sección “Modelo 1 Dormitorio” de nuestra web. ¿Ya tenés terreno y en qué zona sería la obra?",
+      "mentionedModels": [
+        "Modelo 1 Dormitorio"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2558
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Modelo 1 Dormitorio? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "El **Modelo 1 Dormitorio** tiene una superficie de **30 m²** totales y está diseñado como vivienda compacta y funcional, ideal para una persona o pareja. Incluye **1 dormitorio** y un sector social integrado (estar–cocina–comedor) con baño completo, resuelto en sistema constructivo en seco (Steel Frame o Wood Frame, según se defina en el proyecto).  \n\nEn todos nuestros modelos trabajamos con estructura de acero/madera tratada, aislamiento térmico, terminaciones pensadas para bajo mantenimiento y la posibilidad de trasladarlo al sistema de **Casas Modulares** o **Módulos Transportables** si lo necesitás. ¿Lo estás pensando como vivienda permanente, cabaña o algo tipo anexo/quincho?",
+      "mentionedModels": [
+        "Modelo 1 Dormitorio",
+        "Casas Modulares",
+        "Módulos Transportables"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2877
+    },
+    {
+      "question": "Contame sobre Modelo 2 Dormitorios",
+      "questionType": "product_specific",
+      "response": "El **Modelo 2 Dormitorios** es una vivienda de **50 m²**, pensada para familias pequeñas o parejas que necesitan un ambiente extra para hijos, home office o visitas. Incluye **2 dormitorios**, área social (estar–cocina–comedor) y baño completo, todo resuelto en construcción en seco con nuestro sistema Steel Frame / Wood Frame.  \n\nEs un modelo muy equilibrado entre superficie, confort y costo, ideal como casa permanente o casa de fin de semana, y podés combinarlo con nuestras opciones de financiación. ¿Ya tenés terreno? ¿En qué zona te gustaría construirlo?",
+      "mentionedModels": [
+        "Modelo 2 Dormitorios"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4043
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Modelo 2 Dormitorios? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "El **Modelo 2 Dormitorios** tiene una superficie de **50 m²** totales y está pensado como vivienda cómoda para familia chica o pareja que necesita un cuarto extra. Incluye **2 dormitorios**, área social integrada (estar–cocina–comedor) y **baño completo**, resuelto en construcción en seco (Steel Frame o Wood Frame, según se defina en tu proyecto).  \n\nSe destaca por buen aprovechamiento de metros, rapidez de obra y posibilidad de financiarlo, y puede ejecutarse como vivienda fija o dentro de nuestro esquema de **Casas Modulares**. ¿Lo estás pensando como casa permanente o como casa de fin de semana?",
+      "mentionedModels": [
+        "Modelo 2 Dormitorios",
+        "Casas Modulares"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2523
+    },
+    {
+      "question": "¿Cuál es la diferencia entre Modelo 1 Dormitorio y Modelo 2 Dormitorios?",
+      "questionType": "model_comparison",
+      "response": "La diferencia principal está en la **superficie y capacidad**: el **Modelo 1 Dormitorio** tiene **30 m²** y 1 dormitorio, mientras que el **Modelo 2 Dormitorios** tiene **50 m²** y 2 dormitorios, pensado ya para familia chica o para sumar home office / cuarto de visitas.  \n\nAmbos se construyen en sistema en seco (Steel Frame o Wood Frame), con estar–cocina–comedor y baño completo; el de 50 m² ofrece más confort, circulación y guardado, y el de 30 m² es más compacto y económico, ideal como primera vivienda o cabaña. ¿Para cuántas personas estás pensando la casa y si sería uso permanente o de fin de semana?",
+      "mentionedModels": [
+        "Modelo 1 Dormitorio",
+        "Modelo 2 Dormitorios"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4076
+    },
+    {
+      "question": "¿Qué modelo me recomendás para una familia de 4 personas?",
+      "questionType": "recommendation",
+      "response": "Para una familia de 4 personas te recomiendo empezar a mirar dos opciones:  \n- **Modelo 3 Dormitorios (65 m²)**: es el más cómodo para 4, cada uno con su espacio y mejor distribución para uso permanente.  \n- **Modelo 2 Dormitorios (50 m²)**: puede funcionar si los chicos comparten habitación o si buscás algo más económico y compacto.  \n\nSi me contás edades de los chicos y si la casa sería permanente o de fin de semana, te afino mejor la recomendación.",
+      "mentionedModels": [
+        "Modelo 2 Dormitorios",
+        "Modelo 3 Dormitorios"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 1883
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con un proceso integral: diseño y planos, firma de contrato, fabricación en nuestra **fábrica propia en Venado Tuerto** (estructura Steel Frame / Wood Frame, panelizado, instalaciones), traslado al terreno y montaje final con todas las terminaciones. Vos tratás siempre con el mismo equipo y nos ocupamos de planos, logística y mano de obra.  \n\nLos plazos dependen del modelo, pero al ser construcción en seco y/o casas modulares, los tiempos son mucho más cortos que la obra húmeda tradicional; una vez definido el modelo y la forma de pago, se programa fabricación y entrega. No tengo los tiempos exactos por modelo cargados, pero suelen ser plazos ágiles; ¿para cuándo la necesitarías aproximadamente?",
+      "mentionedModels": [
+        "Casas Modulares"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3504
+    },
+    {
+      "question": "¿Se pueden personalizar los módulos?",
+      "questionType": "customization",
+      "response": "Sí, se pueden personalizar, dentro de ciertos parámetros para que el sistema siga siendo eficiente y rápido. Podemos adaptar distribución interna, aberturas, terminaciones, algunos metros adicionales y también trabajar proyectos especiales en Steel Frame / Wood Frame o como Casas Modulares y Módulos Transportables.  \n\nPara orientarte bien, ¿sobre qué modelo estás pensando hacer cambios (Modelo 1 Dormitorio, 2 Dormitorios, 3 Dormitorios, Modelo Quincho, Modelo 2 Pisos, Casas Modulares o Módulos Transportables)?",
+      "mentionedModels": [
+        "Modelo 1 Dormitorio",
+        "MODELO Quincho",
+        "Modelo 2 Pisos",
+        "Casas Modulares",
+        "Módulos Transportables"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2376
+    },
+    {
+      "question": "¿Tenés imágenes, planos o algún catálogo que pueda ver?",
+      "questionType": "images_catalog",
+      "response": "Sí, claro, tenemos catálogo completo con imágenes, renders y planos de cada modelo.  \nPodés verlos en nuestra web en la sección **Modelos**: ahí están **Modelo 1 Dormitorio, Modelo 2 Dormitorios, Modelo 3 Dormitorios, Modelo Quincho, Modelo 2 Pisos, Casas Modulares y Módulos Transportables** con fotos y más detalles.  \n\nSi querés algo más directo, también podés pedir que te manden el catálogo y planos por WhatsApp acá: https://wa.me/message/KERM2SAFN2UBK1. ¿Sobre qué modelo te gustaría que te pase el link específico?",
+      "mentionedModels": [
+        "Modelo 1 Dormitorio",
+        "Modelo 2 Dormitorios",
+        "Modelo 3 Dormitorios",
+        "MODELO Quincho",
+        "Modelo 2 Pisos",
+        "Casas Modulares",
+        "Módulos Transportables"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2500
+    },
+    {
+      "question": "¿Cuánto sale aproximadamente una casa de 2 dormitorios?",
+      "questionType": "pricing",
+      "response": "No tengo los precios actualizados cargados por acá para el **Modelo 2 Dormitorios (50 m²)** ni para casas de 2 dormitorios a medida. Te sugiero consultarlo por WhatsApp, donde te pasan el valor actualizado, formas de financiación y simulación de cuota según tu caso puntual.  \n\nPodés escribir acá: **https://wa.me/message/KERM2SAFN2UBK1** o al **3462 41-5650**, y mientras tanto contame: ¿ya tenés terreno y en qué zona sería la casa de 2 dormitorios?",
+      "mentionedModels": [
+        "Modelo 2 Dormitorios"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 2600
+    },
+    {
+      "question": "¿Qué incluye el precio? ¿Terminaciones, instalación, todo?",
+      "questionType": "includes",
+      "response": "Trabajamos con un servicio **integral**, es decir: planos, fabricación en nuestra **fábrica propia**, logística hasta tu terreno y **mano de obra completa de montaje** en sistema Steel Frame / Wood Frame o como Casa Modular / Módulo Transportable. Las viviendas se entregan con estructura, cerramientos, aislaciones y terminaciones listas para habitar, y en el caso de las casas modulares se construyen en fábrica y se llevan ya armadas para que entres a vivir.  \n\nNo tengo acá el detalle fino de “qué incluye / qué opcional” por cada modelo y precio, eso te lo pasan actualizado por WhatsApp según el modelo que elijas. ¿Sobre qué modelo puntual querés que te confirmen el alcance (Modelo 1 Dormitorio, 2 Dormitorios, 3 Dormitorios, Modelo Quincho, Modelo 2 Pisos, Casas Modulares o Módulos Transportables)?",
+      "mentionedModels": [
+        "Modelo 1 Dormitorio",
+        "MODELO Quincho",
+        "Modelo 2 Pisos",
+        "Casas Modulares",
+        "Módulos Transportables"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3048
+    },
+    {
+      "question": "¿Ustedes se encargan de toda la instalación o solo entregan los materiales?",
+      "questionType": "installation",
+      "response": "Nos encargamos de **todo**, no solo de entregar materiales. Steel Frame Constructora ofrece el servicio completo: **planos, fabricación en fábrica, logística al terreno y mano de obra de montaje e instalación** de la vivienda en sistema Steel Frame, Wood Frame, Casas Modulares o Módulos Transportables.  \n\nLa idea es que vos no tengas que coordinar gremios ni compras sueltas: recibís la obra armada y lista según lo contratado. ¿En qué zona tenés pensado construir así te digo cómo trabajamos ahí?",
+      "mentionedModels": [
+        "Casas Modulares",
+        "Módulos Transportables"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2567
+    },
+    {
+      "question": "¿Qué garantía ofrecen sobre la construcción?",
+      "questionType": "warranty",
+      "response": "Trabajamos con sistemas constructivos reconocidos (Steel Frame y Wood Frame) y más de 13 años de experiencia y +110 obras entregadas, lo que respalda la calidad estructural y de terminaciones de nuestras viviendas y módulos.  \n\nEn la info que tengo acá no figura el detalle exacto de años y condiciones de garantía por escrito, así que para ese punto puntual te recomiendo pedirlo por WhatsApp: **https://wa.me/message/KERM2SAFN2UBK1**. ¿Estás evaluando una casa permanente (2 o 3 Dormitorios) o algo tipo **Módulos Transportables / Modelo Quincho**?",
+      "mentionedModels": [
+        "MODELO Quincho",
+        "Módulos Transportables"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3177
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, ofrecemos **financiación** y planes de pago para nuestros modelos (Modelo 1, 2 y 3 Dormitorios, Modelo Quincho, Modelo 2 Pisos, Casas Modulares y Módulos Transportables). Los esquemas varían según el modelo, monto y zona, y se arman a medida (seña, cuotas, etc.).  \n\nNo tengo por acá el detalle de cuotas actualizado, pero te lo pasan rápido por WhatsApp: **https://wa.me/message/KERM2SAFN2UBK1** o al **3462 41-5650**. Para que te orienten mejor, ¿qué presupuesto aproximado manejás y qué modelo de vivienda tenés en mente?",
+      "mentionedModels": [
+        "MODELO Quincho",
+        "Modelo 2 Pisos",
+        "Casas Modulares",
+        "Módulos Transportables"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2812
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Lo que más nos diferencia es que somos **constructora completa con fábrica propia**, no solo vendedores de kits: hacemos **planos, ingeniería, diseño, fabricación, logística y mano de obra**, todo con equipo propio y más de **110 obras entregadas** en la región. Trabajamos tanto **Steel Frame, Wood Frame, Casas Modulares y Módulos Transportables**, con atención personalizada desde nuestras oficinas de **Venado Tuerto y Rosario** y área de diseño/interiorismo para que el resultado no sea “una caja estándar” sino una casa pensada para vos.  \n\nAdemás, al construir en fábrica gran parte del proceso, logramos **plazos más cortos, mejor control de calidad y entrega inmediata** en muchos casos. Para ayudarte a comparar, ¿qué tipo de vivienda estás evaluando (2 Dormitorios, 3 Dormitorios, Modelo 2 Pisos, Casas Modulares, etc.) y en qué zona?",
+      "mentionedModels": [
+        "Modelo 2 Pisos",
+        "Casas Modulares",
+        "Módulos Transportables"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4123
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "En la info que tengo figura que estamos radicados en **Venado Tuerto** y **Rosario (Puerto Norte)**, con fábrica propia en Venado Tuerto y más de 100 obras entregadas en la región, pero no aparece detallado un listado de provincias o “cobertura nacional” explícita.  \n\nPuede que lleguemos a más zonas de las que figuran ahí, así que para confirmarte si trabajamos en tu localidad puntual te sugiero escribir por WhatsApp: **https://wa.me/message/KERM2SAFN2UBK1**. ¿De qué ciudad o zona sos así te digo qué número te conviene usar?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4259
+    }
+  ],
+  "sessionCreationTimeMs": 71323,
+  "errors": []
+}

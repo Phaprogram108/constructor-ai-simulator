@@ -1,0 +1,51 @@
+=== TDS GROUP ===
+URL: https://www.tds-group.com.ar/
+Session: cdb4fe47-f45b-4a44-b4fc-7470f623041e
+Date: 2026-02-08 17:12:39
+Session creation: 40.6s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (7.0s): Somos TDS Group, una empresa constructora especializada en diseño y desarrollo de proyectos inmobiliarios con sistema steel frame y soluciones industriales en acero.  
+
+Construimos viviendas (como Country House Cardales o Residencia San Fernando) y naves/centros logísticos (como Comercio para Shopping o Centro Logistico E-comerce), ofreciendo un servicio integral: diseño, ingeniería, panelizado, construcción llave en mano y financiación.  
+¿En qué tipo de proyecto estás pensando, vivienda o nave/espacio industrial?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (3.8s): Ofrecemos construcción de viviendas y espacios industriales con tecnología steel frame y acero extendido, siempre con materiales certificados (Isover, Barbieri, Aquapanel, Muchtek, Nurpanel).  
+
+En residenciales, hacemos casas premium llave en mano como Country House Cardales y Residencia San Fernando (aprox. 250 m², con pileta y diseño de interiores). En industrial/comercial, desarrollamos proyectos como Comercio para Shopping (950 m²), Centro de Logística y Centro Logistico E-comerce (más de 2000 m²), incluyendo ingeniería, panelizado, montaje y supervisión de obra.  
+¿Estás buscando algo más orientado a casa propia o a un proyecto comercial/industrial?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (3.3s): En casas tenemos Proyectos personalizados, no “modelos estándar”, pero sí podés tomar como referencia tres tipologías que ya desarrollamos:  
+- **Country House Cardales** – vivienda premium de ~250 m² con pileta y diseño de interiores.  
+- **Residencia San Fernando** – también ~250 m², servicio integral similar.  
+- **Farm House Bosquecitos** – casa adaptada al entorno natural, diseño original convertido a steel frame.  
+
+A partir de estas referencias diseñamos a medida según tu terreno y necesidades. ¿Ya tenés terreno? ¿En qué zona sería la casa?
+
+USUARIO: Contame sobre 1. Country House Cardales
+AGENTE (3.0s): Country House Cardales es una casa premium de aproximadamente 250 m² cubiertos, diseñada y construida en steel frame, con pileta y diseño de interiores incluidos dentro de un servicio totalmente integral.  
+
+Nosotros nos encargamos de todo: diseño arquitectónico, ingeniería del acero, panelizado, construcción llave en mano y terminaciones de alta calidad, pensada para lotes de country con buena integración al entorno. ¿Estás buscando algo similar en tamaño/estilo para tu proyecto?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (5.7s): No tengo los precios actualizados cargados, y en el catálogo no figura un valor por m² ni por cantidad de dormitorios. Los costos dependen mucho de diseño, terminaciones y zona de obra, así que lo ideal es que lo veamos con un asesor comercial.  
+
+Mientras tanto, para orientarte mejor: ¿qué presupuesto aproximado manejás y en qué zona tenés pensado construir?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (3.3s): Trabajamos con sistema steel frame y materiales certificados (Isover, Barbieri, Aquapanel, Muchtek, Nurpanel), lo que asegura alta durabilidad, eficiencia energética y muy buen comportamiento estructural en el tiempo.  
+
+No tengo en el sistema el detalle exacto de años de garantía por escrito, pero sí te puedo asegurar que ofrecemos gestión integral, supervisión de obra y un servicio postventa fuerte, especialmente en naves industriales y viviendas llave en mano. Te sugiero que lo veamos puntual en una reunión para definir qué cubre cada etapa según tu proyecto.
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.8s): No tengo el número de WhatsApp o teléfono cargado en el sistema.  
+
+Podés contactarnos directo por mail a **Info@tds-group.com.ar** o desde la web de TDS Group, donde figura el contacto actualizado y podés coordinar una reunión con un asesor.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 3
+Tiempo promedio: 4.1s

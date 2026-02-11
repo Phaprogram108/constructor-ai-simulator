@@ -1,0 +1,19 @@
+{
+  "scannedAt": "2026-02-08T14:22:19.054Z",
+  "companyName": "Bauhaus Modular",
+  "baseUrl": "https://bauhausmodular.com.ar/",
+  "homepage": {
+    "title": "",
+    "metaDescription": "",
+    "fullText": "",
+    "screenshotFile": ""
+  },
+  "navigation": [],
+  "sections": [],
+  "models": [],
+  "pdfLinks": [],
+  "allLinks": [],
+  "errors": [
+    "Fatal: page.goto: net::ERR_NAME_NOT_RESOLVED at https://bauhausmodular.com.ar/\nCall log:\n\u001b[2m  - navigating to \"https://bauhausmodular.com.ar/\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  ]
+}

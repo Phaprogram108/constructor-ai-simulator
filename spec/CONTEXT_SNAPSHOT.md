@@ -1,123 +1,127 @@
 # Snapshot de Contexto
 
-**Fecha:** 2026-02-05 23:00 ART
+**Fecha:** 2026-02-08
 **Proyecto:** /Users/joaquingonzalez/Documents/dev/constructor-ai-simulator
-**Razon del snapshot:** Context saturado. Firecrawl v3 implementado, score subio de 26% a 46%. Fixes adicionales aplicados pero no medidos aun.
+**Razon del snapshot:** Context refresh despues de implementar 3 mejoras pre-lanzamiento
 
 ## Resumen del Proyecto
 
-Constructor AI Simulator es una app Next.js 14 que genera agentes de ventas IA para constructoras argentinas. El usuario ingresa una URL, el sistema scrapea con Firecrawl/Playwright, clasifica el tipo de empresa (modular/tradicional/mixta/inmobiliaria), genera un system prompt, y crea un chatbot con GPT-5.1.
+Constructor AI Simulator es una app Next.js 14 que genera agentes de ventas IA para constructoras argentinas. El usuario ingresa una URL, el sistema scrapea con Firecrawl, genera un system prompt, y crea un chatbot con GPT-5.1. Lanzamiento oficial manana Feb 9.
 
-## Estado Actual
+**URL produccion:** https://agenteiagratis.com (Vercel)
 
-- **Firecrawl v3 implementado** en `src/lib/firecrawl.ts`
-- Score subio de 26% (v2) a 46% (v3 primer run)
-- Hallucinations bajaron de 16 a 2 (-87.5%)
-- 3 fixes adicionales aplicados DESPUES del run de 46% (aun no medidos)
-- **Proximo paso: Re-correr pipeline para medir impacto de fixes finales**
+## Lo Que Se Hizo en Esta Sesion (Feb 8)
 
-## Lo Que Se Hizo en Esta Sesion
+### 1. Validacion HTTP de URLs (Fase 1)
+- Agregado `validateUrlReachable()` en `src/app/api/simulator/create/route.ts`
+- HEAD -> GET fallback con timeout 10s, DNS error detection
+- Gate ANTES del scraping: si URL no responde, error 422 inmediato
+- Mensajes claros: "No pudimos encontrar el sitio web. Verifica que la URL sea correcta."
 
-### 1. Reescritura de scrapeWithFirecrawl() - Firecrawl v3
-La funcion principal fue reescrita (615 → ~420 lineas):
+### 2. Deep Crawling Keywords (Fase 2)
+- `src/lib/firecrawl.ts`: +10 PRODUCT_KEYWORDS (entrega, entregas, equipamiento, equipamientos, plano, planos, detalle, detalles, ficha, fichas)
+- `src/lib/firecrawl.ts`: +5 Wix CATALOG_PATHS (/entregas, /equipamientos, /tipologias, /nuestras-casas, /nuestros-modelos)
+- Resultado: Lucy's House ahora captura 3 tiers de equipamiento con precios y specs completas
 
-**Flujo viejo (v2):**
-mapUrl → filtrar URLs por keywords → scrapeUrl cada una → Agent fallback
+### 3. Re-busqueda On-Demand (Fase 3)
+- NUEVO `src/app/api/chat/research/route.ts`: Firecrawl mapUrl + keyword scoring + scrapeUrl top 3 URLs
+- MODIFICADO `src/app/api/chat/route.ts`: Deteccion de "no tengo info" via regex, segundo GPT call con contexto adicional
+- MODIFICADO `src/components/ChatInterface.tsx`: isSearching state, indicador "Buscando informacion adicional..." despues de 6s
+- MODIFICADO `src/components/SimulatorForm.tsx`: websiteUrl guardado en localStorage
+- MODIFICADO `src/types/index.ts`: websiteUrl agregado a SessionInfo
+- MODIFICADO `src/app/api/simulator/create/route.ts`: websiteUrl incluido en respuesta JSON
 
-**Flujo nuevo (v3):**
-1. `crawlUrl()` sin includePaths (open discovery, limit 30, maxDepth 3)
-2. `scrapeUrl()` homepage con extract schema
-3. `mapUrl()` fallback si <5 modelos (descubre URLs que crawl perdio)
-4. `extract()` API si <3 modelos (extraccion AI)
-5. Agent/Wix para SPAs o pocos datos
+### 4. Testing Local con Lucy's House
+- URL invalida: PASS
+- Full Premium pricing: PASS (re-search, 15s)
+- Entregas inmediatas: PASS (3s)
+- Modulo 32m2: PASS (3.7s)
+- Detalles tecnicos 35.70m2: PASS (re-search, 12.5s)
 
-### 2. Garbage model name filter
-`parseModelsFromMarkdown()` ahora filtra nombres basura:
-- Excluye frases comunes ("tiene", "superficie", "muestra", etc.)
-- Max 6 palabras, min 2 chars
-- Debe empezar con mayuscula o numero
-
-### 3. Primer run del pipeline v3
-Score: 46% (vs 26% baseline). Grandes mejoras:
-- GoHome: 0% → 100% (crawlUrl navega subpaginas)
-- Offis: no testeado → 100% (30 prompt models)
-- PlugArq: 0 models → 10 models (proyectos encontrados)
-- Aftamantes: 33% → 67%
-- Atlas Housing: 0% → 50%
-- Hallucinations: 16 → 2
-
-### 4. Fixes post-run (NO medidos aun)
-- Removed `includePaths` del crawlUrl (open discovery)
-- Garbage filter en parseModelsFromMarkdown
-- mapUrl fallback si <5 modelos
+### 5. Deploy a Vercel
+- Commit `e686fe9` pusheado y deployado exitosamente
+- Build success confirmado via GitHub deployments API
 
 ## Decisiones Ya Tomadas (NO re-discutir)
 
-1-13. (igual que antes - ver listado completo en sesion anterior)
-14. crawlUrl reemplaza mapUrl+scrapeUrl como metodo principal
-15. Open discovery (sin includePaths) - excludePaths basta para filtrar basura
-16. mapUrl como fallback, no como paso principal
-17. extract() API para <3 modelos (extraccion AI estructurada)
-18. Garbage filter: max 6 words, must start uppercase/number, exclude common phrases
-19. ViBert clasificado como INMOBILIARIA es correcto - los "modelos" son proyectos inmobiliarios
-
-## Archivos Clave Modificados en Esta Sesion
-
-- `src/lib/firecrawl.ts` - REESCRITO: scrapeWithFirecrawl() con crawlUrl + extract() + mapUrl fallback + garbage filter
-- `spec/FIRECRAWL_V3_SPEC.md` - NUEVO: plan de implementacion
-- `spec/STATE.md` - Actualizado con resultados v3
+1. Chat usa GPT-5.1 (no 4o)
+2. Slides nativas React reemplazan Canva iframe
+3. 7 slides (no 8) - "Caso Real" eliminada como redundante
+4. Video CTA scrollea a seccion Loom en la misma pagina
+5. WhatsApp usa api.whatsapp.com para compatibilidad Business
+6. Fotos del equipo desde PDF, no placeholders
+7. Cold outreach: tono profesional, con social proof concreto
+8. Firecrawl concurrency warning es informativo, no requiere upgrade
+9. Re-search on-demand: latencia 10-15s aceptable con feedback visual
+10. Playwright solo para testing, NO para produccion
+11. URL validation: server-side HEAD->GET con timeout 10s
 
 ## Contexto Tecnico Importante
 
-### Flujo del Sistema
+### Re-search Flow (Fase 3)
 ```
-URL -> firecrawl.ts (crawlUrl + extract + mapUrl fallback + Agent) -> prompt-generator.ts -> session
-     -> chat con GPT-5.1 + response-validator.ts
+Usuario pregunta -> GPT responde "no tengo info" ->
+Backend detecta regex pattern -> Llama /api/chat/research ->
+mapUrl(websiteUrl, limit:50) -> Filtra URLs por keywords del query ->
+Scrapea top 3 URLs -> Segundo call GPT con contexto nuevo ->
+Retorna respuesta mejorada + { researched: true }
 ```
 
-### Firecrawl v3 - Endpoints Usados
-| Endpoint | Paso | Para Que |
-|----------|------|----------|
-| /crawl | Step 1 | Descubrir Y scrapear paginas (limit 30, maxDepth 3) |
-| /scrape | Step 2 | Homepage con extract schema (datos estructurados) |
-| /map | Step 2.5 | Fallback: descubrir URLs que crawl perdio (si <5 modelos) |
-| /extract | Step 3 | Extraccion AI estructurada (si <3 modelos) |
-| /agent | Step 4 | SPAs y sitios complejos (Wix, etc.) |
+### NO_INFO_PATTERNS (en chat/route.ts)
+```
+/no tengo (?:esa )?informaci[oó]n/i
+/no (?:tengo|cuento con).*(?:cargad|disponible|espec[ií]fic)/i
+/contact[aá](?:nos|me) por whatsapp.*(?:detalle|info)/i
+/no puedo (?:acceder|verificar)/i
+```
 
-### Resultados del Diagnostico (Run 3 - v3)
-| Metrica | v2 | v3 | Cambio |
-|---------|-----|-----|--------|
-| Score Promedio | 26% | 46% | +77% |
-| Companies | 15 | 18 | +3 |
-| SCRAPING_MISS | 100 | 106 | = (3 mas empresas) |
-| HALLUCINATION | 16 | 2 | -87.5% |
+### Lucy's House es Wix SPA
+- Contenido JS-rendered, HTML crudo solo tiene GA tag
+- Firecrawl puede renderizar JS (waitFor:2000 en scrapeOptions)
+- URLs: /entregas/modulo-*, /equipamientos/*, /modelos?modelo=*
+- 3 tiers: Comfort (USD 1.290/m2), Deluxe (USD 1.390/m2), Full Premium (USD 1.550/m2)
 
-### Empresas Problematicas (para atencion futura)
-| Empresa | Score | Problema |
-|---------|-------|----------|
-| ViBert | 0% | Clasificada INMOBILIARIA - modelos son proyectos |
-| Sienna Modular | 0% | SPA React pura |
-| Arcohouse | 0% | Naming mismatch GT vs prompt |
-| Wellmod | 0% | GT tiene 38 modelos (industrial + residencial) |
-| Ecomod | 10%→? | Garbage filter aplicado post-run, deberia mejorar |
+### Productos mal nombrados en Wix
+- El scraper extrae alt-text de imagenes como nombres de producto ("Proyecto 1", "Detalle 1")
+- No son nombres reales de modelos pero el rawText tiene la info correcta
+- El agente funciona bien porque busca en rawText, pero los nombres estructurados son basura
+
+## Archivos Modificados en Esta Sesion
+
+| Archivo | Cambio |
+|---------|--------|
+| src/app/api/simulator/create/route.ts | +validateUrlReachable() + websiteUrl en response |
+| src/app/api/chat/route.ts | +NO_INFO_PATTERNS + re-search logic + websiteUrl in body |
+| src/app/api/chat/research/route.ts | NUEVO - Research endpoint completo |
+| src/lib/firecrawl.ts | +10 PRODUCT_KEYWORDS + 5 CATALOG_PATHS |
+| src/components/ChatInterface.tsx | +isSearching state + searching indicator UI |
+| src/components/SimulatorForm.tsx | +websiteUrl en localStorage |
+| src/types/index.ts | +websiteUrl en SessionInfo |
+| spec/DECISIONS.md | NUEVO - Decisiones pre-lanzamiento |
+| spec/PLAN.md | NUEVO - Plan 3 fases |
 
 ## Para Continuar
 
 Leer en este orden:
-1. Este archivo
-2. `spec/STATE.md`
-3. `ground-truth/REPORT.md` - diagnostico actual (del run sin fixes finales)
+1. `spec/DECISIONS.md` - Decisiones ya tomadas
+2. `spec/PLAN.md` - Plan de las 3 fases (todas completadas)
+3. `spec/STATE.md` - Estado completo con tareas pendientes
+4. Este archivo
 
-**Continuar desde:** Re-correr pipeline completo para medir impacto de fixes finales:
+**Continuar desde:**
+1. **Test de regression** - Probar 3-5 empresas en produccion para verificar que no se rompio nada
+2. **Cold outreach message** - Refinar drafts en HANDOFF.md
+3. **Mejorar nombres de productos Wix** - Filtrar "Proyecto N" y "Detalle N" del garbage filter
+
+## Dev Server
 ```bash
-npm run dev  # Terminal 1
-npx tsx scripts/run-full-pipeline.ts --skip-ground-truth  # Terminal 2
+cd /Users/joaquingonzalez/Documents/dev/constructor-ai-simulator
+npm run dev  # localhost:3000
 ```
 
-Despues del run:
-1. Comparar scores con run anterior (esperado ~50-55%)
-2. Si <70%, investigar empresas problematicas individualmente
-3. Considerar mejorar fuzzy matching en `scripts/diagnosis.ts` (Arcohouse, Mini Casas tienen naming mismatch)
-4. Considerar si Wellmod (38 GT models) es un outlier que deberia excluirse del promedio
-
-**Meta:** Score promedio >70%
+## Test Commands
+```bash
+npm run agent-test -- --company "ViBert"     # Test 1 empresa
+npm run agent-test -- --fase2                 # Test 20 empresas fase2
+npm run agent-test                            # Test todas
+```

@@ -1,0 +1,64 @@
+=== LA CASA MIA ===
+URL: https://lacasamia.com.ar/
+Session: bddb1a9e-185b-4823-b851-f8f674978c33
+Date: 2026-02-08 15:51:56
+Session creation: 34.3s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (6.2s): Somos Constructora La Casa Mía, una empresa de Córdoba con más de 15 años dedicada a hacer viviendas prefabricadas de calidad, en sistema de construcción en seco (steel frame y wood frame). Diseñamos y fabricamos Viviendas Americanas, Viviendas Minimalistas, Viviendas Premium y Cabañas prefabricadas, y también hacemos obras llave en mano hasta 80 km de Córdoba capital.  
+
+Trabajamos con el concepto de “viviendas low cost” pero con materiales de primera, entregas rápidas (30/60 días) y posibilidad de financiación.  
+Para orientarte mejor, ¿qué tipo de Viviendas, Cabañas, Casas estás buscando?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (3.7s): Ofrecemos principalmente viviendas prefabricadas en construcción en seco (steel frame y wood frame):  
+- **Viviendas Americanas** (por ejemplo: Casa Americana de 54m2, 60m2, 73m2, 78m2, 84m2, Casa Americana DE 98M2, Casa Americana Rosa 136m2).  
+- **Viviendas Minimalistas** (Casa Minimalista de 60m2, 72m2, 73m2, 78m2, 98m2).  
+- **Viviendas Premium** (Casa Premium Base de 92m2, 93m2 y 107m2; Casa Premium Classic de 122m2, 138m2, 146m2; Casa Premium de 160m2; Dúplex Premium de 242m2).  
+- **Cabañas prefabricadas** (Cabaña De 45M2, Cabaña de 60m2, CABAÑA DE 78M2).  
+
+En servicios, hacemos **fabricación e instalación de las viviendas**, construcciones en **steel frame/wood frame**, asesoramiento técnico, opción de **obra llave en mano** (hasta 80 km de Córdoba capital) y **financiación**.  
+Para ayudarte mejor a elegir, ¿qué tipo de Viviendas, Cabañas, Casas estás buscando?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (3.5s): Tenemos un catálogo bastante amplio, con más de **20 modelos** entre Viviendas Americanas, Minimalistas, Premium y Cabañas, además de variantes de planos (MdA, MdM, MdP).  
+Por darte una idea concreta, en la web hoy podés encontrar: **7 modelos de Viviendas Americanas**, **5 modelos de Viviendas Minimalistas**, **9 modelos de Viviendas Premium** y **3 modelos de Cabañas** listados, más opciones especiales como el **Dúplex Premium de 242m2** y la **Casa Premium de 160m2**.  
+
+Si me contás cuántos m2 o cuántos dormitorios necesitan, te filtro solo los modelos que te sirven.
+
+USUARIO: Contame sobre 1. Prefabricada Modelo Minimalista
+AGENTE (4.8s): La **Prefabricada Modelo Minimalista** que ves como opción 1 del buscador corresponde a nuestra línea de **Viviendas Minimalistas**, y en este caso está pensada en torno a los **42 m²** (similar a la Vivienda Minimalista de 42m2 + cochera/galería que mostramos en entregas). Es una casa compacta, ideal como primera vivienda o casa de fin de semana, en sistema de construcción en seco con estructura de wood frame/steel frame, paredes con placa cementicia exterior y durlock interior, aislación térmica y cielorraso de machimbre de pino.  
+
+Incluye los tendidos de **instalación de gas, agua fría/caliente y eléctrica (cañerías y cajas, sin cableado)**, más las bonificaciones típicas de la línea: juego de sanitarios, griferías, mochila, rejas y picaportes/cerraduras, y este mes se bonifica **látex interior 20 L + impregnante 4 L para madera**.  
+Para afinar mejor: ¿la estás pensando como vivienda permanente o como casa de fin de semana, y cuántos dormitorios te gustaría tener?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (4.1s): Para 2 dormitorios tenés varias opciones en nuestro catálogo, por ejemplo:  
+- **Cabaña de 60m2**: $ 16.000.000 (oferta).  
+- **Casa Americana de 60m2**: $ 14.900.000 (oferta).  
+- **Casa Minimalista de 60m2**: $ 16.000.000 (oferta).  
+- **Casa Premium Base de 92m2 / 93m2**: $ 28.500.000 (cada una, en oferta).  
+
+Los valores varían según metros, cochera/galería y terminaciones. Para ajustarnos bien a vos, ¿en qué zona tenés o vas a tener el terreno y qué presupuesto aproximado manejás?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (7.0s): Trabajamos con un sistema constructivo en seco (wood frame / steel frame) y materiales de primera, pensado para ser **durable y apto para vivienda permanente**, respetando normas de seguridad, durabilidad y confort.  
+
+En la web no figura detallado el plazo exacto de garantía por escrito, pero sí que **somos fabricantes**, con más de **15 años de trayectoria** y obras en todo el país, y que el equipo técnico (con Rubén Cires, M.M.O.) supervisa cada vivienda.  
+
+No tengo el detalle fino de años de garantía cargado acá; para que te pasen por escrito plazos y condiciones exactas, te sugiero consultarlo directo por WhatsApp.  
+Mientras tanto, ¿qué tipo de Viviendas, Cabañas, Casas estás evaluando (Americana, Minimalista, Premium o Cabaña)?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (4.5s): Te paso los contactos directos de la constructora:  
+
+- Asesores comerciales (WhatsApp): **351 815-6645**, **351 232-0240**, **351 814-6178**  
+- Teléfono fijo (horario comercial): **351 727-1822**  
+
+Si querés, contame qué estás buscando y te digo qué modelo (Americana, Minimalista, Premium o Cabaña) te conviene antes de que los llames.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 1
+Tiempo promedio: 4.8s

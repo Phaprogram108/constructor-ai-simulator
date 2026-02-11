@@ -1,0 +1,69 @@
+=== VIVIENDAS APOLO ===
+URL: https://viviendasapolo.com.ar/
+Session: f3b2e96e-d619-4c29-80df-edc2c75f799f
+Date: 2026-02-08 15:50:34
+Session creation: 32.8s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (9.6s): Somos Viviendas Apolo, una empresa de Córdoba dedicada a la construcción y venta de casas y cabañas prefabricadas en hormigón premoldeado en toda Argentina. Hacemos Viviendas Industrializadas, Viviendas Minimalistas, cabañas y complejos turísticos, obradores, depósitos, oficinas y también construcciones en terraza, con entrega rápida y opciones de financiación.  
+
+Trabajamos con sistema constructivo industrializado (paredes con fibrocemento y durlock, techo de chapa sincalum, aislaciones, instalaciones sanitaria y eléctrica preparadas) y modelos estándar como Vivienda Industrializada 25m², 40m², 48m² y Minimalistas 23m², 34m² y 68m², además de diseños a medida.  
+Para orientarte mejor, ¿qué tipo de modelos estás buscando?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (3.6s): Ofrecemos principalmente viviendas prefabricadas en hormigón premoldeado: Viviendas Industrializadas (25m², 40m², 48m², entre otras) y Viviendas Minimalistas (23m², 34m², 68m²), con 1, 2 o 3 dormitorios, algunas con galería y en varios diseños de planos.  
+
+Además construimos cabañas y complejos turísticos, obradores, depósitos, pañoles, oficinas y ampliaciones en terraza, siempre con sistema industrializado, aislaciones, instalaciones sanitaria y eléctrica preparadas y accesorios opcionales. También contamos con planes de financiación y entregas a todo el país.  
+Para ayudarte mejor, ¿ya definiste si buscás vivienda familiar, cabaña o un obrador?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (4.3s): Tenemos varios tipos de modelos, tanto estándar como a medida. Dentro de las líneas principales, hoy contamos con:
+
+- **Viviendas Industrializadas**:  
+  - Vivienda Industrializada 25m² (1 dormitorio, con base de hormigón incluida).  
+  - Vivienda Industrializada 40m² (2 dormitorios, incluye accesorios).  
+  - Vivienda Industrializada 48m² (2 dormitorios con galería, incluye accesorios).
+
+- **Viviendas Minimalistas**:  
+  - Vivienda Minimalista 23m² (1 dormitorio, con base de hormigón incluida).  
+  - Vivienda Minimalista 34m² (2 dormitorios, incluye accesorios).  
+  - Vivienda Minimalista 68m² (3 dormitorios con galería, incluye accesorios).
+
+Además, tenemos muchos **planos de modelos numerados** (Modelo 20, 23, 25, 26, 30, 34, 36, 40C, 42A, 42B, 50, 68B) y hacemos **casas, cabañas y obradores a medida**.  
+Para afinar, ¿qué superficie o cantidad de dormitorios tenés en mente?
+
+USUARIO: Contame sobre 1. Vivienda Industrializada
+AGENTE (4.9s): La **Vivienda Industrializada** es nuestra línea de casas prefabricadas en sistema industrializado, pensadas como la forma más económica y rápida de acceder a tu vivienda. Se construyen con paredes exteriores de fibrocemento y revestimiento interior en durlock/machimbre, techo de chapa sincalum trapezoidal, cielorraso de machimbre, ventanas de aluminio, puerta de chapa doble inyectada e instalaciones sanitaria y eléctrica preparadas (cañerías colocadas, sin cableado).  
+
+Dentro de esta línea tenés, por ejemplo:  
+- **Vivienda Industrializada 25m²**: 1 dormitorio, incluye base de hormigón, accesorios como aislantes, muebles de cocina, sanitarios, cerámicos, rejas y pintura exterior.  
+- **Vivienda Industrializada 40m²**: 2 dormitorios, incluye accesorios completos.  
+- **Vivienda Industrializada 48m²**: 2 dormitorios con galería, también con accesorios incluidos.  
+
+Si querés, te detallo uno de estos modelos en particular (25, 40 o 48m²) según lo que más se acerque a lo que necesitás. ¿Cuál te interesa?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (11.6s): Buenísimo, con esto te amplío un poco más.  
+
+La **Vivienda Industrializada** es nuestra línea de casas prefabricadas pensadas como la forma más económica y rápida de acceder a tu vivienda propia: construimos en sistema industrializado con paneles, estructura liviana y terminaciones completas, y dentro de esta línea tenés varios modelos (como las Viviendas Industrializadas 25m², 40m² y 48m²) y otros diseños adicionales cuyos ejemplos podés ver en la galería de fotos.  
+Si querés avanzar con una Vivienda Industrializada, te puedo orientar entre los modelos 25m² (1 dormitorio), 40m² (2 dormitorios) o 48m² (2 dormitorios con galería) según cuántos ambientes necesites. ¿Qué cantidad de dormitorios estás buscando?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (4.4s): En las fichas y especificaciones técnicas que tengo cargadas no figura detallado el plazo de garantía (años ni condiciones puntuales). Sí se aclara que trabajamos con materiales de primera calidad, bajo normas IRAM en chapas e instalaciones, y con sistema constructivo industrializado pensado para larga durabilidad (fibrocemento, durlock, estructuras de madera tratada, instalaciones sanitarias en termofusión, etc.).  
+
+No tengo la información exacta de la garantía por escrito acá; te sugiero consultarlo por WhatsApp al 351-6858968 así te pasan el plazo y cobertura específica según el modelo. Mientras tanto, ¿ya tenés definido si te interesa una Vivienda Industrializada 40m² o una Minimalista 34m² (ambas de 2 dormitorios)?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.8s): Te paso los datos de contacto directos de Viviendas Apolo:  
+
+- Teléfonos fijos: **(0351) 423-9263** y **(0351) 899-2503**  
+- WhatsApp: **351-6858968**  
+- Email: **info@viviendasapolo.com.ar**  
+
+Si querés, me contás qué modelo te interesa (por ejemplo, Vivienda Industrializada 40m² o Vivienda Minimalista 34m²) y te digo qué incluiría así ya vas con una idea clara cuando escribas al WhatsApp.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 1
+Tiempo promedio: 5.9s

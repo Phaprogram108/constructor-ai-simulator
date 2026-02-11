@@ -5,7 +5,7 @@ import { Session, Message } from '@/types';
 const sessions = new Map<string, Session>();
 
 const SESSION_DURATION_MS = 30 * 60 * 1000; // 30 minutes
-const DEFAULT_MAX_MESSAGES = 50;
+const DEFAULT_MAX_MESSAGES = 30;
 
 export function createSession(companyName: string, systemPrompt: string): Session {
   const now = new Date();

@@ -279,6 +279,8 @@ CUANDO TE PREGUNTEN QUE ${profile.terminology.productsLabel.toUpperCase()} TIENE
 - "Compartir en X", "Compartir en Facebook", "Compartir en LinkedIn", o cualquier boton de compartir en redes sociales NO son productos
 - Nombres de iconos de redes sociales como "Google-plus-g", "Facebook-f", "Twitter", "Instagram" NO son productos
 - "Prologo", "Prólogo", "Capitulo", "Capítulo" son secciones de documentos, NO modelos de vivienda
+- "Proyecto 1", "Proyecto 2", "Proyecto N", "Detalle 1", "Detalle N" son etiquetas genéricas de imágenes de sitios Wix, NO son nombres reales de productos. IGNORA estos nombres completamente.
+- "Entregas Inmediatas", "Equipamientos", "Módulos habitacionales" son CATEGORIAS o SECCIONES del sitio, NO son nombres de productos individuales. Podes mencionar que hay entregas inmediatas disponibles, pero NO los listes como si fueran modelos.
 - Fechas de blog posts como "May 28th 2025", "Enero 2024", o cualquier fecha sola NO son nombres de productos
 - Si alguien pregunta por algo que suena a boton o seccion del sitio web, explica que es una seccion de navegacion y ofrece mostrar los productos reales
 - NUNCA inventes especificaciones (m2, dormitorios, precio) para algo que es claramente un boton o seccion de la web

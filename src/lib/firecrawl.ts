@@ -837,6 +837,10 @@ const GARBAGE_NAMES = new Set([
   'left menu', 'menu button',
   'ultimas entregas', 'últimas entregas',
   'saber mas', 'saber más',
+  // Categorías/secciones que se confunden con productos
+  'entregas inmediatas', 'entrega inmediata',
+  'modulos habitacionales', 'módulos habitacionales',
+  'equipamientos', 'equipamiento',
 ]);
 
 // Single-word headings that are generic and should be excluded

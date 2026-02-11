@@ -10,29 +10,25 @@ type Bucket = keyof typeof RATE_LIMITS;
 
 const requestCounts = new Map<string, { count: number; resetAt: number }>();
 
-// Periodic cleanup every 5 minutes to prevent memory leak
-setInterval(() => {
-  const now = Date.now();
-  for (const [key, record] of requestCounts) {
-    if (now > record.resetAt) {
-      requestCounts.delete(key);
-    }
-  }
-}, 5 * 60 * 1000);
+let checksCounter = 0;
 
 export function checkRateLimit(identifier: string, bucket: Bucket = 'create'): { allowed: boolean; remaining: number } {
   const { windowMs, max } = RATE_LIMITS[bucket];
   const key = `${bucket}:${identifier}`;
   const now = Date.now();
-  const record = requestCounts.get(key);
 
-  if (record && now > record.resetAt) {
-    requestCounts.delete(key);
+  checksCounter++;
+  if (checksCounter % 100 === 0) {
+    for (const [k, record] of requestCounts) {
+      if (now > record.resetAt) {
+        requestCounts.delete(k);
+      }
+    }
   }
 
-  const currentRecord = requestCounts.get(key);
+  const record = requestCounts.get(key);
 
-  if (!currentRecord) {
+  if (!record || now > record.resetAt) {
     requestCounts.set(key, {
       count: 1,
       resetAt: now + windowMs,
@@ -40,12 +36,12 @@ export function checkRateLimit(identifier: string, bucket: Bucket = 'create'): {
     return { allowed: true, remaining: max - 1 };
   }
 
-  if (currentRecord.count >= max) {
+  if (record.count >= max) {
     return { allowed: false, remaining: 0 };
   }
 
-  currentRecord.count++;
-  return { allowed: true, remaining: max - currentRecord.count };
+  record.count++;
+  return { allowed: true, remaining: max - record.count };
 }
 
 export function getClientIdentifier(request: Request): string {

@@ -3,7 +3,7 @@ import { scrapeWebsite, SCRAPING_FAILED_MARKER } from '@/lib/scraper';
 import { analyzePdfWithVision } from '@/lib/pdf-extractor';
 import { generateSystemPromptWithCatalog, getWelcomeMessage } from '@/lib/prompt-generator';
 import { createSession, addMessage } from '@/lib/session-manager';
-import { checkRateLimit, getClientIdentifier } from '@/lib/rate-limiter';
+import { rateLimit } from '@/lib/rate-limiter';
 import { createEnhancedLog, appendEnhancedMessage, ScrapingMetadata } from '@/lib/conversation-logger';
 import { CreateSessionRequest } from '@/types';
 import { v4 as uuidv4 } from 'uuid';
@@ -53,15 +53,8 @@ async function validateUrlReachable(url: string): Promise<{ ok: boolean; error?:
 export async function POST(request: NextRequest) {
   try {
     // Rate limiting
-    const clientId = getClientIdentifier(request);
-    const rateLimitResult = checkRateLimit(clientId);
-
-    if (!rateLimitResult.allowed) {
-      return NextResponse.json(
-        { error: 'Demasiadas solicitudes. Intentá de nuevo en un minuto.' },
-        { status: 429 }
-      );
-    }
+    const rateLimitResponse = rateLimit(request, 'create');
+    if (rateLimitResponse) return rateLimitResponse;
 
     const body: CreateSessionRequest = await request.json();
     const { websiteUrl, pdfUrl } = body;

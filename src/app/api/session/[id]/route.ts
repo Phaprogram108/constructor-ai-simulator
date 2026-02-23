@@ -1,11 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { getSession, getMessagesRemaining, getSessionMessages } from '@/lib/session-manager';
+import { rateLimit } from '@/lib/rate-limiter';
 import { SessionInfo } from '@/types';
 
 export async function GET(
   request: NextRequest,
   { params }: { params: Promise<{ id: string }> }
 ) {
+  const rateLimitResponse = rateLimit(request, 'session');
+  if (rateLimitResponse) return rateLimitResponse;
+
   try {
     const { id } = await params;
 

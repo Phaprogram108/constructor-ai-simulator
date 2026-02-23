@@ -241,7 +241,6 @@ export default function SimulatorForm() {
           content: data.welcomeMessage,
           timestamp: new Date(),
         }] : [],
-        systemPrompt: data.systemPrompt,
       };
 
       console.log('[SimulatorForm] Saving session data:', {
@@ -249,7 +248,6 @@ export default function SimulatorForm() {
         companyName: data.companyName,
         messagesRemaining: data.messagesRemaining,
         welcomeMessage: data.welcomeMessage?.slice(0, 100),
-        systemPromptLength: data.systemPrompt?.length,
       });
 
       localStorage.setItem(`session-${data.sessionId}`, JSON.stringify(sessionData));

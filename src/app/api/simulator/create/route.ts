@@ -198,7 +198,8 @@ export async function POST(request: NextRequest) {
       websiteUrl,
       welcomeMessage,
       messagesRemaining: session.maxMessages,
-      systemPrompt, // Include for client-side chat
+      // Only expose systemPrompt in development for test scripts
+      ...(process.env.NODE_ENV === 'development' && { systemPrompt: session.systemPrompt }),
     });
   } catch (error) {
     console.error('[Create] Error:', error);

@@ -1,10 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
 import OpenAI from 'openai';
 import { appendEnhancedMessage } from '@/lib/conversation-logger';
+import { getSession } from '@/lib/session-manager';
 import { Message, ScrapedContent } from '@/types';
 import { validateResponse, ValidationResult } from '@/lib/response-validator';
 import { ExtractedCatalog } from '@/lib/pdf-extractor';
-import { rateLimit } from '@/lib/rate-limiter';
+import { rateLimit, checkWeeklyChatLimit, getClientFingerprint } from '@/lib/rate-limiter';
 
 // Inicialización lazy para evitar errores durante el build
 let openaiInstance: OpenAI | null = null;
@@ -26,7 +27,6 @@ interface ChatMessage {
 interface ChatRequestBody {
   sessionId: string;
   message: string;
-  systemPrompt: string;
   conversationHistory: ChatMessage[];
   companyName?: string;
   websiteUrl?: string;
@@ -52,8 +52,21 @@ export async function POST(request: NextRequest) {
     const rateLimitResponse = rateLimit(request, 'chat');
     if (rateLimitResponse) return rateLimitResponse;
 
+    // Weekly chat limit: 20 messages per IP per week
+    const fingerprint = getClientFingerprint(request);
+    const weeklyCheck = checkWeeklyChatLimit(fingerprint);
+    if (!weeklyCheck.allowed) {
+      return NextResponse.json(
+        {
+          error: 'Has alcanzado el límite de testeo gratuito semanal (20 mensajes). Si querés un agente para tu empresa, contactanos.',
+          code: 'CHAT_LIMIT_REACHED',
+        },
+        { status: 429 }
+      );
+    }
+
     const body: ChatRequestBody = await request.json();
-    const { sessionId, message, systemPrompt, conversationHistory, scrapedContent, catalog, websiteUrl } = body;
+    const { sessionId, message, conversationHistory, scrapedContent, catalog, websiteUrl } = body;
 
     // Validate request
     if (!message) {
@@ -63,12 +76,23 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    if (!systemPrompt) {
+    if (!sessionId) {
       return NextResponse.json(
         { error: 'Sesión inválida. Creá una nueva sesión.' },
         { status: 400 }
       );
     }
+
+    // Retrieve systemPrompt from server-side session (never trust client)
+    const session = getSession(sessionId);
+    if (!session) {
+      return NextResponse.json(
+        { error: 'Sesión expirada o inválida. Creá una nueva sesión.' },
+        { status: 401 }
+      );
+    }
+
+    const systemPrompt = session.systemPrompt;
 
     if (message.length > 1000) {
       return NextResponse.json(

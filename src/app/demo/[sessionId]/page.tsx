@@ -13,7 +13,6 @@ export default function DemoPage({
   const router = useRouter();
   const [session, setSession] = useState<SessionInfo | null>(null);
   const [messages, setMessages] = useState<Message[]>([]);
-  const [systemPrompt, setSystemPrompt] = useState<string>('');
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState('');
 
@@ -29,12 +28,10 @@ export default function DemoPage({
           companyName: data.session?.companyName,
           messagesRemaining: data.session?.messagesRemaining,
           messagesCount: data.messages?.length,
-          systemPromptLength: data.systemPrompt?.length,
           firstMessage: data.messages?.[0]?.content?.slice(0, 100),
         });
         setSession(data.session);
         setMessages(data.messages || []);
-        setSystemPrompt(data.systemPrompt || '');
         setLoading(false);
       } catch (e) {
         console.error('[DemoPage] Error parsing session:', e);
@@ -86,7 +83,6 @@ export default function DemoPage({
       sessionId={params.sessionId}
       initialSession={session}
       initialMessages={messages}
-      systemPrompt={systemPrompt}
     />
   );
 }

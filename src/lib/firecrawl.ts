@@ -191,12 +191,29 @@ function extractSocialLinks(markdown: string): SocialLinks {
 
 /**
  * Extrae WhatsApp mejorado con validaciones robustas
+ * Returns a phone number string (e.g. "5491112345678") or a wa.link URL
+ * when a shortlink is found but no phone number can be extracted.
  */
 function extractWhatsAppImproved(markdown: string): string | undefined {
-  // Buscar links wa.me directos
-  const waLinkMatches = markdown.matchAll(/(?:wa\.me\/\d+|whatsapp\.com\/send\?phone=\d+|api\.whatsapp\.com[^"'\s]*phone=\d+)/gi);
+  let waLinkFallback: string | undefined;
+
+  // Buscar links wa.me, wa.link, api.whatsapp.com y whatsapp.com/send
+  // Handles markdown links [text](https://wa.me/NNN), href="...", and plain URLs
+  const waLinkPattern = /(?:https?:\/\/)?(?:wa\.me\/\d+|wa\.link\/[a-zA-Z0-9]+|whatsapp\.com\/send\?phone=\d+|api\.whatsapp\.com[^"'\s)\]]*phone=\d+)/gi;
+  const waLinkMatches = markdown.matchAll(waLinkPattern);
   for (const match of waLinkMatches) {
-    const extracted = extractFromWaUrl(match[0]);
+    const url = match[0];
+    // wa.link shortlinks don't carry the number directly
+    // Store as fallback in case no numeric number is found
+    if (/wa\.link\//i.test(url)) {
+      const fullUrl = url.startsWith('http') ? url : `https://${url}`;
+      if (!waLinkFallback) {
+        waLinkFallback = fullUrl;
+        console.log(`[Firecrawl] WhatsApp wa.link shortlink found: ${fullUrl}`);
+      }
+      continue;
+    }
+    const extracted = extractFromWaUrl(url);
     if (extracted && extracted.isValid) {
       console.log(`[Firecrawl] WhatsApp validado: ${extracted.cleanNumber} (${extracted.country})`);
       return extracted.cleanNumber;
@@ -204,37 +221,49 @@ function extractWhatsAppImproved(markdown: string): string | undefined {
   }
 
   // Si no encontramos en links, buscar en texto cerca de keywords
+  // Uses exec() to properly capture groups with /gi patterns
   const waTextPatterns = [
-    /whatsapp[:\s]*(\+?[\d\s\-()]{10,20})/gi,
-    /wsp[:\s]*(\+?[\d\s\-()]{10,20})/gi,
-    /wa[:\s]*(\+?[\d\s\-()]{10,20})/gi,
+    /whatsapp[:\s]+(\+?[\d\s\-().]{10,20})/gi,
+    /wsp[:\s]+(\+?[\d\s\-().]{10,20})/gi,
+    /\bwa[:\s]+(\+?[\d\s\-().]{10,20})/gi,
   ];
 
   for (const pattern of waTextPatterns) {
     pattern.lastIndex = 0;
-    const match = markdown.match(pattern);
-    if (match && match[1]) {
-      const extracted = extractPhoneFromText(match[1]);
-      if (extracted && extracted.isValid) {
-        console.log(`[Firecrawl] WhatsApp de texto: ${extracted.cleanNumber} (${extracted.country})`);
-        return extracted.cleanNumber;
+    let match;
+    while ((match = pattern.exec(markdown)) !== null) {
+      if (match[1]) {
+        const extracted = extractPhoneFromText(match[1]);
+        if (extracted && extracted.isValid) {
+          console.log(`[Firecrawl] WhatsApp de texto: ${extracted.cleanNumber} (${extracted.country})`);
+          return extracted.cleanNumber;
+        }
       }
     }
+  }
+
+  // Use wa.link as last resort (still a valid WhatsApp entry point)
+  if (waLinkFallback) {
+    console.log(`[Firecrawl] WhatsApp usando wa.link fallback: ${waLinkFallback}`);
+    return waLinkFallback;
   }
 
   return undefined;
 }
 
 /**
- * Extracts a WhatsApp phone number from wa.me or api.whatsapp.com links
- * found anywhere in the markdown text. Uses the existing validator to
- * ensure the number is real (not a placeholder or suspicious sequence).
+ * Extracts a WhatsApp phone number from wa.me, api.whatsapp.com, or
+ * wa.link links found anywhere in the markdown text. Used as final sweep.
+ * Returns a phone number or a wa.link URL if only shortlink is found.
  */
 function extractWhatsAppFromMarkdown(markdown: string): string | null {
   const patterns = [
     /wa\.me\/(\d{10,15})/gi,
     /api\.whatsapp\.com\/send\?phone=(\d{10,15})/gi,
     /whatsapp\.com\/send\?phone=(\d{10,15})/gi,
+    // href attributes with wa.me embedded in markdown links or raw HTML
+    /href=["']https?:\/\/wa\.me\/(\d{10,15})/gi,
+    /href=["']https?:\/\/api\.whatsapp\.com\/send\?phone=(\d{10,15})/gi,
   ];
 
   for (const pattern of patterns) {
@@ -247,6 +276,13 @@ function extractWhatsAppFromMarkdown(markdown: string): string | null {
       }
     }
   }
+
+  // Fallback: look for wa.link shortlinks when no phone number found
+  const waLinkMatch = markdown.match(/https?:\/\/wa\.link\/([a-zA-Z0-9]+)/i);
+  if (waLinkMatch) {
+    return waLinkMatch[0];
+  }
+
   return null;
 }
 
@@ -841,6 +877,16 @@ const GARBAGE_NAMES = new Set([
   'entregas inmediatas', 'entrega inmediata',
   'modulos habitacionales', 'módulos habitacionales',
   'equipamientos', 'equipamiento',
+  // Wix image alt-text that gets extracted as product names
+  'imagen', 'foto', 'fotos', 'imagen principal', 'foto principal',
+  'galeria de fotos', 'galería de fotos', 'ver galeria', 'ver galería',
+  // Category labels in Wix product galleries
+  'todos los productos', 'todos los modelos', 'todas las casas',
+  'ver catalogo', 'ver catálogo', 'descargar catalogo', 'descargar catálogo',
+  // Generic Wix section names
+  'nuestro trabajo', 'nuestros trabajos', 'lo que hacemos', 'como trabajamos',
+  'cómo trabajamos', 'nuestro proceso', 'el proceso',
+  'por que elegirnos', '¿por que elegirnos?', 'por qué elegirnos', '¿por qué elegirnos?',
 ]);
 
 // Single-word headings that are generic and should be excluded
@@ -854,6 +900,12 @@ const GENERIC_SINGLE_WORDS = new Set([
   'residencial', 'turistico', 'turístico', 'corporativo', 'comercial',
   'chat', 'entregas', 'desarrollistas', 'franquicias', 'dormis',
   'cabin', 'seguinos', 'confort',
+  // Wix category headings that slip through as "products"
+  'viviendas', 'construcciones', 'obras', 'desarrollos', 'emprendimientos',
+  'unidades', 'tipologia', 'propiedades', 'inmuebles',
+  // Navigation/UI elements common in Wix
+  'menu', 'navegacion', 'navegación', 'whatsapp', 'instagram', 'facebook',
+  'contactar', 'llamar', 'cotizar',
 ]);
 
 /**
@@ -889,8 +941,14 @@ function validateProductName(raw: string): string | null {
   // Skip names that are just numbers
   if (/^\d+$/.test(name)) return null;
 
-  // Wix alt-text patterns: "Proyecto 1", "Detalle 3", etc.
-  if (/^(proyecto|detalle)\s+\d+$/i.test(name)) return null;
+  // Wix alt-text patterns: "Proyecto 1", "Detalle 3", "Imagen 2", "Foto 5", etc.
+  if (/^(proyecto|detalle|imagen|foto|picture|image|photo|banner|slide|slider|thumbnail|miniatura|portada|cover|fondo|background)\s+\d+$/i.test(name)) return null;
+
+  // Wix image alt-text descriptions: "Exterior de la casa", "Vista frontal", etc.
+  if (/^(exterior|interior|vista|fachada|frente|lateral|trasero|trasera|planta|render|detalle|foto)\s+(de|del|la|el|los|las)\s/i.test(name)) return null;
+
+  // Wix gallery captions that are just descriptions without a real product name
+  if (/^(imagen de|foto de|picture of|photo of)\s/i.test(name)) return null;
 
   // Branch/office names: "Sucursal Cañuelas", "Sucursal CABA"
   if (/^sucursal\s/i.test(name)) return null;

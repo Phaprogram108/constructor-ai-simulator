@@ -1,9 +1,9 @@
 {
   "company": "ViBert",
   "url": "https://vibert.com.ar",
-  "testedAt": "2026-02-06T15:47:40.977Z",
-  "sessionId": "f02241a5-7f94-4911-8789-c76a987ead2e",
-  "systemPromptLength": 21043,
+  "testedAt": "2026-02-11T18:08:28.445Z",
+  "sessionId": "78b14550-df3e-46c3-82cf-b86729773a74",
+  "systemPromptLength": 160999,
   "systemPromptModelsFound": [
     "Casa Sara",
     "Casa Daniela",
@@ -18,149 +18,214 @@
     "Quincho S",
     "Quincho M",
     "Quincho L",
-    "Quincho A",
-    "Casas Modulares"
+    "Quincho A"
   ],
   "systemPromptWhatsApp": "+5493425081468",
-  "systemPromptType": "de modelos estas buscando?\"",
+  "systemPromptType": "de Casas estas buscando?\"",
   "conversations": [
     {
       "question": "¿Qué es tu empresa y qué hacen?",
       "questionType": "identity",
-      "response": "ViBert es una empresa de Santa Fe referente en la fabricación e industrialización de casas modulares con paneles premoldeados de hormigón. Construimos viviendas y quinchos con un sistema de hormigón armado que es muy sólido, eficiente y sostenible, pensado para durar y cumplir con altos estándares de seguridad, confort y eficiencia energética.  \n\nTrabajamos con modelos predefinidos (como Casa Sara, Daniela, Justina, Dora, Micaela, Estefanía, Carmela, Selene, Valeria, María y quinchos S, M, L y A) y también proyectos a medida, con posibilidad de financiación. ¿Qué tipo de modelos estás buscando?",
-      "mentionedModels": [
-        "Casa Sara",
-        "Casas Modulares"
-      ],
+      "response": "ViBert es una empresa de Santa Fe con más de 70 años de trayectoria, especializada en casas modulares de hormigón premoldeado. Diseñamos, fabricamos en planta y montamos viviendas completas (llave en mano u obra gris), quinchos y desarrollos más grandes, usando paneles de hormigón de alta eficiencia energética y gran durabilidad.  \n\nPara orientarte mejor: ¿qué tipo de casas estás buscando, una vivienda familiar, una casa de fin de semana o algo como un quincho?",
+      "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 6127
+      "responseTimeMs": 7480
     },
     {
       "question": "¿Qué productos o servicios ofrecen?",
       "questionType": "offering",
-      "response": "Ofrecemos principalmente la construcción de casas modulares en paneles premoldeados de hormigón y quinchos también en hormigón, con un sistema industrializado muy rápido y duradero.  \n\nTenemos modelos de casas como Sara, Daniela, Justina, Dora, Micaela, Estefanía, Carmela, Selene, Valeria y María, además de quinchos S, M, L y A, y también desarrollamos casas a medida y grandes desarrollos. Trabajamos en la zona de Ruta Nacional 19, km 4, San Agustín (Santa Fe) y contamos con opciones de financiación. ¿Qué tipo de modelos estás buscando?",
-      "mentionedModels": [
-        "Casas Modulares"
-      ],
+      "response": "Ofrecemos principalmente casas modulares de hormigón premoldeado y quinchos, con modelos de catálogo y también proyectos a medida. Dentro del catálogo tenés casas como Sara, Dora, Carmela, Daniela, Micaela, Estefanía, Selene, Justina, Valeria y María, y quinchos S, M, L y A, además de casas de campo, dúplex y grandes desarrollos. También brindamos dos modalidades de obra (obra gris y llave en mano) y financiación, construyendo desde nuestras plantas en Ruta 19 km 4 y San Agustín, Santa Fe.  \n\nYa que hay varias opciones, ¿ya tenés terreno? Así veo qué modelos se adaptan mejor a vos.",
+      "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 4561
+      "responseTimeMs": 3426
     },
     {
       "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
       "questionType": "contact",
-      "response": "Podés contactarnos por WhatsApp o teléfono al +54 9 342 508 1468.  \nTambién, si preferís por mail, es ventas@vibert.com.ar. ¿Querés que te ayude antes a definir qué modelo te conviene así ya escribís con una idea más clara?",
+      "response": "Te podés contactar directo con nosotros por estos medios:  \n- Tel / WhatsApp ViBert: +54 9 342 508 1468  \n- Email: ventas@vibert.com.ar  \n\nSi querés, decime y le pido a un asesor que te escriba por WhatsApp así avanzan con tu proyecto.",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 2083
+      "responseTimeMs": 2622
     },
     {
       "question": "¿Cuántos modelos de casas ofrecen?",
       "questionType": "product_count",
-      "response": "En casas ofrecemos 10 modelos estándar: Sara, Daniela, Justina, Dora, Micaela, Estefanía, Carmela, Selene, Valeria y María, todos en paneles premoldeados de hormigón.  \nAdemás, tenemos 4 modelos de quinchos (S, M, L y A) y la opción de casas modulares a medida si necesitás algo distinto.  \n\nPara orientarte mejor, ¿para cuántas personas sería la casa que estás buscando?",
+      "response": "En catálogo estándar de casas de hormigón ofrecemos 10 modelos principales: Casa Sara, Dora, Carmela, Daniela, Micaela, Estefanía, Selene, Justina, Valeria y María. Además, sumamos líneas especiales (casas de campo 1, 2 y 3 dormitorios), casas a medida y dúplex, pero como “casas ViBert” de catálogo son esos 10 modelos.  \n\n¿Te interesa algo más compacto (tipo Sara o Dora) o algo más grande para familia (como Valeria o María)?",
       "mentionedModels": [
-        "Casas Modulares"
+        "Casa Sara"
       ],
       "saidNoInfo": false,
-      "hasSpecificData": false,
-      "responseTimeMs": 2169
+      "hasSpecificData": true,
+      "responseTimeMs": 4555
     },
     {
       "question": "Contame sobre Casa Sara",
       "questionType": "product_specific",
-      "response": "La Casa Sara es uno de nuestros modelos más compactos y funcionales: tiene 65,55 m² totales y está pensada para 2 personas. Incluye estar-comedor integrado, 1 dormitorio, cocina y 1 baño, todo resuelto con paneles premoldeados de hormigón armado, lo que te garantiza una estructura muy sólida, térmicamente eficiente y rápida de construir (nuestro sistema permite tener la casa terminada en unos 120 días aprox.).  \n\nSuele ser ideal como primera vivienda, casa de fin de semana o para parejas sin hijos. ¿Ya tenés terreno? ¿En qué zona sería la construcción?",
+      "response": "Casa Sara es un modelo de 65,55 m² totales, pensado para 2 personas, con estar-comedor integrado, 1 dormitorio, cocina y 1 baño. Tiene una superficie cubierta de 47,50 m² y una amplia galería semicubierta de 36,10 m², ideal si querés vivir cómodo y muy conectado con el exterior/naturaleza.  \n\nSi querés, te comparo Casa Sara con Casa Dora (también para 2 personas) para ver cuál se adapta mejor a cómo pensás usar la casa.",
       "mentionedModels": [
-        "Casa Sara"
+        "Casa Sara",
+        "Casa Dora"
       ],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 2725
+      "responseTimeMs": 2630
     },
     {
       "question": "¿Cuáles son los detalles técnicos de Casa Sara? Superficie, dormitorios, características.",
       "questionType": "product_specs",
-      "response": "La Casa Sara tiene 65,55 m² totales y está diseñada para 2 personas. La distribución incluye: estar-comedor, 1 dormitorio, cocina y 1 baño, todo construido con paneles premoldeados de hormigón armado, lo que le da muy buena solidez estructural, durabilidad y eficiencia térmica.  \n\nEs un modelo compacto pero cómodo, ideal como vivienda principal pequeña o casa de fin de semana. ¿La estás pensando para vivir de forma permanente o como casa de descanso?",
+      "response": "Casa Sara está pensada para 2 personas y se organiza en una planta con: estar-comedor, 1 dormitorio, 1 cocina y 1 baño.  \nEn superficies, tiene 47,50 m² cubiertos y 36,10 m² semicubiertos (galería), lo que da unos 65,55 m² totales aproximadamente. Es un diseño funcional, con espacios amplios y una galería multifuncional que prioriza el contacto con el exterior.  \n\n¿La idea es usarla como vivienda permanente o más como casa de fin de semana?",
       "mentionedModels": [
         "Casa Sara"
       ],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 5719
+      "responseTimeMs": 2686
     },
     {
       "question": "Contame sobre Casa Daniela",
       "questionType": "product_specific",
-      "response": "La Casa Daniela es un modelo pensado para familias de hasta 5 personas, con 79,45 m² totales. La distribución incluye estar-comedor, 2 dormitorios, cocina y 1 baño, todo en paneles premoldeados de hormigón armado, lo que asegura una estructura muy sólida, durable y con buena eficiencia térmica y acústica.  \n\nEs una excelente opción si buscás algo funcional, familiar y con tiempos de obra rápidos (nuestro sistema permite tener la casa en aprox. 120 días). ¿Para cuántas personas estás pensando la vivienda y si ya tenés terreno en alguna zona?",
+      "response": "Casa Daniela es una casa de 79,45 m² totales, pensada para una familia tipo: tiene estar-comedor, 2 dormitorios, cocina y 1 baño, todo en una planta. La superficie cubierta es de 61,15 m² y la semicubierta (galería) de 36,60 m², con un diseño de líneas simples, ambientes espaciosos y una galería amplia en contacto con la naturaleza.  \n\n¿La estás pensando como vivienda principal para cuántas personas aproximadamente?",
       "mentionedModels": [
         "Casa Daniela"
       ],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 3431
+      "responseTimeMs": 2739
     },
     {
       "question": "¿Cuáles son los detalles técnicos de Casa Daniela? Superficie, dormitorios, características.",
       "questionType": "product_specs",
-      "response": "La Casa Daniela tiene 79,45 m² totales y está pensada para hasta 5 personas. La distribución es: estar-comedor, 2 dormitorios, cocina y 1 baño, resuelta con paneles premoldeados de hormigón armado, lo que le da mucha solidez estructural, durabilidad y buena aislación térmica.  \n\nEs un modelo familiar, funcional y de construcción rápida dentro de nuestro sistema modular. ¿La estás pensando como vivienda principal o como ampliación/segunda casa?",
+      "response": "Casa Daniela está pensada para familia tipo, con esta distribución: 1 estar-comedor, 2 dormitorios, 1 cocina y 1 baño, todo en una planta.  \nEn superficies, tiene 79,45 m² totales: 61,15 m² cubiertos y 36,60 m² semicubiertos (galería amplia), con un diseño de líneas simples, ambientes cómodos y muy buena conexión interior–exterior.  \n\n¿En qué zona tenés el terreno? Así te cuento cómo trabajamos el montaje y plazos para ese lugar.",
       "mentionedModels": [
         "Casa Daniela"
       ],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 2047
+      "responseTimeMs": 2981
+    },
+    {
+      "question": "¿Cuál es la diferencia entre Casa Sara y Casa Daniela?",
+      "questionType": "model_comparison",
+      "response": "La principal diferencia es el tamaño y el perfil de uso: Casa Sara es más compacta (65,55 m² totales, 1 dormitorio, ideal para 2 personas) con 47,50 m² cubiertos y una galería muy protagonista para vivir “hacia afuera”. Casa Daniela es más grande (79,45 m² totales, 2 dormitorios, pensada para familia tipo), con 61,15 m² cubiertos y una galería de 36,60 m², priorizando ambientes interiores más amplios y funcionales.  \n\nSi me contás cuántas personas van a vivir y si es vivienda permanente o de fin de semana, te digo cuál de las dos te conviene más.",
+      "mentionedModels": [
+        "Casa Sara",
+        "Casa Daniela"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3535
+    },
+    {
+      "question": "¿Qué modelo me recomendás para una familia de 4 personas?",
+      "questionType": "recommendation",
+      "response": "Para una familia de 4 personas te recomendaría mirar sobre todo:  \n- Casa Carmela (67,78 m² totales, 2 dormitorios, estar-comedor, cocina y baño): muy funcional y compacta, ideal si querés optimizar presupuesto.  \n- Casa Micaela (76,50 m² totales, 2 dormitorios, estar-comedor, cocina y baño): un poco más amplia, con muy buena relación interior–galería.  \n- Casa Estefanía y Casa Selene (alrededor de 82–96 m² totales, 2 dormitorios): más superficie y galerías grandes, pensadas para vivir cómodo y con mucho espacio exterior de uso.  \n\nPara afinar mejor la recomendación, ¿ya tenés terreno? ¿En qué zona está?",
+      "mentionedModels": [
+        "Casa Micaela",
+        "Casa Estefanía",
+        "Casa Carmela",
+        "Casa Selene"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3837
     },
     {
       "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
       "questionType": "process",
-      "response": "Trabajamos con un sistema industrializado: primero hacemos el anteproyecto y el modelo 3D BIM, luego fabricamos en planta los paneles premoldeados de hormigón armado con sus armaduras de acero, los transportamos a obra y allí se montan y ensamblan para formar la estructura completa de la casa. Este proceso reduce mucho los tiempos y errores típicos de la obra húmeda tradicional.  \n\nEl plazo estimado para tener la casa terminada es de aproximadamente 120 días, dependiendo del modelo y condiciones del proyecto. ¿Para cuándo necesitarías tener la vivienda lista?",
+      "response": "Trabajamos con un sistema industrializado en etapas: primero idea y anteproyecto (estudiamos tu terreno y hacemos presupuesto), luego modelado 3D/BIM, producción de los paneles de hormigón en planta, ejecución de la platea de fundación en tu lote, transporte y montaje de los módulos, y finalmente terminaciones y entrega de llaves. El plazo típico para una casa ViBert es de unos 120 días desde el inicio del proceso constructivo, gracias a que los paneles se fabrican en planta y el montaje en obra es muy rápido y limpio.  \n\n¿Para cuándo te gustaría tener la casa lista aproximadamente?",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 3633
+      "responseTimeMs": 9237
     },
     {
       "question": "¿Se pueden personalizar los modelos de casas?",
       "questionType": "customization",
-      "response": "Sí, los modelos se pueden personalizar hasta cierto punto, y además en ViBert hacemos también casas a medida desde cero. Podés partir de una Casa Sara, Daniela, Justina, etc. y adaptar cosas como distribución, ampliaciones o algunos detalles, siempre respetando el sistema de paneles premoldeados de hormigón.  \n\nSi lo que necesitás es algo muy específico, lo trabajamos como “Casas a medida” con anteproyecto y modelado 3D BIM. ¿Qué cambios te gustaría hacer o qué idea tenés en mente para tu casa?",
-      "mentionedModels": [
-        "Casa Sara"
-      ],
+      "response": "Sí, podés personalizar los modelos de catálogo y también hacer una casa 100% a medida. En las casas de catálogo solemos ajustar detalles como distribución fina, aberturas, terminaciones y elección de modalidad (obra gris o llave en mano), y si buscás algo más específico trabajamos como “casa a medida” desde el anteproyecto con el equipo de arquitectura.  \n\n¿Tenés en mente partir de algún modelo (por ejemplo Carmela, Micaela, Valeria) o querés algo totalmente diseñado desde cero?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4551
+    },
+    {
+      "question": "¿Tenés imágenes, planos o algún catálogo que pueda ver?",
+      "questionType": "images_catalog",
+      "response": "Sí, tenemos todo eso. En la web de ViBert podés ver imágenes y fichas de cada modelo (renders, distribuciones y superficies) y además contamos con un catálogo digital 2025 con todos los modelos de casas y quinchos.  \n\nSi querés te puedo sugerir modelos según lo que necesitás y después mirás sus fichas online, o te dejo el WhatsApp (+54 9 342 508 1468) para que te envíen directamente el catálogo en PDF.",
+      "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 2599
+      "responseTimeMs": 10822
+    },
+    {
+      "question": "¿Cuánto sale aproximadamente una casa de 2 dormitorios?",
+      "questionType": "pricing",
+      "response": "No tengo los precios actualizados cargados, y como varían según modelo (Carmela, Micaela, Selene, Estefanía, etc.), modalidad (obra gris o llave en mano) y zona, prefiero no inventarte un número. Te sugiero escribir por WhatsApp al +54 9 342 508 1468 y pedir valor orientativo para, por ejemplo, Casa Carmela y Casa Micaela llave en mano vs. obra gris.  \n\nPara que te coticen bien, ¿qué presupuesto aproximado manejás y si sería para vivienda permanente o de fin de semana?",
+      "mentionedModels": [
+        "Casa Micaela",
+        "Casa Carmela"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 4657
+    },
+    {
+      "question": "¿Qué incluye el precio? ¿Terminaciones, instalación, todo?",
+      "questionType": "includes",
+      "response": "Te explico cómo trabajamos, porque cambia según la modalidad que elijas:  \n- Obra gris incluye: platea de fundación ejecutada in situ, paredes premoldeadas, losas de entrepiso, escalera premoldeada (si aplica), aberturas interiores y exteriores, cubierta metálica o losas premoldeadas, más flete y montaje.  \n- Llave en mano incluye todo lo anterior + pisos y zócalos, revestimientos, instalaciones sanitaria/elétrica/gas completas, pintura interior y exterior, y también flete y montaje; es la casa terminada, lista para habitar.  \n\nNo tengo los precios actualizados cargados; para que te detallen qué incluye cada presupuesto en el modelo que te interese, te sugiero escribir al WhatsApp +54 9 342 508 1468.",
+      "mentionedModels": [],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 3513
+    },
+    {
+      "question": "¿Ustedes se encargan de toda la instalación o solo entregan los materiales?",
+      "questionType": "installation",
+      "response": "Nos encargamos de todo, no solo de entregar materiales. En modalidad obra gris o llave en mano hacemos platea de fundación, montaje completo de los paneles de hormigón, cubierta, aberturas, y en llave en mano también todas las instalaciones (sanitaria, eléctrica y gas), más terminaciones y pintura.  \n\nPara tu caso puntual, ¿estás pensando en obra gris para completar con tu propia mano de obra o preferís llave en mano y desentenderte de la obra?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2926
+    },
+    {
+      "question": "¿Qué garantía ofrecen sobre la construcción?",
+      "questionType": "warranty",
+      "response": "Nuestras casas son de hormigón premoldeado con estructura antisísmica, vida útil estimada mayor a 100 años y muy bajo mantenimiento, respaldadas por más de 70 años de experiencia y certificaciones (incluyendo certificado de aptitud técnica de la Secretaría de Vivienda). Esto se traduce en una garantía fuerte en cuanto a durabilidad, resistencia al fuego, estabilidad estructural y eficiencia energética del sistema.  \n\nNo tengo en el sistema el detalle de años de garantía comercial por escrito; para que te pasen el plazo exacto y condiciones, te sugiero consultarlo por WhatsApp al +54 9 342 508 1468.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3396
     },
     {
       "question": "¿Tienen financiamiento o planes de pago?",
       "questionType": "financing",
-      "response": "Sí, contamos con financiación disponible para la construcción de las casas modulares en hormigón premoldeado. Los planes pueden variar según el proyecto y el momento, por eso los detalles finos (cuotas, anticipo, plazos) te los confirman directo por el canal comercial.  \n\nNo tengo los precios actualizados cargados. Te sugiero consultarlo por WhatsApp al +54 9 342 508 1468 así te pasan opciones de financiación concretas para el modelo que te interese. Mientras tanto, ¿qué presupuesto manejás aproximadamente para ir orientándote en qué modelo puede encajar mejor?",
-      "mentionedModels": [
-        "Casas Modulares"
-      ],
-      "saidNoInfo": true,
+      "response": "Sí, contamos con financiación disponible para las casas modulares de hormigón. Los planes concretos (monto financiable, anticipo, cuotas y plazos) se ajustan según el modelo elegido, la modalidad (obra gris o llave en mano) y la zona.  \n\nPara ver qué plan se adapta mejor a vos, ¿me contás qué presupuesto aproximado manejás y si pensás financiar todo o solo una parte?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 4563
+      "responseTimeMs": 3769
     },
     {
       "question": "¿Qué los diferencia de otras empresas similares?",
       "questionType": "differentiator",
-      "response": "Nos diferencia sobre todo el sistema constructivo: usamos paneles premoldeados de hormigón armado industrializados, con más de 70 años de experiencia del grupo (Premoldeados Bertone) detrás, lo que se traduce en estructuras muy sólidas, duraderas y con muy buenos tiempos de obra (tu casa en aprox. 120 días). Además, trabajamos con modelado 3D BIM desde el anteproyecto, lo que reduce errores, optimiza materiales y te permite “ver” tu casa antes de construirla.  \n\nSumale a eso que somos fabricantes directos, con enfoque en eficiencia energética, confort y soluciones modulares escalables (modelos estándar, casas a medida y grandes desarrollos) y que ofrecemos financiación. ¿Estás comparando contra alguna otra propuesta en particular o recién empezás a ver opciones?",
+      "response": "Lo que nos diferencia es el sistema constructivo de hormigón premoldeado propio, con paneles PS120/PS150 de alta eficiencia energética (sin puentes térmicos), estructura antisísmica y vida útil mayor a 100 años, respaldado por más de 70 años de experiencia industrial. A eso se suma que fabricamos en planta y montamos en obra en unos 120 días, con obra limpia, instalaciones integradas (sin picar paredes), opciones de obra gris o llave en mano y la posibilidad de elegir entre modelos de catálogo, casas a medida y grandes desarrollos.  \n\n¿Estás comparando con construcción tradicional, steel framing u otra empresa de premoldeados? Así te marco las diferencias justo con lo que tenés en mente.",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 3464
+      "responseTimeMs": 5521
     },
     {
       "question": "¿A qué zonas o regiones llegan?",
       "questionType": "coverage",
-      "response": "Construimos y operamos principalmente desde nuestra planta en Ruta Nacional 19, km 4, San Agustín, Santa Fe. En el sitio no figura un listado detallado de todas las provincias o localidades a las que llegamos, así que si es para otra zona específica podría ser posible, pero hay que verlo caso por caso.  \n\nNo tengo esa información más detallada cargada, pero podés consultarlo por WhatsApp al +54 9 342 508 1468 y te confirman si llegamos a tu localidad. ¿En qué zona estás pensando construir así te orientó mejor?",
+      "response": "Construimos desde nuestras plantas en Ruta Nacional 19 km 4 (cerca de Santo Tomé) y San Agustín, ambas en la provincia de Santa Fe, y trabajamos en distintas zonas del país a través de representantes (por ejemplo, Rosario, Buenos Aires y Partido de la Costa). La cobertura concreta depende del proyecto, porque incluye flete y montaje de los paneles de hormigón.  \n\n¿En qué localidad o provincia tenés el terreno? Así te confirmo si podemos llegar y cómo se manejaría el traslado y la obra.",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 2463
+      "responseTimeMs": 3479
     }
   ],
-  "sessionCreationTimeMs": 18138,
+  "sessionCreationTimeMs": 26101,
   "errors": []
 }

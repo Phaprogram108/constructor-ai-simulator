@@ -1,215 +1,298 @@
 {
   "company": "Habika",
   "url": "https://habika.ar/",
-  "testedAt": "2026-02-06T15:47:41.619Z",
-  "sessionId": "a082ccfe-462b-4309-a16c-4d89c5feafc5",
-  "systemPromptLength": 21582,
+  "testedAt": "2026-02-11T18:05:49.720Z",
+  "sessionId": "58a28b86-f754-417e-a1ca-0acc30671ecb",
+  "systemPromptLength": 161926,
   "systemPromptModelsFound": [
-    "QM1",
-    "TM1",
-    "TM2",
-    "TM3",
-    "COR1",
-    "COR2",
-    "COR3",
-    "COR4",
-    "BM5",
     "CM0",
     "CM2",
     "CM5",
     "CM6",
     "DM3",
+    "QM1",
+    "TM1",
+    "TM2",
+    "TM3",
     "Tipología CM1",
     "Tipología CM2",
     "Tipología CM3",
+    "Crecimiento por etapas",
+    "Listos para trasladar",
+    "Entrega rápida",
+    "Funcionalidad rural",
+    "Alquiler",
+    "Mantenimiento y remodelación",
+    "Alquiler por temporada",
     "CM1",
     "CM3",
-    "Turísticos",
+    "Módulos Turísticos",
     "Dormis",
-    "Residenciales"
+    "Módulos Residenciales"
   ],
   "systemPromptType": "de Módulos estas buscando?\"",
   "conversations": [
     {
       "question": "¿Qué es tu empresa y qué hacen?",
       "questionType": "identity",
-      "response": "Hábika es una empresa de Córdoba que construye Módulos en hormigón premoldeado y los entrega en todo el país. Nos especializamos en construcción modular turística, laboral y residencial, con fabricación en planta, controles de calidad y entrega lista para instalar en unos 90 días.  \n\nPodés elegir Módulos específicos como Turísticos, Dormis y Residenciales, o tipologías como QM1, TM2, CM6, etc., y personalizar diseño según tu proyecto. Para orientarte mejor, ¿qué tipo de Módulos estás buscando?",
+      "response": "Hábika es una empresa de Córdoba especializada en construcción modular en Argentina, con fábrica propia y más de 150 módulos entregados en todo el país. Diseñamos y fabricamos Módulos Turísticos, Dormis y Módulos Residenciales en estructura metálica/hormigón premoldeado, 100% terminados en planta y listos para instalar en 60‑90 días.  \n\nTrabajamos mucho con proyectos turísticos, residenciales, rurales, petroleros y para clubes, con financiación de 3 a 60 meses y precios que arrancan desde aprox. USD 1.000/m² según tipología y terminación. ¿Qué tipo de Módulos estás buscando vos: para vivienda, turismo o uso laboral?",
       "mentionedModels": [
-        "QM1",
-        "TM2",
-        "CM6",
-        "Turísticos",
+        "Módulos Turísticos",
         "Dormis",
-        "Residenciales"
+        "Módulos Residenciales"
       ],
       "saidNoInfo": false,
-      "hasSpecificData": false,
-      "responseTimeMs": 2433
+      "hasSpecificData": true,
+      "responseTimeMs": 9903
     },
     {
       "question": "¿Qué productos o servicios ofrecen?",
       "questionType": "offering",
-      "response": "Ofrecemos construcción modular en hormigón premoldeado, con entrega en todo el país y plazos de alrededor de 90 días desde fábrica. Trabajamos tres grandes líneas: **Turísticos** (cabañas y unidades para alquiler), **Dormis** (para trabajadores en obras o zonas rurales) y **Residenciales** (viviendas, oficinas, vestuarios, consultorios, etc.).  \n\nDentro de eso tenemos Módulos específicos como, por ejemplo, QM1 (21,44 m²), TM2 (30,6 m², 1 dormitorio), CM6 (40,8 m², 2 dormitorios, 1 baño), Tipologías CM1/CM2/CM3 (100 m², 3 dormitorios) y varios más. También ofrecemos financiación y acompañamiento de arquitectos y asesores durante todo el proyecto. ¿Qué uso le querés dar a los Módulos así te muestro los que mejor encajan?",
+      "response": "Ofrecemos principalmente tres líneas de productos: **Módulos Turísticos** (QM1, TM1, TM2, TM3), **Dormis** para trabajadores y **Módulos Residenciales** (CM0, CM2, CM3, CM4, CM5, CM6, DM3), todos en construcción modular metálica/hormigón premoldeado, 100% terminados y listos para instalar. También desarrollamos soluciones específicas: **módulos para clubes deportivos**, **módulos rurales**, **módulos para petroleros/mineras** y proyectos a medida o por etapas para desarrollistas.  \n\nComo servicios, brindamos: diseño arquitectónico, fabricación en planta, traslado e instalación en todo el país, asesoramiento en fundaciones, planes de financiación (capitalización o entrega pactada), acompañamiento para inversión inmobiliaria y mantenimiento/remodelación. ¿Para qué los necesitarías vos: vivienda propia, emprendimiento turístico o alojamiento para personal?",
       "mentionedModels": [
-        "QM1",
-        "TM2",
-        "CM2",
-        "CM6",
-        "CM1",
-        "CM3",
-        "Turísticos",
-        "Dormis",
-        "Residenciales"
-      ],
-      "saidNoInfo": false,
-      "hasSpecificData": true,
-      "responseTimeMs": 3178
-    },
-    {
-      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
-      "questionType": "contact",
-      "response": "Por acá tengo solo el mail directo: info@habika.ar.  \n\nPara WhatsApp o teléfono te sugiero entrar a nuestra web habika.ar, donde tenés el botón de WhatsApp siempre visible para chatear con un asesor comercial.",
-      "mentionedModels": [],
-      "saidNoInfo": false,
-      "hasSpecificData": false,
-      "responseTimeMs": 1883
-    },
-    {
-      "question": "¿Cuántos tipologías ofrecen?",
-      "questionType": "product_count",
-      "response": "Mirá, en tipologías residenciales grandes tenemos cargadas tres: **Tipología CM1**, **Tipología CM2** y **Tipología CM3**, todas de 100 m², 3 dormitorios y 1 baño.  \n\nAdemás de esas tipologías, contamos con otros Módulos específicos (QM1, TM1, TM2, TM3, COR1–4, BM5, CM0, CM1, CM2, CM3, CM5, CM6, DM3, y las líneas Turísticos, Dormis y Residenciales). ¿Estás buscando algo tipo casa familiar, cabañas para alquilar o dormis para personal?",
-      "mentionedModels": [
-        "QM1",
-        "TM1",
-        "TM2",
-        "TM3",
-        "COR1",
-        "BM5",
         "CM0",
         "CM2",
         "CM5",
         "CM6",
         "DM3",
-        "Tipología CM1",
-        "Tipología CM2",
-        "Tipología CM3",
-        "CM1",
+        "QM1",
+        "TM1",
+        "TM2",
+        "TM3",
         "CM3",
-        "Turísticos",
+        "Módulos Turísticos",
         "Dormis",
-        "Residenciales"
+        "Módulos Residenciales"
       ],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 2589
+      "responseTimeMs": 12008
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "No tengo cargado acá el número de WhatsApp o teléfono directo, y por política no puedo inventarlo.  \n\nTe recomiendo entrar a habika.ar y usar el botón de WhatsApp que está abajo a la derecha, o bien escribirnos por mail a **info@habika.ar** para que te contacten por teléfono.",
+      "mentionedModels": [],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 4478
+    },
+    {
+      "question": "¿Cuántos módulos ofrecen?",
+      "questionType": "product_count",
+      "response": "En catálogo trabajamos con más de 10 tipologías residenciales y turísticas estandarizadas, además de proyectos a medida.  \nEn **Módulos Residenciales** tenés: CM0, CM2, CM3-A, CM3-B, CM4-A, CM4-B, CM5, CM6 y DM3; y en **Módulos Turísticos**: QM1, TM1, TM2 y TM3, más Dormis y módulos especiales (rurales, petroleros, para clubes).  \n\nPara orientarte mejor, ¿para cuándo lo necesitarías y cuántas personas lo usarían?",
+      "mentionedModels": [
+        "CM0",
+        "CM2",
+        "CM5",
+        "CM6",
+        "DM3",
+        "QM1",
+        "TM1",
+        "TM2",
+        "TM3",
+        "CM3",
+        "Módulos Turísticos",
+        "Dormis",
+        "Módulos Residenciales"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 7056
     },
     {
       "question": "Contame sobre Tipología CM1",
       "questionType": "product_specific",
-      "response": "La **Tipología CM1** es una vivienda modular de **100 m²**, pensada como casa familiar cómoda y funcional. Cuenta con **3 dormitorios** y **1 baño**, resuelta en hormigón premoldeado, con el mismo sistema de fabricación en planta y montaje rápido que usamos en todos nuestros Módulos.  \n\nEs ideal si buscás algo definitivo, con buena distribución para familia y posibilidad de personalizar terminaciones y detalles de diseño. No tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp. ¿Ya tenés terreno y en qué zona la estarías pensando?",
+      "response": "La Tipología CM1 es un módulo de **100 m²** pensado para configurarse con **3 dormitorios y 1 baño**, ideal como vivienda familiar, dormis grupales o infraestructura para clubes y proyectos rurales/petroleros. Se usa mucho en contextos donde necesitás varias habitaciones en un solo cuerpo: complejos deportivos, campamentos de trabajo o alojamientos masivos, y se puede integrar a esquemas de **crecimiento por etapas** o conjuntos de varios módulos.  \n\nSi querés, te ayudo a ver si un CM1 te cierra o conviene combinar varios CM0/CM5/CM6 según cuántas personas quieras alojar y el uso que le vas a dar.",
       "mentionedModels": [
+        "CM0",
+        "CM5",
+        "CM6",
         "Tipología CM1",
-        "CM1"
+        "Crecimiento por etapas",
+        "CM1",
+        "Dormis"
       ],
-      "saidNoInfo": true,
+      "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 3165
+      "responseTimeMs": 10812
     },
     {
       "question": "¿Cuáles son los detalles técnicos de Tipología CM1? Superficie, dormitorios, características.",
       "questionType": "product_specs",
-      "response": "La **Tipología CM1** tiene una superficie de **100 m²**, resuelta en construcción modular de **hormigón premoldeado**, fabricada en planta y montada en obra en muy poco tiempo. Está pensada como vivienda familiar con **3 dormitorios** y **1 baño**, con diseño funcional y posibilidad de personalizar distribución interior y terminaciones (según el proyecto).  \n\nSe entrega como el resto de nuestros Módulos: producida bajo **estrictos controles de calidad** en fábrica, con muy buena aislación y lista para instalar en el terreno en aproximadamente **90 días**. No tengo más detalles técnicos finos (memoria descriptiva completa) cargados por acá; para eso y precios te recomiendo escribirnos por WhatsApp o al mail info@habika.ar. ¿La estás pensando como vivienda permanente o para alquiler?",
+      "response": "La Tipología CM1, tal como la trabajamos en Dormis, clubes deportivos, petroleros y rural, está planteada como un módulo de **100 m²**, con **3 dormitorios** y **1 baño**.  \n\nA nivel técnico mantiene el sistema Hábika: **estructura metálica sismorresistente**, cerramientos con alta aislación termoacústica (EPS/lana de vidrio), fabricación 100% en planta, instalaciones completas (eléctrica y sanitaria) y entrega lista para instalar sobre apoyos puntuales, sin platea tradicional. Es muy versátil: puede configurarse como vivienda, dormis múltiples, vestuarios/oficinas o combinarse con otros módulos en desarrollos más grandes.",
       "mentionedModels": [
         "Tipología CM1",
-        "CM1"
+        "CM1",
+        "Dormis"
       ],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 8086
+      "responseTimeMs": 3529
     },
     {
       "question": "Contame sobre Tipología CM2",
       "questionType": "product_specific",
-      "response": "La **Tipología CM2** también es una vivienda modular de **100 m²**, con **3 dormitorios** y **1 baño**, construida en **hormigón premoldeado** bajo el mismo sistema industrializado de Hábika. Está pensada como casa familiar funcional, con buena distribución y posibilidad de personalizar diseño y terminaciones según el proyecto.  \n\nSe fabrica en planta con controles de calidad y se entrega lista para instalar en el terreno en alrededor de **90 días**, con la misma lógica que el resto de nuestros Módulos residenciales. No tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp. ¿La estás evaluando para vivienda propia o más bien como inversión/alquiler?",
+      "response": "La Tipología CM2 también es un módulo de **100 m²**, con **3 dormitorios y 1 baño**, igual que la CM1, pero pensada como **variación de distribución y uso** según el tipo de proyecto (dormis, clubes deportivos, petroleros o rural). Mantiene el sistema constructivo Hábika: **estructura metálica sismorresistente**, cerramientos con alta eficiencia termoacústica, instalaciones completas y entrega llave en mano en 60‑90 días, lista para instalar sobre bases puntuales sin platea tradicional.  \n\nSuele elegirse cuando se necesita la misma cantidad de m² y habitaciones que la CM1, pero con otro layout interno (circulaciones, tamaño de estar, disposición de cuartos) adaptado al uso específico. ¿En tu caso la pensarías como vivienda familiar, dormis para personal o infraestructura para un club/campo?",
       "mentionedModels": [
         "CM2",
         "Tipología CM2",
-        "Residenciales"
+        "CM1",
+        "Dormis"
       ],
-      "saidNoInfo": true,
+      "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 4220
+      "responseTimeMs": 5012
     },
     {
       "question": "¿Cuáles son los detalles técnicos de Tipología CM2? Superficie, dormitorios, características.",
       "questionType": "product_specs",
-      "response": "La **Tipología CM2** es una vivienda modular de **100 m²**, construida en **hormigón premoldeado**, fabricada íntegramente en planta y luego montada en el terreno. Tiene **3 dormitorios** y **1 baño**, pensada como casa familiar funcional, con buena distribución y posibilidad de adaptar detalles de diseño y terminaciones según el proyecto.  \n\nSe entrega como el resto de los Módulos Hábika: bajo **estrictos controles de calidad**, con muy buena aislación y lista para instalar en aproximadamente **90 días** en cualquier punto del país. No tengo la memoria técnica completa (planos y especificaciones finas) cargada por acá; para eso y precios te sugiero escribirnos por WhatsApp o al mail **info@habika.ar**.",
+      "response": "La Tipología CM2 está planteada como un módulo de **100 m²**, con **3 dormitorios** y **1 baño**, igual que la CM1 en superficie y cantidad de ambientes.  \n\nComparte el sistema constructivo Hábika: **estructura metálica sismorresistente**, cerramientos con alta aislación termoacústica (paneles tipo EPS/lana de vidrio), fabricación 100% en planta, instalaciones eléctricas y sanitarias completas y entrega **llave en mano en 60‑90 días**, lista para apoyar sobre bases puntuales (sin necesidad de platea tradicional). La diferencia con CM1 pasa por la **distribución interna y el uso** (dormis, clubes, rural, petroleros), que se ajusta con el equipo de arquitectura según el proyecto.",
       "mentionedModels": [
         "CM2",
-        "Tipología CM2"
+        "Tipología CM2",
+        "CM1",
+        "Dormis"
       ],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 3981
+      "responseTimeMs": 4646
     },
     {
-      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
-      "questionType": "process",
-      "response": "Trabajamos con construcción modular en **hormigón premoldeado**: fabricamos los Módulos completos en nuestra planta (estructura, cerramientos, instalaciones, terminaciones), bajo controles de calidad, y luego los trasladamos al terreno para hacer el montaje final con mínima intervención en obra. Esto reduce imprevistos, tiempos muertos y dependencia de mano de obra local.  \n\nEl plazo estándar es de **aprox. 90 días** desde el inicio de fabricación hasta la entrega del Módulo listo para instalar en cualquier punto del país. ¿Para cuándo lo necesitarías vos y qué tipo de Módulos estás pensando (Turísticos, Dormis o Residenciales)?",
-      "mentionedModels": [
-        "Turísticos",
-        "Dormis",
-        "Residenciales"
-      ],
-      "saidNoInfo": false,
-      "hasSpecificData": false,
-      "responseTimeMs": 2543
-    },
-    {
-      "question": "¿Se pueden personalizar los tipologías?",
-      "questionType": "customization",
-      "response": "Sí, las tipologías se pueden personalizar, dentro de ciertos márgenes del sistema modular. Podemos ajustar distribución interior, terminaciones, equipamiento y algunos detalles de diseño según el uso (vivienda familiar, alquiler turístico, personal de obra, etc.).  \n\nLo que mantenemos es el sistema constructivo en hormigón premoldeado y las medidas base del Módulo para asegurar calidad y plazos de entrega (alrededor de 90 días). ¿Sobre qué tipología puntual estás pensando hacer cambios, CM1, CM2 o CM3?",
+      "question": "¿Cuál es la diferencia entre Tipología CM1 y Tipología CM2?",
+      "questionType": "model_comparison",
+      "response": "Ambas tipologías son módulos de **100 m² con 3 dormitorios y 1 baño**, comparten el mismo sistema constructivo (estructura metálica sismorresistente, alta aislación termoacústica, instalaciones completas y entrega llave en mano en 60‑90 días).  \n\nLa diferencia está en la **distribución interna y el uso**: CM1 y CM2 se plantean como variantes de layout (tamaño del estar, pasillos, ubicación de habitaciones/baño, posibles accesos) para adaptarse mejor a cada proyecto: dormis para trabajadores, clubes deportivos, uso rural o vivienda. Si me contás para qué lo querés usar, te digo cuál de las dos suele funcionar mejor en ese tipo de caso.",
       "mentionedModels": [
         "CM2",
+        "CM1",
+        "Dormis"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4747
+    },
+    {
+      "question": "¿Qué modelo me recomendás para una familia de 4 personas?",
+      "questionType": "recommendation",
+      "response": "Para una familia de 4, el módulo que mejor se adapta dentro de las tipologías residenciales es el **CM6**: tiene **40,8 m²**, **2 dormitorios**, living–cocina–comedor integrado y **1 baño**, pensado justamente para núcleo familiar tipo. Si buscan algo más amplio o proyectan crecer, se puede combinar con otro módulo (por ejemplo un CM0 como estudio/oficina) o pensar en tipologías de **100 m² (CM1/CM2/CM3 por etapas)**.  \n\nPara afinar bien la recomendación, ¿ya tenés terreno y en qué zona de Argentina sería la instalación?",
+      "mentionedModels": [
+        "CM0",
+        "CM2",
+        "CM6",
         "CM1",
         "CM3"
       ],
       "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3351
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con construcción modular industrializada: el módulo se fabrica completo en nuestra planta (estructura metálica/hormigón premoldeado, cerramientos, instalaciones, pisos, muebles, sanitarios, pintura), mientras en el terreno solo se resuelven las bases puntuales y la nivelación. Una vez listo, lo trasladamos en camión y la **instalación en el lote se hace en 1–2 días**, con mínima intervención de obra.  \n\nLos plazos de producción son de **60 a 90 días** desde el inicio de fabricación, según tipología y plan de pago (entrega pactada o capitalización). ¿Para cuándo lo necesitarías vos, este año o estás pensando más a mediano plazo?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 2604
+      "responseTimeMs": 4066
+    },
+    {
+      "question": "¿Se pueden personalizar los módulos?",
+      "questionType": "customization",
+      "response": "Sí, los módulos se pueden personalizar bastante: trabajamos con líneas de terminación (Industrial/Básica, Essential y Signature) y podés elegir pisos, griferías, sanitarios, muebles de cocina, colores y algunas variantes de fachada. También se ajustan distribuciones internas dentro de cada tipología o se puede hacer un proyecto a medida con nuestros arquitectos, manteniendo siempre el sistema modular y los plazos de 60‑90 días.  \n\nEn tu caso, ¿qué te interesa personalizar más: terminaciones estéticas (pisos, colores, muebles) o la distribución interna de ambientes?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3765
+    },
+    {
+      "question": "¿Tenés imágenes, planos o algún catálogo que pueda ver?",
+      "questionType": "images_catalog",
+      "response": "Sí, tenemos todo eso. En la web de Hábika podés ver planos, renders y fotos reales de entregas de cada línea:  \n\n- **Módulos Residenciales** (CM0, CM2, CM3, CM4, CM5, CM6, DM3) con planos y galería de fotos: https://habika.ar/modulos-residenciales-habika/  \n- **Módulos Turísticos** (QM1, TM1, TM2, TM3): https://habika.ar/modulos-turisticos-habika/  \n\nSi me contás qué tipo de Módulo te interesa (residencial, turístico o dormis), te indico qué modelos específicos conviene mirar dentro de cada catálogo.",
+      "mentionedModels": [
+        "CM0",
+        "CM2",
+        "CM5",
+        "CM6",
+        "DM3",
+        "QM1",
+        "TM1",
+        "TM2",
+        "TM3",
+        "CM3",
+        "Módulos Turísticos",
+        "Dormis",
+        "Módulos Residenciales"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3390
+    },
+    {
+      "question": "¿Cuánto sale aproximadamente una casa de 2 dormitorios?",
+      "questionType": "pricing",
+      "response": "Para 2 dormitorios, el modelo estándar es el **CM6**, de **40,8 m²**, con living–cocina–comedor y 1 baño. En la línea base está publicado en **U$D 44.914** (precio en dólares billete, no incluye IVA, traslado, descarga ni fundaciones).  \n\nRecordá que el valor final puede variar por ubicación, logística y terminaciones elegidas. ¿Qué presupuesto manejás aproximadamente y en qué provincia te gustaría instalarlo?",
+      "mentionedModels": [
+        "CM6"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2922
+    },
+    {
+      "question": "¿Qué incluye el precio? ¿Terminaciones, instalación, todo?",
+      "questionType": "includes",
+      "response": "El precio publicado de cada módulo corresponde a la **unidad 100% terminada en fábrica, llave en mano**, e incluye: pisos terminados (vinílicos en línea base), sanitarios y griferías, amoblamientos de cocina, aberturas colocadas, instalación eléctrica y de agua completas, pintura y herrajes. Además incluye la **dirección técnica en planta** (arquitectos e ingenieros), proyecto de arquitectura a medida e implantación en el lote a nivel de documentación y asesoramiento.  \n\nNo están incluidos en ese valor: **IVA, traslado en camión, descarga con grúa ni fundaciones/bases** (que se cotizan aparte según destino y terreno). ¿En qué zona tenés pensado instalarlo así te orientó mejor sobre esos extras?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 5020
+    },
+    {
+      "question": "¿Ustedes se encargan de toda la instalación o solo entregan los materiales?",
+      "questionType": "installation",
+      "response": "Nosotros nos encargamos de **todo el módulo terminado e instalado**, no vendemos solo materiales. Fabricamos el Módulo completo en planta, lo trasladamos a tu lote y coordinamos la **implantación con grúa en 1–2 días**, dejándolo apoyado sobre las bases y listo para conectar a los servicios.  \n\nLo único que queda a cargo del cliente (con nuestro asesoramiento o profesionales de nuestra red) son las **fundaciones/bases puntuales y la gestión de conexiones a luz, agua y cloacas/biodigestor**. ¿Ya tenés terreno definido? ¿En qué zona sería la instalación?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 6039
+    },
+    {
+      "question": "¿Qué garantía ofrecen sobre la construcción?",
+      "questionType": "warranty",
+      "response": "Ofrecemos un sistema pensado para más de **100 años de vida útil**, con **estructura metálica sismorresistente** calculada por ingenieros y cerramientos con alta eficiencia termoacústica (cumple ley 13059).  \n\nLa fabricación es industrial en planta, con control permanente de arquitectos e ingenieros, y el módulo se entrega como producto constructivo completo, con respaldo técnico y documentación para aprobación municipal. Si querés, en la reunión con un asesor te pueden detallar por escrito plazos específicos de garantía para estructura, instalaciones y terminaciones según el Módulo que elijas.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3401
     },
     {
       "question": "¿Tienen financiamiento o planes de pago?",
       "questionType": "financing",
-      "response": "Sí, ofrecemos **financiación** para los Módulos, con planes que se adaptan bastante al tipo de proyecto y al monto. Los detalles finos de cuotas, plazos y requisitos dependen del Módulo que elijas y se ven directo con el área comercial.  \n\nNo tengo los planes actualizados cargados por acá, así que para números concretos te sugiero consultarlo por WhatsApp o al mail **info@habika.ar**. Para orientarte mejor: ¿qué tipo de Módulos estás buscando y en qué rango de presupuesto te gustaría moverte aproximadamente?",
+      "response": "Sí, tenemos varios planes de financiación propios y también trabajamos con créditos bancarios. A nivel interno manejamos dos esquemas principales:  \n\n- **Plan Entrega Pactada**: recibís el módulo cuando completás el **80%** del valor; podés hacer una entrega inicial + hasta **12 cuotas**, y el **20% restante** financiarlo hasta en **24 cuotas**.  \n- **Plan de Capitalización**: empezás a pagar en etapas; la fabricación arranca al llegar al **70%**, y el **30% restante** se puede financiar hasta en **60 cuotas**, ideal si no tenés urgencia de entrega.  \n\nAdemás, el sistema modular Hábika es apto para **créditos hipotecarios** (ej. Banco Hipotecario, Bancor) porque se aprueba como construcción tradicional en seco. ¿Qué monto aproximado pensás invertir y en cuántas cuotas te gustaría financiarlo?",
       "mentionedModels": [],
       "saidNoInfo": false,
-      "hasSpecificData": false,
-      "responseTimeMs": 4292
+      "hasSpecificData": true,
+      "responseTimeMs": 4325
     },
     {
       "question": "¿Qué los diferencia de otras empresas similares?",
       "questionType": "differentiator",
-      "response": "Nos diferencia, primero, el **sistema constructivo en hormigón premoldeado**, con fábrica propia en Córdoba: eso nos da **control total de calidad** y no dependemos de terceros ni de mano de obra dispersa. Segundo, los **plazos reales**: entregamos los Módulos listos para instalar en unos **90 días**, con más de **150 módulos** ya entregados en todo el país que lo respaldan.  \n\nAdemás, trabajamos con **arquitectos y asesores que acompañan todo el proceso**, y ofrecemos **financiación** y **diseños personalizables** (Turísticos, Dormis y Residenciales) según el uso que necesites. ¿Qué tipo de proyecto tenés en mente vos, algo turístico, vivienda o alojamiento para trabajadores?",
-      "mentionedModels": [
-        "Turísticos",
-        "Dormis",
-        "Residenciales"
-      ],
+      "response": "Nos diferencia sobre todo el **nivel de industrialización y calidad**: estructura metálica sismorresistente calculada por ingenieros, cerramientos con alta eficiencia termoacústica (EPS + lana de vidrio, cumple ley 13059) y módulos que salen de fábrica 100% terminados, listos para instalar en 1–2 días en el lote. A eso se suma que damos **precio cerrado y entrega en 60–90 días**, evitando los sobrecostos típicos de la obra tradicional (obrador, baños químicos, demoras, clima, desperdicio de materiales).  \n\nAdemás, no trabajamos con contenedores: son **módulos diseñados desde cero**, aptos para aprobación municipal en todo el país, con más de **150 módulos entregados** y planes de pago largos (hasta 60 meses). Y algo clave: te acompañamos como desarrollistas, no solo como “fábrica”, ayudándote con estudio de mercado, proyecto y estrategia si es un emprendimiento turístico o de inversión.",
+      "mentionedModels": [],
       "saidNoInfo": false,
-      "hasSpecificData": false,
-      "responseTimeMs": 3131
+      "hasSpecificData": true,
+      "responseTimeMs": 5287
     },
     {
       "question": "¿A qué zonas o regiones llegan?",
       "questionType": "coverage",
-      "response": "Llegamos a **todo el país**: fabricamos en Córdoba y enviamos y montamos los Módulos en cualquier provincia de Argentina.  \n\nSolo se coordina la logística y el acceso al terreno para el montaje en el día. Podría ser en casi cualquier ciudad o zona; si es un lugar muy específico, conviene chequear detalles por WhatsApp. ¿En qué localidad o provincia estás pensando instalar el Módulo?",
+      "response": "Llegamos a **todo el país**: fabricamos en Córdoba y trasladamos los Módulos a cualquier provincia de Argentina con camión y grúa.  \n\nSolo varía el costo de **traslado e instalación** según la distancia y el acceso al terreno. ¿En qué provincia y localidad estás pensando instalar el módulo así te confirmo viabilidad logística y te orientamos mejor?",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 4029
+      "responseTimeMs": 2745
     }
   ],
-  "sessionCreationTimeMs": 15365,
+  "sessionCreationTimeMs": 19655,
   "errors": []
 }

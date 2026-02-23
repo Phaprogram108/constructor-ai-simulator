@@ -1,220 +1,231 @@
 {
   "company": "Lucys House",
   "url": "https://www.lucyshousearg.com/",
-  "testedAt": "2026-02-06T15:50:29.998Z",
-  "sessionId": "9ea69866-0fef-4e94-a390-511a58ce795b",
-  "systemPromptLength": 21961,
+  "testedAt": "2026-02-11T19:45:15.338Z",
+  "sessionId": "8ddfe55f-753a-4b99-a5bb-b1787a73c481",
+  "systemPromptLength": 122764,
   "systemPromptModelsFound": [
-    "Proyecto 14",
-    "Proyecto 1",
-    "Proyecto 2",
-    "Proyecto 3",
-    "Proyecto 4",
-    "Proyecto 5",
-    "Proyecto 6",
-    "Proyecto 8",
-    "Proyecto 9",
-    "Proyecto 10",
-    "Proyecto 11",
-    "Proyecto 12",
-    "Proyecto 13",
-    "Oficinas Modulares",
-    "Proyectos Modulares",
-    "Full Premium 3",
-    "Full Premium 1",
-    "Full Premium 2",
-    "Comfort 3",
-    "Comfort 1",
-    "Comfort 2",
-    "Detalle 17",
-    "Detalle 1",
-    "Detalle 2",
-    "Detalle 3",
-    "Detalle 4",
-    "Detalle 5",
-    "Detalle 7",
-    "Detalle 8",
-    "Detalle 9",
-    "Detalle 10",
-    "Detalle 11",
-    "Detalle 12",
-    "Detalle 13",
-    "Detalle 14",
-    "Detalle 15",
-    "Detalle 16",
-    "Equipamiento Deluxe",
-    "Equipamiento Full Premium",
-    "Entregas Inmediatas",
-    "Equipamientos",
-    "Detalle 24",
-    "Detalle 6",
-    "Detalle 18",
-    "Detalle 19",
-    "Detalle 20",
-    "Detalle 21",
-    "Detalle 22",
-    "Detalle 23",
     "Deluxe 3",
     "Deluxe 1",
     "Deluxe 2",
-    "Detalle 26",
-    "Detalle 25",
-    "Vivienda Modular 1"
+    "Comfort 3",
+    "Comfort 1",
+    "Comfort 2",
+    "Equipamiento Deluxe",
+    "Equipamiento Full Premium",
+    "Full Premium 3",
+    "Full Premium 1",
+    "Full Premium 2",
+    "Modular Housing"
   ],
-  "systemPromptWhatsApp": "+5493511234567",
-  "systemPromptType": "de Módulos habitacionales estas buscando?\"",
+  "systemPromptWhatsApp": "5493512077113",
+  "systemPromptType": "de Viviendas modulares estas buscando?\"",
   "conversations": [
     {
       "question": "¿Qué es tu empresa y qué hacen?",
       "questionType": "identity",
-      "response": "Lucy’s House es una empresa de Córdoba que diseña y construye viviendas y módulos habitacionales en Steel Frame, no trabajamos con contenedores. Hacemos Módulos habitacionales totalmente personalizables (como Proyecto 1, Proyecto 14, Full Premium, Comfort, Deluxe, Vivienda Modular 1, Oficinas Modulares, etc.), los fabricamos en planta y los dejamos listos para transportar a cualquier punto del país en unos 60 días.  \n\nPara orientarte mejor, ¿qué tipo de Módulos habitacionales estás buscando?",
-      "mentionedModels": [
-        "Proyecto 14",
-        "Proyecto 1",
-        "Oficinas Modulares",
-        "Vivienda Modular 1"
-      ],
+      "response": "Lucy’s House es una empresa de Córdoba que fabrica viviendas modulares en Steel Frame, modernas, durables y 100% personalizadas. Diseñamos y construimos los módulos en fábrica, los terminamos con equipamiento Comfort, Deluxe o Full Premium y los dejamos listos para usar en solo 60 días, con traslado a todo el país.  \n\nTrabajamos tanto viviendas (primera casa, ampliaciones, casas de fin de semana) como proyectos turísticos, oficinas modulares y espacios comerciales, y contamos con opciones de financiación. Para orientarte mejor, ¿qué tipo de viviendas modulares estás buscando: casa familiar, cabaña de descanso, algo turístico u oficina?",
+      "mentionedModels": [],
       "saidNoInfo": false,
-      "hasSpecificData": false,
-      "responseTimeMs": 4828
+      "hasSpecificData": true,
+      "responseTimeMs": 7973
     },
     {
       "question": "¿Qué productos o servicios ofrecen?",
       "questionType": "offering",
-      "response": "Ofrecemos principalmente viviendas modulares y Módulos habitacionales en Steel Frame, como los modelos Proyecto 1 al Proyecto 14, líneas Full Premium (1, 2 y 3), Comfort (1, 2 y 3), Deluxe (1, 2 y 3), Vivienda Modular 1, Oficinas Modulares y distintos Proyectos Modulares y Equipamientos (Deluxe, Full Premium, etc.). Todos son 100% personalizables, se construyen en fábrica en Córdoba, se pueden transportar a todo el país y tenemos opciones de entrega inmediata como el Módulo DELUXE PLUS de 28,56 m².  \n\nAdemás brindamos el servicio completo de construcción en Steel Frame, asesoramiento comercial y técnico, financiación y atención en nuestro showroom en Av. La Voz del Interior 7500. ¿Qué tipo de módulo te interesa más: vivienda familiar, algo chico tipo monoambiente, o una oficina modular?",
+      "response": "Ofrecemos principalmente viviendas modulares en Steel Frame, listas en 60 días y transportables a todo el país, con tres líneas de equipamiento: Comfort, Deluxe y Full Premium (por ejemplo modelos de 25,5 m², 30,6 m², 38 m², 40,8 m², 150 m², etc.). También tenemos módulos con entrega inmediata (19,20 m², 28,30 m², 28,56 m², 30 m², 32 m², 35,70 m² y 37,50 m²) y soluciones específicas para turismo, oficinas, lodges de montaña y proyectos corporativos.  \n\nAdemás brindamos: construcción en Steel Frame a medida (Modular Housing), financiación, alquiler de oficinas y garitas móviles (Lucy’s Rental) y módulos de almacenamiento Handy Home. ¿En qué te gustaría enfocarte: vivienda para vivir, proyecto turístico/comercial o algo más pequeño como un módulo de guardado?",
       "mentionedModels": [
-        "Proyecto 14",
-        "Proyecto 1",
-        "Oficinas Modulares",
-        "Proyectos Modulares",
-        "Equipamientos",
-        "Vivienda Modular 1"
+        "Modular Housing"
       ],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 3138
+      "responseTimeMs": 4814
     },
     {
       "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
       "questionType": "contact",
-      "response": "Te dejo los datos de contacto directos:  \n- Teléfono: +54 9 351 1234567  \n- WhatsApp: +54 9 351 2077113  \n\nSi querés, puedo ayudarte a definir qué Módulos habitacionales te interesan así ya escribís con algo más concreto.",
+      "response": "Te podés contactar directo por WhatsApp al +54 9 351 207-7113.  \nSi preferís por mail, el correo de ventas es ventas@lucys.info.",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 3846
+      "responseTimeMs": 1562
     },
     {
-      "question": "¿Cuántos proyectos ofrecen?",
+      "question": "¿Cuántos modelos ofrecen?",
       "questionType": "product_count",
-      "response": "Tenemos un catálogo bastante amplio: proyectos numerados (Proyecto 1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13 y 14), líneas Full Premium (1, 2 y 3), Comfort (1, 2 y 3), Deluxe (1, 2 y 3), Vivienda Modular 1, Oficinas Modulares, Proyectos Modulares y varios “Detalles” y “Equipamientos” específicos. En total son más de 40 opciones entre modelos de Módulos habitacionales, variantes de terminación y equipamiento.  \n\nPara poder recomendarte mejor, ¿qué tipo de Módulos habitacionales estás buscando?",
+      "response": "Tenemos muchos modelos, tanto estándar como a medida.  \nDentro de Viviendas Modulares destacadas trabajamos, por ejemplo, los modelos de 19,20 m², 25,5 m², 28,30 m², 28,56 m², 30 m², 30,6 m², 32 m², 35,70 m², 37,50 m², 38 m², 40,8 m² y 150 m², además de las líneas de equipamiento Comfort, Deluxe y Full Premium y el servicio Modular Housing totalmente personalizado.  \n\nPara recomendarte bien, ¿ya tenés terreno? ¿En qué zona sería la instalación?",
       "mentionedModels": [
-        "Proyecto 1",
-        "Oficinas Modulares",
-        "Proyectos Modulares",
-        "Equipamientos",
-        "Vivienda Modular 1"
+        "Modular Housing"
       ],
       "saidNoInfo": false,
-      "hasSpecificData": false,
-      "responseTimeMs": 2393
+      "hasSpecificData": true,
+      "responseTimeMs": 3875
     },
     {
-      "question": "Contame sobre Proyecto 14",
+      "question": "Contame sobre Deluxe 3",
       "questionType": "product_specific",
-      "response": "Proyecto 14 es uno de nuestros Módulos habitacionales en Steel Frame, con diseño moderno y grandes ventanales, ideal como vivienda principal o casa de fin de semana. Se fabrica íntegramente en planta, con terminaciones de alta calidad similares a nuestras líneas Comfort/Deluxe (revestimientos modernos, aberturas de aluminio, excelente aislación) y queda listo para transportar a cualquier punto del país.  \n\nNo tengo acá la ficha técnica completa (m2 y distribución exacta), pero se personaliza según ambientes que necesites. ¿Lo pensás para vivienda permanente o algo más tipo cabaña de descanso, y para cuántas personas?",
+      "response": "El Deluxe 3 forma parte de nuestro **Módulo Deluxe**, equipado con piso de porcelanato, aberturas de aluminio con vidrio simple, mesada de granito con bacha y grifería, muebles de cocina (alacena y bajo mesada), artefactos de baño AMALFI con grifería HYDROS, mampara fija en ducha, anafe eléctrico de 2 hornallas, termotanque eléctrico de 55 lts, placard de dormitorio y preinstalación para 1 aire acondicionado.  \nEl **precio del equipamiento Deluxe** es de **USD 1.390 por m² + IVA**, y se aplica al tamaño de módulo que elijas (por ejemplo 30,6 m², 37,5 m², 40,8 m², etc.).  \n\nPara ayudarte mejor con el Deluxe 3, ¿de cuántos m² estás pensando que sea tu vivienda modular?",
       "mentionedModels": [
-        "Proyecto 14",
-        "Proyecto 1"
-      ],
-      "saidNoInfo": false,
-      "hasSpecificData": false,
-      "responseTimeMs": 5047
-    },
-    {
-      "question": "¿Cuáles son los detalles técnicos de Proyecto 14? Superficie, dormitorios, características.",
-      "questionType": "product_specs",
-      "response": "Proyecto 14 es uno de nuestros Módulos habitacionales en Steel Frame, pero en la info que tengo cargada no figura la ficha técnica completa (m² exactos, cantidad de dormitorios y distribución puntual). Sí te puedo asegurar que sigue los estándares de Lucy’s House: construcción en Steel Frame, terminaciones de alta calidad, listo en 60 días y transportable a todo el país, con posibilidad de personalizar ambientes y equipamiento (similar a lo que ves en nuestras líneas Comfort/Deluxe).  \n\nNo tengo esa información específica de superficie y dormitorios cargada acá, pero podés pedir la ficha técnica completa por WhatsApp al +54 9 351 2077113. Para que te oriente mejor mientras tanto: ¿lo pensás con 1 o 2 dormitorios y aproximadamente cuántos m² te gustaría?",
-      "mentionedModels": [
-        "Proyecto 14",
-        "Proyecto 1"
+        "Deluxe 3",
+        "Equipamiento Deluxe"
       ],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 5337
+      "responseTimeMs": 3654
     },
     {
-      "question": "Contame sobre Proyecto 1",
+      "question": "¿Cuáles son los detalles técnicos de Deluxe 3? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "Buenísimo, te cuento lo más claro posible. El **Deluxe 3** pertenece a la línea **Módulo Deluxe** (equipamiento y terminaciones), pero en el material que tengo cargado aparecen solo las características de equipamiento, no la ficha técnica específica de superficie y distribución de ese modelo puntual.\n\nLo que sí te puedo detallar es qué incluye a nivel técnico el **Deluxe**:\n- **Piso:** porcelanato de 1ra calidad.  \n- **Aberturas:** carpintería de aluminio con vidrio simple.  \n- **Cocina:** mesada de granito con bacha y grifería, muebles tipo alacena y bajo mesada, anafe eléctrico de 2 hornallas estándar, espacio para heladera (según modelo base).  \n- **Baño:** artefactos AMALFI + grifería HYDROS completa, mampara fija en ducha, vanitory de melamina con bacha, espejo (en varios modelos es retroiluminado).  \n- **Dormitorio:** placard armado (no solo el hueco).  \n- **Agua caliente:** termotanque eléctrico de 55 lts.  \n- **Climatización:** preinstalación para 1 aire acondicionado.  \n- **Revestimientos:** paredes interiores con papel lavable; zócalos de PVC blanco; techo de chapa zincada o negra (según modelo base).\n\nEl **precio del equipamiento Deluxe** es **USD 1.390/m² + IVA**, aplicado al módulo de la superficie que elijas (30,6 m², 37,5 m², 40,8 m², etc.).  \nLos datos exactos de **superficie y cantidad de dormitorios del Deluxe 3** no los tengo cargados; para esa ficha puntual te sugiero escribir por WhatsApp al **+54 9 351 207-7113** y te mandan el plano y m² exactos.\n\nSi me contás cuántos dormitorios necesitás (¿1 o 2?) y qué superficie aproximada querés, te oriento cuál de nuestros modelos encaja mejor con el nivel Deluxe.",
+      "mentionedModels": [
+        "Deluxe 3",
+        "Equipamiento Deluxe"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 9213
+    },
+    {
+      "question": "Contame sobre Deluxe 1",
       "questionType": "product_specific",
-      "response": "Proyecto 1 es uno de nuestros Módulos habitacionales en Steel Frame con diseño moderno, pensado como vivienda compacta pero funcional, similar a los modelos que ves en Vivienda Modular 1 (terminaciones de calidad, buena iluminación y distribución eficiente). Se fabrica íntegramente en nuestra planta en Córdoba, se entrega listo para usar en aproximadamente 60 días y es 100% personalizable en ambientes, revestimientos y equipamiento.  \n\nNo tengo cargada la ficha técnica exacta (m² y cantidad de dormitorios) de Proyecto 1, pero podemos adaptarlo como monoambiente, 1 dormitorio o más según lo que necesites. ¿Lo estás pensando como vivienda principal, cabaña de alquiler o algo tipo oficina/estudio?",
+      "response": "El Deluxe 1 también pertenece a nuestra línea **Módulo Deluxe**, o sea mismo nivel de terminaciones y calidad que el Deluxe 3, cambiando la distribución y m² del módulo base (que en este caso puntual no los tengo detallados en la ficha). A nivel técnico, el **Equipamiento Deluxe** incluye: piso de porcelanato, aberturas de aluminio con vidrio simple, mesada de granito con bacha y grifería, muebles de cocina sobre y bajo mesada, artefactos de baño AMALFI con grifería HYDROS, mampara fija en ducha, anafe eléctrico de 2 hornallas, termotanque eléctrico 55 lts, placard de dormitorio y preinstalación para 1 aire acondicionado.  \n\nEl **precio del Deluxe** es de **USD 1.390 por m² + IVA**, aplicado a la superficie del módulo que elijas. Para afinar si el Deluxe 1 te conviene, ¿para cuántas personas y cuántos dormitorios estás buscando la vivienda modular?",
       "mentionedModels": [
-        "Proyecto 1",
-        "Vivienda Modular 1"
-      ],
-      "saidNoInfo": true,
-      "hasSpecificData": true,
-      "responseTimeMs": 3902
-    },
-    {
-      "question": "¿Cuáles son los detalles técnicos de Proyecto 1? Superficie, dormitorios, características.",
-      "questionType": "product_specs",
-      "response": "De Proyecto 1 no tengo cargada la ficha técnica detallada (superficie exacta en m² ni cantidad de dormitorios), solo que es un Módulo habitacional en Steel Frame, fabricado en planta, 100% personalizable y con los mismos estándares de calidad que nuestras líneas Comfort/Deluxe (buen nivel de terminaciones, aislación y diseño moderno).  \n\nNo tengo esa información específica de m² y distribución disponible por acá, pero podés pedir la ficha completa y planos por WhatsApp al +54 9 351 2077113. Para ayudarte a elegir la versión adecuada, ¿lo estás pensando con 1 dormitorio, 2, o algo tipo monoambiente?",
-      "mentionedModels": [
-        "Proyecto 1"
-      ],
-      "saidNoInfo": true,
-      "hasSpecificData": true,
-      "responseTimeMs": 2432
-    },
-    {
-      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
-      "questionType": "process",
-      "response": "Trabajamos con construcción en Steel Frame dentro de fábrica: se diseña el módulo, se fabrica completo en planta (estructura, aislaciones, instalaciones, terminaciones interiores y exteriores) y luego se transporta al terreno para su colocación final. Esto reduce tiempos, errores de obra y te garantiza calidad controlada.  \n\nNuestros Módulos habitacionales estándar se entregan en aproximadamente 60 días desde la firma y definición del proyecto. ¿Para cuándo lo estarías necesitando vos?",
-      "mentionedModels": [],
-      "saidNoInfo": false,
-      "hasSpecificData": false,
-      "responseTimeMs": 2477
-    },
-    {
-      "question": "¿Se pueden personalizar los proyectos?",
-      "questionType": "customization",
-      "response": "Sí, todos nuestros proyectos se pueden personalizar: podés adaptar distribución interna (ambientes, cantidad de dormitorios), terminaciones (pisos, revestimientos, colores), y nivel de equipamiento (por ejemplo, Equipamiento Deluxe o Full Premium). Incluso en modelos ya definidos como Proyecto 1, Proyecto 14, Comfort o Deluxe, ajustamos medidas, aberturas y detalles según tu necesidad.  \n\nPara orientarte mejor, ¿qué tipo de Módulos habitacionales estás pensando personalizar: vivienda familiar, cabaña de fin de semana u oficina modular?",
-      "mentionedModels": [
-        "Proyecto 14",
-        "Proyecto 1",
+        "Deluxe 3",
+        "Deluxe 1",
         "Equipamiento Deluxe"
       ],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 2751
+      "responseTimeMs": 3955
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Deluxe 1? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "En el material que tengo cargado, del **Deluxe 1** aparecen solo los datos de **equipamiento Deluxe**, pero no la ficha puntual de **superficie ni cantidad de dormitorios** de ese modelo específico (no figuran los m² ni el plano).  \n\nLo que sí te puedo asegurar del **Deluxe 1** es que incluye:\n- **Piso:** porcelanato de 1ra calidad.  \n- **Aberturas:** aluminio con vidrio simple.  \n- **Cocina:** mesada de granito con bacha y grifería, muebles sobre y bajo mesada, anafe eléctrico de 2 hornallas estándar, espacio para heladera.  \n- **Baño:** artefactos AMALFI + grifería HYDROS, mampara fija en ducha, vanitory de melamina con bacha, termotanque eléctrico 55 lts.  \n- **Dormitorio:** con placard armado.  \n- **Climatización:** preinstalación para 1 aire acondicionado.  \n\nEl **equipamiento Deluxe** tiene un valor de **USD 1.390/m² + IVA**, aplicado al módulo base (m²) que elijas.  \nLos datos exactos de m² y dormitorios del **Deluxe 1** no los tengo cargados; para que te envíen plano y ficha técnica te sugiero escribir directo al WhatsApp de ventas: **+54 9 351 207-7113**.",
+      "mentionedModels": [
+        "Deluxe 1",
+        "Equipamiento Deluxe"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 5057
+    },
+    {
+      "question": "¿Cuál es la diferencia entre Deluxe 3 y Deluxe 1?",
+      "questionType": "model_comparison",
+      "response": "Entre Deluxe 3 y Deluxe 1 la **calidad de equipamiento es la misma** (los dos son de la línea Módulo Deluxe: porcelanato, mesada de granito, muebles sobre y bajo mesada, baño AMALFI + HYDROS, mampara, termotanque 55 L, placard y preinstalación de AA). La diferencia está en la **distribución y los m² del módulo base** (cantidad y tamaño de ambientes), pero esa ficha exacta de superficie y dormitorios de cada uno no está detallada en la info que tengo cargada.  \n\nO sea: cambian **tamaño y plano**, no la calidad ni el tipo de terminaciones. Si me contás para cuántas personas es y si buscás 1 o 2 dormitorios, te oriento si te conviene más un módulo tipo Deluxe 1, Deluxe 3 u otra superficie (30,6 m², 37,5 m², 40,8 m², etc.).",
+      "mentionedModels": [
+        "Deluxe 3",
+        "Deluxe 1"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4477
+    },
+    {
+      "question": "¿Qué modelo me recomendás para una familia de 4 personas?",
+      "questionType": "recommendation",
+      "response": "Para una familia de 4 lo ideal es ir a algo de **al menos 38–40 m² para arriba**, con buena zona social y 2 dormitorios. En nuestra línea de Viviendas Modulares te recomendaría mirar especialmente los modelos **38 m²**, **40,8 m²** y **150 m²** (este último ya como casa grande), equipados en **Deluxe** o **Full Premium** según el nivel de terminaciones que quieras.  \n\nConfort te da una opción más económica, Deluxe un salto fuerte en estética y Full Premium suma DVH, losa radiante y terminaciones top. ¿Ya tenés terreno? ¿En qué zona sería, así también vemos tema envío y si te conviene un modelo estándar o algo Modular Housing totalmente a medida?",
+      "mentionedModels": [
+        "Modular Housing"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4181
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con construcción en fábrica en sistema Steel Frame: se diseña el módulo, se fabrica completo en planta (estructura, aislaciones, instalaciones, revestimientos y equipamiento interior) y luego se transporta al terreno para instalarlo en 24 hs sobre la base preparada.  \n\nEl plazo estándar es de **60 días** desde la firma y se puede enviar a cualquier punto del país. Para poder orientarte mejor con tiempos reales, ¿para cuándo estás pensando tener lista la vivienda modular?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3329
+    },
+    {
+      "question": "¿Se pueden personalizar los modelos?",
+      "questionType": "customization",
+      "response": "Sí, se pueden personalizar, es uno de nuestros fuertes. Todos los modelos de Viviendas Modulares se pueden ajustar en distribución, aberturas, terminaciones y elegir entre equipamiento **Comfort, Deluxe o Full Premium**, e incluso combinar tipologías.  \n\nAdemás, con **Modular Housing** hacemos proyectos 100% a medida en Steel Frame, manteniendo el plazo de 60 días. ¿Qué te gustaría personalizar más: cantidad de dormitorios, estética (interior/exterior) o nivel de equipamiento?",
+      "mentionedModels": [
+        "Modular Housing"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 12920
+    },
+    {
+      "question": "¿Tenés imágenes, planos o algún catálogo que pueda ver?",
+      "questionType": "images_catalog",
+      "response": "Sí, tenemos catálogo online con fotos, detalles y planos de muchos modelos. Podés verlos en la web oficial: https://www.lucyshousearg.com/ en la sección “Tipologías”, donde están los modelos de 19,20 m², 25,5 m², 30,6 m², 38 m², 40,8 m², 150 m² y las entregas inmediatas (28,56 m², 30 m², 32 m², 35,70 m², 37,50 m², etc.).  \n\nSi querés que un asesor te envíe catálogo en PDF, renders y planos por WhatsApp, escribí al +54 9 351 207-7113 y te mandan todo directo. Para saber qué material pasarte primero, ¿te interesan más viviendas familiares, cabañas turísticas o módulos tipo monoambiente?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 16561
+    },
+    {
+      "question": "¿Cuánto sale aproximadamente una casa de 2 dormitorios?",
+      "questionType": "pricing",
+      "response": "Para 2 dormitorios, lo más usado son superficies tipo **38 m² o 40,8 m²** con equipamiento **Comfort, Deluxe o Full Premium**. Como referencia, los valores por m² que tengo cargados son: **Comfort USD 1.290/m² + IVA**, **Deluxe USD 1.390/m² + IVA** y **Full Premium USD 1.550/m² + IVA**; por ejemplo, un modelo de **40,8 m²** va desde unos **USD 52.632 + IVA (Comfort)** hasta **USD 63.240 + IVA (Full Premium)** según el equipamiento.  \n\nTené en cuenta que a eso se suma el flete, que figura como aprox. **$3.800 por km** desde Córdoba. ¿Qué presupuesto manejás más o menos y en qué provincia pensás instalar la casa, así te digo qué combinación m² + equipamiento te conviene más?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 15258
+    },
+    {
+      "question": "¿Qué incluye el precio? ¿Terminaciones, instalación, todo?",
+      "questionType": "includes",
+      "response": "En el precio por m² de nuestras Viviendas Modulares (Comfort, Deluxe o Full Premium) está incluida la casa **completamente terminada en fábrica**: estructura Steel Frame, aislaciones, revestimientos interiores y exteriores, pisos, aberturas, instalación eléctrica y sanitaria, cocina equipada (mesada, bacha, muebles, anafe), baño completo (artefactos, griferías, vanitory, mampara según tipología), termotanque y, en Deluxe/Full Premium, extras como mamparas, espejos retroiluminados, DVH, losa radiante y cortinas roller según el caso.  \n\nNo está incluido en ese valor el **flete ni la base/fundación del terreno**: el envío se cotiza aparte (en varios modelos figura como aprox. $3.800 por km desde Córdoba) y la platea o apoyos se resuelven según tu lote. La **instalación en el lugar** es muy rápida (24 hs aprox.) y se coordina con vos dentro del proceso. ¿En qué zona tenés el terreno, así vemos envío y tipo de base que te convendría?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 7665
+    },
+    {
+      "question": "¿Ustedes se encargan de toda la instalación o solo entregan los materiales?",
+      "questionType": "installation",
+      "response": "Nosotros entregamos la **vivienda modular completamente construida en fábrica** y la instalamos en tu terreno, no es solo venta de materiales. Vos te ocupás de tener lista la base (platea o apoyos) y los servicios en el lote, y nuestro equipo coordina el traslado, posiciona el módulo y lo deja colocado en aproximadamente 24 hs.  \n\nPara afinar qué implica la instalación en tu caso, ¿ya tenés terreno? ¿En qué provincia o zona está?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 5055
+    },
+    {
+      "question": "¿Qué garantía ofrecen sobre la construcción?",
+      "questionType": "warranty",
+      "response": "Las Lucy’s se construyen en Steel Frame con terminaciones de primera (Comfort, Deluxe o Full Premium) y se entregan como vivienda terminada de fábrica, con garantía sobre la estructura y la calidad constructiva según nuestros estándares internos. En la info que tengo cargada no figura desglosado por años o ítems (estructura, filtraciones, instalaciones, etc.), así que para los plazos exactos de garantía te sugiero consultarlo directo por WhatsApp al +54 9 351 207-7113, donde te pasan las condiciones actualizadas por escrito.  \n\nMás allá de eso, trabajamos con materiales de marca (Piazza, Hydros, porcelanatos de 1ra, DVH en Full Premium, etc.), lo que también respalda la durabilidad del sistema. ¿Estás pensando en usarla como vivienda permanente o más bien como casa de fin de semana?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4972
     },
     {
       "question": "¿Tienen financiamiento o planes de pago?",
       "questionType": "financing",
-      "response": "Sí, ofrecemos financiación para nuestros Módulos habitacionales en Steel Frame; los planes concretos se ajustan según el proyecto, anticipo y plazos que manejes. No tengo por acá el detalle fino de cuotas y tasas, pero lo vemos caso por caso con el área comercial.  \n\nContame: ¿qué presupuesto aproximado manejás y si pensás pagar con anticipo + cuotas o necesitás financiar la mayor parte?",
+      "response": "Sí, ofrecemos **financiación** para las Viviendas Modulares en Steel Frame. Los detalles finos de montos, cuotas y requisitos no están desglosados en la info que tengo cargada, porque suelen ajustarse a cada caso y momento.  \n\nLo ideal es que un asesor te arme una propuesta según tu ingreso y el modelo que elijas; podés escribir directo al WhatsApp **+54 9 351 207-7113**. Para orientarte un poco más desde acá, ¿qué presupuesto aproximado pensás destinar y en cuántas cuotas te gustaría pagarlo?",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 2809
+      "responseTimeMs": 3937
     },
     {
       "question": "¿Qué los diferencia de otras empresas similares?",
       "questionType": "differentiator",
-      "response": "Nos diferenciamos porque trabajamos con tecnología Steel Frame de alto nivel (no usamos contenedores), lo que da mejor aislación, confort y durabilidad, con un diseño súper moderno. Fabricamos los Módulos habitacionales en planta en Córdoba, los dejamos listos para transportar a todo el país y manejamos tiempos muy rápidos: las viviendas modulares se entregan en alrededor de 60 días, con personalización total de diseño y equipamiento.  \n\nAdemás, contamos con showroom físico en Av. La Voz del Interior 7500 para que puedas ver las terminaciones en vivo y ofrecemos financiación para facilitar el proyecto. ¿Te gustaría algo más orientado a línea Comfort, Deluxe o Full Premium?",
+      "response": "Nos diferencia que **no trabajamos con contenedores**, sino con viviendas modulares en **Steel Frame de alta calidad**, diseñadas y construidas íntegramente en fábrica y listas en solo **60 días**, con instalación en 24 hs. Ofrecemos **equipamientos escalonados** (Comfort, Deluxe y Full Premium) con materiales de marca –porcelanatos de 1ra, griferías Piazza/Hydros, DVH y losa radiante en Full Premium– y módulos totalmente **personalizables y transportables a todo el país**.  \n\nAdemás, tenemos **modelos con entrega inmediata**, showroom físico en Córdoba (Av. La Voz del Interior 7500) y líneas específicas para turismo, oficinas, proyectos corporativos y almacenamiento (Handy Home y Lucy’s Rental). ¿Estás comparando para una casa familiar o para un proyecto turístico/comercial?",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 5461
+      "responseTimeMs": 5373
     },
     {
       "question": "¿A qué zonas o regiones llegan?",
       "questionType": "coverage",
-      "response": "Llegamos a todo el país: los Módulos habitacionales se fabrican en nuestra planta en Córdoba y se preparan para ser transportados e instalados en cualquier provincia de Argentina. Coordinamos la logística según el acceso al terreno y el tamaño del módulo.  \n\nSi me contás en qué localidad tenés pensado instalarlo, te digo mejor cómo sería el envío en tu caso.",
+      "response": "Llegamos a **todo el país**, siempre saliendo desde Córdoba. Fabricamos la vivienda modular en planta y la trasladamos en camión hasta tu terreno, con un costo de envío que en varios modelos figura como aprox. **$3.800 por km**.  \n\nPodemos coordinar instalación en ciudades grandes, sierras, campo o zonas turísticas mientras se pueda acceder con el transporte. ¿En qué provincia o localidad tenés pensado instalar la vivienda?",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 2048
+      "responseTimeMs": 3149
     }
   ],
-  "sessionCreationTimeMs": 15448,
+  "sessionCreationTimeMs": 16780,
   "errors": []
 }

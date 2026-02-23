@@ -1,0 +1,2609 @@
+{
+  "timestamp": "2026-02-23T18:25:16.676Z",
+  "config": {
+    "maxCompletionTokens": 600,
+    "temperature": 0.7,
+    "models": [
+      "gpt-5-nano",
+      "gpt-5-mini",
+      "gpt-5.1"
+    ],
+    "companies": [
+      "habika",
+      "importainer",
+      "lucys-house",
+      "vibert"
+    ]
+  },
+  "results": [
+    {
+      "company": "Habika",
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "expectedAnswer": "Hábika es una empresa de Córdoba especializada en construcción modular en Argentina, con fábrica propia y más de 150 módulos entregados en todo el país. Diseñamos y fabricamos Módulos Turísticos, Dormis y Módulos Residenciales en estructura metálica/hormigón premoldeado, 100% terminados en planta y listos para instalar en 60‑90 días.  \n\nTrabajamos mucho con proyectos turísticos, residenciales, rurales, petroleros y para clubes, con financiación de 3 a 60 meses y precios que arrancan desde aprox. USD 1.000/m² según tipología y terminación. ¿Qué tipo de Módulos estás buscando vos: para vivienda, turismo o uso laboral?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 42830,
+          "outputTokens": 600,
+          "cachedInputTokens": 0,
+          "cost": 0.0023815,
+          "latencyMs": 6674
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 42830,
+          "outputTokens": 600,
+          "cachedInputTokens": 0,
+          "cost": 0.0119075,
+          "latencyMs": 14974
+        },
+        "gpt-5.1": {
+          "response": "Hábika es una empresa de Córdoba, Argentina, especializada en construcción modular en sistema steel frame, con fábrica propia y entregas en todo el país. Diseñamos y fabricamos Módulos Turísticos, Dormis para trabajadores y Módulos Residenciales (oficinas, consultorios, vestuarios, viviendas), todos llave en mano, con alta aislación termoacústica y listos para instalar en 60‑90 días.  \n\nTrabajamos desde monoambientes de 15 m² hasta casas y complejos completos, con financiación de 3 a 60 meses y precios desde USD 1.000/m² según tipología y terminación. ¿Qué tipo de Módulos estás buscando: algo turístico, vivienda familiar o uso laboral/industrial?",
+          "inputTokens": 42830,
+          "outputTokens": 169,
+          "cachedInputTokens": 0,
+          "cost": 0.0552275,
+          "latencyMs": 8412
+        }
+      }
+    },
+    {
+      "company": "Habika",
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "expectedAnswer": "Ofrecemos principalmente tres líneas de productos: **Módulos Turísticos** (QM1, TM1, TM2, TM3), **Dormis** para trabajadores y **Módulos Residenciales** (CM0, CM2, CM3, CM4, CM5, CM6, DM3), todos en construcción modular metálica/hormigón premoldeado, 100% terminados y listos para instalar. También desarrollamos soluciones específicas: **módulos para clubes deportivos**, **módulos rurales**, **módulos para petroleros/mineras** y proyectos a medida o por etapas para desarrollistas.  \n\nComo servicios, brindamos: diseño arquitectónico, fabricación en planta, traslado e instalación en todo el país, asesoramiento en fundaciones, planes de financiación (capitalización o entrega pactada), acompañamiento para inversión inmobiliaria y mantenimiento/remodelación. ¿Para qué los necesitarías vos: vivienda propia, emprendimiento turístico o alojamiento para personal?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 42828,
+          "outputTokens": 600,
+          "cachedInputTokens": 0,
+          "cost": 0.0023813999999999997,
+          "latencyMs": 6427
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 42828,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0022877999999999996,
+          "latencyMs": 11204
+        },
+        "gpt-5.1": {
+          "response": "En Hábika trabajamos con construcción modular en steel frame y estructura metálica, con fábrica en Córdoba y entregas en todo el país. Ofrecemos Módulos Turísticos, Dormis para trabajadores y Módulos Residenciales (oficinas, consultorios, vestuarios, alojamiento), además de tipologías como CM0 (15 m²), CM5, CM6, DM3 y los CM1, CM2 y CM3 de 100 m². También brindamos alquiler de módulos, mantenimiento y remodelación, y planes de financiación de 3 a 60 meses, con valor desde USD 1.000/m² llave en mano.  \n\nPara ayudarte mejor, ¿qué tipo de Módulos estás buscando: turístico, residencial, para trabajadores o algo más corporativo/industrial?",
+          "inputTokens": 42828,
+          "outputTokens": 175,
+          "cachedInputTokens": 0,
+          "cost": 0.055285,
+          "latencyMs": 7051
+        }
+      }
+    },
+    {
+      "company": "Habika",
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "expectedAnswer": "No tengo cargado acá el número de WhatsApp o teléfono directo, y por política no puedo inventarlo.  \n\nTe recomiendo entrar a habika.ar y usar el botón de WhatsApp que está abajo a la derecha, o bien escribirnos por mail a **info@habika.ar** para que te contacten por teléfono.",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 42833,
+          "outputTokens": 600,
+          "cachedInputTokens": 0,
+          "cost": 0.00238165,
+          "latencyMs": 5920
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 42833,
+          "outputTokens": 600,
+          "cachedInputTokens": 0,
+          "cost": 0.01190825,
+          "latencyMs": 9979
+        },
+        "gpt-5.1": {
+          "response": "Te paso los datos que tengo seguros: podés escribirnos por mail a info@habika.ar o completar cualquiera de los formularios de la web (por ejemplo en “Cotizá tu módulo” o en las páginas de Módulos Turísticos, Dormis o Residenciales) y te contacta un asesor por WhatsApp.  \n\nEl número de WhatsApp no figura escrito de forma clara en la info que tengo cargada, así que para evitar pasarte un dato incorrecto, te sugiero entrar a habika.ar y hacer clic en el botón verde de “WhatsApp” que aparece abajo a la derecha.",
+          "inputTokens": 42833,
+          "outputTokens": 135,
+          "cachedInputTokens": 42752,
+          "cost": 0.006795249999999999,
+          "latencyMs": 4740
+        }
+      }
+    },
+    {
+      "company": "Habika",
+      "question": "¿Cuántos módulos ofrecen?",
+      "questionType": "product_count",
+      "expectedAnswer": "En catálogo trabajamos con más de 10 tipologías residenciales y turísticas estandarizadas, además de proyectos a medida.  \nEn **Módulos Residenciales** tenés: CM0, CM2, CM3-A, CM3-B, CM4-A, CM4-B, CM5, CM6 y DM3; y en **Módulos Turísticos**: QM1, TM1, TM2 y TM3, más Dormis y módulos especiales (rurales, petroleros, para clubes).  \n\nPara orientarte mejor, ¿para cuándo lo necesitarías y cuántas personas lo usarían?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 42828,
+          "outputTokens": 600,
+          "cachedInputTokens": 0,
+          "cost": 0.0023813999999999997,
+          "latencyMs": 6394
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 42828,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0022877999999999996,
+          "latencyMs": 9781
+        },
+        "gpt-5.1": {
+          "response": "Ofrecemos varias líneas de Módulos según el uso y la tipología.  \nPor un lado están los Módulos Turísticos, Dormis para trabajadores y Módulos Residenciales; y por otro, las tipologías específicas como CM0 (15 m²), CM5 (38,27 m²), CM6 (40,8 m²), DM3 (115,3 m²) y las familias CM1, CM2, CM3 y otros modelos residenciales/turísticos que ves en nuestras entregas (CM4, CM7, CM8, CM9, CM10, etc.).  \n\nAdemás, podés “Cotizar tu módulo” desde 15 m² y adaptar el diseño a medida según tu proyecto.  \nPara orientarte mejor, ¿qué tipo de Módulos estás buscando: turísticos, residenciales o para trabajadores/industriales?",
+          "inputTokens": 42828,
+          "outputTokens": 188,
+          "cachedInputTokens": 42752,
+          "cost": 0.007318999999999999,
+          "latencyMs": 4110
+        }
+      }
+    },
+    {
+      "company": "Habika",
+      "question": "Contame sobre Tipología CM1",
+      "questionType": "product_specific",
+      "expectedAnswer": "La Tipología CM1 es un módulo de **100 m²** pensado para configurarse con **3 dormitorios y 1 baño**, ideal como vivienda familiar, dormis grupales o infraestructura para clubes y proyectos rurales/petroleros. Se usa mucho en contextos donde necesitás varias habitaciones en un solo cuerpo: complejos deportivos, campamentos de trabajo o alojamientos masivos, y se puede integrar a esquemas de **crecimiento por etapas** o conjuntos de varios módulos.  \n\nSi querés, te ayudo a ver si un CM1 te cierra o conviene combinar varios CM0/CM5/CM6 según cuántas personas quieras alojar y el uso que le vas a dar.",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 42829,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.00045761,
+          "latencyMs": 6188
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 42829,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.00228805,
+          "latencyMs": 14998
+        },
+        "gpt-5.1": {
+          "response": "La Tipología CM1 es un módulo de 100 m², resuelto en steel frame con estructura metálica sismorresistente, pensado para uso residencial, turístico, industrial o para dormis de trabajadores. Está configurado con 3 dormitorios y 1 baño, con cerramientos de alta aislación termoacústica (EPS + lana de vidrio), instalación eléctrica y sanitaria completa, y se entrega 100% terminado en fábrica, listo para instalar en 60 a 90 días. El valor arranca desde USD 1.000/m² llave en mano (más traslado y grúa según destino) y podés elegir nivel de terminación entre líneas Industrial/Básica, Essential o Signature.\n\nPara orientarte mejor con la CM1, ¿para qué la querés usar: vivienda familiar, turismo o alojamiento para personal?",
+          "inputTokens": 42829,
+          "outputTokens": 179,
+          "cachedInputTokens": 42752,
+          "cost": 0.00723025,
+          "latencyMs": 3508
+        }
+      }
+    },
+    {
+      "company": "Habika",
+      "question": "¿Cuáles son los detalles técnicos de Tipología CM1? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "expectedAnswer": "La Tipología CM1, tal como la trabajamos en Dormis, clubes deportivos, petroleros y rural, está planteada como un módulo de **100 m²**, con **3 dormitorios** y **1 baño**.  \n\nA nivel técnico mantiene el sistema Hábika: **estructura metálica sismorresistente**, cerramientos con alta aislación termoacústica (EPS/lana de vidrio), fabricación 100% en planta, instalaciones completas (eléctrica y sanitaria) y entrega lista para instalar sobre apoyos puntuales, sin platea tradicional. Es muy versátil: puede configurarse como vivienda, dormis múltiples, vestuarios/oficinas o combinarse con otros módulos en desarrollos más grandes.",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 42841,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.00045820999999999996,
+          "latencyMs": 6543
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 42841,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0022910499999999998,
+          "latencyMs": 10783
+        },
+        "gpt-5.1": {
+          "response": "Buenísima pregunta, la Tipología CM1 es uno de nuestros clásicos.  \nEn los distintos segmentos de la web (petroleros, clubes deportivos, industriales y dormis) la **CM1 figura siempre como módulo de 100 m², con 3 habitaciones y 1 baño**, pensado como unidad amplia y funcional.\n\nA nivel técnico general, como todos los Módulos Hábika, la CM1 se fabrica en **estructura metálica soldada sismorresistente**, cerramientos en sistema **steel frame con núcleo EPS de alta densidad**, aislación termoacústica que cumple **ley 13059**, instalaciones eléctricas y sanitarias completas, aberturas colocadas, pisos terminados y terminaciones listas para usar (llave en mano, según línea de terminación que elijas: Industrial/Básica, Essential o Signature).  \n¿Para qué uso estás pensando la CM1 (residencial, turístico, dormis para personal, clubes, industrial)?",
+          "inputTokens": 42841,
+          "outputTokens": 210,
+          "cachedInputTokens": 42752,
+          "cost": 0.00755525,
+          "latencyMs": 6178
+        }
+      }
+    },
+    {
+      "company": "Habika",
+      "question": "Contame sobre Tipología CM2",
+      "questionType": "product_specific",
+      "expectedAnswer": "La Tipología CM2 también es un módulo de **100 m²**, con **3 dormitorios y 1 baño**, igual que la CM1, pero pensada como **variación de distribución y uso** según el tipo de proyecto (dormis, clubes deportivos, petroleros o rural). Mantiene el sistema constructivo Hábika: **estructura metálica sismorresistente**, cerramientos con alta eficiencia termoacústica, instalaciones completas y entrega llave en mano en 60‑90 días, lista para instalar sobre bases puntuales sin platea tradicional.  \n\nSuele elegirse cuando se necesita la misma cantidad de m² y habitaciones que la CM1, pero con otro layout interno (circulaciones, tamaño de estar, disposición de cuartos) adaptado al uso específico. ¿En tu caso la pensarías como vivienda familiar, dormis para personal o infraestructura para un club/campo?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 42829,
+          "outputTokens": 600,
+          "cachedInputTokens": 0,
+          "cost": 0.0023814500000000002,
+          "latencyMs": 7128
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 42829,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.00228805,
+          "latencyMs": 12044
+        },
+        "gpt-5.1": {
+          "response": "La Tipología CM2 de Hábika es un módulo de 100 m², con 3 dormitorios y 1 baño, pensado para uso residencial, turístico, industrial o para clubes, según cómo lo quieras configurar. Se fabrica en estructura metálica con sistema steel frame, viene 100% terminado en fábrica (pisos, baño completo, cocina, instalaciones, aberturas, pintura) y se entrega llave en mano en 60 a 90 días, lista para instalar en cualquier punto del país. El valor de referencia es desde **USD 1.000/m²** (puesto en fábrica), a lo que se suma solo traslado y grúa según destino, y podés elegir distintas líneas de terminación (Industrial/Básica, Essential o Signature).  \n\n¿Para qué uso estás pensando la CM2: vivienda familiar, turismo o algo más corporativo/industrial?",
+          "inputTokens": 42829,
+          "outputTokens": 187,
+          "cachedInputTokens": 42752,
+          "cost": 0.00731025,
+          "latencyMs": 3380
+        }
+      }
+    },
+    {
+      "company": "Habika",
+      "question": "¿Cuáles son los detalles técnicos de Tipología CM2? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "expectedAnswer": "La Tipología CM2 está planteada como un módulo de **100 m²**, con **3 dormitorios** y **1 baño**, igual que la CM1 en superficie y cantidad de ambientes.  \n\nComparte el sistema constructivo Hábika: **estructura metálica sismorresistente**, cerramientos con alta aislación termoacústica (paneles tipo EPS/lana de vidrio), fabricación 100% en planta, instalaciones eléctricas y sanitarias completas y entrega **llave en mano en 60‑90 días**, lista para apoyar sobre bases puntuales (sin necesidad de platea tradicional). La diferencia con CM1 pasa por la **distribución interna y el uso** (dormis, clubes, rural, petroleros), que se ajusta con el equipo de arquitectura según el proyecto.",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 42841,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.00045820999999999996,
+          "latencyMs": 6036
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 42841,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0022910499999999998,
+          "latencyMs": 8029
+        },
+        "gpt-5.1": {
+          "response": "Te cuento: la Tipología CM2 es un módulo de **100 m²**, pensado como vivienda completa o dormis ampliados para trabajadores, clubes o uso residencial. En la versión estándar viene con **3 dormitorios y 1 baño**, con distribución funcional para uso intensivo (ideal para familias o grupos de trabajo).\n\nA nivel técnico, se construye con **estructura metálica soldada sismorresistente**, cerramientos en **steel frame con núcleo EPS de alta densidad**, lo que le da **excelente aislación térmica y acústica** (cumple ley 13059), y se entrega **llave en mano**: pisos terminados, baño completo, cocina instalada, instalaciones eléctricas y sanitarias, aberturas de calidad y terminaciones listas para habitar.  \n¿Para qué uso estás pensando el CM2: residencial, turístico o para trabajadores?",
+          "inputTokens": 42841,
+          "outputTokens": 188,
+          "cachedInputTokens": 42752,
+          "cost": 0.00733525,
+          "latencyMs": 3677
+        }
+      }
+    },
+    {
+      "company": "Habika",
+      "question": "¿Cuál es la diferencia entre Tipología CM1 y Tipología CM2?",
+      "questionType": "model_comparison",
+      "expectedAnswer": "Ambas tipologías son módulos de **100 m² con 3 dormitorios y 1 baño**, comparten el mismo sistema constructivo (estructura metálica sismorresistente, alta aislación termoacústica, instalaciones completas y entrega llave en mano en 60‑90 días).  \n\nLa diferencia está en la **distribución interna y el uso**: CM1 y CM2 se plantean como variantes de layout (tamaño del estar, pasillos, ubicación de habitaciones/baño, posibles accesos) para adaptarse mejor a cada proyecto: dormis para trabajadores, clubes deportivos, uso rural o vivienda. Si me contás para qué lo querés usar, te digo cuál de las dos suele funcionar mejor en ese tipo de caso.",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 42838,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.00045805999999999993,
+          "latencyMs": 6129
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 42838,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0022903,
+          "latencyMs": 10864
+        },
+        "gpt-5.1": {
+          "response": "Buenísima pregunta, porque ambas son muy parecidas. Tanto la **Tipología CM1** como la **Tipología CM2** tienen **100 m², 3 habitaciones y 1 baño**; la diferencia está en el **diseño y distribución interna** (ubicación de cocina, estar-comedor, circulaciones) y en cómo se adaptan al uso: por ejemplo, en proyectos **turísticos, industriales, para clubes o dormis**, se elige una u otra según el flujo de personas y la forma de usar los ambientes.  \n\nSi querés, te puedo orientar mejor según el uso que le quieras dar: ¿estás pensando en algo **residencial, turístico o para trabajadores/empresa**?",
+          "inputTokens": 42838,
+          "outputTokens": 158,
+          "cachedInputTokens": 42752,
+          "cost": 0.0070314999999999996,
+          "latencyMs": 3211
+        }
+      }
+    },
+    {
+      "company": "Habika",
+      "question": "¿Qué modelo me recomendás para una familia de 4 personas?",
+      "questionType": "recommendation",
+      "expectedAnswer": "Para una familia de 4, el módulo que mejor se adapta dentro de las tipologías residenciales es el **CM6**: tiene **40,8 m²**, **2 dormitorios**, living–cocina–comedor integrado y **1 baño**, pensado justamente para núcleo familiar tipo. Si buscan algo más amplio o proyectan crecer, se puede combinar con otro módulo (por ejemplo un CM0 como estudio/oficina) o pensar en tipologías de **100 m² (CM1/CM2/CM3 por etapas)**.  \n\nPara afinar bien la recomendación, ¿ya tenés terreno y en qué zona de Argentina sería la instalación?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 42835,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.00045790999999999996,
+          "latencyMs": 6573
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 42835,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0022895499999999996,
+          "latencyMs": 9023
+        },
+        "gpt-5.1": {
+          "response": "Para una familia de 4, lo ideal es ir a una tipología de 3 dormitorios y buen estar-comedor, como nuestros **Módulos Residenciales** basados en las **Tipologías CM1, CM2 o CM3 de 100 m² (3 habitaciones, 1 baño)**. Tenés construcción en steel frame, excelente aislación termoacústica y entrega llave en mano en 60–90 días, con posibilidad de financiación y crecimiento por etapas si más adelante querés ampliar.\n\nPara afinar mejor la recomendación: ¿ya contás con terreno? ¿En qué zona de Argentina lo querés instalar?",
+          "inputTokens": 42835,
+          "outputTokens": 139,
+          "cachedInputTokens": 42752,
+          "cost": 0.006837749999999999,
+          "latencyMs": 3599
+        }
+      }
+    },
+    {
+      "company": "Habika",
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "expectedAnswer": "Trabajamos con construcción modular industrializada: el módulo se fabrica completo en nuestra planta (estructura metálica/hormigón premoldeado, cerramientos, instalaciones, pisos, muebles, sanitarios, pintura), mientras en el terreno solo se resuelven las bases puntuales y la nivelación. Una vez listo, lo trasladamos en camión y la **instalación en el lote se hace en 1–2 días**, con mínima intervención de obra.  \n\nLos plazos de producción son de **60 a 90 días** desde el inicio de fabricación, según tipología y plan de pago (entrega pactada o capitalización). ¿Para cuándo lo necesitarías vos, este año o estás pensando más a mediano plazo?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 42834,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.00045785999999999993,
+          "latencyMs": 6391
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 42834,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0022892999999999998,
+          "latencyMs": 12301
+        },
+        "gpt-5.1": {
+          "response": "En Hábika fabricamos los módulos en nuestra planta de Córdoba con sistema steel frame y estructura metálica soldada: primero se define el proyecto con arquitectos/ingenieros, se arma la estructura en fábrica, se colocan paneles con núcleo EPS, instalaciones completas (eléctrica y sanitaria), pisos, muebles, sanitarios y aberturas, y recién después se traslada el módulo 100% terminado al terreno para instalarlo en 1 o 2 días sobre apoyos puntuales (sin platea tradicional).  \n\nLos plazos estándar son de **60 a 90 días de fabricación** para la mayoría de los Módulos Turísticos, Dormis, Módulos Residenciales y tipologías como **CM1, CM2, CM3, CM5, CM6, DM3**, y hasta **120 días** en proyectos más grandes como dúplex o desarrollos especiales. ¿Para cuándo estás pensando usar el módulo, lo necesitás este año o estás planificando a más largo plazo?",
+          "inputTokens": 42834,
+          "outputTokens": 215,
+          "cachedInputTokens": 42752,
+          "cost": 0.0075965,
+          "latencyMs": 3856
+        }
+      }
+    },
+    {
+      "company": "Habika",
+      "question": "¿Se pueden personalizar los módulos?",
+      "questionType": "customization",
+      "expectedAnswer": "Sí, los módulos se pueden personalizar bastante: trabajamos con líneas de terminación (Industrial/Básica, Essential y Signature) y podés elegir pisos, griferías, sanitarios, muebles de cocina, colores y algunas variantes de fachada. También se ajustan distribuciones internas dentro de cada tipología o se puede hacer un proyecto a medida con nuestros arquitectos, manteniendo siempre el sistema modular y los plazos de 60‑90 días.  \n\nEn tu caso, ¿qué te interesa personalizar más: terminaciones estéticas (pisos, colores, muebles) o la distribución interna de ambientes?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 42830,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.00045766,
+          "latencyMs": 6026
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 42830,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0022883,
+          "latencyMs": 8308
+        },
+        "gpt-5.1": {
+          "response": "Sí, se pueden personalizar un montón. Trabajamos con proyectos a medida y también adaptando nuestras tipologías (CM0, CM2, CM3, CM4, CM5, CM6, DM3, Módulos Turísticos, Dormis y Módulos Residenciales) en distribución, m2, terminaciones, colores, nivel de equipamiento y hasta preparación para energías renovables. Nuestros arquitectos e ingenieros te acompañan para ajustar el diseño a tu uso: vivienda, turismo, petroleros/mineros, clubes o industrial.\n\nPara ayudarte mejor, ¿qué tipo de Módulos estás buscando: Turísticos, Dormis para trabajadores, Residenciales u otro uso?",
+          "inputTokens": 42830,
+          "outputTokens": 152,
+          "cachedInputTokens": 42752,
+          "cost": 0.006961500000000001,
+          "latencyMs": 2846
+        }
+      }
+    },
+    {
+      "company": "Habika",
+      "question": "¿Tenés imágenes, planos o algún catálogo que pueda ver?",
+      "questionType": "images_catalog",
+      "expectedAnswer": "Sí, tenemos todo eso. En la web de Hábika podés ver planos, renders y fotos reales de entregas de cada línea:  \n\n- **Módulos Residenciales** (CM0, CM2, CM3, CM4, CM5, CM6, DM3) con planos y galería de fotos: https://habika.ar/modulos-residenciales-habika/  \n- **Módulos Turísticos** (QM1, TM1, TM2, TM3): https://habika.ar/modulos-turisticos-habika/  \n\nSi me contás qué tipo de Módulo te interesa (residencial, turístico o dormis), te indico qué modelos específicos conviene mirar dentro de cada catálogo.",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 42835,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.00045790999999999996,
+          "latencyMs": 6899
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 42835,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0022895499999999996,
+          "latencyMs": 12032
+        },
+        "gpt-5.1": {
+          "response": "Sí, tenemos bastante material para que veas bien qué hacemos. En la web de Hábika podés ver:\n\n- Las **entregas reales** (fotos por provincia y modelo CM2, CM3, CM4, CM6, CM7, CM8, etc.) acá: https://habika.ar/entregas-modulares/  \n- Info general de **construcción modular** con fotos de fábrica y obras: https://habika.ar/que-es-la-construccion-modular/  \n- Los **Módulos Turísticos, Dormis y Módulos Residenciales** con imágenes y descripciones:  \n  - Turísticos: https://habika.ar/modulos-turisticos-habika/  \n  - Dormis: https://habika.ar/dormis-modulares-para-trabajadores/  \n  - Residenciales: https://habika.ar/modulos-residenciales-habika/  \n\nLos planos y cotización detallada de tipologías como **CM0 (15 m²), CM5 (38,27 m²), CM6 (40,8 m²), DM3 (115,3 m²)** los generamos y te los mandamos en PDF desde el **cotizador online**: https://habika.ar/cotizador-para-clientes/  \n\nPara orientarte mejor: ¿qué tipo de Módulos estás buscando, turísticos, residenciales o para trabajadores/industriales?",
+          "inputTokens": 42835,
+          "outputTokens": 307,
+          "cachedInputTokens": 42752,
+          "cost": 0.00851775,
+          "latencyMs": 6564
+        }
+      }
+    },
+    {
+      "company": "Habika",
+      "question": "¿Cuánto sale aproximadamente una casa de 2 dormitorios?",
+      "questionType": "pricing",
+      "expectedAnswer": "Para 2 dormitorios, el modelo estándar es el **CM6**, de **40,8 m²**, con living–cocina–comedor y 1 baño. En la línea base está publicado en **U$D 44.914** (precio en dólares billete, no incluye IVA, traslado, descarga ni fundaciones).  \n\nRecordá que el valor final puede variar por ubicación, logística y terminaciones elegidas. ¿Qué presupuesto manejás aproximadamente y en qué provincia te gustaría instalarlo?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 42833,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.00045780999999999996,
+          "latencyMs": 6907
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 42833,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.00228905,
+          "latencyMs": 10560
+        },
+        "gpt-5.1": {
+          "response": "En Hábika el valor arranca desde **USD 1.000 por m²**, y trabajamos con diseños eficientes desde unos **40–50 m²** para una vivienda de 2 dormitorios, así que estarías en un rango orientativo desde unos **USD 40.000–50.000**, según metros, cantidad de baños y nivel de terminación (Industrial, Essential o Signature). A eso se le suma solo traslado y grúa según la provincia.\n\nPodemos armarlo como **Módulo Residencial** a medida o usando tipologías como **CM5 (38,27 m²)** o **CM6 (40,8 m²)** y adaptarlas a 2 dormitorios. ¿Para qué zona del país lo estás pensando? Así te orientó mejor en m² y opciones de financiación.",
+          "inputTokens": 42833,
+          "outputTokens": 177,
+          "cachedInputTokens": 42752,
+          "cost": 0.0072152499999999994,
+          "latencyMs": 6001
+        }
+      }
+    },
+    {
+      "company": "Habika",
+      "question": "¿Qué incluye el precio? ¿Terminaciones, instalación, todo?",
+      "questionType": "includes",
+      "expectedAnswer": "El precio publicado de cada módulo corresponde a la **unidad 100% terminada en fábrica, llave en mano**, e incluye: pisos terminados (vinílicos en línea base), sanitarios y griferías, amoblamientos de cocina, aberturas colocadas, instalación eléctrica y de agua completas, pintura y herrajes. Además incluye la **dirección técnica en planta** (arquitectos e ingenieros), proyecto de arquitectura a medida e implantación en el lote a nivel de documentación y asesoramiento.  \n\nNo están incluidos en ese valor: **IVA, traslado en camión, descarga con grúa ni fundaciones/bases** (que se cotizan aparte según destino y terreno). ¿En qué zona tenés pensado instalarlo así te orientó mejor sobre esos extras?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 42835,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.00045790999999999996,
+          "latencyMs": 6654
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 42835,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0022895499999999996,
+          "latencyMs": 8063
+        },
+        "gpt-5.1": {
+          "response": "El precio por m² en Hábika incluye el módulo 100% terminado en fábrica, listo para usar: estructura metálica sismorresistente, cerramientos en steel frame, pisos, baño completo, cocina básica instalada, artefactos, griferías, amoblamientos, aberturas de PVC, instalación eléctrica y sanitaria, pintura interior/exterior y tableros eléctricos. También incluye el proyecto de arquitectura a medida, la dirección técnica en planta (arquitectos e ingenieros 24/7) y la implantación en el lote a nivel proyecto (cómo se ubica el módulo en tu terreno); aparte se suma solo traslado y grúa según destino.  \n\nManejamos tres líneas de terminación (Industrial/Básica, Essential y Signature), todas llegan llave en mano, la diferencia es el nivel de terminaciones. ¿En qué provincia pensás instalar el módulo así te explico mejor cómo sería el tema de traslado e instalación en tu caso?",
+          "inputTokens": 42835,
+          "outputTokens": 208,
+          "cachedInputTokens": 42752,
+          "cost": 0.00752775,
+          "latencyMs": 8039
+        }
+      }
+    },
+    {
+      "company": "Habika",
+      "question": "¿Ustedes se encargan de toda la instalación o solo entregan los materiales?",
+      "questionType": "installation",
+      "expectedAnswer": "Nosotros nos encargamos de **todo el módulo terminado e instalado**, no vendemos solo materiales. Fabricamos el Módulo completo en planta, lo trasladamos a tu lote y coordinamos la **implantación con grúa en 1–2 días**, dejándolo apoyado sobre las bases y listo para conectar a los servicios.  \n\nLo único que queda a cargo del cliente (con nuestro asesoramiento o profesionales de nuestra red) son las **fundaciones/bases puntuales y la gestión de conexiones a luz, agua y cloacas/biodigestor**. ¿Ya tenés terreno definido? ¿En qué zona sería la instalación?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 42840,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.00045816,
+          "latencyMs": 6797
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 42840,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0022908,
+          "latencyMs": 10763
+        },
+        "gpt-5.1": {
+          "response": "Nosotros nos encargamos de TODO: diseño, fabricación en fábrica y **entrega e instalación del módulo 100% terminado en tu terreno**, listo para usar (llave en mano). No vendemos solo materiales: los Módulos Hábika llegan con estructura metálica, cerramientos, instalaciones, sanitarios, muebles básicos, aberturas y terminaciones ya colocadas, y la implantación en el lote se hace en 1 o 2 días.  \n\nPara orientarte mejor, ¿qué tipo de Módulos estás buscando: Turísticos, Dormis para trabajadores o Módulos Residenciales?",
+          "inputTokens": 42840,
+          "outputTokens": 134,
+          "cachedInputTokens": 42752,
+          "cost": 0.006794,
+          "latencyMs": 3904
+        }
+      }
+    },
+    {
+      "company": "Habika",
+      "question": "¿Qué garantía ofrecen sobre la construcción?",
+      "questionType": "warranty",
+      "expectedAnswer": "Ofrecemos un sistema pensado para más de **100 años de vida útil**, con **estructura metálica sismorresistente** calculada por ingenieros y cerramientos con alta eficiencia termoacústica (cumple ley 13059).  \n\nLa fabricación es industrial en planta, con control permanente de arquitectos e ingenieros, y el módulo se entrega como producto constructivo completo, con respaldo técnico y documentación para aprobación municipal. Si querés, en la reunión con un asesor te pueden detallar por escrito plazos específicos de garantía para estructura, instalaciones y terminaciones según el Módulo que elijas.",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 42829,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.00045761,
+          "latencyMs": 6291
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 42829,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.00228805,
+          "latencyMs": 8644
+        },
+        "gpt-5.1": {
+          "response": "Ofrecemos garantía estructural porque nuestros módulos se diseñan como estructuras metálicas independientes, sismorresistentes y calculadas por ingenieros, con una vida útil proyectada de más de 100 años. Además, al fabricarse en planta con control técnico permanente, todo el sistema (estructura, cerramientos en steel frame, instalaciones y terminaciones) se entrega como construcción tradicional en seco, apta para aprobación municipal y créditos bancarios, lo que respalda la calidad y durabilidad.  \n\nPara orientarte mejor, ¿qué tipo de Módulos estás buscando: Turísticos, Dormis para trabajadores o Módulos Residenciales?",
+          "inputTokens": 42829,
+          "outputTokens": 140,
+          "cachedInputTokens": 42752,
+          "cost": 0.006840249999999999,
+          "latencyMs": 2746
+        }
+      }
+    },
+    {
+      "company": "Habika",
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "expectedAnswer": "Sí, tenemos varios planes de financiación propios y también trabajamos con créditos bancarios. A nivel interno manejamos dos esquemas principales:  \n\n- **Plan Entrega Pactada**: recibís el módulo cuando completás el **80%** del valor; podés hacer una entrega inicial + hasta **12 cuotas**, y el **20% restante** financiarlo hasta en **24 cuotas**.  \n- **Plan de Capitalización**: empezás a pagar en etapas; la fabricación arranca al llegar al **70%**, y el **30% restante** se puede financiar hasta en **60 cuotas**, ideal si no tenés urgencia de entrega.  \n\nAdemás, el sistema modular Hábika es apto para **créditos hipotecarios** (ej. Banco Hipotecario, Bancor) porque se aprueba como construcción tradicional en seco. ¿Qué monto aproximado pensás invertir y en cuántas cuotas te gustaría financiarlo?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 42832,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.00045776,
+          "latencyMs": 7039
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 42832,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0022887999999999997,
+          "latencyMs": 10119
+        },
+        "gpt-5.1": {
+          "response": "Sí, tenemos financiación y varios planes de pago pensados para adaptarnos a cada proyecto. Trabajamos con valor desde **USD 1.000/m² llave en mano** y dos esquemas principales:\n\n- **Plan Entrega Pactada:** producimos el módulo en **60 a 90 días**, lo recibís cuando completás el **80%** del valor (entrega inicial + hasta 12 cuotas), y el **20% restante** podés financiarlo hasta en **24 cuotas**.  \n- **Plan de Capitalización:** empezás con cuotas más bajas, se inicia la fabricación al llegar al **70%**, y el **30% restante** se puede financiar hasta en **60 cuotas**.\n\nAdemás, aceptamos **créditos bancarios** (Banco Hipotecario, Bancor) y, en algunos casos, vehículos o propiedades como parte de pago. ¿Qué presupuesto aproximado manejás así te digo qué plan te puede encajar mejor?",
+          "inputTokens": 42832,
+          "outputTokens": 207,
+          "cachedInputTokens": 0,
+          "cost": 0.05561000000000001,
+          "latencyMs": 6540
+        }
+      }
+    },
+    {
+      "company": "Habika",
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "expectedAnswer": "Nos diferencia sobre todo el **nivel de industrialización y calidad**: estructura metálica sismorresistente calculada por ingenieros, cerramientos con alta eficiencia termoacústica (EPS + lana de vidrio, cumple ley 13059) y módulos que salen de fábrica 100% terminados, listos para instalar en 1–2 días en el lote. A eso se suma que damos **precio cerrado y entrega en 60–90 días**, evitando los sobrecostos típicos de la obra tradicional (obrador, baños químicos, demoras, clima, desperdicio de materiales).  \n\nAdemás, no trabajamos con contenedores: son **módulos diseñados desde cero**, aptos para aprobación municipal en todo el país, con más de **150 módulos entregados** y planes de pago largos (hasta 60 meses). Y algo clave: te acompañamos como desarrollistas, no solo como “fábrica”, ayudándote con estudio de mercado, proyecto y estrategia si es un emprendimiento turístico o de inversión.",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 42830,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.00045766,
+          "latencyMs": 7707
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 42830,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0022883,
+          "latencyMs": 9230
+        },
+        "gpt-5.1": {
+          "response": "En Hábika nos diferenciamos, sobre todo, por tres cosas: sistema constructivo, acompañamiento y tiempos/financiación. Trabajamos con construcción modular en steel frame y estructura metálica sismo-resistente, con cerramientos de alta eficiencia termoacústica (cumplimos ley 13059), módulos 100% terminados en fábrica y entrega en 60–90 días, trasladables a cualquier punto del país.  \n\nAdemás, no vendemos “un módulo suelto”: te acompaña un equipo de arquitectos e ingenieros desde el diseño, pliegos técnicos y aprobación municipal hasta la instalación llave en mano, y tenemos planes de financiación de 3 a 60 meses, posibilidad de recibir vehículos/propiedades y precios desde USD 1.000/m². ¿Qué tipo de Módulos estás buscando: Turísticos, Dormis para trabajadores o Módulos Residenciales?",
+          "inputTokens": 42830,
+          "outputTokens": 196,
+          "cachedInputTokens": 42752,
+          "cost": 0.0074015,
+          "latencyMs": 3466
+        }
+      }
+    },
+    {
+      "company": "Habika",
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "expectedAnswer": "Llegamos a **todo el país**: fabricamos en Córdoba y trasladamos los Módulos a cualquier provincia de Argentina con camión y grúa.  \n\nSolo varía el costo de **traslado e instalación** según la distancia y el acceso al terreno. ¿En qué provincia y localidad estás pensando instalar el módulo así te confirmo viabilidad logística y te orientamos mejor?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 42830,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.00045766,
+          "latencyMs": 6821
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 42830,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0022883,
+          "latencyMs": 8462
+        },
+        "gpt-5.1": {
+          "response": "Llegamos con nuestros módulos a todo el país: ya tenemos más de 150 módulos instalados en al menos 14 provincias como Córdoba, Buenos Aires, Neuquén, Río Negro, Santa Fe, Formosa, Mendoza, Salta, Corrientes, entre otras. Fabricamos en Córdoba y trasladamos los Módulos Turísticos, Dormis, Módulos Residenciales e industriales listos para instalar, con grúa incluida según el proyecto.  \n\nPara orientarte mejor con logística y costos de traslado, ¿en qué provincia y localidad estarías pensando instalar el módulo?",
+          "inputTokens": 42830,
+          "outputTokens": 126,
+          "cachedInputTokens": 42752,
+          "cost": 0.0067015,
+          "latencyMs": 3184
+        }
+      }
+    },
+    {
+      "company": "Importainer",
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "expectedAnswer": "Importainer S.A. es una empresa argentina con más de 10 años de experiencia que fabrica viviendas y estructuras usando contenedores marítimos reciclados. Diseñamos y construimos casas container (como Casa container 15m², Casa Container 60m², Casa Malibu, Casa Patagonia, etc.), dúplex (por ejemplo Duplex Container 45m², Duplex Pehuen 90m²), oficinas container (Oficina Container 60, 75 y 90m²), bares, locales comerciales, quinchos y jardines de invierno, además de vender containers vacíos (20 STANDARD, 40 STANDARD y 40 HIGH CUBE) y contenedores refrigerados. Trabajamos con sistema llave en mano, con aislación termoacústica completa, instalaciones de agua y electricidad incluidas, y ofrecemos financiación en pesos hasta en 240 cuotas.  \n\nPara orientarte mejor, ¿qué tipo de Contenedores, casas, oficinas, dúplex. estás buscando: vivienda, local comercial, oficina o algo más específico?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 62244,
+          "outputTokens": 600,
+          "cachedInputTokens": 0,
+          "cost": 0.0033522000000000005,
+          "latencyMs": 8385
+        },
+        "gpt-5-mini": {
+          "response": "¡Hola! Somos Importainer S.A., una empresa fabricante argentina que transforma contenedores marítimos en viviendas y espacios funcionales: fabricamos casas, dúplex, oficinas, bares, locales comerciales y también vendemos contenedores vacíos y refrigerados.  \nTrabajamos con construcción con contenedores, entregamos llave en mano, con aislación termoacústica, transporte e instalación, y ofrecemos financiación en pesos y planes en cuotas para facilitar la compra.  \nTenemos más de 10 años de experiencia y fábrica propia; ¿querés que te muestre modelos disponibles como Casa Malibu (15m²), Casa California (60m²), Duplex Container (45m²) u Oficina Container (90m²)?",
+          "inputTokens": 62244,
+          "outputTokens": 541,
+          "cachedInputTokens": 0,
+          "cost": 0.016643,
+          "latencyMs": 9714
+        },
+        "gpt-5.1": {
+          "response": "Somos Importainer S.A., una empresa constructora argentina especializada en viviendas y proyectos hechos con contenedores marítimos. Transformamos containers de 20 y 40 pies en casas, dúplex, oficinas, bares, locales comerciales, quinchos, piletas, jardines de invierno y también vendemos contenedores vacíos y refrigerados.\n\nTrabajamos con sistema constructivo en seco, con aislación termoacústica, entrega llave en mano, traslado e instalación en tu terreno, y contamos con financiación en pesos hasta 240 cuotas, incluso sin anticipo. ¿Qué tipo de Inmuebles containers, casas, dúplex, oficinas, bares, locales comerciales, contenedores. estás buscando para vos?",
+          "inputTokens": 62244,
+          "outputTokens": 155,
+          "cachedInputTokens": 0,
+          "cost": 0.079355,
+          "latencyMs": 6999
+        }
+      }
+    },
+    {
+      "company": "Importainer",
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "expectedAnswer": "Ofrecemos dos grandes cosas: productos hechos con contenedores y servicios para que llegues a tu inmueble terminado sin complicarte.  \n\n1) **Productos**  \n- **Casas container**:  \n  - Casa container 15m², Casa Container 30m², 45m², 60m², 75m², 90m², 120m².  \n  - Línea Premium: Casa Malibu 15m², Casa Patagonia 30m², Casa Marruecos 45m², Casa California 60m², Casa Sunset 75m², Casa Jakarta 90m², Casa Africa 120m².  \n- **Dúplex container**:  \n  - Classic: Duplex Container 30, 45, 60, 75, 90m².  \n  - Comfort: Duplex Container 45, 60, 75m².  \n  - Premium: Duplex Ceibo 30m², Duplex Ombu 45m², Duplex Arrayan 60m², Duplex Jacaranda 75m², Duplex Pehuen 90m², Duplex Alerce 120m².  \n- **Oficinas container**: Oficina Container 15, 30, 45, 60, 75 y 90m².  \n- **Locales y bares**: Local Comercial 60m² y Bar Container (Bar 15, 30, 45, 60 y 120m²).  \n- **Exteriores**: Quincho Container 15m² y Jardín de Invierno container 30m².  \n- **Containers vacíos**:  \n  - 20 STANDARD – 6,10 x 2,43 x 2,60 – **US$ 3.259,75**  \n  - 40 STANDARD – 12,19 x 2,43 x 2,60 – **US$ 3.922,75**  \n  - 40 HIGH CUBE – 12,19 x 2,43 x 2,89 – **US$ 4.088,50**  \n- **Contenedores refrigerados (reefers)** para frío comercial/industrial.  \n\n2) **Servicios**  \n- Diseño y construcción en **sistema constructivo con containers reciclados**, llave en mano.  \n- **Personalización** de planos, terminaciones y distribución de ambientes.  \n- **Financiación en pesos**, planes de hasta 240 cuotas, sin anticipo según propuesta comercial.  \n- **Traslado e instalación** del inmueble en tu terreno en cualquier punto de Argentina.  \n\nPara ayudarte mejor, ¿estás pensando en una casa, un dúplex, una oficina container, un bar/local o en comprar un container vacío?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 62242,
+          "outputTokens": 600,
+          "cachedInputTokens": 0,
+          "cost": 0.0033521000000000002,
+          "latencyMs": 7828
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 62242,
+          "outputTokens": 600,
+          "cachedInputTokens": 62208,
+          "cost": 0.0027637,
+          "latencyMs": 10538
+        },
+        "gpt-5.1": {
+          "response": "Ofrecemos Inmuebles containers, casas, dúplex, oficinas, bares, locales comerciales y contenedores vacíos y refrigerados, todos fabricados con contenedores marítimos.  \nEn modelos concretos tenés, por ejemplo: Casa Malibu, Casa Patagonia, Casa Marruecos, Casa California, Casa Sunset, Casa Jakarta, Casa Africa; Duplex Container 45m², Duplex Ceibo, Duplex Ombu, Duplex Arrayan, Duplex Jacaranda, Duplex Pehuen, Duplex Alerce; Oficina Container (15 a 90m²); Bar 30m²; Local Comercial 60m²; Quincho Container, Jardín de Invierno y los containers 20 Standard, 40 Standard y 40 High Cube.  \n\nAdemás brindamos servicio integral: diseño y personalización, construcción con contenedores, traslado e instalación en tu terreno y financiación en hasta 240 cuotas en pesos, sin anticipo.  \n¿Sobre qué tipo de Inmuebles containers, casas, dúplex, oficinas, bares, locales comerciales, contenedores. te gustaría que te cuente más: vivienda, comercial, oficinas o containers vacíos?",
+          "inputTokens": 62242,
+          "outputTokens": 247,
+          "cachedInputTokens": 62208,
+          "cost": 0.010288499999999999,
+          "latencyMs": 39316
+        }
+      }
+    },
+    {
+      "company": "Importainer",
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "expectedAnswer": "Podés contactarnos directo por estos medios:  \n- **WhatsApp / Teléfono comercial**: +54 9 11 2276 3820  \n- **Otro WhatsApp habilitado**: +54 9 11 5937 8945  \n- **Email**: rrhh@importainer.com.ar  \n\nSi querés, decime qué tipo de Contenedores, casas, oficinas, dúplex. te interesan y te ayudo a armar el mensaje para enviarles por WhatsApp.",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 62247,
+          "outputTokens": 600,
+          "cachedInputTokens": 62080,
+          "cost": 0.00055875,
+          "latencyMs": 7047
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 62247,
+          "outputTokens": 600,
+          "cachedInputTokens": 62208,
+          "cost": 0.00276495,
+          "latencyMs": 9827
+        },
+        "gpt-5.1": {
+          "response": "Te dejo los datos directos de contacto de Importainer S.A.:\n\n- WhatsApp / Teléfono: +54 9 11 2276 3820  \n- Otro WhatsApp / Teléfono: +54 9 11 5937 8945  \n- Email: importainerr@gmail.com  \n\n¿Preferís que te pase un mensaje tipo para que lo copies y pegues en WhatsApp y ya arranques la consulta?",
+          "inputTokens": 62247,
+          "outputTokens": 100,
+          "cachedInputTokens": 62208,
+          "cost": 0.00882475,
+          "latencyMs": 3915
+        }
+      }
+    },
+    {
+      "company": "Importainer",
+      "question": "¿Cuántos modelos ofrecen?",
+      "questionType": "product_count",
+      "expectedAnswer": "Tenemos muchos modelos, porque combinamos categorías (casas, dúplex, oficinas, bares, locales, exteriores) con distintas superficies y líneas (Economic, Classic, Comfort, Premium).  \n\nCon nombres específicos del catálogo, hoy contamos al menos con:  \n- **Casas**: Casa container 15, 30, 45, 60, 75, 90, 120m² + Casa Malibu, Casa Patagonia, Casa Marruecos, Casa California, Casa Sunset, Casa Jakarta, Casa Africa.  \n- **Dúplex**: Duplex Container 30, 45, 60, 75, 90m² + Duplex Ceibo, Ombu, Arrayan, Jacaranda, Pehuen, Alerce.  \n- **Oficinas**: Oficina Container 15, 30, 45, 60, 75 y 90m².  \n- **Comerciales y exteriores**: Local Comercial 60m², Bar 15, 30, 45, 60 y 120m², Quincho Container 15m², Jardín de Invierno 30m².  \n- **Containers vacíos**: 20 STANDARD, 40 STANDARD y 40 HIGH CUBE, más contenedores refrigerados.  \n\nEn total son varias decenas de combinaciones posibles; para no marearte, ¿en qué tipo de Contenedores, casas, oficinas, dúplex. querés que te detalle exactamente los modelos disponibles?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 62242,
+          "outputTokens": 600,
+          "cachedInputTokens": 62080,
+          "cost": 0.0005585,
+          "latencyMs": 8135
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 62242,
+          "outputTokens": 600,
+          "cachedInputTokens": 62208,
+          "cost": 0.0027637,
+          "latencyMs": 8348
+        },
+        "gpt-5.1": {
+          "response": "Ofrecemos una línea súper completa de inmuebles container, con más de 30 modelos estándar entre casas, dúplex, oficinas, bares, locales comerciales y contenedores vacíos/refrigerados. Por ejemplo, en casas tenés desde la Casa Malibu 15m² hasta la Casa Africa 120m²; en dúplex modelos como Duplex Ceibo 30m² y Duplex Alerce 120m²; oficinas container de 15m² a 90m²; el Bar 30m²; Local Comercial 60m²; más los contenedores 20 Standard, 40 Standard y 40 High Cube.  \n\nPara orientarte mejor, ¿qué tipo de Inmuebles containers, casas, dúplex, oficinas, bares, locales comerciales, contenedores. estás buscando?",
+          "inputTokens": 62242,
+          "outputTokens": 175,
+          "cachedInputTokens": 0,
+          "cost": 0.0795525,
+          "latencyMs": 9534
+        }
+      }
+    },
+    {
+      "company": "Importainer",
+      "question": "Contame sobre Construccion en Sistema constructivo basado en con",
+      "questionType": "product_specific",
+      "expectedAnswer": "Nuestro sistema constructivo está basado en **containers marítimos reciclados**, transformados en viviendas y espacios 100% habitables con estándar de obra tradicional. Trabajamos con contenedores de 20 y 40 pies, los acondicionamos con **aislación termoacústica (lana de vidrio + aluminio)**, instalaciones completas de agua y electricidad, aberturas, revestimientos interiores, pintura exterior y mobiliario de cocina y baño según el modelo (Casa container 15m², Casa Container 60m², Duplex Container 45m², Oficina Container 90m², etc.).  \n\nLas ventajas clave son: **obra hasta 50% más rápida**, costo más bajo que la construcción húmeda, sistema modular y transportable (podés mover tu casa/oficina y ampliar sumando módulos), y opción **llave en mano** con financiación en pesos hasta 240 cuotas. ¿Te interesa este sistema para una casa, un dúplex, una oficina container o un local/bar?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 62248,
+          "outputTokens": 600,
+          "cachedInputTokens": 62080,
+          "cost": 0.0005587999999999999,
+          "latencyMs": 6866
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 62248,
+          "outputTokens": 600,
+          "cachedInputTokens": 62208,
+          "cost": 0.0027651999999999998,
+          "latencyMs": 8678
+        },
+        "gpt-5.1": {
+          "response": "Te cuento: nuestro sistema constructivo está basado en contenedores marítimos de 20 y 40 pies, que transformamos en inmuebles totalmente habitables (casas, dúplex, oficinas, bares, locales comerciales, quinchos, etc.). Trabajamos en construcción en seco, con estructura de acero del container, aislación termoacústica con lana de vidrio y aluminio, instalaciones eléctricas y de agua completas, revestimientos interiores, aberturas y terminaciones listas para habitar.\n\nLa gran ventaja es la rapidez (hasta 50% más rápido que una obra tradicional), menor costo, posibilidad de transportar el inmueble y ampliarlo sumando más módulos en el futuro. Además, podés financiar en pesos hasta en 240 cuotas y entregamos llave en mano, con traslado e instalación en tu terreno. ¿Para qué tipo de proyecto estás pensando usar el sistema de construcción con contenedores?",
+          "inputTokens": 62248,
+          "outputTokens": 193,
+          "cachedInputTokens": 62208,
+          "cost": 0.009755999999999999,
+          "latencyMs": 9161
+        }
+      }
+    },
+    {
+      "company": "Importainer",
+      "question": "¿Cuáles son los detalles técnicos de Construccion en Sistema constructivo basado en con? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "expectedAnswer": "Te explico con ejemplos concretos de cómo aplicamos nuestro sistema constructivo con containers reciclados en distintos modelos, así ves superficies, dormitorios y características técnicas reales:\n\n1) **Casa container 15m² (Classic)**  \n- **Superficie**: 15m², planta baja.  \n- **Dormitorios**: monoambiente (todo integrado).  \n- **Ambientes**: cocina, comedor, living + 1 baño.  \n- **Técnico**: aislación termoacústica completa, instalación eléctrica y de agua incluida, aberturas interiores y exteriores incluidas, revestimientos interiores, muebles y griferías sanitarias, pintura exterior.  \n\n2) **Casa Container 60m² (Comfort)**  \n- **Superficie**: 60m², planta baja.  \n- **Dormitorios**: hasta 3 dormitorios.  \n- **Ambientes**: living, comedor, cocina, hasta 2 baños.  \n- **Técnico**: aislación con lana de vidrio + aluminio, instalación eléctrica y de agua completa, aberturas interiores/exteriores, revestimientos interiores, muebles sanitarios y griferías, lista para habitar, posibilidad de terraza (factibilidad).  \n\n3) **Duplex Container 45m² (Classic)**  \n- **Superficie**: 45m², planta baja y alta.  \n- **Dormitorios**: hasta 3 dormitorios.  \n- **Ambientes**: cocina, comedor, living, hasta 1 baño, escalera interior, posibilidad de terraza.  \n- **Técnico**: mismo estándar de aislación termoacústica, instalaciones completas, aberturas, revestimientos, mobiliario de cocina y baño incluidos.  \n\n4) **Oficina Container 90m² (Classic)**  \n- **Superficie**: 90m², planta baja + primer piso + planta alta.  \n- **Dormitorios**: no aplica (espacios de trabajo).  \n- **Ambientes**: hasta 5 ambientes de oficina, hasta 4 toilettes, cocina incluida, escalera interior, opción terraza (factibilidad).  \n- **Técnico**: aislación termoacústica, instalaciones de agua y electricidad incluidas, aberturas completas, revestimientos interiores, muebles y griferías sanitarias.  \n\nEn todos los casos el **sistema constructivo** es el mismo: contenedores marítimos de 20 o 40 pies reciclados, estructura de acero de alta resistencia, aislación termoacústica, ejecución rápida y entrega llave en mano.  \n¿Lo estás pensando más para vivienda permanente (casa/dúplex) o para uso comercial (oficina, bar, local)? Así te detallo el modelo que mejor encaje.",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 62260,
+          "outputTokens": 600,
+          "cachedInputTokens": 62080,
+          "cost": 0.0005594,
+          "latencyMs": 6908
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 62260,
+          "outputTokens": 600,
+          "cachedInputTokens": 62208,
+          "cost": 0.0027682,
+          "latencyMs": 7979
+        },
+        "gpt-5.1": {
+          "response": "",
+          "inputTokens": 62260,
+          "outputTokens": 600,
+          "cachedInputTokens": 62208,
+          "cost": 0.013841,
+          "latencyMs": 7637
+        }
+      }
+    },
+    {
+      "company": "Importainer",
+      "question": "Contame sobre Financiacion disponible",
+      "questionType": "product_specific",
+      "expectedAnswer": "La financiación disponible en Importainer es uno de nuestros fuertes: podés acceder a Contenedores, casas, oficinas, dúplex. **100% financiados en pesos, sin anticipo** según la propuesta comercial vigente, y con planes de **hasta 240 cuotas**. La financiación cubre nuestros inmuebles llave en mano (por ejemplo Casa container 15m², Casa Container 60m², Duplex Container 45m², Casa Malibu, Duplex Pehuen, Oficina Container 90m², Local Comercial 60m², Bar 30m², Quincho Container 15m², etc.).  \n\nTe asesoran sobre plan, monto y cantidad de cuotas según el modelo y tu perfil, y podés hacer todo el proceso de forma virtual. ¿Qué presupuesto aproximado manejás y para qué tipo de Contenedores, casas, oficinas, dúplex. te gustaría usar la financiación?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 62243,
+          "outputTokens": 600,
+          "cachedInputTokens": 62080,
+          "cost": 0.00055855,
+          "latencyMs": 7291
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 62243,
+          "outputTokens": 600,
+          "cachedInputTokens": 62208,
+          "cost": 0.0027639500000000003,
+          "latencyMs": 8916
+        },
+        "gpt-5.1": {
+          "response": "En Importainer la financiación es 100% en pesos, sin anticipo y con planes de hasta 240 cuotas, directamente con la empresa, sin pedirte un préstamo bancario para el inmueble container. Podés usar financiación para casas, dúplex, oficinas, bares, locales comerciales, quinchos, piletas y más, y además tenemos convenio con Banco Galicia para financiar aparte pilotes, transporte y electrodomésticos. \n\nPara orientarte mejor con un plan a medida: ¿para qué tipo de inmueble container estás pensando usar la financiación (casa, dúplex, oficina, bar, local, etc.)?",
+          "inputTokens": 62243,
+          "outputTokens": 133,
+          "cachedInputTokens": 62208,
+          "cost": 0.00914975,
+          "latencyMs": 3080
+        }
+      }
+    },
+    {
+      "company": "Importainer",
+      "question": "¿Cuáles son los detalles técnicos de Financiacion disponible? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "expectedAnswer": "La **Financiación disponible** no es un modelo físico con m² o dormitorios, sino el sistema de pago que podés aplicar a cualquiera de nuestros inmuebles container. Lo importante son estas características:  \n\n- **Qué se puede financiar**: casas (Casa container 15, 30, 45, 60, 75, 90, 120m²; Casa Malibu, Casa Patagonia, Casa Marruecos, Casa California, Casa Sunset, Casa Jakarta, Casa Africa), dúplex (Duplex Container 30 a 90m², Duplex Ceibo, Ombu, Arrayan, Jacaranda, Pehuen, Alerce), Oficinas Container 15 a 90m², Local Comercial 60m², Bar 15 a 120m², Quincho Container 15m², Jardín de Invierno 30m².  \n- **Forma de pago**: financiación **en pesos**, con planes de **hasta 240 cuotas** y posibilidad de proyectos **100% financiados, sin anticipo** según evaluación comercial.  \n- **Qué incluye**: el valor del inmueble llave en mano (estructura en container reciclado, aislación termoacústica, instalaciones de agua y electricidad, aberturas, revestimientos, y mobiliario de cocina/baños según modelo).  \n\nNo tengo por acá el detalle de tasas ni montos mínimos/máximos; para eso te sugiero escribir por WhatsApp al +54 9 11 2276 3820. Para afinar, ¿sobre qué modelo puntual querés que veamos cómo aplicaría la financiación (por ejemplo Casa Container 60m² o Duplex Container 45m²)?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 62255,
+          "outputTokens": 600,
+          "cachedInputTokens": 62080,
+          "cost": 0.00055915,
+          "latencyMs": 6907
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 62255,
+          "outputTokens": 600,
+          "cachedInputTokens": 62208,
+          "cost": 0.00276695,
+          "latencyMs": 8611
+        },
+        "gpt-5.1": {
+          "response": "Te cuento: **“Financiación disponible” no es un modelo de inmueble container, sino un servicio de pago** que aplicamos a nuestras casas, dúplex, oficinas, bares, locales comerciales y demás proyectos. Por eso no tiene superficie, dormitorios ni ficha técnica propia.\n\nLo que sí tenemos son inmuebles como la **Casa Malibu 15m², Casa Patagonia 30m², Casa Marruecos 45m², Casa California 60m², Casa Africa 120m², Duplex Container 45m², Oficina Container 90m², Bar 30m², Local Comercial 60m²**, etc., y todos se pueden comprar **al contado o 100% financiados en cuotas, sin anticipo**, según el plan.  \nPara orientarte mejor, ¿sobre qué tipo de inmueble container querés que te detalle características (casa, dúplex, oficina, bar, local comercial…)?",
+          "inputTokens": 62255,
+          "outputTokens": 200,
+          "cachedInputTokens": 62208,
+          "cost": 0.00983475,
+          "latencyMs": 4115
+        }
+      }
+    },
+    {
+      "company": "Importainer",
+      "question": "¿Cuál es la diferencia entre Construccion en Sistema constructivo basado en con y Financiacion disponible?",
+      "questionType": "model_comparison",
+      "expectedAnswer": "Son dos cosas distintas que se complementan:  \n\n- **Construcción en sistema constructivo basado en containers reciclados**: es **el cómo construimos**. Usamos contenedores marítimos de 20 y 40 pies, los reciclamos y transformamos en casas, dúplex, oficinas, bares, locales, quinchos, etc., con aislación termoacústica, instalaciones completas, terminaciones interiores y entrega llave en mano (por ejemplo Casa container 15m², Casa Container 60m², Duplex Container 45m², Oficina Container 90m²).  \n- **Financiación disponible**: es **el cómo lo pagás**. Es nuestro sistema para que accedas a esos inmuebles container en **pesos, en cuotas (hasta 240)** y con planes 100% financiados sin anticipo según evaluación.  \n\nO sea: el sistema constructivo define el producto (la casa/duplex/oficina en container) y la financiación define el plan de pago para que puedas comprarlo. ¿En qué estás más enfocando ahora, en entender mejor la construcción o en ver si llegás con las cuotas?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 62257,
+          "outputTokens": 600,
+          "cachedInputTokens": 62080,
+          "cost": 0.0005592500000000001,
+          "latencyMs": 7827
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 62257,
+          "outputTokens": 600,
+          "cachedInputTokens": 0,
+          "cost": 0.01676425,
+          "latencyMs": 12139
+        },
+        "gpt-5.1": {
+          "response": "Buenísima pregunta, porque son dos cosas totalmente distintas:\n\n- “Construcción en sistema constructivo basado en contenedores” es **cómo** trabajamos: usamos contenedores marítimos reciclados (20 y 40 pies), con aislación termoacústica, construcción en seco, montaje rápido, transporte e instalación en tu terreno, y modelos como Casa Malibu, Casa Patagonia, Duplex Container, Oficina Container, Bar, Local Comercial, etc.  \n- “Financiación disponible” es **cómo lo pagás**: Importainer S.A. ofrece planes en pesos, hasta 240 cuotas, 100% financiado y sin anticipo, y también convenios con Banco Galicia para pilotes, transporte y electrodomésticos.\n\nPara orientarte mejor: ¿qué tipo de Inmuebles containers, casas, dúplex, oficinas, bares, locales comerciales, contenedores. estás buscando financiar?",
+          "inputTokens": 62257,
+          "outputTokens": 191,
+          "cachedInputTokens": 62208,
+          "cost": 0.00974725,
+          "latencyMs": 16297
+        }
+      }
+    },
+    {
+      "company": "Importainer",
+      "question": "¿Qué modelo me recomendás para una familia de 4 personas?",
+      "questionType": "recommendation",
+      "expectedAnswer": "Para una familia de 4 lo ideal es pensar en **mínimo 45–60m²** y 2 o 3 dormitorios, según cuánto se quiera invertir y el uso (vivienda permanente o de finde). Te dejo tres opciones bien concretas dentro de nuestros Contenedores, casas, oficinas, dúplex.:  \n\n1. **Casa Container 60m² (Comfort)**  \n- **Superficie**: 60m², planta baja.  \n- **Distribución**: hasta **3 dormitorios**, living, comedor, cocina y hasta **2 baños**.  \n- **Ideal si** buscás casa cómoda para vivir todo el año, con buena aislación termoacústica y lista para habitar (instalaciones y mobiliario de cocina/baños incluidos).  \n\n2. **Casa container 45m² (Classic)**  \n- **Superficie**: 45m², planta baja.  \n- **Distribución**: hasta **2 dormitorios**, baño, cocina-comedor y living integrados.  \n- **Ideal si** quieren algo más económico, pero con espacios bien resueltos para 4 personas.  \n\n3. **Duplex Container 45m² (Classic)**  \n- **Superficie**: 45m², planta baja y alta.  \n- **Distribución**: hasta **3 dormitorios**, 1 baño, cocina, comedor, living y escalera; posibilidad de terraza.  \n- **Ideal si** te gusta separar área social abajo y dormitorios arriba, aprovechando mejor el terreno.  \n\nCon financiación podés acceder en cuotas en pesos. Para afinar mejor la recomendación: ¿ya tenés terreno y en qué zona sería?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 62249,
+          "outputTokens": 600,
+          "cachedInputTokens": 0,
+          "cost": 0.00335245,
+          "latencyMs": 8660
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 62249,
+          "outputTokens": 600,
+          "cachedInputTokens": 0,
+          "cost": 0.01676225,
+          "latencyMs": 10922
+        },
+        "gpt-5.1": {
+          "response": "Para una familia de 4 lo ideal es pensar en 2 o 3 dormitorios y al menos 45/60m² para estar cómodos. En casas, te recomiendo la Casa Marruecos 45m², la Casa California 60m² o la Casa Container 60m² Comfort (todas con varios ambientes y baño completo). Si te gusta el formato en dos plantas, el Duplex Container 45m² o los dúplex más grandes como Duplex Pehuen 90m² y Duplex Alerce 120m² te dan más privacidad entre áreas sociales y dormitorios.  \n\nPara afinar mejor, ¿ya tenés terreno y en qué zona pensás instalar el inmueble container?",
+          "inputTokens": 62249,
+          "outputTokens": 153,
+          "cachedInputTokens": 0,
+          "cost": 0.07934125,
+          "latencyMs": 7009
+        }
+      }
+    },
+    {
+      "company": "Importainer",
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "expectedAnswer": "Trabajamos con un proceso **llave en mano**, en fábrica, mucho más rápido que la obra tradicional: primero definimos con vos el modelo (por ejemplo Casa container 15m², Casa Container 60m², Duplex Container 45m², Casa Malibu, etc.), hacemos el diseño y personalización, luego construimos el módulo en planta (estructura en container reciclado, aislación termoacústica, instalaciones de agua y luz, aberturas, revestimientos, mobiliario de cocina/baños) y finalmente lo trasladamos y lo instalamos en tu terreno.  \n\nEn tiempos, la construcción en container es hasta un **50% más rápida** que la obra húmeda y hay entregas reales que se montaron en **aprox. 7 días en el terreno** (el armado final), aunque el plazo total depende del modelo y del plan de financiación elegido.  \n\n¿Para cuándo necesitarías tener lista la casa o dúplex aproximadamente?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 62248,
+          "outputTokens": 600,
+          "cachedInputTokens": 62080,
+          "cost": 0.0005587999999999999,
+          "latencyMs": 7866
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 62248,
+          "outputTokens": 600,
+          "cachedInputTokens": 62208,
+          "cost": 0.0027651999999999998,
+          "latencyMs": 8928
+        },
+        "gpt-5.1": {
+          "response": "En Importainer trabajamos con construcción en seco sobre contenedores marítimos: diseñamos el proyecto, preparamos todo en fábrica (estructura, aislación termoacústica, instalaciones eléctricas y de agua, revestimientos, sanitarios, pintura, etc.) y luego lo trasladamos y ensamblamos en tu terreno con sistema llave en mano. La obra es hasta un 50% más rápida que la tradicional y, según el tamaño del inmueble container, la instalación en sitio suele resolverse en pocos días; en casos como una casa container de 90m², por ejemplo, quedó completamente armada en unos 7 días en el terreno.  \n\nPara orientarte mejor con los tiempos de fabricación y entrega en tu caso puntual, ¿para cuándo estarías necesitando tu casa, dúplex, oficina, bar o local container?",
+          "inputTokens": 62248,
+          "outputTokens": 178,
+          "cachedInputTokens": 62208,
+          "cost": 0.009606,
+          "latencyMs": 4041
+        }
+      }
+    },
+    {
+      "company": "Importainer",
+      "question": "¿Se pueden personalizar los modelos?",
+      "questionType": "customization",
+      "expectedAnswer": "Sí, todos nuestros Contenedores, casas, oficinas, dúplex. se pueden personalizar. Podés ajustar distribución interna (cantidad y tamaño de dormitorios, ubicación de cocina/living/baños), elegir terminaciones, revestimientos, colores, y sumar detalles como deck, terraza, ampliaciones con más containers, etc., siempre sobre la base de modelos como Casa container 15m², Casa Container 60m², Duplex Container 45m², Casa Malibu, Duplex Pehuen, Oficina Container 90m², Local Comercial 60m², Quincho Container 15m², entre otros.  \n\nEn muchos casos también hay “factibilidad” para agregar terraza o más baños según el proyecto. ¿Sobre qué modelo puntual te gustaría saber qué cambios se le pueden hacer?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 62244,
+          "outputTokens": 600,
+          "cachedInputTokens": 62080,
+          "cost": 0.0005586,
+          "latencyMs": 7997
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 62244,
+          "outputTokens": 600,
+          "cachedInputTokens": 62208,
+          "cost": 0.0027641999999999996,
+          "latencyMs": 9228
+        },
+        "gpt-5.1": {
+          "response": "Sí, todos nuestros inmuebles container se pueden personalizar: casas, dúplex, oficinas, bares, locales comerciales y también proyectos especiales como quinchos o jardines de invierno. Podés partir de un modelo estándar (por ejemplo Casa California 60m², Duplex Container 45m², Oficina Container 90m², Bar 30m², Local Comercial 60m², etc.) y junto a nuestros arquitectos adaptar distribución, aberturas, terminaciones y algunos equipamientos.  \n\n¿Tenés en mente personalizar una casa, un dúplex, una oficina o un local?",
+          "inputTokens": 62244,
+          "outputTokens": 131,
+          "cachedInputTokens": 62208,
+          "cost": 0.009131,
+          "latencyMs": 3697
+        }
+      }
+    },
+    {
+      "company": "Importainer",
+      "question": "¿Tenés imágenes, planos o algún catálogo que pueda ver?",
+      "questionType": "images_catalog",
+      "expectedAnswer": "Sí, vas a poder ver todo online: fotos, recorridos y fichas técnicas de cada modelo. Te dejo los accesos directos:  \n\n- **Catálogo general de inmuebles container** (casas, dúplex, oficinas, bares, locales, exteriores):  \n  https://www.importainer.com.ar/tienda/  \n- **Casas container** (incluye Casa container 15m², Casa Container 60m², Casa Malibu, Casa Patagonia, etc.):  \n  https://www.importainer.com.ar/tienda/casas  \n- **Dúplex container** (Duplex Container 30/45/60/75/90m², Duplex Ceibo, Ombu, Arrayan, Jacaranda, Pehuen, Alerce):  \n  https://www.importainer.com.ar/tienda/duplex  \n- **Oficinas container**:  \n  https://www.importainer.com.ar/tienda/oficinas  \n- **Locales y bares container**:  \n  https://www.importainer.com.ar/tienda/locales  \n  https://www.importainer.com.ar/tienda/bares  \n\nSi querés, decime qué superficie te interesa (por ejemplo 45m² o 60m²) y te indico qué modelos específicos mirar dentro del catálogo.",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 62249,
+          "outputTokens": 600,
+          "cachedInputTokens": 62080,
+          "cost": 0.0005588500000000001,
+          "latencyMs": 13189
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 62249,
+          "outputTokens": 600,
+          "cachedInputTokens": 62208,
+          "cost": 0.00276545,
+          "latencyMs": 14207
+        },
+        "gpt-5.1": {
+          "response": "Sí, claro, tenemos todo eso disponible para que lo veas tranquilo.  \nPodés entrar a nuestra tienda online de inmuebles container acá: https://www.importainer.com.ar/tienda donde vas a encontrar fotos, recorridos y fichas de cada modelo (Casas Container, Dúplex Container, Oficina Container, Bar, Local Comercial, Casa Malibu, Casa Patagonia, Casa Marruecos, Casa California, Casa Sunset, Casa Jakarta, Casa Africa, etc.).  \n\nSi querés algo más guiado, te puedo pasar directo los links a la categoría que más te interese (casas, dúplex, oficinas, bares o locales) o que te contacte un asesor por WhatsApp para enviarte planos y catálogos en PDF. ¿Qué tipo de inmueble container estás buscando?",
+          "inputTokens": 62249,
+          "outputTokens": 169,
+          "cachedInputTokens": 62208,
+          "cost": 0.00951725,
+          "latencyMs": 11057
+        }
+      }
+    },
+    {
+      "company": "Importainer",
+      "question": "¿Cuánto sale aproximadamente una casa de 2 dormitorios?",
+      "questionType": "pricing",
+      "expectedAnswer": "No tengo los precios actualizados de las casas de 2 dormitorios cargados acá. Sí te puedo decir que entrás perfecto, por ejemplo, en una **Casa container 45m² (Classic)** o una **Casa Container 60m² (Comfort)**, que permiten hasta 2–3 dormitorios con living, cocina y baño/s.  \n\nPara que te pasen valores al día (suelen trabajar en pesos y/o referenciados al dólar blue) te sugiero escribir por WhatsApp a **+54 9 11 2276 3820** con algo así: “Quiero precio de una casa container de 2 dormitorios, estoy mirando la Casa container 45m² / 60m²”. ¿Qué presupuesto aproximado manejás así te digo cuál de esas líneas se ajusta mejor?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 62247,
+          "outputTokens": 600,
+          "cachedInputTokens": 62080,
+          "cost": 0.00055875,
+          "latencyMs": 14602
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 62247,
+          "outputTokens": 600,
+          "cachedInputTokens": 62208,
+          "cost": 0.00276495,
+          "latencyMs": 9540
+        },
+        "gpt-5.1": {
+          "response": "Para 2 dormitorios, lo más común en Importainer es trabajar con modelos de 30 a 45 m², por ejemplo Casa Patagonia 30m², Casa Marruecos 45m² o la Casa Container 45m² Comfort. No tengo los precios actualizados cargados para estas casas; te sugiero consultarlo por WhatsApp al +54 9 11 2276 3820, donde te pasan valor exacto, cuotas y opciones de financiación en el acto.  \n\nPara orientarte mejor, ¿ya tenés terreno y en qué zona sería la instalación?",
+          "inputTokens": 62247,
+          "outputTokens": 129,
+          "cachedInputTokens": 62208,
+          "cost": 0.00911475,
+          "latencyMs": 3804
+        }
+      }
+    },
+    {
+      "company": "Importainer",
+      "question": "¿Qué incluye el precio? ¿Terminaciones, instalación, todo?",
+      "questionType": "includes",
+      "expectedAnswer": "En nuestros inmuebles container el precio incluye **obra casi completa, lista para usar**, no solo el “casco”. En modelos como Casa container 15m², Casa Container 60m², Duplex Container 45m², Oficina Container 90m², Local Comercial 60m², Bar 30m², etc., se incluye:  \n\n- **Estructura en container reciclado** (20 o 40 pies) + **aislación termoacústica** (lana de vidrio + aluminio).  \n- **Instalación eléctrica y de agua completas**.  \n- **Aberturas interiores y exteriores**, pintura exterior y **revestimientos interiores**.  \n- **Muebles y griferías sanitarias** (baño/s) y **mobiliario básico de cocina** según el modelo.  \n- En muchos casos, el servicio contempla también **traslado e instalación en tu terreno** dentro del sistema llave en mano (se define en la cotización).  \n\nLo único que no veo detallado acá son extras como platea, cercos, muebles sueltos, etc., que se presupuestan aparte. Para que te coticen exactamente qué incluye el precio en tu zona, te conviene escribir al WhatsApp **+54 9 11 2276 3820**. ¿Estás pensando en una Casa Container 45m² o 60m², u otro modelo?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 62249,
+          "outputTokens": 600,
+          "cachedInputTokens": 0,
+          "cost": 0.00335245,
+          "latencyMs": 9040
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 62249,
+          "outputTokens": 600,
+          "cachedInputTokens": 62208,
+          "cost": 0.00276545,
+          "latencyMs": 9699
+        },
+        "gpt-5.1": {
+          "response": "Incluimos un sistema bien completo: estructura del container, aislación termoacústica, instalación eléctrica y de agua, aberturas interiores y exteriores, revestimientos interiores, pintura exterior y todo el equipamiento sanitario (inodoro, bacha, griferías, etc.). En modelos como la Casa Container, Duplex Container, Oficina Container, Bar y Local Comercial también va incluida la cocina (bajomesada/mesada según diseño), escaleras y, según el caso, hasta toilettes o baño completo; el traslado e instalación en tu terreno se cotizan aparte según la zona.  \n\nPara orientarte mejor, ¿sobre qué tipo de inmueble container estás preguntando: casa (por ejemplo Casa Malibu, Casa Container 60m², Casa Africa), dúplex (como Duplex Container 45m², Duplex Ceibo), oficina, bar o local comercial?",
+          "inputTokens": 62249,
+          "outputTokens": 185,
+          "cachedInputTokens": 62208,
+          "cost": 0.009677249999999998,
+          "latencyMs": 4360
+        }
+      }
+    },
+    {
+      "company": "Importainer",
+      "question": "¿Ustedes se encargan de toda la instalación o solo entregan los materiales?",
+      "questionType": "installation",
+      "expectedAnswer": "Nos encargamos de **todo**, no solo de entregar materiales. Trabajamos con sistema **llave en mano**: fabricamos el inmueble en planta (estructura, aislación, instalaciones, terminaciones), lo **trasladamos** y lo **instalamos en tu terreno** en cualquier punto de Argentina, como hicimos con casas de 30m² en Córdoba o 90m² en Chubut y bares de 30m² en Córdoba.  \n\nVos recibís la Casa container, Duplex Container, Oficina Container, Bar o Local Comercial lista para usar; lo único que puede ir por fuera es la platea/fundación o alguna obra complementaria especial que se define en la cotización. ¿En qué zona tenés el terreno así te cuento cómo sería el montaje en tu caso?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 62254,
+          "outputTokens": 600,
+          "cachedInputTokens": 62080,
+          "cost": 0.0005591,
+          "latencyMs": 9158
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 62254,
+          "outputTokens": 600,
+          "cachedInputTokens": 62208,
+          "cost": 0.0027667,
+          "latencyMs": 9739
+        },
+        "gpt-5.1": {
+          "response": "Nos encargamos de todo: fabricamos el inmueble container en planta, lo trasladamos a tu terreno y lo dejamos instalado, listo para usar (sistema llave en mano). Incluye estructura, aislación termoacústica, instalación eléctrica y de agua, revestimientos, pintura y sanitarios; vos no tenés que coordinar gremios por separado.  \n\nPara orientarte mejor, ¿para cuándo estás pensando en tener instalado tu inmueble y en qué zona sería?",
+          "inputTokens": 62254,
+          "outputTokens": 103,
+          "cachedInputTokens": 62208,
+          "cost": 0.0088635,
+          "latencyMs": 2828
+        }
+      }
+    },
+    {
+      "company": "Importainer",
+      "question": "¿Qué garantía ofrecen sobre la construcción?",
+      "questionType": "warranty",
+      "expectedAnswer": "Trabajamos con estándar de obra permanente: estructura en acero (containers marítimos), aislación termoacústica con lana de vidrio y aluminio, y componentes de primera línea, pensados para alta durabilidad y uso a largo plazo. En la web no figura el detalle exacto de años de garantía por escrito, pero sí que somos fabricantes con más de 10 años de experiencia, sistema llave en mano y construcción sostenible comparable (o superior) a la tradicional.  \n\nNo tengo acá el plazo formal de garantía (años por estructura, filtraciones, instalaciones, etc.), así que para ese dato puntual te sugiero escribir al WhatsApp **+54 9 11 2276 3820** y pedir el modelo de contrato/garantía. ¿Estás evaluando una casa, un dúplex o una oficina container para ver el tema garantía en ese producto puntual?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 62243,
+          "outputTokens": 600,
+          "cachedInputTokens": 0,
+          "cost": 0.00335215,
+          "latencyMs": 8481
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 62243,
+          "outputTokens": 600,
+          "cachedInputTokens": 62208,
+          "cost": 0.0027639500000000003,
+          "latencyMs": 9719
+        },
+        "gpt-5.1": {
+          "response": "Ofrecemos garantía sobre la estructura del container y sobre todas las instalaciones que entregamos listas para usar (eléctrica, agua, aislación termoacústica, revestimientos, etc.), porque somos fabricantes y usamos materiales de primera línea. El plazo y alcance exacto de la garantía se detalla en el contrato según el tipo de inmueble container (casas, dúplex, oficinas, bares, locales comerciales o contenedores vacíos).  \n\nNo tengo por acá los años exactos de garantía cargados, así que para pasarte el detalle formal te sugiero escribirnos por WhatsApp al +54 9 11 2276 3820. ¿Sobre qué tipo de inmueble container estás pensando, así te cuento también qué incluye la entrega “llave en mano” en ese caso?",
+          "inputTokens": 62243,
+          "outputTokens": 171,
+          "cachedInputTokens": 62208,
+          "cost": 0.00952975,
+          "latencyMs": 11307
+        }
+      }
+    },
+    {
+      "company": "Importainer",
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "expectedAnswer": "Sí, tenemos **financiación y planes de pago en pesos** para casi todos nuestros inmuebles container. Podés acceder a casas, dúplex, oficinas, bares, locales, quinchos, etc. (por ejemplo Casa container 15–120m², Duplex Container 45m², Casa Malibu, Casa California, Oficina Container 90m², Local Comercial 60m²) con planes de hasta **240 cuotas** y posibilidad de proyectos **100% financiados, sin anticipo**, según evaluación comercial.  \n\nEl esquema exacto (cuotas, monto y plazos) se arma según el modelo y tu perfil, y se puede gestionar de forma virtual. ¿Qué tipo de Contenedores, casas, oficinas, dúplex. querés financiar y con qué presupuesto mensual te sentirías cómodo más o menos?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 62246,
+          "outputTokens": 600,
+          "cachedInputTokens": 62080,
+          "cost": 0.0005587,
+          "latencyMs": 7899
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 62246,
+          "outputTokens": 600,
+          "cachedInputTokens": 62208,
+          "cost": 0.0027647,
+          "latencyMs": 9778
+        },
+        "gpt-5.1": {
+          "response": "Sí, ofrecemos financiación propia en pesos, sin anticipo y con planes de hasta 240 cuotas para Inmuebles containers, casas, dúplex, oficinas, bares y locales comerciales. Podés comprar al contado o en cuotas, y además tenemos convenio con Banco Galicia para financiar pilotes, transporte y electrodomésticos.\n\nPara orientarte mejor, ¿qué tipo de Inmuebles containers, casas, dúplex, oficinas, bares, locales comerciales, contenedores. estás buscando?",
+          "inputTokens": 62246,
+          "outputTokens": 105,
+          "cachedInputTokens": 62208,
+          "cost": 0.008873500000000001,
+          "latencyMs": 5271
+        }
+      }
+    },
+    {
+      "company": "Importainer",
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "expectedAnswer": "Lo que más nos diferencia es que somos **fabricante directo**, con más de **10 años de experiencia** y un sistema muy armado de producto + financiación. En concreto:  \n\n- **Especialistas en containers reciclados**: solo trabajamos este sistema, con cientos de entregas reales de Casas container (15 a 120m²), Duplex Container, Oficinas Container, Bares y Locales en todo el país.  \n- **Llave en mano y calidad técnica**: aislación termoacústica (lana de vidrio + aluminio), instalaciones completas, aberturas, revestimientos y mobiliario de cocina/baños incluidos en modelos como Casa Container 60m², Duplex Container 45m², Oficina Container 90m², Local Comercial 60m², Bar 30m², etc.  \n- **Financiación propia en pesos**: planes de hasta **240 cuotas** y posibilidad de proyectos 100% financiados sin anticipo, algo que muchas empresas no ofrecen.  \n- **Alta personalización y sistema modular transportable**: podés adaptar distribución, terminaciones, sumar módulos, deck, terraza, y trasladar el inmueble si cambiás de ubicación.  \n\nPara orientarte mejor en función de lo que te importa (precio, diseño, rapidez, financiación), ¿qué es lo que más valorás vos a la hora de elegir la empresa?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 62244,
+          "outputTokens": 600,
+          "cachedInputTokens": 62080,
+          "cost": 0.0005586,
+          "latencyMs": 9396
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 62244,
+          "outputTokens": 600,
+          "cachedInputTokens": 62208,
+          "cost": 0.0027641999999999996,
+          "latencyMs": 11934
+        },
+        "gpt-5.1": {
+          "response": "En Importainer S.A. nos diferenciamos por tres pilares fuertes: fabricación propia con más de 10 años de experiencia, un sistema constructivo con contenedores súper rápido (montamos casas, dúplex, oficinas, bares y locales comerciales en tiempos mucho menores que la obra húmeda) y alta calidad de materiales con aislación termoacústica completa. Además, ofrecemos financiación en pesos de hasta 240 cuotas, sin anticipo, y entregamos el inmueble container llave en mano, listo para habitar o trabajar, totalmente personalizable en diseño y terminaciones.  \n\nPara orientarte mejor: ¿qué tipo de inmueble container estás evaluando, una casa, un dúplex, una oficina, un bar o un local comercial?",
+          "inputTokens": 62244,
+          "outputTokens": 157,
+          "cachedInputTokens": 62208,
+          "cost": 0.009391,
+          "latencyMs": 7249
+        }
+      }
+    },
+    {
+      "company": "Importainer",
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "expectedAnswer": "Llegamos a **todo el país**, haciendo fabricación en Buenos Aires y traslado + montaje en la provincia donde estés. Hay entregas reales en lugares muy distintos como **Villa Rada Tilly (Chubut), Yacanto (Córdoba), Médano de Oro (San Juan), Puerto Deseado (Santa Cruz), Chaco, Villa La Angostura, Mar del Sur, Cachirulo, Chapadmalal, Brandsen**, entre otros.  \n\nPodemos llevar tu Casa container, Duplex Container, Oficina Container, Bar o Local Comercial prácticamente a cualquier punto de Argentina; lo que varía es el costo/logística del flete y grúa. ¿En qué localidad tenés (o pensás tener) el terreno así te cuento cómo sería el traslado en tu caso?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 62244,
+          "outputTokens": 600,
+          "cachedInputTokens": 62080,
+          "cost": 0.0005586,
+          "latencyMs": 8112
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 62244,
+          "outputTokens": 600,
+          "cachedInputTokens": 62208,
+          "cost": 0.0027641999999999996,
+          "latencyMs": 11285
+        },
+        "gpt-5.1": {
+          "response": "Trabajamos en toda la República Argentina: hemos hecho entregas en CABA, GBA (como Moreno y La Plata) y en el interior, por ejemplo Villa Rada Telly (Chubut), Cosquín (Córdoba), Puerto Deseado (Santa Cruz) y Bariloche (Río Negro). En cada caso coordinamos transporte e instalación del inmueble container en tu terreno.  \n\nPara orientarte mejor con logística y costos, ¿en qué localidad o provincia estás pensando instalar tu casa, dúplex, oficina, bar o local comercial container?",
+          "inputTokens": 62244,
+          "outputTokens": 123,
+          "cachedInputTokens": 62208,
+          "cost": 0.009051,
+          "latencyMs": 5782
+        }
+      }
+    },
+    {
+      "company": "Lucys House",
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "expectedAnswer": "Lucy’s House es una empresa de Córdoba que fabrica viviendas modulares en Steel Frame, modernas, durables y 100% personalizadas. Diseñamos y construimos los módulos en fábrica, los terminamos con equipamiento Comfort, Deluxe o Full Premium y los dejamos listos para usar en solo 60 días, con traslado a todo el país.  \n\nTrabajamos tanto viviendas (primera casa, ampliaciones, casas de fin de semana) como proyectos turísticos, oficinas modulares y espacios comerciales, y contamos con opciones de financiación. Para orientarte mejor, ¿qué tipo de viviendas modulares estás buscando: casa familiar, cabaña de descanso, algo turístico u oficina?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 43502,
+          "outputTokens": 600,
+          "cachedInputTokens": 0,
+          "cost": 0.0024151,
+          "latencyMs": 9620
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 43502,
+          "outputTokens": 600,
+          "cachedInputTokens": 0,
+          "cost": 0.0120755,
+          "latencyMs": 13003
+        },
+        "gpt-5.1": {
+          "response": "Somos Lucy’s House, una empresa de Córdoba que diseña y fabrica viviendas modulares en Steel Frame, no trabajamos con contenedores sino con construcción moderna de alta calidad. Producimos módulos habitacionales 100% personalizados (Comfort, Deluxe y Full Premium), listos en aproximadamente 60 días y los instalamos en 24 hs en tu terreno, con envío a todo el país.  \n\nPara orientarte mejor, ¿qué tipo de Módulos habitacionales estás buscando: vivienda permanente, casa de fin de semana, algo turístico o más bien oficina/comercial?",
+          "inputTokens": 43502,
+          "outputTokens": 125,
+          "cachedInputTokens": 0,
+          "cost": 0.055627499999999996,
+          "latencyMs": 10625
+        }
+      }
+    },
+    {
+      "company": "Lucys House",
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "expectedAnswer": "Ofrecemos principalmente viviendas modulares en Steel Frame, listas en 60 días y transportables a todo el país, con tres líneas de equipamiento: Comfort, Deluxe y Full Premium (por ejemplo modelos de 25,5 m², 30,6 m², 38 m², 40,8 m², 150 m², etc.). También tenemos módulos con entrega inmediata (19,20 m², 28,30 m², 28,56 m², 30 m², 32 m², 35,70 m² y 37,50 m²) y soluciones específicas para turismo, oficinas, lodges de montaña y proyectos corporativos.  \n\nAdemás brindamos: construcción en Steel Frame a medida (Modular Housing), financiación, alquiler de oficinas y garitas móviles (Lucy’s Rental) y módulos de almacenamiento Handy Home. ¿En qué te gustaría enfocarte: vivienda para vivir, proyecto turístico/comercial o algo más pequeño como un módulo de guardado?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 43500,
+          "outputTokens": 600,
+          "cachedInputTokens": 43392,
+          "cost": 0.00046236,
+          "latencyMs": 7257
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 43500,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0024558,
+          "latencyMs": 9805
+        },
+        "gpt-5.1": {
+          "response": "En Lucy’s House ofrecemos viviendas y módulos habitacionales en Steel Frame, 100% personalizados y listos en 60 días, con tres equipamientos: Comfort, Deluxe y Full Premium. Dentro de los módulos habitacionales trabajamos con líneas como Comfort 1, Comfort 2, Comfort 3, Deluxe 1, Deluxe 2, Deluxe 3, Full Premium 1, Full Premium 2, Full Premium 3, además de proyectos especiales (Proyecto 1 al Proyecto 14) y módulos con entrega inmediata desde 19,20 m² hasta 150 m².  \n\nTambién brindamos: financiación, construcción en nuestra planta de Córdoba (Av. La Voz del Interior 7500) con envío a todo el país, más líneas específicas como Handy Home (módulos de guardado desde USD 1.800) y Lucy’s Rental (alquiler de oficinas, garitas y espacios móviles por día, mes o año). ¿Qué tipo de Módulos habitacionales estás buscando: vivienda principal, cabañas para turismo, ampliación de casa u oficinas?",
+          "inputTokens": 43500,
+          "outputTokens": 229,
+          "cachedInputTokens": 0,
+          "cost": 0.05666499999999999,
+          "latencyMs": 18635
+        }
+      }
+    },
+    {
+      "company": "Lucys House",
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "expectedAnswer": "Te podés contactar directo por WhatsApp al +54 9 351 207-7113.  \nSi preferís por mail, el correo de ventas es ventas@lucys.info.",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 43505,
+          "outputTokens": 600,
+          "cachedInputTokens": 0,
+          "cost": 0.00241525,
+          "latencyMs": 9435
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 43505,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0024570499999999997,
+          "latencyMs": 10072
+        },
+        "gpt-5.1": {
+          "response": "Te podés contactar directo con el área de ventas por WhatsApp al **+54 9 351 207 7113** o por mail a **ventas@lucys.info**.  \n¿Te gustaría que te pase también el link para escribirles ya con un mensaje prearmado?",
+          "inputTokens": 43505,
+          "outputTokens": 69,
+          "cachedInputTokens": 43392,
+          "cost": 0.0062552499999999995,
+          "latencyMs": 3199
+        }
+      }
+    },
+    {
+      "company": "Lucys House",
+      "question": "¿Cuántos modelos ofrecen?",
+      "questionType": "product_count",
+      "expectedAnswer": "Tenemos muchos modelos, tanto estándar como a medida.  \nDentro de Viviendas Modulares destacadas trabajamos, por ejemplo, los modelos de 19,20 m², 25,5 m², 28,30 m², 28,56 m², 30 m², 30,6 m², 32 m², 35,70 m², 37,50 m², 38 m², 40,8 m² y 150 m², además de las líneas de equipamiento Comfort, Deluxe y Full Premium y el servicio Modular Housing totalmente personalizado.  \n\nPara recomendarte bien, ¿ya tenés terreno? ¿En qué zona sería la instalación?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 43500,
+          "outputTokens": 600,
+          "cachedInputTokens": 0,
+          "cost": 0.0024149999999999996,
+          "latencyMs": 8164
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 43500,
+          "outputTokens": 600,
+          "cachedInputTokens": 0,
+          "cost": 0.012074999999999999,
+          "latencyMs": 11877
+        },
+        "gpt-5.1": {
+          "response": "Ofrecemos varios tipos de Módulos habitacionales estándar y a medida.  \nEn tipologías tenés los módulos Comfort, Deluxe y Full Premium (con sus variantes Comfort 1, Comfort 2, Comfort 3, Deluxe 1, Deluxe 2, Deluxe 3, Full Premium 1, Full Premium 2 y Full Premium 3) y, además, modelos por m² como 19,20 m², 25,5 m², 28,30 m², 28,56 m², 30 m², 30,6 m², 32 m², 35,70 m², 37,50 m², 38 m², 40,8 m² y hasta 150 m².  \nTambién tenés los proyectos especiales (Proyecto 1 al Proyecto 14) y líneas específicas como Handy Home (Handy 1, Handy 2, Handy 3 e Invernadero) y Lucy’s Rental para alquiler.  \n\nPara orientarte mejor, ¿qué tipo de Módulos habitacionales estás buscando: vivienda principal, cabañas para turismo, ampliación de casa u oficinas?",
+          "inputTokens": 43500,
+          "outputTokens": 249,
+          "cachedInputTokens": 0,
+          "cost": 0.05686499999999999,
+          "latencyMs": 10715
+        }
+      }
+    },
+    {
+      "company": "Lucys House",
+      "question": "Contame sobre Deluxe 3",
+      "questionType": "product_specific",
+      "expectedAnswer": "El Deluxe 3 forma parte de nuestro **Módulo Deluxe**, equipado con piso de porcelanato, aberturas de aluminio con vidrio simple, mesada de granito con bacha y grifería, muebles de cocina (alacena y bajo mesada), artefactos de baño AMALFI con grifería HYDROS, mampara fija en ducha, anafe eléctrico de 2 hornallas, termotanque eléctrico de 55 lts, placard de dormitorio y preinstalación para 1 aire acondicionado.  \nEl **precio del equipamiento Deluxe** es de **USD 1.390 por m² + IVA**, y se aplica al tamaño de módulo que elijas (por ejemplo 30,6 m², 37,5 m², 40,8 m², etc.).  \n\nPara ayudarte mejor con el Deluxe 3, ¿de cuántos m² estás pensando que sea tu vivienda modular?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 43500,
+          "outputTokens": 600,
+          "cachedInputTokens": 43392,
+          "cost": 0.00046236,
+          "latencyMs": 6164
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 43500,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0024558,
+          "latencyMs": 9828
+        },
+        "gpt-5.1": {
+          "response": "Perfecto, te cuento del Deluxe 3 😊  \nDentro de la línea Deluxe, el equipamiento incluye piso de porcelanato, mesada de granito con bacha y grifería, muebles de cocina (alacena y bajo mesada), artefactos de baño AMALFI con grifería HYDROS, mampara fija en ducha, anafe eléctrico de 2 hornallas, termotanque eléctrico de 55 lts, placard en dormitorio y preinstalación de aire acondicionado. El precio del Módulo Deluxe es de USD 1.390 por m² + IVA, y lo fabricamos en Steel Frame en 60 días, listo para instalar en 24 hs.  \n\nPara ayudarte mejor, ¿qué cantidad de metros cuadrados estás pensando para tu Deluxe 3?",
+          "inputTokens": 43500,
+          "outputTokens": 173,
+          "cachedInputTokens": 43392,
+          "cost": 0.0072889999999999995,
+          "latencyMs": 3839
+        }
+      }
+    },
+    {
+      "company": "Lucys House",
+      "question": "¿Cuáles son los detalles técnicos de Deluxe 3? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "expectedAnswer": "Buenísimo, te cuento lo más claro posible. El **Deluxe 3** pertenece a la línea **Módulo Deluxe** (equipamiento y terminaciones), pero en el material que tengo cargado aparecen solo las características de equipamiento, no la ficha técnica específica de superficie y distribución de ese modelo puntual.\n\nLo que sí te puedo detallar es qué incluye a nivel técnico el **Deluxe**:\n- **Piso:** porcelanato de 1ra calidad.  \n- **Aberturas:** carpintería de aluminio con vidrio simple.  \n- **Cocina:** mesada de granito con bacha y grifería, muebles tipo alacena y bajo mesada, anafe eléctrico de 2 hornallas estándar, espacio para heladera (según modelo base).  \n- **Baño:** artefactos AMALFI + grifería HYDROS completa, mampara fija en ducha, vanitory de melamina con bacha, espejo (en varios modelos es retroiluminado).  \n- **Dormitorio:** placard armado (no solo el hueco).  \n- **Agua caliente:** termotanque eléctrico de 55 lts.  \n- **Climatización:** preinstalación para 1 aire acondicionado.  \n- **Revestimientos:** paredes interiores con papel lavable; zócalos de PVC blanco; techo de chapa zincada o negra (según modelo base).\n\nEl **precio del equipamiento Deluxe** es **USD 1.390/m² + IVA**, aplicado al módulo de la superficie que elijas (30,6 m², 37,5 m², 40,8 m², etc.).  \nLos datos exactos de **superficie y cantidad de dormitorios del Deluxe 3** no los tengo cargados; para esa ficha puntual te sugiero escribir por WhatsApp al **+54 9 351 207-7113** y te mandan el plano y m² exactos.\n\nSi me contás cuántos dormitorios necesitás (¿1 o 2?) y qué superficie aproximada querés, te oriento cuál de nuestros modelos encaja mejor con el nivel Deluxe.",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 43512,
+          "outputTokens": 600,
+          "cachedInputTokens": 43392,
+          "cost": 0.00046296,
+          "latencyMs": 7018
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 43512,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0024587999999999997,
+          "latencyMs": 10876
+        },
+        "gpt-5.1": {
+          "response": "Deluxe 3 es uno de nuestros módulos habitacionales con **equipamiento Deluxe**, pero en el material que tengo no figura un plano específico con superficie y cantidad de dormitorios para ese modelo puntual. Sí te puedo detallar qué incluye el estándar **Deluxe**: piso de porcelanato de 1ra calidad, techo de chapa zincada o negra, zócalo de PVC blanco, papel lavable, carpintería de aluminio con vidrio simple, mesada de granito gris mara o negro boreal con bacha de acero, muebles sobre y bajo mesada, purificador, placard en dormitorio, vanitory de melamina con bacha, mampara fija en ducha, espejo retroiluminado, anafe eléctrico (2 o 4 hornallas), termotanque eléctrico de 55 L y aberturas color negro.  \n\nComo referencia, el equipamiento Deluxe se cotiza a **USD 1.390/m² + IVA** (precio por m²), y se aplica a distintas superficies (por ejemplo 25,5 m², 30,6 m², 38 m², 40,8 m², 150 m², etc.), donde cambia la cantidad de dormitorios según el proyecto. Para poder decirte exactamente cuántos m² y dormitorios tiene el Deluxe 3 que viste, ¿recordás si era un módulo de 1 o 2 dormitorios, o la medida aproximada que estás buscando?",
+          "inputTokens": 43512,
+          "outputTokens": 310,
+          "cachedInputTokens": 43392,
+          "cost": 0.008674,
+          "latencyMs": 6188
+        }
+      }
+    },
+    {
+      "company": "Lucys House",
+      "question": "Contame sobre Deluxe 1",
+      "questionType": "product_specific",
+      "expectedAnswer": "El Deluxe 1 también pertenece a nuestra línea **Módulo Deluxe**, o sea mismo nivel de terminaciones y calidad que el Deluxe 3, cambiando la distribución y m² del módulo base (que en este caso puntual no los tengo detallados en la ficha). A nivel técnico, el **Equipamiento Deluxe** incluye: piso de porcelanato, aberturas de aluminio con vidrio simple, mesada de granito con bacha y grifería, muebles de cocina sobre y bajo mesada, artefactos de baño AMALFI con grifería HYDROS, mampara fija en ducha, anafe eléctrico de 2 hornallas, termotanque eléctrico 55 lts, placard de dormitorio y preinstalación para 1 aire acondicionado.  \n\nEl **precio del Deluxe** es de **USD 1.390 por m² + IVA**, aplicado a la superficie del módulo que elijas. Para afinar si el Deluxe 1 te conviene, ¿para cuántas personas y cuántos dormitorios estás buscando la vivienda modular?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 43500,
+          "outputTokens": 600,
+          "cachedInputTokens": 43392,
+          "cost": 0.00046236,
+          "latencyMs": 7226
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 43500,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0024558,
+          "latencyMs": 10691
+        },
+        "gpt-5.1": {
+          "response": "Perfecto, te cuento del **Deluxe 1** 😊  \nEl **Deluxe 1** corresponde a nuestro **Módulo Deluxe**, que viene con piso de porcelanato, aberturas de aluminio con vidrio simple, mesada de granito con bacha y grifería, muebles de cocina (alacena y bajo mesada), artefactos de baño AMALFI con grifería HYDROS, mampara fija en ducha, anafe eléctrico de 2 hornallas, termotanque eléctrico de 55 lts, placard de dormitorio y preinstalación para 1 aire acondicionado. El **precio del Módulo Deluxe** es de **USD 1.390 por m² + IVA**, y podés elegir la superficie (por ejemplo 25,5 m², 30,6 m², 38 m², etc.) para calcular el valor total.\n\nPara orientarte mejor, ¿cuántos metros cuadrados o cuántos ambientes estás pensando para tu Deluxe 1?",
+          "inputTokens": 43500,
+          "outputTokens": 222,
+          "cachedInputTokens": 43392,
+          "cost": 0.0077789999999999995,
+          "latencyMs": 3743
+        }
+      }
+    },
+    {
+      "company": "Lucys House",
+      "question": "¿Cuáles son los detalles técnicos de Deluxe 1? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "expectedAnswer": "En el material que tengo cargado, del **Deluxe 1** aparecen solo los datos de **equipamiento Deluxe**, pero no la ficha puntual de **superficie ni cantidad de dormitorios** de ese modelo específico (no figuran los m² ni el plano).  \n\nLo que sí te puedo asegurar del **Deluxe 1** es que incluye:\n- **Piso:** porcelanato de 1ra calidad.  \n- **Aberturas:** aluminio con vidrio simple.  \n- **Cocina:** mesada de granito con bacha y grifería, muebles sobre y bajo mesada, anafe eléctrico de 2 hornallas estándar, espacio para heladera.  \n- **Baño:** artefactos AMALFI + grifería HYDROS, mampara fija en ducha, vanitory de melamina con bacha, termotanque eléctrico 55 lts.  \n- **Dormitorio:** con placard armado.  \n- **Climatización:** preinstalación para 1 aire acondicionado.  \n\nEl **equipamiento Deluxe** tiene un valor de **USD 1.390/m² + IVA**, aplicado al módulo base (m²) que elijas.  \nLos datos exactos de m² y dormitorios del **Deluxe 1** no los tengo cargados; para que te envíen plano y ficha técnica te sugiero escribir directo al WhatsApp de ventas: **+54 9 351 207-7113**.",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 43512,
+          "outputTokens": 600,
+          "cachedInputTokens": 43392,
+          "cost": 0.00046296,
+          "latencyMs": 8039
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 43512,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0024587999999999997,
+          "latencyMs": 10952
+        },
+        "gpt-5.1": {
+          "response": "Perfecto, te explico lo que tengo cargado de la línea Deluxe y cómo se aplica a un módulo tipo Deluxe 1.\n\nEn Lucy’s House la tipología **Deluxe** define el equipamiento y terminaciones, y se aplica a distintos tamaños (Deluxe 1, Deluxe 2, Deluxe 3), pero en el catálogo no figura la planta exacta ni m² específicos del **Deluxe 1**, ni la cantidad de dormitorios, solo vemos fotos de referencias.  \n\nLo que sí está totalmente definido es el **Equipamiento Deluxe**, que es el que lleva el Deluxe 1:\n\n- **Pisos y terminaciones interiores**: piso de porcelanato de 1ra calidad, zócalo de PVC blanco, papel lavable en muros.  \n- **Carpinterías**: aberturas de aluminio color negro, con vidrio simple.  \n- **Cocina**:  \n  - Mesada de granito (gris mara o negro boreal) con bacha de acero inoxidable.  \n  - Muebles **sobre y bajo mesada**, cocina completa con espacio para heladera de 1,6 o 1,8 m.  \n  - Purificador de acero inoxidable.  \n  - Anafe eléctrico de 2 o 4 hornallas estándar.  \n  - Grifería de cocina completa.  \n- **Dormitorio(s)**: placard completo (en Deluxe es con placard, no solo el hueco).  \n- **Baño**:  \n  - Vanitory de melamina con bacha.  \n  - Artefactos y grifería completa de baño.  \n  - Cerámico satinado blanco completo en baño.  \n  - Mampara de ducha fija.  \n  - Espejo retroiluminado.  \n  - Termotanque eléctrico de 55 lts.  \n\n💵 **Precio por m² del Módulo Deluxe** (equipamiento Deluxe): **USD 1.390 + IVA por m²**.\n\nLo que no tengo cargado de forma específica para **Deluxe 1** es:\n- Superficie exacta en m².  \n- Cantidad de dormitorios y distribución de ambientes (plano puntual de ese modelo).  \n\nEso se define según el módulo base que elijas (por ejemplo 25,5 m², 30,6 m², 38 m², etc.) y se equipa en versión **Deluxe**.  \n\n¿Querés que veamos juntos qué tamaño y cantidad de dormitorios estás buscando así te digo qué módulo base te conviene para configurarlo como **Deluxe 1**?",
+          "inputTokens": 43512,
+          "outputTokens": 550,
+          "cachedInputTokens": 43392,
+          "cost": 0.011074,
+          "latencyMs": 8819
+        }
+      }
+    },
+    {
+      "company": "Lucys House",
+      "question": "¿Cuál es la diferencia entre Deluxe 3 y Deluxe 1?",
+      "questionType": "model_comparison",
+      "expectedAnswer": "Entre Deluxe 3 y Deluxe 1 la **calidad de equipamiento es la misma** (los dos son de la línea Módulo Deluxe: porcelanato, mesada de granito, muebles sobre y bajo mesada, baño AMALFI + HYDROS, mampara, termotanque 55 L, placard y preinstalación de AA). La diferencia está en la **distribución y los m² del módulo base** (cantidad y tamaño de ambientes), pero esa ficha exacta de superficie y dormitorios de cada uno no está detallada en la info que tengo cargada.  \n\nO sea: cambian **tamaño y plano**, no la calidad ni el tipo de terminaciones. Si me contás para cuántas personas es y si buscás 1 o 2 dormitorios, te oriento si te conviene más un módulo tipo Deluxe 1, Deluxe 3 u otra superficie (30,6 m², 37,5 m², 40,8 m², etc.).",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 43508,
+          "outputTokens": 600,
+          "cachedInputTokens": 43392,
+          "cost": 0.00046276,
+          "latencyMs": 8011
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 43508,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0024577999999999996,
+          "latencyMs": 16211
+        },
+        "gpt-5.1": {
+          "response": "Buenísima pregunta, porque los nombres suelen confundir: Deluxe 3 y Deluxe 1 NO son equipamientos distintos, sino el mismo **Equipamiento Deluxe** mostrado en diferentes tipologías/diseños de módulo (distintas distribuciones y metrajes).  \n\nEn todos los casos “Deluxe” incluye: piso de porcelanato, aberturas de aluminio con vidrio simple, mesada de granito (gris mara o negro boreal) con bacha inox, muebles sobre y bajo mesada, placard en dormitorio, vanitory de melamina con bacha, mampara fija en ducha, espejo retroiluminado, anafe eléctrico de 2 o 4 hornallas, termotanque 55 L y precio de **USD 1.390/m² + IVA**.  \n\nPara poder orientarte mejor entre un “Deluxe 1” y un “Deluxe 3”, ¿qué tamaño de módulo estás buscando aproximadamente (m² o cantidad de ambientes)?",
+          "inputTokens": 43508,
+          "outputTokens": 208,
+          "cachedInputTokens": 43392,
+          "cost": 0.0076489999999999995,
+          "latencyMs": 5308
+        }
+      }
+    },
+    {
+      "company": "Lucys House",
+      "question": "¿Qué modelo me recomendás para una familia de 4 personas?",
+      "questionType": "recommendation",
+      "expectedAnswer": "Para una familia de 4 lo ideal es ir a algo de **al menos 38–40 m² para arriba**, con buena zona social y 2 dormitorios. En nuestra línea de Viviendas Modulares te recomendaría mirar especialmente los modelos **38 m²**, **40,8 m²** y **150 m²** (este último ya como casa grande), equipados en **Deluxe** o **Full Premium** según el nivel de terminaciones que quieras.  \n\nConfort te da una opción más económica, Deluxe un salto fuerte en estética y Full Premium suma DVH, losa radiante y terminaciones top. ¿Ya tenés terreno? ¿En qué zona sería, así también vemos tema envío y si te conviene un modelo estándar o algo Modular Housing totalmente a medida?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 43507,
+          "outputTokens": 600,
+          "cachedInputTokens": 43392,
+          "cost": 0.00046270999999999997,
+          "latencyMs": 8747
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 43507,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.00245755,
+          "latencyMs": 10635
+        },
+        "gpt-5.1": {
+          "response": "Para una familia de 4 lo ideal es pensar en algo de 2 dormitorios y buenos espacios comunes. Dentro de nuestras tipologías, suelen encajar muy bien los modelos de 38 M2, 40,8 M2 o 150 M2 combinados con equipamiento Comfort, Deluxe o Full Premium según el nivel de terminaciones que busques.  \n\nPara afinar mejor la recomendación, ¿ya tenés terreno? ¿En qué zona sería la instalación del módulo habitacional?",
+          "inputTokens": 43507,
+          "outputTokens": 108,
+          "cachedInputTokens": 43392,
+          "cost": 0.00664775,
+          "latencyMs": 2891
+        }
+      }
+    },
+    {
+      "company": "Lucys House",
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "expectedAnswer": "Trabajamos con construcción en fábrica en sistema Steel Frame: se diseña el módulo, se fabrica completo en planta (estructura, aislaciones, instalaciones, revestimientos y equipamiento interior) y luego se transporta al terreno para instalarlo en 24 hs sobre la base preparada.  \n\nEl plazo estándar es de **60 días** desde la firma y se puede enviar a cualquier punto del país. Para poder orientarte mejor con tiempos reales, ¿para cuándo estás pensando tener lista la vivienda modular?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 43506,
+          "outputTokens": 600,
+          "cachedInputTokens": 43392,
+          "cost": 0.00046266,
+          "latencyMs": 6948
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 43506,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0024573,
+          "latencyMs": 9794
+        },
+        "gpt-5.1": {
+          "response": "Trabajamos con construcción en Steel Frame dentro de fábrica: primero diseñamos el módulo (Comfort, Deluxe o Full Premium), luego fabricamos toda la estructura, cerramientos, instalaciones y terminaciones en planta, y finalmente lo trasladamos a tu terreno para la colocación final. La vivienda modular se fabrica en aproximadamente **60 días** y la instalación en el lote suele hacerse en **24 horas**, siempre que el terreno esté preparado (platea o bases y accesos).  \n\nPara ayudarte mejor, ¿ya tenés terreno definido y en qué zona sería?",
+          "inputTokens": 43506,
+          "outputTokens": 121,
+          "cachedInputTokens": 43392,
+          "cost": 0.0067765,
+          "latencyMs": 3764
+        }
+      }
+    },
+    {
+      "company": "Lucys House",
+      "question": "¿Se pueden personalizar los modelos?",
+      "questionType": "customization",
+      "expectedAnswer": "Sí, se pueden personalizar, es uno de nuestros fuertes. Todos los modelos de Viviendas Modulares se pueden ajustar en distribución, aberturas, terminaciones y elegir entre equipamiento **Comfort, Deluxe o Full Premium**, e incluso combinar tipologías.  \n\nAdemás, con **Modular Housing** hacemos proyectos 100% a medida en Steel Frame, manteniendo el plazo de 60 días. ¿Qué te gustaría personalizar más: cantidad de dormitorios, estética (interior/exterior) o nivel de equipamiento?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 43502,
+          "outputTokens": 600,
+          "cachedInputTokens": 43392,
+          "cost": 0.00046246,
+          "latencyMs": 8270
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 43502,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0024563,
+          "latencyMs": 11607
+        },
+        "gpt-5.1": {
+          "response": "Sí, todos nuestros Módulos habitacionales se pueden personalizar: podés elegir metros cuadrados, distribución interna y el tipo de equipamiento (Comfort, Deluxe o Full Premium), e incluso combinar terminaciones. Trabajamos en Steel Frame, así que adaptamos aberturas, materiales, colores y detalles según el proyecto, manteniendo siempre la estructura estándar para que esté listo en 60 días.\n\nPara orientarte mejor, ¿qué tipo de Módulos habitacionales estás buscando: algo chico tipo monoambiente, 1 dormitorio, 2 dormitorios o algo más grande?",
+          "inputTokens": 43502,
+          "outputTokens": 126,
+          "cachedInputTokens": 43392,
+          "cost": 0.0068214999999999994,
+          "latencyMs": 3083
+        }
+      }
+    },
+    {
+      "company": "Lucys House",
+      "question": "¿Tenés imágenes, planos o algún catálogo que pueda ver?",
+      "questionType": "images_catalog",
+      "expectedAnswer": "Sí, tenemos catálogo online con fotos, detalles y planos de muchos modelos. Podés verlos en la web oficial: https://www.lucyshousearg.com/ en la sección “Tipologías”, donde están los modelos de 19,20 m², 25,5 m², 30,6 m², 38 m², 40,8 m², 150 m² y las entregas inmediatas (28,56 m², 30 m², 32 m², 35,70 m², 37,50 m², etc.).  \n\nSi querés que un asesor te envíe catálogo en PDF, renders y planos por WhatsApp, escribí al +54 9 351 207-7113 y te mandan todo directo. Para saber qué material pasarte primero, ¿te interesan más viviendas familiares, cabañas turísticas o módulos tipo monoambiente?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 43507,
+          "outputTokens": 600,
+          "cachedInputTokens": 43392,
+          "cost": 0.00046270999999999997,
+          "latencyMs": 7928
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 43507,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.00245755,
+          "latencyMs": 11526
+        },
+        "gpt-5.1": {
+          "response": "Sí, tenemos catálogo completo online con fotos, planos y fichas técnicas de todos los Módulos habitacionales. Podés verlos en la web oficial: https://lucyshousearg.com en la sección “Tipologías”, donde están modelos como 30,6 M2, 38 M2, 25,5 M2, 37,50 M2, 40,8 M2 y las tipologías Comfort, Deluxe y Full Premium, además de las Entregas Inmediatas.  \n\nPara orientarte mejor, ¿qué tipo de Módulos habitacionales estás buscando: algo chico tipo monoambiente, 1 dormitorio, 2 dormitorios o más grande tipo casa principal?",
+          "inputTokens": 43507,
+          "outputTokens": 152,
+          "cachedInputTokens": 43392,
+          "cost": 0.00708775,
+          "latencyMs": 3458
+        }
+      }
+    },
+    {
+      "company": "Lucys House",
+      "question": "¿Cuánto sale aproximadamente una casa de 2 dormitorios?",
+      "questionType": "pricing",
+      "expectedAnswer": "Para 2 dormitorios, lo más usado son superficies tipo **38 m² o 40,8 m²** con equipamiento **Comfort, Deluxe o Full Premium**. Como referencia, los valores por m² que tengo cargados son: **Comfort USD 1.290/m² + IVA**, **Deluxe USD 1.390/m² + IVA** y **Full Premium USD 1.550/m² + IVA**; por ejemplo, un modelo de **40,8 m²** va desde unos **USD 52.632 + IVA (Comfort)** hasta **USD 63.240 + IVA (Full Premium)** según el equipamiento.  \n\nTené en cuenta que a eso se suma el flete, que figura como aprox. **$3.800 por km** desde Córdoba. ¿Qué presupuesto manejás más o menos y en qué provincia pensás instalar la casa, así te digo qué combinación m² + equipamiento te conviene más?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 43505,
+          "outputTokens": 600,
+          "cachedInputTokens": 43392,
+          "cost": 0.00046261,
+          "latencyMs": 8122
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 43505,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0024570499999999997,
+          "latencyMs": 11446
+        },
+        "gpt-5.1": {
+          "response": "Para 2 dormitorios, la mayoría de nuestros módulos habitacionales rondan entre 30 y 40 m², según el diseño.  \nComo referencia, trabajando con nuestros equipamientos estándar:\n\n- **Comfort**: desde **USD 1.290/m² + IVA**  \n- **Deluxe**: desde **USD 1.390/m² + IVA**  \n- **Full Premium**: desde **USD 1.550/m² + IVA**\n\nPor ejemplo, un modelo de **38 m²** Comfort está en **USD 49.020 + IVA**, y el mismo en Full Premium en **USD 58.900 + IVA**. ¿Ya tenés terreno? Así te oriento mejor en qué tipología (Comfort, Deluxe o Full Premium) te conviene para esos 2 dormitorios.",
+          "inputTokens": 43505,
+          "outputTokens": 174,
+          "cachedInputTokens": 43392,
+          "cost": 0.00730525,
+          "latencyMs": 17231
+        }
+      }
+    },
+    {
+      "company": "Lucys House",
+      "question": "¿Qué incluye el precio? ¿Terminaciones, instalación, todo?",
+      "questionType": "includes",
+      "expectedAnswer": "En el precio por m² de nuestras Viviendas Modulares (Comfort, Deluxe o Full Premium) está incluida la casa **completamente terminada en fábrica**: estructura Steel Frame, aislaciones, revestimientos interiores y exteriores, pisos, aberturas, instalación eléctrica y sanitaria, cocina equipada (mesada, bacha, muebles, anafe), baño completo (artefactos, griferías, vanitory, mampara según tipología), termotanque y, en Deluxe/Full Premium, extras como mamparas, espejos retroiluminados, DVH, losa radiante y cortinas roller según el caso.  \n\nNo está incluido en ese valor el **flete ni la base/fundación del terreno**: el envío se cotiza aparte (en varios modelos figura como aprox. $3.800 por km desde Córdoba) y la platea o apoyos se resuelven según tu lote. La **instalación en el lugar** es muy rápida (24 hs aprox.) y se coordina con vos dentro del proceso. ¿En qué zona tenés el terreno, así vemos envío y tipo de base que te convendría?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 43507,
+          "outputTokens": 600,
+          "cachedInputTokens": 43392,
+          "cost": 0.00046270999999999997,
+          "latencyMs": 8485
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 43507,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.00245755,
+          "latencyMs": 10343
+        },
+        "gpt-5.1": {
+          "response": "Incluimos el módulo listo para usar, con todas las terminaciones interiores y equipamiento según la tipología que elijas: Comfort, Deluxe o Full Premium (pisos, revestimientos, mesada, muebles de cocina, baño completo, anafe, termotanque, aberturas, etc.). El precio es por m² del módulo (por ejemplo: Comfort USD 1.290/m² + IVA, Deluxe USD 1.390/m² + IVA y Full Premium USD 1.550/m² + IVA) y no incluye el traslado, que se cobra aparte aprox. $3.800 por km desde Córdoba. La instalación en el lugar es muy rápida (24 hs) y se coordina según el acceso al terreno y las bases necesarias.  \n\nPara orientarte mejor: ¿ya tenés definido cuántos m² o qué tipo de módulo habitacional (Comfort, Deluxe, Full Premium) estás imaginando?",
+          "inputTokens": 43507,
+          "outputTokens": 200,
+          "cachedInputTokens": 43392,
+          "cost": 0.00756775,
+          "latencyMs": 3727
+        }
+      }
+    },
+    {
+      "company": "Lucys House",
+      "question": "¿Ustedes se encargan de toda la instalación o solo entregan los materiales?",
+      "questionType": "installation",
+      "expectedAnswer": "Nosotros entregamos la **vivienda modular completamente construida en fábrica** y la instalamos en tu terreno, no es solo venta de materiales. Vos te ocupás de tener lista la base (platea o apoyos) y los servicios en el lote, y nuestro equipo coordina el traslado, posiciona el módulo y lo deja colocado en aproximadamente 24 hs.  \n\nPara afinar qué implica la instalación en tu caso, ¿ya tenés terreno? ¿En qué provincia o zona está?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 43512,
+          "outputTokens": 600,
+          "cachedInputTokens": 43392,
+          "cost": 0.00046296,
+          "latencyMs": 8131
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 43512,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0024587999999999997,
+          "latencyMs": 10997
+        },
+        "gpt-5.1": {
+          "response": "Nos encargamos de todo: fabricamos el módulo en Steel Frame en nuestra planta de Córdoba, lo transportamos y lo dejamos instalado en tu terreno, listo para usar en 24 hs. No vendemos solo materiales sueltos, sino Módulos habitacionales completos (Comfort, Deluxe y Full Premium) ya terminados, con cocina, baño, instalaciones y terminaciones.  \n\nPara orientarte mejor, ¿ya tenés terreno? ¿En qué zona sería la instalación?",
+          "inputTokens": 43512,
+          "outputTokens": 105,
+          "cachedInputTokens": 43392,
+          "cost": 0.006624,
+          "latencyMs": 2505
+        }
+      }
+    },
+    {
+      "company": "Lucys House",
+      "question": "¿Qué garantía ofrecen sobre la construcción?",
+      "questionType": "warranty",
+      "expectedAnswer": "Las Lucy’s se construyen en Steel Frame con terminaciones de primera (Comfort, Deluxe o Full Premium) y se entregan como vivienda terminada de fábrica, con garantía sobre la estructura y la calidad constructiva según nuestros estándares internos. En la info que tengo cargada no figura desglosado por años o ítems (estructura, filtraciones, instalaciones, etc.), así que para los plazos exactos de garantía te sugiero consultarlo directo por WhatsApp al +54 9 351 207-7113, donde te pasan las condiciones actualizadas por escrito.  \n\nMás allá de eso, trabajamos con materiales de marca (Piazza, Hydros, porcelanatos de 1ra, DVH en Full Premium, etc.), lo que también respalda la durabilidad del sistema. ¿Estás pensando en usarla como vivienda permanente o más bien como casa de fin de semana?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 43501,
+          "outputTokens": 600,
+          "cachedInputTokens": 43392,
+          "cost": 0.00046241,
+          "latencyMs": 7576
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 43501,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0024560499999999996,
+          "latencyMs": 10116
+        },
+        "gpt-5.1": {
+          "response": "Ofrecemos construcción en Steel Frame con materiales de primera, pensados para larga durabilidad, pero en el catálogo no figura detallado el plazo específico de garantía por escrito. Lo que sí está claro es que trabajamos con estructura en fábrica, aberturas de aluminio (muchas con DVH), porcelanatos y equipamientos de marcas como Piazza, FV, etc., lo que asegura respaldo y repuestos en el tiempo.  \n\nNo tengo el detalle exacto de años de garantía cargado, así que para la letra chica (plazos, qué cubre y servicio postventa) te sugiero consultarlo directo por WhatsApp al +54 9 351 2077113. ¿Para qué tipo de Módulo habitacional estás evaluando la compra: Comfort, Deluxe o Full Premium?",
+          "inputTokens": 43501,
+          "outputTokens": 172,
+          "cachedInputTokens": 43392,
+          "cost": 0.00728025,
+          "latencyMs": 4960
+        }
+      }
+    },
+    {
+      "company": "Lucys House",
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "expectedAnswer": "Sí, ofrecemos **financiación** para las Viviendas Modulares en Steel Frame. Los detalles finos de montos, cuotas y requisitos no están desglosados en la info que tengo cargada, porque suelen ajustarse a cada caso y momento.  \n\nLo ideal es que un asesor te arme una propuesta según tu ingreso y el modelo que elijas; podés escribir directo al WhatsApp **+54 9 351 207-7113**. Para orientarte un poco más desde acá, ¿qué presupuesto aproximado pensás destinar y en cuántas cuotas te gustaría pagarlo?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 43504,
+          "outputTokens": 600,
+          "cachedInputTokens": 43392,
+          "cost": 0.00046256,
+          "latencyMs": 8135
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 43504,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0024568,
+          "latencyMs": 10512
+        },
+        "gpt-5.1": {
+          "response": "Sí, ofrecemos financiación para los módulos habitacionales en Steel Frame, y se arma el plan según el modelo (Comfort, Deluxe o Full Premium) y los m² que necesites. Podés combinar una entrega inicial en dólares y el resto en cuotas, siempre en blanco y con contrato.  \n\nPara orientarte mejor, ¿qué presupuesto aproximado manejás y en qué rango de metros cuadrados estás pensando (por ejemplo 25,5 m², 30,6 m², 38 m², 40,8 m², etc.)? Así te digo qué opciones de Comfort, Deluxe o Full Premium se ajustan mejor y cómo podría quedar un plan de pago.",
+          "inputTokens": 43504,
+          "outputTokens": 146,
+          "cachedInputTokens": 43392,
+          "cost": 0.007024000000000001,
+          "latencyMs": 3792
+        }
+      }
+    },
+    {
+      "company": "Lucys House",
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "expectedAnswer": "Nos diferencia que **no trabajamos con contenedores**, sino con viviendas modulares en **Steel Frame de alta calidad**, diseñadas y construidas íntegramente en fábrica y listas en solo **60 días**, con instalación en 24 hs. Ofrecemos **equipamientos escalonados** (Comfort, Deluxe y Full Premium) con materiales de marca –porcelanatos de 1ra, griferías Piazza/Hydros, DVH y losa radiante en Full Premium– y módulos totalmente **personalizables y transportables a todo el país**.  \n\nAdemás, tenemos **modelos con entrega inmediata**, showroom físico en Córdoba (Av. La Voz del Interior 7500) y líneas específicas para turismo, oficinas, proyectos corporativos y almacenamiento (Handy Home y Lucy’s Rental). ¿Estás comparando para una casa familiar o para un proyecto turístico/comercial?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 43502,
+          "outputTokens": 600,
+          "cachedInputTokens": 43392,
+          "cost": 0.00046246,
+          "latencyMs": 7115
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 43502,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0024563,
+          "latencyMs": 9079
+        },
+        "gpt-5.1": {
+          "response": "En Lucy’s House trabajamos con Steel Frame de alta calidad, no usamos contenedores, y fabricamos el módulo completo en planta para instalarlo en 24 hs, con plazos de entrega de solo 60 días. Llegamos a todo el país, los Módulos habitacionales son 100% personalizados (Comfort, Deluxe y Full Premium, que incluso podés combinar) y mantenemos estándar constructivo de vivienda permanente: DVH, losa radiante, porcelanatos y terminaciones de primera según el equipamiento que elijas.  \n\nPara orientarte mejor, ¿qué tipo de Módulos habitacionales estás buscando: vivienda familiar, cabañas para turismo, ampliación de casa, oficina, algo así?",
+          "inputTokens": 43502,
+          "outputTokens": 158,
+          "cachedInputTokens": 43392,
+          "cost": 0.007141499999999999,
+          "latencyMs": 3755
+        }
+      }
+    },
+    {
+      "company": "Lucys House",
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "expectedAnswer": "Llegamos a **todo el país**, siempre saliendo desde Córdoba. Fabricamos la vivienda modular en planta y la trasladamos en camión hasta tu terreno, con un costo de envío que en varios modelos figura como aprox. **$3.800 por km**.  \n\nPodemos coordinar instalación en ciudades grandes, sierras, campo o zonas turísticas mientras se pueda acceder con el transporte. ¿En qué provincia o localidad tenés pensado instalar la vivienda?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 43502,
+          "outputTokens": 600,
+          "cachedInputTokens": 43392,
+          "cost": 0.00046246,
+          "latencyMs": 6190
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 43502,
+          "outputTokens": 600,
+          "cachedInputTokens": 42752,
+          "cost": 0.0024563,
+          "latencyMs": 9659
+        },
+        "gpt-5.1": {
+          "response": "Llegamos con nuestros módulos habitacionales a todo el país, desde Córdoba hacia cualquier provincia, siempre que el acceso permita el ingreso del camión y la grúa. El costo de envío se calcula por kilómetro, hoy está alrededor de $3.800 por km aprox.  \n\n¿En qué localidad o zona estás pensando instalar el módulo así te ayudo a estimar mejor la logística?",
+          "inputTokens": 43502,
+          "outputTokens": 88,
+          "cachedInputTokens": 43392,
+          "cost": 0.006441499999999999,
+          "latencyMs": 2462
+        }
+      }
+    },
+    {
+      "company": "ViBert",
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "expectedAnswer": "ViBert es una empresa de Santa Fe con más de 70 años de trayectoria, especializada en casas modulares de hormigón premoldeado. Diseñamos, fabricamos en planta y montamos viviendas completas (llave en mano u obra gris), quinchos y desarrollos más grandes, usando paneles de hormigón de alta eficiencia energética y gran durabilidad.  \n\nPara orientarte mejor: ¿qué tipo de casas estás buscando, una vivienda familiar, una casa de fin de semana o algo como un quincho?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 71112,
+          "outputTokens": 600,
+          "cachedInputTokens": 0,
+          "cost": 0.0037955999999999997,
+          "latencyMs": 9876
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 71112,
+          "outputTokens": 600,
+          "cachedInputTokens": 0,
+          "cost": 0.018978,
+          "latencyMs": 14243
+        },
+        "gpt-5.1": {
+          "response": "ViBert es una empresa argentina especializada en casas modulares de hormigón premoldeado, con más de 70 años de experiencia a través de Premoldeados Bertone. Diseñamos, fabricamos e instalamos viviendas y quinchos usando paneles premoldeados, lo que nos permite entregar la casa terminada en unos 120 días, con alta eficiencia energética y gran durabilidad. Trabajamos tanto con Modelos de catálogo (como Casa Sara, Daniela, Justina, María, etc.) como con casas a medida, y ofrecemos modalidades en obra gris o llave en mano, además de financiación.  \n\nPara orientarte mejor, ¿qué tipo de modelo estás buscando: una casa de catálogo, una casa a medida o un quincho?",
+          "inputTokens": 71112,
+          "outputTokens": 162,
+          "cachedInputTokens": 0,
+          "cost": 0.09051,
+          "latencyMs": 8541
+        }
+      }
+    },
+    {
+      "company": "ViBert",
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "expectedAnswer": "Ofrecemos principalmente casas modulares de hormigón premoldeado y quinchos, con modelos de catálogo y también proyectos a medida. Dentro del catálogo tenés casas como Sara, Dora, Carmela, Daniela, Micaela, Estefanía, Selene, Justina, Valeria y María, y quinchos S, M, L y A, además de casas de campo, dúplex y grandes desarrollos. También brindamos dos modalidades de obra (obra gris y llave en mano) y financiación, construyendo desde nuestras plantas en Ruta 19 km 4 y San Agustín, Santa Fe.  \n\nYa que hay varias opciones, ¿ya tenés terreno? Así veo qué modelos se adaptan mejor a vos.",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 71110,
+          "outputTokens": 600,
+          "cachedInputTokens": 71040,
+          "cost": 0.0005987,
+          "latencyMs": 9445
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 71110,
+          "outputTokens": 600,
+          "cachedInputTokens": 70400,
+          "cost": 0.0031375,
+          "latencyMs": 11314
+        },
+        "gpt-5.1": {
+          "response": "En ViBert ofrecemos casas modulares de hormigón premoldeado y quinchos, con modelos de catálogo y también casas a medida. Entre las casas estándar tenés, por ejemplo, Casa Sara, Dora, Carmela, Daniela, Micaela, Estefanía, Selene, Justina, Valeria y María, y en quinchos los modelos Quincho S, M, L y A. Trabajamos con dos modalidades: obra gris (estructura completa de hormigón, platea, paneles, losa, aberturas, cubierta, flete y montaje) y llave en mano (incluye además pisos, revestimientos, instalaciones completas y pintura). También brindamos financiación y hacemos grandes desarrollos en hormigón premoldeado en la zona de Santa Fe y alrededores.  \n\nPara orientarte mejor, ¿qué tipo de modelos estás buscando: casa de vivienda permanente, casa de fin de semana, quincho o algo a medida?",
+          "inputTokens": 71110,
+          "outputTokens": 206,
+          "cachedInputTokens": 71040,
+          "cost": 0.0110275,
+          "latencyMs": 22824
+        }
+      }
+    },
+    {
+      "company": "ViBert",
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "expectedAnswer": "Te podés contactar directo con nosotros por estos medios:  \n- Tel / WhatsApp ViBert: +54 9 342 508 1468  \n- Email: ventas@vibert.com.ar  \n\nSi querés, decime y le pido a un asesor que te escriba por WhatsApp así avanzan con tu proyecto.",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 71115,
+          "outputTokens": 600,
+          "cachedInputTokens": 0,
+          "cost": 0.0037957499999999996,
+          "latencyMs": 8158
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 71115,
+          "outputTokens": 600,
+          "cachedInputTokens": 0,
+          "cost": 0.01897875,
+          "latencyMs": 15389
+        },
+        "gpt-5.1": {
+          "response": "Te dejo los datos directos de contacto de ViBert:  \n- Teléfono / WhatsApp central: **+54 9 342 508 1468**  \n- Email: **ventas@vibert.com.ar**\n\nSi querés, te puedo ayudar a definir primero qué modelo (por ejemplo Casa Sara, Daniela, Justina, etc.) se ajusta mejor a lo que estás buscando y después avanzás con ellos.",
+          "inputTokens": 71115,
+          "outputTokens": 98,
+          "cachedInputTokens": 0,
+          "cost": 0.08987374999999999,
+          "latencyMs": 11619
+        }
+      }
+    },
+    {
+      "company": "ViBert",
+      "question": "¿Cuántos modelos de casas ofrecen?",
+      "questionType": "product_count",
+      "expectedAnswer": "En catálogo estándar de casas de hormigón ofrecemos 10 modelos principales: Casa Sara, Dora, Carmela, Daniela, Micaela, Estefanía, Selene, Justina, Valeria y María. Además, sumamos líneas especiales (casas de campo 1, 2 y 3 dormitorios), casas a medida y dúplex, pero como “casas ViBert” de catálogo son esos 10 modelos.  \n\n¿Te interesa algo más compacto (tipo Sara o Dora) o algo más grande para familia (como Valeria o María)?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 71112,
+          "outputTokens": 600,
+          "cachedInputTokens": 71040,
+          "cost": 0.0005988,
+          "latencyMs": 7219
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 71112,
+          "outputTokens": 600,
+          "cachedInputTokens": 70400,
+          "cost": 0.003138,
+          "latencyMs": 10504
+        },
+        "gpt-5.1": {
+          "response": "Ofrecemos 10 modelos principales de casas ViBert de catálogo: Casa Sara, Casa Dora, Casa Carmela, Casa Daniela, Casa Micaela, Casa Selene, Casa Justina, Casa Estefanía, Casa Valeria y Casa María, que van desde 55,82 m² hasta 110,98 m² y de 1 a 3 dormitorios. Además, tenemos quinchos (S, M, L y A), casas de campo y la opción de casas a medida si buscas algo totalmente personalizado.  \n\nPara orientarte mejor, ¿para cuántas personas sería la casa que estás pensando?",
+          "inputTokens": 71112,
+          "outputTokens": 136,
+          "cachedInputTokens": 71040,
+          "cost": 0.01033,
+          "latencyMs": 2652
+        }
+      }
+    },
+    {
+      "company": "ViBert",
+      "question": "Contame sobre Casa Sara",
+      "questionType": "product_specific",
+      "expectedAnswer": "Casa Sara es un modelo de 65,55 m² totales, pensado para 2 personas, con estar-comedor integrado, 1 dormitorio, cocina y 1 baño. Tiene una superficie cubierta de 47,50 m² y una amplia galería semicubierta de 36,10 m², ideal si querés vivir cómodo y muy conectado con el exterior/naturaleza.  \n\nSi querés, te comparo Casa Sara con Casa Dora (también para 2 personas) para ver cuál se adapta mejor a cómo pensás usar la casa.",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 71109,
+          "outputTokens": 600,
+          "cachedInputTokens": 71040,
+          "cost": 0.00059865,
+          "latencyMs": 8747
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 71109,
+          "outputTokens": 600,
+          "cachedInputTokens": 70400,
+          "cost": 0.0031372500000000003,
+          "latencyMs": 9045
+        },
+        "gpt-5.1": {
+          "response": "La Casa Sara es uno de nuestros modelos más compactos y funcionales, ideal para 2 personas. Tiene 65,55 m² totales, con 1 estar-comedor, 1 dormitorio, cocina y 1 baño, y una galería semicubierta que te permite aprovechar bien el exterior. Está pensada como casa principal chica o casa de fin de semana, siempre con estructura de hormigón premoldeado, excelente aislamiento y construcción en unos 120 días.  \n\nPara orientarte mejor, ¿ya tenés terreno? ¿En qué zona sería la obra?",
+          "inputTokens": 71109,
+          "outputTokens": 127,
+          "cachedInputTokens": 0,
+          "cost": 0.09015625,
+          "latencyMs": 8697
+        }
+      }
+    },
+    {
+      "company": "ViBert",
+      "question": "¿Cuáles son los detalles técnicos de Casa Sara? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "expectedAnswer": "Casa Sara está pensada para 2 personas y se organiza en una planta con: estar-comedor, 1 dormitorio, 1 cocina y 1 baño.  \nEn superficies, tiene 47,50 m² cubiertos y 36,10 m² semicubiertos (galería), lo que da unos 65,55 m² totales aproximadamente. Es un diseño funcional, con espacios amplios y una galería multifuncional que prioriza el contacto con el exterior.  \n\n¿La idea es usarla como vivienda permanente o más como casa de fin de semana?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 71121,
+          "outputTokens": 600,
+          "cachedInputTokens": 0,
+          "cost": 0.0037960500000000005,
+          "latencyMs": 9388
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 71121,
+          "outputTokens": 600,
+          "cachedInputTokens": 70400,
+          "cost": 0.0031402500000000002,
+          "latencyMs": 9554
+        },
+        "gpt-5.1": {
+          "response": "Casa Sara es un modelo compacto pensado para 2 personas, ideal como primera vivienda o casa de fin de semana. Tiene 65,55 m² totales, con estar-comedor integrado, 1 dormitorio, cocina y 1 baño, más una galería semicubierta que amplía el uso social hacia el exterior. La estructura es de paneles premoldeados de hormigón con platea de fundación, lo que te garantiza solidez, eficiencia energética y muy buen aislamiento acústico y térmico.  \n\nSi querés, te puedo comparar Casa Sara con Dora (también de 1 dormitorio) para ver cuál se ajusta mejor a cómo te imaginas vivir.",
+          "inputTokens": 71121,
+          "outputTokens": 148,
+          "cachedInputTokens": 71040,
+          "cost": 0.010461250000000002,
+          "latencyMs": 3598
+        }
+      }
+    },
+    {
+      "company": "ViBert",
+      "question": "Contame sobre Casa Daniela",
+      "questionType": "product_specific",
+      "expectedAnswer": "Casa Daniela es una casa de 79,45 m² totales, pensada para una familia tipo: tiene estar-comedor, 2 dormitorios, cocina y 1 baño, todo en una planta. La superficie cubierta es de 61,15 m² y la semicubierta (galería) de 36,60 m², con un diseño de líneas simples, ambientes espaciosos y una galería amplia en contacto con la naturaleza.  \n\n¿La estás pensando como vivienda principal para cuántas personas aproximadamente?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 71109,
+          "outputTokens": 600,
+          "cachedInputTokens": 71040,
+          "cost": 0.00059865,
+          "latencyMs": 9536
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 71109,
+          "outputTokens": 600,
+          "cachedInputTokens": 70400,
+          "cost": 0.0031372500000000003,
+          "latencyMs": 10503
+        },
+        "gpt-5.1": {
+          "response": "La Casa Daniela es un modelo de una planta pensado para familia tipo: 2 dormitorios, estar-comedor amplio, cocina y 1 baño, ideal hasta 5 personas. Tiene 79,45 m² totales, con 61,15 m² cubiertos y 36,60 m² de galería semicubierta, lo que la hace muy cómoda para integrar interior y exterior. Está construida con nuestro sistema de paneles premoldeados de hormigón, con excelente aislamiento térmico y posibilidad de hacerla en obra gris o llave en mano en unos 120 días.  \n\nPara afinar si Daniela es la mejor opción para vos, ¿en qué zona tenés o pensás tener el terreno?",
+          "inputTokens": 71109,
+          "outputTokens": 155,
+          "cachedInputTokens": 71040,
+          "cost": 0.01051625,
+          "latencyMs": 4061
+        }
+      }
+    },
+    {
+      "company": "ViBert",
+      "question": "¿Cuáles son los detalles técnicos de Casa Daniela? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "expectedAnswer": "Casa Daniela está pensada para familia tipo, con esta distribución: 1 estar-comedor, 2 dormitorios, 1 cocina y 1 baño, todo en una planta.  \nEn superficies, tiene 79,45 m² totales: 61,15 m² cubiertos y 36,60 m² semicubiertos (galería amplia), con un diseño de líneas simples, ambientes cómodos y muy buena conexión interior–exterior.  \n\n¿En qué zona tenés el terreno? Así te cuento cómo trabajamos el montaje y plazos para ese lugar.",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 71121,
+          "outputTokens": 600,
+          "cachedInputTokens": 71040,
+          "cost": 0.00059925,
+          "latencyMs": 8811
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 71121,
+          "outputTokens": 600,
+          "cachedInputTokens": 70400,
+          "cost": 0.0031402500000000002,
+          "latencyMs": 9079
+        },
+        "gpt-5.1": {
+          "response": "La Casa Daniela es un modelo ideal para familia tipo: está pensada para 5 personas, con 2 dormitorios, estar-comedor, cocina y 1 baño. Tiene 79,45 m² totales, de los cuales 61,15 m² son superficie cubierta y 36,60 m² semicubierta, con una galería amplia que conecta muy bien interior y exterior. El diseño combina líneas simples y modernas, priorizando ambientes espaciosos, buena iluminación natural y circulación cómoda.  \n\nPara afinar si Daniela te encaja perfecto, ¿ya tenés definido cuántos m² aproximados estás buscando para tu casa?",
+          "inputTokens": 71121,
+          "outputTokens": 139,
+          "cachedInputTokens": 71040,
+          "cost": 0.010371250000000002,
+          "latencyMs": 23689
+        }
+      }
+    },
+    {
+      "company": "ViBert",
+      "question": "¿Cuál es la diferencia entre Casa Sara y Casa Daniela?",
+      "questionType": "model_comparison",
+      "expectedAnswer": "La principal diferencia es el tamaño y el perfil de uso: Casa Sara es más compacta (65,55 m² totales, 1 dormitorio, ideal para 2 personas) con 47,50 m² cubiertos y una galería muy protagonista para vivir “hacia afuera”. Casa Daniela es más grande (79,45 m² totales, 2 dormitorios, pensada para familia tipo), con 61,15 m² cubiertos y una galería de 36,60 m², priorizando ambientes interiores más amplios y funcionales.  \n\nSi me contás cuántas personas van a vivir y si es vivienda permanente o de fin de semana, te digo cuál de las dos te conviene más.",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 71116,
+          "outputTokens": 600,
+          "cachedInputTokens": 71040,
+          "cost": 0.0005989999999999999,
+          "latencyMs": 8333
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 71116,
+          "outputTokens": 600,
+          "cachedInputTokens": 70400,
+          "cost": 0.0031390000000000003,
+          "latencyMs": 9126
+        },
+        "gpt-5.1": {
+          "response": "Buenísima pregunta, porque son dos Modelos que se eligen mucho y apuntan a necesidades distintas.\n\n- **Casa Sara**: pensada para **2 personas**, con **1 dormitorio**, estar-comedor, cocina y 1 baño. Tiene **47,50 m² cubiertos + 36,10 m² de galería semicubierta** (total 65,55 m²), ideal como primera vivienda compacta o casa de fin de semana, muy integrada al exterior.  \n- **Casa Daniela**: pensada para **familia tipo (hasta 5 personas)**, con **2 dormitorios**, estar-comedor, cocina y 1 baño. Sube en tamaño a **61,15 m² cubiertos + 36,60 m² semicubiertos** (total 79,45 m²), con ambientes más amplios y una galería grande para uso diario.\n\nPara orientarte mejor, ¿cuántas personas la usarían y si es para vivienda permanente o de fin de semana?",
+          "inputTokens": 71116,
+          "outputTokens": 216,
+          "cachedInputTokens": 71040,
+          "cost": 0.011135,
+          "latencyMs": 4052
+        }
+      }
+    },
+    {
+      "company": "ViBert",
+      "question": "¿Qué modelo me recomendás para una familia de 4 personas?",
+      "questionType": "recommendation",
+      "expectedAnswer": "Para una familia de 4 personas te recomendaría mirar sobre todo:  \n- Casa Carmela (67,78 m² totales, 2 dormitorios, estar-comedor, cocina y baño): muy funcional y compacta, ideal si querés optimizar presupuesto.  \n- Casa Micaela (76,50 m² totales, 2 dormitorios, estar-comedor, cocina y baño): un poco más amplia, con muy buena relación interior–galería.  \n- Casa Estefanía y Casa Selene (alrededor de 82–96 m² totales, 2 dormitorios): más superficie y galerías grandes, pensadas para vivir cómodo y con mucho espacio exterior de uso.  \n\nPara afinar mejor la recomendación, ¿ya tenés terreno? ¿En qué zona está?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 71117,
+          "outputTokens": 600,
+          "cachedInputTokens": 71040,
+          "cost": 0.0005990500000000001,
+          "latencyMs": 7743
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 71117,
+          "outputTokens": 600,
+          "cachedInputTokens": 70400,
+          "cost": 0.00313925,
+          "latencyMs": 8897
+        },
+        "gpt-5.1": {
+          "response": "Para una familia de 4 personas te recomiendo mirar estos modelos de catálogo, que ya vienen pensados para ese tamaño de grupo:  \n- **Casa Carmela** – 67,78 m² totales, 2 dormitorios, estar-comedor, cocina y 1 baño.  \n- **Casa Micaela** – 76,50 m² totales, 2 dormitorios, estar-comedor, cocina y 1 baño.  \n- **Casa Selene** – 82,40 m² totales, 2 dormitorios, estar-comedor, cocina y 1 baño.  \n- **Casa Estefanía** – 96,20 m² totales, 2 dormitorios, estar-comedor, cocina y 1 baño, con galería más amplia.\n\nSi buscás algo un poco más grande para estar súper cómodos, **Casa Valeria** (97,65 m², 3 dormitorios y 2 baños) y **Casa María** (110,98 m², 3 dormitorios y 2 baños) también son ideales para 4 pero pensando a futuro. ¿Preferís algo más compacto tipo Carmela/Micaela o algo más amplio como Estefanía/Valeria?",
+          "inputTokens": 71117,
+          "outputTokens": 256,
+          "cachedInputTokens": 71040,
+          "cost": 0.011536250000000001,
+          "latencyMs": 5461
+        }
+      }
+    },
+    {
+      "company": "ViBert",
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "expectedAnswer": "Trabajamos con un sistema industrializado en etapas: primero idea y anteproyecto (estudiamos tu terreno y hacemos presupuesto), luego modelado 3D/BIM, producción de los paneles de hormigón en planta, ejecución de la platea de fundación en tu lote, transporte y montaje de los módulos, y finalmente terminaciones y entrega de llaves. El plazo típico para una casa ViBert es de unos 120 días desde el inicio del proceso constructivo, gracias a que los paneles se fabrican en planta y el montaje en obra es muy rápido y limpio.  \n\n¿Para cuándo te gustaría tener la casa lista aproximadamente?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 71116,
+          "outputTokens": 600,
+          "cachedInputTokens": 71040,
+          "cost": 0.0005989999999999999,
+          "latencyMs": 10428
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 71116,
+          "outputTokens": 600,
+          "cachedInputTokens": 70400,
+          "cost": 0.0031390000000000003,
+          "latencyMs": 9505
+        },
+        "gpt-5.1": {
+          "response": "Nuestro proceso es bien claro y está súper aceitado: primero definimos el modelo (por ejemplo Casa Sara, Daniela, María, etc.) y el emplazamiento en tu terreno, hacemos el proyecto y modelado 3D BIM, luego fabricamos los paneles de hormigón en planta, ejecutamos la platea de fundación, montamos los módulos en obra (paneles, losas, cubierta, aberturas) y finalmente hacemos sellados y terminaciones según sea “obra gris” o “llave en mano”.  \n\nEl plazo estándar de una casa ViBert es de aproximadamente 120 días desde inicio de obra: alrededor del día 30 ya está definido y modelado, día 60 platea terminada, día 90 montaje de paneles y día 120 entrega con llaves. ¿Para cuándo estás pensando tener la casa lista aproximadamente?",
+          "inputTokens": 71116,
+          "outputTokens": 187,
+          "cachedInputTokens": 71040,
+          "cost": 0.010845,
+          "latencyMs": 4565
+        }
+      }
+    },
+    {
+      "company": "ViBert",
+      "question": "¿Se pueden personalizar los modelos de casas?",
+      "questionType": "customization",
+      "expectedAnswer": "Sí, podés personalizar los modelos de catálogo y también hacer una casa 100% a medida. En las casas de catálogo solemos ajustar detalles como distribución fina, aberturas, terminaciones y elección de modalidad (obra gris o llave en mano), y si buscás algo más específico trabajamos como “casa a medida” desde el anteproyecto con el equipo de arquitectura.  \n\n¿Tenés en mente partir de algún modelo (por ejemplo Carmela, Micaela, Valeria) o querés algo totalmente diseñado desde cero?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 71114,
+          "outputTokens": 600,
+          "cachedInputTokens": 71040,
+          "cost": 0.0005989,
+          "latencyMs": 7717
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 71114,
+          "outputTokens": 600,
+          "cachedInputTokens": 70400,
+          "cost": 0.0031385000000000002,
+          "latencyMs": 9102
+        },
+        "gpt-5.1": {
+          "response": "Sí, los modelos se pueden personalizar bastante: podés elegir entre obra gris o llave en mano, ajustar distribución, terminaciones, y también hacer una casa totalmente a medida si querés algo 100% personalizado. Además del catálogo (Sara, Dora, Carmela, Daniela, Micaela, Selene, Justina, Estefanía, Valeria, María, etc.) nuestro equipo de arquitectura trabaja con BIM 3D para adaptar el diseño a tus necesidades y a tu terreno.  \n\nPara orientarte mejor, ¿qué tipo de modelo estás buscando: algo chico para fin de semana, una casa familiar o algo más grande tipo 3 dormitorios?",
+          "inputTokens": 71114,
+          "outputTokens": 142,
+          "cachedInputTokens": 71040,
+          "cost": 0.0103925,
+          "latencyMs": 4853
+        }
+      }
+    },
+    {
+      "company": "ViBert",
+      "question": "¿Tenés imágenes, planos o algún catálogo que pueda ver?",
+      "questionType": "images_catalog",
+      "expectedAnswer": "Sí, tenemos todo eso. En la web de ViBert podés ver imágenes y fichas de cada modelo (renders, distribuciones y superficies) y además contamos con un catálogo digital 2025 con todos los modelos de casas y quinchos.  \n\nSi querés te puedo sugerir modelos según lo que necesitás y después mirás sus fichas online, o te dejo el WhatsApp (+54 9 342 508 1468) para que te envíen directamente el catálogo en PDF.",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 71117,
+          "outputTokens": 600,
+          "cachedInputTokens": 71040,
+          "cost": 0.0005990500000000001,
+          "latencyMs": 6859
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 71117,
+          "outputTokens": 600,
+          "cachedInputTokens": 70400,
+          "cost": 0.00313925,
+          "latencyMs": 8420
+        },
+        "gpt-5.1": {
+          "response": "Sí, claro, tenemos todo eso. Podés ver el catálogo completo de modelos de casas y quinchos ViBert en este link (PDF):  \nhttps://www.vibert.com.ar/_files/ugd/aaa8b9_bb51b2fa2d9e44e284b3ef9b6518e6b3.pdf\n\nAhí vas a encontrar renders, planos y superficies de la Casa Sara, Dora, Carmela, Daniela, Micaela, Estefanía, Selene, Justina, Valeria, María, los Quinchos S/M/L/A y más modelos especiales y dúplex.  \nPara orientarte mejor con tanta info: ¿qué tipo de modelos estás buscando, casa principal, de fin de semana, quincho, dúplex?",
+          "inputTokens": 71117,
+          "outputTokens": 169,
+          "cachedInputTokens": 71040,
+          "cost": 0.010666250000000002,
+          "latencyMs": 17869
+        }
+      }
+    },
+    {
+      "company": "ViBert",
+      "question": "¿Cuánto sale aproximadamente una casa de 2 dormitorios?",
+      "questionType": "pricing",
+      "expectedAnswer": "No tengo los precios actualizados cargados, y como varían según modelo (Carmela, Micaela, Selene, Estefanía, etc.), modalidad (obra gris o llave en mano) y zona, prefiero no inventarte un número. Te sugiero escribir por WhatsApp al +54 9 342 508 1468 y pedir valor orientativo para, por ejemplo, Casa Carmela y Casa Micaela llave en mano vs. obra gris.  \n\nPara que te coticen bien, ¿qué presupuesto aproximado manejás y si sería para vivienda permanente o de fin de semana?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 71115,
+          "outputTokens": 600,
+          "cachedInputTokens": 71040,
+          "cost": 0.00059895,
+          "latencyMs": 6938
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 71115,
+          "outputTokens": 600,
+          "cachedInputTokens": 70400,
+          "cost": 0.00313875,
+          "latencyMs": 9083
+        },
+        "gpt-5.1": {
+          "response": "Mirá, en el catálogo aparecen rangos de presupuesto generales, pero no un precio puntual por modelo o por m². Para que te des una idea, ViBert hoy trabaja con casas de catálogo y a medida dentro de presupuestos tipo: **$15.000.000 a más de $40.000.000**, según metros, terminación (obra gris vs llave en mano) y zona de obra.\n\nNo tengo los precios actualizados cargados por Modelo (por ejemplo Casa Carmela, Micaela, Selene, Justina o Estefanía, que son todas de 2 dormitorios). Te sugiero escribir por WhatsApp al **+54 9 342 5081468** así te cotizan concreto según modelo, terminación y ubicación. ¿Qué presupuesto aproximado estás manejando para la casa de 2 dormitorios?",
+          "inputTokens": 71115,
+          "outputTokens": 182,
+          "cachedInputTokens": 71040,
+          "cost": 0.010793750000000001,
+          "latencyMs": 22370
+        }
+      }
+    },
+    {
+      "company": "ViBert",
+      "question": "¿Qué incluye el precio? ¿Terminaciones, instalación, todo?",
+      "questionType": "includes",
+      "expectedAnswer": "Te explico cómo trabajamos, porque cambia según la modalidad que elijas:  \n- Obra gris incluye: platea de fundación ejecutada in situ, paredes premoldeadas, losas de entrepiso, escalera premoldeada (si aplica), aberturas interiores y exteriores, cubierta metálica o losas premoldeadas, más flete y montaje.  \n- Llave en mano incluye todo lo anterior + pisos y zócalos, revestimientos, instalaciones sanitaria/elétrica/gas completas, pintura interior y exterior, y también flete y montaje; es la casa terminada, lista para habitar.  \n\nNo tengo los precios actualizados cargados; para que te detallen qué incluye cada presupuesto en el modelo que te interese, te sugiero escribir al WhatsApp +54 9 342 508 1468.",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 71117,
+          "outputTokens": 600,
+          "cachedInputTokens": 71040,
+          "cost": 0.0005990500000000001,
+          "latencyMs": 7195
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 71117,
+          "outputTokens": 600,
+          "cachedInputTokens": 70400,
+          "cost": 0.00313925,
+          "latencyMs": 9522
+        },
+        "gpt-5.1": {
+          "response": "Incluimos dos modalidades, así ves qué se adapta mejor a lo que necesitás:  \n- **Obra gris**: platea de fundación ejecutada in situ, paredes y losas premoldeadas, escalera (si corresponde), aberturas interiores y exteriores, cubierta metálica o losas y **flete y montaje**.  \n- **Llave en mano**: todo lo anterior **más** pisos y zócalos, revestimientos, instalaciones sanitaria / eléctrica / gas completas, pintura interior y exterior, y también flete y montaje, o sea la casa terminada lista para habitar.\n\nNo tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp así te cotizamos obra gris vs llave en mano para el modelo que elijas: +54 9 342 5081468. ¿Qué modelo estás mirando (por ejemplo Sara, Daniela, Justina, etc.) así te orientamos mejor?",
+          "inputTokens": 71117,
+          "outputTokens": 204,
+          "cachedInputTokens": 71040,
+          "cost": 0.011016250000000002,
+          "latencyMs": 5010
+        }
+      }
+    },
+    {
+      "company": "ViBert",
+      "question": "¿Ustedes se encargan de toda la instalación o solo entregan los materiales?",
+      "questionType": "installation",
+      "expectedAnswer": "Nos encargamos de todo, no solo de entregar materiales. En modalidad obra gris o llave en mano hacemos platea de fundación, montaje completo de los paneles de hormigón, cubierta, aberturas, y en llave en mano también todas las instalaciones (sanitaria, eléctrica y gas), más terminaciones y pintura.  \n\nPara tu caso puntual, ¿estás pensando en obra gris para completar con tu propia mano de obra o preferís llave en mano y desentenderte de la obra?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 71122,
+          "outputTokens": 600,
+          "cachedInputTokens": 0,
+          "cost": 0.0037961,
+          "latencyMs": 9980
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 71122,
+          "outputTokens": 600,
+          "cachedInputTokens": 70400,
+          "cost": 0.0031405,
+          "latencyMs": 8986
+        },
+        "gpt-5.1": {
+          "response": "Nos encargamos de todo, no solo de entregar materiales. En ViBert fabricamos los paneles premoldeados en planta, hacemos la platea de fundación, montamos los paneles, colocamos cubiertas y aberturas, e incluso podemos entregar la casa “llave en mano” con instalaciones de agua, luz y gas, pisos, revestimientos y pintura terminados.  \n\nPara orientarte mejor, ¿estás pensando en una casa de catálogo (por ejemplo Sara, Dora, Carmela, etc.) o algo a medida?",
+          "inputTokens": 71122,
+          "outputTokens": 121,
+          "cachedInputTokens": 71040,
+          "cost": 0.0101925,
+          "latencyMs": 2609
+        }
+      }
+    },
+    {
+      "company": "ViBert",
+      "question": "¿Qué garantía ofrecen sobre la construcción?",
+      "questionType": "warranty",
+      "expectedAnswer": "Nuestras casas son de hormigón premoldeado con estructura antisísmica, vida útil estimada mayor a 100 años y muy bajo mantenimiento, respaldadas por más de 70 años de experiencia y certificaciones (incluyendo certificado de aptitud técnica de la Secretaría de Vivienda). Esto se traduce en una garantía fuerte en cuanto a durabilidad, resistencia al fuego, estabilidad estructural y eficiencia energética del sistema.  \n\nNo tengo en el sistema el detalle de años de garantía comercial por escrito; para que te pasen el plazo exacto y condiciones, te sugiero consultarlo por WhatsApp al +54 9 342 508 1468.",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 71111,
+          "outputTokens": 600,
+          "cachedInputTokens": 71040,
+          "cost": 0.00059875,
+          "latencyMs": 8002
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 71111,
+          "outputTokens": 600,
+          "cachedInputTokens": 70400,
+          "cost": 0.00313775,
+          "latencyMs": 8394
+        },
+        "gpt-5.1": {
+          "response": "Ofrecemos casas de hormigón premoldeado con una durabilidad proyectada mayor a 100 años, estructura antisísmica y certificado de aptitud técnica otorgado por la Secretaría de Vivienda, lo que respalda la calidad del sistema ViBert. Además, al ser un sistema industrializado con más de 70 años de experiencia detrás (Premoldeados Bertone), garantizamos estabilidad estructural, alta resistencia al fuego, bajo mantenimiento y eficiencia energética, lo que protege tu inversión a largo plazo.  \n\nPara los plazos y condiciones formales de garantía (años de cobertura por estructura, filtraciones, instalaciones, etc.), no tengo el detalle cargado acá; te sugiero consultarlo por WhatsApp al +54 9 342 508 1468 así te pasan las condiciones exactas según el tipo de obra (obra gris o llave en mano).",
+          "inputTokens": 71111,
+          "outputTokens": 187,
+          "cachedInputTokens": 71040,
+          "cost": 0.010838750000000001,
+          "latencyMs": 3645
+        }
+      }
+    },
+    {
+      "company": "ViBert",
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "expectedAnswer": "Sí, contamos con financiación disponible para las casas modulares de hormigón. Los planes concretos (monto financiable, anticipo, cuotas y plazos) se ajustan según el modelo elegido, la modalidad (obra gris o llave en mano) y la zona.  \n\nPara ver qué plan se adapta mejor a vos, ¿me contás qué presupuesto aproximado manejás y si pensás financiar todo o solo una parte?",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 71114,
+          "outputTokens": 600,
+          "cachedInputTokens": 71040,
+          "cost": 0.0005989,
+          "latencyMs": 7604
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 71114,
+          "outputTokens": 600,
+          "cachedInputTokens": 70400,
+          "cost": 0.0031385000000000002,
+          "latencyMs": 8907
+        },
+        "gpt-5.1": {
+          "response": "Sí, en ViBert ofrecemos financiación para nuestras casas modulares de hormigón premoldeado, adaptando los planes según el tipo de obra (obra gris o llave en mano) y el modelo elegido. Los detalles de cuotas, anticipo y plazos se definen caso por caso con el área comercial.  \n\nPara orientarte mejor, ¿qué presupuesto estás manejando aproximadamente para tu proyecto?",
+          "inputTokens": 71114,
+          "outputTokens": 90,
+          "cachedInputTokens": 71040,
+          "cost": 0.009872500000000001,
+          "latencyMs": 2511
+        }
+      }
+    },
+    {
+      "company": "ViBert",
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "expectedAnswer": "Lo que nos diferencia es el sistema constructivo de hormigón premoldeado propio, con paneles PS120/PS150 de alta eficiencia energética (sin puentes térmicos), estructura antisísmica y vida útil mayor a 100 años, respaldado por más de 70 años de experiencia industrial. A eso se suma que fabricamos en planta y montamos en obra en unos 120 días, con obra limpia, instalaciones integradas (sin picar paredes), opciones de obra gris o llave en mano y la posibilidad de elegir entre modelos de catálogo, casas a medida y grandes desarrollos.  \n\n¿Estás comparando con construcción tradicional, steel framing u otra empresa de premoldeados? Así te marco las diferencias justo con lo que tenés en mente.",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 71112,
+          "outputTokens": 600,
+          "cachedInputTokens": 71040,
+          "cost": 0.0005988,
+          "latencyMs": 8139
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 71112,
+          "outputTokens": 600,
+          "cachedInputTokens": 70400,
+          "cost": 0.003138,
+          "latencyMs": 9174
+        },
+        "gpt-5.1": {
+          "response": "En ViBert trabajamos con un sistema de paneles premoldeados de hormigón propio (PS120/PS150/PS200) que nos permite entregarte la casa en unos 120 días, con estructura antisísmica, alta eficiencia energética y muy bajo mantenimiento, algo que no todas las empresas del rubro garantizan. Además, tenés la opción de obra gris o llave en mano, instalaciones integradas sin picar paredes, certificado de aptitud técnica de la Secretaría de Vivienda y el respaldo de más de 70 años de experiencia industrial de Premoldeados Bertone.  \n\nPara orientarte mejor, ¿qué tipo de modelo estás buscando: una casa de catálogo (por ejemplo Sara, Micaela, Valeria, María) o algo totalmente a medida?",
+          "inputTokens": 71112,
+          "outputTokens": 169,
+          "cachedInputTokens": 71040,
+          "cost": 0.010660000000000001,
+          "latencyMs": 4465
+        }
+      }
+    },
+    {
+      "company": "ViBert",
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "expectedAnswer": "Construimos desde nuestras plantas en Ruta Nacional 19 km 4 (cerca de Santo Tomé) y San Agustín, ambas en la provincia de Santa Fe, y trabajamos en distintas zonas del país a través de representantes (por ejemplo, Rosario, Buenos Aires y Partido de la Costa). La cobertura concreta depende del proyecto, porque incluye flete y montaje de los paneles de hormigón.  \n\n¿En qué localidad o provincia tenés el terreno? Así te confirmo si podemos llegar y cómo se manejaría el traslado y la obra.",
+      "models": {
+        "gpt-5-nano": {
+          "response": "",
+          "inputTokens": 71112,
+          "outputTokens": 600,
+          "cachedInputTokens": 71040,
+          "cost": 0.0005988,
+          "latencyMs": 7134
+        },
+        "gpt-5-mini": {
+          "response": "",
+          "inputTokens": 71112,
+          "outputTokens": 600,
+          "cachedInputTokens": 70400,
+          "cost": 0.003138,
+          "latencyMs": 10358
+        },
+        "gpt-5.1": {
+          "response": "Trabajamos principalmente en el centro del país, con base en Santa Fe (planta en San Agustín y sede sobre la Ruta Nacional 19 km 4), y tenemos representantes en Rosario, Buenos Aires y Partido de la Costa, lo que nos permite cubrir buena parte de la región centro y litoral. También hicimos desarrollos grandes en Neuquén (Añelo) y Entre Ríos (Paraná), así que podemos evaluar proyectos en otras provincias según el alcance.  \n\nPara orientarte mejor, ¿en qué provincia y localidad estás pensando construir?",
+          "inputTokens": 71112,
+          "outputTokens": 122,
+          "cachedInputTokens": 71040,
+          "cost": 0.010190000000000001,
+          "latencyMs": 2811
+        }
+      }
+    }
+  ],
+  "summary": {
+    "gpt-5-nano": {
+      "avgLatencyMs": 7837,
+      "totalCost": 0.08379476999999998,
+      "totalInputTokens": 4394001,
+      "totalOutputTokens": 48000,
+      "totalCachedInputTokens": 3446784,
+      "successCount": 80,
+      "errorCount": 0
+    },
+    "gpt-5-mini": {
+      "avgLatencyMs": 10350,
+      "totalCost": 0.3250254499999998,
+      "totalInputTokens": 4394001,
+      "totalOutputTokens": 47941,
+      "totalCachedInputTokens": 3863808,
+      "successCount": 80,
+      "errorCount": 0
+    },
+    "gpt-5.1": {
+      "avgLatencyMs": 6876,
+      "totalCost": 1.4375192499999996,
+      "totalInputTokens": 4394001,
+      "totalOutputTokens": 14089,
+      "totalCachedInputTokens": 3729664,
+      "successCount": 80,
+      "errorCount": 0
+    }
+  }
+}

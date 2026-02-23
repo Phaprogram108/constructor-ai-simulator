@@ -1,197 +1,197 @@
 {
   "company": "Importainer",
   "url": "https://www.importainer.com.ar/",
-  "testedAt": "2026-02-06T16:55:53.281Z",
-  "sessionId": "9dc1fbdc-a307-431f-b043-80ad1e2c6afc",
-  "systemPromptLength": 22833,
+  "testedAt": "2026-02-11T18:10:03.507Z",
+  "sessionId": "839f5c24-7a7c-46ca-be5c-e5632fd19250",
+  "systemPromptLength": 162893,
   "systemPromptModelsFound": [
-    "Construccion en Construcción en seco utilizando co",
+    "Construccion en Sistema constructivo basado en con",
     "Financiacion disponible"
   ],
   "systemPromptWhatsApp": "+5491159378945",
-  "systemPromptType": "de Proyectos, casas, oficinas, locales comerciales, etc. estas buscando?\"",
+  "systemPromptType": "de Contenedores, casas, oficinas, dúplex. estas buscando?\"",
   "conversations": [
     {
       "question": "¿Qué es tu empresa y qué hacen?",
       "questionType": "identity",
-      "response": "Importainer S.A. es una empresa argentina líder en viviendas hechas a partir de contenedores marítimos, con más de 10 años de experiencia. Fabricamos casas, dúplex, oficinas, bares, locales comerciales, quinchos, jardines de invierno y también vendemos containers vacíos (20 STANDARD, 40 STANDARD y 40 HIGH CUBE) y refrigerados. Trabajamos con construcción en seco, proyectos estándar como Casa Container 15m², Casa Container 60m², Oficina Container 90m², Duplex Container 45m², Bar Container 30m² y Local Comercial 60m², y también hacemos pedidos a medida. Además, ofrecemos financiación en cuotas y nos encargamos de la fabricación e instalación para que recibas tu inmueble listo para usar.  \n\nPara orientarte mejor, ¿qué tipo de Proyectos, casas, oficinas, locales comerciales, etc. estás buscando?",
+      "response": "Importainer S.A. es una empresa argentina con más de 10 años de experiencia que fabrica viviendas y estructuras usando contenedores marítimos reciclados. Diseñamos y construimos casas container (como Casa container 15m², Casa Container 60m², Casa Malibu, Casa Patagonia, etc.), dúplex (por ejemplo Duplex Container 45m², Duplex Pehuen 90m²), oficinas container (Oficina Container 60, 75 y 90m²), bares, locales comerciales, quinchos y jardines de invierno, además de vender containers vacíos (20 STANDARD, 40 STANDARD y 40 HIGH CUBE) y contenedores refrigerados. Trabajamos con sistema llave en mano, con aislación termoacústica completa, instalaciones de agua y electricidad incluidas, y ofrecemos financiación en pesos hasta en 240 cuotas.  \n\nPara orientarte mejor, ¿qué tipo de Contenedores, casas, oficinas, dúplex. estás buscando: vivienda, local comercial, oficina o algo más específico?",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 3486
+      "responseTimeMs": 7059
     },
     {
       "question": "¿Qué productos o servicios ofrecen?",
       "questionType": "offering",
-      "response": "Ofrecemos dos grandes líneas: inmuebles hechos con contenedores y venta de containers vacíos/refrigerados.  \n\nEn inmuebles trabajamos con:  \n- **Casas y dúplex**: Casa Container 15m², Casa Container 60m², Casa Malibu, Casa Patagonia (30m²), Casa Marruecos (45m²), Casa California (60m²), Casa Sunset (75m²), Casa Jakarta (90m²), Casa Africa (120m²), Duplex Container 45m², Duplex Ceibo 30m², Duplex Ombú 45m², Duplex Arrayán 60m², Duplex Jacarandá 75m², Duplex Pehuén 90m², Duplex Alerce 120m².  \n- **Oficinas y locales comerciales**: Oficina Container 90m² / Oficina Container 90m² (Classic), Local Comercial 60m².  \n- **Espacios especiales**: Quincho Container 15m², Jardín de Invierno 30m², Bar Container 30m², Bar 15m², Piletas, garages y proyectos a medida.  \n\nEn containers:  \n- **Containers vacíos**: 20 STANDARD (6,10 x 2,43 x 2,60m – US$ 3.259,75), 40 STANDARD (12,19 x 2,43 x 2,60m – US$ 3.922,75) y 40 HIGH CUBE (12,19 x 2,43 x 2,89m – US$ 4.088,50).  \n- **Contenedores refrigerados (reefers)** para frío.  \nAdemás, siempre trabajamos en **construcción en seco** y con **financiación en cuotas**.  \nPara ayudarte mejor, ¿qué tipo de Proyectos, casas, oficinas, locales comerciales, etc. estás buscando específicamente?",
+      "response": "Ofrecemos dos grandes cosas: productos hechos con contenedores y servicios para que llegues a tu inmueble terminado sin complicarte.  \n\n1) **Productos**  \n- **Casas container**:  \n  - Casa container 15m², Casa Container 30m², 45m², 60m², 75m², 90m², 120m².  \n  - Línea Premium: Casa Malibu 15m², Casa Patagonia 30m², Casa Marruecos 45m², Casa California 60m², Casa Sunset 75m², Casa Jakarta 90m², Casa Africa 120m².  \n- **Dúplex container**:  \n  - Classic: Duplex Container 30, 45, 60, 75, 90m².  \n  - Comfort: Duplex Container 45, 60, 75m².  \n  - Premium: Duplex Ceibo 30m², Duplex Ombu 45m², Duplex Arrayan 60m², Duplex Jacaranda 75m², Duplex Pehuen 90m², Duplex Alerce 120m².  \n- **Oficinas container**: Oficina Container 15, 30, 45, 60, 75 y 90m².  \n- **Locales y bares**: Local Comercial 60m² y Bar Container (Bar 15, 30, 45, 60 y 120m²).  \n- **Exteriores**: Quincho Container 15m² y Jardín de Invierno container 30m².  \n- **Containers vacíos**:  \n  - 20 STANDARD – 6,10 x 2,43 x 2,60 – **US$ 3.259,75**  \n  - 40 STANDARD – 12,19 x 2,43 x 2,60 – **US$ 3.922,75**  \n  - 40 HIGH CUBE – 12,19 x 2,43 x 2,89 – **US$ 4.088,50**  \n- **Contenedores refrigerados (reefers)** para frío comercial/industrial.  \n\n2) **Servicios**  \n- Diseño y construcción en **sistema constructivo con containers reciclados**, llave en mano.  \n- **Personalización** de planos, terminaciones y distribución de ambientes.  \n- **Financiación en pesos**, planes de hasta 240 cuotas, sin anticipo según propuesta comercial.  \n- **Traslado e instalación** del inmueble en tu terreno en cualquier punto de Argentina.  \n\nPara ayudarte mejor, ¿estás pensando en una casa, un dúplex, una oficina container, un bar/local o en comprar un container vacío?",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 5409
+      "responseTimeMs": 8127
     },
     {
       "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
       "questionType": "contact",
-      "response": "Te dejo todos los datos de contacto así los tenés a mano:  \n- **WhatsApp directo**: +54 9 11 2276 3820  \n- **Teléfono**: +54 9 11 5937 8945  \n- **Email**: importainerr@gmail.com  \n\nSi querés, también podés escribirnos directo desde este link de WhatsApp: https://wa.me/5491122763820.",
+      "response": "Podés contactarnos directo por estos medios:  \n- **WhatsApp / Teléfono comercial**: +54 9 11 2276 3820  \n- **Otro WhatsApp habilitado**: +54 9 11 5937 8945  \n- **Email**: rrhh@importainer.com.ar  \n\nSi querés, decime qué tipo de Contenedores, casas, oficinas, dúplex. te interesan y te ayudo a armar el mensaje para enviarles por WhatsApp.",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 1641
+      "responseTimeMs": 2756
     },
     {
       "question": "¿Cuántos modelos ofrecen?",
       "questionType": "product_count",
-      "response": "Tenemos más de 30 modelos predefinidos entre casas, dúplex, oficinas, bares, locales y espacios especiales.  \nAlgunos destacados son: Casa Container 15m², Casa Container 60m², Casa Malibu, Casa Patagonia 30m², Casa Marruecos 45m², Casa California 60m², Casa Sunset 75m², Casa Jakarta 90m², Casa Africa 120m², Oficina Container 90m², Bar Container 30m², Local Comercial 60m² y toda la línea de dúplex (Ceibo, Ombú, Arrayán, Jacarandá, Pehuén, Alerce, etc.).  \n\nAdemás de esos, trabajamos con líneas **Economic, Classic, Comfort, En oferta** y proyectos 100% a medida.  \nPara afinar, ¿estás mirando más una casa, una oficina o un local comercial?",
+      "response": "Tenemos muchos modelos, porque combinamos categorías (casas, dúplex, oficinas, bares, locales, exteriores) con distintas superficies y líneas (Economic, Classic, Comfort, Premium).  \n\nCon nombres específicos del catálogo, hoy contamos al menos con:  \n- **Casas**: Casa container 15, 30, 45, 60, 75, 90, 120m² + Casa Malibu, Casa Patagonia, Casa Marruecos, Casa California, Casa Sunset, Casa Jakarta, Casa Africa.  \n- **Dúplex**: Duplex Container 30, 45, 60, 75, 90m² + Duplex Ceibo, Ombu, Arrayan, Jacaranda, Pehuen, Alerce.  \n- **Oficinas**: Oficina Container 15, 30, 45, 60, 75 y 90m².  \n- **Comerciales y exteriores**: Local Comercial 60m², Bar 15, 30, 45, 60 y 120m², Quincho Container 15m², Jardín de Invierno 30m².  \n- **Containers vacíos**: 20 STANDARD, 40 STANDARD y 40 HIGH CUBE, más contenedores refrigerados.  \n\nEn total son varias decenas de combinaciones posibles; para no marearte, ¿en qué tipo de Contenedores, casas, oficinas, dúplex. querés que te detalle exactamente los modelos disponibles?",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 2917
+      "responseTimeMs": 9571
     },
     {
-      "question": "Contame sobre Construccion en Construcción en seco utilizando co",
+      "question": "Contame sobre Construccion en Sistema constructivo basado en con",
       "questionType": "product_specific",
-      "response": "En Importainer trabajamos con **construcción en seco utilizando contenedores de transporte**, es decir, no hay obra húmeda pesada como una casa tradicional. Usamos containers marítimos (20 STANDARD, 40 STANDARD y 40 HIGH CUBE) como estructura resistente, y sobre eso se hace el acondicionamiento completo: aislación, revestimientos, instalaciones eléctricas y sanitarias, aberturas, etc.  \n\nEsto permite **tiempos de obra mucho más rápidos**, menos suciedad en el terreno, más precisión en costos y la posibilidad de trasladar o ampliar el inmueble a futuro.  \nPara saber qué explicarte más en detalle, ¿lo estás pensando para una casa, una oficina o un local comercial?",
-      "mentionedModels": [],
-      "saidNoInfo": false,
-      "hasSpecificData": false,
-      "responseTimeMs": 2980
-    },
-    {
-      "question": "¿Cuáles son los detalles técnicos de Construccion en Construcción en seco utilizando co? Superficie, dormitorios, características.",
-      "questionType": "product_specs",
-      "response": "En “construcción en seco utilizando contenedores” no hablamos de un solo modelo con m² y dormitorios fijos, sino del **sistema constructivo** que usamos en todas las casas, oficinas, dúplex, bares y locales. Trabajamos sobre contenedores 20 STANDARD, 40 STANDARD y 40 HIGH CUBE como estructura, y según el proyecto definimos la **superficie (15, 30, 45, 60, 75, 90, 120 m², etc.) y la cantidad de ambientes/dormitorios** (por ejemplo: Casa Container 15m² = 1 ambiente y 1 baño; Casa Container 60m² = 7 ambientes y 2 baños; Duplex Container 45m² = 3–4 ambientes, 1 baño, 2 pisos).  \n\nA nivel técnico, el sistema incluye: estructura metálica de contenedor, construcción en seco (sin obra húmeda pesada), aislaciones térmicas y acústicas, instalaciones eléctricas y sanitarias completas, revestimientos interiores y exteriores y aberturas según la línea (Economic, Classic, Comfort o Premium).  \nPara darte detalles técnicos concretos (m², dormitorios y distribución), ¿sobre qué modelo puntual querés que te cuente: Casa Container 15m², Casa Container 60m², Duplex Container 45m², Oficina Container 90m², Bar Container 30m² o Local Comercial 60m²?",
+      "response": "Nuestro sistema constructivo está basado en **containers marítimos reciclados**, transformados en viviendas y espacios 100% habitables con estándar de obra tradicional. Trabajamos con contenedores de 20 y 40 pies, los acondicionamos con **aislación termoacústica (lana de vidrio + aluminio)**, instalaciones completas de agua y electricidad, aberturas, revestimientos interiores, pintura exterior y mobiliario de cocina y baño según el modelo (Casa container 15m², Casa Container 60m², Duplex Container 45m², Oficina Container 90m², etc.).  \n\nLas ventajas clave son: **obra hasta 50% más rápida**, costo más bajo que la construcción húmeda, sistema modular y transportable (podés mover tu casa/oficina y ampliar sumando módulos), y opción **llave en mano** con financiación en pesos hasta 240 cuotas. ¿Te interesa este sistema para una casa, un dúplex, una oficina container o un local/bar?",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 5039
+      "responseTimeMs": 7622
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Construccion en Sistema constructivo basado en con? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "Te explico con ejemplos concretos de cómo aplicamos nuestro sistema constructivo con containers reciclados en distintos modelos, así ves superficies, dormitorios y características técnicas reales:\n\n1) **Casa container 15m² (Classic)**  \n- **Superficie**: 15m², planta baja.  \n- **Dormitorios**: monoambiente (todo integrado).  \n- **Ambientes**: cocina, comedor, living + 1 baño.  \n- **Técnico**: aislación termoacústica completa, instalación eléctrica y de agua incluida, aberturas interiores y exteriores incluidas, revestimientos interiores, muebles y griferías sanitarias, pintura exterior.  \n\n2) **Casa Container 60m² (Comfort)**  \n- **Superficie**: 60m², planta baja.  \n- **Dormitorios**: hasta 3 dormitorios.  \n- **Ambientes**: living, comedor, cocina, hasta 2 baños.  \n- **Técnico**: aislación con lana de vidrio + aluminio, instalación eléctrica y de agua completa, aberturas interiores/exteriores, revestimientos interiores, muebles sanitarios y griferías, lista para habitar, posibilidad de terraza (factibilidad).  \n\n3) **Duplex Container 45m² (Classic)**  \n- **Superficie**: 45m², planta baja y alta.  \n- **Dormitorios**: hasta 3 dormitorios.  \n- **Ambientes**: cocina, comedor, living, hasta 1 baño, escalera interior, posibilidad de terraza.  \n- **Técnico**: mismo estándar de aislación termoacústica, instalaciones completas, aberturas, revestimientos, mobiliario de cocina y baño incluidos.  \n\n4) **Oficina Container 90m² (Classic)**  \n- **Superficie**: 90m², planta baja + primer piso + planta alta.  \n- **Dormitorios**: no aplica (espacios de trabajo).  \n- **Ambientes**: hasta 5 ambientes de oficina, hasta 4 toilettes, cocina incluida, escalera interior, opción terraza (factibilidad).  \n- **Técnico**: aislación termoacústica, instalaciones de agua y electricidad incluidas, aberturas completas, revestimientos interiores, muebles y griferías sanitarias.  \n\nEn todos los casos el **sistema constructivo** es el mismo: contenedores marítimos de 20 o 40 pies reciclados, estructura de acero de alta resistencia, aislación termoacústica, ejecución rápida y entrega llave en mano.  \n¿Lo estás pensando más para vivienda permanente (casa/dúplex) o para uso comercial (oficina, bar, local)? Así te detallo el modelo que mejor encaje.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 8814
     },
     {
       "question": "Contame sobre Financiacion disponible",
       "questionType": "product_specific",
-      "response": "La financiación disponible es uno de nuestros puntos fuertes: podés comprar tanto inmuebles container (casas, dúplex, oficinas, locales, bares, etc.) como containers vacíos con pago **al contado o en cuotas**. Trabajamos planes flexibles que se adaptan al proyecto y al perfil del cliente, siempre en forma documentada y segura.  \n\nNo tengo por acá el detalle fino de cantidad de cuotas y requisitos, eso te lo pasan actualizado por WhatsApp.  \nPara que te orienten con un plan concreto, ¿qué estarías queriendo financiar: una casa (por ejemplo Casa Container 60m²), un dúplex, una oficina o un container vacío 20/40 pies?",
+      "response": "La financiación disponible en Importainer es uno de nuestros fuertes: podés acceder a Contenedores, casas, oficinas, dúplex. **100% financiados en pesos, sin anticipo** según la propuesta comercial vigente, y con planes de **hasta 240 cuotas**. La financiación cubre nuestros inmuebles llave en mano (por ejemplo Casa container 15m², Casa Container 60m², Duplex Container 45m², Casa Malibu, Duplex Pehuen, Oficina Container 90m², Local Comercial 60m², Bar 30m², Quincho Container 15m², etc.).  \n\nTe asesoran sobre plan, monto y cantidad de cuotas según el modelo y tu perfil, y podés hacer todo el proceso de forma virtual. ¿Qué presupuesto aproximado manejás y para qué tipo de Contenedores, casas, oficinas, dúplex. te gustaría usar la financiación?",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 4068
+      "responseTimeMs": 3711
     },
     {
       "question": "¿Cuáles son los detalles técnicos de Financiacion disponible? Superficie, dormitorios, características.",
       "questionType": "product_specs",
-      "response": "La **financiación disponible** no es un modelo de inmueble, sino la forma de pago que podés aplicar a cualquiera de nuestros proyectos (casas, dúplex, oficinas, locales, bares, containers vacíos, reefers, etc.). Por eso no tiene superficie, dormitorios ni m² propios: esas características dependen del modelo que elijas, por ejemplo:  \n- **Casa Container 15m²**: 1 ambiente, 1 baño, 1 piso.  \n- **Casa Container 60m²**: 7 ambientes, 2 baños, 1 piso.  \n- **Duplex Container 45m²**: 3–4 ambientes, 1 baño, 2 pisos.  \n- **Oficina Container 90m²**: 5 ambientes, 2 baños, 3 pisos.  \n\nLa financiación se aplica sobre el valor del proyecto que elijas (o del container vacío 20 STANDARD, 40 STANDARD, 40 HIGH CUBE), con posibilidad de pagar en cuotas. No tengo por acá el detalle exacto de planes, tasas y requisitos, así que para eso te recomiendo escribir al WhatsApp +54 9 11 2276 3820 y te arman una simulación según el modelo que te interese.  \nPara ayudarte mejor, ¿sobre qué proyecto puntual querés que veamos financiación: una casa, un dúplex, una oficina o un container vacío?",
+      "response": "La **Financiación disponible** no es un modelo físico con m² o dormitorios, sino el sistema de pago que podés aplicar a cualquiera de nuestros inmuebles container. Lo importante son estas características:  \n\n- **Qué se puede financiar**: casas (Casa container 15, 30, 45, 60, 75, 90, 120m²; Casa Malibu, Casa Patagonia, Casa Marruecos, Casa California, Casa Sunset, Casa Jakarta, Casa Africa), dúplex (Duplex Container 30 a 90m², Duplex Ceibo, Ombu, Arrayan, Jacaranda, Pehuen, Alerce), Oficinas Container 15 a 90m², Local Comercial 60m², Bar 15 a 120m², Quincho Container 15m², Jardín de Invierno 30m².  \n- **Forma de pago**: financiación **en pesos**, con planes de **hasta 240 cuotas** y posibilidad de proyectos **100% financiados, sin anticipo** según evaluación comercial.  \n- **Qué incluye**: el valor del inmueble llave en mano (estructura en container reciclado, aislación termoacústica, instalaciones de agua y electricidad, aberturas, revestimientos, y mobiliario de cocina/baños según modelo).  \n\nNo tengo por acá el detalle de tasas ni montos mínimos/máximos; para eso te sugiero escribir por WhatsApp al +54 9 11 2276 3820. Para afinar, ¿sobre qué modelo puntual querés que veamos cómo aplicaría la financiación (por ejemplo Casa Container 60m² o Duplex Container 45m²)?",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 4129
+      "responseTimeMs": 7897
     },
     {
-      "question": "¿Cuál es la diferencia entre Construccion en Construcción en seco utilizando co y Financiacion disponible?",
+      "question": "¿Cuál es la diferencia entre Construccion en Sistema constructivo basado en con y Financiacion disponible?",
       "questionType": "model_comparison",
-      "response": "“Construcción en seco utilizando contenedores” es el **sistema constructivo**: cómo fabricamos las casas, dúplex, oficinas, bares, locales, quinchos, etc., usando contenedores marítimos (20 STANDARD, 40 STANDARD y 40 HIGH CUBE) como estructura, con aislación, instalaciones completas y terminaciones en seco.  \n\n“Financiación disponible” es la **forma de pago**: la posibilidad de comprar cualquiera de esos proyectos (o containers vacíos / refrigerados) al contado o en cuotas, con planes que se ajustan a cada cliente.  \nAsí que uno define **cómo se construye** el inmueble y el otro **cómo lo pagás**. ¿Lo estás evaluando más para una casa, una oficina o un local comercial?",
+      "response": "Son dos cosas distintas que se complementan:  \n\n- **Construcción en sistema constructivo basado en containers reciclados**: es **el cómo construimos**. Usamos contenedores marítimos de 20 y 40 pies, los reciclamos y transformamos en casas, dúplex, oficinas, bares, locales, quinchos, etc., con aislación termoacústica, instalaciones completas, terminaciones interiores y entrega llave en mano (por ejemplo Casa container 15m², Casa Container 60m², Duplex Container 45m², Oficina Container 90m²).  \n- **Financiación disponible**: es **el cómo lo pagás**. Es nuestro sistema para que accedas a esos inmuebles container en **pesos, en cuotas (hasta 240)** y con planes 100% financiados sin anticipo según evaluación.  \n\nO sea: el sistema constructivo define el producto (la casa/duplex/oficina en container) y la financiación define el plan de pago para que puedas comprarlo. ¿En qué estás más enfocando ahora, en entender mejor la construcción o en ver si llegás con las cuotas?",
       "mentionedModels": [],
       "saidNoInfo": false,
-      "hasSpecificData": false,
-      "responseTimeMs": 3215
+      "hasSpecificData": true,
+      "responseTimeMs": 6181
     },
     {
       "question": "¿Qué modelo me recomendás para una familia de 4 personas?",
       "questionType": "recommendation",
-      "response": "Para una familia de 4, lo ideal es ir a algo de **60 m² para arriba**, así tienen buena cantidad de ambientes y circulación cómoda. En nuestro catálogo, las opciones que mejor encajan son:  \n- **Casa Container 60m²** (Comfort): 7 ambientes, 2 baños, 1 piso, perfecta para 2 dormitorios, living-comedor y cocina bien definidos.  \n- Si buscás algo más amplio o tipo “casa grande”: **Casa California 60m²**, **Casa Sunset 75m²**, **Casa Jakarta 90m²** o **Casa Africa 120m²** también son muy buenas para familias.  \n\nPara afinar la recomendación: ¿ya tenés terreno y en qué zona sería?",
+      "response": "Para una familia de 4 lo ideal es pensar en **mínimo 45–60m²** y 2 o 3 dormitorios, según cuánto se quiera invertir y el uso (vivienda permanente o de finde). Te dejo tres opciones bien concretas dentro de nuestros Contenedores, casas, oficinas, dúplex.:  \n\n1. **Casa Container 60m² (Comfort)**  \n- **Superficie**: 60m², planta baja.  \n- **Distribución**: hasta **3 dormitorios**, living, comedor, cocina y hasta **2 baños**.  \n- **Ideal si** buscás casa cómoda para vivir todo el año, con buena aislación termoacústica y lista para habitar (instalaciones y mobiliario de cocina/baños incluidos).  \n\n2. **Casa container 45m² (Classic)**  \n- **Superficie**: 45m², planta baja.  \n- **Distribución**: hasta **2 dormitorios**, baño, cocina-comedor y living integrados.  \n- **Ideal si** quieren algo más económico, pero con espacios bien resueltos para 4 personas.  \n\n3. **Duplex Container 45m² (Classic)**  \n- **Superficie**: 45m², planta baja y alta.  \n- **Distribución**: hasta **3 dormitorios**, 1 baño, cocina, comedor, living y escalera; posibilidad de terraza.  \n- **Ideal si** te gusta separar área social abajo y dormitorios arriba, aprovechando mejor el terreno.  \n\nCon financiación podés acceder en cuotas en pesos. Para afinar mejor la recomendación: ¿ya tenés terreno y en qué zona sería?",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 3281
+      "responseTimeMs": 6906
     },
     {
       "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
       "questionType": "process",
-      "response": "Trabajamos con **construcción en seco utilizando contenedores de transporte**, así que casi todo se hace en planta y en tu terreno solo se hace la preparación de la base y la instalación final. El proceso típico es: diseño y elección del modelo (por ejemplo Casa Container 60m² o Duplex Container 45m²), fabricación y acondicionamiento del contenedor (estructura, aislación, instalaciones, revestimientos, aberturas), traslado al terreno e instalación para que quede listo para usar.  \n\nLos plazos son mucho más rápidos que la obra tradicional, pero varían según el modelo (no es lo mismo una Casa Container 15m² que una Casa Africa 120m²) y la personalización que elijas. No tengo los tiempos exactos por modelo cargados acá, así que para una demora estimada real te sugiero consultarlo por WhatsApp al +54 9 11 2276 3820.  \nPara orientarte mejor, ¿qué tipo de Proyectos, casas, oficinas, locales comerciales, etc. estás pensando construir?",
+      "response": "Trabajamos con un proceso **llave en mano**, en fábrica, mucho más rápido que la obra tradicional: primero definimos con vos el modelo (por ejemplo Casa container 15m², Casa Container 60m², Duplex Container 45m², Casa Malibu, etc.), hacemos el diseño y personalización, luego construimos el módulo en planta (estructura en container reciclado, aislación termoacústica, instalaciones de agua y luz, aberturas, revestimientos, mobiliario de cocina/baños) y finalmente lo trasladamos y lo instalamos en tu terreno.  \n\nEn tiempos, la construcción en container es hasta un **50% más rápida** que la obra húmeda y hay entregas reales que se montaron en **aprox. 7 días en el terreno** (el armado final), aunque el plazo total depende del modelo y del plan de financiación elegido.  \n\n¿Para cuándo necesitarías tener lista la casa o dúplex aproximadamente?",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 5164
+      "responseTimeMs": 5472
     },
     {
       "question": "¿Se pueden personalizar los modelos?",
       "questionType": "customization",
-      "response": "Sí, los modelos se pueden personalizar, ese es uno de nuestros fuertes. Partimos de bases estándar como Casa Container 15m², Casa Container 60m², Oficina Container 90m², Duplex Container 45m², Bar Container 30m², Local Comercial 60m², y también de líneas como Economic, Classic y Comfort, y sobre eso podés ajustar distribución, aberturas, terminaciones, algunos materiales y detalles estéticos.  \n\nTambién hacemos **proyectos a medida** (casas, oficinas, bares, locales, quinchos, jardines de invierno) según tus necesidades.  \nPara entender qué tan a medida lo necesitas: ¿es para vivienda permanente, fin de semana, oficina o local comercial?",
+      "response": "Sí, todos nuestros Contenedores, casas, oficinas, dúplex. se pueden personalizar. Podés ajustar distribución interna (cantidad y tamaño de dormitorios, ubicación de cocina/living/baños), elegir terminaciones, revestimientos, colores, y sumar detalles como deck, terraza, ampliaciones con más containers, etc., siempre sobre la base de modelos como Casa container 15m², Casa Container 60m², Duplex Container 45m², Casa Malibu, Duplex Pehuen, Oficina Container 90m², Local Comercial 60m², Quincho Container 15m², entre otros.  \n\nEn muchos casos también hay “factibilidad” para agregar terraza o más baños según el proyecto. ¿Sobre qué modelo puntual te gustaría saber qué cambios se le pueden hacer?",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 3639
+      "responseTimeMs": 6295
     },
     {
       "question": "¿Tenés imágenes, planos o algún catálogo que pueda ver?",
       "questionType": "images_catalog",
-      "response": "Sí, tenemos todo eso: imágenes, planos de referencia y un catálogo online súper completo. Podés ver cada modelo (Casa Container 15m², Casa Container 60m², Oficina Container 90m², Duplex Container 45m², Bar Container 30m², Local Comercial 60m², y muchos más como Casa Malibu, Casa Patagonia, Casa Marruecos, Casa California, Casa Sunset, Casa Jakarta, Casa Africa, etc.) en nuestra tienda:  \n\n👉 **Catálogo de Proyectos, casas, oficinas, locales comerciales, etc.**: https://www.importainer.com.ar/tienda  \n\nY si querés que un asesor te envíe fotos y planos directo por WhatsApp, podés escribir acá: https://wa.me/5491122763820.  \nPara pasarte links puntuales, ¿estás mirando más una casa, un dúplex, una oficina o un local comercial?",
+      "response": "Sí, vas a poder ver todo online: fotos, recorridos y fichas técnicas de cada modelo. Te dejo los accesos directos:  \n\n- **Catálogo general de inmuebles container** (casas, dúplex, oficinas, bares, locales, exteriores):  \n  https://www.importainer.com.ar/tienda/  \n- **Casas container** (incluye Casa container 15m², Casa Container 60m², Casa Malibu, Casa Patagonia, etc.):  \n  https://www.importainer.com.ar/tienda/casas  \n- **Dúplex container** (Duplex Container 30/45/60/75/90m², Duplex Ceibo, Ombu, Arrayan, Jacaranda, Pehuen, Alerce):  \n  https://www.importainer.com.ar/tienda/duplex  \n- **Oficinas container**:  \n  https://www.importainer.com.ar/tienda/oficinas  \n- **Locales y bares container**:  \n  https://www.importainer.com.ar/tienda/locales  \n  https://www.importainer.com.ar/tienda/bares  \n\nSi querés, decime qué superficie te interesa (por ejemplo 45m² o 60m²) y te indico qué modelos específicos mirar dentro del catálogo.",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 3443
+      "responseTimeMs": 4580
     },
     {
       "question": "¿Cuánto sale aproximadamente una casa de 2 dormitorios?",
       "questionType": "pricing",
-      "response": "No tengo los precios actualizados de las casas con 2 dormitorios cargados acá, así que no quiero inventarte un valor. Sí te puedo orientar en metros: para 2 dormitorios una muy buena base es la **Casa Container 60m²** (7 ambientes, 2 baños, 1 piso) o modelos similares como **Casa California 60m²** o **Casa Patagonia 30m²** si buscás algo más compacto.  \n\nPara que te pasen precio exacto, formas de pago y financiación, te sugiero escribir al WhatsApp de ventas: **+54 9 11 2276 3820** o desde este link: https://wa.me/5491122763820.  \n¿Ya tenés terreno? Si me contás zona y si sería vivienda permanente o de fin de semana, te digo qué modelo de 2 dormitorios te conviene más.",
+      "response": "No tengo los precios actualizados de las casas de 2 dormitorios cargados acá. Sí te puedo decir que entrás perfecto, por ejemplo, en una **Casa container 45m² (Classic)** o una **Casa Container 60m² (Comfort)**, que permiten hasta 2–3 dormitorios con living, cocina y baño/s.  \n\nPara que te pasen valores al día (suelen trabajar en pesos y/o referenciados al dólar blue) te sugiero escribir por WhatsApp a **+54 9 11 2276 3820** con algo así: “Quiero precio de una casa container de 2 dormitorios, estoy mirando la Casa container 45m² / 60m²”. ¿Qué presupuesto aproximado manejás así te digo cuál de esas líneas se ajusta mejor?",
       "mentionedModels": [],
       "saidNoInfo": true,
       "hasSpecificData": true,
-      "responseTimeMs": 7374
+      "responseTimeMs": 5332
     },
     {
       "question": "¿Qué incluye el precio? ¿Terminaciones, instalación, todo?",
       "questionType": "includes",
-      "response": "En nuestras **Casas, Dúplex, Oficinas, Bares y Locales container con entrega programada**, el precio incluye el módulo **completamente terminado en construcción en seco**: estructura de contenedor, aislación, revestimientos interiores y exteriores, instalaciones eléctricas y sanitarias internas, aberturas y terminaciones según la línea (Economic, Classic, Comfort, etc.). Es decir, recibís el inmueble armado “llave en mano de fábrica”.  \n\nLo que puede variar (y por eso se cotiza aparte según cada caso) es: **traslado hasta tu terreno, grúa, base/fundación e instalación en sitio**, porque dependen mucho de la zona y el acceso.  \nNo tengo el detalle exacto de qué incluye cada modelo puntual acá, así que para una lista cerrada por modelo (por ejemplo Casa Container 60m² o Duplex Container 45m²) te sugiero consultarlo por WhatsApp: **+54 9 11 2276 3820**.  \n¿Para qué modelo estás preguntando así te digo cómo suele venir armado ese en particular?",
+      "response": "En nuestros inmuebles container el precio incluye **obra casi completa, lista para usar**, no solo el “casco”. En modelos como Casa container 15m², Casa Container 60m², Duplex Container 45m², Oficina Container 90m², Local Comercial 60m², Bar 30m², etc., se incluye:  \n\n- **Estructura en container reciclado** (20 o 40 pies) + **aislación termoacústica** (lana de vidrio + aluminio).  \n- **Instalación eléctrica y de agua completas**.  \n- **Aberturas interiores y exteriores**, pintura exterior y **revestimientos interiores**.  \n- **Muebles y griferías sanitarias** (baño/s) y **mobiliario básico de cocina** según el modelo.  \n- En muchos casos, el servicio contempla también **traslado e instalación en tu terreno** dentro del sistema llave en mano (se define en la cotización).  \n\nLo único que no veo detallado acá son extras como platea, cercos, muebles sueltos, etc., que se presupuestan aparte. Para que te coticen exactamente qué incluye el precio en tu zona, te conviene escribir al WhatsApp **+54 9 11 2276 3820**. ¿Estás pensando en una Casa Container 45m² o 60m², u otro modelo?",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 6172
+      "responseTimeMs": 10299
     },
     {
       "question": "¿Ustedes se encargan de toda la instalación o solo entregan los materiales?",
       "questionType": "installation",
-      "response": "Nos encargamos de **mucho más que solo entregar materiales**: fabricamos el inmueble container completo en planta y también podemos ocuparnos del **traslado e instalación en tu terreno**, para que lo recibas listo para usar. La parte de base/fundación, grúa y logística se cotiza según la zona y el acceso, pero el servicio está disponible.  \n\nEn resumen: no vendemos solo “paneles sueltos”, sino casas, dúplex, oficinas, bares y locales container terminados, con opción de instalación integral.  \n¿En qué zona tenés o pensás tener el terreno así te digo mejor cómo sería la instalación en tu caso?",
+      "response": "Nos encargamos de **todo**, no solo de entregar materiales. Trabajamos con sistema **llave en mano**: fabricamos el inmueble en planta (estructura, aislación, instalaciones, terminaciones), lo **trasladamos** y lo **instalamos en tu terreno** en cualquier punto de Argentina, como hicimos con casas de 30m² en Córdoba o 90m² en Chubut y bares de 30m² en Córdoba.  \n\nVos recibís la Casa container, Duplex Container, Oficina Container, Bar o Local Comercial lista para usar; lo único que puede ir por fuera es la platea/fundación o alguna obra complementaria especial que se define en la cotización. ¿En qué zona tenés el terreno así te cuento cómo sería el montaje en tu caso?",
       "mentionedModels": [],
       "saidNoInfo": false,
-      "hasSpecificData": false,
-      "responseTimeMs": 3325
+      "hasSpecificData": true,
+      "responseTimeMs": 12611
     },
     {
       "question": "¿Qué garantía ofrecen sobre la construcción?",
       "questionType": "warranty",
-      "response": "La construcción en contenedor se entrega con **garantía formal**, pero el plazo y el alcance exacto dependen del tipo de proyecto (casa, dúplex, oficina, local, etc.) y de la línea (Economic, Classic, Comfort, Premium). Siempre se garantiza la **estructura del contenedor**, las **instalaciones internas** (eléctrica y sanitaria) y las **terminaciones** según lo contratado.  \n\nNo tengo acá el detalle fino de años de garantía y condiciones por escrito, eso te lo pasan actualizado desde el área comercial.  \nTe sugiero consultarlo por WhatsApp al **+54 9 11 2276 3820**, y si querés decime: ¿lo estás evaluando para vivienda permanente o para un proyecto comercial?",
+      "response": "Trabajamos con estándar de obra permanente: estructura en acero (containers marítimos), aislación termoacústica con lana de vidrio y aluminio, y componentes de primera línea, pensados para alta durabilidad y uso a largo plazo. En la web no figura el detalle exacto de años de garantía por escrito, pero sí que somos fabricantes con más de 10 años de experiencia, sistema llave en mano y construcción sostenible comparable (o superior) a la tradicional.  \n\nNo tengo acá el plazo formal de garantía (años por estructura, filtraciones, instalaciones, etc.), así que para ese dato puntual te sugiero escribir al WhatsApp **+54 9 11 2276 3820** y pedir el modelo de contrato/garantía. ¿Estás evaluando una casa, un dúplex o una oficina container para ver el tema garantía en ese producto puntual?",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 2895
+      "responseTimeMs": 14776
     },
     {
       "question": "¿Tienen financiamiento o planes de pago?",
       "questionType": "financing",
-      "response": "Sí, contamos con **financiación disponible y planes de pago en cuotas** para nuestros Proyectos, casas, oficinas, locales comerciales, etc. y también para containers vacíos y refrigerados. Podés comprar tanto una Casa Container 15m², Casa Container 60m², Duplex Container 45m², Oficina Container 90m², Bar Container 30m², Local Comercial 60m², como un 20 STANDARD, 40 STANDARD o 40 HIGH CUBE con distintas formas de pago (contado o financiado).  \n\nNo tengo por acá el detalle exacto de cantidad de cuotas y condiciones, eso te lo arman a medida según el modelo y tu perfil.  \nTe sugiero escribir al WhatsApp de ventas **+54 9 11 2276 3820** y te pasan una simulación concreta.  \nPara orientarte mejor: ¿qué querés financiar, una casa para vivir, un dúplex, una oficina o un container vacío?",
+      "response": "Sí, tenemos **financiación y planes de pago en pesos** para casi todos nuestros inmuebles container. Podés acceder a casas, dúplex, oficinas, bares, locales, quinchos, etc. (por ejemplo Casa container 15–120m², Duplex Container 45m², Casa Malibu, Casa California, Oficina Container 90m², Local Comercial 60m²) con planes de hasta **240 cuotas** y posibilidad de proyectos **100% financiados, sin anticipo**, según evaluación comercial.  \n\nEl esquema exacto (cuotas, monto y plazos) se arma según el modelo y tu perfil, y se puede gestionar de forma virtual. ¿Qué tipo de Contenedores, casas, oficinas, dúplex. querés financiar y con qué presupuesto mensual te sentirías cómodo más o menos?",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 3248
+      "responseTimeMs": 6907
     },
     {
       "question": "¿Qué los diferencia de otras empresas similares?",
       "questionType": "differentiator",
-      "response": "Lo que más nos diferencia es que somos **líderes en Argentina en viviendas con contenedores**, con **más de 10 años de experiencia** y un catálogo enorme de Proyectos, casas, oficinas, locales comerciales, etc. ya desarrollados (Casa Container 15m², 60m², Oficina Container 90m², Duplex Container 45m², Bar Container 30m², Local Comercial 60m², más modelos como Casa Malibu, Patagonia, Marruecos, California, Sunset, Jakarta, Africa, y toda la línea de dúplex). Trabajamos siempre con **construcción en seco utilizando contenedores de transporte**, lo que te da tiempos de obra mucho más rápidos, costos controlados y posibilidad de personalización.  \n\nAdemás, ofrecemos **financiación en cuotas**, venta de **containers vacíos** (20 STANDARD, 40 STANDARD, 40 HIGH CUBE) y **refrigerados**, y un proceso muy simple: elegís el modelo, lo personalizás si querés, lo comprás y lo recibís listo para usar.  \nPara saber cómo aprovechar mejor estas ventajas, ¿estás pensando en una vivienda familiar, algo de fin de semana o un proyecto comercial?",
+      "response": "Lo que más nos diferencia es que somos **fabricante directo**, con más de **10 años de experiencia** y un sistema muy armado de producto + financiación. En concreto:  \n\n- **Especialistas en containers reciclados**: solo trabajamos este sistema, con cientos de entregas reales de Casas container (15 a 120m²), Duplex Container, Oficinas Container, Bares y Locales en todo el país.  \n- **Llave en mano y calidad técnica**: aislación termoacústica (lana de vidrio + aluminio), instalaciones completas, aberturas, revestimientos y mobiliario de cocina/baños incluidos en modelos como Casa Container 60m², Duplex Container 45m², Oficina Container 90m², Local Comercial 60m², Bar 30m², etc.  \n- **Financiación propia en pesos**: planes de hasta **240 cuotas** y posibilidad de proyectos 100% financiados sin anticipo, algo que muchas empresas no ofrecen.  \n- **Alta personalización y sistema modular transportable**: podés adaptar distribución, terminaciones, sumar módulos, deck, terraza, y trasladar el inmueble si cambiás de ubicación.  \n\nPara orientarte mejor en función de lo que te importa (precio, diseño, rapidez, financiación), ¿qué es lo que más valorás vos a la hora de elegir la empresa?",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": true,
-      "responseTimeMs": 3583
+      "responseTimeMs": 9617
     },
     {
       "question": "¿A qué zonas o regiones llegan?",
       "questionType": "coverage",
-      "response": "No tengo detallada en el sistema la lista exacta de zonas a las que llegamos, pero al trabajar con contenedores y traslado en camión generalmente podemos cubrir gran parte del país. La viabilidad depende mucho del acceso al terreno (camino, espacio para maniobrar, grúa, etc.) y de la distancia para calcular flete e instalación.  \n\nLo más práctico es que consultes tu caso puntual por WhatsApp así te confirman logística y costo de traslado según tu localidad: **+54 9 11 2276 3820**.  \n¿En qué ciudad o provincia estás pensando instalar el proyecto?",
+      "response": "Llegamos a **todo el país**, haciendo fabricación en Buenos Aires y traslado + montaje en la provincia donde estés. Hay entregas reales en lugares muy distintos como **Villa Rada Tilly (Chubut), Yacanto (Córdoba), Médano de Oro (San Juan), Puerto Deseado (Santa Cruz), Chaco, Villa La Angostura, Mar del Sur, Cachirulo, Chapadmalal, Brandsen**, entre otros.  \n\nPodemos llevar tu Casa container, Duplex Container, Oficina Container, Bar o Local Comercial prácticamente a cualquier punto de Argentina; lo que varía es el costo/logística del flete y grúa. ¿En qué localidad tenés (o pensás tener) el terreno así te cuento cómo sería el traslado en tu caso?",
       "mentionedModels": [],
       "saidNoInfo": false,
       "hasSpecificData": false,
-      "responseTimeMs": 3925
+      "responseTimeMs": 4796
     }
   ],
-  "sessionCreationTimeMs": 99865,
+  "sessionCreationTimeMs": 29328,
   "errors": []
 }

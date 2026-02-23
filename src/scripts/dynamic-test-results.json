@@ -1,0 +1,1750 @@
+{
+  "metadata": {
+    "createdAt": "2026-02-11T20:41:36.229Z",
+    "baseUrl": "http://localhost:3000",
+    "totalCompanies": 30,
+    "totalTimeMs": 2336296,
+    "skipped": [
+      "Habika",
+      "ViBert",
+      "Importainer",
+      "Lucys House"
+    ]
+  },
+  "results": [
+    {
+      "company": "Atlas Housing",
+      "url": "https://atlashousing.com.ar",
+      "status": "OK",
+      "scrapingTimeMs": 59552,
+      "companyNameDetected": "Atlas Housing",
+      "modelsFound": [
+        "Katerra",
+        "Upsala",
+        "Fitz Roy",
+        "Blackberry",
+        "Hexa",
+        "Montana"
+      ],
+      "garbageDetected": [],
+      "noInfoResponses": 1,
+      "totalMessages": 4,
+      "errorMessages": [],
+      "hasContactInfo": true,
+      "hasWhatsApp": true,
+      "qualityScore": 5,
+      "notes": "Known: Info falsa sobre modelos - inventa datos | Models: Katerra, Upsala, Fitz Roy, Blackberry, Hexa, Montana | No-info: 1/4",
+      "conversation": [
+        {
+          "role": "assistant",
+          "content": "¡Hola! Soy Sofia, asesora de Atlas Housing. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto."
+        },
+        {
+          "role": "user",
+          "content": "Hola, estoy buscando una casa prefabricada. ¿Qué modelos tienen disponibles?"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenísimo, trabajamos justo en ese tipo de soluciones. En Atlas Housing hoy tenemos estos modelos modulares:\n\n- **Katerra** – 60 m² en dos módulos (12×3,40 + 6×3,40), ideal como vivienda principal, 3–4 meses de fabricación y montaje en 4 días.  \n- **Upsala** – 41 m² en un módulo de 12×3,40, tipo loft/refugio moderno, muy usado para vivienda y turismo.  \n- **Fitz Roy** – 41 m², dos ambientes, cocina y baño completos, opción estándar o premium, con bow windows y techo a 1 o 2 aguas.  \n- **Blackberry** – 41 m² con estética nórdica, grandes ventanales y dos ambientes.  \n- **Hexa** – 60 m² en dos módulos, muy versátil para vivienda permanente o casa de descanso.  \n- **Montana** – 18 m², compacto, dos ambientes, cocina y baño completos, se instala en solo 8 horas.\n\nPara ayudarte a elegir mejor, ¿qué tipo de modelo estás buscando: algo chico tipo cabaña, una vivienda familiar o algo intermedio?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa el modelo Katerra. ¿Cuánto sale? ¿Qué incluye?"
+        },
+        {
+          "role": "assistant",
+          "content": "Genial que te guste Katerra, es uno de los más completos que tenemos.  \n\nSobre el precio puntual de Katerra: en la info del modelo no figura un valor específico, y aunque en Hexa Group se menciona un rango general de **USD 1.000 a 1.400 por m²** para el sistema industrializado, **no tengo los precios actualizados cargados por modelo**, así que para no inventar nada te recomiendo consultarlo por WhatsApp así te pasan versión estándar/premium y formas de pago.  \n\nLo que sí está bien detallado es **qué incluye Katerra**:  \n- **Superficie y módulos:** 60 m² totales en **dos módulos** (12,00×3,40 m y 6,00×3,40 m), pensados como vivienda moderna, eficiente y de alta calidad.  \n- **Plazos:** **3 a 4 meses** de construcción en fábrica y **solo 4 días** de instalación y puesta en funcionamiento en tu terreno.  \n- **Sistema constructivo y confort:** estructura industrializada de alta calidad, muros con **Thermo Panels** (paneles aislantes) que dan **excelente aislación térmica y acústica**, ayudando a mantener la temperatura estable todo el año y a bajar el consumo energético.  \n\nSi querés, en base a esto te puedo ayudar a comparar Katerra con Hexa (también 60 m² en dos módulos) para ver cuál se ajusta mejor a cómo pensás usar la casa."
+        },
+        {
+          "role": "user",
+          "content": "¿Cuánto tiempo demora la entrega una vez que se confirma? ¿Hacen entregas en Buenos Aires?"
+        },
+        {
+          "role": "assistant",
+          "content": "En Katerra y el resto de los modelos manejamos estos tiempos estimados: **3 a 4 meses de construcción en fábrica** y, una vez lista y coordinada la logística, la **instalación en tu terreno lleva solo unos 4 días** (en Montana, por ejemplo, llega a instalarse en 8 horas). La ventaja es que todo se hace en planta, así evitás demoras típicas de obra húmeda.\n\nSí, **trabajamos perfectamente con entregas en Buenos Aires**: nuestra fábrica está en el Parque Industrial de **San Vicente (PBA)** y realizamos envíos a todo el país; el flete y descarga se cotizan aparte y se coordinan según acceso al lote. Para afinar bien plazos y logística, ¿ya tenés terreno en qué zona de Buenos Aires (GBA, interior, costa, etc.)?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa, ¿cómo puedo contactarlos? ¿Tienen WhatsApp?"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenísimo que te interese, estás dando un paso re importante.  \n\nPodés contactarnos por estos medios:  \n- **Formulario web / email:** desde la sección contacto de la web o escribiendo a **info@atlashousing.com.ar**.  \n- **Visita a fábrica:** estamos en el Parque Industrial de **San Vicente, Pcia. de Buenos Aires** (se coordina cita desde la web).  \n\nSé que preguntás específicamente por WhatsApp: en la info que tengo no figura el número directo, así que no quiero inventarlo; te sugiero entrar a la web de Atlas Housing y desde el botón de WhatsApp escribirles así te atiende un asesor comercial y avanzan con Katerra y la cotización."
+        }
+      ]
+    },
+    {
+      "company": "Habitatio",
+      "url": "https://habitatio.com.ar",
+      "status": "OK",
+      "scrapingTimeMs": 75644,
+      "companyNameDetected": "Habitatio",
+      "modelsFound": [
+        "Viviendas Modulares / Módulos Habitacionales",
+        "Módulo: Flat Pack",
+        "Cabaña Flat Pack Individual",
+        "Flat Pack Loft",
+        "Módulo: Folding",
+        "Módulo Fisherman"
+      ],
+      "garbageDetected": [
+        "Módulos Habitacionales"
+      ],
+      "noInfoResponses": 1,
+      "totalMessages": 4,
+      "errorMessages": [],
+      "hasContactInfo": true,
+      "hasWhatsApp": true,
+      "qualityScore": 4,
+      "notes": "Known: Info parcial del modelo Flex - scraping incompleto | Models: Viviendas Modulares / Módulos Habitacionales, Módulo: Flat Pack, Cabaña Flat Pack Individual, Flat Pack Loft, Módulo: Folding, Módulo Fisherman | Garbage: Módulos Habitacionales | No-info: 1/4",
+      "conversation": [
+        {
+          "role": "assistant",
+          "content": "¡Hola! Soy Sofia, asesora de Habitatio. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto."
+        },
+        {
+          "role": "user",
+          "content": "Hola, estoy buscando una casa prefabricada. ¿Qué modelos tienen disponibles?"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenísimo, trabajamos justo ese tipo de soluciones pero en formato modular.  \nEn Habitatio hoy tenemos estos Módulos principales que se usan para vivienda:\n\n- **Viviendas Modulares / Módulos Habitacionales**: diseños personalizados para casas completas, que podés armar por etapas (dormitorios, estar, cocina, etc.), con servicio integral de transporte, montaje y diseño interior.  \n- **Módulo: Flat Pack**: ideal para viviendas y cabañas, con DVH para máximo confort térmico y acústico; de este sistema salen modelos como la **Cabaña Flat Pack Individual** y el **Flat Pack Loft** (dos módulos integrados en dúplex).  \n- **Módulo: Folding**: más pensado para soluciones rápidas y compactas (obradores, dormitorios, oficinas), también se puede usar como vivienda simple o ampliable.  \n- **Módulo Fisherman**: módulo habitacional completo, pensado para turismo (glamping, eco-lodge), con dormitorio, baño completo, kitchenette y deck, que también sirve perfecto como casa de fin de semana o cabaña.\n\nPara orientarte mejor: ¿la querés como vivienda permanente o tipo cabaña de descanso?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa el modelo Viviendas Modulares / Módulos Habitacionales. ¿Cuánto sale? ¿Qué incluye?"
+        },
+        {
+          "role": "assistant",
+          "content": "Perfecto, es una muy buena elección porque es el sistema más flexible para una casa.  \nSobre el precio puntual: no tengo los valores actualizados cargados, y como los **Viviendas Modulares / Módulos Habitacionales** son 100% a medida (tamaño, terminaciones, equipamiento), el costo final varía bastante; te sugiero verlo por WhatsApp o en una reunión online así te pasan una cotización exacta según tu proyecto.\n\nEn cuanto a **qué incluye** este modelo:\n- **Diseño personalizado**: armamos la vivienda según lo que necesites (vivienda principal, ampliación, dormitorios, estar, home office, etc.), con distribución y medidas adaptadas.  \n- **Construcción modular completa**: estructura, paneles aislantes, carpinterías, terminaciones exteriores e interiores pensadas para confort térmico y acústico.  \n- **Servicio integral**:  \n  - Asesoramiento y relevamiento de tu necesidad y tu terreno.  \n  - **Fabricación del módulo** con materiales de alta calidad.  \n  - **Transporte seguro** a cualquier punto del país (con IT Transport).  \n  - **Montaje/instalación en site**, incluyendo la colocación sobre platea o pivotes (la obra de base se coordina con Bewerk Proyectos SRL).  \n  - Posibilidad de **diseño interior y decoración** para dejarlo listo para habitar.  \n- **Adaptabilidad**: los módulos son apilables, ampliables y reconfigurables, podés empezar con una unidad y después sumar dormitorios, galería, estudio, etc.\n\nPara poder estimar mejor el rango de inversión que podrías estar manejando: ¿qué superficie aproximada estás pensando (por ejemplo 30 m², 50 m², 70 m² o más)?"
+        },
+        {
+          "role": "user",
+          "content": "¿Cuánto tiempo demora la entrega una vez que se confirma? ¿Hacen entregas en Buenos Aires?"
+        },
+        {
+          "role": "assistant",
+          "content": "En los **Viviendas Modulares / Módulos Habitacionales** la entrega suele ser rápida comparado con la obra tradicional: el plazo exacto depende del tamaño y nivel de personalización, pero el esquema es fabricación en planta + coordinación de transporte + montaje en site en muy pocos días (el montaje en sí se resuelve en jornada o en un par de días, no semanas de obra).  \nSí, **hacemos entregas en Buenos Aires**: estamos en Villa Rosa (Pilar, Bs. As.) y, gracias a la logística de **IT Transport**, llevamos los módulos a cualquier punto del país, incluyendo Ciudad y Provincia de Buenos Aires.\n\nPara ajustar mejor tiempos y logística, ¿para cuándo te gustaría tener instalada la vivienda aproximadamente (mes/año)?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa, ¿cómo puedo contactarlos? ¿Tienen WhatsApp?"
+        },
+        {
+          "role": "assistant",
+          "content": "Genial que te interese avanzar, estás eligiendo una solución súper práctica.  \nPodés contactarnos por mail a **info@habitatio.com.ar** y desde ahí te derivan directo con el equipo comercial y WhatsApp para cotizar y seguir tu caso puntual.  \n\nSi querés, también podés agendar una **reunión online gratuita de 1 hora** desde la web de Habitatio, donde un asesor te arma el proyecto y presupuesto a medida."
+        }
+      ]
+    },
+    {
+      "company": "Ecomod",
+      "url": "https://ecomod.com.ar/",
+      "status": "OK",
+      "scrapingTimeMs": 49962,
+      "companyNameDetected": "ECOMOD",
+      "modelsFound": [
+        "Eco Studio",
+        "Turístico",
+        "Eco Mini",
+        "Eco Mini +",
+        "Eco 1.1",
+        "Eco 2.1 +",
+        "Modelo Bariloche (28 m²)",
+        "Modelo Isla Santiago",
+        "Modelo General Madariaga (65 m²)"
+      ],
+      "garbageDetected": [
+        "módulos habitacionales"
+      ],
+      "noInfoResponses": 1,
+      "totalMessages": 4,
+      "errorMessages": [],
+      "hasContactInfo": true,
+      "hasWhatsApp": true,
+      "qualityScore": 4,
+      "notes": "Known: Sin WhatsApp extraido aunque lo tiene | Models: Eco Studio, Turístico, Eco Mini, Eco Mini +, Eco 1.1, Eco 2.1 +, Modelo Bariloche (28 m²), Modelo Isla Santiago, Modelo General Madariaga (65 m²) | Garbage: módulos habitacionales | No-info: 1/4",
+      "conversation": [
+        {
+          "role": "assistant",
+          "content": "¡Hola! Soy Sofia, asesora de ECOMOD. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto."
+        },
+        {
+          "role": "user",
+          "content": "Hola, estoy buscando una casa prefabricada. ¿Qué modelos tienen disponibles?"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenísimo, te cuento qué tenemos en ECOMOD ahora mismo 👇  \n\nEn viviendas y módulos habitacionales contamos con:  \n- **Eco Studio** – 11,5 m², tipo estudio chico con kitchenette integrada y toilette, ideal oficina o anexo.  \n- **Turístico** – 25 m², monoambiente con cocina integrada y baño completo, pensado para alquiler o cabaña.  \n- **Eco Mini** – 30 m², módulo compacto 100% transportable, con cocina y baño completo.  \n- **Eco Mini +** – 40 m², monoambiente amplio con cocina con barra y baño completo.  \n- **Eco 1.1** – 45 m², un dormitorio independiente, ambiente integrado (cocina–estar–comedor) y baño completo.  \n- **Eco 2.1 +** – 70 m², dos dormitorios, amplio living comedor cocina y baño completo, ideal familia.  \nY además podés ver nuestros proyectos tipo **Modelo Bariloche (28 m²)**, **Modelo Isla Santiago**, y **Modelo General Madariaga (65 m²)** como referencias de casas ya entregadas.  \n\n¿Qué tipo de Modelos estás buscando: algo chico tipo monoambiente, o ya pensando en 1 o 2 dormitorios?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa el modelo Eco Studio. ¿Cuánto sale? ¿Qué incluye?"
+        },
+        {
+          "role": "assistant",
+          "content": "Perfecto, con esta info extra no cambia nada para el **Eco Studio** porque acá sólo aparecen detalles de **Eco 1.1, Eco Mini y Eco 2.1+**, no del Studio.  \n\nPara el **Eco Studio** sigo teniendo: 11,5 m², kitchenette integrada, toilette, estructura de acero, muros con perfilería galvanizada y aislación de lana de vidrio, yeso + OSB, DVH y envolvente exterior en siding o chapa con poliuretano, cubierta plana o a dos aguas.  \nEl **precio no figura en ningún lado**, así que no tengo el valor actualizado cargado; te recomiendo pedir la cotización y opciones de financiación directo por WhatsApp al **+54 9 11 6766 6654**."
+        },
+        {
+          "role": "user",
+          "content": "¿Cuánto tiempo demora la entrega una vez que se confirma? ¿Hacen entregas en Buenos Aires?"
+        },
+        {
+          "role": "assistant",
+          "content": "En ECOMOD trabajamos con construcción modular en fábrica, así que los plazos son bastante rápidos, pero en la info que tengo no figura un tiempo exacto de entrega por Modelo, porque depende de la carga de producción y la complejidad del proyecto. Lo que sí está claro es que una vez confirmado el proyecto y coordinado el montaje, se fabrica en taller y luego se traslada listo para instalar en el terreno.  \n\nEn cuanto a la zona, **sí, hacemos entregas en Buenos Aires** y de hecho estamos en La Plata; además enviamos módulos a todo el país y cotizamos aparte el flete y las grúas para el montaje. ¿Para cuándo te gustaría tener instalado el Eco Studio aproximadamente?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa, ¿cómo puedo contactarlos? ¿Tienen WhatsApp?"
+        },
+        {
+          "role": "assistant",
+          "content": "Sí, tenemos WhatsApp y es la forma más rápida de avanzar 😊  \n\nPodés escribirnos directo al **+54 9 11 6766 6654** o por mail a **info@ecomod.com.ar**.  \nSi querés, decime si ya tenés terreno y en qué zona, así te orientás mejor cuando hables con el asesor."
+        }
+      ]
+    },
+    {
+      "company": "Movilhauss",
+      "url": "https://movilhauss.com",
+      "status": "OK",
+      "scrapingTimeMs": 34976,
+      "companyNameDetected": "Movilhauss",
+      "modelsFound": [
+        "inquba / Tiny – Work – Suite",
+        "inquba +",
+        "inquba duo",
+        "freestyle (ampliable)"
+      ],
+      "garbageDetected": [],
+      "noInfoResponses": 1,
+      "totalMessages": 4,
+      "errorMessages": [],
+      "hasContactInfo": true,
+      "hasWhatsApp": true,
+      "qualityScore": 5,
+      "notes": "Known: Respuestas genericas - no tengo esa info | Models: inquba / Tiny – Work – Suite, inquba +, inquba duo, freestyle (ampliable) | No-info: 1/4",
+      "conversation": [
+        {
+          "role": "assistant",
+          "content": "¡Hola! Soy Sofia, asesora de Movilhauss. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto."
+        },
+        {
+          "role": "user",
+          "content": "Hola, estoy buscando una casa prefabricada. ¿Qué modelos tienen disponibles?"
+        },
+        {
+          "role": "assistant",
+          "content": "Hola, qué bueno que estés buscando una casa prefabricada, es justo lo que hacemos pero en versión modular trasladable.  \n\nEn Movilhauss hoy tenemos estos modelos:  \n- **inquba / Tiny – Work – Suite**: monoambientes de 16 a 19,2 m², con baño completo y, en Tiny y Work, cocina integrada.  \n- **inquba +**: módulo doble de 1 planta, 32 m², con living-comedor, dormitorio, cocina integrada y baño, entrega inmediata.  \n- **inquba duo**: módulo doble de 2 plantas, 32 m², con living-comedor abajo y dormitorio arriba con balcón.  \n- **freestyle (ampliable)**: combinás varios módulos base de 3,2 x 6 m para diseñar tu casa a medida (2, 3 o más ambientes).  \n\nPara orientarte mejor, ¿qué tipo de modelo estás buscando: algo chico tipo monoambiente, una casa de 2 ambientes o algo más grande y personalizado?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa el modelo inquba / Tiny – Work – Suite. ¿Cuánto sale? ¿Qué incluye?"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenísimo, el **inquba / Tiny – Work – Suite** es ideal para arrancar con algo compacto pero súper completo.  \n\nSobre el precio: **no tengo los valores actualizados cargados**, así que para el número exacto y opciones de financiación te sugiero escribirnos por WhatsApp: https://wa.link/nyci9m.  \n\nLo que sí te confirmo es **qué incluye cada inquba (Tiny/Work/Suite)**:  \n- **Estructura y confort**: módulo base de 16 a 19,2 m², estructura metálica, construcción en seco, aislación térmica, aberturas de aluminio con **DVH**, instalación eléctrica y sanitaria completas.  \n- **Cocina (Tiny y Work)**: anafe eléctrico de 2 hornallas, grifería, mueble bajo mesada, alacena y conexiones eléctricas listas.  \n- **Ambientes**:  \n  - **Tiny**: 19,2 m², monoambiente de 3 x 5,8 m, 1 baño, cocina integrada.  \n  - **Work**: 16 m², 3 x 4,8 m, 1 baño, cocina integrada (ideal oficina/estudio).  \n  - **Suite**: 16 m², 3 x 4,8 m, 1 baño, sin cocina (tipo habitación en suite).  \n- **Baño**: sanitarios completos, grifería y termotanque eléctrico.  \n- **Confort general**: preinstalación de aire acondicionado, revestimiento interior de calidad.  \n- **Extras opcionales**: deck, pérgola y posibilidad de trailer a pedido.  \n\n¿En qué zona tenés pensado instalarlo y para qué uso principal lo querés (vivienda, oficina, cabaña turística, etc.)? Así te digo cuál de las tres variantes te conviene más."
+        },
+        {
+          "role": "user",
+          "content": "¿Cuánto tiempo demora la entrega una vez que se confirma? ¿Hacen entregas en Buenos Aires?"
+        },
+        {
+          "role": "assistant",
+          "content": "Te cuento: para los modelos **inquba / Tiny – Work – Suite** hay unidades **en stock con entrega inmediata**, y en general trabajamos con plazos de **30 a 60 días llave en mano** según el modelo y si es a pedido.  \n\nSí, hacemos entregas fuera de Mar del Plata: contamos con servicio de **traslado puerta a puerta dentro de Argentina**, y el costo del envío se cotiza según el destino, así que **Buenos Aires es posible**, solo se calcula el flete y la descarga con grúa.  \n\n¿Para cuándo la necesitarías aproximadamente? Así veo si te conviene algo en stock o un módulo hecho a medida para vos."
+        },
+        {
+          "role": "user",
+          "content": "Me interesa, ¿cómo puedo contactarlos? ¿Tienen WhatsApp?"
+        },
+        {
+          "role": "assistant",
+          "content": "Genial que te interese, estás a un paso de tener tu Movilhauss.  \n\nPodés contactarnos por:  \n- **WhatsApp**: https://wa.link/nyci9m  \n- **Teléfono/WhatsApp directo**: +54 9 2236 21-6699  \n- **Email**: movilhauss@gmail.com  \n\nSi querés, contame si ya tenés terreno y en qué zona, así cuando escribas al WhatsApp ya llevás toda la info y te pueden armar la propuesta más rápido."
+        }
+      ]
+    },
+    {
+      "company": "PlugArq",
+      "url": "https://www.plugarq.com/",
+      "status": "FAIL",
+      "scrapingTimeMs": 120011,
+      "companyNameDetected": "",
+      "modelsFound": [],
+      "garbageDetected": [],
+      "noInfoResponses": 0,
+      "totalMessages": 0,
+      "errorMessages": [
+        "Create failed: This operation was aborted"
+      ],
+      "hasContactInfo": false,
+      "hasWhatsApp": false,
+      "qualityScore": 1,
+      "notes": "Session creation failed: This operation was aborted",
+      "conversation": []
+    },
+    {
+      "company": "Sienna Modular",
+      "url": "https://www.siennamodular.com.ar/",
+      "status": "OK",
+      "scrapingTimeMs": 61487,
+      "companyNameDetected": "SIENNA",
+      "modelsFound": [
+        "Módulo Habitacional",
+        "Módulos SIENNA",
+        "30 a 60 días",
+        "Módulos de Arquitectura Modular",
+        "2 meses",
+        "Línea Neta",
+        "Silestone",
+        "Dekton",
+        "Complementos de diseño"
+      ],
+      "garbageDetected": [
+        "Módulos Habitacionales"
+      ],
+      "noInfoResponses": 2,
+      "totalMessages": 4,
+      "errorMessages": [],
+      "hasContactInfo": true,
+      "hasWhatsApp": true,
+      "qualityScore": 4,
+      "notes": "Known: Modelos con nombres genericos | Models: Módulo Habitacional, Módulos SIENNA, 30 a 60 días, Módulos de Arquitectura Modular, 2 meses, Línea Neta, Silestone, Dekton, Complementos de diseño | Garbage: Módulos Habitacionales | No-info: 2/4",
+      "conversation": [
+        {
+          "role": "assistant",
+          "content": "¡Hola! Soy Sofia, asesora de SIENNA. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto."
+        },
+        {
+          "role": "user",
+          "content": "Hola, estoy buscando una casa prefabricada. ¿Qué modelos tienen disponibles?"
+        },
+        {
+          "role": "assistant",
+          "content": "Perfecto, trabajamos justo en eso pero con un plus: arquitectura modular transportable, no prefabricada tradicional.  \nEn SIENNA hoy tenés estas opciones:\n\n- **Módulo Habitacional**: completamente equipado y listo para habitar, con excelente aislamiento térmico y equipamiento a elección.  \n- **Módulos SIENNA**: unidades transportables, personalizables, con diseño de alto confort, precio cerrado y fabricación en **30 a 60 días**.  \n- **Módulos de Arquitectura Modular**: proyectos residenciales, comerciales o turísticos, terminados en un plazo máximo de **2 meses**, totalmente personalizados.  \n- Complementos de diseño: **Línea Neta** (interiorismo moderno y funcional) y superficies premium como **Silestone** y **Dekton**.\n\nPara orientarte mejor: ¿qué tipo de Módulos estás buscando, algo residencial para vivienda principal, fin de semana, o pensás en algo turístico/comercial?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa el modelo Módulo Habitacional. ¿Cuánto sale? ¿Qué incluye?"
+        },
+        {
+          "role": "assistant",
+          "content": "El **Módulo Habitacional** es una unidad completamente equipada y lista para habitar: estructura con **excelente aislamiento térmico**, calidad alta en materiales y terminaciones, diseño confortable y **equipamiento a elección** (cocina, baño, interiores, superficies tipo Silestone/Dekton, etc.), todo **personalizable** según tus necesidades. Además es **transportable**, se apoya sobre pilotes y puede ampliarse más adelante con otros Módulos SIENNA.\n\nSobre el valor, no tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp para que te pasen una cotización exacta según medidas y nivel de equipamiento. Para ajustar mejor la propuesta: ¿ya tenés terreno? ¿En qué zona sería la instalación del módulo?"
+        },
+        {
+          "role": "user",
+          "content": "¿Cuánto tiempo demora la entrega una vez que se confirma? ¿Hacen entregas en Buenos Aires?"
+        },
+        {
+          "role": "assistant",
+          "content": "El plazo de fabricación y entrega de nuestros Módulos Habitacionales está entre **30 y 60 días**, y en general los proyectos se completan en un máximo de **2 meses** desde la confirmación, con precio y plazo cerrados.  \n\nEn la info que tengo no figura el detalle por provincias, pero al ser **arquitectura modular transportable** normalmente trabajamos en Buenos Aires; igual, para la confirmación exacta de logística te recomiendo verlo por WhatsApp o en la reunión con el equipo. ¿Para cuándo lo necesitarías aproximadamente, este año o ya pensando en 2026?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa, ¿cómo puedo contactarlos? ¿Tienen WhatsApp?"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenísimo que te interese, estás apuntando a algo muy alineado con lo que hacemos en SIENNA.  \nPodés agendar directamente una reunión con el equipo desde acá: https://calendly.com/siennamodular y en la web de la empresa vas a encontrar también el WhatsApp de contacto actualizado.\n\nNo tengo el número de WhatsApp cargado acá, pero en https://www.siennamodular.com.ar/ lo vas a ver visible para escribirles directo. ¿Querés que antes te ayude a definir tamaño o tipo de configuración del Módulo Habitacional así llegás a la charla con una idea más cerrada?"
+        }
+      ]
+    },
+    {
+      "company": "Grupo Steimberg",
+      "url": "https://www.gruposteimberg.com/",
+      "status": "OK",
+      "scrapingTimeMs": 30458,
+      "companyNameDetected": "Grupo Steimberg",
+      "modelsFound": [
+        "Cabin 24 / Cabin 28",
+        "Cabin 24 Silver",
+        "Cabin 40",
+        "Cabin Doble 40 m²",
+        "Cabin 70",
+        "Cabin Yakisugi",
+        "Nordic House 180",
+        "180 m², 150 m² y 100 m²",
+        "Proyectos de Inversión"
+      ],
+      "garbageDetected": [],
+      "noInfoResponses": 2,
+      "totalMessages": 4,
+      "errorMessages": [],
+      "hasContactInfo": true,
+      "hasWhatsApp": true,
+      "qualityScore": 4,
+      "notes": "Known: Es tradicional, no modular - clasificacion incorrecta | Models: Cabin 24 / Cabin 28, Cabin 24 Silver, Cabin 40, Cabin Doble 40 m², Cabin 70, Cabin Yakisugi, Nordic House 180, 180 m², 150 m² y 100 m², Proyectos de Inversión | No-info: 2/4",
+      "conversation": [
+        {
+          "role": "assistant",
+          "content": "¡Hola! Soy Sofia, asesora de Grupo Steimberg. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto."
+        },
+        {
+          "role": "user",
+          "content": "Hola, estoy buscando una casa prefabricada. ¿Qué modelos tienen disponibles?"
+        },
+        {
+          "role": "assistant",
+          "content": "Hola! Tenemos varios Modelos, CABIN, Proyectos de Inversión y Nordic House en hormigón premoldeado y estilo nórdico. Hoy contamos con:\n\n- **Cabin 24 / Cabin 28**: monoambiente de 24 m², cocina integrada, baño, modelo transportable, ideal primera vivienda o renta turística.  \n- **Cabin 24 Silver**: misma base de 24 m² pero con terminaciones superiores y estética más premium.  \n- **Cabin 40** y **Cabin Doble 40 m²**: planta baja tipo loft doble altura con living‑cocina‑comedor y baño + entrepiso con 2 habitaciones o habitación + baño.  \n- **Cabin 70**: 70 m², pensada como casa completa, con cocina moderna, espacios amplios y funcionales.  \n- **Cabin Yakisugi**: cabin revestida en madera Yakisugi (carbonizada), súper durable, antihumedad y con estética japonesa muy marcada.  \n- **Nordic House 180**: casa estilo nórdico en versiones de **180 m², 150 m² y 100 m²**, revestida en Yakisugi, ideal vivienda permanente de alta prestación.  \n- **Proyectos de Inversión**: desarrollos a medida para renta turística (complejos de cabañas, hoteles boutique, etc.).\n\nPara orientarte mejor: ¿qué tipo de Modelo, CABIN, Proyectos de Inversión o Nordic House estás buscando, algo chico tipo cabaña o una casa más grande para vivienda permanente?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa el modelo Cabin 24 / Cabin 28. ¿Cuánto sale? ¿Qué incluye?"
+        },
+        {
+          "role": "assistant",
+          "content": "Genial, con la info extra te detallo mejor la **Cabin 24 / Cabin 28**.  \n\n- **Precio**: en la web no figura ningún valor ni rango, así que **no tengo los precios actualizados cargados**; lo ideal es que lo consultes directo por WhatsApp o por mail a **gruposteimberg@gmail.com** así te pasan lista vigente y formas de pago.  \n\n- **Qué incluye la Cabin 24 (Cabin 28)**:  \n  - **Superficie**: 24 m², **1 módulo**.  \n  - **Distribución**: **cocina integrada tipo monoambiente + baño completo**.  \n  - **Modelo transportable**: se fabrica como módulo en hormigón premoldeado y se puede trasladar al terreno.  \n  - **Calidad constructiva general de las CABIN**: estructura resistente, pisos de hormigón armado, carpinterías de aluminio con **DVH**, instalaciones sanitarias con biodigestor, instalación eléctrica completa con iluminación LED, pisos interiores en madera flotante y/o porcelanato, diseño escandinavo minimalista con ventanales amplios e interiores en madera.  \n\nSi la querés para vivienda permanente o renta turística cambia un poco cómo la equipamos; ¿qué uso le querés dar y qué presupuesto manejás aproximadamente?"
+        },
+        {
+          "role": "user",
+          "content": "¿Cuánto tiempo demora la entrega una vez que se confirma? ¿Hacen entregas en Buenos Aires?"
+        },
+        {
+          "role": "assistant",
+          "content": "Trabajamos con sistema modular en hormigón premoldeado, así que los plazos son bastante rápidos (del orden de unos pocos meses entre fabricación y montaje), pero en la info que tengo no figura el tiempo exacto de entrega según modelo y agenda de obra, así que no puedo darte un número preciso por acá.  \n\nSí, **operamos en Argentina y estamos en Parque Empresarial Austral – Pilar (Buenos Aires)**, así que **entregas y montaje en provincia de Buenos Aires se hacen sin problema**.  \n¿En qué zona de Buenos Aires tenés el terreno (CABA, GBA, interior) y para cuándo te gustaría tener lista la Cabin 24/28 aproximadamente?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa, ¿cómo puedo contactarlos? ¿Tienen WhatsApp?"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenísimo que te interese, estás eligiendo un modelo súper versátil.  \nPodés contactarnos por mail a **gruposteimberg@gmail.com** o desde la web en la sección **“Contacto / Agendá tu cita”** (www.gruposteimberg.com), donde también suelen derivar a WhatsApp del equipo comercial.  \n\nNo tengo el número de WhatsApp cargado acá, pero en la web lo vas a ver publicado junto con los datos de Argentina – Uruguay – Chile.  \nSi querés, dejame **nombre, mail y teléfono**, y le pido a un asesor que te contacte para avanzar con la Cabin 24/28."
+        }
+      ]
+    },
+    {
+      "company": "T1 Modular",
+      "url": "https://www.t1modular.com.ar/",
+      "status": "OK",
+      "scrapingTimeMs": 43778,
+      "companyNameDetected": "T1 Modular",
+      "modelsFound": [
+        "Tiny Homes / Modelos T1",
+        "T1 25",
+        "T1 36",
+        "T1 47",
+        "Proyectos Residenciales",
+        "Proyectos Comerciales"
+      ],
+      "garbageDetected": [],
+      "noInfoResponses": 1,
+      "totalMessages": 4,
+      "errorMessages": [],
+      "hasContactInfo": true,
+      "hasWhatsApp": true,
+      "qualityScore": 5,
+      "notes": "Known: FAQ no expandido - info oculta | Models: Tiny Homes / Modelos T1, T1 25, T1 36, T1 47, Proyectos Residenciales, Proyectos Comerciales | No-info: 1/4",
+      "conversation": [
+        {
+          "role": "assistant",
+          "content": "¡Hola! Soy Sofia, asesora de T1 Modular. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto."
+        },
+        {
+          "role": "user",
+          "content": "Hola, estoy buscando una casa prefabricada. ¿Qué modelos tienen disponibles?"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenísimo, estás en el lugar indicado 😊. En T1 Modular trabajamos con varios tipos de Proyectos en steel frame:\n\n- **Tiny Homes / Modelos T1**:  \n  - **T1 25**: 25,6 m², monoambiente o dos ambientes, ideal turismo o primera vivienda.  \n  - **T1 36**: 36 m², dos o hasta tres ambientes, perfecta como casa de fin de semana o vivienda compacta.  \n  - **T1 47**: 47 m², tres ambientes, planta recta o en “L”, pensada para familias.\n\nAdemás hacemos **Proyectos Residenciales** a medida (viviendas llave en mano personalizadas) y **Proyectos Comerciales** (markets, suites turísticas, locales, etc.), siempre en steel frame y con entrega llave en mano en aprox. 75 días. ¿Qué tipo de Proyectos estás buscando: algo tipo Tiny Home (T1 25/36/47) o una vivienda residencial a medida más grande?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa el modelo Tiny Homes / Modelos T1. ¿Cuánto sale? ¿Qué incluye?"
+        },
+        {
+          "role": "assistant",
+          "content": "Perfecto, con esto te resumo bien los **Tiny Homes / Modelos T1** y cómo elegir:\n\n- **T1 25**: monoambiente o dos ambientes de **25,6 m²**, ideal para turismo o primera vivienda compacta.  \n- **T1 36**: dos ambientes de **36,5 m²**, pensada como casa de fin de semana o vivienda chica pero cómoda.  \n- **T1 47**: tres ambientes de **47 m²**, en línea o en “L”, ideal para familias que necesitan más espacialidad.\n\nEn todos los casos se construyen en **steel frame**, se entregan **llave en mano en aprox. 75 días** y vienen con cocina equipada, baño completo, DVH, excelente aislación, climatización frío/calor, iluminación LED y servicios listos para conectar.  \nNo tengo los precios actualizados cargados; te sugiero consultarlo por WhatsApp al **+54 9 11 7637‑1656** así te pasan valores y financiación según el modelo. ¿Cuál de los tres (T1 25, 36 o 47) te cierra más por tamaño para que veamos si se ajusta a tu idea y presupuesto?"
+        },
+        {
+          "role": "user",
+          "content": "¿Cuánto tiempo demora la entrega una vez que se confirma? ¿Hacen entregas en Buenos Aires?"
+        },
+        {
+          "role": "assistant",
+          "content": "Te cuento: para los Tiny Homes / Modelos T1 (T1 25, T1 36 y T1 47) trabajamos con un plazo estándar de **aprox. 75 días** desde que se confirma el proyecto y se firma contrato, con modalidad **llave en mano**.  \n\nEn cuanto a la ubicación, la empresa trabaja en **todo el país**, y los módulos se pueden **enviar o construir en sitio**, así que un proyecto en **Buenos Aires** es totalmente viable.  \n¿Para cuándo te gustaría tenerla instalada allá así vemos si llegamos con los tiempos que manejás?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa, ¿cómo puedo contactarlos? ¿Tienen WhatsApp?"
+        },
+        {
+          "role": "assistant",
+          "content": "Sí, claro, tenemos WhatsApp y respuesta súper rápida 😊.  \nPodés escribirnos directo al **+54 9 11 7637‑1656** o por mail a **consultastiny@gmail.com** para que un asesor te pase precios, financiación y próxima fecha de entrega disponible.\n\nSi querés, contame antes **qué presupuesto manejás aproximadamente** y qué modelo T1 (25, 36 o 47) tenés en mente, así ya llegás a la charla con una idea bien afinada."
+        }
+      ]
+    },
+    {
+      "company": "Arcohouse",
+      "url": "https://arcohouse.com.ar/",
+      "status": "OK",
+      "scrapingTimeMs": 68765,
+      "companyNameDetected": "Arcohouse",
+      "modelsFound": [
+        "Montañesito 20 m²",
+        "Cobre 30 m²",
+        "El Montañés 40 m²",
+        "Correntoso 60 m²",
+        "Limay 80 m²",
+        "Kit Montañesito 23 m²",
+        "Kit Cobre 37 m²",
+        "Kit Montañés 47 m²",
+        "Kit Correntoso 75 m²",
+        "Kit Limay 92 m²",
+        "Montañesito / Cobre / Montañés / Correntoso / Limay",
+        "kit de autoarmado"
+      ],
+      "garbageDetected": [],
+      "noInfoResponses": 0,
+      "totalMessages": 4,
+      "errorMessages": [],
+      "hasContactInfo": true,
+      "hasWhatsApp": true,
+      "qualityScore": 5,
+      "notes": "Models: Montañesito 20 m², Cobre 30 m², El Montañés 40 m², Correntoso 60 m², Limay 80 m², Kit Montañesito 23 m², Kit Cobre 37 m², Kit Montañés 47 m², Kit Correntoso 75 m², Kit Limay 92 m², Montañesito / Cobre / Montañés / Correntoso / Limay, kit de autoarmado",
+      "conversation": [
+        {
+          "role": "assistant",
+          "content": "¡Hola! Soy Sofia, asesora de Arcohouse. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto."
+        },
+        {
+          "role": "user",
+          "content": "Hola, estoy buscando una casa prefabricada. ¿Qué modelos tienen disponibles?"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenísimo que estés buscando eso, es justo lo que hacemos. En Arcohouse tenemos dos líneas:\n\n1) **Refugios llave en mano (listos para habitar, con baño y cocina equipados):**  \n- **Montañesito 20 m²** – ARS $41.500.000 + IVA – 2 personas.  \n- **Cobre 30 m²** – ARS $57.000.000 + IVA – 2/4 personas.  \n- **El Montañés 40 m²** – ARS $71.000.000 + IVA – 2/4 personas.  \n- **Correntoso 60 m²** – ARS $98.000.000 + IVA – 4/6 personas.  \n- **Limay 80 m²** – ARS $121.500.000 + IVA – 6/8 personas.  \n\n2) **Kits de autoarmado (Arcokits, solo “envolvente” para que los armes vos o con tu equipo):**  \n- **Kit Montañesito 23 m²** – $9.800.000  \n- **Kit Cobre 37 m²** – $13.000.000  \n- **Kit Montañés 47 m²** – $15.500.000  \n- **Kit Correntoso 75 m²** – $26.000.000  \n- **Kit Limay 92 m²** – $30.500.000  \n\n¿Te interesa más un refugio llave en mano tipo **Montañesito / Cobre / Montañés / Correntoso / Limay**, o un **kit de autoarmado** para construirlo vos?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa el modelo Montañesito 20 m². ¿Cuánto sale? ¿Qué incluye?"
+        },
+        {
+          "role": "assistant",
+          "content": "Perfecto, el **Refugio Montañesito 20 m²** es ideal para arrancar o para alquilar.\n\n- **Precio:** ARS **$41.500.000 + IVA**, con **financiación en 6 cuotas sin interés** de **$6.916.666** y el precio se congela desde la primera cuota.  \n- **Incluye (listo para habitar):** chasis de acero, muros y techo con paneles SIP y aislación EPS, piso fenólico doble aislado, revestimiento exterior en chapa negra, interiores en fenólico clear, piso vinílico SPC símil madera, instalación eléctrica completa con iluminación LED, instalación sanitaria completa, aberturas de aluminio Aluar Módena negro con DVH, puertas Oblak, muebles de cocina (bajo mesada y alacena), mesada de granito, griferías Piazza, pileta Johnson, baño completo con inodoro Piazza, ducha con porcelanato, mampara, vanitory de laurel con bacha de piedra y accesorios.  \n\n¿Ya tenés terreno definido y en qué zona pensás instalar tu Montañesito?"
+        },
+        {
+          "role": "user",
+          "content": "¿Cuánto tiempo demora la entrega una vez que se confirma? ¿Hacen entregas en Buenos Aires?"
+        },
+        {
+          "role": "assistant",
+          "content": "El Montañesito, como todos nuestros Refugios, se fabrica con sistema modular y se entrega **a partir de los 90 días** desde la firma de contrato y seña, ya listo para habitar (solo tenés que tener listas bases y servicios en tu lote).  \n\nConstruimos en fábrica en **San Rafael, Mendoza** y desde ahí **instalamos en todo el país**, así que **podemos entregar sin problema en Buenos Aires**, siempre que el terreno tenga acceso para camión y grúa (el costo de traslado se cotiza aparte según la ubicación exacta)."
+        },
+        {
+          "role": "user",
+          "content": "Me interesa, ¿cómo puedo contactarlos? ¿Tienen WhatsApp?"
+        },
+        {
+          "role": "assistant",
+          "content": "Genial que te animes a avanzar con el Montañesito.  \n\nPodés escribirnos directo por **WhatsApp al +54 9 260 403 3077** o llamar a ese mismo número, y por mail a **emailjohnsmith@example.com**.  \nSi querés, dejame tu nombre y teléfono y le pido a un asesor que te contacte para avanzar con la cotización y la financiación."
+        }
+      ]
+    },
+    {
+      "company": "Wellmod",
+      "url": "https://www.wellmod.com.ar/",
+      "status": "OK",
+      "scrapingTimeMs": 59536,
+      "companyNameDetected": "Wellmod",
+      "modelsFound": [
+        "W20 Suite",
+        "W26 Suite / W26 Black Edition Lodge",
+        "Líneas residenciales más grandes",
+        "W40 A/B/C",
+        "W60 A/B",
+        "W80 A/B/C",
+        "Casa VJ (40 m²)",
+        "Casa Potrerillo (80 m²)",
+        "Casa MY (80 m²)",
+        "Casa MF (80 m²)",
+        "Casa IM (175 m²)",
+        "Casa AS (200 m²)"
+      ],
+      "garbageDetected": [],
+      "noInfoResponses": 1,
+      "totalMessages": 4,
+      "errorMessages": [],
+      "hasContactInfo": true,
+      "hasWhatsApp": true,
+      "qualityScore": 5,
+      "notes": "Models: W20 Suite, W26 Suite / W26 Black Edition Lodge, Líneas residenciales más grandes, W40 A/B/C, W60 A/B, W80 A/B/C, Casa VJ (40 m²), Casa Potrerillo (80 m²), Casa MY (80 m²), Casa MF (80 m²), Casa IM (175 m²), Casa AS (200 m²) | No-info: 1/4",
+      "conversation": [
+        {
+          "role": "assistant",
+          "content": "¡Hola! Soy Sofia, asesora de Wellmod. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto."
+        },
+        {
+          "role": "user",
+          "content": "Hola, estoy buscando una casa prefabricada. ¿Qué modelos tienen disponibles?"
+        },
+        {
+          "role": "assistant",
+          "content": "Genial, te cuento qué opciones tenemos en casas modulares prefabricadas listas para instalar:\n\n- **W20 Suite**: 20 m², monoambiente con cocina y baño completo, ideal estudio o primera vivienda.  \n- **W26 Suite / W26 Black Edition Lodge**: 26 m², monoambiente con baño y galería, muy usado en turismo y fin de semana.  \n- **Líneas residenciales más grandes**:  \n  - **W40 A/B/C**: 40 m², 1 dormitorio y 1 baño (2 módulos).  \n  - **W60 A/B**: 60 m², 2 o 3 dormitorios y 1 o 2 baños (3 módulos).  \n  - **W80 A/B/C**: 80 m², 2 o 3 dormitorios, 1 o 2 baños (4 módulos).  \n  - Proyectos a medida como **Casa VJ (40 m²)**, **Casa Potrerillo (80 m²)**, **Casa MY (80 m²)**, **Casa MF (80 m²)**, **Casa IM (175 m²)** y **Casa AS (200 m²)**.\n\nPara orientarte mejor, ¿la querés como vivienda permanente o casa de fin de semana?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa el modelo W20 Suite. ¿Cuánto sale? ¿Qué incluye?"
+        },
+        {
+          "role": "assistant",
+          "content": "El **W20 Suite** es un monoambiente de **20 m²**, con **cocina completa y baño completo**, resuelto en **1 módulo** de steel frame, listo para usar: llega totalmente terminado desde fábrica, con instalaciones, sanitarios, muebles fijos y terminaciones según la línea que elijas.  \n\nSobre el precio, en el catálogo figura el W20 Suite con referencia a **“precio U$D 30.990”**, pero esos valores suelen actualizarse, así que tomalo solo como orientativo. No tengo los precios actualizados cargados; te sugiero consultarlo por WhatsApp al **+54 9 351 866 8299** así te pasan el valor vigente y las opciones de financiación. ¿En qué zona tenés pensado instalar el W20 Suite?"
+        },
+        {
+          "role": "user",
+          "content": "¿Cuánto tiempo demora la entrega una vez que se confirma? ¿Hacen entregas en Buenos Aires?"
+        },
+        {
+          "role": "assistant",
+          "content": "El W20 Suite, como todos nuestros módulos, se fabrica en planta en un plazo de **90 a 120 días** desde la confirmación y firma, según carga de producción y m²; luego el montaje en tu terreno lleva **solo unos pocos días** porque llega prácticamente listo.  \n\nEn cuanto a la ubicación, **sí, llegamos a todo el país**, incluyendo **Buenos Aires**, siempre que el acceso permita el ingreso de camión y grúa y el terreno esté previamente nivelado y con bases listas. ¿Para qué fecha aproximada te gustaría tener instalado el módulo en Buenos Aires?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa, ¿cómo puedo contactarlos? ¿Tienen WhatsApp?"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenísimo que te interese, estamos listos para ayudarte a avanzar.  \nPodés escribirnos por **WhatsApp al +54 9 351 866 8299** o por mail a **hola@wellmod.com.ar**, y también tenés el formulario de contacto en la web oficial de Wellmod.  \n\nSi querés, contame tu nombre y un celular y te indico qué info enviarles (zona, modelo W20 Suite, fecha estimada y presupuesto) para que te armen una propuesta más rápida."
+        }
+      ]
+    },
+    {
+      "company": "Mini Casas",
+      "url": "https://www.minicasas.com.ar/",
+      "status": "OK",
+      "scrapingTimeMs": 51423,
+      "companyNameDetected": "Casas Arenzon",
+      "modelsFound": [
+        "Modelo AZ I",
+        "MODELO AZ I XL",
+        "entrepiso de 5,8 m²",
+        "Modelo AZ II",
+        "2 módulos",
+        "Modelo AZ III",
+        "3 módulos",
+        "viviendas personalizadas"
+      ],
+      "garbageDetected": [],
+      "noInfoResponses": 2,
+      "totalMessages": 4,
+      "errorMessages": [],
+      "hasContactInfo": true,
+      "hasWhatsApp": true,
+      "qualityScore": 4,
+      "notes": "Models: Modelo AZ I, MODELO AZ I XL, entrepiso de 5,8 m², Modelo AZ II, 2 módulos, Modelo AZ III, 3 módulos, viviendas personalizadas | No-info: 2/4",
+      "conversation": [
+        {
+          "role": "assistant",
+          "content": "¡Hola! Soy Sofia, asesora de Casas Arenzon. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto."
+        },
+        {
+          "role": "user",
+          "content": "Hola, estoy buscando una casa prefabricada. ¿Qué modelos tienen disponibles?"
+        },
+        {
+          "role": "assistant",
+          "content": "Hola, qué bueno que estés buscando casa prefabricada 😊. En Casas Arenzon trabajamos con varios Modelos estándar de minicasas, todas transportables y modulares:\n\n- **Modelo AZ I**: 3x6 m (18 m²), ideal como primera vivienda compacta, estudio o cabaña.  \n- **MODELO AZ I XL**: misma base 3x6 m (18 m²) pero con **entrepiso de 5,8 m²**, ganás un ambiente extra en altura.  \n- **Modelo AZ II**: 6x6 m (36 m²), se transporta en **2 módulos**, ya pensada como vivienda más cómoda para uso permanente.  \n- **Modelo AZ III**: 9x6 m (54 m²), en **3 módulos**, es la opción más amplia dentro de los estándar.\n\nAdemás podemos hacer **viviendas personalizadas** adaptando el diseño a lo que necesites. ¿Qué tipo de Modelos estás buscando: algo chico tipo 18 m², intermedio (36 m²) o más grande como el AZ III de 54 m²?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa el modelo Modelo AZ I. ¿Cuánto sale? ¿Qué incluye?"
+        },
+        {
+          "role": "assistant",
+          "content": "Genial que te guste el **Modelo AZ I** 😊.  \n\n1) **Precio:**  \nNo tengo los precios actualizados cargados. Te sugiero consultarlo directo por WhatsApp al **+54 294 456 8357**, donde te pasan el valor al día y opciones de pago (aceptan pesos, dólares, euros, tarjeta, transferencias y hasta vehículos como parte de pago).  \n\n2) **Qué incluye / características clave:**  \n- Es una minicasa **estándar, transportable**, Modelo **AZ I** de **3x6 m (18 m²)**.  \n- Forma parte de nuestro sistema **modular**, así que después podés ampliarla sumando, por ejemplo, un **MODELO AZ I XL, AZ II o AZ III**, o hacer algo personalizado.  \n- Se construye con nuestro sistema de **alta aislación térmica**, que reduce hasta un **70% el uso de calefacción y refrigeración** frente a una construcción tradicional, y es compatible con otros sistemas constructivos.  \n\nLa configuración fina (distribución interior, tipo de aberturas, equipamiento, etc.) la adaptamos bastante a cada caso, por eso te detallan el “qué incluye exacto” en la cotización. ¿Para cuándo la estarías necesitando aproximadamente?"
+        },
+        {
+          "role": "user",
+          "content": "¿Cuánto tiempo demora la entrega una vez que se confirma? ¿Hacen entregas en Buenos Aires?"
+        },
+        {
+          "role": "assistant",
+          "content": "Te cuento: trabajamos con **tiempos de entrega más rápidos que la construcción tradicional**, porque fabricamos en sistema modular y luego transportamos la vivienda ya armada, pero el plazo exacto depende del Modelo y de la demanda del momento. No tengo cargado un número fijo de días/semanas, así que para un estimado real de entrega del **Modelo AZ I** te sugiero escribir por WhatsApp al **+54 294 456 8357**.  \n\nRespecto a **Buenos Aires**, al ser minicasas **transportables**, en muchos casos podemos llevarlas a distintas provincias; podría ser posible para BA, pero eso se define según logística y accesos al terreno, así que también conviene verlo directo por WhatsApp. ¿Ya tenés terreno en Buenos Aires? ¿En qué zona sería?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa, ¿cómo puedo contactarlos? ¿Tienen WhatsApp?"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenísimo que te interese avanzar 😊.  \n\nPodés contactarnos por estos medios:  \n- **WhatsApp:** haciendo clic acá 👉 https://api.whatsapp.com/send?phone=+542944568357&text=Hola!%20me%20interesar%C3%ADa%20contactarlos%20por%20un%20presupuesto...  \n- **Email:** info@minicasas.com.ar  \n\nSi querés, contame si ya tenés terreno y en qué zona, así te orientás mejor cuando hables con el asesor."
+        }
+      ]
+    },
+    {
+      "company": "Offis",
+      "url": "https://www.offis.ar/",
+      "status": "OK",
+      "scrapingTimeMs": 44007,
+      "companyNameDetected": "Offis",
+      "modelsFound": [
+        "Offis STUDIO 12",
+        "Offis SLIM 15",
+        "Offis FAMILY 18",
+        "Offis FLEX 22",
+        "Offis PLUS 27",
+        "Offis XL 36"
+      ],
+      "garbageDetected": [],
+      "noInfoResponses": 1,
+      "totalMessages": 4,
+      "errorMessages": [],
+      "hasContactInfo": true,
+      "hasWhatsApp": true,
+      "qualityScore": 5,
+      "notes": "Models: Offis STUDIO 12, Offis SLIM 15, Offis FAMILY 18, Offis FLEX 22, Offis PLUS 27, Offis XL 36 | No-info: 1/4",
+      "conversation": [
+        {
+          "role": "assistant",
+          "content": "¡Hola! Soy Sofia, asesora de Offis. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto."
+        },
+        {
+          "role": "user",
+          "content": "Hola, estoy buscando una casa prefabricada. ¿Qué modelos tienen disponibles?"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenísimo, estás en el lugar indicado 🙂 En Offis trabajamos con módulos residenciales en sistema SIP, listos en 5 días de instalación, con estos modelos estándar:\n\n- **Offis STUDIO 12** – 12,25 m²  \n- **Offis SLIM 15** – 15,25 m²  \n- **Offis FAMILY 18** – 18,13 m²  \n- **Offis FLEX 22** – 22,50 m²  \n- **Offis PLUS 27** – 27,01 m²  \n- **Offis XL 36** – 35,89 m²  \n\nTodos se pueden personalizar en revestimientos, colores de piso y extras (AA, cortinas, deck, mobiliario, etc.). ¿Qué tipo de uso le querés dar: vivienda completa, home office, playroom, estudio, algo mixto?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa el modelo Offis STUDIO 12. ¿Cuánto sale? ¿Qué incluye?"
+        },
+        {
+          "role": "assistant",
+          "content": "Perfecto, con esta info te detallo bien el **Offis STUDIO 12** 😊  \n\n- Es un módulo residencial de **12,25 m²**, medidas interiores **2,20 x 4,60 x h 2,30** y exteriores **2,50 x 4,90 x h 2,80**.  \n- Es **transportable**, se puede hacer **instalación in situ**, está desarrollado para exteriores, resistente al clima, con **garantía de 1 año**, **producción en 2–3 semanas** e **instalación en 5–6 días hábiles**.  \n- Podés elegir **revestimiento exterior** (WPC Marrón o Gris, o chapa negra o gris) y **color de piso** (beige o gris).  \n- Como extras opcionales podés sumar: aire acondicionado Inverter, cortinas roller sunscreen o blackout, iluminación exterior con fotocélula, piso especial para gimnasio, mobiliario a medida, deck + pérgola, alero y cerradura electrónica biométrica, incluso división para baño (toilette).  \n\nSobre el **precio**, en la web no figura ningún valor ni lista con $ para el STUDIO 12, así que **no tengo los precios actualizados cargados**. Te recomiendo escribir por WhatsApp al **+54 9 11 2652-1040** o desde el botón **“Quiero financiarlo”** para que te pasen el valor al día y las opciones de financiación. ¿Para qué lo querés usar principalmente (mini casa, oficina, estudio, otro)? Así veo si con 12 m² llegás cómodo o conviene pensar en un SLIM 15 o FAMILY 18."
+        },
+        {
+          "role": "user",
+          "content": "¿Cuánto tiempo demora la entrega una vez que se confirma? ¿Hacen entregas en Buenos Aires?"
+        },
+        {
+          "role": "assistant",
+          "content": "Te cuento: para el **Offis STUDIO 12** el plazo estándar es **2 a 3 semanas de producción** y luego **5 a 6 días hábiles de instalación** en tu terreno, es decir, en alrededor de **1 mes** lo tenés listo para usar desde la confirmación.  \n\nSí, trabajamos y hacemos instalaciones en **Buenos Aires** (ej: zona norte, CABA y alrededores, donde están la mayoría de los casos reales que ves en la web). Ya que sos de Bs As, ¿ya tenés el terreno definido o terraza/jardín donde lo instalarías?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa, ¿cómo puedo contactarlos? ¿Tienen WhatsApp?"
+        },
+        {
+          "role": "assistant",
+          "content": "Genial que te interese avanzar, estás a un paso de tener tu Offis 😊  \n\nPodés escribirnos directo por **WhatsApp al +54 9 11 2652-1040** o desde este enlace: https://wa.me/5491126521040.  \nTambién tenés el mail **comercial@offis.ar** y el formulario de contacto en la web: https://www.offis.ar/contacto/.  \n\nSi querés, decime **qué presupuesto manejás aproximadamente** y **menciono por acá qué configuración del Offis STUDIO 12 suele encajar mejor** para que ya llegues a WhatsApp con una idea cerrada."
+        }
+      ]
+    },
+    {
+      "company": "Efede",
+      "url": "https://efede.com.ar/casas-modulares/",
+      "status": "OK",
+      "scrapingTimeMs": 37634,
+      "companyNameDetected": "EFEDÉ",
+      "modelsFound": [
+        "MHZ (32 m²)",
+        "MC1 (29 m²)",
+        "MZB2 (54 m²)",
+        "MT1 (15 m²)",
+        "línea Office",
+        "MO1 (15 m²)",
+        "MO5 (30 m²)"
+      ],
+      "garbageDetected": [],
+      "noInfoResponses": 3,
+      "totalMessages": 4,
+      "errorMessages": [],
+      "hasContactInfo": true,
+      "hasWhatsApp": true,
+      "qualityScore": 3,
+      "notes": "Models: MHZ (32 m²), MC1 (29 m²), MZB2 (54 m²), MT1 (15 m²), línea Office, MO1 (15 m²), MO5 (30 m²) | No-info: 3/4",
+      "conversation": [
+        {
+          "role": "assistant",
+          "content": "¡Hola! Soy Sofia, asesora de EFEDÉ. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto."
+        },
+        {
+          "role": "user",
+          "content": "Hola, estoy buscando una casa prefabricada. ¿Qué modelos tienen disponibles?"
+        },
+        {
+          "role": "assistant",
+          "content": "Hola! En EFEDÉ trabajamos con casas modulares habitacionales y oficinas, todas transportables y listas en aprox. 60 días.  \nEn viviendas tenemos estas tipologías de casas modulares:  \n- **MHZ (32 m²)**: living/comedor, cocina, 1 dormitorio y baño (línea Premium).  \n- **MC1 (29 m²)**: comedor, cocina, 1 dormitorio y baño, similar a la MHZ pero más compacta.  \n- **MZB2 (54 m²)**: living, cocina comedor, 2 dormitorios y 2 baños (ideal familia, línea Premium).  \n- **MT1 (15 m²)**: 1 dormitorio, baño + antebaño (línea Basic, súper compacta).  \n\nY en **línea Office**:  \n- **MO1 (15 m²)**: oficina privada, kitchenette y baño.  \n- **MO5 (30 m²)**: oficina privada, sala de reuniones, kitchenette y baño.  \n\nPara orientarte mejor, ¿qué tipo de tipologías de casas modulares estás buscando: algo chico para una persona, algo para pareja o para familia?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa el modelo MHZ (32 m²). ¿Cuánto sale? ¿Qué incluye?"
+        },
+        {
+          "role": "assistant",
+          "content": "La **casa modular MHZ (32 m²)** es de la línea Premium e incluye: **living/comedor integrado, cocina, 1 dormitorio y 1 baño**, con nuestro sistema constructivo de estructura de acero, paneles con aislamiento de poliuretano y cubierta metálica con doble aislamiento y cera de aluminio, lo que le da muy buen confort térmico y acústico. No tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp para que te pasen valor final, formas de pago y costos de traslado/instalación.\n\nPara avanzar bien con la cotización, ¿ya tenés terreno? ¿En qué zona sería la instalación?"
+        },
+        {
+          "role": "user",
+          "content": "¿Cuánto tiempo demora la entrega una vez que se confirma? ¿Hacen entregas en Buenos Aires?"
+        },
+        {
+          "role": "assistant",
+          "content": "La **MHZ** (y el resto de las casas modulares) se fabrica en un proceso industrializado y el plazo estándar es de **aprox. 60 días de construcción**, más unos pocos días para la **instalación en el terreno**, según la cantidad de m² y condiciones del lugar.  \nSobre la entrega en Buenos Aires, no tengo la cobertura geográfica detallada cargada, pero podría ser posible; te recomiendo confirmarlo por WhatsApp para que te indiquen disponibilidad y costos de traslado específicos para tu dirección.\n\nPara saber si la MHZ te queda cómoda: ¿la pensás para vivienda permanente o como casa de fin de semana?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa, ¿cómo puedo contactarlos? ¿Tienen WhatsApp?"
+        },
+        {
+          "role": "assistant",
+          "content": "Sí, tenemos WhatsApp 😊  \nNo tengo el número cargado acá, pero lo encontrás directo en la web oficial de EFEDÉ (en el botón de WhatsApp que aparece en la página de casas modulares): **https://efede.com.ar**  \n\nSi querés, contame antes aproximadamente qué presupuesto manejás y así ya vas con una idea más clara cuando hables con el asesor."
+        }
+      ]
+    },
+    {
+      "company": "GoHome",
+      "url": "https://gohomeconstrucciones.com.ar/",
+      "status": "OK",
+      "scrapingTimeMs": 44485,
+      "companyNameDetected": "GO HOME",
+      "modelsFound": [
+        "LIBERTY",
+        "ALMA I",
+        "ALMA II",
+        "GRETA I",
+        "GRETA II",
+        "AMORINA",
+        "TREVI",
+        "TOKIO",
+        "JANA",
+        "VICTORIA",
+        "ETIQUETA NEGRA",
+        "BREAK III",
+        "COLEGIO"
+      ],
+      "garbageDetected": [],
+      "noInfoResponses": 1,
+      "totalMessages": 4,
+      "errorMessages": [],
+      "hasContactInfo": true,
+      "hasWhatsApp": true,
+      "qualityScore": 5,
+      "notes": "Models: LIBERTY, ALMA I, ALMA II, GRETA I, GRETA II, AMORINA, TREVI, TOKIO, JANA, VICTORIA, ETIQUETA NEGRA, BREAK III, COLEGIO | No-info: 1/4",
+      "conversation": [
+        {
+          "role": "assistant",
+          "content": "¡Hola! Soy Sofia, asesora de GO HOME. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto."
+        },
+        {
+          "role": "user",
+          "content": "Hola, estoy buscando una casa prefabricada. ¿Qué modelos tienen disponibles?"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenísimo, trabajamos justo eso pero en versión casas y oficinas en contenedores marítimos, más rápidas y económicas que la construcción tradicional.  \nLos modelos de vivienda que tenemos hoy son: **LIBERTY** (20 pies, monoambiente con cocina con barra y baño completo), **ALMA I** (40 pies, 2 ambientes), **ALMA II** (dos contenedores de 40 pies, gran living comedor + 2 habitaciones), **GRETA I** (40 pies con cocina panorámica), **GRETA II** (40 + 20 pies, 3 ambientes), **AMORINA** (tres contenedores, 90 m² aprox. en dos plantas), **TREVI**, **TOKIO** (dos plantas, 60 m²), **JANA** (30 m², 2 ambientes), **VICTORIA** (30 m², 2 ambientes), y desarrollos a medida como **ETIQUETA NEGRA**, **BREAK III** (dormis) y **COLEGIO**.  \n¿Qué tipo de Unidades estás buscando: algo chico tipo monoambiente/2 ambientes, o una casa más grande para familia?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa el modelo LIBERTY. ¿Cuánto sale? ¿Qué incluye?"
+        },
+        {
+          "role": "assistant",
+          "content": "Perfecto, gracias por la paciencia.  \nLIBERTY es un monoambiente armado sobre un contenedor (el pliego dice 40 pies) con: paredes y cielorrasos en placas de yeso KNAUF, pisos vinílicos alemanes AC5 en todo el ambiente y el baño, revestimiento de cocina con cerámicos a 0,60 m sobre la mesada y baño con cerámico esmaltado, pintura Alba interior y esmalte Sherwin Williams en exterior. La cocina incluye bajo mesada de 1,50 m en FAPLAC blanco con bacha JONSHON, alacena flotante, mesada de mármol con anafe eléctrico ENERGY SAFE de 4 hornallas, grifería monocomando PIAZZA, termotanque eléctrico KACEMASTER de 40 l, más split frío/calor de 3200 frigorías y cámara de seguridad Wi‑Fi; el baño viene completo con inodoro, bidet y lavatorio Sanitarios Pringles Dionisio, bañera Roca y grifería FV. Además trae instalaciones de agua fría/caliente, electricidad, TV/Internet, tablero con térmicas y disyuntor, cañerías Aquasistem, puerta exterior Pavir pesada Verona laminada y aberturas de aluminio Rotonda 640 con vidrio de 4 mm.  \n\nNo tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp al +54 9 11 5750‑4201 así te pasan el valor al día y opciones de financiación (incluso con Banco Hipotecario al 100%). ¿Ya tenés terreno? ¿En qué zona sería la colocación de la LIBERTY?"
+        },
+        {
+          "role": "user",
+          "content": "¿Cuánto tiempo demora la entrega una vez que se confirma? ¿Hacen entregas en Buenos Aires?"
+        },
+        {
+          "role": "assistant",
+          "content": "Te cuento: las viviendas se entregan en un plazo estimado de **30 a 45 días** desde la firma y pago según el plan acordado (en créditos con Banco Hipotecario hablan de entrega garantizada en hasta 90 días).  \nY sí, trabajamos perfectamente en **Buenos Aires**: nuestro showroom y planta están en **Colectora Oeste Norte KM 42, Francisco Álvarez, Moreno**, y desde ahí coordinamos entregas a la provincia (el traslado no está incluido, pero te asesoramos con la logística para que sea lo más económico posible).  \n\n¿Para cuándo te gustaría tener instalada la LIBERTY en tu terreno?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa, ¿cómo puedo contactarlos? ¿Tienen WhatsApp?"
+        },
+        {
+          "role": "assistant",
+          "content": "Genial que te interese, estás eligiendo una unidad súper práctica.  \nPodés contactarnos por WhatsApp o llamada al **+54 9 11 5750 4201** y por mail a **gohomeconstrucciones@gmail.com**; también tenés el formulario de contacto en la web: https://gohomeconstrucciones.com.ar/contacto/.  \n¿Querés que te orienten puntualmente por LIBERTY y financiación (incluso Banco Hipotecario) o también ver alternativas como ALMA I/JANA por tamaño?"
+        }
+      ]
+    },
+    {
+      "company": "Aftamantes",
+      "url": "https://aftamantes.net/refugios/",
+      "status": "OK",
+      "scrapingTimeMs": 25420,
+      "companyNameDetected": "AFT Amantes",
+      "modelsFound": [
+        "Refugios de 24m²",
+        "Refugios de 45m²",
+        "Refugios de 70m²",
+        "Refugios de 94m²",
+        "Casa Compacta 70m²",
+        "U$S 91.000"
+      ],
+      "garbageDetected": [],
+      "noInfoResponses": 1,
+      "totalMessages": 4,
+      "errorMessages": [],
+      "hasContactInfo": true,
+      "hasWhatsApp": true,
+      "qualityScore": 5,
+      "notes": "Models: Refugios de 24m², Refugios de 45m², Refugios de 70m², Refugios de 94m², Casa Compacta 70m², U$S 91.000 | No-info: 1/4",
+      "conversation": [
+        {
+          "role": "assistant",
+          "content": "¡Hola! Soy Sofia, asesora de AFT Amantes. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto."
+        },
+        {
+          "role": "user",
+          "content": "Hola, estoy buscando una casa prefabricada. ¿Qué modelos tienen disponibles?"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenísimo, estás en el lugar indicado 🙂  \nEn AFT Amantes hoy tenemos estos Módulos prefabricados en steel frame:\n\n- **Refugios de 24m²** – monoambiente amplio, ideal primer módulo o turismo.  \n- **Refugios de 45m²** – perfecto para vivienda compacta o cabaña turística.  \n- **Refugios de 70m²** – opción intermedia muy cómoda para familia chica.  \n- **Refugios de 94m²** – formato más grande, tipo casa principal.  \n- **Casa Compacta 70m²** – modelo específico con 2 habitaciones, cocina y baño completos, listo en 120 días, a **U$S 91.000**.  \n\nPara orientarte mejor, ¿la querés usar como vivienda permanente, casa de fin de semana o proyecto turístico?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa el modelo Refugios de 24m². ¿Cuánto sale? ¿Qué incluye?"
+        },
+        {
+          "role": "assistant",
+          "content": "El **Refugios de 24m²** hoy arranca en **26.400 USD**; el valor final puede subir según las personalizaciones que elijas y el costo de traslado hasta tu terreno.  \n\nViene súper completo: estructura en **steel frame** con OSB, chapa exterior prepintada con cámara de aire y barrera de agua/viento, interior en machimbre de pino (paredes, techo y piso), piso de baño en microcemento, aislación termoacústica con lana de vidrio en paredes, techo y piso, instalación sanitaria completa (tanque 500 L, termotanque eléctrico, bomba presurizadora), instalación eléctrica con luminarias LED, carpinterías de aluminio Aluar con vidrio laminado 3+3, baño equipado (Ferrum + Peirano) y cocina con bajo mesada, alacena, bacha de acero y anafe eléctrico doble.  \nComo próximo paso, ¿en qué zona tenés o pensás poner el terreno para poder estimar también el traslado?"
+        },
+        {
+          "role": "user",
+          "content": "¿Cuánto tiempo demora la entrega una vez que se confirma? ¿Hacen entregas en Buenos Aires?"
+        },
+        {
+          "role": "assistant",
+          "content": "El plazo estándar desde firma de contrato y pago inicial es de **90 días para un Refugio de 45m²** y hasta **120 días** para tener el módulo listo y montado; para el **Refugios de 24m²** suele ser similar o algo menor, pero siempre se confirma en la cotización según demanda de fábrica.  \nSí, podemos entregar en **Buenos Aires**, solo que el **traslado y montaje se cotizan aparte** en función del acceso al terreno y la distancia desde nuestra planta en Córdoba.  \n\nPara ajustar bien tiempos y costos, ¿para cuándo te gustaría tener instalado el Refugios de 24m² en Buenos Aires?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa, ¿cómo puedo contactarlos? ¿Tienen WhatsApp?"
+        },
+        {
+          "role": "assistant",
+          "content": "Genial que te interese avanzar con el Refugios de 24m², es un modelo que funciona bárbaro.  \n\nPodés contactarnos directo desde la web en el botón **“Cotizá tu refugio”** (te abre un formulario para que un asesor te escriba, generalmente por WhatsApp o mail).  \nNo tengo el número de WhatsApp cargado acá, pero lo encontrás fácilmente en la página oficial de AFT Amantes.  \n\nSi querés, decime y te ayudo a armar los datos clave (zona del terreno, uso, plazos y presupuesto) para que cuando te contacten ya vayas con todo claro."
+        }
+      ]
+    },
+    {
+      "company": "Arqtainer",
+      "url": "https://arqtainer.com.ar/",
+      "status": "FAIL",
+      "scrapingTimeMs": 174,
+      "companyNameDetected": "",
+      "modelsFound": [],
+      "garbageDetected": [],
+      "noInfoResponses": 0,
+      "totalMessages": 0,
+      "errorMessages": [
+        "Create failed: No pudimos acceder al sitio web. Verificá la URL e intentá de nuevo."
+      ],
+      "hasContactInfo": false,
+      "hasWhatsApp": false,
+      "qualityScore": 1,
+      "notes": "Session creation failed: No pudimos acceder al sitio web. Verificá la URL e intentá de nuevo.",
+      "conversation": []
+    },
+    {
+      "company": "Lista",
+      "url": "https://lista.com.ar/",
+      "status": "OK",
+      "scrapingTimeMs": 57487,
+      "companyNameDetected": "¡lista!",
+      "modelsFound": [
+        "Macá",
+        "desde 26.012 USD",
+        "38.938 USD",
+        "Cóndor",
+        "Biguá Home / Biguá Work",
+        "Mirasol",
+        "Peutrén",
+        "Hornero",
+        "Albatros"
+      ],
+      "garbageDetected": [],
+      "noInfoResponses": 0,
+      "totalMessages": 4,
+      "errorMessages": [],
+      "hasContactInfo": true,
+      "hasWhatsApp": true,
+      "qualityScore": 5,
+      "notes": "Models: Macá, desde 26.012 USD, 38.938 USD, Cóndor, Biguá Home / Biguá Work, Mirasol, Peutrén, Hornero, Albatros",
+      "conversation": [
+        {
+          "role": "assistant",
+          "content": "¡Hola! Soy Sofia, asesora de ¡lista!. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto."
+        },
+        {
+          "role": "user",
+          "content": "Hola, estoy buscando una casa prefabricada. ¿Qué modelos tienen disponibles?"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenísimo que estés buscando una casa prefabricada, es justo lo que hacemos 😊. En ¡lista! tenemos varios modelos modulares personalizables:\n\n- **Macá** (S, M, L, XL, XXL): cubierta plana, súper versátil, va desde un estudio chico hasta una vivienda completa. Por ejemplo, Macá M (20,5 m²) arranca **desde 26.012 USD** y Macá L (30,7 m²) desde **38.938 USD** según gama (Esencial, Premium o Deluxe).  \n- **Cóndor**: con techo a dos aguas, ideal para entornos naturales y zonas de nieve, va desde una habitación/estudio hasta vivienda de 3 dormitorios.  \n- **Biguá Home / Biguá Work**: pensado para vivir o trabajar, muy usado como oficina o pequeño hogar.  \n- **Mirasol**: organiza los espacios a lo largo de una galería, módulos lineales.  \n- **Peutrén** (M y L): ideal como casa familiar en 3 y 4 módulos.  \n- **Hornero** (M, L, XL): quincho modular para reuniones, se puede combinar con una Macá como vivienda.  \n- **Albatros**: perfecto para casa de vacaciones o complejos de cabañas.\n\nPara orientarte mejor, ¿para qué uso la querés principalmente (vivienda permanente, fin de semana, alquiler turístico, oficina, quincho)?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa el modelo Macá. ¿Cuánto sale? ¿Qué incluye?"
+        },
+        {
+          "role": "assistant",
+          "content": "Genial, Macá es uno de nuestros modelos estrella porque se adapta a mil usos. Te cuento con datos concretos:\n\n**Precios de referencia (según tamaño y gama):**  \n- **Macá S (10,24 m²)** – estudio / consultorio chico  \n  - Esencial: **desde 11.273 USD**  \n  - Premium: **desde 12.526 USD**  \n  - Deluxe: **desde 18.789 USD**  \n- **Macá M (20,5 m²)** – monoambiente completo  \n  - Esencial: **desde 26.012 USD**  \n  - Premium: **desde 28.902 USD**  \n  - Deluxe: **desde 43.353 USD**  \n- **Macá L (30,7 m²)** – con dormitorio definido  \n  - Esencial: **desde 38.938 USD**  \n  - Premium: **desde 43.264 USD**  \n  - Deluxe: **desde 64.896 USD**\n\n**¿Qué incluye un Macá (según versión, pero en líneas generales):**  \n- **Construcción completa en steel framing**, con aislación térmica envolvente (pared, piso y techo en lana de vidrio) y terminación exterior tipo SmartPanel/chapa/EIFS según gama.  \n- **Interior listo para usar:** pisos colocados, pintura, instalación eléctrica con disyuntor y puesta a tierra, instalación sanitaria completa.  \n- **Baño completo** con ducha y bidet (en Macá M y L).  \n- **Kitchenette equipada**: mesada de granito o sintética (según gama), muebles de cocina, anafe y horno eléctricos, espacio para heladera bajo mesada.  \n- **Aberturas de calidad**, en Macá S por ejemplo DVH laminado (Blindex) en la abertura frontal.  \n- **Mobiliario integrado** según modelo: escritorio/barra, baulera, biblioteca, mueble para TV, placard (opcional en L).  \n- **Iluminación LED** instalada y termotanque eléctrico incluido.  \n\nNo está incluido: terreno, bases (pilotines/platea), transporte, descarga ni conexión de servicios, que se cotizan aparte.  \n¿Tenés pensado algo más tipo **monoambiente (Macá M)** o ya una **vivienda chica con dormitorio separado (Macá L)**?"
+        },
+        {
+          "role": "user",
+          "content": "¿Cuánto tiempo demora la entrega una vez que se confirma? ¿Hacen entregas en Buenos Aires?"
+        },
+        {
+          "role": "assistant",
+          "content": "Los Macá se fabrican en nuestra planta y el plazo estándar de producción está entre **90 y 180 días** desde la firma de contrato, según el modelo y la carga de trabajo del momento. La instalación en el terreno es rapidísima: una vez hechos los pilotines/platea y conexiones, el módulo se coloca con grúa y en el día queda instalado.\n\nPodemos enviar módulos desde Rosario y, en muchos casos, llegar a **Buenos Aires**; el transporte y la descarga se cotizan aparte según la dirección exacta y el acceso para camión y grúa. ¿En qué zona de Buenos Aires sería (capital, GBA, interior de la provincia)? Así te orientaría mejor sobre la viabilidad logística."
+        },
+        {
+          "role": "user",
+          "content": "Me interesa, ¿cómo puedo contactarlos? ¿Tienen WhatsApp?"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenísimo, así podemos avanzar con algo concreto para vos.  \n\nPodés escribirnos directo por **WhatsApp al +54 9 341 750 4540** o por mail a **hola@lista.com.ar**.  \nSi querés, también podés agendar una videollamada con un asesor desde acá: https://meet.brevo.com/lista-casas-inteligentes."
+        }
+      ]
+    },
+    {
+      "company": "Modular Homes",
+      "url": "https://modularhomes.com.ar/",
+      "status": "FAIL",
+      "scrapingTimeMs": 3126,
+      "companyNameDetected": "",
+      "modelsFound": [],
+      "garbageDetected": [],
+      "noInfoResponses": 0,
+      "totalMessages": 0,
+      "errorMessages": [
+        "Create failed: El sitio web devolvió un error (500). Verificá que la URL sea correcta."
+      ],
+      "hasContactInfo": false,
+      "hasWhatsApp": false,
+      "qualityScore": 1,
+      "notes": "Session creation failed: El sitio web devolvió un error (500). Verificá que la URL sea correcta.",
+      "conversation": []
+    },
+    {
+      "company": "Casa Real Viviendas",
+      "url": "https://casarealviviendas.com.ar/",
+      "status": "OK",
+      "scrapingTimeMs": 39510,
+      "companyNameDetected": "Casa Real Viviendas",
+      "modelsFound": [],
+      "garbageDetected": [],
+      "noInfoResponses": 0,
+      "totalMessages": 4,
+      "errorMessages": [],
+      "hasContactInfo": true,
+      "hasWhatsApp": true,
+      "qualityScore": 4,
+      "notes": "",
+      "conversation": [
+        {
+          "role": "assistant",
+          "content": "¡Hola! Soy Sofia, asesora de Casa Real Viviendas. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto."
+        },
+        {
+          "role": "user",
+          "content": "Hola, estoy buscando una casa prefabricada. ¿Qué modelos tienen disponibles?"
+        },
+        {
+          "role": "assistant",
+          "content": "Disculpá, hubo un problema. ¿Podés repetir tu consulta?"
+        },
+        {
+          "role": "user",
+          "content": "¿Pueden darme más detalles sobre las opciones que manejan? Me interesa saber superficies y qué incluyen."
+        },
+        {
+          "role": "assistant",
+          "content": "Disculpá, hubo un problema. ¿Podés repetir tu consulta?"
+        },
+        {
+          "role": "user",
+          "content": "¿Cuánto demora todo el proceso desde que arranco hasta que me entregan la casa?"
+        },
+        {
+          "role": "assistant",
+          "content": "Desde que se adjudica la vivienda, la construcción e instalación demoran aproximadamente 45 días. La adjudicación se hace cuando llevas pagado alrededor del 60% del valor, y también tenés la opción de coordinar contra entrega (pagás cuando llega la casa).  \n\nPara ayudarte mejor con los tiempos reales en tu caso, ¿para cuándo te gustaría tener la casa lista más o menos?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa, ¿cómo puedo contactarlos? ¿Tienen WhatsApp?"
+        },
+        {
+          "role": "assistant",
+          "content": "Sí, claro, podés contactarnos por teléfono o WhatsApp al **351 360 1314**.  \n\nSi querés, contame antes **qué zona** tenés en mente y cuántos dormitorios estás buscando, así cuando te escriban ya van con opciones concretas (Americana, Innova, Confort o Luxury, de 1 a 4 dormitorios)."
+        }
+      ]
+    },
+    {
+      "company": "Viviendas Rolon",
+      "url": "https://www.viviendasrolon.com.ar/",
+      "status": "OK",
+      "scrapingTimeMs": 31155,
+      "companyNameDetected": "Viviendas Rolón",
+      "modelsFound": [
+        "Minimalista",
+        "Minimalista con Siding",
+        "Cabaña Entablonada",
+        "Cabaña Machimbrada Clásica",
+        "Chalet Línea Ladrillo",
+        "Chalet Premoldeado Línea Canadiense con Siding",
+        "Modelo de vivienda pequeña",
+        "Modelo de vivienda familiar"
+      ],
+      "garbageDetected": [],
+      "noInfoResponses": 0,
+      "totalMessages": 4,
+      "errorMessages": [],
+      "hasContactInfo": true,
+      "hasWhatsApp": true,
+      "qualityScore": 5,
+      "notes": "Models: Minimalista, Minimalista con Siding, Cabaña Entablonada, Cabaña Machimbrada Clásica, Chalet Línea Ladrillo, Chalet Premoldeado Línea Canadiense con Siding, Modelo de vivienda pequeña, Modelo de vivienda familiar",
+      "conversation": [
+        {
+          "role": "assistant",
+          "content": "¡Hola! Soy Sofia, asesora de Viviendas Rolón. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto."
+        },
+        {
+          "role": "user",
+          "content": "Hola, estoy buscando una casa prefabricada. ¿Qué modelos tienen disponibles?"
+        },
+        {
+          "role": "assistant",
+          "content": "Tenemos una gama amplia de Modelos prefabricados, todos personalizables en medidas y distribución. Por ejemplo, trabajamos con opciones como **Minimalista**, **Minimalista con Siding**, **Cabaña Entablonada**, **Cabaña Machimbrada Clásica**, **Chalet Línea Ladrillo** y **Chalet Premoldeado Línea Canadiense con Siding**, además de nuestro **Modelo de vivienda pequeña** (ideal para 1 o 2 personas, eficiente energéticamente) y **Modelo de vivienda familiar** (ambientes amplios y diseño moderno). Todos se pueden adaptar incluso para terrazas o azoteas y se pueden financiar.  \n\nPara orientarte mejor, ¿qué tipo de Modelos estás buscando: algo pequeño para fin de semana, una vivienda familiar grande, o algo intermedio?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa el modelo Minimalista. ¿Cuánto sale? ¿Qué incluye?"
+        },
+        {
+          "role": "assistant",
+          "content": "El **Modelo Minimalista** no lo tengo con precio actualizado cargado, así que para el valor al día de hoy te sugiero escribir por WhatsApp al **11 4066-7109** y te pasan la cotización y opciones de financiación.  \n\nEste modelo **Minimalista** incluye:  \n- Exterior en **placas de fibrocemento lisas** y interior en **placas de roca de yeso** (doble placa interior en ambas caras de los paneles).  \n- **Cielorraso de madera machimbrada nacional**.  \n- Baño y frente de cocina revestidos en fibrocemento liso.  \n- **Panel sanitario en termofusión** para agua fría y caliente.  \n- Caños y cajas para instalación eléctrica (sin cables ni llaves).  \n- **Puerta de entrada metálica doble chapa inyectada 0,80 x 2,00**, puertas placa en baño y 2 dormitorios.  \n- Ventanas de aluminio blanco con vidrio entero y **rejas**.  \n- Techo de chapa galvanizada cal. 27, cumbrera metálica y caída a un agua, con apliques de tablero frontales y laterales.  \n\n¿Ya tenés terreno y en qué zona sería la instalación? Así te indico también tiempos estimados y cómo se organiza el montaje."
+        },
+        {
+          "role": "user",
+          "content": "¿Cuánto tiempo demora la entrega una vez que se confirma? ¿Hacen entregas en Buenos Aires?"
+        },
+        {
+          "role": "assistant",
+          "content": "Instalamos en **cualquier punto del país**, así que en Buenos Aires (CABA o provincia) llegamos sin problema.  \n\nLos plazos exactos dependen del Modelo, medidas y agenda de fábrica, pero con construcción prefabricada de Rolón tenés una **ejecución mucho más rápida que la obra húmeda tradicional** (el sistema está pensado justamente para acortar tiempos y programar la obra). No tengo por acá el cronograma en días exactos, así que para un estimado real de entrega de un **Minimalista** en tu zona te conviene escribir al WhatsApp **11 4066-7109** y te pasan fecha tentativa según disponibilidad.  \n\n¿Para cuándo la necesitarías aproximadamente, este año o ya pensando en más adelante?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa, ¿cómo puedo contactarlos? ¿Tienen WhatsApp?"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenísimo que te interese, estás a un paso de arrancar el proyecto.  \n\nPodés contactarnos por:\n- **WhatsApp / Teléfono:** **11 4066-7109**  \n- **Teléfono fijo:** 11 4952-5488  \n- **Email:** **info@viviendasrolon.com**  \n\nSi querés, dejame tu localidad y un teléfono y le pido a un asesor que te contacte para avanzar con el Modelo Minimalista y la financiación."
+        }
+      ]
+    },
+    {
+      "company": "Gauros Viviendas",
+      "url": "https://gaurosviviendas.com.ar/",
+      "status": "OK",
+      "scrapingTimeMs": 44566,
+      "companyNameDetected": "Gauros Viviendas",
+      "modelsFound": [],
+      "garbageDetected": [],
+      "noInfoResponses": 0,
+      "totalMessages": 4,
+      "errorMessages": [],
+      "hasContactInfo": true,
+      "hasWhatsApp": true,
+      "qualityScore": 4,
+      "notes": "",
+      "conversation": [
+        {
+          "role": "assistant",
+          "content": "¡Hola! Soy Sofia, asesora de Gauros Viviendas. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto."
+        },
+        {
+          "role": "user",
+          "content": "Hola, estoy buscando una casa prefabricada. ¿Qué modelos tienen disponibles?"
+        },
+        {
+          "role": "assistant",
+          "content": "Disculpá, hubo un problema. ¿Podés repetir tu consulta?"
+        },
+        {
+          "role": "user",
+          "content": "¿Pueden darme más detalles sobre las opciones que manejan? Me interesa saber superficies y qué incluyen."
+        },
+        {
+          "role": "assistant",
+          "content": "Disculpá, hubo un problema. ¿Podés repetir tu consulta?"
+        },
+        {
+          "role": "user",
+          "content": "¿Cuánto demora todo el proceso desde que arranco hasta que me entregan la casa?"
+        },
+        {
+          "role": "assistant",
+          "content": "En Gauros trabajamos con viviendas industrializadas, así que los tiempos son mucho más cortos que en la construcción tradicional. La producción de la casa en planta va de 7 a 14 días según la tipología, y luego el montaje en tu terreno se completa en aproximadamente una semana más, siempre que la platea de hormigón ya esté lista.  \n\nPara orientarte mejor y ver qué tipología se adapta a vos (Style, Vanguard, Design, Sense, Advance, Cabañas, Quincho, etc.), ¿para cuándo estás pensando tener la casa lista más o menos?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa, ¿cómo puedo contactarlos? ¿Tienen WhatsApp?"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenísimo que te interese avanzar 😊.  \nPodés contactarnos por WhatsApp al **+54 9 351 360 0347** (o haciendo clic desde la web en el ícono de WhatsApp), o por mail a **prensa@cariverplate.com.ar**.  \n\nSi querés, decime tu nombre y provincia y te indico qué sucursal o asesor te queda mejor para que sigan todo el proceso con vos."
+        }
+      ]
+    },
+    {
+      "company": "Viviendas Apolo",
+      "url": "https://viviendasapolo.com.ar/",
+      "status": "OK",
+      "scrapingTimeMs": 41676,
+      "companyNameDetected": "Viviendas Apolo",
+      "modelsFound": [
+        "Vivienda Industrializada 25m²",
+        "Base/Platea de hormigón incluida",
+        "Vivienda Industrializada 40m²",
+        "Vivienda Industrializada 48m²",
+        "con galería",
+        "Vivienda Minimalista 23m²",
+        "Vivienda Minimalista 34m²",
+        "Vivienda Minimalista 68m²"
+      ],
+      "garbageDetected": [],
+      "noInfoResponses": 1,
+      "totalMessages": 4,
+      "errorMessages": [],
+      "hasContactInfo": true,
+      "hasWhatsApp": true,
+      "qualityScore": 5,
+      "notes": "Models: Vivienda Industrializada 25m², Base/Platea de hormigón incluida, Vivienda Industrializada 40m², Vivienda Industrializada 48m², con galería, Vivienda Minimalista 23m², Vivienda Minimalista 34m², Vivienda Minimalista 68m² | No-info: 1/4",
+      "conversation": [
+        {
+          "role": "assistant",
+          "content": "¡Hola! Soy Sofia, asesora de Viviendas Apolo. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto."
+        },
+        {
+          "role": "user",
+          "content": "Hola, estoy buscando una casa prefabricada. ¿Qué modelos tienen disponibles?"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenísimo que estés buscando casa prefabricada, es justo lo que hacemos en Viviendas Apolo.  \nHoy tenemos estos Modelos principales:\n\n- **Vivienda Industrializada 25m²** – 1 dormitorio + **Base/Platea de hormigón incluida**.  \n- **Vivienda Industrializada 40m²** – 2 dormitorios, **incluye accesorios** completos.  \n- **Vivienda Industrializada 48m²** – 2 dormitorios **con galería**, también con accesorios.  \n- **Vivienda Minimalista 23m²** – 1 dormitorio + **Base/Platea de hormigón incluida**.  \n- **Vivienda Minimalista 34m²** – 2 dormitorios, incluye accesorios.  \n- **Vivienda Minimalista 68m²** – 3 dormitorios **con galería**, incluye accesorios.\n\nAdemás trabajamos otros planos estándar (Modelos 20, 23, 25, 26, 30, 34, 36, 40C, 42A, 42B, etc.) y también hacemos diseños a medida. ¿Para cuántas personas o cuántos dormitorios estás pensando la vivienda?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa el modelo Vivienda Industrializada 25m². ¿Cuánto sale? ¿Qué incluye?"
+        },
+        {
+          "role": "assistant",
+          "content": "Genial elección, la **Vivienda Industrializada 25m²** es de las más pedidas para empezar.  \nSobre el **precio**, no aparece publicado ni en el catálogo ni en las ofertas, así que **no tengo el valor actualizado cargado**; te recomiendo consultarlo por WhatsApp al **351-6858968** donde te pasan precio al día y opciones de financiación.\n\nLo que sí tenemos bien definido es **qué incluye** este tipo de vivienda industrializada de 1 dormitorio + base de hormigón:  \n- **Base/Platea de hormigón incluida** en el precio de la oferta.  \n- Paredes con **fibrocemento exterior** y **revestimiento interior tipo durlock/madera**, según modelo.  \n- **Techo de chapa sincalum trapezoidal**, cielorraso de machimbre con opción de aislante de lana de vidrio.  \n- **Ventanas de aluminio** vidrio entero con rejas, puerta de ingreso metálica doble chapa inyectada, puertas placas interiores.  \n- **Instalación eléctrica** (caños corrugados y cajas colocadas, sin cableado) e **instalación sanitaria** (caños de agua fría/caliente empotrados en baño y cocina, cuadro de ducha) + juego de **sanitarios 4 piezas** (sin colocación).  \n\nSi querés, además del 25m² te puedo comparar con el **Modelo 20 o Modelo 23** de planos (también de 1 dormitorio) para que veas cuál se adapta mejor a vos."
+        },
+        {
+          "role": "user",
+          "content": "¿Cuánto tiempo demora la entrega una vez que se confirma? ¿Hacen entregas en Buenos Aires?"
+        },
+        {
+          "role": "assistant",
+          "content": "Te explico: los tiempos exactos dependen de la carga de fábrica y la zona, pero nuestras viviendas industrializadas se entregan en plazos **rápidos**, justamente porque trabajamos sistema prefabricado; en condiciones normales suele rondar **unas pocas semanas** desde que se confirma la compra y se coordina la base de hormigón.  \n\nEn cuanto a la zona, sí, **hacemos entregas a todo el país**, incluida la provincia de **Buenos Aires**.  \nComo el plazo concreto puede variar según la localidad y el acceso al terreno, te sugeriría escribirnos por WhatsApp al **351-6858968** así te confirman tiempo estimado para tu dirección puntual."
+        },
+        {
+          "role": "user",
+          "content": "Me interesa, ¿cómo puedo contactarlos? ¿Tienen WhatsApp?"
+        },
+        {
+          "role": "assistant",
+          "content": "Perfecto, estás re bien encaminado entonces.  \nPodés contactarnos así:\n\n- **WhatsApp**: **351-6858968** (es la forma más rápida, ahí te pasan precios, financiación y tiempos de entrega).  \n- **Teléfono fijo**: (0351) 423-9263  \n- **Email**: info@viviendasapolo.com.ar  \n- **Oficina**: Av. Colón 1695, Córdoba Capital.\n\nSi querés, dejame acá tu **nombre, localidad y teléfono** y le pido a un asesor que te contacte directamente por WhatsApp para avanzar con la Vivienda Industrializada 25m²."
+        }
+      ]
+    },
+    {
+      "company": "La Casa Mia",
+      "url": "https://lacasamia.com.ar/",
+      "status": "OK",
+      "scrapingTimeMs": 42463,
+      "companyNameDetected": "Constructora La Casa Mía",
+      "modelsFound": [],
+      "garbageDetected": [],
+      "noInfoResponses": 0,
+      "totalMessages": 4,
+      "errorMessages": [],
+      "hasContactInfo": true,
+      "hasWhatsApp": true,
+      "qualityScore": 4,
+      "notes": "",
+      "conversation": [
+        {
+          "role": "assistant",
+          "content": "¡Hola! Soy Sofia, asesora de Constructora La Casa Mía. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto."
+        },
+        {
+          "role": "user",
+          "content": "Hola, estoy buscando una casa prefabricada. ¿Qué modelos tienen disponibles?"
+        },
+        {
+          "role": "assistant",
+          "content": "Disculpá, hubo un problema. ¿Podés repetir tu consulta?"
+        },
+        {
+          "role": "user",
+          "content": "¿Pueden darme más detalles sobre las opciones que manejan? Me interesa saber superficies y qué incluyen."
+        },
+        {
+          "role": "assistant",
+          "content": "Disculpá, hubo un problema. ¿Podés repetir tu consulta?"
+        },
+        {
+          "role": "user",
+          "content": "¿Cuánto demora todo el proceso desde que arranco hasta que me entregan la casa?"
+        },
+        {
+          "role": "assistant",
+          "content": "Nos manejamos con procesos bastante ágiles porque trabajamos en Steel Frame y Wood Framing, pero el plazo exacto depende del modelo y de la zona. Como referencia, desde que está firmado el contrato y aprobado el proyecto, una casa estándar suele estar entre aprox. 60 y 120 días corridos, según metros, terminaciones y accesibilidad del terreno.  \n\nPara orientarte mejor con plazos reales: ¿para cuándo la necesitarías y qué tipo de Viviendas, casas, cabañas, proyectos te interesan más (por ejemplo Casa Americana de 60m2, Cabaña de 60m2, Casa Minimalista de 72/78/98m2, o alguna Premium como la Casa Premium Classic de 122m2 o 146m2)?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa, ¿cómo puedo contactarlos? ¿Tienen WhatsApp?"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenísimo que te interese avanzar 😊. Sí, tienen WhatsApp directo desde la web: en lacasamia.com.ar abajo a la derecha vas a ver el botón **“Contactar por WhatsApp”** y ahí te atiende un asesor comercial.  \n\nSi preferís por escrito también podés escribir a **info@lacasamia.com.ar**. ¿Querés que antes te resuma 2 o 3 modelos que encajen mejor según la superficie que tengas en mente?"
+        }
+      ]
+    },
+    {
+      "company": "Viviendas Tecnohouse",
+      "url": "https://www.viviendastecnohouse.com.ar/",
+      "status": "OK",
+      "scrapingTimeMs": 32946,
+      "companyNameDetected": "Viviendas Tecnohouse",
+      "modelsFound": [
+        "Dylan (27 m²):",
+        "Bastian (32 m²):",
+        "Isabella (40 m²):",
+        "Sara (39 m²):",
+        "Ander 51 (53 m²):",
+        "Maradona (55 m²):",
+        "Fernis 1060 (64 m²):",
+        "Emilia (64 m²):",
+        "Beltrán (58 m²):",
+        "Bautista (79 m²):",
+        "Catalina / “Con 81 m²” (81 m²):",
+        "Trapani (100 m²):",
+        "Minimalista:",
+        "Quincho (ej. Olivia):",
+        "modelos personalizados",
+        "sobre terraza"
+      ],
+      "garbageDetected": [],
+      "noInfoResponses": 1,
+      "totalMessages": 4,
+      "errorMessages": [],
+      "hasContactInfo": true,
+      "hasWhatsApp": true,
+      "qualityScore": 5,
+      "notes": "Models: Dylan (27 m²):, Bastian (32 m²):, Isabella (40 m²):, Sara (39 m²):, Ander 51 (53 m²):, Maradona (55 m²):, Fernis 1060 (64 m²):, Emilia (64 m²):, Beltrán (58 m²):, Bautista (79 m²):, Catalina / “Con 81 m²” (81 m²):, Trapani (100 m²):, Minimalista:, Quincho (ej. Olivia):, modelos personalizados, sobre terraza | No-info: 1/4",
+      "conversation": [
+        {
+          "role": "assistant",
+          "content": "¡Hola! Soy Sofia, asesora de Viviendas Tecnohouse. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto."
+        },
+        {
+          "role": "user",
+          "content": "Hola, estoy buscando una casa prefabricada. ¿Qué modelos tienen disponibles?"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenísimo que estés buscando casa prefabricada, trabajamos justo eso 😊.  \nEn Tecnohouse tenemos varios modelos en hormigón premoldeado, por ejemplo:\n\n- **Dylan (27 m²):** 2 dormitorios, baño completo, cocina-comedor integrado y porche, ideal como primera vivienda o casa de fin de semana.  \n- **Bastian (32 m²):** 2 dormitorios, baño, cocina-comedor y porche, muy funcional y compacto.  \n- **Isabella (40 m²):** 2 dormitorios, baño, cocina-comedor y porche, diseño moderno y súper eficiente.  \n- **Sara (39 m²):** 2 dormitorios, baño, cocina-comedor y porche frontal, muy acogedora.  \n- **Ander 51 (53 m²):** 2 dormitorios, baño, cocina abierta y living-comedor amplio.  \n- **Maradona (55 m²):** 3 dormitorios (uno en suite), 2 baños, cocina y living-comedor integrado.  \n- **Fernis 1060 (64 m²):** 2 dormitorios, baño, cocina-comedor, living y galería cochera/porch.  \n- **Emilia (64 m²):** 3 dormitorios, cocina, living-comedor y baño completo.  \n- **Beltrán (58 m²):** 3 dormitorios, cocina separada, living-comedor luminoso y porch frontal.  \n- **Bautista (79 m²):** 3 dormitorios, 2 baños, cocina, living-comedor y lavadero.  \n- **Catalina / “Con 81 m²” (81 m²):** modelo familiar amplio, moderno, con espacios integrados.  \n- **Trapani (100 m²):** 3 dormitorios, baño, living-comedor grande, cocina, lavadero y galería cochera.  \n- **Minimalista:** línea de casas de diseño simple y moderno, con espacios abiertos.  \n- **Quincho (ej. Olivia):** quincho con cocina-comedor, baño, galería y opción de dormitorio.  \n\nTambién hacemos **modelos personalizados**, complejos turísticos y construcción **sobre terraza**.  \nPara orientarte mejor, ¿qué tipo de modelo estás buscando: algo chico tipo 1–2 dormitorios o una casa más grande para familia?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa el modelo Dylan (27 m²):. ¿Cuánto sale? ¿Qué incluye?"
+        },
+        {
+          "role": "assistant",
+          "content": "El Modelo **Dylan (27 m²)** es una casita súper práctica y completa: incluye **2 dormitorios**, **baño completo**, **cocina-comedor integrado** y **porche exterior**. Está construida con sistema industrializado en hormigón premoldeado, con buenas aberturas, diseño moderno y pensada para optimizar cada metro (ideal como primera vivienda o casa de fin de semana).\n\nSobre el precio: **no tengo los valores actualizados cargados**, porque en la web no figuran números de lista. Te sugiero consultarlo por WhatsApp al **2226 460066** (Sucursal Cañuelas) o al **0800-555-8558**, así te pasan el valor vigente y opciones de financiación en cuotas fijas en pesos.  \n¿Ya tenés terreno? Si querés, según la zona te indico qué sucursal te conviene para avanzar."
+        },
+        {
+          "role": "user",
+          "content": "¿Cuánto tiempo demora la entrega una vez que se confirma? ¿Hacen entregas en Buenos Aires?"
+        },
+        {
+          "role": "assistant",
+          "content": "El tiempo de ejecución de la vivienda es de **hasta 90 días** reales desde que se avanza con el proyecto y se cumplen las condiciones de inicio de obra (contrato, platea lista, etc.), ya que todo el sistema es industrializado y se fabrica en planta.  \n\nSí, trabajamos perfectamente en **Buenos Aires**: tenemos sucursales en **CABA, Cañuelas, La Plata, Junín, Mar del Plata, Villa María (Córdoba) y más**, y construimos en **Zona Norte, Zona Sur y CABA** sin problema.  \nPara coordinar bien plazos y logística en tu caso puntual, ¿en qué localidad de Buenos Aires tenés o pensás tener el terreno?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa, ¿cómo puedo contactarlos? ¿Tienen WhatsApp?"
+        },
+        {
+          "role": "assistant",
+          "content": "Genial que te interese avanzar 😊.  \nPodés contactarnos por varios medios:\n\n- **WhatsApp directo:** 📲 **2226 460066** (Sucursal Cañuelas, atienden consultas generales y de modelos como Dylan).  \n- **Teléfono 0800:** **0800-555-8558**  \n- **Formulario web:** en la sección **“Contacto”** de nuestra página seleccionás la sucursal más cercana y dejás tus datos.  \n\nSi querés, decime de qué zona sos y te digo qué sucursal específica te conviene escribir por WhatsApp."
+        }
+      ]
+    },
+    {
+      "company": "FullHouse Vivienda",
+      "url": "https://fullhousevivienda.com.ar/",
+      "status": "OK",
+      "scrapingTimeMs": 109462,
+      "companyNameDetected": "FullHouse Vivienda",
+      "modelsFound": [],
+      "garbageDetected": [],
+      "noInfoResponses": 0,
+      "totalMessages": 4,
+      "errorMessages": [],
+      "hasContactInfo": true,
+      "hasWhatsApp": true,
+      "qualityScore": 4,
+      "notes": "",
+      "conversation": [
+        {
+          "role": "assistant",
+          "content": "¡Hola! Soy Sofia, asesora de FullHouse Vivienda. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto."
+        },
+        {
+          "role": "user",
+          "content": "Hola, estoy buscando una casa prefabricada. ¿Qué modelos tienen disponibles?"
+        },
+        {
+          "role": "assistant",
+          "content": "Disculpá, hubo un problema. ¿Podés repetir tu consulta?"
+        },
+        {
+          "role": "user",
+          "content": "¿Pueden darme más detalles sobre las opciones que manejan? Me interesa saber superficies y qué incluyen."
+        },
+        {
+          "role": "assistant",
+          "content": "Disculpá, hubo un problema. ¿Podés repetir tu consulta?"
+        },
+        {
+          "role": "user",
+          "content": "¿Cuánto demora todo el proceso desde que arranco hasta que me entregan la casa?"
+        },
+        {
+          "role": "assistant",
+          "content": "Te cuento: la estructura de la casa prefabricada Wood Frame la tenés lista en obra en unos 20 a 30 días, según el modelo y los m² que elijas. Si es modalidad Obra en Gris (sin terminaciones finales) se cumple ese plazo; si la querés Llave en Mano completa, el proceso total suele ir de 60 días a unos 3 meses en modelos grandes como la Casa Minimalista 3 Dormitorios 74m2+33m2 Total 107m2.  \n\nPara orientarte mejor con tiempos reales: ¿qué superficie o cantidad de dormitorios estás pensando, algo tipo Casa Minimalista 2 Dormitorios 50.50m2+18m2 Total 68.50m2 o más grande como una Vivienda Minimalista 3 Dormitorios 59m2+19m2 Total 78m2?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa, ¿cómo puedo contactarlos? ¿Tienen WhatsApp?"
+        },
+        {
+          "role": "assistant",
+          "content": "Sí, claro, tenemos WhatsApp y atención directa.  \nPodés escribirnos al WhatsApp 3517600068 o llamar al 0351 7600068, y también enviar un mail a info@fullhousevivienda.com.ar.  \n\nSi querés, decime tu nombre y localidad y te digo exactamente qué modelos (Minimalistas, Americanas, Cabañas o Duplex) se adaptan mejor a vos antes de que hables con un asesor."
+        }
+      ]
+    },
+    {
+      "company": "Viviendas El Fuerte",
+      "url": "https://elfuerte.com.ar/",
+      "status": "OK",
+      "scrapingTimeMs": 39483,
+      "companyNameDetected": "Viviendas El Fuerte",
+      "modelsFound": [
+        "Modelo QB 36m²",
+        "2 habitaciones",
+        "entrega inmediata",
+        "sostenibilidad",
+        "Casa Serrana",
+        "diseño moderno",
+        "eficiencia energética",
+        "Minicaba",
+        "compactas y económicas",
+        "Premium Cabins",
+        "lujo",
+        "aislamiento térmico",
+        "Casa Prefabricada",
+        "Casa Modular",
+        "Además trabajamos **Casa Prefabricada** tradicional"
+      ],
+      "garbageDetected": [],
+      "noInfoResponses": 0,
+      "totalMessages": 4,
+      "errorMessages": [],
+      "hasContactInfo": true,
+      "hasWhatsApp": true,
+      "qualityScore": 5,
+      "notes": "Models: Modelo QB 36m², 2 habitaciones, entrega inmediata, sostenibilidad, Casa Serrana, diseño moderno, eficiencia energética, Minicaba, compactas y económicas, Premium Cabins, lujo, aislamiento térmico, Casa Prefabricada, Casa Modular, Además trabajamos **Casa Prefabricada** tradicional",
+      "conversation": [
+        {
+          "role": "assistant",
+          "content": "¡Hola! Soy Sofia, asesora de Viviendas El Fuerte. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto."
+        },
+        {
+          "role": "user",
+          "content": "Hola, estoy buscando una casa prefabricada. ¿Qué modelos tienen disponibles?"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenísimo que estés buscando una casa prefabricada, te cuento los modelos que trabajamos en Viviendas El Fuerte:  \n\n- **Modelo QB 36m²**: casa prefabricada de 36 m² con **2 habitaciones**, ideal como primera vivienda, con **entrega inmediata**, diseños personalizados, opciones de financiamiento y enfoque en **sostenibilidad**.  \n- **Casa Serrana**: pensada para zonas de sierra/montaña, con **diseño moderno**, muy buena **eficiencia energética** y materiales de alta calidad.  \n- **Minicaba**: cabañitas **compactas y económicas**, perfectas para fin de semana o alquiler turístico, fáciles de transportar.  \n- **Premium Cabins**: cabañas de **lujo**, con materiales premium, alto **aislamiento térmico** y diseño totalmente personalizado.  \n- Además trabajamos **Casa Prefabricada** tradicional y **Casa Modular**, que permiten distintos tamaños y configuraciones según lo que necesas.  \n\nPara orientarte mejor, ¿qué tipo de Modelos estás buscando: algo chico como una Minicaba/QB o algo más grande tipo Premium Cabins o Serrana?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa el modelo Modelo QB 36m². ¿Cuánto sale? ¿Qué incluye?"
+        },
+        {
+          "role": "assistant",
+          "content": "El **Modelo QB 36m² con 2 habitaciones** ahora está en promo con **entrega inmediata desde solo $6.166.413**, y se puede complementar con **cómodas cuotas** mediante nuestras opciones de financiación.  \n\nIncluye:  \n- **36 m² cubiertos**, distribuidos en **2 habitaciones**, estar-comedor y espacio de cocina según diseño.  \n- Sistema de **casa prefabricada** lista para montar en tu terreno, con **diseño personalizado** dentro del modelo.  \n- Enfoque en **sostenibilidad** y eficiencia (materiales pensados para buen aislamiento y durabilidad).  \n- **Entrega rápida** (promocionada como “entrega inmediata”) y acompañamiento técnico durante el proceso.  \n\nPara ver si encaja bien con vos: ¿ya tenés terreno? ¿En qué zona sería la instalación?"
+        },
+        {
+          "role": "user",
+          "content": "¿Cuánto tiempo demora la entrega una vez que se confirma? ¿Hacen entregas en Buenos Aires?"
+        },
+        {
+          "role": "assistant",
+          "content": "En el Modelo QB 36 m² estamos trabajando con **entrega inmediata**, es decir, una vez confirmada la compra y la documentación, se agenda el envío y el montaje en un plazo muy corto (los tiempos exactos los coordinamos según zona y logística en el momento de la reserva).  \n\nEn la info que tengo no figura detallado por provincias si llegamos específicamente a Buenos Aires, pero como trabajamos con **entrega en todo el país**, es muy probable que sí; para confirmarte flete y tiempos exactos para Buenos Aires te sugiero escribir directo al WhatsApp **5493515122946**.  \n\n¿Para cuándo te gustaría tener instalada la vivienda aproximadamente?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa, ¿cómo puedo contactarlos? ¿Tienen WhatsApp?"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenísimo que te interese, estás a un paso de tener la QB 36m².  \n\nPodés contactarnos por:  \n- **WhatsApp / Celular**: **+54 9 351 512 2946**  \n- **Teléfono**: 351 512 2946  \n- **Mail**: **ventas@elfuerte.com.ar**  \n- O acercarte a nuestro local en **Av. Colón 4435, Córdoba Capital**.  \n\nSi querés, dejame un número y horario y le pido a un asesor que te contacte para avanzar con la financiación y la reserva."
+        }
+      ]
+    },
+    {
+      "company": "Viviendas El Calafate",
+      "url": "https://www.viviendaselcalafate.com.ar/",
+      "status": "OK",
+      "scrapingTimeMs": 32518,
+      "companyNameDetected": "Viviendas el Calafate",
+      "modelsFound": [
+        "VIVIENDA AMERICANA",
+        "LADRILLOS A LA VISTA",
+        "LADRILLO ORO",
+        "CHALET MIXTO",
+        "25 m² tiene un anticipo de $91.066",
+        "LLAVE EN MANO",
+        "Americano",
+        "Ladrillos a la vista",
+        "Mixto",
+        "Llave en mano"
+      ],
+      "garbageDetected": [],
+      "noInfoResponses": 2,
+      "totalMessages": 4,
+      "errorMessages": [],
+      "hasContactInfo": true,
+      "hasWhatsApp": true,
+      "qualityScore": 4,
+      "notes": "Models: VIVIENDA AMERICANA, LADRILLOS A LA VISTA, LADRILLO ORO, CHALET MIXTO, 25 m² tiene un anticipo de $91.066, LLAVE EN MANO, Americano, Ladrillos a la vista, Mixto, Llave en mano | No-info: 2/4",
+      "conversation": [
+        {
+          "role": "assistant",
+          "content": "¡Hola! Soy Sofia, asesora de Viviendas el Calafate. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto."
+        },
+        {
+          "role": "user",
+          "content": "Hola, estoy buscando una casa prefabricada. ¿Qué modelos tienen disponibles?"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenísimo, te cuento los modelos que tenemos en Viviendas el Calafate 😊  \nTrabajamos principalmente con:\n\n- **VIVIENDA AMERICANA**: estilo americano, paredes exteriores en Superboard con revestimiento tipo tarquini, aberturas de aluminio con rejas, base de hormigón H21 incluida y planos desde 25 m² hasta 120 m².  \n- **LADRILLOS A LA VISTA**: chalet **LADRILLO ORO**, todo el perímetro revestido en ladrillo media vista, misma estructura robusta (muros de 2,60 m y 3” de espesor), también con base de hormigón incluida.  \n- **CHALET MIXTO**: combina americano + ladrillo a la vista; por ejemplo, el de **25 m² tiene un anticipo de $91.066**, y hay medidas hasta 90 m² con anticipos escalonados.  \n- **LLAVE EN MANO**: casas totalmente equipadas, con contrapiso, cerámicos, baño completo, instalación eléctrica y de agua, listas para mudarte.\n\nAdemás construimos en hormigón premoldeado, con financiación propia y flete + armado sin cargo hasta 100 km.  \nPara afinar mejor, ¿qué tipo de modelo estás buscando: algo más **Americano**, **Ladrillos a la vista**, **Mixto** o una solución **Llave en mano**?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa el modelo VIVIENDA AMERICANA. ¿Cuánto sale? ¿Qué incluye?"
+        },
+        {
+          "role": "assistant",
+          "content": "La **VIVIENDA AMERICANA** (modelo Americano Oro) incluye:  \n- **Contrapiso/base**: hormigón elaborado H21 con malla metálica y lona de 200 micrones, ya incluido.  \n- **Paredes exteriores**: placas Superboard (Eternit) con **revestimiento plástico tipo tarquini** exterior (pintura y mano de obra incluidas).  \n- **Paredes interiores**: placas de roca de yeso (Durlock), muros internos y externos de **2,60 m de altura y 3\" de espesor**, con aislantes térmicos y acústicos.  \n- **Techo**: chapa trapezoidal de acero zincado (Siderar).  \n- **Aberturas**: ventanas de aluminio blanco/negro, corredizas, con **rejas y vidrios incluidos**.  \n- **Puertas**: puerta exterior negra de aluminio inyectada con barral + puertas placa interiores.  \n- **Instalaciones**: cañerías y cajas de luz para toda la vivienda; caños de agua fría y caliente por termofusión para baño y cocina.  \n- **Baño**: revestido en cemento, preparado para colocar cerámicos, con cañerías de agua fría/caliente para todos los artefactos.\n\nSobre el **precio**: en el material que tengo no figura el valor actualizado de la VIVIENDA AMERICANA por m² ni por modelo puntual. No tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp al **(011) 5292-1019** o **(011) 5436-2699**, donde te pasan anticipo, cuotas y promos vigentes.  \n¿Ya tenés terreno? ¿De cuántos m² de casa estarías pensando (por ejemplo 36, 49, 63 m²) así te orientamos mejor con el diseño?"
+        },
+        {
+          "role": "user",
+          "content": "¿Cuánto tiempo demora la entrega una vez que se confirma? ¿Hacen entregas en Buenos Aires?"
+        },
+        {
+          "role": "assistant",
+          "content": "En plazos, trabajamos con construcción industrializada, así que una vez confirmado el proyecto y el anticipo, el proceso suele ser **rápido comparado con la obra tradicional**; pero en la info que tengo no figura un plazo exacto en días/semanas para la VIVIENDA AMERICANA. No tengo ese dato de tiempo de entrega cargado, te sugiero consultarlo por WhatsApp para que te digan el plazo según medida y agenda de montaje.\n\nSí, **hacemos entregas y construcción en Buenos Aires**, de hecho nuestra casa central está en **San Miguel** y tenemos sucursales en **San Miguel, Pilar y Luján**, con **flete y armado sin cargo hasta 100 km**.  \n¿En qué zona de Buenos Aires tenés el terreno (partido/localidad)? Así te digo qué sucursal te queda más cómoda para ver modelos y avanzar."
+        },
+        {
+          "role": "user",
+          "content": "Me interesa, ¿cómo puedo contactarlos? ¿Tienen WhatsApp?"
+        },
+        {
+          "role": "assistant",
+          "content": "Genial que te interese, vamos muy bien 😊  \nPodés contactarnos así:\n\n- **Teléfonos (también WhatsApp)**: **(011) 5292-1019** y **(011) 5436-2699**  \n- **Email**: **ventascentral@viviendaselcalafate.com.ar**  \n- **Casa Central**: Paunero 1646 6° \"A\" - San Miguel, Buenos Aires.\n\nSi querés, decime **nombre, zona y un celular**, y le pido a un asesor que te contacte por WhatsApp para pasarte precios y una propuesta según los m² que estás buscando."
+        }
+      ]
+    },
+    {
+      "company": "Dice Containers",
+      "url": "https://dicecontainers.com.ar/",
+      "status": "OK",
+      "scrapingTimeMs": 31694,
+      "companyNameDetected": "Dice Containers",
+      "modelsFound": [
+        "Casa Container 15m²",
+        "Casa Container 30m²",
+        "Casa Container 60m²",
+        "Casa Container 90m2"
+      ],
+      "garbageDetected": [],
+      "noInfoResponses": 1,
+      "totalMessages": 4,
+      "errorMessages": [],
+      "hasContactInfo": true,
+      "hasWhatsApp": true,
+      "qualityScore": 5,
+      "notes": "Models: Casa Container 15m², Casa Container 30m², Casa Container 60m², Casa Container 90m2 | No-info: 1/4",
+      "conversation": [
+        {
+          "role": "assistant",
+          "content": "¡Hola! Soy Sofia, asesora de Dice Containers. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto."
+        },
+        {
+          "role": "user",
+          "content": "Hola, estoy buscando una casa prefabricada. ¿Qué modelos tienen disponibles?"
+        },
+        {
+          "role": "assistant",
+          "content": "Hola, qué bueno que estés buscando casa prefabricada, trabajamos justo eso pero en sistema de Casa Container habilitable.  \nLos modelos estándar que tenemos son:  \n- **Casa Container 15m²**: monoambiente con 1 baño, ideal estudio o tiny house.  \n- **Casa Container 30m²**: 2 ambientes, 1 dormitorio + cocina-comedor y 1 baño.  \n- **Casa Container 60m²**: 4 ambientes, 2 dormitorios, living-comedor, cocina y 1 baño.  \n- **Casa Container 90m2**: 5 ambientes, 3 dormitorios, living-comedor amplio, cocina y 2 baños.\n\nPara orientarte mejor, ¿qué tipo de Casa Container estás buscando: algo chico tipo monoambiente, 1 dormitorio, o ya pensando en 2/3 dormitorios?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa el modelo Casa Container 15m². ¿Cuánto sale? ¿Qué incluye?"
+        },
+        {
+          "role": "assistant",
+          "content": "Perfecto, el **Casa Container 15m²** es ideal para empezar o como anexo, buena elección.  \nEl precio publicado es:  \n- **Contado:** USD 18.369 + IVA 10,5%  \n- **O financiación:**  \n  - Adelanto de **USD 9.184 + IVA 10,5% + 72 cuotas de USD 247 + IVA 10,5%**,  \n  - o bien **72 cuotas de USD 494 + IVA 10,5%** (sin adelanto).\n\n**¿Qué incluye el Casa Container 15m²?**  \n- **Medidas del módulo:** Contenedor de 20 pies – 6 m de largo x 2,43 m de ancho x 2,69 m de alto.  \n- **Ambientes:**  \n  - 1 monoambiente con:  \n    - Ventana de 0,8 x 2 m con persiana metálica corrediza y cierre interno.  \n    - Bajo mesada de 100 cm, mesada y alacena de 100 cm.  \n    - Ventana grande de 2,2 x 2,2 m con persianas metálicas.  \n    - Puerta de acceso de 0,8 x 2 m.  \n  - 1 baño completo con:  \n    - Inodoro con depósito exterior, bidetmatic, vanitory con espejo.  \n    - Receptáculo de ducha 1,20 x 0,70 m + media mampara de vidrio.  \n    - Calefón eléctrico y ventana de 0,50 x 1 m.  \n- **Terminaciones y equipamiento:**  \n  - Pintura exterior poliuretano color negro.  \n  - Aislación térmica con lana de vidrio + revestimiento interior en MDF 9 mm pintado.  \n  - Baño en durlock 9 mm pintado blanco.  \n  - Instalación de agua fría/caliente en caños de PVC por termofusión.  \n  - Instalación eléctrica embutida, tubos corrugados ignífugos, iluminación LED (2 plafones en cocina-comedor, 2 en baño), térmica y disyuntor, luces exteriores.  \n  - Pisos flotantes simil madera de 7 mm.  \n  - Aberturas de aluminio blanco línea Módena.  \n  - **Incluye 1 aire acondicionado frío/calor de 2000 fg.**  \n- **Servicio Dice Containers:**  \n  - Fabricación en planta especializada.  \n  - Entrega e instalación en todo el país.  \n  - Unidades 100% habilitables, con ingeniero, arquitecto y planos incluidos.\n\nPara ver si esta opción te cierra del todo, ¿ya tenés terreno? ¿En qué zona sería la instalación?"
+        },
+        {
+          "role": "user",
+          "content": "¿Cuánto tiempo demora la entrega una vez que se confirma? ¿Hacen entregas en Buenos Aires?"
+        },
+        {
+          "role": "assistant",
+          "content": "Las unidades se fabrican en planta en tiempos muy cortos comparado con la construcción tradicional; el plazo exacto de entrega del **Casa Container 15m²** depende de la cola de producción al momento de la reserva, pero en general se maneja en pocas semanas desde la confirmación y pago de la seña.  \nSí, **hacemos entrega e instalación en todo el país**, así que Buenos Aires está totalmente cubierto.\n\nPara coordinar mejor plazos y logística, ¿para cuándo estarías necesitando tener instalado el módulo en tu terreno de Buenos Aires?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa, ¿cómo puedo contactarlos? ¿Tienen WhatsApp?"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenísimo que te interese, damos casi toda la info y seguimiento por WhatsApp.  \nNo tengo el número cargado acá, pero lo encontrás directo en la web oficial de la empresa: **dicecontainers.com.ar** (apenas entrás, abajo a la derecha suele aparecer el botón de WhatsApp).\n\nSi querés, contame tu nombre y un celular con característica y te indico qué datos pasarle al asesor así ya te cotizan con plazo de entrega para tu caso puntual."
+        }
+      ]
+    },
+    {
+      "company": "Contenedores Argentina",
+      "url": "https://contenedoresargentina.com/",
+      "status": "OK",
+      "scrapingTimeMs": 81322,
+      "companyNameDetected": "Contenedores Argentina",
+      "modelsFound": [
+        "casas de contenedores",
+        "15 m² y 30 m²",
+        "aislación térmica"
+      ],
+      "garbageDetected": [],
+      "noInfoResponses": 2,
+      "totalMessages": 4,
+      "errorMessages": [],
+      "hasContactInfo": true,
+      "hasWhatsApp": true,
+      "qualityScore": 4,
+      "notes": "Models: casas de contenedores, 15 m² y 30 m², aislación térmica | No-info: 2/4",
+      "conversation": [
+        {
+          "role": "assistant",
+          "content": "¡Hola! Soy Sofia, asesora de Contenedores Argentina. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto."
+        },
+        {
+          "role": "user",
+          "content": "Hola, estoy buscando una casa prefabricada. ¿Qué modelos tienen disponibles?"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenísimo lo que estás buscando, trabajamos justamente con casas de contenedores hechas en acero Corten.  \nEn Contenedores Argentina tenemos **casas de contenedores** armadas a partir de módulos de **15 m² y 30 m²**, que se pueden combinar para armar desde un monoambiente compacto hasta viviendas más grandes, siempre con **aislación térmica**, materiales de calidad y posibilidad de ampliación futura.  \n\nSe adaptan al uso que necesites (vivienda permanente, cabaña, quincho, etc.), y se entregan listas para habitar.  \nPara ayudarte mejor, ¿ya tenés terreno? ¿En qué zona sería la casa?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa el modelo casas de contenedores. ¿Cuánto sale? ¿Qué incluye?"
+        },
+        {
+          "role": "assistant",
+          "content": "Perfecto, dentro del modelo **casas de contenedores** tenemos como referencia la **Casa 30 m²**, hecha a partir de contenedor marítimo (por ejemplo un **Container 40’ / 30 m² HC**) con estructura en **acero Corten**. Incluye: ais­lación térmica y acústica (**poliuretano o lana de vidrio**), paredes interiores en **PVC, melamina o machimbre**, pisos en **goma alto tránsito, flotante simil madera o SPC vinílico**, **aberturas de aluminio Módena o herrero**, instalación eléctrica completa con **iluminación LED** y opciones de **baño y kitchenette** según el diseño.\n\nNo tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp para que te pasen el valor según configuración (30 m², módulos gemelos, etc.) y nivel de terminación. ¿La idea es algo tipo **Casa 30 m²** como vivienda principal o pensás en combinar varios módulos para algo más grande?"
+        },
+        {
+          "role": "user",
+          "content": "¿Cuánto tiempo demora la entrega una vez que se confirma? ¿Hacen entregas en Buenos Aires?"
+        },
+        {
+          "role": "assistant",
+          "content": "Los plazos de entrega para las **casas de contenedores** van, según el proyecto, entre **30 y 90 días** desde que se confirma el pedido, porque se fabrica y equipa todo antes de llevarlo al terreno.  \nTrabajamos y construimos en **Argentina**, y las entregas en **Buenos Aires** se realizan sin problema; solo se coordina logística y acceso para el camión y la descarga del módulo.\n\nPara organizar mejor tiempos y logística, ¿para cuándo aproximadamente la necesitarías tener instalada?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa, ¿cómo puedo contactarlos? ¿Tienen WhatsApp?"
+        },
+        {
+          "role": "assistant",
+          "content": "Podés avanzar directo desde la web de Contenedores Argentina: en el menú superior tenés el botón **“QUIERO MI PRESUPUESTO”**, ahí dejás tus datos y te contactan por WhatsApp o teléfono con un asesor.  \nNo tengo el número de WhatsApp cargado acá, pero lo vas a encontrar fácilmente en la página oficial de la empresa.  \n\nSi querés, contame antes qué presupuesto aproximado manejás así ya sabés qué tipo de casa de contenedores se ajusta mejor cuando te contacten."
+        }
+      ]
+    },
+    {
+      "company": "Buro Steel Framing",
+      "url": "https://burosteelframing.com/",
+      "status": "OK",
+      "scrapingTimeMs": 83450,
+      "companyNameDetected": "Buro Steel Framing",
+      "modelsFound": [
+        "Modelo Gala",
+        "Modelo Elba",
+        "Modelo Nilba",
+        "Lena, Nilo, Fiora, Mackenzie, Nera, Sena, Rodano y Volga"
+      ],
+      "garbageDetected": [],
+      "noInfoResponses": 0,
+      "totalMessages": 4,
+      "errorMessages": [],
+      "hasContactInfo": true,
+      "hasWhatsApp": true,
+      "qualityScore": 5,
+      "notes": "Models: Modelo Gala, Modelo Elba, Modelo Nilba, Lena, Nilo, Fiora, Mackenzie, Nera, Sena, Rodano y Volga",
+      "conversation": [
+        {
+          "role": "assistant",
+          "content": "¡Hola! Soy Sofia, asesora de Buro Steel Framing. ¿En qué puedo ayudarte hoy? Contame qué estás buscando y te oriento con todo gusto."
+        },
+        {
+          "role": "user",
+          "content": "Hola, estoy buscando una casa prefabricada. ¿Qué modelos tienen disponibles?"
+        },
+        {
+          "role": "assistant",
+          "content": "Tenemos varios modelos de casas prefabricadas dentro de nuestra línea Innova House, todos en steel framing y también adaptables a sistema tradicional. Por ejemplo:  \n- **Modelo Gala**: espacios abiertos y muy luminosos.  \n- **Modelo Elba**: 178 m² totales (148 m² cubiertos + 30 m² semicubiertos), dos plantas, 3 dormitorios con suite y galería.  \n- **Modelo Nilba**: 218 m² totales (173 m² cubiertos + 45 m² semicubiertos), todo en una planta, 3 dormitorios con suite y gran galería con toilette.  \nAdemás tenés los modelos **Lena, Nilo, Fiora, Mackenzie, Nera, Sena, Rodano y Volga**, todos personalizables en terminaciones.\n\nPara orientarte mejor, ¿qué tipo de casa estás buscando: una planta o dos plantas, y aproximadamente cuántos m² te interesan?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa el modelo Modelo Gala. ¿Cuánto sale? ¿Qué incluye?"
+        },
+        {
+          "role": "assistant",
+          "content": "Perfecto, con esta info te confirmo bien cómo es el **Modelo Gala** y qué incluye, así ves si te cierra.\n\nEl **Modelo Gala** tiene **178 m² totales**: **148 m² cubiertos** en **dos plantas** + **30 m² de galería semicubierta**, en construcción en seco (steel framing) o tradicional. En planta baja tenés **hall de recepción**, **estar-comedor amplio integrado a cocina moderna**, grandes ventanales que abren a la **galería semicubierta**, **lavadero independiente con salida lateral** y una **oficina al frente** ideal para home office; en planta alta, **3 dormitorios**: **suite principal con vestidor y baño privado** + **dos dormitorios con muy buena luz** que comparten **baño completo**.\n\nSobre el precio, en la web no figura ningún valor del Modelo Gala ni de Innova House en general, así que no tengo los montos actualizados para pasarte por acá. Te sugiero escribirnos por WhatsApp al **11 5323 4885** así te pasan el **precio vigente del Modelo Gala** y las opciones de terminaciones y financiación. ¿En qué zona tenés o pensás comprar el terreno? Así te confirmo si trabajamos ahí y qué plazos de obra podríamos manejar."
+        },
+        {
+          "role": "user",
+          "content": "¿Cuánto tiempo demora la entrega una vez que se confirma? ¿Hacen entregas en Buenos Aires?"
+        },
+        {
+          "role": "assistant",
+          "content": "El plazo de una Innova House como el Modelo Gala, desde que tenés el permiso de obra aprobado, va aproximadamente de **7 a 12 meses**, según los m² y el modelo elegido. Antes de eso hay que contar **3 a 4 meses** de gestiones de barrio/municipio, estudio de suelo y armado de estructura en planta.\n\nSí, trabajamos perfectamente en **Buenos Aires y alrededores**: Capital Federal, Zona Norte (Tigre, San Isidro, Olivos, Escobar, Pilar, Zárate, Campana, Exaltación de la Cruz), Zona Oeste (Luján, Ituzaingó y alrededores) y Zona Sur (Esteban Echeverría, Cañuelas, etc.). ¿Para cuándo te gustaría tener la casa terminada aproximadamente?"
+        },
+        {
+          "role": "user",
+          "content": "Me interesa, ¿cómo puedo contactarlos? ¿Tienen WhatsApp?"
+        },
+        {
+          "role": "assistant",
+          "content": "Buenísimo que te interese, estamos listos para ayudarte a avanzar.  \nPodés contactarnos por estos medios:\n\n- **WhatsApp / Teléfono:** +54 11 5323 4885  \n- **Email:** info@burosteelframing.com  \n- **Formulario web:** en nuestra página, en la sección **“Pedí tu presupuesto”**.\n\nSi querés, contame tu nombre, zona y un teléfono y le pido a un asesor que te escriba por WhatsApp para seguir con el Modelo Gala y opciones de financiación."
+        }
+      ]
+    }
+  ]
+}

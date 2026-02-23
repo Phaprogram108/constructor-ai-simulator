@@ -19,7 +19,8 @@
     "ground-truth": "npx tsx scripts/ground-truth-capture.ts",
     "agent-test": "npx tsx scripts/agent-test.ts",
     "diagnosis": "npx tsx scripts/diagnosis.ts",
-    "full-pipeline": "npx tsx scripts/run-full-pipeline.ts"
+    "full-pipeline": "npx tsx scripts/run-full-pipeline.ts",
+    "test:models": "npx tsx src/scripts/model-comparison-test.ts"
   },
   "dependencies": {
     "@anthropic-ai/sdk": "^0.72.1",

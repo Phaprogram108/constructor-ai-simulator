@@ -1,127 +1,84 @@
 # Snapshot de Contexto
 
-**Fecha:** 2026-02-08
+**Fecha:** 2026-02-23
 **Proyecto:** /Users/joaquingonzalez/Documents/dev/constructor-ai-simulator
-**Razon del snapshot:** Context refresh despues de implementar 3 mejoras pre-lanzamiento
+**Razon del snapshot:** Context refresh despues de audit de seguridad + costos
 
 ## Resumen del Proyecto
 
-Constructor AI Simulator es una app Next.js 14 que genera agentes de ventas IA para constructoras argentinas. El usuario ingresa una URL, el sistema scrapea con Firecrawl, genera un system prompt, y crea un chatbot con GPT-5.1. Lanzamiento oficial manana Feb 9.
+Constructor AI Simulator - webapp Next.js 14 que genera chatbots de ventas IA para constructoras argentinas. Usuario ingresa URL, sistema scrapea con Firecrawl, genera system prompt, crea chatbot con GPT-5.1. Produccion en https://agenteiagratis.com (Vercel).
 
-**URL produccion:** https://agenteiagratis.com (Vercel)
+## Estado Actual
+- Sesion 5 completada: audit de seguridad, rate limiting, test de modelos
+- Todos los cambios compilan OK pero NO estan commiteados ni deployados
+- API key de OpenAI ya fue rotada por el usuario
 
-## Lo Que Se Hizo en Esta Sesion (Feb 8)
+## Cambios Sin Commitear (Sesion 5)
 
-### 1. Validacion HTTP de URLs (Fase 1)
-- Agregado `validateUrlReachable()` en `src/app/api/simulator/create/route.ts`
-- HEAD -> GET fallback con timeout 10s, DNS error detection
-- Gate ANTES del scraping: si URL no responde, error 422 inmediato
-- Mensajes claros: "No pudimos encontrar el sitio web. Verifica que la URL sea correcta."
+### Seguridad critica: systemPrompt server-side
+- `src/app/api/chat/route.ts` - Lee systemPrompt del session-manager, no del request body. Agrega weekly rate limit check.
+- `src/app/api/simulator/create/route.ts` - Removido systemPrompt de response (solo devuelve en dev mode para test scripts)
+- `src/app/demo/[sessionId]/page.tsx` - Removido systemPrompt state/props
+- `src/components/ChatInterface.tsx` - Removido systemPrompt de props/fetch + agregado banner weekly limit + input deshabilitado
+- `src/components/SimulatorForm.tsx` - Removido systemPrompt de localStorage
 
-### 2. Deep Crawling Keywords (Fase 2)
-- `src/lib/firecrawl.ts`: +10 PRODUCT_KEYWORDS (entrega, entregas, equipamiento, equipamientos, plano, planos, detalle, detalles, ficha, fichas)
-- `src/lib/firecrawl.ts`: +5 Wix CATALOG_PATHS (/entregas, /equipamientos, /tipologias, /nuestras-casas, /nuestros-modelos)
-- Resultado: Lucy's House ahora captura 3 tiers de equipamiento con precios y specs completas
+### Rate limiting + anti-bot
+- `src/lib/rate-limiter.ts` - Weekly chat limit (20/semana/IP), create daily (20->5), bot detection (UA), speed abuse (5+ msgs <10s = ban), IP+UA fingerprinting
+- `src/middleware.ts` (NUEVO) - Bloquea bots (curl, wget, python-requests) en todas las rutas API
 
-### 3. Re-busqueda On-Demand (Fase 3)
-- NUEVO `src/app/api/chat/research/route.ts`: Firecrawl mapUrl + keyword scoring + scrapeUrl top 3 URLs
-- MODIFICADO `src/app/api/chat/route.ts`: Deteccion de "no tengo info" via regex, segundo GPT call con contexto adicional
-- MODIFICADO `src/components/ChatInterface.tsx`: isSearching state, indicador "Buscando informacion adicional..." despues de 6s
-- MODIFICADO `src/components/SimulatorForm.tsx`: websiteUrl guardado en localStorage
-- MODIFICADO `src/types/index.ts`: websiteUrl agregado a SessionInfo
-- MODIFICADO `src/app/api/simulator/create/route.ts`: websiteUrl incluido en respuesta JSON
+### Test de modelos
+- `src/scripts/model-comparison-test.ts` (NUEVO) - Compara gpt-5-nano vs gpt-5-mini vs gpt-5.1
+- `src/scripts/model-comparison-results.json` (NUEVO) - Resultados completos
+- `package.json` - Agregado "test:models" script
 
-### 4. Testing Local con Lucy's House
-- URL invalida: PASS
-- Full Premium pricing: PASS (re-search, 15s)
-- Entregas inmediatas: PASS (3s)
-- Modulo 32m2: PASS (3.7s)
-- Detalles tecnicos 35.70m2: PASS (re-search, 12.5s)
+### Fix menor
+- `src/scripts/dynamic-test.ts` - eslint-disable para variable no usada
 
-### 5. Deploy a Vercel
-- Commit `e686fe9` pusheado y deployado exitosamente
-- Build success confirmado via GitHub deployments API
+## Resultado del Test de Modelos
+
+| Modelo | Respuestas con texto | Costo (80 preguntas) | Latencia avg |
+|--------|---------------------|---------------------|-------------|
+| gpt-5-nano | 0/80 (VACIO) | $0.08 | 7.8s |
+| gpt-5-mini | 1/80 (VACIO) | $0.33 | 10.4s |
+| gpt-5.1 | 80/80 (OK) | $1.44 | 6.9s |
+
+nano/mini consumen 600 output tokens pero message.content viene vacio. Causas posibles: system prompt demasiado largo (~40K tokens), respuesta en tool_calls en vez de content, o content_filter.
 
 ## Decisiones Ya Tomadas (NO re-discutir)
 
-1. Chat usa GPT-5.1 (no 4o)
-2. Slides nativas React reemplazan Canva iframe
-3. 7 slides (no 8) - "Caso Real" eliminada como redundante
-4. Video CTA scrollea a seccion Loom en la misma pagina
-5. WhatsApp usa api.whatsapp.com para compatibilidad Business
-6. Fotos del equipo desde PDF, no placeholders
-7. Cold outreach: tono profesional, con social proof concreto
-8. Firecrawl concurrency warning es informativo, no requiere upgrade
-9. Re-search on-demand: latencia 10-15s aceptable con feedback visual
-10. Playwright solo para testing, NO para produccion
-11. URL validation: server-side HEAD->GET con timeout 10s
+1. **Mantener gpt-5.1** - unico modelo que funciona (nano/mini devuelven vacio)
+2. **Rate limit: 20 msgs/IP/semana** - elegido por el usuario
+3. **Create limit: 5/dia** - reducido de 20
+4. **systemPrompt server-side** - nunca sale del server (excepto NODE_ENV=development)
+5. **NO reemplazar Anthropic con Firecrawl Extract** - ahorro solo 15-30%, Claude aporta inferencia/sintesis
+6. **Anti-bot nivel 1** - speed detection + UA blocking + fingerprinting
+7. **API key OpenAI rotada** - la vieja fue expuesta, usuario creo nueva en proyecto "Agente IA Gratis"
+8. **Slides nativas React** - reemplazan Canva iframe (sesion 2)
+9. **Re-search on-demand** - latencia 10-15s aceptable (sesion 4)
 
 ## Contexto Tecnico Importante
 
-### Re-search Flow (Fase 3)
-```
-Usuario pregunta -> GPT responde "no tengo info" ->
-Backend detecta regex pattern -> Llama /api/chat/research ->
-mapUrl(websiteUrl, limit:50) -> Filtra URLs por keywords del query ->
-Scrapea top 3 URLs -> Segundo call GPT con contexto nuevo ->
-Retorna respuesta mejorada + { researched: true }
-```
-
-### NO_INFO_PATTERNS (en chat/route.ts)
-```
-/no tengo (?:esa )?informaci[oó]n/i
-/no (?:tengo|cuento con).*(?:cargad|disponible|espec[ií]fic)/i
-/contact[aá](?:nos|me) por whatsapp.*(?:detalle|info)/i
-/no puedo (?:acceder|verificar)/i
-```
-
-### Lucy's House es Wix SPA
-- Contenido JS-rendered, HTML crudo solo tiene GA tag
-- Firecrawl puede renderizar JS (waitFor:2000 en scrapeOptions)
-- URLs: /entregas/modulo-*, /equipamientos/*, /modelos?modelo=*
-- 3 tiers: Comfort (USD 1.290/m2), Deluxe (USD 1.390/m2), Full Premium (USD 1.550/m2)
-
-### Productos mal nombrados en Wix
-- El scraper extrae alt-text de imagenes como nombres de producto ("Proyecto 1", "Detalle 1")
-- No son nombres reales de modelos pero el rawText tiene la info correcta
-- El agente funciona bien porque busca en rawText, pero los nombres estructurados son basura
-
-## Archivos Modificados en Esta Sesion
-
-| Archivo | Cambio |
-|---------|--------|
-| src/app/api/simulator/create/route.ts | +validateUrlReachable() + websiteUrl en response |
-| src/app/api/chat/route.ts | +NO_INFO_PATTERNS + re-search logic + websiteUrl in body |
-| src/app/api/chat/research/route.ts | NUEVO - Research endpoint completo |
-| src/lib/firecrawl.ts | +10 PRODUCT_KEYWORDS + 5 CATALOG_PATHS |
-| src/components/ChatInterface.tsx | +isSearching state + searching indicator UI |
-| src/components/SimulatorForm.tsx | +websiteUrl en localStorage |
-| src/types/index.ts | +websiteUrl en SessionInfo |
-| spec/DECISIONS.md | NUEVO - Decisiones pre-lanzamiento |
-| spec/PLAN.md | NUEVO - Plan 3 fases |
+- Rate limiting es in-memory (Vercel serverless) - cold starts resetean todo. Futuro: Upstash Redis
+- gpt-5-nano y gpt-5-mini solo soportan temperature=1 (no 0.7)
+- El test script necesita `npm run dev` para crear sesiones (scraping real)
+- Build Next.js compila OK con todos los cambios
+- middleware.ts detectado correctamente (26.4 kB)
 
 ## Para Continuar
 
 Leer en este orden:
-1. `spec/DECISIONS.md` - Decisiones ya tomadas
-2. `spec/PLAN.md` - Plan de las 3 fases (todas completadas)
-3. `spec/STATE.md` - Estado completo con tareas pendientes
-4. Este archivo
+1. `spec/STATE.md` - estado completo con tareas pendientes
+2. Este archivo
+3. `CLAUDE.md` en raiz
 
 **Continuar desde:**
-1. **Test de regression** - Probar 3-5 empresas en produccion para verificar que no se rompio nada
-2. **Cold outreach message** - Refinar drafts en HANDOFF.md
-3. **Mejorar nombres de productos Wix** - Filtrar "Proyecto N" y "Detalle N" del garbage filter
+1. **Commit + deploy** de todos los cambios de seguridad a Vercel
+2. **Debuggear nano/mini** - investigar por que devuelven vacio (finish_reason, tool_calls, context window)
+3. **Configurar limites OpenAI** - hard $200/mes, soft $100/mes
 
 ## Dev Server
 ```bash
 cd /Users/joaquingonzalez/Documents/dev/constructor-ai-simulator
-npm run dev  # localhost:3000
-```
-
-## Test Commands
-```bash
-npm run agent-test -- --company "ViBert"     # Test 1 empresa
-npm run agent-test -- --fase2                 # Test 20 empresas fase2
-npm run agent-test                            # Test todas
+npm run dev          # localhost:3000
+npm run test:models  # test comparativo (requiere dev server)
 ```

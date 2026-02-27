@@ -20,7 +20,7 @@ export async function GET(
       );
     }
 
-    const session = getSession(id);
+    const session = await getSession(id);
     if (!session) {
       return NextResponse.json(
         { error: 'Sesión no encontrada o expirada' },
@@ -31,11 +31,11 @@ export async function GET(
     const sessionInfo: SessionInfo = {
       id: session.id,
       companyName: session.companyName,
-      messagesRemaining: getMessagesRemaining(id),
+      messagesRemaining: await getMessagesRemaining(id),
       expiresAt: session.expiresAt,
     };
 
-    const messages = getSessionMessages(id);
+    const messages = await getSessionMessages(id);
 
     return NextResponse.json({
       session: sessionInfo,

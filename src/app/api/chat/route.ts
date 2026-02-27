@@ -84,7 +84,7 @@ export async function POST(request: NextRequest) {
     }
 
     // Retrieve systemPrompt from server-side session (never trust client)
-    const session = getSession(sessionId);
+    const session = await getSession(sessionId);
     if (!session) {
       return NextResponse.json(
         { error: 'Sesión expirada o inválida. Creá una nueva sesión.' },

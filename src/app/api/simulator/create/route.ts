@@ -149,7 +149,7 @@ export async function POST(request: NextRequest) {
     console.log('[Create] System prompt length:', systemPrompt.length);
 
     // Create session
-    const session = createSession(scrapedContent.title, systemPrompt);
+    const session = await createSession(scrapedContent.title, systemPrompt);
 
     // Add welcome message
     const welcomeMessage = getWelcomeMessage(scrapedContent.title);
@@ -162,7 +162,7 @@ export async function POST(request: NextRequest) {
       timestamp: new Date(),
     };
 
-    addMessage(session.id, welcomeMessageObj);
+    await addMessage(session.id, welcomeMessageObj);
 
     console.log('[Create] Session created:', session.id);
     console.log('[Create] Company:', scrapedContent.title);

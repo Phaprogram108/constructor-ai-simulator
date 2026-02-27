@@ -6,6 +6,7 @@ import { Message, ScrapedContent } from '@/types';
 import { validateResponse, ValidationResult } from '@/lib/response-validator';
 import { ExtractedCatalog } from '@/lib/pdf-extractor';
 import { rateLimit, checkWeeklyChatLimit, getClientFingerprint } from '@/lib/rate-limiter';
+import { trackEvent } from '@/lib/analytics-tracker';
 
 // Inicialización lazy para evitar errores durante el build
 let openaiInstance: OpenAI | null = null;
@@ -86,6 +87,7 @@ export async function POST(request: NextRequest) {
     // Retrieve systemPrompt from server-side session (never trust client)
     const session = await getSession(sessionId);
     if (!session) {
+      trackEvent('session_errors');
       return NextResponse.json(
         { error: 'Sesión expirada o inválida. Creá una nueva sesión.' },
         { status: 401 }
@@ -222,6 +224,8 @@ export async function POST(request: NextRequest) {
       console.error('[Chat] Error logging conversation:', logError);
       // Don't fail the request if logging fails
     }
+
+    trackEvent('chats_sent');
 
     return NextResponse.json({
       message: finalContent,

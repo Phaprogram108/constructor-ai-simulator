@@ -7,6 +7,7 @@ import { rateLimit } from '@/lib/rate-limiter';
 import { createEnhancedLog, appendEnhancedMessage, ScrapingMetadata } from '@/lib/conversation-logger';
 import { CreateSessionRequest } from '@/types';
 import { v4 as uuidv4 } from 'uuid';
+import { trackEvent } from '@/lib/analytics-tracker';
 
 async function validateUrlReachable(url: string): Promise<{ ok: boolean; error?: string }> {
   try {
@@ -191,6 +192,8 @@ export async function POST(request: NextRequest) {
 
     // Agregar el mensaje de bienvenida al enhanced log
     appendEnhancedMessage(session.id, welcomeMessageObj);
+
+    trackEvent('sessions_created');
 
     return NextResponse.json({
       sessionId: session.id,

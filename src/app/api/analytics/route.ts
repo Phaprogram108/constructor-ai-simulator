@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { listEnhancedLogs, EnhancedConversationLog } from '@/lib/conversation-logger';
+import { getMetrics, getMetricsRange } from '@/lib/analytics-tracker';
 
 interface AggregatedMetrics {
   totalSessions: number;
@@ -73,10 +74,16 @@ export async function GET(request: NextRequest) {
   try {
     const logs = listEnhancedLogs();
     const metrics = calculateMetrics(logs);
+    const usageToday = await getMetrics();
+    const usageLast7Days = await getMetricsRange(7);
 
     return NextResponse.json({
       logs,
       metrics,
+      usage: {
+        today: usageToday,
+        last7days: usageLast7Days,
+      },
     });
   } catch (error) {
     console.error('[Analytics] Error loading logs:', error);

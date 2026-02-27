@@ -102,18 +102,17 @@ export async function createSession(companyName: string, systemPrompt: string): 
     expiresAt: new Date(now.getTime() + SESSION_DURATION_MS),
   };
 
+  // Always dual-write: Redis (durable) + in-memory (fast fallback for same instance)
   const redis = getRedis();
   if (redis) {
     try {
       await redis.set(`session:${session.id}`, serializeSession(session), { ex: SESSION_TTL_SECONDS });
     } catch (err) {
-      console.warn('[session-manager] Redis set failed, storing in memory:', err);
-      sessions.set(session.id, session);
+      console.warn('[session-manager] Redis set failed:', err);
     }
-  } else {
-    sessions.set(session.id, session);
-    cleanupExpiredSessions();
   }
+  sessions.set(session.id, session);
+  cleanupExpiredSessions();
 
   return session;
 }
@@ -124,24 +123,24 @@ export async function getSession(sessionId: string): Promise<Session | null> {
   if (redis) {
     try {
       const data = await redis.get(`session:${sessionId}`);
-      if (!data) return null;
-
-      const session = deserializeSession(data);
-
-      // Check if session has expired
-      if (new Date() > session.expiresAt) {
-        await redis.del(`session:${sessionId}`);
-        return null;
+      if (data) {
+        const session = deserializeSession(data);
+        if (new Date() > session.expiresAt) {
+          await redis.del(`session:${sessionId}`);
+          sessions.delete(sessionId);
+          return null;
+        }
+        // Refresh in-memory copy
+        sessions.set(sessionId, session);
+        return session;
       }
-
-      return session;
+      // Not in Redis — fall through to in-memory check
     } catch (err) {
       console.warn('[session-manager] Redis get failed, checking in-memory:', err);
-      // Fall through to in-memory check
     }
   }
 
-  // In-memory fallback
+  // In-memory fallback (always checked when Redis misses or fails)
   const session = sessions.get(sessionId);
   if (!session) return null;
 
@@ -159,25 +158,26 @@ export async function addMessage(sessionId: string, message: Message): Promise<b
   if (redis) {
     try {
       const data = await redis.get(`session:${sessionId}`);
-      if (!data) return false;
+      if (data) {
+        const session = deserializeSession(data);
+        if (session.messageCount >= session.maxMessages) return false;
 
-      const session = deserializeSession(data);
+        session.messages.push(message);
+        if (message.role === 'user') {
+          session.messageCount++;
+        }
 
-      if (session.messageCount >= session.maxMessages) return false;
+        // Extend session expiry on activity
+        session.expiresAt = new Date(Date.now() + SESSION_DURATION_MS);
 
-      session.messages.push(message);
-      if (message.role === 'user') {
-        session.messageCount++;
+        await redis.set(`session:${sessionId}`, serializeSession(session), { ex: SESSION_TTL_SECONDS });
+        // Keep in-memory copy in sync
+        sessions.set(sessionId, session);
+        return true;
       }
-
-      // Extend session expiry on activity
-      session.expiresAt = new Date(Date.now() + SESSION_DURATION_MS);
-
-      await redis.set(`session:${sessionId}`, serializeSession(session), { ex: SESSION_TTL_SECONDS });
-      return true;
+      // Not in Redis — fall through to in-memory
     } catch (err) {
       console.warn('[session-manager] Redis addMessage failed, trying in-memory:', err);
-      // Fall through to in-memory
     }
   }
 

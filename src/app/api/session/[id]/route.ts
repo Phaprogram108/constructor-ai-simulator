@@ -2,6 +2,7 @@ import { NextRequest, NextResponse } from 'next/server';
 import { getSession, getMessagesRemaining, getSessionMessages } from '@/lib/session-manager';
 import { rateLimit } from '@/lib/rate-limiter';
 import { SessionInfo } from '@/types';
+import { trackEvent } from '@/lib/analytics-tracker';
 
 export async function GET(
   request: NextRequest,
@@ -22,6 +23,7 @@ export async function GET(
 
     const session = await getSession(id);
     if (!session) {
+      trackEvent('session_errors');
       return NextResponse.json(
         { error: 'Sesión no encontrada o expirada' },
         { status: 404 }

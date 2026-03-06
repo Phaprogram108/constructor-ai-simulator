@@ -7,7 +7,7 @@ import {
   Megaphone,
   Bot,
   LayoutDashboard,
-  ArrowRight,
+
   Zap,
   Shield,
   MessageSquare,
@@ -435,9 +435,9 @@ export default function Home() {
                 <Image
                   src={member.photo}
                   alt={member.name}
-                  width={64}
-                  height={64}
-                  className="mx-auto mb-4 w-16 h-16 rounded-full object-cover"
+                  width={80}
+                  height={80}
+                  className="mx-auto mb-4 w-20 h-20 rounded-full object-cover"
                 />
                 <p className="font-semibold text-gray-900">{member.name}</p>
                 <p className="text-sm text-blue-600 mb-2">{member.role}</p>
@@ -446,18 +446,17 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="max-w-3xl mx-auto mt-16 space-y-4">
+          <div className="flex flex-wrap items-center justify-center gap-3 mt-12 max-w-4xl mx-auto">
             {[
-              '+9 años en publicidad digital, +$10M USD en ventas generadas',
-              '+$50K USD invertidos en educación (tendencias USA/Europa)',
-              'Software + CRM especializado en la industria de la construcción',
-              'Low fee + comisión: crecemos juntos, a tu ritmo',
-              'Partners de Meta, expertos en automatización con IA',
+              '+9 años en publicidad digital',
+              '+$10M USD en ventas generadas',
+              'Partners de Meta',
+              'Expertos en automatización con IA',
+              'Low fee + comisión',
             ].map((item) => (
-              <div key={item} className="flex items-center gap-3">
-                <ArrowRight className="w-5 h-5 text-emerald-500 shrink-0" />
-                <p className="text-gray-800 text-lg">{item}</p>
-              </div>
+              <span key={item} className="bg-gray-50 border border-gray-200 text-gray-600 text-sm px-4 py-2 rounded-full">
+                {item}
+              </span>
             ))}
           </div>
         </div>

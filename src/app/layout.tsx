@@ -15,8 +15,8 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Simulador de Agente IA para Constructoras",
-  description: "Generá un agente de ventas IA personalizado para tu constructora en segundos",
+  title: "PHA - Convertimos consultas en ventas para tu constructora",
+  description: "IA + Publicidad + CRM. Un equipo dedicado que responde en menos de 60 segundos, califica leads y agenda reuniones. 24/7.",
 };
 
 export default function RootLayout({

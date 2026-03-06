@@ -21,18 +21,6 @@ const WHATSAPP_URL = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&tex
 export default function Home() {
   return (
     <main className="min-h-screen bg-white">
-      {/* Section 0 - Pilot Banner */}
-      <div className="bg-amber-50 border-b border-amber-200">
-        <div className="max-w-4xl mx-auto px-4 py-2 text-center">
-          <p className="text-amber-800 text-sm">
-            <span className="font-semibold">🚀 Version Piloto</span>
-            {' — '}
-            Este es un demo para mostrar el potencial de la tecnologia.
-            Los resultados pueden variar segun el sitio web analizado.
-          </p>
-        </div>
-      </div>
-
       {/* Section 1 - NavBar */}
       <NavBar />
 
@@ -44,7 +32,7 @@ export default function Home() {
           </h1>
 
           <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-            IA + Publicidad + CRM. Un equipo dedicado de 4 personas + tecnologia que responde en menos de 60 segundos, califica leads y agenda reuniones. 24/7.
+            IA + Publicidad + CRM. Un equipo dedicado de 4 personas + tecnología que responde en menos de 60 segundos, califica leads y agenda reuniones. 24/7.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -60,22 +48,26 @@ export default function Home() {
               rel="noopener noreferrer"
               className="border-2 border-gray-300 hover:border-gray-400 text-gray-700 px-8 py-4 rounded-full font-semibold text-lg transition-colors"
             >
-              Agendar llamada
+              Quiero implementarlo
             </a>
           </div>
 
-          <div className="mt-16 grid grid-cols-2 md:grid-cols-4 gap-8">
-            {[
-              { emoji: '📅', text: '9+ anos de experiencia' },
-              { emoji: '💰', text: '+$10M USD generados' },
-              { emoji: '📱', text: 'Meta Partners' },
-              { emoji: '⚡', text: 'Respuesta <60 segundos' },
-            ].map((item) => (
-              <div key={item.text} className="text-center">
-                <div className="text-2xl mb-2">{item.emoji}</div>
-                <p className="text-gray-500 text-sm font-medium">{item.text}</p>
-              </div>
-            ))}
+          <div className="mt-16 max-w-2xl mx-auto">
+            <div className="bg-gray-50 border border-gray-200 rounded-xl px-6 py-4">
+              <p className="text-gray-700 text-sm leading-relaxed">
+                <span className="font-semibold">¿Sabías?</span> Si respondés en menos de 5 minutos, tenés{' '}
+                <span className="font-bold text-blue-600">21x más chances</span>{' '}
+                de calificar un lead que si tardás más de 30 minutos.{' '}
+                <span className="text-gray-400">— Harvard Business Review</span>
+              </p>
+            </div>
+            <div className="flex items-center justify-center gap-8 mt-6">
+              <p className="text-gray-400 text-xs font-medium">100% automatizado</p>
+              <span className="text-gray-300">|</span>
+              <p className="text-gray-400 text-xs font-medium">Respuesta &lt;60 segundos</p>
+              <span className="text-gray-300">|</span>
+              <p className="text-gray-400 text-xs font-medium">Agencia Partner de Meta</p>
+            </div>
           </div>
         </div>
       </section>
@@ -87,7 +79,7 @@ export default function Home() {
             Probalo vos mismo en 60 segundos
           </h2>
           <p className="text-gray-600 text-center mb-10 text-lg">
-            Ingresa el sitio web de tu constructora y genera tu agente IA al instante
+            Ingresá el sitio web de tu constructora y generá tu agente IA al instante
           </p>
 
           <div className="grid md:grid-cols-3 gap-6 mb-10 max-w-3xl mx-auto">
@@ -95,7 +87,7 @@ export default function Home() {
               <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
                 1
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2">Ingresa tu Web</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Ingresá tu Web</h3>
               <p className="text-gray-600 text-sm">Extraemos la info de tu constructora</p>
             </div>
             <div className="text-center">
@@ -103,18 +95,22 @@ export default function Home() {
                 2
               </div>
               <h3 className="font-semibold text-gray-900 mb-2">
-                Agrega tu Catalogo <span className="text-xs text-green-600 ml-1">(Opcional)</span>
+                Agregá tu Catálogo <span className="text-xs text-green-600 ml-1">(Opcional)</span>
               </h3>
-              <p className="text-gray-600 text-sm">Link a tu catalogo online o PDF</p>
+              <p className="text-gray-600 text-sm">Link a tu catálogo online o PDF</p>
             </div>
             <div className="text-center">
               <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
                 3
               </div>
-              <h3 className="font-semibold text-gray-900 mb-2">Chatea con Sofia</h3>
+              <h3 className="font-semibold text-gray-900 mb-2">Chateá con Sofía</h3>
               <p className="text-gray-600 text-sm">Tu asesora IA lista para responder</p>
             </div>
           </div>
+
+          <p className="text-xs text-gray-500 text-center mb-4 max-w-2xl mx-auto">
+            🚀 Versión Piloto — Este es un demo para mostrar el potencial de la tecnología. Los resultados pueden variar según el sitio web analizado.
+          </p>
 
           <div className="max-w-2xl mx-auto bg-white rounded-2xl border border-gray-200 shadow-lg p-8">
             <SimulatorForm />
@@ -126,7 +122,7 @@ export default function Home() {
                 <Zap className="w-5 h-5 text-green-600" />
               </div>
               <div className="text-left">
-                <p className="font-medium text-gray-900">Instantaneo</p>
+                <p className="font-medium text-gray-900">Instantáneo</p>
                 <p className="text-sm text-gray-500">Listo en segundos</p>
               </div>
             </div>
@@ -147,7 +143,7 @@ export default function Home() {
               </div>
               <div className="text-left">
                 <p className="font-medium text-gray-900">Califica Leads</p>
-                <p className="text-sm text-gray-500">Automaticamente</p>
+                <p className="text-sm text-gray-500">Automáticamente</p>
               </div>
             </div>
           </div>
@@ -158,17 +154,17 @@ export default function Home() {
       <section id="problema" className="py-20 md:py-28 px-4 bg-slate-900">
         <div className="max-w-3xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
-            Si vendes construccion, seguro te pasa esto
+            Si vendés construcción, seguro te pasa esto
           </h2>
           <div className="space-y-4">
             {[
-              'Tardas en responder y lo sabes',
+              'Tardás en responder y lo sabés',
+              'Viernes 10 PM: mientras cenás, un competidor con IA captura tu lead en segundos',
               'Te llegan muchos leads pero pocos compran',
+              'Querés invertir más en publicidad pero no das abasto con las consultas',
               'Tus asesores gastan 60-70% del tiempo en preguntas repetitivas',
               'Tu chatbot genera rechazo',
-              'No tenes sistema de seguimiento real',
-              'El proceso de venta es largo y se te escapan',
-              'Los margenes son ajustados y cada lead cuenta',
+              'No tenés sistema de seguimiento real',
             ].map((item) => (
               <div key={item} className="flex items-center gap-3">
                 <AlertCircle className="w-6 h-6 text-amber-400 shrink-0" />
@@ -178,7 +174,7 @@ export default function Home() {
           </div>
           <div className="text-center mt-12">
             <p className="text-blue-300 text-xl font-medium">
-              No es tu culpa. Pero tiene solucion.
+              No es tu culpa. Pero tiene solución.
             </p>
           </div>
         </div>
@@ -188,7 +184,7 @@ export default function Home() {
       <section id="solucion" className="py-20 md:py-28 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
-            Asi lo resolvemos
+            Así lo resolvemos
           </h2>
           <p className="text-gray-600 text-center mb-12 text-lg">
             IA + Publicidad + CRM, todo conectado
@@ -215,7 +211,7 @@ export default function Home() {
                 Agente IA que vende por vos 24/7
               </h3>
               <p className="text-gray-600">
-                No es un chatbot con menu de opciones. Es una IA que conversa naturalmente, conoce tu constructora, cotiza y agenda reuniones.
+                No es un chatbot con menú de opciones. Es una IA que conversa naturalmente, conoce tu constructora, cotiza y agenda reuniones.
               </p>
             </div>
 
@@ -227,14 +223,25 @@ export default function Home() {
                 CRM donde ves todo sin esfuerzo
               </h3>
               <p className="text-gray-600">
-                Cada lead registrado con conversacion completa, etiquetas y etapa de compra. Sin Excel.
+                Cada lead registrado con conversación completa, etiquetas y etapa de compra. El CRM se actualiza automáticamente con IA — sin carga manual, sin Excel.
               </p>
             </div>
           </div>
 
           <div className="max-w-3xl mx-auto mt-12 bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
             <p className="text-blue-900 text-lg">
-              Un socio estrategico, no un proveedor de software. Tenes un equipo dedicado de 4 personas trabajando para tu constructora.
+              PHA es tu socio estratégico, no un proveedor de software. Tenés un equipo dedicado de 4 personas trabajando para tu constructora.
+            </p>
+          </div>
+
+          <div className="max-w-3xl mx-auto mt-4 bg-slate-50 border border-slate-200 rounded-xl px-6 py-4 text-center">
+            <p className="text-slate-600 text-sm">
+              Según{' '}
+              <a href="https://www.anthropic.com/research/labor-market-impacts" target="_blank" rel="noopener noreferrer" className="underline hover:text-slate-900">
+                investigación de Anthropic (2026)
+              </a>
+              , la adopción real de IA es una fracción de lo que es posible.{' '}
+              <span className="font-semibold text-slate-800">Las empresas que implementan primero capturan la ventaja.</span>
             </p>
           </div>
         </div>
@@ -244,7 +251,7 @@ export default function Home() {
       <section className="py-20 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-            Lo que cambia cuando implementas PHA
+            Lo que cambia cuando implementás PHA
           </h2>
 
           <div className="grid md:grid-cols-2 gap-6">
@@ -291,60 +298,50 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 7 - Pruebas: Video + Funnel */}
+      {/* Section 7 - Results */}
       <section id="resultados" className="py-20 md:py-28 px-4 bg-slate-900">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
-            Resultados reales con numeros reales
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-4">
+            Resultados reales con números reales
           </h2>
+          <p className="text-blue-300 text-center mb-12 text-lg">
+            Caso de éxito: Constructora modular en Argentina
+          </p>
 
-          <div className="grid md:grid-cols-2 gap-10">
-            {/* Left - Funnel */}
-            <div>
-              <p className="text-white font-semibold text-lg mb-6">
-                Con $91 USD de inversion en Meta Ads, en 30 dias:
-              </p>
-              <div className="space-y-3">
-                <div className="bg-blue-600 rounded-lg px-4 py-2.5 w-full">
-                  <span className="text-white font-bold">Conversaciones</span>
-                  <span className="text-white/90 text-sm ml-2">1,542 | $0.5</span>
-                </div>
-                <div className="bg-blue-500 rounded-lg px-4 py-2.5" style={{ width: '72%' }}>
-                  <span className="text-white font-bold">Presupuestos</span>
-                  <span className="text-white/90 text-sm ml-2">235 | $3</span>
-                </div>
-                <div className="bg-teal-500 rounded-lg px-4 py-2.5" style={{ width: '50%' }}>
-                  <span className="text-white font-bold">Leads Calificados</span>
-                  <span className="text-white/90 text-sm ml-2">101 | $7</span>
-                </div>
-                <div className="bg-emerald-500 rounded-lg px-4 py-2.5" style={{ width: '35%' }}>
-                  <span className="text-white font-bold">Entrevistas</span>
-                  <span className="text-white/90 text-sm ml-2">42 | $18</span>
-                </div>
-              </div>
-              <p className="text-blue-300 text-sm mt-4">
-                Conversion 7-9% vs 3-4% promedio de la industria
-              </p>
-            </div>
-
-            {/* Right - Video */}
-            <div>
-              <p className="text-white font-semibold text-lg mb-6">
-                Caso de exito: Constructora en Argentina
-              </p>
-              <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
-                <iframe
-                  src="https://www.loom.com/embed/0b288021895f49338328c6258299068f"
-                  className="absolute top-0 left-0 w-full h-full border-0"
-                  allowFullScreen
-                  allow="fullscreen"
-                />
-              </div>
-              <p className="text-blue-300 text-sm mt-4">
-                Llamadas calificadas a $20 USD cada una
-              </p>
+          {/* Video */}
+          <div className="max-w-3xl mx-auto mb-10">
+            <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                src="https://www.loom.com/embed/0b288021895f49338328c6258299068f"
+                className="absolute top-0 left-0 w-full h-full border-0"
+                allowFullScreen
+                allow="fullscreen"
+              />
             </div>
           </div>
+
+          {/* Key metrics */}
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-6 max-w-3xl mx-auto">
+            <div className="text-center">
+              <p className="text-3xl font-bold text-white">$91</p>
+              <p className="text-blue-300 text-sm mt-1">USD invertidos en Meta Ads</p>
+            </div>
+            <div className="text-center">
+              <p className="text-3xl font-bold text-white">1,542</p>
+              <p className="text-blue-300 text-sm mt-1">conversaciones generadas</p>
+            </div>
+            <div className="text-center">
+              <p className="text-3xl font-bold text-white">42</p>
+              <p className="text-blue-300 text-sm mt-1">entrevistas agendadas</p>
+            </div>
+            <div className="text-center">
+              <p className="text-3xl font-bold text-emerald-400">7-9%</p>
+              <p className="text-blue-300 text-sm mt-1">tasa de conversión</p>
+            </div>
+          </div>
+          <p className="text-blue-400 text-sm text-center mt-6">
+            vs 3-4% promedio de la industria
+          </p>
         </div>
       </section>
 
@@ -355,27 +352,27 @@ export default function Home() {
             Tu equipo dedicado
           </h2>
           <p className="text-gray-600 text-center mb-12 text-lg max-w-2xl mx-auto">
-            No compras un software. Sumas un equipo de 4 personas enfocadas en tu constructora.
+            No comprás un software. Sumás un equipo de 4 personas enfocadas en tu constructora.
           </p>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {[
               {
-                name: 'Joaquin',
+                name: 'Joaquín',
                 role: 'Account Manager',
-                desc: 'Especialista en automatizacion de ventas con IA. Partner Oficial de Meta.',
+                desc: 'Especialista en automatización de ventas con IA. Partner Oficial de Meta.',
                 photo: '/team/joaquin.png',
               },
               {
                 name: 'Brenda',
                 role: 'AI Agent Manager',
-                desc: 'Disena sistemas escalables que integran agentes, CRM y operaciones.',
+                desc: 'Diseña sistemas escalables que integran agentes, CRM y operaciones.',
                 photo: '/team/brenda.png',
               },
               {
                 name: 'Diego',
                 role: 'Media Buyer',
-                desc: 'Lidera la gestion publicitaria en Meta Ads con estrategia y ejecucion.',
+                desc: 'Lidera la gestión publicitaria en Meta Ads con estrategia y ejecución.',
                 photo: '/team/diego.png',
               },
               {
@@ -402,11 +399,11 @@ export default function Home() {
 
           <div className="max-w-3xl mx-auto mt-16 space-y-4">
             {[
-              '+9 anos en publicidad digital, +$10M USD en ventas generadas',
-              '+$50K USD invertidos en educacion (tendencias USA/Europa)',
-              'Software + CRM especializado en la industria de la construccion',
-              'Low fee + comision: crecemos juntos, a tu ritmo',
-              'Partners de Meta, expertos en automatizacion con IA',
+              '+9 años en publicidad digital, +$10M USD en ventas generadas',
+              '+$50K USD invertidos en educación (tendencias USA/Europa)',
+              'Software + CRM especializado en la industria de la construcción',
+              'Low fee + comisión: crecemos juntos, a tu ritmo',
+              'Partners de Meta, expertos en automatización con IA',
             ].map((item) => (
               <div key={item} className="flex items-center gap-3">
                 <ArrowRight className="w-5 h-5 text-emerald-500 shrink-0" />
@@ -421,7 +418,7 @@ export default function Home() {
       <section className="py-20 md:py-28 px-4 bg-blue-600">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
-            Listo para dejar de perder leads?
+            ¿Listo para dejar de perder leads?
           </h2>
           <p className="text-blue-100 mb-8 text-lg">
             Tomamos hasta 2 nuevas constructoras por mes
@@ -436,7 +433,7 @@ export default function Home() {
               <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
               </svg>
-              Agendar llamada
+              Quiero implementarlo
             </a>
             <a
               href="#simulador"
@@ -446,7 +443,7 @@ export default function Home() {
             </a>
           </div>
           <p className="text-blue-200 mt-8 text-sm">
-            Sin compromiso. Riesgo compartido: low fee + comision.
+            Sin compromiso. Riesgo compartido: low fee + comisión.
           </p>
         </div>
       </section>
@@ -455,7 +452,7 @@ export default function Home() {
       <footer className="py-8 px-4 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-gray-500 text-sm">
-            PHA - Sistemas de IA para la industria de la construccion
+            PHA - Sistemas de IA para la industria de la construcción
           </p>
           <p className="text-gray-400 text-xs mt-2">
             © 2026 PHA. Todos los derechos reservados.

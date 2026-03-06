@@ -10,7 +10,7 @@ const WHATSAPP_URL = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&tex
 
 const NAV_LINKS = [
   { label: 'Problema', href: '#problema' },
-  { label: 'Solucion', href: '#solucion' },
+  { label: 'Solución', href: '#solucion' },
   { label: 'Resultados', href: '#resultados' },
   { label: 'Equipo', href: '#equipo' },
 ];

@@ -60,7 +60,55 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 3 - Simulator */}
+      {/* Section 3 - Pain Points */}
+      <section id="problema" className="py-14 md:py-24 px-4 bg-slate-900">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
+            Si vendés construcción, seguro te pasa esto
+          </h2>
+          <div className="space-y-4">
+            {[
+              'Te llegan consultas pero tu equipo tarda horas en responder y los leads se enfrían',
+              'Invertís en publicidad pero no sabés cuántas consultas se convierten en presupuestos reales',
+              'Tenés un CRM pero nadie lo actualiza como debería — cargar cada lead, hacer seguimiento, mover etapas... requiere tiempo que tu equipo no tiene',
+              'Tus asesores comerciales solo atienden al lead que responde primero — el resto se pierde',
+            ].map((item) => (
+              <div key={item} className="flex items-center gap-3">
+                <AlertCircle className="w-6 h-6 text-amber-400 shrink-0" />
+                <p className="text-white text-lg">{item}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-12">
+            <p className="text-blue-300 text-xl font-medium">
+              No es tu culpa. Pero tiene solución.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 4 - Esto NO es para vos si... */}
+      <section className="py-14 md:py-20 px-4 bg-red-950/90">
+        <div className="max-w-2xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-10">
+            Esto NO es para vos si...
+          </h2>
+          <div className="space-y-4">
+            {[
+              'No invertís en publicidad digital ni tenés intención de hacerlo',
+              'Recibís menos de 20 consultas por semana',
+              'No tenés presupuesto para invertir en crecimiento — si buscás una solución gratuita o muy barata, esto no es para vos (lo barato sale caro)',
+            ].map((item) => (
+              <div key={item} className="bg-red-900/40 border border-red-800/50 rounded-xl px-5 py-4 flex items-start gap-3">
+                <span className="text-red-400 text-xl shrink-0">&#10060;</span>
+                <p className="text-red-100 text-lg">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Section 5 - Simulator */}
       <section id="simulador" className="py-12 md:py-20 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
@@ -138,68 +186,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section - Qualification Form */}
-      <section id="califica" className="py-14 md:py-20 px-4 bg-gray-50">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
-            Verificá si tu constructora califica
-          </h2>
-          <p className="text-gray-600 text-center mb-10 text-lg">
-            Respondé 2 preguntas para saber si el Programa PHA es para tu empresa
-          </p>
-          <QualificationForm />
-        </div>
-      </section>
-
-      {/* Section 4 - Pain Points */}
-      <section id="problema" className="py-14 md:py-24 px-4 bg-slate-900">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
-            Si vendés construcción, seguro te pasa esto
-          </h2>
-          <div className="space-y-4">
-            {[
-              'Te llegan consultas pero tu equipo tarda horas en responder y los leads se enfrían',
-              'Invertís en publicidad pero no sabés cuántas consultas se convierten en presupuestos reales',
-              'Tenés un CRM pero nadie lo actualiza como debería — cargar cada lead, hacer seguimiento, mover etapas... requiere tiempo que tu equipo no tiene',
-              'Tus asesores comerciales solo atienden al lead que responde primero — el resto se pierde',
-            ].map((item) => (
-              <div key={item} className="flex items-center gap-3">
-                <AlertCircle className="w-6 h-6 text-amber-400 shrink-0" />
-                <p className="text-white text-lg">{item}</p>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <p className="text-blue-300 text-xl font-medium">
-              No es tu culpa. Pero tiene solución.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Section - Esto NO es para vos si... */}
-      <section className="py-14 md:py-20 px-4 bg-red-950/90">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-10">
-            Esto NO es para vos si...
-          </h2>
-          <div className="space-y-4">
-            {[
-              'No invertís en publicidad digital ni tenés intención de hacerlo',
-              'Recibís menos de 20 consultas por semana',
-              'No tenés presupuesto para invertir en crecimiento — si buscás una solución gratuita o muy barata, esto no es para vos (lo barato sale caro)',
-            ].map((item) => (
-              <div key={item} className="bg-red-900/40 border border-red-800/50 rounded-xl px-5 py-4 flex items-start gap-3">
-                <span className="text-red-400 text-xl shrink-0">&#10060;</span>
-                <p className="text-red-100 text-lg">{item}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 5 - Solution */}
+      {/* Section 6 - Solution */}
       <section id="solucion" className="py-14 md:py-24 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
@@ -266,7 +253,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 6 - HOY vs CON PHA */}
+      {/* Section 7 - HOY vs CON PHA */}
       <section className="py-14 md:py-20 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
@@ -317,7 +304,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* What the program includes - subtle value communication */}
+      {/* Section 8 - What the program includes */}
       <section className="py-14 md:py-20 px-4 bg-white">
         <div className="max-w-3xl mx-auto text-center">
           <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
@@ -350,7 +337,43 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 7 - Results */}
+      {/* Section 9 - Done-for-you vs DIY */}
+      <section className="py-0">
+        {/* Part 1 - DIY problem */}
+        <div className="py-14 md:py-20 px-4 bg-slate-800">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 text-center">
+              Hay mucho software barato. Y hay una razón por la que es barato.
+            </h2>
+            <div className="text-slate-300 text-lg leading-relaxed space-y-4">
+              <p>
+                Suena tentador: un agente IA por pocos dólares al mes. Pero cuando lo empezás a configurar, necesitás integraciones. Después necesitás tokens de IA — créditos que se pagan aparte. Después descubrís que nadie lo monitorea, nadie lo optimiza, y tu &quot;agente&quot; le responde cualquier cosa a tus clientes.
+              </p>
+              <p>
+                Al final, lo que parecía barato te costó más tiempo, más plata, y más dolores de cabeza de los que tenías antes.
+              </p>
+            </div>
+          </div>
+        </div>
+        {/* Part 2 - PHA solution */}
+        <div className="py-14 md:py-20 px-4 bg-white">
+          <div className="max-w-3xl mx-auto">
+            <h3 className="text-3xl font-bold text-gray-900 mb-6 text-center">
+              PHA funciona diferente.
+            </h3>
+            <div className="text-gray-700 text-lg leading-relaxed space-y-4">
+              <p>
+                Somos un equipo de 4 personas + tecnología dedicado a tu constructora. No te vendemos software para que te arregles solo. Nosotros lo creamos, lo instalamos, lo entrenamos, lo monitoreamos y lo optimizamos.
+              </p>
+              <p className="text-xl font-semibold text-blue-600">
+                Vos solo te ocupás de atender a los clientes que te mandamos listos para comprar.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 10 - Results */}
       <section id="resultados" className="py-14 md:py-24 px-4 bg-slate-900">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-4">
@@ -419,43 +442,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section - Done-for-you vs DIY */}
-      <section className="py-0">
-        {/* Part 1 - DIY problem */}
-        <div className="py-14 md:py-20 px-4 bg-slate-800">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 text-center">
-              Hay mucho software barato. Y hay una razón por la que es barato.
-            </h2>
-            <div className="text-slate-300 text-lg leading-relaxed space-y-4">
-              <p>
-                Suena tentador: un agente IA por pocos dólares al mes. Pero cuando lo empezás a configurar, necesitás integraciones. Después necesitás tokens de IA — créditos que se pagan aparte. Después descubrís que nadie lo monitorea, nadie lo optimiza, y tu &quot;agente&quot; le responde cualquier cosa a tus clientes.
-              </p>
-              <p>
-                Al final, lo que parecía barato te costó más tiempo, más plata, y más dolores de cabeza de los que tenías antes.
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* Part 2 - PHA solution */}
-        <div className="py-14 md:py-20 px-4 bg-white">
-          <div className="max-w-3xl mx-auto">
-            <h3 className="text-3xl font-bold text-gray-900 mb-6 text-center">
-              PHA funciona diferente.
-            </h3>
-            <div className="text-gray-700 text-lg leading-relaxed space-y-4">
-              <p>
-                Somos un equipo de 4 personas + tecnología dedicado a tu constructora. No te vendemos software para que te arregles solo. Nosotros lo creamos, lo instalamos, lo entrenamos, lo monitoreamos y lo optimizamos.
-              </p>
-              <p className="text-xl font-semibold text-blue-600">
-                Vos solo te ocupás de atender a los clientes que te mandamos listos para comprar.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 8 - Equipo */}
+      {/* Section 11 - Equipo */}
       <section id="equipo" className="py-14 md:py-24 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
@@ -523,7 +510,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 9 - CTA Final */}
+      {/* Section 12 - Qualification Form */}
+      <section id="califica" className="py-14 md:py-20 px-4 bg-gray-50">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
+            Verificá si tu constructora califica
+          </h2>
+          <p className="text-gray-600 text-center mb-10 text-lg">
+            Respondé 2 preguntas para saber si el Programa PHA es para tu empresa
+          </p>
+          <QualificationForm />
+        </div>
+      </section>
+
+      {/* Section 13 - CTA Final */}
       <section className="py-14 md:py-24 px-4 bg-blue-600">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -552,7 +552,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 10 - Footer */}
+      {/* Section 14 - Footer */}
       <footer className="py-8 px-4 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-gray-500 text-sm">

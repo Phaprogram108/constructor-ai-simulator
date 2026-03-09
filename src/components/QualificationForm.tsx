@@ -114,7 +114,7 @@ export default function QualificationForm() {
               <div>
                 <h3 className="text-2xl font-bold text-gray-900 mb-2">Tu constructora califica</h3>
                 <p className="text-gray-600">
-                  El Programa PHA puede funcionar para tu empresa. El siguiente paso es una llamada de 15 minutos con Joaquín para evaluar tu caso.
+                  El Programa PHA puede funcionar para tu empresa. El siguiente paso es una llamada de 60 minutos con Joaquín para evaluar tu caso.
                 </p>
               </div>
               <a

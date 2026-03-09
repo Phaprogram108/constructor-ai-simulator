@@ -8,10 +8,7 @@ import {
   Megaphone,
   Bot,
   LayoutDashboard,
-
-  Zap,
   Shield,
-  MessageSquare,
 } from 'lucide-react';
 
 
@@ -152,41 +149,10 @@ export default function Home() {
             <SimulatorForm />
           </div>
 
-          <div className="max-w-3xl mx-auto grid md:grid-cols-3 gap-4 mt-10">
-            <div className="flex items-center gap-3 bg-gray-50 p-4 rounded-xl border border-gray-100">
-              <div className="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center">
-                <Zap className="w-5 h-5 text-green-600" />
-              </div>
-              <div className="text-left">
-                <p className="font-medium text-gray-900">Instantáneo</p>
-                <p className="text-sm text-gray-500">Listo en segundos</p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-3 bg-gray-50 p-4 rounded-xl border border-gray-100">
-              <div className="w-10 h-10 bg-blue-100 rounded-lg flex items-center justify-center">
-                <Shield className="w-5 h-5 text-blue-600" />
-              </div>
-              <div className="text-left">
-                <p className="font-medium text-gray-900">Personalizado</p>
-                <p className="text-sm text-gray-500">Conoce tu empresa</p>
-              </div>
-            </div>
-
-            <div className="flex items-center gap-3 bg-gray-50 p-4 rounded-xl border border-gray-100">
-              <div className="w-10 h-10 bg-purple-100 rounded-lg flex items-center justify-center">
-                <MessageSquare className="w-5 h-5 text-purple-600" />
-              </div>
-              <div className="text-left">
-                <p className="font-medium text-gray-900">Califica Leads</p>
-                <p className="text-sm text-gray-500">Automáticamente</p>
-              </div>
-            </div>
-          </div>
         </div>
       </section>
 
-      {/* Section 6 - Solution */}
+      {/* Section 6 - Solution + What's included (merged) */}
       <section id="solucion" className="py-14 md:py-24 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
@@ -196,60 +162,51 @@ export default function Home() {
             IA + Publicidad + CRM, todo conectado
           </p>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <div className="bg-white border border-gray-200 rounded-xl p-8 text-center">
-              <div className="w-14 h-14 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Megaphone className="w-7 h-7" />
+          <div className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto">
+            <div className="bg-gray-50 border border-gray-100 rounded-xl p-6 flex gap-4">
+              <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center shrink-0">
+                <Megaphone className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Publicidad que trae compradores
-              </h3>
-              <p className="text-gray-600">
-                Meta Ads optimizados para tu zona. El sistema aprende y trae gente que realmente quiere comprar.
-              </p>
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-1">Publicidad que trae compradores</h3>
+                <p className="text-gray-500 text-sm">Meta Ads optimizados para tu zona, audiencia y objetivo. Gestionados por tu equipo.</p>
+              </div>
             </div>
 
-            <div className="bg-white border border-gray-200 rounded-xl p-8 text-center">
-              <div className="w-14 h-14 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Bot className="w-7 h-7" />
+            <div className="bg-gray-50 border border-gray-100 rounded-xl p-6 flex gap-4">
+              <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center shrink-0">
+                <Bot className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                Agente IA que vende por vos 24/7
-              </h3>
-              <p className="text-gray-600">
-                No es un chatbot con menú de opciones. Es una IA que conversa naturalmente, conoce tu constructora, cotiza y agenda reuniones.
-              </p>
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-1">Agente IA que vende por vos 24/7</h3>
+                <p className="text-gray-500 text-sm">Conversa naturalmente, conoce tu constructora, cotiza y agenda reuniones. En menos de 60 segundos.</p>
+              </div>
             </div>
 
-            <div className="bg-white border border-gray-200 rounded-xl p-8 text-center">
-              <div className="w-14 h-14 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center mx-auto mb-6">
-                <LayoutDashboard className="w-7 h-7" />
+            <div className="bg-gray-50 border border-gray-100 rounded-xl p-6 flex gap-4">
+              <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center shrink-0">
+                <LayoutDashboard className="w-6 h-6" />
               </div>
-              <h3 className="text-xl font-semibold text-gray-900 mb-3">
-                CRM donde ves todo sin esfuerzo
-              </h3>
-              <p className="text-gray-600">
-                Cada lead registrado con conversación completa, etiquetas y etapa de compra. El CRM se actualiza automáticamente con IA — sin carga manual, sin Excel.
-              </p>
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-1">CRM con actualización automática</h3>
+                <p className="text-gray-500 text-sm">Cada lead registrado con conversación, etapa de compra y seguimiento. Sin carga manual.</p>
+              </div>
+            </div>
+
+            <div className="bg-gray-50 border border-gray-100 rounded-xl p-6 flex gap-4">
+              <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center shrink-0">
+                <Shield className="w-6 h-6" />
+              </div>
+              <div>
+                <h3 className="font-semibold text-gray-900 mb-1">Equipo dedicado de 4 personas</h3>
+                <p className="text-gray-500 text-sm">Account manager, media buyer, diseñadora y AI manager. Trabajando para tu constructora.</p>
+              </div>
             </div>
           </div>
 
-          <div className="max-w-3xl mx-auto mt-12 bg-blue-50 border border-blue-200 rounded-xl p-6 text-center">
-            <p className="text-blue-900 text-lg">
-              PHA es tu socio estratégico, no un proveedor de software. Tenés un equipo dedicado de 4 personas trabajando para tu constructora.
-            </p>
-          </div>
-
-          <div className="max-w-3xl mx-auto mt-4 bg-slate-50 border border-slate-200 rounded-xl px-6 py-4 text-center">
-            <p className="text-slate-700 text-sm leading-relaxed">
-              Según{' '}
-              <a href="https://www.anthropic.com/research/labor-market-impacts" target="_blank" rel="noopener noreferrer" className="underline hover:text-slate-900">
-                investigación de Anthropic (2026)
-              </a>
-              , solo el 33% de las tareas automatizables con IA se están implementando hoy.{' '}
-              <span className="font-semibold text-slate-900">Las constructoras que adoptan primero capturan clientes que su competencia pierde.</span>
-            </p>
-          </div>
+          <p className="text-gray-400 text-sm mt-8 text-center">
+            Incluye todos los recursos: tokens de IA, creatividades, monitoreo y optimización continua.
+          </p>
         </div>
       </section>
 
@@ -270,8 +227,6 @@ export default function Home() {
                   'Asesores gastando 60-70% en soporte',
                   'Se pierden 50-60% de leads',
                   'Sin visibilidad del pipeline',
-                  'Meta cobra por todos los leads',
-                  'Equipo estresado',
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-2">
                     <span className="text-red-400 shrink-0 mt-0.5">●</span>
@@ -290,8 +245,6 @@ export default function Home() {
                   'Asesores dedicados 100% a reuniones',
                   '0 leads perdidos, seguimiento 3-6 meses',
                   'Dashboard en tiempo real',
-                  'Meta aprende y trae mejores leads',
-                  'Equipo enfocado y motivado',
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-2">
                     <span className="text-emerald-500 shrink-0 mt-0.5">●</span>
@@ -304,40 +257,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 8 - What the program includes */}
-      <section className="py-14 md:py-20 px-4 bg-white">
-        <div className="max-w-3xl mx-auto text-center">
-          <h2 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4">
-            Todo lo que incluye el Programa PHA
-          </h2>
-          <p className="text-gray-600 mb-10 text-lg">
-            No es solo un agente IA. Es un sistema completo para generar y cerrar ventas.
-          </p>
-          <div className="grid sm:grid-cols-2 gap-4 text-left">
-            <div className="bg-gray-50 border border-gray-100 rounded-xl p-5">
-              <p className="font-semibold text-gray-900 mb-1">Sistema publicitario en Meta Ads</p>
-              <p className="text-gray-500 text-sm">Campañas optimizadas por zona, audiencia y objetivo. Gestionadas por tu equipo.</p>
-            </div>
-            <div className="bg-gray-50 border border-gray-100 rounded-xl p-5">
-              <p className="font-semibold text-gray-900 mb-1">Agente IA entrenado en tu constructora</p>
-              <p className="text-gray-500 text-sm">Responde, cotiza, califica y agenda reuniones. 24/7, en menos de 60 segundos.</p>
-            </div>
-            <div className="bg-gray-50 border border-gray-100 rounded-xl p-5">
-              <p className="font-semibold text-gray-900 mb-1">CRM con actualización automática</p>
-              <p className="text-gray-500 text-sm">Cada lead registrado con conversación, etapa de compra y seguimiento. Sin carga manual.</p>
-            </div>
-            <div className="bg-gray-50 border border-gray-100 rounded-xl p-5">
-              <p className="font-semibold text-gray-900 mb-1">Equipo dedicado de 4 personas</p>
-              <p className="text-gray-500 text-sm">Account manager, media buyer, diseñadora y AI manager. Trabajando para tu constructora.</p>
-            </div>
-          </div>
-          <p className="text-gray-400 text-sm mt-8">
-            Incluye todos los recursos: tokens de IA, creatividades, monitoreo y optimización continua.
-          </p>
-        </div>
-      </section>
-
-      {/* Section 9 - Done-for-you vs DIY */}
+      {/* Section 8 - Done-for-you vs DIY */}
       <section className="py-0">
         {/* Part 1 - DIY problem */}
         <div className="py-14 md:py-20 px-4 bg-slate-800">

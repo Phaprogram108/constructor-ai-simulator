@@ -6,14 +6,21 @@ const UPSTASH_TOKEN = process.env.UPSTASH_REDIS_REST_TOKEN;
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json();
-    const { whatsapp, websiteUrl, createdAt } = body;
+    const { type } = body;
 
-    if (!whatsapp || !websiteUrl) {
-      return NextResponse.json({ error: 'Missing fields' }, { status: 400 });
+    // Accept both simulator leads (whatsapp + websiteUrl) and qualification leads
+    if (type === 'qualification') {
+      if (!body.publicidad || !body.consultasMes || !body.facturacionAnual) {
+        return NextResponse.json({ error: 'Missing fields' }, { status: 400 });
+      }
+    } else {
+      if (!body.whatsapp || !body.websiteUrl) {
+        return NextResponse.json({ error: 'Missing fields' }, { status: 400 });
+      }
     }
 
     const leadId = `lead:${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
-    const leadData = JSON.stringify({ whatsapp, websiteUrl, createdAt });
+    const leadData = JSON.stringify({ ...body, type: type || 'simulator' });
 
     if (UPSTASH_URL && UPSTASH_TOKEN) {
       // Store in Upstash Redis with no expiry

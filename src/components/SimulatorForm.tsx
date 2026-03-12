@@ -308,12 +308,8 @@ export default function SimulatorForm() {
               disabled={loading}
               className={`h-12 text-base ${fieldErrors.whatsapp ? 'border-red-500' : ''}`}
             />
-            {fieldErrors.whatsapp ? (
+            {fieldErrors.whatsapp && (
               <p className="text-sm text-red-500">{fieldErrors.whatsapp}</p>
-            ) : (
-              <p className="text-sm text-muted-foreground">
-                Para enviarte el acceso a tu agente
-              </p>
             )}
           </div>
 

@@ -40,6 +40,19 @@ export default function QualificationForm() {
   const handleSubmit = () => {
     if (q1 && q2 && q3) {
       setSubmitted(true);
+      // Fire-and-forget: save qualification data
+      fetch('/api/leads', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({
+          type: 'qualification',
+          publicidad: q1,
+          consultasMes: q2,
+          facturacionAnual: q3,
+          qualifies: (q1 === 'Sí, ya invierto' || q1 === 'No, pero quiero empezar') && q2 !== 'Menos de 10' && q3 !== 'Menos de 100.000',
+          createdAt: new Date().toISOString(),
+        }),
+      }).catch(() => {});
     }
   };
 

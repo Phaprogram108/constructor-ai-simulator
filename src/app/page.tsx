@@ -1,7 +1,6 @@
 import SimulatorForm from '@/components/SimulatorForm';
 import QualificationForm from '@/components/QualificationForm';
 import NavBar from '@/components/NavBar';
-import AnimatedCounter from '@/components/AnimatedCounter';
 import Image from 'next/image';
 import {
   AlertCircle,
@@ -26,23 +25,8 @@ export default function Home() {
           </h1>
 
           <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-            IA + Publicidad + CRM. Un equipo dedicado de 4 personas + tecnología que responde en menos de 60 segundos, califica leads y agenda reuniones. 24/7.
+            Nuestro sistema responde en menos de 60 segundos, califica leads, hace seguimiento y agenda reuniones 24/7 en automático.
           </p>
-
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-            <a
-              href="#simulador"
-              className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 rounded-full font-semibold text-lg transition-colors"
-            >
-              Probalo gratis
-            </a>
-            <a
-              href="#califica"
-              className="border-2 border-gray-300 hover:border-gray-400 text-gray-700 px-8 py-4 rounded-full font-semibold text-lg transition-colors"
-            >
-              Aplicá al Programa PHA
-            </a>
-          </div>
 
           <div className="mt-12 md:mt-16 max-w-2xl mx-auto">
             <div className="bg-gray-50 border border-gray-200 rounded-xl px-6 py-5">
@@ -57,55 +41,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 3 - Pain Points */}
-      <section id="problema" className="py-14 md:py-24 px-4 bg-slate-900">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
-            Si vendés construcción, seguro te pasa esto
-          </h2>
-          <div className="space-y-4">
-            {[
-              'Te llegan consultas pero tu equipo tarda horas en responder y los leads se enfrían',
-              'Invertís en publicidad pero no sabés cuántas consultas se convierten en presupuestos reales',
-              'Tenés un CRM pero nadie lo actualiza como debería — cargar cada lead, hacer seguimiento, mover etapas... requiere tiempo que tu equipo no tiene',
-              'Tus asesores comerciales solo atienden al lead que responde primero — el resto se pierde',
-            ].map((item) => (
-              <div key={item} className="flex items-center gap-3">
-                <AlertCircle className="w-6 h-6 text-amber-400 shrink-0" />
-                <p className="text-white text-lg">{item}</p>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <p className="text-blue-300 text-xl font-medium">
-              No es tu culpa. Pero tiene solución.
-            </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 4 - Esto NO es para vos si... */}
-      <section className="py-14 md:py-20 px-4 bg-red-950/90">
-        <div className="max-w-2xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-10">
-            Esto NO es para vos si...
-          </h2>
-          <div className="space-y-4">
-            {[
-              'No invertís en publicidad digital ni tenés intención de hacerlo',
-              'Recibís menos de 20 consultas por semana',
-              'No tenés presupuesto para invertir en crecimiento — si buscás una solución gratuita o muy barata, esto no es para vos (lo barato sale caro)',
-            ].map((item) => (
-              <div key={item} className="bg-red-900/40 border border-red-800/50 rounded-xl px-5 py-4 flex items-start gap-3">
-                <span className="text-red-400 text-xl shrink-0">&#10060;</span>
-                <p className="text-red-100 text-lg">{item}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Section 5 - Simulator */}
+      {/* Section 3 - Simulator (moved up) */}
       <section id="simulador" className="py-12 md:py-20 px-4 bg-white">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
@@ -152,61 +88,131 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 6 - Solution + What's included (merged) */}
-      <section id="solucion" className="py-14 md:py-24 px-4 bg-white">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
-            Así lo resolvemos
+      {/* Section 4 - Pain Points */}
+      <section id="problema" className="py-14 md:py-24 px-4 bg-slate-900">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
+            Si vendés construcción, seguro te pasa esto
           </h2>
-          <p className="text-gray-600 text-center mb-12 text-lg">
-            IA + Publicidad + CRM, todo conectado
+          <div className="space-y-4">
+            {[
+              'Tu equipo tarda horas en responder consultas y los leads se enfrían',
+              'Te llegan leads de todos lados (publicidad, redes, etc) pero no medís conversiones omnicanal',
+              'Tu CRM nunca está 100% actualizado y requiere tiempo y energía de tu equipo',
+              'Tu equipo pierde tiempo y energía atendiendo a curiosos que nunca van a comprar',
+              'Sabés que la IA puede mejorar tus ventas y productividad, pero no sabés cómo sacarle el jugo',
+            ].map((item) => (
+              <div key={item} className="flex items-center gap-3">
+                <AlertCircle className="w-6 h-6 text-amber-400 shrink-0" />
+                <p className="text-white text-lg">{item}</p>
+              </div>
+            ))}
+          </div>
+          <div className="text-center mt-12">
+            <p className="text-blue-300 text-xl font-medium">
+              Si te identificás con alguno de estos puntos, podemos ayudarte.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 5 - Esto NO es para vos si... */}
+      <section className="py-14 md:py-20 px-4 bg-red-950/90">
+        <div className="max-w-2xl mx-auto">
+          <p className="text-center text-red-300 text-sm font-semibold tracking-widest uppercase mb-4">
+            Pero
           </p>
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-10">
+            Esto NO es para vos si...
+          </h2>
+          <div className="space-y-4">
+            {[
+              'Recibís menos de 20 consultas por semana',
+              'No invertís en publicidad digital por falta de presupuesto',
+              'Tu constructora es muy chica y estás buscando un chatbot barato que puedas autogestionar',
+            ].map((item) => (
+              <div key={item} className="bg-red-900/40 border border-red-800/50 rounded-xl px-5 py-4 flex items-start gap-3">
+                <span className="text-red-400 text-xl shrink-0">&#10060;</span>
+                <p className="text-red-100 text-lg">{item}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
 
-          <div className="grid md:grid-cols-2 gap-4 max-w-4xl mx-auto">
-            <div className="bg-gray-50 border border-gray-100 rounded-xl p-6 flex gap-4">
-              <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center shrink-0">
-                <Megaphone className="w-6 h-6" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Publicidad que trae compradores</h3>
-                <p className="text-gray-500 text-sm">Meta Ads optimizados para tu zona, audiencia y objetivo. Gestionados por tu equipo.</p>
-              </div>
-            </div>
-
-            <div className="bg-gray-50 border border-gray-100 rounded-xl p-6 flex gap-4">
-              <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center shrink-0">
-                <Bot className="w-6 h-6" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Agente IA que vende por vos 24/7</h3>
-                <p className="text-gray-500 text-sm">Conversa naturalmente, conoce tu constructora, cotiza y agenda reuniones. En menos de 60 segundos.</p>
-              </div>
-            </div>
-
-            <div className="bg-gray-50 border border-gray-100 rounded-xl p-6 flex gap-4">
-              <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center shrink-0">
-                <LayoutDashboard className="w-6 h-6" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 mb-1">CRM con actualización automática</h3>
-                <p className="text-gray-500 text-sm">Cada lead registrado con conversación, etapa de compra y seguimiento. Sin carga manual.</p>
-              </div>
-            </div>
-
-            <div className="bg-gray-50 border border-gray-100 rounded-xl p-6 flex gap-4">
-              <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center shrink-0">
-                <Shield className="w-6 h-6" />
-              </div>
-              <div>
-                <h3 className="font-semibold text-gray-900 mb-1">Equipo dedicado de 4 personas</h3>
-                <p className="text-gray-500 text-sm">Account manager, media buyer, diseñadora y AI manager. Trabajando para tu constructora.</p>
-              </div>
+      {/* Section 6 - Nuestro Programa PHA */}
+      <section id="solucion" className="py-0">
+        {/* Intro - dark bg */}
+        <div className="py-14 md:py-20 px-4 bg-slate-800">
+          <div className="max-w-3xl mx-auto">
+            <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 text-center">
+              Nuestro Programa PHA
+            </h2>
+            <div className="text-slate-300 text-lg leading-relaxed space-y-4">
+              <p>
+                La mayoría de las soluciones IA son un dolor de cabeza. Prometen configurarse rápido y fácil, pero luego te das cuenta que necesitás integrar todas las partes, y eso te sale más caro.
+              </p>
+              <p>
+                Luego tenés que pagar tokens de IA por cada mensaje que responde el agente, tenés que configurar y pagar templates de Meta y revisar los seguimientos y cómo se integra al CRM, entre muchas otras cosas.
+              </p>
+              <p>
+                Ni hablar que la IA puede fallar y es difícil monitorizar, optimizar, y asegurarte que el agente no responda cualquier cosa.
+              </p>
+              <p>
+                Por eso decidimos armar un programa integral que te resuelve la publicidad (demanda de leads), IA (gestión de consultas y seguimiento) y CRM (administración y reportes del sistema) para que vos solo te ocupes de cerrar ventas con leads calificados y listos para comprar.
+              </p>
             </div>
           </div>
+        </div>
+        {/* Pillars - white bg */}
+        <div className="py-14 md:py-20 px-4 bg-white">
+          <div className="max-w-4xl mx-auto">
+            <div className="grid md:grid-cols-2 gap-4">
+              <div className="bg-gray-50 border border-gray-100 rounded-xl p-6 flex gap-4">
+                <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center shrink-0">
+                  <Megaphone className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-1">Publicidad que trae compradores</h3>
+                  <p className="text-gray-500 text-sm">Meta Ads optimizados para tu zona, audiencia y objetivo. Gestionados por tu equipo.</p>
+                </div>
+              </div>
 
-          <p className="text-gray-400 text-sm mt-8 text-center">
-            Incluye todos los recursos: tokens de IA, creatividades, monitoreo y optimización continua.
-          </p>
+              <div className="bg-gray-50 border border-gray-100 rounded-xl p-6 flex gap-4">
+                <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center shrink-0">
+                  <Bot className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-1">Agente IA que vende por vos 24/7</h3>
+                  <p className="text-gray-500 text-sm">Conversa naturalmente, conoce tu constructora, cotiza y agenda reuniones. En menos de 60 segundos.</p>
+                </div>
+              </div>
+
+              <div className="bg-gray-50 border border-gray-100 rounded-xl p-6 flex gap-4">
+                <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center shrink-0">
+                  <LayoutDashboard className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-1">CRM con actualización automática</h3>
+                  <p className="text-gray-500 text-sm">Cada lead registrado con conversación, etapa de compra y seguimiento. Sin carga manual.</p>
+                </div>
+              </div>
+
+              <div className="bg-gray-50 border border-gray-100 rounded-xl p-6 flex gap-4">
+                <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center shrink-0">
+                  <Shield className="w-6 h-6" />
+                </div>
+                <div>
+                  <h3 className="font-semibold text-gray-900 mb-1">Equipo dedicado de 4 personas</h3>
+                  <p className="text-gray-500 text-sm">Account manager, media buyer, diseñadora y AI manager. Trabajando para tu constructora.</p>
+                </div>
+              </div>
+            </div>
+
+            <p className="text-gray-400 text-sm mt-8 text-center">
+              Incluye todos los recursos: tokens de IA, creatividades, monitoreo y optimización continua.
+            </p>
+          </div>
         </div>
       </section>
 
@@ -257,54 +263,15 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 8 - Done-for-you vs DIY */}
-      <section className="py-0">
-        {/* Part 1 - DIY problem */}
-        <div className="py-14 md:py-20 px-4 bg-slate-800">
-          <div className="max-w-3xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-white mb-8 text-center">
-              Hay mucho software barato. Y hay una razón por la que es barato.
-            </h2>
-            <div className="text-slate-300 text-lg leading-relaxed space-y-4">
-              <p>
-                Suena tentador: un agente IA por pocos dólares al mes. Pero cuando lo empezás a configurar, necesitás integraciones. Después necesitás tokens de IA — créditos que se pagan aparte. Después descubrís que nadie lo monitorea, nadie lo optimiza, y tu &quot;agente&quot; le responde cualquier cosa a tus clientes.
-              </p>
-              <p>
-                Al final, lo que parecía barato te costó más tiempo, más plata, y más dolores de cabeza de los que tenías antes.
-              </p>
-            </div>
-          </div>
-        </div>
-        {/* Part 2 - PHA solution */}
-        <div className="py-14 md:py-20 px-4 bg-white">
-          <div className="max-w-3xl mx-auto">
-            <h3 className="text-3xl font-bold text-gray-900 mb-6 text-center">
-              PHA funciona diferente.
-            </h3>
-            <div className="text-gray-700 text-lg leading-relaxed space-y-4">
-              <p>
-                Somos un equipo de 4 personas + tecnología dedicado a tu constructora. No te vendemos software para que te arregles solo. Nosotros lo creamos, lo instalamos, lo entrenamos, lo monitoreamos y lo optimizamos.
-              </p>
-              <p className="text-xl font-semibold text-blue-600">
-                Vos solo te ocupás de atender a los clientes que te mandamos listos para comprar.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 10 - Results */}
+      {/* Section 8 - Results */}
       <section id="resultados" className="py-14 md:py-24 px-4 bg-slate-900">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-4">
-            Resultados reales con números reales
-          </h2>
-          <p className="text-blue-300 text-center mb-12 text-lg">
             Caso de éxito: Constructora modular en Argentina
-          </p>
+          </h2>
 
           {/* Video */}
-          <div className="max-w-3xl mx-auto mb-10">
+          <div className="max-w-3xl mx-auto">
             <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
               <iframe
                 src="https://www.loom.com/embed/0b288021895f49338328c6258299068f"
@@ -314,55 +281,10 @@ export default function Home() {
               />
             </div>
           </div>
-
-          {/* Key metrics - animated counters */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-6 md:gap-8 max-w-3xl mx-auto">
-            <AnimatedCounter
-              end={1139}
-              prefix="$"
-              className="text-3xl md:text-4xl font-bold text-white"
-              labelClassName="text-blue-300 text-sm mt-1"
-              label="USD invertidos en Meta Ads"
-            />
-            <AnimatedCounter
-              end={2129}
-              className="text-3xl md:text-4xl font-bold text-white"
-              labelClassName="text-blue-300 text-sm mt-1"
-              label="conversaciones generadas"
-            />
-            <AnimatedCounter
-              end={271}
-              className="text-3xl md:text-4xl font-bold text-white"
-              labelClassName="text-blue-300 text-sm mt-1"
-              label="leads calificados"
-            />
-            <AnimatedCounter
-              end={127}
-              className="text-3xl md:text-4xl font-bold text-white"
-              labelClassName="text-blue-300 text-sm mt-1"
-              label="entrevistas agendadas"
-            />
-            <AnimatedCounter
-              end={8.97}
-              prefix="$"
-              decimals={2}
-              className="text-3xl md:text-4xl font-bold text-emerald-400"
-              labelClassName="text-blue-300 text-sm mt-1"
-              label="costo por entrevista"
-            />
-            <AnimatedCounter
-              end={0.54}
-              prefix="$"
-              decimals={2}
-              className="text-3xl md:text-4xl font-bold text-emerald-400"
-              labelClassName="text-blue-300 text-sm mt-1"
-              label="costo por conversación"
-            />
-          </div>
         </div>
       </section>
 
-      {/* Section 11 - Equipo */}
+      {/* Section 9 - Equipo */}
       <section id="equipo" className="py-14 md:py-24 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
@@ -430,20 +352,20 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 12 - Qualification Form */}
+      {/* Section 10 - Qualification Form */}
       <section id="califica" className="py-14 md:py-20 px-4 bg-gray-50">
         <div className="max-w-4xl mx-auto">
           <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
             Verificá si tu constructora califica
           </h2>
           <p className="text-gray-600 text-center mb-10 text-lg">
-            Respondé 2 preguntas para saber si el Programa PHA es para tu empresa
+            Respondé 3 preguntas para saber si el Programa PHA es para tu empresa
           </p>
           <QualificationForm />
         </div>
       </section>
 
-      {/* Section 13 - CTA Final */}
+      {/* Section 11 - CTA Final */}
       <section className="py-14 md:py-24 px-4 bg-blue-600">
         <div className="max-w-2xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
@@ -472,7 +394,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 14 - Footer */}
+      {/* Section 12 - Footer */}
       <footer className="py-8 px-4 bg-white border-t border-gray-100">
         <div className="max-w-4xl mx-auto text-center">
           <p className="text-gray-500 text-sm">

@@ -9,11 +9,12 @@ type Answer = string | null;
 export default function QualificationForm() {
   const [q1, setQ1] = useState<Answer>(null);
   const [q2, setQ2] = useState<Answer>(null);
+  const [q3, setQ3] = useState<Answer>(null);
   const [submitted, setSubmitted] = useState(false);
 
   const q1Options = [
     'Sí, ya invierto',
-    'Sí, quiero empezar',
+    'No, pero quiero empezar',
     'No, por ahora no',
   ];
 
@@ -24,18 +25,26 @@ export default function QualificationForm() {
     'Más de 100',
   ];
 
-  const q1Pass = q1 === 'Sí, ya invierto' || q1 === 'Sí, quiero empezar';
+  const q3Options = [
+    'Menos de 100.000',
+    'Entre 100.000 y 500.000',
+    'Entre 500.000 y 3.000.000',
+    'Más de 3.000.000',
+  ];
+
+  const q1Pass = q1 === 'Sí, ya invierto' || q1 === 'No, pero quiero empezar';
   const q2Pass = q2 !== null && q2 !== 'Menos de 10';
-  const qualifies = q1Pass && q2Pass;
+  const q3Pass = q3 !== null && q3 !== 'Menos de 100.000';
+  const qualifies = q1Pass && q2Pass && q3Pass;
 
   const handleSubmit = () => {
-    if (q1 && q2) {
+    if (q1 && q2 && q3) {
       setSubmitted(true);
     }
   };
 
   const whatsappMessage = encodeURIComponent(
-    `Hola! Completé el formulario en agenteiagratis.com. Me interesa el Programa PHA.\n\nPublicidad digital: ${q1}\nConsultas por mes: ${q2}`
+    `Hola! Completé el formulario en agenteiagratis.com. Me interesa el Programa PHA.\n\nPublicidad digital: ${q1}\nConsultas por mes: ${q2}\nFacturación anual: ${q3}`
   );
   const whatsappUrl = `https://api.whatsapp.com/send?phone=${WHATSAPP_NUMBER}&text=${whatsappMessage}`;
 
@@ -87,13 +96,35 @@ export default function QualificationForm() {
             </div>
           </div>
 
+          {/* Question 3 */}
+          <div>
+            <p className="text-lg font-semibold text-gray-900 mb-4">
+              3. ¿Cuánto factura tu constructora por año en USD?
+            </p>
+            <div className="grid sm:grid-cols-2 gap-3">
+              {q3Options.map((option) => (
+                <button
+                  key={option}
+                  onClick={() => setQ3(option)}
+                  className={`w-full text-left px-5 py-4 rounded-xl border-2 transition-all font-medium ${
+                    q3 === option
+                      ? 'border-blue-600 bg-blue-50 text-blue-900'
+                      : 'border-gray-200 bg-white text-gray-700 hover:border-gray-300 hover:bg-gray-50'
+                  }`}
+                >
+                  {option}
+                </button>
+              ))}
+            </div>
+          </div>
+
           {/* Submit */}
           <div className="text-center">
             <button
               onClick={handleSubmit}
-              disabled={!q1 || !q2}
+              disabled={!q1 || !q2 || !q3}
               className={`px-8 py-4 rounded-full font-semibold text-lg transition-all ${
-                q1 && q2
+                q1 && q2 && q3
                   ? 'bg-blue-600 hover:bg-blue-700 text-white shadow-lg'
                   : 'bg-gray-200 text-gray-400 cursor-not-allowed'
               }`}

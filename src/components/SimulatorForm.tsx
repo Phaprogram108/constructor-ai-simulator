@@ -23,6 +23,7 @@ export default function SimulatorForm() {
   const router = useRouter();
   const fileInputRef = useRef<HTMLInputElement>(null);
 
+  const [whatsapp, setWhatsapp] = useState('');
   const [websiteUrl, setWebsiteUrl] = useState('');
   const [pdfUrl, setPdfUrl] = useState('');
   const [pdfFile, setPdfFile] = useState<File | null>(null);
@@ -30,6 +31,7 @@ export default function SimulatorForm() {
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [fieldErrors, setFieldErrors] = useState<{
+    whatsapp?: string;
     websiteUrl?: string;
     pdfUrl?: string;
     pdfFile?: string;
@@ -135,6 +137,19 @@ export default function SimulatorForm() {
     setLoading(true);
 
     try {
+      // Validate WhatsApp
+      const digitsOnly = whatsapp.replace(/\D/g, '');
+      if (!whatsapp.trim()) {
+        setFieldErrors(prev => ({ ...prev, whatsapp: 'Ingresa tu numero de WhatsApp' }));
+        setLoading(false);
+        return;
+      }
+      if (digitsOnly.length < 8) {
+        setFieldErrors(prev => ({ ...prev, whatsapp: 'El numero debe tener al menos 8 digitos' }));
+        setLoading(false);
+        return;
+      }
+
       // Validate website URL is provided
       if (!websiteUrl) {
         setFieldErrors(prev => ({ ...prev, websiteUrl: 'Ingresa la URL de tu sitio web' }));
@@ -207,6 +222,13 @@ export default function SimulatorForm() {
         }
       }
 
+      // Fire-and-forget: send lead data
+      fetch('/api/leads', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ whatsapp, websiteUrl: url, createdAt: new Date().toISOString() }),
+      }).catch(() => {}); // silently ignore errors
+
       // Create session
       const response = await fetch('/api/simulator/create', {
         method: 'POST',
@@ -271,6 +293,30 @@ export default function SimulatorForm() {
       </div>
       <div>
         <form onSubmit={handleSubmit} className="space-y-6">
+          {/* WhatsApp */}
+          <div className="space-y-2">
+            <Label htmlFor="whatsapp" className="text-base font-medium">Tu WhatsApp *</Label>
+            <Input
+              id="whatsapp"
+              type="tel"
+              placeholder="+54 9 11 1234-5678"
+              value={whatsapp}
+              onChange={(e) => {
+                setWhatsapp(e.target.value);
+                setFieldErrors(prev => ({ ...prev, whatsapp: undefined }));
+              }}
+              disabled={loading}
+              className={`h-12 text-base ${fieldErrors.whatsapp ? 'border-red-500' : ''}`}
+            />
+            {fieldErrors.whatsapp ? (
+              <p className="text-sm text-red-500">{fieldErrors.whatsapp}</p>
+            ) : (
+              <p className="text-sm text-muted-foreground">
+                Para enviarte el acceso a tu agente
+              </p>
+            )}
+          </div>
+
           {/* Website URL */}
           <div className="space-y-2">
             <Label htmlFor="websiteUrl" className="text-base font-medium">URL de tu Sitio Web *</Label>

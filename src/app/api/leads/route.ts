@@ -43,9 +43,16 @@ export async function POST(request: NextRequest) {
   }
 }
 
-// GET endpoint to retrieve all leads
-export async function GET() {
+// GET endpoint to retrieve all leads (protected with API key)
+export async function GET(request: NextRequest) {
   try {
+    const apiKey = request.headers.get('x-api-key') || request.nextUrl.searchParams.get('key');
+    const expectedKey = process.env.LEADS_API_KEY;
+
+    if (!expectedKey || apiKey !== expectedKey) {
+      return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
+    }
+
     if (!UPSTASH_URL || !UPSTASH_TOKEN) {
       return NextResponse.json({ error: 'No Redis configured' }, { status: 503 });
     }

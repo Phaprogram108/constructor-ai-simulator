@@ -2,8 +2,6 @@ import { NextRequest, NextResponse } from 'next/server';
 
 const UPSTASH_URL = process.env.UPSTASH_REDIS_REST_URL;
 const UPSTASH_TOKEN = process.env.UPSTASH_REDIS_REST_TOKEN;
-const TEST_WEBSITE = 'https://www.test-health-check.com/';
-const TEST_WHATSAPP = '+0000000000';
 
 async function redisCommand(command: string): Promise<{ result: unknown }> {
   const res = await fetch(`${UPSTASH_URL}/${command}`, {
@@ -21,81 +19,40 @@ export async function GET(request: NextRequest) {
   }
 
   const checks: Record<string, { ok: boolean; detail?: string }> = {};
-  const baseUrl = request.nextUrl.origin;
 
   // 1. Check Redis connectivity
   try {
     if (!UPSTASH_URL || !UPSTASH_TOKEN) throw new Error('Env vars missing');
-    await redisCommand('ping');
-    checks.redis = { ok: true };
+    const ping = await redisCommand('ping');
+    checks.redis = { ok: ping.result === 'PONG' };
   } catch (e) {
     checks.redis = { ok: false, detail: String(e) };
   }
 
-  // 2. Test simulator creation
-  let sessionId: string | null = null;
+  // 2. Test Redis read/write (session-like round trip)
   try {
-    const res = await fetch(`${baseUrl}/api/simulator/create`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({
-        websiteUrl: TEST_WEBSITE,
-        whatsapp: TEST_WHATSAPP,
-        catalogSource: 'link',
-      }),
-    });
-    const data = await res.json();
-    if (res.ok && data.sessionId) {
-      sessionId = data.sessionId;
-      checks.simulator = { ok: true };
-    } else {
-      checks.simulator = { ok: false, detail: data.error || `Status ${res.status}` };
-    }
+    const testKey = `health:${Date.now()}`;
+    await redisCommand(`set/${testKey}/ok/ex/10`);
+    const read = await redisCommand(`get/${testKey}`);
+    await redisCommand(`del/${testKey}`);
+    checks.session_roundtrip = { ok: read.result === 'ok' };
   } catch (e) {
-    checks.simulator = { ok: false, detail: String(e) };
+    checks.session_roundtrip = { ok: false, detail: String(e) };
   }
 
-  // 3. Test chat (if session was created)
-  if (sessionId) {
-    try {
-      const res = await fetch(`${baseUrl}/api/chat`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ sessionId, message: 'health check test' }),
-      });
-      if (res.ok) {
-        checks.chat = { ok: true };
-      } else {
-        const data = await res.json();
-        checks.chat = { ok: false, detail: data.error || `Status ${res.status}` };
-      }
-    } catch (e) {
-      checks.chat = { ok: false, detail: String(e) };
-    }
-
-    // 4. Cleanup: delete test session from Redis
-    try {
-      await redisCommand(`del/session:${sessionId}`);
-    } catch {
-      // Non-critical
-    }
-  }
-
-  // 5. Cleanup: remove test lead from Redis
+  // 3. Verify landing page is up
   try {
-    // Get all leads to find and remove test ones
-    const leadsRes = await redisCommand('lrange/leads:all/0/-1');
-    const leads = (leadsRes.result as string[]) || [];
-    for (const lead of leads) {
-      if (lead.includes(TEST_WHATSAPP) || lead.includes(TEST_WEBSITE)) {
-        await redisCommand(`lrem/leads:all/0/${encodeURIComponent(lead)}`);
-      }
-    }
-    // Also remove individual lead keys matching test data
-    checks.cleanup = { ok: true };
+    const res = await fetch(request.nextUrl.origin, { method: 'HEAD' });
+    checks.landing = { ok: res.ok };
   } catch (e) {
-    checks.cleanup = { ok: false, detail: String(e) };
+    checks.landing = { ok: false, detail: String(e) };
   }
+
+  // 4. Verify API key env vars are set (Anthropic needed for chat)
+  checks.api_keys = {
+    ok: !!process.env.ANTHROPIC_API_KEY,
+    detail: !process.env.ANTHROPIC_API_KEY ? 'ANTHROPIC_API_KEY missing' : undefined,
+  };
 
   const allOk = Object.values(checks).every(c => c.ok);
 

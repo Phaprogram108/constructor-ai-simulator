@@ -23,6 +23,22 @@ export function ReelCard({ id }: ReelCardProps) {
     }
   };
 
+  const goFullscreen = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    const video = videoRef.current;
+    if (!video) return;
+
+    if (video.paused) {
+      video.play();
+      setIsPlaying(true);
+    }
+    if (video.requestFullscreen) {
+      video.requestFullscreen();
+    } else if ((video as HTMLVideoElement & { webkitEnterFullscreen?: () => void }).webkitEnterFullscreen) {
+      (video as HTMLVideoElement & { webkitEnterFullscreen: () => void }).webkitEnterFullscreen();
+    }
+  };
+
   return (
     <div
       className="flex-shrink-0 snap-center w-[200px] md:w-[240px] h-[350px] md:h-[420px] rounded-xl overflow-hidden relative group cursor-pointer bg-black"
@@ -49,6 +65,17 @@ export function ReelCard({ id }: ReelCardProps) {
             </div>
           </div>
         </>
+      )}
+      {isPlaying && (
+        <button
+          onClick={goFullscreen}
+          className="absolute bottom-3 right-3 w-9 h-9 rounded-full bg-black/40 backdrop-blur-sm flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity"
+          aria-label="Pantalla completa"
+        >
+          <svg className="w-4 h-4 text-white" fill="none" stroke="currentColor" strokeWidth={2} viewBox="0 0 24 24">
+            <path d="M8 3H5a2 2 0 00-2 2v3m18 0V5a2 2 0 00-2-2h-3m0 18h3a2 2 0 002-2v-3M3 16v3a2 2 0 002 2h3" />
+          </svg>
+        </button>
       )}
       <div className="absolute top-3 right-3">
         <svg className="w-5 h-5 text-white drop-shadow-lg" fill="currentColor" viewBox="0 0 24 24">

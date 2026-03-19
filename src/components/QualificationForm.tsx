@@ -40,6 +40,15 @@ export default function QualificationForm() {
   const handleSubmit = () => {
     if (q1 && q2 && q3) {
       setSubmitted(true);
+      // Fire Meta Pixel Lead event
+      if (typeof window !== 'undefined' && typeof window.fbq === 'function') {
+        window.fbq('track', 'Lead', {
+          content_name: 'Qualification Form',
+          publicidad: q1,
+          consultas_mes: q2,
+          facturacion_anual: q3,
+        });
+      }
       // Fire-and-forget: save qualification data
       fetch('/api/leads', {
         method: 'POST',

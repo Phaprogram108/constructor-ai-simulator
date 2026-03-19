@@ -7,42 +7,29 @@ const META_PIXEL_ID = '897555616586950';
 export default function MetaPixel() {
   useEffect(() => {
     // Avoid double-init
-    if (typeof window.fbq === 'function') return;
+    if (document.getElementById('fb-pixel-script')) return;
 
-    // Initialize fbq stub
-    const fbq = function (...args: unknown[]) {
-      // eslint-disable-next-line @typescript-eslint/no-explicit-any
-      (fbq as any).callMethod
-        ? // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          (fbq as any).callMethod(...args)
-        : // eslint-disable-next-line @typescript-eslint/no-explicit-any
-          (fbq as any).queue.push(args);
-    } as unknown as typeof window.fbq;
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    (fbq as any).push = fbq;
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    (fbq as any).loaded = true;
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    (fbq as any).version = '2.0';
-    // eslint-disable-next-line @typescript-eslint/no-explicit-any
-    (fbq as any).queue = [];
-
-    window.fbq = fbq;
-    window._fbq = fbq;
-
-    // Load the external script
-    const script = document.createElement('script');
-    script.async = true;
-    script.src = 'https://connect.facebook.net/en_US/fbevents.js';
-    document.head.appendChild(script);
-
-    // Init + PageView
-    window.fbq('init', META_PIXEL_ID);
-    window.fbq('track', 'PageView');
+    // Inject the standard Meta Pixel snippet
+    const inline = document.createElement('script');
+    inline.id = 'fb-pixel-script';
+    inline.textContent = `
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window, document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+      fbq('init', '${META_PIXEL_ID}');
+      fbq('track', 'PageView');
+    `;
+    document.head.appendChild(inline);
   }, []);
 
   return (
     <noscript>
+      {/* eslint-disable-next-line @next/next/no-img-element */}
       <img
         height="1"
         width="1"

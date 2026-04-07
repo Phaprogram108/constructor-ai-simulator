@@ -1,0 +1,319 @@
+{
+  "company": "Contenedores Argentina",
+  "url": "https://contenedoresargentina.com/",
+  "testedAt": "2026-02-06T16:55:43.723Z",
+  "sessionId": "d431a1ec-af3b-4094-ae4e-f7685da8ba58",
+  "systemPromptLength": 21512,
+  "systemPromptModelsFound": [
+    "Muchas más soluciones",
+    "Aislación",
+    "Quiero saber más",
+    "Casa",
+    "Oficina",
+    "Vestuario",
+    "Container",
+    "Contenedores Marítimos",
+    "Depósitos",
+    "Baños y Vestuarios",
+    "Oficinas",
+    "Casas"
+  ],
+  "systemPromptWhatsApp": "+5491136756227",
+  "systemPromptType": "de Módulos estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Somos Contenedores Argentina, una empresa que se dedica a la **venta y alquiler de contenedores marítimos y modulares** en todo tipo de formatos. Trabajamos con **casas, oficinas, depósitos, baños y vestuarios**, construidos a partir de contenedores marítimos de **acero Corten**, que es súper resistente y durable.  \n\nOfrecemos soluciones rápidas, personalizables, con **módulos de 15 m² y 30 m²** (y combinaciones mayores), y también contamos con **financiación**. Para orientarte mejor, ¿qué tipo de Módulos estás buscando: casa, oficina, depósito, baños/vestuarios u otra cosa?",
+      "mentionedModels": [
+        "Casa",
+        "Oficina",
+        "Vestuario",
+        "Contenedores Marítimos",
+        "Depósitos",
+        "Baños y Vestuarios",
+        "Oficinas",
+        "Casas"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 5045
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos **venta y alquiler de contenedores marítimos y modulares** para distintos usos. Nuestros principales productos y servicios son:\n\n- **Contenedores Marítimos**: 20’ ST, 40’ ST y 40’ HC, para obras, mudanzas, almacenamiento o proyectos especiales.  \n- **Depósitos**: hechos con contenedores, seguros, resistentes y configurables (ventilación, divisiones, eléctrica, etc.).  \n- **Baños y Vestuarios**: modulares, en PVC y goma símil moneda, con buena aislación, cómodos y fáciles de limpiar.  \n- **Oficinas Modulares**: aisladas, con iluminación LED, piso flotante o goma, distribución a medida, listas en semanas.  \n- **Casas Modulares**: desde 15 m² y 30 m² en adelante, con aislación térmica real, ampliables y listas para habitar.  \n\nAdemás, trabajamos con **Módulos específicos** como Casa 15 m², Casa 30 m², Oficina 30 m², Oficina 60 m², Vestuario 15 m², Vestuario 30 m², Container 15 m², Container 30 m² y Módulos Gemelos 20′, y contamos con **financiación**. ¿Qué tipo de Módulos estás buscando?",
+      "mentionedModels": [
+        "Aislación",
+        "Casa",
+        "Oficina",
+        "Vestuario",
+        "Container",
+        "Contenedores Marítimos",
+        "Depósitos",
+        "Baños y Vestuarios",
+        "Oficinas",
+        "Casas"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4810
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Podés contactarnos directo por WhatsApp o teléfono al **+54 9 11 3675 6227**.  \nTambién, si preferís por mail, es **mpalacios@contenedoresargentina.com**.  \n\nMientras tanto, así te ayudo por acá: ¿qué tipo de Módulos estás buscando?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 1669
+    },
+    {
+      "question": "¿Cuántos modelos de casas ofrecen?",
+      "questionType": "product_count",
+      "response": "En casas modulares trabajamos con **dos modelos estándar principales**: la **Casa 15 m²** y la **Casa 30 m²**, ambas construidas a partir de contenedores marítimos con aislación térmica real y listas para habitar. Además, estos módulos se pueden **combinar y ampliar** (por ejemplo, sumar otro de 15 o 30 m²) para armar proyectos más grandes según lo que necesites.  \n\nPara orientarte mejor, ¿estás pensando en algo tipo monoambiente chico (15 m²) o ya algo más cómodo como 30 m² o más?",
+      "mentionedModels": [
+        "Aislación",
+        "Casa",
+        "Contenedores Marítimos",
+        "Casas"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4016
+    },
+    {
+      "question": "Contame sobre Muchas más soluciones",
+      "questionType": "product_specific",
+      "response": "Claro, “**Muchas más soluciones**” agrupa varios Módulos que salen de lo tradicional y te permiten resolver proyectos más específicos con unos **30 m²** por módulo. Ahí entran opciones como el **Container 40’ / 30 m² HC**, los **Módulos Gemelos 20′**, el **Container 30 m²**, además de combinaciones especiales para usos mixtos (oficina + depósito, showroom, espacios de proyecto, etc.), siempre en acero Corten y con posibilidad de personalizar aberturas, aislación e interiores.  \n\nSon ideales cuando necesitás algo a medida y no encajás perfecto en “solo casa” u “solo oficina”. Para ayudarte mejor, ¿para qué uso puntual estás pensando este Módulo de 30 m²?",
+      "mentionedModels": [
+        "Muchas más soluciones",
+        "Aislación",
+        "Casa",
+        "Oficina",
+        "Container"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4609
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Muchas más soluciones? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "En “**Muchas más soluciones**” trabajamos con Módulos de **30 m²** (por ejemplo, Container 40’ / 30 m² HC o Container 30 m²), siempre en **acero Corten** y con posibilidad de sumar **aislación térmica**, aberturas de calidad, instalación eléctrica e interiores según el uso. No tengo cargada una ficha única de dormitorios porque estos Módulos se configuran a medida: en 30 m² podés armar desde un monoambiente amplio hasta 1 dormitorio definido, o bien uso no habitacional (oficina, depósito mixto, showroom, etc.).  \n\nNo tengo los precios actualizados cargados. Te sugiero consultarlo por WhatsApp al **+54 9 11 3675 6227** así te pasan planos y opciones concretas; mientras tanto, ¿lo estás pensando para vivienda, oficina o algún uso combinado?",
+      "mentionedModels": [
+        "Muchas más soluciones",
+        "Aislación",
+        "Oficina",
+        "Container"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 3580
+    },
+    {
+      "question": "Contame sobre Aislación",
+      "questionType": "product_specific",
+      "response": "El Módulo **Aislación** es un módulo de **30 m²** pensado específicamente para que tengas **confort térmico y acústico real** en tu espacio modular. Trabajamos sobre contenedores marítimos de **acero Corten**, incorporando sistemas de aislación (paneles, lana, revestimientos interiores, cielorrasos, pisos adecuados) para que no sufra ni el calor ni el frío, y mejore también el ruido interior.  \n\nSe aplica tanto a **casas, oficinas, depósitos o baños/vestuarios**, adaptando materiales según el uso. Para afinar mejor la recomendación, ¿en qué tipo de Módulo querés enfocarte la aislación: casa, oficina, depósito o baños/vestuarios?",
+      "mentionedModels": [
+        "Aislación",
+        "Casa",
+        "Oficina",
+        "Vestuario",
+        "Contenedores Marítimos",
+        "Depósitos",
+        "Oficinas",
+        "Casas"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2946
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Aislación? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "El Módulo **Aislación** está planteado sobre una superficie estándar de **30 m²**, construida en **contenedor marítimo de acero Corten**, y su foco no es la cantidad de dormitorios sino el **sistema constructivo para confort térmico y acústico**. Sobre la estructura metálica se suman capas de **aislación térmica real** (material aislante en paredes y techo), revestimientos interiores, cielorraso, y pisos adecuados, más la posibilidad de sumar aberturas de calidad e instalación eléctrica según el proyecto.\n\nLa distribución interna (monoambiente, 1 dormitorio, oficina abierta, depósito aislado, etc.) se diseña a medida según el uso: vivienda, oficina, depósito o baños/vestuarios. No tengo los precios actualizados cargados; te sugiero consultarlo por WhatsApp al **+54 9 11 3675 6227**. ¿Este Módulo Aislación lo estás pensando para vivienda, oficina o depósito?",
+      "mentionedModels": [
+        "Aislación",
+        "Oficina",
+        "Vestuario"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 6600
+    },
+    {
+      "question": "¿Cuál es la diferencia entre Muchas más soluciones y Aislación?",
+      "questionType": "model_comparison",
+      "response": "La diferencia principal es el foco de cada uno:  \n- **Muchas más soluciones (30 m²)** es una categoría de Módulos pensada para **resolverte el uso** (casa, oficina, depósito, showroom, combinados, etc.) con distintos formatos como Container 40’ / 30 m² HC, Container 30 m² o Módulos Gemelos 20′.  \n- **Aislación (30 m²)** es un Módulo donde el foco está en el **confort térmico y acústico**: mismo tipo de estructura en acero Corten, pero con especial énfasis en capas de aislación, revestimientos y terminaciones para que el espacio sea más confortable, sin definir de antemano si es casa, oficina o depósito.  \n\nEn resumen: Muchas más soluciones apunta más al **tipo de uso y configuración**, y Aislación apunta más a la **calidad de habitabilidad** del módulo. Para lo que vos necesitás, ¿qué te preocupa más hoy: el uso (casa/oficina/depósito) o el confort térmico y acústico?",
+      "mentionedModels": [
+        "Muchas más soluciones",
+        "Aislación",
+        "Casa",
+        "Oficina",
+        "Container"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3764
+    },
+    {
+      "question": "¿Qué modelo me recomendás para una familia de 4 personas?",
+      "questionType": "recommendation",
+      "response": "Para una familia de 4 lo ideal es pensar en algo a partir de **30 m² hacia arriba**, combinando Módulos de **Casas**. Una opción muy usada es arrancar con una **Casa 30 m²** (estar-cocina + 1 dormitorio) y sumarle otro Módulo (por ejemplo otro de 15 o 30 m²) para generar **2 dormitorios + estar-cocina y baño**.\n\nComo trabajamos en sistema modular, podés empezar con un módulo y **ampliar después** sin obra húmeda pesada. Para orientarte bien, ¿ya tenés terreno? ¿En qué zona sería?",
+      "mentionedModels": [
+        "Casa",
+        "Casas"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2716
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos en **sistema modular**: diseñamos el Módulo según lo que necesitás, fabricamos casi todo en nuestro taller (estructura en acero Corten, aislación, instalaciones, terminaciones interiores) y luego lo llevamos al terreno para la **instalación final**, que es muy rápida comparado con la obra tradicional.  \n\nLos plazos habituales van de **30 a 90 días** según el tipo de proyecto (no es lo mismo un depósito simple que una casa completa u oficina grande).  \nPara calcular mejor tu caso, ¿qué tipo de Módulo estás pensando y para cuándo lo necesitarías?",
+      "mentionedModels": [
+        "Aislación",
+        "Casa",
+        "Oficina"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2613
+    },
+    {
+      "question": "¿Se pueden personalizar los modelos de casas?",
+      "questionType": "customization",
+      "response": "Sí, las **Casas modulares** se pueden personalizar bastante. Podés definir **distribución interna** (monoambiente, 1 o más dormitorios combinando módulos), tipo de **revestimientos**, **pisos**, ubicación y tamaño de **aberturas**, nivel de **aislación**, y sumar/combinar Módulos de **15 m² y 30 m²** para ampliar en el futuro.  \n\nTrabajamos mucho a medida dentro de la base modular. Para ayudarte mejor, ¿qué superficie te imaginás para tu casa y cuántos dormitorios necesitarías?",
+      "mentionedModels": [
+        "Aislación",
+        "Casa",
+        "Casas"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2529
+    },
+    {
+      "question": "¿Tenés imágenes, planos o algún catálogo que pueda ver?",
+      "questionType": "images_catalog",
+      "response": "Sí, tenemos un catálogo online con fotos, planos y ejemplos de obras reales. Podés ver:\n\n- **Casas**: https://contenedoresargentina.com/casas/  \n- **Oficinas**: https://contenedoresargentina.com/oficinas/  \n- **Vestuarios y baños**: https://contenedoresargentina.com/vestuarios-y-banos/  \n- **Depósitos**: https://contenedoresargentina.com/depositos/  \n- **Trabajos realizados (galería completa)**: https://contenedoresargentina.com/formato-detalle-de-trabajos-realizados/\n\nSi querés, contame qué tipo de Módulo te interesa (casa, oficina, etc.) y te digo qué modelos específicos mirar primero dentro de la web.",
+      "mentionedModels": [
+        "Casa",
+        "Oficina",
+        "Vestuario",
+        "Depósitos",
+        "Oficinas",
+        "Casas"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2535
+    },
+    {
+      "question": "¿Cuánto sale aproximadamente una casa de 2 dormitorios?",
+      "questionType": "pricing",
+      "response": "No tengo los precios actualizados cargados como para darte un valor real de una casa de 2 dormitorios por acá.  \n\nLo que sí te puedo decir es que normalmente se arma combinando Módulos de **Casas** de **15 m² y 30 m²** (por ejemplo, 30 m² + 15 m² o 30 m² + 30 m², según el diseño). Te sugiero escribirnos por WhatsApp al **+54 9 11 3675 6227** así te pasan un presupuesto personalizado. Para que el cálculo sea más preciso, ¿en qué zona tenés o vas a tener el terreno?",
+      "mentionedModels": [
+        "Casa",
+        "Casas"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 3799
+    },
+    {
+      "question": "¿Qué incluye el precio? ¿Terminaciones, instalación, todo?",
+      "questionType": "includes",
+      "response": "En las **casas y oficinas modulares** el precio suele incluir el Módulo en acero Corten **completo y listo para usar**: estructura, aislación térmica, revestimientos interiores, piso (flotante o goma según el caso), instalación eléctrica, iluminación LED y aberturas, tal como se ve en los modelos estándar de Casas y Oficinas de la web. En baños y vestuarios incluye también terminaciones específicas en **PVC y goma símil moneda**, pensadas para uso intensivo y fácil limpieza.  \n\nLo que puede variar según proyecto son cosas como **movimiento de suelo, bases, traslado e instalación en el terreno**, por eso siempre lo detallamos en el presupuesto. No tengo los precios actualizados cargados; te recomiendo escribirnos por WhatsApp al **+54 9 11 3675 6227** así te pasan un presupuesto con todo discriminado. ¿Ya tenés terreno y en qué zona sería?",
+      "mentionedModels": [
+        "Aislación",
+        "Casa",
+        "Oficina",
+        "Vestuario",
+        "Baños y Vestuarios",
+        "Oficinas",
+        "Casas"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 5014
+    },
+    {
+      "question": "¿Ustedes se encargan de toda la instalación o solo entregan los materiales?",
+      "questionType": "installation",
+      "response": "Nosotros no vendemos solo materiales: entregamos el **Módulo ya construido** (casa, oficina, depósito, baño, etc.) y nos encargamos de la **instalación del módulo en el lugar**, mucho más parecido a “llevarte la obra terminada” que a una venta de partes sueltas.  \n\nSegún el proyecto, se coordina aparte lo necesario en el terreno (bases, accesos para el camión, conexiones finales), y todo eso se aclara en el presupuesto. Para ayudarte bien, ¿ya tenés terreno? ¿En qué zona sería?",
+      "mentionedModels": [
+        "Casa",
+        "Oficina"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3957
+    },
+    {
+      "question": "¿Qué garantía ofrecen sobre la construcción?",
+      "questionType": "warranty",
+      "response": "Trabajamos con contenedores marítimos de **acero Corten**, que es un material diseñado para soportar años de uso intensivo, y todos los módulos (casas, oficinas, depósitos, baños y vestuarios) se construyen con estándares pensados para durar y resistir traslado y uso diario.  \n\nEn la web no figura el detalle fino de años o condiciones específicas de garantía, así que eso te lo tienen que pasar por presupuesto formal. No tengo esa información específica cargada, pero podés escribir por WhatsApp al **+54 9 11 3675 6227** y te mandan por escrito las condiciones de garantía para el tipo de Módulo que estés evaluando. ¿Lo estás pensando más para vivienda o para uso comercial/obra?",
+      "mentionedModels": [
+        "Casa",
+        "Oficina",
+        "Vestuario",
+        "Contenedores Marítimos",
+        "Depósitos",
+        "Baños y Vestuarios",
+        "Oficinas",
+        "Casas"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4101
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, contamos con **financiación disponible** para la compra de Módulos (casas, oficinas, depósitos, etc.). Los planes y condiciones exactas no los tengo detallados acá, porque se adaptan al tipo de proyecto y al módulo que elijas.  \n\nTe sugiero escribir por WhatsApp al **+54 9 11 3675 6227** así te pasan opciones concretas de financiación para tu caso. Para ir guiándote, ¿estás pensando en financiar una **casa**, una **oficina** o algún otro tipo de Módulo?",
+      "mentionedModels": [
+        "Casa",
+        "Oficina",
+        "Depósitos",
+        "Oficinas",
+        "Casas"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2852
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Nos diferencia, primero, el **sistema constructivo en contenedores marítimos de acero Corten**, que es muy resistente y pensado para años de uso intensivo, y segundo, que hacemos **soluciones modulares rápidas y personalizables**: casas, oficinas, depósitos, baños y vestuarios, con buenos niveles de aislación y terminaciones listas para usar. Trabajamos con **módulos estándar de 15 m² y 30 m²** (Casas, Oficinas, Vestuarios, Depósitos, Contenedores Marítimos, Módulos Gemelos, etc.) que se pueden combinar y ampliar, y además ofrecemos **financiación**, algo clave para muchos proyectos.  \n\nTambién ponemos mucho foco en el **acompañamiento y diseño a medida**: podés visitar el taller, ver cómo construimos y adaptar distribución, aberturas y terminaciones a lo que necesitás. Para saber si encajamos bien con vos, ¿qué tipo de Módulo estás evaluando: casa, oficina, depósito o baños/vestuarios?",
+      "mentionedModels": [
+        "Aislación",
+        "Casa",
+        "Oficina",
+        "Vestuario",
+        "Contenedores Marítimos",
+        "Depósitos",
+        "Baños y Vestuarios",
+        "Oficinas",
+        "Casas"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 9354
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "En la info que tengo no figura un listado específico de zonas o provincias, ni si la cobertura es todo el país.  \n\nComo trabajamos con módulos transportables, muchas veces llegamos a distintas regiones coordinando logística, pero para confirmarte si llegamos a **tu zona puntual** te recomiendo escribir por WhatsApp al **+54 9 11 3675 6227**. ¿En qué localidad o provincia estás pensando instalar el Módulo?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2307
+    }
+  ],
+  "sessionCreationTimeMs": 88493,
+  "errors": []
+}

@@ -1,0 +1,52 @@
+=== GOHOME ===
+URL: https://gohomeconstrucciones.com.ar/
+Session: d9206bad-c959-45e9-9a1f-304800585b43
+Date: 2026-02-08 15:41:09
+Session creation: 35.8s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (4.9s): GO HOME Construcciones es una empresa que se dedica a diseñar y construir viviendas y espacios de trabajo usando contenedores marítimos. Hacemos casas container (como LIBERTY, ALMA I, ALMA II, GRETA I/II, AMORINA, TOKIO, TREVI, JANA, VICTORIA), oficinas y desarrollos a medida (como ETIQUETA NEGRA, BREAK III, COLEGIO), listos para trasladar e instalar en tu terreno.  
+
+Trabajamos con un sistema rápido y ecológico, hasta 55% más económico que la construcción tradicional, con entrega desde 30 a 90 días y posibilidad de financiar el 100% con Banco Hipotecario. Para orientarte mejor, ¿qué tipo de unidad estás buscando: vivienda, oficina o un desarrollo especial?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (4.5s): Ofrecemos principalmente tres líneas de productos:  
+- **Viviendas en contenedores**: modelos pre-diseñados como LIBERTY (20 pies), ALMA I y GRETA I (40 pies, 2 amb), ALMA II y GRETA II (2 containers, 3 amb), AMORINA (3 containers, 90 m²), TOKIO y TREVI (2 containers, 2 plantas), JANA y VICTORIA (30 m² aprox.).  
+- **Espacios de trabajo**: la **OFICINA** en contenedor High Cube de 40 pies, totalmente equipada para home office o empresa.  
+- **Desarrollos a medida**: proyectos especiales como **ETIQUETA NEGRA** (150 m² de alta gama), **BREAK III** (dormis para alquiler) y **COLEGIO** (complejo educativo con 16 containers y energía renovable).  
+
+Además brindamos el servicio integral de construcción en contenedores, asesoría de diseño, acompañamiento técnico y la posibilidad de **financiar el 100% con Banco Hipotecario**. Para orientarte mejor, ¿qué tipo de unidades estás buscando?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (4.7s): Tenemos una línea bastante completa de modelos estándar de vivienda y proyectos especiales.  
+En casas y viviendas tenemos: **LIBERTY, ALMA I, ALMA II, GRETA I, GRETA II, AMORINA, TREVI, TOKIO, JANA y VICTORIA** (10 modelos).  
+En desarrollos a medida y usos especiales: **ETIQUETA NEGRA, BREAK III y COLEGIO**, más la **OFICINA** como espacio de trabajo.  
+
+En total son **14 unidades modelo** bien definidas (10 viviendas + 1 oficina + 3 desarrollos a medida), y además hacemos proyectos 100% personalizados. ¿Sobre cuál de estos modelos te gustaría que te cuente más?
+
+USUARIO: Contame sobre 1. Banco Hipotecario
+AGENTE (6.8s): Banco Hipotecario es nuestro partner financiero: gracias a esa alianza podés **financiar el 100% de tu casa container** con sus líneas de crédito, pagando en pesos. La construcción la hacemos nosotros (por ejemplo ALMA I, ALMA II, GRETA, AMORINA, etc.) y el banco pone el crédito, con **entrega garantizada en solo 90 días** una vez firmado el contrato.  
+
+No tengo los precios actualizados cargados, pero el banco define montos, plazos y requisitos según cada caso; podés verlo en www.hipotecario.com.ar y coordinar con nosotros. ¿Ya tenés visto algún modelo (por ejemplo ALMA II o AMORINA) para evaluar cómo quedaría la financiación?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (4.6s): Hoy no tengo los precios actualizados cargados en el sistema, y como los valores se están moviendo mucho prefiero no inventarte un número.  
+
+Lo que sí te puedo decir es que los modelos de **2 dormitorios** que más se eligen son, por ejemplo, **ALMA II**, **GRETA II**, **AMORINA**, **TOKIO** o **TREVI**, y todos se pueden financiar al **100% con Banco Hipotecario**. Te sugiero escribirnos por WhatsApp al **+54 9 11 5750-4201** así te pasamos el valor actualizado de esas opciones y una simulación de cuota.  
+
+Para afinar mejor: ¿la idea es 2 dormitorios en una sola planta (tipo ALMA II / GRETA II) o te sirve también en dos plantas (tipo TOKIO / AMORINA / TREVI)?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (3.3s): Nuestras casas container se construyen con estructura de contenedor marítimo (antisísmico, ignífugo y pensado para durar décadas), con aislación térmica y acústica completa, materiales de primera marca (Alba, FV, Alberdi, Durlock, Gromanti, etc.) y toda la instalación eléctrica y sanitaria sectorizada y certificada.  
+
+La garantía comercial específica (plazos por estructura, instalaciones, terminaciones) la manejamos por contrato según el modelo y la financiación elegida, por eso ahí necesito que un asesor te lo detalle por escrito. ¿Querés que te contacten por WhatsApp para pasarte las condiciones de garantía según una unidad puntual (por ejemplo ALMA II o GRETA II)?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (3.4s): Te podés comunicar directo por WhatsApp o llamada al **+54 9 11 5750-4201**.  
+También tenemos otra línea: **+54 9 11 6870-2913**, y por mail en **gohomeconstrucciones@gmail.com**.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 2
+Tiempo promedio: 4.6s

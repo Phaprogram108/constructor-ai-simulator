@@ -1,0 +1,355 @@
+{
+  "company": "Viviendas Tecnohouse",
+  "url": "https://www.viviendastecnohouse.com.ar/",
+  "testedAt": "2026-02-06T16:55:28.501Z",
+  "sessionId": "c41560f3-adc6-4f30-b62d-244abb200a32",
+  "systemPromptLength": 22423,
+  "systemPromptModelsFound": [
+    "Realice el pago",
+    "Watch on",
+    "Ingresá aquí",
+    "Sucursal Cañuelas",
+    "Sucursal Capital Federal",
+    "Sucursal Corrientes",
+    "Sucursal Formosa",
+    "Sucursal Junín",
+    "Sucursal La Plata",
+    "Sucursal Paraná",
+    "Sucursal Resistencia",
+    "Sucursal Rosario Centro",
+    "Sucursal Rosario Echesortu",
+    "Sucursal Salta",
+    "Sucursal San Luis",
+    "Sucursal Santa Fe",
+    "Sucursal Santa Rosa",
+    "Sucursal Tucumán",
+    "Sucursal Venado Tuerto",
+    "Sucursal Villa María",
+    "Tecnohouse Paraguay",
+    "Obaju template",
+    "Volver al Início",
+    "Con",
+    "Isabella",
+    "1060 Fernis",
+    "Maradona",
+    "51 Ander",
+    "Minimalista",
+    "Quincho",
+    "Bastian",
+    "Dylan",
+    "Sara"
+  ],
+  "systemPromptWhatsApp": "08005558558",
+  "systemPromptType": "de Modelos de viviendas estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Viviendas Tecnohouse es una empresa familiar dedicada a la construcción de viviendas modernas y accesibles en sistema de hormigón premoldeado. Nos enfocamos en ofrecer casas de calidad con modelos como Sara, Isabella, 51 Ander, Beltran, Maradona, Bastian, Dylan, Minimalista y también espacios como el Quincho Olivia, siempre con opciones de personalización.  \n\nAdemás brindamos financiación flexible para que puedas acceder a tu vivienda propia en cuotas. Para orientarte mejor, ¿qué tipo de modelos de viviendas estás buscando?",
+      "mentionedModels": [
+        "Con",
+        "Isabella",
+        "Maradona",
+        "51 Ander",
+        "Minimalista",
+        "Quincho",
+        "Bastian",
+        "Dylan",
+        "Sara"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4079
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos principalmente la construcción de viviendas en hormigón premoldeado, con distintos modelos como Sara (39 m², 2 dormitorios), 51 Ander (53 m², 2 dormitorios con concepto abierto), Beltran (58 m², 3 dormitorios), Isabella, Maradona, Bastian, Dylan, Minimalista y el Quincho Olivia para reuniones sociales.  \nTambién brindamos financiación flexible y opciones de personalización de los modelos para adaptarlos a tu terreno y a las necesidades de tu familia.  \n\nPara ayudarte mejor, ¿qué tipo de modelos de viviendas estás buscando: algo compacto, familiar de 3 dormitorios o un quincho para ampliar tu casa?",
+      "mentionedModels": [
+        "Con",
+        "Isabella",
+        "Maradona",
+        "51 Ander",
+        "Minimalista",
+        "Quincho",
+        "Bastian",
+        "Dylan",
+        "Sara"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3852
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Te podés comunicar directo con nosotros por:  \n- Teléfono: 0800-555-8558  \n- WhatsApp: 2226460066  \n- Email: info@vivendastecnohouse.com.ar  \n\nSi querés, decime de qué zona sos y qué tipo de vivienda te interesa así ya le paso esos datos “afinados” al asesor que te contacte.",
+      "mentionedModels": [
+        "Con"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3277
+    },
+    {
+      "question": "¿Cuántos modelos ofrecen?",
+      "questionType": "product_count",
+      "response": "Contamos con varios modelos de viviendas y anexos, todos en hormigón premoldeado.  \nAlgunos de los principales que tenemos cargados son: Sara, Isabella, 51 Ander, 1060 Fernis, Maradona, Minimalista, Quincho (Olivia), Bastian, Dylan y otros modelos específicos como Beltran y el modelo de 81 m².  \n\nEn total, el catálogo es amplio y se va actualizando, por eso lo ideal es ver cuál se adapta mejor a vos. ¿Estás buscando algo chico y compacto, una casa familiar de 3 dormitorios o un quincho para reuniones?",
+      "mentionedModels": [
+        "Con",
+        "Isabella",
+        "1060 Fernis",
+        "Maradona",
+        "51 Ander",
+        "Minimalista",
+        "Quincho",
+        "Bastian",
+        "Dylan",
+        "Sara"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3015
+    },
+    {
+      "question": "Contame sobre Realice el pago",
+      "questionType": "product_specific",
+      "response": "Mirá, “Realice el pago” no es un modelo de vivienda, sino una sección del sitio que normalmente se usa para gestionar pagos o cobranzas online. No tengo más detalles específicos cargados sobre esa sección desde acá.  \n\nSi lo que querías era info de una casa en particular, puedo contarte en detalle modelos como Sara, 51 Ander, Beltran, Isabella, Maradona, Minimalista, Quincho Olivia, Bastian o Dylan. ¿Te interesa que veamos alguno de esos o estabas consultando puntualmente por cómo pagar?",
+      "mentionedModels": [
+        "Realice el pago",
+        "Con",
+        "Isabella",
+        "Maradona",
+        "51 Ander",
+        "Minimalista",
+        "Quincho",
+        "Bastian",
+        "Dylan",
+        "Sara"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2747
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Realice el pago? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "“Realice el pago” figura en el listado, pero no corresponde a un modelo de vivienda, sino a una sección de pagos, por eso no tiene superficie, dormitorios ni características constructivas asociadas. No tengo información técnica de ese ítem porque no es una casa del catálogo.  \n\nSi querés detalles técnicos de modelos reales, por ejemplo:  \n- **Modelo Sara**: 39 m², 2 dormitorios, baño completo, cocina-comedor y porche frontal.  \n- **Modelo 51 Ander**: 53 m², 2 dormitorios de 3x3, baño 2x2, cocina abierta 3x3 integrada a living-comedor 6x3, diseño de concepto abierto.  \n\nContame: ¿buscás una vivienda chica, algo de 3 dormitorios como Beltran o un quincho tipo Olivia para reuniones?",
+      "mentionedModels": [
+        "Realice el pago",
+        "Con",
+        "51 Ander",
+        "Quincho",
+        "Sara"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3928
+    },
+    {
+      "question": "Contame sobre Watch on",
+      "questionType": "product_specific",
+      "response": "“Watch on” también aparece en el listado, pero al igual que “Realice el pago” no es un modelo de vivienda, sino una sección o botón del sitio (probablemente para ver contenido o videos), por eso no tiene m², dormitorios ni ficha técnica.  \n\nSi lo que querés es info de modelos concretos, puedo detallarte, por ejemplo:  \n- **Sara**: 39 m², 2 dormitorios, baño completo, cocina-comedor y porche frontal.  \n- **51 Ander**: 53 m², 2 dormitorios de 3x3, baño 2x2, cocina abierta 3x3 integrada a living-comedor 6x3, concepto abierto muy funcional.  \n\nPara orientarte mejor, ¿qué tipo de modelos de viviendas estás buscando?",
+      "mentionedModels": [
+        "Realice el pago",
+        "Watch on",
+        "Con",
+        "51 Ander",
+        "Sara"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3053
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Watch on? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "“Watch on” figura en el listado, pero no corresponde a un modelo de vivienda, sino a una sección/botón del sitio (para ver contenido), por eso no tiene superficie, dormitorios ni características constructivas asociadas. No hay ficha técnica cargada de “Watch on” como casa o quincho.  \n\nSi querés, te puedo pasar detalles técnicos de modelos concretos como Sara (39 m², 2 dormitorios), 51 Ander (53 m², 2 dormitorios, concepto abierto), Beltran (58 m², 3 dormitorios) o Quincho Olivia. Para ayudarte mejor, ¿qué tipo de vivienda estás buscando?",
+      "mentionedModels": [
+        "Watch on",
+        "Con",
+        "51 Ander",
+        "Quincho",
+        "Sara"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2193
+    },
+    {
+      "question": "¿Cuál es la diferencia entre Realice el pago y Watch on?",
+      "questionType": "model_comparison",
+      "response": "La diferencia principal es que ninguno de los dos es un modelo de vivienda:  \n- **“Realice el pago”** es una sección pensada para gestionar pagos/cobranzas (un acceso administrativo/comercial).  \n- **“Watch on”** es un botón/sección orientada a ver contenido, probablemente videos o material multimedia del sitio.  \n\nNinguno de los dos tiene m², dormitorios ni características técnicas porque no son casas del catálogo. Si querés, podemos ver diferencias reales entre modelos como Sara, 51 Ander, Beltran, Quincho Olivia, etc. ¿Qué tipo de vivienda tenés en mente?",
+      "mentionedModels": [
+        "Realice el pago",
+        "Watch on",
+        "Con",
+        "51 Ander",
+        "Quincho",
+        "Sara"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2718
+    },
+    {
+      "question": "¿Qué modelo me recomendás para una familia de 4 personas?",
+      "questionType": "recommendation",
+      "response": "Para una familia de 4, lo más cómodo es ir a modelos con buena cantidad de dormitorios y espacios sociales amplios. En nuestro catálogo, te recomendaría mirar especialmente:  \n\n- **Beltran (58 m²)**: 3 dormitorios espaciosos, living-comedor luminoso, cocina separada y porch frontal; ideal para familia con 2 chicos porque todos tienen su cuarto o podés usar uno como escritorio.  \n- **51 Ander (53 m²)**: 2 dormitorios de 3x3, baño 2x2, cocina abierta integrada a living-comedor 6x3; muy funcional y moderno si los chicos pueden compartir habitación.  \n\nPara afinar mejor la recomendación: ¿ya tenés terreno? ¿En qué zona?",
+      "mentionedModels": [
+        "Con",
+        "51 Ander"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2913
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con sistema constructivo en **hormigón premoldeado**, lo que hace que la obra sea mucho más rápida y prolija que una construcción húmeda tradicional. Primero se define el modelo (por ejemplo Beltran, 51 Ander, Sara, Quincho Olivia, etc.), se firma el contrato y se coordina la preparación del terreno; luego se fabrica e instala la vivienda en módulos, y se realizan las terminaciones en el lugar.  \n\nLos tiempos exactos dependen del modelo y la zona, pero al ser industrializado, el plazo es considerablemente menor que una obra convencional. No tengo los días precisos cargados por acá, así que para que te den una estimación según tu caso puntual, te sugiero consultarlo por WhatsApp al 2226460066. Mientras tanto, ¿ya tenés terreno? ¿En qué zona sería la construcción?",
+      "mentionedModels": [
+        "Con",
+        "51 Ander",
+        "Quincho",
+        "Sara"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 7995
+    },
+    {
+      "question": "¿Se pueden personalizar los modelos?",
+      "questionType": "customization",
+      "response": "Sí, los modelos se pueden personalizar dentro de ciertos parámetros para que se adapten a vos y a tu terreno. Podés ajustar distribución interna, elegir entre distintos modelos (Sara, 51 Ander, Beltran, Isabella, Maradona, Minimalista, Bastian, Dylan, Quincho Olivia, etc.) y sumar detalles según tus necesidades.  \n\nAsí mantenés la ventaja del sistema industrializado en hormigón premoldeado, pero con una casa que se sienta realmente propia. Para orientarte mejor, ¿qué modelo te llamó más la atención hasta ahora o qué cantidad de dormitorios necesitás?",
+      "mentionedModels": [
+        "Con",
+        "Isabella",
+        "Maradona",
+        "51 Ander",
+        "Minimalista",
+        "Quincho",
+        "Bastian",
+        "Dylan",
+        "Sara"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 5652
+    },
+    {
+      "question": "¿Tenés imágenes, planos o algún catálogo que pueda ver?",
+      "questionType": "images_catalog",
+      "response": "Sí, tenemos imágenes y planos de varios modelos. Por ejemplo, del **Modelo 51 Ander**, **Sara**, **Beltran** y **Quincho Olivia** hay fotos exteriores, interiores y planos de distribución (dormitorios, cocina, living-comedor, etc.) en nuestro catálogo web.  \n\nComo por acá no puedo mandarte el catálogo interactivo completo, lo mejor es que lo veas directo con un asesor que te pase links y PDFs. ¿Querés que te contacten por WhatsApp al 2226460066 o preferís que primero te cuente en detalle un modelo puntual (Sara, 51 Ander, Beltran, Quincho, etc.)?",
+      "mentionedModels": [
+        "Con",
+        "51 Ander",
+        "Quincho",
+        "Sara"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 5098
+    },
+    {
+      "question": "¿Cuánto sale aproximadamente una casa de 2 dormitorios?",
+      "questionType": "pricing",
+      "response": "No tengo los precios actualizados cargados por acá, así que no puedo darte un valor aproximado sin inventar. Te sugiero consultarlo por WhatsApp al 2226460066, donde te pasan el precio vigente según el modelo (por ejemplo Sara, 51 Ander, Minimalista, Dylan, etc.) y la forma de financiación.  \n\nPara que el asesor te oriente mejor, contame: ¿ya tenés terreno y en qué zona sería la obra?",
+      "mentionedModels": [
+        "Con",
+        "51 Ander",
+        "Minimalista",
+        "Dylan",
+        "Sara"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 2263
+    },
+    {
+      "question": "¿Qué incluye el precio? ¿Terminaciones, instalación, todo?",
+      "questionType": "includes",
+      "response": "El detalle fino de qué incluye el precio (niveles de terminación, instalación, etc.) no lo tengo cargado completo acá, y puede variar según el modelo y la promo vigente. En general, al trabajar con sistema de hormigón premoldeado, se cotiza la vivienda instalada, con estructura, tabiquería y terminaciones estándar; luego podés sumar extras o personalizaciones.  \n\nPara evitar decirte algo incompleto, te recomiendo consultarlo por WhatsApp al 2226460066 así te detallan exactamente qué incluye cada modelo y financiación. Mientras tanto, así te orientan mejor, ¿estás pensando en una casa de 2 dormitorios (tipo Sara o 51 Ander) o algo más grande como Beltran de 3 dormitorios?",
+      "mentionedModels": [
+        "Con",
+        "51 Ander",
+        "Sara"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3057
+    },
+    {
+      "question": "¿Ustedes se encargan de toda la instalación o solo entregan los materiales?",
+      "questionType": "installation",
+      "response": "Nos encargamos de la **construcción e instalación completa** de la vivienda en sistema de hormigón premoldeado, no solo de entregar materiales. Fabricamos los paneles, los montamos en tu terreno y hacemos la vivienda según el modelo elegido (por ejemplo Sara, 51 Ander, Beltran, Quincho Olivia, etc.), con la obra mucho más rápida que la construcción tradicional.  \n\nAlgunos detalles finos pueden variar según la zona y el modelo, por eso para ver exactamente hasta dónde llega el servicio en tu caso puntual, te conviene escribir al WhatsApp 2226460066. ¿Ya tenés terreno? ¿En qué zona sería la obra?",
+      "mentionedModels": [
+        "Con",
+        "51 Ander",
+        "Quincho",
+        "Sara"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3661
+    },
+    {
+      "question": "¿Qué garantía ofrecen sobre la construcción?",
+      "questionType": "warranty",
+      "response": "Ofrecemos garantía sobre la construcción porque trabajamos con sistema de hormigón premoldeado, pensado para ser duradero y resistente, pero el detalle exacto (años de garantía, qué cubre cada punto, etc.) no lo tengo cargado acá. Eso puede variar según el modelo y las condiciones del contrato.  \n\nPara que te den la info bien clara y por escrito, te recomiendo consultarlo por WhatsApp al 2226460066 o al 0800-555-8558. Mientras tanto, así te orientamos mejor: ¿estás mirando alguna vivienda en particular, por ejemplo Sara, 51 Ander o Beltran para tu familia?",
+      "mentionedModels": [
+        "Con",
+        "51 Ander",
+        "Sara"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3237
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, ofrecemos **financiación y planes de pago** para que puedas acceder a tu vivienda en cuotas, adaptando el plan a tus posibilidades. Los detalles (anticipo, cantidad de cuotas, requisitos) dependen del modelo que elijas y de las condiciones vigentes al momento de la compra.  \n\nNo tengo las condiciones exactas de cada plan cargadas acá, así que para que te pasen números concretos te sugiero escribir al WhatsApp 2226460066. Para ir guiándote: ¿pensás en una casa de 2 dormitorios (tipo Sara o 51 Ander) o algo de 3 dormitorios como Beltran?",
+      "mentionedModels": [
+        "Con",
+        "51 Ander",
+        "Sara"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2636
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Nos diferencia, sobre todo, que somos una **empresa familiar** enfocada en soluciones habitacionales accesibles pero de calidad, con trato cercano y acompañamiento durante todo el proceso. Trabajamos con **hormigón premoldeado**, lo que da obras rápidas, prolijas y durables, y tenemos **modelos personalizables** (Sara, 51 Ander, Beltran, Isabella, Maradona, Minimalista, Bastian, Dylan, Quincho Olivia, etc.).  \n\nAdemás, contamos con **financiación flexible**, pensada para adaptarse al bolsillo de cada familia y no solo vender “una casa estándar”. Para orientarte mejor con lo que más te convenga, ¿ya tenés terreno y en qué zona pensás construir?",
+      "mentionedModels": [
+        "Con",
+        "Isabella",
+        "Maradona",
+        "51 Ander",
+        "Minimalista",
+        "Quincho",
+        "Bastian",
+        "Dylan",
+        "Sara"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3764
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "No tengo cargada acá la lista exacta de provincias o localidades a las que llegamos, y no quiero inventarte cobertura donde quizá haya que confirmar logística.  \n\nEs muy probable que podamos trabajar en varias zonas, pero para saber con certeza si llegamos a **tu localidad puntual**, te sugiero escribir al WhatsApp 2226460066 o llamar al 0800-555-8558. ¿De qué ciudad o provincia sos así te digo qué le consultes exactamente al asesor?",
+      "mentionedModels": [
+        "Con"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 3349
+    }
+  ],
+  "sessionCreationTimeMs": 94758,
+  "errors": []
+}

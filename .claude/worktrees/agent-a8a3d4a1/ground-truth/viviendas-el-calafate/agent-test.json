@@ -1,0 +1,294 @@
+{
+  "company": "Viviendas El Calafate",
+  "url": "https://www.viviendaselcalafate.com.ar/",
+  "testedAt": "2026-02-06T16:55:29.109Z",
+  "sessionId": "2076640c-18e1-4c71-a95b-deff9fb133c3",
+  "systemPromptLength": 20728,
+  "systemPromptModelsFound": [
+    "Casa Central",
+    "Placa OSB",
+    "Construimos Hogares",
+    "Consulta que Incluye",
+    "Casa Prefabricada mixta",
+    "Viviendas El Calafate",
+    "Construimos casas bariloche",
+    "Construimos casas",
+    "Sucursal Pilar",
+    "Sucursal Luján",
+    "Vivienda Americana",
+    "Ladrillos a la Vista",
+    "Llave en Mano"
+  ],
+  "systemPromptWhatsApp": "01152921019",
+  "systemPromptType": "de Modelos estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Viviendas El Calafate es una empresa dedicada a la construcción de viviendas industrializadas en sistema de hormigón premoldeado. Construimos casas prefabricadas (como nuestros modelos Vivienda Americana, Ladrillos a la Vista, Llave en Mano y el Chalet Mixto) y también proyectos a medida, con financiación propia.  \n\nOfrecemos flete y armado sin cargo hasta 100 km y asesoramiento gratuito a domicilio sobre terrenos, terrazas o losas. Para orientarte mejor, ¿qué tipo de modelos estás buscando: algo más clásico como Vivienda Americana, ladrillo a la vista, o una solución Llave en Mano lista para habitar?",
+      "mentionedModels": [
+        "Viviendas El Calafate",
+        "Construimos casas",
+        "Vivienda Americana",
+        "Ladrillos a la Vista",
+        "Llave en Mano"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3255
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos principalmente la construcción de viviendas industrializadas en hormigón premoldeado, con distintos Modelos de casas prefabricadas: Vivienda Americana, Ladrillos a la Vista, Llave en Mano, Casa Prefabricada Mixta (Chalet Mixto), además de líneas como Construimos Hogares, Construimos casas, Construimos casas Bariloche y opciones como Casa Central, Placa OSB y Viviendas El Calafate.  \n\nComo servicios, brindamos: financiación propia con anticipos y cuotas fijas en pesos, flete y armado sin cargo hasta 100 km, y asesoramiento gratuito a domicilio para construir sobre terreno, terraza o losa. También atendemos en nuestra base de obra en Paunero 1646, 6° “A”, San Miguel y contamos con sucursales en Pilar y Luján.  \n\nPara ayudarte mejor, ¿ya tenés terreno? ¿En qué zona sería la construcción?",
+      "mentionedModels": [
+        "Casa Central",
+        "Placa OSB",
+        "Construimos Hogares",
+        "Casa Prefabricada mixta",
+        "Viviendas El Calafate",
+        "Construimos casas bariloche",
+        "Construimos casas",
+        "Vivienda Americana",
+        "Ladrillos a la Vista",
+        "Llave en Mano"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3240
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Te podés contactar directo con nosotros a estos teléfonos:  \n- (011) 5292-1019  \n- (011) 5436-2699  \n\nTambién por mail a: ventascentral@viviendaselcalafate.com.ar. ¿Querés que te ayude a definir primero qué modelo te conviene así ya llamás con una idea más concreta?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2344
+    },
+    {
+      "question": "¿Cuántos modelos de casas ofrecen?",
+      "questionType": "product_count",
+      "response": "Manejamos una variedad amplia de modelos, tanto estándar como a medida. En el catálogo destacado tenés: Casa Central, Placa OSB, Construimos Hogares, Consulta que Incluye, Casa Prefabricada Mixta (Chalet Mixto), Viviendas El Calafate, Construimos casas bariloche, Construimos casas, Sucursal Pilar, Sucursal Luján, Vivienda Americana, Ladrillos a la Vista y Llave en Mano.  \n\nAdemás, el Chalet Mixto se ofrece en distintas superficies (25, 30, 36, 42, 49, 56, 63, 72, 81 y 90 m²) con planos sugeridos que se pueden adaptar. Para orientarte mejor, ¿qué tipo de modelos estás buscando: algo pequeño tipo 25–36 m² o algo más grande arriba de 60 m²?",
+      "mentionedModels": [
+        "Casa Central",
+        "Placa OSB",
+        "Construimos Hogares",
+        "Consulta que Incluye",
+        "Casa Prefabricada mixta",
+        "Viviendas El Calafate",
+        "Construimos casas bariloche",
+        "Construimos casas",
+        "Sucursal Pilar",
+        "Sucursal Luján",
+        "Vivienda Americana",
+        "Ladrillos a la Vista",
+        "Llave en Mano"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3491
+    },
+    {
+      "question": "Contame sobre Casa Central",
+      "questionType": "product_specific",
+      "response": "La Casa Central figura como uno de nuestros Modelos, pero en la info que tengo cargada no aparecen aún los detalles técnicos (m2, distribución, terminaciones, etc.). Lo que sí te puedo asegurar es que, como todos nuestros modelos, se construye con sistema industrializado en hormigón premoldeado, con financiación propia y flete + armado sin cargo hasta 100 km.  \n\nNo tengo la ficha completa de Casa Central acá, pero te la pueden pasar con planos y valores por WhatsApp al (011) 5292-1019 o (011) 5436-2699. Para ir guiándote: ¿qué superficie o cantidad de ambientes estás buscando así veo qué otro modelo (por ejemplo Vivienda Americana, Ladrillos a la Vista o Casa Prefabricada Mixta) puede encajar también?",
+      "mentionedModels": [
+        "Casa Central",
+        "Casa Prefabricada mixta",
+        "Vivienda Americana",
+        "Ladrillos a la Vista"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3890
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Casa Central? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "De Casa Central solo tengo cargado que es uno de nuestros Modelos, pero no figuran los datos técnicos específicos (m², cantidad de dormitorios, ni memoria de materiales) en la info interna que manejo. Sí puedo confirmarte que, como el resto de nuestras viviendas, se construye en sistema industrializado de hormigón premoldeado y cuenta con la misma línea de calidad y posibilidad de financiación.  \n\nNo tengo esa ficha técnica puntual de Casa Central acá, pero te la pueden enviar con planos, superficies y distribución exacta por WhatsApp o teléfono: (011) 5292-1019 / (011) 5436-2699. Mientras tanto, ¿qué estarías buscando más o menos: cuántos dormitorios y cuántos m², así te oriento con otros modelos como Vivienda Americana, Ladrillos a la Vista o Casa Prefabricada Mixta?",
+      "mentionedModels": [
+        "Casa Central",
+        "Casa Prefabricada mixta",
+        "Vivienda Americana",
+        "Ladrillos a la Vista"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3052
+    },
+    {
+      "question": "Contame sobre Placa OSB",
+      "questionType": "product_specific",
+      "response": "Placa OSB es uno de nuestros Modelos de vivienda industrializada, pensado como una solución económica y rápida de montar, combinable con nuestro sistema de hormigón premoldeado. En la info que tengo cargada no aparecen los detalles técnicos específicos (m², distribución o memoria de materiales), pero se trabaja con el mismo estándar de calidad, financiación propia y flete + armado sin cargo hasta 100 km.  \n\nNo tengo la ficha técnica completa de Placa OSB acá, pero te la pueden enviar con planos y valores por WhatsApp al (011) 5292-1019 o (011) 5436-2699. Para ayudarte mientras, ¿qué superficie y cuántos dormitorios estás pensando, así veo si te conviene algo tipo Vivienda Americana, Ladrillos a la Vista o Casa Prefabricada Mixta (Chalet Mixto)?",
+      "mentionedModels": [
+        "Placa OSB",
+        "Casa Prefabricada mixta",
+        "Vivienda Americana",
+        "Ladrillos a la Vista"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3470
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Placa OSB? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "Placa OSB figura como uno de nuestros Modelos de vivienda, pero en la info que tengo cargada no aparecen los datos técnicos específicos: no tengo listado oficial de superficies disponibles, cantidad de dormitorios ni la memoria de materiales de ese modelo en particular.  \n\nLo que sí sé es que trabajamos siempre con sistema de vivienda industrializada, estructura en hormigón premoldeado y opciones con financiación propia, flete y armado sin cargo hasta 100 km.  \nPara los detalles puntuales de Placa OSB (planos, m² y distribución) te los pueden enviar directo por WhatsApp o teléfono: (011) 5292-1019 / (011) 5436-2699.  \n\nPara ir guiándote mientras tanto, ¿qué estarías buscando más o menos: cuántos dormitorios y qué tamaño aproximado de casa?",
+      "mentionedModels": [
+        "Placa OSB"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4251
+    },
+    {
+      "question": "¿Cuál es la diferencia entre Casa Central y Placa OSB?",
+      "questionType": "model_comparison",
+      "response": "Entre Casa Central y Placa OSB la principal diferencia está en el tipo de modelo y terminación, pero en la info que tengo cargada no figuran las fichas técnicas detalladas de cada uno (m², cantidad de dormitorios y memoria de materiales) como para compararlos punto por punto. Ambos se construyen bajo nuestro sistema de vivienda industrializada con hormigón premoldeado y acceden a los mismos beneficios: financiación propia y flete + armado sin cargo hasta 100 km.  \n\nPara una comparación técnica exacta (planos, superficies y terminaciones de cada modelo) te lo pueden enviar por WhatsApp o teléfono al (011) 5292-1019 / (011) 5436-2699. Para orientarte yo ahora, contame: ¿buscás algo más económico y simple o una casa más completa y de mayor tamaño?",
+      "mentionedModels": [
+        "Casa Central",
+        "Placa OSB"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 6278
+    },
+    {
+      "question": "¿Qué modelo me recomendás para una familia de 4 personas?",
+      "questionType": "recommendation",
+      "response": "Para una familia de 4, lo ideal es ir a algo de al menos 2 dormitorios y arriba de 60 m². Dentro de nuestros modelos, suele funcionar muy bien la Vivienda Americana (práctica y funcional para uso diario) o el Chalet Mixto (Casa Prefabricada Mixta), que combina ladrillo a la vista y Superboard con muy buen confort; en este último, por ejemplo, tenés opciones de 63, 72 o 81 m² que se adaptan perfecto a 2 o 3 dormitorios.  \n\nTambién podés optar por un esquema Llave en Mano si querés algo listo para habitar sin preocuparte por nada más. Para afinar mejor la recomendación: ¿ya tenés terreno y en qué zona sería?",
+      "mentionedModels": [
+        "Casa Prefabricada mixta",
+        "Vivienda Americana",
+        "Llave en Mano"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3687
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con viviendas industrializadas en hormigón premoldeado: primero definimos el Modelo (por ejemplo Vivienda Americana, Ladrillos a la Vista, Llave en Mano o Chalet Mixto), superficie y plano; luego se firma contrato, se coordina el anticipo/financiación y se programa la obra. Las piezas se fabrican y preparan, se hace el traslado (con flete sin cargo hasta 100 km) y el equipo de montaje arma la vivienda en el terreno, dejando listas las instalaciones internas de agua y electricidad.  \n\nLos tiempos exactos dependen del modelo y los m², pero al ser sistema industrializado el montaje en obra es mucho más rápido que la construcción tradicional. No tengo los plazos detallados por modelo cargados acá, así que para que te pasen tiempos estimados según la casa que elijas te sugiero consultar por WhatsApp al (011) 5292-1019 o (011) 5436-2699. ¿Para cuándo te gustaría tener la casa terminada, más o menos?",
+      "mentionedModels": [
+        "Vivienda Americana",
+        "Ladrillos a la Vista",
+        "Llave en Mano"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3960
+    },
+    {
+      "question": "¿Se pueden personalizar los modelos de casas?",
+      "questionType": "customization",
+      "response": "Sí, se pueden personalizar. Tenemos modelos estándar (Vivienda Americana, Ladrillos a la Vista, Llave en Mano, Casa Prefabricada Mixta/Chalet Mixto, etc.) pero también trabajamos “a medida”, adaptando planos, distribución de ambientes y metraje; incluso en el Chalet Mixto, por ejemplo, podés elegir entre varias superficies (25 a 90 m²) y usar/ajustar los planos sugeridos.  \n\nLo que solemos hacer es partir de un modelo base y ajustarlo a las necesidades de la familia y del terreno. Para ayudarte mejor, ¿qué te gustaría personalizar: cantidad de dormitorios, tamaño, estilo de fachada o algo puntual (por ejemplo, ampliar living o sumar un dormitorio)?",
+      "mentionedModels": [
+        "Casa Prefabricada mixta",
+        "Vivienda Americana",
+        "Ladrillos a la Vista",
+        "Llave en Mano"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3340
+    },
+    {
+      "question": "¿Tenés imágenes, planos o algún catálogo que pueda ver?",
+      "questionType": "images_catalog",
+      "response": "Sí, contamos con planos, imágenes y catálogo online de los modelos. Por ejemplo, del modelo Casa Prefabricada Mixta (Chalet Mixto) podés ver fotos, características y planos sugeridos de 25 a 90 m² en la web, y también hay secciones específicas para Vivienda Americana, Ladrillos a la Vista y Llave en Mano.  \n\nTe los pueden enviar también por WhatsApp junto con un presupuesto orientativo. Para saber qué material mandarte primero: ¿qué tipo de modelo te interesa más, algo estilo Vivienda Americana, Ladrillos a la Vista o el Chalet Mixto?",
+      "mentionedModels": [
+        "Casa Prefabricada mixta",
+        "Vivienda Americana",
+        "Ladrillos a la Vista",
+        "Llave en Mano",
+        "Casa Prefabricada Mixta"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2616
+    },
+    {
+      "question": "¿Cuánto sale aproximadamente una casa de 2 dormitorios?",
+      "questionType": "pricing",
+      "response": "No tengo los precios actualizados cargados para una casa de 2 dormitorios en particular, y los valores dependen mucho del Modelo (por ejemplo Vivienda Americana, Ladrillos a la Vista, Llave en Mano o Chalet Mixto) y de los m².  \n\nEn el caso del Chalet Mixto, por ejemplo, sí tengo los anticipos rebajados de referencia (25 a 90 m²), pero como pueden haber cambiado, prefiero no darte un número desactualizado. Te sugiero consultar por WhatsApp al (011) 5292-1019 o (011) 5436-2699, donde te pasan precio según modelo y forma de pago. Para afinar: ¿cuántos m² estás pensando más o menos (50, 60, 70 m²)?",
+      "mentionedModels": [
+        "Vivienda Americana",
+        "Ladrillos a la Vista",
+        "Llave en Mano"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 2542
+    },
+    {
+      "question": "¿Qué incluye el precio? ¿Terminaciones, instalación, todo?",
+      "questionType": "includes",
+      "response": "En nuestros modelos estándar (como el Chalet Mixto / Casa Prefabricada Mixta) el precio incluye la vivienda completa estructuralmente: paredes exteriores e interiores, techo, aberturas de aluminio con rejas, puertas de entrada y placas interiores, aislaciones térmicas y acústicas, y el tendido interno de cañerías de agua (fría y caliente en termofusión) e instalación eléctrica con caños y cajas. Además, tenés flete y armado sin cargo hasta 100 km y financiación propia con anticipo y cuotas fijas en pesos.  \n\nLo que puede variar según el Modelo es el nivel de terminación “Llave en Mano” (pisos, pintura, artefactos, etc.), por eso para saber exactamente qué incluye el precio del modelo que te interese te conviene pedir el detalle por WhatsApp al (011) 5292-1019 / (011) 5436-2699. ¿Qué modelo estás mirando para cotizar: Vivienda Americana, Ladrillos a la Vista, Llave en Mano o Chalet Mixto?",
+      "mentionedModels": [
+        "Casa Prefabricada mixta",
+        "Vivienda Americana",
+        "Ladrillos a la Vista",
+        "Llave en Mano"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4271
+    },
+    {
+      "question": "¿Ustedes se encargan de toda la instalación o solo entregan los materiales?",
+      "questionType": "installation",
+      "response": "Nos encargamos de la construcción, no solo de vender materiales. El servicio incluye fabricación de las piezas, flete (sin cargo hasta 100 km) y armado completo de la vivienda en el terreno, con instalación interna de cañerías de agua y caños/cajas de electricidad según el modelo.  \n\nDespués, según la opción (por ejemplo un esquema Llave en Mano), se pueden sumar más terminaciones para dejarla lista para habitar. ¿En qué zona tenés el terreno así veo cómo podríamos organizar la obra en tu caso?",
+      "mentionedModels": [
+        "Llave en Mano"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3460
+    },
+    {
+      "question": "¿Qué garantía ofrecen sobre la construcción?",
+      "questionType": "warranty",
+      "response": "Trabajamos con sistema de viviendas industrializadas en hormigón premoldeado, materiales de primera línea y montaje profesional, pero en la info que tengo cargada no figura el detalle exacto de años o alcance formal de la garantía (estructura, filtraciones, etc.).  \n\nSeguramente haya una garantía por escrito en el contrato, pero para decirte bien cuántos años y qué cubre cada modelo necesito remitirte al canal directo: (011) 5292-1019 / (011) 5436-2699 o ventascentral@viviendaselcalafate.com.ar. ¿La idea es usar la casa como vivienda permanente o de fin de semana? Así también te oriento con el modelo más conveniente.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4076
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, tenemos financiación propia y planes de pago en pesos. Podés arrancar con un anticipo (en el caso del Chalet Mixto, por ejemplo, hay “anticipos rebajados” desde 25 hasta 90 m²) y el resto en cuotas fijas y en pesos, sin gastos administrativos, con promos y descuentos por pago contado.  \n\nLa financiación se adapta bastante al cliente, así que lo ideal es que te armen un plan según el modelo y los m² que elijas. ¿Qué presupuesto aproximado manejás y qué tamaño de casa estás pensando, así te orientó qué modelo encaja mejor con tu bolsillo?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3593
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Viviendas El Calafate se diferencia sobre todo por tres cosas: financiación propia en pesos (con anticipos rebajados, cuotas fijas y sin gastos administrativos), flete y armado sin cargo hasta 100 km y asesoramiento gratuito a domicilio para construir sobre terreno, terraza o losa.  \n\nAdemás, trabajamos con sistema de hormigón premoldeado y modelos muy consolidados como Vivienda Americana, Ladrillos a la Vista, Llave en Mano y el Chalet Mixto, siempre con materiales de primera línea. Para saber si encajamos bien con lo que necesitás, ¿ya tenés terreno y en qué zona?",
+      "mentionedModels": [
+        "Viviendas El Calafate",
+        "Vivienda Americana",
+        "Ladrillos a la Vista",
+        "Llave en Mano"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2713
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "Construimos desde nuestra base en San Miguel (Paunero 1646, 6° “A”) y contamos con sucursales en Pilar y Luján, con flete y armado sin cargo hasta 100 km. Más allá de eso, en la info que tengo cargada no aparece detallado hasta qué provincias o distancias máximas llegamos.  \n\nEs muy probable que podamos trabajar en otras zonas, pero para confirmarte cobertura exacta y costos de traslado adicionales te sugiero consultar por WhatsApp al (011) 5292-1019 o (011) 5436-2699. ¿En qué localidad tenés pensado construir, así te digo si entra seguro dentro de los 100 km sin cargo o habría que chequearlo?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4653
+    }
+  ],
+  "sessionCreationTimeMs": 91335,
+  "errors": []
+}

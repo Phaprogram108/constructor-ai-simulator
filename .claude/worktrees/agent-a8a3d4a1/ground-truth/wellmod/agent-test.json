@@ -1,0 +1,238 @@
+{
+  "company": "Wellmod",
+  "url": "https://www.wellmod.com.ar/",
+  "testedAt": "2026-02-06T15:53:39.587Z",
+  "sessionId": "854bef4a-4b63-421a-82fc-80e49164caf4",
+  "systemPromptLength": 21774,
+  "systemPromptModelsFound": [
+    "W26 Suite",
+    "W20 Suite",
+    "W20 Oficina",
+    "Hotel Termal",
+    "Paso Calmo",
+    "Granja Ecuestre",
+    "Casa VJ",
+    "Casa Potrerillo",
+    "Casa MY",
+    "Casa MF",
+    "Casa IM",
+    "Casa AS",
+    "AA2000",
+    "Club Atlético Talleres",
+    "Fertimaq",
+    "Grido",
+    "TN Platex",
+    "Suite",
+    "Oficina",
+    "Yabroudi Villa",
+    "European Lard Station",
+    "Seascape Villa",
+    "Cultural Complex Centre",
+    "Dalbourne Villa"
+  ],
+  "systemPromptWhatsApp": "+5493518668299",
+  "systemPromptType": "de Unidades, proyectos estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "WELLMOD es una empresa de arquitectura modular transportable: fabricamos unidades preconstruidas en steel frame para uso residencial, comercial y de servicios. Producimos en planta industrial (100% en fábrica) y luego llevamos las unidades listas al terreno, con tiempos de obra récord y foco en sustentabilidad (materiales reciclables, ahorro energético, mínimo impacto en el suelo).  \n\nTrabajamos con modelos como W26 Suite, W20 Suite, W20 Oficina, proyectos turísticos como Hotel Termal, Paso Calmo, Granja Ecuestre, y desarrollos corporativos como AA2000, Grido o Club Atlético Talleres, entre otros. ¿Qué tipo de Unidades, proyectos estás buscando?",
+      "mentionedModels": [
+        "W26 Suite",
+        "W20 Suite",
+        "W20 Oficina",
+        "Hotel Termal",
+        "Paso Calmo",
+        "Granja Ecuestre",
+        "AA2000",
+        "Club Atlético Talleres",
+        "Grido",
+        "Suite",
+        "Oficina",
+        "WELLMOD"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3085
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos principalmente unidades modulares preconstruidas en steel frame para vivienda, turismo, oficinas y servicios, con fabricación 100% industrial y luego montaje en el terreno.  \n\nEn modelos puntuales tenemos, por ejemplo: W26 Suite y Suite (26 m²), W20 Suite (20 m²), W20 Oficina y Oficina (20 m² con 1 baño), y proyectos como Hotel Termal, Paso Calmo, Granja Ecuestre, Casa VJ, Casa Potrerillo, Casa MY, Casa MF, Casa IM, Casa AS, AA2000, Club Atlético Talleres, Fertimaq, Grido, TN Platex, Yabroudi Villa, European Lard Station, Seascape Villa, Cultural Complex Centre y Dalbourne Villa. También ofrecemos financiación para facilitar la inversión. ¿Qué tipo de Unidades, proyectos estás buscando?",
+      "mentionedModels": [
+        "W26 Suite",
+        "W20 Suite",
+        "W20 Oficina",
+        "Hotel Termal",
+        "Paso Calmo",
+        "Granja Ecuestre",
+        "Casa VJ",
+        "Casa Potrerillo",
+        "Casa MY",
+        "Casa MF",
+        "Casa IM",
+        "Casa AS",
+        "AA2000",
+        "Club Atlético Talleres",
+        "Fertimaq",
+        "Grido",
+        "TN Platex",
+        "Suite",
+        "Oficina",
+        "Yabroudi Villa",
+        "European Lard Station",
+        "Seascape Villa",
+        "Cultural Complex Centre",
+        "Dalbourne Villa"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3039
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Te podés contactar directo por teléfono o WhatsApp al +54 9 351 866 8299.  \nTambién, si preferís, nos podés escribir por mail a hola@wellmod.com.ar.",
+      "mentionedModels": [
+        "WELLMOD"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 1410
+    },
+    {
+      "question": "¿Cuántos modelos de casas ofrecen?",
+      "questionType": "product_count",
+      "response": "En casas y soluciones habitacionales tenemos varios modelos y proyectos, tanto estándar como a medida.  \nEspecíficamente, dentro del catálogo figuran: W26 Suite, W20 Suite, Suite (26 m²), Casa VJ, Casa Potrerillo, Casa MY, Casa MF, Casa IM, Casa AS, Yabroudi Villa, Seascape Villa, Dalbourne Villa y también proyectos turísticos tipo cabañas como Hotel Termal, Paso Calmo y Granja Ecuestre.  \n\nPara orientarte mejor: ¿buscás una unidad chica tipo loft (20–26 m²) o una vivienda más grande tipo casa?",
+      "mentionedModels": [
+        "W26 Suite",
+        "W20 Suite",
+        "Hotel Termal",
+        "Paso Calmo",
+        "Granja Ecuestre",
+        "Casa VJ",
+        "Casa Potrerillo",
+        "Casa MY",
+        "Casa MF",
+        "Casa IM",
+        "Casa AS",
+        "Suite",
+        "Yabroudi Villa",
+        "Seascape Villa",
+        "Dalbourne Villa"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2614
+    },
+    {
+      "question": "Contame sobre W26 Suite",
+      "questionType": "product_specific",
+      "response": "La W26 Suite es una unidad modular de 26 m², ideal como monoambiente amplio tipo loft, cabaña turística o anexo para vivienda (guest house, estudio, etc.). Está construida en steel frame, se fabrica 100% en planta industrial y luego se transporta al terreno para un montaje muy rápido, con excelente calidad de terminaciones.  \n\nNo tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp al +54 9 351 866 8299. Para ayudarte mejor, ¿la estás pensando como vivienda permanente, cabaña de alquiler turístico o anexo en el fondo de una casa?",
+      "mentionedModels": [
+        "W26 Suite",
+        "Suite"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 3736
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de W26 Suite? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "La W26 Suite tiene una superficie de 26 m² cubiertos, resuelta como monoambiente tipo suite/loft (un solo ambiente principal con zona de descanso + estar, más baño completo; sin dormitorio independiente). Está construida con sistema steel frame, fabricación 100% industrial en planta, lo que asegura muy buen control de calidad y tiempos de entrega rápidos.  \n\nRespecto a equipamiento fino (tipo de aberturas, aislaciones, terminaciones interiores, etc.) no tengo el detalle técnico completo cargado acá, pero mantienen el estándar Wellmod: enfoque en eficiencia energética, materiales reciclables y mínima intervención en el terreno. No tengo los precios actualizados cargados; te sugiero consultarlo por WhatsApp al +54 9 351 866 8299. ¿La pensás usar como vivienda permanente, cabaña turística o anexo en un terreno?",
+      "mentionedModels": [
+        "W26 Suite",
+        "Suite",
+        "WELLMOD"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 3748
+    },
+    {
+      "question": "Contame sobre W20 Suite",
+      "questionType": "product_specific",
+      "response": "La W20 Suite es una unidad modular compacta de 20 m², ideal como mini loft, cabaña chica o dormitorio en suite anexo a una vivienda principal. Está resuelta como un solo ambiente (zona de cama + estar) con su baño, construida en steel frame y fabricada 100% en planta industrial para luego ser transportada y montada en el terreno en muy pocos días.  \n\nNo tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp al +54 9 351 866 8299. ¿La estás pensando para uso personal (fondo de casa) o para un proyecto de alquiler turístico con varias unidades?",
+      "mentionedModels": [
+        "W20 Suite",
+        "Suite"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 3533
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de W20 Suite? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "La W20 Suite tiene 20 m² de superficie cubierta, pensada como monoambiente tipo suite (un solo ambiente con sector de descanso + estar y un baño; sin dormitorio separado). Se construye en sistema steel frame, con fabricación 100% industrial en planta y luego transporte y montaje rápido en el terreno, lo que reduce tiempos de obra y errores de ejecución.  \n\nLos detalles finos de memoria técnica (aislaciones, aberturas específicas, terminaciones interiores) no los tengo cargados acá, pero siguen el estándar Wellmod de enfoque sustentable y eficiencia energética. No tengo los precios actualizados cargados; te sugiero consultarlo por WhatsApp al +54 9 351 866 8299. ¿La estás evaluando como unidad única o como módulo repetible (varias W20 Suite en un mismo predio)?",
+      "mentionedModels": [
+        "W20 Suite",
+        "Suite",
+        "WELLMOD"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 2938
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con construcción en steel frame 100% industrializada: fabricamos las unidades completas en planta (estructura, cerramientos, instalaciones, terminaciones), luego las transportamos en camión/grúa y hacemos el montaje final en el terreno con mínima obra húmeda.  \n\nSegún nuestros conceptos “Inmediato”, los proyectos se fabrican entre 90 y 120 días (dependiendo los m²) y la instalación en el lugar se resuelve en solo unos pocos días. Para afinar tiempos en tu caso puntual, ¿qué tipo de Unidades, proyectos estás pensando y de qué tamaño aproximado?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2489
+    },
+    {
+      "question": "¿Se pueden personalizar los modelos de casas?",
+      "questionType": "customization",
+      "response": "Sí, los modelos se pueden personalizar, siempre dentro de la lógica modular. Por ejemplo, con el concepto de European Lard Station podés sumar o yuxtaponer módulos de 20 m² (6,20 x 3,20 x 3 m) hasta llegar a la superficie que necesitás, y en proyectos tipo Yabroudi Villa o Dalbourne Villa se ajusta diseño, cantidad de módulos y distribución según el uso.  \n\nTambién se pueden adaptar terminaciones y configuraciones según sea vivienda, turismo, oficina o servicio. Para orientarte mejor, ¿querés partir de una W20/W26 Suite y ampliarla, o pensás en una casa más grande desde cero?",
+      "mentionedModels": [
+        "W26 Suite",
+        "Suite",
+        "Oficina",
+        "Yabroudi Villa",
+        "European Lard Station",
+        "Dalbourne Villa"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4012
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, ofrecemos financiación para las unidades modulares, con planes de pago que se adaptan según el tipo de proyecto y el monto. Los detalles finos de cuotas, plazos y condiciones no los tengo cargados acá, por lo que para números concretos te sugiero escribir por WhatsApp al +54 9 351 866 8299.  \n\nPara que un asesor te oriente mejor con las opciones de pago: ¿qué tipo de Unidades, proyectos estás evaluando y en qué rango de presupuesto aproximado te gustaría moverte?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 5147
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Nos diferencia que la construcción es 100% industrial: las unidades se hacen completas en fábrica (con mano de obra especializada y control de calidad) y recién después se llevan al terreno, lo que reduce muchísimo errores y tiempos. Trabajamos con sistema steel frame, foco fuerte en sustentabilidad (materiales reciclables, ahorro energético, recuperación de aguas pluviales, mínimo impacto en el suelo) y tiempos de entrega muy rápidos: proyectos fabricados en 90–120 días e instalados en pocos días.  \n\nAdemás, todo el concepto es modular y transportable (Seascape Villa, European Lard Station, etc.), lo que permite crecer por etapas y relocalizar unidades si cambia el negocio o el uso. ¿Estás comparando para una vivienda, un proyecto turístico o algo corporativo?",
+      "mentionedModels": [
+        "European Lard Station",
+        "Seascape Villa"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4031
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "No tengo cargada una lista específica de zonas o provincias, pero al ser arquitectura modular transportable, las unidades se trasladan en camiones y grúas desde la fábrica hasta el lugar de destino y se montan ahí.  \n\nPor proyectos como Granja Ecuestre en Rafaela (Santa Fe) y otros desarrollos en distintas locaciones, es muy probable que podamos llegar a tu zona, pero la viabilidad logística se ve caso por caso. Podría ser posible, consultalo por WhatsApp al +54 9 351 866 8299. ¿En qué localidad o provincia tenés pensado instalar la unidad?",
+      "mentionedModels": [
+        "Granja Ecuestre"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 3480
+    }
+  ],
+  "sessionCreationTimeMs": 42910,
+  "errors": []
+}

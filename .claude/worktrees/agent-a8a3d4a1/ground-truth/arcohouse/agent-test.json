@@ -1,0 +1,199 @@
+{
+  "company": "Arcohouse",
+  "url": "https://arcohouse.com.ar/",
+  "testedAt": "2026-02-06T15:53:59.483Z",
+  "sessionId": "cb826b5b-ad9b-4f19-bcbb-61a68ca0d40b",
+  "systemPromptLength": 22690,
+  "systemPromptModelsFound": [
+    "Productos relacionados",
+    "Kit Montañesito 23m2",
+    "Kit Cobre 37m2",
+    "Kit Limay 92m2",
+    "Kit Correntoso 75m2",
+    "Kit Montañés 47m2",
+    "Sustentabilidad",
+    "Cerrar",
+    "Montañes",
+    "Kit Montañesito",
+    "Kit Correntoso",
+    "Kit Cobre",
+    "Kit Limay",
+    "Kit Montañés",
+    "Refugio Limay",
+    "Refugio Correntoso",
+    "Rollos de",
+    "KIT el montañés",
+    "Montañesito 20m2",
+    "Cobre 30m2",
+    "El Montañes 40m2",
+    "Correntoso 60m2",
+    "Limay 80m2"
+  ],
+  "systemPromptWhatsApp": "5492604033077",
+  "systemPromptType": "de Modelos de refugios estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Arcohouse es una empresa que diseña y construye refugios y viviendas modulares pensadas para vivir en la naturaleza con diseño, calidez y alta eficiencia energética. Trabajamos con hormigón premoldeado y paneles SIP, ofrecemos modelos de refugios como Montañesito, Cobre, El Montañés, Correntoso y Limay, y también personalizamos espacios y muebles a medida. Además, construimos en San Rafael, Mendoza y contamos con opciones de financiación. ¿Estás pensando en un refugio para uso personal, alquiler turístico o inversión?",
+      "mentionedModels": [
+        "Montañes"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2731
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos refugios y viviendas modulares en distintos tamaños:  \n- Montañesito 20m2 (compacto, ideal escapadas o alquiler), Cobre 30m2 (para habitar e invertir), El Montañes 40m2 (nuestro modelo estrella), Correntoso 60m2 (pensado para familias e inversores) y Limay 80m2 (para vivir e invertir a la vez).  \nAdemás brindamos: construcción en hormigón premoldeado, diseño y personalización de espacios, fabricación de muebles a medida, equipamiento llave en mano y financiación, trabajando principalmente en San Rafael, Mendoza.  \nPara orientarte mejor, ¿qué tipo de Modelos de refugios estás buscando: algo chico tipo tiny house o algo más familiar?",
+      "mentionedModels": [
+        "Montañes",
+        "Montañesito 20m2",
+        "Cobre 30m2",
+        "El Montañes 40m2",
+        "Correntoso 60m2",
+        "Limay 80m2",
+        "MONTAÑESITO 20M2",
+        "COBRE 30M2"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2691
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Te dejo los datos de contacto directo:  \n- Teléfono / WhatsApp: +54 9 260 403 3077  \n- Email: emailjohnsmith@example.com  \n\nSi querés, contame qué modelo te interesa y te ayudo a armar un primer panorama antes de que te contacte un asesor.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 1751
+    },
+    {
+      "question": "¿Cuántos modelos ofrecen?",
+      "questionType": "product_count",
+      "response": "Tenemos cinco Modelos de refugios principales:  \n- Montañesito 20m2  \n- Cobre 30m2  \n- El Montañes 40m2  \n- Correntoso 60m2  \n- Limay 80m2  \n\nCada uno está pensado para distintas necesidades (escapadas, alquiler turístico, vivienda familiar o inversión). ¿Qué tamaño tenés en mente más o menos?",
+      "mentionedModels": [
+        "Montañes",
+        "Montañesito 20m2",
+        "Cobre 30m2",
+        "El Montañes 40m2",
+        "Correntoso 60m2",
+        "Limay 80m2",
+        "MONTAÑESITO 20M2",
+        "COBRE 30M2"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 1990
+    },
+    {
+      "question": "Contame sobre Productos relacionados",
+      "questionType": "product_specific",
+      "response": "Mirá, en el listado aparece “Productos relacionados” con un valor de **$84.700**, pero no tengo más detalle cargado sobre qué incluye exactamente ese ítem. Puede tratarse de complementos o accesorios para los refugios (por ejemplo, algún extra de equipamiento o deco), pero acá no figura la descripción puntual.  \n\nNo tengo esa información específica cargada; si querés el detalle exacto de qué es y qué incluye, te sugiero consultarlo por WhatsApp al **+54 9 260 403 3077**. Mientras tanto, ¿estás mirando algún Modelo de refugio en particular (Montañesito, Cobre, El Montañes, Correntoso o Limay) para ver qué extras se le pueden sumar?",
+      "mentionedModels": [
+        "Productos relacionados",
+        "Montañes"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3300
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Productos relacionados? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "Por ahora no tengo detalles técnicos específicos de **“Productos relacionados”**: no figura superficie, cantidad de dormitorios ni características constructivas asociadas a ese ítem, solo el valor de **$84.700**. Es muy probable que sea un complemento/accesorio y no un Modelo de refugio en sí (por eso no tiene m2 ni distribución como Montañesito, Cobre, El Montañes, Correntoso o Limay).  \n\nNo tengo esa información más fina cargada; para saber exactamente qué es y qué incluye, lo mejor es que lo consultes por WhatsApp al **+54 9 260 403 3077**. Si querés, contame qué modelo estás evaluando y te detallo sus m2, capacidad y equipamiento, que eso sí lo tengo completo.",
+      "mentionedModels": [
+        "Productos relacionados",
+        "Montañes"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3090
+    },
+    {
+      "question": "Contame sobre Kit Montañesito 23m2",
+      "questionType": "product_specific",
+      "response": "El **Kit Montañesito 23m2** es un refugio compacto pensado para escapadas o alquiler turístico, similar conceptualmente a nuestro **Montañesito 20m2** pero con un poco más de superficie útil. En el listado figura con un precio de **$9.800.000**, aunque en la info más actualizada de Montañesito trabajamos con valores en ARS más altos, así que tomalo solo como referencia histórica.  \n\nPor equipamiento, podés esperar algo en línea con Montañesito 20m2: iluminación LED interior y exterior, aberturas de aluminio DVH, muy buena aislación térmica y acústica con paneles SIP, y muebles de baño y cocina incluidos. No tengo la distribución interna exacta del Kit 23m2, pero suele estar pensado para **2 personas**, optimizando al máximo el espacio. ¿Lo pensás para uso propio o como cabaña para alquilar?",
+      "mentionedModels": [
+        "Kit Montañesito 23m2",
+        "Montañes",
+        "Kit Montañesito",
+        "Montañesito 20m2",
+        "MONTAÑESITO 20M2"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3971
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Kit Montañesito 23m2? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "Del **Kit Montañesito 23m2** tengo cargado solo lo básico:  \n- **Superficie:** 23 m².  \n- **Uso típico:** pensado para **2 personas**, formato refugio compacto tipo tiny house.  \n\nNo tengo el plano ni la cantidad de dormitorios especificada para el kit 23 m², pero por concepto es muy similar al **Montañesito 20m2** (baño completo, área de cocina equipada y espacio de descanso integrado, con iluminación LED, DVH y buena aislación). Para que te oriente mejor, ¿lo querés para escapadas personales o para alquiler turístico?",
+      "mentionedModels": [
+        "Kit Montañesito 23m2",
+        "Montañes",
+        "Kit Montañesito",
+        "Montañesito 20m2",
+        "MONTAÑESITO 20M2"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2998
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con un sistema modular en **hormigón premoldeado** y paneles SIP: fabricamos el refugio en taller (con aberturas, aislación, instalación eléctrica y muebles listos) y luego lo trasladamos y montamos en tu terreno, evitando una obra húmeda tradicional. Esto hace que el proceso sea mucho más rápido, prolijo y “libre de obra”, entregándote un espacio **equipado y llave en mano**.  \n\nEl tiempo exacto depende del modelo (no tengo por acá los plazos en semanas/meses detallados), pero siempre trabajamos con tiempos acotados y de entrega pactada. ¿Ya tenés terreno y en qué zona? Así te ayudo a ver qué Modelo de refugio encaja mejor y te orientamos con plazos más precisos.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4812
+    },
+    {
+      "question": "¿Se pueden personalizar los modelos?",
+      "questionType": "customization",
+      "response": "Sí, se pueden personalizar, es uno de nuestros fuertes. Partimos de los modelos base (Montañesito, Cobre, El Montañes, Correntoso y Limay) y adaptamos distribución, terminaciones, elección de materiales, equipamiento y muebles a medida para que el refugio tenga tu impronta.  \n\nTrabajamos el diseño en conjunto con vos, buscando un equilibrio entre lo estándar (para que sea eficiente en costo y tiempos) y lo personalizado. Para ayudarte mejor, ¿ya tenés visto algún modelo o metraje que te guste?",
+      "mentionedModels": [
+        "Montañes"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3459
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, ofrecemos **financiación** para los Modelos de refugios, así que no hace falta que pagues todo de una sola vez. Los esquemas concretos de cuotas y anticipos los arma un asesor según el modelo (Montañesito, Cobre, El Montañes, Correntoso o Limay) y tu situación.  \n\nNo tengo por acá el detalle fino de planes y tasas, así que para ver opciones exactas te sugiero escribirnos por WhatsApp al **+54 9 260 403 3077**. Mientras tanto, ¿qué presupuesto manejás aproximadamente para ver qué modelo podría encajar mejor?",
+      "mentionedModels": [
+        "Montañes"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3152
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Nos diferencia, primero, el **diseño personalizado y de alta eficiencia energética**: cada Arcohouse se trabaja en detalle con vos, no es un “módulo estándar” más. Usamos **materiales de alta calidad** (hormigón premoldeado, paneles SIP, aberturas DVH, maderas macizas y acabados cuidados) y entregamos los refugios **equipados y llave en mano**, listos para habitar.  \n\nAdemás, somos muy fuertes en la **calidez y conexión con la naturaleza**: todos los modelos (Montañesito, Cobre, El Montañes, Correntoso y Limay) están pensados para vivir o invertir en entornos naturales, con confort real y buena aislación, y con la ventaja de un sistema modular rápido y “libre de obra”. ¿Qué te interesa más a vos: diseño, rapidez de entrega, inversión para alquiler, o confort para vivir?",
+      "mentionedModels": [
+        "Montañes"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4487
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "Por ahora tenemos especificado que construimos en **San Rafael, Mendoza**, donde desarrollamos y montamos nuestros refugios modulares. Es posible evaluar otros destinos, pero no lo tengo detallado acá por escrito.  \n\nEn casos fuera de esa zona solemos ver logística y viabilidad caso por caso, así que lo ideal es que lo consultes por WhatsApp al **+54 9 260 403 3077**. ¿En qué provincia o localidad tenés pensado instalar el refugio?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2399
+    }
+  ],
+  "sessionCreationTimeMs": 65227,
+  "errors": []
+}

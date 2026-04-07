@@ -1,0 +1,46 @@
+=== SIA CONSTRUCCIONES ===
+URL: https://siaconstrucciones.com.ar/
+Session: 7b434356-2961-4785-baa4-80725a64c01e
+Date: 2026-02-08 17:15:50
+Session creation: 68.6s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (6.2s): SIA Construcciones es una empresa de General Roca (Río Negro) especializada en construcción en Steel Framing y en el abastecimiento de materiales para obras en seco. Construimos viviendas y proyectos llave en mano, hacemos modelado 3D, gestionamos planos y cálculos estructurales, damos Charlas y Capacitaciones y contamos con Supervisor de Obra Certificado (IRAM/IAS).  
+
+Además tenemos Venta de Materiales (perfiles Steel Frame y Drywall, placas de yeso, aislantes, tornillos, revestimientos, herramientas, masillas, accesorios) con Envios a Todo el País y envíos rápidos a todo el Valle de Río Negro y Neuquén. ¿Qué tipo de Materiales y servicios estás buscando vos: construcción de vivienda, compra de materiales, o asesoramiento técnico?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (4.0s): Ofrecemos dos grandes líneas: Venta de Materiales y servicios de construcción en Steel Frame. En **Venta de Materiales** tenés: perfiles para Steel Frame y Drywall, tornillos, aislantes, placas de yeso, revestimientos, herramientas, fijaciones, masillas y accesorios, con Envios a Todo el País y envíos a todo el Valle (Río Negro y Neuquén).  
+
+En servicios, además de **Construimos tu Proyecto** (obra llave en mano en Steel Framing), brindamos **Modelado 3D de tus Proyectos**, **Charlas y Capacitaciones** y **Supervisor de Obra Certificado** para acompañarte en cada etapa. ¿Ya tenés terreno y estás pensando en construir, o por ahora solo necesitás materiales para una obra en curso?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (3.2s): Trabajamos principalmente con proyectos personalizados en Steel Framing (diseñamos según tus m2, cantidad de dormitorios y tipo de lote), pero también tenemos algunas tipologías desarrolladas como referencia, por ejemplo Casa EVO, Casa Coop y la vivienda unifamiliar en venta en pozo de 55 m² (2 dormitorios, 1 baño, cocina-comedor-estar). Estas tipologías sirven como base y se adaptan en distribución, terminaciones y ampliaciones según tu necesidad y presupuesto.  
+
+Si querés, te puedo orientar mejor: ¿cuántos m2 y cuántos dormitorios estás pensando construir aproximadamente?
+
+USUARIO: Contame sobre 1. Compartir en X
+AGENTE (2.8s): Mirá, “1. Compartir en X” no es un modelo de casa ni un servicio nuestro, sino simplemente el botón de la web para compartir la publicación en la red social X (antes Twitter). No tiene metros cuadrados, dormitorios ni precio asociado, solo sirve para difundir el contenido.  
+
+Si querés, te puedo contar en detalle sobre un producto concreto, por ejemplo la **vivienda unifamiliar en venta en pozo de 55 m²** o sobre nuestros servicios de **Construimos tu Proyecto** en Steel Frame.
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (8.9s): Con esta info extra sigue sin aparecer ningún precio, ni por m² ni por modelo (tampoco para Casa Coop), así que no puedo darte un valor aproximado serio. No tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp o teléfono para que te armen un presupuesto de una casa de 2 dormitorios según m2, terminaciones y financiación disponible.  
+
+Para que el cálculo sea más preciso cuando hables con el equipo, ¿cuántos m2 estás pensando aproximadamente para esa vivienda de 2 dormitorios?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (5.6s): En nuestras obras en Steel Frame ofrecemos **20 años de garantía en la construcción**, respaldada por más de 20/30 años de experiencia y cumplimiento de normas vigentes en el país. Además, contamos con **Supervisor de Obra Certificado (IRAM/IAS)** y usamos materiales normalizados (perfiles IRAM IAS U-500-205, placas y aislantes de primera línea), lo que asegura durabilidad, buen aislamiento y correcta ejecución.  
+
+Para orientarte mejor con la garantía aplicada a tu caso, ¿para cuándo estás pensando encarar la construcción o la compra de materiales?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.9s): El teléfono de contacto de SIA Construcciones es **(0298) 443-0509** y el mail es **info@siaconstrucciones.com.ar**. Atendemos en Islas Malvinas 932, General Roca, de lunes a viernes de 8 a 13 y de 15 a 19 hs, y sábados de 9 a 13 hs.  
+
+Si querés, me dejás tu nombre y número y le pido a un asesor que te contacte para avanzar con tu proyecto.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 1
+Tiempo promedio: 4.8s

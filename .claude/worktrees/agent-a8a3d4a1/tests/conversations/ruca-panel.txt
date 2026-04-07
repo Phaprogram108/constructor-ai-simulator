@@ -1,0 +1,54 @@
+=== RUCA PANEL ===
+URL: https://www.rucapanel.com.ar/
+Session: bc82a860-2447-4073-bbca-b4369eca6171
+Date: 2026-02-08 17:04:13
+Session creation: 122.0s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (4.4s): Rucapanel es una fábrica argentina de soluciones arquitectónicas e infraestructura, especializada en construcción modular para proyectos en todo el país, especialmente en zonas remotas. Trabajamos con estructuras metálicas autoportantes que se fabrican en planta y se envían en secciones listas para ensamblar en el lugar, reduciendo tiempos de obra e impacto ambiental.  
+
+Ofrecemos principalmente: **Casas Ruca** (viviendas modulares), **Hospitales Modulares**, **Construcciones Modulares** sustentables para distintos usos y **Alojamiento** (dormis, hoteles, campamentos, etc.), siempre adaptados a la normativa de higiene y seguridad. ¿Qué tipo de tipologías de construcciones estás buscando: vivienda, hospitalaria, turística, minera, educativa, algo comercial?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (7.7s): Ofrecemos soluciones integrales de **construcción modular** en toda Argentina, basadas en **estructuras metálicas autoportantes** que se fabrican en planta y se montan en secciones en el sitio.  
+Nuestros principales productos/servicios son:
+
+- **Casas Ruca**: viviendas modulares, cabañas, mini-casas, dúplex, refugios y complejos habitacionales, ideales también para zonas remotas.  
+- **Hospitales Modulares**: hospitales de emergencia, salas de terapia intensiva y edificios de enfermería/sanitarios, con montaje rápido y adaptados a normativas de salud.  
+- **Construcciones Modulares**: soluciones sustentables y personalizadas para **comercial** (bancos, bares, locales), **educativa** (jardines, escuelas, clubes), **turística** (hoteles de ruta, spa, hostels) y **minera** (campamentos habitacionales, comedores, oficinas, enfermerías).  
+- **Alojamiento**: edificios de dormitorios con baños múltiples o privados, viviendas y hoteles para personal de obra o turismo.  
+
+Además, damos servicio **“llave en mano”** (diseño, fabricación, transporte e instalación) y contamos con **financiación disponible**. ¿Para qué uso puntual estás necesitando la construcción (vivienda, empresa, municipio, minería, turismo, salud)?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (5.5s): En **Casas Ruca** trabajamos con varias tipologías dentro de la línea de **Viviendas**: casas de 1 y 2 plantas (como Casa Pilar, Casa de Campo, Casa Auquinco, Casa Guernica, Vivienda Escobar), además de **cabañas, dúplex, refugios, mini-casas y complejos habitacionales**, que se adaptan en metros y distribución según el proyecto.  
+También tenemos la línea **Viviendas Nómades**, pensada como módulos habitacionales flexibles y transportables.  
+
+Como cada obra se ajusta a superficie, cantidad de ambientes y terminaciones, armamos el modelo exacto a medida a partir de estas bases. ¿Para cuántos ambientes o cuántos m² estás pensando la casa aproximadamente?
+
+USUARIO: Contame sobre 1. Casas Ruca
+AGENTE (4.2s): Las **Casas Ruca** son viviendas modulares industrializadas, hechas con **estructuras metálicas autoportantes** que se construyen en fábrica y se trasladan en secciones listas para montar en el terreno, lo que reduce muchísimo tiempos de obra e imprevistos de costo. Están pensadas para uso permanente, cumplen con **códigos de construcción e higiene y seguridad** según la zona, y funcionan muy bien en lugares remotos o de difícil acceso.  
+
+Dentro de Casas Ruca entran tipologías como **casas de 1 y 2 plantas** (Casa Pilar, Casa de Campo, Casa Auquinco, Casa Guernica, Vivienda Escobar), además de **cabañas, dúplex, refugios, mini-casas y complejos habitacionales**, y también la línea **Viviendas Nómades** más flexible y transportable. Se pueden adaptar en metros, cantidad de dormitorios y nivel de terminación, y contamos con **financiación disponible**. ¿Ya tenés terreno? ¿En qué zona sería la casa?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (4.1s): No tengo los precios actualizados cargados, y en el material que manejo no figuran valores de referencia por m² ni por tipología. Te sugiero consultarlo por WhatsApp desde la web de Rucapanel, donde un asesor te puede pasar una cotización estimada para una casa de 2 dormitorios según metros, terminaciones y zona de instalación, y también las opciones de financiación.  
+
+Para orientarte mejor cuando hables con el asesor: ¿qué superficie aproximada estás pensando (por ejemplo 50, 70 u 80 m²) y en qué provincia sería la obra?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (8.1s): Trabajamos con un sistema constructivo industrializado, con **estructuras metálicas autoportantes** y paneles de alta prestación, pensado para uso permanente y adaptado a los códigos de construcción e higiene y seguridad de cada zona, lo que ya garantiza durabilidad y comportamiento técnico.  
+En el material que tengo no figura el detalle exacto de años de garantía por escrito (estructura, filtraciones, instalaciones, etc.), así que para esa info puntual te diría: *“No tengo esa información específica cargada, pero podés contactarnos por WhatsApp para que te pasen los detalles de garantía según el tipo de obra”*.  
+
+Mientras tanto, si me contás qué estás evaluando (por ejemplo una **Casa Ruca**, un **Hospital Modular** o una solución de **Alojamiento**), puedo explicarte cómo se comporta el sistema en cuanto a vida útil, mantenimiento y relocalización.
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (4.0s): No tengo el número de WhatsApp o teléfono cargado en la información que manejo.  
+
+Te recomiendo entrar a la web oficial **rucapanel.com.ar** y desde ahí tocar en el ícono de WhatsApp o la sección de contacto, donde vas a ver el número actualizado y podés escribirle directo a un asesor.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 3
+Tiempo promedio: 5.4s

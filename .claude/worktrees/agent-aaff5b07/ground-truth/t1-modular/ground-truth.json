@@ -1,0 +1,165 @@
+{
+  "company": "T1 Modular",
+  "url": "https://www.t1modular.com.ar/",
+  "capturedAt": "2026-02-05T20:27:10.794Z",
+  "type": "modular",
+  "navigation": {
+    "menuItems": [
+      "Inicio",
+      "Modelos",
+      "Cómo construimos",
+      "Sobre T1",
+      "Contacto"
+    ],
+    "modelSections": [
+      {
+        "label": "Tiny Homes",
+        "url": "https://www.t1modular.com.ar/modelos"
+      },
+      {
+        "label": "PROYECTOS RESIDENCIALES",
+        "url": "https://www.t1modular.com.ar/residencial"
+      },
+      {
+        "label": "PROYECTOS COMERCIALES",
+        "url": "https://www.t1modular.com.ar/comercial"
+      }
+    ]
+  },
+  "models": [
+    {
+      "name": "T1 25",
+      "sqMeters": 25,
+      "features": [
+        "cocina equipada funcional con mesada y alacenas",
+        "baño completo con mueble y espejo de baño",
+        "grifería de calidad",
+        "revestimiento completo",
+        "iluminación",
+        "ventilación",
+        "opción de bañera o box de ducha",
+        "calefacción frio/calor",
+        "iluminación LED eficiente",
+        "instalación para TV",
+        "armario/placard integrado",
+        "termotanque",
+        "tablero eléctrico",
+        "enchufes",
+        "envío garantizado a todo el país"
+      ],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-1-t1-25.jpeg",
+      "detailUrl": "https://www.t1modular.com.ar/t1-25",
+      "bathrooms": 1
+    },
+    {
+      "name": "T1 36",
+      "sqMeters": 36,
+      "features": [
+        "cocina equipada funcional con mesadas negras y estantes",
+        "baño completo con mueble y cubre cañerías de chapa",
+        "grifería de calidad",
+        "revestimiento compacto",
+        "iluminación",
+        "ventiladores",
+        "vaciado de bañera",
+        "box de ducha",
+        "confort y climatización",
+        "generadores",
+        "calefactor con sistema de convección Roca color",
+        "iluminación LED eficiente",
+        "instalado para TV",
+        "tomacorriente integrado",
+        "termotanque",
+        "sistema eléctrico",
+        "todos los enchufes"
+      ],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-2-t1-36.jpeg",
+      "detailUrl": "https://www.t1modular.com.ar/t1-36",
+      "bedrooms": 2,
+      "bathrooms": 1
+    },
+    {
+      "name": "T1 47",
+      "sqMeters": 47,
+      "features": [
+        "cocina funcional con placares bajo mesada",
+        "muebles altos",
+        "mesada",
+        "electrodomésticos con grifo",
+        "baño completo con muebles y espejo de baño",
+        "grifería de calidad",
+        "revestimiento",
+        "comparte lavadora",
+        "ventilación",
+        "opción de bañera o box de ducha",
+        "sistema de calefacción radiante",
+        "aislamiento térmico y acústico",
+        "ventilación mecánica integrada",
+        "terminaciones eléctricas y todas las enchufes",
+        "tablero eléctrico",
+        "red completa",
+        "diseño recto o en L",
+        "tres ambientes espaciosos",
+        "planta tradicional o distribución moderna en L",
+        "sistema Steel Frame",
+        "máxima durabilidad",
+        "eficiencia energética insuperable",
+        "adaptable a cualquier clima"
+      ],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-3-t1-47.jpeg",
+      "detailUrl": "https://www.t1modular.com.ar/t1-47l"
+    },
+    {
+      "name": "DISEÑO A MEDIDA Y ASESORAMIENTO",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "INGENIERÍA Y GESTIÓN INTEGRAL",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "CALIDAD SUPERIOR Y EQUIPAMIENTO COMPLETO",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Proyecto Destacado 1",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Proyecto Destacado 2",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "MARKETS INTELIGENTES",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg"
+    },
+    {
+      "name": "EMPRENDIMIENTOS TURISTICOS - T1 SUITES",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg"
+    }
+  ],
+  "contactInfo": {
+    "email": "consultastiny@gmail.com",
+    "instagram": "@t1_steelframe"
+  },
+  "totalModelsFound": 10,
+  "pagesExplored": 7,
+  "errors": []
+}

@@ -1,0 +1,64 @@
+{
+  "company": "Atlas Housing",
+  "url": "https://atlashousing.com.ar",
+  "capturedAt": "2026-02-05T20:21:03.897Z",
+  "type": "unknown",
+  "navigation": {
+    "menuItems": [],
+    "modelSections": [
+      {
+        "label": "Modelos",
+        "url": "https://atlashousing.com.ar/modelos/"
+      },
+      {
+        "label": "Proyectos entregados",
+        "url": "https://atlashousing.com.ar/nosotros/#Proyectos"
+      },
+      {
+        "label": "modelo",
+        "url": "https://atlashousing.com.ar/modelos/#Katerra"
+      },
+      {
+        "label": "modelo",
+        "url": "https://atlashousing.com.ar/modelos/#Upscala"
+      },
+      {
+        "label": "modelo",
+        "url": "https://atlashousing.com.ar/modelos/#fitz-roy"
+      },
+      {
+        "label": "modelo",
+        "url": "https://atlashousing.com.ar/modelos/#Blackberry"
+      },
+      {
+        "label": "modelo",
+        "url": "https://atlashousing.com.ar/modelos/#Hexa"
+      },
+      {
+        "label": "modelo",
+        "url": "https://atlashousing.com.ar/modelos/#Montana"
+      }
+    ]
+  },
+  "models": [
+    {
+      "name": "Lago Meliquina",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg"
+    },
+    {
+      "name": "Katerra",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg"
+    }
+  ],
+  "contactInfo": {
+    "email": "info@atlashousing.com",
+    "instagram": "@atlas.housing"
+  },
+  "totalModelsFound": 2,
+  "pagesExplored": 4,
+  "errors": []
+}

@@ -1,0 +1,52 @@
+=== CONTENEDORES BOX LIFE ===
+URL: https://www.contenedoresboxlife.com.ar/
+Session: ab3bb4d9-4c3f-4e96-b324-40a8a2093dc6
+Date: 2026-02-08 17:20:35
+Session creation: 36.5s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (7.7s): Somos Box Life, una empresa que fabrica casas modulares de alta gama usando contenedores marítimos, con sistema llave en mano y construcción en solo 90 días. Hacemos viviendas (LOFT 15, LOFT 30, BOX 60, BOX 90), quinchos y oficinas (OFICINA 15 y OFICINA 30), con materiales de primer nivel, mínimo mantenimiento y envío a todo el país.  
+
+Para orientarte mejor, ¿qué tipo de Modelos estás buscando: vivienda, oficina o quincho?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (7.8s): Ofrecemos casas modulares de alta gama, oficinas y quinchos construidos con contenedores marítimos, bajo modalidad llave en mano y fabricados en 90 días. Nuestros Modelos son: LOFT 15, LOFT 30, BOX 60, BOX 90, QUINCHO, OFICINA 15, OFICINA 30 y también alquiler de oficinas (OFICINA 15 y 30 en modalidad rental), además de diseños personalizados.  
+
+Ya que hay varias opciones, ¿para qué las querés usar principalmente: vivienda permanente, turismo (cabañas/Airbnb), oficina o espacio social tipo quincho?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (3.2s): Tenemos 7 Modelos principales de fabricación propia: LOFT 15, LOFT 30, BOX 60, BOX 90, QUINCHO, OFICINA 15 y OFICINA 30. Además, ofrecemos alquiler de oficinas (OFICINA 15 y 30 en modalidad rental) y diseños personalizados según proyecto.  
+
+¿Estás pensando más en una casa para vivir (LOFT/BOX) o en algo tipo oficina o quincho?
+
+USUARIO: Contame sobre 1. Alquiler de Oficinas
+AGENTE (4.0s): Buenísimo, te cuento del **Alquiler de Oficinas**.  
+
+Alquilamos oficinas listas para usar en modelos **OFICINA 15** y **OFICINA 30**, ambas en contenedores marítimos de alta gama, con 2 puestos de trabajo y baño en la versión rental (15 m²) y opción más amplia en 30 m², y las enviamos a cualquier parte del país. Es ideal si necesitás un espacio de trabajo rápido, sin obra húmeda, con muy poco mantenimiento y armado en destino.  
+
+Para ayudarte mejor: ¿la oficina sería para cuántas personas y en qué zona la necesitarías?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (3.5s): Para 2 dormitorios, el Modelo que mejor encaja es el **BOX 60**, que tiene 60 m², 2 habitaciones, 1 baño con antebaño y cocina-comedor + estar, y hoy está publicado en **U$S 60.500** (precio base del modelo, sin opcionales como deck, pérgolas, etc.). Otra opción más grande, si buscás más espacio, es el **BOX 90** (90 m², 2 habitaciones y 2 baños) en **U$S 86.400**.  
+
+¿Ya tenés terreno? Si me contás en qué zona es y si es para vivienda permanente o turística, te ayudo a elegir entre BOX 60 y BOX 90.
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (6.8s): Trabajamos con contenedores marítimos y estructura metálica de alta resistencia, aislación con poliuretano expandido, aberturas de aluminio con DVH y terminaciones de primera, lo que asegura una durabilidad muy alta y mínimo mantenimiento frente a clima, humedad y uso intensivo. En la web no figura el detalle formal de años de garantía por escrito, pero todos los materiales son de línea premium (FV/Peirano, Roca/Ferrum, etc.) y la obra se entrega llave en mano desde nuestra planta en San Rafael con respaldo directo de fábrica.  
+
+Si querés, puedo pedir que un asesor te contacte por WhatsApp para pasarte las condiciones de garantía específicas según el Modelo que elijas. ¿Te interesan más los LOFT (15/30) o los BOX 60/90?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.9s): Te dejo los datos de contacto directos de Box Life:  
+
+- **WhatsApp / Tel planta San Rafael:** +54 9 260 4614657  
+- **WhatsApp / Tel showroom Chacras de Coria (Mendoza):** +54 9 261 4697747  
+- **Email:** ventas@contenedoresboxlife.com.ar  
+
+Si querés, me contás qué Modelo te interesa y te digo qué preguntarles puntualmente cuando les escribas.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 0
+Tiempo promedio: 5.1s

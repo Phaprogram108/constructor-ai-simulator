@@ -1,0 +1,47 @@
+=== LUCYS HOUSE ===
+URL: https://www.lucyshousearg.com/
+Session: 226d7755-8bb3-4cd8-beee-453494036de8
+Date: 2026-02-08 16:26:23
+Session creation: 18.3s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (6.1s): Lucy’s House es una desarrolladora de viviendas modulares en Steel Frame, con fábrica y showroom en Córdoba. Diseñamos y construimos módulos habitacionales transportables (como los modelos 30,6 m², 25,5 m², 37,50 m², 40,8 m², Proyecto 1 al 14, Comfort, Deluxe, Full Premium, Oficinas Modulares, etc.), listos en unos 60 días y enviados a todo el país.  
+
+Trabajamos 100% en fábrica, con diseño moderno, alta calidad (no usamos contenedores) y distintas líneas de equipamiento (Comfort, Deluxe y Full Premium), además de ofrecer financiación. ¿Qué tipo de Módulos habitacionales estás buscando: vivienda permanente, cabaña de fin de semana, turístico u oficinas?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (5.1s): Ofrecemos principalmente **viviendas y Módulos habitacionales en Steel Frame**, 100% personalizables y transportables a todo el país, con entrega estándar en 60 días. Tenés modelos como **30,6 m², 25,5 m², 37,50 m², 38 m², 40,8 m²** y proyectos específicos (**Proyecto 1 al 14, Comfort 1/2/3, Deluxe 1/2/3, Full Premium 1/2/3, Oficinas Modulares, Proyecto 7 para montañas, Proyectos Modulares para turismo y empresas**, etc.).  
+
+Además brindamos: **entregas inmediatas** (módulos ya listos de 19,2 / 28,3 / 28,56 / 30 / 32 / 35,7 / 37,5 m²), **equipamientos Comfort, Deluxe y Full Premium**, **Handy Home** (módulos de almacenamiento 4/6/9,2 m² e invernadero), y **Lucy’s Rental** (alquiler de oficinas móviles, garitas, baños y espacios versátiles). También damos **asesoramiento, financiación** y te recibimos en el showroom de Av. La Voz del Interior 7500, Córdoba. ¿Para qué uso puntual estás buscando un módulo: vivienda, turismo, oficina o depósito?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (3.9s): Tenemos **dos cosas distintas**:  
+1) Un catálogo de **Módulos habitacionales / casas por tamaño o proyecto** (25,5 m², 30,6 m², 37,50 m², 38 m², 40,8 m², 150 m² + Proyectos 1 al 14, Proyecto 7 de montaña, Oficinas Modulares, Proyectos Modulares, etc.).  
+2) Y dentro de cada tamaño podés elegir **3 líneas de equipamiento**: **Comfort, Deluxe y Full Premium**, más varios modelos de **Entregas Inmediatas** (19,2 / 28,3 / 28,56 / 30 / 32 / 35,7 / 37,5 m²).  
+
+En la práctica, son **decenas de combinaciones posibles** entre metros cuadrados + tipología + equipamiento, porque trabajamos muy a medida. ¿Sobre qué rango de m² te gustaría que te recomiende algunos Módulos habitacionales concretos (por ejemplo 25–40 m², 40–60 m², más grandes)?
+
+USUARIO: Contame sobre 1. Proyecto 14
+AGENTE (3.1s): Proyecto 14 es una **vivienda modular transportable** en Steel Frame, con diseño moderno y pensada para usarse como casa, cabaña o módulo turístico. Se fabrica en nuestra planta de Córdoba y se entrega lista para instalar en tu terreno en aproximadamente **60 días**, con posibilidad de equiparla en versión **Comfort, Deluxe o Full Premium** según el nivel de terminaciones que quieras.  
+
+Al ser un Módulo habitacional, podés personalizar distribución, aberturas, revestimientos y equipamiento interior, y lo transportamos a cualquier punto del país. ¿Para qué uso específico te interesa el Proyecto 14 (vivienda permanente, alquiler turístico, fin de semana)?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (4.9s): Para 2 dormitorios, lo más común es trabajar con módulos de **30,6 m², 37,5 m², 38 m² o 40,8 m²** con equipamiento **Comfort, Deluxe o Full Premium**, pero el valor final depende de los m² y la tipología que elijas. Como referencia, nuestros precios van **por m²** (por ejemplo: Comfort desde **USD 1.290/m² + IVA**, Deluxe **USD 1.390/m² + IVA** y Full Premium **USD 1.550/m² + IVA**) y hay modelos ya armados como el **38 m²** o el **40,8 m²** que funcionan perfecto como 2 dormitorios.  
+
+Si querés un número más cerrado, puedo orientarte según metros y categoría, pero para cotización exacta y financiación lo ideal es que lo veamos por WhatsApp al **+54 9 351 212 8965**. ¿Cuántos m² aproximadamente tenés en mente para esa casa de 2 dormitorios (algo tipo 40 m², 60 m², más grande)?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (7.6s): Trabajamos con estructura en Steel Frame, materiales de primera línea (porcelanatos, DVH en Full Premium, termotanques, griferías Piazza/Hydros, etc.) y módulos construidos íntegramente en fábrica, lo que nos permite garantizar calidad y terminaciones muy controladas. En la web no figura desglosado por años de garantía por rubro, pero sí se aclara que son viviendas de **calidad superior**, transportables y listas en 60 días, pensadas para uso permanente.  
+
+No tengo el detalle exacto de años de garantía cargado; para que te pasen por escrito la garantía estructural, de instalaciones y de equipamiento, te sugiero verlo por WhatsApp al **+54 9 351 212 8965**. ¿Para qué tipo de módulo lo querés evaluar (vivienda Comfort/Deluxe/Full Premium, o alguno de Entrega Inmediata)?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.6s): Te podés contactar directo por WhatsApp al **+54 9 351 212 8965** para ventas y asesoramiento comercial.  
+También tenemos otra línea de atención comercial al **+54 9 351 207 7113** y el mail **ventas@lucys.info**.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 1
+Tiempo promedio: 4.8s

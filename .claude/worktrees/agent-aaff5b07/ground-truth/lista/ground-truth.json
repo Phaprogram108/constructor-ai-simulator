@@ -1,0 +1,17 @@
+{
+  "company": "Lista",
+  "url": "https://lista.com.ar/",
+  "capturedAt": "2026-02-06T15:28:00.220Z",
+  "type": "unknown",
+  "navigation": {
+    "menuItems": [],
+    "modelSections": []
+  },
+  "models": [],
+  "contactInfo": {},
+  "totalModelsFound": 0,
+  "pagesExplored": 1,
+  "errors": [
+    "Fatal: page.evaluate: TypeError: Cannot read properties of null (reading 'scrollHeight')\n    at eval (eval at evaluate (:290:30), <anonymous>:1:19)\n    at UtilityScript.evaluate (<anonymous>:292:16)\n    at UtilityScript.<anonymous> (<anonymous>:1:44)"
+  ]
+}

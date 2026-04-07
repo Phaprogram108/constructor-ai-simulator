@@ -1,0 +1,92 @@
+{
+  "company": "Arcohouse",
+  "url": "https://arcohouse.com.ar/",
+  "capturedAt": "2026-02-05T20:28:37.387Z",
+  "type": "modular",
+  "navigation": {
+    "menuItems": [
+      "NOSOTROS",
+      "PROYECTOS",
+      "COTIZAR REFUGIO",
+      "COTIZAR KITS",
+      "TIENDA"
+    ],
+    "modelSections": [
+      {
+        "label": "Proyectos",
+        "url": "https://arcohouse.com.ar/#Trabajos"
+      },
+      {
+        "label": "Cotizar Refugio",
+        "url": "https://arcohouse.com.ar/#Refugios"
+      },
+      {
+        "label": "Ver más detalles",
+        "url": "https://arcohouse.com.ar/refugio-montanesito/"
+      },
+      {
+        "label": "Ver más detalles",
+        "url": "https://arcohouse.com.ar/refugio-cobre/"
+      },
+      {
+        "label": "Ver más detalles",
+        "url": "https://arcohouse.com.ar/refugio-el-montanes/"
+      },
+      {
+        "label": "Ver más detalles",
+        "url": "https://arcohouse.com.ar/refugio-correntoso/"
+      },
+      {
+        "label": "Ver más detalles",
+        "url": "https://arcohouse.com.ar/refugio-limay/"
+      }
+    ]
+  },
+  "models": [
+    {
+      "name": "MONTAÑESITO 20M2",
+      "price": "ARS $41.500.000 (+IVA)",
+      "sqMeters": 20,
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg",
+      "detailUrl": "https://arcohouse.com.ar/wp-content/uploads/2025/09/BROCHURE-ARCOHOUSE-MARZO-2025_compressed.pdf"
+    },
+    {
+      "name": "COBRE 30M2",
+      "price": "ARS $41.300.000 (UVA)",
+      "sqMeters": 20,
+      "features": [
+        "Estructura y aislación",
+        "Revestimiento",
+        "Instalaciones",
+        "Sanitarios",
+        "Equipamiento de cocina",
+        "Equipamiento de baño",
+        "Mobiliario a medida/placard"
+      ],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-2-cobre-30m2.jpeg",
+      "detailUrl": "https://arcohouse.com.ar/refugio-montanesito/",
+      "bathrooms": 1
+    },
+    {
+      "name": "REFUGIO MONTAÑESITO 20 M²",
+      "price": "ARS $41.300.000 (CTNA) / 6 CUOTAS SIN INTERÉS DE $6.916.666",
+      "sqMeters": 20,
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg"
+    }
+  ],
+  "contactInfo": {
+    "email": "ventas@arcodeck.com",
+    "phone": "+2604033077",
+    "instagram": "@arcohousear"
+  },
+  "totalModelsFound": 3,
+  "pagesExplored": 5,
+  "errors": [
+    "Detail page MONTAÑESITO 20M2: page.goto: Download is starting\nCall log:\n\u001b[2m  - navigating to \"https://arcohouse.com.ar/wp-content/uploads/2025/09/BROCHURE-ARCOHOUSE-MARZO-2025_compressed.pdf\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  ]
+}

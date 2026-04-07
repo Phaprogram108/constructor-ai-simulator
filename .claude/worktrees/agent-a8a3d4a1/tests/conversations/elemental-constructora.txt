@@ -1,0 +1,52 @@
+=== ELEMENTAL CONSTRUCTORA ===
+URL: https://elementalconstructora.com.ar/
+Session: 8ba0cf8e-9836-4a60-a855-3474b485143f
+Date: 2026-02-08 16:48:14
+Session creation: 14.5s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (6.4s): Somos Elemental Constructora, una constructora especializada en viviendas personalizadas con sistema llave en mano. Nos encargamos de todo: diseño, proyecto, construcción en húmedo, terminaciones y entrega final de la casa, con financiación propia y plazos de obra garantizados.  
+
+Trabajamos distintos estilos de Viviendas (Neocolonial –como la Vivienda Challet Campestre–, Racionalista, Neoclásica y Contemporánea) y también desarrollamos proyectos a medida con nuestra Línea Design. ¿Qué tipo de Vivienda estás buscando para vos y tu familia?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (2.8s): Ofrecemos principalmente construcción de Viviendas llave en mano, en sistema tradicional en húmedo, ocupándonos de todo: proyecto, dirección de obra, materiales, mano de obra, terminaciones y entrega final.  
+
+En modelos predefinidos trabajamos Vivienda Challet Campestre (Neocolonial), Vivienda Racionalista, Vivienda Neoclásica y Viviendas Contemporánea I y Contemporánea II, además de la Línea Design para diseños 100% a medida. También, a través de Elementos, podés acceder a materiales de construcción, y contamos con financiación propia y personalizada. ¿Ya tenés en mente algún estilo en particular (Neocolonial, Racionalista, Neoclásica o Contemporánea)?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (3.6s): Tenemos 5 modelos de Viviendas definidos dentro de nuestra línea llave en mano:  
+- Vivienda Challet Campestre (estilo Neocolonial) – 185 m² cubiertos y 70 m² semicubiertos, 2 habitaciones, 2 baños y 1 toilette, en planta baja.  
+- Vivienda Racionalista – 204,45 m² cubiertos y 103,79 m² semicubiertos, 3 habitaciones, 2 baños completos y 1 toilette, en planta baja y primer piso.  
+- Vivienda Neoclásica – 212,5 m² cubiertos y 112,1 m² semicubiertos, 3 habitaciones, 2 baños completos y 1 toilette, en planta baja y primer piso.  
+- Vivienda Contemporánea I – 210,61 m² cubiertos y 106,61 m² semicubiertos, 3 habitaciones, 2 baños completos y 1 toilette, en planta baja.  
+- Vivienda Contemporánea II – 234,9 m² cubiertos y 140,72 m² semicubiertos, 3 habitaciones, 2 baños completos y 1 toilette, en planta baja y primer piso.  
+
+Además, con la Línea Design podemos diseñar una casa totalmente a medida. ¿Ya tenés terreno? ¿En qué zona sería la obra?
+
+USUARIO: Contame sobre 1. Más información
+AGENTE (3.0s): Buenísimo que preguntes por “1. Más información”. Ese texto en realidad no es una Vivienda ni un modelo, sino un botón/enlace de la web que te lleva a la sección donde están todos los modelos (Neocolonial, Racionalista, Neoclásica y Contemporánea, más Línea Design).  
+
+Si querés, te puedo detallar cada Vivienda (por ejemplo, Challet Campestre Neocolonial o la Racionalista) con metros, cantidad de habitaciones y baños. Para orientarte mejor, ¿qué tipo de Vivienda estás buscando: algo más campestre (Neocolonial), más moderno-minimalista (Racionalista/Contemporánea) o más clásico-elegante (Neoclásica)?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (5.1s): No tengo los precios actualizados cargados, y como varían mucho según metros, terminaciones y forma de financiación, te sugiero consultarlo por WhatsApp así te pasan números concretos y opciones de pago: https://api.whatsapp.com/send?phone=+5492212235821&text=Hola!%20Me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre  
+
+Para darte una idea de referencia, dentro de nuestros modelos de 2 dormitorios tenés, por ejemplo, la Vivienda Challet Campestre (Neocolonial), con 185 m² cubiertos, 70 m² semicubiertos, 2 habitaciones, 2 baños y 1 toilette. ¿Qué presupuesto aproximado manejás así te digo qué modelo o metraje te puede encajar mejor?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (3.2s): En Elemental Constructora ofrecemos un servicio llave en mano con compromiso de plazos de entrega y altos estándares de calidad, respaldado por ser parte del grupo Delsud. Trabajamos con construcción tradicional en húmedo, personal propio y maquinaria propia, lo que nos permite garantizar durabilidad, confort y excelente terminación en todas las Viviendas.  
+
+Los detalles finos de años y tipo de garantía (estructural, instalaciones, etc.) no los tengo cargados acá, por lo que para condiciones formales te recomiendo escribirnos por WhatsApp: https://api.whatsapp.com/send?phone=+5492212235821&text=Hola!%20Me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre. ¿Para qué tipo de Vivienda estás pensando la garantía, una estándar de catálogo o algo a medida por Línea Design?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.0s): Podés escribirnos directo por WhatsApp al +54 9 221 223 5821 en este enlace:  
+https://api.whatsapp.com/send?phone=+5492212235821&text=Hola!%20Me%20gustar%C3%ADa%20recibir%20informaci%C3%B3n%20sobre  
+
+Ahí un asesor comercial te puede pasar precios actualizados, opciones de financiación y coordinar una reunión si querés avanzar.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 1
+Tiempo promedio: 3.7s

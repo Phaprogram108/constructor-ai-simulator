@@ -1,0 +1,49 @@
+=== WELLMOD ===
+URL: https://www.wellmod.com.ar/
+Session: 0231d5e6-df5e-4453-b696-a7d60ee8cc8b
+Date: 2026-02-08 15:35:47
+Session creation: 59.6s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (7.8s): Wellmod es una empresa de Córdoba especializada en arquitectura modular transportable: fabricamos unidades modulares en steel frame, 100% en planta industrial, y las llevamos listas al terreno. Hacemos módulos para vivienda (permanente o de fin de semana), turismo (como Hotel Termal, Paso Calmo, W26 Black Lodge, Las Alpas, Granja Ecuestre, La Ramadita) y oficinas/comercial (AA2000, Club Atlético Talleres, Fertimaq, Grido, TN Platex).  
+
+Trabajamos con estructuras metálicas de 20 m² por módulo (6,20 x 3,20 x 3 m), que se pueden combinar hasta más de 200 m², con enfoque en rapidez (90–120 días de fabricación), sustentabilidad y diseño funcional. Además ofrecemos tipologías estándar como W26 Suite, W20 Suite, W40/W60/W80 y W20 Oficina, con opción de personalizar terminaciones y financiación.  
+
+Para orientarte mejor, ¿qué tipo de unidades modulares estás buscando: vivienda, turismo o oficinas?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (7.2s): Ofrecemos principalmente unidades modulares transportables en steel frame, fabricadas 100% en planta y entregadas “llave en mano” (con instalaciones, sanitarios, mobiliario y artefactos listos para usar). Trabajamos tres grandes usos: residencial/fin de semana (Casa VJ, Casa Potrerillo, Casa MY, Casa MF, Casa IM, Casa AS, más tipologías W26 Suite, W20 Suite, W40/W60/W80), turismo (Hotel Termal, Paso Calmo, Las Alpas, Granja Ecuestre, La Ramadita, W26 Black Lodge) y oficinas/comercial/servicios (W20 Oficina, AA2000, Club Atlético Talleres, Fertimaq, Grido, TN Platex).  
+
+Además brindamos: construcción en steel frame de alta calidad, diseño modular y sustentable, traslado e instalación en todo el país, y financiación (anticipo 65/70% y saldo en 3 cuotas durante los 90–120 días de obra). Para ayudarte mejor, ¿para qué uso puntual estás pensando el módulo: vivienda, alquiler turístico o espacio de trabajo/oficina?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (3.8s): Tenemos varias líneas de modelos estandarizados y muchos proyectos a medida. En tipologías residenciales y de oficina hoy contamos con: W26 Suite (26 m²), W20 Suite (20 m²), W20 Oficina (20 m²), W40 A/B/C (40 m²), W60 A/B (60 m²) y W80 A/B/C (80 m²).  
+
+Además, tenés nuestros desarrollos como Casa VJ, Casa Potrerillo, Casa MY, Casa MF, Casa IM, Casa AS, más módulos turísticos (Hotel Termal, Paso Calmo, Las Alpas, Granja Ecuestre, La Ramadita, W26 Black Lodge) y oficinas corporativas (AA2000, Club Atlético Talleres, Fertimaq, Grido, TN Platex). Para afinar opciones, ¿buscás algo tipo monoambiente chico (20–26 m²) o ya pensás en 1, 2 o 3 dormitorios?
+
+USUARIO: Contame sobre 1. W26 Suite
+AGENTE (4.8s): La W26 Suite es un monoambiente de 26 m², armado en 1 módulo, que incluye ambiente principal, baño completo y galería exterior, ideal como cabaña turística, anexo en un terreno o mini vivienda de fin de semana. Se construye en steel frame sobre nuestra estructura metálica modular, con techo de PRFV (apto cubierta verde), muy buena aislación térmica/acústica y se entrega 100% terminada desde fábrica (instalaciones, sanitarios, luces y mobiliario según línea elegida).  
+
+En el catálogo figura como “W26 Suite Black – monoambiente, baño y galería – 1 módulo” y se fabrica en unos 90–120 días, lista para montar en el terreno con bases premoldeadas. Sobre el precio, en el link externo se ve un valor en USD, pero puede no estar actualizado, así que lo más prudente es cotizar al día. ¿La estás pensando para vivienda propia o para alquiler turístico?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (11.3s): Para 2 dormitorios, nuestras tipologías estándar son la W60 A (60 m², 2 dormitorios y 2 baños, 3 módulos) y la W80 A (80 m², 2 dormitorios y 2 baños, 4 módulos), ambas en steel frame, fabricadas en planta y entregadas llave en mano.  
+
+No tengo los precios actualizados cargados acá, y como en el catálogo sólo figura que el valor es “a presupuesto” según la línea (Basic, etc.), te sugiero consultarlo por WhatsApp al +54 9 351 866 8299 para que te coticen al día según zona, terminaciones y forma de pago.  
+
+Para orientarte mejor con el modelo, ¿la idea es una casa de uso permanente o de fin de semana, y en qué provincia tenés el terreno?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (3.7s): Nuestro sistema constructivo modular está avalado con Certificados de Aptitud Técnica (CAT) en todos los procesos, emitidos por la Subsecretaría de Vivienda de la Nación, lo que respalda la calidad estructural y de materiales. Al fabricarse en planta industrial con controles en cada etapa, garantizamos estanqueidad (techos de PRFV), seguridad estructural (incluyendo sismos y vientos fuertes) y terminaciones según especificación de proyecto.  
+
+Los módulos se entregan llave en mano y listos para usar, con garantía sobre estructura, instalaciones y terminaciones según contrato. Si querés, puedo pedir que un asesor te envíe por mail o WhatsApp las condiciones de garantía específicas del modelo que te interese.
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.7s): Te podés comunicar directo por WhatsApp o llamada al +54 9 351 866 8299.  
+También tenemos otra línea de contacto al +54 351 816 0094 y el mail hola@wellmod.com.ar por si preferís escribirnos.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 1
+Tiempo promedio: 5.9s

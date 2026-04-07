@@ -1,0 +1,1133 @@
+# Buro Steel Framing - Ground Truth Report
+
+**Scanned at:** 2026-02-08T14:08:26.316Z
+**Base URL:** https://burosteelframing.com/
+
+## Homepage
+
+- **Title:** Construcción de casas Steel Frame - Buro Steel Framing
+- **Meta Description:** Empresa de construcción steel framing y arquitectura. Somos especialistas en Steel Frame para countries y barrios cerrados, pregúntanos todas tus dudas.
+- **Screenshot:** 01-homepage.png
+
+### Homepage Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Construimos la casa de tus sueños Diseño y construcción de casas en seco y tradicional húmedo Tipos de Construcción Construcción en Seco Realizamos tu casa mediante el sistema constructivo steel framing. Construcción Tradicional Realizamos tu casa mediante el sistema constructivo húmedo. Conoce nuestros modelos de casas Innova House Nuestra Filosofía de Trabajo Acompañar en cada proyecto al cliente ofreciendo en todos los procesos arquitectónicos.Calidad, Solvencia Profesional y Satisfacción Garantizada. Análisis de Necesidad Se analiza el pedido del cliente de acuerdo a su emprendimiento y a todos los factores que intervienen en cada caso. Confección del Presupuesto Se detalla el costo de la obra, optimizando cada factor para llevar a cabo el emprendimiento del cliente que desea realizar su proyecto arquitectónico. Confección Anteproyecto Se realiza una investigación detallada de lo que sera llevar a cabo el proyecto de acuerdo a las necesidades presentadas. Aprobación del Presupuesto En esta etapa se presenta la aprobación y/o modificación del Presupuesto para encontrar la optimización de procesos y conformidad de la obra. Conformidad del cliente Conformidad del cliente con el anteproyecto realizando las reuniones y modificaciones que sean necesarias. Planificación y Ejecución Planificación y Ejecución de la obra que dará inicio y control al desarrollo de la misma según lo acordado con el cliente. Empresa de Construcción en Argentina Nuestros Servicios Algunos de los servicios que ofrecemos dentro de nuestro Estudio de Arquitectura y Empresa Constructora. Llave en Mano ¿Esta pensando en construir? Diseñamos su casa a su gusto y la construimos con el Sistema Llave en Mano. Llevamos a cabo la obra mediante sistema constructivo en seco -steel framing o tradicional. Obras Nuevas Diseñamos y construimos emprendimientos de manera integral. Somos líderes en el sistema Steel Framing mediante la Construcción en Seco y Tradicional Humedo. Ampliaciones Si necesita remodelar o hacer una ampliación de su casa, oficina o negocio podemos asesorarlo ofreciendo las mejores ideas para la ejecución de un nuevo proyecto integral analizando el contexto general para cada proyecto. Diseño de Proyecto Elaboramos planos profesionales por nuestro equipo de Arquitectos Argentinos, para confeccionar una propuesta de trabajo de acuerdo a pautas y procedimientos específicos que necesite. buro.steel.framing View Feb 4 Open RETOQUES FINALES EN CHACRAS DE ABBOTT 🏡El … 12 0 buro.steel.framing View Ene 26 Open PROYECTOS A TU MEDIDA 🏡Cada idea es única, y … 1 0 buro.steel.framing View Ene 23 Open COMPLEJO COMERCIAL EN BELLA VISTA 🏢La obra … 3 0 buro.steel.framing View Ene 19 Open AVANCES EN OLIVOS 🏡La obra sigue progresando … 12 0 buro.steel.framing View Ene 16 Open EN OBRA – EL NACIONAL CLUB DE CAMPO 🏡El … 8 0 buro.steel.framing View Ene 12 Open AVANZANDO EN BUENOS AIRES GOLF – BELLA VISTA 🏡 … 9 0 buro.steel.framing View Ene 9 Open OBRA FINALIZADA – OPEN DOOR 🏡✨Un proyecto que … 19 0 buro.steel.framing View Ene 5 Open MODELO MACKENZIE – Las Golondrinas 🏡La obra … 1 0 buro.steel.framing View Dic 30 Open Te presentamos RODANO – INNOVA HOUSE, una vivienda … 8 1 buro.steel.framing View Dic 26 Open Obras Comerciales – Dos sistemas constructivos, un … 7 0 buro.steel.framing View Dic 22 Open Antes y Después – Apart Hotel en Mar de las Pampas … 9 0 buro.steel.framing View Dic 18 Open Open Door – Últimos detalles ✨🏡Ya estamos … 5 0 buro.steel.framing View Dic 15 Open 📍 Pueblos del Plata – Avances de Obra 🚧🔩 … 8 1 buro.steel.framing View Dic 12 Open CONSTRUÍ CON CONFIANZA 🛠️🏡Cuando elegís … 7 0 buro.steel.framing View Dic 10 Open Hoy les traemos grandes avances en casa Marra, … 17 2 Ver Más Seguinos en Instagram Aprendé sobre Steel Framing Descubrí nuestros artículos y novedades sobre la construcción en seco. Modelo Gala Modelo Elba Modelo Nilba Modelo Lena Etapas del Proyecto Arquitectura: Proyecto Etapas Proyecto Arquitectura: Expediente Ejecutivo Solicita tu Presupuesto En el siguiente formulario puedes realizar tu consulta y nos contactaremos a la brevedad. Enviar Este sitio está protegido por reCAPTCHA. Privacidad de Google y Condiciones. Empresa Constructora en Pilar Empresa constructora en Escobar Empresa constructora en Campana Empresa constructora en San Miguel Empresa constructora en Cañuelas Empresa constructora en Zarate Empresa constructora en Capital Federal, Buenos Aires Empresa constructora en Tigre Empresa constructora en Esteban Echeverría Empresa constructora en Olivos Empresa constructora en Exaltación de la Cruz Empresa constructora en Luján Empresa constructora en San Isidro Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema
+```
+
+## Navigation
+
+- [Inicio](https://burosteelframing.com/)
+- [Construcción](https://burosteelframing.com/#)
+- [Steel Framing](https://burosteelframing.com/steel-frame/)
+- [Tradicional Húmedo](https://burosteelframing.com/tradicional-humedo/)
+- [Nosotros](https://burosteelframing.com/nosotros/)
+- [Arquitectura](https://burosteelframing.com/arquitectura/)
+- [Obras](https://burosteelframing.com/obras/)
+- [Contacto](https://burosteelframing.com/contacto/)
+
+## Sections (40)
+
+### Pedí tu Presupuesto
+
+- **URL:** https://burosteelframing.com/contacto/
+- **Screenshot:** 03-section-ped-tu-presupuesto-1.png
+- **Sub-links:** 26
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Realice su consulta En el siguiente formulario puede realizar su consulta y nos contactaremos a la brevedad. Enviar Este sitio está protegido por reCAPTCHA. Privacidad de Google y Condiciones. ¿Cómo podemos ayudarle? Si tiene alguna pregunta para realizar su proyecto y llevarlo a cabo por favor escribanos.Le responderemos en un plazo de 48 horas y si podemos lo haremos antes, gracias.Un integrante del Equipo sera la persona que le responda a la brevedad.DirecciónOficinas : Complejo Bureau Leloir – Oficinas N°49 y N°50 – Av. Presidente Perón 8725, ItuzaingóPlanta Industrial: Las Rosas 753, B1746 Francisco Alvarez, Provincia de Buenos Aires.Teléfono: 11 5323 4885Horarios de AtenciónLunes a Viernes de 8:00 a 17:00 horas Ubicación Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@burosteelframing.com Oficinas: Complejo Bureau Leloir Av. Presidente Perón 8725, Ituzaingó Planta Insdustrial: Paul Groussac 1944, Ituzaingó. Buenos Aires © Copyright 2024 Srl Buro Steel Framing Desarrollado por Agencia SEO Argentina Necesitas ayuda? Conversa con nosotrosEn que podemos ayudarte?Hola, hace clic en uno de nuestros asistentes para chatear por WhatsAppEl equipo suele responder en unos minutos. Whattsapp Powered by NinjaTeam
+```
+
+### Steel Framing
+
+- **URL:** https://burosteelframing.com/steel-frame/
+- **Screenshot:** 03-section-steel-framing-2.png
+- **Sub-links:** 42
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Construcción en Seco de Casas: Sistema Constructivo Steel Frame Índice de Contenidos ToggleConstrucción en Seco de Casas: Sistema Constructivo Steel Frame¿Qué es el Steel Framing?Características Generales para Definir la Construcción en Seco:Ventajas del Sistema Steel FrameRapidez en la ConstrucciónDiseño Arquitectónico Flexible y AdaptableCalidad en la ConstrucciónConfort Térmico y AcústicoFacilidad en Instalaciones Internas y ExternasElementos ConstitutivosMayor Control y Seguridad en Obras en ConstrucciónCaracterísticas PrincipalesPiso / FundaciónProceso de construcciónMenor costo de construcción ¿Qué es el Steel Framing? El Steel Framing es un sistema que agrupa técnicas constructivas abiertas de vanguardia, que se utiliza en todo el mundo como la construcción del futuro por su seguridad, confort y reducción en tiempos de construcción y costos. Su estructura es altamente resistente ya que esta compuesta por perfiles de acero galvanizado estructural con un bajo espesor facilitando su maniobrabilidad. Esta conformado de una gran cantidad de sub sistemas y componentes que favorece en conjunto la obra final. La característica pilar del Steel Framing es el proceso de construcción para realizar el montaje en seco. En la Argentina es llamado también Steel Frame y es la construcción moderna, segura y confortable del momento. Por los grandes beneficios que ofrece este sistema de construcción esta desplazando en el mercado a la construcción tradicional con ladrillos. También conocida como Construcción en Seco por eliminar el polvo en lo que se refiere a la obra y construcción sismo térmica sustentable. La definición de Steel Framing o Steel Frame (como se menciona en la Argentina) surge del termino «Frame» que esta refiriéndose al esqueleto de la estructura compuesta por objetos de acero galvanizado que son diseñados para obtener la forma que se necesita y tener un soporte de altas cargas. En cambio el concepto «Framing» se refiere a todo el proceso que se necesita para unir y vincular cada uno de estos elementos para darle forma al diseño planificado por el arquitecto. El ventaja del Steel Frame es que reemplaza la estructura tradicional que se utiliza en Latinoamérica tanto de Mampostería y Hormigón por diferente tamaños de paneles resistentes, que están formados por perfiles de acero galvanizado. Las construcciones que se pueden realizar son todas las que la imaginación y creatividad pueda crear. Desde una estructura para una vivienda, agregar entrepisos en obras que ya son existentes, realizar fachadas o bien para obras industriales comerciales se puede hacer cerramientos. Evitando la construcción húmeda con un menor costo de realización. Características Generales para Definir la Construcción en
+```
+
+### Tradicional Húmedo
+
+- **URL:** https://burosteelframing.com/tradicional-humedo/
+- **Screenshot:** 03-section-tradicional-h-medo-3.png
+- **Sub-links:** 26
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Construcción Húmeda Tradicional Casas de Ladrillos Construcción Tradicional Húmeda: Un Legado de Robustez y Versatilidad que Trasciende el TiempoEl sistema constructivo tradicional húmedo representa un pilar fundamental en la edificación, una metodología que ha moldeado paisajes urbanos y rurales a lo largo de siglos. Su prevalencia no es casual; se basa en principios probados de ingeniería y una profunda comprensión de los materiales. Este método se distingue por el empleo de componentes como ladrillos, hormigón armado y revoques, que, al interactuar con agua para su fraguado, dan origen a estructuras de una solidez inigualable. La elección de este sistema se justifica por su inherente robustez, su excepcional durabilidad y una notable adaptabilidad arquitectónica que permite materializar una amplia gama de diseños, desde la vivienda unifamiliar más modesta hasta complejos edificios de múltiples pisos.A lo largo de la historia, la construcción húmeda ha demostrado ser una de las formas más seguras y confiables de erigir infraestructuras. Su vigencia se sustenta en un triple pilar: el respaldo normativo consolidado que rige su aplicación, la amplia disponibilidad de materiales en casi cualquier rincón del planeta y una mano de obra calificada que ha transmitido sus conocimientos de generación en generación. Estas características le confieren una resiliencia y una versatilidad que pocos otros sistemas pueden igualar, haciendo que siga siendo una opción predilecta para aquellos que buscan invertir en patrimonio de larga duración. ¿Qué Define al Sistema Constructivo Tradicional Húmedo?El corazón del sistema tradicional húmedo radica en el uso de aglomerantes hidráulicos, como el cemento y la cal, que, al mezclarse con agua, experimentan reacciones químicas que los endurecen y les confieren resistencia. Esta hidratación es la que permite que los materiales se unan de manera cohesionada, formando masas monolíticas que son intrínsecamente resistentes a fuerzas externas. Es un proceso que no solo crea una unión física, sino una transformación química que sella la durabilidad de la estructura.La terminología “húmedo” se deriva directamente de esta dependencia del agua para el fraguado. A diferencia de los sistemas en seco, donde los componentes se ensamblan sin este proceso químico in situ, la construcción húmeda implica tiempos de curado que son esenciales para alcanzar las propiedades mecánicas deseadas de los materiales. Esta característica, si bien puede implicar plazos de obra ligeramente más extendidos, se traduce en una solidez y una inercia térmica superiores, contribuyendo al confort interior de los edificios. Los Pilares de la Construcción Húmeda: Componentes FundamentalesPara comprender la 
+```
+
+### Nosotros
+
+- **URL:** https://burosteelframing.com/nosotros/
+- **Screenshot:** 03-section-nosotros-4.png
+- **Sub-links:** 26
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Equipo Buro Buro es un Estudio de Arquitectura, dedicado a las realización de obras de arquitectura, con una especialización en la construcción Steel Frame enmarcada en una gestión integral, enfocándose en el desarrollo de emprendimientos de diferentes complejidades y escalas.Estudio de Arquitectura y Empresa Constructora Somos una empresa en constante crecimiento abocada al sistema constructivo Steel Framing.Con más de 10 años de trayectoria en el mercado de la construcción, contamos en nuestro haber la realización y la participación de grandes obras tanto particulares como municipales. Nuestro objetivo es brindar soluciones innovadoras a nuestros clientes, ofrecer oportunidades de desarrollo personal y profesional a nuestros empleados, y rentabilidad a nuestros accionistas.Buscamos ser una empresa líder reconocida por su alto grado de profesionalismo, su comportamiento ético, su política de continuo mejoramiento y su sólida posición financiera.A través de una rigurosa investigación se estudia cada proyecto para encontrar soluciones que se adapten a las distintas realidades, maximizando las intenciones de imagen, uso, contexto y emoción de cada proyecto. Posicionando al cliente siempre en el primer lugar, ya que creemos que las mejores ideas surgen de la integración de pensamientos.El estudio esta dirigido por sus socios Maximiliano Molina y Ariel Ascione. Ariel Ascione Linkedin Arquitecto graduado por la Facultad de Arquitectura, Diseño, Arte y Urbanismo de la Universidad de Moron (FADAU-UM) en el año 2012.Participo en el Instituto de Georreferenciacíon (IGEO) de la Universidad de Morón, entre los años 2008 y 2010 desarrollando proyectos de investigación de diferentes tipos y escalas.Fue jefe de proyecto en VDV Arquitectura.Editor de la revista de Arquitectura Zona de Proyecto durante el periodo 2010-2014.Actualmente es Socio Fundador y Director del Departamento de Arquitectura de BURO. Arquitecto graduado por la Facultad de Arquitectura, Diseño, Arte y Urbanismo de la Universidad de Morón (FADAU-UM), Periodo en el cual se desempeñó en el departamento de planificación y realización edilicia de la Universidad de Morón participando de proyectos de diferentes escalas.Durante el periodo 2009-2014 forma parte de la constructora AMECURO SA donde realizo gran cantidad de obra pública y privada.Actualmente es socio fundador y director del departamento técnico de BURO. Maximiliano Molina Linkedin Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@
+```
+
+### Arquitectura
+
+- **URL:** https://burosteelframing.com/arquitectura/
+- **Screenshot:** 03-section-arquitectura-5.png
+- **Sub-links:** 31
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Estudio de Arquitectura Buro Arq: Tu Socio Integral en Construcción en SecoEn Buro, somos tu aliado estratégico en el diseño y la ejecución de proyectos arquitectónicos, especializándonos en la vanguardista y eficiente construcción en seco y húmedo. Nos involucramos de manera integral, acompañándote desde la concepción inicial de tu visión hasta la entrega final de tu proyecto. Nuestra misión es transformar tus ideas en espacios habitables con un enfoque que prioriza la eficiencia, la sostenibilidad y tu satisfacción.Gestión de Proyectos de Principio a FinNos encargamos de toda la gestión operativa, lo que significa que puedes delegar con confianza cada etapa del proceso. Desde la planificación inicial y la obtención de permisos hasta la coordinación en sitio y la supervisión de la construcción, garantizamos un desarrollo fluido y sin contratiempos. Nuestro compromiso es brindarte una experiencia amigable, eficaz y satisfactoria en la materialización de tu proyecto de vivienda.De la Idea al Papel: Diseño y PlanificaciónSabemos que cada gran proyecto comienza con una idea. Por ello, en Buro te ofrecemos un espacio dedicado a la organización de ideas y objetivos. Aquí, tus sueños toman forma en el papel, permitiéndonos dibujar juntos la primera visión de tu futuro hogar. Este proceso incluye estudios previos exhaustivos, donde conformamos un equipo multidisciplinario. Nuestros expertos aportan viabilidad profesional, realizan cálculos constructivos precisos, ofrecen una mirada pericial detallada y una visión de ingeniería sólida, asegurando que cada aspecto de tu proyecto esté meticulosamente planificado.La Cimentación de tu ÉxitoConsideramos que somos el coach esencial para que el inicio de tu obra se asiente sobre un terreno firme y seguro. Te proporcionamos la seguridad y confianza necesarias para emprender este camino, sabiendo que cada decisión está respaldada por profesionales experimentados. Además, estamos profundamente comprometidos con la sustentabilidad y el impacto positivo. Implementamos prácticas constructivas que minimizan la huella ambiental y buscan generar un beneficio duradero para ti y para el entorno.En Buro, no solo construimos estructuras; construimos relaciones basadas en la transparencia, la calidad y el compromiso con tus aspiraciones Perfil de servicioDentro de la amplia gama de incumbencias profesionales, Buro está enfocado en el diseño, la gestión y la dirección de proyectos de diferentes complejidades, que logren resolver espacios eficientes.Su expertise se ha desarrollado en todos los ámbitos relacionados con la urbanización, tanto en el ámbito comercial e industrial, como también en el de viviendas y de oficinas.Buro se involucra en la concreción de sus proyectos 
+```
+
+### Obras
+
+- **URL:** https://burosteelframing.com/obras/
+- **Screenshot:** 03-section-obras-6.png
+- **Sub-links:** 112
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Obras Steel Framing Obras Barrio Altos del Sol Barrio Puertos del Lago Barrio Terravista Barrio Valdevez Cuartel V Planta Industrial Nova Mirón Barrio Buenos Aires Golf Club Barrio Comarcas de Luján Barrio El Canton Barrio Pilar del Este Barrio Santa Clara Barrio Santa Teresa Barrio Valdevez 2 Barrio Valdevez 3 Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@burosteelframing.com Oficinas: Complejo Bureau Leloir Av. Presidente Perón 8725, Ituzaingó Planta Insdustrial: Paul Groussac 1944, Ituzaingó. Buenos Aires © Copyright 2024 Srl Buro Steel Framing Desarrollado por Agencia SEO Argentina Necesitas ayuda? Conversa con nosotrosEn que podemos ayudarte?Hola, hace clic en uno de nuestros asistentes para chatear por WhatsAppEl equipo suele responder en unos minutos. Whattsapp Powered by NinjaTeam
+```
+
+### Conoce nuestros modelos de casas Innova House
+
+- **URL:** https://burosteelframing.com/innova-house/
+- **Screenshot:** 03-section-conoce-nuestros-modelos-de-casas-innova-house-7.png
+- **Sub-links:** 44
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Modelo Gala Modelo Elba Modelo Nilba Modelo Lena Modelo Nilo Modelo Fiora Modelo Mackenzie Modelo Nera Modelo Sena BASIC LINE Con nuestra propuesta Basic Line te brindamos la flexibilidad para personalizar al máximo el hogar. Podes adquirir materiales de terminación por tu cuenta, eligiendo lo que mas te guste, sin perder el asesoramiento permanente de nuestro equipo experto para una buena toma de decisiones. HIGH LINE High Line es la opción completa, incluye terminaciones de calidad para que tu hogar quede listo para disfrutar. De esta manera, ahorras tiempo y preocupaciones a lo largo de todo el proceso. LAS DOS PROPUESTAS INCLUYEN PROYECTO, GESTIÓN MUNICIPAL, DIRECCIÓN Y EJECUCIÓN DE OBRA. QUE INCLUYEN NUESTRAS PROPUESTAS Gestión municipal y dirección de obraEstudio y movimiento de sueloDesmonte, nivelación y relleno con tosca hasta 20 cm de espesor.Platea de hormigón armado Según calculo. Estructura Steel FramingPerfilería de acero galvanizado normalizado (según Ingeniería)Muros exteriores: OSB, barrera agua/viento, placa EPS, malla fibra vidrio, base coatMuros interiores: barrera vapor, placa de yeso con junta tomadaAislación termo-acústica en lana de vidrio 50 mm en muros interiores, exteriores, entrepisos y cubiertas.Cubierta: estructura perfiles galvanizados, cara externa con placa OSB, aislación lana vidrio 50 mm, barrera hidrófuga, terminación en chapa sinusoidal galvanizada. ZINGUERÍAS Y CANALETASINSTALACIÓN ELÉCTRICA.Materiales y mano de obra necesaria para la ejecución de la instalación eléctrica interna.INSTALACIÓN SANITARIA.Agua: Cañería, accesorios y llaves de paso en termofusión para la distribución interna de agua fría y caliente. Cloacal: desagües hasta cámara de inspección.Incluye provisión e instalación de tanque cisterna y bomba presurizadora.INSTALACIÓN DE GAS.Instalación de cañería domiciliaria interna.TERMINACIONES EXTERIORES.Molduras decorativas exteriores, revestimiento plástico y/o siding. (Según proyecto). CARPINTERÍAS.Ventanas de aluminio línea Rotonda 640 con DVH.Color blanco o negro, a elección del cliente.PUERTAS.Puertas interiores Oblak línea Praktica lisa color blanco.Puerta principal modelo Oblak Grandis o similar.Puerta exterior secundaria aluminio línea R640 con vidrio DVH, color blanco o negro, a elección del cliente.Incluyen picaporte doble balancín de acero inoxidable cromado.PINTURA INTERIOR.Látex blanco mate. PISOS Y REVESTIMIENTOS.A elección de cliente, hasta USD 20/m².Cerámico o porcelanato para interior y exterior.Revestimiento para paredes de baños hasta altura de 2,60 mts.Zócalos de PVC.SANITARIOS.Inodoro y bidet línea Ferrum Andina.Grifería para ducha y bidet línea FV Arizona.Vanitory de melamina en color blanco con grifería FV Arizona monocoman
+```
+
+### section-8
+
+- **URL:** https://burosteelframing.com/modelo-gala/
+- **Screenshot:** 03-section-section-8-8.png
+- **Sub-links:** 44
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Modelo Gala Construccion en seco y tradicional M2 Totales: 178 m2 Cubiertos: 148 m2 Semi Cubierto: 30 m2 Diseñada en dos plantas, esta vivienda moderna combina diseño, confort y eficiencia en cada metro cuadrado. Con una superficie cubierta de 148 m² y 30 m² semicubiertos, ofrece un total de 178 m² perfectamente distribuidos para aprovechar al máximo cada espacio. Al ingresar, un hall de recepción conecta con el estar-comedor, un ambiente amplio, luminoso y funcional que se integra con la cocina moderna. Gracias a sus grandes ventanales, el interior se expande hacia una galería semicubierta, ideal para disfrutar del exterior durante todo el año. La casa cuenta con tres dormitorios, entre ellos una suite principal con vestidor y baño privado, que brinda confort y privacidad. Los otros dos dormitorios disponen de excelente iluminación natural y comparten un baño completo de uso común.Además, el diseño incorpora una oficina al frente, pensada para quienes trabajan desde casa, y un lavadero independiente con salida lateral, que suma practicidad sin interferir con las áreas sociales.Gracias a su arquitectura moderna, su eficiente distribución y el sistema constructivo en steel framing, este modelo representa una opción ideal para quienes buscan una vivienda funcional, moderna y duradera. Conoce todos los modelos Innova House Modelo Gala Modelo Elba Modelo Nilba Modelo Nilo Modelo Fiora Modelo Mackenzie Modelo Nera Modelo Sena Modelo Rodano Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@burosteelframing.com Oficinas: Complejo Bureau Leloir Av. Presidente Perón 8725, Ituzaingó Planta Insdustrial: Paul Groussac 1944, Ituzaingó. Buenos Aires © Copyright 2024 Srl Buro Steel Framing Desarrollado por Agencia SEO Argentina Necesitas ayuda? Conversa con nosotrosEn que podemos ayudarte?Hola, hace clic en uno de nuestros asistentes para chatear por WhatsAppEl equipo suele responder en unos minutos. Whattsapp Powered by NinjaTeam
+```
+
+### section-9
+
+- **URL:** https://burosteelframing.com/modelo-elba/
+- **Screenshot:** 03-section-section-9-9.png
+- **Sub-links:** 44
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Modelo Elba Construccion en seco y tradicional M2 Totales: 178 m2 Cubiertos: 148 m2 Semi Cubierto: 30 m2 Casa moderna de 148 m² – Diseño funcional y conexión con el exteriorCon 148 m² cubiertos distribuidos en dos plantas, esta vivienda moderna está pensada para quienes buscan funcionalidad, amplitud y una fuerte conexión con el exterior. Planta baja: espacios integrados y luminososEl diseño optimiza cada metro cuadrado, integrando los ambientes sociales en un mismo espacio fluido y cómodo. Al ingresar, un hall de entrada conduce al living-comedor, semi integrado con la cocina moderna.Un toilette de cortesía, estratégicamente ubicado, y un lavadero con acceso independiente aportan practicidad al conjunto.La galería semicubierta, amplia y luminosa, invita a disfrutar del aire libre durante todo el año.Planta alta: confort y privacidadEn el nivel superior se ubican dos dormitorios con excelente iluminación y ventilación natural, un baño completo compartido, y una suite principal con baño privado y vestidor, que ofrece la comodidad y privacidad que toda familia necesita. Con una arquitectura contemporánea y el respaldo del sistema steel framing, este modelo combina eficiencia, diseño y durabilidad, convirtiéndose en una opción ideal para quienes buscan una casa moderna y bien distribuida. Conoce todos los modelos Innova House Modelo Gala Modelo Elba Modelo Nilba Modelo Nilo Modelo Fiora Modelo Mackenzie Modelo Nera Modelo Sena Modelo Rodano Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@burosteelframing.com Oficinas: Complejo Bureau Leloir Av. Presidente Perón 8725, Ituzaingó Planta Insdustrial: Paul Groussac 1944, Ituzaingó. Buenos Aires © Copyright 2024 Srl Buro Steel Framing Desarrollado por Agencia SEO Argentina Necesitas ayuda? Conversa con nosotrosEn que podemos ayudarte?Hola, hace clic en uno de nuestros asistentes para chatear por WhatsAppEl equipo suele responder en unos minutos. Whattsapp Powered by NinjaTeam
+```
+
+### section-10
+
+- **URL:** https://burosteelframing.com/modelo-nilba/
+- **Screenshot:** 03-section-section-10-10.png
+- **Sub-links:** 44
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Modelo Nilba Construccion en seco y tradicional M2 Totales: 218 m2 Cubiertos: 173 m2 Semi Cubierto: 45 m2 Casa moderna de 173 m² – Diseño funcional en una sola plantaDiseñada por completo en una sola planta, esta casa combina funcionalidad, confort y diseño contemporáneo. Con 173 m² cubiertos y 45 m² semicubiertos, ofrece una distribución equilibrada que aprovecha cada espacio al máximo. Espacios amplios y bien conectadosAl ingresar, un hall de recepción da paso a un amplio living-comedor con cocina semi integrada, generando un ambiente luminoso y fluido ideal para la vida diaria y los momentos en familia.La vivienda también cuenta con un lavadero con acceso independiente y un toilette de recepción, aportando practicidad sin interferir en las áreas sociales.Zona privada con máximo confortEl área íntima se compone de una suite principal con vestidor y baño privado, junto a dos dormitorios con vista al frente que comparten un baño completo, todos con excelente ventilación e iluminación natural. Exterior pensado para disfrutarEl espacio exterior incluye una amplia galería semicubierta, equipada con toilette y depósito de guardado, ideal para disfrutar del aire libre durante todo el año.Con su arquitectura moderna y el sistema constructivo steel framing, este modelo representa una opción perfecta para quienes buscan una vivienda funcional, moderna y de alta calidad. Conoce todos los modelos Innova House Modelo Gala Modelo Elba Modelo Nilba Modelo Nilo Modelo Fiora Modelo Mackenzie Modelo Nera Modelo Sena Modelo Rodano Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@burosteelframing.com Oficinas: Complejo Bureau Leloir Av. Presidente Perón 8725, Ituzaingó Planta Insdustrial: Paul Groussac 1944, Ituzaingó. Buenos Aires © Copyright 2024 Srl Buro Steel Framing Desarrollado por Agencia SEO Argentina Necesitas ayuda? Conversa con nosotrosEn que podemos ayudarte?Hola, hace clic en uno de nuestros asistentes para chatear por WhatsAppEl equipo suele responder en unos minutos. Whattsapp Powered by NinjaTeam
+```
+
+### section-11
+
+- **URL:** https://burosteelframing.com/innova-8-lena/
+- **Screenshot:** 03-section-section-11-11.png
+- **Sub-links:** 44
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Modelo Lena Construccion en seco y tradicional M2 Totales: 100 m2 Cubiertos: 78 m2 Semi Cubierto: 22 m2 Esta casa de estilo minimalista, diseñada completamente en una planta, ofrece una combinación perfecta entre funcionalidad y diseño; con una superficie cubierta de 78 m2 y 22 m2 semicubiertos suma un total de 100 m2 perfectamente aprovechados. Al ingresar, te recibirá un hall de entrada que conduce al living comedor semi integrado con la cocina. Este espacio cuenta con ventanales que permiten una excelente entrada de luz natural y acceso a una galería semicubierta para disfrutar de momentos al aire libre en cualquier época del año. La casa cuenta con un baño principal y dos dormitorios amplios. El dormitorio principal tiene baño en suite, brindando un espacio privado y exclusivo. El lavadero, con salida lateral, ofrece una solución práctica para las tareas del hogar, manteniendo la organización y el orden. Conoce todos los modelos Innova House Modelo Gala Modelo Elba Modelo Nilba Modelo Nilo Modelo Fiora Modelo Mackenzie Modelo Nera Modelo Sena Modelo Rodano Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@burosteelframing.com Oficinas: Complejo Bureau Leloir Av. Presidente Perón 8725, Ituzaingó Planta Insdustrial: Paul Groussac 1944, Ituzaingó. Buenos Aires © Copyright 2024 Srl Buro Steel Framing Desarrollado por Agencia SEO Argentina Necesitas ayuda? Conversa con nosotrosEn que podemos ayudarte?Hola, hace clic en uno de nuestros asistentes para chatear por WhatsAppEl equipo suele responder en unos minutos. Whattsapp Powered by NinjaTeam
+```
+
+### section-12
+
+- **URL:** https://burosteelframing.com/etapas-del-proyecto-arquitectura-proyecto/
+- **Screenshot:** 03-section-section-12-12.png
+- **Sub-links:** 38
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Etapas del Proyecto Arquitectura: Proyecto Una vez que la propuesta arquitectónica está definida, se tiene clara su factibilidad y se evalúa en su totalidad la fase de anteproyecto, es momento de pasar a la etapa del proyecto arquitectónico. Aquí todas las especialidades y disciplinas se desarrollan a profundidad y con un gran nivel de detalle.Para dar inicio a esta etapa es necesario que esté aprobado el anteproyecto por cada una de las partes interesadas. A partir de allí se estructura el proyecto en diferentes componentes y especialidades.Estos suelen ser los elementos más comunes que constituyen esta etapa.Memoria descriptivaExpone con precisión cada uno de los criterios que dieron pie a la solución arquitectónica propuesta. Entre los más generales destacan los fundamentos urbanísticos, contextuales, históricos, temporales, y todos aquellos que sirven para definir el punto de partida del proyecto.También es necesario profundizar en aspectos como:Zonificación.Características del suelo.Detalles del emplazamiento.Sistemas constructivos a implementar.Especialidades que intervienen.Fundamentos presupuestarios.Características y dimensiones de las áreas y recintos.Detalles de materiales.La memoria del proyecto funciona como una especie de resumen de los criterios y definiciones claves para entender su alcance. Por ello, se debe incluir cada uno de los aspectos que lo conforman y los fundamentos que lo respaldan.Proyecto arquitectónicoEl proyecto de arquitectura es la espina dorsal de lo que se pretende construir. Su diseño y detalles definen lo que el cliente o usuario final requiere. Por tanto, todas las especialidades deben trabajar en torno a lo que dicta dicho proyecto para lograr los resultados esperados.De este componente se obtiene una vista clara de lo que se va a hacer en sitio. También sirve como guía para que los propios constructores lleguen al producto final. Para ello, el proyecto de arquitectura debe incluir una planimetría bien desarrollada que de pie a los planos constructivos a través de la siguiente documentación:UbicaciónEs un plano donde se puede localizar el predio en el que se quiere construir dentro de una zona urbana. Aquí suelen visualizarse las distancias que hay desde el terreno hasta las vías de acceso principales.EmplazamientoMuestra la ubicación propia de la vivienda o edificación dentro del predio. Por tanto, se detallan sus linderos y la manera en que la construcción se integra con su entorno. En el emplazamiento se contempla la topografía, los accesos, las vistas, el paisaje, la orientación solar, entre otros elementos.Planos de plantaAquí se muestra con detalle las áreas, niveles, estancias y recintos que conforman el proyecto visto desde arriba. Estos planos de
+```
+
+### section-13
+
+- **URL:** https://burosteelframing.com/etapas-proyecto-arquitectura-expediente-ejecutivo/
+- **Screenshot:** 03-section-section-13-13.png
+- **Sub-links:** 38
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Etapas Proyecto Arquitectura: Expediente Ejecutivo Otra de las etapas de un proyecto de arquitectura es la del expediente ejecutivo. En ocasiones, esta forma parte de la etapa de ‘Proyecto’. De hecho, en muchos casos se usan los términos “Proyecto”, “Expediente Ejecutivo o de Ejecución”, o “Proyecto Ejecutivo o de Ejecución” indistintamente. Sin embargo, dada la importancia que tiene este punto para el proyecto en general, lo mejor es hablar de este por separado. ¿Qué es el expediente ejecutivo? Para comprender su importancia, hay que tener claro en qué consiste el expediente ejecutivo. Es básicamente un conjunto de documentos donde se detallan y especifican los elementos, materiales, sistemas constructivos y equipos necesarios para construir la obra. Es decir, que este expediente explica a profundidad el cómo se construye. Sirve para detectar problemas que pudieran suscitarse durante la obra. Esto es importante porque cualquier contratiempo afectará la rentabilidad del proyecto. Sin esta detección temprana podría aumentar el costo de los recursos, así como los tiempos de ejecución. Es importante tener en cuenta que el expediente ejecutivo tiene que abordarse desde el punto de vista y expectativa del arquitecto. Este, a su vez, debe tener un buen dominio de las técnicas constructivas, pues como profesional encargado inicialmente del proyecto, no puede carecer de ese conocimiento. Elementos que incluye el expediente ejecutivo Dentro del expediente ejecutivo se incluyen varios documentos. Entre ellos: Proyecto de arquitectura Este es el documento principal. Por ello, es fundamental que esté actualizado frente a cualquier modificación que se realice. Ten en cuenta que de existir alguna incoherencia entre este y el resto de la información de la obra, podría haber retrasos y afectar la toma de decisiones. Proyectos de especialidades Incluye documentos como memorias de cálculo de cada especialidad, manual de procedimientos, detalles constructivos, observaciones, pre requisitos para instalación, etc. al momento de proveer esta información, cada profesional debe ser minucioso para no cometer errores que afecten la ejecución de la obra. De esto deberá encargarse el jefe de proyecto. Considera que cualquier información faltante implicará visitas a obra, consultas técnicas y decisiones de último minuto. Cubicación de materiales Otro punto importante a incluir dentro del expediente ejecutivo es la cubicación detallada de las partidas. Para ello, hay que considerar el porcentaje de pérdida que se aplica a cada material. Lo ideal es que este proceso de cálculo de volumen y capacidad se realice según lo estipulado por la normativa. Esto es importante para estandarizar los criterios de cálculo. Especificación
+```
+
+### Empresa Constructora en Pilar
+
+- **URL:** https://burosteelframing.com/empresa-constructora-en-pilar/
+- **Screenshot:** 03-section-empresa-constructora-en-pilar-14.png
+- **Sub-links:** 36
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Empresa constructora en Pilar Ejecución y Desarrollo de Obras Solicita tu Presupuesto En el siguiente formulario puedes realizar tu consulta y nos contactaremos a la brevedad. Enviar Este sitio está protegido por reCAPTCHA. Privacidad de Google y Condiciones. ¡Bienvenidos a Buro, constructora líder en la construcción de casas en Pilar!Nos enorgullece destacarnos en el diseño, la gestión y la dirección de proyectos arquitectónicos de diversas complejidades. Con una amplia gama de habilidades y experiencia, nos dedicamos a crear soluciones eficientes que satisfacen las necesidades de nuestros clientes en una variedad de sectores, incluyendo comercial, industrial, vivienda y oficinas, entre otros.Diseño Innovador y Personalizado: Entendemos que cada proyecto es único, y nuestro enfoque de diseño refleja esta filosofía. Trabajamos estrechamente con nuestros clientes desde el inicio, colaborando para dar vida a sus ideas y necesidades. Nuestro equipo de arquitectos altamente capacitados se esfuerza por crear diseños innovadores y personalizados que no solo son estéticamente atractivos, sino también funcionales y eficientes en términos de espacio.Gestión Integral de Proyectos: La gestión de proyectos es una parte fundamental de nuestro servicio. Nos encargamos de coordinar cada aspecto del proceso, desde la planificación inicial hasta la ejecución final. Nuestro enfoque meticuloso asegura que cada proyecto se desarrolle de manera eficiente, dentro del presupuesto establecido y cumpliendo con los plazos acordados. Construcción de Calidad con Sistema Tradicional Húmedo: Nos especializamos en la construcción con el sistema tradicional húmedo. Este enfoque se basa en técnicas de construcción consolidadas y probadas a lo largo del tiempo. Nos comprometemos a ofrecer calidad y durabilidad en cada construcción que emprendemos. Nuestro equipo de constructores altamente calificados trabaja con atención al detalle para garantizar que cada componente de la casa esté construido con los más altos estándares.Satisfaciendo Necesidades Residenciales y Comerciales: Ya sea que esté buscando construir la casa de sus sueños en Pilar o desarrollar un espacio comercial que destaque en el mercado, tenemos la experiencia y la visión para llevar a cabo su proyecto con éxito. Hemos trabajado en una variedad de proyectos, desde residencias unifamiliares hasta complejos comerciales, y nos enorgullece adaptarnos a las necesidades específicas de cada cliente.Compromiso Ambiental: Reconocemos la importancia de la sostenibilidad y la responsabilidad ambiental en la industria de la construcción. Buscamos constantemente formas de integrar prácticas sostenibles en nuestros proyectos para minimizar nuestro impacto en el medio ambiente
+```
+
+### Empresa constructora en Escobar
+
+- **URL:** https://burosteelframing.com/empresa-constructora-en-escobar/
+- **Screenshot:** 03-section-empresa-constructora-en-escobar-15.png
+- **Sub-links:** 30
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Empresa constructora en Escobar Ejecución y Desarrollo de Obras Solicita tu Presupuesto En el siguiente formulario puedes realizar tu consulta y nos contactaremos a la brevedad. Enviar Este sitio está protegido por reCAPTCHA. Privacidad de Google y Condiciones. Bienvenido a Buro, tu estudio de arquitectura y empresa constructora de confianza en Escobar.Nos enorgullece presentarte nuestra dedicación y pasión por el diseño, la gestión y la dirección de proyectos arquitectónicos, abarcando una amplia gama de complejidades y necesidades. Creemos que cada proyecto es una oportunidad única para transformar espacios y satisfacer las necesidades específicas de nuestros clientes en los ámbitos comercial, industrial, de vivienda y oficinas, entre otros.Diseño Vanguardista y Eficiente: Nos destacamos por nuestro enfoque innovador y vanguardista en el diseño arquitectónico. Cada proyecto es abordado con creatividad y experiencia para crear espacios eficientes y estéticamente atractivos. Nuestro equipo de arquitectos altamente capacitados trabaja en colaboración con nuestros clientes para comprender sus visiones y transformarlas en diseños tangibles y funcionales.Gestión Integral del Proyecto:La gestión eficiente es clave para el éxito de cualquier proyecto arquitectónico. Nos comprometemos a proporcionar una gestión integral que abarca desde la planificación inicial hasta la entrega final del proyecto. Nuestro equipo se encarga de coordinar todos los aspectos, asegurando un flujo de trabajo sin problemas y cumpliendo con los plazos establecidos.Dirección de Proyectos con Experiencia:La dirección de proyectos es un componente crucial para garantizar la ejecución exitosa de las ideas concebidas durante la fase de diseño. En Buro ARQ, contamos con expertos en dirección de proyectos que supervisan cada etapa con precisión y atención al detalle. Nuestra experiencia nos permite anticipar posibles desafíos y responder de manera efectiva para mantener el proyecto en curso.Amplia Experiencia en Diversos Sectores:Hemos dejado nuestra huella en una variedad de sectores, desde proyectos comerciales hasta desarrollos industriales y residenciales. Nuestra versatilidad nos permite adaptarnos a las necesidades específicas de cada cliente y sector, brindando soluciones personalizadas que van más allá de las expectativas. Construcción Tradicional Húmeda: Creemos en la calidad y la durabilidad de la construcción tradicional húmeda. Este método ha demostrado su eficacia a lo largo del tiempo y es la base de muchas de las estructuras sólidas y duraderas que admiramos hoy en día. Al elegir construir tu casa con nuestro sistema tradicional húmedo, garantizamos resultados superiores que resisten las inclemencias del tiempo y el 
+```
+
+### Empresa constructora en Campana
+
+- **URL:** https://burosteelframing.com/empresa-constructora-en-campana/
+- **Screenshot:** 03-section-empresa-constructora-en-campana-16.png
+- **Sub-links:** 27
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Empresa constructora en Campana Ejecución y Desarrollo de Obras Solicita tu Presupuesto En el siguiente formulario puedes realizar tu consulta y nos contactaremos a la brevedad. Enviar Este sitio está protegido por reCAPTCHA. Privacidad de Google y Condiciones. Bienvenidos a Nuestra Empresa Constructora en CampanaEn el vasto campo de la arquitectura, nuestro estudio se distingue por su enfoque integral en el diseño, la gestión y la dirección de proyectos. Con una sólida trayectoria y un compromiso inquebrantable con la calidad, nos especializamos en la creación de espacios eficientes que no solo cumplen con las necesidades funcionales, sino que también aportan valor estético y durabilidad. Nuestra experiencia abarca una amplia gama de proyectos, desde desarrollos comerciales e industriales hasta residenciales y de oficinas, cada uno con sus propios desafíos y oportunidades únicos.Campana, con su rica historia y crecimiento continuo, se ha convertido en un lugar privilegiado para quienes buscan establecer su hogar. Nuestro equipo de arquitectos y constructores se dedica a transformar visiones en realidades, construyendo casas que no solo se integran armoniosamente con el entorno, sino que también reflejan la identidad y los sueños de sus habitantes.Diseño y Gestión Integral de ProyectosCada proyecto comienza con una visión. Nuestro proceso de diseño se centra en entender profundamente las necesidades y deseos de nuestros clientes. A través de un enfoque colaborativo, trabajamos estrechamente con cada cliente para desarrollar soluciones personalizadas que optimicen el uso del espacio y los recursos disponibles. Nos enorgullecemos de nuestra capacidad para diseñar hogares que son tanto funcionales como estéticamente agradables.La gestión de proyectos es otro pilar fundamental de nuestro servicio. Entendemos que la construcción de una casa es una inversión significativa, y nuestra misión es garantizar que cada proyecto se complete a tiempo y dentro del presupuesto. Utilizamos técnicas de gestión de proyectos avanzadas para coordinar todas las fases del proceso constructivo, desde la planificación inicial hasta la finalización y entrega del proyecto. Construcción con Sistemas Tradicional Húmedo y Steel Framing Nuestra empresa Buro se especializa en dos sistemas constructivos principales: el sistema tradicional húmedo y el steel framing. Cada uno de estos métodos ofrece ventajas únicas, y estamos preparados para recomendar el mejor enfoque según las necesidades específicas de cada cliente. El sistema tradicional húmedo, una técnica que ha demostrado ser duradera y confiable a lo largo de los años, implica el uso de materiales como ladrillos, mortero y concreto, que ofrecen una robustez y resistencia
+```
+
+### Empresa constructora en San Miguel
+
+- **URL:** https://burosteelframing.com/empresa-constructora-en-san-miguel/
+- **Screenshot:** 03-section-empresa-constructora-en-san-miguel-17.png
+- **Sub-links:** 27
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Empresa constructora en San Miguel Ejecución y Desarrollo de Obras Solicita tu Presupuesto En el siguiente formulario puedes realizar tu consulta y nos contactaremos a la brevedad. Enviar Este sitio está protegido por reCAPTCHA. Privacidad de Google y Condiciones. BURO: Liderazgo en Construcción de Casas en San MiguelBienvenido a Buro, tu socio confiable en la construcción de viviendas de alta calidad en San Miguel. En Buro, nos enorgullece ser líderes en el desarrollo de proyectos arquitectónicos que no solo cumplen con las expectativas de nuestros clientes, sino que las superan. Nuestra empresa se dedica al diseño, gestión y dirección de proyectos de diversa complejidad, ofreciendo soluciones eficientes y sostenibles en los ámbitos comercial, industrial, residencial y de oficinas.Compromiso con la ExcelenciaNuestro compromiso con la excelencia se refleja en cada etapa del proceso constructivo, desde la conceptualización hasta la entrega final. En Buro, entendemos que cada proyecto es único y requiere una atención personalizada para satisfacer las necesidades específicas de nuestros clientes. Es por eso que trabajamos estrechamente con ellos para asegurar que cada detalle sea considerado y cada expectativa sea cumplida.Sistemas Constructivos InnovadoresEn Buro, creemos en la importancia de estar a la vanguardia de las técnicas constructivas. Por ello, ofrecemos dos sistemas constructivos principales: el sistema de steel framing y el sistema tradicional húmedo. Steel Framing: Innovación y Eficiencia El steel framing es una técnica constructiva moderna que utiliza perfiles de acero galvanizado para crear estructuras livianas pero extremadamente resistentes. Este sistema ofrece numerosas ventajas, entre las que se incluyen: Rapidez de construcción: Al ser un sistema en seco, el steel framing permite reducir significativamente los tiempos de obra, lo que se traduce en una entrega más rápida de las viviendas. Precisión y calidad: La fabricación industrial de los componentes asegura una mayor precisión en la construcción, minimizando errores y garantizando un acabado de alta calidad. Sostenibilidad: El uso de acero reciclado y reciclable contribuye a la sostenibilidad del proyecto, reduciendo el impacto ambiental. Flexibilidad de diseño: Permite una gran libertad en el diseño arquitectónico, adaptándose a diversas necesidades y estilos. Sistema Tradicional Húmedo: Solidez y Confiabilidad Por otro lado, el sistema tradicional húmedo es un método constructivo ampliamente conocido y utilizado, que se basa en la utilización de ladrillos, cemento y otros materiales convencionales. Este sistema se caracteriza por: Durabilidad: Las construcciones realizadas con el sistema húmedo son conocidas por su solid
+```
+
+### Empresa constructora en Cañuelas
+
+- **URL:** https://burosteelframing.com/empresa-constructora-en-canuelas/
+- **Screenshot:** 03-section-empresa-constructora-en-ca-uelas-18.png
+- **Sub-links:** 27
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Empresa constructora en Cañuelas Ejecución y Desarrollo de Obras Solicita tu Presupuesto En el siguiente formulario puedes realizar tu consulta y nos contactaremos a la brevedad. Enviar Este sitio está protegido por reCAPTCHA. Privacidad de Google y Condiciones. ¡Bienvenidos a Buro, tu socio de confianza en el diseño y construcción de hogares excepcionales en Cañuelas!Nuestra Pasión por el Diseño y la ConstrucciónNo solo construimos casas, creamos hogares. Nos apasiona el proceso de transformar ideas en espacios tangibles y funcionales. Nos especializamos en el diseño, gestión y dirección de proyectos arquitectónicos de diversas complejidades, abarcando desde el ámbito comercial e industrial hasta viviendas y oficinas. Cañuelas es nuestra inspiración, y nuestro compromiso es satisfacer las necesidades únicas de esta comunidad a través de soluciones arquitectónicas innovadoras.Enfoque Integral en Cada ProyectoEntendemos la importancia de un enfoque integral en cada proyecto. Desde la concepción hasta la entrega final, nos dedicamos a la gestión y dirección eficientes, garantizando que cada detalle se ajuste a las expectativas de nuestros clientes. Colaboramos estrechamente con ustedes para comprender sus necesidades y objetivos, asegurándonos de que cada proyecto sea una expresión única de su visión.Versatilidad en Proyectos de Diferentes NaturalezasLa versatilidad es una de nuestras fortalezas distintivas. Desde el diseño de espacios comerciales que atraen a clientes hasta la planificación meticulosa de complejos industriales, estamos preparados para abordar una amplia gama de desafíos arquitectónicos. Además, nos enorgullece ofrecer soluciones creativas en el ámbito residencial y de oficinas, adaptándonos a las necesidades específicas y sus habitantes.Sistema Tradicional Húmedo: Calidad y TradiciónConstruir tu casa significa optar por la calidad y la tradición. Nuestro sistema constructivo tradicional húmedo es la base de la durabilidad y solidez de cada estructura que creamos. Valoramos la artesanía y la atención meticulosa a los detalles en cada fase del proceso de construcción. Desde los cimientos hasta los acabados finos, nos esforzamos por superar las expectativas y crear hogares que sean no solo hermosos, sino también resistentes y funcionales. Compromiso con la Sostenibilidad AmbientalNos comprometemos con la sostenibilidad ambiental en cada proyecto. La integración de prácticas ecoamigables y tecnologías eficientes es esencial para nosotros. Buscamos no solo satisfacer las necesidades actuales, sino también contribuir positivamente al entorno y dejar un legado sostenible para las generaciones futuras.Experiencia Local Con una sólida presencia en Cañuelas, comprendemos las particularid
+```
+
+### Empresa constructora en Zarate
+
+- **URL:** https://burosteelframing.com/empresa-constructora-en-zarate/
+- **Screenshot:** 03-section-empresa-constructora-en-zarate-19.png
+- **Sub-links:** 27
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Empresa constructora en zarate Ejecución y Desarrollo de Obras Solicita tu Presupuesto En el siguiente formulario puedes realizar tu consulta y nos contactaremos a la brevedad. Enviar Este sitio está protegido por reCAPTCHA. Privacidad de Google y Condiciones. ¡Bienvenidos a Buro, tu socio de confianza en el diseño y construcción de hogares excepcionales en Zarate!Nuestra Pasión por el Diseño y la ConstrucciónEn Buro, no solo construimos casas, creamos hogares. Nos apasiona el proceso de transformar ideas en espacios tangibles y funcionales. Nos especializamos en el diseño, gestión y dirección de proyectos arquitectónicos de diversas complejidades, abarcando desde el ámbito comercial e industrial hasta viviendas y oficinas. Cañuelas es nuestra inspiración, y nuestro compromiso es satisfacer las necesidades únicas de esta comunidad a través de soluciones arquitectónicas innovadoras.Enfoque Integral en Cada ProyectoEn Buro, entendemos la importancia de un enfoque integral en cada proyecto. Desde la concepción hasta la entrega final, nos dedicamos a la gestión y dirección eficientes, garantizando que cada detalle se ajuste a las expectativas de nuestros clientes. Colaboramos estrechamente con ustedes para comprender sus necesidades y objetivos, asegurándonos de que cada proyecto sea una expresión única de su visión.Versatilidad en Proyectos de Diferentes NaturalezasLa versatilidad es una de nuestras fortalezas distintivas. Desde el diseño de espacios comerciales que atraen a clientes hasta la planificación meticulosa de complejos industriales, estamos preparados para abordar una amplia gama de desafíos arquitectónicos. Además, nos enorgullece ofrecer soluciones creativas en el ámbito residencial y de oficinas, adaptándonos a las necesidades específicas y sus habitantes. Sistema Tradicional Húmedo: Calidad y Tradición Construir tu casa con Buro significa optar por la calidad y la tradición. Nuestro sistema constructivo tradicional húmedo es la base de la durabilidad y solidez de cada estructura que creamos. Valoramos la artesanía y la atención meticulosa a los detalles en cada fase del proceso de construcción. Desde los cimientos hasta los acabados finos, nos esforzamos por superar las expectativas y crear hogares que sean no solo hermosos, sino también resistentes y funcionales. Compromiso con la Sostenibilidad Ambiental En Buro, nos comprometemos con la sostenibilidad ambiental en cada proyecto. La integración de prácticas ecoamigables y tecnologías eficientes es esencial para nosotros. Buscamos no solo satisfacer las necesidades actuales, sino también contribuir positivamente al entorno y dejar un legado sostenible para las generaciones futuras. Experiencia Local Con una sólida presencia en zar
+```
+
+### Empresa constructora en Capital Federal, Buenos Aires
+
+- **URL:** https://burosteelframing.com/empresa-constructora-en-capital-federal-buenos-aires/
+- **Screenshot:** 03-section-empresa-constructora-en-capital-federal-buenos-aires-20.png
+- **Sub-links:** 26
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Empresa constructora en Capital Federal - Buenos Aires Ejecución y Desarrollo de Obras Solicita tu Presupuesto En el siguiente formulario puedes realizar tu consulta y nos contactaremos a la brevedad. Enviar Este sitio está protegido por reCAPTCHA. Privacidad de Google y Condiciones. Empresa constructora en Capital Federal – Buenos AiresConstruir una casa en Capital Federal es un desafío que combina diseño, calidad y eficiencia. La ciudad de Buenos Aires, con su ritmo acelerado y su diversidad de estilos arquitectónicos, exige soluciones que respondan tanto a la estética urbana como a las necesidades modernas de confort y funcionalidad.Una empresa constructora con experiencia entiende que cada obra es más que un proyecto técnico: es el lugar donde las personas desarrollan su vida, su trabajo o sus sueños. Por eso, la arquitectura debe pensarse de manera integral, contemplando diseño, gestión y dirección de obra para lograr resultados que trasciendan el tiempo.El rol de una empresa constructora en Buenos AiresEn una ciudad de alta densidad como Capital Federal, el trabajo de un estudio de arquitectura va más allá de diseñar planos. Es necesario coordinar permisos municipales, atender normativas específicas y encontrar soluciones que permitan aprovechar al máximo cada metro cuadrado.Las viviendas y edificios urbanos requieren:Eficiencia espacial: ambientes funcionales que optimicen el uso del terreno disponible.Durabilidad: materiales de calidad capaces de resistir el paso del tiempo y las exigencias de la ciudad.Estética adaptada al entorno: integración con el paisaje urbano, respetando la identidad de cada barrio.Sustentabilidad: proyectos que reduzcan el impacto ambiental y mejoren la eficiencia energética.Una empresa constructora que opere en Buenos Aires debe equilibrar estos factores con la capacidad de cumplir plazos y ofrecer un servicio confiable a sus clientes. Sistemas constructivos: tradicional húmedo y steel framingA la hora de construir una vivienda en Capital Federal, la elección del sistema constructivo es una decisión clave. En nuestro estudio se ofrecen dos métodos principales, ambos con ventajas concretas:Construcción tradicional húmedaEl sistema húmedo es el más utilizado históricamente en Argentina. Consiste en muros de ladrillo y estructuras de hormigón, lo que garantiza resistencia y una gran durabilidad. Sus beneficios son:Solidez estructural: construcciones firmes y estables a lo largo del tiempo.Aislamiento natural: confort térmico y acústico ideal para la ciudad.Posibilidad de ampliaciones futuras: facilidad para adaptar la vivienda según nuevas necesidades.Valor de reventa alto: la solidez de este sistema es reconocida en el mercado inmobiliario.Este método es elegido
+```
+
+### Empresa constructora en Tigre
+
+- **URL:** https://burosteelframing.com/empresa-constructora-en-tigre/
+- **Screenshot:** 03-section-empresa-constructora-en-tigre-21.png
+- **Sub-links:** 32
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Empresa constructora en Tigre Ejecución y Desarrollo de Obras Solicita tu Presupuesto En el siguiente formulario puedes realizar tu consulta y nos contactaremos a la brevedad. Enviar Este sitio está protegido por reCAPTCHA. Privacidad de Google y Condiciones. ¡Bienvenidos a Buro, su aliado de confianza en el diseño y construcción de hogares excepcionales en Tigre!Nuestra Pasión por el Diseño y la ConstrucciónEn Buro, no solo construimos casas, creamos hogares. Nos apasiona transformar ideas en espacios tangibles y funcionales. Nos especializamos en el diseño, gestión y dirección de proyectos arquitectónicos de diversas complejidades, abarcando desde el ámbito comercial e industrial hasta viviendas y oficinas. Inspirados por Cañuelas, nuestro compromiso es satisfacer las necesidades únicas de esta comunidad a través de soluciones arquitectónicas innovadoras.Enfoque Integral en Cada ProyectoComprendemos la importancia de un enfoque integral en cada proyecto. Desde la concepción hasta la entrega final, nos dedicamos a una gestión y dirección eficientes, garantizando que cada detalle se ajuste a las expectativas de nuestros clientes. Colaboramos estrechamente con ustedes para entender sus necesidades y objetivos, asegurándonos de que cada proyecto refleje su visión de manera única.Versatilidad en Proyectos de Diferentes NaturalezasLa versatilidad es una de nuestras mayores fortalezas. Desde el diseño de espacios comerciales que atraen clientes hasta la planificación meticulosa de complejos industriales, estamos preparados para enfrentar una amplia gama de desafíos arquitectónicos. Además, nos enorgullece ofrecer soluciones creativas en el ámbito residencial y de oficinas, adaptándonos a las necesidades específicas de nuestros clientes y sus habitantes. Sistema Tradicional Húmedo: Calidad y TradiciónElegir construir con Buro significa optar por calidad y tradición. Nuestro método de construcción tradicional húmedo garantiza la durabilidad y solidez de cada estructura que realizamos. Valoramos la artesanía y la atención minuciosa a los detalles en cada fase del proceso. Desde los cimientos hasta los acabados más finos, nos esforzamos por superar las expectativas y crear hogares que sean tanto bellos como funcionales y resistentes.Compromiso con la Sostenibilidad AmbientalEn Buro, la sostenibilidad ambiental es una prioridad en todos nuestros proyectos. Integramos prácticas ecoamigables y tecnologías eficientes para no solo satisfacer las necesidades actuales, sino también contribuir positivamente al entorno. Nuestro objetivo es dejar un legado sostenible para las generaciones futuras.Experiencia LocalCon una sólida presencia en Tigre, entendemos las particularidades y la rica historia arquitectónica
+```
+
+### Empresa constructora en Esteban Echeverría
+
+- **URL:** https://burosteelframing.com/empresa-constructora-en-esteban-echeverria/
+- **Screenshot:** 03-section-empresa-constructora-en-esteban-echeverr-a-22.png
+- **Sub-links:** 28
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Empresa constructora en Esteban Echeverría Ejecución y Desarrollo de Obras Solicita tu Presupuesto En el siguiente formulario puedes realizar tu consulta y nos contactaremos a la brevedad. Enviar Este sitio está protegido por reCAPTCHA. Privacidad de Google y Condiciones. BURO: Liderazgo en la Construcción de Casas en Esteban EcheverríaBienvenido a Buro, tu aliado estratégico en la construcción de viviendas de alta calidad en Esteban Echeverría. En Buro, nos destacamos como líderes en el desarrollo de proyectos arquitectónicos que no solo cumplen con las expectativas de nuestros clientes, sino que las superan. Nuestra empresa se dedica al diseño, gestión y dirección de proyectos de diversa complejidad, ofreciendo soluciones eficientes y sostenibles en los ámbitos comercial, industrial, residencial y de oficinas.Compromiso con la ExcelenciaNuestro compromiso con la excelencia se manifiesta en cada etapa del proceso constructivo, desde la conceptualización hasta la entrega final. En Buro, entendemos que cada proyecto es único y requiere una atención personalizada para satisfacer las necesidades específicas de nuestros clientes. Trabajamos estrechamente con ellos para asegurar que cada detalle sea considerado y cada expectativa sea cumplida.Sistemas Constructivos InnovadoresEn Buro, creemos en la importancia de estar a la vanguardia de las técnicas constructivas. Por ello, ofrecemos dos sistemas constructivos principales: el sistema de steel framing y el sistema tradicional húmedo. Steel Framing: Innovación y EficienciaEl steel framing es una técnica constructiva moderna que utiliza perfiles de acero galvanizado para crear estructuras livianas pero extremadamente resistentes. Este sistema ofrece numerosas ventajas, entre las que se incluyen:Rapidez de construcción: Al ser un sistema en seco, el steel framing permite reducir significativamente los tiempos de obra, lo que se traduce en una entrega más rápida de las viviendas.Precisión y calidad: La fabricación industrial de los componentes asegura una mayor precisión en la construcción, minimizando errores y garantizando un acabado de alta calidad.Sostenibilidad: El uso de acero reciclado y reciclable contribuye a la sostenibilidad del proyecto, reduciendo el impacto ambiental.Flexibilidad de diseño: Permite una gran libertad en el diseño arquitectónico, adaptándose a diversas necesidades y estilos.Sistema Tradicional Húmedo: Solidez y ConfiabilidadPor otro lado, el sistema tradicional húmedo es un método constructivo ampliamente conocido y utilizado, que se basa en la utilización de ladrillos, cemento y otros materiales convencionales. Este sistema se caracteriza por:Durabilidad: Las construcciones realizadas con el sistema húmedo son conocidas po
+```
+
+### Empresa constructora en Olivos
+
+- **URL:** https://burosteelframing.com/empresa-constructora-en-olivos/
+- **Screenshot:** 03-section-empresa-constructora-en-olivos-23.png
+- **Sub-links:** 26
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Empresa constructora en Olivos Ejecución y Desarrollo de Obras Solicita tu Presupuesto En el siguiente formulario puedes realizar tu consulta y nos contactaremos a la brevedad. Enviar Este sitio está protegido por reCAPTCHA. Privacidad de Google y Condiciones. Empresa constructora en Olivos – Diseño y construcción de viviendasOlivos es una de las localidades más atractivas de la zona norte del Gran Buenos Aires. Con su cercanía a la Ciudad, su vida barrial y su privilegiada ubicación junto al Río de la Plata, se ha convertido en un lugar ideal para quienes buscan calidad de vida sin resignar conexión con el centro porteño. En este contexto, elegir una empresa constructora con experiencia en diseño y ejecución de obras es clave para materializar el proyecto de una vivienda que combine estilo, funcionalidad y durabilidad.La arquitectura en Olivos se caracteriza por una fuerte impronta residencial, con casas modernas, viviendas familiares y desarrollos que se integran con la tranquilidad de la zona. Nuestro estudio entiende que construir en este entorno implica un compromiso especial: respetar la identidad del barrio y, al mismo tiempo, brindar soluciones arquitectónicas contemporáneas que mejoren la vida de quienes habitan estos espacios.La importancia de una empresa constructora integralUn proyecto de arquitectura no es solamente el diseño de planos. Implica planificar cada detalle, desde la idea inicial hasta la entrega final. Una empresa constructora con trayectoria puede ofrecer un servicio integral que abarque:Diseño arquitectónico: proyectos personalizados que responden a las necesidades de cada familia.Gestión de trámites municipales: coordinación con la Municipalidad de Vicente López y cumplimiento de normativas locales.Dirección y control de obra: supervisión constante para garantizar calidad en cada etapa.Selección de materiales: equilibrio entre estética, durabilidad y presupuesto.Entrega llave en mano: viviendas listas para habitar, sin preocupaciones para el cliente.La experiencia en este tipo de proyectos asegura que cada obra avance en tiempo y forma, evitando imprevistos y ofreciendo la tranquilidad que los clientes necesitan. Sistemas constructivos: tradicional húmedo y steel framingAl construir una casa en Olivos, una de las decisiones principales es elegir el sistema constructivo. En nuestro estudio ofrecemos dos alternativas de primer nivel:Sistema tradicional húmedoLa construcción con ladrillos y hormigón es la técnica más conocida en Argentina. Su solidez y resistencia la convierten en una opción muy valorada por quienes priorizan robustez y permanencia.Ventajas del sistema húmedo:Estructura firme y de larga duración.Excelente aislamiento térmico y acústico.Flexibilidad par
+```
+
+### Empresa constructora en Exaltación de la Cruz
+
+- **URL:** https://burosteelframing.com/empresa-constructora-en-exaltacion-de-la-cruz/
+- **Screenshot:** 03-section-empresa-constructora-en-exaltaci-n-de-la-cruz-24.png
+- **Sub-links:** 27
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Empresa constructora en Exaltación de la Cruz Ejecución y Desarrollo de Obras Solicita tu Presupuesto En el siguiente formulario puedes realizar tu consulta y nos contactaremos a la brevedad. Enviar Este sitio está protegido por reCAPTCHA. Privacidad de Google y Condiciones. Exaltación de la Cruz es un lugar ideal para quienes buscan construir su casa en un entorno natural, tranquilo y con excelente calidad de vida. La arquitectura en esta zona se ha convertido en una oportunidad para crear viviendas que se adapten al estilo de vida de las familias actuales, combinando diseño, funcionalidad y sistemas constructivos modernos.Nuestro estudio trabaja desde hace años en el desarrollo de proyectos residenciales, comerciales e industriales, con una clara orientación hacia la eficiencia y la calidad. El objetivo siempre es el mismo: ofrecer soluciones arquitectónicas que transformen las ideas de nuestros clientes en realidades tangibles, duraderas y estéticamente atractivas.El valor de un proyecto integralConstruir una casa no se limita a levantar paredes. Cada proyecto implica un proceso complejo que abarca múltiples etapas: diseño, gestión, dirección de obra y supervisión de cada detalle técnico. En ese recorrido, la experiencia y el compromiso de un estudio de arquitectura son fundamentales para garantizar un resultado final que cumpla con las expectativas y mejore la calidad de vida de quienes van a habitar el espacio.En Exaltación de la Cruz, donde la naturaleza y la tranquilidad son protagonistas, la arquitectura debe responder a un doble desafío: integrarse al entorno y, al mismo tiempo, ofrecer soluciones modernas y eficientes. Nuestros proyectos buscan precisamente ese equilibrio. Sistemas constructivos: tradicional húmedo y steel framingCuando se piensa en construir una vivienda, una de las primeras decisiones es elegir el sistema constructivo más adecuado. Cada familia tiene sus prioridades y, en función de ellas, se definen materiales, tiempos y costos. En nuestro estudio ofrecemos dos alternativas principales:Sistema tradicional húmedoEs el sistema más conocido en Argentina y el que se utiliza desde hace décadas. Consiste en la construcción con ladrillos y hormigón, lo que garantiza solidez, durabilidad y una gran inercia térmica. Entre sus ventajas se destacan:Resistencia estructural: casas firmes y de larga vida útil.Aislamiento térmico y acústico natural.Flexibilidad para ampliaciones futuras.Alta valoración en el mercado inmobiliario.Este método es ideal para quienes buscan una vivienda robusta, con terminaciones tradicionales y la seguridad de una técnica probada.Sistema steel framingEl steel framing es una alternativa moderna, rápida y eficiente. Se trata de una estructura de perfi
+```
+
+### Empresa constructora en Luján
+
+- **URL:** https://burosteelframing.com/empresa-constructora-en-lujan/
+- **Screenshot:** 03-section-empresa-constructora-en-luj-n-25.png
+- **Sub-links:** 28
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Empresa constructora en Luján Ejecución y Desarrollo de Obras Solicita tu Presupuesto En el siguiente formulario puedes realizar tu consulta y nos contactaremos a la brevedad. Enviar Este sitio está protegido por reCAPTCHA. Privacidad de Google y Condiciones. Facebook Twitter LinkedIn Barrios de Empresa constructora en Luján Empresa constructora en Chacras de la Primavera Empresa constructora en Comarcas de Lujan Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@burosteelframing.com Oficinas: Complejo Bureau Leloir Av. Presidente Perón 8725, Ituzaingó Planta Insdustrial: Paul Groussac 1944, Ituzaingó. Buenos Aires © Copyright 2024 Srl Buro Steel Framing Desarrollado por Agencia SEO Argentina Necesitas ayuda? Conversa con nosotrosEn que podemos ayudarte?Hola, hace clic en uno de nuestros asistentes para chatear por WhatsAppEl equipo suele responder en unos minutos. Whattsapp Powered by NinjaTeam
+```
+
+### Empresa constructora en San Isidro
+
+- **URL:** https://burosteelframing.com/empresa-constructora-en-san-isidro/
+- **Screenshot:** 03-section-empresa-constructora-en-san-isidro-26.png
+- **Sub-links:** 26
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Empresa constructora en San Isidro Ejecución y Desarrollo de Obras Solicita tu Presupuesto En el siguiente formulario puedes realizar tu consulta y nos contactaremos a la brevedad. Enviar Este sitio está protegido por reCAPTCHA. Privacidad de Google y Condiciones. Empresa constructora en San Isidro – Diseño y construcción de viviendas modernas San Isidro es uno de los lugares más elegidos de la zona norte de Buenos Aires para proyectar y construir viviendas familiares. Con su equilibrio entre tradición, modernidad y un entorno natural único, esta localidad ofrece un marco ideal para quienes buscan vivir con calidad de vida sin alejarse de la ciudad. En este contexto, contar con una empresa constructora en San Isidro que brinde experiencia, diseño y soluciones integrales es fundamental para transformar un proyecto en una realidad concreta. La importancia de un estudio de arquitectura con visión integral Construir una casa no es simplemente levantar paredes. Implica coordinar diseño, gestión y dirección de obra para garantizar que el resultado final cumpla con las expectativas y acompañe el estilo de vida de sus habitantes. Una empresa constructora con experiencia en San Isidro entiende que cada proyecto debe: Respetar el entorno y la identidad de la localidad. Optimizar la funcionalidad de los espacios. Seleccionar materiales de calidad y durabilidad. Cumplir con normativas municipales y trámites específicos. Cumplir plazos de obra sin descuidar los detalles. La arquitectura se convierte así en una herramienta para mejorar la vida cotidiana, ofreciendo hogares cómodos, seguros y estéticamente atractivos. Sistemas constructivos: tradicional húmedo y steel framing Al pensar en la construcción de una vivienda en San Isidro, una de las decisiones clave es la elección del sistema constructivo. Cada familia tiene sus propias prioridades y, en función de ellas, se define el método más conveniente. Construcción tradicional húmeda Es el sistema más utilizado históricamente en Argentina. Se basa en estructuras de ladrillo y hormigón, con la solidez y resistencia que caracterizan a las viviendas clásicas. Ventajas del sistema húmedo: Robustez estructural y larga vida útil. Excelente aislamiento térmico y acústico. Posibilidad de futuras ampliaciones sin complicaciones. Valor de reventa alto en el mercado inmobiliario. Es la opción ideal para quienes buscan una vivienda sólida, con estética tradicional y seguridad garantizada. Construcción con steel framing El steel framing representa una alternativa innovadora, eficiente y cada vez más utilizada en proyectos residenciales y comerciales. Se basa en estructuras de acero galvanizado y paneles aislantes que otorgan resistencia y ligereza. Beneficios del steel
+```
+
+### Blog
+
+- **URL:** https://burosteelframing.com/blog/
+- **Screenshot:** 03-section-blog-27.png
+- **Sub-links:** 48
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Blog de Buro Steel Framing Innova House Modelo Gala Modelo Gala Construccion en seco y tradicional M2 Totales: 178 m2 Cubiertos: 148 m2 Semi Cubierto: 30 m2 Diseñada en dos plantas, esta vivienda moderna Innova House Modelo Elba Modelo Elba Construccion en seco y tradicional M2 Totales: 178 m2 Cubiertos: 148 m2 Semi Cubierto: 30 m2 Casa moderna de 148 m² – Diseño Innova House Modelo Nilba Modelo Nilba Construccion en seco y tradicional M2 Totales: 218 m2 Cubiertos: 173 m2 Semi Cubierto: 45 m2 Casa moderna de 173 m² – Diseño Innova House Modelo Lena Modelo Lena Construccion en seco y tradicional M2 Totales: 100 m2 Cubiertos: 78 m2 Semi Cubierto: 22 m2 Esta casa de estilo minimalista, diseñada completamente Podcasts ¿Por qué Steel framing? con el Equipo Comercial de Buro Steel Framing – Podcast Episodio 7 ¿Por qué Steel framing? con el Equipo Comercial de Buro Steel Framing Podcast Episodio 7 ¡Bienvenidos a nuestro canal de YouTube! En este espacio, te Podcasts Contrato de ejecución de obra y seguros – Más allá del Steel Framing – Podcast Episodio 6 Contrato de ejecución de obra y seguros Más allá del Steel Framing Podcast Episodio 6 ¡Bienvenidos a otro episodio apasionante de “Más allá del Steel Podcasts Dirección de obra – Más allá del Steel Framing – Podcast Episodio 5 Dirección de obra Más allá del Steel Framing Podcast Episodio 5 ¡Bienvenidos al episodio 5 de “Más allá del Steel Framing”! En esta entrega, nos Podcasts Panelizado en planta desde la ingeniería – Podcast Episodio 4 Panelizado en planta desde la ingeniería Más allá del Steel FramingPodcast Episodio 4 Bienvenidos a otro episodio de “Más allá del Steel Framing”, tu fuente Innova House Modelo Nilo Modelo Nilo Construccion en seco y tradicional M2 Totales: 147 m2 Cubiertos: 107.50 m2 Semi Cubierto: 39.50 m2 Es una casa completamente desarrollada en planta Page1 Page2 Page3 Page4 Page5 Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@burosteelframing.com Oficinas: Complejo Bureau Leloir Av. Presidente Perón 8725, Ituzaingó Planta Insdustrial: Paul Groussac 1944, Ituzaingó. Buenos Aires © Copyright 2024 Srl Buro Steel Framing Desarrollado por Agencia SEO Argentina Necesitas ayuda? Conversa con nosotrosEn que podemos ayudarte?Hola, hace clic en uno de nuestros asistentes para chatear por WhatsAppEl equipo suele responder en unos minutos. Whattsapp Powered by NinjaTeam
+```
+
+### E-Books Steel Framing
+
+- **URL:** https://burosteelframing.com/ebooks-steel-framing/
+- **Screenshot:** 03-section-e-books-steel-framing-28.png
+- **Sub-links:** 30
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto E-Books de Steel Framing para Argentina​ 8 Reglas de Oro para Construir tu casa de Vanguardia Puedes descargar nuestro e-book exclusivo que te explicara cuáles son las reglas que debes tener en cuenta para construir tu casa de vanguardia con el sistema steel framing. Descargar E-book El juego de los 7 errores que te salva el Anteproyecto Descarga ahora nuestro e-book exclusivo que te explica por qué es importante el Anteproyecto y que errores tienes que evitar cuando comienzas a construir tu casa. Descargar E-book 6 Claves para que tu casa sea Instagrameable Descarga nuestro e-book donde conseguirás las claves para que tu casa sea soñada para habitarla y para tentar a futuros compradores. Descargar E-book 8 Respuestas sobre construcción en Seco que necesitas saber Obtené las mejores respuestas sobre Steel Framing en nuestro exclusivo e-book que podes descargar ahora mismo y comenzar hacer realidad tu casa soñada. Descargar E-book Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@burosteelframing.com Oficinas: Complejo Bureau Leloir Av. Presidente Perón 8725, Ituzaingó Planta Insdustrial: Paul Groussac 1944, Ituzaingó. Buenos Aires © Copyright 2024 Srl Buro Steel Framing Desarrollado por Agencia SEO Argentina Necesitas ayuda? Conversa con nosotrosEn que podemos ayudarte?Hola, hace clic en uno de nuestros asistentes para chatear por WhatsAppEl equipo suele responder en unos minutos. Whattsapp Powered by NinjaTeam
+```
+
+### Podcast: Más allá del Steel Framing
+
+- **URL:** https://burosteelframing.com/podcasts/
+- **Screenshot:** 03-section-podcast-m-s-all-del-steel-framing-29.png
+- **Sub-links:** 40
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Podcasts: Más allá del Steel Framing Podcast con información y entrevistas sobre el mundo Steel Framing. Acompañanos a descubrir las diferentes etapas de construcción, recomendaciones por arquitectos especializados y cuestiones a tener en cuenta para llevar adelante tu proyecto. Spotify Youtube Apple Podcasts Podcasts ¿Por qué Steel framing? con el Equipo Comercial de Buro Steel Framing – Podcast Episodio 7 ¿Por qué Steel framing? con el Equipo Comercial de Buro Steel Framing Podcast Episodio 7 ¡Bienvenidos a nuestro canal de YouTube! En este espacio, te Podcasts Contrato de ejecución de obra y seguros – Más allá del Steel Framing – Podcast Episodio 6 Contrato de ejecución de obra y seguros Más allá del Steel Framing Podcast Episodio 6 ¡Bienvenidos a otro episodio apasionante de “Más allá del Steel Podcasts Dirección de obra – Más allá del Steel Framing – Podcast Episodio 5 Dirección de obra Más allá del Steel Framing Podcast Episodio 5 ¡Bienvenidos al episodio 5 de “Más allá del Steel Framing”! En esta entrega, nos Podcasts Panelizado en planta desde la ingeniería – Podcast Episodio 4 Panelizado en planta desde la ingeniería Más allá del Steel FramingPodcast Episodio 4 Bienvenidos a otro episodio de “Más allá del Steel Framing”, tu fuente Podcasts Contrato de ejecución de obra – Más allá del Steel Framing – Podcast Episodio 3 Contrato de ejecución de obra Más allá del Steel Framing Podcast Episodio 3 Atención a todos los aficionados de la construcción con Steel Framing: ¡Tenemos Podcasts Presupuesto pormenorizado – Más allá del Steel Framing – Podcast Episodio 2 Presupuesto pormenorizado Más allá del Steel Framing Podcast Episodio 2 ¡Atención a todos los amantes del Steel Framing! En nuestro podcast “Más allá del Steel Podcasts Anteproyecto completo – Más allá del Steel Framing – Podcast Episodio 1 Anteproyecto completo Más allá del Steel Framing Podcast Episodio 1 ¡Bienvenidos a un nuevo episodio de Más allá del Steel Framing! En esta ocasión, nos Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@burosteelframing.com Oficinas: Complejo Bureau Leloir Av. Presidente Perón 8725, Ituzaingó Planta Insdustrial: Paul Groussac 1944, Ituzaingó. Buenos Aires © Copyright 2024 Srl Buro Steel Framing Desarrollado por Agencia SEO Argentina Necesitas ayuda? Conversa con nosotrosEn que podemos ayudarte?Hola, hace clic en uno de nuestros asistentes para chatear por WhatsAppEl equipo suele responder en unos minutos. Whattsapp Powered by NinjaTeam
+```
+
+### Steel Framing
+
+- **URL:** https://burosteelframing.com/que-es-el-sistema-steel-framing/
+- **Screenshot:** 03-section-steel-framing-30.png
+- **Sub-links:** 38
+
+#### Content
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto ¿Qué es el sistema Steel Framing? En el mundo de la arquitectura y de la ingeniería civil, cuando se habla de sistemas constructivos, se hace alusión al conjunto de materiales, elementos, técnicas, equipos y herramientas que se usan para una construcción.Existen varios tipos y uno de los que más destaca es el sistema Steel Framing.Las construcciones Steel Frame consisten en la utilización de un entramado de perfiles estructurales de acero galvanizado de espesores reducidos. Estos pueden tener forma de U, que son los más utilizados. Los perfiles se usan en conjunto con otros componentes de división, aislamiento, fijación y terminación.Características del sistema constructivo Steel Frame.Los perfiles de acero de este tipo de construcción se separan unos 40 o 60 cm entre sí y se montan sobre fundaciones tradicionales (dependiendo siempre del cálculo y predimensionado resultante del análisis ejectuado por un ingeniero). Sin embargo, en este caso las cargas por peso propio son menores que las de la obra húmeda. Además, los cerramientos exteriores e interiores suelen hacerse con diferentes tipos de placas que se sujetan a la estructura metálica por medio de tornillos autoperforantes.Por ello, se le considera un sistema similar al de las casas en construcción en seco, pero a diferencia de este, el Steel Framing engloba otros sistemas. En sus terminaciones exteriores, este sistema constructivo admite muchas opciones, desde placas cementicias y revoqueselastoplásticos hasta terminaciones tradicionales como piedra.Tipos de perfiles de aceroEn este tipo de construcción existen diferentes perfiles. Uno de ellos son los que sirven de guía y se caracterizan por ser más robustos sin ser una pared de carga; en cambio, si son paredes interiores se pueden usar perfiles más delgados. Usualmente, los que se usan son los que tienen forma de U, también llamados soleras. Otro tipo que se emplea en el sistema Steel Framing son los bastidores. Estos son perfiles C, llamados montantes.Ventajas de construir con estructuras de aceroEl Steel Framing ha calado dentro de la industria porque permite construcciones más rápidas ysencillas. Ofrece diversos beneficios entre los que destacan:● Robustez y solidezEl acero es más resistente que la mayoría de los materiales de construcción. Por ello, es ideal para fabricar el marco esquelético de los edificios. Además, este tipo de estructuras puede soportar diferentes presiones y tensiones, sea por condiciones externas o por un uso humano excesivo.El acero estructural nunca se verá comprometido en términos de su integridad y se caracteriza por ser menos permeable que otros materiales como la madera o el hormigón.● Resistencia a la intemperieA lo largo de su vida útil, las construcci
+```
+
+### section-31
+
+- **URL:** https://burosteelframing.com/wp-content/uploads/2025/07/ARQ-1.jpg
+- **Screenshot:** 03-section-section-31-31.png
+- **Sub-links:** 0
+
+#### Content
+
+```
+
+```
+
+### section-32
+
+- **URL:** https://burosteelframing.com/wp-content/uploads/2025/07/Firefox_Screenshot_2025-07-03T18-39-27.220Z.png
+- **Screenshot:** 03-section-section-32-32.png
+- **Sub-links:** 0
+
+#### Content
+
+```
+
+```
+
+### section-33
+
+- **URL:** https://burosteelframing.com/wp-content/uploads/2025/07/ARQ-4-scaled.jpg
+- **Screenshot:** 03-section-section-33-33.png
+- **Sub-links:** 0
+
+#### Content
+
+```
+
+```
+
+### section-34
+
+- **URL:** https://burosteelframing.com/wp-content/uploads/2025/07/ARQ-5-scaled.jpg
+- **Screenshot:** 03-section-section-34-34.png
+- **Sub-links:** 0
+
+#### Content
+
+```
+
+```
+
+### section-35
+
+- **URL:** https://burosteelframing.com/wp-content/uploads/2025/07/Firefox_Screenshot_2025-07-03T18-42-30.125Z.png
+- **Screenshot:** 03-section-section-35-35.png
+- **Sub-links:** 0
+
+#### Content
+
+```
+
+```
+
+### section-36
+
+- **URL:** https://burosteelframing.com/wp-content/uploads/2022/05/Barrio-Terravista-steel-Framing-constriuccion-3-min-scaled.jpeg
+- **Screenshot:** 03-section-section-36-36.png
+- **Sub-links:** 0
+
+#### Content
+
+```
+
+```
+
+### section-37
+
+- **URL:** https://burosteelframing.com/wp-content/uploads/2024/03/BarriosComarcas-Construccion-steel-6-scaled.jpg
+- **Screenshot:** 03-section-section-37-37.png
+- **Sub-links:** 0
+
+#### Content
+
+```
+
+```
+
+### section-38
+
+- **URL:** https://burosteelframing.com/wp-content/uploads/2024/03/El-Canton-Construccion-buro-steel-Framing-3-min-scaled.jpg
+- **Screenshot:** 03-section-section-38-38.png
+- **Sub-links:** 0
+
+#### Content
+
+```
+
+```
+
+### section-39
+
+- **URL:** https://burosteelframing.com/wp-content/uploads/2024/03/Santa-teresa-Construccion-buro-Steel-framing-scaled.jpg
+- **Screenshot:** 03-section-section-39-39.png
+- **Sub-links:** 0
+
+#### Content
+
+```
+
+```
+
+### section-40
+
+- **URL:** https://burosteelframing.com/wp-content/uploads/2022/05/barrio-altos-del-sol-steel-framing-1-scaled.jpeg
+- **Screenshot:** 03-section-section-40-40.png
+- **Sub-links:** 0
+
+#### Content
+
+```
+
+```
+
+## Models (30)
+
+### Conoce nuestros modelos de casas Innova House
+
+- **URL:** https://burosteelframing.com/innova-house/
+- **M2:** N/A
+- **Price:** USD 20
+- **Rooms:** N/A
+- **Specs:** cocina, quincho, cocina, quincho, parrilla, cocina, quincho
+- **Screenshot:** 03-section-conoce-nuestros-modelos-de-casas-innova-house-7.png
+
+#### Full Text
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Modelo Gala Modelo Elba Modelo Nilba Modelo Lena Modelo Nilo Modelo Fiora Modelo Mackenzie Modelo Nera Modelo Sena BASIC LINE Con nuestra propuesta Basic Line te brindamos la flexibilidad para personalizar al máximo el hogar. Podes adquirir materiales de terminación por tu cuenta, eligiendo lo que mas te guste, sin perder el asesoramiento permanente de nuestro equipo experto para una buena toma de decisiones. HIGH LINE High Line es la opción completa, incluye terminaciones de calidad para que tu hogar quede listo para disfrutar. De esta manera, ahorras tiempo y preocupaciones a lo largo de todo el proceso. LAS DOS PROPUESTAS INCLUYEN PROYECTO, GESTIÓN MUNICIPAL, DIRECCIÓN Y EJECUCIÓN DE OBRA. QUE INCLUYEN NUESTRAS PROPUESTAS Gestión municipal y dirección de obraEstudio y movimiento de sueloDesmonte, nivelación y relleno con tosca hasta 20 cm de espesor.Platea de hormigón armado Según calculo. Estructura Steel FramingPerfilería de acero galvanizado normalizado (según Ingeniería)Muros exteriores: OSB, barrera agua/viento, placa EPS, malla fibra vidrio, base coatMuros interiores: barrera vapor, placa de yeso con junta tomadaAislación termo-acústica en lana de vidrio 50 mm en muros interiores, exteriores, entrepisos y cubiertas.Cubierta: estructura perfiles galvanizados, cara externa con placa OSB, aislación lana vidrio 50 mm, barrera hidrófuga, terminación en chapa sinusoidal galvanizada. ZINGUERÍAS Y CANALETASINSTALACIÓN ELÉCTRICA.Materiales y mano de obra necesaria para la ejecución de la instalación eléctrica interna.INSTALACIÓN SANITARIA.Agua: Cañería, accesorios y llaves de paso en termofusión para la distribución interna de agua fría y caliente. Cloacal: desagües hasta cámara de inspección.Incluye provisión e instalación de tanque cisterna y bomba presurizadora.INSTALACIÓN DE GAS.Instalación de cañería domiciliaria interna.TERMINACIONES EXTERIORES.Molduras decorativas exteriores, revestimiento plástico y/o siding. (Según proyecto). CARPINTERÍAS.Ventanas de aluminio línea Rotonda 640 con DVH.Color blanco o negro, a elección del cliente.PUERTAS.Puertas interiores Oblak línea Praktica lisa color blanco.Puerta principal modelo Oblak Grandis o similar.Puerta exterior secundaria aluminio línea R640 con vidrio DVH, color blanco o negro, a elección del cliente.Incluyen picaporte doble balancín de acero inoxidable cromado.PINTURA INTERIOR.Látex blanco mate. PISOS Y REVESTIMIENTOS.A elección de cliente, hasta USD 20/m².Cerámico o porcelanato para interior y exterior.Revestimiento para paredes de baños hasta altura de 2,60 mts.Zócalos de PVC.SANITARIOS.Inodoro y bidet línea Ferrum Andina.Grifería para ducha y bidet línea FV Arizona.Vanitory de melamina en color blanco con grifería FV Arizona monocoman
+```
+
+### Modelo Lena
+
+- **URL:** https://burosteelframing.com/innova-8-lena/
+- **M2:** 100 m2
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** living, comedor, cocina
+- **Screenshot:** 03-section-section-11-11.png
+
+#### Full Text
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Modelo Lena Construccion en seco y tradicional M2 Totales: 100 m2 Cubiertos: 78 m2 Semi Cubierto: 22 m2 Esta casa de estilo minimalista, diseñada completamente en una planta, ofrece una combinación perfecta entre funcionalidad y diseño; con una superficie cubierta de 78 m2 y 22 m2 semicubiertos suma un total de 100 m2 perfectamente aprovechados. Al ingresar, te recibirá un hall de entrada que conduce al living comedor semi integrado con la cocina. Este espacio cuenta con ventanales que permiten una excelente entrada de luz natural y acceso a una galería semicubierta para disfrutar de momentos al aire libre en cualquier época del año. La casa cuenta con un baño principal y dos dormitorios amplios. El dormitorio principal tiene baño en suite, brindando un espacio privado y exclusivo. El lavadero, con salida lateral, ofrece una solución práctica para las tareas del hogar, manteniendo la organización y el orden. Conoce todos los modelos Innova House Modelo Gala Modelo Elba Modelo Nilba Modelo Nilo Modelo Fiora Modelo Mackenzie Modelo Nera Modelo Sena Modelo Rodano Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@burosteelframing.com Oficinas: Complejo Bureau Leloir Av. Presidente Perón 8725, Ituzaingó Planta Insdustrial: Paul Groussac 1944, Ituzaingó. Buenos Aires © Copyright 2024 Srl Buro Steel Framing Desarrollado por Agencia SEO Argentina Necesitas ayuda? Conversa con nosotrosEn que podemos ayudarte?Hola, hace clic en uno de nuestros asistentes para chatear por WhatsAppEl equipo suele responder en unos minutos. Whattsapp Powered by NinjaTeam
+```
+
+### Construcción en Seco de Casas:
+Sistema Constructivo Steel Frame
+
+- **URL:** https://burosteelframing.com/steel-frame/#Construccion_en_Seco_de_Casas_Sistema_Constructivo_Steel_Frame
+- **M2:** N/A
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** N/A
+- **Screenshot:** 03-section-steel-framing-2.png
+
+#### Full Text
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Construcción en Seco de Casas: Sistema Constructivo Steel Frame Índice de Contenidos ToggleConstrucción en Seco de Casas: Sistema Constructivo Steel Frame¿Qué es el Steel Framing?Características Generales para Definir la Construcción en Seco:Ventajas del Sistema Steel FrameRapidez en la ConstrucciónDiseño Arquitectónico Flexible y AdaptableCalidad en la ConstrucciónConfort Térmico y AcústicoFacilidad en Instalaciones Internas y ExternasElementos ConstitutivosMayor Control y Seguridad en Obras en ConstrucciónCaracterísticas PrincipalesPiso / FundaciónProceso de construcciónMenor costo de construcción ¿Qué es el Steel Framing? El Steel Framing es un sistema que agrupa técnicas constructivas abiertas de vanguardia, que se utiliza en todo el mundo como la construcción del futuro por su seguridad, confort y reducción en tiempos de construcción y costos. Su estructura es altamente resistente ya que esta compuesta por perfiles de acero galvanizado estructural con un bajo espesor facilitando su maniobrabilidad. Esta conformado de una gran cantidad de sub sistemas y componentes que favorece en conjunto la obra final. La característica pilar del Steel Framing es el proceso de construcción para realizar el montaje en seco. En la Argentina es llamado también Steel Frame y es la construcción moderna, segura y confortable del momento. Por los grandes beneficios que ofrece este sistema de construcción esta desplazando en el mercado a la construcción tradicional con ladrillos. También conocida como Construcción en Seco por eliminar el polvo en lo que se refiere a la obra y construcción sismo térmica sustentable. La definición de Steel Framing o Steel Frame (como se menciona en la Argentina) surge del termino «Frame» que esta refiriéndose al esqueleto de la estructura compuesta por objetos de acero galvanizado que son diseñados para obtener la forma que se necesita y tener un soporte de altas cargas. En cambio el concepto «Framing» se refiere a todo el proceso que se necesita para unir y vincular cada uno de estos elementos para darle forma al diseño planificado por el arquitecto. El ventaja del Steel Frame es que reemplaza la estructura tradicional que se utiliza en Latinoamérica tanto de Mampostería y Hormigón por diferente tamaños de paneles resistentes, que están formados por perfiles de acero galvanizado. Las construcciones que se pueden realizar son todas las que la imaginación y creatividad pueda crear. Desde una estructura para una vivienda, agregar entrepisos en obras que ya son existentes, realizar fachadas o bien para obras industriales comerciales se puede hacer cerramientos. Evitando la construcción húmeda con un menor costo de realización. Características Generales para Definir la Construcción en
+```
+
+### 
+
+- **URL:** https://burosteelframing.com/wp-content/uploads/2022/05/barrio-altos-del-sol-casas-min-scaled.jpeg
+- **M2:** N/A
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** N/A
+- **Screenshot:** 04-model-.png
+
+#### Full Text
+
+```
+
+```
+
+### 
+
+- **URL:** https://burosteelframing.com/wp-content/uploads/2022/05/Planta-Industrial-Transformadores-Nova-Miron-min-scaled.jpeg
+- **M2:** N/A
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** N/A
+- **Screenshot:** 04-model-.png
+
+#### Full Text
+
+```
+
+```
+
+### 
+
+- **URL:** https://burosteelframing.com/wp-content/uploads/2022/05/Planta-Industrial-Transformadores-Nova-Miron-steel-framing-min-scaled.jpeg
+- **M2:** N/A
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** N/A
+- **Screenshot:** 04-model-.png
+
+#### Full Text
+
+```
+
+```
+
+### 
+
+- **URL:** https://burosteelframing.com/wp-content/uploads/2022/05/Planta-Industrial-Transformadores-Nova-Miron-steel-frame-min-scaled.jpeg
+- **M2:** N/A
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** N/A
+- **Screenshot:** 04-model-.png
+
+#### Full Text
+
+```
+
+```
+
+### 
+
+- **URL:** https://burosteelframing.com/wp-content/uploads/2022/05/Barrio-Terravista-casas-steel-framing-min-scaled.jpeg
+- **M2:** N/A
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** N/A
+- **Screenshot:** 04-model-.png
+
+#### Full Text
+
+```
+
+```
+
+### 
+
+- **URL:** https://burosteelframing.com/wp-content/uploads/2022/05/Planta-Industrial-Transformadores-Nova-Miron-construccion-min-1-scaled.jpeg
+- **M2:** N/A
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** N/A
+- **Screenshot:** 04-model-.png
+
+#### Full Text
+
+```
+
+```
+
+### Modelo Nilo
+
+- **URL:** https://burosteelframing.com/innova-7-nilo/
+- **M2:** 147 m2
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** living, comedor, cocina, planta baja
+- **Screenshot:** 04-model-modelo-nilo.png
+
+#### Full Text
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Modelo Nilo Construccion en seco y tradicional M2 Totales: 147 m2 Cubiertos: 107.50 m2 Semi Cubierto: 39.50 m2 Es una casa completamente desarrollada en planta baja que ofrece el equilibrio perfecto entre espacio y funcionalidad. Con 107,5m2 cubiertos y 39,5 semicubiertos que suman un total de 147m2 de calidad y confort. La casa cuenta con living comedor amplio, un espacio integrado con la cocina que brinda una sensación de amplitud y continuidad, galería exterior muy amplia para disfrutar momentos al aire libre, toilette en recepción práctico y accesible para tus invitados, lavadero con salida lateral para mayor eficiencia.Dormitorio principal en suite, tu espacio personal de privacidad y tranquilidad, dos dormitorios adicionales, uno con vista al frente y otro al contra frente perfectos para familia o invitados. Baño principal espacioso y compartido, pensado para la comodidad diaria. Nuestro equipo de arquitectura ha diseñado la línea InnovaHouse para ser la mejor opción de tu nuevo hogar. Nuestros diseños no solo ofrecen una funcionalidad excepcional, sino que también priorizan la comodidad y la estética, creando espacios donde querrás vivir y compartir. Conoce todos los modelos Innova House Modelo Gala Modelo Elba Modelo Nilba Modelo Lena Modelo Fiora Modelo Mackenzie Modelo Nera Modelo Sena Modelo Rodano Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@burosteelframing.com Oficinas: Complejo Bureau Leloir Av. Presidente Perón 8725, Ituzaingó Planta Insdustrial: Paul Groussac 1944, Ituzaingó. Buenos Aires © Copyright 2024 Srl Buro Steel Framing Desarrollado por Agencia SEO Argentina Necesitas ayuda? Conversa con nosotrosEn que podemos ayudarte?Hola, hace clic en uno de nuestros asistentes para chatear por WhatsAppEl equipo suele responder en unos minutos. Whattsapp Powered by NinjaTeam
+```
+
+### Modelo Fiora
+
+- **URL:** https://burosteelframing.com/innova-6-fiora/
+- **M2:** 153 m2
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** living, cocina, comedor, planta baja
+- **Screenshot:** 04-model-modelo-fiora.png
+
+#### Full Text
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Modelo Fiora Construccion en Seco y tradicional M2 Totales: 153 m2 Cubiertos: 125 m2 Semi Cubierto: 28 m2 Descubrí nuestro modelo Fiora. Esta casa está diseñada completamente en planta baja, es perfecta para quienes valoran la accesibilidad y a la vez, el diseño moderno. Con un total de 153 m2, de los cuales 125 m2 son cubiertos y 28 m2 son semicubiertos, este modelo te ofrece equilibrio entre funcionalidad y estética. Al ingresar, cuenta con un living con vista al frente, cocina comedor integrado con amplia salida a la galería exterior, un toilette de recepción ubicado estratégicamente para las visitas y lavadero con salida al exterior para mayor comodidad. En la parte izquierda de la casa podemos encontrar todo el sector privado, se compone de un dormitorio en suite con baño privado con vista al fondo, dos dormitorios amplios y un baño principal, el cual comparten.Unite a Innova House, esta linea está pensada por nuestro equipo de arquitectura para que sea la mejor opción para tu hogar. Nuestros diseños están creados para ofrecer funcionalidad, comodidad y estética. Conoce todos los modelos Innova House Modelo Gala Modelo Elba Modelo Nilba Modelo Lena Modelo Nilo Modelo Fiora Modelo Mackenzie Modelo Nera Modelo Sena Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@burosteelframing.com Oficinas: Complejo Bureau Leloir Av. Presidente Perón 8725, Ituzaingó Planta Insdustrial: Paul Groussac 1944, Ituzaingó. Buenos Aires © Copyright 2024 Srl Buro Steel Framing Desarrollado por Agencia SEO Argentina Necesitas ayuda? Conversa con nosotrosEn que podemos ayudarte?Hola, hace clic en uno de nuestros asistentes para chatear por WhatsAppEl equipo suele responder en unos minutos. Whattsapp Powered by NinjaTeam
+```
+
+### Modelo Mackenzie
+
+- **URL:** https://burosteelframing.com/innova-5-mackenzie/
+- **M2:** 248.50 m2
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** living, cocina, comedor, planta baja, planta alta, planta baja, planta alta
+- **Screenshot:** 04-model-modelo-mackenzie.png
+
+#### Full Text
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Modelo Mackenzie Construccion en seco y tradicional M2 Totales: 248.50 m2 Cubiertos planta baja: 91.50 m2 Cubiertos planta alta: 87 m2 Semi Cubierto: 70 m2 Diseñada en dos plantas, este modelo combina elegancia y funcionalidad, ofrece un total de 250m2 bien distribuidos. Con 182m2 cubiertos y 68m2 semicubiertos. En planta baja cuenta con hall de ingreso, toilette de recepción, un espacio de oficina versátil para trabajar desde casa o como sala de estudio, lavadero con salida al exterior, lo cuál lo hace muy práctico, amplio living, cocina comedor integrado, amplia galería para disfrutar al aire libre. Cochera semicubierta al frente. En planta alta cuenta con un dormitorio principal en suite con vestidor, dos dormitorios amplios y cómodos y baño con antebaño .Descubrí Innova House! Linea creada por nuestro estudio de arquitectura, pensada exclusivamente para ofrecerte una experiencia única! Conoce todos los modelos Innova House Modelo Gala Modelo Elba Modelo Nilba Modelo Lena Modelo Nilo Modelo Fiora Modelo Mackenzie Modelo Nera Modelo Sena Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@burosteelframing.com Oficinas: Complejo Bureau Leloir Av. Presidente Perón 8725, Ituzaingó Planta Insdustrial: Paul Groussac 1944, Ituzaingó. Buenos Aires © Copyright 2024 Srl Buro Steel Framing Desarrollado por Agencia SEO Argentina Necesitas ayuda? Conversa con nosotrosEn que podemos ayudarte?Hola, hace clic en uno de nuestros asistentes para chatear por WhatsAppEl equipo suele responder en unos minutos. Whattsapp Powered by NinjaTeam
+```
+
+### Modelo Nera
+
+- **URL:** https://burosteelframing.com/innova-4-nera/
+- **M2:** 177 m2
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** living, comedor, cocina, planta baja
+- **Screenshot:** 04-model-modelo-nera.png
+
+#### Full Text
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Modelo Nera Construccion en seco y tradicional M2 Totales: 177 m2 Cubiertos: 134 m2 Semi Cubierto: 43 m2 Cuenta con un diseño minimalista y eficiente desarrollada en planta baja. Con 133m2 cubiertos y 35 semicubiertos, este modelo te ofrece un total de 168m2 de estilo y comodidad. Hall de recepción para una bienvenida elegante, living comedor espacioso para reuniones o momentos de relax, cocina independiente con vista al frente, lavadero con salida directa al exterior que lo vuelve práctico y funcional. Toilette de recepción, dormitorio principal en suite con vestidor, dos dormitorios con vista al contrafrente, baño principal, galería exterior con espacio amplio para disfrutar del entorno natural. Nuestro equipo de arquitectura diseñó InnovaHouse para ofrecerte la mejor opción para tu nuevo hogar. Cada detalle ha sido cuidadosamente diseñado para proporcionar funcionalidad, comodidad y una estética impresionante. Conoce todos los modelos Innova House Modelo Gala Modelo Elba Modelo Nilba Modelo Lena Modelo Nilo Modelo Fiora Modelo Mackenzie Modelo Nera Modelo Sena Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@burosteelframing.com Oficinas: Complejo Bureau Leloir Av. Presidente Perón 8725, Ituzaingó Planta Insdustrial: Paul Groussac 1944, Ituzaingó. Buenos Aires © Copyright 2024 Srl Buro Steel Framing Desarrollado por Agencia SEO Argentina Necesitas ayuda? Conversa con nosotrosEn que podemos ayudarte?Hola, hace clic en uno de nuestros asistentes para chatear por WhatsAppEl equipo suele responder en unos minutos. Whattsapp Powered by NinjaTeam
+```
+
+### Modelo Sena
+
+- **URL:** https://burosteelframing.com/innova-3-sena/
+- **M2:** 136 m2
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** living, cocina, comedor, planta baja
+- **Screenshot:** 04-model-modelo-sena.png
+
+#### Full Text
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Modelo Sena Construccion en seco y tradicional M2 Totales: 136 m2 Cubiertos: 106 m2 Semi Cubierto: 30 m2 Casa estilo minimalista diseñada en planta baja, con un total de 136 m2, de los cuales 106 m2 son cubiertos y 30 m2 son semicubiertos.Esta casa cuenta con un amplio living integrado con la cocina comedor, creando un espacio abierto perfecto, con salida directa a galería semicubierta con lavadero, lo que facilita el acceso a áreas de servicio. Además, dispone de tres dormitorios amplios y dos baños. El dormitorio principal es en suite proporcionando un espacio privado y exclusivo. Los otros dos dormitorios son espaciosos y tienen vista al frente de la casa. Además del baño en suite, la casa cuenta con un baño principal ubicado de manera conveniente para servir a los dos dormitorios y áreas comunes. La línea Innova House está pensada por nuestro equipo de arquitectura para que sea la mejor opción para tu hogar. Nuestros diseños están creados para ofrecer funcionalidad, comodidad y estética. Conoce todos los modelos Innova House Modelo Gala Modelo Elba Modelo Nilba Modelo Lena Modelo Nilo Modelo Fiora Modelo Mackenzie Modelo Nera Modelo Sena Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@burosteelframing.com Oficinas: Complejo Bureau Leloir Av. Presidente Perón 8725, Ituzaingó Planta Insdustrial: Paul Groussac 1944, Ituzaingó. Buenos Aires © Copyright 2024 Srl Buro Steel Framing Desarrollado por Agencia SEO Argentina Necesitas ayuda? Conversa con nosotrosEn que podemos ayudarte?Hola, hace clic en uno de nuestros asistentes para chatear por WhatsAppEl equipo suele responder en unos minutos. Whattsapp Powered by NinjaTeam
+```
+
+### Ir al contenido
+
+- **URL:** https://burosteelframing.com/modelo-gala/#content
+- **M2:** 178 m2
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** comedor, cocina
+- **Screenshot:** 03-section-section-8-8.png
+
+#### Full Text
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Modelo Gala Construccion en seco y tradicional M2 Totales: 178 m2 Cubiertos: 148 m2 Semi Cubierto: 30 m2 Diseñada en dos plantas, esta vivienda moderna combina diseño, confort y eficiencia en cada metro cuadrado. Con una superficie cubierta de 148 m² y 30 m² semicubiertos, ofrece un total de 178 m² perfectamente distribuidos para aprovechar al máximo cada espacio. Al ingresar, un hall de recepción conecta con el estar-comedor, un ambiente amplio, luminoso y funcional que se integra con la cocina moderna. Gracias a sus grandes ventanales, el interior se expande hacia una galería semicubierta, ideal para disfrutar del exterior durante todo el año. La casa cuenta con tres dormitorios, entre ellos una suite principal con vestidor y baño privado, que brinda confort y privacidad. Los otros dos dormitorios disponen de excelente iluminación natural y comparten un baño completo de uso común.Además, el diseño incorpora una oficina al frente, pensada para quienes trabajan desde casa, y un lavadero independiente con salida lateral, que suma practicidad sin interferir con las áreas sociales.Gracias a su arquitectura moderna, su eficiente distribución y el sistema constructivo en steel framing, este modelo representa una opción ideal para quienes buscan una vivienda funcional, moderna y duradera. Conoce todos los modelos Innova House Modelo Gala Modelo Elba Modelo Nilba Modelo Nilo Modelo Fiora Modelo Mackenzie Modelo Nera Modelo Sena Modelo Rodano Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@burosteelframing.com Oficinas: Complejo Bureau Leloir Av. Presidente Perón 8725, Ituzaingó Planta Insdustrial: Paul Groussac 1944, Ituzaingó. Buenos Aires © Copyright 2024 Srl Buro Steel Framing Desarrollado por Agencia SEO Argentina Necesitas ayuda? Conversa con nosotrosEn que podemos ayudarte?Hola, hace clic en uno de nuestros asistentes para chatear por WhatsAppEl equipo suele responder en unos minutos. Whattsapp Powered by NinjaTeam
+```
+
+### Construcción
+
+- **URL:** https://burosteelframing.com/modelo-gala/#
+- **M2:** 178 m2
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** comedor, cocina
+- **Screenshot:** 03-section-section-8-8.png
+
+#### Full Text
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Modelo Gala Construccion en seco y tradicional M2 Totales: 178 m2 Cubiertos: 148 m2 Semi Cubierto: 30 m2 Diseñada en dos plantas, esta vivienda moderna combina diseño, confort y eficiencia en cada metro cuadrado. Con una superficie cubierta de 148 m² y 30 m² semicubiertos, ofrece un total de 178 m² perfectamente distribuidos para aprovechar al máximo cada espacio. Al ingresar, un hall de recepción conecta con el estar-comedor, un ambiente amplio, luminoso y funcional que se integra con la cocina moderna. Gracias a sus grandes ventanales, el interior se expande hacia una galería semicubierta, ideal para disfrutar del exterior durante todo el año. La casa cuenta con tres dormitorios, entre ellos una suite principal con vestidor y baño privado, que brinda confort y privacidad. Los otros dos dormitorios disponen de excelente iluminación natural y comparten un baño completo de uso común.Además, el diseño incorpora una oficina al frente, pensada para quienes trabajan desde casa, y un lavadero independiente con salida lateral, que suma practicidad sin interferir con las áreas sociales.Gracias a su arquitectura moderna, su eficiente distribución y el sistema constructivo en steel framing, este modelo representa una opción ideal para quienes buscan una vivienda funcional, moderna y duradera. Conoce todos los modelos Innova House Modelo Gala Modelo Elba Modelo Nilba Modelo Nilo Modelo Fiora Modelo Mackenzie Modelo Nera Modelo Sena Modelo Rodano Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@burosteelframing.com Oficinas: Complejo Bureau Leloir Av. Presidente Perón 8725, Ituzaingó Planta Insdustrial: Paul Groussac 1944, Ituzaingó. Buenos Aires © Copyright 2024 Srl Buro Steel Framing Desarrollado por Agencia SEO Argentina Necesitas ayuda? Conversa con nosotrosEn que podemos ayudarte?Hola, hace clic en uno de nuestros asistentes para chatear por WhatsAppEl equipo suele responder en unos minutos. Whattsapp Powered by NinjaTeam
+```
+
+### Modelo Rodano
+
+- **URL:** https://burosteelframing.com/innova-2-rodano/
+- **M2:** 207 m2
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** living, cocina, comedor, planta baja, planta alta, planta alta
+- **Screenshot:** 04-model-modelo-rodano.png
+
+#### Full Text
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Modelo Rodano Construccion en seco y tradicional M2 Totales: 207 m2 Cubiertos planta baja: 91 m2 Cubiertos planta alta: 94 m2 Semi Cubierto: 32 m2 Es un modelo moderno diseñado en dos plantas, ofrece un total de 207 m2, 175m2 cubiertos y 32m2 semicubiertos, cada espacio de esta casa ha sido pensado y diseñado por nuestro equipo de arquitectos para ofrecerte un estilo de vida único. Se ingresa por un hall, el cual tiene un toilette de recepción que brinda comodidad para tus invitados. Espacio de living con vista al frente diferenciado del estar, amplia cocina comedor integrado perfecto para reuniones con fácil acceso al exterior. Lavadero independiente con acceso lateral, un espacio funcional que te dará practicidad.En planta alta cuenta con dormitorio en suite con vestidor y dos dormitorios amplios. Baño principal moderno y funcional. Sé parte de la experiencia Innova House, donde cada rincón de tu hogar ha sido cuidadosamente diseñado por nuestro talentoso equipo de arquitectura. Creamos esta línea pensando en brindarte la mejor opción para tu vivienda, combinando a la perfección funcionalidad, comodidad y estética. Conoce todos los modelos Innova House Modelo Gala Modelo Elba Modelo Nilba Modelo Lena Modelo Nilo Modelo Fiora Modelo Mackenzie Modelo Nera Modelo Sena Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@burosteelframing.com Oficinas: Complejo Bureau Leloir Av. Presidente Perón 8725, Ituzaingó Planta Insdustrial: Paul Groussac 1944, Ituzaingó. Buenos Aires © Copyright 2024 Srl Buro Steel Framing Desarrollado por Agencia SEO Argentina Necesitas ayuda? Conversa con nosotrosEn que podemos ayudarte?Hola, hace clic en uno de nuestros asistentes para chatear por WhatsAppEl equipo suele responder en unos minutos. Whattsapp Powered by NinjaTeam
+```
+
+### Ir al contenido
+
+- **URL:** https://burosteelframing.com/modelo-elba/#content
+- **M2:** 178 m2
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** living, comedor, cocina, Planta baja, Planta alta
+- **Screenshot:** 03-section-section-9-9.png
+
+#### Full Text
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Modelo Elba Construccion en seco y tradicional M2 Totales: 178 m2 Cubiertos: 148 m2 Semi Cubierto: 30 m2 Casa moderna de 148 m² – Diseño funcional y conexión con el exteriorCon 148 m² cubiertos distribuidos en dos plantas, esta vivienda moderna está pensada para quienes buscan funcionalidad, amplitud y una fuerte conexión con el exterior. Planta baja: espacios integrados y luminososEl diseño optimiza cada metro cuadrado, integrando los ambientes sociales en un mismo espacio fluido y cómodo. Al ingresar, un hall de entrada conduce al living-comedor, semi integrado con la cocina moderna.Un toilette de cortesía, estratégicamente ubicado, y un lavadero con acceso independiente aportan practicidad al conjunto.La galería semicubierta, amplia y luminosa, invita a disfrutar del aire libre durante todo el año.Planta alta: confort y privacidadEn el nivel superior se ubican dos dormitorios con excelente iluminación y ventilación natural, un baño completo compartido, y una suite principal con baño privado y vestidor, que ofrece la comodidad y privacidad que toda familia necesita. Con una arquitectura contemporánea y el respaldo del sistema steel framing, este modelo combina eficiencia, diseño y durabilidad, convirtiéndose en una opción ideal para quienes buscan una casa moderna y bien distribuida. Conoce todos los modelos Innova House Modelo Gala Modelo Elba Modelo Nilba Modelo Nilo Modelo Fiora Modelo Mackenzie Modelo Nera Modelo Sena Modelo Rodano Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@burosteelframing.com Oficinas: Complejo Bureau Leloir Av. Presidente Perón 8725, Ituzaingó Planta Insdustrial: Paul Groussac 1944, Ituzaingó. Buenos Aires © Copyright 2024 Srl Buro Steel Framing Desarrollado por Agencia SEO Argentina Necesitas ayuda? Conversa con nosotrosEn que podemos ayudarte?Hola, hace clic en uno de nuestros asistentes para chatear por WhatsAppEl equipo suele responder en unos minutos. Whattsapp Powered by NinjaTeam
+```
+
+### Construcción
+
+- **URL:** https://burosteelframing.com/modelo-elba/#
+- **M2:** 178 m2
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** living, comedor, cocina, Planta baja, Planta alta
+- **Screenshot:** 03-section-section-9-9.png
+
+#### Full Text
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Modelo Elba Construccion en seco y tradicional M2 Totales: 178 m2 Cubiertos: 148 m2 Semi Cubierto: 30 m2 Casa moderna de 148 m² – Diseño funcional y conexión con el exteriorCon 148 m² cubiertos distribuidos en dos plantas, esta vivienda moderna está pensada para quienes buscan funcionalidad, amplitud y una fuerte conexión con el exterior. Planta baja: espacios integrados y luminososEl diseño optimiza cada metro cuadrado, integrando los ambientes sociales en un mismo espacio fluido y cómodo. Al ingresar, un hall de entrada conduce al living-comedor, semi integrado con la cocina moderna.Un toilette de cortesía, estratégicamente ubicado, y un lavadero con acceso independiente aportan practicidad al conjunto.La galería semicubierta, amplia y luminosa, invita a disfrutar del aire libre durante todo el año.Planta alta: confort y privacidadEn el nivel superior se ubican dos dormitorios con excelente iluminación y ventilación natural, un baño completo compartido, y una suite principal con baño privado y vestidor, que ofrece la comodidad y privacidad que toda familia necesita. Con una arquitectura contemporánea y el respaldo del sistema steel framing, este modelo combina eficiencia, diseño y durabilidad, convirtiéndose en una opción ideal para quienes buscan una casa moderna y bien distribuida. Conoce todos los modelos Innova House Modelo Gala Modelo Elba Modelo Nilba Modelo Nilo Modelo Fiora Modelo Mackenzie Modelo Nera Modelo Sena Modelo Rodano Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@burosteelframing.com Oficinas: Complejo Bureau Leloir Av. Presidente Perón 8725, Ituzaingó Planta Insdustrial: Paul Groussac 1944, Ituzaingó. Buenos Aires © Copyright 2024 Srl Buro Steel Framing Desarrollado por Agencia SEO Argentina Necesitas ayuda? Conversa con nosotrosEn que podemos ayudarte?Hola, hace clic en uno de nuestros asistentes para chatear por WhatsAppEl equipo suele responder en unos minutos. Whattsapp Powered by NinjaTeam
+```
+
+### Ir al contenido
+
+- **URL:** https://burosteelframing.com/modelo-nilba/#content
+- **M2:** 218 m2
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** living, comedor, cocina
+- **Screenshot:** 03-section-section-10-10.png
+
+#### Full Text
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Modelo Nilba Construccion en seco y tradicional M2 Totales: 218 m2 Cubiertos: 173 m2 Semi Cubierto: 45 m2 Casa moderna de 173 m² – Diseño funcional en una sola plantaDiseñada por completo en una sola planta, esta casa combina funcionalidad, confort y diseño contemporáneo. Con 173 m² cubiertos y 45 m² semicubiertos, ofrece una distribución equilibrada que aprovecha cada espacio al máximo. Espacios amplios y bien conectadosAl ingresar, un hall de recepción da paso a un amplio living-comedor con cocina semi integrada, generando un ambiente luminoso y fluido ideal para la vida diaria y los momentos en familia.La vivienda también cuenta con un lavadero con acceso independiente y un toilette de recepción, aportando practicidad sin interferir en las áreas sociales.Zona privada con máximo confortEl área íntima se compone de una suite principal con vestidor y baño privado, junto a dos dormitorios con vista al frente que comparten un baño completo, todos con excelente ventilación e iluminación natural. Exterior pensado para disfrutarEl espacio exterior incluye una amplia galería semicubierta, equipada con toilette y depósito de guardado, ideal para disfrutar del aire libre durante todo el año.Con su arquitectura moderna y el sistema constructivo steel framing, este modelo representa una opción perfecta para quienes buscan una vivienda funcional, moderna y de alta calidad. Conoce todos los modelos Innova House Modelo Gala Modelo Elba Modelo Nilba Modelo Nilo Modelo Fiora Modelo Mackenzie Modelo Nera Modelo Sena Modelo Rodano Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@burosteelframing.com Oficinas: Complejo Bureau Leloir Av. Presidente Perón 8725, Ituzaingó Planta Insdustrial: Paul Groussac 1944, Ituzaingó. Buenos Aires © Copyright 2024 Srl Buro Steel Framing Desarrollado por Agencia SEO Argentina Necesitas ayuda? Conversa con nosotrosEn que podemos ayudarte?Hola, hace clic en uno de nuestros asistentes para chatear por WhatsAppEl equipo suele responder en unos minutos. Whattsapp Powered by NinjaTeam
+```
+
+### Construcción
+
+- **URL:** https://burosteelframing.com/modelo-nilba/#
+- **M2:** 218 m2
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** living, comedor, cocina
+- **Screenshot:** 03-section-section-10-10.png
+
+#### Full Text
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Modelo Nilba Construccion en seco y tradicional M2 Totales: 218 m2 Cubiertos: 173 m2 Semi Cubierto: 45 m2 Casa moderna de 173 m² – Diseño funcional en una sola plantaDiseñada por completo en una sola planta, esta casa combina funcionalidad, confort y diseño contemporáneo. Con 173 m² cubiertos y 45 m² semicubiertos, ofrece una distribución equilibrada que aprovecha cada espacio al máximo. Espacios amplios y bien conectadosAl ingresar, un hall de recepción da paso a un amplio living-comedor con cocina semi integrada, generando un ambiente luminoso y fluido ideal para la vida diaria y los momentos en familia.La vivienda también cuenta con un lavadero con acceso independiente y un toilette de recepción, aportando practicidad sin interferir en las áreas sociales.Zona privada con máximo confortEl área íntima se compone de una suite principal con vestidor y baño privado, junto a dos dormitorios con vista al frente que comparten un baño completo, todos con excelente ventilación e iluminación natural. Exterior pensado para disfrutarEl espacio exterior incluye una amplia galería semicubierta, equipada con toilette y depósito de guardado, ideal para disfrutar del aire libre durante todo el año.Con su arquitectura moderna y el sistema constructivo steel framing, este modelo representa una opción perfecta para quienes buscan una vivienda funcional, moderna y de alta calidad. Conoce todos los modelos Innova House Modelo Gala Modelo Elba Modelo Nilba Modelo Nilo Modelo Fiora Modelo Mackenzie Modelo Nera Modelo Sena Modelo Rodano Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@burosteelframing.com Oficinas: Complejo Bureau Leloir Av. Presidente Perón 8725, Ituzaingó Planta Insdustrial: Paul Groussac 1944, Ituzaingó. Buenos Aires © Copyright 2024 Srl Buro Steel Framing Desarrollado por Agencia SEO Argentina Necesitas ayuda? Conversa con nosotrosEn que podemos ayudarte?Hola, hace clic en uno de nuestros asistentes para chatear por WhatsAppEl equipo suele responder en unos minutos. Whattsapp Powered by NinjaTeam
+```
+
+### Ir al contenido
+
+- **URL:** https://burosteelframing.com/etapas-del-proyecto-arquitectura-proyecto/#content
+- **M2:** 178 m2
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** N/A
+- **Screenshot:** 03-section-section-12-12.png
+
+#### Full Text
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Etapas del Proyecto Arquitectura: Proyecto Una vez que la propuesta arquitectónica está definida, se tiene clara su factibilidad y se evalúa en su totalidad la fase de anteproyecto, es momento de pasar a la etapa del proyecto arquitectónico. Aquí todas las especialidades y disciplinas se desarrollan a profundidad y con un gran nivel de detalle.Para dar inicio a esta etapa es necesario que esté aprobado el anteproyecto por cada una de las partes interesadas. A partir de allí se estructura el proyecto en diferentes componentes y especialidades.Estos suelen ser los elementos más comunes que constituyen esta etapa.Memoria descriptivaExpone con precisión cada uno de los criterios que dieron pie a la solución arquitectónica propuesta. Entre los más generales destacan los fundamentos urbanísticos, contextuales, históricos, temporales, y todos aquellos que sirven para definir el punto de partida del proyecto.También es necesario profundizar en aspectos como:Zonificación.Características del suelo.Detalles del emplazamiento.Sistemas constructivos a implementar.Especialidades que intervienen.Fundamentos presupuestarios.Características y dimensiones de las áreas y recintos.Detalles de materiales.La memoria del proyecto funciona como una especie de resumen de los criterios y definiciones claves para entender su alcance. Por ello, se debe incluir cada uno de los aspectos que lo conforman y los fundamentos que lo respaldan.Proyecto arquitectónicoEl proyecto de arquitectura es la espina dorsal de lo que se pretende construir. Su diseño y detalles definen lo que el cliente o usuario final requiere. Por tanto, todas las especialidades deben trabajar en torno a lo que dicta dicho proyecto para lograr los resultados esperados.De este componente se obtiene una vista clara de lo que se va a hacer en sitio. También sirve como guía para que los propios constructores lleguen al producto final. Para ello, el proyecto de arquitectura debe incluir una planimetría bien desarrollada que de pie a los planos constructivos a través de la siguiente documentación:UbicaciónEs un plano donde se puede localizar el predio en el que se quiere construir dentro de una zona urbana. Aquí suelen visualizarse las distancias que hay desde el terreno hasta las vías de acceso principales.EmplazamientoMuestra la ubicación propia de la vivienda o edificación dentro del predio. Por tanto, se detallan sus linderos y la manera en que la construcción se integra con su entorno. En el emplazamiento se contempla la topografía, los accesos, las vistas, el paisaje, la orientación solar, entre otros elementos.Planos de plantaAquí se muestra con detalle las áreas, niveles, estancias y recintos que conforman el proyecto visto desde arriba. Estos planos de
+```
+
+### Construcción
+
+- **URL:** https://burosteelframing.com/etapas-del-proyecto-arquitectura-proyecto/#
+- **M2:** 178 m2
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** N/A
+- **Screenshot:** 03-section-section-12-12.png
+
+#### Full Text
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Etapas del Proyecto Arquitectura: Proyecto Una vez que la propuesta arquitectónica está definida, se tiene clara su factibilidad y se evalúa en su totalidad la fase de anteproyecto, es momento de pasar a la etapa del proyecto arquitectónico. Aquí todas las especialidades y disciplinas se desarrollan a profundidad y con un gran nivel de detalle.Para dar inicio a esta etapa es necesario que esté aprobado el anteproyecto por cada una de las partes interesadas. A partir de allí se estructura el proyecto en diferentes componentes y especialidades.Estos suelen ser los elementos más comunes que constituyen esta etapa.Memoria descriptivaExpone con precisión cada uno de los criterios que dieron pie a la solución arquitectónica propuesta. Entre los más generales destacan los fundamentos urbanísticos, contextuales, históricos, temporales, y todos aquellos que sirven para definir el punto de partida del proyecto.También es necesario profundizar en aspectos como:Zonificación.Características del suelo.Detalles del emplazamiento.Sistemas constructivos a implementar.Especialidades que intervienen.Fundamentos presupuestarios.Características y dimensiones de las áreas y recintos.Detalles de materiales.La memoria del proyecto funciona como una especie de resumen de los criterios y definiciones claves para entender su alcance. Por ello, se debe incluir cada uno de los aspectos que lo conforman y los fundamentos que lo respaldan.Proyecto arquitectónicoEl proyecto de arquitectura es la espina dorsal de lo que se pretende construir. Su diseño y detalles definen lo que el cliente o usuario final requiere. Por tanto, todas las especialidades deben trabajar en torno a lo que dicta dicho proyecto para lograr los resultados esperados.De este componente se obtiene una vista clara de lo que se va a hacer en sitio. También sirve como guía para que los propios constructores lleguen al producto final. Para ello, el proyecto de arquitectura debe incluir una planimetría bien desarrollada que de pie a los planos constructivos a través de la siguiente documentación:UbicaciónEs un plano donde se puede localizar el predio en el que se quiere construir dentro de una zona urbana. Aquí suelen visualizarse las distancias que hay desde el terreno hasta las vías de acceso principales.EmplazamientoMuestra la ubicación propia de la vivienda o edificación dentro del predio. Por tanto, se detallan sus linderos y la manera en que la construcción se integra con su entorno. En el emplazamiento se contempla la topografía, los accesos, las vistas, el paisaje, la orientación solar, entre otros elementos.Planos de plantaAquí se muestra con detalle las áreas, niveles, estancias y recintos que conforman el proyecto visto desde arriba. Estos planos de
+```
+
+### Ir al contenido
+
+- **URL:** https://burosteelframing.com/etapas-proyecto-arquitectura-expediente-ejecutivo/#content
+- **M2:** 178 m2
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** N/A
+- **Screenshot:** 03-section-section-13-13.png
+
+#### Full Text
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Etapas Proyecto Arquitectura: Expediente Ejecutivo Otra de las etapas de un proyecto de arquitectura es la del expediente ejecutivo. En ocasiones, esta forma parte de la etapa de ‘Proyecto’. De hecho, en muchos casos se usan los términos “Proyecto”, “Expediente Ejecutivo o de Ejecución”, o “Proyecto Ejecutivo o de Ejecución” indistintamente. Sin embargo, dada la importancia que tiene este punto para el proyecto en general, lo mejor es hablar de este por separado. ¿Qué es el expediente ejecutivo? Para comprender su importancia, hay que tener claro en qué consiste el expediente ejecutivo. Es básicamente un conjunto de documentos donde se detallan y especifican los elementos, materiales, sistemas constructivos y equipos necesarios para construir la obra. Es decir, que este expediente explica a profundidad el cómo se construye. Sirve para detectar problemas que pudieran suscitarse durante la obra. Esto es importante porque cualquier contratiempo afectará la rentabilidad del proyecto. Sin esta detección temprana podría aumentar el costo de los recursos, así como los tiempos de ejecución. Es importante tener en cuenta que el expediente ejecutivo tiene que abordarse desde el punto de vista y expectativa del arquitecto. Este, a su vez, debe tener un buen dominio de las técnicas constructivas, pues como profesional encargado inicialmente del proyecto, no puede carecer de ese conocimiento. Elementos que incluye el expediente ejecutivo Dentro del expediente ejecutivo se incluyen varios documentos. Entre ellos: Proyecto de arquitectura Este es el documento principal. Por ello, es fundamental que esté actualizado frente a cualquier modificación que se realice. Ten en cuenta que de existir alguna incoherencia entre este y el resto de la información de la obra, podría haber retrasos y afectar la toma de decisiones. Proyectos de especialidades Incluye documentos como memorias de cálculo de cada especialidad, manual de procedimientos, detalles constructivos, observaciones, pre requisitos para instalación, etc. al momento de proveer esta información, cada profesional debe ser minucioso para no cometer errores que afecten la ejecución de la obra. De esto deberá encargarse el jefe de proyecto. Considera que cualquier información faltante implicará visitas a obra, consultas técnicas y decisiones de último minuto. Cubicación de materiales Otro punto importante a incluir dentro del expediente ejecutivo es la cubicación detallada de las partidas. Para ello, hay que considerar el porcentaje de pérdida que se aplica a cada material. Lo ideal es que este proceso de cálculo de volumen y capacidad se realice según lo estipulado por la normativa. Esto es importante para estandarizar los criterios de cálculo. Especificación
+```
+
+### Construcción
+
+- **URL:** https://burosteelframing.com/etapas-proyecto-arquitectura-expediente-ejecutivo/#
+- **M2:** 178 m2
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** N/A
+- **Screenshot:** 03-section-section-13-13.png
+
+#### Full Text
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Etapas Proyecto Arquitectura: Expediente Ejecutivo Otra de las etapas de un proyecto de arquitectura es la del expediente ejecutivo. En ocasiones, esta forma parte de la etapa de ‘Proyecto’. De hecho, en muchos casos se usan los términos “Proyecto”, “Expediente Ejecutivo o de Ejecución”, o “Proyecto Ejecutivo o de Ejecución” indistintamente. Sin embargo, dada la importancia que tiene este punto para el proyecto en general, lo mejor es hablar de este por separado. ¿Qué es el expediente ejecutivo? Para comprender su importancia, hay que tener claro en qué consiste el expediente ejecutivo. Es básicamente un conjunto de documentos donde se detallan y especifican los elementos, materiales, sistemas constructivos y equipos necesarios para construir la obra. Es decir, que este expediente explica a profundidad el cómo se construye. Sirve para detectar problemas que pudieran suscitarse durante la obra. Esto es importante porque cualquier contratiempo afectará la rentabilidad del proyecto. Sin esta detección temprana podría aumentar el costo de los recursos, así como los tiempos de ejecución. Es importante tener en cuenta que el expediente ejecutivo tiene que abordarse desde el punto de vista y expectativa del arquitecto. Este, a su vez, debe tener un buen dominio de las técnicas constructivas, pues como profesional encargado inicialmente del proyecto, no puede carecer de ese conocimiento. Elementos que incluye el expediente ejecutivo Dentro del expediente ejecutivo se incluyen varios documentos. Entre ellos: Proyecto de arquitectura Este es el documento principal. Por ello, es fundamental que esté actualizado frente a cualquier modificación que se realice. Ten en cuenta que de existir alguna incoherencia entre este y el resto de la información de la obra, podría haber retrasos y afectar la toma de decisiones. Proyectos de especialidades Incluye documentos como memorias de cálculo de cada especialidad, manual de procedimientos, detalles constructivos, observaciones, pre requisitos para instalación, etc. al momento de proveer esta información, cada profesional debe ser minucioso para no cometer errores que afecten la ejecución de la obra. De esto deberá encargarse el jefe de proyecto. Considera que cualquier información faltante implicará visitas a obra, consultas técnicas y decisiones de último minuto. Cubicación de materiales Otro punto importante a incluir dentro del expediente ejecutivo es la cubicación detallada de las partidas. Para ello, hay que considerar el porcentaje de pérdida que se aplica a cada material. Lo ideal es que este proceso de cálculo de volumen y capacidad se realice según lo estipulado por la normativa. Esto es importante para estandarizar los criterios de cálculo. Especificación
+```
+
+### Empresa constructora en Casas del Este, Pilar
+
+- **URL:** https://burosteelframing.com/empresa-constructora-en-casas-del-este-pilar/
+- **M2:** N/A
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** N/A
+- **Screenshot:** 04-model-empresa-constructora-en-casas-del-este-pilar.png
+
+#### Full Text
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Empresa constructora en Casas del Este, Pilar Ejecución y Desarrollo de Obras Solicita tu Presupuesto En el siguiente formulario puedes realizar tu consulta y nos contactaremos a la brevedad. Enviar Este sitio está protegido por reCAPTCHA. Privacidad de Google y Condiciones. Descubre Buro: Tu Socio en Construcción y Diseño de Casas en el Barrio Casas del Este ¡Bienvenidos a Buro, su estudio de arquitectura y empresa constructora de confianza! Estamos orgullosos de ofrecer soluciones de diseño, gestión y dirección de proyectos que resuelven eficazmente sus necesidades en una amplia gama de áreas, incluyendo proyectos comerciales, industriales, de vivienda y de oficinas. Contamos con un sólido sistema de construcción tradicional húmeda que garantiza la creación de casas y espacios que se adaptan a su estilo de vida y visión.Nuestra Misión y CompromisoNuestra misión es superar las expectativas de nuestros clientes a través de un enfoque integral en el diseño y la construcción. Creemos que cada proyecto es una oportunidad única para transformar ideas en espacios funcionales y hermosos. Nos comprometemos a brindar soluciones de calidad, eficiencia y sostenibilidad, que no solo cumplan con sus necesidades presentes, sino que también se proyecten hacia el futuro.Nuestros ServiciosOfrecemos una amplia gama de servicios que abarcan desde la conceptualización inicial hasta la entrega del proyecto terminado. Algunos de nuestros servicios clave incluyen:Diseño Arquitectónico: Nuestro talentoso equipo de arquitectos trabaja en estrecha colaboración con usted para diseñar espacios que son funcionales, estéticos y únicos. Cada diseño se adapta a sus necesidades y deseos personales, incorporando elementos modernos y tradicionales según sea necesario.Gestión de Proyectos: Coordinamos y supervisamos todos los aspectos de su proyecto, desde la planificación y adquisición de permisos hasta la gestión de contratistas y presupuestos. Nuestra experiencia en la gestión de proyectos garantiza un proceso sin complicaciones y resultados de alta calidad.Construcción Tradicional Húmeda: Estamos orgullosos de ofrecer un sistema de construcción tradicional húmeda para la construcción de casas. Este enfoque combina técnicas artesanales con materiales de alta calidad para crear estructuras duraderas y hermosas.Nuestro Compromiso con la ComunidadNuestra empresa constructora se enorgullece de ser parte de la comunidad. Comprendemos la importancia de la construcción de viviendas que reflejen la identidad y las necesidades de esta área única, al tiempo que satisfacen las demandas de las familias modernas.Trabajamos en estrecha colaboración con los residentes para asegurarnos de que cada proyecto respete la identidad y el entorno 
+```
+
+### 
+
+- **URL:** https://burosteelframing.com/panelizado-en-planta-desde-la-ingenieria-podcast-episodio-4/
+- **M2:** N/A
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** N/A
+- **Screenshot:** 04-model-.png
+
+#### Full Text
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Panelizado en planta desde la ingeniería Más allá del Steel FramingPodcast Episodio 4 Bienvenidos a otro episodio de “Más allá del Steel Framing”, tu fuente confiable de conversación y conocimientos sobre la construcción con Steel Framing. En este episodio, exploramos un tema esencial: “Panelizado en planta desde la ingeniería de detalle”. Nos acompaña Omar Cornejo, Gerente de Planta, quien compartirá con nosotros su vasto conocimiento y experiencia en el proceso de panelizado en planta, una técnica innovadora que permite la fabricación de paneles a medida en un entorno controlado, antes de su instalación en el sitio de construcción. Además, contamos con la presencia de Alejandro Lenton, Gerente Comercial de Buro Steel Framing, que nos ofrecerá su perspectiva sobre cómo esta técnica se ajusta al panorama comercial actual de la construcción con Steel Framing. Y por último, pero no menos importante, el arquitecto Maximiliano Molina, Director de Buro Steel Framing, se une a nosotros para hablar sobre la integración de la ingeniería de detalle en el proceso de panelizado y cómo este enfoque puede mejorar la eficiencia y la calidad en los proyectos de construcción. ¿Estás listo para profundizar en el mundo del Steel Framing y aprender más sobre el panelizado en planta desde la ingeniería de detalle? ¡Sintoniza este episodio y únete a la conversación! Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@burosteelframing.com Oficinas: Complejo Bureau Leloir Av. Presidente Perón 8725, Ituzaingó Planta Insdustrial: Paul Groussac 1944, Ituzaingó. Buenos Aires © Copyright 2024 Srl Buro Steel Framing Desarrollado por Agencia SEO Argentina Necesitas ayuda? Conversa con nosotrosEn que podemos ayudarte?Hola, hace clic en uno de nuestros asistentes para chatear por WhatsAppEl equipo suele responder en unos minutos. Whattsapp Powered by NinjaTeam
+```
+
+### Descargar E-book
+
+- **URL:** https://burosteelframing.com/wp-content/uploads/2021/09/8-reglas-de-oro-para-construir-tu-casa.pdf
+- **M2:** N/A
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** N/A
+- **Screenshot:** 04-model-descargar-e-book.png
+
+#### Full Text
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Panelizado en planta desde la ingeniería Más allá del Steel FramingPodcast Episodio 4 Bienvenidos a otro episodio de “Más allá del Steel Framing”, tu fuente confiable de conversación y conocimientos sobre la construcción con Steel Framing. En este episodio, exploramos un tema esencial: “Panelizado en planta desde la ingeniería de detalle”. Nos acompaña Omar Cornejo, Gerente de Planta, quien compartirá con nosotros su vasto conocimiento y experiencia en el proceso de panelizado en planta, una técnica innovadora que permite la fabricación de paneles a medida en un entorno controlado, antes de su instalación en el sitio de construcción. Además, contamos con la presencia de Alejandro Lenton, Gerente Comercial de Buro Steel Framing, que nos ofrecerá su perspectiva sobre cómo esta técnica se ajusta al panorama comercial actual de la construcción con Steel Framing. Y por último, pero no menos importante, el arquitecto Maximiliano Molina, Director de Buro Steel Framing, se une a nosotros para hablar sobre la integración de la ingeniería de detalle en el proceso de panelizado y cómo este enfoque puede mejorar la eficiencia y la calidad en los proyectos de construcción. ¿Estás listo para profundizar en el mundo del Steel Framing y aprender más sobre el panelizado en planta desde la ingeniería de detalle? ¡Sintoniza este episodio y únete a la conversación! Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@burosteelframing.com Oficinas: Complejo Bureau Leloir Av. Presidente Perón 8725, Ituzaingó Planta Insdustrial: Paul Groussac 1944, Ituzaingó. Buenos Aires © Copyright 2024 Srl Buro Steel Framing Desarrollado por Agencia SEO Argentina Necesitas ayuda? Conversa con nosotrosEn que podemos ayudarte?Hola, hace clic en uno de nuestros asistentes para chatear por WhatsAppEl equipo suele responder en unos minutos. Whattsapp Powered by NinjaTeam
+```
+
+### Descargar E-book
+
+- **URL:** https://burosteelframing.com/wp-content/uploads/2021/12/6-claves-para-que-tu-casa-sea-instagrameable.pdf
+- **M2:** N/A
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** N/A
+- **Screenshot:** 04-model-descargar-e-book.png
+
+#### Full Text
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Panelizado en planta desde la ingeniería Más allá del Steel FramingPodcast Episodio 4 Bienvenidos a otro episodio de “Más allá del Steel Framing”, tu fuente confiable de conversación y conocimientos sobre la construcción con Steel Framing. En este episodio, exploramos un tema esencial: “Panelizado en planta desde la ingeniería de detalle”. Nos acompaña Omar Cornejo, Gerente de Planta, quien compartirá con nosotros su vasto conocimiento y experiencia en el proceso de panelizado en planta, una técnica innovadora que permite la fabricación de paneles a medida en un entorno controlado, antes de su instalación en el sitio de construcción. Además, contamos con la presencia de Alejandro Lenton, Gerente Comercial de Buro Steel Framing, que nos ofrecerá su perspectiva sobre cómo esta técnica se ajusta al panorama comercial actual de la construcción con Steel Framing. Y por último, pero no menos importante, el arquitecto Maximiliano Molina, Director de Buro Steel Framing, se une a nosotros para hablar sobre la integración de la ingeniería de detalle en el proceso de panelizado y cómo este enfoque puede mejorar la eficiencia y la calidad en los proyectos de construcción. ¿Estás listo para profundizar en el mundo del Steel Framing y aprender más sobre el panelizado en planta desde la ingeniería de detalle? ¡Sintoniza este episodio y únete a la conversación! Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@burosteelframing.com Oficinas: Complejo Bureau Leloir Av. Presidente Perón 8725, Ituzaingó Planta Insdustrial: Paul Groussac 1944, Ituzaingó. Buenos Aires © Copyright 2024 Srl Buro Steel Framing Desarrollado por Agencia SEO Argentina Necesitas ayuda? Conversa con nosotrosEn que podemos ayudarte?Hola, hace clic en uno de nuestros asistentes para chatear por WhatsAppEl equipo suele responder en unos minutos. Whattsapp Powered by NinjaTeam
+```
+
+### 
+
+- **URL:** https://burosteelframing.com/anteproyecto-completo-mas-alla-del-steel-framing-podcast-episodio-1/
+- **M2:** N/A
+- **Price:** N/A
+- **Rooms:** N/A
+- **Specs:** N/A
+- **Screenshot:** 04-model-.png
+
+#### Full Text
+
+```
+Ir al contenido Instagram Facebook Youtube Twitter Tiktok Pedí tu Presupuesto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Inicio Construcción Steel Framing Tradicional Húmedo Nosotros Arquitectura Obras Contacto Anteproyecto completo Más allá del Steel Framing Podcast Episodio 1 ¡Bienvenidos a un nuevo episodio de Más allá del Steel Framing! En esta ocasión, nos acompaña un panel de expertos en arquitectura y construcción: Alejandro Lenton, Gerente Comercial de Buro Steel Framing, la Arquitecta Carolina Villegas, Gerente Técnica de Buro Steel Framing, y el Arquitecto Ariel Ascione, Director de Buro Steel Framing. En este episodio, nos adentraremos en el emocionante mundo de los anteproyectos completos para el diseño de casas. Aprenderás cómo seleccionarun diseño que se adapte perfectamente a tus necesidades y gustos personales. Juntos, exploraremos las últimas tendencias en construcción, y te guiaremos en cada paso del proceso para que puedas crear la casa de tus sueños. ¡Prepárate para una experiencia de aprendizaje única e inspiradora! Redes Sociales Instagram Facebook Youtube Twitter Tiktok Somos especialistas en sistema de construcción Tradicional Húmedo y Seco – Steel Framing en la Argentina. Información Blog Obras Nosotros Arquitectura E-Books Steel Framing Podcast: Más allá del Steel Framing Innova House Contáctenos 11 5323 4885 info@burosteelframing.com Oficinas: Complejo Bureau Leloir Av. Presidente Perón 8725, Ituzaingó Planta Insdustrial: Paul Groussac 1944, Ituzaingó. Buenos Aires © Copyright 2024 Srl Buro Steel Framing Desarrollado por Agencia SEO Argentina Necesitas ayuda? Conversa con nosotrosEn que podemos ayudarte?Hola, hace clic en uno de nuestros asistentes para chatear por WhatsAppEl equipo suele responder en unos minutos. Whattsapp Powered by NinjaTeam
+```
+
+## PDF/Catalog Links
+
+- [Descargar E-book](https://burosteelframing.com/wp-content/uploads/2021/09/8-reglas-de-oro-para-construir-tu-casa.pdf)
+- [Descargar E-book](https://burosteelframing.com/wp-content/uploads/2021/09/El-juego-de-los-7-errores.pdf)
+- [Descargar E-book](https://burosteelframing.com/wp-content/uploads/2021/12/6-claves-para-que-tu-casa-sea-instagrameable.pdf)
+- [Descargar E-book](https://burosteelframing.com/wp-content/uploads/2021/12/8-respuestas-sobre-construccion-en-seco.pdf)
+
+## All Links (160)
+
+- [Ir al contenido](https://burosteelframing.com/#content)
+- [Instagram](https://www.instagram.com/buro.steel.framing/)
+- [Facebook](https://www.facebook.com/burosteelframe)
+- [Youtube](https://www.youtube.com/channel/UC1xXp_EcuALJDA_l0wdtATA)
+- [Twitter](https://twitter.com/BuroSteel)
+- [Tiktok](https://www.tiktok.com/@burosteelframing)
+- [Pedí tu Presupuesto](https://burosteelframing.com/contacto/)
+- [](https://burosteelframing.com/)
+- [Inicio](https://burosteelframing.com/)
+- [Construcción](https://burosteelframing.com/#)
+- [Steel Framing](https://burosteelframing.com/steel-frame/)
+- [Tradicional Húmedo](https://burosteelframing.com/tradicional-humedo/)
+- [Nosotros](https://burosteelframing.com/nosotros/)
+- [Arquitectura](https://burosteelframing.com/arquitectura/)
+- [Obras](https://burosteelframing.com/obras/)
+- [Contacto](https://burosteelframing.com/contacto/)
+- [Inicio](https://burosteelframing.com/)
+- [Construcción](https://burosteelframing.com/#)
+- [Steel Framing](https://burosteelframing.com/steel-frame/)
+- [Tradicional Húmedo](https://burosteelframing.com/tradicional-humedo/)
+- [Nosotros](https://burosteelframing.com/nosotros/)
+- [Arquitectura](https://burosteelframing.com/arquitectura/)
+- [Obras](https://burosteelframing.com/obras/)
+- [Contacto](https://burosteelframing.com/contacto/)
+- [](https://burosteelframing.com/steel-frame/)
+- [Construcción en Seco](https://burosteelframing.com/steel-frame/)
+- [](https://burosteelframing.com/tradicional-humedo/)
+- [Construcción Tradicional](https://burosteelframing.com/tradicional-humedo/)
+- [Conoce nuestros modelos de casas Innova House](https://burosteelframing.com/innova-house/)
+- [](https://burosteelframing.com/innova-house/)
+- [](https://burosteelframing.com/innova-house/)
+- [](https://burosteelframing.com/innova-house/)
+- [](https://burosteelframing.com/innova-house/)
+- [Empresa de Construcción en Argentina](https://burosteelframing.com/innova-house/)
+- [buro.steel.framing](https://www.instagram.com/buro.steel.framing/)
+- [View](https://www.instagram.com/p/DUVth_RjBlS/)
+- [Open](https://scontent-lax3-2.cdninstagram.com/v/t39.30808-6/627793056_833443113042065_6294827349720326086_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=106&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ZKXGwrxvqf0Q7kNvwFVsVH4&_nc_oc=AdnWjVlwikE9NiGpyvw3qn3E2TlNjAL1CvYrH5ta57H_LxiXevJQl7MSOqFVBr9qbn8&_nc_zt=23&_nc_ht=scontent-lax3-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=5j2RCCfy0A-P6GSYerHcZw&oh=00_AftfDBAFkdnK-66vbjYbB_s-eDNS_OFpy050P8DReJqCTg&oe=698E7932)
+- [](https://www.instagram.com/p/DUVth_RjBlS/)
+- […](https://burosteelframing.com/#)
+- [buro.steel.framing](https://www.instagram.com/buro.steel.framing/)
+- [View](https://www.instagram.com/p/DT-YuhLjrlS/)
+- [Open](https://scontent-lax7-1.cdninstagram.com/v/t39.30808-6/612124462_812872258432484_2404468267476354490_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=105&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=uqubo2R3580Q7kNvwEFhkPc&_nc_oc=Adn-6HMBxP2T3rlxFEnTK2KfMfj4g02LC-4HJUnn2DgMhGr03kp3l_yYPeg2RF2TBT0&_nc_zt=23&_nc_ht=scontent-lax7-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=5j2RCCfy0A-P6GSYerHcZw&oh=00_AfvKiugTnthToT41uS09wRwWSN9Ax657-gZxcxpXq-fkVQ&oe=698E6D8C)
+- [](https://www.instagram.com/p/DT-YuhLjrlS/)
+- […](https://burosteelframing.com/#)
+- [buro.steel.framing](https://www.instagram.com/buro.steel.framing/)
+- [View](https://www.instagram.com/p/DT2qVn4gZ2m/)
+- [Open](https://scontent-lax7-1.cdninstagram.com/v/t39.30808-6/612867697_812871421765901_1183704878371028129_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=101&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=1Hhqj8YLRogQ7kNvwEbIlIu&_nc_oc=AdlXNo-1Tsn0yatcFwCCLqjyI0TM0iXIWayrsCe2PQ6svTh6wmT3zqv69zMmHY1v40Y&_nc_zt=23&_nc_ht=scontent-lax7-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=5j2RCCfy0A-P6GSYerHcZw&oh=00_AfubBn8eOb48Qn7VIU0R14Jidd_J-D-vIVuIrIL34dAuRg&oe=698E8136)
+- [](https://www.instagram.com/p/DT2qVn4gZ2m/)
+- […](https://burosteelframing.com/#)
+- [buro.steel.framing](https://www.instagram.com/buro.steel.framing/)
+- [View](https://www.instagram.com/p/DTsXJtAjJ7U/)
+- [Open](https://scontent-lax3-2.cdninstagram.com/v/t39.30808-6/612358899_812870895099287_2615720206902480363_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=OonRqyYJOBMQ7kNvwGbbajF&_nc_oc=AdmT8B3Edc683tyzCWXoE-LypoTvbnd38IJ9CivHd3dnO7t0MxR5Jt5Lu-TuLqkhBmk&_nc_zt=23&_nc_ht=scontent-lax3-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=5j2RCCfy0A-P6GSYerHcZw&oh=00_AfuZ4RAYPtzZxN7YiibTLt_dJeQCw6znfV1YsmsGxfPOAw&oe=698E61BE)
+- [](https://www.instagram.com/p/DTsXJtAjJ7U/)
+- […](https://burosteelframing.com/#)
+- [buro.steel.framing](https://www.instagram.com/buro.steel.framing/)
+- [View](https://www.instagram.com/p/DTkoyCDDxhd/)
+- [Open](https://scontent-lax3-1.cdninstagram.com/v/t39.30808-6/612337805_812870231766020_2172068821703179419_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=GUJ2-0G5YZQQ7kNvwGyIajt&_nc_oc=Admb7w9_YGGwSeRIqqflOtgRHKNQeBbrkwORBA7pkQZhxfJyc33KuCcQ6tyhMw6zeYg&_nc_zt=23&_nc_ht=scontent-lax3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=5j2RCCfy0A-P6GSYerHcZw&oh=00_Aft7zga8hRoH5aozR_UdXF286afRyPO4A2Head35FhD44g&oe=698E640A)
+- [](https://www.instagram.com/p/DTkoyCDDxhd/)
+- […](https://burosteelframing.com/#)
+- [buro.steel.framing](https://www.instagram.com/buro.steel.framing/)
+- [View](https://www.instagram.com/p/DTaVnDOiCew/)
+- [Open](https://scontent-lax3-2.cdninstagram.com/v/t39.30808-6/613033936_812869441766099_6318927665727077427_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=107&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=ZqzFnfsEPeMQ7kNvwFOfsCb&_nc_oc=AdkV6ixWY2DKslA2kN4uN8So0GT7ppozmybp1sg4TsZl5t8ANcekbI0QtO-Ei7MqnqI&_nc_zt=23&_nc_ht=scontent-lax3-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=5j2RCCfy0A-P6GSYerHcZw&oh=00_AfvFJVRPVg5bu0z54aPrB4yZ7IRnqnUF7qK9LZDNjcZc8Q&oe=698E4E2D)
+- [](https://www.instagram.com/p/DTaVnDOiCew/)
+- […](https://burosteelframing.com/#)
+- [buro.steel.framing](https://www.instagram.com/buro.steel.framing/)
+- [View](https://www.instagram.com/p/DTSxp-OETsK/)
+- [Open](https://scontent-lax3-1.cdninstagram.com/v/t39.30808-6/611560938_812867871766256_8004766635041141206_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0FST1VTRUxfSVRFTS5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=BEXMlkrKJQkQ7kNvwECQs84&_nc_oc=AdmuYF77GLKf92PV1tYx8r7pAQ7TfUTbsN4PckibEErbk_U7PKtkDpvVwTccrfF71DM&_nc_zt=23&_nc_ht=scontent-lax3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=5j2RCCfy0A-P6GSYerHcZw&oh=00_AfvzKZvtZkT8rv4YvWgWfez0luPMIMYpdT6MCHRY79_5Pg&oe=698E525F)
+- [](https://www.instagram.com/p/DTSxp-OETsK/)
+- […](https://burosteelframing.com/#)
+- [buro.steel.framing](https://www.instagram.com/buro.steel.framing/)
+- [View](https://www.instagram.com/p/DTINOisje6A/)
+- [Open](https://scontent-lax3-1.cdninstagram.com/v/t39.30808-6/608896377_809646132088430_5523080592760121029_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=109&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=xhAfjNmeAIcQ7kNvwEogDbJ&_nc_oc=AdkLiUMc37wlkbzNRY72tvk5v00WGUeN9OWp26Wn9GYrtfyWSdfVicTeKWU8TSzXpuA&_nc_zt=23&_nc_ht=scontent-lax3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=5j2RCCfy0A-P6GSYerHcZw&oh=00_Afsqjf3XqJnPS_FZ-7SM-ErooCPH4MiMQBaSkZw-XmtEFA&oe=698E6515)
+- [](https://www.instagram.com/p/DTINOisje6A/)
+- […](https://burosteelframing.com/#)
+- [buro.steel.framing](https://www.instagram.com/buro.steel.framing/)
+- [View](https://www.instagram.com/p/DS4zyDNDhAl/)
+- [Open](https://scontent-lax3-1.cdninstagram.com/v/t39.30808-6/607994184_805275102525533_4731269699132865825_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=1822lp90W0MQ7kNvwEp2rTq&_nc_oc=AdnQ7g2Zr5BKysrwEUIGn7ewFSEZCZiRaCSjHYcolTZgluNkipfWw-SP7A1LSXZL_WM&_nc_zt=23&_nc_ht=scontent-lax3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=5j2RCCfy0A-P6GSYerHcZw&oh=00_AfvlDl8os-Jyhh2fItgAvNIJgpnJamxP_4lOt28XZeUd8A&oe=698E5E3A)
+- [](https://www.instagram.com/p/DS4zyDNDhAl/)
+- […](https://burosteelframing.com/#)
+- [buro.steel.framing](https://www.instagram.com/buro.steel.framing/)
+- [View](https://www.instagram.com/p/DSuiGAPlx-Z/)
+- [Open](https://scontent-lax3-1.cdninstagram.com/v/t39.30808-6/606540527_802501099469600_1326464842877073275_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=110&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=sWTxp8mpW4EQ7kNvwGdBZEg&_nc_oc=AdkSphwIT6cxHtJ26wbd3xjCnykRKPAU_G7sd6oySUFXTd98sb-Anzx7bbYxnUjkBIk&_nc_zt=23&_nc_ht=scontent-lax3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=5j2RCCfy0A-P6GSYerHcZw&oh=00_AfvcsCNUAuIlXXlxK-tBjN7MyvBKD_bs90gfel7m8OKWfg&oe=698E54BD)
+- [](https://www.instagram.com/p/DSuiGAPlx-Z/)
+- […](https://burosteelframing.com/#)
+- [buro.steel.framing](https://www.instagram.com/buro.steel.framing/)
+- [View](https://www.instagram.com/p/DSkxz3ljE0J/)
+- [Open](https://scontent-lax3-1.cdninstagram.com/v/t39.30808-6/603828055_799830579736652_5975845805801957613_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=hpMFZqnJrEEQ7kNvwFwT8Qj&_nc_oc=AdlSErMSPLQpR_oBLQGvojyvmysalTjl97maxIj9_4UfI6RFadVZkGluTwgUuGJJXIs&_nc_zt=23&_nc_ht=scontent-lax3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=5j2RCCfy0A-P6GSYerHcZw&oh=00_AfvnmVtAbH5ijBMhIFwqS4DbwBuNLMB6fojmwfZfSw9Vdg&oe=698E6E1B)
+- [](https://www.instagram.com/p/DSkxz3ljE0J/)
+- […](https://burosteelframing.com/#)
+- [buro.steel.framing](https://www.instagram.com/buro.steel.framing/)
+- [View](https://www.instagram.com/p/DSaM7jGjFud/)
+- [Open](https://scontent-lax3-1.cdninstagram.com/v/t39.30808-6/601530891_796704956715881_1706537544454337587_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=108&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=bcf4dC-teLMQ7kNvwFcFpLB&_nc_oc=Adn67wQ5yFjpP6dE1q4A_XzDKuO3mf5TqFNANEigEr3ilOfnifx65iOz4wKxbn1jJWY&_nc_zt=23&_nc_ht=scontent-lax3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=5j2RCCfy0A-P6GSYerHcZw&oh=00_AfuXKS_YSEKKlNhz-OOYC_nFfV-Eb-k52KY5JSKc3Zuy4g&oe=698E5E37)
+- [](https://www.instagram.com/p/DSaM7jGjFud/)
+- […](https://burosteelframing.com/#)
+- [buro.steel.framing](https://www.instagram.com/buro.steel.framing/)
+- [View](https://www.instagram.com/p/DSR-88mDeMN/)
+- [Open](https://scontent-lax3-1.cdninstagram.com/v/t39.30808-6/600939418_794351766951200_5069880723190542686_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=102&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=VHG2_9qmX5IQ7kNvwFk2UBk&_nc_oc=Admi_5a2rZ--q0DaEHZtlcN_ZtXszchs9cCHkZ8bnpe3JmWeUgMfDOpTNUMgYPwkQrg&_nc_zt=23&_nc_ht=scontent-lax3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=5j2RCCfy0A-P6GSYerHcZw&oh=00_AftKTcurEz9kcDURHhCwUBuqaRFMxG6AlOI1VPoYuWPNsA&oe=698E734E)
+- [](https://www.instagram.com/p/DSR-88mDeMN/)
+- […](https://burosteelframing.com/#)
+- [buro.steel.framing](https://www.instagram.com/buro.steel.framing/)
+- [View](https://www.instagram.com/p/DSKPngUDRm5/)
+- [Open](https://scontent-lax3-2.cdninstagram.com/v/t39.30808-6/599721400_792155710504139_1559274457294946421_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=100&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiRkVFRC5iZXN0X2ltYWdlX3VybGdlbi5DMyJ9&_nc_ohc=B1Exq2ZDvzIQ7kNvwEkdUAW&_nc_oc=Adm7GB6NAUbSE5zNnmVwk4i2Iav-X9CvDQjCTURx6L0VnbSPVhUhpq0T9XUeI26Itus&_nc_zt=23&_nc_ht=scontent-lax3-2.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=5j2RCCfy0A-P6GSYerHcZw&oh=00_AfvEZBOVykcCfqAdzeUm-ebTC8MyfgGtZZq2Jn5eI8QTbQ&oe=698E71A7)
+- [](https://www.instagram.com/p/DSKPngUDRm5/)
+- […](https://burosteelframing.com/#)
+- [buro.steel.framing](https://www.instagram.com/buro.steel.framing/)
+- [View](https://www.instagram.com/reel/DSGDajIic64/)
+- [Open](https://scontent-lax3-1.cdninstagram.com/v/t51.82787-15/587277976_18326560360245266_5942397672318837130_n.jpg?stp=dst-jpg_e35_tt6&_nc_cat=104&ccb=7-5&_nc_sid=18de74&efg=eyJlZmdfdGFnIjoiQ0xJUFMuYmVzdF9pbWFnZV91cmxnZW4uQzMifQ%3D%3D&_nc_ohc=l4LLnsFfnAcQ7kNvwHsywWa&_nc_oc=AdlfS0dPdwK4UU4rr12WWiPcK_g3w3CYQHiXCXHRnTJHMp5aPgzjYn39xSnT0II8RMw&_nc_zt=23&_nc_ht=scontent-lax3-1.cdninstagram.com&edm=AM6HXa8EAAAA&_nc_gid=5j2RCCfy0A-P6GSYerHcZw&oh=00_Afu_s4JC8o4rOm4Imw5vVlCqnu3-ez4xl3G3bVYOErBQ2A&oe=698E82E7)
+- [](https://www.instagram.com/reel/DSGDajIic64/)
+- […](https://burosteelframing.com/#)
+- [Seguinos en Instagram](https://www.instagram.com/buro.steel.framing/)
+- [](https://burosteelframing.com/modelo-gala/)
+- [Modelo Gala](https://burosteelframing.com/modelo-gala/)
+- [](https://burosteelframing.com/modelo-elba/)
+- [Modelo Elba](https://burosteelframing.com/modelo-elba/)
+- [](https://burosteelframing.com/modelo-nilba/)
+- [Modelo Nilba](https://burosteelframing.com/modelo-nilba/)
+- [](https://burosteelframing.com/innova-8-lena/)
+- [Modelo Lena](https://burosteelframing.com/innova-8-lena/)
+- [](https://burosteelframing.com/etapas-del-proyecto-arquitectura-proyecto/)
+- [Etapas del Proyecto Arquitectura: Proyecto](https://burosteelframing.com/etapas-del-proyecto-arquitectura-proyecto/)
+- [](https://burosteelframing.com/etapas-proyecto-arquitectura-expediente-ejecutivo/)
+- [Etapas Proyecto Arquitectura: Expediente Ejecutivo](https://burosteelframing.com/etapas-proyecto-arquitectura-expediente-ejecutivo/)
+- [Privacidad](https://policies.google.com/privacy?hl=es-419)
+- [Condiciones](https://policies.google.com/terms?hl=es-419)
+- [Empresa Constructora en Pilar](https://burosteelframing.com/empresa-constructora-en-pilar/)
+- [Empresa constructora en Escobar](https://burosteelframing.com/empresa-constructora-en-escobar/)
+- [Empresa constructora en Campana](https://burosteelframing.com/empresa-constructora-en-campana/)
+- [Empresa constructora en San Miguel](https://burosteelframing.com/empresa-constructora-en-san-miguel/)
+- [Empresa constructora en Cañuelas](https://burosteelframing.com/empresa-constructora-en-canuelas/)
+- [Empresa constructora en Zarate](https://burosteelframing.com/empresa-constructora-en-zarate/)
+- [Empresa constructora en Capital Federal, Buenos Aires](https://burosteelframing.com/empresa-constructora-en-capital-federal-buenos-aires/)
+- [Empresa constructora en Tigre](https://burosteelframing.com/empresa-constructora-en-tigre/)
+- [Empresa constructora en Esteban Echeverría](https://burosteelframing.com/empresa-constructora-en-esteban-echeverria/)
+- [Empresa constructora en Olivos](https://burosteelframing.com/empresa-constructora-en-olivos/)
+- [Empresa constructora en Exaltación de la Cruz](https://burosteelframing.com/empresa-constructora-en-exaltacion-de-la-cruz/)
+- [Empresa constructora en Luján](https://burosteelframing.com/empresa-constructora-en-lujan/)
+- [Empresa constructora en San Isidro](https://burosteelframing.com/empresa-constructora-en-san-isidro/)
+- [Instagram](https://www.instagram.com/buro.steel.framing/)
+- [Facebook](https://www.facebook.com/burosteelframe)
+- [Youtube](https://www.youtube.com/channel/UC1xXp_EcuALJDA_l0wdtATA)
+- [Twitter](https://twitter.com/BuroSteel)
+- [Tiktok](https://www.tiktok.com/@burosteelframing)
+- [Blog](https://burosteelframing.com/blog/)
+- [Obras](https://burosteelframing.com/obras/)
+- [Nosotros](https://burosteelframing.com/nosotros/)
+- [Arquitectura](https://burosteelframing.com/arquitectura/)
+- [E-Books Steel Framing](https://burosteelframing.com/ebooks-steel-framing/)
+- [Podcast: Más allá del Steel Framing](https://burosteelframing.com/podcasts/)
+- [Innova House](https://burosteelframing.com/innova-house/)
+- [Desarrollado por Agencia SEO Argentina](https://www.seoargentina.com.ar/)
+- [Whattsapp](https://api.whatsapp.com/send?phone=541153234885)
+- [](https://ninjateam.org/whatsapp-chat-wordpress/)
+- [Previous Slide](https://burosteelframing.com/#)
+- [Next Slide](https://burosteelframing.com/#)
+- [Facebook](https://burosteelframing.com/)
+- [Twitter](https://burosteelframing.com/)
+- [Linkedin](https://burosteelframing.com/)
+- [Pinterest](https://burosteelframing.com/)
+- [Email](https://burosteelframing.com/)
+- [Instagram](https://www.instagram.com/)
+

@@ -1,0 +1,55 @@
+=== ECOSAN ===
+URL: https://www.ecosan.com.ar/
+Session: 01feff04-6370-44df-b6ca-d06758c157b5
+Date: 2026-02-08 17:01:20
+Session creation: 23.4s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (5.6s): Ecosan S.A. es una empresa argentina con más de 27 años de experiencia, especializada en soluciones constructivas industrializadas y modulares, con fuerte foco en sustentabilidad. Trabajamos con construcción modular en hormigón premoldeado y sistemas industrializados para hospitales modulares, oficinas (como las Oficinas Modulares ANSES), arquitectura comercial (Quo Container Center Maschwitz y Pilar), obras industriales (como la sucursal HSBC o la Base Operativa AYSA) y arquitectura en containers marítimos (por ejemplo Universidad Nacional de General San Martín).  
+
+Además, ofrecemos alquiler de módulos y baños (baños químicos, duchas, oficinas móviles, cabinas de vigilancia) y servicio integral “llave en mano”: anteproyecto, ingeniería, documentación, obra civil y montaje, con posibilidad de financiación del 100% para proyectos de casas industrializadas de diseño.  
+
+Para ayudarte mejor, ¿qué tipo de Proyectos, servicios, módulos, baños, containers, construcciones. estás buscando?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (4.2s): Ofrecemos principalmente construcción modular e industrializada en hormigón premoldeado y containers, más alquiler de módulos y baños. En construcción, trabajamos con:  
+- Hospitales Modulares y Centros de Salud (como Hospital Municipal de Los Cardales, Hospital Modular Tolhuin).  
+- Oficinas Modulares ANSES, laboratorios, edificios educativos, vestuarios, depósitos, SUM.  
+- Arquitectura Comercial Industrializada (Quo Container Center Maschwitz y Pilar).  
+- Obra Industrial para empresas y entidades (Sucursal Bancaria HSBC, Nueva Base Operativa AYSA).  
+- Arquitectura en Containers Marítimos (Universidad Nacional de General San Martín) y viviendas modulares.  
+
+En rental y modulación rápida ofrecemos: baños químicos, duchas, cabinas de vigilancia, oficinas móviles, habitáculos móviles, shelters, estaciones de reciclado y campamentos de obra, con cobertura en todo el país y financiación disponible. ¿En qué tipo de Proyectos, servicios, módulos, baños, containers, construcciones. estás pensando así te indico opciones concretas para vos?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (8.8s): Trabajamos más por “proyecto a medida” que por catálogo fijo de casas, pero dentro de vivienda y edificios modulares tenemos varios desarrollos tipo. Por ejemplo, en viviendas y arquitectura modular contamos con proyectos como Casa Onix, Proyecto Casa BE y Proyecto Viviendas + Instituto (150 m²), además de prototipos de escuelas modulares de 500, 1.000 y 2.000 m² que adaptamos a uso vivienda u otros programas.  
+
+También hacemos casas y edificios con arquitectura en containers (como QUO Maschwitz y Pilar o las oficinas de la Universidad Nacional de General San Martín), siempre customizando superficie, cantidad de ambientes, terminaciones y nivel de equipamiento. No tengo los modelos estandarizados tipo “modelo A/B/C” cargados como lista cerrada, porque el fuerte de Ecosan es diseñar según tu necesidad y la financiación disponible. ¿Buscás una casa para uso familiar o algo más tipo complejo/campus (varias unidades)?
+
+USUARIO: Contame sobre 1. Prototipos de
+AGENTE (4.3s): Buenísimo, te cuento. Los **Prototipos de** que tenemos cargados son **prototipos de edificios modulares de 500 m²**, pensados originalmente como parte de nuestro desarrollo de **escuelas modulares** y que usamos como base para otros usos (aulas, oficinas, centros de atención, etc.).  
+
+Se resuelven con nuestro sistema de **construcción modular industrializada** (paneles termoaislantes, diseño sustentable, tiempos de obra hasta un 70% menores que la construcción tradicional) y se pueden adaptar en distribución interna, cantidad de aulas/oficinas y nivel de equipamiento según el proyecto. ¿Para qué uso específico estás pensando un prototipo de 500 m²: educativo, oficinas, salud u otro?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (6.8s): No tengo los precios actualizados cargados, y menos aún un valor estándar por “casa de 2 dormitorios”, porque en Ecosan los costos dependen mucho de m², sistema (módulos, hormigón premoldeado o containers), terminaciones y ubicación de la obra.  
+
+Sí te puedo ayudar a estimar mejor si me contás: ¿qué superficie aproximada tenés en mente (por ejemplo 60, 80 o 100 m²) y en qué zona del país sería la construcción?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (4.6s): En Ecosan todas las obras se ejecutan bajo normas ISO 9001 (Calidad) e ISO 14001 (Medio Ambiente), con documentación “conforme a obra” y **manual de mantenimiento específico** para cada proyecto, lo que respalda la garantía estructural y de funcionamiento de las instalaciones.  
+
+Los sistemas modulares (hospitales, oficinas, arquitectura en containers, etc.) se diseñan bajo criterios de **durabilidad y bajo mantenimiento**, con materiales de larga vida útil y diseño basado en normas LEED; la garantía concreta (años de cobertura, qué incluye) se ajusta al tipo de obra o módulo y se detalla en cada contrato.  
+
+No tengo el plazo exacto de garantía cargado por tipo de producto, pero si querés te ayudo a encaminarlo: ¿estás pensando en una casa/vivienda modular, un módulo en alquiler o una obra más grande (por ejemplo oficinas u hospital modular)?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (3.1s): No tengo el número de WhatsApp o teléfono cargado acá, y por política no puedo inventarlo.  
+
+Te recomiendo entrar a la web oficial de Ecosan S.A. (ecosan.com.ar) y usar las secciones “Contacto” o “Comunicate ahora”, donde vas a ver el WhatsApp y teléfonos actualizados del área comercial.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 4
+Tiempo promedio: 5.4s

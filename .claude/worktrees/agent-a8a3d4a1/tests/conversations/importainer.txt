@@ -1,0 +1,74 @@
+=== IMPORTAINER ===
+URL: https://www.importainer.com.ar/
+Session: 88b25914-51b2-43bf-adc3-86fb572c5118
+Date: 2026-02-08 16:41:08
+Session creation: 32.7s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (7.2s): Somos Importainer S.A., una empresa constructora argentina con más de 10 años de experiencia especializada en inmuebles containers. Fabricamos casas container (como la Casa Malibu, Casa Patagonia, Casa Marruecos, Casa California, Casa Sunset, Casa Jakarta y Casa Africa), dúplex (Duplex Container, Duplex Ceibo, Duplex Ombu, Duplex Arrayan, Duplex Jacaranda, Duplex Pehuen, Duplex Alerce), oficinas, bares, locales comerciales, quinchos, garages y jardines de invierno.
+
+Trabajamos con construcción en seco usando contenedores marítimos de 20 y 40 pies, con aislación termoacústica completa, sistema llave en mano y traslado e instalación en tu terreno. Además ofrecemos venta de containers vacíos (20 STANDARD, 40 STANDARD y 40 HIGH CUBE) y contenedores refrigerados, con financiación propia en pesos hasta 240 cuotas y sin anticipo. ¿Qué tipo de inmueble container estás buscando para tu proyecto?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (7.3s): Ofrecemos tres cosas principales:  
+1) Inmuebles containers llave en mano:  
+- Casas container: Casa Malibu 15m², Casa Patagonia 30m², Casa Marruecos 45m², Casa California 60m², Casa Sunset 75m², Casa Jakarta 90m², Casa Africa 120m².  
+- Dúplex: Duplex Container (30, 45, 60, 75, 90m²), Duplex Ceibo 30m², Duplex Ombu 45m², Duplex Arrayan 60m², Duplex Jacaranda 75m², Duplex Pehuen 90m², Duplex Alerce 120m².  
+- Oficinas container (15, 30, 45, 60, 75, 90m²), Bar container (15, 30, 45, 60, 120m²), Local Comercial (30, 45, 60, 90m²), Quincho Container (15, 30, 45m²), Garage 30m², Jardín de Invierno 30m².
+
+2) Venta de containers:  
+- Containers vacíos marítimos: 20 STANDARD (6,10 x 2,43 x 2,60m – US$ 3.259,75), 40 STANDARD (12,19 x 2,43 x 2,60m – US$ 3.922,75), 40 HIGH CUBE (12,19 x 2,43 x 2,89m – US$ 4.088,50).  
+- Contenedores refrigerados (reefers).
+
+3) Servicios:  
+- Construcción en seco con contenedores, diseño y personalización de proyectos, sistema llave en mano, traslado e instalación en el terreno y financiación propia en pesos hasta 240 cuotas, sin anticipo.  
+¿Te interesa más vivienda (casas/dúplex), algo comercial (bar/local/oficina) o solo comprar containers vacíos?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (5.3s): Tenemos muchas opciones, pero si hablamos de modelos de inmuebles containers “tipo casa” y afines, hoy contamos con:
+
+- Casas Premium:  
+  - Casa Malibu 15m²  
+  - Casa Patagonia 30m²  
+  - Casa Marruecos 45m²  
+  - Casa California 60m²  
+  - Casa Sunset 75m²  
+  - Casa Jakarta 90m²  
+  - Casa Africa 120m²  
+
+- Además, dentro de la categoría casas también tenés la Casa Container 15m² (Classic) y la Casa Container 60m² (Comfort), que son líneas diferentes pero también viviendas.  
+
+Si sumamos viviendas + formatos habitables similares, también podés usar como casa un Duplex Container 45m², 60m², 75m², 90m² o 120m² según lo que necesites. ¿Qué superficie estás pensando aproximadamente (15, 30, 45, 60, 75, 90 o 120m²)?
+
+USUARIO: Contame sobre 1. Economic
+AGENTE (11.8s): La línea Economic es la opción de entrada de Importainer dentro de nuestros inmuebles containers: mantiene la misma estructura de contenedor marítimo reciclado de 20 o 40 pies y el sistema de construcción en seco, pero con terminaciones y equipamiento más simples para lograr el costo más bajo posible. Igual que en el resto de nuestras líneas, trabajamos con aislación termoacústica con lana de vidrio y aluminio, estructura modular ampliable y construcción rápida, pensada para que puedas acceder a una vivienda o proyecto propio de forma más económica.
+
+En el material que tengo disponible no figuran desglosados los modelos Economic (m², cantidad de ambientes o planos específicos), sólo la línea como categoría comercial dentro de casas/dúplex/locales, etc. No tengo los precios actualizados cargados; te sugiero consultarlo por WhatsApp así un asesor te envía fichas técnicas, renders y valores concretos de los modelos Economic disponibles: +54 9 11 5937-8945 o +54 9 11 2276-3820.
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (8.1s): Buenísimo, con esta info nueva te puedo orientar mejor.  
+
+Para una casa de 2 dormitorios, los modelos más usados son:  
+- Casa Container 45m² Classic o Comfort (4 ambientes: 2 dorm + baño + cocina-comedor).  
+- Casa Marruecos 45m² (Premium) o Casa California 60m² (Premium), que también permiten 2 dormitorios con más espacio de estar.  
+
+En la web se pueden ordenar las casas por superficie (45 o 60m²) y por cantidad de ambientes (3 o 4) para ver exactamente los modelos de 2 dormitorios en cada línea (Economic, Classic, Comfort o Premium). No tengo los precios actualizados cargados, así que para valores al contado y financiados te recomiendo escribir por WhatsApp y que te coticen puntual el modelo que más te cierre: 5491122763820.
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (3.8s): Trabajamos con contenedores marítimos reciclados, estructura de acero y materiales de primera línea (aislación con lana de vidrio y aluminio, revestimientos, instalaciones completas), por lo que la vivienda queda con durabilidad equivalente o superior a una construcción tradicional.  
+
+En la info que tengo no figura detallado el plazo exacto de garantía (años, qué cubre cada cosa). No tengo esa información específica cargada; para que te pasen por escrito la garantía vigente de casas, dúplex u oficinas, te sugiero consultarlo por WhatsApp al 5491122763820.
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.9s): Te dejo los datos directos de contacto de Importainer:  
+
+- Teléfono: +54 9 11 5937 8945  
+- WhatsApp: +54 9 11 2276 3820  
+
+Por WhatsApp te pueden pasar precios actualizados, planes de financiación y fichas técnicas de los inmuebles containers.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 3
+Tiempo promedio: 6.6s

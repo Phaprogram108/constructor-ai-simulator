@@ -1,0 +1,50 @@
+=== VIBERT ===
+URL: https://vibert.com.ar
+Session: 02e56c31-8425-488b-ad58-4c3520149a41
+Date: 2026-02-08 15:24:55
+Session creation: 6.8s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (7.4s): Somos ViBert, una empresa de Santa Fe con más de 70 años de trayectoria en construcción en hormigón premoldeado. Nos especializamos en casas modulares de hormigón con paneles premoldeados: modelos de catálogo como Casa Sara, Dora, Carmela, Daniela, Micaela, Estefanía, Selene, Justina, Valeria y María, además de quinchos (S, M, L y A) y casas a medida.  
+
+Trabajamos con sistema industrializado: diseñamos (BIM 3D), fabricamos los paneles en planta, hacemos platea, transporte, montaje y podemos entregar en obra gris o llave en mano, con financiación disponible. Para orientarte mejor, ¿qué tipo de casa modular o paneles premoldeados estás buscando?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (4.3s): Ofrecemos principalmente casas modulares de hormigón con paneles premoldeados y quinchos, en dos formatos: modelos de catálogo y proyectos a medida. Entre las casas de catálogo tenés, por ejemplo, Casa Sara (65,55 m² totales, ideal 2 personas), Dora (55,82 m²), Carmela (67,78 m²), Daniela (79,45 m²), Micaela (76,5 m²), Estefanía (96,2 m²), Selene (82,4 m²), Justina (87,94 m²), Valeria (97,65 m²) y María (110,98 m²), más los Quincho S, M, L y A.  
+
+En servicios, hacemos: diseño y proyecto (BIM 3D), fabricación de paneles premoldeados, platea de fundación, transporte y montaje, y construcción en dos modalidades: obra gris o llave en mano; además contamos con financiación. ¿Te interesa más una casa de catálogo o algo 100% a medida?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (4.5s): Tenemos un catálogo muy completo de casas modulares de hormigón y espacios complementarios.  
+De línea ViBert que viste en la web tenés 10 modelos principales de casas (Casa Sara, Dora, Carmela, Daniela, Micaela, Selene, Justina, Estefanía, Valeria y María) y 4 modelos de quinchos (Quincho S, M, L y A).  
+
+Además, en el catálogo extendido aparecen más tipologías (Mercedes, Martina, Valentina, Milagros, Ludmila, Emilia, dúplex y casas de campo), y también hacemos casas a medida y grandes desarrollos. Para orientarte bien, ¿para cuántas personas estás pensando la casa y cuántos dormitorios necesitarías?
+
+USUARIO: Contame sobre 1. Casa Sara
+AGENTE (6.4s): La Casa Sara es una casa modular de hormigón pensada para vivir cómodos 2 personas, con un diseño muy integrado al exterior. Tiene estar-comedor, 1 dormitorio, cocina y 1 baño; son 47,50 m² cubiertos + 36,10 m² de galería semicubierta (total 65,55 m² según la ficha de modelos ViBert).  
+
+Está resuelta con nuestro sistema de paneles premoldeados de hormigón, con excelente aislación térmica y acústica, y podés elegir modalidad obra gris o llave en mano, con financiación. Para ver si te encaja bien: ¿la pensás como vivienda permanente o casa de fin de semana?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (10.0s): Buenísimo, con esta info extra te confirmo lo que te decía antes.  
+No tengo precios concretos por m² ni por modelo en la web (sí aparecen rangos de presupuesto orientativos en el formulario: de $15.000.000 a más de $40.000.000), pero no se vinculan a una casa puntual de 2 dormitorios, así que no es serio tirarte un número.  
+
+En 2 dormitorios de catálogo podés mirar: Casa Carmela (67,78 m² totales), Casa Daniela (79,45 m²), Casa Micaela (76,50 m²), Casa Selene (82,40 m²), Casa Justina (87,94 m²) y Casa Estefanía (96,20 m²), o bien pedir un diseño a medida. Para que te den un aproximado real según modelo, modalidad (obra gris vs llave en mano) y ubicación de tu terreno, lo mejor es que escribas por WhatsApp al +54 9 342 5081468.
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (4.6s): Trabajamos con un sistema de hormigón premoldeado industrializado, con más de 70 años de experiencia del grupo Premoldeados Bertone, lo que te asegura estructuras durables (más de 100 años), antisísmicas, con alta resistencia al fuego y muy bajo mantenimiento.  
+
+En la web no figura detallado el plazo específico de garantía por escrito (años, alcances, etc.), así que no tengo ese dato cargado; pero todas las casas ViBert se entregan con certificado de aptitud técnica y respaldo de nuestro equipo técnico. Para que te pasen las condiciones formales de garantía (años de estructura, terminaciones, instalaciones), te sugiero escribirnos por WhatsApp al 5493425081468.
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.9s): Te dejo los datos completos de contacto:  
+- WhatsApp / Teléfono: +54 9 342 5081468 (podés escribir directo a wa.me/5493425081468)  
+- Email: ventas@vibert.com.ar  
+
+Si querés, me contás qué tipo de casa modular estás buscando y con eso ya podés escribirles diciendo que venís con una idea de, por ejemplo, Casa Sara, Carmela, Daniela, etc.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 2
+Tiempo promedio: 5.7s

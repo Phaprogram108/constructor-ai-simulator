@@ -1,0 +1,287 @@
+{
+  "company": "Offis",
+  "url": "https://www.offis.ar/",
+  "capturedAt": "2026-02-05T20:31:32.938Z",
+  "type": "modular",
+  "navigation": {
+    "menuItems": [
+      "Productos",
+      "Instalados",
+      "Proyectos Que No Salieron",
+      "Contacto"
+    ],
+    "modelSections": [
+      {
+        "label": "Productos",
+        "url": "https://www.offis.ar/productos/"
+      },
+      {
+        "label": "Residencial",
+        "url": "https://www.offis.ar/productos/#residencial"
+      },
+      {
+        "label": "Empresas",
+        "url": "https://www.offis.ar/productos/#empresa"
+      },
+      {
+        "label": "Línea SHOWROOM",
+        "url": "https://www.offis.ar/productos/#showroom"
+      },
+      {
+        "label": "Línea COWORK",
+        "url": "https://www.offis.ar/productos/#cowork"
+      },
+      {
+        "label": "Línea TICKET OFFICE",
+        "url": "https://www.offis.ar/productos/#ticketoffice"
+      },
+      {
+        "label": "Extras",
+        "url": "https://www.offis.ar/productos/#extras"
+      },
+      {
+        "label": "Proyectos que no salieron",
+        "url": "https://www.offis.ar/proyectos-que-no-salieron/"
+      },
+      {
+        "label": "producto",
+        "url": "https://www.offis.ar/#productos"
+      },
+      {
+        "label": "Offis STUDIO 12",
+        "url": "https://www.offis.ar/producto/offis-studio/"
+      },
+      {
+        "label": "Offis SLIM 15",
+        "url": "https://www.offis.ar/producto/offis-slim-15/"
+      },
+      {
+        "label": "Offis FAMILY 18",
+        "url": "https://www.offis.ar/producto/offis-family/"
+      },
+      {
+        "label": "Offis FLEX 22",
+        "url": "https://www.offis.ar/producto/offis-flex/"
+      },
+      {
+        "label": "Offis PLUS 27",
+        "url": "https://www.offis.ar/producto/offis-plus/"
+      },
+      {
+        "label": "Offis XL 36",
+        "url": "https://www.offis.ar/producto/offis-xl-36/"
+      },
+      {
+        "label": "Offis SHOWROOM 12",
+        "url": "https://www.offis.ar/producto/offis-showroom-12/"
+      },
+      {
+        "label": "Offis SHOWROOM 15",
+        "url": "https://www.offis.ar/producto/offis-showroom-15/"
+      },
+      {
+        "label": "Offis SHOWROOM 22",
+        "url": "https://www.offis.ar/producto/offis-showroom-22/"
+      },
+      {
+        "label": "Offis COWORK 18",
+        "url": "https://www.offis.ar/producto/offis-cowork-18/"
+      },
+      {
+        "label": "Offis COWORK 22",
+        "url": "https://www.offis.ar/producto/offis-cowork-22/"
+      },
+      {
+        "label": "Offis TICKET OFFICE 15",
+        "url": "https://www.offis.ar/producto/offis-ticket-office-15/"
+      },
+      {
+        "label": "Offis COWORK 27",
+        "url": "https://www.offis.ar/producto/offis-cowork-27/"
+      },
+      {
+        "label": "Para Ti · Deco\n            mayo 2021\n          \n          Un proyecto innovador de arquitectura y decoración que nació del home office\n          \n            Offis nació en pandemia con módulos susten",
+        "url": "https://www.parati.com.ar/deco/un-proyecto-innovador-de-arquitectura-y-decoracion-que-nacio-del-home-office/"
+      },
+      {
+        "label": "Revista Tigris\n            Nota\n          \n          Offis: un proyecto visionario nacido en pandemia\n          \n            Sicardi y Fisher fundaron Offis para fabricar espacios independientes de rá",
+        "url": "https://revistatigris.com.ar/offis-un-proyecto-visionario-nacido-en-pandemia/"
+      },
+      {
+        "label": "Quiero asesorarme",
+        "url": "https://api.whatsapp.com/send/?phone=5491126521040&text=Hola%2C+quiero+simular+la+financiaci%C3%B3n.+Me+interesa+el+%5Binserte+modelo+o+metros+cuadrados%5D&type=phone_number&app_absent=0"
+      },
+      {
+        "label": "<img loading=\"lazy\" decoding=\"async\" width=\"520\" height=\"276\" src=\"https://www.offis.ar/wp-content/uploads/2025/07/hipotecario.png\" class=\"attachment-large size-large wp-image-885\" alt=\"Bh\" srcset=\"ht",
+        "url": "https://www.hipotecario.com.ar/personas/prestamos-a-la-vivienda/viviendas-industrializadas/"
+      }
+    ]
+  },
+  "models": [
+    {
+      "name": "Offis STUDIO 12",
+      "sqMeters": 12.25,
+      "features": [
+        "Superficie: 12,25 m²",
+        "Medidas interiores: 2,20 × 4,60 x h 2,30",
+        "Medidas exteriores: 2,50 × 4,80 x h 2,80",
+        "Revestimiento WPC Marrón",
+        "Revestimiento WPC Gris",
+        "Revestimiento Chapa Negra",
+        "Revestimiento Chapa Gris",
+        "Color piso Beige",
+        "Color piso Gris",
+        "Completamente amueblado",
+        "Listo para mudarse",
+        "Modelo ya construido disponible para ver",
+        "Garantía: 1 año",
+        "Plazo de producción: 2 a 3 semanas",
+        "Plazo de instalación: 5 a 6 días hábiles"
+      ],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-1-offis-studio-12.jpeg",
+      "detailUrl": "https://www.offis.ar/producto/offis-studio/",
+      "bathrooms": 1
+    },
+    {
+      "name": "Offis SLIM 15",
+      "sqMeters": 15.25,
+      "features": [
+        "Muros y techos desarrollados en panelizado SIP",
+        "Construcción en seco aprobada y garantizada por el INTI",
+        "Aislante tipo Tyvek contra humedad",
+        "Láminas de anti-humedad en pisos",
+        "Abertura PVH laminado en linea x 40 compact con perfilería de ALUAR con manija multipunto de seguridad y cerradura con llave",
+        "Revestimiento interior semi madera MDF 3,5mm panel SIP",
+        "Revestimiento exterior semi madera MDF 3,5mm panel SIP",
+        "Pintura exterior al agua blanco PVC 240m",
+        "Piso tipo click SPC 4MM llamado - símil madera",
+        "Zócalos de PVC",
+        "Rejilla de ventilación de seguridad",
+        "Instalación eléctrica FULL (tablero con 3 térmicas y disyuntor, 20 enchufes línea Cambre Siglo XXI distribuidos, artefactos de iluminación LED dimenzables y regulables, cableado completo, toma de ingreso para internet, y conexión externa hasta a 3m del módulo, con ficha industrial)",
+        "Toda la mano de obra y herramientas necesarias para un montaje en 5 días o menos"
+      ],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-2-offis-slim-15.jpeg",
+      "detailUrl": "https://www.offis.ar/producto/offis-slim-15/",
+      "bedrooms": 1,
+      "bathrooms": 1
+    },
+    {
+      "name": "Offis FAMILY 18",
+      "sqMeters": 18.13,
+      "features": [
+        "Superficie: 18,13 m²",
+        "Medidas interiores: 3,40 x 4,60 x 2,30",
+        "Medidas exteriores: 3,70 x 4,90 x h 2,80",
+        "WPC Marrón",
+        "WPC Gris",
+        "Chapa Negra",
+        "Chapa Gris",
+        "Color del piso: Beige o Gris",
+        "Instalación para exterior",
+        "Traslado en el día",
+        "Garantía 1 año",
+        "Plazo de producción 6 a 3 semanas",
+        "Plazo de instalación 3 a 6 dias hábiles"
+      ],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-3-offis-family-18.jpeg",
+      "detailUrl": "https://www.offis.ar/producto/offis-family/"
+    },
+    {
+      "name": "Offis FLEX 22",
+      "sqMeters": 22.5,
+      "features": [
+        "Medidas interiores: 3,40 × 5,60 × 2,30",
+        "Medidas exteriores: 3,70 × 6,10 × 2,80",
+        "Instalación rápida entre extremos",
+        "Garantía: 1 año",
+        "Plazo de producción: 2 a 3 semanas",
+        "Plazo de instalación: 5 a 7 días hábiles"
+      ],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-4-offis-flex-22.jpeg",
+      "detailUrl": "https://www.offis.ar/producto/offis-flex/",
+      "bathrooms": 1
+    },
+    {
+      "name": "Offis PLUS 27",
+      "sqMeters": 27,
+      "features": [
+        "Estructura y aislación con panelizado SIP, la última tecnología de construcción en seco, aprobada y garantizada por el INTI",
+        "Aberturas DVH laminado en línea A40 y Modena con perfileria de ALUAR con manija multipunto de seguridad y cerradura con llave",
+        "Terminación exterior en revestimiento siding símil madera",
+        "Materiales de primera calidad en aislación y revestimientos",
+        "Instalación eléctrica FULL tablero con 3 térmicas y disyuntor, 20 enchufes línea Cambre Siglo XXI distribuidos, artefactos de iluminación LED dimerizables y regulables, cableado completo, toma ciego para ingreso de internet, y conexión externa a 3m. del módulo con ficha industrial",
+        "Revestimiento interior símil madera, acabados en tablas de PVC blanco",
+        "Zócalos de PVC + Piso tipo click LVT símil madera",
+        "Rejilla de ventilación de seguridad"
+      ],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-5-offis-plus-27.jpeg",
+      "detailUrl": "https://www.offis.ar/producto/offis-plus/",
+      "bedrooms": 1,
+      "bathrooms": 1
+    },
+    {
+      "name": "Offis XL 36",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg",
+      "detailUrl": "https://www.offis.ar/producto/offis-xl-36/"
+    },
+    {
+      "name": "Offis SHOWROOM 12",
+      "sqMeters": 12,
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg",
+      "detailUrl": "https://www.offis.ar/producto/offis-showroom-12/"
+    },
+    {
+      "name": "Offis SHOWROOM 15",
+      "sqMeters": 15,
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg",
+      "detailUrl": "https://www.offis.ar/producto/offis-showroom-15/"
+    },
+    {
+      "name": "Offis SHOWROOM 22",
+      "sqMeters": 22,
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg",
+      "detailUrl": "https://www.offis.ar/producto/offis-showroom-22/"
+    },
+    {
+      "name": "Offis COWORK 18",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg",
+      "detailUrl": "https://www.offis.ar/producto/offis-cowork-18/"
+    },
+    {
+      "name": "Offis COWORK 22",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg",
+      "detailUrl": "https://www.offis.ar/producto/offis-cowork-22/"
+    },
+    {
+      "name": "Offis COWORK 27",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg",
+      "detailUrl": "https://www.offis.ar/producto/offis-cowork-27/"
+    }
+  ],
+  "contactInfo": {
+    "whatsapp": "91126521040",
+    "instagram": "@offis.ar"
+  },
+  "totalModelsFound": 12,
+  "pagesExplored": 9,
+  "errors": []
+}

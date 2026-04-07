@@ -1,0 +1,252 @@
+{
+  "company": "Offis",
+  "url": "https://www.offis.ar/",
+  "testedAt": "2026-02-06T15:57:14.830Z",
+  "sessionId": "cf9f00bf-f009-4f7c-8c82-a6d5c4e04b8b",
+  "systemPromptLength": 20783,
+  "systemPromptModelsFound": [
+    "Más productos",
+    "Cuota inicial",
+    "Ingreso necesario",
+    "Proceso típico",
+    "Fundaciones y base",
+    "Instalados",
+    "Offis x Jeep",
+    "Palenques Polo",
+    "Offis Max UCES",
+    "Panel SIP",
+    "Chapa sinusoidal",
+    "Cielorraso PVC mate",
+    "Emparrillado galvanizado",
+    "Productos",
+    "Offis STUDIO 12",
+    "Offis SLIM 15",
+    "Offis FAMILY 18",
+    "Offis FLEX 22",
+    "Offis PLUS 27",
+    "Offis XL 36",
+    "Offis SHOWROOM 12",
+    "Offis SHOWROOM 15",
+    "Offis SHOWROOM 22",
+    "Offis COWORK 18",
+    "Offis COWORK 22",
+    "Offis COWORK 27",
+    "Quiero asesorarme",
+    "Realizar la simulación",
+    "Empresas",
+    "Línea Showroom",
+    "Línea Cowork",
+    "Línea Ticket Office",
+    "Productos Home",
+    "Offis Family",
+    "Hasta"
+  ],
+  "systemPromptWhatsApp": "5491126521040",
+  "systemPromptType": "de modelos estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Somos Residencial, trabajamos con construcción en hormigón premoldeado, un sistema súper rápido, durable y prolijo, ideal para espacios residenciales y también para empresas. 💡  \n\nOfrecemos distintos modelos como Offis STUDIO 12, Offis SLIM 15, Offis FAMILY 18, Offis FLEX 22, Offis PLUS 27, Offis XL 36, y líneas especiales como Showroom, Cowork y Ticket Office, además de productos Home. También contamos con financiación disponible para que puedas encarar el proyecto en cuotas.  \n\nPara orientarte mejor, ¿qué tipo de modelos estás buscando?",
+      "mentionedModels": [
+        "Productos",
+        "Offis STUDIO 12",
+        "Offis SLIM 15",
+        "Offis FAMILY 18",
+        "Offis FLEX 22",
+        "Offis PLUS 27",
+        "Offis XL 36",
+        "Empresas",
+        "Productos Home",
+        "Offis Family"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2808
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos construcción en hormigón premoldeado con modelos estándar y líneas para vivienda y empresas, todos con opción de financiación.  \n\nEn modelos residenciales tenés, por ejemplo, Offis STUDIO 12, Offis SLIM 15, Offis FAMILY 18, Offis FLEX 22, Offis PLUS 27 y Offis XL 36, además de la Línea Showroom, Línea Cowork, Línea Ticket Office y Productos Home. También trabajamos soluciones específicas como Offis x Jeep, Offis Max UCES, Palenques Polo y espacios instalados desde 9 m² hasta más de 36 m².  \n\nPara afinar la propuesta, ¿qué tipo de modelos estás buscando? ¿Algo para vivienda, oficina, showroom, cowork, o algo más puntual?",
+      "mentionedModels": [
+        "Instalados",
+        "Offis x Jeep",
+        "Palenques Polo",
+        "Offis Max UCES",
+        "Productos",
+        "Offis STUDIO 12",
+        "Offis SLIM 15",
+        "Offis FAMILY 18",
+        "Offis FLEX 22",
+        "Offis PLUS 27",
+        "Offis XL 36",
+        "Empresas",
+        "Línea Showroom",
+        "Línea Cowork",
+        "Línea Ticket Office",
+        "Productos Home",
+        "Offis Family",
+        "Hasta"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4555
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Te dejo el contacto directo así podés avanzar rápido:  \nWhatsApp: +54 9 11 2652-1040  \nEmail: comercial@offis.ar  \n\nSi querés, también puedo ayudarte acá a elegir el modelo y después escribís ya con una idea más cerrada.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 1991
+    },
+    {
+      "question": "¿Cuántos modelos ofrecen?",
+      "questionType": "product_count",
+      "response": "Manejamos varias líneas y dentro de cada una hay modelos específicos, pero a nivel residencial estándar podés contar con: Offis STUDIO 12, Offis SLIM 15, Offis FAMILY 18, Offis FLEX 22, Offis PLUS 27 y Offis XL 36.  \n\nAdemás tenés líneas especiales como Línea Showroom (Offis SHOWROOM 12, 15 y 22), Línea Cowork (Offis COWORK 18, 22 y 27), Línea Ticket Office y otros desarrollos puntuales como Offis x Jeep, Offis Max UCES y Palenques Polo. Para darte un número exacto según uso (casa, oficina, empresa) necesito que me cuentes: ¿para qué lo querés usar principalmente?",
+      "mentionedModels": [
+        "Offis x Jeep",
+        "Palenques Polo",
+        "Offis Max UCES",
+        "Offis STUDIO 12",
+        "Offis SLIM 15",
+        "Offis FAMILY 18",
+        "Offis FLEX 22",
+        "Offis PLUS 27",
+        "Offis XL 36",
+        "Offis SHOWROOM 12",
+        "Offis COWORK 18",
+        "Línea Showroom",
+        "Línea Cowork",
+        "Línea Ticket Office",
+        "Offis Family"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4054
+    },
+    {
+      "question": "Contame sobre Más productos",
+      "questionType": "product_specific",
+      "response": "Genial, “Más productos” es un módulo de 27,01 m² en construcción de hormigón premoldeado, pensado como espacio extra: puede usarse como monoambiente, estudio, oficina amplia o ambiente multiuso.  \n\nSe integra al resto de nuestras líneas (Offis FAMILY 18, FLEX 22, PLUS 27, XL 36, etc.) y se puede complementar con fundaciones y base, terminaciones como Panel SIP, chapa sinusoidal, cielorraso de PVC mate y emparrillado galvanizado. No tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp al +54 9 11 2652-1040. ¿Lo pensás para vivienda, home office o algún uso comercial?",
+      "mentionedModels": [
+        "Más productos",
+        "Fundaciones y base",
+        "Panel SIP",
+        "Chapa sinusoidal",
+        "Emparrillado galvanizado",
+        "Productos",
+        "Offis FAMILY 18",
+        "Offis Family"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 3452
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Más productos? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "“Más productos” es un módulo de 27,01 m² en sistema de hormigón premoldeado, pensado como espacio amplio tipo monoambiente o ambiente flexible (no está configurado de fábrica con dormitorios separados, sino como planta libre adaptable).  \n\nA nivel técnico, se puede complementar con fundaciones y base (20 m² como referencia de módulo estándar), paneles tipo Panel SIP, chapa sinusoidal exterior, cielorraso PVC mate y emparrillado galvanizado, logrando muy buena aislación y durabilidad. No tengo la ficha completa ambiente por ambiente cargada, pero se adapta perfecto como estar-comedor con kitchenette y baño, o estudio grande. ¿Lo querés usar como vivienda permanente, quincho/sala multiuso o más bien oficina?",
+      "mentionedModels": [
+        "Más productos",
+        "Fundaciones y base",
+        "Panel SIP",
+        "Chapa sinusoidal",
+        "Cielorraso PVC mate",
+        "Emparrillado galvanizado",
+        "Productos"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3726
+    },
+    {
+      "question": "Contame sobre Cuota inicial",
+      "questionType": "product_specific",
+      "response": "“Cuota inicial” es una referencia de financiación: aparece con un valor de $21.145, pensado como ejemplo de cuota de entrada para acceder a nuestros módulos en hormigón premoldeado.  \n\nLos montos finales dependen del modelo (por ejemplo Offis STUDIO 12, SLIM 15, FAMILY 18, FLEX 22, PLUS 27, XL 36, etc.) y del plan de pago que elijas. No tengo el detalle actualizado de cada plan por acá, así que para ver cuotas reales y vigentes te sugiero escribir al WhatsApp +54 9 11 2652-1040. ¿Qué superficie estás buscando así te orientó sobre qué modelo podría encajar con esa cuota aproximada?",
+      "mentionedModels": [
+        "Cuota inicial",
+        "Offis STUDIO 12"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3710
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Cuota inicial? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "En “Cuota inicial” lo que tenemos cargado es solo un dato económico de referencia: $21.145 como ejemplo de cuota, no un modelo constructivo con superficie o distribución.  \n\nPor eso no hay ficha técnica de m², dormitorios o características asociadas a “Cuota inicial”; esos datos dependen del modelo que elijas (Offis STUDIO 12, SLIM 15, FAMILY 18, FLEX 22, PLUS 27, XL 36, etc.). No tengo los precios actualizados modelo por modelo, te sugiero consultarlo por WhatsApp al +54 9 11 2652-1040. ¿Querés que veamos primero qué tamaño y uso necesitas así te digo qué modelo te conviene mirar?",
+      "mentionedModels": [
+        "Cuota inicial",
+        "Offis STUDIO 12"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 5315
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con un sistema de construcción en hormigón premoldeado, lo que acelera muchísimo los tiempos: las piezas se fabrican en planta y luego se montan en el terreno, con fundaciones y base preparadas previamente. Un “proceso típico” está pensado sobre módulos desde 18 m² en adelante, y el montaje en obra se mide en días, no en meses (los 5 días que ves en la web son justamente el estándar para tener el espacio instalado, según modelo y condiciones del terreno).  \n\nNo tengo el cronograma paso a paso completo cargado (proyecto, fabricación, logística, montaje, terminaciones), pero sí que se maneja en plazos muy cortos comparado con la obra húmeda tradicional. Para ajustar tiempos reales según modelo y zona, te sugiero escribir al WhatsApp +54 9 11 2652-1040. Mientras tanto, ¿ya tenés terreno? ¿En qué zona sería?",
+      "mentionedModels": [
+        "Proceso típico",
+        "Fundaciones y base"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 5154
+    },
+    {
+      "question": "¿Se pueden personalizar los modelos?",
+      "questionType": "customization",
+      "response": "Sí, los modelos se pueden personalizar hasta cierto punto, manteniendo la base estandarizada de cada Offis para no perder rapidez ni costo. Podés jugar con distribución interna básica, aberturas, terminaciones (por ejemplo, usar Panel SIP, chapa sinusoidal, cielorraso PVC mate, etc.) y equipamiento según el uso (home office, vivienda, showroom, cowork).  \n\nPara cambios estructurales muy grandes conviene evaluar caso a caso con el equipo técnico. Para orientarte mejor, ¿sobre qué modelo estás pensando la personalización (Offis STUDIO 12, SLIM 15, FAMILY 18, FLEX 22, PLUS 27, XL 36, u otro)?",
+      "mentionedModels": [
+        "Panel SIP",
+        "Chapa sinusoidal",
+        "Cielorraso PVC mate",
+        "Offis STUDIO 12",
+        "Hasta"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3640
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, ofrecemos financiación para nuestros módulos en hormigón premoldeado, con planes en cuotas y una “cuota inicial” de referencia que en el material figura como $21.145 (a modo orientativo). Los montos y plazos concretos dependen del modelo (por ejemplo Offis STUDIO 12, SLIM 15, FAMILY 18, FLEX 22, PLUS 27, XL 36, etc.) y de la evaluación de ingresos.  \n\nNo tengo las tablas de cuotas actualizadas cargadas, así que para números exactos te sugiero escribir al WhatsApp +54 9 11 2652-1040. Para ir guiándote, ¿qué superficie estás buscando y qué presupuesto manejás aproximadamente por mes?",
+      "mentionedModels": [
+        "Cuota inicial",
+        "Offis STUDIO 12"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3912
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Nos diferencia, primero, el sistema constructivo: trabajamos con hormigón premoldeado, que te da mucha más solidez y durabilidad que un módulo liviano, pero con tiempos de entrega muy rápidos (espacios listos en pocos días).  \n\nSegundo, tenemos modelos muy pensados para uso real (Offis STUDIO 12, SLIM 15, FAMILY 18, FLEX 22, PLUS 27, XL 36, más las líneas Showroom, Cowork y Ticket Office), que ya vienen optimizados y aun así permiten cierta personalización.  \n\nY tercero, la combinación de producto industrializado + financiación: podés acceder a un espacio de calidad, con buena aislación y terminaciones (Panel SIP, chapa sinusoidal, cielorraso PVC, etc.) pagándolo en cuotas. Para entender mejor si somos la mejor opción para vos, ¿lo estás pensando para vivienda, home office o para tu empresa?",
+      "mentionedModels": [
+        "Panel SIP",
+        "Chapa sinusoidal",
+        "Offis STUDIO 12"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 5523
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "No tengo cargada la info específica de cobertura por zonas o provincias. Podría ser posible en varias regiones, pero la logística e instalación dependen mucho de la ubicación exacta.  \n\nTe sugiero consultarlo directo por WhatsApp al +54 9 11 2652-1040 así te confirman si llegamos a tu zona y los costos asociados. ¿En qué localidad o provincia lo estarías necesitando?",
+      "mentionedModels": [],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 3355
+    }
+  ],
+  "sessionCreationTimeMs": 87889,
+  "errors": []
+}

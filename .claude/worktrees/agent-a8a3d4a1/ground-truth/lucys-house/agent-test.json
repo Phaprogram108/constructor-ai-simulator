@@ -1,0 +1,220 @@
+{
+  "company": "Lucys House",
+  "url": "https://www.lucyshousearg.com/",
+  "testedAt": "2026-02-06T15:50:29.998Z",
+  "sessionId": "9ea69866-0fef-4e94-a390-511a58ce795b",
+  "systemPromptLength": 21961,
+  "systemPromptModelsFound": [
+    "Proyecto 14",
+    "Proyecto 1",
+    "Proyecto 2",
+    "Proyecto 3",
+    "Proyecto 4",
+    "Proyecto 5",
+    "Proyecto 6",
+    "Proyecto 8",
+    "Proyecto 9",
+    "Proyecto 10",
+    "Proyecto 11",
+    "Proyecto 12",
+    "Proyecto 13",
+    "Oficinas Modulares",
+    "Proyectos Modulares",
+    "Full Premium 3",
+    "Full Premium 1",
+    "Full Premium 2",
+    "Comfort 3",
+    "Comfort 1",
+    "Comfort 2",
+    "Detalle 17",
+    "Detalle 1",
+    "Detalle 2",
+    "Detalle 3",
+    "Detalle 4",
+    "Detalle 5",
+    "Detalle 7",
+    "Detalle 8",
+    "Detalle 9",
+    "Detalle 10",
+    "Detalle 11",
+    "Detalle 12",
+    "Detalle 13",
+    "Detalle 14",
+    "Detalle 15",
+    "Detalle 16",
+    "Equipamiento Deluxe",
+    "Equipamiento Full Premium",
+    "Entregas Inmediatas",
+    "Equipamientos",
+    "Detalle 24",
+    "Detalle 6",
+    "Detalle 18",
+    "Detalle 19",
+    "Detalle 20",
+    "Detalle 21",
+    "Detalle 22",
+    "Detalle 23",
+    "Deluxe 3",
+    "Deluxe 1",
+    "Deluxe 2",
+    "Detalle 26",
+    "Detalle 25",
+    "Vivienda Modular 1"
+  ],
+  "systemPromptWhatsApp": "+5493511234567",
+  "systemPromptType": "de Módulos habitacionales estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Lucy’s House es una empresa de Córdoba que diseña y construye viviendas y módulos habitacionales en Steel Frame, no trabajamos con contenedores. Hacemos Módulos habitacionales totalmente personalizables (como Proyecto 1, Proyecto 14, Full Premium, Comfort, Deluxe, Vivienda Modular 1, Oficinas Modulares, etc.), los fabricamos en planta y los dejamos listos para transportar a cualquier punto del país en unos 60 días.  \n\nPara orientarte mejor, ¿qué tipo de Módulos habitacionales estás buscando?",
+      "mentionedModels": [
+        "Proyecto 14",
+        "Proyecto 1",
+        "Oficinas Modulares",
+        "Vivienda Modular 1"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4828
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos principalmente viviendas modulares y Módulos habitacionales en Steel Frame, como los modelos Proyecto 1 al Proyecto 14, líneas Full Premium (1, 2 y 3), Comfort (1, 2 y 3), Deluxe (1, 2 y 3), Vivienda Modular 1, Oficinas Modulares y distintos Proyectos Modulares y Equipamientos (Deluxe, Full Premium, etc.). Todos son 100% personalizables, se construyen en fábrica en Córdoba, se pueden transportar a todo el país y tenemos opciones de entrega inmediata como el Módulo DELUXE PLUS de 28,56 m².  \n\nAdemás brindamos el servicio completo de construcción en Steel Frame, asesoramiento comercial y técnico, financiación y atención en nuestro showroom en Av. La Voz del Interior 7500. ¿Qué tipo de módulo te interesa más: vivienda familiar, algo chico tipo monoambiente, o una oficina modular?",
+      "mentionedModels": [
+        "Proyecto 14",
+        "Proyecto 1",
+        "Oficinas Modulares",
+        "Proyectos Modulares",
+        "Equipamientos",
+        "Vivienda Modular 1"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3138
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Te dejo los datos de contacto directos:  \n- Teléfono: +54 9 351 1234567  \n- WhatsApp: +54 9 351 2077113  \n\nSi querés, puedo ayudarte a definir qué Módulos habitacionales te interesan así ya escribís con algo más concreto.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3846
+    },
+    {
+      "question": "¿Cuántos proyectos ofrecen?",
+      "questionType": "product_count",
+      "response": "Tenemos un catálogo bastante amplio: proyectos numerados (Proyecto 1, 2, 3, 4, 5, 6, 8, 9, 10, 11, 12, 13 y 14), líneas Full Premium (1, 2 y 3), Comfort (1, 2 y 3), Deluxe (1, 2 y 3), Vivienda Modular 1, Oficinas Modulares, Proyectos Modulares y varios “Detalles” y “Equipamientos” específicos. En total son más de 40 opciones entre modelos de Módulos habitacionales, variantes de terminación y equipamiento.  \n\nPara poder recomendarte mejor, ¿qué tipo de Módulos habitacionales estás buscando?",
+      "mentionedModels": [
+        "Proyecto 1",
+        "Oficinas Modulares",
+        "Proyectos Modulares",
+        "Equipamientos",
+        "Vivienda Modular 1"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2393
+    },
+    {
+      "question": "Contame sobre Proyecto 14",
+      "questionType": "product_specific",
+      "response": "Proyecto 14 es uno de nuestros Módulos habitacionales en Steel Frame, con diseño moderno y grandes ventanales, ideal como vivienda principal o casa de fin de semana. Se fabrica íntegramente en planta, con terminaciones de alta calidad similares a nuestras líneas Comfort/Deluxe (revestimientos modernos, aberturas de aluminio, excelente aislación) y queda listo para transportar a cualquier punto del país.  \n\nNo tengo acá la ficha técnica completa (m2 y distribución exacta), pero se personaliza según ambientes que necesites. ¿Lo pensás para vivienda permanente o algo más tipo cabaña de descanso, y para cuántas personas?",
+      "mentionedModels": [
+        "Proyecto 14",
+        "Proyecto 1"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 5047
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Proyecto 14? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "Proyecto 14 es uno de nuestros Módulos habitacionales en Steel Frame, pero en la info que tengo cargada no figura la ficha técnica completa (m² exactos, cantidad de dormitorios y distribución puntual). Sí te puedo asegurar que sigue los estándares de Lucy’s House: construcción en Steel Frame, terminaciones de alta calidad, listo en 60 días y transportable a todo el país, con posibilidad de personalizar ambientes y equipamiento (similar a lo que ves en nuestras líneas Comfort/Deluxe).  \n\nNo tengo esa información específica de superficie y dormitorios cargada acá, pero podés pedir la ficha técnica completa por WhatsApp al +54 9 351 2077113. Para que te oriente mejor mientras tanto: ¿lo pensás con 1 o 2 dormitorios y aproximadamente cuántos m² te gustaría?",
+      "mentionedModels": [
+        "Proyecto 14",
+        "Proyecto 1"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 5337
+    },
+    {
+      "question": "Contame sobre Proyecto 1",
+      "questionType": "product_specific",
+      "response": "Proyecto 1 es uno de nuestros Módulos habitacionales en Steel Frame con diseño moderno, pensado como vivienda compacta pero funcional, similar a los modelos que ves en Vivienda Modular 1 (terminaciones de calidad, buena iluminación y distribución eficiente). Se fabrica íntegramente en nuestra planta en Córdoba, se entrega listo para usar en aproximadamente 60 días y es 100% personalizable en ambientes, revestimientos y equipamiento.  \n\nNo tengo cargada la ficha técnica exacta (m² y cantidad de dormitorios) de Proyecto 1, pero podemos adaptarlo como monoambiente, 1 dormitorio o más según lo que necesites. ¿Lo estás pensando como vivienda principal, cabaña de alquiler o algo tipo oficina/estudio?",
+      "mentionedModels": [
+        "Proyecto 1",
+        "Vivienda Modular 1"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 3902
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Proyecto 1? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "De Proyecto 1 no tengo cargada la ficha técnica detallada (superficie exacta en m² ni cantidad de dormitorios), solo que es un Módulo habitacional en Steel Frame, fabricado en planta, 100% personalizable y con los mismos estándares de calidad que nuestras líneas Comfort/Deluxe (buen nivel de terminaciones, aislación y diseño moderno).  \n\nNo tengo esa información específica de m² y distribución disponible por acá, pero podés pedir la ficha completa y planos por WhatsApp al +54 9 351 2077113. Para ayudarte a elegir la versión adecuada, ¿lo estás pensando con 1 dormitorio, 2, o algo tipo monoambiente?",
+      "mentionedModels": [
+        "Proyecto 1"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 2432
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con construcción en Steel Frame dentro de fábrica: se diseña el módulo, se fabrica completo en planta (estructura, aislaciones, instalaciones, terminaciones interiores y exteriores) y luego se transporta al terreno para su colocación final. Esto reduce tiempos, errores de obra y te garantiza calidad controlada.  \n\nNuestros Módulos habitacionales estándar se entregan en aproximadamente 60 días desde la firma y definición del proyecto. ¿Para cuándo lo estarías necesitando vos?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2477
+    },
+    {
+      "question": "¿Se pueden personalizar los proyectos?",
+      "questionType": "customization",
+      "response": "Sí, todos nuestros proyectos se pueden personalizar: podés adaptar distribución interna (ambientes, cantidad de dormitorios), terminaciones (pisos, revestimientos, colores), y nivel de equipamiento (por ejemplo, Equipamiento Deluxe o Full Premium). Incluso en modelos ya definidos como Proyecto 1, Proyecto 14, Comfort o Deluxe, ajustamos medidas, aberturas y detalles según tu necesidad.  \n\nPara orientarte mejor, ¿qué tipo de Módulos habitacionales estás pensando personalizar: vivienda familiar, cabaña de fin de semana u oficina modular?",
+      "mentionedModels": [
+        "Proyecto 14",
+        "Proyecto 1",
+        "Equipamiento Deluxe"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2751
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, ofrecemos financiación para nuestros Módulos habitacionales en Steel Frame; los planes concretos se ajustan según el proyecto, anticipo y plazos que manejes. No tengo por acá el detalle fino de cuotas y tasas, pero lo vemos caso por caso con el área comercial.  \n\nContame: ¿qué presupuesto aproximado manejás y si pensás pagar con anticipo + cuotas o necesitás financiar la mayor parte?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2809
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Nos diferenciamos porque trabajamos con tecnología Steel Frame de alto nivel (no usamos contenedores), lo que da mejor aislación, confort y durabilidad, con un diseño súper moderno. Fabricamos los Módulos habitacionales en planta en Córdoba, los dejamos listos para transportar a todo el país y manejamos tiempos muy rápidos: las viviendas modulares se entregan en alrededor de 60 días, con personalización total de diseño y equipamiento.  \n\nAdemás, contamos con showroom físico en Av. La Voz del Interior 7500 para que puedas ver las terminaciones en vivo y ofrecemos financiación para facilitar el proyecto. ¿Te gustaría algo más orientado a línea Comfort, Deluxe o Full Premium?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 5461
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "Llegamos a todo el país: los Módulos habitacionales se fabrican en nuestra planta en Córdoba y se preparan para ser transportados e instalados en cualquier provincia de Argentina. Coordinamos la logística según el acceso al terreno y el tamaño del módulo.  \n\nSi me contás en qué localidad tenés pensado instalarlo, te digo mejor cómo sería el envío en tu caso.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2048
+    }
+  ],
+  "sessionCreationTimeMs": 15448,
+  "errors": []
+}

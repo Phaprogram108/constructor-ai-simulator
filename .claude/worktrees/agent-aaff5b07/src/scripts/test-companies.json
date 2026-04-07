@@ -1,0 +1,223 @@
+{
+  "version": "1.0",
+  "createdAt": "2026-02-04",
+  "description": "Lista de empresas para QA baseline - FASE 1",
+  "companies": {
+    "problematicas": [
+      {
+        "name": "Atlas Housing",
+        "url": "https://atlashousing.com.ar",
+        "knownIssue": "Info falsa sobre modelos - inventa datos",
+        "expectedModels": ["Casa 1", "Casa 2"]
+      },
+      {
+        "name": "Habitatio",
+        "url": "https://habitatio.com.ar",
+        "knownIssue": "Info parcial del modelo Flex - scraping incompleto",
+        "expectedModels": ["Flex"]
+      },
+      {
+        "name": "ViBert",
+        "url": "https://vibert.com.ar",
+        "knownIssue": "Modelos en linktree - no extrae de links externos",
+        "expectedModels": ["Casa Sara", "Casa Maria", "Casa Elena"]
+      },
+      {
+        "name": "Ecomod",
+        "url": "https://ecomod.com.ar/",
+        "knownIssue": "Sin WhatsApp extraido aunque lo tiene",
+        "expectedModels": []
+      },
+      {
+        "name": "Movilhauss",
+        "url": "https://movilhauss.com",
+        "knownIssue": "Respuestas genericas - no tengo esa info",
+        "expectedModels": []
+      },
+      {
+        "name": "PlugArq",
+        "url": "https://www.plugarq.com/",
+        "knownIssue": "SPA pesada - timeout frecuente",
+        "expectedModels": []
+      },
+      {
+        "name": "Lucys House",
+        "url": "https://www.lucyshousearg.com/",
+        "knownIssue": "Precios inventados",
+        "expectedModels": []
+      },
+      {
+        "name": "Sienna Modular",
+        "url": "https://www.siennamodular.com.ar/",
+        "knownIssue": "Modelos con nombres genericos",
+        "expectedModels": []
+      },
+      {
+        "name": "Grupo Steimberg",
+        "url": "https://www.gruposteimberg.com/",
+        "knownIssue": "Es tradicional, no modular - clasificacion incorrecta",
+        "expectedModels": []
+      },
+      {
+        "name": "T1 Modular",
+        "url": "https://www.t1modular.com.ar/",
+        "knownIssue": "FAQ no expandido - info oculta",
+        "expectedModels": []
+      }
+    ],
+    "aleatorias": [
+      {
+        "name": "Habika",
+        "url": "https://habika.ar/",
+        "notes": "Del master phascraper"
+      },
+      {
+        "name": "Arcohouse",
+        "url": "https://arcohouse.com.ar/",
+        "notes": "Del master phascraper"
+      },
+      {
+        "name": "Wellmod",
+        "url": "https://www.wellmod.com.ar/",
+        "notes": "Del master phascraper"
+      },
+      {
+        "name": "Mini Casas",
+        "url": "https://www.minicasas.com.ar/",
+        "notes": "Del master phascraper"
+      },
+      {
+        "name": "Offis",
+        "url": "https://www.offis.ar/",
+        "notes": "Del master phascraper"
+      },
+      {
+        "name": "Efede",
+        "url": "https://efede.com.ar/casas-modulares/",
+        "notes": "Del master phascraper"
+      },
+      {
+        "name": "GoHome",
+        "url": "https://gohomeconstrucciones.com.ar/",
+        "notes": "Del master phascraper"
+      },
+      {
+        "name": "Aftamantes",
+        "url": "https://aftamantes.net/refugios/",
+        "notes": "Del master phascraper"
+      },
+      {
+        "name": "Arqtainer",
+        "url": "https://arqtainer.com.ar/",
+        "notes": "Del master phascraper"
+      },
+      {
+        "name": "Lista",
+        "url": "https://lista.com.ar/",
+        "notes": "Del master phascraper"
+      }
+    ],
+    "fase2": [
+      {
+        "name": "Modular Homes",
+        "url": "https://modularhomes.com.ar/",
+        "notes": "40+ años, modulos industriales para mineria y energia"
+      },
+      {
+        "name": "Casa Real Viviendas",
+        "url": "https://casarealviviendas.com.ar/",
+        "notes": "Casas americanas en madera, entrega 45 dias"
+      },
+      {
+        "name": "Viviendas Rolon",
+        "url": "https://www.viviendasrolon.com.ar/",
+        "notes": "50+ años, amplio catalogo prefabricadas"
+      },
+      {
+        "name": "Gauros Viviendas",
+        "url": "https://gaurosviviendas.com.ar/",
+        "notes": "Lider en casas americanas, 3000+ entregadas, Wood Frame"
+      },
+      {
+        "name": "Viviendas Apolo",
+        "url": "https://viviendasapolo.com.ar/",
+        "notes": "Cordoba, casas prefabricadas y cabañas turisticas"
+      },
+      {
+        "name": "La Casa Mia",
+        "url": "https://lacasamia.com.ar/",
+        "notes": "12+ años, wood frame y steel frame, entrega 30 dias"
+      },
+      {
+        "name": "Viviendas Tecnohouse",
+        "url": "https://www.viviendastecnohouse.com.ar/",
+        "notes": "30+ años viviendas industrializadas"
+      },
+      {
+        "name": "FullHouse Vivienda",
+        "url": "https://fullhousevivienda.com.ar/",
+        "notes": "Cordoba, casas premium steel frame y wood frame"
+      },
+      {
+        "name": "Viviendas El Fuerte",
+        "url": "https://elfuerte.com.ar/",
+        "notes": "Desde 1969, estilo serrano, cabañas y casas"
+      },
+      {
+        "name": "Viviendas El Calafate",
+        "url": "https://www.viviendaselcalafate.com.ar/",
+        "notes": "Prefabricadas e industrializadas, estilo americano"
+      },
+      {
+        "name": "Dice Containers",
+        "url": "https://dicecontainers.com.ar/",
+        "notes": "Casas container con habilitacion municipal"
+      },
+      {
+        "name": "Importainer",
+        "url": "https://www.importainer.com.ar/",
+        "notes": "Nro 1 casas container Argentina, 10+ años"
+      },
+      {
+        "name": "Contenedores Argentina",
+        "url": "https://contenedoresargentina.com/",
+        "notes": "Modulos habitacionales en contenedores maritimos"
+      },
+      {
+        "name": "Buro Steel Framing",
+        "url": "https://burosteelframing.com/",
+        "notes": "Steel frame para countries y barrios cerrados"
+      },
+      {
+        "name": "Steel Framing America",
+        "url": "https://steelframingamerica.net/",
+        "notes": "Steel framing llave en mano, 30% ahorro"
+      },
+      {
+        "name": "MasHouse",
+        "url": "https://mashouse.com.ar/",
+        "notes": "Casas steel frame desde 120m2, diseño personalizado"
+      },
+      {
+        "name": "Steel Tres Arroyos",
+        "url": "https://steeltresarroyos.com.ar/",
+        "notes": "Steel framing, 60% mas rapido, 100+ proyectos"
+      },
+      {
+        "name": "Elemental Constructora",
+        "url": "https://elementalconstructora.com.ar/",
+        "notes": "La Plata, linea modular entrega 60 dias"
+      },
+      {
+        "name": "Steel Frame Constructora",
+        "url": "https://steelframeconstructora.com.ar/",
+        "notes": "Construccion en seco, steel frame y wood frame"
+      },
+      {
+        "name": "Nova Viviendas",
+        "url": "https://www.novaviviendas.com.ar/",
+        "notes": "Portal prefabricadas, varios materiales y estilos"
+      }
+    ]
+  }
+}

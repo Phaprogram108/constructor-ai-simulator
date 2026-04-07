@@ -1,0 +1,64 @@
+=== IDERO ===
+URL: https://viviendas-modulares.com/
+Session: 92543a47-4479-4daf-b40c-b3987e87bfd7
+Date: 2026-02-08 17:07:05
+Session creation: 37.2s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (3.8s): Somos IDERO SRL, una empresa argentina que fabrica viviendas modulares de alta calidad con sistema steel frame. Diseñamos y construimos Modelos de casas como las líneas Ceibo (CM 54), Urbana (UM 60), Evolutiva (EM 30, EM 36, EM 41, EM 47, EM 53) y Mediterránea (MM 48, 57, 63, 69, 78), todas con excelente aislación térmica y terminaciones de primera. También podés acceder con financiación a través de bancos como Hipotecario y Ciudad. ¿Qué tipo de Modelos estás buscando: algo chico para empezar o una vivienda familiar más grande?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (4.9s): Ofrecemos viviendas modulares completas en distintas líneas y tamaños, todas construidas en steel frame con materiales de alta prestación y muy buena aislación térmica.  
+Modelos disponibles:  
+- **Línea Ceibo:** CM 54 (54 m², 2 dorm, 1 baño).  
+- **Línea Urbana:** UM 60 (60 m², 2 plantas, 2 dorm, 1 baño).  
+- **Línea Evolutiva:** EM 30, EM 36, EM 41, EM 47 (30+17 y 36+11), EM 53 (distintas combinaciones de 1 a 3 dormitorios y hasta 2 baños).  
+- **Línea Mediterránea:** MM 48, MM 57, MM 63, MM 69, MM 78 (1 a 3 dormitorios, hasta 2 baños, estilo moderno).  
+
+Además brindamos:  
+- Construcción en **steel frame** en todo el proceso industrializado.  
+- Opciones de **financiación** y acceso a créditos (Banco Hipotecario, Banco Ciudad).  
+- Asesoramiento técnico y planos de fundaciones para que puedas ejecutar la base en tu terreno (y posibilidad de que IDERO haga las fundaciones como adicional).  
+
+Para orientarte mejor, ¿ya tenés terreno? ¿En qué zona pensás instalar la vivienda?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (2.9s): Tenemos 13 Modelos de viviendas modulares estándar, divididos en 4 líneas:
+
+- **Línea Ceibo:** CM 54.  
+- **Línea Urbana:** UM 60.  
+- **Línea Evolutiva:** EM 30, EM 36, EM 41, EM 47 (30+17), EM 47 (36+11), EM 53.  
+- **Línea Mediterránea:** MM 48, MM 57, MM 63, MM 69, MM 78.  
+
+Cada uno varía en m², cantidad de dormitorios y baños; si querés te ayudo a elegir el que mejor se adapte a vos según cuántos ambientes necesitás.
+
+USUARIO: Contame sobre 1. Viviendas modulares
+AGENTE (4.4s): Buenísimo, te cuento sobre nuestras **viviendas modulares** en general.  
+Son casas industrializadas construidas en **steel frame**, con estructura de acero Ternium, muros con aislación de lana de vidrio Isover, DVH en aberturas de PVC Muchtek, techo termoacústico con panel PIR y pisos elevados con aislación, lo que da **excelente confort térmico y acústico**. Vienen totalmente terminadas de fábrica: cocina equipada (mueble, mesada de granito, barra), baño completo (Roca o similar, porcelanato), instalaciones eléctricas y de agua listas, termotanque eléctrico y pintura interior.  
+
+Dentro de “viviendas modulares” tenés las líneas y Modelos específicos: **CM 54**, **UM 60**, **EM 30/36/41/47/53** y **MM 48/57/63/69/78**, con opciones de 1 a 3 dormitorios y hasta 2 baños. ¿Para cuántas personas pensás la casa así te sugiero una línea y Modelo puntual?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (8.7s): Para 2 dormitorios tenés varias opciones y te paso valores de referencia en dólar oficial BNA (IVA incluido, sin transporte ni montaje):  
+- **CM 54 (Línea Ceibo, 54 m², 2 dorm, 1 baño):** U$D 49.725.  
+- **UM 60 (Línea Urbana, 60 m², 2 dorm, 1 baño, 2 plantas):** U$D 66.300.  
+- **EM 41 (2 dorm, 1 baño):** U$D 42.788 · **EM 47 30+17 (2 dorm, 2 baños):** U$D 50.492 · **EM 36 (2 dorm, 2 baños):** U$D 35.360 · **EM 47 36+11 (2 dorm, 2 baños):** U$D 46.164.  
+- **MM 57 (2 dorm, 1 baño):** U$D 52.488 (2D) o U$D 53.887 (3D) · **MM 63 (2 dorm, 2 baños):** U$D 61.880 / 63.427 (3D) · **MM 69 (2 dorm, 2 baños):** U$D 63.538.  
+
+Así a grandes rasgos, una vivienda modular de 2 dormitorios arranca alrededor de los **U$D 35.000–40.000** según la línea y los baños, y sube según metros y prestaciones. ¿En qué rango de presupuesto te gustaría moverte para ver qué Modelo (Ceibo, Evolutiva, Mediterránea o Urbana) se ajusta mejor?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (13.1s): Nuestras viviendas modulares se construyen con materiales de primeras marcas (Ternium, Barbieri, Isover, Muchtek, Roca, etc.), lo que asegura durabilidad y muy bajo mantenimiento, pero en la info que tengo cargada no figura el detalle formal de años de garantía por escrito.  
+Lo que sí está claro es que entregamos planos, especificaciones técnicas completas y todo el sistema está pensado como construcción permanente, no provisoria.  
+
+No tengo la garantía específica (plazo y condiciones) cargada por acá; para ese dato puntual te sugiero escribir a **institucionales@idero.com.ar** así te pasan el documento de garantía actualizado.
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (10.9s): No tengo cargado por acá el número de WhatsApp o teléfono de IDERO SRL.  
+Te recomiendo entrar a la web **viviendas-modulares.com** o escribir a **institucionales@idero.com.ar**, donde vas a encontrar el contacto directo y actual.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 2
+Tiempo promedio: 7.0s

@@ -1,0 +1,349 @@
+{
+  "company": "Wellmod",
+  "url": "https://www.wellmod.com.ar/",
+  "capturedAt": "2026-02-05T20:29:15.693Z",
+  "type": "modular",
+  "navigation": {
+    "menuItems": [
+      "INICIO",
+      "PROYECTOS",
+      "SISTEMAS",
+      "PRESENTACIONES",
+      "NOSOTROS",
+      "CONTACTO"
+    ],
+    "modelSections": [
+      {
+        "label": "Proyectos",
+        "url": "https://www.wellmod.com.ar/proyectos"
+      },
+      {
+        "label": "Tipologias",
+        "url": "https://www.wellmod.com.ar/tipologias"
+      },
+      {
+        "label": "casa",
+        "url": "https://sicasa.net.ar/"
+      }
+    ]
+  },
+  "models": [
+    {
+      "name": "Hotel Termal",
+      "features": [],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-1-hotel-termal.jpeg",
+      "detailUrl": "https://www.wellmod.com.ar/proyectos/turismo/hotel-termal"
+    },
+    {
+      "name": "Paso Calmo",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/03-detail-2-paso-calmo.jpeg",
+      "detailUrl": "https://www.wellmod.com.ar/proyectos/turismo/paso-calmo"
+    },
+    {
+      "name": "Las Algas",
+      "price": "USD 31.900 + IVA",
+      "sqMeters": 26,
+      "features": [
+        "Estructura metálica con bastimentos Steel Frame",
+        "Revestimiento exterior plástico texturado/chapa acanalada",
+        "Piso/Piso de hormigón alisando",
+        "Aberturas de aluminio vidrio simple",
+        "Cortina de black out en dormitorio",
+        "Tanque de agua de 600 l incorporado",
+        "Cubierta PVC",
+        "Mobiliario de cocina y placares bajo mesada, estantes, tapas y grifería",
+        "Baño completo artefactos sanitarios, vanitory y grifería",
+        "Pintura latex interior y exterior personalizado en todos los ambientes en tono en tendencia top",
+        "Iluminación LED artefactos embutidos en interior",
+        "Calefacción radiadores eléctricos individuales a bajo consumo, bomba presurizadora y máquina instalación de gas para A/A",
+        "Instalación eléctrica estructura metálica, entubado a la vista, back en WPC",
+        "Hogareras profesionales incluidas en este modelo",
+        "Garantía de obra civil estructura a años"
+      ],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-3-las-algas.jpeg",
+      "detailUrl": "https://wellmodamt.wixsite.com/my-site-5/post/w26-suite-black-monoambiente-ba%C3%B1o-y-galer%C3%ADa-1-m%C3%B3dulo-precio-u-d-39-188",
+      "bathrooms": 1,
+      "bedrooms": 1
+    },
+    {
+      "name": "W26 Black Edition Lodge",
+      "features": [
+        "deck de madera",
+        "celosías de madera",
+        "revestimiento oscuro",
+        "ventanales de vidrio",
+        "galería techada",
+        "diseño modular"
+      ],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-4-w26-black-edition-lodge.jpeg",
+      "detailUrl": "https://www.wellmod.com.ar/proyectos/turismo/w26-black-lodge",
+      "bedrooms": 1,
+      "bathrooms": 1
+    },
+    {
+      "name": "Granja Ecuestre",
+      "features": [],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-5-granja-ecuestre.jpeg",
+      "detailUrl": "https://www.wellmod.com.ar/proyectos/turismo/granja-ecuestre"
+    },
+    {
+      "name": "La Ramadita",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-1.jpeg",
+      "detailUrl": "https://www.wellmod.com.ar/proyectos/turismo/ramadita"
+    },
+    {
+      "name": "Casa VJ",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-1.jpeg",
+      "detailUrl": "https://www.wellmod.com.ar/proyectos/fin-de-semana/VJ"
+    },
+    {
+      "name": "Casa Polvorillo",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-1.jpeg",
+      "detailUrl": "https://wellmodamt.wixsite.com/my-site-5/post/w40-a-presupuesto-el-precio-indicado-corresponde-a-la-l%C3%ADnea-basic-precios-iva"
+    },
+    {
+      "name": "Casa MY",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-1.jpeg",
+      "detailUrl": "https://www.wellmod.com.ar/proyectos/fin-de-semana/MY"
+    },
+    {
+      "name": "Casa MF",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-1.jpeg",
+      "detailUrl": "https://www.wellmod.com.ar/proyectos/fin-de-semana/MF"
+    },
+    {
+      "name": "Casa IM",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-1.jpeg",
+      "detailUrl": "https://www.wellmod.com.ar/proyectos/fin-de-semana/IM"
+    },
+    {
+      "name": "Casa AS",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-1.jpeg",
+      "detailUrl": "https://www.wellmod.com.ar/proyectos/fin-de-semana/AS"
+    },
+    {
+      "name": "AA2000",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-1.jpeg",
+      "detailUrl": "https://www.wellmod.com.ar/proyectos/oficina/aerolineas"
+    },
+    {
+      "name": "Club Atlético Talleres",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-1.jpeg",
+      "detailUrl": "https://www.wellmod.com.ar/proyectos/oficina/talleres"
+    },
+    {
+      "name": "Fertimaq",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-1.jpeg",
+      "detailUrl": "https://www.wellmod.com.ar/proyectos/oficina/fertimaq"
+    },
+    {
+      "name": "Grido",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-1.jpeg",
+      "detailUrl": "https://www.wellmod.com.ar/proyectos/oficina/grido"
+    },
+    {
+      "name": "TN Pilates",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-1.jpeg",
+      "detailUrl": "https://wellmodamt.wixsite.com/my-site-5/post/w20-suite-monoambiente-ba%C3%B1o-y-cocina-1-m%C3%B3dulo-precio-u-d-30-990"
+    },
+    {
+      "name": "W26 Suite",
+      "sqMeters": 36,
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg",
+      "detailUrl": "https://wellmodamt.wixsite.com/my-site-5/post/w26-suite-black-monoambiente-ba%C3%B1o-y-galer%C3%ADa-1-m%C3%B3dulo-precio-u-d-39-188"
+    },
+    {
+      "name": "W40 A",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg",
+      "detailUrl": "https://wellmodamt.wixsite.com/my-site-5/post/w40-a-presupuesto-el-precio-indicado-corresponde-a-la-l%C3%ADnea-basic-precios-iva"
+    },
+    {
+      "name": "W20 Suite",
+      "sqMeters": 20,
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg",
+      "detailUrl": "https://wellmodamt.wixsite.com/my-site-5/post/w20-suite-monoambiente-ba%C3%B1o-y-cocina-1-m%C3%B3dulo-precio-u-d-30-990"
+    },
+    {
+      "name": "W40 B",
+      "sqMeters": 40,
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg",
+      "detailUrl": "https://wellmodamt.wixsite.com/my-site-5/post/w40-b-presupuesto-el-precio-indicado-corresponde-a-la-l%C3%ADnea-basic-precios-iva"
+    },
+    {
+      "name": "W40 C",
+      "sqMeters": 40,
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg",
+      "detailUrl": "https://wellmodamt.wixsite.com/my-site-5/post/w40-c-presupuesto-el-precio-indicado-corresponde-a-la-l%C3%ADnea-basic-precios-iva"
+    },
+    {
+      "name": "W60 A",
+      "sqMeters": 60,
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg",
+      "detailUrl": "https://wellmodamt.wixsite.com/my-site-5/post/w60-a-presupuesto-el-precio-indicado-corresponde-a-la-linea-basic-precios-iva"
+    },
+    {
+      "name": "W60 B",
+      "sqMeters": 60,
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg",
+      "detailUrl": "https://wellmodamt.wixsite.com/my-site-5/post/w60-b-presupuesto-el-precio-indicado-corresponde-a-la-l%C3%ADnea-basic-precios-iva"
+    },
+    {
+      "name": "W80 A",
+      "sqMeters": 80,
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg",
+      "detailUrl": "https://wellmodamt.wixsite.com/my-site-5/post/w80-a-presupuesto-el-precio-indicado-corresponde-a-la-l%C3%ADnea-basic-precios-iva"
+    },
+    {
+      "name": "W80 B",
+      "sqMeters": 80,
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg",
+      "detailUrl": "https://wellmodamt.wixsite.com/my-site-5/post/w80-b-presupuesto-el-precio-indicado-corresponde-a-la-l%C3%ADnea-basic-precios-iva"
+    },
+    {
+      "name": "W80 C",
+      "sqMeters": 80,
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg",
+      "detailUrl": "https://wellmodamt.wixsite.com/my-site-5/post/w80-c-presupuesto-el-precio-indicado-corresponde-a-la-l%C3%ADnea-basic-precios-iva"
+    },
+    {
+      "name": "W20 Oficina",
+      "sqMeters": 20,
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-2.jpeg",
+      "detailUrl": "https://wellmodamt.wixsite.com/my-site-5/post/w20-oficina-presupuesto-el-precio-indicado-corresponde-a-la-l%C3%ADnea-basic-precios-iva"
+    },
+    {
+      "name": "NUEVA PLANTA DE PRODUCCIÓN",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg",
+      "detailUrl": "https://sicasa.net.ar/empresa/"
+    },
+    {
+      "name": "CAMILLAS",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg",
+      "detailUrl": "https://sicasa.net.ar/plataforma-de-carga/"
+    },
+    {
+      "name": "ROLL OFF",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg",
+      "detailUrl": "https://sicasa.net.ar/roll-off/"
+    },
+    {
+      "name": "COLOCACIÓN DE EJES BAJO NORMA 25/2009 S.S.T.A.",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg",
+      "detailUrl": "https://sicasa.net.ar/plataforma-de-carga/"
+    },
+    {
+      "name": "PORTA CONTENEDOR",
+      "sqMeters": 360,
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg",
+      "detailUrl": "https://sicasa.net.ar/porta-contenedores-standard/"
+    },
+    {
+      "name": "ACCESORIOS",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg",
+      "detailUrl": "https://sicasa.net.ar/accesorios/"
+    },
+    {
+      "name": "WELLMOD",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg",
+      "detailUrl": "http://www.wellmod.com.ar/"
+    },
+    {
+      "name": "GRÚA PERCHA",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg",
+      "detailUrl": "https://sicasa.net.ar/roll-off/"
+    },
+    {
+      "name": "GRÚAS VEHICULARES",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg",
+      "detailUrl": "http://www.gec-sa.net/productos-ejes.php?ln=sp"
+    },
+    {
+      "name": "CAJA VOLCADORA",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg",
+      "detailUrl": "https://sicasa.net.ar/caja-volcadora/"
+    }
+  ],
+  "contactInfo": {
+    "whatsapp": "543518160094",
+    "email": "hola@wellmod.com.ar",
+    "phone": "+5493518160094",
+    "instagram": "@wellmod.ar"
+  },
+  "totalModelsFound": 38,
+  "pagesExplored": 9,
+  "errors": [
+    "Detail page Paso Calmo: Cannot read properties of null (reading 'length')"
+  ]
+}

@@ -1,0 +1,60 @@
+=== ECOMOD ===
+URL: https://ecomod.com.ar/
+Session: 712ec194-7714-4401-92a9-f0a05797c0db
+Date: 2026-02-08 15:25:58
+Session creation: 20.6s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (6.3s): Somos Ecomod, una empresa de construcción modular con base en La Plata que trabaja con sistemas en hormigón premoldeado y estructura de acero. Diseñamos y fabricamos módulos 100% transportables para viviendas, cabañas, oficinas y locales comerciales, que se arman en fábrica y se montan en tu terreno en cualquier parte del país.  
+
+Podés elegir entre Modelos predefinidos (Eco Studio, Turístico, Eco Mini, Eco Mini +, Eco 1.1, Eco 2.1+) o hacer un proyecto a medida, personalizando terminaciones, distribución y extras como decks y pérgolas. Además, ofrecemos financiación y 5 años de garantía sobre nuestras casas modulares.  
+
+Para orientarte mejor, ¿qué tipo de Modelos estás buscando: vivienda, cabaña turística, oficina o algo comercial?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (4.8s): Ofrecemos construcción modular en hormigón premoldeado y estructura de acero, con módulos 100% transportables que fabricamos en nuestra planta y montamos en tu terreno en cualquier punto del país.  
+
+En cuanto a Modelos, hoy tenemos:
+- Eco Studio (11,5 m²): módulo compacto con kitchenette y toilette, ideal oficina/estudio o anexo.
+- Turístico (25 m²): monoambiente con cocina integrada y baño completo, pensado para cabañas y desarrollos turísticos.
+- Eco Mini (30 m²) y Eco Mini + (40 m²): monoambientes amplios con cocina completa, barra y baño, perfectos como vivienda compacta.
+- Eco 1.1 (45 m²): una habitación, ambiente integrado living–cocina–comedor y baño completo.
+- Eco 2.1 + (70 m²): dos dormitorios, amplio living-comedor-cocina y baño completo, ideal familia.  
+
+También hacemos proyectos especiales como Casa Bariloche, Casa Isla Santiago y Casa General Madariaga, y contamos con financiación. Para ayudarte mejor, ¿lo pensás para vivienda permanente, turismo o uso laboral/comercial?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (6.2s): Tenemos varios Modelos estándar y además proyectos especiales.  
+Dentro de la línea principal hoy contamos con 6 Modelos: Eco Studio (11,5 m²), Turístico (25 m²), Eco Mini (30 m²), Eco Mini + (40 m²), Eco 1.1 (45 m²) y Eco 2.1 + (70 m²).  
+
+Además, tenemos casas ya realizadas como referencias de diseño: Casa Bariloche, Casa Isla Santiago y Casa General Madariaga, que también se pueden tomar como base para nuevos proyectos. ¿De cuántos m² aproximadamente estás buscando vos?
+
+USUARIO: Contame sobre 1. Eco Studio
+AGENTE (3.7s): El Eco Studio es nuestro modelo más compacto: 11,5 m² cubiertos, pensado como estudio, oficina, cuarto de huéspedes o anexo a una casa existente. Viene con kitchenette integrada y toilette, estructura de caños de acero, muros con perfilería galvanizada, aislación térmica y acústica de lana de vidrio, aberturas de PVC con DVH y revestimiento interior en yeso reforzado con OSB.  
+
+La envolvente exterior puede ser en siding o chapa con poliuretano, y la cubierta puede ser plana o a dos aguas, según el diseño que elijas. Es 100% transportable, con muy buena aislación, y se puede sumar a futuro a otros módulos para crecer en m². ¿Lo pensás más como oficina, alojamiento o ampliación de vivienda?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (3.9s): No tengo los precios actualizados cargados, y como varían según terminaciones, zona y extras (deck, pérgolas, etc.), prefiero no inventarte un número.  
+
+Para 2 dormitorios el Modelo más indicado es el Eco 2.1 + (70 m², dos dormitorios, living-comedor-cocina amplio y baño completo), totalmente transportable y ampliable. Te sugiero escribirnos por WhatsApp al +54 9 11 6766-6654 y te pasan una cotización detallada según tu terreno y la forma de pago.  
+
+Mientras tanto, ¿ya tenés terreno? ¿En qué zona sería para ir orientándote mejor?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (2.7s): Ofrecemos 5 años de garantía sobre nuestras casas modulares, lo que cubre la calidad del sistema constructivo, estructura y terminaciones principales.  
+
+Trabajamos con materiales de alta prestación (acero estructural, paneles SIP, DVH, aislaciones térmicas, etc.), justamente para asegurar durabilidad y bajo mantenimiento durante ese período.  
+
+Si querés, después te puedo detallar cómo aplicaría la garantía según el Modelo que elijas (por ejemplo Eco 2.1 +, Eco 1.1, etc.).
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.0s): Te podés contactar directo por WhatsApp al +54 9 11 6766-6654.  
+
+También, si preferís, podés escribirnos por mail a info@ecomod.com.ar.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 1
+Tiempo promedio: 4.2s

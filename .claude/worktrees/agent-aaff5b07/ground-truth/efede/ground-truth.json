@@ -1,0 +1,31 @@
+{
+  "company": "Efede",
+  "url": "https://efede.com.ar/casas-modulares/",
+  "capturedAt": "2026-02-05T20:33:53.789Z",
+  "type": "modular",
+  "navigation": {
+    "menuItems": [
+      "Casas Modulares",
+      "Portfolio",
+      "Nosotros",
+      "Contacto"
+    ],
+    "modelSections": [
+      {
+        "label": "Casas Modulares",
+        "url": "https://efede.com.ar/casas-modulares/"
+      },
+      {
+        "label": "casa",
+        "url": "https://efede.com.ar/casas-modulares/#"
+      }
+    ]
+  },
+  "models": [],
+  "contactInfo": {
+    "email": "contacto.efedesrl@gmail.com"
+  },
+  "totalModelsFound": 0,
+  "pagesExplored": 4,
+  "errors": []
+}

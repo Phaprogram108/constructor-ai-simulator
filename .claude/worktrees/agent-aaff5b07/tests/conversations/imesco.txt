@@ -1,0 +1,46 @@
+=== IMESCO ===
+URL: https://www.imesco.com.ar/
+Session: e6aa383d-829f-458f-9fbe-43c03b1ec92f
+Date: 2026-02-08 17:16:44
+Session creation: 17.5s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (4.0s): IMESCO es una empresa de construcción sustentable con base en San Rafael, Mendoza, con más de 7 años de experiencia y más de 100 proyectos completados. Nos especializamos en construir con Steel Frame y en Construcciones Modulares: hacemos viviendas, oficinas y comercios, ya sea como Proyectos, viviendas, oficinas, comercios, módulos llave en mano o ampliaciones, siempre con foco en rapidez, eficiencia energética y calidad.  
+
+Para orientarte mejor, ¿qué tipo de Proyectos, viviendas, oficinas, comercios, módulos estás buscando: vivienda familiar, algo comercial u oficinas?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (2.9s): Ofrecemos dos grandes líneas: **Steel Framing** y **Construcciones Modulares**.  
+En Steel Framing hacemos: construcción en Steel Frame llave en mano (viviendas, locales, desarrollos), **remodelaciones y Ampliaciones**, y estructuras tipo **Steel Framing** completas. En modulares, fabricamos e instalamos **Oficinas Modulares**, **Viviendas Modulares**, **Comercios Modulares** y **Ampliaciones**, con montaje rápido (30-45 días) y alta eficiencia energética.  
+
+Para saber qué encaja mejor con vos: ¿ya tenés terreno y en qué zona pensás construir?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (3.0s): Tenemos varios Proyectos, viviendas, oficinas, comercios, módulos que usamos como base de diseño y referencia. En viviendas destacamos: **Casa Steel Frame 120 m²**, **Steel Frame House 120 m²**, **Casa Moderna 180 m²** y **Modern House 180 m²**, además de las **Casa Residencial 1, 2 y 3** y la **Casa de Montaña** que viste en nuestros proyectos. También trabajamos mucho a medida, adaptando metros, distribución y terminaciones según lo que necesites.  
+
+Para afinar qué modelo te puede servir mejor, ¿para cuándo necesitarías tener la casa lista aproximadamente?
+
+USUARIO: Contame sobre 1. Casa Residencial 1
+AGENTE (3.3s): La **Casa Residencial 1** es uno de nuestros Proyectos de viviendas en Steel Frame, pensada como vivienda familiar moderna, con muy buena aislación térmica y acústica y terminaciones de calidad lista para habitar. Es parte de nuestra línea de Proyectos, viviendas, oficinas, comercios, módulos de tipo residencial, y se puede adaptar en distribución, metros y terminaciones según tu necesidad y presupuesto.  
+
+Para poder orientarte mejor con este modelo, ¿ya tenés terreno y en qué zona pensás construir?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (5.3s): No tengo los precios actualizados cargados como para darte un número serio por acá, porque depende mucho de los m², el diseño y las terminaciones que elijas. Lo que sí te puedo asegurar es que en Steel Frame solemos estar entre un 15% y 30% más económicos que la construcción tradicional y con tiempos de obra mucho menores.  
+
+Te sugiero consultarlo por WhatsApp al 5492604841988 así te pasan un presupuesto concreto según tu idea; mientras tanto, ¿qué presupuesto manejás aproximadamente para esa casa de 2 dormitorios?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (2.7s): En IMESCO ofrecemos garantía estructural de **10 años**, garantía de **2 años** para instalaciones (eléctricas y sanitarias) y **1 año** para terminaciones. Además, trabajamos con materiales certificados y con el sistema Steel Framing reconocido por la Resolución 5-E/2018 del Ministerio del Interior, lo que suma respaldo técnico y normativo a cada obra.  
+
+¿La garantía te interesa para una vivienda particular, oficinas o algún tipo de Proyectos, viviendas, oficinas, comercios, módulos comercial?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (1.9s): Te podés contactar directo por WhatsApp o llamada al **+54 9 260 4841988**.  
+Si querés, puedo ayudarte a definir un poco tu idea y después les escribís ya con los datos claros.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 1
+Tiempo promedio: 3.3s

@@ -1,0 +1,342 @@
+{
+  "company": "Gauros Viviendas",
+  "url": "https://gaurosviviendas.com.ar/",
+  "testedAt": "2026-02-06T16:55:24.728Z",
+  "sessionId": "71951004-e63b-4032-80c5-d718ba89c57f",
+  "systemPromptLength": 22900,
+  "systemPromptModelsFound": [
+    "Casa CLÁSICA Familiar",
+    "Casa Clásica Familiar sin Galería",
+    "Casa CONTEMPORÁNEA Premium",
+    "Casa CLÁSICA Dúo",
+    "Casa MINIMALISTA",
+    "Casa MINIMALISTA Premium",
+    "Cabaña CALIFORNIA",
+    "Cabaña Dakota",
+    "Cabaña Especial",
+    "Cabaña Oregon",
+    "Casa ESPECIAL",
+    "Casa ALTUS DESIGN",
+    "Casa VANGUARD DUO",
+    "Casa SENSE FAMILIAR",
+    "Casa STYLE LOFT",
+    "Casa ADVANCE ACCES",
+    "Casa STYLE DUO",
+    "Casa STYLE TRI",
+    "Casa DESIGN ALTUS SUITE",
+    "Casa de 3 dormitorios PREMIUM Especial",
+    "Casa CLÁSICA de 1 dormitorio",
+    "Casa CLÁSICA Familiar de 2 dormitorios",
+    "Casa CLÁSICA Joven de 1 dormitorio",
+    "Casa CLÁSICA LOFT",
+    "Casa CONTEMPORÁNEA Familiar de 2 dormitorios",
+    "Casa CLÁSICA Joven",
+    "Casa CONTEMPORÁNEA Familiar",
+    "Casa MINIMALISTA INIZIA de 1 dormitorio",
+    "Casa CLÁSICA JOVEN sin Galería",
+    "Casa CLÁSICA Familiar con Galería",
+    "Casa CONTEMPORÁNEA- Tipología JOVEN con Galería",
+    "Casa CONTEMPORÁNEA de 2 Dormitorios",
+    "Casa CLÁSICA de 2 Dormitorios",
+    "Casa CLÁSICA JÓVEN sin Galería",
+    "Casa CLÁSICA PREMIUM con Galería",
+    "Casa CONTEMPORÁNEA de 1 Dormitorio",
+    "Casa CONTEMPORÁNEA FAMILIAR sin galería",
+    "Casa Tipología ESPECIAL",
+    "Casa PROCREAR",
+    "Cabaña SPIRIT",
+    "Casa Tipología Style TRI",
+    "Casa Style ONE",
+    "Casa Vanguard TRI",
+    "Casa CLÁSICA de 3 dormitorios",
+    "Casa Clasica Familiar",
+    "Casa CLÁSICA",
+    "TIPOLOGÍAQuincho",
+    "Back to top",
+    "WhatsApp chat",
+    "Left Menu Button",
+    "Showroom Virtual",
+    "Casas GAUROS",
+    "Línea Quincho",
+    "Línea Design",
+    "Línea Advance",
+    "Línea Vanguard",
+    "Línea Sense",
+    "Línea Style",
+    "Línea Dominus",
+    "Ventajas",
+    "Materiales",
+    "Plantas Industriales",
+    "Entregas 2024",
+    "Entregas 2023",
+    "Entregas 2022",
+    "Entregas 2021",
+    "Entregas 2020",
+    "Entregas 2019",
+    "Entregas 2018",
+    "Entregas 2017",
+    "Entregas 2016",
+    "Gauros Viviendas",
+    "Línea Clásica",
+    "Línea Minimalista",
+    "Cabañas Americanas"
+  ],
+  "systemPromptWhatsApp": "+5493513600347",
+  "systemPromptType": "de Líneas estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Gauros Viviendas es una empresa argentina líder en construcción y venta de casas industrializadas con sistema constructivo americano en hormigón premoldeado. Fabricamos viviendas de alta calidad, con diseños clásicos, contemporáneos y minimalistas (Línea Clásica, Minimalista/Design, Vanguard, Sense, Style, Advance, Dominus y Línea Quincho, además de Cabañas Americanas como California, Oregon, Dakota y Colorado). Trabajamos con materiales de primera línea, aislación térmica y procesos industrializados que acortan mucho los tiempos de obra, y ofrecemos financiación para que puedas acceder a tu casa propia en todo el país.  \n\nPara orientarte mejor, ¿qué tipo de Líneas estás buscando: algo clásico, minimalista/moderno o una cabaña?",
+      "mentionedModels": [
+        "Línea Quincho",
+        "Materiales",
+        "Gauros Viviendas",
+        "Línea Clásica",
+        "Cabañas Americanas"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4373
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos principalmente casas industrializadas en hormigón premoldeado con Sistema Constructivo Americano, en distintas Líneas y tipologías:  \n- **Línea Clásica, Minimalista (Design), Vanguard, Sense, Style, Advance, Dominus y Línea Quincho**, más nuestras **Cabañas Americanas** (California 1 dorm – 55 m², Oregon 2 dorm – 104 m², Dakota 2 dorm con porch – 113 m², Colorado 3 dorm – 142 m²).  \nAdemás brindamos **construcción en todo el país**, platea de hormigón, materiales de primera calidad, y **sistemas de pago y financiación** (compra 100% financiada o de contado/ con entrega).  \n\nPara ayudarte mejor, ¿ya tenés terreno y en qué zona pensás construir?",
+      "mentionedModels": [
+        "Línea Quincho",
+        "Materiales",
+        "Línea Clásica",
+        "Cabañas Americanas"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3911
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Te dejo los datos de contacto directo:  \n- **WhatsApp / Teléfono:** +54 9 351 360 0347 (podés escribir al 5493513600347)  \n- **Email:** prensa@cariverplate.com.ar  \n\nSi querés, contame antes qué tipo de casa estás pensando así ya sabés qué pedir cuando te contacten.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2054
+    },
+    {
+      "question": "¿Cuántos tipologías ofrecen?",
+      "questionType": "product_count",
+      "response": "Manejamos muchas tipologías distintas, pensadas para diferentes necesidades y estilos.  \nDentro de las casas tenés opciones como: **Casa CLÁSICA Familiar, Clásica Joven, Clásica de 1, 2 y 3 dormitorios, Minimalista y Minimalista Premium, CONTEMPORÁNEA (1, 2 y 3 dorm, con y sin galería), Style ONE/DUO/TRI, Vanguard DUO/TRI, Sense Familiar, Altus Design, Advance Acces, Procrear, Especial**, más la **Línea Quincho** (como el Quincho de 62 m²) y varias **Cabañas Americanas** (California, Oregon, Dakota, Colorado, Spirit, Oregon, Dakota, Especial, etc.).  \nEn resumen, son más de **30 tipologías de casas y cabañas** entre todas las Líneas (Clásica, Minimalista/Design, Vanguard, Sense, Style, Advance, Dominus, Quincho y Cabañas Americanas).  \n\nPara afinar la búsqueda, ¿la querés de 1, 2 o 3 dormitorios y con o sin galería?",
+      "mentionedModels": [
+        "Casa CLÁSICA Familiar",
+        "Casa CLÁSICA",
+        "Línea Quincho",
+        "Cabañas Americanas"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3770
+    },
+    {
+      "question": "Contame sobre Casa CLÁSICA Familiar",
+      "questionType": "product_specific",
+      "response": "La **Casa CLÁSICA Familiar** es una de nuestras tipologías más elegidas dentro de la **Línea Clásica**, pensada para familias que buscan una distribución cómoda y funcional en sistema americano de **hormigón premoldeado**. Tenés versiones de **2 y 3 dormitorios**, con opción **con o sin galería**, ambientes amplios, buen aislamiento térmico (revestimiento exterior en fibrocemento, interior en yeso, lana mineral, carpintería de aluminio y techo con chapas antigranizo) y tiempos de entrega mucho más rápidos que una obra tradicional.  \n\nHay variantes como **Casa CLÁSICA Familiar de 2 dormitorios**, **Casa CLÁSICA de 3 dormitorios**, **Clásica Familiar con Galería** y **Clásica Familiar sin Galería**, para adaptar según familia y terreno. ¿Sabés si la estás pensando en 2 o 3 dormitorios y en qué zona tenés el lote?",
+      "mentionedModels": [
+        "Casa CLÁSICA Familiar",
+        "Casa CLÁSICA Familiar de 2 dormitorios",
+        "Casa CLÁSICA de 3 dormitorios",
+        "Casa CLÁSICA",
+        "Línea Clásica"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3136
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Casa CLÁSICA Familiar? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "La **Casa CLÁSICA Familiar** está pensada como vivienda principal para familia, con estructura en **hormigón premoldeado** sobre platea de hormigón armado y sistema constructivo americano. Tenés variantes de **2 y 3 dormitorios**, con opción **con o sin galería**, más living-comedor, cocina y baño completo (en algunos casos toilette o ampliaciones según tipología específica).\n\nEn materiales, usa **revestimiento exterior en fibrocemento 6 mm**, interior en **placa de yeso 12,5 mm**, **cielorraso de machimbre de madera**, **cabreadas dobles con chapas antigranizo**, **aislación de lana mineral** y **carpintería de aluminio**, lo que le da muy buen aislamiento térmico y durabilidad.  \n\nNo tengo en el sistema los m² exactos de cada versión de Casa CLÁSICA Familiar; para que te pasen la ficha técnica con superficie cubierta y planos, te sugiero consultarlo por WhatsApp al +54 9 351 360 0347. Mientras tanto, ¿la estás pensando en 2 o 3 dormitorios y con o sin galería? Así te digo qué variante te conviene más.",
+      "mentionedModels": [
+        "Casa CLÁSICA Familiar",
+        "Casa CLÁSICA",
+        "Materiales"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4964
+    },
+    {
+      "question": "Contame sobre Casa Clásica Familiar sin Galería",
+      "questionType": "product_specific",
+      "response": "La **Casa CLÁSICA Familiar sin Galería** es una variante de la Línea Clásica pensada para optimizar metros cubiertos cuando el terreno es más justo o no necesitás espacio semicubierto. Mantiene el **sistema constructivo americano en hormigón premoldeado**, con platea de hormigón armado, revestimiento exterior en fibrocemento, interior en yeso, cielorraso de machimbre, cabreadas dobles con chapas antigranizo, aislación de lana mineral y carpintería de aluminio.\n\nFuncionalmente es una casa familiar completa (living-comedor, cocina, baño y dormitorios), pero concentrando todo en superficie cubierta, ideal si después querés sumar una galería o quincho aparte. No tengo cargados los m² exactos ni la cantidad de dormitorios específicos de esta variante, así que para planos y ficha técnica te recomiendo escribir por WhatsApp al +54 9 351 360 0347.  \n\nPara orientarte mejor, ¿la pensás de 2 o 3 dormitorios y en qué provincia tenés el terreno?",
+      "mentionedModels": [
+        "Casa CLÁSICA Familiar",
+        "Casa Clásica Familiar sin Galería",
+        "Casa CLÁSICA",
+        "Línea Clásica"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 3337
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Casa Clásica Familiar sin Galería? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "La **Casa CLÁSICA Familiar sin Galería** pertenece a la **Línea Clásica** y está pensada para quien prioriza metros cubiertos antes que espacios semicubiertos. Se construye con **sistema americano en hormigón premoldeado** sobre platea de hormigón armado, con: revestimiento exterior en **fibrocemento 6 mm**, interior en **placa de yeso 12,5 mm**, **cielorraso de machimbre de madera**, **cabreadas dobles con chapa antigranizo**, **aislación de lana mineral** y **carpintería de aluminio**, logrando muy buen aislamiento térmico y durabilidad.\n\nEn cuanto a **superficie y cantidad de dormitorios**, esa ficha técnica puntual (m² exactos y distribución de ambientes de la “Clásica Familiar sin Galería”) no la tengo cargada en el sistema. Para que te envíen planos, m² y opciones de 2 o 3 dormitorios de esa tipología específica, te sugiero escribir por WhatsApp al **+54 9 351 360 0347**. ¿En qué provincia tenés el terreno y cuántos dormitorios estás buscando así te digo si esta tipología te encaja o te conviene otra de la Línea Clásica?",
+      "mentionedModels": [
+        "Casa CLÁSICA Familiar",
+        "Casa Clásica Familiar sin Galería",
+        "Casa CLÁSICA",
+        "Línea Clásica"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 5520
+    },
+    {
+      "question": "¿Cuál es la diferencia entre Casa CLÁSICA Familiar y Casa Clásica Familiar sin Galería?",
+      "questionType": "model_comparison",
+      "response": "La diferencia principal está en los **metros semicubiertos**:  \n- **Casa CLÁSICA Familiar (con galería)**: incluye una **galería/porch** integrado al diseño, ideal para cochera semicubierta, espacio de estar al aire libre o expansión del living/comedor.  \n- **Casa CLÁSICA Familiar sin Galería**: mantiene la misma lógica de casa familiar (living-comedor, cocina, dormitorios y baño), pero **concentra todo en superficie cubierta**, sin galería incluida, lo que baja metros semicubiertos y suele hacerla más compacta y económica en m² construidos.\n\nEn ambas se usa el mismo **sistema constructivo americano en hormigón premoldeado** y los mismos materiales (fibrocemento exterior, yeso interior, lana mineral, carpintería de aluminio, chapas antigranizo, etc.). ¿Vos priorizás tener galería desde el inicio o preferís empezar con más metros cubiertos y dejar la galería para más adelante?",
+      "mentionedModels": [
+        "Casa CLÁSICA Familiar",
+        "Casa Clásica Familiar sin Galería",
+        "Casa CLÁSICA",
+        "Materiales"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3474
+    },
+    {
+      "question": "¿Qué modelo me recomendás para una familia de 4 personas?",
+      "questionType": "recommendation",
+      "response": "Para una familia de 4 lo ideal es ir a algo de **2 o 3 dormitorios**, según cómo quieran organizarse:  \n- Si buscás buena relación costo/espacio: **Casa CLÁSICA Familiar de 2 dormitorios** o alguna **CONTEMPORÁNEA Familiar de 2 dormitorios** funcionan perfecto (matrimonio + 2 chicos compartiendo o uno en cada cuarto si son pequeños).  \n- Si querés más comodidad y proyección: **Casa CLÁSICA de 3 dormitorios** o la **Casa de 3 dormitorios PREMIUM Especial** te dan un dormitorio extra para que cada hijo tenga su cuarto o sumar escritorio.  \n\nPara afinar la recomendación, ¿ya tenés terreno (en qué zona) y preferís algo más clásico o más moderno/minimalista?",
+      "mentionedModels": [
+        "Casa CLÁSICA Familiar",
+        "Casa de 3 dormitorios PREMIUM Especial",
+        "Casa CLÁSICA Familiar de 2 dormitorios",
+        "Casa CLÁSICA de 3 dormitorios",
+        "Casa CLÁSICA"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4906
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con **viviendas industrializadas con Sistema Constructivo Americano**: fabricamos los paneles y componentes en planta (hormigón premoldeado, estructura, aislaciones, etc.) bajo control de calidad, y luego hacemos el **montaje en tu terreno sobre platea de hormigón armado**, lo que reduce muchísimo los tiempos respecto a una obra tradicional. Usamos revestimiento exterior en fibrocemento, interior en yeso, cielorraso de machimbre, cabreadas dobles con chapa antigranizo, lana mineral y carpintería de aluminio.  \n\nEl plazo exacto depende de la **tipología y los m²**, pero al ser un sistema industrializado la obra es **mucho más rápida** que la construcción húmeda tradicional. No tengo acá los tiempos específicos por modelo; para que te pasen plazos estimados según la casa que elijas, te sugiero escribir por WhatsApp al +54 9 351 360 0347. Mientras tanto, ¿ya sabés de cuántos dormitorios la pensás y en qué provincia tenés el terreno?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2981
+    },
+    {
+      "question": "¿Se pueden personalizar los tipologías?",
+      "questionType": "customization",
+      "response": "Sí, se pueden personalizar dentro de ciertos parámetros. Trabajamos con **tipologías estándar** (Loft, 1, 2 y 3 dormitorios, con/sin galería, Líneas Clásica, Minimalista/Design, Vanguard, Sense, Style, Advance, Dominus y Cabañas Americanas), pero también desarrollamos **tipologías especiales, complejos de cabañas y proyectos personalizados**, adaptando distribución, cantidad de dormitorios y algunos detalles según el caso.  \n\nPara ver hasta dónde podemos ajustar el modelo a lo que necesitás, ¿qué tenés en mente: cuántos dormitorios y qué estilo te gusta más (clásico, contemporáneo o minimalista/cabaña)?",
+      "mentionedModels": [
+        "Cabañas Americanas"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2425
+    },
+    {
+      "question": "¿Tenés imágenes, planos o algún catálogo que pueda ver?",
+      "questionType": "images_catalog",
+      "response": "Sí, tenés todo eso disponible online. Podés ver **imágenes, planos, recorridos y fichas de cada tipología** en nuestro **Showroom Virtual** y en las secciones de cada Línea (Línea Clásica, Minimalista/Design, Vanguard, Sense, Style, Advance, Dominus, Cabañas Americanas y Línea Quincho) en la web de Gauros Viviendas.  \n\nSi querés avanzar más rápido, te recomiendo escribir por WhatsApp al **+54 9 351 360 0347** y pedir el **catálogo digital** según lo que buscás (por ejemplo: “catálogo Línea Clásica 2 y 3 dormitorios”). Para orientarte mejor, ¿qué tipo de Líneas estás buscando: clásica, minimalista/moderna o cabaña?",
+      "mentionedModels": [
+        "Showroom Virtual",
+        "Línea Quincho",
+        "Gauros Viviendas",
+        "Línea Clásica",
+        "Cabañas Americanas"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3140
+    },
+    {
+      "question": "¿Cuánto sale aproximadamente una casa de 2 dormitorios?",
+      "questionType": "pricing",
+      "response": "No tengo los precios actualizados cargados, así que no puedo darte un valor aproximado fiable por acá. Te sugiero consultar por WhatsApp al **+54 9 351 360 0347**, donde te pasan el precio vigente de las casas de 2 dormitorios (por ejemplo **Casa CLÁSICA de 2 Dormitorios**, **CONTEMPORÁNEA de 2 Dormitorios**, **Cabaña OREGÓN 2 dorm – 104 m²**, etc.) y las opciones de financiación.  \n\nPara que te orienten mejor cuando escribas, ¿la pensás en estilo **Clásico**, **Contemporáneo/Minimalista** o tipo **Cabaña Americana**?",
+      "mentionedModels": [
+        "Casa CLÁSICA de 2 Dormitorios",
+        "Casa CLÁSICA"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 3238
+    },
+    {
+      "question": "¿Qué incluye el precio? ¿Terminaciones, instalación, todo?",
+      "questionType": "includes",
+      "response": "Trabajamos con un sistema bastante integral, pero el alcance exacto del precio depende de la tipología y de la propuesta comercial vigente, por eso los detalles finos te los confirman siempre por WhatsApp. En general, nuestras casas incluyen: **estructura en hormigón premoldeado sobre platea de hormigón armado**, revestimiento exterior en fibrocemento, interior en yeso, **cielorraso de machimbre de madera**, **cabreadas dobles con chapa antigranizo**, **aislación de lana mineral** y **carpintería de aluminio**, es decir, una vivienda completa con muy buenas terminaciones y aislación.\n\nNo tengo acá el detalle exacto de qué ítems de instalación (por ejemplo: artefactos, muebles de cocina, etc.) entran en cada propuesta comercial, ni cómo se discrimina mano de obra/traslado. Para que te pasen el “detalle de incluido/no incluido” según el modelo que te interese, te recomiendo escribir al WhatsApp **+54 9 351 360 0347**. ¿Tenés en mente alguna tipología puntual (por ejemplo, Casa CLÁSICA de 2 Dormitorios o una Cabaña OREGÓN)? Así les pedís el detalle de ese modelo específico.",
+      "mentionedModels": [
+        "Casa CLÁSICA de 2 Dormitorios",
+        "Casa CLÁSICA"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4485
+    },
+    {
+      "question": "¿Ustedes se encargan de toda la instalación o solo entregan los materiales?",
+      "questionType": "installation",
+      "response": "Nosotros **no solo entregamos materiales**, sino que trabajamos como **constructora de casas industrializadas**, con plantas propias en Centro y Sur del país. Fabricamos los paneles y componentes en planta y luego realizamos el **montaje completo en tu terreno sobre la platea de hormigón armado**, con toda la estructura, cerramientos, techo, aislaciones y carpinterías instaladas.\n\nEl alcance fino (si incluye ciertas instalaciones internas específicas, por ejemplo algunos artefactos o extras) puede variar según la propuesta comercial y la tipología. Para que te pasen el detalle exacto de “qué incluye la obra” en el modelo que te interese, te sugiero escribir al WhatsApp **+54 9 351 360 0347**. ¿En qué provincia tenés el terreno y de cuántos dormitorios estás pensando la casa?",
+      "mentionedModels": [
+        "Materiales"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2887
+    },
+    {
+      "question": "¿Qué garantía ofrecen sobre la construcción?",
+      "questionType": "warranty",
+      "response": "Trabajamos con **casas industrializadas de hormigón premoldeado** y materiales de primera línea (fibrocemento, yeso, lana mineral, carpintería de aluminio, chapas antigranizo, etc.), con control de calidad en nuestras propias constructoras del Centro y Sur del país, lo que nos permite garantizar una estructura sólida y resistente a las distintas condiciones climáticas de Argentina.  \n\nEn el contenido que tengo no figura detallado el **plazo exacto de garantía (años, alcances, qué cubre cada ítem)**, así que para esa info puntual te recomiendo escribir al WhatsApp **+54 9 351 360 0347**, donde te pasan por escrito la garantía vigente para la tipología que elijas. ¿La casa la estás pensando como vivienda permanente o de fin de semana? Así también te orientamos en la Línea más conveniente.",
+      "mentionedModels": [
+        "Materiales"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3107
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, ofrecemos **financiación** y distintos **sistemas de pago**. Podés comprar **100% financiado** o **de contado / con entrega**, y adaptar el plan según la tipología (por ejemplo, Casa CLÁSICA, Minimalista/Design, Vanguard, Sense, Style, Advance, Dominus o Cabañas Americanas).  \n\nNo tengo por acá el detalle de cuotas, tasas y requisitos, así que para que te armen un plan a medida te recomiendo escribir al WhatsApp **+54 9 351 360 0347**. Para ir orientando: ¿qué presupuesto aproximado manejás y en qué provincia pensás construir?",
+      "mentionedModels": [
+        "Casa CLÁSICA",
+        "Cabañas Americanas"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3189
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Nos diferencia, sobre todo, el **sistema constructivo americano en hormigón premoldeado** con **constructoras propias** en Centro y Sur del país, lo que nos permite controlar la calidad de punta a punta y acortar muchísimo los tiempos de obra. Usamos **materiales de primera línea** (fibrocemento exterior, yeso interior, lana mineral, carpintería de aluminio, chapas antigranizo, cielorraso de machimbre) logrando muy buen aislamiento térmico y durabilidad.\n\nAdemás, tenemos **muchas Líneas y tipologías** (Clásica, Minimalista/Design, Vanguard, Sense, Style, Advance, Dominus, Línea Quincho y Cabañas Americanas) y ofrecemos **financiación completa**, incluso opciones de compra 100% financiada.  \n\nPara darte una recomendación bien ajustada, ¿qué tipo de Líneas estás buscando: algo clásico, más minimalista/moderno o estilo cabaña?",
+      "mentionedModels": [
+        "Línea Quincho",
+        "Materiales",
+        "Cabañas Americanas"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3403
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "Construimos y entregamos en **todo el país**, en distintas provincias de Argentina, gracias a nuestras plantas y constructoras propias en el Centro y Sur.  \n\nPara confirmar específicamente por tu localidad y ver logística/plazos, te sugiero escribir al WhatsApp **+54 9 351 360 0347**. ¿En qué provincia y zona tenés (o pensás tener) el terreno así te orientó mejor con las tipologías que más se usan ahí?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2193
+    }
+  ],
+  "sessionCreationTimeMs": 104870,
+  "errors": []
+}

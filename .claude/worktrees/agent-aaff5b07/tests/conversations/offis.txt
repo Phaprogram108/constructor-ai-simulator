@@ -1,0 +1,52 @@
+=== OFFIS ===
+URL: https://www.offis.ar/
+Session: 91bbe6ee-2a59-4844-b3e0-dd24cf1fffaa
+Date: 2026-02-08 15:38:44
+Session creation: 35.3s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (7.1s): Offis es una empresa de espacios modulares premium, llave en mano, pensados tanto para casas como para empresas. Diseñamos y construimos módulos en sistema seco con paneles SIP y revestimientos de alta calidad, que instalamos en solo 5 días, sin obra tradicional ni complicaciones.  
+
+Podés usarlos como home office, playroom, sala de ensayo, consultorio, showroom, cowork, ticket office o incluso módulos personalizados. Además, te acompañamos con diseño, instalación completa (incluida la eléctrica) y opciones de financiación a través del Banco Hipotecario.
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (3.2s): Ofrecemos espacios modulares llave en mano para uso residencial y para empresas, construidos con sistema SIP y fundaciones en hormigón premoldeado/bases regulables. En residencial tenés modelos como Offis STUDIO 12, Offis SLIM 15, Offis FAMILY 18, Offis FLEX 22, Offis PLUS 27 y Offis XL 36.  
+
+Para empresas trabajamos con la Línea SHOWROOM (Offis SHOWROOM 12, 15 y 22), Línea COWORK (Offis COWORK 18, 22 y 27) y Offis TICKET OFFICE 15, además de módulos personalizados a medida. Como servicios, incluimos diseño, fabricación, instalación en 5 días, instalación eléctrica full, extras (AA, cortinas, deck, mobiliario, etc.) y financiación a través del Banco Hipotecario.
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (3.2s): Tenemos una línea bastante completa de modelos estándar, tanto residenciales como para empresas.  
+En casas contamos con: Offis STUDIO 12, Offis SLIM 15, Offis FAMILY 18, Offis FLEX 22, Offis PLUS 27 y Offis XL 36.  
+
+Para empresas tenemos: Offis SHOWROOM 12, Offis SHOWROOM 15, Offis SHOWROOM 22, Offis COWORK 18, Offis COWORK 22, Offis COWORK 27 y Offis TICKET OFFICE 15, más la opción de Módulos personalizados.  
+Así que, entre modelos “de catálogo” y la opción custom, podemos adaptarnos casi a cualquier uso. ¿Qué tipo de modelo estás buscando vos, casa o empresa?
+
+USUARIO: Contame sobre 1. Cuota inicial
+AGENTE (6.1s): Buenísimo que preguntes por la **Cuota inicial**, porque está ligada a la financiación con Banco Hipotecario.  
+En el ejemplo de crédito que manejamos, la **cuota inicial es de $21.145 por cada $1.000.000 financiados a 72 meses**, con ingreso necesario de $84.580 (simulación referencial de julio 2025, UVA + 15%, hasta 100% del valor del proyecto).  
+
+Esto te sirve para estimar cuánto pagarías por mes según el monto de tu Offis; si querés, te ayudo a hacer una simulación rápida según el valor aproximado que pienses financiar. ¿Qué presupuesto manejás más o menos o qué tamaño de Offis te interesa?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (6.3s): Hoy no tengo los precios actualizados cargados, y menos de un modelo específico de 2 dormitorios, porque ese tipo de unidad suele resolverse combinando modelos (por ejemplo Offis PLUS 27 u Offis XL 36) o con un módulo personalizado.  
+
+Lo que sí podemos hacer es estimar el valor y la cuota con la financiación del Banco Hipotecario (desde una cuota inicial de $21.145 por cada $1.000.000 a 72 meses). Para darte algo bien ajustado a una casa de 2 dormitorios, te sugiero escribirnos por WhatsApp al +54 9 11 2652-1040 y te pasan el presupuesto exacto según metros, distribución y zona de instalación. ¿Ya tenés terreno? ¿En qué zona sería?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (3.0s): En todos los modelos residenciales estándar (Offis STUDIO 12, SLIM 15, FAMILY 18, FLEX 22, PLUS 27 y XL 36) ofrecemos **1 año de garantía** por cualquier falla de fabricación o instalación.  
+La garantía cubre la estructura SIP, revestimientos, aberturas y la instalación eléctrica realizada por Offis, siempre que el uso sea el previsto (exterior, sobre bases/fundaciones adecuadas).  
+
+Para ayudarte mejor con tu caso: ¿ya tenés en mente algún modelo o todavía estás viendo opciones?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.1s): Te dejo el contacto directo:  
+WhatsApp / teléfono: **+54 9 11 2652-1040**  
+Mail comercial: **comercial@offis.ar**  
+
+Si querés, también puedo ayudarte acá a definir el modelo y después les escribís ya con algo más concreto.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 1
+Tiempo promedio: 4.4s

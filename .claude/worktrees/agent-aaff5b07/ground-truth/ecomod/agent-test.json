@@ -1,0 +1,240 @@
+{
+  "company": "Ecomod",
+  "url": "https://ecomod.com.ar/",
+  "testedAt": "2026-02-06T15:50:43.149Z",
+  "sessionId": "8daf9dcc-29bb-439a-bbc3-0ddc0a061b3c",
+  "systemPromptLength": 25165,
+  "systemPromptModelsFound": [
+    "Eco Studio",
+    "Eco Mini",
+    "Facebook",
+    "ECO-MINI",
+    "Proyecto Chascomús",
+    "Proyecto Monte Hermoso",
+    "Bariloche",
+    "Isla Santiago",
+    "General Madariaga",
+    "Ignacio Correas",
+    "Laguna Brava",
+    "Monte Hermoso",
+    "Parque Pereyra Iraola",
+    "San Antonio de Areco",
+    "San Miguel del Monte",
+    "Chascomús",
+    "Tanti",
+    "Oficina Balcarce Scorziello",
+    "Proyecto Tanti",
+    "Proyecto Ignacio Correas",
+    "Modelo Eco 2.1 +",
+    "Modelo Eco Mini +",
+    "Proyecto Laguna Brava",
+    "Proyecto General Madariaga",
+    "Turístico",
+    "Eco Mini +",
+    "Eco 1.1",
+    "Eco 2.1 +",
+    "Proyecto Isla Santiago",
+    "Proyecto Parque Pereyra Iraola",
+    "Modelo Eco 1.1",
+    "Proyecto Bariloche"
+  ],
+  "systemPromptWhatsApp": "5491167666654",
+  "systemPromptType": "de Modelos estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Ecomod es una empresa de construcción modular en hormigón premoldeado que diseña y fabrica viviendas, cabañas, oficinas y locales comerciales personalizados y 100% transportables en Argentina. Trabajamos con módulos que se construyen en fábrica y luego se montan en el terreno del cliente, con posibilidad de ampliar a futuro y hasta hacer dos plantas.  \n\nOfrecemos distintos Modelos como Eco Studio (11,5 m²), Turístico (25 m²), Eco Mini (30 m²), Eco Mini + (40 m²), Eco 1.1 (45 m²) y Eco 2.1 + (70 m²), además de proyectos totalmente a medida. ¿Qué tipo de Modelo estás buscando?",
+      "mentionedModels": [
+        "Eco Studio",
+        "Eco Mini",
+        "Turístico",
+        "Eco Mini +",
+        "Eco 1.1",
+        "Eco 2.1 +"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3136
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos construcción modular en hormigón premoldeado para viviendas, cabañas, oficinas y locales comerciales en Argentina, con financiación disponible y posibilidad de trasladar y ampliar los módulos en el futuro.  \n\nEn Modelos de vivienda tenemos, entre otros: Eco Studio (11,5 m²), Turístico (25 m²), Eco Mini (30 m²), Eco Mini + (40 m²), Eco 1.1 (45 m²) y Eco 2.1 + (70 m²), además de proyectos personalizados como Bariloche, Isla Santiago, General Madariaga, Monte Hermoso, Tanti, etc. ¿Buscás algo chico tipo cabaña/monoambiente o una vivienda más grande familiar?",
+      "mentionedModels": [
+        "Eco Studio",
+        "Eco Mini",
+        "Bariloche",
+        "Isla Santiago",
+        "General Madariaga",
+        "Monte Hermoso",
+        "Tanti",
+        "Turístico",
+        "Eco Mini +",
+        "Eco 1.1",
+        "Eco 2.1 +"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3762
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Te podés contactar directo por WhatsApp al +54 9 11 6766-6654.  \nTambién, si preferís, nos escribís por mail a info@ecomod.com.ar y un asesor te responde con todo el detalle.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 1953
+    },
+    {
+      "question": "¿Cuántos proyectos ofrecen?",
+      "questionType": "product_count",
+      "response": "En Ecomod hoy tenemos más de 10 Modelos y Proyectos destacados cargados.  \nEntre Modelos estándar y proyectos realizados vas a encontrar, por ejemplo: Eco Studio, Turístico, Eco Mini, Eco Mini +, Eco 1.1, Eco 2.1 + y proyectos como Bariloche, Isla Santiago, General Madariaga, Ignacio Correas, Laguna Brava, Monte Hermoso, Parque Pereyra Iraola, San Antonio de Areco, San Miguel del Monte, Chascomús, Tanti y Oficina Balcarce Scorziello.  \n\nPara orientarte mejor, ¿estás mirando más una vivienda para vivir, algo turístico o una oficina/local?",
+      "mentionedModels": [
+        "Eco Studio",
+        "Eco Mini",
+        "Bariloche",
+        "Isla Santiago",
+        "General Madariaga",
+        "Ignacio Correas",
+        "Laguna Brava",
+        "Monte Hermoso",
+        "Parque Pereyra Iraola",
+        "San Antonio de Areco",
+        "San Miguel del Monte",
+        "Chascomús",
+        "Tanti",
+        "Oficina Balcarce Scorziello",
+        "Turístico",
+        "Eco Mini +",
+        "Eco 1.1",
+        "Eco 2.1 +"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2433
+    },
+    {
+      "question": "Contame sobre Eco Studio",
+      "questionType": "product_specific",
+      "response": "El Eco Studio es nuestro Modelo más compacto: 11,5 m², ideal como estudio, cuarto extra, oficina o pequeña cabaña. Viene con toilette y kitchenette integrada, y tiene flexibilidad de armado para adaptar aberturas y distribución según tu uso.  \n\nAl ser construcción modular en hormigón premoldeado, es 100% transportable y se puede complementar con otros módulos a futuro si más adelante querés ampliarlo. ¿Para qué lo estarías pensando, vivienda de uso diario, home office o algo turístico?",
+      "mentionedModels": [
+        "Eco Studio",
+        "Turístico"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4287
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Eco Studio? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "El Eco Studio tiene una superficie de 11,5 m² cubiertos, pensado como monoambiente compacto tipo estudio, sin dormitorio independiente.  \nIncluye toilette y kitchenette integrada, con flexibilidad de armado para definir ubicación de aberturas y equipamiento según el uso que le quieras dar.  \nSe construye con sistema modular (estructura robusta y terminaciones de primera) y es 100% transportable, con posibilidad de sumar más módulos a futuro si necesitás ampliar.  \n\nPara ayudarte mejor: ¿lo pensás como home office, cabañita de huéspedes o un primer espacio para después ampliarlo?",
+      "mentionedModels": [
+        "Eco Studio"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 5719
+    },
+    {
+      "question": "Contame sobre Eco Mini",
+      "questionType": "product_specific",
+      "response": "El Eco Mini es un Modelo de vivienda de 30 m², ideal como cabaña o casa compacta de uso permanente o de fin de semana. Incluye baño completo y cocina integrada al ambiente principal, con flexibilidad de armado para adaptar la distribución según tu terreno y uso.  \n\nAl ser construcción modular, podés usarlo solo o pensarlo como primer módulo y más adelante ampliarlo con otros espacios (otro dormitorio, galería, etc.). Para orientarte mejor, ¿lo querés para vivienda propia, alquiler turístico o quincho/casa de invitados?",
+      "mentionedModels": [
+        "Eco Mini",
+        "Turístico"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3177
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Eco Mini? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "El Eco Mini tiene una superficie de 30 m² cubiertos, resueltos en un ambiente integrado (no tiene dormitorio separado, es tipo monoambiente amplio).  \nIncluye baño completo y cocina integrada, y mantiene la flexibilidad de armado para ubicar aberturas y distribución según tu terreno.  \n\nEs construcción modular en hormigón premoldeado, 100% transportable y ampliable a futuro con nuevos módulos si después querés sumar dormitorio, galería o más metros. ¿Lo estás pensando para uso permanente o más bien como cabaña turística/fin de semana?",
+      "mentionedModels": [
+        "Eco Mini"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3979
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con construcción modular: fabricamos los módulos en planta (con estructura, muros, instalaciones y terminaciones) y luego los transportamos y montamos en el terreno, lo que reduce muchísimo tiempos de obra y desorden en el lugar. Usamos hormigón premoldeado y materiales de primera, y todos los Modelos son 100% transportables y ampliables.  \n\nNo tengo los plazos exactos por Modelo cargados acá, pero suelen ser significativamente más rápidos que la obra húmeda tradicional. Para darte un estimado real según el Modelo y la zona, te sugiero escribirnos por WhatsApp al +54 9 11 6766-6654.  \n\nPara afinar más: ¿ya tenés terreno? ¿En qué zona sería?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4663
+    },
+    {
+      "question": "¿Se pueden personalizar los proyectos?",
+      "questionType": "customization",
+      "response": "Sí, totalmente, la personalización es uno de los fuertes de Ecomod. Podés partir de un Modelo estándar (Eco Studio, Turístico, Eco Mini, Eco Mini +, Eco 1.1, Eco 2.1 +) y adaptar distribución, aberturas, ampliaciones futuras, galerías, etc., o trabajar un proyecto más a medida como los de Bariloche, Isla Santiago o General Madariaga.  \n\nLos módulos son flexibles y ampliables, y podemos ajustar el diseño según uso (vivienda, turístico, oficina/local) y tu terreno. Para entender mejor qué tan a medida lo necesitás: ¿ya tenés en mente cuántos m² o cuántos dormitorios querés?",
+      "mentionedModels": [
+        "Eco Studio",
+        "Eco Mini",
+        "Bariloche",
+        "Isla Santiago",
+        "General Madariaga",
+        "Turístico",
+        "Eco Mini +",
+        "Eco 1.1",
+        "Eco 2.1 +"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 5034
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, ofrecemos financiación para nuestros Modelos y proyectos, adaptando el plan según el tipo de módulo y la etapa del proyecto.  \n\nNo tengo por acá el detalle de cuotas y condiciones exactas. Te sugiero escribirnos por WhatsApp al +54 9 11 6766-6654 así un asesor te pasa los planes vigentes según el Modelo que te interese.  \n\nPara ir guiándote: ¿qué superficie estás imaginando, algo tipo Eco Mini (30 m²), Eco Mini + (40 m²) o una vivienda más grande como Eco 1.1 / Eco 2.1 +?",
+      "mentionedModels": [
+        "Eco Mini",
+        "Eco Mini +",
+        "Eco 1.1",
+        "Eco 2.1 +"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2518
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Nos diferencia sobre todo la flexibilidad y personalización: trabajamos con módulos 100% transportables que podés ampliar en el tiempo, cambiar de ubicación y adaptar al uso (vivienda, turístico, oficina o local) sin quedar atado a una estructura rígida.  \n\nAdemás, combinamos diseño moderno con un sistema constructivo sólido (hormigón premoldeado y materiales de primera), proyectos ya probados en lugares muy distintos como Bariloche, Isla Santiago o General Madariaga, y financiación para que puedas avanzar sin tener todo el dinero de una sola vez. ¿En qué tipo de proyecto estás pensando vos, vivienda propia, algo turístico o una oficina/local?",
+      "mentionedModels": [
+        "Bariloche",
+        "Isla Santiago",
+        "General Madariaga",
+        "Turístico"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2903
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "Construimos y montamos en Argentina, y como los módulos son 100% transportables podemos llevarlos a distintas zonas del país.  \nTenemos proyectos realizados en lugares como Bariloche, Isla Santiago, General Madariaga, Monte Hermoso, San Antonio de Areco, Tanti, Parque Pereyra Iraola, entre otros.  \n\nSi me decís en qué localidad tenés el terreno, te digo si ya trabajamos cerca y te sugiero coordinar por WhatsApp para ver la logística puntual.",
+      "mentionedModels": [
+        "Bariloche",
+        "Isla Santiago",
+        "General Madariaga",
+        "Monte Hermoso",
+        "Parque Pereyra Iraola",
+        "San Antonio de Areco",
+        "Tanti"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2936
+    }
+  ],
+  "sessionCreationTimeMs": 31265,
+  "errors": []
+}

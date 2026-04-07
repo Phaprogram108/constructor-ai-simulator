@@ -1,0 +1,108 @@
+{
+  "company": "Mini Casas",
+  "url": "https://www.minicasas.com.ar/",
+  "capturedAt": "2026-02-05T20:30:43.273Z",
+  "type": "modular",
+  "navigation": {
+    "menuItems": [
+      "INICIO",
+      "MODELOS ARENZON",
+      "HISTORIAS DE LA VIDA REAL",
+      "PREGUNTAS FRECUENTES",
+      "CONTACTO"
+    ],
+    "modelSections": [
+      {
+        "label": "casa",
+        "url": "https://www.minicasas.com.ar/index.php"
+      },
+      {
+        "label": "Lunes a Viernes de 8 a 14 hs y Sábados de 9 a 13hs",
+        "url": "https://www.minicasas.com.ar/#"
+      },
+      {
+        "label": "Modelos Arenzon",
+        "url": "https://www.minicasas.com.ar/modelos.php"
+      },
+      {
+        "label": "Historias de la vida real",
+        "url": "https://www.minicasas.com.ar/historias.php"
+      },
+      {
+        "label": "Preguntas Frecuentes",
+        "url": "https://www.minicasas.com.ar/preguntas.php"
+      },
+      {
+        "label": "ContactoClick!Contacto",
+        "url": "https://www.minicasas.com.ar/contacto.php"
+      },
+      {
+        "label": "casa",
+        "url": "https://www.youtube.com/@CasasArenzon"
+      },
+      {
+        "label": "casa",
+        "url": "https://es-la.facebook.com/minicasasarenzon/"
+      },
+      {
+        "label": "casa",
+        "url": "https://www.instagram.com/casasarenzon/"
+      },
+      {
+        "label": "modelo",
+        "url": "https://www.minicasas.com.ar/modelos.php?modelo=AZ-I"
+      },
+      {
+        "label": "casa",
+        "url": "https://www.minicasas.com.ar/#top"
+      }
+    ]
+  },
+  "models": [
+    {
+      "name": "MODELO ESTÁNDAR",
+      "features": [],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-1-modelo-estndar.jpeg",
+      "detailUrl": "https://www.minicasas.com.ar/modelos.php"
+    },
+    {
+      "name": "MODELO ESTANDAR",
+      "features": [],
+      "source": "detail_page",
+      "screenshot": "screenshots/03-detail-2-modelo-estandar.jpeg",
+      "detailUrl": "https://www.minicasas.com.ar/modelos.php"
+    },
+    {
+      "name": "Modelo Estándar 1",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg"
+    },
+    {
+      "name": "Modelo Estándar 2",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg"
+    },
+    {
+      "name": "Modelo Estándar 3",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg"
+    },
+    {
+      "name": "Modelo Estándar 4",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-3.jpeg"
+    }
+  ],
+  "contactInfo": {
+    "email": "info@minicasas.com.ar",
+    "instagram": "@ligasustentable"
+  },
+  "totalModelsFound": 6,
+  "pagesExplored": 6,
+  "errors": []
+}

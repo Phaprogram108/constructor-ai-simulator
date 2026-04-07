@@ -1,0 +1,280 @@
+{
+  "company": "Modular Homes",
+  "url": "https://modularhomes.com.ar/",
+  "testedAt": "2026-02-06T16:55:22.886Z",
+  "sessionId": "ecb47c1d-755c-40ad-a143-c2399af72620",
+  "systemPromptLength": 21471,
+  "systemPromptModelsFound": [
+    "Batidero",
+    "Warning",
+    "Productos",
+    "Viviendas",
+    "Proyecto Cerro Negro",
+    "Cerro Negro",
+    "Campamentos Temporarios",
+    "Edificios Modulares",
+    "Oficinas Modulares"
+  ],
+  "systemPromptType": "de Edificios Modulares, Proyectos estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Modular Homes es una empresa argentina con más de 40 años de experiencia en construcción modular, especializada en edificios en hormigón premoldeado y sistemas industrializados para climas y zonas extremas. Diseñamos, fabricamos y montamos Edificios Modulares y Proyectos completos: campamentos temporarios y definitivos para minería y petróleo, oficinas modulares, viviendas, hoteles de personal, comedores, clínicas, escuelas y más, incluyendo redes y equipamiento.  \n\nAdemás contamos con líneas específicas como Campamentos Temporarios, Edificios Modulares, Oficinas Modulares, Viviendas, Módulos Transportables y Sistemas Temporarios/Definitivos, y ofrecemos financiación en Argentina. Para orientarte mejor, ¿qué tipo de Edificios Modulares, Proyectos estás buscando?",
+      "mentionedModels": [
+        "Viviendas",
+        "Campamentos Temporarios",
+        "Edificios Modulares",
+        "Oficinas Modulares"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2917
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos soluciones integrales en construcción modular: proyecto, fabricación en planta, transporte, montaje en obra, ejecución de redes (agua, cloacas, energía, datos) y provisión de equipamiento completo. Trabajamos principalmente en Argentina, en hormigón premoldeado y sistemas industrializados pensados para climas y zonas extremas, con financiación disponible.\n\nEn Edificios Modulares y Proyectos concretos tenemos:\n- **Campamentos Temporarios** (para minería, petróleo, obras): dormitorios, comedores, gimnasios, clínicas, etc., con ambientes climatizados y confort “como en la ciudad”.  \n- **Edificios Modulares** definitivos o de larga duración: oficinas, escuelas, hospitales, hoteles de personal, talleres, plantas de control, hasta varios pisos de altura.  \n- **Oficinas Modulares**: espacios adaptables, cómodos, con integración de tecnología.  \n- Además líneas específicas: **Viviendas**, **Módulos Transportables**, **Módulos Preconstruidos**, **Sistemas Temporarios panelizados**, **Campamentos Definitivos**, **Edificios Industriales**, **Shelters y Polvorines**, y **Redes / Obra Civil**.\n\nPara orientarte mejor y no marearte con tantas opciones: ¿qué tipo de Edificios Modulares, Proyectos estás buscando (vivienda, campamento, oficinas, industrial, etc.)?",
+      "mentionedModels": [
+        "Viviendas",
+        "Campamentos Temporarios",
+        "Edificios Modulares",
+        "Oficinas Modulares"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4681
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "No tengo acá el número de WhatsApp o teléfono cargado en el sistema.  \nTe sugiero entrar a la web de Modular Homes (modularhomes.com.ar) donde en la sección de contacto vas a encontrar el WhatsApp y todas las vías para comunicarte directo con un asesor.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 1803
+    },
+    {
+      "question": "¿Cuántos proyectos ofrecen?",
+      "questionType": "product_count",
+      "response": "Tenemos varias líneas de Edificios Modulares, Proyectos, cada una pensada para necesidades distintas. Hoy, dentro del catálogo que tengo cargado, aparecen específicamente:  \n\n- **Batidero** (campamento tipo dormitorio, pensado para 48 personas).  \n- **Warning**.  \n- **Productos** (incluye sistemas como Módulos Transportables, Módulos Preconstruidos, Sistemas Temporarios, Sistemas Definitivos, Shelters, etc.).  \n- **Viviendas** (departamentos y viviendas unifamiliares modulares).  \n- **Proyecto Cerro Negro** y **Cerro Negro**.  \n- **Campamentos Temporarios**.  \n- **Edificios Modulares** (para usos definitivos).  \n- **Oficinas Modulares**.  \n\nSi querés te puedo ayudar a elegir el más adecuado para vos: ¿qué tipo de Edificios Modulares, Proyectos estás buscando?",
+      "mentionedModels": [
+        "Batidero",
+        "Warning",
+        "Productos",
+        "Viviendas",
+        "Proyecto Cerro Negro",
+        "Cerro Negro",
+        "Campamentos Temporarios",
+        "Edificios Modulares",
+        "Oficinas Modulares"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3120
+    },
+    {
+      "question": "Contame sobre Batidero",
+      "questionType": "product_specific",
+      "response": "El **Batidero** es un proyecto de campamento modular pensado específicamente para alojar personal, con una capacidad de **48 personas** en **558 dormitorios** configurados en módulos de alta eficiencia y confort. Está diseñado para contextos exigentes (como proyectos mineros o de infraestructura), con ambientes climatizados, buena aislación térmica/acústica y estándares similares a los de una villa permanente, pero con la ventaja de la construcción industrializada y montaje rápido.  \n\nNo tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp así te pasan cotización según cantidad de personas y servicios que necesites. Para ver si este proyecto te encaja bien: ¿en qué zona sería el campamento y para qué tipo de obra lo estás pensando?",
+      "mentionedModels": [
+        "Batidero"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 4509
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Batidero? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "El proyecto **Batidero** que tengo cargado solo detalla capacidad y uso, no un plano técnico completo. Puntualmente: figura con **558 dormitorios** para **48 personas**, lo que indica un esquema de módulos de descanso de alta densidad pensados para campamentos de obra/minería, con el estándar típico de Modular Homes: construcción industrializada, muy buena aislación térmica y acústica, ambientes climatizados y terminaciones similares a una construcción tradicional.\n\nNo tengo en el sistema la **superficie total en m²** ni el detalle fino de cada módulo (medidas, baños por persona, etc.). No tengo esa información específica cargada, pero podés contactarnos por WhatsApp para que te envíen planos tipo, superficies y memoria técnica completa del Batidero según la configuración que necesites.",
+      "mentionedModels": [
+        "Batidero"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 6038
+    },
+    {
+      "question": "Contame sobre Warning",
+      "questionType": "product_specific",
+      "response": "Del proyecto **Warning** solo tengo el nombre identificado dentro de nuestro catálogo de Edificios Modulares, Proyectos, pero no aparecen cargados más datos técnicos (superficie, capacidad, uso específico, etc.).  \n\nNo tengo esa información específica cargada, pero podés consultarnos por WhatsApp o vía web para que te envíen la ficha completa del proyecto Warning (planos tipo, m², configuración y opciones de equipamiento). Mientras tanto, para orientarte con alternativas similares: ¿lo estás pensando para campamento, oficinas o vivienda?",
+      "mentionedModels": [
+        "Warning",
+        "Edificios Modulares"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2637
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Warning? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "Del proyecto **Warning** en el sistema solo tengo el nombre dentro del listado de Edificios Modulares, Proyectos, pero no figuran datos técnicos asociados (no aparece superficie en m², cantidad de dormitorios, ni memoria descriptiva).  \n\nNo tengo esa información específica cargada, así que para ver planos, superficies y configuración de dormitorios te sugiero consultarlo por WhatsApp o desde la web de Modular Homes, donde un asesor te puede enviar la ficha técnica completa. Si me contás si lo querés para campamento, oficinas o vivienda, puedo sugerirte otros proyectos similares que sí tengo más detallados, como Campamentos Temporarios, Edificios Modulares u Oficinas Modulares.",
+      "mentionedModels": [
+        "Warning",
+        "Campamentos Temporarios",
+        "Edificios Modulares",
+        "Oficinas Modulares"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3238
+    },
+    {
+      "question": "¿Cuál es la diferencia entre Batidero y Warning?",
+      "questionType": "model_comparison",
+      "response": "Entre **Batidero** y **Warning** la única diferencia concreta que tengo cargada es que **Batidero** está identificado como un proyecto de campamento con **558 dormitorios para 48 personas**, pensado claramente para alojamiento de personal en obra/minería.  \n\nDe **Warning** solo tengo el nombre dentro del listado de Edificios Modulares, Proyectos y no figuran datos técnicos ni uso específico, así que no puedo comparar superficie, cantidad de dormitorios ni configuración. No tengo esa información específica cargada; para una comparación técnica real (planos, m², distribución, equipamiento) te sugiero pedir por WhatsApp las fichas de ambos. Mientras tanto, ¿lo que necesitás es alojamiento de personal, oficinas o algún otro uso?",
+      "mentionedModels": [
+        "Batidero",
+        "Warning",
+        "Edificios Modulares"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3332
+    },
+    {
+      "question": "¿Qué modelo me recomendás para una familia de 4 personas?",
+      "questionType": "recommendation",
+      "response": "Para una familia de 4 personas te conviene ir a nuestra línea de **Viviendas** (departamentos y viviendas unifamiliares modulares), que están pensadas justamente para uso definitivo, con buena aislación, confort y terminaciones similares a la construcción tradicional. Dentro de lo que trabajamos, lo típico para 4 personas es una vivienda de **2 a 3 dormitorios**, con estar-comedor, cocina y 1 o 2 baños, que se puede resolver con nuestro sistema modular definitivo o con hormigón premoldeado según el proyecto.  \n\nNo tengo los modelos de vivienda desglosados por m² en este sistema, pero sí podemos adaptar el diseño a tu terreno y necesidades. Para ayudarte mejor: ¿ya tenés terreno? ¿En qué zona sería?",
+      "mentionedModels": [
+        "Viviendas"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3242
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con **construcción modular industrializada**: fabricamos la mayor parte de los módulos (estructura, paneles, instalaciones, terminaciones) en planta, en un ambiente controlado, y luego los trasladamos al sitio para el **montaje sobre platea de hormigón** (en hormigón premoldeado, steel framing u otros sistemas propios). Esto reduce muchísimo la mano de obra en obra, mejora la calidad y permite trabajar incluso en climas muy duros donde la construcción tradicional se complica.\n\nEn cuanto a plazos, son **notoriamente menores que la obra húmeda** y con costos y tiempos muy previsibles; por ejemplo, la empresa ha realizado edificios de **4.800 m² en 180 días** en zonas con climas extremos. El tiempo exacto para tu caso va a depender de la superficie, el tipo de Edificios Modulares, Proyectos (vivienda, campamento, oficinas, etc.) y la ubicación. Para poder estimarte mejor: ¿qué tipo de proyecto querés hacer y en qué provincia sería?",
+      "mentionedModels": [
+        "Edificios Modulares"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4280
+    },
+    {
+      "question": "¿Se pueden personalizar los proyectos?",
+      "questionType": "customization",
+      "response": "Sí, los proyectos se pueden personalizar bastante. Nuestros sistemas (Viviendas, Campamentos Temporarios, Edificios Modulares, Oficinas Modulares, etc.) son modulares y versátiles: se adapta cantidad de dormitorios, distribución interna, niveles, terminaciones, equipamiento y hasta el sistema constructivo (hormigón premoldeado, steel framing, panelizado, etc.) según el uso y la zona.  \n\nLo que hacemos normalmente es partir de un modelo tipo y ajustarlo a tu terreno, clima, normativa local y necesidades de uso. Para orientarte mejor, ¿qué tipo de Edificios Modulares, Proyectos estás pensando personalizar (vivienda familiar, campamento, oficinas, industrial)?",
+      "mentionedModels": [
+        "Viviendas",
+        "Campamentos Temporarios",
+        "Edificios Modulares",
+        "Oficinas Modulares"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3595
+    },
+    {
+      "question": "¿Tenés imágenes, planos o algún catálogo que pueda ver?",
+      "questionType": "images_catalog",
+      "response": "Sí, tenemos muchas imágenes, noticias de obras y fichas de sistemas en la web de Modular Homes. Ahí vas a poder ver fotos de **Campamentos Temporarios**, **Edificios Modulares**, **Oficinas Modulares**, **Viviendas**, Módulos Transportables, Sistemas Temporarios/Definitivos, etc., e incluso algunas obras como **Cerro Negro**, **Josemaría**, **Tres Quebradas**, etc.\n\nTe recomiendo mirar especialmente las secciones **“Obras realizadas”**, **“Productos”** y la **“Nueva Línea de Edificios Modulares”** en modularhomes.com.ar. Así ves referencias reales y después podemos bajar a un proyecto similar al que necesitás; ¿lo que más te interesa ver ahora son viviendas, campamentos o oficinas?",
+      "mentionedModels": [
+        "Productos",
+        "Viviendas",
+        "Cerro Negro",
+        "Campamentos Temporarios",
+        "Edificios Modulares",
+        "Oficinas Modulares"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3156
+    },
+    {
+      "question": "¿Cuánto sale aproximadamente una casa de 2 dormitorios?",
+      "questionType": "pricing",
+      "response": "No tengo los precios actualizados cargados, así que no puedo decirte un valor aproximado ni por m² ni por modelo para una vivienda de 2 dormitorios.  \n\nTe sugiero consultarlo por WhatsApp desde la web de Modular Homes, donde te pueden cotizar según zona, m², tipo de sistema (Viviendas modulares definitivas, hormigón premoldeado, etc.) y nivel de terminaciones. Mientras tanto, para que te orienten mejor cuando hables con el asesor: ¿en qué provincia sería y ya tenés terreno?",
+      "mentionedModels": [
+        "Viviendas"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 2368
+    },
+    {
+      "question": "¿Qué incluye el precio? ¿Terminaciones, instalación, todo?",
+      "questionType": "includes",
+      "response": "En nuestros proyectos modulares solemos ofrecer soluciones bastante integrales: proyecto, fabricación en planta, **provisión y montaje de los edificios**, más la **ejecución de redes** (agua, cloacas, electricidad, datos) y, si se acuerda, la **provisión de equipamiento** (mobiliario, cocina/comedor, etc.), con terminaciones de calidad similares a la construcción tradicional.  \n\nLo que incluye exactamente el precio varía según el tipo de Edificios Modulares, Proyectos (Viviendas, Campamentos Temporarios, Oficinas Modulares, etc.) y el alcance que definamos en la cotización. No tengo el detalle de precios cargado acá, así que te sugiero consultarlo por WhatsApp para que te envíen un presupuesto donde se especifique qué está incluido y qué puede cotizarse como adicional. Para que la info que te pasen sea bien precisa: ¿lo estás pensando para una vivienda familiar, un campamento o unas oficinas?",
+      "mentionedModels": [
+        "Viviendas",
+        "Campamentos Temporarios",
+        "Edificios Modulares",
+        "Oficinas Modulares"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3643
+    },
+    {
+      "question": "¿Ustedes se encargan de toda la instalación o solo entregan los materiales?",
+      "questionType": "installation",
+      "response": "Nos encargamos de **todo**, no solo de entregar materiales. Modular Homes incluye el **proyecto**, la **fabricación en planta**, la **provisión y montaje de los edificios modulares en obra**, y también la **ejecución de redes** (agua, cloacas, electricidad, datos) y, si lo necesitás, la **provisión de equipamiento**.  \n\nEs un servicio “llave en mano” adaptable: definimos en contrato hasta dónde querés que lleguemos (solo edificio, edificio + redes, edificio + redes + equipamiento). Para ayudarte mejor: ¿esto lo estás pensando para una vivienda, un campamento o unas oficinas modulares?",
+      "mentionedModels": [
+        "Edificios Modulares",
+        "Oficinas Modulares"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3581
+    },
+    {
+      "question": "¿Qué garantía ofrecen sobre la construcción?",
+      "questionType": "warranty",
+      "response": "Trabajamos con sistemas industrializados probados en campamentos mineros, petroleros y obras en climas extremos, con estructuras en hormigón premoldeado, steel framing y paneles prefabricados que cumplen normas vigentes y estándares de calidad controlados en fábrica.  \n\nEn este sistema no tengo cargado el detalle formal de años de garantía por escrito (plazos exactos, qué cubre cada ítem, etc.). No tengo esa información específica cargada, pero por WhatsApp te pueden enviar las condiciones de garantía según el tipo de proyecto (Viviendas, Campamentos Temporarios, Edificios Modulares, Oficinas Modulares). ¿Lo que querés hacer es una casa familiar o un proyecto más tipo campamento/oficinas?",
+      "mentionedModels": [
+        "Viviendas",
+        "Campamentos Temporarios",
+        "Edificios Modulares",
+        "Oficinas Modulares"
+      ],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 4406
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, contamos con **financiación disponible** para nuestros proyectos en Argentina. Los planes concretos (anticipo, cuotas, plazos) dependen del tipo de Edificios Modulares, Proyectos que elijas (Viviendas, Campamentos Temporarios, Oficinas Modulares, etc.) y del monto total de la obra.  \n\nNo tengo acá los detalles finos de cada plan, así que lo ideal es que lo veas con un asesor por WhatsApp para que te armen una propuesta según tu caso. Para ir orientándote: ¿qué tipo de proyecto querés financiar y qué presupuesto manejás aproximadamente?",
+      "mentionedModels": [
+        "Viviendas",
+        "Campamentos Temporarios",
+        "Edificios Modulares",
+        "Oficinas Modulares"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3765
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Lo que más nos diferencia es la **experiencia real en obra pesada y climas extremos**: somos la **única empresa en Argentina con más de 40 años** fabricando construcciones modulares para minería, petróleo, represas, rutas, plantas industriales, etc., y hemos hecho la mayoría de los **campamentos más grandes del país** (Josemaría, Cerro Negro, Tres Quebradas, etc.).  \n\nAdemás, ofrecemos una solución **integral y llave en mano**: proyecto, fabricación en planta, provisión y montaje de los edificios, redes completas y equipamiento, con estándares de aislación térmica/acústica muy altos y terminaciones similares a la construcción tradicional, pero con plazos mucho más cortos y costos más previsibles. ¿En tu caso estás comparando opciones para vivienda, campamento o oficinas?",
+      "mentionedModels": [
+        "Cerro Negro"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3035
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "Trabajamos en **Argentina** y tenemos mucha experiencia justamente en **zonas remotas y de climas extremos**, sobre todo en proyectos mineros, petroleros e industriales (San Juan, Catamarca, Santa Cruz, Salta, Neuquén, etc.).  \n\nComo el sistema es modular e industrializado, podemos montar campamentos, viviendas y oficinas en casi cualquier provincia, siempre que la logística sea viable. Si me contás en qué localidad o provincia lo querés hacer, te digo si es algo que normalmente atendemos y qué tipo de Edificios Modulares, Proyectos te convendrían.",
+      "mentionedModels": [
+        "Viviendas",
+        "Edificios Modulares"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2658
+    }
+  ],
+  "sessionCreationTimeMs": 109179,
+  "errors": []
+}

@@ -1,0 +1,50 @@
+=== MOVILHAUSS ===
+URL: https://movilhauss.com
+Session: 4c10c5dd-fdac-4bd6-915a-ef7e81e2f58e
+Date: 2026-02-08 15:26:56
+Session creation: 12.8s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (4.3s): Somos .movilhauss, una empresa de Mar del Plata especializada en casas modulares trasladables con estructura metálica y construcción en seco reforzada. Diseñamos y fabricamos módulos habitacionales completos (con cocina, baño, instalaciones y DVH) que se pueden trasladar, ampliar por módulos y usar como vivienda, cabañas, oficinas, glamping o proyectos turísticos. Además ofrecemos modelos específicos como inquba /work, inquba +, inquba duo y freestyle (ampliable), con entrega de llaves en 30 a 60 días y financiación en cuotas fijas.  
+
+Para orientarte mejor, ¿qué tipo de modelo estás buscando: algo chico tipo monoambiente, una unidad con dormitorio o algo más grande y personalizado?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (6.2s): Ofrecemos principalmente casas modulares trasladables con estructura metálica y calidad premium en terminaciones, listas para usar (cocina equipada, baño completo, instalaciones eléctrica y sanitaria, DVH, aislación térmica). Trabajamos con varios modelos: **inquba /work** (Tiny, Work y Suite, monoambientes en stock y entrega inmediata), **inquba +** (32 m², 2 ambientes), **inquba duo** (32 m² en 2 plantas, 2 ambientes) y **freestyle (ampliable)** para diseñar tu casa modular personalizada por módulos.  
+
+Como servicios, brindamos: fabricación integral en nuestro taller, traslado “puerta a puerta” dentro de Argentina, asesoramiento técnico (planos para municipio) y **financiación en cuotas fijas**. Para saber qué encaja mejor con vos, ¿lo pensás como vivienda, cabaña turística u oficina?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (3.8s): Tenemos 5 líneas principales de productos en casas modulares trasladables:  
+1) **Entrega inmediata** con los modelos inquba /work (Tiny, Work y Suite).  
+2) **inquba /work** (módulos base monoambiente en distintas configuraciones), **inquba +** (32 m², 2 ambientes en una planta), **inquba duo** (32 m² en dos plantas) y **freestyle (ampliable)** para diseños personalizados por módulos de 3,2 x 6 m.  
+
+Para afinar qué ofrecerte, ¿qué tipo de modelo estás buscando: algo chico tipo monoambiente, uno con dormitorio o algo ampliable a futuro?
+
+USUARIO: Contame sobre 1. Entrega inmediata
+AGENTE (3.4s): La línea de **Entrega inmediata** corresponde a nuestros modelos **inquba /work**: Tiny, Work y Suite, que están **en stock** y listos para instalar en tu terreno. Son módulos de estructura metálica, totalmente terminados, con baño completo, cocina equipada (en Tiny y Work), DVH, aislación térmica, aire frío/calor y posibilidad de sumar deck/pérgola o trailer a pedido.  
+
+Para saber si te encaja alguno de estos, contame: ¿lo querés como vivienda chica, oficina/consultorio o tipo suite sin cocina?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (7.2s): Hoy no tengo los precios actualizados cargados, y como se ajustan bastante seguido prefiero no inventarte un valor. Te sugiero consultarlo por WhatsApp así te pasan el precio vigente y opciones de financiación en cuotas fijas: https://wa.link/nyci9m.  
+
+Para una casa de 2 dormitorios lo que más se usa es combinar módulos **freestyle (ampliable)** o armar algo a partir de **inquba +**; ¿ya tenés terreno y en qué zona sería?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (3.5s): Nuestras Movilhauss se construyen con estructura metálica y steel framing reforzado, aislación térmica y terminaciones de primera línea pensadas para ser **libres de mantenimiento**, y se entregan con **planos de arquitectura, estructura e instalaciones** aptos para presentar en cualquier municipio. Además, todo el proceso de montaje y descarga se hace bajo nuestra supervisión técnica para que se cumplan los estándares de calidad y quede cubierta la instalación inicial.  
+
+Los plazos y condiciones específicas de la garantía (años por estructura, instalaciones, etc.) no los tengo cargados acá; para esos detalles puntuales te recomiendo escribirnos por WhatsApp: https://wa.link/nyci9m. ¿Estás evaluando una casa para uso permanente o más bien turístico/fines de semana?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (3.2s): Te dejo los datos de contacto directos:  
+- **WhatsApp / Teléfono:** +54 9 2236 21-6699  
+- Link directo a WhatsApp: https://wa.link/nyci9m  
+
+Si querés, también podés escribirnos por mail a **movilhauss@gmail.com**. ¿Te gustaría que te orientemos por ahí con modelos y financiación?
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 1
+Tiempo promedio: 4.5s

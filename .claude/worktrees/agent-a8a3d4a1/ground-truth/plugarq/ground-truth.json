@@ -1,0 +1,34 @@
+{
+  "company": "PlugArq",
+  "url": "https://www.plugarq.com/",
+  "capturedAt": "2026-02-06T15:28:03.192Z",
+  "type": "modular",
+  "navigation": {
+    "menuItems": [
+      "POR QUÉ PLUG",
+      "CENTRAL",
+      "TECNOLOGÍA",
+      "PRENSA",
+      "CONTACTO"
+    ],
+    "modelSections": [
+      {
+        "label": "Chat",
+        "url": "https://api.whatsapp.com/send?phone=5491170627642&text=Hola%2C%20me%20interesan%20las%20casas%20modulares"
+      }
+    ]
+  },
+  "models": [],
+  "contactInfo": {
+    "whatsapp": "5491170627642",
+    "instagram": "@whatsapp"
+  },
+  "totalModelsFound": 0,
+  "pagesExplored": 2,
+  "errors": [],
+  "companyProfile": {
+    "identity": "PLUG es una constructora argentina especializada en construcción industrializada modular que ofrece una experiencia integral de diseño, fabricación y montaje de viviendas.",
+    "offering": "Ofrece proyectos de viviendas modulares con sistema industrializado, destacando procesos más rápidos, seguros y eficientes que la construcción tradicional. Incluye proyectos entregados y proyectos en proceso.",
+    "terminology": "proyectos"
+  }
+}

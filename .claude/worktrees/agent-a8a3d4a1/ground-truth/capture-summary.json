@@ -1,0 +1,16 @@
+{
+  "capturedAt": "2026-02-06T15:28:26.850Z",
+  "totalCompanies": 1,
+  "completed": 1,
+  "results": [
+    {
+      "company": "Grupo Steimberg",
+      "type": "modular",
+      "modelsFound": 0,
+      "pagesExplored": 3,
+      "hasWhatsapp": false,
+      "hasEmail": true,
+      "errorCount": 0
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+{
+  "company": "Viviendas Rolon",
+  "url": "https://www.viviendasrolon.com.ar/",
+  "testedAt": "2026-02-06T16:55:28.280Z",
+  "sessionId": "caf054d5-295d-47d3-b99a-8b039513e38e",
+  "systemPromptLength": 21141,
+  "systemPromptModelsFound": [
+    "Construccion en Método de construcción prefabricad",
+    "Financiacion disponible",
+    "Construccion en"
+  ],
+  "systemPromptWhatsApp": "1149525488",
+  "systemPromptType": "1",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Somos Viviendas Rolón, una empresa argentina con más de 50 años de experiencia dedicada a construir y vender viviendas prefabricadas personalizadas. Trabajamos con un sistema constructivo prefabricado modular, lo que permite una obra rápida, prolija y adaptable a lo que vos necesitás.  \n\nAdemás de las casas, ofrecemos asesoramiento en créditos y opciones de financiación, y te acompañamos en todo el proceso, desde elegir el modelo hasta la entrega. Para arrancar bien orientados, ¿qué tipo de Modelos de viviendas. estás buscando: algo chico tipo Vivienda Tipo 3, familiar como la Vivienda Tipo 1, o más grande como la Vivienda Tipo 2?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2863
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos principalmente viviendas prefabricadas construidas con método modular, totalmente personalizables según ambientes, terminaciones y distribución. Dentro de los Modelos de viviendas. tenés, por ejemplo, la Vivienda Tipo 1 (moderna de una planta para familias pequeñas), la Vivienda Tipo 2 (más espaciosa, ideal familias numerosas, con opción de jardín) y la Vivienda Tipo 3 (más chica, económica y rápida, ideal vacaciones o solteros).  \n\nAdemás brindamos asesoramiento en créditos, opciones de financiación y atención personalizada desde nuestra oficina en CABA (Presidente José Evaristo Uriburu 754/56, Piso 2, Oficina 10). Para orientarte mejor, ¿qué tipo de Modelos de viviendas. estás buscando?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4524
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Te dejo todos los datos de contacto así los tenés a mano:  \n\n- Teléfono: 11 4952-5488  \n- WhatsApp directo: +54 11 4066-7109  \n- Otro teléfono: 11 4194-8880  \n- Email: ventas@viviendasrolon.com.ar  \n\nSi querés, contame en qué zona tenés el terreno y qué tipo de Modelos de viviendas. te interesan así ya le paso la info a un asesor.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2607
+    },
+    {
+      "question": "¿Cuántos modelos ofrecen?",
+      "questionType": "product_count",
+      "response": "Por acá tengo cargados 3 Modelos de viviendas. principales:  \n- **Vivienda Tipo 1**: moderna, de una planta, ideal para familias pequeñas, eficiente y personalizable.  \n- **Vivienda Tipo 2**: más grande y espaciosa, pensada para familias numerosas, con jardín incluído y variedad de acabados.  \n- **Vivienda Tipo 3**: más compacta, económica, de rápida construcción y sostenible, ideal como casa de vacaciones o para una persona sola.  \n\nPara ayudarte mejor, ¿qué tipo de Modelos de viviendas. estás buscando: algo chico, intermedio o bien amplio?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2758
+    },
+    {
+      "question": "Contame sobre Construccion en Método de construcción prefabricad",
+      "questionType": "product_specific",
+      "response": "Nuestro método de construcción prefabricada modular consiste en fabricar los paneles y componentes de la vivienda en planta, con medidas estandarizadas, y luego montarlos en el terreno, lo que reduce mucho los tiempos de obra y desprolijidades. Esto permite mejor control de calidad, menos desperdicio de materiales y una instalación más rápida y limpia que la construcción tradicional.  \n\nTodas nuestras Vivienda Tipo 1, Vivienda Tipo 2 y Vivienda Tipo 3 se hacen con este sistema, y se pueden personalizar en distribución y terminaciones. ¿Ya tenés terreno? ¿En qué zona sería la obra?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3184
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Construccion en Método de construcción prefabricad? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "Te explico: el **método de construcción prefabricada modular** es el sistema constructivo (cómo se hace la casa), no un modelo en sí, por eso no tiene una superficie o cantidad de dormitorios fija. Con este sistema armamos distintos Modelos de viviendas., como:  \n\n- **Vivienda Tipo 1**: una planta, moderna, ideal familias pequeñas, diseño contemporáneo, eficiente energéticamente y personalizable.  \n- **Vivienda Tipo 2**: más grande, pensada para familias numerosas, con **amplios espacios**, jardín incluído y variedad de acabados.  \n- **Vivienda Tipo 3**: compacta, **económica**, de rápida construcción y sostenible, ideal casa de vacaciones o para una persona sola.  \n\nNo tengo cargados los m2 ni cantidad exacta de dormitorios de cada modelo; para esos detalles finos te sugiero consultarlo por WhatsApp. Para orientarte mejor: ¿cuántos dormitorios estás buscando y qué superficie aproximada tenés en mente?",
+      "mentionedModels": [],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 4309
+    },
+    {
+      "question": "Contame sobre Financiacion disponible",
+      "questionType": "product_specific",
+      "response": "Ofrecemos financiación para que puedas acceder a cualquiera de nuestros Modelos de viviendas. (Vivienda Tipo 1, Vivienda Tipo 2 o Vivienda Tipo 3), adaptando cuotas y plazos según tu perfil y el valor de la vivienda que elijas. Te ayudamos también con el asesoramiento en créditos, para ver qué opción te conviene más según ingresos y si ya tenés terreno.  \n\nNo tengo los planes ni montos exactos de financiación cargados acá, te sugiero consultarlo por WhatsApp al +54 11 4066-7109 así te pasan simulaciones de cuotas. Para ir guiándote, ¿qué presupuesto aproximado manejás y si ya tenés terreno, en qué zona?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4359
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Financiacion disponible? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "La **financiación disponible** no es un modelo de casa, sino el servicio para que puedas pagar cualquiera de nuestros Modelos de viviendas. en cuotas, por eso no tiene superficie ni dormitorios propios. Se aplica a la Vivienda Tipo 1, Vivienda Tipo 2 o Vivienda Tipo 3, según el modelo que elijas, tu ingreso y el valor total del proyecto.  \n\nNo tengo cargados por acá los planes específicos (porcentaje de anticipo, cantidad de cuotas, tasas, etc.), así que no puedo darte esos detalles finos. Te sugiero consultarlo por WhatsApp al +54 11 4066-7109, donde te arman una propuesta según el modelo y el monto que necesites financiar. Para ayudarte un poco más, ¿qué presupuesto aproximado manejás y para cuántos dormitorios estás pensando la vivienda?",
+      "mentionedModels": [],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 2995
+    },
+    {
+      "question": "¿Cuál es la diferencia entre Construccion en Método de construcción prefabricad y Financiacion disponible?",
+      "questionType": "model_comparison",
+      "response": "Son dos cosas distintas:  \n- **Construcción en Método de construcción prefabricada modular**: es el *sistema constructivo*, es decir, cómo se hace la casa. Fabricamos los paneles en planta y los montamos en el terreno, logrando obras rápidas, prolijas y personalizables (se aplica a Vivienda Tipo 1, Tipo 2 y Tipo 3).  \n- **Financiación disponible**: es la *forma de pago*, el servicio para que puedas comprar cualquiera de esos Modelos de viviendas. en cuotas, según tu perfil y el valor del proyecto.  \n\nO sea: uno es cómo construimos la vivienda y el otro es cómo la pagás. Para seguir ayudándote, ¿ya tenés terreno y estás buscando algo más tipo Vivienda Tipo 1, Tipo 2 o Tipo 3?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3087
+    },
+    {
+      "question": "¿Qué modelo me recomendás para una familia de 4 personas?",
+      "questionType": "recommendation",
+      "response": "Para una familia de 4 personas te recomiendo empezar mirando la **Vivienda Tipo 1** y la **Vivienda Tipo 2**.  \nLa **Vivienda Tipo 1** es moderna, de una planta, pensada para familias pequeñas, con buen diseño y eficiencia energética, ideal si querés algo funcional y compacto.  \nLa **Vivienda Tipo 2** es más **espaciosa**, perfecta para familias numerosas, con **amplios ambientes**, jardín incluído y variedad de acabados, ideal si priorizan comodidad y más metros.  \n\nPara afinar la recomendación: ¿ya tenés terreno (en qué zona) y cuántos dormitorios te gustaría tener?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2348
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con **construcción prefabricada modular**: fabricamos los paneles y componentes en planta y luego los montamos en tu terreno, lo que hace que la obra sea mucho más rápida y prolija que la construcción tradicional. El proceso general es: elección del modelo (Vivienda Tipo 1, Tipo 2 o Tipo 3) y personalización, firma de contrato, fabricación en planta y finalmente montaje e instalación en el lote.  \n\nNo tengo acá el plazo exacto de obra por modelo (en días o meses), pero al ser prefabricado los tiempos son reducidos frente a una obra húmeda tradicional; ese dato preciso te lo pasan por WhatsApp. ¿Ya tenés terreno y en qué zona? Así te orientamos mejor sobre plazos estimados para tu caso.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3530
+    },
+    {
+      "question": "¿Se pueden personalizar los modelos?",
+      "questionType": "customization",
+      "response": "Sí, los Modelos de viviendas. se pueden personalizar.  \nLa **Vivienda Tipo 1**, **Vivienda Tipo 2** y **Vivienda Tipo 3** admiten cambios en distribución interna, elección de terminaciones y algunos detalles estéticos, siempre respetando el sistema prefabricado modular para mantener la calidad y los tiempos de obra.  \n\nContame: ¿qué te gustaría personalizar más, la cantidad de ambientes/dormitorios o las terminaciones (pisos, revestimientos, etc.)?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4151
+    },
+    {
+      "question": "¿Tenés imágenes, planos o algún catálogo que pueda ver?",
+      "questionType": "images_catalog",
+      "response": "Sí, tenemos catálogo online donde podés ver imágenes y más detalles de nuestros Modelos de viviendas.  \nPodés entrar acá: **https://www.viviendasrolon.com.ar/modelos** y recorrer las opciones (Vivienda Tipo 1, Vivienda Tipo 2 y Vivienda Tipo 3, entre muchas otras en la web).  \n\nSi querés que un asesor te envíe fotos, planos y propuestas por WhatsApp, pasame tu número o escribinos directo al **+54 11 4066-7109**.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3836
+    },
+    {
+      "question": "¿Cuánto sale aproximadamente una casa de 2 dormitorios?",
+      "questionType": "pricing",
+      "response": "No tengo los precios actualizados cargados por acá, así que no puedo darte ni un aproximado sin riesgo de desinformarte. Los valores dependen del modelo (por ejemplo una Vivienda Tipo 1 o una Vivienda Tipo 3 adaptada a 2 dormitorios), la zona y las terminaciones que elijas.  \n\nTe sugiero que lo consultes por WhatsApp al **+54 11 4066-7109**, donde te pasan precios vigentes y simulación de cuotas según tu caso. Mientras tanto, contame: ¿ya tenés terreno y en qué zona sería la vivienda de 2 dormitorios?",
+      "mentionedModels": [],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 2459
+    },
+    {
+      "question": "¿Qué incluye el precio? ¿Terminaciones, instalación, todo?",
+      "questionType": "includes",
+      "response": "No tengo acá el detalle exacto de qué incluye cada presupuesto (siempre puede variar según modelo y acuerdo), así que no puedo asegurarte por este medio si está todo incluido. En general, el alcance depende del modelo elegido (por ejemplo una Vivienda Tipo 1 o Tipo 2), la zona y si se suma algún extra de terminaciones o ampliaciones.  \n\nPara evitar decirte algo incompleto, te recomiendo consultarlo por WhatsApp al **+54 11 4066-7109**, donde te detallan exactamente qué incluye el precio en tu caso (montaje, terminaciones, instalaciones, etc.). ¿Ya tenés definido en qué zona está el terreno y qué modelo te interesa más, así les pasamos esa info también?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4023
+    },
+    {
+      "question": "¿Ustedes se encargan de toda la instalación o solo entregan los materiales?",
+      "questionType": "installation",
+      "response": "Nos encargamos de la **construcción e instalación de la vivienda**, no es solo venta de materiales sueltos. Con el sistema prefabricado modular fabricamos los paneles en planta y luego nuestro equipo los **monta en tu terreno**, armando la Vivienda Tipo 1, Tipo 2 o Tipo 3 según lo que elijas.  \n\nLos alcances finos (qué instalaciones y terminaciones exactas incluye cada propuesta) dependen del presupuesto y el modelo, por eso te sugiero verlo por WhatsApp al **+54 11 4066-7109**. ¿En qué zona tenés el terreno? Así te orientamos mejor sobre la obra en tu caso.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3711
+    },
+    {
+      "question": "¿Qué garantía ofrecen sobre la construcción?",
+      "questionType": "warranty",
+      "response": "No tengo cargado el detalle exacto de años o condiciones específicas de la garantía, y puede variar según el tipo de obra y contrato, así que no quiero inventarte nada.  \n\nLo que sí te puedo asegurar es que, con más de 50 años en el mercado y construcción prefabricada modular, la empresa respalda la calidad de sus viviendas (Vivienda Tipo 1, Tipo 2 y Tipo 3) y ofrece garantía sobre la construcción.  \nPara saber plazo y alcance concreto de la garantía en tu caso, te sugiero escribir al WhatsApp **+54 11 4066-7109**. ¿Ya estás evaluando un modelo en particular o recién empezás a averiguar?",
+      "mentionedModels": [],
+      "saidNoInfo": true,
+      "hasSpecificData": false,
+      "responseTimeMs": 3256
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, contamos con **financiación disponible** y distintos planes de pago para nuestros Modelos de viviendas. (Vivienda Tipo 1, Vivienda Tipo 2 y Vivienda Tipo 3). Se arma según el valor de la vivienda, tus ingresos y si ya tenés terreno, con posibilidad de pagar en cuotas.  \n\nNo tengo por acá los montos, porcentajes de anticipo ni cantidad de cuotas exactas, eso te lo detallan bien por WhatsApp al **+54 11 4066-7109**. Para ir orientándote: ¿qué presupuesto aproximado manejás y ya tenés terreno, en qué zona?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3916
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Lo que más nos diferencia es que en Viviendas Rolón tenemos **más de 50 años de experiencia** construyendo viviendas prefabricadas en Argentina, con un sistema **prefabricado modular** muy probado, rápido y prolijo. Ofrecemos una **gran variedad de Modelos de viviendas.** totalmente personalizables (como Vivienda Tipo 1, Vivienda Tipo 2 y Vivienda Tipo 3), más **asesoramiento en créditos y financiación**, y atención personalizada en nuestras sucursales y oficina en CABA.  \n\nBuscamos acompañarte en todo el proceso: elección del modelo, forma de pago y construcción hasta que tengas tu casa lista. Contame, ¿estás pensando en una vivienda más bien chica, intermedia o grande para tu proyecto?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3438
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "En la info que tengo cargada solo figura de forma explícita nuestra oficina en **CABA: Presidente José Evaristo Uriburu 754/56, Piso 2, Oficina 10**. No aparece detallado por acá un listado de provincias o si llegamos a todo el país, y no quiero inventarte cobertura.  \n\nEs muy probable que podamos trabajar en varias zonas, pero para confirmarte si llegamos específicamente a **tu localidad**, te sugiero escribir al WhatsApp **+54 11 4066-7109**. ¿De qué ciudad o provincia sos y si ya contás con terreno? Así esa info también se la pasás al asesor.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3612
+    }
+  ],
+  "sessionCreationTimeMs": 112782,
+  "errors": []
+}

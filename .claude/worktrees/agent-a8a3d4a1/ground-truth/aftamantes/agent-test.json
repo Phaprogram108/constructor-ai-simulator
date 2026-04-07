@@ -1,0 +1,209 @@
+{
+  "company": "Aftamantes",
+  "url": "https://aftamantes.net/refugios/",
+  "testedAt": "2026-02-06T15:55:54.497Z",
+  "sessionId": "82b7980f-5ac6-453c-b47b-7a2e69b0fe7d",
+  "systemPromptLength": 21205,
+  "systemPromptModelsFound": [
+    "Energía renovable",
+    "Construídos para durar",
+    "Refugios de",
+    "Casa Compacta",
+    "Refugios de 24m²",
+    "Refugios de 45m²",
+    "Refugios de 70m²",
+    "Refugios de 94m²"
+  ],
+  "systemPromptType": "de Refugios, módulos, proyectos a medida estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "AFT Refugios es una empresa especializada en arquitectura modular y refugios prefabricados en steel frame, pensados sobre todo para turismo, vivienda y uso comercial/oficina. Diseñamos y construimos Refugios de 24m², 45m², 70m², 94m², la Casa Compacta de 70 m² y también proyectos a medida, con alta aislación, terminaciones de calidad y opción de energía renovable.  \n\nTrabajamos con construcción en fábrica (en seco), entrega rápida desde 90/120 días y financiación 100% online, para que tengas tu módulo listo para usar con cocina, baño, instalaciones completas y opciones de personalización. ¿Qué tipo de refugios, módulos o proyectos a medida estás buscando?",
+      "mentionedModels": [
+        "Energía renovable",
+        "Refugios de",
+        "Casa Compacta",
+        "Refugios de 24m²",
+        "REFUGIOS",
+        "CASA COMPACTA"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3188
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos refugios modulares en steel frame para vivienda, turismo y uso comercial/oficina, con construcción en fábrica y entrega rápida. Los modelos estándar son: Refugios de 24m², Refugios de 45m², Refugios de 70m², Refugios de 94m² y la Casa Compacta de 70 m² (2 habitaciones, cocina y baño completos, hoy en U$ 91.000).  \n\nAdemás hacemos proyectos a medida de arquitectura modular, con opciones de energía renovable (paneles y termotanques solares), personalización de materiales y equipamiento, y contamos con financiación 100% online a través de Banco Hipotecario. ¿Qué tipo de refugios, módulos o proyectos a medida estás buscando?",
+      "mentionedModels": [
+        "Energía renovable",
+        "Refugios de",
+        "Casa Compacta",
+        "Refugios de 24m²",
+        "Refugios de 45m²",
+        "Refugios de 70m²",
+        "Refugios de 94m²",
+        "REFUGIOS",
+        "CASA COMPACTA"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2331
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "No tengo acá el número de WhatsApp o teléfono cargado en el sistema.  \n\nTe recomiendo entrar a nuestra web de refugios (aftamantes.net/refugios) y hacer clic en “Cotizá tu refugio”, ahí te toma los datos y te contacta directamente un asesor por WhatsApp.  \n¿Querés que mientras tanto te ayude a definir qué tipo de refugio o módulo te conviene según lo que necesitás?",
+      "mentionedModels": [
+        "REFUGIOS"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2983
+    },
+    {
+      "question": "¿Cuántos modelos de casas ofrecen?",
+      "questionType": "product_count",
+      "response": "Tenemos varios modelos de refugios/casas modulares estándar y además proyectos a medida.  \nEn catálogo hoy ofrecemos: Refugios de 24m², Refugios de 45m², Refugios de 70m², Refugios de 94m² y la Casa Compacta de 70 m² (2 habitaciones, cocina y baño completos).  \n\nTambién podés hacer PROYECTOS A MEDIDA en arquitectura modular, ajustando tamaño, distribución y terminaciones. ¿Para qué uso lo pensás, vivienda permanente, turismo o algo mixto?",
+      "mentionedModels": [
+        "Refugios de",
+        "Casa Compacta",
+        "Refugios de 24m²",
+        "Refugios de 45m²",
+        "Refugios de 70m²",
+        "Refugios de 94m²",
+        "REFUGIOS",
+        "CASA COMPACTA"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2203
+    },
+    {
+      "question": "Contame sobre Energía renovable",
+      "questionType": "product_specific",
+      "response": "En AFT Refugios podés sumar energía renovable a cualquiera de los Refugios de 24m², 45m², 70m², 94m² o a proyectos a medida, para que el módulo sea casi o totalmente autosuficiente.  \nTrabajamos con paneles solares y termotanques solares para generar y calentar agua, aprovechando la muy buena aislación termoacústica (lana de vidrio en paredes, techo y piso) para reducir al máximo el consumo energético.  \n\nLa gran ventaja es que bajás mucho los costos de operación de tu complejo turístico o vivienda y reducís el impacto ambiental, con una construcción ya de por sí sustentable y de bajo impacto en el terreno.  \n¿En qué zona tenés pensado instalar el refugio? Así te puedo orientar mejor sobre qué combo solar suele funcionar bien ahí.",
+      "mentionedModels": [
+        "Energía renovable",
+        "Refugios de",
+        "Refugios de 24m²",
+        "REFUGIOS"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3966
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Energía renovable? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "Buenísima pregunta, porque la parte de Energía renovable en realidad es un OPCIONAL que se le suma a cualquiera de nuestros refugios, no un modelo con superficie y dormitorios propios. Podés incorporarla en Refugios de 24m², 45m², 70m², 94m², en la Casa Compacta de 70 m² (2 habitaciones) o en PROYECTOS A MEDIDA, así que la cantidad de dormitorios y la superficie dependen del modelo que elijas.  \n\nA nivel técnico, lo que ofrecemos es: paneles solares y termotanques solares para autoabastecer el módulo, aprovechando la aislación termoacústica (lana de vidrio en paredes, techo y piso) para reducir el consumo; toda la instalación eléctrica viene preparada con canalización rígida de PVC, cableado y tablero para integrar el sistema; y el refugio ya incluye termotanque eléctrico y bomba presurizadora, sobre los que se puede complementar el esquema solar.  \n\nPara afinar bien la potencia y el kit solar, necesito saber: ¿qué tamaño de refugio estás pensando (24, 45, 70, 94 m² o proyecto a medida) y si es para uso turístico o vivienda permanente?",
+      "mentionedModels": [
+        "Energía renovable",
+        "Refugios de",
+        "Casa Compacta",
+        "Refugios de 24m²",
+        "REFUGIOS",
+        "CASA COMPACTA"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4325
+    },
+    {
+      "question": "Contame sobre Construídos para durar",
+      "questionType": "product_specific",
+      "response": "“Construídos para durar” resume cómo están pensados nuestros refugios para que tengan una vida útil larga y soporten traslados y climas exigentes. Usamos estructura en steel frame (perfiles PGC/PGU + OSB), terminación exterior en chapa sinusoidal prepintada, carpinterías de aluminio Aluar Módena con vidrio laminado, y una aislación termoacústica muy completa (lana de vidrio en paredes, techo y piso).  \n\nAl ser módulos trasladables, están diseñados para montarse, desmontarse y moverse en camión las veces que haga falta, sin perder estabilidad ni rigidez. Además, los interiores llevan machimbre de pino, pisos reforzados, instalaciones completas (sanitaria y eléctrica) y equipamiento de calidad en baño y cocina, lo que los hace ideales tanto para turismo intensivo como para vivienda permanente.  \n¿Los pensás para un emprendimiento turístico o para uso propio como casa?",
+      "mentionedModels": [
+        "Construídos para durar",
+        "REFUGIOS"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4476
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Construídos para durar? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "“Construídos para durar” no es un modelo puntual sino un concepto que aplica a todos nuestros refugios (Refugios de 24m², 45m², 70m², 94m², Casa Compacta de 70 m² y PROYECTOS A MEDIDA), por eso la superficie y dormitorios dependen del tamaño que elijas. Por ejemplo, la Casa Compacta tiene 70 m² y 2 habitaciones; los demás tamaños se configuran según el uso (turismo, vivienda, oficina, etc.).  \n\nEn lo técnico, todos comparten: estructura en steel frame (caños + perfiles PGC/PGU 70/100 + OSB 9,5mm), exterior en chapa sinusoidal C25 prepintada con cámara de aire y barrera de agua/viento, interior en machimbre de pino (paredes/techo) y pisos de pino + microcemento en baño, aislación termoacústica de lana de vidrio en paredes, techo y piso, carpinterías de aluminio Aluar Módena con vidrio laminado, instalaciones sanitaria y eléctrica completas y equipamiento fijo (muebles de cocina, alacenas, placard, mesadas de granito). ¿Qué superficie tenés en mente: 24, 45, 70, 94 m² o algo a medida?",
+      "mentionedModels": [
+        "Construídos para durar",
+        "Refugios de",
+        "Casa Compacta",
+        "Refugios de 24m²",
+        "REFUGIOS",
+        "CASA COMPACTA"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4291
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Nuestros refugios se construyen en fábrica en Córdoba, con sistema en seco (steel frame), todas las terminaciones y las instalaciones listas, y luego se transportan en camión al terreno para el montaje final sobre bases o platea preparada. Esto evita problemas típicos de obra, reduce desperdicios y genera muy poco impacto en el sitio.  \n\nEn tiempos, tenés: refugios estándar (por ej. 45 m²) listos desde 90 días desde la firma y pago inicial, y la Casa Compacta de 70 m² “tu casa en 120 días” (igual que el resto de los módulos grandes y proyectos a medida, que rondan esos plazos según cantidad de unidades).  \n¿Para cuándo lo necesitarías y de qué tamaño estás pensando (24, 45, 70, 94 m² o proyecto a medida)?",
+      "mentionedModels": [
+        "Casa Compacta",
+        "REFUGIOS",
+        "CASA COMPACTA"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4379
+    },
+    {
+      "question": "¿Se pueden personalizar los modelos de casas?",
+      "questionType": "customization",
+      "response": "Sí, todos nuestros refugios se pueden personalizar bastante. Podés elegir tamaño (Refugios de 24m², 45m², 70m², 94m², Casa Compacta de 70 m² o PROYECTOS A MEDIDA), distribución interna según el modelo, terminaciones (tipos de madera, pisos, combinaciones como pino + blanco, Patagonia Flooring), y sumar opcionales como vidrios dobles, electrodomésticos, salamandra y energía renovable.  \n\nIncluso podemos desarrollar proyectos a medida en arquitectura modular si necesitás algo fuera de los tamaños estándar.  \n¿Sobre qué modelo estás pensando así te cuento qué margen de personalización tiene en concreto?",
+      "mentionedModels": [
+        "Energía renovable",
+        "Refugios de",
+        "Casa Compacta",
+        "Refugios de 24m²",
+        "REFUGIOS",
+        "CASA COMPACTA"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3183
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, tenemos financiación disponible y además trabajamos con financiación 100% online a través del Banco Hipotecario.  \nLa forma de pago estándar es: 60% para congelar precio e iniciar construcción, 20% a los 45 días y el 20% restante antes del traslado; y sobre eso se pueden sumar opciones de crédito según tu perfil.  \n\nPara ver bien qué alternativas te aplican, ¿me contás qué presupuesto manejás aproximadamente y en qué zona tenés el terreno?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2239
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Nos diferencia que hacemos arquitectura modular de calidad, con construcción en seco en fábrica (steel frame + muy buena aislación) y tiempos de entrega claros: desde 90 días los Refugios estándar y 120 días la Casa Compacta de 70 m² “llave en mano” con cocina y baño completos.  \n\nAdemás, todos los Refugios de 24m², 45m², 70m², 94m² y los PROYECTOS A MEDIDA son trasladables, personalizables en terminaciones y equipamiento, pueden incorporar energía renovable, y contamos con financiación 100% online con Banco Hipotecario.  \n¿Estás comparando para un proyecto turístico, vivienda propia o algo mixto?",
+      "mentionedModels": [
+        "Energía renovable",
+        "Refugios de",
+        "Casa Compacta",
+        "Refugios de 24m²",
+        "REFUGIOS",
+        "CASA COMPACTA"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3248
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "No tengo en el sistema el detalle exacto de cobertura por zonas o provincias.  \n\nComo los refugios son modulares y se trasladan en camión, en muchos casos podemos llegar a distintas regiones, pero el costo y la viabilidad del traslado se cotizan según la ubicación del terreno. Podría ser posible en tu zona, te sugiero consultarlo por WhatsApp desde la web (“Cotizá tu refugio”) así te confirman logística y costos de envío.  \n¿En qué localidad o provincia estás pensando instalar el refugio?",
+      "mentionedModels": [
+        "REFUGIOS"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2837
+    }
+  ],
+  "sessionCreationTimeMs": 12806,
+  "errors": []
+}

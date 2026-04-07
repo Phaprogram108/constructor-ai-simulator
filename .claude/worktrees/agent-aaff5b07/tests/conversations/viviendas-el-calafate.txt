@@ -1,0 +1,59 @@
+=== VIVIENDAS EL CALAFATE ===
+URL: https://www.viviendaselcalafate.com.ar/
+Session: d06be40c-4f56-424e-8886-e8bfb28e402d
+Date: 2026-02-08 16:33:17
+Session creation: 11.6s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (15.0s): Somos Viviendas El Calafate, una empresa dedicada a construir viviendas industrializadas y prefabricadas en hormigón premoldeado. Diseñamos y construimos casas (como los modelos Vivienda Americana, Ladrillos a la Vista, Llave en Mano, Ladrillo Chacabuco Premium, Ladrillo Full, Americano Oro, entre otros), con asesoramiento gratuito, financiación propia y modelos a la vista en nuestras sucursales (San Miguel, Pilar y Luján).  
+
+Además, ofrecemos flete y armado sin cargo hasta 100 km, obra civil/tradicional si querés construcción “de material”, y visitas técnicas al terreno para ayudarte con nivelación, contrapiso y ubicación de la casa. ¿Qué tipo de Modelos estás buscando: algo más estilo americano, ladrillo a la vista o llave en mano listo para habitar?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (7.8s): Ofrecemos principalmente viviendas prefabricadas en hormigón premoldeado, con distintos Modelos: Vivienda Americana, Ladrillos a la Vista, Llave en Mano, Ladrillo Chacabuco Premium, Ladrillo Full Base de Hormigón Incluida y Americano Oro Base Incluida, entre otros.  
+
+Además brindamos:  
+- Construcción tradicional (obra civil “de material”).  
+- Asesoramiento gratuito en obra y a domicilio (terrenos, terrazas, losas).  
+- Financiación propia, anticipos a convenir, cuotas fijas en pesos, sin gastos administrativos.  
+- Flete, armado y ensamblado sin cargo hasta 100 km.  
+
+¿Ya tenés terreno? ¿En qué zona sería así te orienta mejor qué Modelo te conviene?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (3.8s): Tenemos varios Modelos de casas prefabricadas y algunas variantes dentro de cada línea. Por nombre comercial, hoy trabajamos con:  
+
+- Vivienda Americana (incluye versiones como Americano Oro Base Incluida).  
+- Ladrillos a la Vista (incluye Ladrillo Chacabuco Premium Obra Gruesa y Ladrillo Full Base de Hormigón Incluida).  
+- Llave en Mano (modelo listo para habitar).  
+
+Además, en metros cuadrados podemos armar desde 25 m² hasta 120 m² (25, 30, 36, 42, 49, 52, 56, 63, 72, 81, 90, 110 y 120 m²), adaptando planos y distribución a lo que necesites. ¿Para cuántos ambientes o cuántos dormitorios estás pensando así te sugiero el Modelo más adecuado?
+
+USUARIO: Contame sobre 1. Casa Central
+AGENTE (4.4s): La “Casa Central” es uno de los nombres de Modelo que manejamos, pero en la info que tengo cargada no figura el detalle técnico específico (m2, distribución, terminaciones, etc.). Sí te puedo asegurar que, como todos nuestros Modelos, se construye con sistema industrializado en hormigón premoldeado, incluye flete y armado sin cargo hasta 100 km, y se puede financiar con anticipos a convenir y cuotas fijas en pesos.  
+
+No tengo las características completas ni el precio actual de Casa Central cargados acá; te sugiero consultarlo por WhatsApp o en la sucursal San Miguel para que te muestren planos y fotos. Para orientarte mejor, ¿ya tenés definido cuántos metros cuadrados o cuántos dormitorios te gustaría en esa casa?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (9.5s): Buenísimo, con esto te aclaro mejor lo de “Casa Central”: no es un Modelo de vivienda, sino nuestra sede principal de administración y ventas.  
+
+La Casa Central está en Paunero 1646 6° “A” y “B”, San Miguel, y ahí atendemos de lunes a viernes de 9 a 13 hs y de 14 a 18 hs, y los sábados de 9 a 13 hs. Los teléfonos son (011) 5292-1019 y (011) 5436-2699, y el mail es ventascentral@viviendaselcalafate.com.ar; desde ahí coordinamos asesoramiento, planes de financiación y derivamos a las sucursales con exposición de casas.  
+
+Ya que estás averiguando, ¿preferís acercarte a Casa Central para ver financiación y planos, o a alguna sucursal con modelos a la vista como San Miguel, Pilar o Luján?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (4.3s): Todas nuestras viviendas se construyen con sistema industrializado en hormigón premoldeado y materiales de primera línea, y la obra se entrega con garantía por vicios de construcción y estructura según la normativa vigente (por eso siempre trabajamos con personal propio y obra supervisada). Además, al ser una empresa con años de trayectoria, seguimos acompañando al cliente después de la entrega ante cualquier detalle de armado o terminaciones.  
+
+No tengo acá el detalle exacto de años de garantía por escrito, eso te lo pasan formalizado por contrato desde Casa Central o sucursal. ¿Te gustaría que veamos primero qué Modelo (Vivienda Americana, Ladrillos a la Vista o Llave en Mano) te interesa y en qué zona pensás construir?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (3.6s): Te paso los teléfonos directos de la empresa:  
+- Casa Central (San Miguel): **(011) 5292-1019** y **(011) 5436-2699**.  
+
+Por WhatsApp suelen usar estas mismas líneas derivadas desde la central, pero no tengo el número móvil específico cargado. Si querés, primero contame en qué zona tenés el terreno y qué presupuesto manejás aproximadamente, así cuando llames ya vas con una idea más enfocada.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 3
+Tiempo promedio: 6.9s

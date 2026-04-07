@@ -1,0 +1,179 @@
+{
+  "company": "T1 Modular",
+  "url": "https://www.t1modular.com.ar/",
+  "testedAt": "2026-02-06T15:53:07.047Z",
+  "sessionId": "ca5666c5-d0d4-4804-9794-58acd2b09bfc",
+  "systemPromptLength": 21069,
+  "systemPromptModelsFound": [
+    "Conocé más",
+    "Máxima flexibilidad en",
+    "Proyectos Residenciales",
+    "Tiny Homes",
+    "Proyectos Comerciales"
+  ],
+  "systemPromptWhatsApp": "+5491176371656",
+  "systemPromptType": "de Proyectos, Obras, Servicios estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Somos T1 Modular, una empresa de construcciones en seco con sistema Steel Frame que trabaja en todo el país. Nos especializamos en Proyectos a Medida llave en mano: desde el diseño y la ingeniería hasta la obra terminada, tanto para viviendas como para locales y soluciones comerciales, siempre con alta precisión y tiempos de obra hasta un 60% más rápidos que la construcción tradicional.  \n\nPara orientarte mejor, ¿qué tipo de Proyectos, Obras, Servicios estás buscando: Proyectos Residenciales, Tiny Homes, Proyectos Comerciales o algo agrícola como las cabinas hidropónicas T1 Agro?",
+      "mentionedModels": [
+        "Proyectos Residenciales",
+        "Tiny Homes",
+        "Proyectos Comerciales"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4003
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos construcciones en Steel Frame llave en mano en todo el país, con financiación disponible. Nuestros principales Proyectos, Obras, Servicios son:\n\n- **Proyectos Residenciales**: casas a medida, diseño personalizado, construcción rápida y materiales de alta calidad.  \n- **Tiny Homes**: modelos compactos, ecológicos y económicos, pensados para aprovechar al máximo 36 m² y ampliarse por módulos.  \n- **Proyectos Comerciales**: locales, oficinas y espacios para negocios con diseño funcional y soporte integral.  \n- **T1 Agro**: cabinas hidropónicas con microclima controlado para forraje verde, microgreens, hongos gourmet y verduras de hoja.\n\nPara ayudarte bien, ¿qué tipo de Proyectos, Obras, Servicios estás buscando vos?",
+      "mentionedModels": [
+        "Proyectos Residenciales",
+        "Tiny Homes",
+        "Proyectos Comerciales"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3276
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Te podés contactar directo por acá:  \n- **WhatsApp / Teléfono**: +54 9 11 7637 1656  \n- **Email**: consultastiny@gmail.com  \n\nSi querés, contame qué tipo de proyecto tenés en mente y te digo qué Proyectos, Obras, Servicios de T1 Modular te pueden encajar mejor antes de que hables con un asesor.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 1865
+    },
+    {
+      "question": "¿Cuántos proyectos ofrecen?",
+      "questionType": "product_count",
+      "response": "Hoy estamos trabajando principalmente con cuatro líneas de Proyectos, Obras, Servicios bien definidas:  \n1. **Proyectos Residenciales** (casas a medida).  \n2. **Tiny Homes** (modelos compactos, desde unos 25–36 m² y ampliables por módulos).  \n3. **Proyectos Comerciales** (locales, oficinas, soluciones para negocios).  \n4. **T1 Agro** (cabinas hidropónicas para producción agrícola tech).\n\nDentro de cada línea hacemos proyectos totalmente personalizados, así que el “catálogo” es muy amplio. Para afinar mejor, ¿qué tipo de Proyectos, Obras, Servicios estás buscando vos?",
+      "mentionedModels": [
+        "Proyectos Residenciales",
+        "Tiny Homes",
+        "Proyectos Comerciales"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2481
+    },
+    {
+      "question": "Contame sobre Conocé más",
+      "questionType": "product_specific",
+      "response": "“Conocé más” es el acceso a la info detallada de cada línea de Proyectos, Obras, Servicios que tenemos en T1 Modular. Desde la web te lleva a las secciones específicas de **Proyectos Residenciales**, **Tiny Homes** o **Proyectos Comerciales**, donde ves fotos, características técnicas del Steel Frame, tiempos de obra y ejemplos de proyectos reales.\n\nSi querés, decime sobre cuál de estos querés “conocer más”: ¿Proyectos Residenciales, Tiny Homes o Proyectos Comerciales?",
+      "mentionedModels": [
+        "Conocé más",
+        "Proyectos Residenciales",
+        "Tiny Homes",
+        "Proyectos Comerciales"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3124
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Conocé más? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "“Conocé más” no es un modelo puntual, sino el botón que te lleva al detalle de cada línea (Proyectos Residenciales, Tiny Homes y Proyectos Comerciales), por eso no tiene una superficie o cantidad de dormitorios fija.  \n\nA nivel técnico general, todas nuestras obras en Steel Frame incluyen:  \n- **Sistema constructivo**: estructura de acero galvanizado, construcción en seco.  \n- **Terminaciones exteriores**: siding cementicio o madera, EPS y pintura tipo Tarquini (otras opciones según diseño).  \n- **Interiores**: placas de Durlock en paredes, cielorrasos de Durlock o PVC.  \n- **Techo y pisos**: techo de chapa prepintada (opción techo vivo); pisos interiores en madera flotante, vinílico click o porcelanato.  \n- **Aislación**: doble aislación térmica y acústica, barrera de viento y humedad.  \n- **Carpinterías**: aluminio de alta prestación con DVH (doble vidrio hermético).  \n- **Instalaciones**: agua, gas, electricidad completa e iluminación LED interior y exterior.  \n- **Opcionales**: salamandra, domótica, deck y pérgola.\n\nEn superficie y dormitorios tenemos máxima flexibilidad: trabajamos desde módulos chicos (Tiny Homes tipo monoambiente o 1 dormitorio) hasta casas y locales grandes totalmente a medida. Para orientarte mejor, ¿qué estás pensando vos: cuántos m² y cuántos dormitorios te gustaría?",
+      "mentionedModels": [
+        "Conocé más",
+        "Proyectos Residenciales",
+        "Tiny Homes",
+        "Proyectos Comerciales"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4593
+    },
+    {
+      "question": "Contame sobre Máxima flexibilidad en",
+      "questionType": "product_specific",
+      "response": "“Máxima flexibilidad en” hace referencia a que trabajamos con módulos en Steel Frame muy versátiles, y uno de los formatos destacados es de **36 m²**, que podés adaptar como monoambiente amplio o 1 dormitorio con living-cocina integrados.  \n\nAl ser Steel Frame, podés **modular y ampliar**: arrancar con esos 36 m² y después sumar más módulos (otro dormitorio, galería, estudio, local, etc.), manteniendo las mismas calidades: doble aislación térmica/acústica, DVH, terminaciones interiores en Durlock y exteriores a elección (siding, Tarquini, etc.).  \n\nPara ayudarte a bajarlo a un plano concreto, ¿cómo te gustaría usar esos 36 m²: vivienda, cabaña turística, ampliación de casa, espacio de trabajo?",
+      "mentionedModels": [
+        "Máxima flexibilidad en"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3646
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Máxima flexibilidad en? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "En **“Máxima flexibilidad en”** trabajamos sobre un módulo estándar de **36 m²** en Steel Frame, pensado para adaptarse a distintos usos. Ese metraje se puede resolver como **monoambiente amplio** o como **1 dormitorio** con cocina-comedor integrados; si necesitás más dormitorios, se suman módulos adicionales manteniendo el mismo sistema.\n\nEn cuanto a características técnicas, sigue el estándar T1 Modular:  \n- **Sistema**: Steel Frame, construcción en seco con estructura de acero galvanizado.  \n- **Aislación**: doble aislación térmica y acústica, con barrera de viento y humedad.  \n- **Terminaciones exteriores**: siding cementicio o madera, EPS y pintura tipo Tarquini (según diseño).  \n- **Interiores**: paredes en Durlock, cielorrasos en Durlock o PVC.  \n- **Techo y pisos**: techo de chapa prepintada (opción techo vivo); pisos en madera flotante, vinílico click o porcelanato.  \n- **Aberturas**: carpintería de aluminio de alta prestación con DVH (doble vidrio hermético).  \n- **Instalaciones**: agua, gas, electricidad completa e iluminación LED interior y exterior.  \n- **Opcionales**: salamandra, domótica, deck y pérgola.\n\nPara ajustar bien la propuesta, ¿en esos 36 m² vos pensás en 1 dormitorio o preferís un monoambiente grande?",
+      "mentionedModels": [
+        "Máxima flexibilidad en"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 5840
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con un proceso llave en mano bien ordenado: primero **consulta inicial** (nos contás tu idea), después **presupuesto y diseño** (te pasamos una cotización detallada y ajustamos planos), sigue **contrato y logística** (plan de obra y materiales) y finalmente **construcción y entrega**, donde nos ocupamos de todo hasta que lo recibís listo para usar.  \n\nCon Steel Frame reducimos los tiempos de obra hasta en un **60%** respecto a la construcción tradicional; por ejemplo, un módulo tipo Tiny Home puede estar listo en alrededor de 2–3 meses, y proyectos residenciales o comerciales más grandes se calculan según m² y complejidad. No tengo los plazos exactos por cada tipo de obra cargados, pero te los pueden detallar por WhatsApp.  \n\nPara orientarte mejor, ¿qué tipo de Proyectos, Obras, Servicios estás pensando (Proyectos Residenciales, Tiny Homes o Proyectos Comerciales) y de cuántos m² aproximadamente?",
+      "mentionedModels": [
+        "Proyectos Residenciales",
+        "Tiny Homes",
+        "Proyectos Comerciales"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4251
+    },
+    {
+      "question": "¿Se pueden personalizar los proyectos?",
+      "questionType": "customization",
+      "response": "Sí, todos nuestros Proyectos, Obras, Servicios se pueden personalizar: tanto **Proyectos Residenciales**, **Tiny Homes** como **Proyectos Comerciales** son a medida. Podés definir distribución (cantidad de dormitorios/ambientes), terminaciones interiores y exteriores, tipo de pisos, equipamiento y también sumar módulos, deck, pérgola, domótica o salamandra según lo que necesites.  \n\nAsí aprovechás la rapidez del Steel Frame, pero con un diseño pensado para vos. ¿Ya tenés en mente cuántos m² y cuántos dormitorios o ambientes te gustaría?",
+      "mentionedModels": [
+        "Proyectos Residenciales",
+        "Tiny Homes",
+        "Proyectos Comerciales"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2711
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, ofrecemos **financiación** para nuestras construcciones en Steel Frame, tanto en Proyectos Residenciales, Tiny Homes como en Proyectos Comerciales. No tengo los planes de pago específicos cargados (cuotas, tasas, etc.), así que para los números finos te sugiero consultarlo por WhatsApp al **+54 9 11 7637 1656**.  \n\nAsí te pasan una propuesta ajustada a tu caso. Para que el asesor te oriente mejor, ¿qué presupuesto aproximado manejás y qué tipo de proyecto estás pensando?",
+      "mentionedModels": [
+        "Proyectos Residenciales",
+        "Tiny Homes",
+        "Proyectos Comerciales"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2720
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Nos diferencia, primero, el **sistema Steel Frame bien desarrollado**, con ingeniería de alta precisión que permite reducir hasta un **60% los tiempos de obra** frente a la construcción tradicional, manteniendo excelente aislación térmica y acústica, DVH y terminaciones de calidad.  \n\nSegundo, trabajamos con **Proyectos a Medida llave en mano**: desde el diseño y la ingeniería hasta la entrega final, en todo el país, para Proyectos Residenciales, Tiny Homes, Proyectos Comerciales y también soluciones agrícolas como T1 Agro.  \n\nAdemás, ofrecemos **gestión integral y financiación**, para que vos te enfoques en definir cómo querés vivir o trabajar y nosotros nos ocupamos de la obra. ¿En qué tipo de proyecto estás pensando así te cuento qué ventajas concretas tendrías en ese caso puntual?",
+      "mentionedModels": [
+        "Proyectos Residenciales",
+        "Tiny Homes",
+        "Proyectos Comerciales"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3412
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "Llegamos a **todo el país**, trabajamos en Argentina completa con obras en Steel Frame y también podemos enviar módulos o construir en sitio según el proyecto.  \n\nSi me contás en qué provincia o localidad tenés el terreno, te puedo orientar mejor sobre la modalidad (envío de módulo, obra en sitio, etc.).",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2023
+    }
+  ],
+  "sessionCreationTimeMs": 11056,
+  "errors": []
+}

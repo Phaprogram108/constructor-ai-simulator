@@ -1,0 +1,63 @@
+=== HABIKA ===
+URL: https://habika.ar/
+Session: 801df8a7-2100-4910-b6a8-838143c8b155
+Date: 2026-02-08 15:32:32
+Session creation: 18.3s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (4.5s): Hábika es una empresa argentina de construcción modular, con fábrica en Córdoba y alcance en todo el país. Diseñamos y fabricamos **módulos metálicos llave en mano** (no contenedores) para usos **residenciales, turísticos, corporativos e industriales**, que se entregan 100% terminados en 60‑90 días.  
+
+Trabajamos con estructura metálica sismo‑resistente y sistema en seco, con alta aislación termoacústica, y ofrecemos **financiación flexible** (planes de 3 a 60 meses, planes de capitalización y entrega pactada). Además acompañamos todo el proceso: proyecto arquitectónico, documentación para municipio/bancos, fundaciones e instalación del módulo en el terreno.  
+
+Para orientarte mejor, ¿qué tipo de Módulos estás buscando: turísticos, residenciales, dormis para trabajadores o corporativos?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (6.5s): Ofrecemos **construcciones modulares llave en mano** en estructura metálica (no contenedores), fabricadas en Córdoba y trasladables a todo el país, con alta aislación térmica y acústica. Trabajamos cuatro grandes líneas de Módulos:
+
+- **Módulos Turísticos**: QM1, TM1, TM2, TM3 (desde 19,5 a 30,6 m², 1 baño, algunos con dormitorio separado y hasta galería con jacuzzi), pensados para cabañas y glamping, listos para alquilar en 90 días.  
+- **Módulos Residenciales**: CM0, CM2, CM3 (A y B), CM4 (A y B), CM5, CM6 y DM3 (de 15 a 115,3 m², 1 o 2 dormitorios, 1 baño), ideales para vivienda permanente o ampliaciones.  
+- **Módulos Corporativos**: COR1, COR2, COR3, COR4 y BM5 (21,6 a 176,88 m²), para locales, oficinas, aulas y baterías de baños públicos.  
+- **Módulos especiales**: Dormis para trabajadores, Módulos para petroleros, para clubes deportivos y desarrollos a medida, además de planes de **financiación**, asesoría para desarrollistas y acompañamiento técnico completo.
+
+Para ayudarte mejor, ¿qué uso tenés en mente: vivienda, turismo, empresa u hospedaje para personal?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (7.0s): Tenemos varias líneas con modelos bien definidos, todos en construcción modular llave en mano. Te los detallo rápido:
+
+- **Turísticos**: QM1, TM1, TM2, TM3 (4 modelos, de 19,5 a 30,6 m²).  
+- **Residenciales**: CM0, CM2, CM3-A, CM3-B, CM4-A, CM4-B, CM5, CM6, DM3 (9 modelos, de 15 a 115,3 m²).  
+- **Corporativos**: COR1, COR2, COR3, COR4, BM5 (5 modelos, de 21,6 a 176,88 m²).  
+- Además, tipologías **CM1, CM2 y CM3** para dormis/petroleros/clubes (base 100 m², 3 hab, 1 baño) y proyectos **a medida**.
+
+En total, son más de 15 modelos estándar + las tipologías especiales y los diseños personalizados. Para afinarte opciones, ¿qué tipo de Módulos estás buscando?
+
+USUARIO: Contame sobre 1. QM1
+AGENTE (4.4s): El **QM1** es un Módulo Turístico de **21,44 m²**, pensado como unidad compacta y funcional para alquiler turístico, oficinas o espacio temporal. Tiene **cocina–comedor integrado**, **espacio técnico** (para instalaciones) y **1 baño completo**.  
+
+Viene en **Línea Base**, llave en mano, con: estructura sismo‑resistente, pisos vinílicos, griferías y artefactos básicos, y aberturas blancas, todo fabricado en planta y listo para instalar en tu terreno. El precio publicado es de **U$D 24.005** (no incluye IVA, traslado, descarga ni fundaciones, y puede variar según ubicación y terminaciones).  
+
+Para ver si te encaja, ¿ya tenés terreno y en qué zona lo querés instalar?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (3.8s): Para 2 dormitorios dentro de nuestras tipologías estándar, el modelo es el **CM6**, de **40,80 m²**, con living–cocina–comedor, 2 dormitorios, 1 baño y espacio técnico. El valor publicado en **Línea Base** es de **U$D 44.914**, puesto en fábrica en Córdoba (no incluye IVA, traslado, descarga ni fundaciones, y puede ajustarse según la provincia y las terminaciones).  
+
+También podés ir a un proyecto a medida o combinar módulos para más metros, pero como referencia de “casa 2 dormitorios” el CM6 es el punto de partida. ¿En qué provincia tenés o pensás tener el terreno así te explico cómo sería el costo total aproximado con traslado y la financiación?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (4.2s): Trabajamos con un sistema constructivo industrializado, con **estructura metálica sismo‑resistente diseñada para más de 100 años de vida útil**, cerramientos con alta aislación termoacústica y dirección técnica permanente en fábrica (arquitectos e ingenieros 24/7 sobre tu proyecto). Eso se traduce en garantía estructural y de sistema, más el respaldo de más de **150 módulos instalados en 14 provincias** y aprobación como construcción tradicional a nivel técnico y municipal.  
+
+Los plazos y alcances específicos de garantía (años por estructura, terminaciones, instalaciones, etc.) se detallan en cada contrato según tipología y uso del módulo. ¿Lo estás pensando para vivienda, turismo o uso corporativo? Así te cuento cómo se aplica la garantía en tu caso.
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (3.0s): Te dejo el contacto directo:  
+📧 Email: **info@habika.ar**
+
+El número de WhatsApp y teléfono no los tengo cargados acá, pero en la web de Hábika tenés siempre un botón de **WhatsApp** abajo a la derecha para escribirle directo a un asesor.  
+
+Aprovecho y te pregunto: ¿querés que avancemos viendo opciones de Módulos para vivienda, turismo o empresa así ya vas sabiendo qué pedir cuando escribas?
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 0
+Tiempo promedio: 4.8s

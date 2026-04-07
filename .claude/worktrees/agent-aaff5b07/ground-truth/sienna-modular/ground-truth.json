@@ -1,0 +1,40 @@
+{
+  "company": "Sienna Modular",
+  "url": "https://www.siennamodular.com.ar/",
+  "capturedAt": "2026-02-05T20:26:30.083Z",
+  "type": "modular",
+  "navigation": {
+    "menuItems": [
+      "Inicio",
+      "Productos",
+      "Beneficios",
+      "Compañía",
+      "Contacto"
+    ],
+    "modelSections": [
+      {
+        "label": "Productos",
+        "url": "https://www.siennamodular.com.ar/#productos"
+      }
+    ]
+  },
+  "models": [
+    {
+      "name": "Arquitectura modular",
+      "features": [],
+      "source": "catalog_page",
+      "screenshot": "screenshots/02-catalog-1.jpeg",
+      "detailUrl": "https://www.siennamodular.com.ar/assets/SIENNA_Brochure.d67f1bba.pdf"
+    }
+  ],
+  "contactInfo": {
+    "whatsapp": "5491161182622",
+    "email": "info@siennamodular.com.ar",
+    "instagram": "@siennamodular"
+  },
+  "totalModelsFound": 1,
+  "pagesExplored": 2,
+  "errors": [
+    "Detail page Arquitectura modular: page.goto: Download is starting\nCall log:\n\u001b[2m  - navigating to \"https://www.siennamodular.com.ar/assets/SIENNA_Brochure.d67f1bba.pdf\", waiting until \"domcontentloaded\"\u001b[22m\n"
+  ]
+}

@@ -1,0 +1,177 @@
+{
+  "company": "Movilhauss",
+  "url": "https://movilhauss.com",
+  "testedAt": "2026-02-06T15:50:35.008Z",
+  "sessionId": "1cdfeab2-c041-49e8-8b62-4f4b59807dc8",
+  "systemPromptLength": 20470,
+  "systemPromptModelsFound": [
+    "Entrega inmediata",
+    "inquba",
+    "inquba +",
+    "inquba duo",
+    "freestyle (ampliable)"
+  ],
+  "systemPromptWhatsApp": "+5492236216699",
+  "systemPromptType": "de modelos estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Movilhauss es una empresa que fabrica y vende casas modulares trasladables, con estructura metálica, pensadas para ser sustentables, cómodas y fáciles de mantener. Diseñamos módulos que vienen totalmente terminados (cocina, baño, instalaciones, DVH, aislación, aire frío/calor) y se pueden trasladar y ampliar por etapas según lo que necesites.  \n\nTrabajamos con modelos como inquba, inquba +, inquba duo, freestyle (ampliable) y opciones de entrega inmediata, y también hacemos diseño personalizado. ¿Qué tipo de modelo estás buscando?",
+      "mentionedModels": [
+        "Entrega inmediata",
+        "inquba",
+        "inquba +",
+        "inquba duo",
+        "freestyle (ampliable)",
+        "freestyle"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2514
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos casas modulares trasladables listas para usar, construidas en estructura metálica, con cocina equipada, baño completo, DVH, aislación térmica y aire frío/calor.  \n\nEn modelos concretos tenemos: **inquba** (Tiny, Work y Suite de 16 a 19,2 m²), **inquba +** (módulo doble de 32 m² con 2 ambientes), **inquba duo**, **freestyle (ampliable)** y opciones de **entrega inmediata**, más servicios de **diseño personalizado** y **financiación**.  \nPara orientarte mejor, ¿para qué la estarías usando: vivienda, turismo, oficina, cabaña?",
+      "mentionedModels": [
+        "Entrega inmediata",
+        "inquba",
+        "inquba +",
+        "inquba duo",
+        "freestyle (ampliable)",
+        "freestyle"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3375
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Te podés contactar directo por WhatsApp al **+54 9 223 621 6699**.  \nTambién tenemos el mail **movilhauss@gmail.com** por si preferís escribirnos por ahí.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 1634
+    },
+    {
+      "question": "¿Cuántos modelos ofrecen?",
+      "questionType": "product_count",
+      "response": "Tenemos **5 modelos principales**:  \n1. **Entrega inmediata**  \n2. **inquba** (con sus variantes Tiny, Work y Suite)  \n3. **inquba +**  \n4. **inquba duo**  \n5. **freestyle (ampliable)**  \n\nAsí que hay opciones compactas, dobles y ampliables según el uso que le quieras dar. ¿Qué tipo de modelo estás buscando?",
+      "mentionedModels": [
+        "Entrega inmediata",
+        "inquba",
+        "inquba +",
+        "inquba duo",
+        "freestyle (ampliable)",
+        "freestyle"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 6032
+    },
+    {
+      "question": "Contame sobre Entrega inmediata",
+      "questionType": "product_specific",
+      "response": "Claro, mirá, en **Entrega inmediata** tenemos módulos ya fabricados y listos para entregar en muy poco tiempo, sin tener que esperar los 60 días estándar de producción.  \nPor ejemplo, el **inquba** y el **inquba +** figuran **“En stock – Entrega inmediata”**, vienen totalmente terminados (cocina equipada, baño completo, instalaciones, DVH, aire frío/calor, termo eléctrico) y solo hay que colocarlos y conectarlos en el terreno.  \n\nAsí ganás mucho tiempo si necesitás resolver rápido una vivienda, cabaña o espacio de trabajo. ¿Ya tenés terreno? ¿En qué zona sería?",
+      "mentionedModels": [
+        "Entrega inmediata",
+        "inquba",
+        "inquba +"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2597
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Entrega inmediata? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "Buenísimo, te cuento los modelos con **entrega inmediata** y sus detalles técnicos:\n\n1) **inquba (Entrega inmediata – En stock)**  \n- **Estructura:** Metálica, casa modular trasladable.  \n- **Variantes:**  \n  - **Tiny:** 19,2 m², monoambiente de 3 x 5,8 m, 1 baño, cocina integrada.  \n  - **Work:** 16 m², ambiente de 3 x 4,8 m, 1 baño, cocina integrada.  \n  - **Suite:** 16 m², ambiente de 3 x 4,8 m, 1 baño, sin cocina.  \n- **Equipamiento común:**  \n  - Cocina (en Tiny y Work): anafe eléctrico 2 hornallas, mueble bajo mesada, alacena, grifería, conexión eléctrica.  \n  - Baño: sanitarios, grifería, termotanque eléctrico.  \n  - General: instalación eléctrica y sanitaria completa, aislación térmica, aberturas de aluminio con DVH, preinstalación de aire acondicionado.  \n  - Opcional: deck / pérgola, posibilidad de trailer a pedido.  \n\n2) **inquba + (Entrega inmediata – En stock)**  \n- **Superficie cubierta:** 32 m².  \n- **Distribución:** 2 ambientes.  \n  - **Living/comedor:** 3 x 4,8 m.  \n  - **Dormitorio:** 3 x 3,6 m.  \n  - **Baños:** 1.  \n  - **Cocina:** integrada.  \n- **Apto:** profesional, turismo, cabaña, rural.  \n- **Confort:** aire frío/calor para calefacción, termo eléctrico para agua caliente, aberturas de aluminio con DVH.  \n- **Equipamiento incluido:**  \n  - Cocina: anafe eléctrico 2 hornallas, bajo mesada, alacena, grifería, conexión eléctrica.  \n  - Baño: sanitarios, grifería, termotanque eléctrico.  \n  - General: instalación eléctrica y sanitaria completa, aislación térmica.  \n- **Extras posibles:** deck, pérgola, jacuzzi exterior.\n\nAmbos se entregan **totalmente terminados y listos para conectar** en el terreno.  \nPara ayudarte a elegir, ¿lo pensás usar como vivienda permanente, cabaña turística u oficina?",
+      "mentionedModels": [
+        "Entrega inmediata",
+        "inquba",
+        "inquba +"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 8308
+    },
+    {
+      "question": "Contame sobre inquba",
+      "questionType": "product_specific",
+      "response": "Dale, inquba es nuestro **módulo base con entrega inmediata**, súper versátil y trasladable, apto para **vivienda, turismo, oficina, cabaña o uso rural**. Viene en **estructura metálica**, con **aislación térmica**, **aberturas de aluminio con DVH**, instalación eléctrica y sanitaria completas, y aire frío/calor (preinstalación de AA en living/comedor).\n\nDentro de inquba tenés 3 variantes:\n- **Tiny**: 19,2 m², monoambiente de 3 x 5,8 m, 1 baño, **cocina integrada**.  \n- **Work**: 16 m², 3 x 4,8 m, 1 baño, **cocina integrada**, ideal oficina/estudio.  \n- **Suite**: 16 m², 3 x 4,8 m, 1 baño, **sin cocina**, tipo habitación en suite.\n\nTodas vienen con:  \n- **Cocina** (Tiny y Work): anafe eléctrico 2 hornallas, bajo mesada, alacena, grifería, conexión eléctrica.  \n- **Baño**: sanitarios completos, grifería, termotanque eléctrico.  \n- **General**: revestimiento interior, DVH, aislación, instalaciones listas.\n\nOpcionales: **deck, pérgola** y posibilidad de montarlo sobre **trailer a pedido** si querés algo más tipo tiny house rodante.  \nPara afinar cuál te conviene, ¿para qué lo querés usar principalmente: vivienda chica, oficina, cabaña turística?",
+      "mentionedModels": [
+        "Entrega inmediata",
+        "inquba"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 7799
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de inquba? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "Disculpá, hubo un problema. ¿Podés repetir tu consulta?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 8304
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con **construcción modular en estructura metálica**, en fábrica: armamos el módulo, hacemos todas las instalaciones (eléctrica, sanitaria), colocamos aislación térmica, pisos flotantes, revestimientos, muebles de cocina, baño completo, aberturas de aluminio con DVH, aire frío/calor, etc., y se entrega **totalmente terminado y listo para conectar** en el terreno.  \n\nEl plazo estándar de fabricación es de alrededor de **60 días**, y en algunos modelos como **inquba** e **inquba +** contamos con unidades **“En stock – Entrega inmediata”**.  \n¿Para cuándo lo necesitarías aproximadamente?",
+      "mentionedModels": [
+        "Entrega inmediata",
+        "inquba",
+        "inquba +"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2781
+    },
+    {
+      "question": "¿Se pueden personalizar los modelos?",
+      "questionType": "customization",
+      "response": "Sí, se pueden personalizar. Podés **diseñar tu casa modular trasladable como quieras y donde quieras**, sumando módulos (3,20 x 6 m cada uno) para llegar a 2, 3 o 4 ambientes, y agregando opcionales como **deck, pérgola, jacuzzi, quincho con parrilla**, etc.  \n\nTambién adaptamos terminaciones y configuración según uso: vivienda, turismo, oficina, glamping, cabañas, emprendimientos.  \nPara orientarte mejor, ¿ya tenés en mente cuántos ambientes o para qué la querés usar?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 2596
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, ofrecemos **financiación** para las casas modulares, así que no hace falta que abones todo de una sola vez.  \nNo tengo los planes específicos cargados por acá, así que para ver **cuotas, anticipo y plazos** te sugiero escribir directo por WhatsApp al **+54 9 223 621 6699**, donde te arman una propuesta según el modelo que elijas.  \n\nPara que te orienten mejor, ¿qué presupuesto aproximado estás manejando?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3848
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Nos diferencia que hacemos **casas modulares trasladables reales**, con **estructura metálica**, pensadas para que las puedas mover las veces que quieras y ampliar por módulos (3,20 x 6 m) según vayas necesitando más ambientes.  \n\nEntregamos en **aprox. 60 días** o con **entrega inmediata** en modelos como inquba e inquba +, vienen **100% terminadas** (cocina equipada, baño completo, DVH, aislación térmica, aire frío/calor, planos aptos para municipio) y son muy fáciles de mantener. Además, trabajamos fuerte la **sustentabilidad** y tenés la opción de **financiación**.  \n¿Estás comparando para vivienda propia, turismo o algún proyecto comercial?",
+      "mentionedModels": [
+        "Entrega inmediata",
+        "inquba",
+        "inquba +"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3818
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "No tengo detallada por acá la lista de zonas a las que llegamos.  \nPodría ser posible en muchas regiones, pero para confirmarte **envío, traslado e instalación** según tu localidad, lo mejor es que nos escribas por WhatsApp al **+54 9 223 621 6699**.  \n\n¿En qué zona estás vos así te digo qué detalles conviene que consultes?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2065
+    }
+  ],
+  "sessionCreationTimeMs": 11889,
+  "errors": []
+}

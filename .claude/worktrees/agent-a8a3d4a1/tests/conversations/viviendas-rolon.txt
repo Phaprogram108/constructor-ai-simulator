@@ -1,0 +1,60 @@
+=== VIVIENDAS ROLON ===
+URL: https://www.viviendasrolon.com.ar/
+Session: 69e53c26-3423-419d-836b-82b98a6a06af
+Date: 2026-02-08 16:30:53
+Session creation: 7.3s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (9.1s): Somos Viviendas Rolón, una empresa argentina con más de 50 años de experiencia dedicada a la construcción de viviendas prefabricadas. Diseñamos e instalamos casas 100% personalizables (como la Cabaña Machimbrada Clásica o los Chalets Línea Plus y Línea Canadiense con Siding), con sistema constructivo en seco y opción de adaptar medidas y distribución, incluso en terrazas o azoteas. También ofrecemos financiación y atención personalizada desde nuestra oficina en Uriburu 754/756, piso 2, CABA.  
+
+Para orientarte mejor, ¿qué tipo de Modelos estás buscando: algo más pequeño tipo cabaña o una vivienda familiar más grande?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (5.7s): Ofrecemos principalmente viviendas prefabricadas personalizables, con diferentes líneas y terminaciones, como la Cabaña Machimbrada Clásica, el Chalet Línea Plus para revestir en ladrillo y el Chalet Premoldeado Línea Canadiense con Siding cementicio tipo madera. Todas incluyen estructura en paneles, revestimientos interiores en placas de yeso, instalación sanitaria y eléctrica preparada, aberturas de aluminio con rejas y techos de chapa galvanizada, con medidas y distribución a elección, incluso aptas para terrazas o azoteas.  
+
+En servicios, brindamos: construcción en sistema prefabricado en todo el país, planes de financiación adaptados, asesoramiento comercial personalizado y atención presencial en nuestra oficina de CABA. Ya tenés terreno? ¿En qué zona sería la obra?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (3.4s): Tenemos una gama amplia de modelos de viviendas prefabricadas, todos personalizables en medidas y distribución. En la web vas a encontrar, por ejemplo, la Cabaña Machimbrada Clásica, el Chalet Línea Plus para revestir, y el Chalet Premoldeado Línea Canadiense con Siding, además de otros diseños dentro de nuestras líneas de cabañas y chalets.  
+
+En el catálogo general también aparecen “Modelo 1” (casa pequeña y acogedora) y “Modelo 2” (residencia familiar espaciosa) como referencias de tamaño. ¿Para cuántas personas pensás la casa y cuántos dormitorios te gustaría tener?
+
+USUARIO: Contame sobre 1. Datos de contacto
+AGENTE (3.7s): Claro, “1. Datos de contacto” no es una casa, sino una sección informativa del catálogo. Ahí vas a encontrar cómo comunicarte con nosotros:  
+
+- Teléfono fijo: 11 4952-5488 / 11 4952-5496  
+- WhatsApp directo: +54 9 11 4066-7109 y 11 4194-8880  
+- Emails: info@viviendasrolon.com y central@viviendasrolon.com  
+- Dirección comercial: Presidente José Evaristo Uriburu 754/756, Piso 2, Oficinas 10 y 11, CABA (lunes a viernes de 9 a 15 hs).  
+
+Si querés, te paso un mensajito tipo para que copies y pegues en WhatsApp y te atienda un asesor.
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (13.4s): Buenísimo, con esta info extra te amplío un poco más.  
+
+Seguimos sin tener precios publicados en la web para las casas de 2 dormitorios, así que no puedo darte ni un aproximado sin inventar. Lo que sí tengo ahora son más vías de contacto específicas para cotizarte según modelo, metros y zona:  
+- Fábrica (Lanús Este): WhatsApp 11 6246-3825, email fabrica@viviendasrolon.com, dirección General Pico 3546, Lanús Este.  
+- Créditos y financiación: Tel. 11 4952-5488 / 5496, email creditos@viviendasrolon.com, en Uriburu 754/756 Piso 2, Oficinas 10 y 11, CABA.  
+
+Lo ideal es que te pasen el valor actualizado por WhatsApp según tu caso. Para ayudarte a pedir la cotización correcta: ¿ya tenés terreno y en qué localidad sería la obra?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (5.4s): En la web no figura el detalle fino de años por cada componente, pero sí que trabajamos con sistema prefabricado en seco, paneles estructurales y techos de chapa galvanizada, todo montado por nuestro propio equipo, lo que se respalda con contrato según la resolución 271/2020 (podés ver el modelo en la página). La garantía cubre la vivienda como producto industrializado y la correcta instalación; para plazos exactos y condiciones (estructura, filtraciones, etc.) te los pasan por escrito junto con el contrato y la cotización.  
+
+No tengo esos años de garantía cargados uno por uno, te sugiero pedir el detalle por WhatsApp al 11 4066-7109 así te mandan el modelo de contrato actualizado. ¿Para cuándo estás pensando concretar la compra de la casa?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (3.4s): Te dejo todos los datos de contacto actualizados de Viviendas Rolón:  
+
+- Teléfono / WhatsApp principal: **11 4066-7109** y **11 4194-8880**  
+- Teléfonos fijos: **11 4952-5488** / **11 4952-5496**  
+- Email: **info@viviendasrolon.com** y **central@viviendasrolon.com**  
+- Link directo a WhatsApp: <https://wa.me/541140667109>  
+
+Si querés, escribiles algo como: “Hola, quiero info y precio de una vivienda prefabricada de 2 dormitorios” y ya te atiende un asesor.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 1
+Tiempo promedio: 6.3s

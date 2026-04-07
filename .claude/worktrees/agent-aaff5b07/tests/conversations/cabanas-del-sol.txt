@@ -1,0 +1,59 @@
+=== CABANAS DEL SOL ===
+URL: https://cabanasdelsol.com.ar/
+Session: 5ca7774a-ebd5-4d0c-bbf9-f9e610d48add
+Date: 2026-02-08 16:53:05
+Session creation: 45.6s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (4.7s): Cabañas del Sol es un complejo turístico ubicado en Valle Grande, San Rafael, Mendoza, a orillas del Río Atuel, en un predio de 2,5 hectáreas con 400 m de costa. Ofrecemos alojamiento en cabañas y departamentos ecológicos y sostenibles, en un entorno muy tranquilo, familiar y pet friendly.  
+
+Dentro del predio vas a poder disfrutar de pileta en verano, solárium, cancha de vóley y fútbol, bajada directa al río y mucho parque arbolado. ¿Estás pensando en venir de vacaciones en pareja, en familia o con amigos?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (7.1s): Ofrecemos principalmente alojamiento en cabañas y departamentos (APART) dentro de nuestro predio a orillas del Río Atuel, en Valle Grande. Tenés opciones como Family Cabin (cabaña familiar hasta 6 personas), Cabaña Deluxe y Cabaña con Balcón y Parrilla, y varios departamentos: Standard Department (20 m²), Departamento Familiar (40 m²), Departamento Deluxe (30 m²), Departamento Deluxe + (35 m²) y Departamento Deluxe Familiar (38 m²), todos con cocina equipada, aire acondicionado, TV y wifi por fibra.  
+
+Además, dentro del complejo podés disfrutar de pileta de verano, solárium, cancha de fútbol y vóley, bajada al río, amplios espacios verdes y somos pet friendly. ¿Qué tipo de cabaña o departamento estás buscando: algo para pareja, familia o grupo de amigos?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (8.5s): Tenemos varias opciones de Cabañas y Departamentos, cada una con características bien definidas.  
+
+En Cabañas contamos con:  
+- Family Cabin (cabaña familiar, planta baja, hasta 6 personas, 60 m²)  
+- Cabaña Deluxe (planta baja, estilo rústico, 65 m², patio con parrilla privada)  
+- Cabaña con Balcón y Parrilla (primer piso, balcón con parrilla, 20 m², 1 habitación + cama nido).  
+
+En Departamentos (APART) ofrecemos:  
+- Standard Department (20 m², ideal 2 personas, nuestra unidad más pequeña)  
+- Departamento Familiar (40 m², vista a los cerros, primer piso)  
+- Departamento Deluxe (30 m², vista al río desde el dormitorio)  
+- Departamento Deluxe + (35 m², mejores vistas y sonido del río en todos los ambientes)  
+- Departamento Deluxe Familiar (38 m², gran ventanal curvo frente al río).  
+
+En total son 8 tipos de unidades distintas. ¿Para cuántas personas estás buscando alojamiento aproximadamente?
+
+USUARIO: Contame sobre 1. Información de registro
+AGENTE (7.2s): Claro, te cuento. En “Información de registro” explicamos que, cuando haces una reserva con Cabañas del Sol, te pedimos datos como nombre, dirección, país, teléfono, email y algunos datos adicionales.  
+
+Usamos esa información para: gestionar tu reserva, contactarte por temas de servicio al cliente, mejorar nuestras ofertas, y enviar (si querés) novedades y promociones; también se usa de forma estadística, por ejemplo para saber de qué países nos visitan. No guardamos datos de tarjeta de crédito y toda la info personal se almacena en servidores seguros. ¿Te interesa saber algo puntual, por ejemplo sobre cómo darte de baja de promociones o sobre el uso de cookies?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (7.4s): Todas nuestras unidades de 2 dormitorios (por ejemplo la Family Cabin o algunas combinaciones familiares de departamentos) se reservan por noche y el valor varía según fecha, cantidad de personas y tipo de unidad. No tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp para que te pasen la tarifa exacta según tus fechas: +54 9 260 440 0485.  
+
+Para orientarte mejor, ¿para cuándo estarías pensando venir y para cuántas personas así vemos qué opción de 2 dormitorios te encaja mejor?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (4.5s): En Cabañas del Sol te garantizamos que lo que ves en nuestra web es lo que encontrás al llegar: unidades limpias, equipadas (cocina completa, aire acondicionado, wifi por fibra, TV) y un predio cuidado de 2,5 ha con acceso directo al Río Atuel. Además, trabajamos con reservas formales (voucher y condiciones claras de cancelación) y contamos con muy buenas calificaciones de huéspedes que destacan la atención del personal, la tranquilidad y el estado del complejo.  
+
+No manejamos “garantía” como en una compra de casa, sino como servicio turístico: si hubiera algún inconveniente en la unidad, el equipo en el lugar se ocupa de resolverlo o reubicarte según disponibilidad. ¿Para cuándo estarías pensando reservar así te ayudo a ver opciones?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.7s): Nuestro WhatsApp y teléfono es: **+54 9 260 440 0485**.  
+Si querés, podés escribirnos directo desde acá: https://api.whatsapp.com/send?phone=+54%209%20260%20440%200485  
+
+¿Preferís que sigamos por WhatsApp o querés que primero te ayude a elegir la Cabaña o Departamento ideal por acá?
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 1
+Tiempo promedio: 6.0s

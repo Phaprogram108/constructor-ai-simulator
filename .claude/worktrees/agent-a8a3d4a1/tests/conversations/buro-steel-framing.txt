@@ -1,0 +1,45 @@
+=== BURO STEEL FRAMING ===
+URL: https://burosteelframing.com/
+Session: 4c247cae-f198-43b7-a5ea-e792a6b9caa9
+Date: 2026-02-08 16:43:55
+Session creation: 19.6s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (6.1s): Buro Steel Framing es una empresa constructora argentina especializada en construcción tradicional húmeda y en seco con sistema steel framing. Diseñamos y construimos casas a medida, ampliaciones, remodelaciones y proyectos comerciales, con foco en calidad, solvencia profesional y acompañamiento al cliente en todas las etapas (proyecto, dirección de obra y ejecución).
+
+Trabajamos mucho con nuestra línea de modelos Innova House (por ejemplo, Modelo Gala, Elba, Nilba y Lena), que se pueden adaptar a cada familia, y también hacemos proyectos 100% personalizados. Operamos en zonas como Pilar, Escobar, Tigre, Luján, Nordelta, Cañuelas, San Miguel, Campana, San Isidro, Olivos y alrededores, y contamos con opciones de financiación. ¿Qué tipo de Modelos de casas, sistemas constructivos, proyectos. estás buscando para vos?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (5.3s): Ofrecemos diseño y construcción de viviendas, ampliaciones, remodelaciones y proyectos comerciales, tanto en sistema seco (steel framing) como en construcción tradicional húmeda. Trabajamos en barrios y countries de zonas como Pilar, Escobar, Tigre, Luján, Cañuelas, Campana, San Miguel, San Isidro, Olivos, entre otros, y contamos con financiación.
+
+En modelos de casas tenemos, entre otros, los Innova House: Modelo Gala (178 m² totales), Modelo Elba (178 m² totales, 148 m² cubiertos en dos plantas), Modelo Nilba (218 m² totales), Modelo Lena (100 m² totales), además de Nilo, Fiora, Nera, Mackenzie, Volga, Rodano y Sena. También brindamos servicios de arquitectura (anteproyecto, proyecto ejecutivo, dirección de obra) y todo el desarrollo técnico para construir en steel frame con panelizado en planta y en obra. ¿Ya tenés terreno? ¿En qué zona sería la obra?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (2.9s): Tenemos una línea bastante completa de modelos de casas en steel framing y tradicional. Dentro de Innova House están, por ejemplo, los modelos Gala, Elba, Nilba, Lena, Nilo, Fiora, Nera, Mackenzie, Volga, Rodano y Sena, además de casas modernas tipo 148 m² y 133 m², y proyectos totalmente a medida.
+
+Todos se pueden adaptar en distribución, terminaciones y sistema constructivo según tu terreno y necesidades. ¿Te interesa más algo de una planta tipo Lena/Nilo/Fiora o de dos plantas como Gala, Elba, Mackenzie o Volga?
+
+USUARIO: Contame sobre 1. Modelo Gala
+AGENTE (3.4s): El Modelo Gala es una casa moderna de la línea Innova House, pensada para construcción en seco (steel framing) o tradicional húmeda. Tiene **178 m² totales**, con **148 m² cubiertos y 30 m² semicubiertos**, diseñada en **dos plantas**, con muy buena relación entre espacios sociales y privados.
+
+Suele incluir living-comedor amplio, cocina integrada, galería semicubierta para disfrutar del exterior y una planta alta con dormitorios bien resueltos (ideal para familias que quieren comodidad y buena circulación). Si me contás cuántos dormitorios estás buscando y si preferís suite con vestidor, te digo si Gala encaja perfecto o te conviene ver también Elba o Nilba.
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (14.5s): Con la info que tenemos cargada no aparecen valores concretos en $ para casas de 2 dormitorios, así que no puedo darte un aproximado serio por acá. Lo que sí sabemos es que el costo final depende mucho de los m² (por ejemplo algo tipo Modelo Lena 100 m², Nilo 147 m² o Fiora 153 m²), del sistema elegido (steel framing o tradicional), terminaciones y zona de obra.
+
+No tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp al +54 11 5323 4885, donde el equipo te arma un presupuesto pormenorizado y opciones de financiación. ¿En qué zona tenés pensado construir así te orientó qué modelo de 2 dormitorios suele funcionar mejor?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (5.7s): Trabajamos con **contrato de ejecución de obra certificado por escribano**, seguros de obra y garantías formales sobre estructura, calidad de materiales y terminaciones, todo detallado en el presupuesto pormenorizado y el contrato (lo charlamos bien antes de firmar). Además, al usar steel framing bajo normas IRAM y un proyecto/ingeniería completos, dejamos todo documentado para que tengas respaldo técnico y legal de lo que se construye.
+
+No tengo por acá el detalle en años de cada garantía, pero eso te lo especifican por escrito según el tipo de obra (estructura, filtraciones, instalaciones, etc.). ¿Para cuándo pensás iniciar la obra así veo si te conviene que te contacte un asesor y te mande un modelo de contrato y garantías?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.8s): Te podés contactar directo con nosotros por teléfono o WhatsApp al **+54 11 5323 4885**.  
+Si querés, me contás qué estás buscando (casa nueva, ampliación, modelo específico) y le pido al equipo que ya sepa de antemano qué info pasarte cuando escribas.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 2
+Tiempo promedio: 5.8s

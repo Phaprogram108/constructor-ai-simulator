@@ -1,0 +1,30 @@
+{
+  "company": "Habitatio",
+  "url": "https://habitatio.com.ar",
+  "capturedAt": "2026-02-05T20:21:28.700Z",
+  "type": "modular",
+  "navigation": {
+    "menuItems": [
+      "INICIO",
+      "SOLUCIONES",
+      "MODULOS",
+      "PROCESO CONSTRUCTIVO",
+      "CONTACTO"
+    ],
+    "modelSections": [
+      {
+        "label": "© 2025 Creado por Bewerk Proyectos, SRL",
+        "url": "https://wix.com/?utm_campaign=vir_created_with"
+      }
+    ]
+  },
+  "models": [],
+  "contactInfo": {
+    "email": "info@habitatio.com.ar",
+    "phone": "+5491130592028",
+    "instagram": "@habitatio.arg"
+  },
+  "totalModelsFound": 0,
+  "pagesExplored": 3,
+  "errors": []
+}

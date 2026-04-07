@@ -1,0 +1,56 @@
+=== ARCOHOUSE ===
+URL: https://arcohouse.com.ar/
+Session: 49ddc686-bece-442d-b36a-aa110badebfb
+Date: 2026-02-08 15:33:52
+Session creation: 22.7s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (6.2s): Arcohouse es una empresa que diseña y construye refugios y viviendas modulares para vivir en la naturaleza con diseño, calidez y alta eficiencia energética. Trabajamos con sistema constructivo en hormigón premoldeado y paneles SIP, fabricamos en San Rafael, Mendoza y luego trasladamos el módulo listo para instalarlo en tu terreno.  
+
+Podés elegir modelos como Montañesito 20 m², Cobre 30 m², El Montañés 40 m², Correntoso 60 m² y Limay 80 m², todos con iluminación LED, aberturas DVH y muebles de cocina y baño incluidos. Además ofrecemos kits de autoarmado y financiación en hasta 6 cuotas sin interés para que puedas congelar el precio desde la primera cuota.
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (7.8s): Ofrecemos dos cosas principales: refugios modulares terminados “llave en mano” y kits de autoarmado con todos los materiales. En refugios listos para habitar tenemos los modelos Montañesito 20 m², Cobre 30 m², El Montañés 40 m², Correntoso 60 m² y Limay 80 m², todos con estructura aislada, instalaciones completas y muebles de cocina y baño incluidos.  
+
+En kits, podés comprar Kit Montañesito 23 m², Kit Cobre 37 m², Kit Montañés 47 m², Kit Correntoso 75 m² y Kit Limay 92 m², además de materiales sueltos (panel SIP, OSB, pilotes de hormigón, tornillos, maderas, etc.). También brindamos diseño personalizado, fabricación en hormigón premoldeado en San Rafael, traslado e instalación en tu terreno y financiación en cuotas. ¿Te interesa más refugio terminado o kit para autoarmar?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (3.8s): Tenemos 5 modelos principales de refugios terminados y 5 versiones en kit de autoarmado.  
+
+En refugios llave en mano: **Montañesito 20 m², Cobre 30 m², El Montañés 40 m², Correntoso 60 m² y Limay 80 m²**.  
+En kits: **Kit Montañesito 23 m², Kit Cobre 37 m², Kit Montañés 47 m², Kit Correntoso 75 m² y Kit Limay 92 m²**.  
+
+Para orientarte mejor, ¿qué tipo de modelo estás buscando: algo chico tipo cabaña para 2 personas o algo más grande familiar/inversión?
+
+USUARIO: Contame sobre 1. Productos relacionados
+AGENTE (4.5s): Perfecto, te cuento: cuando ves “Productos relacionados” en nuestra tienda suelen ser materiales o accesorios que complementan otros productos, por ejemplo tornillos, membranas, paneles SIP, maderas, etc.  
+
+Por ejemplo, dentro de esa sección podés encontrar, entre otros: Tornillo Tel Helix 6 x 140 ($84.700), Espuma de Poliuretano Kekol ($14.150), Solera de unión para paneles ($9.300), Fenólico Clear 8 mm de pino ($34.900), Membrana inteligente Patagónico ($35.900) y más. Son ideales si querés armar o mejorar tu propio proyecto modular.  
+
+Para ayudarte mejor, ¿estás buscando materiales para construir vos o estás pensando en un refugio/kits completo?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (6.2s): Para 2 dormitorios, el modelo que mejor encaja es **Correntoso 60 m²** o, si querés algo más amplio, **Limay 80 m²**. Hoy los valores publicados son:  
+- **Correntoso 60 m²:** ARS **$98.000.000 + IVA**  
+- **Limay 80 m²:** ARS **$121.500.000 + IVA**  
+
+Ambos incluyen estructura completa, aislación con paneles SIP, instalaciones listas y muebles de cocina y baño. Para afinar mejor, ¿ya tenés terreno? ¿En qué zona sería?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (12.6s): Trabajamos con materiales y sistemas pensados para larga durabilidad: estructura de acero y hormigón premoldeado, paneles SIP con EPS, OSB estructural con garantía del fabricante (LP OSB APA tiene hasta 30 años de garantía estructural en su uso correcto). Las aberturas son de aluminio Aluar Módena con DVH y todos los revestimientos e instalaciones son de primeras marcas (Piazza, Johnson, etc.), lo que asegura respaldo y repuestos.  
+
+No tengo cargado el detalle exacto de años de garantía comercial de cada refugio, pero sí que son productos diseñados para uso intensivo, clima exigente y traslado sin perder prestaciones. Si querés te paso el WhatsApp para que un asesor te envíe por escrito las condiciones de garantía de Montañesito, Cobre, El Montañés, Correntoso o Limay.
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.9s): Te dejo los datos directos de contacto:  
+
+- Teléfono: **+54 9 260 403 3077**  
+- WhatsApp: **5492604033077**  
+
+Si querés, contame qué modelo estás evaluando así te digo qué info puntual pedir cuando les escribas.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 1
+Tiempo promedio: 6.3s

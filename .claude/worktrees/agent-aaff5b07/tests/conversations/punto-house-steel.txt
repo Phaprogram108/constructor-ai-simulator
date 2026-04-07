@@ -1,0 +1,48 @@
+=== PUNTO HOUSE STEEL ===
+URL: https://puntohousesteel.com/
+Session: a1f8af86-59cf-40bb-885c-27835008c7e6
+Date: 2026-02-08 17:30:13
+Session creation: 22.7s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (3.1s): Somos Punto House Steel, constructores de casas en steel frame con más de 20 años de experiencia, trabajando principalmente en Buenos Aires y Bariloche. Diseñamos y construimos viviendas a medida (no usamos modelos estándar) y te bonificamos el proyecto si construís con nosotros.  
+
+Nos encargamos de todo: diseño arquitectónico e interior, planos, trámites municipales, cálculo estructural, obra completa llave en mano y control de costos. ¿Qué tipo de proyecto estás buscando: algo estilo Casas Escandinavas, Small House, Modular House o una Minimalista House?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (2.5s): Ofrecemos construcción integral de casas en steel frame totalmente personalizadas, desde el diseño hasta la entrega llave en mano, en Buenos Aires y Bariloche. Incluye: arquitectura, diseño de interiores, cálculo estructural, dirección de obra, gestión y trámite de planos municipales, movimiento de suelo y platea de hormigón.  
+
+Dentro de nuestros Proyectos trabajamos líneas como: Casas Escandinavas, Small House (60 y 80 m²), Modular House (desde 30 m²) y Minimalista House, siempre adaptadas a lo que vos necesitás. ¿Para qué tipo de vivienda estás pensando usar nuestros servicios?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (2.1s): En realidad no trabajamos con modelos fijos, todas las casas las hacemos a medida según lo que vos necesitás.  
+
+Lo que sí tenemos son líneas de Proyectos como: Casas Escandinavas, Small House (60 y 80 m²), Modular House (desde 30 m²) y Minimalista House, que usamos como base de diseño y se personalizan completamente. ¿Qué tipo de Proyecto estás buscando para vos?
+
+USUARIO: Contame sobre 1. Google-plus-g
+AGENTE (2.2s): Buenísimo que preguntes, así te aclaro: “Google-plus-g” no es una casa ni un Proyecto nuestro, sino un icono/enlace de redes sociales que aparece en la web.  
+
+Los Proyectos reales que sí tenemos son: **Casas Escandinavas**, **Small House** (60 y 80 m²), **Modular House** (desde 30 m²) y **Minimalista House**, todos en steel frame y 100% personalizados. ¿Te cuento en detalle alguno de estos en particular?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (6.8s): Trabajamos todo a medida, y en la info que tengo no figuran precios actualizados ni valores por m² como para darte un número responsable. No tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp así te pasan un presupuesto según metros, terminaciones y zona de obra.  
+
+Mientras tanto, para orientarte mejor: ¿ya tenés terreno y en qué zona sería la casa?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (3.7s): Trabajamos con materiales de primera calidad que cumplen normas ISO y un sistema steel frame con una vida útil estimada de alrededor de 200 años, lo que ya es una garantía estructural muy fuerte. Además, hacemos contrato de obra formal, dirección técnica profesional y control de cada etapa, lo que respalda la ejecución y terminaciones de la vivienda.  
+
+No tengo por acá el detalle escrito de años de garantía comercial por rubro, eso te lo pueden especificar por WhatsApp junto con el tipo de obra que te interese. ¿Para cuándo estás pensando encarar la construcción?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (2.4s): Te dejo los datos directos así podés escribirnos cuando quieras:  
+- Teléfono/WhatsApp Bariloche: **+54 2944 600701**  
+- Teléfono Buenos Aires: **11 4444 1841**  
+
+Si querés, me contás qué presupuesto manejás aproximadamente y te digo qué tipo de Proyecto (Small House, Modular House, etc.) podría encajar mejor.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 2
+Tiempo promedio: 3.3s

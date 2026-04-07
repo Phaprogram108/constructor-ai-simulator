@@ -1,0 +1,54 @@
+=== MI CASA CONTAINERS ===
+URL: https://micasacontainers.com.ar/
+Session: 4a65bdcf-94ca-4dfb-a79d-63f0b5b651e3
+Date: 2026-02-08 17:22:00
+Session creation: 47.9s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (3.2s): Mi Casa Containers es una empresa que construye viviendas a partir de contenedores marítimos, con foco en arquitectura sustentable y diseño personalizado. Desarrollamos casas y oficinas modulares desde 15 m² hasta 120 m² (por ejemplo Módulo I de 30 m², Módulo II de 60 m², Módulo III de 90 m² y Módulo IV de 120 m²), en versiones Estándar y Premium, adaptando terminaciones y distribución a lo que vos necesitás.  
+Trabajamos en nuestra planta de producción en Sarandí (Pcia. de Buenos Aires) y te acompañamos en todo el proceso hasta que tengas tu casa lista en aproximadamente 60 días. ¿Qué tipo de Módulos estás buscando: vivienda permanente, casa de fin de semana u oficina?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (3.2s): Ofrecemos principalmente viviendas y oficinas construidas con contenedores marítimos, totalmente terminadas y listas para usar. En viviendas tenemos 4 Módulos habitacionales:  
+- **Módulo I – 30 m² (2 ambientes)**  
+- **Módulo II – 60 m² (3 ambientes)**  
+- **Módulo III – 90 m² (4 ambientes)**  
+- **Módulo IV – 120 m² (5 ambientes)**  
+
+Además, hacemos **oficinas de 15 m² monoambiente** (home office) y trabajos en otros tamaños a medida. Todos los Módulos pueden ser **Estándar o Premium**, con distintas calidades de terminación, y fabricamos en nuestra planta de Sarandí. ¿Qué tipo de Módulo te interesaría más, vivienda o oficina?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (3.7s): Tenemos 4 modelos principales de viviendas y 1 modelo de oficina, todos modulares y personalizables:  
+
+- **Viviendas (Módulos)**  
+  - **Módulo I – 30 m² (2 ambientes)**  
+  - **Módulo II – 60 m² (3 ambientes)**  
+  - **Módulo III – 90 m² (4 ambientes)**  
+  - **Módulo IV – 120 m² (5 ambientes)**  
+
+- **Oficina / Home office**  
+  - **15 m² monoambiente**, con opción de kitchenette y baño.  
+
+Además, trabajamos otros tamaños especiales a pedido. ¿Ya tenés pensado aproximadamente de cuántos metros te gustaría la casa?
+
+USUARIO: Contame sobre 1. Diseño y Calidad
+AGENTE (3.4s): Claro, mirá, en **Diseño y Calidad** trabajamos con módulos habitacionales de **30, 60, 90 y 120 m²** en versiones **Estándar y Premium**, siempre con foco en confort y buena estética. Podés elegir interiores **entablonados** (simil madera o madera real) o **Durlock pintado** con los colores que más te gusten, y usamos **aberturas de primera calidad**: en Estándar línea Módena blanca y en Premium Módena 2 con **DVH** en negro.  
+Además, adaptamos materiales sintéticos o naturales según tu presupuesto, manteniendo siempre aislamiento térmico y acústico adecuado y un muy buen nivel de terminaciones. ¿Para qué uso pensás el módulo, vivienda permanente o de fin de semana?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (5.6s): Para una casa de 2 dormitorios, el modelo que mejor se ajusta es la **vivienda de 60 m² (Módulo II, 3 ambientes)**, que incluye 2 dormitorios, baño completo, living, cocina, comedor y lavadero.  
+No tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp al **+54 9 11 3174-2858**, donde te pasan el valor Estándar y Premium y las opciones de pago. ¿Ya tenés terreno? ¿En qué zona sería la instalación?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (2.1s): Ofrecemos **12 meses de garantía** sobre los Módulos, contados desde el momento en que se entrega la vivienda u oficina.  
+Durante ese período cubrimos vicios de construcción y detalles propios de fábrica; los gastos de bases, transporte, grúa, montaje e instalaciones en el terreno quedan siempre a cargo del cliente. ¿Para cuándo estarías pensando en instalar el módulo?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (1.8s): Te podés contactar directo por WhatsApp o llamada al **+54 9 11 3174-2858**.  
+Si querés, también podés escribirnos al mail **info@micasacontainers.com.ar** y un asesor te responde con todo el detalle.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 1
+Tiempo promedio: 3.3s

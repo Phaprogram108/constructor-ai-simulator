@@ -1,0 +1,62 @@
+=== DICE CONTAINERS ===
+URL: https://dicecontainers.com.ar/
+Session: a8c8df14-fb78-45d3-a795-cbdc840105f3
+Date: 2026-02-08 16:39:35
+Session creation: 33.6s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (9.0s): Somos Dice Containers, una empresa argentina que construye viviendas y espacios comerciales usando containers marítimos como sistema modular. Nos encargamos de todo: diseño, ingeniería, planos, habilitaciones municipales, fabricación en nuestra planta e instalación en cualquier punto del país, con terminaciones de nivel vivienda tradicional.  
+
+Somos la única empresa de casas container en Argentina cuyas unidades son 100% habilitables según normativas municipales, y tenemos Modelos de casas containers estándar de 15m², 30m², 60m² y 90m². ¿Qué tipo de Modelos de casas containers estás buscando, algo chico tipo monoambiente o una casa familiar más grande?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (7.4s): Ofrecemos construcción en modulación con containers marítimos para viviendas y otros usos (locales, talleres, quinchos, estudios, etc.), con servicio integral: ingeniería, arquitectura, planos, habilitaciones, fabricación en planta e instalación en todo el país.  
+
+En casas estándar tenemos estos Modelos de casas containers:
+- Casa Container 15m² – 1 ambiente, 1 baño (monoambiente completo).
+- Casa Container 30m² – 2 ambientes, 1 baño.
+- Casa Container 60m² – 4 ambientes, 1 baño.
+- Casa Container 90m² – 5 ambientes, 2 baños.  
+
+Además hacemos proyectos especiales y “Proyectos Destacados” como casas con galería y deck. ¿Ya tenés terreno? ¿En qué zona sería el proyecto?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (3.6s): Tenemos 4 Modelos de casas containers estándar en catálogo, todos 100% habilitables a nivel municipal:  
+
+- Casa Container 15m² – 1 ambiente y 1 baño.  
+- Casa Container 30m² – 2 ambientes y 1 baño.  
+- Casa Container 60m² – 4 ambientes y 1 baño.  
+- Casa Container 90m² – 5 ambientes y 2 baños.  
+
+Además podemos modular y combinar para proyectos especiales (quinchos, locales, ampliaciones, etc.). ¿Para cuántas personas estás pensando la casa así te recomiendo el modelo que mejor se adapte?
+
+USUARIO: Contame sobre 1. Casa Container 90m2
+AGENTE (6.1s): La Casa Container 90m2 es nuestro modelo más grande: 5 ambientes y 2 baños completos, pensada para familia, con 3 dormitorios (uno con vestidor y otro que puede funcionar como estudio integrado al living), cocina independiente y amplio living–comedor.  
+
+Medidas del módulo: 12 m de largo x 7,29 m de ancho x 2,89 m de alto (120 pies), con estructura de container marítimo, aislación con lana de vidrio, interior en MDF, pisos flotantes, aberturas de aluminio Módena, iluminación LED y 3 aires acondicionado frío/calor de 2000 fg. El precio de lista es Contado: **USD 65.381 + IVA 10,5%**, o adelanto de **USD 32.690 + IVA 10,5%** y financiación hasta **72 cuotas** (USD 879 + IVA o USD 1.758 + IVA según esquema). ¿Para cuándo estarías pensando en instalar una casa de este tamaño?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (3.8s): Para 2 dormitorios, el modelo que mejor encaja es la **Casa Container 60m²**, que trae 4 ambientes (2 dormitorios), 1 baño completo, cocina y living–comedor.  
+
+El precio publicado es:
+- **Contado: USD 44.463 + IVA 10,5%**  
+- O adelanto de **USD 22.232 + IVA 10,5%** + **72 cuotas de USD 596 + IVA**,  
+- O bien **72 cuotas de USD 1.196 + IVA** (según el esquema de financiación que elijas).  
+
+¿En qué zona tenés el terreno así vemos factibilidad de instalación y plazos?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (4.6s): Todas nuestras casas container están diseñadas como viviendas permanentes, con ingeniería y arquitectura completas, cumpliendo normativas municipales argentinas, lo que ya es una garantía fuerte de calidad y seguridad estructural.  
+
+En la web no figura el detalle fino de años o condiciones de garantía por escrito (estructural, instalaciones, etc.), pero sí que todo se fabrica en planta propia, con materiales de primera línea (aislación, estructura metálica, aberturas Módena, instalaciones de agua y electricidad certificadas). Para que te pasen el alcance exacto de la garantía (años y qué cubre cada ítem), ¿querés que te contacte un asesor comercial por WhatsApp o mail?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (6.1s): No tengo el número de WhatsApp o teléfono cargado acá, pero lo encontrás actualizado en la web oficial de la empresa: **dicecontainers.com.ar** (generalmente en la sección de contacto o al pie de página).  
+
+Si querés, contame desde qué provincia nos escribís y qué modelo te interesa, así también te orientó un poco más antes de que hables con un asesor.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 1
+Tiempo promedio: 5.8s

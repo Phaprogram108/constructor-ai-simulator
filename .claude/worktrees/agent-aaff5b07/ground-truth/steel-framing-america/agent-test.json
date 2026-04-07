@@ -1,0 +1,252 @@
+{
+  "company": "Steel Framing America",
+  "url": "https://steelframingamerica.net/",
+  "testedAt": "2026-02-06T16:55:12.559Z",
+  "sessionId": "79592a96-491e-477b-96ae-cd75aa1ceec3",
+  "systemPromptLength": 21222,
+  "systemPromptModelsFound": [
+    "PVC",
+    "Close Search",
+    "No Comments",
+    "Pin",
+    "Back to top",
+    "Close Menu",
+    "Viviendas llave en mano",
+    "Diseños personalizados",
+    "Construcción integral"
+  ],
+  "systemPromptWhatsApp": "+5491161156110",
+  "systemPromptType": "de Proyectos, viviendas, obras estas buscando?\"",
+  "conversations": [
+    {
+      "question": "¿Qué es tu empresa y qué hacen?",
+      "questionType": "identity",
+      "response": "Steel Framing América es una empresa de construcción que se especializa en viviendas y proyectos en steel framing y hormigón premoldeado, con modalidad llave en mano. Nos ocupamos de todo: diseño y cálculo estructural, gestión municipal, provisión de materiales y construcción completa, integrando siempre eficiencia energética y materiales sostenibles.  \n\nPara orientarte mejor, ¿qué tipo de Proyectos, viviendas, obras estás buscando (por ejemplo, vivienda familiar, ampliación, proyecto comercial)?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2507
+    },
+    {
+      "question": "¿Qué productos o servicios ofrecen?",
+      "questionType": "offering",
+      "response": "Ofrecemos principalmente tres líneas de servicio: **Viviendas llave en mano**, **Diseños personalizados** y **Construcción integral**. Trabajamos con steel framing y también con **hormigón premoldeado**, haciendo desde el diseño y cálculo estructural hasta la ejecución completa de la obra, con posibilidad de **financiación** mediante una financiera que cubre parte del costo si precalificás.  \n\nPara entender mejor cómo ayudarte: ¿qué tipo de Proyectos, viviendas, obras estás buscando?",
+      "mentionedModels": [
+        "Viviendas llave en mano",
+        "Diseños personalizados",
+        "Construcción integral"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2513
+    },
+    {
+      "question": "¿Cuál es su WhatsApp o teléfono de contacto?",
+      "questionType": "contact",
+      "response": "Te dejo todos los datos de contacto directo:  \n- Teléfono: **+54 911 6115 6110**  \n- WhatsApp: **+54 9 11 6115 6110** (también podés escribir al 5491161156110 desde el link de la web)  \n- Email: **proyectos@steelframingamerica.net**  \n\nSi querés, contame antes qué tipo de Proyectos, viviendas, obras estás buscando y te orientó un poco así llegás al asesor con una idea más clara.",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2454
+    },
+    {
+      "question": "¿Cuántos modelos de casas ofrecen?",
+      "questionType": "product_count",
+      "response": "Por ahora en la web no tengo un catálogo detallado por cantidad de modelos con m² y tipologías, pero sí trabajamos con **Viviendas llave en mano**, **Diseños personalizados** y **Construcción integral**, siempre a partir de modelos previamente diseñados que adaptamos a cada cliente. No hacemos proyectos 100% a medida desde cero, sino que partimos de estos modelos base y los ajustamos en distribución, terminaciones y sistema (steel framing u hormigón).  \n\nPara guiarte mejor, ¿qué tipo de Proyectos, viviendas, obras estás buscando (por ejemplo, casa de 1 o 2 plantas, cuántos dormitorios, uso permanente o de fin de semana)?",
+      "mentionedModels": [
+        "Viviendas llave en mano",
+        "Diseños personalizados",
+        "Construcción integral"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3194
+    },
+    {
+      "question": "Contame sobre Close Search",
+      "questionType": "product_specific",
+      "response": "Mirá, **Close Search** aparece en la web solo como un texto de navegación (un botón para cerrar el buscador), no como uno de nuestros Proyectos, viviendas, obras. Los Proyectos, viviendas, obras que sí tenemos identificados son: **Viviendas llave en mano**, **Diseños personalizados** y **Construcción integral**, además de trabajar en **hormigón premoldeado** y steel framing con financiación disponible.  \n\nSi querés, contame qué tipo de Proyectos, viviendas, obras estás buscando y te explico cuál de estas opciones te conviene más para tu caso.",
+      "mentionedModels": [
+        "Close Search",
+        "Viviendas llave en mano",
+        "Diseños personalizados",
+        "Construcción integral"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2706
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de Close Search? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "En la info que tengo cargada, **Close Search no es una vivienda ni un proyecto**, sino solo un botón de la web para cerrar el buscador, por eso no tiene superficie, dormitorios ni características técnicas asociadas.  \n\nLos Proyectos, viviendas, obras que sí manejamos como productos son: **Viviendas llave en mano**, **Diseños personalizados** y **Construcción integral**, trabajando en steel framing y hormigón premoldeado, con opción de financiación.  \nPara ayudarte con algo concreto, ¿qué tipo de Proyectos, viviendas, obras estás buscando (m² aproximados y cantidad de dormitorios)?",
+      "mentionedModels": [
+        "Close Search",
+        "Viviendas llave en mano",
+        "Diseños personalizados",
+        "Construcción integral"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 3132
+    },
+    {
+      "question": "Contame sobre No Comments",
+      "questionType": "product_specific",
+      "response": "Buenísimo que preguntes por **No Comments**. En la info que tengo, *No Comments* aparece solo como texto del blog (indica que una nota no tiene comentarios), no como uno de nuestros Proyectos, viviendas, obras, así que no tiene m², dormitorios ni ficha técnica propia.  \n\nLos Proyectos, viviendas, obras que sí tenemos identificados son: **Viviendas llave en mano**, **Diseños personalizados** y **Construcción integral**, trabajando en steel framing y hormigón premoldeado, con financiación disponible.  \nPara orientarte mejor, ¿qué tipo de Proyectos, viviendas, obras estás buscando (por ejemplo, casa de 1 o 2 plantas y cuántos dormitorios)?",
+      "mentionedModels": [
+        "No Comments",
+        "Viviendas llave en mano",
+        "Diseños personalizados",
+        "Construcción integral"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2386
+    },
+    {
+      "question": "¿Cuáles son los detalles técnicos de No Comments? Superficie, dormitorios, características.",
+      "questionType": "product_specs",
+      "response": "En la información que tengo cargada, **No Comments no es un modelo de vivienda ni un proyecto**, sino un texto del blog que solo indica que una nota no tiene comentarios. Por eso **no tiene superficie, cantidad de dormitorios ni características técnicas** asociadas como Proyectos, viviendas, obras.  \n\nSi querés que te pase detalles técnicos reales, puedo explicarte cómo trabajamos en **Viviendas llave en mano**, **Diseños personalizados** o **Construcción integral**; ¿qué m² y cuántos dormitorios tenés en mente?",
+      "mentionedModels": [
+        "No Comments",
+        "Viviendas llave en mano",
+        "Diseños personalizados",
+        "Construcción integral"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2165
+    },
+    {
+      "question": "¿Cuál es la diferencia entre Close Search y No Comments?",
+      "questionType": "model_comparison",
+      "response": "La diferencia principal es que **ninguno de los dos es un modelo de casa ni un proyecto constructivo**, sino textos de la web:  \n- **Close Search** es solo un botón de navegación que sirve para cerrar el buscador del sitio.  \n- **No Comments** es un texto que aparece en el blog y solo indica que una nota no tiene comentarios.  \n\nSi lo que buscás son Proyectos, viviendas, obras reales, ahí sí tenemos: **Viviendas llave en mano**, **Diseños personalizados** y **Construcción integral**. ¿Querés que avancemos por alguno de esos?",
+      "mentionedModels": [
+        "Close Search",
+        "No Comments",
+        "Viviendas llave en mano",
+        "Diseños personalizados",
+        "Construcción integral"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2141
+    },
+    {
+      "question": "¿Qué modelo me recomendás para una familia de 4 personas?",
+      "questionType": "recommendation",
+      "response": "Para una familia de 4 personas, lo ideal es trabajar sobre una **Vivienda llave en mano** de 3 dormitorios (suite + 2 cuartos secundarios), con estar-comedor integrado y buena eficiencia energética; la armamos sobre uno de nuestros modelos base y lo ajustamos a tus necesidades. Si buscás algo más específico en diseño (por ejemplo, home office, playroom, galería amplia), podemos ir a la opción de **Diseños personalizados**, siempre dentro de nuestros modelos previamente diseñados, en steel framing u hormigón premoldeado.  \n\nPara afinar la recomendación, ¿ya tenés terreno? ¿En qué zona sería la obra?",
+      "mentionedModels": [
+        "Diseños personalizados"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 3623
+    },
+    {
+      "question": "¿Cuál es el proceso de construcción y cuánto demoran?",
+      "questionType": "process",
+      "response": "Trabajamos con un esquema **integral llave en mano**: primero diseño y cálculo estructural, luego gestión de planos y permisos, planificación de obra, provisión completa de materiales y finalmente la construcción en steel framing u hormigón premoldeado, con pagos por avance de obra y seguimiento en cada etapa. Los plazos exactos dependen de los m² y la complejidad, pero al trabajar en construcción en seco y sistema industrializado, los tiempos son sensiblemente menores que en obra húmeda tradicional.  \n\nNo tengo los tiempos estándar por m² cargados, pero en general vas a notar una reducción importante vs ladrillo. Para darte una estimación más concreta, ¿de cuántos metros cuadrados estás pensando tu vivienda o proyecto?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4274
+    },
+    {
+      "question": "¿Se pueden personalizar los modelos de casas?",
+      "questionType": "customization",
+      "response": "Sí, se pueden personalizar, pero sobre **modelos previamente diseñados**, no 100% a medida desde cero. Con nuestros **Diseños personalizados** podés adaptar distribución interna, terminaciones, algunos cambios de fachada y elegir sistema (steel framing u hormigón premoldeado), siempre manteniendo la base técnica del modelo.  \n\nAsí logramos algo muy ajustado a vos, pero con costos y plazos controlados. ¿Qué cambios te gustaría priorizar: más dormitorios, ampliar living, sumar galería, home office, etc.?",
+      "mentionedModels": [
+        "Diseños personalizados"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": true,
+      "responseTimeMs": 4531
+    },
+    {
+      "question": "¿Tenés imágenes, planos o algún catálogo que pueda ver?",
+      "questionType": "images_catalog",
+      "response": "Sí, tenemos material, pero en la web pública no está todo el catálogo abierto: hay PDFs (como el de “Baño Aurelio”) y una sección de **presupuestos** protegida con contraseña donde suelen estar planos y fichas. Además, solemos compartir **renders, planos y ejemplos de Viviendas llave en mano y Diseños personalizados** por WhatsApp o mail.  \n\nNo tengo acceso directo para pasarte los PDFs desde acá, pero podés pedir el catálogo y planos escribiendo a **WhatsApp +54 9 11 6115 6110** o a **proyectos@steelframingamerica.net**.  \nPara que te manden ejemplos acordes, ¿qué tipo de Proyectos, viviendas, obras estás buscando (m² aproximados y cantidad de dormitorios)?",
+      "mentionedModels": [
+        "Viviendas llave en mano",
+        "Diseños personalizados"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4560
+    },
+    {
+      "question": "¿Cuánto sale aproximadamente una casa de 2 dormitorios?",
+      "questionType": "pricing",
+      "response": "No tengo los precios actualizados cargados ni un valor por m² publicado, porque la empresa ajusta los costos según el sistema (steel framing u hormigón premoldeado), los materiales, el nivel de terminaciones y el índice CAC. Para que te pasen un número real de una casa de 2 dormitorios, lo mejor es que escribas a **WhatsApp +54 9 11 6115 6110** y te cotizan según tu caso.  \n\nMientras tanto, así te ayudan más rápido, contame: ¿ya tenés terreno? ¿En qué zona sería la obra?",
+      "mentionedModels": [],
+      "saidNoInfo": true,
+      "hasSpecificData": true,
+      "responseTimeMs": 2366
+    },
+    {
+      "question": "¿Qué incluye el precio? ¿Terminaciones, instalación, todo?",
+      "questionType": "includes",
+      "response": "En modalidad **vivienda llave en mano** el precio suele incluir: proyecto con firma profesional, gestión municipal, estructura (steel framing u hormigón), instalaciones completas (eléctrica, sanitaria), cerramientos, revestimientos y terminaciones, más la mano de obra y gestión integral de la obra. También podemos incorporar muebles y aberturas a medida como parte del paquete, según lo que se acuerde en la cotización.  \n\nNo tengo el detalle fino de cada paquete cargado acá, pero sí trabajamos justamente para que recibas la casa lista para usar. Para ajustar qué incluiría en tu caso, ¿ya tenés terreno y en qué zona pensás construir?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4368
+    },
+    {
+      "question": "¿Ustedes se encargan de toda la instalación o solo entregan los materiales?",
+      "questionType": "installation",
+      "response": "Nos encargamos de **todo**, no solo de entregar materiales. En nuestra modalidad de **Construcción integral** y **Viviendas llave en mano** hacemos proyecto, gestión municipal, provisión de materiales y **ejecución completa en obra**: estructura, instalaciones eléctricas y sanitarias, terminaciones y coordinación de todos los rubros.  \n\nAsí recibís el proyecto terminado y habitable, sin tener que buscar cuadrillas por separado. Para ver si podemos acompañarte bien, ¿ya tenés terreno? ¿En qué zona sería la obra?",
+      "mentionedModels": [
+        "Viviendas llave en mano",
+        "Construcción integral"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2881
+    },
+    {
+      "question": "¿Qué garantía ofrecen sobre la construcción?",
+      "questionType": "warranty",
+      "response": "Ofrecemos una construcción con enfoque en **calidad, eficiencia y materiales sostenibles**, trabajando con sistemas industrializados (steel framing y hormigón) y costos ajustados al índice CAC, lo que asegura estándares técnicos altos y controlados. En la info que tengo no figura el detalle formal de años de garantía por escrito, así que eso te lo especifican en la propuesta y contrato según el tipo de obra y sistema.  \n\nNo tengo esa información específica cargada, pero podés pedir el detalle de garantías por WhatsApp al **+54 9 11 6115 6110**.  \nAsí los asesores te responden más puntual, ¿qué tipo de Proyectos, viviendas, obras estás pensando (vivienda familiar, ampliación, proyecto comercial)?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 4050
+    },
+    {
+      "question": "¿Tienen financiamiento o planes de pago?",
+      "questionType": "financing",
+      "response": "Sí, contamos con **financiación**: trabajamos con una **financiera que puede cubrir parte del costo de la obra**, siempre que precalifiques para el préstamo. Además, los pagos de la obra se hacen **por avances**, con un plan de pagos claro definido antes de empezar.  \n\nNo tengo por acá los montos, tasas ni plazos exactos, eso te lo detallan según tu caso puntual.  \nPara que te orienten mejor con la financiación, ¿ya tenés terreno? ¿En qué zona sería la obra?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2005
+    },
+    {
+      "question": "¿Qué los diferencia de otras empresas similares?",
+      "questionType": "differentiator",
+      "response": "Nos diferencia sobre todo el enfoque **integral y personalizado**: trabajamos con **Viviendas llave en mano, Diseños personalizados y Construcción integral**, combinando steel framing y hormigón premoldeado, con diseño y cálculo estructural a medida de cada proyecto. Además, integramos **materiales sostenibles y eficiencia energética**, reducimos tiempos y costos frente a la construcción tradicional y podés sumar **financiación** a través de una financiera que cubre parte de la obra si precalificás.  \n\nTambién nos ocupamos de toda la gestión: planos, permisos, materiales y ejecución, para que tengas un solo responsable de principio a fin.  \nPara ver si somos buena opción para vos, ¿qué tipo de Proyectos, viviendas, obras estás buscando?",
+      "mentionedModels": [
+        "Viviendas llave en mano",
+        "Diseños personalizados",
+        "Construcción integral"
+      ],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2952
+    },
+    {
+      "question": "¿A qué zonas o regiones llegan?",
+      "questionType": "coverage",
+      "response": "En la información que tengo no figura un listado específico de zonas o regiones donde trabajamos, ni si la cobertura es nacional o limitada a ciertas provincias. Podría ser posible avanzar en distintas zonas, pero eso depende de cada proyecto y logística.  \n\nNo tengo esa información específica cargada, pero podés confirmarlo directo por WhatsApp al **+54 9 11 6115 6110**.  \n¿En qué localidad o zona puntual estás pensando construir así te orientás mejor cuando hables con el asesor?",
+      "mentionedModels": [],
+      "saidNoInfo": false,
+      "hasSpecificData": false,
+      "responseTimeMs": 2561
+    }
+  ],
+  "sessionCreationTimeMs": 71426,
+  "errors": []
+}

@@ -1,0 +1,50 @@
+=== CASARELLA ===
+URL: https://www.casarella.com.ar/
+Session: a203aa45-b269-4a46-ad21-e35100a09afc
+Date: 2026-02-08 17:11:16
+Session creation: 17.8s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (12.1s): Somos Casarella, la empresa N°1 en construcción de casas en Steel Frame en Argentina, con 16 años de experiencia y más de 500 obras entregadas. Diseñamos y construimos tu Casa a medida en sistema Steel Frame, gestionamos los planos municipales, hacemos la logística de materiales, el cálculo estructural, fabricamos los paneles en nuestra propia planta y te entregamos la vivienda llave en mano, con garantía estructural por 10 años y financiación disponible.  
+
+Para acompañarte mejor, ¿ya tenés terreno? ¿En qué zona te gustaría construir?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (6.1s): Ofrecemos la construcción de tu **Casa a medida** en Steel Frame con servicio **llave en mano** en Argentina, incluyendo diseño personalizado, cálculo estructural, fabricación de paneles, obra completa y asesoramiento en terminaciones. Además, gestionamos **planos municipales**, planificación y dirección de obra, logística y compra de materiales, y contamos con **financiación disponible**. También podés ver nuestros **Diseños y Planos**, **Fotos Casas**, **Recorridos 360**, **Videos Casas** y revisar zonas en **Dónde Construimos**.  
+
+Para orientarte mejor, ¿qué tipo de casas, servicios, planos estás buscando: algo estándar por m² o un diseño 100% personalizado?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (5.3s): Tenemos decenas de modelos distribuidos por rango de metros cuadrados, más la opción de **Casa a medida** totalmente personalizada. En la web vas a encontrar muchos diseños en las secciones **Plano Casarella Escalable**, **Diseños y Planos**, **Plano**, **Plano Casarella 80 a 100 m²**, **100 a 150 m²**, **150 a 200 m²** y **200 a 300 m²**, además de casas destacadas como *La Pintada*, *Barrio Buenos Aires Village*, *San Sebastián*, *Las Lilas*, *Costa Esmeralda*, etc.  
+
+Si querés, te puedo sugerir modelos concretos según los m² que estés pensando (por ejemplo 100, 120 o 150 m²). ¿Cuántos m² te gustaría construir aproximadamente?
+
+USUARIO: Contame sobre 1. Conocé esta Casa
+AGENTE (5.2s): “Conocé esta Casa” es una sección donde mostramos en detalle una obra real de Casarella ya entregada, con fotos, descripción y datos del proyecto para que veas cómo queda una casa llave en mano en Steel Frame. Suele incluir ubicación (por ejemplo barrios como La Pintada, Buenos Aires Village, San Sebastián, etc.), cantidad de m², distribución (dormitorios, baños, galería, parrilla) y terminaciones, para que tomes ideas para tu propia **Casa a medida**.  
+
+Si me contás cuántos m² y cuántos dormitorios estás buscando, te recomiendo una casa concreta y el **Plano Casarella Escalable** más parecido para que puedas usarlo como base.
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (14.0s): Perfecto, con esta info nueva te puedo sumar algo más concreto.  
+
+Una casa de 2 dormitorios típica en Casarella suele estar en el rango de **90 a 120 m² cubiertos**, como la obra **“Moreno” de 120 m² cubiertos** que ves en nuestras *Casas Entregadas*. Sin embargo, no tengo acá el valor actualizado por m² ni el precio final de esa casa puntual; los montos se envían siempre actualizados según zona y m2, por eso: **no tengo los precios actualizados cargados, te sugiero consultarlo por WhatsApp al +54 9 11 3955-1358 o desde “Quiero mi Presupuesto” en la web**.  
+
+Si me decís cuántos m² te gustaría (por ejemplo 95, 100 o 110 m²) y en qué zona pensás construir, te indico qué plano y qué casa entregada se parecen más a lo que buscás.
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (3.4s): Ofrecemos **garantía estructural por 10 años** sobre la casa construida en Steel Frame (estructura de acero galvanizado y paneles fabricados en nuestra planta). Además, trabajamos con materiales certificados bajo normas IRAM, contamos con **Certificado de Aptitud Técnica (Casarella Steel)** y un sistema de gestión de calidad certificado **ISO 9001:2015**, lo que respalda todo el proceso de diseño y construcción.  
+
+¿Para cuándo estás pensando construir tu casa? Así veo cómo acompañarte en los próximos pasos.
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (4.5s): Te podés contactar directo con nosotros por estos medios:  
+- Teléfono: **0810-220-2272**  
+- WhatsApp: **+54 9 11 3955-1358**  
+
+Si querés, también podés dejarme acá qué presupuesto manejás aproximadamente y le pido a un asesor que te contacte con una propuesta más ajustada.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 1
+Tiempo promedio: 7.2s

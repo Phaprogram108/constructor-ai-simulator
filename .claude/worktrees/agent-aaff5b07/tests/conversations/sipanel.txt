@@ -1,0 +1,76 @@
+=== SIPANEL ===
+URL: https://sipanel.com.ar/
+Session: b5711ee4-9ff2-4646-92a5-70eb7f272c9c
+Date: 2026-02-08 16:57:08
+Session creation: 98.3s
+
+USUARIO: ¿Qué es tu empresa y qué hacen?
+AGENTE (6.8s): Somos SIPANEL, una fábrica argentina de **paneles SIP**: paneles tipo sándwich con núcleo de espuma de poliuretano inyectado entre placas de OSB, pensados para construcción en seco y sustentable. Fabricamos distintos tipos de **Paneles SIP** (SIP 45, SIP 70, SIP 90, RoofSIP, Thermoskin, EvoSIP, GypSIP), armamos **kits constructivos SIPANEL®** listos para montar, y damos **asesoramiento técnico** y opciones de construcción en hormigón premoldeado con financiación.
+
+Trabajamos tanto para viviendas (incluida **Casa en Paneles SIP** y proyectos tipo **Casa Pasiva en el Delta – estándar Passivhaus**) como para obras comerciales, priorizando alta eficiencia energética (ahorro hasta 60%), rapidez de obra y mínimo impacto ambiental.  
+Para orientarte mejor, ¿qué tipo de paneles o kits estás buscando?
+
+USUARIO: ¿Qué productos o servicios ofrecen?
+AGENTE (6.3s): Ofrecemos principalmente **Paneles SIP** con núcleo de poliuretano inyectado (SIP 45, SIP 70, SIP 90 para muros; **RoofSIP – SIP 50** para techos; **ThermoSkin** para acondicionamiento térmico; **EvoSIP** cementicio; **GypSIP** con placas de yeso). Con esos paneles armamos el **KIT SIPANEL®**, que incluye paneles modulados y precortados, vínculos, anclajes, barrera hidrófuga, clavaderas y manual de montaje listo para obra.
+
+Además brindamos **asesoramiento técnico integral** (panelización, modulación 3D, soporte en obra) y, a través de constructores partners, soluciones de **construcción en hormigón premoldeado** y obras en paneles SIP, con **financiación disponible** y showrooms en La Tablada, Ituzaingó y Balcarce.  
+Para ayudarte mejor, ¿ya tenés terreno y en qué zona pensás construir o usar los paneles?
+
+USUARIO: ¿Cuántos modelos/casas tienen?
+AGENTE (4.8s): Trabajamos más como **sistema constructivo** que como catálogo fijo de modelos cerrados: con los **Paneles SIP** y el **KIT SIPANEL®** armamos desde una **Casa en Paneles SIP** estándar hasta proyectos a medida, e incluso tipologías de **Casa Pasiva en el Delta** bajo estándar Passivhaus.  
+
+Es decir, no tenemos “X modelos” tipo prefabricada rígida, sino que adaptamos el sistema SIPANEL® al diseño que proponga tu arquitecto (o te podemos derivar a estudios que ya trabajan con nosotros).  
+¿Para qué superficie o tipo de casa estás pensando, así te cuento qué configuraciones de paneles te convienen?
+
+USUARIO: Contame sobre 1. Paneles no portantes
+AGENTE (9.6s): Buenísimo que preguntes por los **1. Paneles no portantes**, porque son clave para interiores y cerramientos livianos.
+
+En SIPANEL los paneles no portantes son principalmente tres familias, todos con núcleo de **PUR inyectado** (poliuretano) y distintas placas exteriores:
+
+1) **GypSIP (no portante – interiores)**  
+- Dos placas de yeso (PYL) + núcleo de poliuretano de alta densidad.  
+- Espesores de yeso: **9 / 12,5 / 15 mm**.  
+- Espesores de PUR: **70 o 90 mm**.  
+- Medida estándar: **1,20 x 2,40 m**.  
+- No requiere revestimiento final: se masilla y se pinta, ideal para **tabiques interiores y cielorrasos**.
+
+2) **ThermoSkin (acondicionamiento térmico / revestimiento)**  
+- Placa vista (yeso, OSB, fibrocemento o MDF) + PUR inyectado de **25 o 35 mm** (más espesores a pedido).  
+- Funciona como **aislación + revestimiento en un solo paso** para **muros, techos y cielorrasos** en construcciones existentes o nuevas.  
+- Medidas típicas: 1,20 x 2,40 m (según placa).  
+- Súper práctico para mejorar térmicamente una casa tradicional sin grandes obras.
+
+3) **EvoSIP (panel cementicio no portante / cierre exterior)**  
+- Dos placas de fibrocemento + núcleo de PUR de **70 mm**.  
+- Medida: **1,20 x 2,40 m**, peso aprox. **40,04 kg**, K térmico **0,35**.  
+- Apto para **exteriores y zonas húmedas**, se corta y se clava; permite usarlo como cierre vertical sin necesidad de muchos revestimientos adicionales.
+
+Con estos **paneles no portantes** resolvés divisiones internas, mejoras térmicas y cerramientos livianos sin cargar estructura.  
+¿En qué los querés usar: divisiones interiores, mejorar la aislación de una casa existente o cerramientos exteriores livianos?
+
+USUARIO: ¿Cuánto sale aproximadamente una casa de 2 dormitorios?
+AGENTE (11.0s): Con una **Casa en Paneles SIP** de 2 dormitorios trabajamos siempre a medida, por eso el valor depende de m², nivel de terminaciones y si querés solo **KIT SIPANEL®** o la obra completa. En toda la información disponible (incluida la nota de “Casas en Paneles SIP” y la **Casa Pasiva en el Delta**) no aparecen precios ni valores por m², solo se destacan ventajas como hasta **60% de ahorro energético** y fuerte reducción de tiempos de obra.
+
+No tengo precios actualizados cargados para una casa de 2 dormitorios. Lo mejor es que te coticen según tu proyecto puntual por WhatsApp al **1156905969** o al **0810 222 9255**.  
+¿Ya tenés más o menos definida la superficie (por ejemplo 70–90 m²) y si querés llave en mano o solo el KIT SIPANEL®?
+
+USUARIO: ¿Qué garantía ofrecen?
+AGENTE (3.5s): En SIPANEL no manejamos una “garantía comercial” tipo electrodoméstico, sino un respaldo técnico y normativo fuerte: todos los **Paneles SIP** y el **KIT SIPANEL®** están **ensayados en INTI bajo normas IRAM** y el sistema cuenta con **Certificación CAT (Aptitud Técnica) y CAS (Aptitud Sismorresistente)**, apto para construir en todo el país.  
+
+Además, damos **seguimiento de obra postventa**: un técnico de SIPANEL acompaña a tu profesional/instalador en las etapas clave de montaje para asegurar que el sistema quede correctamente instalado y cumpla su vida útil prevista (más de 50 años de desempeño térmico y estructural del PUR y el OSB).  
+¿Estás pensando en usar el sistema para vivienda permanente o para una casa de fin de semana?
+
+USUARIO: ¿Cuál es su WhatsApp o teléfono?
+AGENTE (3.0s): Te dejo los datos directos de contacto:
+
+- WhatsApp: **11 5690 5969**  
+- Teléfono: **0810 222 9255**  
+- Email: **info@sipanel.com**
+
+Si querés, me contás rápido qué proyecto tenés en mente y te digo qué pedir cuando les escribas así te atienden más rápido.
+
+--- RESUMEN ---
+Preguntas: 7
+Respondidas: 7
+"No tengo info": 1
+Tiempo promedio: 6.4s

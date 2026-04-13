@@ -267,9 +267,18 @@ export default function Home() {
       {/* Section 8 - Results */}
       <section id="resultados" className="py-14 md:py-24 px-4 bg-slate-900">
         <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-4">
-            Caso de éxito: Constructora modular en Argentina
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">
+            Como una constructora consigue un ROI bruto del 7500% y neto del 1000%
           </h2>
+
+          {/* Imagen caso de estudio */}
+          <div className="max-w-3xl mx-auto mb-8">
+            <img
+              src="/caso-exito-constructora.png"
+              alt="Caso de estudio: Constructora Modular Argentina - Análisis de conversión y ROI"
+              className="w-full rounded-xl shadow-2xl"
+            />
+          </div>
 
           {/* Video */}
           <div className="max-w-3xl mx-auto">

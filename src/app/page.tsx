@@ -402,31 +402,35 @@ export default function Home() {
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
             {[
               {
-                name: 'Joaquín',
-                role: 'Founder & Account Manager',
-                desc: 'Lidera la estrategia comercial y la implementación del Programa PHA. Partner Oficial de Meta.',
+                name: 'Joaquín González',
+                role: 'Account Manager',
+                desc: 'Especialista en automatización de ventas con IA. Partner Oficial de Meta, con experiencia en escalar negocios de alto volumen.',
                 photo: '/team/joaquin.png',
+                linkedin: 'https://www.linkedin.com/in/joaquingb/',
               },
               {
-                name: 'Brenda',
+                name: 'Brenda Pastorino',
                 role: 'AI Agent Manager',
-                desc: 'Diseña sistemas escalables que integran agentes, CRM y operaciones.',
+                desc: 'Especialista en automatización de procesos y workflows con IA. Diseña sistemas escalables que integran agentes, CRM y operaciones.',
                 photo: '/team/brenda.png',
+                linkedin: 'https://www.linkedin.com/in/brenda-pastorino-quaglia/',
               },
               {
-                name: 'Diego',
+                name: 'Diego Cortes',
                 role: 'Media Buyer',
-                desc: 'Lidera la gestión publicitaria en Meta Ads con estrategia y ejecución.',
+                desc: 'Lidera la gestión publicitaria en Meta Ads, integrando estrategia, ejecución y reporting en un sistema escalable.',
                 photo: '/team/diego.png',
+                linkedin: 'https://www.linkedin.com/in/diego-cortes-6b24083a9/',
               },
               {
-                name: 'Antonela',
+                name: 'Antonela Baleirón',
                 role: 'Designer',
-                desc: 'Creativa data-driven especializada en Meta Ads.',
+                desc: 'Creativa data-driven especializada en Meta Ads. Convierte datos e insights en piezas visuales que venden y escalan.',
                 photo: '/team/antonela.png',
+                linkedin: 'https://www.linkedin.com/in/antonelabaleironfucci/',
               },
             ].map((member) => (
-              <div key={member.name} className="bg-white border border-gray-200 rounded-xl p-6 text-center">
+              <div key={member.name} className="bg-white border border-gray-200 rounded-xl p-6 text-center flex flex-col">
                 <Image
                   src={member.photo}
                   alt={member.name}
@@ -436,7 +440,19 @@ export default function Home() {
                 />
                 <p className="font-semibold text-gray-900">{member.name}</p>
                 <p className="text-sm text-blue-600 mb-2">{member.role}</p>
-                <p className="text-sm text-gray-600">{member.desc}</p>
+                <p className="text-sm text-gray-600 flex-1">{member.desc}</p>
+                <a
+                  href={member.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-1.5 mt-4 text-xs font-semibold text-blue-600 hover:text-blue-700 transition-colors"
+                  aria-label={`LinkedIn de ${member.name}`}
+                >
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                  </svg>
+                  LinkedIn
+                </a>
               </div>
             ))}
           </div>

@@ -4,9 +4,9 @@ import NavBar from '@/components/NavBar';
 import { ReelCard } from '@/components/ReelCard';
 import FAQ from '@/components/FAQ';
 import AnimatedCounter from '@/components/AnimatedCounter';
+import BeforeAfterSlider from '@/components/BeforeAfterSlider';
 import Image from 'next/image';
 import {
-  AlertCircle,
   Megaphone,
   Bot,
   LayoutDashboard,
@@ -170,31 +170,18 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 4 - Pain Points */}
-      <section id="problema" className="py-14 md:py-24 px-4 bg-slate-900">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
-            Si vendés construcción, seguro te pasa esto
-          </h2>
-          <div className="space-y-4">
-            {[
-              'Tu equipo tarda horas en responder consultas y los leads se enfrían',
-              'Te llegan leads de todos lados (publicidad, redes, etc) pero no medís conversiones omnicanal',
-              'Tu CRM nunca está 100% actualizado y requiere tiempo y energía de tu equipo',
-              'Tu equipo pierde tiempo y energía atendiendo a curiosos que nunca van a comprar',
-              'Sabés que la IA puede mejorar tus ventas y productividad, pero no sabés cómo sacarle el jugo',
-            ].map((item) => (
-              <div key={item} className="flex items-center gap-3">
-                <AlertCircle className="w-6 h-6 text-amber-400 shrink-0" />
-                <p className="text-white text-lg">{item}</p>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <p className="text-blue-300 text-xl font-medium">
-              Si te identificás con alguno de estos puntos, podemos ayudarte.
+      {/* Section 4 - Before/After Slider (fusiona pain points + HOY vs CON PHA) */}
+      <section id="problema" className="py-14 md:py-24 px-4 bg-gray-50">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-10">
+            <p className="text-xs sm:text-sm font-semibold tracking-widest uppercase text-blue-600 mb-3">
+              Antes vs Después
             </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
+              Lo que cambia en tu constructora con el Programa PHA
+            </h2>
           </div>
+          <BeforeAfterSlider />
         </div>
       </section>
 
@@ -331,53 +318,6 @@ export default function Home() {
             <p className="text-gray-500 text-sm md:text-base mt-16 md:mt-20 text-center max-w-2xl mx-auto">
               Incluye todos los recursos: tokens de IA, creatividades, monitoreo y optimización continua.
             </p>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 7 - HOY vs CON PHA */}
-      <section className="py-14 md:py-20 px-4 bg-gray-50">
-        <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-            Lo que cambia cuando implementás el Programa PHA
-          </h2>
-
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white border border-gray-200 rounded-xl p-6">
-              <h3 className="text-xl font-bold text-gray-900 text-center mb-6">HOY (Sin PHA)</h3>
-              <div className="space-y-3">
-                {[
-                  'Respuesta: 2-6 horas (horario laboral)',
-                  '100 consultas → 3-4 reuniones (3-4%)',
-                  'Asesores gastando 60-70% en soporte',
-                  'Se pierden 50-60% de leads',
-                  'Sin visibilidad del pipeline',
-                ].map((item) => (
-                  <div key={item} className="flex items-start gap-2">
-                    <span className="text-red-400 shrink-0 mt-0.5">●</span>
-                    <p className="text-gray-700 text-sm">{item}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="bg-white border-2 border-emerald-400 rounded-xl p-6">
-              <h3 className="text-xl font-bold text-gray-900 text-center mb-6">CON PHA</h3>
-              <div className="space-y-3">
-                {[
-                  'Respuesta: menos de 60 segundos (24/7)',
-                  '100 consultas → 7-9 reuniones (7-9%)',
-                  'Asesores dedicados 100% a reuniones',
-                  '0 leads perdidos, seguimiento 3-6 meses',
-                  'Dashboard en tiempo real',
-                ].map((item) => (
-                  <div key={item} className="flex items-start gap-2">
-                    <span className="text-emerald-500 shrink-0 mt-0.5">●</span>
-                    <p className="text-gray-700 text-sm">{item}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
           </div>
         </div>
       </section>

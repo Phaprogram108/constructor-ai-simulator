@@ -151,26 +151,21 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 5 - Esto NO es para vos si... */}
-      <section className="py-14 md:py-20 px-4 bg-red-950/90">
-        <div className="max-w-2xl mx-auto">
-          <p className="text-center text-red-300 text-sm font-semibold tracking-widest uppercase mb-4">
-            Pero
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-10">
-            Esto NO es para vos si...
-          </h2>
-          <div className="space-y-4">
-            {[
-              'Recibís menos de 20 consultas por semana',
-              'No invertís en publicidad digital por falta de presupuesto',
-              'Tu constructora es muy chica y estás buscando un chatbot barato que puedas autogestionar',
-            ].map((item) => (
-              <div key={item} className="bg-red-900/40 border border-red-800/50 rounded-xl px-5 py-4 flex items-start gap-3">
-                <span className="text-red-400 text-xl shrink-0">&#10060;</span>
-                <p className="text-red-100 text-lg">{item}</p>
+      {/* Section 5 - Esto NO es para vos si... (callout compacto) */}
+      <section className="py-8 px-4 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 md:px-6 md:py-5">
+            <div className="flex items-start gap-3">
+              <span className="text-amber-600 text-lg shrink-0 mt-0.5">⚠</span>
+              <div>
+                <p className="text-sm md:text-base font-semibold text-gray-900 mb-1">
+                  Esto NO es para vos si recibís menos de 20 consultas por semana, no invertís en publicidad digital, o estás buscando un chatbot barato autogestionable.
+                </p>
+                <p className="text-sm text-gray-600">
+                  Si es tu caso, te conviene escalar la demanda primero antes de automatizar.
+                </p>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>

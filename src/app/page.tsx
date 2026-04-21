@@ -241,52 +241,94 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* Pillars - white bg */}
-        <div className="py-14 md:py-20 px-4 bg-white">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-gray-50 border border-gray-100 rounded-xl p-6 flex gap-4">
-                <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center shrink-0">
-                  <Megaphone className="w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Publicidad que trae compradores</h3>
-                  <p className="text-gray-500 text-sm">Meta Ads optimizados para tu zona, audiencia y objetivo. Gestionados por tu equipo.</p>
-                </div>
-              </div>
-
-              <div className="bg-gray-50 border border-gray-100 rounded-xl p-6 flex gap-4">
-                <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center shrink-0">
-                  <Bot className="w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Agente IA que vende por vos 24/7</h3>
-                  <p className="text-gray-500 text-sm">Conversa naturalmente, conoce tu constructora, cotiza y agenda reuniones. En menos de 60 segundos.</p>
-                </div>
-              </div>
-
-              <div className="bg-gray-50 border border-gray-100 rounded-xl p-6 flex gap-4">
-                <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center shrink-0">
-                  <LayoutDashboard className="w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">CRM con actualización automática</h3>
-                  <p className="text-gray-500 text-sm">Cada lead registrado con conversación, etapa de compra y seguimiento. Sin carga manual.</p>
-                </div>
-              </div>
-
-              <div className="bg-gray-50 border border-gray-100 rounded-xl p-6 flex gap-4">
-                <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center shrink-0">
-                  <Shield className="w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Equipo dedicado de 4 personas</h3>
-                  <p className="text-gray-500 text-sm">Account manager, media buyer, diseñadora y AI manager. Trabajando para tu constructora.</p>
-                </div>
-              </div>
+        {/* Pillars - chapters layout */}
+        <div className="py-16 md:py-24 px-4 bg-white">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-14 md:mb-20">
+              <p className="text-xs sm:text-sm font-semibold tracking-widest uppercase text-blue-600 mb-3">
+                Cómo funciona
+              </p>
+              <h3 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
+                4 capas que trabajan juntas para cerrar ventas
+              </h3>
             </div>
 
-            <p className="text-gray-400 text-sm mt-8 text-center">
+            <div className="space-y-20 md:space-y-28">
+              {[
+                {
+                  number: '01',
+                  title: 'Publicidad que trae compradores',
+                  description:
+                    'Campañas de Meta Ads optimizadas para tu zona, audiencia y objetivo específico de venta. Segmentamos por intención de compra, no por vanity metrics. El objetivo es volumen de consultas reales en tu WhatsApp.',
+                  Icon: Megaphone,
+                  accent: 'bg-blue-50 text-blue-600',
+                },
+                {
+                  number: '02',
+                  title: 'Agente IA que vende por vos 24/7',
+                  description:
+                    'Sofía responde en menos de 60 segundos cada consulta. Conoce tu catálogo, precios y zonas, responde objeciones, califica al lead según tus criterios, envía cotizaciones y agenda reuniones. No se pierde un solo mensaje.',
+                  Icon: Bot,
+                  accent: 'bg-emerald-50 text-emerald-600',
+                },
+                {
+                  number: '03',
+                  title: 'CRM con actualización automática',
+                  description:
+                    'Cada conversación queda registrada con tags de etapa, presupuesto, zona y score de calificación. Tu equipo comercial ve el pipeline en tiempo real. Cero carga manual, cero leads olvidados.',
+                  Icon: LayoutDashboard,
+                  accent: 'bg-amber-50 text-amber-600',
+                },
+                {
+                  number: '04',
+                  title: 'Equipo humano dedicado',
+                  description:
+                    'Un account manager, un AI manager, un media buyer y una diseñadora trabajando para tu constructora. Iteramos el agente, renovamos creativos y reportamos resultados semanalmente.',
+                  Icon: Shield,
+                  accent: 'bg-blue-50 text-blue-600',
+                },
+              ].map((chapter, i) => {
+                const isEven = i % 2 === 0;
+                return (
+                  <div
+                    key={chapter.number}
+                    className={`grid md:grid-cols-2 gap-8 md:gap-16 items-center ${
+                      isEven ? '' : 'md:[&>div:first-child]:order-2'
+                    }`}
+                  >
+                    {/* Text */}
+                    <div>
+                      <p className="text-6xl md:text-8xl font-bold text-gray-200 leading-none mb-4 tracking-tight">
+                        {chapter.number}
+                      </p>
+                      <h4 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 tracking-tight">
+                        {chapter.title}
+                      </h4>
+                      <p className="text-gray-600 text-lg leading-relaxed">
+                        {chapter.description}
+                      </p>
+                    </div>
+
+                    {/* Visual */}
+                    <div className="flex justify-center">
+                      <div className={`w-full max-w-sm aspect-[4/3] rounded-2xl ${chapter.accent} flex items-center justify-center relative overflow-hidden shadow-lg`}>
+                        <div
+                          className="absolute inset-0 opacity-40"
+                          style={{
+                            backgroundImage:
+                              'radial-gradient(circle at 30% 30%, rgba(255,255,255,0.6), transparent 60%)',
+                          }}
+                          aria-hidden
+                        />
+                        <chapter.Icon className="w-20 h-20 md:w-28 md:h-28 relative" strokeWidth={1.5} />
+                      </div>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
+
+            <p className="text-gray-500 text-sm md:text-base mt-16 md:mt-20 text-center max-w-2xl mx-auto">
               Incluye todos los recursos: tokens de IA, creatividades, monitoreo y optimización continua.
             </p>
           </div>

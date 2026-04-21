@@ -345,15 +345,16 @@ export default function Home() {
 
             {/* Foto */}
             <div className="flex justify-center md:justify-end">
-              <div className="relative w-64 h-80 md:w-80 md:h-96">
-                <div className="absolute inset-0 bg-blue-600 rounded-[160px_160px_20px_20px] md:rounded-[200px_200px_24px_24px] shadow-2xl" />
-                <Image
-                  src="/team/joaquin.png"
-                  alt="Joaquín González - Founder de PHA"
-                  fill
-                  className="relative rounded-[160px_160px_20px_20px] md:rounded-[200px_200px_24px_24px] object-cover p-1"
-                  sizes="(max-width: 768px) 256px, 320px"
-                />
+              <div className="relative w-64 h-80 md:w-80 md:h-96 bg-blue-600 rounded-[160px_160px_20px_20px] md:rounded-[200px_200px_24px_24px] shadow-2xl p-1.5">
+                <div className="relative w-full h-full rounded-[152px_152px_14px_14px] md:rounded-[192px_192px_18px_18px] overflow-hidden">
+                  <Image
+                    src="/team/joaquin.png"
+                    alt="Joaquín González - Founder de PHA"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 256px, 320px"
+                  />
+                </div>
               </div>
             </div>
           </div>

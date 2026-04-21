@@ -1,7 +1,7 @@
 'use client';
 
-import { useState } from 'react';
-import { ChevronDown } from 'lucide-react';
+import { useMemo, useState } from 'react';
+import { ChevronDown, Search } from 'lucide-react';
 
 const FAQS = [
   {
@@ -48,11 +48,43 @@ const FAQS = [
 
 export default function FAQ() {
   const [openIndex, setOpenIndex] = useState<number | null>(0);
+  const [query, setQuery] = useState('');
+
+  const filtered = useMemo(() => {
+    const q = query.trim().toLowerCase();
+    if (!q) return FAQS.map((item, i) => ({ ...item, originalIndex: i }));
+    return FAQS
+      .map((item, i) => ({ ...item, originalIndex: i }))
+      .filter(
+        (item) =>
+          item.q.toLowerCase().includes(q) || item.a.toLowerCase().includes(q)
+      );
+  }, [query]);
 
   return (
     <div className="max-w-3xl mx-auto">
+      {/* Search */}
+      <div className="relative mb-6">
+        <Search className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-400 pointer-events-none" />
+        <input
+          type="text"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+          placeholder="Buscá tu pregunta..."
+          className="w-full bg-white border border-gray-200 rounded-xl pl-12 pr-4 py-3.5 text-gray-900 placeholder:text-gray-400 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          aria-label="Buscar en preguntas frecuentes"
+        />
+      </div>
+
+      {filtered.length === 0 && (
+        <p className="text-center text-gray-500 py-8">
+          No encontramos preguntas que coincidan con tu búsqueda.
+        </p>
+      )}
+
       <div className="space-y-3">
-        {FAQS.map((item, i) => {
+        {filtered.map((item) => {
+          const i = item.originalIndex;
           const isOpen = openIndex === i;
           return (
             <div

@@ -77,50 +77,78 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 3 - Simulator (moved up) */}
+      {/* Section 3 - Simulator (stepper + form side by side) */}
       <section id="simulador" className="py-12 md:py-20 px-4 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
-            Probalo vos mismo en 60 segundos
-          </h2>
-          <p className="text-gray-600 text-center mb-10 text-lg">
-            Ingresá el sitio web de tu constructora y generá tu agente IA al instante
-          </p>
-
-          <div className="grid md:grid-cols-3 gap-6 mb-10 max-w-3xl mx-auto">
-            <div className="text-center">
-              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
-                1
-              </div>
-              <h3 className="font-semibold text-gray-900 mb-2">Ingresá tu Web</h3>
-              <p className="text-gray-600 text-sm">Extraemos la info de tu constructora</p>
-            </div>
-            <div className="text-center">
-              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
-                2
-              </div>
-              <h3 className="font-semibold text-gray-900 mb-2">
-                Agregá tu Catálogo <span className="text-xs text-green-600 ml-1">(Opcional)</span>
-              </h3>
-              <p className="text-gray-600 text-sm">Link a tu catálogo online o PDF</p>
-            </div>
-            <div className="text-center">
-              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
-                3
-              </div>
-              <h3 className="font-semibold text-gray-900 mb-2">Chateá con Sofía</h3>
-              <p className="text-gray-600 text-sm">Tu asesora IA lista para responder</p>
-            </div>
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-10 md:mb-14">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+              Probalo vos mismo en 60 segundos
+            </h2>
+            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
+              Ingresá el sitio web de tu constructora y generá tu agente IA al instante. Sin tarjeta. Sin registrarte.
+            </p>
           </div>
 
-          <p className="text-sm text-gray-500 text-center mb-4 max-w-2xl mx-auto">
-            🚀 Versión Piloto — Este es un demo para mostrar el potencial de la tecnología. Los resultados pueden variar según el sitio web analizado.
-          </p>
+          <div className="grid md:grid-cols-[1fr_1.2fr] gap-10 md:gap-14 items-start max-w-5xl mx-auto">
+            {/* Stepper vertical */}
+            <div className="relative">
+              {/* Línea conectora */}
+              <div
+                className="absolute left-5 md:left-6 top-2 bottom-2 w-0.5 bg-gradient-to-b from-blue-600 via-blue-500 to-blue-400"
+                aria-hidden
+              />
 
-          <div className="max-w-2xl mx-auto bg-white rounded-2xl border border-gray-200 shadow-lg p-8">
-            <SimulatorForm />
+              <div className="space-y-8 md:space-y-10">
+                {[
+                  {
+                    n: '1',
+                    title: 'Ingresá tu web',
+                    desc: 'Extraemos en segundos los datos clave de tu constructora: catálogo, zonas, precios y tono.',
+                  },
+                  {
+                    n: '2',
+                    title: 'Agregá tu catálogo',
+                    desc: 'Opcional. Link online o PDF con tus productos y precios. Cuanta más info, mejor responde Sofía.',
+                  },
+                  {
+                    n: '3',
+                    title: 'Chateá con Sofía',
+                    desc: 'Tu asesora IA lista para responder como si fuera parte de tu equipo comercial.',
+                  },
+                ].map((step) => (
+                  <div key={step.n} className="relative flex gap-4 md:gap-6">
+                    <div className="relative shrink-0 w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-lg md:text-xl font-bold shadow-md shadow-blue-600/30 ring-4 ring-white">
+                      {step.n}
+                    </div>
+                    <div className="pt-1.5 md:pt-2">
+                      <h3 className="font-semibold text-gray-900 mb-1 text-base md:text-lg">
+                        {step.title}
+                      </h3>
+                      <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                        {step.desc}
+                      </p>
+                    </div>
+                  </div>
+                ))}
+              </div>
+
+              <p className="text-xs text-gray-500 mt-8 md:mt-10 flex items-start gap-2">
+                <span aria-hidden>🚀</span>
+                <span>
+                  Versión piloto. Los resultados pueden variar según el sitio analizado.
+                </span>
+              </p>
+            </div>
+
+            {/* Form */}
+            <div className="bg-white rounded-2xl border border-gray-200 shadow-xl p-6 md:p-8 relative">
+              <div
+                className="absolute -top-6 -right-6 w-32 h-32 bg-blue-500/10 blur-3xl rounded-full pointer-events-none"
+                aria-hidden
+              />
+              <SimulatorForm />
+            </div>
           </div>
-
         </div>
       </section>
 

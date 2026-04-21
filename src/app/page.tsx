@@ -2,6 +2,7 @@ import SimulatorForm from '@/components/SimulatorForm';
 import QualificationForm from '@/components/QualificationForm';
 import NavBar from '@/components/NavBar';
 import { ReelCard } from '@/components/ReelCard';
+import FAQ from '@/components/FAQ';
 import Image from 'next/image';
 import {
   AlertCircle,
@@ -483,6 +484,19 @@ export default function Home() {
             Respondé 3 preguntas para saber si el Programa PHA es para tu empresa
           </p>
           <QualificationForm />
+        </div>
+      </section>
+
+      {/* Section 10.5 - FAQ */}
+      <section id="faq" className="py-14 md:py-24 px-4 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
+            Preguntas frecuentes
+          </h2>
+          <p className="text-gray-600 text-center mb-10 text-lg">
+            Respondemos las dudas más comunes antes de la sesión estratégica
+          </p>
+          <FAQ />
         </div>
       </section>
 

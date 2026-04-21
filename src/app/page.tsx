@@ -298,36 +298,6 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Section 8 - Results */}
-      <section id="resultados" className="py-14 md:py-24 px-4 bg-slate-900">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">
-            Como una constructora consigue un ROI bruto del 7500% y neto del 1000%
-          </h2>
-
-          {/* Imagen caso de estudio */}
-          <div className="max-w-3xl mx-auto mb-8">
-            <img
-              src="/caso-exito-constructora.png"
-              alt="Caso de estudio: Constructora Modular Argentina - Análisis de conversión y ROI"
-              className="w-full rounded-xl shadow-2xl"
-            />
-          </div>
-
-          {/* Video */}
-          <div className="max-w-3xl mx-auto">
-            <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
-              <iframe
-                src="https://www.loom.com/embed/0b288021895f49338328c6258299068f"
-                className="absolute top-0 left-0 w-full h-full border-0"
-                allowFullScreen
-                allow="fullscreen"
-              />
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* Section 8.5 - Sobre mí (Joaquín) */}
       <section id="sobre-mi" className="py-14 md:py-24 px-4 bg-[#fdf6e3]">
         <div className="max-w-5xl mx-auto">

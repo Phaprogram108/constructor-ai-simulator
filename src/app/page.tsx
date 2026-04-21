@@ -327,6 +327,68 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Section 8.5 - Sobre mí (Joaquín) */}
+      <section id="sobre-mi" className="py-14 md:py-24 px-4 bg-[#fdf6e3]">
+        <div className="max-w-5xl mx-auto">
+          <div className="grid md:grid-cols-2 gap-10 md:gap-12 items-center">
+            {/* Texto */}
+            <div>
+              <p className="text-xs sm:text-sm font-semibold tracking-widest uppercase text-blue-600 mb-4">
+                ¿Por qué escucharme a mí?
+              </p>
+              <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-3 tracking-tight">
+                Joaquín González
+              </h2>
+              <p className="text-lg md:text-xl font-semibold text-slate-700 mb-8">
+                Founder de PHA · Publicista · Meta Business Partner
+              </p>
+
+              <div className="space-y-3 mb-8">
+                {[
+                  '9 años invirtiendo en publicidad digital',
+                  'Founder de South Media LLC (USA, 2020 - hoy)',
+                  '+$10M USD generados en ventas para clientes',
+                  'Lic. en Administración (UNICEN) — egresado con honores y mejor GPA en 2017',
+                  'Manager global publicitario en Sumeru (USA, 2018-2020)',
+                  'Formación en Ingeniería en Sistemas y ex-docente de Marketing',
+                ].map((item) => (
+                  <div key={item} className="flex items-start gap-3">
+                    <span className="mt-1 shrink-0 w-2 h-2 rounded-full bg-blue-600" />
+                    <p className="text-slate-700 text-base md:text-lg leading-relaxed">{item}</p>
+                  </div>
+                ))}
+              </div>
+
+              <a
+                href="https://www.linkedin.com/in/joaquingb/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold transition-colors"
+              >
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+                Ver perfil en LinkedIn →
+              </a>
+            </div>
+
+            {/* Foto */}
+            <div className="flex justify-center md:justify-end">
+              <div className="relative w-64 h-80 md:w-80 md:h-96">
+                <div className="absolute inset-0 bg-blue-600 rounded-[160px_160px_20px_20px] md:rounded-[200px_200px_24px_24px] shadow-2xl" />
+                <Image
+                  src="/team/joaquin.png"
+                  alt="Joaquín González - Founder de PHA"
+                  fill
+                  className="relative rounded-[160px_160px_20px_20px] md:rounded-[200px_200px_24px_24px] object-cover p-1"
+                  sizes="(max-width: 768px) 256px, 320px"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Section 9 - Equipo */}
       <section id="equipo" className="py-14 md:py-24 px-4 bg-white">
         <div className="max-w-5xl mx-auto">

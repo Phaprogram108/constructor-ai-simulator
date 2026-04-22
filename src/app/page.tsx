@@ -333,7 +333,7 @@ export default function Home() {
                   'Formación en Ingeniería en Sistemas y ex-docente de Marketing',
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3">
-                    <span className="mt-1 shrink-0 w-2 h-2 rounded-full bg-blue-600" />
+                    <span className="shrink-0 w-2 h-2 rounded-full bg-blue-600 mt-[10px] md:mt-[12px]" />
                     <p className="text-slate-700 text-base md:text-lg leading-relaxed">{item}</p>
                   </div>
                 ))}

@@ -37,19 +37,24 @@ export default function BeforeAfterSlider() {
     if (!isDragging) return;
     const handleMove = (e: MouseEvent) => updatePosition(e.clientX);
     const handleTouch = (e: TouchEvent) => {
+      // Prevent the browser from scrolling / rubber-banding while the
+      // user is dragging the divider. Requires a non-passive listener.
+      if (e.cancelable) e.preventDefault();
       if (e.touches[0]) updatePosition(e.touches[0].clientX);
     };
     const stop = () => setIsDragging(false);
 
     window.addEventListener('mousemove', handleMove);
     window.addEventListener('mouseup', stop);
-    window.addEventListener('touchmove', handleTouch);
+    window.addEventListener('touchmove', handleTouch, { passive: false });
     window.addEventListener('touchend', stop);
+    window.addEventListener('touchcancel', stop);
     return () => {
       window.removeEventListener('mousemove', handleMove);
       window.removeEventListener('mouseup', stop);
       window.removeEventListener('touchmove', handleTouch);
       window.removeEventListener('touchend', stop);
+      window.removeEventListener('touchcancel', stop);
     };
   }, [isDragging, updatePosition]);
 
@@ -62,7 +67,7 @@ export default function BeforeAfterSlider() {
 
       <div
         ref={containerRef}
-        className="relative w-full rounded-2xl overflow-hidden shadow-2xl select-none"
+        className="relative w-full rounded-2xl overflow-hidden shadow-2xl select-none touch-none"
         style={{ aspectRatio: '16/10', minHeight: 480 }}
         onMouseDown={(e) => {
           setIsDragging(true);
@@ -128,7 +133,7 @@ export default function BeforeAfterSlider() {
         <button
           type="button"
           aria-label="Arrastrar para comparar"
-          className="absolute top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow-xl flex items-center justify-center cursor-ew-resize hover:scale-110 transition-transform z-10"
+          className="absolute top-1/2 -translate-x-1/2 -translate-y-1/2 w-12 h-12 rounded-full bg-white shadow-xl flex items-center justify-center cursor-ew-resize hover:scale-110 transition-transform z-10 touch-none"
           style={{ left: `${position}%` }}
           onMouseDown={(e) => {
             e.stopPropagation();

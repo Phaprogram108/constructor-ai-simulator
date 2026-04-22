@@ -3,7 +3,6 @@ import QualificationForm from '@/components/QualificationForm';
 import NavBar from '@/components/NavBar';
 import { ReelCard } from '@/components/ReelCard';
 import FAQ from '@/components/FAQ';
-import AnimatedCounter from '@/components/AnimatedCounter';
 import BeforeAfterSlider from '@/components/BeforeAfterSlider';
 import WhatsAppMockup from '@/components/WhatsAppMockup';
 import HbrChart from '@/components/HbrChart';
@@ -129,52 +128,6 @@ export default function Home() {
               />
               <SimulatorForm />
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 3.5 - Trust Row */}
-      <section className="py-14 md:py-20 px-4 bg-slate-900 relative overflow-hidden">
-        <div
-          className="absolute inset-0 opacity-20"
-          style={{
-            backgroundImage:
-              'radial-gradient(circle at 20% 20%, rgba(59,130,246,0.4), transparent 40%), radial-gradient(circle at 80% 60%, rgba(59,130,246,0.3), transparent 45%)',
-          }}
-          aria-hidden
-        />
-        <div className="max-w-6xl mx-auto relative">
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 md:gap-10">
-            <AnimatedCounter
-              end={10}
-              prefix="$"
-              suffix="M+"
-              label="USD generados en ventas"
-              className="text-4xl md:text-6xl font-bold text-white tracking-tight"
-              labelClassName="text-xs md:text-sm text-slate-400 mt-2 uppercase tracking-widest"
-            />
-            <AnimatedCounter
-              end={7500}
-              suffix="%"
-              label="ROAS en caso real"
-              className="text-4xl md:text-6xl font-bold text-amber-300 tracking-tight"
-              labelClassName="text-xs md:text-sm text-slate-400 mt-2 uppercase tracking-widest"
-            />
-            <AnimatedCounter
-              end={9}
-              suffix="+"
-              label="Años en Meta Ads"
-              className="text-4xl md:text-6xl font-bold text-white tracking-tight"
-              labelClassName="text-xs md:text-sm text-slate-400 mt-2 uppercase tracking-widest"
-            />
-            <AnimatedCounter
-              end={60}
-              prefix="<"
-              suffix="s"
-              label="Tiempo de respuesta"
-              className="text-4xl md:text-6xl font-bold text-white tracking-tight"
-              labelClassName="text-xs md:text-sm text-slate-400 mt-2 uppercase tracking-widest"
-            />
           </div>
         </div>
       </section>

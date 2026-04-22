@@ -42,15 +42,9 @@ export default function Home() {
       {/* Section 2.5 - Pre-Simulator VSL */}
       <section id="caso" className="py-14 md:py-20 px-4 bg-gray-50 border-t border-gray-100">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-xs sm:text-sm font-semibold tracking-widest uppercase text-blue-600 mb-4">
-            Caso real · 7.500% de retorno publicitario
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6 tracking-tight">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-10 tracking-tight">
             Antes de probar tu agente gratis, mirá cómo una constructora modular genera un retorno publicitario del 7.500% con IA
           </h2>
-          <p className="text-gray-600 text-lg mb-10 max-w-2xl mx-auto">
-            En pocos minutos te muestro el caso real: cómo funciona el sistema, los números del embudo y por qué funciona tan bien en construcción.
-          </p>
 
           {/* VSL Placeholder */}
           <div className="max-w-3xl mx-auto bg-slate-900 rounded-2xl overflow-hidden shadow-2xl aspect-video flex items-center justify-center relative group">
@@ -65,10 +59,6 @@ export default function Home() {
               <p className="text-slate-400 text-sm">Disponible próximamente</p>
             </div>
           </div>
-
-          <p className="text-gray-500 text-sm mt-6">
-            Después de verlo, probá vos mismo el agente gratis acá abajo ↓
-          </p>
         </div>
       </section>
 

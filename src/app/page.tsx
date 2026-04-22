@@ -18,7 +18,7 @@ export default function Home() {
       {/* Section 2 - Hero */}
       <section className="bg-white pt-24 pb-12 md:pt-32 md:pb-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <p className="text-xs sm:text-sm font-semibold tracking-widest uppercase text-blue-600 mb-5">
+          <p className="text-sm sm:text-base md:text-lg font-semibold tracking-widest uppercase text-blue-600 mb-6">
             Programa PHA para Constructoras Innovadoras
           </p>
 
@@ -70,14 +70,8 @@ export default function Home() {
 
           <div className="grid md:grid-cols-[1fr_1.2fr] gap-10 md:gap-14 items-start max-w-5xl mx-auto">
             {/* Stepper vertical */}
-            <div className="relative">
-              {/* Línea conectora (solo entre paso 1 y paso 3) */}
-              <div
-                className="absolute left-5 md:left-6 top-10 md:top-12 h-[calc(100%-13rem)] md:h-[calc(100%-14rem)] w-0.5 bg-gradient-to-b from-blue-600 via-blue-500 to-blue-400"
-                aria-hidden
-              />
-
-              <div className="space-y-8 md:space-y-10">
+            <div>
+              <div>
                 {[
                   {
                     n: '1',
@@ -94,21 +88,35 @@ export default function Home() {
                     title: 'Chateá con Sofía',
                     desc: 'Tu asesora IA lista para responder como si fuera parte de tu equipo comercial.',
                   },
-                ].map((step) => (
-                  <div key={step.n} className="relative flex gap-4 md:gap-6">
-                    <div className="relative shrink-0 w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-lg md:text-xl font-bold shadow-md shadow-blue-600/30 ring-4 ring-white">
-                      {step.n}
+                ].map((step, idx, arr) => {
+                  const isLast = idx === arr.length - 1;
+                  return (
+                    <div
+                      key={step.n}
+                      className={`relative flex gap-4 md:gap-6 ${idx > 0 ? 'mt-8 md:mt-10' : ''}`}
+                    >
+                      {/* Línea conectora al siguiente paso */}
+                      {!isLast && (
+                        <div
+                          className="absolute left-5 md:left-6 top-10 md:top-12 -bottom-8 md:-bottom-10 w-0.5 -translate-x-1/2 bg-gradient-to-b from-blue-500 to-blue-400"
+                          aria-hidden
+                        />
+                      )}
+
+                      <div className="relative z-10 shrink-0 w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-lg md:text-xl font-bold shadow-md shadow-blue-600/30 ring-4 ring-white">
+                        {step.n}
+                      </div>
+                      <div className="pt-1.5 md:pt-2">
+                        <h3 className="font-semibold text-gray-900 mb-1 text-base md:text-lg">
+                          {step.title}
+                        </h3>
+                        <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                          {step.desc}
+                        </p>
+                      </div>
                     </div>
-                    <div className="pt-1.5 md:pt-2">
-                      <h3 className="font-semibold text-gray-900 mb-1 text-base md:text-lg">
-                        {step.title}
-                      </h3>
-                      <p className="text-gray-600 text-sm md:text-base leading-relaxed">
-                        {step.desc}
-                      </p>
-                    </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
 
               <p className="text-xs text-gray-500 mt-8 md:mt-10 flex items-start gap-2">

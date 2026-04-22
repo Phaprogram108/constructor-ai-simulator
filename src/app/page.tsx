@@ -8,12 +8,7 @@ import BeforeAfterSlider from '@/components/BeforeAfterSlider';
 import WhatsAppMockup from '@/components/WhatsAppMockup';
 import HbrChart from '@/components/HbrChart';
 import Image from 'next/image';
-import {
-  Megaphone,
-  Bot,
-  LayoutDashboard,
-  Shield,
-} from 'lucide-react';
+import { Shield } from 'lucide-react';
 
 
 export default function Home() {
@@ -246,7 +241,7 @@ export default function Home() {
                 Cómo funciona
               </p>
               <h3 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
-                4 capas que trabajan juntas para cerrar ventas
+                Cuatro pilares del Programa PHA
               </h3>
             </div>
 
@@ -254,33 +249,38 @@ export default function Home() {
               {[
                 {
                   number: '01',
-                  title: 'Publicidad que trae compradores',
+                  title: 'Innovador sistema conectado con CRM',
                   description:
-                    'Campañas de Meta Ads optimizadas para tu zona, audiencia y objetivo específico de venta. Segmentamos por intención de compra, no por vanity metrics. El objetivo es volumen de consultas reales en tu WhatsApp.',
-                  Icon: Megaphone,
-                  accent: 'bg-blue-50 text-blue-600',
+                    'Campañas de Meta Ads optimizadas para tu zona, audiencia y objetivo específico de venta. Segmentamos por intención de compra real, y cada clic queda trackeado de punta a punta en el CRM junto a la conversación, la cotización y el agendamiento.',
+                  visual: 'image',
+                  src: '/chapters/meta-campaigns.png',
+                  alt: 'Campañas de Meta Ads conectadas al CRM: PHA ASC Remarketing y Leads Calificados',
+                  accent: 'bg-blue-50',
                 },
                 {
                   number: '02',
-                  title: 'Agente IA que vende por vos 24/7',
+                  title: 'Agente IA que responde por vos 24/7',
                   description:
                     'Sofía responde en menos de 60 segundos cada consulta. Conoce tu catálogo, precios y zonas, responde objeciones, califica al lead según tus criterios, envía cotizaciones y agenda reuniones. No se pierde un solo mensaje.',
-                  Icon: Bot,
-                  accent: 'bg-emerald-50 text-emerald-600',
+                  visual: 'whatsapp',
+                  accent: 'bg-emerald-50',
                 },
                 {
                   number: '03',
                   title: 'CRM con actualización automática',
                   description:
                     'Cada conversación queda registrada con tags de etapa, presupuesto, zona y score de calificación. Tu equipo comercial ve el pipeline en tiempo real. Cero carga manual, cero leads olvidados.',
-                  Icon: LayoutDashboard,
-                  accent: 'bg-amber-50 text-amber-600',
+                  visual: 'image',
+                  src: '/chapters/crm-pipeline.png',
+                  alt: 'Pipeline del CRM con leads organizados por etapa: lead calificado, cotización enviada, entrevista presencial, entrevista virtual',
+                  accent: 'bg-amber-50',
                 },
                 {
                   number: '04',
                   title: 'Equipo humano dedicado',
                   description:
                     'Un account manager, un AI manager, un media buyer y una diseñadora trabajando para tu constructora. Iteramos el agente, renovamos creativos y reportamos resultados semanalmente.',
+                  visual: 'icon',
                   Icon: Shield,
                   accent: 'bg-blue-50 text-blue-600',
                 },
@@ -308,26 +308,41 @@ export default function Home() {
 
                     {/* Visual */}
                     <div className="flex justify-center">
-                      <div className={`w-full max-w-sm aspect-[4/3] rounded-2xl ${chapter.accent} flex items-center justify-center relative overflow-hidden shadow-lg`}>
-                        <div
-                          className="absolute inset-0 opacity-40"
-                          style={{
-                            backgroundImage:
-                              'radial-gradient(circle at 30% 30%, rgba(255,255,255,0.6), transparent 60%)',
-                          }}
-                          aria-hidden
-                        />
-                        <chapter.Icon className="w-20 h-20 md:w-28 md:h-28 relative" strokeWidth={1.5} />
-                      </div>
+                      {chapter.visual === 'whatsapp' ? (
+                        <WhatsAppMockup />
+                      ) : chapter.visual === 'image' ? (
+                        <div className={`w-full max-w-md rounded-2xl ${chapter.accent} p-3 md:p-4 shadow-lg`}>
+                          <div className="rounded-xl overflow-hidden bg-white ring-1 ring-gray-200/60">
+                            <Image
+                              src={chapter.src!}
+                              alt={chapter.alt!}
+                              width={720}
+                              height={540}
+                              className="w-full h-auto"
+                              sizes="(max-width: 768px) 90vw, 420px"
+                            />
+                          </div>
+                        </div>
+                      ) : (
+                        <div className={`w-full max-w-sm aspect-[4/3] rounded-2xl ${chapter.accent} flex items-center justify-center relative overflow-hidden shadow-lg`}>
+                          <div
+                            className="absolute inset-0 opacity-40"
+                            style={{
+                              backgroundImage:
+                                'radial-gradient(circle at 30% 30%, rgba(255,255,255,0.6), transparent 60%)',
+                            }}
+                            aria-hidden
+                          />
+                          {chapter.Icon && (
+                            <chapter.Icon className="w-20 h-20 md:w-28 md:h-28 relative" strokeWidth={1.5} />
+                          )}
+                        </div>
+                      )}
                     </div>
                   </div>
                 );
               })}
             </div>
-
-            <p className="text-gray-500 text-sm md:text-base mt-16 md:mt-20 text-center max-w-2xl mx-auto">
-              Incluye todos los recursos: tokens de IA, creatividades, monitoreo y optimización continua.
-            </p>
           </div>
         </div>
       </section>

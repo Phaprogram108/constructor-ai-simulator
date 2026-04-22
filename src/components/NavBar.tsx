@@ -3,7 +3,7 @@
 import { useState, useEffect } from 'react';
 
 const NAV_LINKS = [
-  { label: 'Caso', href: '#caso' },
+  { label: 'Simulador', href: '#caso' },
   { label: 'Problema', href: '#problema' },
   { label: 'Solución', href: '#solucion' },
   { label: 'Equipo', href: '#equipo' },

@@ -20,12 +20,16 @@ export default function Home() {
       {/* Section 2 - Hero */}
       <section className="bg-white pt-24 pb-12 md:pt-32 md:pb-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
-            Convertimos <span className="gradient-text">consultas en ventas</span> para tu constructora
+          <p className="text-xs sm:text-sm font-semibold tracking-widest uppercase text-blue-600 mb-5">
+            Programa PHA para Constructoras Innovadoras
+          </p>
+
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+            Mejora tus <span className="gradient-text">ventas y productividad</span> en automático con IA
           </h1>
 
-          <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Nuestro sistema responde en menos de 60 segundos, califica leads, hace seguimiento y agenda reuniones 24/7 en automático.
+          <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">
+            Sistema IA responde en segundos, educa, cotiza, califica, hace seguimiento, agenda reuniones, actualiza CRM y optimiza la publicidad 24/7.
           </p>
 
           <div className="mt-12 md:mt-16 max-w-xl mx-auto">

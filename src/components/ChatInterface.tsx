@@ -25,6 +25,13 @@ export default function ChatInterface({
   const [error, setError] = useState('');
   const [weeklyLimitReached, setWeeklyLimitReached] = useState(false);
 
+  // Audio / Whisper
+  const [recState, setRecState] = useState<'idle' | 'recording' | 'transcribing'>('idle');
+  const [recSeconds, setRecSeconds] = useState(0);
+  const mediaRecorderRef = useRef<MediaRecorder | null>(null);
+  const audioChunksRef = useRef<Blob[]>([]);
+  const recTimerRef = useRef<ReturnType<typeof setInterval> | null>(null);
+
   // Debug logging
   console.log('[ChatInterface] Initialized with:', {
     sessionId,
@@ -150,6 +157,108 @@ export default function ChatInterface({
     }
   };
 
+  const pickSupportedMime = (): string => {
+    if (typeof MediaRecorder === 'undefined') return '';
+    const candidates = [
+      'audio/webm;codecs=opus',
+      'audio/webm',
+      'audio/mp4',
+      'audio/ogg;codecs=opus',
+    ];
+    return candidates.find((m) => MediaRecorder.isTypeSupported(m)) ?? '';
+  };
+
+  const stopRecTimer = () => {
+    if (recTimerRef.current) {
+      clearInterval(recTimerRef.current);
+      recTimerRef.current = null;
+    }
+  };
+
+  const startRecording = async () => {
+    setError('');
+    if (typeof navigator === 'undefined' || !navigator.mediaDevices?.getUserMedia) {
+      setError('Tu navegador no soporta grabación de audio.');
+      return;
+    }
+    try {
+      const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+      const mimeType = pickSupportedMime();
+      const recorder = mimeType
+        ? new MediaRecorder(stream, { mimeType })
+        : new MediaRecorder(stream);
+      audioChunksRef.current = [];
+      recorder.ondataavailable = (e) => {
+        if (e.data.size > 0) audioChunksRef.current.push(e.data);
+      };
+      recorder.onstop = async () => {
+        stream.getTracks().forEach((t) => t.stop());
+        stopRecTimer();
+        const blobType = recorder.mimeType || 'audio/webm';
+        const blob = new Blob(audioChunksRef.current, { type: blobType });
+        if (blob.size === 0) {
+          setRecState('idle');
+          return;
+        }
+        setRecState('transcribing');
+        try {
+          const fd = new FormData();
+          fd.append('audio', blob, 'voice.webm');
+          const res = await fetch('/api/chat/transcribe', { method: 'POST', body: fd });
+          const data = await res.json();
+          if (!res.ok) throw new Error(data.error || 'Error al transcribir');
+          const text = (data.text || '').trim();
+          if (text) {
+            setInput((prev) => (prev ? `${prev} ${text}` : text));
+            setTimeout(() => textareaRef.current?.focus(), 50);
+          } else {
+            setError('No entendí el audio, probá de nuevo.');
+          }
+        } catch (err) {
+          setError(err instanceof Error ? err.message : 'Error al transcribir');
+        } finally {
+          setRecState('idle');
+        }
+      };
+      mediaRecorderRef.current = recorder;
+      recorder.start();
+      setRecState('recording');
+      setRecSeconds(0);
+      recTimerRef.current = setInterval(() => {
+        setRecSeconds((s) => {
+          // Hard cap at 60s so a stuck recording doesn't run forever.
+          if (s >= 60) {
+            if (recorder.state === 'recording') recorder.stop();
+            return s;
+          }
+          return s + 1;
+        });
+      }, 1000);
+    } catch (err) {
+      console.error('[Mic] getUserMedia failed:', err);
+      setError('Necesitamos permiso de micrófono para grabar.');
+      setRecState('idle');
+    }
+  };
+
+  const stopRecording = () => {
+    const rec = mediaRecorderRef.current;
+    if (rec && rec.state === 'recording') rec.stop();
+  };
+
+  const handleMicClick = () => {
+    if (recState === 'idle') startRecording();
+    else if (recState === 'recording') stopRecording();
+  };
+
+  useEffect(() => {
+    return () => {
+      stopRecTimer();
+      const rec = mediaRecorderRef.current;
+      if (rec && rec.state === 'recording') rec.stop();
+    };
+  }, []);
+
   return (
     <div className="flex flex-col h-screen max-h-screen bg-white">
       {/* Header */}
@@ -252,20 +361,53 @@ export default function ChatInterface({
             </p>
           </div>
         ) : messagesRemaining > 0 ? (
-          <div className="flex gap-2">
+          <div className="flex gap-2 items-end">
             <Textarea
               ref={textareaRef}
               value={input}
               onChange={(e) => setInput(e.target.value)}
               onKeyDown={handleKeyDown}
-              placeholder="Escribí tu mensaje..."
-              disabled={isLoading}
+              placeholder={
+                recState === 'recording'
+                  ? `Grabando... ${recSeconds}s (tocá el micrófono para detener)`
+                  : recState === 'transcribing'
+                    ? 'Transcribiendo tu audio...'
+                    : 'Escribí tu mensaje o tocá el micrófono...'
+              }
+              disabled={isLoading || recState !== 'idle'}
               className="min-h-[44px] max-h-[120px] resize-none"
               rows={1}
             />
             <Button
+              type="button"
+              onClick={handleMicClick}
+              disabled={isLoading || recState === 'transcribing'}
+              size="icon"
+              variant={recState === 'recording' ? 'destructive' : 'outline'}
+              aria-label={
+                recState === 'recording' ? 'Detener grabación' : 'Grabar audio'
+              }
+              className="shrink-0 h-[44px] w-[44px]"
+            >
+              {recState === 'transcribing' ? (
+                <svg className="w-5 h-5 animate-spin" viewBox="0 0 24 24">
+                  <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
+                  <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
+                </svg>
+              ) : recState === 'recording' ? (
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="w-5 h-5">
+                  <rect x="6" y="6" width="12" height="12" rx="2" />
+                </svg>
+              ) : (
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" className="w-5 h-5">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 3a3 3 0 00-3 3v6a3 3 0 006 0V6a3 3 0 00-3-3z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M5 11v1a7 7 0 0014 0v-1M12 19v3" />
+                </svg>
+              )}
+            </Button>
+            <Button
               onClick={sendMessage}
-              disabled={!input.trim() || isLoading}
+              disabled={!input.trim() || isLoading || recState !== 'idle'}
               size="icon"
               className="shrink-0 h-[44px] w-[44px]"
             >

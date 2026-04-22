@@ -67,19 +67,16 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-10 md:mb-14">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
-              Probalo vos mismo en 60 segundos
+              Probá tu agente en segundos
             </h2>
-            <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              Ingresá el sitio web de tu constructora y generá tu agente IA al instante. Sin tarjeta. Sin registrarte.
-            </p>
           </div>
 
           <div className="grid md:grid-cols-[1fr_1.2fr] gap-10 md:gap-14 items-start max-w-5xl mx-auto">
             {/* Stepper vertical */}
             <div className="relative">
-              {/* Línea conectora */}
+              {/* Línea conectora (solo entre paso 1 y paso 3) */}
               <div
-                className="absolute left-5 md:left-6 top-2 bottom-2 w-0.5 bg-gradient-to-b from-blue-600 via-blue-500 to-blue-400"
+                className="absolute left-5 md:left-6 top-10 md:top-12 h-[calc(100%-13rem)] md:h-[calc(100%-14rem)] w-0.5 bg-gradient-to-b from-blue-600 via-blue-500 to-blue-400"
                 aria-hidden
               />
 

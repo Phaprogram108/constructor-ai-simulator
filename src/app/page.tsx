@@ -5,6 +5,8 @@ import { ReelCard } from '@/components/ReelCard';
 import FAQ from '@/components/FAQ';
 import AnimatedCounter from '@/components/AnimatedCounter';
 import BeforeAfterSlider from '@/components/BeforeAfterSlider';
+import WhatsAppMockup from '@/components/WhatsAppMockup';
+import HbrChart from '@/components/HbrChart';
 import Image from 'next/image';
 import {
   Megaphone,
@@ -31,15 +33,8 @@ export default function Home() {
             Nuestro sistema responde en menos de 60 segundos, califica leads, hace seguimiento y agenda reuniones 24/7 en automático.
           </p>
 
-          <div className="mt-12 md:mt-16 max-w-2xl mx-auto">
-            <div className="bg-gray-50 border border-gray-200 rounded-xl px-6 py-5">
-              <p className="text-gray-700 text-base leading-relaxed">
-                <span className="font-semibold">¿Sabías?</span> Si respondés en menos de 5 minutos, tenés{' '}
-                <span className="font-bold text-blue-600">21x más chances</span>{' '}
-                de calificar un lead que si tardás más de 30 minutos.{' '}
-                <span className="text-gray-400 text-sm">— Harvard Business Review</span>
-              </p>
-            </div>
+          <div className="mt-12 md:mt-16 max-w-xl mx-auto">
+            <HbrChart />
           </div>
         </div>
       </section>

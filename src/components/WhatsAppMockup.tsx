@@ -6,7 +6,7 @@ const CONVERSATION: Msg[] = [
   { from: 'lead', text: 'Hola quería saber modelos y precios.', time: '17:04' },
   {
     from: 'bot',
-    text: 'Hola! Soy Sofi de ViBert. Te acabo de enviar nuestro catálogo 2026 con todos los modelos de casas modulares de hormigón.',
+    text: 'Hola! Soy Sofi. Te acabo de enviar nuestro catálogo 2026 con todos los modelos de casas modulares de hormigón.',
     time: '17:04',
   },
   {
@@ -40,7 +40,7 @@ export default function WhatsAppMockup() {
           S
         </div>
         <div className="flex-1 min-w-0">
-          <p className="text-white text-sm font-semibold truncate">Sofi · Agente IA</p>
+          <p className="text-white text-sm font-semibold truncate">Sofi</p>
           <p className="text-emerald-400 text-xs">en línea</p>
         </div>
       </div>

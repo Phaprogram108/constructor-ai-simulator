@@ -7,7 +7,6 @@ import BeforeAfterSlider from '@/components/BeforeAfterSlider';
 import WhatsAppMockup from '@/components/WhatsAppMockup';
 import HbrChart from '@/components/HbrChart';
 import Image from 'next/image';
-import { Shield } from 'lucide-react';
 
 
 export default function Home() {
@@ -198,7 +197,7 @@ export default function Home() {
                 Cómo funciona
               </p>
               <h3 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
-                Cuatro pilares del Programa PHA
+                4 Pilares del Programa PHA
               </h3>
             </div>
 
@@ -206,10 +205,10 @@ export default function Home() {
               {[
                 {
                   number: '01',
-                  title: 'Innovador sistema conectado con CRM',
+                  title: 'Publicidad que trae compradores',
                   description:
-                    'Campañas de Meta Ads optimizadas para tu zona, audiencia y objetivo específico de venta. Segmentamos por intención de compra real, y cada clic queda trackeado de punta a punta en el CRM junto a la conversación, la cotización y el agendamiento.',
-                  visual: 'image',
+                    'Innovador sistema conectado con CRM optimiza las campañas publicitarias en Meta para atraer leads con mayor intención de compra que el promedio.',
+                  visual: 'image' as const,
                   src: '/chapters/meta-campaigns.png',
                   alt: 'Campañas de Meta Ads conectadas al CRM: PHA ASC Remarketing y Leads Calificados',
                   accent: 'bg-blue-50',
@@ -218,16 +217,16 @@ export default function Home() {
                   number: '02',
                   title: 'Agente IA que responde por vos 24/7',
                   description:
-                    'Sofía responde en menos de 60 segundos cada consulta. Conoce tu catálogo, precios y zonas, responde objeciones, califica al lead según tus criterios, envía cotizaciones y agenda reuniones. No se pierde un solo mensaje.',
-                  visual: 'whatsapp',
+                    'IA responde en menos de 60 segundos cada consulta. Conoce tu catálogo, precios y zonas, responde objeciones, califica al lead según tus criterios, envía cotizaciones y agenda reuniones. No se pierde un solo mensaje ni deja de hacer seguimiento.',
+                  visual: 'whatsapp' as const,
                   accent: 'bg-emerald-50',
                 },
                 {
                   number: '03',
                   title: 'CRM con actualización automática',
                   description:
-                    'Cada conversación queda registrada con tags de etapa, presupuesto, zona y score de calificación. Tu equipo comercial ve el pipeline en tiempo real. Cero carga manual, cero leads olvidados.',
-                  visual: 'image',
+                    'Cada conversación queda registrada con etiquetas, resumen, datos de contacto, canal, etc. El embudo de ventas se actualiza dinámicamente. Tu equipo comercial ve el pipeline en tiempo real. Cero carga manual, cero leads olvidados.',
+                  visual: 'image' as const,
                   src: '/chapters/crm-pipeline.png',
                   alt: 'Pipeline del CRM con leads organizados por etapa: lead calificado, cotización enviada, entrevista presencial, entrevista virtual',
                   accent: 'bg-amber-50',
@@ -236,66 +235,65 @@ export default function Home() {
                   number: '04',
                   title: 'Equipo humano dedicado',
                   description:
-                    'Un account manager, un AI manager, un media buyer y una diseñadora trabajando para tu constructora. Iteramos el agente, renovamos creativos y reportamos resultados semanalmente.',
-                  visual: 'icon',
-                  Icon: Shield,
-                  accent: 'bg-blue-50 text-blue-600',
+                    'Un gestor de cuenta, gestora IA, un publicista y una diseñadora senior trabajando para tu constructora. Iteramos el agente, renovamos creativos, gestionamos publicidad y reportamos resultados semanalmente.',
+                  visual: 'none' as const,
                 },
               ].map((chapter, i) => {
                 const isEven = i % 2 === 0;
+                const hasVisual = chapter.visual !== 'none';
                 return (
                   <div
                     key={chapter.number}
-                    className={`grid md:grid-cols-2 gap-8 md:gap-16 items-center ${
-                      isEven ? '' : 'md:[&>div:first-child]:order-2'
-                    }`}
+                    className={
+                      hasVisual
+                        ? `grid md:grid-cols-2 gap-8 md:gap-16 items-center ${
+                            isEven ? '' : 'md:[&>div:first-child]:order-2'
+                          }`
+                        : 'max-w-3xl mx-auto text-center'
+                    }
                   >
                     {/* Text */}
                     <div>
-                      <p className="text-6xl md:text-8xl font-bold text-gray-200 leading-none mb-4 tracking-tight">
+                      <p
+                        className={`text-6xl md:text-8xl font-bold text-gray-200 leading-none mb-4 tracking-tight ${
+                          !hasVisual ? 'mx-auto' : ''
+                        }`}
+                      >
                         {chapter.number}
                       </p>
                       <h4 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 tracking-tight">
                         {chapter.title}
                       </h4>
-                      <p className="text-gray-600 text-lg leading-relaxed">
+                      <p
+                        className={`text-gray-600 text-lg leading-relaxed ${
+                          !hasVisual ? 'max-w-2xl mx-auto' : ''
+                        }`}
+                      >
                         {chapter.description}
                       </p>
                     </div>
 
-                    {/* Visual */}
-                    <div className="flex justify-center">
-                      {chapter.visual === 'whatsapp' ? (
-                        <WhatsAppMockup />
-                      ) : chapter.visual === 'image' ? (
-                        <div className={`w-full max-w-md rounded-2xl ${chapter.accent} p-3 md:p-4 shadow-lg`}>
-                          <div className="rounded-xl overflow-hidden bg-white ring-1 ring-gray-200/60">
-                            <Image
-                              src={chapter.src!}
-                              alt={chapter.alt!}
-                              width={720}
-                              height={540}
-                              className="w-full h-auto"
-                              sizes="(max-width: 768px) 90vw, 420px"
-                            />
+                    {/* Visual (only when present) */}
+                    {hasVisual && (
+                      <div className="flex justify-center">
+                        {chapter.visual === 'whatsapp' ? (
+                          <WhatsAppMockup />
+                        ) : chapter.visual === 'image' ? (
+                          <div className={`w-full max-w-md rounded-2xl ${chapter.accent} p-3 md:p-4 shadow-lg`}>
+                            <div className="rounded-xl overflow-hidden bg-white ring-1 ring-gray-200/60">
+                              <Image
+                                src={chapter.src!}
+                                alt={chapter.alt!}
+                                width={720}
+                                height={540}
+                                className="w-full h-auto"
+                                sizes="(max-width: 768px) 90vw, 420px"
+                              />
+                            </div>
                           </div>
-                        </div>
-                      ) : (
-                        <div className={`w-full max-w-sm aspect-[4/3] rounded-2xl ${chapter.accent} flex items-center justify-center relative overflow-hidden shadow-lg`}>
-                          <div
-                            className="absolute inset-0 opacity-40"
-                            style={{
-                              backgroundImage:
-                                'radial-gradient(circle at 30% 30%, rgba(255,255,255,0.6), transparent 60%)',
-                            }}
-                            aria-hidden
-                          />
-                          {chapter.Icon && (
-                            <chapter.Icon className="w-20 h-20 md:w-28 md:h-28 relative" strokeWidth={1.5} />
-                          )}
-                        </div>
-                      )}
-                    </div>
+                        ) : null}
+                      </div>
+                    )}
                   </div>
                 );
               })}

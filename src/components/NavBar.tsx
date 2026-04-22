@@ -6,7 +6,8 @@ const NAV_LINKS = [
   { label: 'Simulador', href: '#caso' },
   { label: 'Problema', href: '#problema' },
   { label: 'Solución', href: '#solucion' },
-  { label: 'Equipo', href: '#equipo' },
+  { label: 'Equipo', href: '#sobre-mi' },
+  { label: 'Contacto', href: '#califica' },
   { label: 'FAQ', href: '#faq' },
 ];
 

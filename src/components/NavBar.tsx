@@ -42,23 +42,19 @@ export default function NavBar() {
         visible ? 'translate-y-0' : '-translate-y-full'
       }`}
     >
-      <div className="max-w-5xl mx-auto px-4 h-16 flex items-center justify-center">
-        <div className="hidden md:flex items-center gap-8">
+      <div className="max-w-5xl mx-auto px-4 h-14 md:h-16 flex items-center justify-center overflow-x-auto">
+        <div className="flex items-center gap-4 sm:gap-6 md:gap-8 whitespace-nowrap">
           {NAV_LINKS.map((link) => (
             <a
               key={link.href}
               href={link.href}
               onClick={(e) => handleAnchorClick(e, link.href)}
-              className="text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
+              className="text-xs sm:text-sm font-medium text-gray-600 hover:text-gray-900 transition-colors"
             >
               {link.label}
             </a>
           ))}
         </div>
-
-        <a href="#" className="md:hidden text-lg font-bold text-gray-900">
-          Programa PHA
-        </a>
       </div>
     </nav>
   );

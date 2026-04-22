@@ -420,15 +420,8 @@ export default function Home() {
             No comprás un software. Sumás un equipo de 4 personas que implementa el sistema publicitario, monitoriza la IA y crea automatizaciones para tu constructora.
           </p>
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {[
-              {
-                name: 'Joaquín González',
-                role: 'Account Manager',
-                desc: 'Especialista en automatización de ventas con IA. Partner Oficial de Meta, con experiencia en escalar negocios de alto volumen.',
-                photo: '/team/joaquin.png',
-                linkedin: 'https://www.linkedin.com/in/joaquingb/',
-              },
               {
                 name: 'Brenda Pastorino',
                 role: 'AI Agent Manager',

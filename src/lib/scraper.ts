@@ -67,9 +67,52 @@ async function scrollToLoadContent(page: Page): Promise<void> {
   });
 }
 
+// Hard timeout para evitar que la generación del agente bloquee al usuario
+// más de 2 minutos. Si se excede, devolvemos lo que haya conseguido
+// basicFetchScrape como último recurso.
+const SCRAPE_HARD_TIMEOUT_MS = 120_000;
+
 export async function scrapeWebsite(url: string): Promise<ScrapedContent> {
   console.log('[Scraper] Starting scrape for:', url);
 
+  const timeoutPromise = new Promise<ScrapedContent>((_, reject) =>
+    setTimeout(
+      () => reject(new Error(`Scrape hard timeout (${SCRAPE_HARD_TIMEOUT_MS}ms)`)),
+      SCRAPE_HARD_TIMEOUT_MS,
+    ),
+  );
+
+  try {
+    return await Promise.race([scrapeWebsiteInner(url), timeoutPromise]);
+  } catch (err) {
+    console.warn('[Scraper] Hard timeout or fatal error, using basic fetch:', err);
+    try {
+      return await basicFetchScrape(url);
+    } catch (fallbackErr) {
+      console.error('[Scraper] Basic fetch also failed:', fallbackErr);
+      return {
+        title: SCRAPING_FAILED_MARKER,
+        description: '',
+        products: [],
+        services: [],
+        socialLinks: {},
+        contactInfo: '',
+        rawText: '',
+        profile: {
+          identity: '',
+          offering: '',
+          differentiators: '',
+          terminology: {
+            productsLabel: 'productos',
+            processLabel: 'proceso',
+          },
+        },
+      };
+    }
+  }
+}
+
+async function scrapeWebsiteInner(url: string): Promise<ScrapedContent> {
   let result: ScrapedContent | null = null;
 
   // 1. Intentar con Firecrawl primero (mejor para SPAs)

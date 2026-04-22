@@ -3,8 +3,7 @@ import Anthropic from '@anthropic-ai/sdk';
 import { chromium, Browser, Page } from 'playwright';
 import { ScrapedContent } from '@/types';
 import { scrapeWithFirecrawl } from './firecrawl';
-import { scrapeWithVision, needsVisionScraping, VisionScrapedContent } from './vision-scraper';
-import { exploreLinktree } from './linktree-explorer';
+import type { VisionScrapedContent } from './vision-scraper';
 
 // Inicialización lazy para evitar errores durante el build
 let anthropicInstance: Anthropic | null = null;
@@ -104,54 +103,19 @@ export async function scrapeWebsite(url: string): Promise<ScrapedContent> {
     result = await basicFetchScrape(url);
   }
 
-  // 4. Vision fallback: si hay pocos productos, intentar con Claude Vision
-  const productsCount = result.products.length;
-  if (needsVisionScraping(url, productsCount)) {
-    console.log(`[Scraper] Pocos productos extraídos (${productsCount}), intentando con Vision...`);
-
-    try {
-      const visionResult = await scrapeWithVision(url);
-      result = mergeVisionResults(result, visionResult);
-    } catch (visionError) {
-      console.error('[Scraper] Vision fallback failed:', visionError);
-      // Continuar con el resultado original
-    }
-  }
-
-  // 5. Linktree exploration: si encontramos linktree, explorarlo
-  if (result.socialLinks?.linktree) {
-    console.log(`[Scraper] Encontrado Linktree: ${result.socialLinks.linktree}, explorando...`);
-
-    try {
-      const linktreeResult = await exploreLinktree(result.socialLinks.linktree);
-
-      // Actualizar WhatsApp si encontramos uno valido
-      if (linktreeResult.whatsapp && !result.contactInfo.includes('WhatsApp')) {
-        const currentContact = result.contactInfo;
-        result.contactInfo = currentContact
-          ? `${currentContact} | WhatsApp: ${linktreeResult.whatsapp}`
-          : `WhatsApp: ${linktreeResult.whatsapp}`;
-        console.log(`[Scraper] WhatsApp de Linktree: ${linktreeResult.whatsapp} (${linktreeResult.whatsappCountry})`);
-      }
-
-      // Agregar URLs de catalogos al rawText
-      if (linktreeResult.catalogs.length > 0) {
-        result.rawText += '\n\n--- CATALOGOS ENCONTRADOS EN LINKTREE ---\n';
-        result.rawText += linktreeResult.catalogs.join('\n');
-      }
-
-    } catch (linktreeError) {
-      console.error('[Scraper] Error explorando Linktree:', linktreeError);
-    }
-  }
+  // Vision fallback y Linktree exploration se movieron al flujo on-demand
+  // del chat (/api/chat/research). Los dejamos fuera de la generación inicial
+  // porque suman 30-80s y rara vez aportan valor crítico para el primer turno.
 
   return result;
 }
 
 /**
- * Mergea resultados de Vision con los existentes
+ * Mergea resultados de Vision con los existentes.
+ * Exportada porque el flujo de research on-demand (/api/chat/research)
+ * la sigue usando para fusionar información extra cuando aplica.
  */
-function mergeVisionResults(
+export function mergeVisionResults(
   original: ScrapedContent,
   vision: VisionScrapedContent
 ): ScrapedContent {

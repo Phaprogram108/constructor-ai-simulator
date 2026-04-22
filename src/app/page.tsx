@@ -308,23 +308,20 @@ export default function Home() {
           <div className="grid md:grid-cols-2 gap-10 md:gap-12 items-center">
             {/* Texto */}
             <div>
-              <p className="text-xs sm:text-sm font-semibold tracking-widest uppercase text-blue-600 mb-4">
-                ¿Por qué escucharme a mí?
-              </p>
               <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-3 tracking-tight">
-                Joaquín González
+                Joaquin Gonzalez
               </h2>
               <p className="text-lg md:text-xl font-semibold text-slate-700 mb-8">
-                Founder de PHA · Publicista · Meta Business Partner
+                Fundador de PHA · Publicista · Partner Oficial de Meta
               </p>
 
               <div className="space-y-3 mb-8">
                 {[
-                  '9 años invirtiendo en publicidad digital',
-                  'Founder de South Media LLC (USA, 2020 - hoy)',
+                  '9 años gestionando publicidad en Meta',
+                  'Dueño agencia South Media LLC (USA, 2020 - hoy)',
                   '+$10M USD generados en ventas para clientes',
                   'Lic. en Administración (UNICEN) — egresado con honores y mejor GPA en 2017',
-                  'Manager global publicitario en Sumeru (USA, 2018-2020)',
+                  'Manager publicitario en Sumeru (USA, 2018-2020)',
                   'Formación en Ingeniería en Sistemas y ex-docente de Marketing',
                 ].map((item) => (
                   <div key={item} className="flex items-start gap-3">
@@ -353,7 +350,7 @@ export default function Home() {
                 <div className="relative w-full h-full rounded-[152px_152px_14px_14px] md:rounded-[192px_192px_18px_18px] overflow-hidden">
                   <Image
                     src="/team/joaquin.png"
-                    alt="Joaquín González - Founder de PHA"
+                    alt="Joaquin Gonzalez - Fundador de PHA"
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 256px, 320px"
@@ -366,15 +363,8 @@ export default function Home() {
       </section>
 
       {/* Section 9 - Equipo */}
-      <section id="equipo" className="py-14 md:py-24 px-4 bg-white">
+      <section id="equipo" className="py-8 md:py-12 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
-            Tu equipo dedicado
-          </h2>
-          <p className="text-gray-600 text-center mb-12 text-lg max-w-2xl mx-auto">
-            No comprás un software. Sumás un equipo de 4 personas que implementa el sistema publicitario, monitoriza la IA y crea automatizaciones para tu constructora.
-          </p>
-
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {[
               {
@@ -426,19 +416,6 @@ export default function Home() {
             ))}
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-3 mt-12 max-w-4xl mx-auto">
-            {[
-              '+9 años en publicidad digital',
-              '+$10M USD en ventas generadas',
-              'Partners de Meta',
-              'Expertos en automatización con IA',
-              'Low fee + comisión',
-            ].map((item) => (
-              <span key={item} className="bg-gray-50 border border-gray-200 text-gray-600 text-sm px-4 py-2 rounded-full">
-                {item}
-              </span>
-            ))}
-          </div>
         </div>
       </section>
 

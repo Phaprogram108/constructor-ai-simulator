@@ -102,9 +102,12 @@ export async function appendLeadRow(lead: LeadPayload): Promise<void> {
   ];
 
   const range = encodeURIComponent(LEADS_RANGE);
+  // valueInputOption=RAW prevents Sheets from interpreting cell values that
+  // start with `+`, `-`, `=` or `@` as formulas. WhatsApp numbers come in
+  // like "+5491100000000" and would otherwise render as "#ERROR!".
   const url =
     `https://sheets.googleapis.com/v4/spreadsheets/${spreadsheetId}/values/${range}:append` +
-    `?valueInputOption=USER_ENTERED&insertDataOption=INSERT_ROWS`;
+    `?valueInputOption=RAW&insertDataOption=INSERT_ROWS`;
 
   const res = await fetch(url, {
     method: 'POST',

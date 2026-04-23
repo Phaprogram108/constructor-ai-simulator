@@ -100,9 +100,10 @@ async function fetchLeads() {
 
 async function appendBatch(token, rows) {
   const range = encodeURIComponent(RANGE);
+  // RAW so WhatsApp numbers starting with "+" don't render as #ERROR!
   const url =
     `https://sheets.googleapis.com/v4/spreadsheets/${SPREADSHEET_ID}/values/${range}:append` +
-    `?valueInputOption=USER_ENTERED&insertDataOption=INSERT_ROWS`;
+    `?valueInputOption=RAW&insertDataOption=INSERT_ROWS`;
   const res = await fetch(url, {
     method: 'POST',
     headers: { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' },

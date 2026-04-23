@@ -1,20 +1,15 @@
 import { NextRequest, NextResponse } from 'next/server';
+import { appendLeadRow, LeadPayload } from '@/lib/google-sheets';
 
 const UPSTASH_URL = process.env.UPSTASH_REDIS_REST_URL;
 const UPSTASH_TOKEN = process.env.UPSTASH_REDIS_REST_TOKEN;
-const SHEETS_WEBHOOK_URL = process.env.SHEETS_WEBHOOK_URL;
 
-// Fire-and-forget POST to the Google Apps Script webhook that appends the
-// lead to the "leads AIAG" tab. We never block the response on this — if
-// the webhook fails we still have the lead in Redis and can backfill later.
-function dispatchToSheets(payload: Record<string, unknown>): void {
-  if (!SHEETS_WEBHOOK_URL) return;
-  fetch(SHEETS_WEBHOOK_URL, {
-    method: 'POST',
-    headers: { 'Content-Type': 'application/json' },
-    body: JSON.stringify(payload),
-  }).catch((err) => {
-    console.warn('[Leads] Sheets webhook failed:', err);
+// Fire-and-forget Sheets append. Redis is the source of truth, so failures
+// here are logged but never block the lead capture response.
+function dispatchToSheets(payload: LeadPayload): void {
+  if (!process.env.GOOGLE_SERVICE_ACCOUNT_JSON) return;
+  appendLeadRow(payload).catch((err) => {
+    console.warn('[Leads] Sheets append failed:', err);
   });
 }
 

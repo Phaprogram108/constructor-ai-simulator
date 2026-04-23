@@ -2,6 +2,21 @@ import { NextRequest, NextResponse } from 'next/server';
 
 const UPSTASH_URL = process.env.UPSTASH_REDIS_REST_URL;
 const UPSTASH_TOKEN = process.env.UPSTASH_REDIS_REST_TOKEN;
+const SHEETS_WEBHOOK_URL = process.env.SHEETS_WEBHOOK_URL;
+
+// Fire-and-forget POST to the Google Apps Script webhook that appends the
+// lead to the "leads AIAG" tab. We never block the response on this — if
+// the webhook fails we still have the lead in Redis and can backfill later.
+function dispatchToSheets(payload: Record<string, unknown>): void {
+  if (!SHEETS_WEBHOOK_URL) return;
+  fetch(SHEETS_WEBHOOK_URL, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(payload),
+  }).catch((err) => {
+    console.warn('[Leads] Sheets webhook failed:', err);
+  });
+}
 
 export async function POST(request: NextRequest) {
   try {
@@ -20,7 +35,8 @@ export async function POST(request: NextRequest) {
     }
 
     const leadId = `lead:${Date.now()}-${Math.random().toString(36).slice(2, 8)}`;
-    const leadData = JSON.stringify({ ...body, type: type || 'simulator' });
+    const leadPayload = { ...body, type: type || 'simulator', id: leadId };
+    const leadData = JSON.stringify(leadPayload);
 
     if (UPSTASH_URL && UPSTASH_TOKEN) {
       // Store in Upstash Redis with no expiry
@@ -35,6 +51,9 @@ export async function POST(request: NextRequest) {
     } else {
       console.log('[Leads] No Redis configured, logging lead:', leadData);
     }
+
+    // Mirror to Google Sheets for Prometeo / WhatsApp outreach
+    dispatchToSheets(leadPayload);
 
     return NextResponse.json({ ok: true, id: leadId });
   } catch (error) {

@@ -4,13 +4,18 @@ import { appendLeadRow, LeadPayload } from '@/lib/google-sheets';
 const UPSTASH_URL = process.env.UPSTASH_REDIS_REST_URL;
 const UPSTASH_TOKEN = process.env.UPSTASH_REDIS_REST_TOKEN;
 
-// Fire-and-forget Sheets append. Redis is the source of truth, so failures
-// here are logged but never block the lead capture response.
-function dispatchToSheets(payload: LeadPayload): void {
+// Sheets append. Originally fire-and-forget, but in Vercel's Node runtime
+// the serverless function can terminate before an un-awaited promise
+// resolves — so leads were arriving in Redis but never in the Sheet. We
+// now await it, wrapped in try/catch so any Sheets failure doesn't break
+// the lead capture response.
+async function dispatchToSheets(payload: LeadPayload): Promise<void> {
   if (!process.env.GOOGLE_SERVICE_ACCOUNT_JSON) return;
-  appendLeadRow(payload).catch((err) => {
+  try {
+    await appendLeadRow(payload);
+  } catch (err) {
     console.warn('[Leads] Sheets append failed:', err);
-  });
+  }
 }
 
 export async function POST(request: NextRequest) {
@@ -47,8 +52,9 @@ export async function POST(request: NextRequest) {
       console.log('[Leads] No Redis configured, logging lead:', leadData);
     }
 
-    // Mirror to Google Sheets for Prometeo / WhatsApp outreach
-    dispatchToSheets(leadPayload);
+    // Mirror to Google Sheets for Prometeo / WhatsApp outreach.
+    // Awaited so the serverless function doesn't kill the request mid-flight.
+    await dispatchToSheets(leadPayload);
 
     return NextResponse.json({ ok: true, id: leadId });
   } catch (error) {

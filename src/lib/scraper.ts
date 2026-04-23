@@ -169,10 +169,42 @@ const SCRAPE_HARD_TIMEOUT_MS = 120_000;
  * in run-1/run-2 that extracted.companyName (coming from GPT extraction)
  * can arrive as a joined slug like "TuCasaAlValor" that never passes through
  * cleanCompanyName, so we apply the same prettifier universally here.
+ *
+ * We also guard against hallucinated / SEO-spam titles. Real construction
+ * brand names almost never exceed ~50 characters. During the run-4 test we
+ * saw conterhouse.com.ar return a Swedish casino-spam headline ("AI och
+ * maskininlärning revolutionerar svenska nätcasinon för erfarna spelare")
+ * because the site had injected SEO spam. When that happens we reject the
+ * AI-extracted title and fall back to the domain — ugly but safe.
  */
-function applyTitlePostProcessing(content: ScrapedContent): ScrapedContent {
+const TITLE_SPAM_KEYWORDS = [
+  'casino', 'casinos', 'betting', 'bookmaker', 'gambling', 'bitcoin',
+  'crypto', 'viagra', 'porn', 'xxx', 'escort',
+  // Non-Spanish stop words that signal a wrong-language scrape
+  'och', 'för', 'erfarna', 'svenska', 'maskin',
+];
+const TITLE_MAX_LEN = 60;
+
+function isSuspectTitle(title: string): boolean {
+  if (!title) return true;
+  if (title.length > TITLE_MAX_LEN) return true;
+  const lower = title.toLowerCase();
+  return TITLE_SPAM_KEYWORDS.some((kw) => lower.includes(kw));
+}
+
+function applyTitlePostProcessing(content: ScrapedContent, url: string): ScrapedContent {
   if (!content || content.title === SCRAPING_FAILED_MARKER) return content;
-  const pretty = prettifyBrandName(content.title);
+
+  let title = content.title;
+
+  if (isSuspectTitle(title)) {
+    console.warn(
+      `[Scraper] Suspect title rejected: "${title.slice(0, 100)}" — falling back to domain name`,
+    );
+    title = extractNameFromUrl(url);
+  }
+
+  const pretty = prettifyBrandName(title);
   if (pretty && pretty !== content.title) {
     console.log(`[Scraper] Title cleaned: "${content.title}" -> "${pretty}"`);
     return { ...content, title: pretty };
@@ -192,11 +224,21 @@ export async function scrapeWebsite(url: string): Promise<ScrapedContent> {
 
   try {
     const raw = await Promise.race([scrapeWebsiteInner(url), timeoutPromise]);
-    return applyTitlePostProcessing(raw);
+    return applyTitlePostProcessing(raw, url);
   } catch (err) {
     console.warn('[Scraper] Hard timeout or fatal error, using basic fetch:', err);
     try {
-      return applyTitlePostProcessing(await basicFetchScrape(url));
+      // Give the fallback at most 20s — we already blew through the main
+      // timeout, so we can't afford another minute or more of Anthropic
+      // waiting (run-4 saw one URL total out at 7.5 min because this path
+      // had no timeout at all).
+      const fallbackTimeout = new Promise<ScrapedContent>((_, reject) =>
+        setTimeout(() => reject(new Error('basicFetch fallback timeout (20s)')), 20_000),
+      );
+      return applyTitlePostProcessing(
+        await Promise.race([basicFetchScrape(url), fallbackTimeout]),
+        url,
+      );
     } catch (fallbackErr) {
       console.error('[Scraper] Basic fetch also failed:', fallbackErr);
       return {

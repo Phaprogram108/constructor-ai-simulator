@@ -163,6 +163,23 @@ async function scrollToLoadContent(page: Page): Promise<void> {
 // basicFetchScrape como último recurso.
 const SCRAPE_HARD_TIMEOUT_MS = 120_000;
 
+/**
+ * Runs at the very end of every scrape path to clean up the company title
+ * before it flows into the system prompt and the welcome message. We learned
+ * in run-1/run-2 that extracted.companyName (coming from GPT extraction)
+ * can arrive as a joined slug like "TuCasaAlValor" that never passes through
+ * cleanCompanyName, so we apply the same prettifier universally here.
+ */
+function applyTitlePostProcessing(content: ScrapedContent): ScrapedContent {
+  if (!content || content.title === SCRAPING_FAILED_MARKER) return content;
+  const pretty = prettifyBrandName(content.title);
+  if (pretty && pretty !== content.title) {
+    console.log(`[Scraper] Title cleaned: "${content.title}" -> "${pretty}"`);
+    return { ...content, title: pretty };
+  }
+  return content;
+}
+
 export async function scrapeWebsite(url: string): Promise<ScrapedContent> {
   console.log('[Scraper] Starting scrape for:', url);
 
@@ -174,11 +191,12 @@ export async function scrapeWebsite(url: string): Promise<ScrapedContent> {
   );
 
   try {
-    return await Promise.race([scrapeWebsiteInner(url), timeoutPromise]);
+    const raw = await Promise.race([scrapeWebsiteInner(url), timeoutPromise]);
+    return applyTitlePostProcessing(raw);
   } catch (err) {
     console.warn('[Scraper] Hard timeout or fatal error, using basic fetch:', err);
     try {
-      return await basicFetchScrape(url);
+      return applyTitlePostProcessing(await basicFetchScrape(url));
     } catch (fallbackErr) {
       console.error('[Scraper] Basic fetch also failed:', fallbackErr);
       return {

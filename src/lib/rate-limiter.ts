@@ -1,9 +1,11 @@
 import { NextResponse } from 'next/server';
 import crypto from 'crypto';
 
+// TEMP-TEST-OVERRIDE-v2: limits raised again for the pre-Expo test
+// iteration round. REVERT once we stop iterating (tracked in chat).
 export const RATE_LIMITS = {
-  create: { windowMs: 60_000, max: 5 },
-  chat: { windowMs: 60_000, max: 15 },
+  create: { windowMs: 60_000, max: 50 },
+  chat: { windowMs: 60_000, max: 100 },
   research: { windowMs: 60_000, max: 5 },
   session: { windowMs: 60 * 60_000, max: 30 }, // 30 reads per hour
 } as const;
@@ -11,13 +13,13 @@ export const RATE_LIMITS = {
 type Bucket = keyof typeof RATE_LIMITS;
 
 const DAILY_LIMITS: Record<Bucket, number> = {
-  create: 5,
-  chat: 300,
+  create: 200,
+  chat: 1000,
   research: 50,
   session: 200, // generous daily cap
 };
 
-const WEEKLY_CHAT_LIMIT = 20;
+const WEEKLY_CHAT_LIMIT = 500;
 const WEEKLY_WINDOW_MS = 7 * 24 * 60 * 60_000; // 7 days
 
 const STRIKES_BEFORE_BAN = 3;

@@ -20,16 +20,107 @@ function getAnthropic(): Anthropic {
 // Marcador especial cuando el scraping falla - NO usar como nombre real
 export const SCRAPING_FAILED_MARKER = '__SCRAPING_FAILED__';
 
+/**
+ * Returns true when the scraper technically succeeded (didn't throw) but
+ * extracted so little content that the generated agent would be a hollow
+ * "consult by WhatsApp" shell. We detected this on habitatypaisaje.com.ar
+ * during E2E testing — the scrape returned in 8s with 0 products and
+ * barely any raw text, and the resulting agent could not answer a single
+ * real question.
+ */
+export function isScrapeEmpty(content: ScrapedContent): boolean {
+  if (!content || content.title === SCRAPING_FAILED_MARKER) return true;
+  const productsCount = content.products?.length ?? 0;
+  const servicesCount = content.services?.length ?? 0;
+  const rawTextLen = content.rawText?.length ?? 0;
+  const descriptionLen = content.description?.length ?? 0;
+  // Require at least one of: some products, some services, or meaningful
+  // descriptive text. The 500-char threshold on rawText is a heuristic
+  // tuned from real scrapes — valid sites come back with 5k-15k chars.
+  if (productsCount > 0) return false;
+  if (servicesCount > 0) return false;
+  if (rawTextLen >= 500) return false;
+  if (descriptionLen >= 80) return false;
+  return true;
+}
+
 // Helper: extraer nombre de empresa de la URL como último fallback
 function extractNameFromUrl(url: string): string {
   try {
     const urlObj = new URL(url);
     const domain = urlObj.hostname.replace('www.', '');
     const namePart = domain.split('.')[0];
-    return namePart.charAt(0).toUpperCase() + namePart.slice(1);
+    return prettifyBrandName(namePart);
   } catch {
     return 'Empresa';
   }
+}
+
+/**
+ * Turn a raw brand string (slug, camelCase, ALLCAPS) into a human-readable
+ * brand name. Handles three common patterns seen in the wild:
+ *   - camelCase / PascalCase → "TuCasaAlValor" → "Tu Casa Al Valor"
+ *   - ALLCAPS              → "ECOSAN S.A" is left alone (acronyms OK)
+ *   - lowercase slug w/ Spanish connector → "habitatypaisaje" → "Habitat y Paisaje"
+ *
+ * The goal is "good enough" readability — never guess too hard. If nothing
+ * obvious matches, we just title-case the whole thing.
+ */
+export function prettifyBrandName(raw: string): string {
+  if (!raw) return '';
+
+  const trimmed = raw.trim();
+  // Already has spaces or looks acronym-y — leave alone, only title-case if
+  // the caller explicitly asks (acronyms like ECOSAN S.A must survive).
+  if (/\s/.test(trimmed)) return trimmed;
+
+  // camelCase / PascalCase — insert space on lower→upper boundaries.
+  if (/[a-z][A-Z]/.test(trimmed)) {
+    return trimmed
+      .replace(/([a-z])([A-Z])/g, '$1 $2')
+      .split(/\s+/)
+      .map((w) => w.charAt(0).toUpperCase() + w.slice(1))
+      .join(' ');
+  }
+
+  // All lowercase (typical slug from domain). Try to split on common Spanish
+  // connectors when they clearly sit in the middle of the string and are
+  // flanked by letters — this is best-effort, not perfect.
+  if (trimmed === trimmed.toLowerCase() && trimmed.length >= 8) {
+    // Prefer longer connectors first to avoid "de" matching inside "deposito".
+    const connectors = ['ypaisaje', 'ydesarrollo', 'yarquitectura', 'yasociados', 'yconstruccion', 'yconsulting', 'ydiseno', 'yobras'];
+    for (const suffix of connectors) {
+      if (trimmed.endsWith(suffix) && trimmed.length > suffix.length) {
+        const stem = trimmed.slice(0, -suffix.length);
+        const rest = suffix.slice(1); // drop the leading "y"
+        return titleCase(`${stem} y ${rest}`);
+      }
+    }
+    // Generic middle-of-string "y" connector (habitatypaisaje).
+    // Require the stem and the rest to each be >= 4 chars to avoid weird splits.
+    const yMatch = trimmed.match(/^([a-z]{4,})y([a-z]{4,})$/);
+    if (yMatch) {
+      return titleCase(`${yMatch[1]} y ${yMatch[2]}`);
+    }
+  }
+
+  // Fallback: just capitalize the first letter, leave the rest as-is.
+  return trimmed.charAt(0).toUpperCase() + trimmed.slice(1);
+}
+
+// Spanish connectors that should stay lowercase in brand names, unless
+// they are the first word of the name.
+const LOWERCASE_CONNECTORS = new Set(['y', 'e', 'de', 'del', 'la', 'el', 'los', 'las', 'al']);
+
+function titleCase(s: string): string {
+  return s
+    .split(/\s+/)
+    .map((w, i) => {
+      if (w.length === 0) return w;
+      if (i > 0 && LOWERCASE_CONNECTORS.has(w.toLowerCase())) return w.toLowerCase();
+      return w.charAt(0).toUpperCase() + w.slice(1).toLowerCase();
+    })
+    .join(' ');
 }
 
 // Keywords que indican páginas con modelos/productos
@@ -857,6 +948,12 @@ function cleanCompanyName(title: string): string {
   }
 
   cleaned = cleaned.replace(/[<>]/g, '').slice(0, 100);
+
+  // Final pass: if what we ended up with is a single squished token
+  // (camelCase or joined lowercase), try to make it readable.
+  if (cleaned && !/\s/.test(cleaned) && cleaned.length >= 8) {
+    return prettifyBrandName(cleaned);
+  }
 
   return cleaned;
 }

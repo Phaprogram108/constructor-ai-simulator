@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { scrapeWebsite, SCRAPING_FAILED_MARKER } from '@/lib/scraper';
+import { scrapeWebsite, SCRAPING_FAILED_MARKER, isScrapeEmpty } from '@/lib/scraper';
 import { analyzePdfWithVision } from '@/lib/pdf-extractor';
 import { generateSystemPromptWithCatalog, getWelcomeMessage } from '@/lib/prompt-generator';
 import { createSession, addMessage } from '@/lib/session-manager';
@@ -89,6 +89,25 @@ export async function POST(request: NextRequest) {
           code: 'SCRAPING_FAILED'
         },
         { status: 422 }
+      );
+    }
+
+    // Scrape didn't hard-fail but came back almost empty — refuse to build
+    // a hollow agent. See create-stream/route.ts for the same guard.
+    if (isScrapeEmpty(scrapedContent)) {
+      console.warn('[Create] Scrape came back empty:', {
+        url: websiteUrl,
+        products: scrapedContent.products?.length ?? 0,
+        services: scrapedContent.services?.length ?? 0,
+        rawTextLen: scrapedContent.rawText?.length ?? 0,
+      });
+      return NextResponse.json(
+        {
+          error:
+            'No pudimos extraer información del sitio. Puede que use una tecnología que no soportamos todavía, o que el contenido cargue sólo para usuarios logueados. Probá con otra URL o escribinos para ayudarte.',
+          code: 'SCRAPING_EMPTY',
+        },
+        { status: 422 },
       );
     }
 

@@ -1,5 +1,5 @@
 import { NextRequest } from 'next/server';
-import { scrapeWebsite, SCRAPING_FAILED_MARKER } from '@/lib/scraper';
+import { scrapeWebsite, SCRAPING_FAILED_MARKER, isScrapeEmpty } from '@/lib/scraper';
 import { analyzePdfWithVision } from '@/lib/pdf-extractor';
 import { generateSystemPromptWithCatalog, getWelcomeMessage } from '@/lib/prompt-generator';
 import { createSession, addMessage } from '@/lib/session-manager';
@@ -111,6 +111,28 @@ export async function POST(request: NextRequest) {
             error:
               'No pudimos procesar este sitio web. Verificá que la URL sea correcta y que el sitio esté funcionando.',
             code: 'SCRAPING_FAILED',
+          });
+          controller.close();
+          return;
+        }
+
+        // Even when the scrape didn't hard-fail it can come back nearly
+        // empty (JS-heavy SPAs we couldn't render, bot-protected sites,
+        // near-empty landing pages). Catch that here — generating an agent
+        // with no product/service info produces a useless "consultá por
+        // WhatsApp" shell. Fail fast instead.
+        if (isScrapeEmpty(scrapedContent)) {
+          console.warn('[CreateStream] Scrape came back empty:', {
+            url: websiteUrl,
+            products: scrapedContent.products?.length ?? 0,
+            services: scrapedContent.services?.length ?? 0,
+            rawTextLen: scrapedContent.rawText?.length ?? 0,
+          });
+          emit({
+            type: 'error',
+            error:
+              'No pudimos extraer información del sitio. Puede que use una tecnología que no soportamos todavía, o que el contenido cargue sólo para usuarios logueados. Probá con otra URL o escribinos para ayudarte.',
+            code: 'SCRAPING_EMPTY',
           });
           controller.close();
           return;

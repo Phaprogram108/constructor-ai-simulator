@@ -50,6 +50,7 @@ export default function Home() {
               controls
               preload="metadata"
               playsInline
+              poster="/vsl-poster.jpg"
               src="https://twj5furi98dlpvox.public.blob.vercel-storage.com/Joa%20VSL%20Vid%201%20%281%29.mp4"
             >
               Tu navegador no soporta reproducción de video.

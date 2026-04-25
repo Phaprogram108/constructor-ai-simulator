@@ -2,14 +2,11 @@ import SimulatorForm from '@/components/SimulatorForm';
 import QualificationForm from '@/components/QualificationForm';
 import NavBar from '@/components/NavBar';
 import { ReelCard } from '@/components/ReelCard';
+import FAQ from '@/components/FAQ';
+import BeforeAfterSlider from '@/components/BeforeAfterSlider';
+import WhatsAppMockup from '@/components/WhatsAppMockup';
+import HbrChart from '@/components/HbrChart';
 import Image from 'next/image';
-import {
-  AlertCircle,
-  Megaphone,
-  Bot,
-  LayoutDashboard,
-  Shield,
-} from 'lucide-react';
 
 
 export default function Home() {
@@ -21,122 +18,157 @@ export default function Home() {
       {/* Section 2 - Hero */}
       <section className="bg-white pt-24 pb-12 md:pt-32 md:pb-20 px-4">
         <div className="max-w-4xl mx-auto text-center">
-          <h1 className="text-5xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
-            Convertimos <span className="gradient-text">consultas en ventas</span> para tu constructora
+          <p className="text-sm sm:text-base md:text-lg font-semibold tracking-widest uppercase text-blue-600 mb-6">
+            Programa PHA para Constructoras Innovadoras
+          </p>
+
+          <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
+            Mejora tus <span className="gradient-text">ventas y productividad</span> en automático con IA
           </h1>
 
-          <p className="text-xl text-gray-600 mb-10 max-w-2xl mx-auto leading-relaxed">
-            Nuestro sistema responde en menos de 60 segundos, califica leads, hace seguimiento y agenda reuniones 24/7 en automático.
+          <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">
+            Sistema IA responde en segundos, educa, cotiza, califica, hace seguimiento, agenda reuniones, actualiza CRM y optimiza la publicidad 24/7.
           </p>
 
-          <div className="mt-12 md:mt-16 max-w-2xl mx-auto">
-            <div className="bg-gray-50 border border-gray-200 rounded-xl px-6 py-5">
-              <p className="text-gray-700 text-base leading-relaxed">
-                <span className="font-semibold">¿Sabías?</span> Si respondés en menos de 5 minutos, tenés{' '}
-                <span className="font-bold text-blue-600">21x más chances</span>{' '}
-                de calificar un lead que si tardás más de 30 minutos.{' '}
-                <span className="text-gray-400 text-sm">— Harvard Business Review</span>
+          <div className="mt-12 md:mt-16 max-w-xl mx-auto">
+            <HbrChart />
+          </div>
+        </div>
+      </section>
+
+      {/* Section 2.5 - Pre-Simulator VSL */}
+      <section id="caso" className="py-14 md:py-20 px-4 bg-gray-50 border-t border-gray-100">
+        <div className="max-w-4xl mx-auto text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-10 tracking-tight">
+            Antes de probar tu agente gratis, mirá cómo una constructora modular genera un retorno publicitario del 7.500% con IA
+          </h2>
+
+          {/* VSL Player */}
+          <div className="max-w-3xl mx-auto bg-slate-900 rounded-2xl overflow-hidden shadow-2xl aspect-video">
+            <video
+              className="w-full h-full"
+              controls
+              preload="metadata"
+              playsInline
+              poster="/vsl-poster.jpg"
+              src="https://twj5furi98dlpvox.public.blob.vercel-storage.com/Joa%20VSL%20Vid%201%20%281%29.mp4"
+            >
+              Tu navegador no soporta reproducción de video.
+            </video>
+          </div>
+        </div>
+      </section>
+
+      {/* Section 3 - Simulator (stepper + form side by side) */}
+      <section id="simulador" className="py-12 md:py-20 px-4 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="text-center mb-10 md:mb-14">
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4 tracking-tight">
+              Probá tu agente en segundos
+            </h2>
+          </div>
+
+          <div className="grid md:grid-cols-[1fr_1.2fr] gap-10 md:gap-14 items-start max-w-5xl mx-auto">
+            {/* Stepper vertical */}
+            <div>
+              <div>
+                {[
+                  {
+                    n: '1',
+                    title: 'Ingresá tu web',
+                    desc: 'Extraemos en segundos los datos clave de tu constructora: catálogo, zonas, precios y tono.',
+                  },
+                  {
+                    n: '2',
+                    title: 'Agregá tu catálogo',
+                    desc: 'Opcional. Link online o PDF con tus productos y precios. Cuanta más info, mejor responde Sofía.',
+                  },
+                  {
+                    n: '3',
+                    title: 'Chateá con Sofía',
+                    desc: 'Tu asesora IA lista para responder como si fuera parte de tu equipo comercial.',
+                  },
+                ].map((step, idx, arr) => {
+                  const isLast = idx === arr.length - 1;
+                  return (
+                    <div
+                      key={step.n}
+                      className={`relative flex gap-4 md:gap-6 ${idx > 0 ? 'mt-8 md:mt-10' : ''}`}
+                    >
+                      {/* Línea conectora al siguiente paso */}
+                      {!isLast && (
+                        <div
+                          className="absolute left-5 md:left-6 top-10 md:top-12 -bottom-8 md:-bottom-10 w-0.5 -translate-x-1/2 bg-gradient-to-b from-blue-500 to-blue-400"
+                          aria-hidden
+                        />
+                      )}
+
+                      <div className="relative z-10 shrink-0 w-10 h-10 md:w-12 md:h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-lg md:text-xl font-bold shadow-md shadow-blue-600/30 ring-4 ring-white">
+                        {step.n}
+                      </div>
+                      <div className="pt-1.5 md:pt-2">
+                        <h3 className="font-semibold text-gray-900 mb-1 text-base md:text-lg">
+                          {step.title}
+                        </h3>
+                        <p className="text-gray-600 text-sm md:text-base leading-relaxed">
+                          {step.desc}
+                        </p>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+
+              <p className="text-xs text-gray-500 mt-8 md:mt-10 flex items-start gap-2">
+                <span aria-hidden>🚀</span>
+                <span>
+                  Versión piloto. Los resultados pueden variar según el sitio analizado.
+                </span>
               </p>
             </div>
+
+            {/* Form */}
+            <div className="bg-white rounded-2xl border border-gray-200 shadow-xl p-6 md:p-8 relative">
+              <div
+                className="absolute -top-6 -right-6 w-32 h-32 bg-blue-500/10 blur-3xl rounded-full pointer-events-none"
+                aria-hidden
+              />
+              <SimulatorForm />
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Section 3 - Simulator (moved up) */}
-      <section id="simulador" className="py-12 md:py-20 px-4 bg-white">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
-            Probalo vos mismo en 60 segundos
-          </h2>
-          <p className="text-gray-600 text-center mb-10 text-lg">
-            Ingresá el sitio web de tu constructora y generá tu agente IA al instante
-          </p>
-
-          <div className="grid md:grid-cols-3 gap-6 mb-10 max-w-3xl mx-auto">
-            <div className="text-center">
-              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
-                1
-              </div>
-              <h3 className="font-semibold text-gray-900 mb-2">Ingresá tu Web</h3>
-              <p className="text-gray-600 text-sm">Extraemos la info de tu constructora</p>
-            </div>
-            <div className="text-center">
-              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
-                2
-              </div>
-              <h3 className="font-semibold text-gray-900 mb-2">
-                Agregá tu Catálogo <span className="text-xs text-green-600 ml-1">(Opcional)</span>
-              </h3>
-              <p className="text-gray-600 text-sm">Link a tu catálogo online o PDF</p>
-            </div>
-            <div className="text-center">
-              <div className="w-12 h-12 bg-blue-600 text-white rounded-full flex items-center justify-center text-xl font-bold mx-auto mb-4">
-                3
-              </div>
-              <h3 className="font-semibold text-gray-900 mb-2">Chateá con Sofía</h3>
-              <p className="text-gray-600 text-sm">Tu asesora IA lista para responder</p>
-            </div>
-          </div>
-
-          <p className="text-sm text-gray-500 text-center mb-4 max-w-2xl mx-auto">
-            🚀 Versión Piloto — Este es un demo para mostrar el potencial de la tecnología. Los resultados pueden variar según el sitio web analizado.
-          </p>
-
-          <div className="max-w-2xl mx-auto bg-white rounded-2xl border border-gray-200 shadow-lg p-8">
-            <SimulatorForm />
-          </div>
-
-        </div>
-      </section>
-
-      {/* Section 4 - Pain Points */}
-      <section id="problema" className="py-14 md:py-24 px-4 bg-slate-900">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-12">
-            Si vendés construcción, seguro te pasa esto
-          </h2>
-          <div className="space-y-4">
-            {[
-              'Tu equipo tarda horas en responder consultas y los leads se enfrían',
-              'Te llegan leads de todos lados (publicidad, redes, etc) pero no medís conversiones omnicanal',
-              'Tu CRM nunca está 100% actualizado y requiere tiempo y energía de tu equipo',
-              'Tu equipo pierde tiempo y energía atendiendo a curiosos que nunca van a comprar',
-              'Sabés que la IA puede mejorar tus ventas y productividad, pero no sabés cómo sacarle el jugo',
-            ].map((item) => (
-              <div key={item} className="flex items-center gap-3">
-                <AlertCircle className="w-6 h-6 text-amber-400 shrink-0" />
-                <p className="text-white text-lg">{item}</p>
-              </div>
-            ))}
-          </div>
-          <div className="text-center mt-12">
-            <p className="text-blue-300 text-xl font-medium">
-              Si te identificás con alguno de estos puntos, podemos ayudarte.
+      {/* Section 4 - Before/After Slider (fusiona pain points + HOY vs CON PHA) */}
+      <section id="problema" className="py-14 md:py-24 px-4 bg-gray-50">
+        <div className="max-w-5xl mx-auto">
+          <div className="text-center mb-10">
+            <p className="text-xs sm:text-sm font-semibold tracking-widest uppercase text-blue-600 mb-3">
+              Antes vs Después
             </p>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
+              Lo que cambia en tu constructora con el Programa PHA
+            </h2>
           </div>
+          <BeforeAfterSlider />
         </div>
       </section>
 
-      {/* Section 5 - Esto NO es para vos si... */}
-      <section className="py-14 md:py-20 px-4 bg-red-950/90">
-        <div className="max-w-2xl mx-auto">
-          <p className="text-center text-red-300 text-sm font-semibold tracking-widest uppercase mb-4">
-            Pero
-          </p>
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-10">
-            Esto NO es para vos si...
-          </h2>
-          <div className="space-y-4">
-            {[
-              'Recibís menos de 20 consultas por semana',
-              'No invertís en publicidad digital por falta de presupuesto',
-              'Tu constructora es muy chica y estás buscando un chatbot barato que puedas autogestionar',
-            ].map((item) => (
-              <div key={item} className="bg-red-900/40 border border-red-800/50 rounded-xl px-5 py-4 flex items-start gap-3">
-                <span className="text-red-400 text-xl shrink-0">&#10060;</span>
-                <p className="text-red-100 text-lg">{item}</p>
+      {/* Section 5 - Esto NO es para vos si... (callout compacto) */}
+      <section className="py-8 px-4 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <div className="bg-amber-50 border border-amber-200 rounded-xl px-5 py-4 md:px-6 md:py-5">
+            <div className="flex items-start gap-3">
+              <span className="text-amber-600 text-lg shrink-0 mt-0.5">⚠</span>
+              <div>
+                <p className="text-sm md:text-base font-semibold text-gray-900 mb-1">
+                  Esto NO es para vos si recibís menos de 20 consultas por semana, no invertís en publicidad digital, o estás buscando un chatbot barato autogestionable.
+                </p>
+                <p className="text-sm text-gray-600">
+                  Si es tu caso, te conviene escalar la demanda primero antes de automatizar.
+                </p>
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
@@ -165,173 +197,207 @@ export default function Home() {
             </div>
           </div>
         </div>
-        {/* Pillars - white bg */}
-        <div className="py-14 md:py-20 px-4 bg-white">
-          <div className="max-w-4xl mx-auto">
-            <div className="grid md:grid-cols-2 gap-4">
-              <div className="bg-gray-50 border border-gray-100 rounded-xl p-6 flex gap-4">
-                <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center shrink-0">
-                  <Megaphone className="w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Publicidad que trae compradores</h3>
-                  <p className="text-gray-500 text-sm">Meta Ads optimizados para tu zona, audiencia y objetivo. Gestionados por tu equipo.</p>
-                </div>
-              </div>
-
-              <div className="bg-gray-50 border border-gray-100 rounded-xl p-6 flex gap-4">
-                <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center shrink-0">
-                  <Bot className="w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Agente IA que vende por vos 24/7</h3>
-                  <p className="text-gray-500 text-sm">Conversa naturalmente, conoce tu constructora, cotiza y agenda reuniones. En menos de 60 segundos.</p>
-                </div>
-              </div>
-
-              <div className="bg-gray-50 border border-gray-100 rounded-xl p-6 flex gap-4">
-                <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center shrink-0">
-                  <LayoutDashboard className="w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">CRM con actualización automática</h3>
-                  <p className="text-gray-500 text-sm">Cada lead registrado con conversación, etapa de compra y seguimiento. Sin carga manual.</p>
-                </div>
-              </div>
-
-              <div className="bg-gray-50 border border-gray-100 rounded-xl p-6 flex gap-4">
-                <div className="w-12 h-12 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center shrink-0">
-                  <Shield className="w-6 h-6" />
-                </div>
-                <div>
-                  <h3 className="font-semibold text-gray-900 mb-1">Equipo dedicado de 4 personas</h3>
-                  <p className="text-gray-500 text-sm">Account manager, media buyer, diseñadora y AI manager. Trabajando para tu constructora.</p>
-                </div>
-              </div>
+        {/* Pillars - chapters layout */}
+        <div className="py-16 md:py-24 px-4 bg-white">
+          <div className="max-w-5xl mx-auto">
+            <div className="text-center mb-14 md:mb-20">
+              <p className="text-xs sm:text-sm font-semibold tracking-widest uppercase text-blue-600 mb-3">
+                Cómo funciona
+              </p>
+              <h3 className="text-3xl md:text-4xl font-bold text-gray-900 tracking-tight">
+                4 Pilares del Programa PHA
+              </h3>
             </div>
 
-            <p className="text-gray-400 text-sm mt-8 text-center">
-              Incluye todos los recursos: tokens de IA, creatividades, monitoreo y optimización continua.
-            </p>
+            <div className="space-y-20 md:space-y-28">
+              {[
+                {
+                  number: '01',
+                  title: 'Publicidad que trae compradores',
+                  description:
+                    'Innovador sistema conectado con CRM optimiza las campañas publicitarias en Meta para atraer leads con mayor intención de compra que el promedio.',
+                  visual: 'image' as const,
+                  src: '/chapters/meta-campaigns.png',
+                  alt: 'Campañas de Meta Ads conectadas al CRM: PHA ASC Remarketing y Leads Calificados',
+                  accent: 'bg-blue-50',
+                },
+                {
+                  number: '02',
+                  title: 'Agente IA que responde por vos 24/7',
+                  description:
+                    'IA responde en menos de 60 segundos cada consulta. Conoce tu catálogo, precios y zonas, responde objeciones, califica al lead según tus criterios, envía cotizaciones y agenda reuniones. No se pierde un solo mensaje ni deja de hacer seguimiento.',
+                  visual: 'whatsapp' as const,
+                  accent: 'bg-emerald-50',
+                },
+                {
+                  number: '03',
+                  title: 'CRM con actualización automática',
+                  description:
+                    'Cada conversación queda registrada con etiquetas, resumen, datos de contacto, canal, etc. El embudo de ventas se actualiza dinámicamente. Tu equipo comercial ve el pipeline en tiempo real. Cero carga manual, cero leads olvidados.',
+                  visual: 'image' as const,
+                  src: '/chapters/crm-pipeline.png',
+                  alt: 'Pipeline del CRM con leads organizados por etapa: lead calificado, cotización enviada, entrevista presencial, entrevista virtual',
+                  accent: 'bg-amber-50',
+                },
+                {
+                  number: '04',
+                  title: 'Equipo humano dedicado',
+                  description:
+                    'Un gestor de cuenta, gestora IA, un publicista y una diseñadora senior trabajando para tu constructora. Iteramos el agente, renovamos creativos, gestionamos publicidad y reportamos resultados semanalmente.',
+                  visual: 'none' as const,
+                },
+              ].map((chapter, i) => {
+                const isEven = i % 2 === 0;
+                const hasVisual = chapter.visual !== 'none';
+                return (
+                  <div
+                    key={chapter.number}
+                    className={
+                      hasVisual
+                        ? `grid md:grid-cols-2 gap-8 md:gap-16 items-center ${
+                            isEven ? '' : 'md:[&>div:first-child]:order-2'
+                          }`
+                        : 'max-w-3xl mx-auto text-center'
+                    }
+                  >
+                    {/* Text */}
+                    <div>
+                      <p
+                        className={`text-6xl md:text-8xl font-bold text-gray-200 leading-none mb-4 tracking-tight ${
+                          !hasVisual ? 'mx-auto' : ''
+                        }`}
+                      >
+                        {chapter.number}
+                      </p>
+                      <h4 className="text-2xl md:text-3xl font-bold text-gray-900 mb-4 tracking-tight">
+                        {chapter.title}
+                      </h4>
+                      <p
+                        className={`text-gray-600 text-lg leading-relaxed ${
+                          !hasVisual ? 'max-w-2xl mx-auto' : ''
+                        }`}
+                      >
+                        {chapter.description}
+                      </p>
+                    </div>
+
+                    {/* Visual (only when present) */}
+                    {hasVisual && (
+                      <div className="flex justify-center">
+                        {chapter.visual === 'whatsapp' ? (
+                          <WhatsAppMockup />
+                        ) : chapter.visual === 'image' ? (
+                          <div className={`w-full max-w-md rounded-2xl ${chapter.accent} p-3 md:p-4 shadow-lg`}>
+                            <div className="rounded-xl overflow-hidden bg-white ring-1 ring-gray-200/60">
+                              <Image
+                                src={chapter.src!}
+                                alt={chapter.alt!}
+                                width={720}
+                                height={540}
+                                className="w-full h-auto"
+                                sizes="(max-width: 768px) 90vw, 420px"
+                              />
+                            </div>
+                          </div>
+                        ) : null}
+                      </div>
+                    )}
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Section 7 - HOY vs CON PHA */}
-      <section className="py-14 md:py-20 px-4 bg-gray-50">
+      {/* Section 8.5 - Sobre mí (Joaquín) */}
+      <section id="sobre-mi" className="py-14 md:py-24 px-4 bg-[#fdf6e3]">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-12">
-            Lo que cambia cuando implementás el Programa PHA
-          </h2>
+          <div className="grid md:grid-cols-2 gap-10 md:gap-12 items-center">
+            {/* Texto */}
+            <div>
+              <h2 className="text-3xl md:text-5xl font-bold text-slate-900 mb-3 tracking-tight">
+                Joaquin Gonzalez
+              </h2>
+              <p className="text-lg md:text-xl font-semibold text-slate-700 mb-8">
+                Fundador de PHA · Publicista · Partner Oficial de Meta
+              </p>
 
-          <div className="grid md:grid-cols-2 gap-6">
-            <div className="bg-white border border-gray-200 rounded-xl p-6">
-              <h3 className="text-xl font-bold text-gray-900 text-center mb-6">HOY (Sin PHA)</h3>
-              <div className="space-y-3">
+              <div className="space-y-3 mb-8">
                 {[
-                  'Respuesta: 2-6 horas (horario laboral)',
-                  '100 consultas → 3-4 reuniones (3-4%)',
-                  'Asesores gastando 60-70% en soporte',
-                  'Se pierden 50-60% de leads',
-                  'Sin visibilidad del pipeline',
+                  '9 años gestionando publicidad en Meta',
+                  'Dueño agencia South Media LLC (USA, 2020 - hoy)',
+                  '+$10M USD generados en ventas para clientes',
+                  'Lic. en Administración (UNICEN) — egresado con honores y mejor GPA en 2017',
+                  'Manager publicitario en Sumeru (USA, 2018-2020)',
+                  'Formación en Ingeniería en Sistemas y ex-docente de Marketing',
                 ].map((item) => (
-                  <div key={item} className="flex items-start gap-2">
-                    <span className="text-red-400 shrink-0 mt-0.5">●</span>
-                    <p className="text-gray-700 text-sm">{item}</p>
+                  <div key={item} className="flex items-start gap-3">
+                    <span className="shrink-0 w-2 h-2 rounded-full bg-blue-600 mt-[10px] md:mt-[12px]" />
+                    <p className="text-slate-700 text-base md:text-lg leading-relaxed">{item}</p>
                   </div>
                 ))}
               </div>
+
+              <a
+                href="https://www.linkedin.com/in/joaquingb/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 text-blue-600 hover:text-blue-700 font-semibold transition-colors"
+              >
+                <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
+                  <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                </svg>
+                Ver perfil en LinkedIn →
+              </a>
             </div>
 
-            <div className="bg-white border-2 border-emerald-400 rounded-xl p-6">
-              <h3 className="text-xl font-bold text-gray-900 text-center mb-6">CON PHA</h3>
-              <div className="space-y-3">
-                {[
-                  'Respuesta: menos de 60 segundos (24/7)',
-                  '100 consultas → 7-9 reuniones (7-9%)',
-                  'Asesores dedicados 100% a reuniones',
-                  '0 leads perdidos, seguimiento 3-6 meses',
-                  'Dashboard en tiempo real',
-                ].map((item) => (
-                  <div key={item} className="flex items-start gap-2">
-                    <span className="text-emerald-500 shrink-0 mt-0.5">●</span>
-                    <p className="text-gray-700 text-sm">{item}</p>
-                  </div>
-                ))}
+            {/* Foto */}
+            <div className="flex justify-center md:justify-end">
+              <div className="relative w-64 h-80 md:w-80 md:h-96 bg-blue-600 rounded-[160px_160px_20px_20px] md:rounded-[200px_200px_24px_24px] shadow-2xl p-1.5">
+                <div className="relative w-full h-full rounded-[152px_152px_14px_14px] md:rounded-[192px_192px_18px_18px] overflow-hidden">
+                  <Image
+                    src="/team/joaquin.png"
+                    alt="Joaquin Gonzalez - Fundador de PHA"
+                    fill
+                    className="object-cover"
+                    sizes="(max-width: 768px) 256px, 320px"
+                  />
+                </div>
               </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Section 8 - Results */}
-      <section id="resultados" className="py-14 md:py-24 px-4 bg-slate-900">
-        <div className="max-w-4xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-white mb-8">
-            Como una constructora consigue un ROI bruto del 7500% y neto del 1000%
-          </h2>
-
-          {/* Imagen caso de estudio */}
-          <div className="max-w-3xl mx-auto mb-8">
-            <img
-              src="/caso-exito-constructora.png"
-              alt="Caso de estudio: Constructora Modular Argentina - Análisis de conversión y ROI"
-              className="w-full rounded-xl shadow-2xl"
-            />
-          </div>
-
-          {/* Video */}
-          <div className="max-w-3xl mx-auto">
-            <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingBottom: '56.25%' }}>
-              <iframe
-                src="https://www.loom.com/embed/0b288021895f49338328c6258299068f"
-                className="absolute top-0 left-0 w-full h-full border-0"
-                allowFullScreen
-                allow="fullscreen"
-              />
             </div>
           </div>
         </div>
       </section>
 
       {/* Section 9 - Equipo */}
-      <section id="equipo" className="py-14 md:py-24 px-4 bg-white">
+      <section id="equipo" className="py-8 md:py-12 px-4 bg-white">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
-            Tu equipo dedicado
-          </h2>
-          <p className="text-gray-600 text-center mb-12 text-lg max-w-2xl mx-auto">
-            No comprás un software. Sumás un equipo de 4 personas que implementa el sistema publicitario, monitoriza la IA y crea automatizaciones para tu constructora.
-          </p>
-
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 max-w-5xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-4xl mx-auto">
             {[
               {
-                name: 'Joaquín',
-                role: 'Founder & Account Manager',
-                desc: 'Lidera la estrategia comercial y la implementación del Programa PHA. Partner Oficial de Meta.',
-                photo: '/team/joaquin.png',
-              },
-              {
-                name: 'Brenda',
+                name: 'Brenda Pastorino',
                 role: 'AI Agent Manager',
-                desc: 'Diseña sistemas escalables que integran agentes, CRM y operaciones.',
+                desc: 'Especialista en automatización de procesos y workflows con IA. Diseña sistemas escalables que integran agentes, CRM y operaciones.',
                 photo: '/team/brenda.png',
+                linkedin: 'https://www.linkedin.com/in/brenda-pastorino-quaglia/',
               },
               {
-                name: 'Diego',
+                name: 'Diego Cortes',
                 role: 'Media Buyer',
-                desc: 'Lidera la gestión publicitaria en Meta Ads con estrategia y ejecución.',
+                desc: 'Lidera la gestión publicitaria en Meta Ads, integrando estrategia, ejecución y reporting en un sistema escalable.',
                 photo: '/team/diego.png',
+                linkedin: 'https://www.linkedin.com/in/diego-cortes-6b24083a9/',
               },
               {
-                name: 'Antonela',
+                name: 'Antonela Baleirón',
                 role: 'Designer',
-                desc: 'Creativa data-driven especializada en Meta Ads.',
+                desc: 'Creativa data-driven especializada en Meta Ads. Convierte datos e insights en piezas visuales que venden y escalan.',
                 photo: '/team/antonela.png',
+                linkedin: 'https://www.linkedin.com/in/antonelabaleironfucci/',
               },
             ].map((member) => (
-              <div key={member.name} className="bg-white border border-gray-200 rounded-xl p-6 text-center">
+              <div key={member.name} className="bg-white border border-gray-200 rounded-xl p-6 text-center flex flex-col">
                 <Image
                   src={member.photo}
                   alt={member.name}
@@ -341,24 +407,23 @@ export default function Home() {
                 />
                 <p className="font-semibold text-gray-900">{member.name}</p>
                 <p className="text-sm text-blue-600 mb-2">{member.role}</p>
-                <p className="text-sm text-gray-600">{member.desc}</p>
+                <p className="text-sm text-gray-600 flex-1">{member.desc}</p>
+                <a
+                  href={member.linkedin}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center gap-1.5 mt-4 text-xs font-semibold text-blue-600 hover:text-blue-700 transition-colors"
+                  aria-label={`LinkedIn de ${member.name}`}
+                >
+                  <svg className="w-4 h-4" fill="currentColor" viewBox="0 0 24 24" aria-hidden>
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.063 2.063 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+                  </svg>
+                  LinkedIn
+                </a>
               </div>
             ))}
           </div>
 
-          <div className="flex flex-wrap items-center justify-center gap-3 mt-12 max-w-4xl mx-auto">
-            {[
-              '+9 años en publicidad digital',
-              '+$10M USD en ventas generadas',
-              'Partners de Meta',
-              'Expertos en automatización con IA',
-              'Low fee + comisión',
-            ].map((item) => (
-              <span key={item} className="bg-gray-50 border border-gray-200 text-gray-600 text-sm px-4 py-2 rounded-full">
-                {item}
-              </span>
-            ))}
-          </div>
         </div>
       </section>
 
@@ -372,6 +437,19 @@ export default function Home() {
             Respondé 3 preguntas para saber si el Programa PHA es para tu empresa
           </p>
           <QualificationForm />
+        </div>
+      </section>
+
+      {/* Section 10.5 - FAQ */}
+      <section id="faq" className="py-14 md:py-24 px-4 bg-white">
+        <div className="max-w-3xl mx-auto">
+          <h2 className="text-3xl md:text-4xl font-bold text-center text-gray-900 mb-4">
+            Preguntas frecuentes
+          </h2>
+          <p className="text-gray-600 text-center mb-10 text-lg">
+            Respondemos las dudas más comunes antes de la sesión estratégica
+          </p>
+          <FAQ />
         </div>
       </section>
 

@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from 'next/server';
-import { scrapeWebsite, SCRAPING_FAILED_MARKER } from '@/lib/scraper';
+import { scrapeWebsite, SCRAPING_FAILED_MARKER, isScrapeEmpty } from '@/lib/scraper';
 import { analyzePdfWithVision } from '@/lib/pdf-extractor';
 import { generateSystemPromptWithCatalog, getWelcomeMessage } from '@/lib/prompt-generator';
 import { createSession, addMessage } from '@/lib/session-manager';
@@ -8,48 +8,6 @@ import { createEnhancedLog, appendEnhancedMessage, ScrapingMetadata } from '@/li
 import { CreateSessionRequest } from '@/types';
 import { v4 as uuidv4 } from 'uuid';
 import { trackEvent } from '@/lib/analytics-tracker';
-
-async function validateUrlReachable(url: string): Promise<{ ok: boolean; error?: string }> {
-  try {
-    const controller = new AbortController();
-    const timeoutId = setTimeout(() => controller.abort(), 10000);
-
-    let response: Response;
-    try {
-      response = await fetch(url, {
-        method: 'HEAD',
-        signal: controller.signal,
-        redirect: 'follow',
-        headers: { 'User-Agent': 'Mozilla/5.0 (compatible; AgentIABot/1.0)' },
-      });
-    } catch {
-      response = await fetch(url, {
-        method: 'GET',
-        signal: controller.signal,
-        redirect: 'follow',
-        headers: { 'User-Agent': 'Mozilla/5.0 (compatible; AgentIABot/1.0)' },
-      });
-    }
-
-    clearTimeout(timeoutId);
-
-    if (response.status >= 400) {
-      return { ok: false, error: `El sitio web devolvió un error (${response.status}). Verificá que la URL sea correcta.` };
-    }
-
-    return { ok: true };
-  } catch (err: unknown) {
-    if (err instanceof Error) {
-      if (err.name === 'AbortError') {
-        return { ok: false, error: 'El sitio web no responde. Verificá que esté funcionando.' };
-      }
-      if (err.message.includes('ENOTFOUND') || err.message.includes('getaddrinfo')) {
-        return { ok: false, error: 'No pudimos encontrar el sitio web. Verificá que la URL sea correcta.' };
-      }
-    }
-    return { ok: false, error: 'No pudimos acceder al sitio web. Verificá la URL e intentá de nuevo.' };
-  }
-}
 
 export async function POST(request: NextRequest) {
   try {
@@ -78,17 +36,10 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    // Validate URL is reachable before scraping
-    console.log('[Create] Validating URL reachability:', websiteUrl);
-    const urlCheck = await validateUrlReachable(websiteUrl);
-    if (!urlCheck.ok) {
-      console.warn('[Create] URL validation failed:', urlCheck.error);
-      return NextResponse.json(
-        { error: urlCheck.error, code: 'URL_UNREACHABLE' },
-        { status: 422 }
-      );
-    }
-    console.log('[Create] URL validation passed');
+    // URL reachability is already validated client-side in SimulatorForm.
+    // We skip the duplicate HEAD/GET check here to save 1-2s per request.
+    // If the URL turns out to be unreachable, scrapeWebsite will surface
+    // a SCRAPING_FAILED_MARKER which we handle below.
 
     // Scrape website and analyze PDF in parallel
     console.log('[Create] Starting parallel scraping...');
@@ -138,6 +89,25 @@ export async function POST(request: NextRequest) {
           code: 'SCRAPING_FAILED'
         },
         { status: 422 }
+      );
+    }
+
+    // Scrape didn't hard-fail but came back almost empty — refuse to build
+    // a hollow agent. See create-stream/route.ts for the same guard.
+    if (isScrapeEmpty(scrapedContent)) {
+      console.warn('[Create] Scrape came back empty:', {
+        url: websiteUrl,
+        products: scrapedContent.products?.length ?? 0,
+        services: scrapedContent.services?.length ?? 0,
+        rawTextLen: scrapedContent.rawText?.length ?? 0,
+      });
+      return NextResponse.json(
+        {
+          error:
+            'No pudimos extraer información del sitio. Puede que use una tecnología que no soportamos todavía, o que el contenido cargue sólo para usuarios logueados. Probá con otra URL o escribinos para ayudarte.',
+          code: 'SCRAPING_EMPTY',
+        },
+        { status: 422 },
       );
     }
 

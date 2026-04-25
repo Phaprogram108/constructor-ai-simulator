@@ -1,6 +1,6 @@
 'use client';
 
-import { useState, useRef, useEffect } from 'react';
+import { useState, useRef } from 'react';
 import { useRouter } from 'next/navigation';
 import { upload } from '@vercel/blob/client';
 import { Button } from '@/components/ui/button';
@@ -10,14 +10,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 
 const MAX_PDF_SIZE_MB = 10;
 const MAX_PDF_SIZE_BYTES = MAX_PDF_SIZE_MB * 1024 * 1024;
-
-const PROGRESS_STEPS = [
-  { id: 'validate', label: 'Verificando URL...' },
-  { id: 'upload', label: 'Subiendo catalogo PDF...' },
-  { id: 'map', label: 'Mapeando sitio web...' },
-  { id: 'scrape', label: 'Extrayendo contenido...' },
-  { id: 'generate', label: 'Generando agente IA...' },
-];
 
 export default function SimulatorForm() {
   const router = useRouter();
@@ -36,35 +28,8 @@ export default function SimulatorForm() {
     pdfUrl?: string;
     pdfFile?: string;
   }>({});
-  const [currentStep, setCurrentStep] = useState(-1);
-  const [hasPdf, setHasPdf] = useState(false);
-
-  // Simular progreso durante la carga
-  useEffect(() => {
-    if (!loading) {
-      setCurrentStep(-1);
-      return;
-    }
-
-    // Tiempos aproximados para cada paso (acumulativos)
-    const stepTimings = hasPdf
-      ? [0, 1500, 4000, 7000, 12000] // Con PDF
-      : [0, -1, 2500, 5500, 10000];  // Sin PDF (-1 = skip)
-
-    const timeouts: NodeJS.Timeout[] = [];
-
-    stepTimings.forEach((time, index) => {
-      if (time < 0) return; // Skip this step
-      const timeout = setTimeout(() => {
-        setCurrentStep(index);
-      }, time);
-      timeouts.push(timeout);
-    });
-
-    return () => {
-      timeouts.forEach(clearTimeout);
-    };
-  }, [loading, hasPdf]);
+  const [progressMessage, setProgressMessage] = useState('');
+  const [elapsedSec, setElapsedSec] = useState(0);
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -129,10 +94,8 @@ export default function SimulatorForm() {
     e.preventDefault();
     setError('');
     setFieldErrors({});
-
-    // Determinar si hay PDF para mostrar ese paso
-    const willHavePdf = (pdfTab === 'url' && pdfUrl) || (pdfTab === 'upload' && pdfFile);
-    setHasPdf(!!willHavePdf);
+    setProgressMessage('Validando tus datos...');
+    setElapsedSec(0);
 
     setLoading(true);
 
@@ -229,53 +192,100 @@ export default function SimulatorForm() {
         body: JSON.stringify({ whatsapp, websiteUrl: url, createdAt: new Date().toISOString() }),
       }).catch(() => {}); // silently ignore errors
 
-      // Create session
-      const response = await fetch('/api/simulator/create', {
+      setProgressMessage('Conectando con tu sitio web...');
+
+      // Elapsed-seconds counter while the stream is live.
+      const startedAt = Date.now();
+      const elapsedTimer = setInterval(() => {
+        setElapsedSec(Math.round((Date.now() - startedAt) / 1000));
+      }, 1000);
+
+      // Consume the SSE stream from /api/simulator/create-stream
+      const response = await fetch('/api/simulator/create-stream', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(body),
       });
 
-      // Handle non-JSON responses
-      const contentType = response.headers.get('content-type');
-      if (!contentType?.includes('application/json')) {
+      if (!response.ok || !response.body) {
+        clearInterval(elapsedTimer);
+        const ct = response.headers.get('content-type') || '';
+        if (ct.includes('application/json')) {
+          const data = await response.json();
+          throw new Error(data.error || 'Error al crear la sesión');
+        }
         throw new Error('Error del servidor. Intentá de nuevo.');
       }
 
-      const data = await response.json();
+      const reader = response.body.getReader();
+      const decoder = new TextDecoder();
+      let buffer = '';
+      let doneEvent: {
+        sessionId: string;
+        companyName: string;
+        websiteUrl: string;
+        welcomeMessage: string;
+        messagesRemaining: number;
+      } | null = null;
 
-      if (!response.ok) {
-        throw new Error(data.error || 'Error al crear la sesión');
+      while (true) {
+        const { value, done } = await reader.read();
+        if (done) break;
+        buffer += decoder.decode(value, { stream: true });
+
+        // SSE messages are separated by a blank line
+        const parts = buffer.split('\n\n');
+        buffer = parts.pop() || '';
+
+        for (const part of parts) {
+          const line = part.split('\n').find((l) => l.startsWith('data: '));
+          if (!line) continue;
+          try {
+            const event = JSON.parse(line.replace(/^data: /, ''));
+            if (event.type === 'status') {
+              setProgressMessage(event.message);
+            } else if (event.type === 'error') {
+              clearInterval(elapsedTimer);
+              throw new Error(event.error || 'Error al crear la sesión');
+            } else if (event.type === 'done') {
+              doneEvent = event;
+            }
+          } catch (parseErr) {
+            console.warn('[SimulatorForm] SSE parse error:', parseErr);
+          }
+        }
+      }
+
+      clearInterval(elapsedTimer);
+
+      if (!doneEvent) {
+        throw new Error('La generación terminó sin respuesta. Intentá de nuevo.');
       }
 
       // Store session data in localStorage for the demo page
       const sessionData = {
         session: {
-          id: data.sessionId,
-          companyName: data.companyName || 'Constructora',
-          websiteUrl: data.websiteUrl || url,
-          messagesRemaining: data.messagesRemaining || 50,
+          id: doneEvent.sessionId,
+          companyName: doneEvent.companyName || 'Constructora',
+          websiteUrl: doneEvent.websiteUrl || url,
+          messagesRemaining: doneEvent.messagesRemaining || 50,
           expiresAt: new Date(Date.now() + 30 * 60 * 1000),
         },
-        messages: data.welcomeMessage ? [{
-          id: 'welcome',
-          role: 'assistant',
-          content: data.welcomeMessage,
-          timestamp: new Date(),
-        }] : [],
+        messages: doneEvent.welcomeMessage
+          ? [
+              {
+                id: 'welcome',
+                role: 'assistant',
+                content: doneEvent.welcomeMessage,
+                timestamp: new Date(),
+              },
+            ]
+          : [],
       };
 
-      console.log('[SimulatorForm] Saving session data:', {
-        sessionId: data.sessionId,
-        companyName: data.companyName,
-        messagesRemaining: data.messagesRemaining,
-        welcomeMessage: data.welcomeMessage?.slice(0, 100),
-      });
+      localStorage.setItem(`session-${doneEvent.sessionId}`, JSON.stringify(sessionData));
 
-      localStorage.setItem(`session-${data.sessionId}`, JSON.stringify(sessionData));
-
-      // Redirect to chat
-      router.push(`/demo/${data.sessionId}`);
+      router.push(`/demo/${doneEvent.sessionId}`);
     } catch (err) {
       setError(err instanceof Error ? err.message : 'Error inesperado');
     } finally {
@@ -457,45 +467,43 @@ export default function SimulatorForm() {
             )}
           </Button>
 
-          {/* Progress Steps */}
+          {/* Progress (live from server) */}
           {loading && (
-            <div className="space-y-3 mt-4 p-4 bg-gray-50 rounded-lg">
-              <p className="text-sm font-medium text-gray-700 mb-3">Creando tu agente IA...</p>
-              {PROGRESS_STEPS.map((step, index) => {
-                // Skip PDF step if no PDF
-                if (step.id === 'upload' && !hasPdf) return null;
+            <div className="mt-4 p-4 bg-gray-50 rounded-lg">
+              <div className="flex items-center gap-3 mb-3">
+                <svg className="w-5 h-5 text-blue-600 animate-spin shrink-0" viewBox="0 0 24 24">
+                  <circle
+                    className="opacity-25"
+                    cx="12"
+                    cy="12"
+                    r="10"
+                    stroke="currentColor"
+                    strokeWidth="4"
+                    fill="none"
+                  />
+                  <path
+                    className="opacity-75"
+                    fill="currentColor"
+                    d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"
+                  />
+                </svg>
+                <p className="text-sm font-medium text-gray-800 flex-1">
+                  {progressMessage || 'Preparando tu agente...'}
+                </p>
+                <span className="text-xs text-gray-500 tabular-nums shrink-0">
+                  {elapsedSec}s
+                </span>
+              </div>
 
-                return (
-                  <div
-                    key={step.id}
-                    className={`flex items-center gap-3 transition-all duration-300 ${
-                      currentStep >= index
-                        ? 'text-blue-600'
-                        : 'text-gray-400'
-                    }`}
-                  >
-                    <span className="text-base w-5 text-center">
-                      {currentStep > index ? (
-                        <svg className="w-5 h-5 text-green-500" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
-                        </svg>
-                      ) : currentStep === index ? (
-                        <svg className="w-4 h-4 animate-spin" viewBox="0 0 24 24">
-                          <circle className="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" strokeWidth="4" fill="none" />
-                          <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z" />
-                        </svg>
-                      ) : (
-                        <span className="w-4 h-4 rounded-full border-2 border-gray-300 inline-block" />
-                      )}
-                    </span>
-                    <span className={`text-sm ${currentStep === index ? 'font-medium' : ''}`}>
-                      {step.label}
-                    </span>
-                  </div>
-                );
-              })}
-              <p className="text-xs text-gray-500 mt-3 pt-2 border-t border-gray-200">
-                Esto puede tomar entre 10 segundos y 2 minutos según el tamaño del sitio...
+              <div className="w-full h-1.5 bg-gray-200 rounded-full overflow-hidden">
+                <div
+                  className="h-full bg-gradient-to-r from-blue-500 via-blue-600 to-blue-500 bg-[length:200%_100%] animate-[progressSlide_2s_linear_infinite]"
+                  style={{ width: '100%' }}
+                />
+              </div>
+
+              <p className="text-xs text-gray-500 mt-3">
+                Puede tardar hasta 2 minutos según el tamaño del sitio.
               </p>
             </div>
           )}

@@ -43,18 +43,17 @@ export default function Home() {
             Antes de probar tu agente gratis, mirá cómo una constructora modular genera un retorno publicitario del 7.500% con IA
           </h2>
 
-          {/* VSL Placeholder */}
-          <div className="max-w-3xl mx-auto bg-slate-900 rounded-2xl overflow-hidden shadow-2xl aspect-video flex items-center justify-center relative group">
-            <div className="absolute inset-0 bg-gradient-to-br from-blue-900/40 via-slate-900 to-slate-900" />
-            <div className="relative text-white text-center p-8">
-              <div className="w-20 h-20 bg-blue-600 rounded-full flex items-center justify-center mx-auto mb-4 shadow-xl">
-                <svg className="w-8 h-8 ml-1" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M8 5v14l11-7z" />
-                </svg>
-              </div>
-              <p className="text-lg font-semibold mb-2">Video en edición</p>
-              <p className="text-slate-400 text-sm">Disponible próximamente</p>
-            </div>
+          {/* VSL Player */}
+          <div className="max-w-3xl mx-auto bg-slate-900 rounded-2xl overflow-hidden shadow-2xl aspect-video">
+            <video
+              className="w-full h-full"
+              controls
+              preload="metadata"
+              playsInline
+              src="https://twj5furi98dlpvox.public.blob.vercel-storage.com/Joa%20VSL%20Vid%201%20%281%29.mp4"
+            >
+              Tu navegador no soporta reproducción de video.
+            </video>
           </div>
         </div>
       </section>

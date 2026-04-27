@@ -2,7 +2,7 @@
 
 import { useState } from 'react';
 
-const WHATSAPP_NUMBER = '5492235238176';
+const WHATSAPP_NUMBER = '5492235407633';
 
 type Answer = string | null;
 

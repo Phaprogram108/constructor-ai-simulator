@@ -23,7 +23,7 @@ export default function Home() {
           </p>
 
           <h1 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 tracking-tight">
-            Mejora tus <span className="gradient-text">ventas y productividad</span> en automático con IA
+            Genera gratis un agente IA que mejora tus <span className="gradient-text">ventas y productividad</span> en automático
           </h1>
 
           <p className="text-lg md:text-xl text-gray-600 mb-10 max-w-3xl mx-auto leading-relaxed">

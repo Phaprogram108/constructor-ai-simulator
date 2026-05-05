@@ -15,9 +15,24 @@ type Sponsor = {
   websiteUrl: string;
   tier: string;
   category: string;
+  slug?: string;
 };
 
 const sponsors = sponsorsData as Sponsor[];
+
+const slugify = (name: string): string =>
+  name
+    .toLowerCase()
+    .normalize('NFD')
+    .replace(/[̀-ͯ]/g, '')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+
+type CachedSponsorAgent = {
+  sessionId: string;
+  companyName: string;
+  welcomeMessage: string;
+};
 
 const MAX_PDF_SIZE_MB = 10;
 const MAX_PDF_SIZE_BYTES = MAX_PDF_SIZE_MB * 1024 * 1024;
@@ -34,6 +49,7 @@ export default function SimulatorForm() {
   const [pdfTab, setPdfTab] = useState('url');
   const [websiteMode, setWebsiteMode] = useState<'sponsor' | 'manual'>('sponsor');
   const [selectedSponsor, setSelectedSponsor] = useState('');
+  const [cachedSponsorAgent, setCachedSponsorAgent] = useState<CachedSponsorAgent | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [fieldErrors, setFieldErrors] = useState<{
@@ -205,6 +221,36 @@ export default function SimulatorForm() {
         body: JSON.stringify({ whatsapp, websiteUrl: url, createdAt: new Date().toISOString() }),
       }).catch(() => {}); // silently ignore errors
 
+      // Pre-cache shortcut: if we already have a precached sponsor agent, skip
+      // the scraping/generation flow entirely and jump straight to the demo.
+      if (cachedSponsorAgent) {
+        const sessionData = {
+          session: {
+            id: cachedSponsorAgent.sessionId,
+            companyName: cachedSponsorAgent.companyName || 'Constructora',
+            websiteUrl: url,
+            messagesRemaining: 1000,
+            expiresAt: new Date(Date.now() + 72 * 60 * 60 * 1000),
+          },
+          messages: cachedSponsorAgent.welcomeMessage
+            ? [
+                {
+                  id: 'welcome',
+                  role: 'assistant',
+                  content: cachedSponsorAgent.welcomeMessage,
+                  timestamp: new Date(),
+                },
+              ]
+            : [],
+        };
+        localStorage.setItem(
+          `session-${cachedSponsorAgent.sessionId}`,
+          JSON.stringify(sessionData),
+        );
+        router.push(`/demo/${cachedSponsorAgent.sessionId}`);
+        return;
+      }
+
       setProgressMessage('Conectando con tu sitio web...');
 
       // Elapsed-seconds counter while the stream is live.
@@ -339,7 +385,12 @@ export default function SimulatorForm() {
           {/* Website URL — sponsor selector or manual input */}
           <div className="space-y-3">
             <Label htmlFor="websiteUrl" className="text-base font-medium">URL de tu Sitio Web *</Label>
-            <Tabs value={websiteMode} onValueChange={(v) => setWebsiteMode(v as 'sponsor' | 'manual')}>
+            <Tabs value={websiteMode} onValueChange={(v) => {
+              setWebsiteMode(v as 'sponsor' | 'manual');
+              if (v === 'manual') {
+                setCachedSponsorAgent(null);
+              }
+            }}>
               <TabsList className="grid w-full grid-cols-2 h-11">
                 <TabsTrigger value="sponsor" className="text-sm">Sponsors ExpoCon</TabsTrigger>
                 <TabsTrigger value="manual" className="text-sm">Ingresar a web</TabsTrigger>
@@ -352,11 +403,26 @@ export default function SimulatorForm() {
                   onChange={(e) => {
                     const name = e.target.value;
                     setSelectedSponsor(name);
+                    setCachedSponsorAgent(null);
                     if (name) {
                       const found = sponsors.find((s) => s.name === name);
                       if (found) {
                         setWebsiteUrl(found.websiteUrl);
                         setFieldErrors(prev => ({ ...prev, websiteUrl: undefined }));
+                        const slug = found.slug || slugify(found.name);
+                        // Best-effort: check for precached agent. Silent on failure.
+                        fetch(`/api/sponsor-agent/${slug}`)
+                          .then((res) => (res.ok ? res.json() : null))
+                          .then((data) => {
+                            if (data && data.sessionId) {
+                              setCachedSponsorAgent({
+                                sessionId: data.sessionId,
+                                companyName: data.companyName,
+                                welcomeMessage: data.welcomeMessage,
+                              });
+                            }
+                          })
+                          .catch(() => {});
                       }
                     }
                   }}

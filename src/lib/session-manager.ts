@@ -89,24 +89,46 @@ function deserializeSession(data: any): Session {
 
 // ---- Public API (async, Redis-first with in-memory fallback) ----
 
-export async function createSession(companyName: string, systemPrompt: string): Promise<Session> {
+export interface CreateSessionOptions {
+  ttlSeconds?: number;
+  maxMessages?: number;
+  preloadedWelcome?: string;
+}
+
+export async function createSession(
+  companyName: string,
+  systemPrompt: string,
+  options?: CreateSessionOptions,
+): Promise<Session> {
   const now = new Date();
+  const ttlSeconds = options?.ttlSeconds ?? SESSION_TTL_SECONDS;
+  const maxMessages = options?.maxMessages ?? DEFAULT_MAX_MESSAGES;
+
   const session: Session = {
     id: uuidv4(),
     companyName,
     systemPrompt,
     messages: [],
     messageCount: 0,
-    maxMessages: DEFAULT_MAX_MESSAGES,
+    maxMessages,
     createdAt: now,
-    expiresAt: new Date(now.getTime() + SESSION_DURATION_MS),
+    expiresAt: new Date(now.getTime() + ttlSeconds * 1000),
   };
+
+  if (options?.preloadedWelcome) {
+    session.messages.push({
+      id: uuidv4(),
+      role: 'assistant',
+      content: options.preloadedWelcome,
+      timestamp: now,
+    });
+  }
 
   // Always dual-write: Redis (durable) + in-memory (fast fallback for same instance)
   const redis = getRedis();
   if (redis) {
     try {
-      await redis.set(`session:${session.id}`, serializeSession(session), { ex: SESSION_TTL_SECONDS });
+      await redis.set(`session:${session.id}`, serializeSession(session), { ex: ttlSeconds });
     } catch (err) {
       console.warn('[session-manager] Redis set failed:', err);
     }

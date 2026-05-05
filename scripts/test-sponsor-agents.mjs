@@ -21,7 +21,7 @@ const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 async function createAgentOnce(websiteUrl) {
   const res = await fetch(`${BASE_URL}/api/simulator/create-stream`, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'User-Agent': 'sponsor-test/1.0' },
+    headers: { 'Content-Type': 'application/json', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36' },
     body: JSON.stringify({ websiteUrl }),
   });
   if (!res.ok || !res.body) throw new Error(`create-stream HTTP ${res.status}`);
@@ -76,7 +76,7 @@ async function createAgent(websiteUrl) {
 async function chat(sessionId, message) {
   const res = await fetch(`${BASE_URL}/api/chat`, {
     method: 'POST',
-    headers: { 'Content-Type': 'application/json', 'User-Agent': 'sponsor-test/1.0' },
+    headers: { 'Content-Type': 'application/json', 'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36' },
     body: JSON.stringify({ sessionId, message }),
   });
   if (!res.ok) throw new Error(`chat HTTP ${res.status}: ${await res.text().catch(() => '')}`);

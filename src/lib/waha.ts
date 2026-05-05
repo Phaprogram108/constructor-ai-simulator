@@ -31,15 +31,25 @@ export async function sendWahaMessage(toNumber: string, text: string): Promise<v
     return;
   }
 
-  // Argentina mobile fix: WhatsApp routes only deliver to AR mobiles when the
-  // chatId has a "9" between the country code (54) and the area code. The phone
-  // input may emit `54` + area + local for users who type without the mobile
-  // prefix, which lands on a non-existent landline-style chatId. Normalize.
-  const cleanNumber = (rawDigits.startsWith('54') && !rawDigits.startsWith('549') && rawDigits.length >= 11)
-    ? '549' + rawDigits.slice(2)
-    : rawDigits;
+  // Argentina mobile normalization for the WhatsApp chatId.
+  //
+  // AR users type numbers in many forms: "223 540 7633", "0223 540 7633",
+  // "9 223 540 7633", "+54 9 ...". The phone input concatenates the dial code
+  // verbatim, so by the time we get here the digits can be:
+  //   54 0 <area> <local>   → leading 0 in the local format (must drop)
+  //   54 <area> <local>     → missing the mobile "9"
+  //   549 <area> <local>    → already canonical
+  // WhatsApp only delivers to AR mobiles when the chatId has the "9" between
+  // country code and area code, and never has the "0".
+  let cleanNumber = rawDigits;
+  if (cleanNumber.startsWith('54') && cleanNumber.length >= 11) {
+    let rest = cleanNumber.slice(2);
+    if (rest.startsWith('0')) rest = rest.slice(1);
+    if (!rest.startsWith('9') && rest.length >= 10) rest = '9' + rest;
+    cleanNumber = '54' + rest;
+  }
   if (cleanNumber !== rawDigits) {
-    console.log('[WAHA] AR mobile prefix added:', rawDigits, '->', cleanNumber);
+    console.log('[WAHA] AR mobile normalization:', rawDigits, '->', cleanNumber);
   }
 
   if (UPSTASH_URL && UPSTASH_TOKEN) {

@@ -25,10 +25,21 @@ export async function sendWahaMessage(toNumber: string, text: string): Promise<v
     return;
   }
 
-  const cleanNumber = toNumber.replace(/\D/g, '');
-  if (cleanNumber.length < 10) {
-    console.warn('[WAHA] number too short, skipping:', cleanNumber);
+  const rawDigits = toNumber.replace(/\D/g, '');
+  if (rawDigits.length < 10) {
+    console.warn('[WAHA] number too short, skipping:', rawDigits);
     return;
+  }
+
+  // Argentina mobile fix: WhatsApp routes only deliver to AR mobiles when the
+  // chatId has a "9" between the country code (54) and the area code. The phone
+  // input may emit `54` + area + local for users who type without the mobile
+  // prefix, which lands on a non-existent landline-style chatId. Normalize.
+  const cleanNumber = (rawDigits.startsWith('54') && !rawDigits.startsWith('549') && rawDigits.length >= 11)
+    ? '549' + rawDigits.slice(2)
+    : rawDigits;
+  if (cleanNumber !== rawDigits) {
+    console.log('[WAHA] AR mobile prefix added:', rawDigits, '->', cleanNumber);
   }
 
   if (UPSTASH_URL && UPSTASH_TOKEN) {

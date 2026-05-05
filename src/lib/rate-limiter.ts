@@ -17,7 +17,7 @@ const DAILY_LIMITS: Record<Bucket, number> = {
   session: 200, // generous daily cap
 };
 
-const WEEKLY_CHAT_LIMIT = 20;
+const WEEKLY_CHAT_LIMIT = 500;
 const WEEKLY_WINDOW_MS = 7 * 24 * 60 * 60_000; // 7 days
 
 const STRIKES_BEFORE_BAN = 3;
@@ -525,7 +525,7 @@ export function rateLimit(request: Request, bucket: Bucket): NextResponse | null
     if (weeklyResult.weeklyExceeded) {
       return NextResponse.json(
         {
-          error: 'Has alcanzado el l\u00edmite de testeo gratuito semanal (20 mensajes). Si quer\u00e9s un agente para tu empresa, contactanos.',
+          error: 'Has alcanzado el l\u00edmite semanal de testeo gratuito. Si quer\u00e9s un agente para tu empresa, contactanos.',
           code: 'CHAT_LIMIT_REACHED',
         },
         { status: 429 }
@@ -602,7 +602,7 @@ export async function rateLimitAsync(request: Request, bucket: Bucket): Promise<
     if (weeklyResult.weeklyExceeded) {
       return NextResponse.json(
         {
-          error: 'Has alcanzado el l\u00edmite de testeo gratuito semanal (20 mensajes). Si quer\u00e9s un agente para tu empresa, contactanos.',
+          error: 'Has alcanzado el l\u00edmite semanal de testeo gratuito. Si quer\u00e9s un agente para tu empresa, contactanos.',
           code: 'CHAT_LIMIT_REACHED',
         },
         { status: 429 }

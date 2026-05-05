@@ -53,13 +53,15 @@ export async function POST(request: NextRequest) {
     const rateLimitResponse = rateLimit(request, 'chat');
     if (rateLimitResponse) return rateLimitResponse;
 
-    // Weekly chat limit: 20 messages per IP per week
+    // Weekly chat limit: bumped to 500 for ExpoConstruir 2026 stand traffic.
+    // Joaquín atiende ~50-80 empresas en el evento desde una sola IP.
+    // Revisar a 20 post-evento (post 2026-05-08).
     const fingerprint = getClientFingerprint(request);
     const weeklyCheck = checkWeeklyChatLimit(fingerprint);
     if (!weeklyCheck.allowed) {
       return NextResponse.json(
         {
-          error: 'Has alcanzado el límite de testeo gratuito semanal (20 mensajes). Si querés un agente para tu empresa, contactanos.',
+          error: 'Has alcanzado el límite semanal de testeo gratuito. Si querés un agente para tu empresa, contactanos.',
           code: 'CHAT_LIMIT_REACHED',
         },
         { status: 429 }

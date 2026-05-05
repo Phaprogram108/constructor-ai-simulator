@@ -2,19 +2,22 @@ import { NextResponse } from 'next/server';
 import crypto from 'crypto';
 
 export const RATE_LIMITS = {
-  create: { windowMs: 60_000, max: 5 },
-  chat: { windowMs: 60_000, max: 15 },
-  research: { windowMs: 60_000, max: 5 },
-  session: { windowMs: 60 * 60_000, max: 30 }, // 30 reads per hour
+  // Bumped for ExpoConstruir 2026 stand traffic (Joaquín = 1 IP, 50-80 stands).
+  // Revisar a (5,15,5,30) post-evento (post 2026-05-08) — task #10 tracker.
+  create: { windowMs: 60_000, max: 30 },
+  chat: { windowMs: 60_000, max: 30 },
+  research: { windowMs: 60_000, max: 10 },
+  session: { windowMs: 60 * 60_000, max: 200 },
 } as const;
 
 type Bucket = keyof typeof RATE_LIMITS;
 
 const DAILY_LIMITS: Record<Bucket, number> = {
-  create: 5,
-  chat: 300,
-  research: 50,
-  session: 200, // generous daily cap
+  // Same rationale: 1 IP, 50-80 stands = up to 80 creates + 400 chats/day.
+  create: 200,
+  chat: 1000,
+  research: 100,
+  session: 1000,
 };
 
 const WEEKLY_CHAT_LIMIT = 500;

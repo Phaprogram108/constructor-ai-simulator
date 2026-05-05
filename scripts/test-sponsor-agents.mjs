@@ -14,6 +14,9 @@ const PROHIBITED = ['no tengo información', 'no sé', 'no dispongo de', 'lo sie
 const OUTPUT_DIR = path.resolve('test-results/expoconstruir-2026');
 
 const MAX_CREATE_RETRIES = 3;
+const PAUSE_BETWEEN_SPONSORS_MS = 8000; // throttle so we don't trip the create rate-limit
+
+const sleep = (ms) => new Promise(r => setTimeout(r, ms));
 
 async function createAgentOnce(websiteUrl) {
   const res = await fetch(`${BASE_URL}/api/simulator/create-stream`, {
@@ -78,7 +81,11 @@ async function chat(sessionId, message) {
   });
   if (!res.ok) throw new Error(`chat HTTP ${res.status}: ${await res.text().catch(() => '')}`);
   const data = await res.json();
-  return data.message?.content || data.content || '';
+  // /api/chat returns { message: <string>, researched }
+  if (typeof data.message === 'string') return data.message;
+  if (typeof data.message?.content === 'string') return data.message.content;
+  if (typeof data.content === 'string') return data.content;
+  return '';
 }
 
 function flagConversation(answers) {
@@ -176,6 +183,8 @@ async function main() {
       summary.push({ name: s.name, slug, status: 'FAILED', fails: [err.message], durationS: ((Date.now() - t0) / 1000).toFixed(1) });
       await fs.writeFile(path.join(OUTPUT_DIR, `${slug}.txt`), `Sponsor: ${s.name}\nWebsite: ${s.websiteUrl}\nFAILED: ${err.message}\n`);
     }
+    // Throttle to avoid create rate-limit (RATE_LIMITS.create.max per minute)
+    await sleep(PAUSE_BETWEEN_SPONSORS_MS);
   }
 
   const totalS = ((Date.now() - startedAt) / 1000).toFixed(1);

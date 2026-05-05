@@ -1,5 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { appendLeadRow, LeadPayload } from '@/lib/google-sheets';
+import { sendWahaMessage, WAHA_LEAD_MESSAGE } from '@/lib/waha';
 
 const UPSTASH_URL = process.env.UPSTASH_REDIS_REST_URL;
 const UPSTASH_TOKEN = process.env.UPSTASH_REDIS_REST_TOKEN;
@@ -55,6 +56,15 @@ export async function POST(request: NextRequest) {
     // Mirror to Google Sheets for Prometeo / WhatsApp outreach.
     // Awaited so the serverless function doesn't kill the request mid-flight.
     await dispatchToSheets(leadPayload);
+
+    // Send instant WhatsApp greeting via WAHA for simulator leads.
+    // Awaited (with catch) for the same reason as Sheets: Vercel kills
+    // un-awaited promises when the response returns.
+    if ((type || 'simulator') === 'simulator' && body.whatsapp) {
+      await sendWahaMessage(body.whatsapp, WAHA_LEAD_MESSAGE).catch((err) => {
+        console.warn('[Leads] WAHA send failed:', err);
+      });
+    }
 
     return NextResponse.json({ ok: true, id: leadId });
   } catch (error) {

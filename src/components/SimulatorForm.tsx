@@ -8,6 +8,16 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { PhoneInput } from '@/components/PhoneInput';
+import sponsorsData from '@/data/sponsors-expoconstruir.json';
+
+type Sponsor = {
+  name: string;
+  websiteUrl: string;
+  tier: string;
+  category: string;
+};
+
+const sponsors = sponsorsData as Sponsor[];
 
 const MAX_PDF_SIZE_MB = 10;
 const MAX_PDF_SIZE_BYTES = MAX_PDF_SIZE_MB * 1024 * 1024;
@@ -22,6 +32,8 @@ export default function SimulatorForm() {
   const [pdfUrl, setPdfUrl] = useState('');
   const [pdfFile, setPdfFile] = useState<File | null>(null);
   const [pdfTab, setPdfTab] = useState('url');
+  const [websiteMode, setWebsiteMode] = useState<'sponsor' | 'manual'>('sponsor');
+  const [selectedSponsor, setSelectedSponsor] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [fieldErrors, setFieldErrors] = useState<{
@@ -324,9 +336,54 @@ export default function SimulatorForm() {
             )}
           </div>
 
-          {/* Website URL */}
-          <div className="space-y-2">
+          {/* Website URL — sponsor selector or manual input */}
+          <div className="space-y-3">
             <Label htmlFor="websiteUrl" className="text-base font-medium">URL de tu Sitio Web *</Label>
+            <Tabs value={websiteMode} onValueChange={(v) => setWebsiteMode(v as 'sponsor' | 'manual')}>
+              <TabsList className="grid w-full grid-cols-2 h-11">
+                <TabsTrigger value="sponsor" className="text-sm">Sponsors ExpoCon</TabsTrigger>
+                <TabsTrigger value="manual" className="text-sm">Ingresar a web</TabsTrigger>
+              </TabsList>
+
+              <TabsContent value="sponsor" className="mt-4 space-y-2">
+                <select
+                  id="sponsorSelect"
+                  value={selectedSponsor}
+                  onChange={(e) => {
+                    const name = e.target.value;
+                    setSelectedSponsor(name);
+                    if (name) {
+                      const found = sponsors.find((s) => s.name === name);
+                      if (found) {
+                        setWebsiteUrl(found.websiteUrl);
+                        setFieldErrors(prev => ({ ...prev, websiteUrl: undefined }));
+                      }
+                    }
+                  }}
+                  disabled={loading}
+                  className="flex h-12 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                >
+                  <option value="">Elegí tu empresa sponsor...</option>
+                  {sponsors.map((s) => (
+                    <option key={s.name} value={s.name}>
+                      {s.name} ({s.tier})
+                    </option>
+                  ))}
+                </select>
+                {selectedSponsor && (
+                  <p className="text-sm text-muted-foreground">
+                    Seleccionado: <span className="font-medium text-gray-800">{selectedSponsor}</span>
+                  </p>
+                )}
+              </TabsContent>
+
+              <TabsContent value="manual" className="mt-4">
+                <p className="text-sm text-muted-foreground">
+                  Ingresá la URL de tu sitio web abajo.
+                </p>
+              </TabsContent>
+            </Tabs>
+
             <Input
               id="websiteUrl"
               type="text"

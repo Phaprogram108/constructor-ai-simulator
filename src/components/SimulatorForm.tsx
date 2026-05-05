@@ -7,6 +7,17 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { PhoneInput } from '@/components/PhoneInput';
+import sponsorsData from '@/data/sponsors-expoconstruir.json';
+
+type Sponsor = {
+  name: string;
+  websiteUrl: string;
+  tier: string;
+  category: string;
+};
+
+const sponsors = sponsorsData as Sponsor[];
 
 const MAX_PDF_SIZE_MB = 10;
 const MAX_PDF_SIZE_BYTES = MAX_PDF_SIZE_MB * 1024 * 1024;
@@ -16,10 +27,13 @@ export default function SimulatorForm() {
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const [whatsapp, setWhatsapp] = useState('');
+  const [whatsappLocalDigits, setWhatsappLocalDigits] = useState('');
   const [websiteUrl, setWebsiteUrl] = useState('');
   const [pdfUrl, setPdfUrl] = useState('');
   const [pdfFile, setPdfFile] = useState<File | null>(null);
   const [pdfTab, setPdfTab] = useState('url');
+  const [websiteMode, setWebsiteMode] = useState<'sponsor' | 'manual'>('sponsor');
+  const [selectedSponsor, setSelectedSponsor] = useState('');
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [fieldErrors, setFieldErrors] = useState<{
@@ -100,14 +114,13 @@ export default function SimulatorForm() {
     setLoading(true);
 
     try {
-      // Validate WhatsApp
-      const digitsOnly = whatsapp.replace(/\D/g, '');
-      if (!whatsapp.trim()) {
+      // Validate WhatsApp (whatsapp is E.164 without "+", local digits exclude dial code)
+      if (!whatsappLocalDigits) {
         setFieldErrors(prev => ({ ...prev, whatsapp: 'Ingresa tu numero de WhatsApp' }));
         setLoading(false);
         return;
       }
-      if (digitsOnly.length < 8) {
+      if (whatsappLocalDigits.length < 8) {
         setFieldErrors(prev => ({ ...prev, whatsapp: 'El numero debe tener al menos 8 digitos' }));
         setLoading(false);
         return;
@@ -306,26 +319,71 @@ export default function SimulatorForm() {
           {/* WhatsApp */}
           <div className="space-y-2">
             <Label htmlFor="whatsapp" className="text-base font-medium">Tu WhatsApp *</Label>
-            <Input
+            <PhoneInput
               id="whatsapp"
-              type="tel"
-              placeholder="+54 9 11 1234-5678"
               value={whatsapp}
-              onChange={(e) => {
-                setWhatsapp(e.target.value);
+              onChange={(fullNumber, meta) => {
+                setWhatsapp(fullNumber);
+                setWhatsappLocalDigits(meta.localDigits);
                 setFieldErrors(prev => ({ ...prev, whatsapp: undefined }));
               }}
               disabled={loading}
-              className={`h-12 text-base ${fieldErrors.whatsapp ? 'border-red-500' : ''}`}
+              error={fieldErrors.whatsapp}
+              placeholder="9 11 1234-5678"
             />
             {fieldErrors.whatsapp && (
               <p className="text-sm text-red-500">{fieldErrors.whatsapp}</p>
             )}
           </div>
 
-          {/* Website URL */}
-          <div className="space-y-2">
+          {/* Website URL — sponsor selector or manual input */}
+          <div className="space-y-3">
             <Label htmlFor="websiteUrl" className="text-base font-medium">URL de tu Sitio Web *</Label>
+            <Tabs value={websiteMode} onValueChange={(v) => setWebsiteMode(v as 'sponsor' | 'manual')}>
+              <TabsList className="grid w-full grid-cols-2 h-11">
+                <TabsTrigger value="sponsor" className="text-sm">Sponsors ExpoCon</TabsTrigger>
+                <TabsTrigger value="manual" className="text-sm">Ingresar a web</TabsTrigger>
+              </TabsList>
+
+              <TabsContent value="sponsor" className="mt-4 space-y-2">
+                <select
+                  id="sponsorSelect"
+                  value={selectedSponsor}
+                  onChange={(e) => {
+                    const name = e.target.value;
+                    setSelectedSponsor(name);
+                    if (name) {
+                      const found = sponsors.find((s) => s.name === name);
+                      if (found) {
+                        setWebsiteUrl(found.websiteUrl);
+                        setFieldErrors(prev => ({ ...prev, websiteUrl: undefined }));
+                      }
+                    }
+                  }}
+                  disabled={loading}
+                  className="flex h-12 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                >
+                  <option value="">Elegí tu empresa sponsor...</option>
+                  {sponsors.map((s) => (
+                    <option key={s.name} value={s.name}>
+                      {s.name} ({s.tier})
+                    </option>
+                  ))}
+                </select>
+                {selectedSponsor && (
+                  <p className="text-sm text-muted-foreground">
+                    Seleccionado: <span className="font-medium text-gray-800">{selectedSponsor}</span>
+                  </p>
+                )}
+              </TabsContent>
+
+              <TabsContent value="manual" className="mt-4">
+                <p className="text-sm text-muted-foreground">
+                  Ingresá la URL de tu sitio web abajo.
+                </p>
+              </TabsContent>
+            </Tabs>
+
             <Input
               id="websiteUrl"
               type="text"

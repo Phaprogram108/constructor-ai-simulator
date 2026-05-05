@@ -27,7 +27,7 @@ const nextConfig = {
           },
           {
             key: 'Content-Security-Policy',
-            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://connect.facebook.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; media-src 'self' https://*.public.blob.vercel-storage.com; connect-src 'self' https://api.openai.com https://*.firecrawl.dev https://*.vercel-insights.com https://www.facebook.com https://connect.facebook.net; frame-src 'self' https://www.loom.com; frame-ancestors 'none';",
+            value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://connect.facebook.net; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' data:; media-src 'self' https://*.public.blob.vercel-storage.com; connect-src 'self' https://api.openai.com https://*.firecrawl.dev https://*.vercel-insights.com https://www.facebook.com https://connect.facebook.net; frame-src 'self' https://www.loom.com https://calendar.google.com; frame-ancestors 'none';",
           },
         ],
       },

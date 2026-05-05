@@ -282,23 +282,14 @@ export default function ChatInterface({
             <p className="text-xs text-gray-500">{initialSession.companyName}</p>
           </div>
         </div>
-        {/* CTA button instead of message counter */}
+        {/* Single CTA: implement this agent */}
         <a
           href="/#califica"
-          className="text-xs bg-blue-600 hover:bg-blue-700 text-white px-3 py-1.5 rounded-full transition-colors"
+          className="text-xs sm:text-sm bg-blue-600 hover:bg-blue-700 text-white px-4 py-2 rounded-full font-semibold transition-colors shadow-sm"
         >
-          Verificá si calificás
+          Implementar este agente
         </a>
       </header>
-
-      {/* CTA Banner */}
-      <a
-        href="/#califica"
-        className="flex items-center justify-center gap-2 bg-blue-600 hover:bg-blue-700 text-white text-sm py-2 px-4 transition-colors"
-      >
-        <span className="font-medium">¿Te gustaría que este agente trabaje para tu constructora 24/7?</span>
-        <span className="bg-white text-blue-600 text-xs font-bold px-2 py-0.5 rounded-full">Verificá si calificás</span>
-      </a>
 
       {/* Messages */}
       <div className="flex-1 overflow-y-auto px-4 py-4">

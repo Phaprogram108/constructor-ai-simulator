@@ -7,6 +7,7 @@ import { Button } from '@/components/ui/button';
 import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
+import { PhoneInput } from '@/components/PhoneInput';
 
 const MAX_PDF_SIZE_MB = 10;
 const MAX_PDF_SIZE_BYTES = MAX_PDF_SIZE_MB * 1024 * 1024;
@@ -16,6 +17,7 @@ export default function SimulatorForm() {
   const fileInputRef = useRef<HTMLInputElement>(null);
 
   const [whatsapp, setWhatsapp] = useState('');
+  const [whatsappLocalDigits, setWhatsappLocalDigits] = useState('');
   const [websiteUrl, setWebsiteUrl] = useState('');
   const [pdfUrl, setPdfUrl] = useState('');
   const [pdfFile, setPdfFile] = useState<File | null>(null);
@@ -100,14 +102,13 @@ export default function SimulatorForm() {
     setLoading(true);
 
     try {
-      // Validate WhatsApp
-      const digitsOnly = whatsapp.replace(/\D/g, '');
-      if (!whatsapp.trim()) {
+      // Validate WhatsApp (whatsapp is E.164 without "+", local digits exclude dial code)
+      if (!whatsappLocalDigits) {
         setFieldErrors(prev => ({ ...prev, whatsapp: 'Ingresa tu numero de WhatsApp' }));
         setLoading(false);
         return;
       }
-      if (digitsOnly.length < 8) {
+      if (whatsappLocalDigits.length < 8) {
         setFieldErrors(prev => ({ ...prev, whatsapp: 'El numero debe tener al menos 8 digitos' }));
         setLoading(false);
         return;
@@ -306,17 +307,17 @@ export default function SimulatorForm() {
           {/* WhatsApp */}
           <div className="space-y-2">
             <Label htmlFor="whatsapp" className="text-base font-medium">Tu WhatsApp *</Label>
-            <Input
+            <PhoneInput
               id="whatsapp"
-              type="tel"
-              placeholder="+54 9 11 1234-5678"
               value={whatsapp}
-              onChange={(e) => {
-                setWhatsapp(e.target.value);
+              onChange={(fullNumber, meta) => {
+                setWhatsapp(fullNumber);
+                setWhatsappLocalDigits(meta.localDigits);
                 setFieldErrors(prev => ({ ...prev, whatsapp: undefined }));
               }}
               disabled={loading}
-              className={`h-12 text-base ${fieldErrors.whatsapp ? 'border-red-500' : ''}`}
+              error={fieldErrors.whatsapp}
+              placeholder="9 11 1234-5678"
             />
             {fieldErrors.whatsapp && (
               <p className="text-sm text-red-500">{fieldErrors.whatsapp}</p>

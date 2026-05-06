@@ -36,6 +36,17 @@ function slugify(name) {
     .replace(/^-+|-+$/g, '');
 }
 
+async function isAlreadyCached(slug) {
+  try {
+    const res = await fetch(`${BASE_URL}/api/sponsor-agent/${slug}`, {
+      headers: { 'User-Agent': UA },
+    });
+    return res.ok;
+  } catch {
+    return false;
+  }
+}
+
 async function preload(sponsor) {
   const slug = sponsor.slug || slugify(sponsor.name);
   const res = await fetch(`${BASE_URL}/api/simulator/preload`, {
@@ -73,8 +84,14 @@ async function main() {
   for (let i = 0; i < sponsors.length; i++) {
     const s = sponsors[i];
     const tag = `[${i + 1}/${sponsors.length}] ${s.name}`;
+    const slug = s.slug || slugify(s.name);
     process.stdout.write(`${tag} ... `);
     const t0 = Date.now();
+    if (await isAlreadyCached(slug)) {
+      console.log('SKIP (already cached)');
+      results.push({ ...s, slug, status: 'skip', durationSec: 0 });
+      continue;
+    }
     try {
       const r = await preload(s);
       const elapsed = ((Date.now() - t0) / 1000).toFixed(1);

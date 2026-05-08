@@ -8,31 +8,6 @@ import { Input } from '@/components/ui/input';
 import { Label } from '@/components/ui/label';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { PhoneInput } from '@/components/PhoneInput';
-import sponsorsData from '@/data/sponsors-expoconstruir.json';
-
-type Sponsor = {
-  name: string;
-  websiteUrl: string;
-  tier: string;
-  category: string;
-  slug?: string;
-};
-
-const sponsors = sponsorsData as Sponsor[];
-
-const slugify = (name: string): string =>
-  name
-    .toLowerCase()
-    .normalize('NFD')
-    .replace(/[̀-ͯ]/g, '')
-    .replace(/[^a-z0-9]+/g, '-')
-    .replace(/^-+|-+$/g, '');
-
-type CachedSponsorAgent = {
-  sessionId: string;
-  companyName: string;
-  welcomeMessage: string;
-};
 
 const MAX_PDF_SIZE_MB = 10;
 const MAX_PDF_SIZE_BYTES = MAX_PDF_SIZE_MB * 1024 * 1024;
@@ -47,9 +22,6 @@ export default function SimulatorForm() {
   const [pdfUrl, setPdfUrl] = useState('');
   const [pdfFile, setPdfFile] = useState<File | null>(null);
   const [pdfTab, setPdfTab] = useState('url');
-  const [websiteMode, setWebsiteMode] = useState<'sponsor' | 'manual'>('sponsor');
-  const [selectedSponsor, setSelectedSponsor] = useState('');
-  const [cachedSponsorAgent, setCachedSponsorAgent] = useState<CachedSponsorAgent | null>(null);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
   const [fieldErrors, setFieldErrors] = useState<{
@@ -221,35 +193,6 @@ export default function SimulatorForm() {
         body: JSON.stringify({ whatsapp, websiteUrl: url, createdAt: new Date().toISOString() }),
       }).catch(() => {}); // silently ignore errors
 
-      // Pre-cache shortcut: if we already have a precached sponsor agent, skip
-      // the scraping/generation flow entirely and jump straight to the demo.
-      if (cachedSponsorAgent) {
-        const sessionData = {
-          session: {
-            id: cachedSponsorAgent.sessionId,
-            companyName: cachedSponsorAgent.companyName || 'Constructora',
-            websiteUrl: url,
-            messagesRemaining: 1000,
-            expiresAt: new Date(Date.now() + 72 * 60 * 60 * 1000),
-          },
-          messages: cachedSponsorAgent.welcomeMessage
-            ? [
-                {
-                  id: 'welcome',
-                  role: 'assistant',
-                  content: cachedSponsorAgent.welcomeMessage,
-                  timestamp: new Date(),
-                },
-              ]
-            : [],
-        };
-        localStorage.setItem(
-          `session-${cachedSponsorAgent.sessionId}`,
-          JSON.stringify(sessionData),
-        );
-        router.push(`/demo/${cachedSponsorAgent.sessionId}`);
-        return;
-      }
 
       setProgressMessage('Conectando con tu sitio web...');
 
@@ -382,74 +325,9 @@ export default function SimulatorForm() {
             )}
           </div>
 
-          {/* Website URL — sponsor selector or manual input */}
-          <div className="space-y-3">
+          {/* Website URL */}
+          <div className="space-y-2">
             <Label htmlFor="websiteUrl" className="text-base font-medium">URL de tu Sitio Web *</Label>
-            <Tabs value={websiteMode} onValueChange={(v) => {
-              setWebsiteMode(v as 'sponsor' | 'manual');
-              if (v === 'manual') {
-                setCachedSponsorAgent(null);
-              }
-            }}>
-              <TabsList className="grid w-full grid-cols-2 h-11">
-                <TabsTrigger value="sponsor" className="text-sm">Sponsors ExpoCon</TabsTrigger>
-                <TabsTrigger value="manual" className="text-sm">Ingresar a web</TabsTrigger>
-              </TabsList>
-
-              <TabsContent value="sponsor" className="mt-4 space-y-2">
-                <select
-                  id="sponsorSelect"
-                  value={selectedSponsor}
-                  onChange={(e) => {
-                    const name = e.target.value;
-                    setSelectedSponsor(name);
-                    setCachedSponsorAgent(null);
-                    if (name) {
-                      const found = sponsors.find((s) => s.name === name);
-                      if (found) {
-                        setWebsiteUrl(found.websiteUrl);
-                        setFieldErrors(prev => ({ ...prev, websiteUrl: undefined }));
-                        const slug = found.slug || slugify(found.name);
-                        // Best-effort: check for precached agent. Silent on failure.
-                        fetch(`/api/sponsor-agent/${slug}`)
-                          .then((res) => (res.ok ? res.json() : null))
-                          .then((data) => {
-                            if (data && data.sessionId) {
-                              setCachedSponsorAgent({
-                                sessionId: data.sessionId,
-                                companyName: data.companyName,
-                                welcomeMessage: data.welcomeMessage,
-                              });
-                            }
-                          })
-                          .catch(() => {});
-                      }
-                    }
-                  }}
-                  disabled={loading}
-                  className="flex h-12 w-full rounded-md border border-input bg-background px-3 py-2 text-base ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
-                >
-                  <option value="">Elegí tu empresa sponsor...</option>
-                  {sponsors.map((s) => (
-                    <option key={s.name} value={s.name}>
-                      {s.name} ({s.tier})
-                    </option>
-                  ))}
-                </select>
-                {selectedSponsor && (
-                  <p className="text-sm text-muted-foreground">
-                    Seleccionado: <span className="font-medium text-gray-800">{selectedSponsor}</span>
-                  </p>
-                )}
-              </TabsContent>
-
-              <TabsContent value="manual" className="mt-4">
-                <p className="text-sm text-muted-foreground">
-                  Ingresá la URL de tu sitio web abajo.
-                </p>
-              </TabsContent>
-            </Tabs>
-
             <Input
               id="websiteUrl"
               type="text"

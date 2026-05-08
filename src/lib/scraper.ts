@@ -1,5 +1,6 @@
 import * as cheerio from 'cheerio';
 import Anthropic from '@anthropic-ai/sdk';
+import OpenAI from 'openai';
 import { chromium, Browser, Page } from 'playwright';
 import { ScrapedContent } from '@/types';
 import { scrapeWithFirecrawl } from './firecrawl';
@@ -16,6 +17,21 @@ function getAnthropic(): Anthropic {
   }
   return anthropicInstance;
 }
+
+let openaiInstance: OpenAI | null = null;
+
+function getOpenAI(): OpenAI {
+  if (!openaiInstance) {
+    openaiInstance = new OpenAI({
+      apiKey: process.env.OPENAI_API_KEY,
+    });
+  }
+  return openaiInstance;
+}
+
+// Feature flag: cuando true, usa OpenAI gpt-5.1 para extracción AI.
+// Default false → mantiene comportamiento actual con Anthropic Sonnet 4.
+const USE_OPENAI_SCRAPER = process.env.USE_OPENAI_SCRAPER === 'true';
 
 // Marcador especial cuando el scraping falla - NO usar como nombre real
 export const SCRAPING_FAILED_MARKER = '__SCRAPING_FAILED__';
@@ -712,6 +728,34 @@ interface RawContent {
   pagesScraped?: number;
 }
 
+async function extractWithAnthropic(prompt: string): Promise<string> {
+  const response = await getAnthropic().messages.create({
+    model: 'claude-sonnet-4-20250514',
+    max_tokens: 4000,
+    messages: [
+      {
+        role: 'user',
+        content: prompt,
+      },
+    ],
+  });
+
+  return response.content
+    .filter((block): block is Anthropic.TextBlock => block.type === 'text')
+    .map(block => block.text)
+    .join('');
+}
+
+async function extractWithOpenAI(prompt: string): Promise<string> {
+  const completion = await getOpenAI().chat.completions.create({
+    model: 'gpt-5.1',
+    messages: [{ role: 'user', content: prompt }],
+    max_completion_tokens: 4000,
+    temperature: 0.7,
+  });
+  return completion.choices[0]?.message?.content || '';
+}
+
 async function extractWithAI(content: RawContent): Promise<ScrapedContent> {
   const prompt = `Analiza el siguiente contenido de un sitio web de una constructora/empresa de viviendas y extrae la información de forma estructurada.
 
@@ -744,24 +788,14 @@ IMPORTANTE:
 - Si hay precios, inclúyelos exactamente como aparecen junto al modelo
 - El nombre de la empresa debe ser SOLO el nombre comercial, sin "Home |" ni similares
 - Si no encuentras algún dato, usa un array vacío [] o string vacío ""
-- ES CRÍTICO que extraigas la lista completa de modelos con sus especificaciones`;
+- ES CRÍTICO que extraigas la lista completa de modelos con sus especificaciones
+
+Responde SOLO con el JSON, sin texto adicional ni bloques de código.`;
 
   try {
-    const response = await getAnthropic().messages.create({
-      model: 'claude-sonnet-4-20250514',
-      max_tokens: 4000,
-      messages: [
-        {
-          role: 'user',
-          content: prompt,
-        },
-      ],
-    });
-
-    const responseText = response.content
-      .filter((block): block is Anthropic.TextBlock => block.type === 'text')
-      .map(block => block.text)
-      .join('');
+    const responseText = USE_OPENAI_SCRAPER
+      ? await extractWithOpenAI(prompt)
+      : await extractWithAnthropic(prompt);
 
     // Parse JSON response
     const jsonMatch = responseText.match(/\{[\s\S]*\}/);
